@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "source_file": "00_project/工程科研.txt",
+  "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
+  "requirements": [
+    {
+      "id": "R-G01",
+      "source_lines": [
+        1
+      ],
+      "requirement": "逐条研究，搜集科研成果、工程经验与社区交流",
+      "implementation": [
+        "每专题sources和reports",
+        "90_methods/EVIDENCE_AND_CITATIONS.md"
+      ]
+    },
+    {
+      "id": "R-G02",
+      "source_lines": [
+        1
+      ],
+      "requirement": "每项研究建目录，报告以工程手册/教材级为长期目标，注明来源，存资料摘要及合法可保存原文",
+      "implementation": [
+        "十个专题目录",
+        "91_templates/research_report.template.md",
+        "99_sources/README.md"
+      ]
+    },
+    {
+      "id": "R-G03",
+      "source_lines": [
+        2
+      ],
+      "requirement": "每大项目优先项完成后进入下一大项目；所有大项目首轮之后再扩展",
+      "implementation": [
+        "ROADMAP.md",
+        "STATE.json",
+        "00_project/research_tasks.json"
+      ]
+    },
+    {
+      "id": "R-Q01",
+      "source_lines": [
+        8
+      ],
+      "requirement": "单独“研究”行待澄清，不擅自补题",
+      "implementation": [
+        "00_project/clarifications.json#Q01"
+      ]
+    },
+    {
+      "id": "R-T01",
+      "source_lines": [
+        3,
+        4
+      ],
+      "requirement": "主流镀膜机结构",
+      "priority_in_original_order": [
+        "行星盘机器"
+      ],
+      "implementation": [
+        "01_machine_structures/README.md",
+        "00_project/T01_STAGE_PLAN.md"
+      ],
+      "status": "in_progress"
+    },
+    {
+      "id": "R-T02",
+      "source_lines": [
+        5
+      ],
+      "requirement": "高精度镀膜机建模与仿真",
+      "priority_in_original_order": [],
+      "implementation": [
+        "02_machine_modeling/README.md"
+      ],
+      "status": "planned_only"
+    },
+    {
+      "id": "R-T03",
+      "source_lines": [
+        6
+      ],
+      "requirement": "修正板自动设计优化",
+      "priority_in_original_order": [],
+      "implementation": [
+        "03_correction_plate_optimization/README.md"
+      ],
+      "status": "planned_only"
+    },
+    {
+      "id": "R-T04",
+      "source_lines": [
+        7
+      ],
+      "requirement": "镀膜材料与基片材料",
+      "priority_in_original_order": [
+        "ta2o5",
+        "zns",
+        "tio2",
+        "ybf3",
+        "sio2",
+        "mgf2",
+        "al2o3",
+        "h4",
+        "ge",
+        "cu",
+        "cr",
+        "al",
+        "基片zns",
+        "基片ge",
+        "基片k9",
+        "基片znse"
+      ],
+      "implementation": [
+        "04_coating_and_substrate_materials/README.md"
+      ],
+      "status": "planned_only"
+    },
+    {
+      "id": "R-T05",
+      "source_lines": [
+        9
+      ],
+      "requirement": "蒸发源特性与材料耦合建模",
+      "priority_in_original_order": [
+        "阻蒸",
+        "电子枪"
+      ],
+      "implementation": [
+        "05_evaporation_sources/README.md"
+      ],
+      "status": "planned_only"
+    },
+    {
+      "id": "R-T06",
+      "source_lines": [
+        10
+      ],
+      "requirement": "各类光学薄膜与应用",
+      "priority_in_original_order": [
+        "近红外",
+        "中红外",
+        "多光谱"
+      ],
+      "implementation": [
+        "06_optical_coating_families/README.md"
+      ],
+      "status": "planned_only"
+    },
+    {
+      "id": "R-T07",
+      "source_lines": [
+        11
+      ],
+      "requirement": "薄膜设计理论",
+      "priority_in_original_order": [],
+      "implementation": [
+        "07_thin_film_design_theory/README.md"
+      ],
+      "status": "planned_only"
+    },
+    {
+      "id": "R-T08",
+      "source_lines": [
+        12
+      ],
+      "requirement": "膜系设计优化算法",
+      "priority_in_original_order": [
+        "高精度的高性能优化算法",
+        "快速求解的近似算法",
+        "方便不停迭代的算法"
+      ],
+      "implementation": [
+        "08_stack_optimization_algorithms/README.md"
+      ],
+      "status": "planned_only"
+    },
+    {
+      "id": "R-T09",
+      "source_lines": [
+        13
+      ],
+      "requirement": "生产标准、环境与损伤试验",
+      "priority_in_original_order": [],
+      "implementation": [
+        "09_standards_and_qualification/README.md"
+      ],
+      "status": "planned_only"
+    },
+    {
+      "id": "R-T10",
+      "source_lines": [
+        14
+      ],
+      "requirement": "离子源特性与生产参数优化",
+      "priority_in_original_order": [
+        "考夫曼离子源"
+      ],
+      "implementation": [
+        "10_ion_sources/README.md"
+      ],
+      "status": "planned_only"
+    }
+  ]
+}

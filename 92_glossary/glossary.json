@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "entries": [
+    {
+      "term_id": "TERM-0001",
+      "original_label": "ybf3",
+      "display_candidate": "YbF3",
+      "identity_status": "user_confirmed",
+      "do_not_replace_with": [
+        "YF3"
+      ],
+      "source": "00_project/工程科研.txt:7",
+      "notes": "用户已明确原文ybf3为氟化镱；名称歧义关闭。原文保留，不改为YF3。后续参数仍需实际来源和工况证据。",
+      "confirmed_name": "氟化镱",
+      "user_confirmation": {
+        "date": "2026-10-01 22:53 UTC",
+        "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
+      }
+    },
+    {
+      "term_id": "TERM-0002",
+      "original_label": "h4",
+      "display_candidate": "H4",
+      "identity_status": "category_user_confirmed",
+      "source": "00_project/工程科研.txt:7",
+      "notes": "H4的高折射率材料类别已获用户确认，足以启动相关资料研究。具体配方、牌号或供应商等同性仍按证据核对；不擅猜化学式、不把供应商回复作为研究前置条件。",
+      "confirmed_category": "常见的高折射率材料",
+      "user_confirmation": {
+        "date": "2026-10-01 22:53 UTC",
+        "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
+      }
+    },
+    {
+      "term_id": "TERM-0003",
+      "original_label": "阻蒸",
+      "display_candidate": "阻蒸",
+      "identity_status": "equipment_detail_pending",
+      "source": "00_project/工程科研.txt:9",
+      "notes": "研究启动时核对具体装置形式与工况。"
+    },
+    {
+      "term_id": "TERM-0004",
+      "original_label": "损伤实验",
+      "display_candidate": "损伤试验（类型待确认）",
+      "identity_status": "test_type_pending",
+      "source": "00_project/工程科研.txt:13",
+      "notes": "不得自动等同某一种具体损伤试验。"
+    }
+  ]
+}

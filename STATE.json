@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "updated_at_utc": "2026-10-01T23:19:54+00:00",
+  "project_status": "active",
+  "setup_status": "complete_integrity_checked",
+  "round": 1,
+  "active_topic_id": "T02",
+  "active_task_id": "T02.P01",
+  "active_scope": "高精度镀膜机建模与仿真首轮理论与方法研究，接续启动",
+  "later_topics_policy": "T03_to_T10_planning_only_until_preceding_round1_scope_handoff",
+  "topic_order": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10"
+  ],
+  "topic_status": {
+    "T01": "round1_theory_ready_for_handoff",
+    "T02": "starting",
+    "T03": "queued",
+    "T04": "queued",
+    "T05": "queued",
+    "T06": "queued",
+    "T07": "queued",
+    "T08": "queued",
+    "T09": "queued",
+    "T10": "queued"
+  },
+  "research_stage_acceptance": {
+    "T01": "theory_handoff_ready_not_machine_validated_or_formally_signed_off",
+    "T02": "pending",
+    "T03": "pending",
+    "T04": "pending",
+    "T05": "pending",
+    "T06": "pending",
+    "T07": "pending",
+    "T08": "pending",
+    "T09": "pending",
+    "T10": "pending"
+  },
+  "next_action": "接收T01 v0.2理论移交，定义T02模型假设、坐标、输入输出、精度指标和验证层级",
+  "blocking_issues": [],
+  "nonblocking_clarification_ids": [
+    "Q01",
+    "Q04",
+    "Q05",
+    "Q06"
+  ],
+  "notes": [
+    "T01 v0.2理论资料首轮已形成可移交基线；不将资料收口等同实机验证或指定模型正式审查",
+    "T02接续启动，不同时展开T03–T10；用户实机数据缺口保留，不阻断公开理论与方法研究"
+  ],
+  "research_detail_followup_ids": [
+    "Q02"
+  ],
+  "resolved_clarification_ids": [
+    "Q03"
+  ],
+  "latest_user_clarification": {
+    "date": "2026-10-01 22:53 UTC",
+    "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
+  },
+  "handoff_evidence": [
+    "01_machine_structures/T02_HANDOFF.md",
+    "01_machine_structures/ROUND1_ACCEPTANCE_GAPS.md",
+    "01_machine_structures/stage_status.json"
+  ],
+  "machine_validation": "not_performed",
+  "formal_review_signoff": "not_performed"
+}

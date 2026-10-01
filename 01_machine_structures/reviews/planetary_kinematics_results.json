@@ -1,0 +1,50 @@
+{
+  "model": "ideal rigid external spur gears; fixed sun, rotating carrier, planet shaft rigidly coupled to workpiece",
+  "sign_convention": "top view, counterclockwise positive",
+  "assumptions": [
+    "sun gear fixed at 0 rpm",
+    "carrier at +15 rpm",
+    "direct external sun-planet mesh",
+    "workpiece angular velocity equals planet gear absolute angular velocity",
+    "no backlash, slip, compliance, deposition or coating simulation"
+  ],
+  "results": [
+    {
+      "planet_teeth": 36,
+      "sun_teeth": 120,
+      "carrier_rpm_ccw_positive": 15.0,
+      "planet_relative_carrier_rpm_exact": "50/1",
+      "planet_relative_carrier_rpm": 50.0,
+      "planet_absolute_rpm_exact": "65/1",
+      "planet_absolute_rpm": 65.0,
+      "planet_turns_per_carrier_turn_exact": "13/3",
+      "carrier_orbit_seconds": 4.0,
+      "attitude_phase_increment_per_carrier_turn_exact": "1/3",
+      "attitude_phase_increment_per_carrier_turn_degrees": 120.0,
+      "distinct_attitude_phases_at_same_carrier_azimuth": 3,
+      "full_pose_closure_carrier_revolutions": 3,
+      "full_pose_closure_workpiece_revolutions": "13/1",
+      "full_pose_closure_seconds": 12.0,
+      "pitch_center_distance_in_modules": 78.0
+    },
+    {
+      "planet_teeth": 37,
+      "sun_teeth": 120,
+      "carrier_rpm_ccw_positive": 15.0,
+      "planet_relative_carrier_rpm_exact": "1800/37",
+      "planet_relative_carrier_rpm": 48.648648648648646,
+      "planet_absolute_rpm_exact": "2355/37",
+      "planet_absolute_rpm": 63.648648648648646,
+      "planet_turns_per_carrier_turn_exact": "157/37",
+      "carrier_orbit_seconds": 4.0,
+      "attitude_phase_increment_per_carrier_turn_exact": "9/37",
+      "attitude_phase_increment_per_carrier_turn_degrees": 87.56756756756756,
+      "distinct_attitude_phases_at_same_carrier_azimuth": 37,
+      "full_pose_closure_carrier_revolutions": 37,
+      "full_pose_closure_workpiece_revolutions": "157/1",
+      "full_pose_closure_seconds": 148.0,
+      "pitch_center_distance_in_modules": 78.5
+    }
+  ],
+  "relative_center_distance_change_37_vs_36_in_modules": 0.5
+}

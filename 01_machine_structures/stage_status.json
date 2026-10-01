@@ -1,0 +1,95 @@
+{
+  "stage_id": "T01-round1-theoretical-baseline",
+  "baseline": "T01-round1-v0.2-20261001",
+  "algorithmic": true,
+  "algorithmic_reason": "含理想物理运动学推导、数值复算与测量方案",
+  "status": "in_progress",
+  "deliverable_status": "round1_theory_ready_for_handoff",
+  "formal_acceptance": false,
+  "acceptance": [
+    {
+      "id": "AC-structure",
+      "evidence": [
+        "chapters/01_architectures.md",
+        "chapters/02_subsystems.md",
+        "chapters/05_selection_and_error_control.md",
+        "chapters/06_structure_and_coordinate_diagrams.md",
+        "glossary.md"
+      ],
+      "result": "theoretical_scope_complete"
+    },
+    {
+      "id": "AC-kinematics",
+      "evidence": [
+        "chapters/03_kinematics.md",
+        "reviews/kinematics_independent_check.md",
+        "verification/initial_release_checks.json"
+      ],
+      "result": "ideal_constraints_cross_checked_not_real_machine_validation"
+    },
+    {
+      "id": "AC-sources",
+      "evidence": [
+        "sources/source_registry.json",
+        "sources/abstracts/source_summaries.md",
+        "sources/RIGHTS_AND_ACCESS.md"
+      ],
+      "result": "24_records_4_originals"
+    },
+    {
+      "id": "AC-verification_plan",
+      "evidence": [
+        "chapters/04_identification_and_validation.md",
+        "data/historical_case_unverified.json",
+        "stage_gaps.md",
+        "T02_HANDOFF.md",
+        "ROUND1_ACCEPTANCE_GAPS.md"
+      ],
+      "result": "present_not_executed_on_machine"
+    }
+  ],
+  "assumptions": [
+    "历史场景未核对",
+    "定量示例以前提明确的直接外啮合为条件",
+    "没有用户实机校准数据"
+  ],
+  "open_issues": [
+    "实机拓扑、几何与过程/厚度数据未取得，阻断实机结论但不阻断理论推进"
+  ],
+  "local_self_check": {
+    "result": "56_full_archive_checks_passed",
+    "evidence": [
+      "verification/SELF_CHECK.md",
+      "verification/initial_release_checks.json"
+    ]
+  },
+  "auxiliary_kinematics_check": {
+    "actual_model": "GPT-6 Luna",
+    "role": "窄范围独立辅助推导与数值复算，不代替指定审查签署",
+    "evidence": [
+      "reviews/kinematics_independent_check.md",
+      "reviews/planetary_kinematics_check.py"
+    ]
+  },
+  "deepseek_self_review": {
+    "result": "not_executed",
+    "note": "未将本轮自检冒称为指定模型执行",
+    "blocking_theory_progress": false
+  },
+  "seed_review": {
+    "result": "not_executed",
+    "findings": [],
+    "blocking_theory_progress": false
+  },
+  "sol_algorithm_review": {
+    "result": "not_executed",
+    "findings": [],
+    "blocking_theory_progress": false
+  },
+  "delivery_rights": "原始第三方PDF不默认重打包；读者版含原创报告、摘要、脚本与官方链接",
+  "theory_scope_assessment": "ready_for_T02",
+  "machine_validation": "not_performed",
+  "scope_decision": "建议由项目负责人确认理论资料首轮收口；不等待实机数据来阻断T02方法研究",
+  "review_resource_disclosure": "实际核查为独立运动学推导和数值复算、公开证据核对、负例与极限测试、图示目检。指定模型未实际执行时不宣称签署。",
+  "supersedes": "T01-v0.1-9a78e3b0fec2"
+}

@@ -1,0 +1,91 @@
+{
+  "checked_at_utc": "2026-10-01T22:56:51+00:00",
+  "scope": "project organization, original preservation, planning schema and links; does not validate research conclusions",
+  "result": "pass",
+  "checks": [
+    {
+      "check": "original_bytes_and_sha256",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "original_extended_attributes_preserved",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "planning_json_parse",
+      "result": "pass",
+      "details": {
+        "files": 13
+      }
+    },
+    {
+      "check": "ten_topics_original_order",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "single_active_topic_only_T01",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "later_topics_planning_only",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "all_16_material_priorities_ordered",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "other_explicit_priorities_preserved",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "all_14_source_lines_traced",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "standalone_research_not_new_topic",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "all_topic_readmes_present",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "source_schema_and_template_valid",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "source_schema_rejects_unapproved_archiving",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "planning_markdown_links_resolve",
+      "result": "pass",
+      "details": []
+    },
+    {
+      "check": "research_acceptance_not_claimed",
+      "result": "pass",
+      "details": null
+    },
+    {
+      "check": "user_clarification_applied_H4_and_YbF3",
+      "result": "pass",
+      "details": "Q03 closed; H4 category confirmed; no supplier prerequisite; original bytes unchanged"
+    }
+  ],
+  "planning_baseline_file_count": 44,
+  "T01_research_files_excluded": true
+}

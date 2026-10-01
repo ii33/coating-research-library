@@ -1,0 +1,655 @@
+{
+  "schema_version": "1.0",
+  "updated_at_utc": "2026-10-01T23:19:54+00:00",
+  "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
+  "execution_policy": {
+    "major_topics": "serial_original_order",
+    "priority_items": "preserve_original_order",
+    "expansion": "only_after_all_round1_topics_accepted",
+    "current_active_topic_limit": 1,
+    "unresolved_standalone_research_line": "clarification_only",
+    "status_changes_require_evidence": true
+  },
+  "topics": [
+    {
+      "id": "T01",
+      "sequence": 1,
+      "topic_path": "01_machine_structures",
+      "title": "主流镀膜机结构",
+      "source_lines": [
+        3,
+        4
+      ],
+      "round": 1,
+      "state": "round1_theory_ready_for_handoff",
+      "depends_on": [],
+      "algorithmic": true,
+      "review_status": "theory_checks_passed_formal_signoff_not_performed",
+      "entry_condition": "project_baseline_created",
+      "scope": "先建立行星盘结构、驱动与传动、工件夹持、公转与自转、蒸发源和修正板相对位置、可调参数及工程约束的可追溯知识框架。第一轮不展开其他机型；必要比较只为解释行星盘，不另起研究。",
+      "deliverables": [
+        "行星盘专题报告与术语/结构索引",
+        "结构与坐标定义图及参数采集表",
+        "关键工程问题、来源摘要和待验证假设清单",
+        "为高精度建模准备的接口与实测数据需求"
+      ],
+      "acceptance": [
+        "结构、运动关系、源/工件/修正板位置与主要约束有可定位的证据",
+        "区分具体设备实例与一般化结论，不能把厂家案例当通用结构",
+        "列出能供下一专题使用的坐标、参数和未决几何问题",
+        "完成本轮优先范围；不以穷尽所有设备和文献作为完成条件"
+      ],
+      "priority_items": [
+        {
+          "id": "T01.P01",
+          "sequence": 1,
+          "label": "行星盘机器",
+          "is_explicit_priority": true,
+          "state": "round1_theory_ready_for_handoff",
+          "evidence_paths": [
+            "01_machine_structures/planetary_coating_structures_initial_report.md",
+            "01_machine_structures/evidence_map.md",
+            "01_machine_structures/T02_HANDOFF.md"
+          ],
+          "acceptance_record": "01_machine_structures/stage_status.json"
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "其他主流镀膜机结构及与行星盘的系统比较"
+      ],
+      "algorithmic_reason": "首轮研究已纳入定量运动学、传动关系与闭合周期复算，故启用数值与算法审查要求。",
+      "handoff_record": "01_machine_structures/T02_HANDOFF.md",
+      "machine_validation": "not_performed"
+    },
+    {
+      "id": "T02",
+      "sequence": 2,
+      "topic_path": "02_machine_modeling",
+      "title": "高精度镀膜机建模与仿真",
+      "source_lines": [
+        5
+      ],
+      "round": 1,
+      "state": "starting",
+      "depends_on": [
+        "T01"
+      ],
+      "algorithmic": true,
+      "review_status": "pending",
+      "entry_condition": "T01.round1_theory_handoff_ready; physical calibration and formal review remain disclosed",
+      "scope": "规划几何与运动、蒸发源分布、遮挡与修正板、膜厚分布及误差传播等模型接口；研究启动后先定义“高精度”的输出、单位、参考数据与容差，再实施和验证。不得在缺乏实测证据时宣称达到工程精度。",
+      "deliverables": [
+        "模型假设、坐标和参数规范",
+        "可复现仿真模型及输入输出协议",
+        "解析/数值交叉检查、收敛试验与测量校准方案",
+        "验证误差、不确定度、适用域与失败情形报告"
+      ],
+      "acceptance": [
+        "精度指标、容差和测量基准已明确，未定值显式标记",
+        "有独立参考或实验对照并报告误差与不确定度",
+        "完成单位、守恒或极限情形检查以及网格/步长收敛检查",
+        "模型版本、数据、计算配置、随机种子（适用时）可复现"
+      ],
+      "priority_items": [
+        {
+          "id": "T02.P01",
+          "sequence": 1,
+          "label": "首轮核心范围（原文未细分优先项）",
+          "is_explicit_priority": false,
+          "state": "starting",
+          "evidence_paths": [],
+          "acceptance_record": null
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "超出基线设备与已验证参数域的扩展模型"
+      ]
+    },
+    {
+      "id": "T03",
+      "sequence": 3,
+      "topic_path": "03_correction_plate_optimization",
+      "title": "修正板自动设计优化",
+      "source_lines": [
+        6
+      ],
+      "round": 1,
+      "state": "queued",
+      "depends_on": [
+        "T02"
+      ],
+      "algorithmic": true,
+      "review_status": "pending",
+      "entry_condition": "T02.round1_accepted",
+      "scope": "以前一专题的冻结仿真接口为依据，规划修正板几何参数化、均匀性目标、约束、求解方法、制造可行性与实测闭环。算法实现与数值研究仅在本专题轮到时启动。",
+      "deliverables": [
+        "目标函数、约束、参数化与数据协议",
+        "自动设计优化算法及对照基线",
+        "制造/装配约束检查、稳健性与敏感性结果",
+        "基于模拟与实测的校准迭代及失败案例"
+      ],
+      "acceptance": [
+        "目标、约束、输入数据和基线可复现且无信息泄漏",
+        "在统一预算下比较解质量、耗时、约束违例和稳健性",
+        "给出可制造的设计输出与不可行时的诊断",
+        "仿真改善与实际验证分开报告，未实测不得声称生产改善"
+      ],
+      "priority_items": [
+        {
+          "id": "T03.P01",
+          "sequence": 1,
+          "label": "首轮核心范围（原文未细分优先项）",
+          "is_explicit_priority": false,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "更多机型、工艺和制造约束的扩展优化"
+      ]
+    },
+    {
+      "id": "T04",
+      "sequence": 4,
+      "topic_path": "04_coating_and_substrate_materials",
+      "title": "镀膜材料与基片材料",
+      "source_lines": [
+        7
+      ],
+      "round": 1,
+      "state": "queued",
+      "depends_on": [
+        "T03"
+      ],
+      "algorithmic": false,
+      "review_status": "pending",
+      "entry_condition": "T03.round1_accepted",
+      "scope": "先按原文顺序研究12项镀膜材料，再研究4项基片材料。覆盖光学、物理和蒸发特性，并区分块材、薄膜、基片、牌号、沉积条件、测量条件与不确定度。保留原始标记，用户已确认H4为常见的高折射率材料、YbF3为氟化镱；具体牌号/配方与测量条件的证据核对先于不同来源的数据合并，不要求供应商回复后才启动研究。",
+      "deliverables": [
+        "各优先材料与基片独立数据卡和证据索引",
+        "带波段、温度、制备/测试条件和误差的参数表",
+        "蒸发与成膜工程经验、风险、适用边界和待验证项",
+        "H4类别与YbF3氟化镱的用户确认记录，及具体牌号/配方数据的来源冲突说明"
+      ],
+      "acceptance": [
+        "16个原文优先项逐项可追踪，不将镀膜材料与同名基片混同",
+        "H4按已确认的常见高折射率材料研究；具体牌号/配方数据具备证据或明确未知，不擅自指定化学式，不把供应商回复设为前置条件",
+        "原文ybf3已确认是氟化镱YbF3，名称歧义关闭；绝不改成YF3，具体规格与工况按来源记录",
+        "参数具备来源与条件，缺数据留空并说明；社区经验不能当已验证常数"
+      ],
+      "priority_items": [
+        {
+          "id": "T04.P01",
+          "sequence": 1,
+          "label": "ta2o5",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P02",
+          "sequence": 2,
+          "label": "zns",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P03",
+          "sequence": 3,
+          "label": "tio2",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P04",
+          "sequence": 4,
+          "label": "ybf3",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P05",
+          "sequence": 5,
+          "label": "sio2",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P06",
+          "sequence": 6,
+          "label": "mgf2",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P07",
+          "sequence": 7,
+          "label": "al2o3",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P08",
+          "sequence": 8,
+          "label": "h4",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P09",
+          "sequence": 9,
+          "label": "ge",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P10",
+          "sequence": 10,
+          "label": "cu",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P11",
+          "sequence": 11,
+          "label": "cr",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P12",
+          "sequence": 12,
+          "label": "al",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P13",
+          "sequence": 13,
+          "label": "基片zns",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P14",
+          "sequence": 14,
+          "label": "基片ge",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P15",
+          "sequence": 15,
+          "label": "基片k9",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T04.P16",
+          "sequence": 16,
+          "label": "基片znse",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "未列入优先清单的镀膜材料与基片材料"
+      ],
+      "user_clarification": {
+        "date": "2026-10-01 22:53 UTC",
+        "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
+      }
+    },
+    {
+      "id": "T05",
+      "sequence": 5,
+      "topic_path": "05_evaporation_sources",
+      "title": "蒸发源特性与材料耦合建模",
+      "source_lines": [
+        9
+      ],
+      "round": 1,
+      "state": "queued",
+      "depends_on": [
+        "T04"
+      ],
+      "algorithmic": true,
+      "review_status": "pending",
+      "entry_condition": "T04.round1_accepted",
+      "scope": "先阻蒸，再电子枪；将源结构、功率/温度/束流等工况、材料行为、空间分布与稳定性连接到可校准模型。保留原文“阻蒸”，其具体装置形式需要工况资料确认。",
+      "deliverables": [
+        "两类优先蒸发源特性报告",
+        "材料—源—工况耦合参数表和风险清单",
+        "蒸发源分布模型及拟合/校准方法",
+        "测量方案、误差预算与工程验证记录"
+      ],
+      "acceptance": [
+        "阻蒸与电子枪的优先研究均有可复用交付",
+        "模型与材料、设备和工况绑定，不无条件移植参数",
+        "使用同一测量/拟合协议检验预测误差和可辨识性",
+        "列出异常工况、失效征兆和未验证的工程经验"
+      ],
+      "priority_items": [
+        {
+          "id": "T05.P01",
+          "sequence": 1,
+          "label": "阻蒸",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T05.P02",
+          "sequence": 2,
+          "label": "电子枪",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "其他类型蒸发源"
+      ]
+    },
+    {
+      "id": "T06",
+      "sequence": 6,
+      "topic_path": "06_optical_coating_families",
+      "title": "各类光学薄膜与应用",
+      "source_lines": [
+        10
+      ],
+      "round": 1,
+      "state": "queued",
+      "depends_on": [
+        "T05"
+      ],
+      "algorithmic": false,
+      "review_status": "pending",
+      "entry_condition": "T05.round1_accepted",
+      "scope": "以近红外、中红外、多光谱为首轮重点，建立应用需求、膜类、基片、环境和测试条件的对应关系。具体波段范围与评价指标在研究启动时定义，不把名称当固定数值边界。",
+      "deliverables": [
+        "按应用与性能指标组织的膜类资料图谱",
+        "代表性设计、工艺和测试证据摘要",
+        "科研结果与工程应用的条件差异对照",
+        "复用案例、失败案例和优先资料索引"
+      ],
+      "acceptance": [
+        "覆盖三个首轮重点，明确波段、角度、偏振、温度与测试条件",
+        "每个代表案例说明目标、构成、来源、结果及适用边界",
+        "光谱、环境和制造指标分别追踪，不只收集峰值性能",
+        "引文和合法原文档案完整，未核验案例明确标识"
+      ],
+      "priority_items": [
+        {
+          "id": "T06.P01",
+          "sequence": 1,
+          "label": "近红外",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T06.P02",
+          "sequence": 2,
+          "label": "中红外",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T06.P03",
+          "sequence": 3,
+          "label": "多光谱",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "其他波段和非首轮重点膜类"
+      ]
+    },
+    {
+      "id": "T07",
+      "sequence": 7,
+      "topic_path": "07_thin_film_design_theory",
+      "title": "薄膜设计理论",
+      "source_lines": [
+        11
+      ],
+      "round": 1,
+      "state": "queued",
+      "depends_on": [
+        "T06"
+      ],
+      "algorithmic": true,
+      "review_status": "pending",
+      "entry_condition": "T06.round1_accepted",
+      "scope": "规划从物理假设、基本模型、设计思想到可复算例题的系统性教材结构；研究启动后用原始文献和权威资料核验推导、符号、边界条件与适用范围。",
+      "deliverables": [
+        "设计理论主线与概念/公式索引",
+        "有假设与边界的推导、典型例题和数值复算",
+        "理论之间的关系、适用条件与局限对照",
+        "与材料数据和后续优化算法的接口"
+      ],
+      "acceptance": [
+        "所有关键公式有符号、单位、假设、来源和边界条件",
+        "代表例题可以独立复算且结果与参考相符或解释差异",
+        "区分物理模型误差、参数误差与数值误差",
+        "形成连贯章节结构和可复用例题，不停留于文献摘要堆叠"
+      ],
+      "priority_items": [
+        {
+          "id": "T07.P01",
+          "sequence": 1,
+          "label": "首轮核心范围（原文未细分优先项）",
+          "is_explicit_priority": false,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "更专门的理论与特殊应用拓展"
+      ]
+    },
+    {
+      "id": "T08",
+      "sequence": 8,
+      "topic_path": "08_stack_optimization_algorithms",
+      "title": "膜系设计优化算法",
+      "source_lines": [
+        12
+      ],
+      "round": 1,
+      "state": "queued",
+      "depends_on": [
+        "T07"
+      ],
+      "algorithmic": true,
+      "review_status": "pending",
+      "entry_condition": "T07.round1_accepted",
+      "scope": "兼顾高精度/性能、快速近似求解和持续迭代三类目标；这些是原文目标，非现成方法名单。统一参数化、材料模型、损失函数、约束和数据集后比较算法。",
+      "deliverables": [
+        "基准问题集、准确参考与统一评测协议",
+        "高精度方法、快速近似方法和迭代更新机制",
+        "消融、鲁棒性、随机重复和预算对比",
+        "误差/速度/复杂度权衡与失败案例报告"
+      ],
+      "acceptance": [
+        "准确度、约束违例、运行时间、资源和预算完整报告",
+        "使用冻结基准、独立验证集（适用时）及一致数据/材料模型",
+        "近似误差与物理偏差分开，记录域外退化和失效",
+        "能从保存的配置、版本与日志重跑；没有证据不称最优或通用"
+      ],
+      "priority_items": [
+        {
+          "id": "T08.P01",
+          "sequence": 1,
+          "label": "高精度的高性能优化算法",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T08.P02",
+          "sequence": 2,
+          "label": "快速求解的近似算法",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        },
+        {
+          "id": "T08.P03",
+          "sequence": 3,
+          "label": "方便不停迭代的算法",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "新的约束、应用族和加速路径"
+      ]
+    },
+    {
+      "id": "T09",
+      "sequence": 9,
+      "topic_path": "09_standards_and_qualification",
+      "title": "生产标准、环境与损伤试验",
+      "source_lines": [
+        13
+      ],
+      "round": 1,
+      "state": "queued",
+      "depends_on": [
+        "T08"
+      ],
+      "algorithmic": false,
+      "review_status": "pending",
+      "entry_condition": "T08.round1_accepted",
+      "scope": "规划国军标、美军标、国标、美标的适用性检索，环境试验和损伤试验及针对标准的工艺优化。原文“损伤实验”的具体类型待确认，不自动等同某一种损伤试验。",
+      "deliverables": [
+        "标准目录、发布机构、版次/日期、替代关系和适用性矩阵",
+        "条款到样品、设备、程序、判据、记录的映射",
+        "环境/损伤试验方案与工艺改进验证路径",
+        "合规缺口、现行状态与采购/授权访问需求"
+      ],
+      "acceptance": [
+        "工程引用前核对发布机构、完整编号、版次/修订/失效状态和适用范围",
+        "只以合法可访问内容判断条款，不能由摘要推断未读条款",
+        "试验、判定与合规结论可追溯到具体条款和产品条件",
+        "标准符合性需要真实验证，不以资料研究替代认证或鉴定"
+      ],
+      "priority_items": [
+        {
+          "id": "T09.P01",
+          "sequence": 1,
+          "label": "首轮核心范围（原文未细分优先项）",
+          "is_explicit_priority": false,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "新增客户、地区、产品或标准体系需求"
+      ]
+    },
+    {
+      "id": "T10",
+      "sequence": 10,
+      "topic_path": "10_ion_sources",
+      "title": "离子源特性与生产参数优化",
+      "source_lines": [
+        14
+      ],
+      "round": 1,
+      "state": "queued",
+      "depends_on": [
+        "T09"
+      ],
+      "algorithmic": true,
+      "review_status": "pending",
+      "entry_condition": "T09.round1_accepted",
+      "scope": "优先考夫曼离子源，研究材料、膜系与离子源条件的相互作用，建立按镀膜要求优化参数并通过实验验证的流程。禁止把无工况上下文的参数组合直接作为生产配方。",
+      "deliverables": [
+        "考夫曼离子源特性与参数定义手册",
+        "材料/膜系/工况/性能证据矩阵",
+        "实验设计、测量校准与参数优化方法",
+        "安全边界、异常工况与失败案例"
+      ],
+      "acceptance": [
+        "优先范围有证据链和可复用参数/测量模板",
+        "分开记录装置设定值、测量值和材料/膜层响应",
+        "建议参数限定设备、材料、目标与测试条件，并标明验证状态",
+        "优化效果包含重复性、误差和失效边界，待实验项不宣称已验证"
+      ],
+      "priority_items": [
+        {
+          "id": "T10.P01",
+          "sequence": 1,
+          "label": "考夫曼离子源",
+          "is_explicit_priority": true,
+          "state": "queued",
+          "evidence_paths": [],
+          "acceptance_record": null
+        }
+      ],
+      "expansion_round": 2,
+      "expansion_backlog": [
+        "其他离子源及更广材料/膜系的工况扩展"
+      ]
+    }
+  ]
+}

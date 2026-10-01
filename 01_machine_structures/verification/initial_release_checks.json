@@ -1,0 +1,290 @@
+{
+  "checked_at_utc": "2026-10-01",
+  "scope": "file integrity, source schema, local links, ideal kinematics only; no physical deposition validation",
+  "mode": "full_archive",
+  "all_passed": true,
+  "passed_count": 56,
+  "skipped_count": 0,
+  "checks": [
+    {
+      "name": "source_ids_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S01_archive_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S01_pdf_signature",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S01_sha256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S01_archive_rights_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S02_archive_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S02_pdf_signature",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S02_sha256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S02_archive_rights_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S05_archive_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S05_pdf_signature",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S05_sha256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S05_archive_rights_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S12_archive_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S12_pdf_signature",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S12_sha256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "S12_archive_rights_recorded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "planetary_coating_structures_initial_report.md link diagrams/A_direct_mesh_coordinates.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "planetary_coating_structures_initial_report.md link diagrams/B_source_mask_workpiece.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link chapters/01_architectures.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link chapters/02_subsystems.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link chapters/03_kinematics.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link chapters/04_identification_and_validation.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link chapters/05_selection_and_error_control.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link chapters/06_structure_and_coordinate_diagrams.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link glossary.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link T02_HANDOFF.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link ROUND1_ACCEPTANCE_GAPS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link evidence_map.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link sources/source_registry.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link sources/abstracts/source_summaries.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link data/historical_case_unverified.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link reviews/kinematics_independent_check.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "README.md link stage_gaps.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chapters/06_structure_and_coordinate_diagrams.md link ../diagrams/A_direct_mesh_coordinates.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "chapters/06_structure_and_coordinate_diagrams.md link ../diagrams/B_source_mask_workpiece.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "36_contact_no_slip",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "36_relative_external_mesh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "36_reject_missing_carrier_term",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "36_pose_closes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "36_no_smaller_integer_orbit_closure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "36_moving_sun_-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "36_moving_sun_15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "36_moving_sun_20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "36_rigid_rotation_limit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37_contact_no_slip",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37_relative_external_mesh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37_reject_missing_carrier_term",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37_pose_closes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37_no_smaller_integer_orbit_closure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37_moving_sun_-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37_moving_sun_15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37_moving_sun_20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "37_rigid_rotation_limit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "independent_script_reproduces_json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "local_source_schema",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

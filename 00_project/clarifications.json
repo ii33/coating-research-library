@@ -1,0 +1,89 @@
+{
+  "updated_at_utc": "2026-10-01T22:56:51+00:00",
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "原文第8行单独“研究”是否有遗漏主题？",
+      "basis": "原文第8行",
+      "handling_until_answered": "不推测新课题",
+      "relevant_topics": [],
+      "status": "open",
+      "answer": null,
+      "blocks_current_general_research": false
+    },
+    {
+      "id": "Q02",
+      "question": "H4高折射率材料的数据、牌号与成分在不同来源间如何核对？",
+      "basis": "原文第7行",
+      "handling_until_answered": "用户已确认H4是常见的高折射率材料；研究可据此推进。资料中涉及具体配方、牌号或厂家等同性时另做证据核验，不把供应商答复设为研究前置条件，不擅自指定化学式。",
+      "relevant_topics": [
+        "T04"
+      ],
+      "status": "category_confirmed_details_for_research",
+      "answer": "H4是常见的高折射率材料。",
+      "blocks_current_general_research": false,
+      "user_confirmation": {
+        "date": "2026-10-01 22:53 UTC",
+        "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
+      },
+      "requires_user_response_now": false
+    },
+    {
+      "id": "Q03",
+      "question": "原文ybf3的材料身份",
+      "basis": "原文第7行",
+      "handling_until_answered": "已闭合：按用户确认的氟化镱YbF3研究；保持原文ybf3，绝不改成YF3。具体样品规格按研究数据需要记录，不再将材料名称作为未决问题。",
+      "relevant_topics": [
+        "T04"
+      ],
+      "status": "closed_user_confirmed",
+      "answer": "YbF3是氟化镱。",
+      "blocks_current_general_research": false,
+      "user_confirmation": {
+        "date": "2026-10-01 22:53 UTC",
+        "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
+      },
+      "requires_user_response_now": false
+    },
+    {
+      "id": "Q04",
+      "question": "现有设备型号、几何、转速、源配置、修正板及实测资料有哪些？",
+      "basis": "T01至T03工程验证需求",
+      "handling_until_answered": "可先研究公开结构；特定机器结论和精度验收需真实数据",
+      "relevant_topics": [
+        "T01",
+        "T02",
+        "T03"
+      ],
+      "status": "open",
+      "answer": null,
+      "blocks_current_general_research": false
+    },
+    {
+      "id": "Q05",
+      "question": "目标波段范围、精度/性能/速度指标和计算资源预算为何？",
+      "basis": "原文第5、10、12行",
+      "handling_until_answered": "未知指标记TBD，不填假精度与假预算",
+      "relevant_topics": [
+        "T02",
+        "T06",
+        "T08"
+      ],
+      "status": "open",
+      "answer": null,
+      "blocks_current_general_research": false
+    },
+    {
+      "id": "Q06",
+      "question": "产品/客户适用标准以及损伤试验的具体类型为何？",
+      "basis": "原文第13行",
+      "handling_until_answered": "不推定军标体系、版本或某一损伤测试；轮到标准专题时澄清",
+      "relevant_topics": [
+        "T09"
+      ],
+      "status": "open",
+      "answer": null,
+      "blocks_current_general_research": false
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Coating research source registry record",
+  "type": "object",
+  "required": [
+    "source_id",
+    "title",
+    "authors_or_organization",
+    "source_type",
+    "year",
+    "version_or_edition",
+    "doi",
+    "url",
+    "accessed_at_utc",
+    "topic_ids",
+    "evidence_level",
+    "read_status",
+    "summary_path",
+    "original_path",
+    "original_sha256",
+    "rights",
+    "conditions",
+    "claims",
+    "standard_metadata",
+    "limitations",
+    "conflicts",
+    "record_version"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^SRC-[0-9]{6}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors_or_organization": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "source_type": {
+      "enum": [
+        "primary_paper",
+        "standard",
+        "official_manual",
+        "book",
+        "review",
+        "manufacturer_case",
+        "project_measurement",
+        "engineering_record",
+        "community",
+        "other"
+      ]
+    },
+    "year": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "version_or_edition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "accessed_at_utc": {
+      "type": "string"
+    },
+    "topic_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^T(0[1-9]|10)$"
+      },
+      "minItems": 1
+    },
+    "evidence_level": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "U"
+      ]
+    },
+    "read_status": {
+      "enum": [
+        "full",
+        "partial",
+        "abstract_only",
+        "metadata_only"
+      ]
+    },
+    "summary_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "original_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "original_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "rights": {
+      "type": "object",
+      "required": [
+        "status",
+        "basis",
+        "archive_allowed",
+        "redistribution_allowed"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "open_licensed",
+            "public_domain",
+            "permission_granted",
+            "restricted",
+            "unknown"
+          ]
+        },
+        "license": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "basis": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "archive_allowed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "redistribution_allowed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "conditions": {
+      "type": "object",
+      "description": "设备、材料、制备/测试条件、波段、温度等；未知保留空白或null"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "statement",
+          "locator",
+          "verification_status"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string"
+          },
+          "verification_status": {
+            "enum": [
+              "reported",
+              "cross_checked",
+              "derived",
+              "simulated",
+              "measured",
+              "validated_in_scope",
+              "unverified",
+              "contradicted"
+            ]
+          },
+          "supporting_source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "standard_metadata": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "issuing_body": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "full_identifier": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "revision_checked_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "replacement_or_amendments": {
+          "type": "array"
+        },
+        "applicability": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relevant_clauses": {
+          "type": "array"
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "record_version": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "original_path": {
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "rights": {
+            "properties": {
+              "archive_allowed": {
+                "const": true
+              }
+            }
+          },
+          "original_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source_type": {
+            "const": "standard"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "standard_metadata": {
+            "type": "object",
+            "required": [
+              "issuing_body",
+              "full_identifier",
+              "status",
+              "revision_checked_at",
+              "replacement_or_amendments",
+              "applicability",
+              "relevant_clauses"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

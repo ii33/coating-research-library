@@ -1,0 +1,427 @@
+{
+  "snapshot": "coating-research-library-initial-private-v0.2",
+  "created_at_utc": "2026-10-01T23:20:55+00:00",
+  "repository": "ii33/coating-research-library",
+  "visibility": "private",
+  "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
+  "scope": "original research, plans, summaries, links, authored figures, and reproducibility files; no third-party full texts",
+  "excluded": [
+    "**/sources/originals/",
+    "**/deliverables/",
+    "build and interpreter caches",
+    "temporary/local environment files"
+  ],
+  "manifest_self_excluded": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 328,
+      "sha256": "42dfd1adc2d829503d038da64eb962a8a520e69f7446659636afad89fa9e1493"
+    },
+    {
+      "path": "00_project/GITHUB_PUBLICATION.md",
+      "size_bytes": 1676,
+      "sha256": "710f893aa06e95716b1762ba03be54977c2f823f4571093e6fccac5184378876"
+    },
+    {
+      "path": "00_project/T01_STAGE_PLAN.md",
+      "size_bytes": 1418,
+      "sha256": "62fd92474185829280d37f5abc065dc60efa7b4ed8619870456a8e08194fe934"
+    },
+    {
+      "path": "00_project/check_github_snapshot.py",
+      "size_bytes": 1338,
+      "sha256": "e2a9c0bf06c2af92ad9dcc5cde1ce02bf7736146e41ada705e01d386baebf5ea"
+    },
+    {
+      "path": "00_project/clarifications.json",
+      "size_bytes": 3244,
+      "sha256": "63ea2086c35f7f81e8c8596d7151fe323dee64586b22a795d5fd06f0b8f9cac2"
+    },
+    {
+      "path": "00_project/integrity_check.json",
+      "size_bytes": 2134,
+      "sha256": "9f4a26f3f69c28e5856b07b3f6948f085ff94cc74a00a36fb6c0f904365c3088"
+    },
+    {
+      "path": "00_project/original_manifest.json",
+      "size_bytes": 407,
+      "sha256": "a878105fbe72a265ef6e1ca735027d2f613349ae776d340e0d9a71744e4ed353"
+    },
+    {
+      "path": "00_project/planning_baseline_manifest.json",
+      "size_bytes": 7668,
+      "sha256": "1d305f654fe2daf5d4c38a30e925cf9feeb134dfdfe9f96f241b784703ed16b9"
+    },
+    {
+      "path": "00_project/requirements_traceability.json",
+      "size_bytes": 4860,
+      "sha256": "4eddb3c5b5c73fd8b088aa893f456a2c54fa9051a2923b13af4dc11acde121ee"
+    },
+    {
+      "path": "00_project/research_tasks.json",
+      "size_bytes": 23454,
+      "sha256": "95843c2ebbaa3baf8098b54c4b8836f38427838bd2664053cea947b1ed121a56"
+    },
+    {
+      "path": "00_project/工程科研.txt",
+      "size_bytes": 1632,
+      "sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad"
+    },
+    {
+      "path": "01_machine_structures/DELIVERY_README.md",
+      "size_bytes": 612,
+      "sha256": "1182e4af0c4322e0bd0132d4854893b5181eb1604df6116d38e417d5e56fcda5"
+    },
+    {
+      "path": "01_machine_structures/README.md",
+      "size_bytes": 3271,
+      "sha256": "0427150e751d380f01b1c620c25d310fdae6822f5e0d48f30bf1a6f7d83cd427"
+    },
+    {
+      "path": "01_machine_structures/RELEASE_MANIFEST.json",
+      "size_bytes": 5287,
+      "sha256": "3bc6b87b9d10fac1a61ab7904475088950bf4a5e963c789446da80318cfdf343"
+    },
+    {
+      "path": "01_machine_structures/ROUND1_ACCEPTANCE_GAPS.md",
+      "size_bytes": 2409,
+      "sha256": "4bd98fefe330d8e88b88d6e5a448d0bc55b6aa927c222d04fe5ce4418e569264"
+    },
+    {
+      "path": "01_machine_structures/T02_HANDOFF.md",
+      "size_bytes": 2450,
+      "sha256": "f34a961519d5a3904b8d82ae6d22351c9bc9cf14d2a17b47a8817075a25ddad1"
+    },
+    {
+      "path": "01_machine_structures/chapters/01_architectures.md",
+      "size_bytes": 6536,
+      "sha256": "fd7d58fa5d8e23dea97dedbe2fb0e53c60c7c129b5813cab79fb63626821635d"
+    },
+    {
+      "path": "01_machine_structures/chapters/02_subsystems.md",
+      "size_bytes": 8867,
+      "sha256": "2f198984e84a9d0ba4dea8bb4ce4512a926271f9e0f81dadd3f0286bfa5e4108"
+    },
+    {
+      "path": "01_machine_structures/chapters/03_kinematics.md",
+      "size_bytes": 7557,
+      "sha256": "11544f3f559e567c48ba7edc80c66d7832f9e2f225c34a0cb86c1d01e973f275"
+    },
+    {
+      "path": "01_machine_structures/chapters/04_identification_and_validation.md",
+      "size_bytes": 7849,
+      "sha256": "5dbecddde92c467e993e5f4200521ae2090182fd9a5a3afe21dae06403fd5262"
+    },
+    {
+      "path": "01_machine_structures/chapters/05_selection_and_error_control.md",
+      "size_bytes": 8047,
+      "sha256": "f9bdec6321dfccd86b623dbfbedb89100b2c687dabda668fd5d9fdcc11a6b67b"
+    },
+    {
+      "path": "01_machine_structures/chapters/06_structure_and_coordinate_diagrams.md",
+      "size_bytes": 2007,
+      "sha256": "0b1a0160d5162e82a68d400c9a6ff39c562e5002b651d7337c9193d3d1117afa"
+    },
+    {
+      "path": "01_machine_structures/data/historical_case_unverified.json",
+      "size_bytes": 1471,
+      "sha256": "8b93db36bd760d5b383daa938945edd411c9a28ba50a39d7f883236ad77346ba"
+    },
+    {
+      "path": "01_machine_structures/data/measurement_template.json",
+      "size_bytes": 518,
+      "sha256": "e120d6ce1fb2bb943ff3509096e6fcfc74ca2622c7cd1889c4d5012302330f3d"
+    },
+    {
+      "path": "01_machine_structures/diagrams/A_direct_mesh_coordinates.png",
+      "size_bytes": 136366,
+      "sha256": "8e5923b9ac81c68d616d9b5decf5944ff89daf6c38e0011bc52018985cb11b06"
+    },
+    {
+      "path": "01_machine_structures/diagrams/A_direct_mesh_coordinates.svg",
+      "size_bytes": 16210,
+      "sha256": "21da8f843bbbbd91140c2c19c28e0a6c699425b1dc86ab8a17f68868f484204d"
+    },
+    {
+      "path": "01_machine_structures/diagrams/B_source_mask_workpiece.png",
+      "size_bytes": 85311,
+      "sha256": "c842d961d75be7e670d8ba3fa6bde05fbe681f409681a20f114180ecb1693639"
+    },
+    {
+      "path": "01_machine_structures/diagrams/B_source_mask_workpiece.svg",
+      "size_bytes": 7670,
+      "sha256": "d74a9a264e45775a19bb674489eaca212c8ecee6d56b79cfea3e3325716de513"
+    },
+    {
+      "path": "01_machine_structures/diagrams/draw_structure_schematics.py",
+      "size_bytes": 4417,
+      "sha256": "77a987c3e9ff8f1d07294ccfa9b773fc9b05e6a886b85842b454d84d66386ecd"
+    },
+    {
+      "path": "01_machine_structures/evidence_map.md",
+      "size_bytes": 4447,
+      "sha256": "a71e4534722c71b8ff0792ed5ddf951849622c3e15df2eb14427b5bba1a26d56"
+    },
+    {
+      "path": "01_machine_structures/glossary.md",
+      "size_bytes": 2414,
+      "sha256": "64fb0f7d31555a385ee504c3b136a6404332e77d869cd998abe7bbe4a2e6a721"
+    },
+    {
+      "path": "01_machine_structures/planetary_coating_structures_initial_report.md",
+      "size_bytes": 41097,
+      "sha256": "abe400cd5d748dc711dafef9384642bf720602140e615e8dd1d285a5daec8bd9"
+    },
+    {
+      "path": "01_machine_structures/reviews/kinematics_independent_check.md",
+      "size_bytes": 7247,
+      "sha256": "774730ead1328a4ffe94dadde4eae8675e016502448f10d455167c083f853613"
+    },
+    {
+      "path": "01_machine_structures/reviews/planetary_kinematics_check.py",
+      "size_bytes": 3136,
+      "sha256": "cbc2b67e6d5e355ce4954c073df12772481161c51e5cb1ba6951c2349332146e"
+    },
+    {
+      "path": "01_machine_structures/reviews/planetary_kinematics_results.json",
+      "size_bytes": 2084,
+      "sha256": "4fec90c42a05bdffbf97b41e3383858b7b8d61f7257a0b3580de21e3e752bd8b"
+    },
+    {
+      "path": "01_machine_structures/sources/RIGHTS_AND_ACCESS.md",
+      "size_bytes": 1038,
+      "sha256": "5a93e76e7b74e67624ee1be8e4752c660c116a54d6e6afca7adc03f307981f0d"
+    },
+    {
+      "path": "01_machine_structures/sources/abstracts/source_summaries.md",
+      "size_bytes": 20491,
+      "sha256": "0591f56529e647836fc14a05066a71dd0bc9a65d152bfc61cf363e896d857a49"
+    },
+    {
+      "path": "01_machine_structures/sources/source_record.schema.json",
+      "size_bytes": 6562,
+      "sha256": "c6b2d2f20cacd4dcdb6ce71c50f2647bba4d4f1ef34562a2b74eb06b9d111325"
+    },
+    {
+      "path": "01_machine_structures/sources/source_registry.json",
+      "size_bytes": 47022,
+      "sha256": "4307c4e9405b89ebb7370ba98847a0beb4b18f46bdc63589b618152a4cf7be8c"
+    },
+    {
+      "path": "01_machine_structures/stage_gaps.md",
+      "size_bytes": 1678,
+      "sha256": "fda2ac46eeb009c2b04b856adfb409dd9ed69e75ce1543a7b9d0d6633384f190"
+    },
+    {
+      "path": "01_machine_structures/stage_status.json",
+      "size_bytes": 3227,
+      "sha256": "eecb64d32fce43695f5ab47ed7fef77fd5bce24ba48bcabfcbd4d5890d0d0a75"
+    },
+    {
+      "path": "01_machine_structures/verification/SELF_CHECK.md",
+      "size_bytes": 2303,
+      "sha256": "140ad816c7f341386096e78aa3cdcc01d17f285bfc740f260ab5b4c760c8d4a5"
+    },
+    {
+      "path": "01_machine_structures/verification/check_initial_release.py",
+      "size_bytes": 3645,
+      "sha256": "f0985d4efa54d0d1a5d59634a445841cd5117814f99f9ee7918f06c47e09334d"
+    },
+    {
+      "path": "01_machine_structures/verification/initial_release_checks.json",
+      "size_bytes": 6061,
+      "sha256": "cb6b0cc15ad1050c40221c7f5c6844337ded8905eb79268ecce7eb080bb6f128"
+    },
+    {
+      "path": "02_machine_modeling/README.md",
+      "size_bytes": 2474,
+      "sha256": "ae02e666c2132fa4f5fa6d9caff0102195b6703821f08a2288a19e23d0cbad15"
+    },
+    {
+      "path": "03_correction_plate_optimization/README.md",
+      "size_bytes": 2212,
+      "sha256": "fa1d47862ed49299b7ce2db2f4bdb64af3b54fd91f8e8c8c73ca402dee26d0f9"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/README.md",
+      "size_bytes": 2737,
+      "sha256": "8ce34f05deae92b6080e35596ad405c36a481df15f9a0ee30ca012c8697f2534"
+    },
+    {
+      "path": "05_evaporation_sources/README.md",
+      "size_bytes": 2042,
+      "sha256": "8474d7bd9839690b632c54bf42231833a64946394ada4a5c4f081ae9c396f438"
+    },
+    {
+      "path": "06_optical_coating_families/README.md",
+      "size_bytes": 2169,
+      "sha256": "c616e6866c822fc1a09050c420f4be60d9c9b8af43628f9db5fcaf65a92c0a58"
+    },
+    {
+      "path": "07_thin_film_design_theory/README.md",
+      "size_bytes": 2174,
+      "sha256": "c3693b6a26cd90805096c030b09b7a4d6d385a2f573d2659aa8db4d64fde4792"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/README.md",
+      "size_bytes": 2194,
+      "sha256": "53b7330c13d0dc1309c68031de746685ac259d6066e532df0a871719abbe7068"
+    },
+    {
+      "path": "09_standards_and_qualification/README.md",
+      "size_bytes": 2352,
+      "sha256": "3d1c395802f8f25290b94a05b87c65f7813fb5ecaf3fc971eee7688a6edafb5b"
+    },
+    {
+      "path": "10_ion_sources/README.md",
+      "size_bytes": 2114,
+      "sha256": "946221b831411421c4383a446dfc007e4957fe13ae35b2fd2d224df8e24a55fc"
+    },
+    {
+      "path": "90_methods/EVIDENCE_AND_CITATIONS.md",
+      "size_bytes": 3660,
+      "sha256": "932b740a48ecb71150e63ec79141362684f2bc44791db3ef4b28836b3029384b"
+    },
+    {
+      "path": "90_methods/REPRODUCIBILITY.md",
+      "size_bytes": 2368,
+      "sha256": "4e9f716616e136b85d49ccc33e14cd9f079feb71fcd0d74cf617992abf8acc39"
+    },
+    {
+      "path": "90_methods/VERSIONING_AND_ACCEPTANCE.md",
+      "size_bytes": 2338,
+      "sha256": "fc904b79db966e3f3dda259867caf5b7ec83bbd11d3315f3c1fd27430cb140af"
+    },
+    {
+      "path": "91_templates/benchmark.template.md",
+      "size_bytes": 984,
+      "sha256": "41fb3464ad204f7f9139c2438fc1e76376a5c327551b4c675d5ce2705575e74b"
+    },
+    {
+      "path": "91_templates/calibration.template.md",
+      "size_bytes": 780,
+      "sha256": "4f8d1400853d966b92dd94da2461ab64e54f7cd802726d43a2ccc40a45d23ad1"
+    },
+    {
+      "path": "91_templates/experiment.template.md",
+      "size_bytes": 859,
+      "sha256": "3a9c5fe5b42509e622e112d4fd23475099c9b0be2e1449ac511a05fe70d99a4c"
+    },
+    {
+      "path": "91_templates/failure_case.template.md",
+      "size_bytes": 721,
+      "sha256": "a9c143d1172b3f0576941ac0ad7555fdb637b1912fccf20ae2a3786b0e82e98a"
+    },
+    {
+      "path": "91_templates/research_report.template.md",
+      "size_bytes": 1708,
+      "sha256": "5053c561fb930ab01fb1ab8c4cf8e4f829abe4391b2435259900085e4f131dd5"
+    },
+    {
+      "path": "91_templates/source_record.template.json",
+      "size_bytes": 744,
+      "sha256": "3093de269ea02b5c61f285acda0c7be48a38b9c7bdd3ec564a0808182bdc49bd"
+    },
+    {
+      "path": "91_templates/source_summary.template.md",
+      "size_bytes": 972,
+      "sha256": "b036a4e007a588a65db923ec82d982fea4818238842efb2041c1c5e52aa8f7d9"
+    },
+    {
+      "path": "91_templates/stage_review.template.json",
+      "size_bytes": 795,
+      "sha256": "118f2b41dd72a636bf743c7a5cf1fe4a41189952da1a6f7fdb02f3567ed1e9aa"
+    },
+    {
+      "path": "92_glossary/README.md",
+      "size_bytes": 276,
+      "sha256": "b43a87d9e79a069fbbc6cfd9d5aaee1eab76fc939c490cd53dc15f594abc93d9"
+    },
+    {
+      "path": "92_glossary/glossary.json",
+      "size_bytes": 1896,
+      "sha256": "19f54e49cac10ec6a6d3549d7185f9079f45ae946f7cc7327ec6abba3528d195"
+    },
+    {
+      "path": "93_parameters/README.md",
+      "size_bytes": 317,
+      "sha256": "edc1bc92efce77091b0a444a4b819d21b65a8e83d53697944ccc82d82c877178"
+    },
+    {
+      "path": "93_parameters/parameter_register.csv",
+      "size_bytes": 234,
+      "sha256": "9adeda651f7a0cc65010faed70b60d3beb33aa36fe68b4dd8316b0df1485decd"
+    },
+    {
+      "path": "94_experiments/README.md",
+      "size_bytes": 304,
+      "sha256": "8e59581fcda892fb5cff93d47201417d6d1c4c3e7af121ee2b7843edc16de927"
+    },
+    {
+      "path": "94_experiments/registry.json",
+      "size_bytes": 151,
+      "sha256": "84db8ef8b989d07e897337b6569b59a047284c1b67a3bee7bf4eea0efd6c142b"
+    },
+    {
+      "path": "95_benchmarks/README.md",
+      "size_bytes": 295,
+      "sha256": "bf3bf0555812155cd7fc5b51050ed62a073e94460d432a1e6bf6e4e51b1efb50"
+    },
+    {
+      "path": "95_benchmarks/registry.json",
+      "size_bytes": 133,
+      "sha256": "1366fd39d80d3da7c348cf7447a5f2ebcf576f0616212ad130d52261b1ca63be"
+    },
+    {
+      "path": "96_failure_cases/README.md",
+      "size_bytes": 298,
+      "sha256": "3d2379fc3c50d9c01848a070616c6f40fd7de4337c54e39104352c2a047833a3"
+    },
+    {
+      "path": "96_failure_cases/registry.json",
+      "size_bytes": 136,
+      "sha256": "d221f10ff40ab086553bf1d07d53a771c2428d6ad857fbea0ab6fc2dc0f5afaa"
+    },
+    {
+      "path": "99_sources/README.md",
+      "size_bytes": 1355,
+      "sha256": "d2b35256858ae1cb5893ed537efeed4295064a19e2f6670f2e40d0e2f83b0776"
+    },
+    {
+      "path": "99_sources/source_record.schema.json",
+      "size_bytes": 6538,
+      "sha256": "93f2e3cc1a6ce6cd7e8b840ddeadecef79e4afec7dbcc9f78a404cd69d9730af"
+    },
+    {
+      "path": "99_sources/source_registry.json",
+      "size_bytes": 601,
+      "sha256": "7250d0d9da5430791a55c8d788c2f48894de2a9db74423e68a524596fc35f8db"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size_bytes": 1296,
+      "sha256": "54a107f84f051e7f04db686e8985c47fa8a72d44a9dbaaf3bd35b2e9fafff5ee"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4773,
+      "sha256": "662e933f7f4b9dee90e55ded6788d9060050366810702df8f40f938f53bd2761"
+    },
+    {
+      "path": "ROADMAP.md",
+      "size_bytes": 4851,
+      "sha256": "5de7c78132f8ba9a62eded91dbf0b80e5ac12d92568fdc1668f55ad331c94da8"
+    },
+    {
+      "path": "STATE.json",
+      "size_bytes": 2127,
+      "sha256": "f8ce9a9936032b54b322b76ae63208d28b648e0b79be6b95cc297214611d7f72"
+    },
+    {
+      "path": "STATE.md",
+      "size_bytes": 1892,
+      "sha256": "282f218ab6864fc1f75875371d4701e20e0de207c17de3d57dc08e537b2dc92f"
+    }
+  ]
+}

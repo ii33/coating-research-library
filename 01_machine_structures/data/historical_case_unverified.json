@@ -1,0 +1,20 @@
+{
+  "case_id": "historical_120_sun_36_37_planets",
+  "value_status": "historical_unverified",
+  "source": "任务中转述的用户历史场景，未经当前实机复核",
+  "not_calibration_data": true,
+  "sun_gear": {"teeth": 120, "reported_fixed": true, "external_or_internal": "unverified"},
+  "planet_teeth_options": [36, 37],
+  "reported_carrier_speed_rpm": 15,
+  "reported_substrate_diameter_m": 0.3,
+  "reported_source_height_difference_m_approx": 1.0,
+  "reported_source_offset_m_approx": 0.1,
+  "source_offset_reference": "unresolved: source relative to moving planet center, orbit closest approach, or another reference",
+  "reported_observation": "同一圆周角向不均匀",
+  "unknown": ["是否直接外啮合", "是否有惰轮或复合传动", "工件轴是否直连", "实际绝对自转与方向", "齿轮模数和中心距", "行星轨道半径", "源和修正板三维坐标", "单层有效沉积时长", "启停相位", "真实速率时间曲线", "材料与源条件", "二维膜厚及测量误差"],
+  "conditional_calculations": {
+    "assumptions": ["fixed external sun", "direct external mesh", "rigid workpiece to planet", "parallel axes", "constant carrier speed"],
+    "planet_36": {"relative_to_carrier_rpm": 50, "absolute_rpm": 65, "pose_closure_orbits": 3, "pose_closure_s": 12},
+    "planet_37": {"relative_to_carrier_rpm": 48.64864864864865, "absolute_rpm": 63.64864864864865, "pose_closure_orbits": 37, "pose_closure_s": 148}
+  }
+}
