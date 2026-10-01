@@ -1,0 +1,20 @@
+# Third-party source originals are retained only in the research workspace.
+**/sources/originals/
+
+# Generated distribution bundles and local build/test caches.
+**/deliverables/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Local environment and credentials.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
