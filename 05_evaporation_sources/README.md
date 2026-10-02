@@ -1,49 +1,42 @@
-# T05 · 蒸发源特性与材料耦合建模
+# T05 蒸发源特性与材料耦合建模
 
-## 来源与状态
+首轮v0.1的优先范围已形成研究冻结包：电阻蒸发与电子束蒸发的结构/热历史、归一化角通量、有限源与扫束、十二材料耦合、标定和失效边界。51项数值检查通过；没有用户机台实测或生产设置。
 
-- 原文定位：`00_project/工程科研.txt` 第9行
-- 顺序：第5个大项目；第一轮
-- 当前状态：仅规划，尚未启动研究
-- 前置阶段：T04首轮验收完成
-- 算法/数值验证要求：适用；启用算法评测、边界情形与独立复核
+## 核心结论
 
-## 首轮范围
+- 总质量率Q、发射足迹q、角律f和接收投影必须分开；QCM nm/s不能直接输入kg/s模型
+- 一个合成圆盘源被错拟合为点源时，近轴训练最大误差仅0.023%，大角留出可达191%；训练吻合不能证明源模型可外推
+- 合成源在轴上QCM完全稳定时，45°位置通量可减半；源形改变必须更新T03修正板影响算子
+- 十二材料全部保留条件化源/容器候选；Cr升华、H4牌号、MgF2相容性冲突、氧化物放氧和氟化物解离不能统一成一套源常数
 
-先阻蒸，再电子枪；将源结构、功率/温度/束流等工况、材料行为、空间分布与稳定性连接到可校准模型。保留原文“阻蒸”，其具体装置形式需要工况资料确认。
+## 阅读顺序
 
-## 优先顺序
+1. [物理量与归一化](reports/01_source_physics_and_normalization.md)
+2. [电阻源与热历史](reports/02_resistance_sources_and_thermal_history.md)
+3. [电子束与扫束](reports/03_electron_beam_sources_and_sweep.md)
+4. [十二材料源耦合](reports/04_material_source_coupling.md)
+5. [标定 可辨识性与接口](reports/05_calibration_identifiability_and_interfaces.md)
+6. [数值结果与复现](reports/06_numerical_results_and_reproduction.md)
+7. [安全 失效与证据限制](reports/07_safety_failure_modes_and_evidence_limits.md)
 
-1. 阻蒸
-2. 电子枪
+![源模型数据流](figures/source_model_dataflow.png)
 
-## 交付物
+原创数据流图。热输入、发射质量、几何输运、传感器观测和膜状态分开；有效模型由独立数据和留出检验约束。
 
-- 两类优先蒸发源特性报告
-- 材料—源—工况耦合参数表和风险清单
-- 蒸发源分布模型及拟合/校准方法
-- 测量方案、误差预算与工程验证记录
+## 快速复现
 
-## 阶段验收标准
+从研究库根目录：
 
-1. 阻蒸与电子枪的优先研究均有可复用交付
-2. 模型与材料、设备和工况绑定，不无条件移植参数
-3. 使用同一测量/拟合协议检验预测误差和可辨识性
-4. 列出异常工况、失效征兆和未验证的工程经验
+    PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python 05_evaporation_sources/tests/test_source_reference.py
+    PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python 05_evaporation_sources/benchmarks/run_benchmarks.py
+    PYTHONDONTWRITEBYTECODE=1 python 05_evaporation_sources/tests/check_release.py
 
-共同门槛：关键结论能回溯来源与条件；有可复用结果、未决问题、失效/适用边界及下一阶段接口；审查结论有记录。资料完成、仿真验证、实测验证分开标注。研究范围有限，文献不要求无限穷尽；关键缺口不得隐藏。
+核心只依赖已有NumPy。三图由benchmarks/plot_results.py可选重建；模型测试对T02有一个只读互操作检查。原文不附读者包时check_release.py使用--reader。
 
-## 目录约定
+## 证据与阶段状态
 
-- `reports/`：分章节报告与有版本号的阶段成果
-- `sources/summaries/`：逐来源摘要、原文定位、限制与证据等级
-- `sources/originals/`：仅保存已核对合法存档权利的原文
-- `data/`：可复用参数、数据表与来源/单位/不确定度
-- `reviews/`：阶段验收、纠错与未决问题处理
-- 需要模型、实验、benchmark时，在本专题下新增对应目录，并更新共享索引
+[27条来源登记](sources/source_registry.json)、[逐条原创摘要](sources/summaries)、[12材料机器可读矩阵](data/material_source_matrix.json)、[实机测量模板](data/measurement_template.json)、[合成基准结果](benchmarks/results/benchmark_summary.json)均可复用。1份明确开放许可原文在本地排除目录保存；厂家手册和权利不明全文只保留链接与摘要。
 
-## 首轮之后的扩展候选
+[阶段范围验收](reviews/ROUND1_ACCEPTANCE.md)和[实际独立窄审](reviews/independent_source_physics_check.md)区分理论/合成/实测证据。指定DeepSeek、Seed与完整Sol审查链未实际运行的部分保持pending，不能称形式阶段通过。当前冻结是有界优先资料与参考模型交付，生产验证未执行。
 
-- 其他类型蒸发源
-
-只有所有十个大项目首轮均验收后才进入此扩展列表。与当前专题无关的后续研究不可并行抢先启动。
+下一步按原文进入[T06光学薄膜类型研究](T06_HANDOFF.md)。其他源型、热PDE/碰撞求解和实机闭环留到全部十专题首轮后再扩展。

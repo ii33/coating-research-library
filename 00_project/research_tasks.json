@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T00:56:24.569350+00:00",
+  "updated_at_utc": "2026-10-02T01:31:37.032385+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
     "major_topics": "serial_original_order",
@@ -425,12 +425,12 @@
         9
       ],
       "round": 1,
-      "state": "starting",
+      "state": "round1_priority_theory_and_synthetic_scope_complete",
       "depends_on": [
         "T04"
       ],
       "algorithmic": true,
-      "review_status": "pending",
+      "review_status": "51_numerical_tests_passed_actual_narrow_physics_check_complete_designated_full_chain_pending",
       "entry_condition": "T04.round1_priority_public_research_complete; empirical calibration, production qualification and designated full model review remain disclosed",
       "scope": "先阻蒸，再电子枪；将源结构、功率/温度/束流等工况、材料行为、空间分布与稳定性连接到可校准模型。保留原文“阻蒸”，其具体装置形式需要工况资料确认。",
       "deliverables": [
@@ -451,24 +451,34 @@
           "sequence": 1,
           "label": "阻蒸",
           "is_explicit_priority": true,
-          "state": "starting",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_priority_theory_and_synthetic_scope_complete",
+          "evidence_paths": [
+            "05_evaporation_sources/reports/02_resistance_sources_and_thermal_history.md",
+            "05_evaporation_sources/release_manifest.json",
+            "05_evaporation_sources/T06_HANDOFF.md"
+          ],
+          "acceptance_record": "05_evaporation_sources/reviews/ROUND1_ACCEPTANCE.md"
         },
         {
           "id": "T05.P02",
           "sequence": 2,
           "label": "电子枪",
           "is_explicit_priority": true,
-          "state": "queued",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_priority_theory_and_synthetic_scope_complete",
+          "evidence_paths": [
+            "05_evaporation_sources/reports/03_electron_beam_sources_and_sweep.md",
+            "05_evaporation_sources/release_manifest.json",
+            "05_evaporation_sources/T06_HANDOFF.md"
+          ],
+          "acceptance_record": "05_evaporation_sources/reviews/ROUND1_ACCEPTANCE.md"
         }
       ],
       "expansion_round": 2,
       "expansion_backlog": [
         "其他类型蒸发源"
-      ]
+      ],
+      "handoff_record": "05_evaporation_sources/T06_HANDOFF.md",
+      "machine_validation": "not_performed"
     },
     {
       "id": "T06",
@@ -479,13 +489,13 @@
         10
       ],
       "round": 1,
-      "state": "queued",
+      "state": "starting",
       "depends_on": [
         "T05"
       ],
       "algorithmic": false,
       "review_status": "pending",
-      "entry_condition": "T05.round1_accepted",
+      "entry_condition": "T05.round1_priority_theory_and_synthetic_scope_complete; machine calibration and complete designated review remain disclosed",
       "scope": "以近红外、中红外、多光谱为首轮重点，建立应用需求、膜类、基片、环境和测试条件的对应关系。具体波段范围与评价指标在研究启动时定义，不把名称当固定数值边界。",
       "deliverables": [
         "按应用与性能指标组织的膜类资料图谱",
@@ -505,7 +515,7 @@
           "sequence": 1,
           "label": "近红外",
           "is_explicit_priority": true,
-          "state": "queued",
+          "state": "starting",
           "evidence_paths": [],
           "acceptance_record": null
         },

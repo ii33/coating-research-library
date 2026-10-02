@@ -1,6 +1,6 @@
 {
-  "snapshot": "coating-research-library-T04-v1-handoff",
-  "created_at_utc": "2026-10-02T00:56:24.569350+00:00",
+  "snapshot": "coating-research-library-T05-v0.1-handoff",
+  "created_at_utc": "2026-10-02T01:31:37.032385+00:00",
   "repository": "ii33/coating-research-library",
   "visibility": "private",
   "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
@@ -20,8 +20,8 @@
     },
     {
       "path": "00_project/GITHUB_PUBLICATION.md",
-      "size_bytes": 3513,
-      "sha256": "d702418384fd331f71341e73780bec55dd06f09e61c26e4cef3d240ed2eca0df"
+      "size_bytes": 4129,
+      "sha256": "6e02155c2ec94579b3a02f22b06f80b036205cbcd1c753a3e23302b8ae2bb287"
     },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
@@ -51,7 +51,7 @@
     {
       "path": "00_project/planning_baseline_manifest.json",
       "size_bytes": 7665,
-      "sha256": "66cfb6539d42fc87c9a894f024a06d9df272a31c4c4c941228a307d024172aa3"
+      "sha256": "8bb235d014264d1a8e9fdeefeadf14f03937f1a0c8bd1f7c5292f65a169b51be"
     },
     {
       "path": "00_project/requirements_traceability.json",
@@ -60,8 +60,8 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 30585,
-      "sha256": "fd38531e6be62dd2fc6270fe7def6315b3e7842f6b5d18a2776429c9e06bd227"
+      "size_bytes": 31539,
+      "sha256": "21d42bbd9a5fcc5b12d1b0c86be2cf3062d07fc5f8a3fcfa9be183c39c170ccc"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -1239,9 +1239,364 @@
       "sha256": "9f9ec2e25f6cc8c306c77a3578f8f31251e4bf6a701acb9a88a228ec45ac4b1f"
     },
     {
+      "path": "05_evaporation_sources/.gitignore",
+      "size_bytes": 98,
+      "sha256": "31984f54751f64b167fb03825f6f5aed61e4ac16f6d3ca0651e63608c5826a96"
+    },
+    {
       "path": "05_evaporation_sources/README.md",
-      "size_bytes": 2042,
-      "sha256": "8474d7bd9839690b632c54bf42231833a64946394ada4a5c4f081ae9c396f438"
+      "size_bytes": 3138,
+      "sha256": "1eb010587767ab0c83a9ff0f1640a5bb53d3ded788da13cc6c377aaf438ebfc0"
+    },
+    {
+      "path": "05_evaporation_sources/T06_HANDOFF.md",
+      "size_bytes": 2222,
+      "sha256": "b098227e1ab760e43f1c739f3fcf4f1e8612a49083906edfc8b4807f98531a0a"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/plot_results.py",
+      "size_bytes": 5354,
+      "sha256": "a5bb69858e5b2b4ab4995b9ef925e93c1a281eb525c65c79a2fd021fdb4d7140"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/results/angular_holdout.csv",
+      "size_bytes": 490,
+      "sha256": "f133b8748cfa41e44665a90793d2138c62d0d8add1bd686a54b18126f9605489"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/results/benchmark_summary.json",
+      "size_bytes": 6735,
+      "sha256": "b230c1ec1f0577aaf9d3df25ba8ffd7a433fa6b8ed430538b3d06fe7b39cafe9"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/results/boat_azimuth_holdout.csv",
+      "size_bytes": 1366,
+      "sha256": "3061e51e09103c5365b4c3176f5647b9bca92edfdc9d3011902a8679d5ed8e63"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/results/misspecified_holdout.csv",
+      "size_bytes": 503,
+      "sha256": "e619cd190a49ab135560c0c1293d1ebdd705f59c35696663ae9f6b28db4a85bd"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/results/qcm_blind_shape_change.csv",
+      "size_bytes": 375,
+      "sha256": "95a51126b03aa4a01b72cd612272f19b0df6715382907dfb3bb81add3f9f43d9"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/results/recession_aperture.csv",
+      "size_bytes": 627,
+      "sha256": "ed22d82d6556493423c69a7f8ca6b67108e685dabf7f05c9c5319611af427b5a"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/results/resolution_study.json",
+      "size_bytes": 2730,
+      "sha256": "aed3291e08936deb733bb4ef90d6faedf4bc7fd84d341238ac17530e3cc8614c"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/results/sweep_footprint.csv",
+      "size_bytes": 2692,
+      "sha256": "0c13fc541daebd3108b1cfb7f417ebd19449b84ee67b577f0f70b57be9bf4077"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/results/synthetic_thermal_history.csv",
+      "size_bytes": 236873,
+      "sha256": "ecf74aac80d87e6c0b2e2f1ac043d8ef3a3e148fd673cf8d41e50955f7f48122"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/run_benchmarks.py",
+      "size_bytes": 9594,
+      "sha256": "def990e1dbb977bb35f476ccecec246144b3f6551027fe1e4d5db69b13766ab9"
+    },
+    {
+      "path": "05_evaporation_sources/benchmarks/run_resolution_study.py",
+      "size_bytes": 2143,
+      "sha256": "b6c5e0f4515567b979705eb91fdedd82d6fc9d188c4ec7266175f65ffad7a994"
+    },
+    {
+      "path": "05_evaporation_sources/data/local_originals_manifest.json",
+      "size_bytes": 599,
+      "sha256": "774ea1a9f85032b4cca74db9c8bddd5ee34ab67a39ffd413b70c38365ad402fa"
+    },
+    {
+      "path": "05_evaporation_sources/data/material_source_matrix.json",
+      "size_bytes": 8800,
+      "sha256": "8bb632c1207601edae95d27fbae3de578046e99c04342d49c73df151dff5a5c2"
+    },
+    {
+      "path": "05_evaporation_sources/data/measurement_template.json",
+      "size_bytes": 1916,
+      "sha256": "53c37f0f3768a99e797b7046ca6c2497adbb4b29276e2ce310fac125c640f061"
+    },
+    {
+      "path": "05_evaporation_sources/data/source_state.schema.json",
+      "size_bytes": 2178,
+      "sha256": "a1c7137ddc25abe8ccb57c44cb60343443f7e2580f791577dbd4bd48d9e1f024"
+    },
+    {
+      "path": "05_evaporation_sources/data/synthetic_source_snapshot.json",
+      "size_bytes": 9163,
+      "sha256": "1a160d0f5eabb60069f6e7a3b79b0528e354fdf78866ff6261848649ab8895a5"
+    },
+    {
+      "path": "05_evaporation_sources/data/witness_measurement_template.csv",
+      "size_bytes": 278,
+      "sha256": "444d5f57b308a56f414a7eec23d0910f6a16cc407b0781c961c89d53bc07d2b8"
+    },
+    {
+      "path": "05_evaporation_sources/figures/source_geometry.png",
+      "size_bytes": 75562,
+      "sha256": "175a58130866fbeeb24972f0dbe50df188ebe70465ced9abe8e07628206f15ff"
+    },
+    {
+      "path": "05_evaporation_sources/figures/source_geometry.svg",
+      "size_bytes": 40005,
+      "sha256": "e93cef2f65aab0adfab1d436d9182c54f0ac2295684416d7e276ed354f4ad537"
+    },
+    {
+      "path": "05_evaporation_sources/figures/source_model_dataflow.png",
+      "size_bytes": 148470,
+      "sha256": "12c668157482e4092cc7f8f5db1e58ad99baec54807c7b34040ae78bb811e9d2"
+    },
+    {
+      "path": "05_evaporation_sources/figures/source_model_dataflow.svg",
+      "size_bytes": 80145,
+      "sha256": "bbaa9bddca847d5aa8ed88234036bcb31dacd42c02e6765d34a70035c40587cd"
+    },
+    {
+      "path": "05_evaporation_sources/figures/synthetic_diagnostics.png",
+      "size_bytes": 211453,
+      "sha256": "8725a251dcf8e2cd312b60ba16afc6335a17d2f525a3a0f70afde821235957a1"
+    },
+    {
+      "path": "05_evaporation_sources/figures/synthetic_diagnostics.svg",
+      "size_bytes": 97538,
+      "sha256": "ed159ae0bc249e73933f53c82e408f5a0ef3548dde71666a6440dd76e477492b"
+    },
+    {
+      "path": "05_evaporation_sources/models/source_reference.py",
+      "size_bytes": 13018,
+      "sha256": "180fb1e9359c31855c0b9151d48071ec500627714c0ddd7095e91a903a65e842"
+    },
+    {
+      "path": "05_evaporation_sources/release_manifest.json",
+      "size_bytes": 11982,
+      "sha256": "fc54cef8e0f0f4f16ebc73dbbb7b4e39c69580af1bc2dd68b9c4c3a1a556fb26"
+    },
+    {
+      "path": "05_evaporation_sources/reports/01_source_physics_and_normalization.md",
+      "size_bytes": 8574,
+      "sha256": "719c11f3163f0588f340ea3921a86ce1c73a58159502d5edc6f58193c3e543b7"
+    },
+    {
+      "path": "05_evaporation_sources/reports/02_resistance_sources_and_thermal_history.md",
+      "size_bytes": 8633,
+      "sha256": "46f57161a807350ff1f849ea83469299ca28160cad37960bae02b3a093b947fd"
+    },
+    {
+      "path": "05_evaporation_sources/reports/03_electron_beam_sources_and_sweep.md",
+      "size_bytes": 7239,
+      "sha256": "d2044a07f70e75c4f2f6bb31d37db53785f1aa8e1be0b0826b8969b45c0f2fce"
+    },
+    {
+      "path": "05_evaporation_sources/reports/04_material_source_coupling.md",
+      "size_bytes": 7897,
+      "sha256": "768693a6058a26ae772f3166319e46001ae41169dcd9aa71d433a8979b8e054f"
+    },
+    {
+      "path": "05_evaporation_sources/reports/05_calibration_identifiability_and_interfaces.md",
+      "size_bytes": 7737,
+      "sha256": "f88f24cf3423874795b54d2bf1cdd6bafc856a72629f153eeaf88ad6c5f6a95b"
+    },
+    {
+      "path": "05_evaporation_sources/reports/06_numerical_results_and_reproduction.md",
+      "size_bytes": 7032,
+      "sha256": "f858a126a417fa094a83dd2949ac7e085e4a7bc8fc2557cd634beb2c4f315f67"
+    },
+    {
+      "path": "05_evaporation_sources/reports/07_safety_failure_modes_and_evidence_limits.md",
+      "size_bytes": 4578,
+      "sha256": "527ad884b2b1610805299c28ac3952d32a1978c302a775d2f6837958990fe7ee"
+    },
+    {
+      "path": "05_evaporation_sources/reviews/OPEN_ISSUES.md",
+      "size_bytes": 1872,
+      "sha256": "c14a5304c0a49bfff043f1cd83947ec008e9834bf717a17fb657d0a1543e530a"
+    },
+    {
+      "path": "05_evaporation_sources/reviews/ROUND1_ACCEPTANCE.md",
+      "size_bytes": 2696,
+      "sha256": "cc1e0a59d13512c03ffc4636c690bec4ca995ddbca243387c9bbdd1898b5ef59"
+    },
+    {
+      "path": "05_evaporation_sources/reviews/independent_source_physics_check.md",
+      "size_bytes": 16915,
+      "sha256": "d771b7005fc12413886ef1f8da2e2b0a4336f0df66403ef96f2a2f3a7dc49c22"
+    },
+    {
+      "path": "05_evaporation_sources/reviews/test_output.txt",
+      "size_bytes": 4249,
+      "sha256": "b0febaf886e2c283362e774e7f6870554ab263509541f76cd3b4b2e096f70542"
+    },
+    {
+      "path": "05_evaporation_sources/sources/RIGHTS_AND_ACCESS.md",
+      "size_bytes": 1123,
+      "sha256": "244da03ad26674a03c927fe72c80541edaef955d8827d3df53e17e56330a4631"
+    },
+    {
+      "path": "05_evaporation_sources/sources/source_registry.json",
+      "size_bytes": 24845,
+      "sha256": "394cabb08fceb8aece34f08c79c244750196ec5e4bee571aa179bf6061e8aac4"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S01.md",
+      "size_bytes": 503,
+      "sha256": "a4e5ed46a8d30b5ab856f72c38992475d70f777d4be775ac35466f1caa48e9e9"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S02.md",
+      "size_bytes": 643,
+      "sha256": "761cceed4b736bfc90c6e028147bfcc3b71da6b4619782668772008e7deb6337"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S03.md",
+      "size_bytes": 661,
+      "sha256": "c4cbb141ed6caa3044f2cb362ae272b4d141149e326e0b183c8b4d21c5812875"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S04.md",
+      "size_bytes": 639,
+      "sha256": "8f39c889d3afa0a4e8055a31e7586dbfa218c6be1f3ed88bf4eb48ff6a56aeb9"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S05.md",
+      "size_bytes": 692,
+      "sha256": "cdd958e492eb8ef63f855e3a2fd026722c5956569678263c3f777fae8ebe62fc"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S06.md",
+      "size_bytes": 638,
+      "sha256": "8429523b60e8e18b39df9cce5213403f653879f00177f543c6d2c3ad6ebc7735"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S07.md",
+      "size_bytes": 627,
+      "sha256": "f568f817815595caeda87161428d4670effce9de8f4d456cd9ec06ffdbb85bf7"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S08.md",
+      "size_bytes": 716,
+      "sha256": "9c41daaaabc03e7200590b1a3aa8f0c452540dd8a2b3c92d9648722c3f33db1e"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S09.md",
+      "size_bytes": 649,
+      "sha256": "e6d3c1f636ddf45c0f6b30f988373d5bf0948b9cd5eccbd20037629dc92eb253"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S10.md",
+      "size_bytes": 655,
+      "sha256": "8670487714539b597ebf0a0951b3214fdde9bda93a0b125266c4a44b618a1ffe"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S11.md",
+      "size_bytes": 701,
+      "sha256": "5414468cc2a9a0cc884d5d7f4317b2c0e7518569ae55662da93fe40fe6786eb9"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S12.md",
+      "size_bytes": 654,
+      "sha256": "ef5e1883b9e4da8c2c1b4bbca970230b1b4d6408dc130b1d772292ddbb266c3b"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/S13.md",
+      "size_bytes": 737,
+      "sha256": "5f61b1fefed06298ac067f7b091f7580745d8d8583fd2dfe1392186f7f5ec667"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-IR01.md",
+      "size_bytes": 660,
+      "sha256": "f03e28ada6845d2a225113c9c1bb197be0f7fe7e61cf84488306fee51ffd9731"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-IR02.md",
+      "size_bytes": 718,
+      "sha256": "4aad7eb4628795a1a5c4f6429dd16091ad7dd89a25e1662dd8765e9672046699"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-IR05.md",
+      "size_bytes": 672,
+      "sha256": "cb06335d8494e5062f6b5004e99dedc1fbe68c51418ed17257539c5686a402ac"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-IR10.md",
+      "size_bytes": 645,
+      "sha256": "c6e612d67d4660d143156be68e5b4a5d01be67aa5ea6544904a13ed37b95073d"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-IR11.md",
+      "size_bytes": 754,
+      "sha256": "d8494beebb17aa5272320bf87c24b51aefd58bcc4df65a8d750b9d10dd27752e"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-M01.md",
+      "size_bytes": 763,
+      "sha256": "283a9cb2fa89fdd89f2682eff9cb684dfbd32744bbeae25166b6201d968f6089"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-M02.md",
+      "size_bytes": 711,
+      "sha256": "07547fdb29a5deb9620c7c1fb5ceb2d7e0e50987cf91bddb22b78a74ad2def88"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-M03.md",
+      "size_bytes": 674,
+      "sha256": "f111d4467d9ce808c2b1a6b3369a6d89214a5ec171db9e309f1f3d4103910031"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-M04.md",
+      "size_bytes": 679,
+      "sha256": "37b6a1769c0f8f35d8581d567fb9ba5636a4900bed69a242ad6c4cc9c8f0d548"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-OX-01.md",
+      "size_bytes": 748,
+      "sha256": "a6ef01abf65e93c93d3e6562d89f0746b8a2ac6cc3bdb6e4351abfe169c3545e"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-OX-02.md",
+      "size_bytes": 701,
+      "sha256": "275762a4b785533b97cc10dee2783a459b3e5a5ad3c29ed4f9cf13ba9a9feaa9"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-OX-03.md",
+      "size_bytes": 738,
+      "sha256": "ca4ca28e5b8603ba15a765ed6f63b54cdec21aaa260ff6256f2d164d62f6d329"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-OX-04.md",
+      "size_bytes": 666,
+      "sha256": "68684ce791d88fea07df51e4c3f90c60132af2ecbed308b952c39e3d1c35f6e4"
+    },
+    {
+      "path": "05_evaporation_sources/sources/summaries/T04-OX-17.md",
+      "size_bytes": 767,
+      "sha256": "3c92cd2655b4f8e6a63f34f87a38aec249c2bd10dc23eda3e8f7956f0ab54fcc"
+    },
+    {
+      "path": "05_evaporation_sources/stage_status.json",
+      "size_bytes": 1205,
+      "sha256": "8fa9fe7f60cfe3e0ed9cdd70823a4ab2801e8d1c8acd5d7659f5d4f8cf8a2fcd"
+    },
+    {
+      "path": "05_evaporation_sources/tests/check_release.py",
+      "size_bytes": 3863,
+      "sha256": "5d8a7d7da4b48e52910bebe956fdc1fb35f455e45bfecf1202f372dd3b9d9832"
+    },
+    {
+      "path": "05_evaporation_sources/tests/test_source_reference.py",
+      "size_bytes": 10039,
+      "sha256": "31ea61d5d2f18480df913f8ce29aeb149f1b6a43c4d34b7b96e82471e43e954d"
     },
     {
       "path": "06_optical_coating_families/README.md",
@@ -1390,33 +1745,34 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 3093,
-      "sha256": "5bbf2a90297b6d1234a85546a4d6aa1f03941b2fb9077e27ab690b87756ac0a1"
+      "size_bytes": 3842,
+      "sha256": "8a03bc03ee1173980cc0ddf0e92fa7dcea8ed4609963fbfa492b40815a899367"
     },
     {
       "path": "README.md",
-      "size_bytes": 4938,
-      "sha256": "cb7e86d6aa818cab299ec04d707214ebf9c7d30a8b54ba5bb8ca9f3e850bf721"
+      "size_bytes": 4876,
+      "sha256": "87247bc9a7c581a2578014dfebb946589a4a987ff4d6cf0cc95e7f62fea135ae"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 5064,
-      "sha256": "397452d2fcc963c24d3ca031a5497c2309d71aa38b5b8a2f51a052010539dafc"
+      "size_bytes": 4929,
+      "sha256": "2fbe5ee53d02e4caffa9ca28bebbee3d8764c2589ef1c565a7068276ce45ac40"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 2847,
-      "sha256": "dcb751b8907a18985679060e36ea25aff837b78552f64a27b0d7311b5fcb6657"
+      "size_bytes": 2908,
+      "sha256": "54202f18ffac220f155007b0998ecf796d2fbe2373786e4f6b7c5175f52683e6"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 2104,
-      "sha256": "186cf706ff7ea213e2dc714d5157fd224dc4ed309d3f1daa6e45213bbe916913"
+      "size_bytes": 1994,
+      "sha256": "b292dd32b5c09fe4bddf4e0b64c0f12a228209fe0e282051b663b92a9b312cc3"
     }
   ],
   "source_T02_zip_sha256": "684b63f228b31a2ba882b08f60cbc1e7a13173283d0e79b03fa4fc861d3c344b",
   "source_T02_content_id": "db16fe512e848532c5e2b00c3fc8d5ec3469d6a7764e5872840f98eff69ba1a2",
   "source_T03_zip_sha256": "36b2759639d2d7f519304c5bf77ebc6a38de44c572f78bfa6fa02f4a24debe73",
   "source_T03_content_id": "64f7ea5beaa18ef916b28ee20aff5f0abee6826698ac365b752ba0e561cd46cd",
-  "source_T04_freeze_manifest_sha256": "c85960d3b9703426a6fa7f2fe75d1f0ed699c267702df3eb1e2566865fd907f4"
+  "source_T04_freeze_manifest_sha256": "c85960d3b9703426a6fa7f2fe75d1f0ed699c267702df3eb1e2566865fd907f4",
+  "source_T05_release_manifest_sha256": "fc54cef8e0f0f4f16ebc73dbbb7b4e39c69580af1bc2dd68b9c4c3a1a556fb26"
 }

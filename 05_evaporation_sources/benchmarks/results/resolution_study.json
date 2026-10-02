@@ -1,0 +1,94 @@
+{
+  "kind": "synthetic discretization only",
+  "disk_reference": [
+    256,
+    256
+  ],
+  "disk": [
+    {
+      "nr": 16,
+      "nphi": 32,
+      "max_relative_percent_on_positive_nodes": 0.008549769070420599,
+      "max_absolute_error_over_reference_peak_percent": 0.008549769070423704
+    },
+    {
+      "nr": 32,
+      "nphi": 64,
+      "max_relative_percent_on_positive_nodes": 0.0021125520439868595,
+      "max_absolute_error_over_reference_peak_percent": 0.002112552043984846
+    },
+    {
+      "nr": 64,
+      "nphi": 128,
+      "max_relative_percent_on_positive_nodes": 0.0005030038333520004,
+      "max_absolute_error_over_reference_peak_percent": 0.0005030038333475912
+    },
+    {
+      "nr": 128,
+      "nphi": 256,
+      "max_relative_percent_on_positive_nodes": 0.0001006015293070206,
+      "max_absolute_error_over_reference_peak_percent": 0.00010060152930906235
+    }
+  ],
+  "boat_reference": [
+    384,
+    64
+  ],
+  "boat": [
+    {
+      "nx": 24,
+      "ny": 4,
+      "max_relative_percent_on_positive_nodes": 0.03156358484706079,
+      "max_absolute_error_over_reference_peak_percent": 0.03156358484706047
+    },
+    {
+      "nx": 48,
+      "ny": 8,
+      "max_relative_percent_on_positive_nodes": 0.007794907663671857,
+      "max_absolute_error_over_reference_peak_percent": 0.007794907663675595
+    },
+    {
+      "nx": 96,
+      "ny": 16,
+      "max_relative_percent_on_positive_nodes": 0.0018557427763798984,
+      "max_absolute_error_over_reference_peak_percent": 0.0018557427763814809
+    },
+    {
+      "nx": 192,
+      "ny": 32,
+      "max_relative_percent_on_positive_nodes": 0.0003711391761251903,
+      "max_absolute_error_over_reference_peak_percent": 0.0003711391761181487
+    }
+  ],
+  "aperture_reference": [
+    320,
+    640
+  ],
+  "aperture": [
+    {
+      "nr": 20,
+      "nphi": 80,
+      "max_relative_percent_on_positive_nodes": 0.3103736124790535,
+      "max_absolute_error_over_reference_peak_percent": 0.06723422686306713
+    },
+    {
+      "nr": 40,
+      "nphi": 160,
+      "max_relative_percent_on_positive_nodes": 0.7113321426999275,
+      "max_absolute_error_over_reference_peak_percent": 0.0520347147047065
+    },
+    {
+      "nr": 80,
+      "nphi": 320,
+      "max_relative_percent_on_positive_nodes": 0.07825482434274944,
+      "max_absolute_error_over_reference_peak_percent": 0.01695183611443476
+    },
+    {
+      "nr": 160,
+      "nphi": 640,
+      "max_relative_percent_on_positive_nodes": 0.04984567556309827,
+      "max_absolute_error_over_reference_peak_percent": 0.006722015805747685
+    }
+  ],
+  "limitations": "Reference is finer numerical quadrature, not exact truth. Discontinuous aperture convergence need not be monotone; main counterexamples use no aperture."
+}

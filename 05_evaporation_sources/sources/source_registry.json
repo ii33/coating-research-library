@@ -1,0 +1,505 @@
+[
+  {
+    "source_id": "S01",
+    "title": "KJLC Boat Sources",
+    "url": "https://www.lesker.com/evaporation-sources.cfm?section=boat-sources",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "full_html",
+    "locator": "Boat types; source selection",
+    "claims": "盖舟、凹坑、缺口与几何热区选择",
+    "limitations": "不是舟材相容性和污染寿命保证",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S01.md"
+  },
+  {
+    "source_id": "S02",
+    "title": "KJLC Evaporation Sources Technical Notes",
+    "url": "https://www.lesker.com/newweb/evaporation_sources/evaporation_technicalnotes_1.cfm?pgid=0",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "full_html",
+    "locator": "Direct/Indirect Resistive Heating; Knudsen Cells; E-Beam Sources",
+    "claims": "直接/间接热源、接触/反应、孔口与源几何概念",
+    "limitations": "概览的材料概括不能替代材料专页；相变处蒸气压斜率不必连续",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S02.md"
+  },
+  {
+    "source_id": "S03",
+    "title": "INFICON SQM-160 Operating Manual 074-511-P1-G",
+    "url": "https://www.inficon.com/media/4271/download/SQM-160-Multi-Film-Rate---Thickness-Monitor-Operating-Manual-(English).pdf?language=de&v=4",
+    "source_type": "manufacturer_manual",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "relevant_pdf_sections",
+    "locator": "§9.1 pp85–89; §10 pp92–95; §11 pp96–100",
+    "claims": "晶控密度、Z比、tooling与温度/应力干扰须分开",
+    "limitations": "2026版特定仪器；不将显示精度解释为绝对精度",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S03.md"
+  },
+  {
+    "source_id": "S04",
+    "title": "INFICON SQC-310 Operating Manual 074-550-P1-H",
+    "url": "https://www.inficon.com/media/11922/download/SQC-310-Operating-Manual-.pdf?inline=true&language=de&v=2",
+    "source_type": "manufacturer_manual",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "relevant_pdf_sections",
+    "locator": "§6.1.2 p41; §10.5–10.6 pp139–144",
+    "claims": "预处理/沉积/后处理，快慢响应，源料位/扫束影响控制",
+    "limitations": "不同PID实现定义不能直接互换；本文不复制调机参数",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S04.md"
+  },
+  {
+    "source_id": "S05",
+    "title": "Temescal 2PT and 3PT PopTop Electron Beam Turret Sources User Manual Rev B March 2021",
+    "url": "https://e-beam.ferrotec.com/wp-content/uploads/sites/7/Temescal-2PT-3PT-Source-Manual-RevB.pdf",
+    "source_type": "manufacturer_manual",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "relevant_pdf_sections",
+    "locator": "front matter p x; §1.2; §2.5.1 p2-26; §4.2; §6.4–6.5 pp6-4–6-6",
+    "claims": "束位置/形状/浓度、冷却和联锁、边缘截获与源故障",
+    "limitations": "型号专属；不复制接线/拆卸/联锁数值到通用SOP",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S05.md"
+  },
+  {
+    "source_id": "S06",
+    "title": "R B Darling Physical Vapor Deposition lecture notes",
+    "url": "https://mmrc.caltech.edu/PVD/manuals/PhysicalVaporDeposition.pdf",
+    "source_type": "university_teaching_notes",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "relevant_pdf_sections_by_independent_helper",
+    "locator": "pp7,9–13,38",
+    "claims": "源发射与接收投影区分；小孔理想角律；温度与挡板响应不同",
+    "limitations": "辅助教学来源，不是原始实验；Langmuir/Knudsen标签须服从所定义几何",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S06.md"
+  },
+  {
+    "source_id": "S07",
+    "title": "Holland and Steckelmacher 1952 Distribution of thin films condensed on surfaces by vacuum evaporation",
+    "url": "https://www.sciencedirect.com/science/article/pii/0042207X52937846",
+    "source_type": "primary_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "publisher_abstract",
+    "locator": "Vacuum 2(4) 346–364; DOI 10.1016/0042-207X(52)93784-6",
+    "claims": "点、带、丝、环源与ZnS/MgF2/Al实验场景",
+    "limitations": "未读全文，不恢复正文公式或拟合系数",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S07.md"
+  },
+  {
+    "source_id": "S08",
+    "title": "Thakur et al 2004 Spatial distribution function for vapour flow and its validation for a two-dimensional strip electron beam source",
+    "url": "https://doi.org/10.1016/j.vacuum.2004.03.009",
+    "source_type": "primary_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "publisher_abstract_by_independent_helper",
+    "locator": "Vacuum 75(3) 283–292; abstract",
+    "claims": "带状Cu电子束源沿/跨方向束化不同且随温度变化",
+    "limitations": "摘要中±5%拟合和局部Kn范围不转为本机精度或门槛；本代理DOI直开失败，保留helper验证范围",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S08.md"
+  },
+  {
+    "source_id": "S09",
+    "title": "Carson Wierum Rudee 1970 Departure from Free Molecular Flow During Boat Evaporation of Permalloy",
+    "url": "https://doi.org/10.1116/1.1315855",
+    "source_type": "primary_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "publisher_abstract_by_independent_helper",
+    "locator": "JVST 7(2) 347–350; abstract",
+    "claims": "电阻W舟NiFe高率下偏离自由分子余弦，并有角向组成差别",
+    "limitations": "NiFe不是十二种纯料之一；仅作自由分子失效反例；本代理DOI直开失败",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S09.md"
+  },
+  {
+    "source_id": "S10",
+    "title": "Wang et al 2010 Experimental study of sweep control in e-beam evaporated optical coatings",
+    "url": "https://opg.optica.org/col/abstract.cfm?uri=col-8-6-621",
+    "source_type": "primary_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "publisher_abstract_and_first_pdf_page_by_helper",
+    "locator": "Chinese Optics Letters 8(6) 621–623",
+    "claims": "Ti3O5/SiO2/HfO2源深度、热导、扫束驻留与稳定性",
+    "limitations": "未逐页核验全部全文，不发布扫束参数；源Ti3O5不可直接叫TiO2",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S10.md"
+  },
+  {
+    "source_id": "S11",
+    "title": "Powell Minson Trapaga Pal 2001 Mathematical modeling of vapor-plume focusing in electron-beam evaporation",
+    "url": "https://doi.org/10.1007/s11661-001-0008-y",
+    "source_type": "primary_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "author_uploaded_manuscript_by_helper",
+    "locator": "Metallurgical and Materials Transactions A 32 1959–1966; §§II–III,V–VI",
+    "claims": "Ti源蒙特卡罗碰撞束化；活跃尺寸、强度和回凝影响分布",
+    "limitations": "非均温扫束与背景气未包含；作者上传不等于开放再分发许可",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S11.md"
+  },
+  {
+    "source_id": "S12",
+    "title": "Zehe Ramirez Muller 2001 Thermal response of a Knudsen-type effusion source to sudden heating-power changes",
+    "url": "https://www.redalyc.org/pdf/942/94201319.pdf",
+    "source_type": "primary_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "relevant_open_pdf_sections_by_helper",
+    "locator": "Superficies y Vacio 13 72–76; §2.3 around p73",
+    "claims": "热容、有限导热与延迟响应的物理证据",
+    "limitations": "MBE间接热源，不能移植时间常数到本机舟/枪；未核再分发许可",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "仅原创摘要和链接；未核明确全文再分发许可"
+    },
+    "summary_path": "sources/summaries/S12.md"
+  },
+  {
+    "source_id": "S13",
+    "title": "Zhang and Cai 2013 Uniformity Masks Design Method Based on the Shadow Matrix for Coating Materials with Different Condensation Characteristics",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3817662/",
+    "source_type": "primary_open_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "full_html",
+    "locator": "§2 Eq1; §3 results; copyright statement",
+    "claims": "经验发射/凝结指数与材料/几何绑定；修正板需保留材料响应",
+    "limitations": "不把总接收指数当额外凝结概率；曲面实测结果不代表本机",
+    "original_path": "sources/originals/S13_Zhang_Cai_2013_PMC.html",
+    "rights": {
+      "archive_allowed": true,
+      "redistribution_allowed": true,
+      "license": "Creative Commons Attribution; version not specified in page statement",
+      "basis": "PMC full article copyright statement read 2026-10-02; credit L Zhang and X Cai 2013 DOI 10.1155/2013/160792",
+      "distribution_policy": "Local archive retained, omitted from reader/public packages by project convention"
+    },
+    "summary_path": "sources/summaries/S13.md",
+    "original_sha256": "76d3753a43938ba0e77c0bb50bea80ed18ba3e88947e2e73ab36b1e7b41ac0f6"
+  },
+  {
+    "source_id": "T04-OX-01",
+    "title": "Kurt J. Lesker — Tantalum Pentoxide Evaporation Process Notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=ta4",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Specifications; Thermal/E-beam Evaporation",
+    "claims": "Ta2O5 商品参考块材密度、电子束优先、坩埚与供氧经验窗口",
+    "limitations": "厂商经验未给样本数和误差，不是设备无关配方；“退火消除吸收”不能作为所有膜的保证",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-OX-01.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/oxide_sources.json"
+  },
+  {
+    "source_id": "T04-OX-02",
+    "title": "Kurt J. Lesker — Titanium Dioxide Evaporation Process Notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=ti4w",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Specifications; Thermal/E-beam Evaporation",
+    "claims": "TiO2 蒸发放氧、黑化、阻蒸及电子束容器候选",
+    "limitations": "黑色源料不等于不合格；表内物性相态条件不完整，不能代替膜层表征",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-OX-02.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/oxide_sources.json"
+  },
+  {
+    "source_id": "T04-OX-03",
+    "title": "Kurt J. Lesker — Silicon Dioxide Evaporation Process Notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=si2",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Specifications; Thermal/E-beam Evaporation; Z-Factors",
+    "claims": "SiO2 源料密度、电子束和阻蒸可行性、Z-ratio 1 为未知时的默认",
+    "limitations": "n 范围未给波长；源温与挡板温度分开；不要将约2.65 g/cm3直接用于非晶薄膜",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-OX-03.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/oxide_sources.json"
+  },
+  {
+    "source_id": "T04-OX-04",
+    "title": "Kurt J. Lesker — Aluminum Oxide Evaporation Process Notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=al6",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Specifications; Thermal/E-beam Evaporation",
+    "claims": "Al2O3 源物性、阻蒸困难、电子束容器及供氧窗口",
+    "limitations": "厂商估计速率不含设备几何和测温不确定度",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-OX-04.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/oxide_sources.json"
+  },
+  {
+    "source_id": "T04-OX-17",
+    "title": "EMD Electronics — Substances H4 and H4 HD Patinal Product Information, issue 12/2021",
+    "url": "https://www.emdgroup.com/Products/PM/us/SUB_H4_H4HD_EMD_2022.pdf",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "pages 1–6, especially p2 n/k and p4 evaporation",
+    "claims": "有条件H4 n/k、H4与HD堆装差异、Mo优先/阻蒸可行、源温/氧分压和IAD设备窗口",
+    "limitations": "文件名2022但内页12/2021；IAD mA/V为源设定不是基片能量；5.9 g/cm3为QCR设定，非实测膜密度",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-OX-17.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/oxide_sources.json"
+  },
+  {
+    "source_id": "T04-IR01",
+    "title": "Merck/EMD Zinc Sulfide Patinal Product Information",
+    "url": "https://www.emdgroup.com/Products/PM/us/ZnS_tcm2080-us.pdf",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "p1–3",
+    "claims": "ZnS膜光学色散、应力、源材货号及阻蒸/电子束工艺建议",
+    "limitations": "源温2000–2200°C与其他来源温度定义不一致；不作设备设定。n/k完整测试工况、误差未列。",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-IR01.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/ir_sources.json"
+  },
+  {
+    "source_id": "T04-IR02",
+    "title": "Umicore ZnS 99.99% 4.0–8.0 mm, 0481699",
+    "url": "https://mds.umicore.com/en/thin-film-products/products/evaporation-materials/zns-99-99-4-0-8-0mm-500g-0481699",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Specifications; evaporation source; film optical constants",
+    "claims": "ZnS源料物性、Mo衬套/Mo-Ta舟、基片温度类别和部分薄膜数据",
+    "limitations": "550 nm k=3.85与透明用途矛盾，隔离不采纳；10 µm n与Merck不同。",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-IR02.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/ir_sources.json"
+  },
+  {
+    "source_id": "T04-IR05",
+    "title": "Merck/EMD Ytterbium Fluoride Patinal Product Information",
+    "url": "https://www.emdgroup.com/Products/PM/us/101601_YbF3_tcm2080_127462-us.pdf",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "p1–3",
+    "claims": "YbF3膜n/k表、低拉应力、舟/衬套、蒸发及基片温度",
+    "limitations": "典型范围200–12 µm首项单位错误/歧义；以其他原厂200 nm起端核对。实验误差、膜厚未给。",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-IR05.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/ir_sources.json"
+  },
+  {
+    "source_id": "T04-IR10",
+    "title": "Merck/EMD Magnesium Fluoride Patinal Product Information",
+    "url": "https://www.emdgroup.com/Products/PM/us/MgF2_EMD_2022.pdf",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "p1–4",
+    "claims": "MgF2薄膜n/k、packing density、膜厚/应力适用边界、蒸发范围及低氧料",
+    "limitations": "文件名2022而正文2023，以正文为准。W舟/源温与KJLC不能直接合并。",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-IR10.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/ir_sources.json"
+  },
+  {
+    "source_id": "T04-IR11",
+    "title": "Kurt J. Lesker Magnesium Fluoride MgF2 Evaporation Process Notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=mg2",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Specifications; thermal/e-beam evaporation",
+    "claims": "Mo/Ta舟、衬套选择、W反应警告、源温与压力示例、低功率扫束风险",
+    "limitations": "是供应商特定设备经验，不是跨设备保证；未将填料比例或枪功率扩展为用户机台处方。",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-IR11.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/ir_sources.json"
+  },
+  {
+    "source_id": "T04-M01",
+    "title": "KJLC Germanium pieces and evaporation notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/depositionmaterials_evaporationmaterials_1.cfm?pgid=ge1",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Thermal/E-beam Evaporation sections",
+    "claims": "块料 Ge；5.32/5.35 g/cm³ 页面内冲突；Sb 掺杂 n 型 5–40 Ω·cm；源相态、舟材及石墨衬里热循环风险。",
+    "limitations": "产品页无误差和多数测温条件；不等于沉积膜密度、折射率或生产配方。",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-M01.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/metal_sources.json"
+  },
+  {
+    "source_id": "T04-M02",
+    "title": "KJLC Copper evaporation notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=cu1",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Thermal/E-beam Evaporation sections",
+    "claims": "Cu 块材参数；W/Mo 热蒸发舟、Al2O3 间接加热坩埚；石墨/Mo 电子束衬里。",
+    "limitations": "厂商设备经验；“excellent”是定性设备适用性，不能解释为镀层反射率或寿命保证。",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-M02.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/metal_sources.json"
+  },
+  {
+    "source_id": "T04-M03",
+    "title": "KJLC Chromium evaporation notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=cr1",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Thermal/E-beam Evaporation sections",
+    "claims": "Cr 升华型工作情形；镀 Cr 钨棒及 W 舟；电子束石墨/FABMATE/W。",
+    "limitations": "网页某些通用熔池文字与 Cr 升华讨论并存，应按实际相态建模。",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-M03.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/metal_sources.json"
+  },
+  {
+    "source_id": "T04-M04",
+    "title": "KJLC Aluminum evaporation notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=al1",
+    "source_type": "manufacturer_technical",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "T04_qualified_evidence_import; T05 direct page recheck except IR02",
+    "locator": "Thermal/E-beam Evaporation sections",
+    "claims": "Al 与难熔金属合金化、TiB2-BN 衬里选择、石墨体系碳污染风险。",
+    "limitations": "相容性不是永久免维护保证；填装、功率和次数不能跨设备移植。",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "保留T04权利边界；本轮不存原厂全文"
+    },
+    "summary_path": "sources/summaries/T04-M04.md",
+    "upstream_registry": "../04_coating_and_substrate_materials/data/metal_sources.json"
+  }
+]

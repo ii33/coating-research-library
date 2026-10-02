@@ -1,0 +1,80 @@
+{
+  "status": "unfilled_real_measurement_template_not_model_input",
+  "machine_id": null,
+  "source_id": null,
+  "source_type": null,
+  "material": {
+    "source_material": null,
+    "film_target": null,
+    "supplier": null,
+    "product_code": null,
+    "lot": null,
+    "COA": null,
+    "SDS_version": null
+  },
+  "container": {
+    "model": null,
+    "material": null,
+    "dimensions_m": null,
+    "cycles": null
+  },
+  "source_state": {
+    "mass_before_kg": null,
+    "mass_after_kg": null,
+    "fill_level_m": null,
+    "image_reference": null,
+    "surface_phase": null,
+    "temperature_method": null,
+    "temperature_K": null
+  },
+  "geometry": {
+    "frame_definition": null,
+    "source_nodes_m": null,
+    "sensor_positions_m": null,
+    "sensor_normals": null,
+    "mask_reference": null
+  },
+  "qcm": {
+    "model_firmware": null,
+    "density_kg_m3": null,
+    "z_ratio": null,
+    "tooling_percent": null,
+    "raw_frequency_Hz_log": null,
+    "sampling_period_s": null,
+    "filter": null,
+    "shutter_sync": null,
+    "cooling_status_log": null
+  },
+  "process_logs": {
+    "time_unit": "s",
+    "actual_power_W": null,
+    "beam_voltage_V": null,
+    "beam_current_A": null,
+    "sweep_state": null,
+    "chamber_pressure_Pa": null,
+    "gauge_location": null,
+    "gas_species": null,
+    "shutter": null
+  },
+  "witness_measurements": [],
+  "split": {
+    "fit_runs": [],
+    "heldout_runs": [],
+    "heldout_angles_or_azimuths": []
+  },
+  "acceptance": {
+    "absolute_thickness_error_m": null,
+    "uniformity_definition": null,
+    "uniformity_limit": null,
+    "optical_band_m": null,
+    "absorption_limit": null,
+    "machine_or_process_approved": false
+  },
+  "uncertainty": {
+    "geometry": null,
+    "density": null,
+    "measurement_covariance": null,
+    "state_variation": null
+  },
+  "warning": "Unknowns are null. This does not authorize an experiment or machine settings."
+}

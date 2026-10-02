@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "T05 source snapshot SI contract",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "state_id",
+    "evidence_type",
+    "mass_rate_definition",
+    "mass_rate_kg_s",
+    "source",
+    "validity"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "T05-source-snapshot-1"
+    },
+    "state_id": {
+      "type": "string"
+    },
+    "evidence_type": {
+      "enum": [
+        "synthetic",
+        "measured",
+        "fitted",
+        "literature_conditioned"
+      ]
+    },
+    "mass_rate_definition": {
+      "const": "intrinsic_hemispherical_pre_aperture"
+    },
+    "mass_rate_kg_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "length_unit": {
+      "const": "m"
+    },
+    "mass_rate_unit": {
+      "const": "kg/s"
+    },
+    "time_s": {
+      "type": "number"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "nodes_m",
+        "normals",
+        "fractions",
+        "exponent"
+      ],
+      "properties": {
+        "nodes_m": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "normals": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "fractions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "exponent": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "validity": {
+      "type": "object"
+    }
+  },
+  "$comment": "Additional physical invariants require code: equal array lengths, unit normals, fractions sum1, finite numbers. Q after aperture needs a different model contract; do not relabel it here."
+}

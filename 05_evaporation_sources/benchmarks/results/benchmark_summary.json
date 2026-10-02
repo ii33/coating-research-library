@@ -1,0 +1,274 @@
+{
+  "kind": "synthetic only",
+  "seed": 20261002,
+  "point_fit": {
+    "truth_Q_kg_s": 4e-06,
+    "truth_n": 2.5,
+    "fit": {
+      "mass_rate_kg_s": 3.979163498773085e-06,
+      "exponent": 2.5198096058268113,
+      "chi2": 4.158173075335711,
+      "degrees_of_freedom": 6,
+      "df_note": "interior fixed-geometry two-parameter fit",
+      "covariance_logQ_n": [
+        [
+          0.00010177536597996516,
+          -0.0004463308376128055
+        ],
+        [
+          -0.00044633083761280555,
+          0.0022314242503229257
+        ]
+      ],
+      "scaled_design_condition": 13.45590626322714,
+      "boundary_fit": false
+    },
+    "heldout": {
+      "rms_relative_percent": 0.9437003542576518,
+      "max_absolute_relative_percent": 1.3221598647852884
+    },
+    "training_angles_deg": [
+      -35.0,
+      -25.0,
+      -15.0,
+      -5.0,
+      5.0,
+      15.0,
+      25.0,
+      35.0
+    ],
+    "heldout_angles_deg": [
+      -60.0,
+      -50.0,
+      -40.0,
+      40.0,
+      50.0,
+      60.0
+    ]
+  },
+  "conditional_noise_ensemble": {
+    "replicates": 400,
+    "std_logQ_n": [
+      0.010318901185785635,
+      0.04671120719871514
+    ],
+    "marginal_95pct_coverage_logQ_n": [
+      0.9525,
+      0.955
+    ],
+    "excludes": [
+      "geometry error",
+      "model discrepancy",
+      "density",
+      "sticking",
+      "correlated sensor drift"
+    ]
+  },
+  "misspecified_point_for_disk": {
+    "disk_radius_m": 0.1,
+    "height_m": 0.2,
+    "true_n": 2.5,
+    "fit": {
+      "mass_rate_kg_s": 7.96368673472981e-06,
+      "exponent": 0.299273759377196,
+      "chi2": 0.002379150216968399,
+      "degrees_of_freedom": 7,
+      "df_note": "interior fixed-geometry two-parameter fit",
+      "covariance_logQ_n": [
+        [
+          0.09843687870200259,
+          -0.12942713315020635
+        ],
+        [
+          -0.12942713315020635,
+          0.1701930622995868
+        ]
+      ],
+      "scaled_design_condition": 123.77383495241709,
+      "boundary_fit": false
+    },
+    "training": {
+      "rms_relative_percent": 0.016258466257885615,
+      "max_absolute_relative_percent": 0.02295062746097143
+    },
+    "heldout": {
+      "rms_relative_percent": 117.70964136360627,
+      "max_absolute_relative_percent": 191.30211653879695
+    },
+    "training_angles_deg": [
+      -12.0,
+      -9.0,
+      -6.0,
+      -3.0,
+      0.0,
+      3.0,
+      6.0,
+      9.0,
+      12.0
+    ],
+    "heldout_angles_deg": [
+      -60.0,
+      -50.0,
+      -40.0,
+      40.0,
+      50.0,
+      60.0
+    ]
+  },
+  "withheld_azimuth_boat": {
+    "dimensions_m": [
+      0.16,
+      0.025
+    ],
+    "height_m": 0.2,
+    "fit": {
+      "mass_rate_kg_s": 5.825142114007069e-06,
+      "exponent": 0.5488154107967138,
+      "chi2": 9.909527851147052,
+      "degrees_of_freedom": 13,
+      "df_note": "interior fixed-geometry two-parameter fit",
+      "covariance_logQ_n": [
+        [
+          0.00048645526252206014,
+          -0.0008398257636732613
+        ],
+        [
+          -0.0008398257636732613,
+          0.0014700376778900215
+        ]
+      ],
+      "scaled_design_condition": 14.931911806270367,
+      "boundary_fit": false
+    },
+    "training_x_plane": {
+      "rms_relative_percent": 0.8133119559931576,
+      "max_absolute_relative_percent": 1.2153367937063786
+    },
+    "heldout_y_plane": {
+      "rms_relative_percent": 8.790532923746731,
+      "max_absolute_relative_percent": 17.411809153377476
+    }
+  },
+  "geometry_sensitivity": [
+    {
+      "source_height_offset_m": -0.002,
+      "fit_Q_relative_bias_percent": 0.24693740386307894,
+      "fit_n_bias": -0.03576758931358315
+    },
+    {
+      "source_height_offset_m": 0,
+      "fit_Q_relative_bias_percent": 2.4424906541753444e-13,
+      "fit_n_bias": -1.7763568394002505e-14
+    },
+    {
+      "source_height_offset_m": 0.002,
+      "fit_Q_relative_bias_percent": -0.24248389515367785,
+      "fit_n_bias": 0.03609887622733954
+    }
+  ],
+  "identifiability": {
+    "wide": {
+      "angles_deg": [
+        -35.0,
+        -25.0,
+        -15.0,
+        -5.0,
+        5.0,
+        15.0,
+        25.0,
+        35.0
+      ],
+      "condition": 13.45590626322714,
+      "standard_errors_logQ_n": [
+        0.010159554332733294,
+        0.04723795349422883
+      ]
+    },
+    "narrow": {
+      "angles_deg": [
+        -3.0,
+        -2.142857142857143,
+        -1.2857142857142858,
+        -0.4285714285714288,
+        0.4285714285714284,
+        1.2857142857142856,
+        2.1428571428571423,
+        3.0
+      ],
+      "condition": 1949.180775127477,
+      "standard_errors_logQ_n": [
+        1.9649224920911568,
+        6.891392339195788
+      ]
+    },
+    "axis_only": {
+      "rejected": true,
+      "reason": "Q,n not identifiable from this angular layout"
+    }
+  },
+  "constant_qcm_shape_drift": {
+    "angles_deg": [
+      0.0,
+      15.0,
+      30.0,
+      45.0,
+      60.0
+    ],
+    "new_over_old": [
+      1.0,
+      0.9330127018922194,
+      0.7500000000000001,
+      0.5,
+      0.2500000000000001
+    ],
+    "Q_old_kg_s": 4e-06,
+    "Q_new_kg_s": 2e-06,
+    "n_old": 1,
+    "n_new": 3
+  },
+  "correlated_sweep_and_rate": {
+    "independent_average": {
+      "rms_relative_percent": 5.6803585903117275,
+      "max_absolute_relative_percent": 9.30580552329776
+    },
+    "mass_weighted_average": {
+      "rms_relative_percent": 4.8028260510635946e-14,
+      "max_absolute_relative_percent": 8.881784197001252e-14
+    },
+    "mask_absolute_error_over_peak_percent": 17.23899003383966,
+    "note": "Static receiver and mask only; mass-weighted footprint identity need not hold with moving geometry."
+  },
+  "recession": {
+    "aperture_radius_m": 0.025,
+    "emitting_disk_radius_m": 0.02,
+    "model": "absorbing zero-thickness rim; same intrinsic Q; real hot walls may re-emit"
+  },
+  "thermal_history": {
+    "parameters": {
+      "initial_temperature_K": 900.0,
+      "bath_temperature_K": 300.0,
+      "effective_heat_capacity_J_K": 8.0,
+      "conductance_W_K": 0.04,
+      "emissivity": 0.4,
+      "radiating_area_m2": 0.0004,
+      "evaporating_area_m2": 0.0001,
+      "latent_heat_J_kg": 2000000.0,
+      "initial_mass_kg": 0.02,
+      "molar_mass_kg_mol": 0.05,
+      "T_ref_K": 1200.0,
+      "p_ref_Pa": 2.0,
+      "delta_H_J_mol": 100000.0,
+      "alpha": 0.7,
+      "absorbed_fraction": 0.8,
+      "valid_T_min_K": 250.0,
+      "valid_T_max_K": 2000.0
+    },
+    "dt_s": 0.1,
+    "max_temperature_K": 1600.8144191103381,
+    "evaporated_mass_kg": 0.00012805345843667354,
+    "mass_balance_absolute_error_kg": 2.350008208862331e-17,
+    "max_discrete_energy_residual_J": 9.094947017729282e-13,
+    "coarse_fine_max_temperature_difference_K": 0.11573198743121793,
+    "coarse_fine_evaporated_mass_relative_difference": 0.00022667597474446133
+  }
+}

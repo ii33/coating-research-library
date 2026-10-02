@@ -1,0 +1,22 @@
+{
+  "stage_id": "T05",
+  "version": "0.1",
+  "frozen_at_utc": "2026-10-02",
+  "algorithmic": true,
+  "priority_scope": ["resistance evaporation", "electron beam evaporation"],
+  "research_delivery": "priority_scope_frozen",
+  "formal_status": "awaiting_seed",
+  "source_count": 27,
+  "qualified_material_records": 12,
+  "report_chapters": 7,
+  "original_figures": 3,
+  "numerical_verification": {"tests_passed": 51, "tests_total": 51, "synthetic_benchmarks": "pass", "source_area_refinement": "pass_with_nonmonotone_aperture_limit"},
+  "machine_validation": "not_run",
+  "deepseek_self_review": {"result": "pending", "reason": "specified model not run"},
+  "seed_review": {"result": "pending", "reason": "specified model not available in current worker catalog"},
+  "sol_algorithm_review": {"result": "pending", "reason": "full prescribed sequential stage review not run"},
+  "actual_narrow_review": {"reviewer": "GPT-6 Luna xhigh", "result": "checked_fixes_retested", "evidence": "reviews/independent_source_physics_check.md", "not_a_formal_stage_signoff": true},
+  "next_topic": "T06 optical coating families",
+  "open_issues": "reviews/OPEN_ISSUES.md",
+  "delivery_manifest": "release_manifest.json"
+}

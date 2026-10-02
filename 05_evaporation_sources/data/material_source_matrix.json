@@ -1,0 +1,260 @@
+[
+  {
+    "material": "Ta2O5",
+    "t04_card": "../04_coating_and_substrate_materials/cards/01_Ta2O5_film.md",
+    "resistance_candidate": "Ta舟候选，阻蒸优先级低",
+    "electron_beam_candidate": "FABMATE或Ta衬里候选",
+    "phase_chemistry_boundary": "可能放氧/还原，蒸气物种待测",
+    "risk": "热点与放氧；q和化学计量一起漂移",
+    "minimum_observations": [
+      "O/Ta",
+      "k",
+      "Q/q",
+      "料位",
+      "预处理历史"
+    ],
+    "source_ids": [
+      "T04-OX-01"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "ZnS",
+    "t04_card": "../04_coating_and_substrate_materials/cards/02_ZnS_film.md",
+    "resistance_candidate": "Mo/Ta/Pt舟；按牌号选",
+    "electron_beam_candidate": "Mo/Ta/玻璃碳等原厂分类，核装置",
+    "phase_chemistry_boundary": "可能解离，凝结重组不可保证完全",
+    "risk": "组分比例、源温定义冲突与残气",
+    "minimum_observations": [
+      "S/Zn",
+      "k",
+      "源质量",
+      "源相态",
+      "RGA"
+    ],
+    "source_ids": [
+      "T04-IR01",
+      "T04-IR02"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "TiO2",
+    "t04_card": "../04_coating_and_substrate_materials/cards/03_TiO2_film.md",
+    "resistance_candidate": "W/Mo舟候选",
+    "electron_beam_candidate": "FABMATE/Ta候选，注意Ta还原提示",
+    "phase_chemistry_boundary": "白料也可放氧变黑，多氧化态",
+    "risk": "黑色不是统一报废判据；组分和热史",
+    "minimum_observations": [
+      "原始氧化态",
+      "O/Ti",
+      "放气",
+      "Q/q"
+    ],
+    "source_ids": [
+      "T04-OX-02"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "YbF3",
+    "t04_card": "../04_coating_and_substrate_materials/cards/04_YbF3_film.md",
+    "resistance_candidate": "Mo/Ta舟候选",
+    "electron_beam_candidate": "Mo衬里候选",
+    "phase_chemistry_boundary": "局部过热可解离，不能混同YF3",
+    "risk": "局部能量密度、失氟、潮气与污染",
+    "minimum_observations": [
+      "F/Yb",
+      "k",
+      "源面状态",
+      "到达角"
+    ],
+    "source_ids": [
+      "T04-IR05"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "SiO2",
+    "t04_card": "../04_coating_and_substrate_materials/cards/05_SiO2_film.md",
+    "resistance_candidate": "W舟/Ta挡板盒为困难且需另验路线",
+    "electron_beam_candidate": "FABMATE/石墨/Ta，或原厂允许铜炉床",
+    "phase_chemistry_boundary": "SiO反应蒸发与SiO2源必须区分",
+    "risk": "钻孔、容器反应、黑化、缺氧/OH",
+    "minimum_observations": [
+      "源料身份",
+      "O/Si",
+      "OH",
+      "孔隙",
+      "q"
+    ],
+    "source_ids": [
+      "T04-OX-03"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "MgF2",
+    "t04_card": "../04_coating_and_substrate_materials/cards/06_MgF2_film.md",
+    "resistance_candidate": "Mo/Ta候选；W在原厂资料间有冲突",
+    "electron_beam_candidate": "石墨/FABMATE/Mo或原厂铜类别",
+    "phase_chemistry_boundary": "热状态/含氧牌号改变喷点和膜质",
+    "risk": "W相容性与源温冲突；不能平均来源",
+    "minimum_observations": [
+      "牌号含氧",
+      "F/Mg",
+      "颗粒",
+      "k",
+      "q"
+    ],
+    "source_ids": [
+      "T04-IR10",
+      "T04-IR11"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "Al2O3",
+    "t04_card": "../04_coating_and_substrate_materials/cards/07_Al2O3_film.md",
+    "resistance_candidate": "阻蒸困难，不发布通用舟方案",
+    "electron_beam_candidate": "FABMATE/W/适配裸铜候选",
+    "phase_chemistry_boundary": "高热负荷和化学计量待核",
+    "risk": "热场、污染、结壳/局部形状",
+    "minimum_observations": [
+      "源面形",
+      "O/Al",
+      "k",
+      "Q/q",
+      "容器寿命"
+    ],
+    "source_ids": [
+      "T04-OX-04"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "H4",
+    "t04_card": "../04_coating_and_substrate_materials/cards/08_H4_film.md",
+    "resistance_candidate": "所引Patinal可研究Mo舟",
+    "electron_beam_candidate": "所引Patinal优先Mo衬里",
+    "phase_chemistry_boundary": "商品混合物；用户货号/配比未确定",
+    "risk": "牌号/致密粒料不同，熔面与初始料位",
+    "minimum_observations": [
+      "厂家货号COA",
+      "n/k",
+      "料位",
+      "扫描历史"
+    ],
+    "source_ids": [
+      "T04-OX-17"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "Ge",
+    "t04_card": "../04_coating_and_substrate_materials/cards/09_Ge_film.md",
+    "resistance_candidate": "W/Ta凹舟候选",
+    "electron_beam_candidate": "石墨/FABMATE或设备允许铜",
+    "phase_chemistry_boundary": "某些工况为熔体；需核掺杂批次",
+    "risk": "与衬里热循环机械损伤",
+    "minimum_observations": [
+      "Sb/电阻率身份",
+      "料位",
+      "循环",
+      "Q/q"
+    ],
+    "source_ids": [
+      "T04-M01"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "Cu",
+    "t04_card": "../04_coating_and_substrate_materials/cards/10_Cu_film.md",
+    "resistance_candidate": "W/Mo舟、W篮、间接Al2O3坩埚",
+    "electron_beam_candidate": "石墨/Mo衬里候选",
+    "phase_chemistry_boundary": "具体热状态决定熔体或其他分支",
+    "risk": "润湿、氧化、杂质与活跃面积",
+    "minimum_observations": [
+      "源相态",
+      "O/杂质",
+      "粗糙",
+      "Q/q"
+    ],
+    "source_ids": [
+      "T04-M02"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "Cr",
+    "t04_card": "../04_coating_and_substrate_materials/cards/11_Cr_film.md",
+    "resistance_candidate": "镀Cr的W棒、W舟候选",
+    "electron_beam_candidate": "石墨/FABMATE/W或设备允许铜",
+    "phase_chemistry_boundary": "常见热蒸发为升华，不强制液面",
+    "risk": "颗粒接触、局部升华面、耗料",
+    "minimum_observations": [
+      "活跃表面",
+      "接触状态",
+      "厚度/成分"
+    ],
+    "source_ids": [
+      "T04-M03"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  },
+  {
+    "material": "Al",
+    "t04_card": "../04_coating_and_substrate_materials/cards/12_Al_film.md",
+    "resistance_candidate": "W/Mo/Ta反应/合金化限制；查专用舟",
+    "electron_beam_candidate": "TiB2–BN候选；石墨类需防碳污染",
+    "phase_chemistry_boundary": "熔融润湿与容器反应",
+    "risk": "合金化、碳污染、舟脆化与残气",
+    "minimum_observations": [
+      "容器寿命",
+      "C/O",
+      "Q/q",
+      "表面粗糙"
+    ],
+    "source_ids": [
+      "T04-M04"
+    ],
+    "production_settings": null,
+    "calibrated_exponent": null,
+    "vapor_pressure_model": null,
+    "evidence_status": "manufacturer qualified candidate + engineering inference, no machine validation"
+  }
+]

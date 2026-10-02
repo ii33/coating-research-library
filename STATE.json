@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T00:56:24.569350+00:00",
+  "updated_at_utc": "2026-10-02T01:31:37.032385+00:00",
   "project_status": "active",
   "setup_status": "complete_integrity_checked",
   "round": 1,
-  "active_topic_id": "T05",
-  "active_task_id": "T05.P01",
-  "active_scope": "蒸发源特性与材料耦合建模首轮公开理论研究，按阻蒸、电子枪原优先顺序接续启动",
-  "later_topics_policy": "T06_to_T10_planning_only_until_preceding_round1_scope_handoff",
+  "active_topic_id": "T06",
+  "active_task_id": "T06.P01",
+  "active_scope": "光学薄膜类型与应用首轮公开理论研究，按近红外、中红外、多光谱原优先顺序接续启动",
+  "later_topics_policy": "T07_to_T10_planning_only_until_preceding_round1_scope_handoff",
   "topic_order": [
     "T01",
     "T02",
@@ -25,8 +25,8 @@
     "T02": "round1_theory_and_synthetic_scope_complete",
     "T03": "round1_theory_and_synthetic_scope_complete",
     "T04": "round1_priority_public_research_complete",
-    "T05": "starting",
-    "T06": "queued",
+    "T05": "round1_priority_theory_and_synthetic_scope_complete",
+    "T06": "starting",
     "T07": "queued",
     "T08": "queued",
     "T09": "queued",
@@ -37,14 +37,14 @@
     "T02": "bounded_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
     "T03": "bounded_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
     "T04": "bounded_priority_public_research_complete_not_experimentally_or_production_validated",
-    "T05": "pending",
+    "T05": "bounded_priority_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
     "T06": "pending",
     "T07": "pending",
     "T08": "pending",
     "T09": "pending",
     "T10": "pending"
   },
-  "next_action": "接收T04 v1材料证据和T05移交，研究阻蒸与电子枪的电热、功率沉积、蒸发通量及材料耦合接口",
+  "next_action": "接收T05 v0.1蒸发源冻结成果与T06移交，研究近红外、中红外、多光谱薄膜家族、应用和可检验指标",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -53,9 +53,9 @@
     "Q06"
   ],
   "notes": [
-    "T01–T04首轮优先研究已形成可移交基线；不等同实机验证、量产验收或指定完整模型审查",
-    "T04完成16张材料/基片卡、76项来源、207条条件化参数和12项本地测试；原始光谱不随仓库发布，公开副本明确跳过原件重建检查",
-    "T05按阻蒸、电子枪原优先顺序接续启动；T06–T10仍排队，条件依赖、隔离值与未知参数继续保留"
+    "T01–T05首轮优先研究已形成可移交基线；不等同实机验证、量产验收或指定完整模型审查",
+    "T05完成7章、27条来源、12材料源耦合记录、3幅原创图和51项数值测试；模型失配与QCM盲区反例保留",
+    "T06按近红外、中红外、多光谱原优先顺序接续启动；T07–T10仍排队；未知参数、来源条件和模型适用域继续保留"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -68,10 +68,10 @@
     "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
   },
   "handoff_evidence": [
-    "04_coating_and_substrate_materials/T05_HANDOFF.md",
-    "04_coating_and_substrate_materials/reviews/first_round_acceptance.md",
-    "04_coating_and_substrate_materials/reviews/stage_status.json",
-    "04_coating_and_substrate_materials/reviews/freeze_manifest.json"
+    "05_evaporation_sources/T06_HANDOFF.md",
+    "05_evaporation_sources/reviews/ROUND1_ACCEPTANCE.md",
+    "05_evaporation_sources/stage_status.json",
+    "05_evaporation_sources/release_manifest.json"
   ],
   "machine_validation": "not_performed",
   "formal_review_signoff": "not_performed"
