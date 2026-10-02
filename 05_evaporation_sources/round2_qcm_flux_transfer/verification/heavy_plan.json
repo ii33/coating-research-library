@@ -1,0 +1,38 @@
+{
+  "status": "plan_only",
+  "device_validation": "not_run",
+  "config": {
+    "replicates": 1000,
+    "windows": 120,
+    "monitors": 12,
+    "samples_per_window": 11,
+    "window_seconds": 20.0,
+    "seed": 73051,
+    "cases": [
+      "nominal",
+      "correlated_drift",
+      "sensor_obscuration",
+      "single_outlier"
+    ],
+    "noise_hz": 0.05,
+    "drift_error_std_hz_s": 0.08,
+    "production_validation": false
+  },
+  "fit_count": 480000,
+  "qcm_sample_count": 63360000,
+  "planning_bounds": {
+    "cpu_seconds_assumed_per_window_fit_and_qcm": [
+      0.02,
+      2.0
+    ],
+    "single_core_hours_interval": [
+      2.6666666666666665,
+      266.6666666666667
+    ],
+    "peak_memory_bytes_estimate": 64000000,
+    "checkpoint_disk_bytes_estimate": 960000000
+  },
+  "estimate_basis": "algorithmic workload + explicit unmeasured time/memory allowances; not hardware sampling",
+  "resume": "one deterministic replicate file per case; skip only matching configuration + qcm_flux/driver source hash completed file",
+  "acceptance": "synthetic implementation diagnostics only; independent actual flux/species/geometry calibration remains absent"
+}

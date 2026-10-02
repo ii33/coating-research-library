@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": {
+    "byte_tamper": "content mismatch: README.md",
+    "extra_file": "exact payload path-set mismatch",
+    "missing_file": "exact payload path-set mismatch"
+  },
+  "baseline_write": "none; temporary copies only"
+}

@@ -1,0 +1,200 @@
+{
+  "candidate_id": "5e252452931aca32fa25",
+  "fidelity": 0,
+  "provenance": {
+    "origin": "original analytic static fixture",
+    "units": "SI",
+    "clock": "two exact constant half-second panels",
+    "oracle_signature": "1cef3595da01cc5b710a951a71db4cdcf79ccdfc8cfee6b143d0cfec0e61a7d2",
+    "code_sha256": "081ee9dfaf2fa8a3e841f4dea6edd760531c747536d1e0425ffae3dd25b81247",
+    "geometry_cache_key": "8578756f2a9f071294a49c243c4bd267088292a759518d9145842980f1686b06",
+    "weighted_data_key": "8424f3692d0aa0cab08ab1c010943ef4499a4120d043d01738768599d106909c",
+    "finite_discrete_fixture": true,
+    "continuous_or_physical_certificate": false
+  },
+  "objectives": {
+    "h_target_max_deviation": {
+      "lo": 0.004780849175319208,
+      "hi": 0.0047808491753193365,
+      "unit": "1",
+      "status": "bounded_conditional",
+      "errors": [],
+      "definition": "sample/witness max |h-target|/target; not continuous extreme"
+    },
+    "ion_target_max_deviation": {
+      "lo": 0.3714513951256658,
+      "hi": 0.37145139512566583,
+      "unit": "1",
+      "status": "bounded_conditional",
+      "errors": [],
+      "definition": "sample/witness max |D-target|/target"
+    }
+  },
+  "constraints": {
+    "throughput": {
+      "lo": -0.5000000000000002,
+      "hi": -0.4999999999999998,
+      "unit": "1",
+      "status": "bounded_conditional",
+      "errors": [],
+      "definition": ""
+    }
+  },
+  "point_fields": [
+    {
+      "point_id": 0,
+      "area_weight": 0.5,
+      "N_net": {
+        "lo": 3.1729373396314956e+16,
+        "hi": 3.1729373396314956e+16,
+        "unit": "atom/m2",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "h": {
+        "lo": 3.1729373396314955e-12,
+        "hi": 3.172937339631496e-12,
+        "unit": "m",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "D": {
+        "lo": 6285486048743342.0,
+        "hi": 6285486048743342.0,
+        "unit": "ion/m2",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "U": {
+        "lo": 0.10070458880629564,
+        "hi": 0.10070458880629568,
+        "unit": "J/m2",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "R": {
+        "lo": 0.19809675943595334,
+        "hi": 0.19809675943595337,
+        "unit": "ion/atom",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "epsilon": {
+        "lo": 19.809675943595334,
+        "hi": 19.809675943595337,
+        "unit": "eV/atom",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "tau": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "unit": "s",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "ratio_conditioning": "bounded_positive"
+    },
+    {
+      "point_id": 1,
+      "area_weight": 0.5,
+      "N_net": {
+        "lo": 3.1427430243716708e+16,
+        "hi": 3.1427430243716708e+16,
+        "unit": "atom/m2",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "h": {
+        "lo": 3.142743024371671e-12,
+        "hi": 3.1427430243716712e-12,
+        "unit": "m",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "D": {
+        "lo": 6345874679262991.0,
+        "hi": 6345874679262991.0,
+        "unit": "ion/m2",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "U": {
+        "lo": 0.10167212133407405,
+        "hi": 0.10167212133407409,
+        "unit": "J/m2",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "R": {
+        "lo": 0.20192152619706227,
+        "hi": 0.2019215261970623,
+        "unit": "ion/atom",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "epsilon": {
+        "lo": 20.192152619706224,
+        "hi": 20.19215261970623,
+        "unit": "eV/atom",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "tau": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "unit": "s",
+        "status": "bounded_conditional",
+        "errors": [],
+        "definition": ""
+      },
+      "ratio_conditioning": "bounded_positive"
+    }
+  ],
+  "error_sources": [],
+  "work": {
+    "evaluations": 1,
+    "rays": 8,
+    "source_samples": 8,
+    "point_time_samples": 4,
+    "time_panels": 2,
+    "plate_tests": 0,
+    "geometry_cache_hit": false,
+    "actual_predicate_rays": 8
+  },
+  "status": "bounded_conditional",
+  "physical_certification": false,
+  "area_statistics": {
+    "mean_h_m": {
+      "lo": 3.157840182001583e-12,
+      "hi": 3.1578401820015838e-12,
+      "unit": "m",
+      "status": "bounded_conditional",
+      "errors": [],
+      "definition": ""
+    },
+    "throughput_ratio": {
+      "lo": 0.9999999999999998,
+      "hi": 1.0000000000000002,
+      "unit": "1",
+      "status": "bounded_conditional",
+      "errors": [],
+      "definition": ""
+    },
+    "ratio_valid_area_fraction": 1.0,
+    "undefined_ratio_point_ids": []
+  }
+}

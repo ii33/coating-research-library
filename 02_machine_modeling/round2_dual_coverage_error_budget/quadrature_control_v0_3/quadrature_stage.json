@@ -1,0 +1,17 @@
+{
+  "stage_id": "T02_R2_quadrature_control_v0_3",
+  "algorithmic": true,
+  "status": "in_progress",
+  "delivery_status": "frozen_local_partial_with_device_validation_pending",
+  "historical_global_status": "partial_numerical_acceptance_unchanged",
+  "completed": ["one-time localization", "projection/analytic-y implementation", "two-point conditional support checks", "analytic alias", "sidewall propagation", "configurable device validation driver", "small API/math tests"],
+  "not_run": ["complete low-dimensional source/time reference", "point12 ion reference", "tight reference refinements", "device-scale 2/13/236-point validation", "physical validation"],
+  "interrupted": ["original cloud nested reference after point2 vapor base"],
+  "independent_narrow_check": {"model":"gpt-6-luna", "result":"complete_not_certified", "evidence":"reviews/INDEPENDENT_CHECK.md"},
+  "deepseek_self_review": {"result":"pending_not_invoked_in_this_task"},
+  "seed_review": {"result":"pending_not_invoked_in_this_task"},
+  "sol_algorithm_review": {"result":"pending_no_formal_stage_signature_claimed"},
+  "physical_certification": false,
+  "T03_permission": "finite algorithm development only; no certified optimization oracle or physical operating input",
+  "publication": "local_only_batch_upload_later_no_push"
+}

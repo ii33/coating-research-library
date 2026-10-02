@@ -1,0 +1,47 @@
+{
+  "date_utc": "2026-10-02",
+  "scope": "implementation and tiny correctness only",
+  "executed": [
+    {
+      "command": "python -B -m unittest discover -s verification -p test_small.py -v",
+      "result": "passed",
+      "tests": 40,
+      "scale": "analytic/synthetic; each ray fixture <=8 rays; repeated tiny checks"
+    },
+    {
+      "command": "python -B -m unittest discover -s reviews -p test_optimizer_counterexamples.py -v",
+      "result": "passed",
+      "tests": 15,
+      "reviewer": "GPT-6 Luna narrow independent counterexample review"
+    },
+    {
+      "command": "python -B models/run_optimizer.py --execute --output /tmp/t03-fixture-final",
+      "result": "completed_finite_candidate_set_inconclusive",
+      "planned_candidates": 15,
+      "evaluated_candidates": 13,
+      "rejected_candidates": 2,
+      "simulated_ray_work_units": 52
+    },
+    {
+      "command": "python -B models/device_runner.py --config verification/small_device_contract.json --execute --input-root data --output /tmp/t03-device-final",
+      "result": "passed",
+      "finite_fixture_rays": 8
+    },
+    {
+      "command": "python -B models/device_runner.py",
+      "result": "plan_only",
+      "nominal_high_fidelity_rays": 2100409824,
+      "rays_executed": 0
+    }
+  ],
+  "not_run": [
+    "T02 continuous reference closure",
+    "high fidelity training/holdout/area validation",
+    "GPU benchmarks",
+    "real machine fabrication/material tests",
+    "formal Seed/Sol sign-off"
+  ],
+  "initial_failure_preserved": "verification/initial_unit_tests_failure.log",
+  "publication": "not_pushed_not_uploaded",
+  "production_integration": "not_performed"
+}

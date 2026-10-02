@@ -1,0 +1,45 @@
+test_cancel_restore_consistency (test_small.Control.test_cancel_restore_consistency) ... ok
+test_changed_data_refuses_restore (test_small.Control.test_changed_data_refuses_restore) ... ok
+test_default_plan_only (test_small.Control.test_default_plan_only) ... ok
+test_device_placeholder_execute_refuses (test_small.Control.test_device_placeholder_execute_refuses) ... ok
+test_device_plan_only (test_small.Control.test_device_plan_only) ... ok
+test_parallel_explicit_only (test_small.Control.test_parallel_explicit_only) ... ok
+test_ray_budget_before_call (test_small.Control.test_ray_budget_before_call) ... ok
+test_zero_budget (test_small.Control.test_zero_budget) ... ok
+test_bad_error_status (test_small.Decisions.test_bad_error_status) ... ok
+test_dominance_and_infeasible (test_small.Decisions.test_dominance_and_infeasible) ... ok
+test_empty_objectives_rejected (test_small.Decisions.test_empty_objectives_rejected) ... ok
+test_equal_no_false_rank (test_small.Decisions.test_equal_no_false_rank) ... ok
+test_noise_overlap_not_ranked (test_small.Decisions.test_noise_overlap_not_ranked) ... ok
+test_single_uncertain_objective_is_inconclusive (test_small.Decisions.test_single_uncertain_objective_is_inconclusive) ... ok
+test_tradeoff (test_small.Decisions.test_tradeoff) ... ok
+test_units_checked_before_feasibility_dominance (test_small.Decisions.test_units_checked_before_feasibility_dominance) ... ok
+test_unknown_and_estimated (test_small.Decisions.test_unknown_and_estimated) ... ok
+test_wrong_surrogate (test_small.Decisions.test_wrong_surrogate) ... ok
+test_binary_only (test_small.Geometry.test_binary_only) ... ok
+test_feature_and_mount (test_small.Geometry.test_feature_and_mount) ... ok
+test_thickness_workspace_boundary (test_small.Geometry.test_thickness_workspace_boundary) ... ok
+test_two_plate_conflict (test_small.Geometry.test_two_plate_conflict) ... ok
+test_invalid (test_small.Intervals.test_invalid) ... ok
+test_outward (test_small.Intervals.test_outward) ... ok
+test_unknown (test_small.Intervals.test_unknown) ... ok
+test_zero_denominator (test_small.Intervals.test_zero_denominator) ... ok
+test_bundle_roundtrip (test_small.RayChecks.test_bundle_roundtrip) ... ok
+test_cache_rate_separation (test_small.RayChecks.test_cache_rate_separation) ... ok
+test_chunked_matches_full_point_partition (test_small.RayChecks.test_chunked_matches_full_point_partition) ... ok
+test_dual_channel_not_shared_and_double_ion (test_small.RayChecks.test_dual_channel_not_shared_and_double_ion) ... ok
+test_error_alias_copy (test_small.RayChecks.test_error_alias_copy) ... ok
+test_error_point_outside_domain_rejected (test_small.RayChecks.test_error_point_outside_domain_rejected) ... ok
+test_ill_conditioned_ratio_and_event_error (test_small.RayChecks.test_ill_conditioned_ratio_and_event_error) ... ok
+test_ion_interval_constraint (test_small.RayChecks.test_ion_interval_constraint) ... ok
+test_margin_unknown_ratio (test_small.RayChecks.test_margin_unknown_ratio) ... ok
+test_missing_physical_error_axes_refused (test_small.RayChecks.test_missing_physical_error_axes_refused) ... ok
+test_physical_error_coverage_per_point (test_small.RayChecks.test_physical_error_coverage_per_point) ... ok
+test_physical_unknowns_propagate (test_small.RayChecks.test_physical_unknowns_propagate) ... ok
+test_smoke_eight_rays (test_small.RayChecks.test_smoke_eight_rays) ... ok
+test_t02_estimate_no_upgrade (test_small.RayChecks.test_t02_estimate_no_upgrade) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.258s
+
+OK

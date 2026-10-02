@@ -1,0 +1,388 @@
+{
+  "synthetic_contract": {
+    "status": "synthetic_computed",
+    "production_qualified": false,
+    "rate": {
+      "slope_kg_m2_s": 3.4356927547856194e-06,
+      "slope_std_kg_m2_s": 2.8704869247732566e-10,
+      "mass_kg_m2": [
+        9.999999999777348e-06,
+        1.6871385509527318e-05,
+        2.3742771019156246e-05,
+        3.0614156528698845e-05,
+        3.74855420383024e-05,
+        4.43569275477782e-05,
+        5.122831305738662e-05,
+        5.809969856693979e-05,
+        6.497108407647464e-05,
+        7.18424695860285e-05,
+        7.871385509563925e-05
+      ],
+      "corrected_f_hz": [
+        6044916.950876534,
+        6044859.885944858,
+        6044802.822090535,
+        6044745.759313518,
+        6044688.697613758,
+        6044631.636991209,
+        6044574.577445823,
+        6044517.518977553,
+        6044460.4615863515,
+        6044403.405272172,
+        6044346.350034966
+      ],
+      "net_state": "positive",
+      "residual_kg_m2": [
+        -1.5821559015173625e-16,
+        2.0511749850710137e-17,
+        7.820146982230602e-17,
+        4.956159180974362e-17,
+        8.187759281338969e-17,
+        -1.355930341964684e-17,
+        2.3622054833027928e-17,
+        5.549759870410176e-18,
+        -3.08455518072126e-17,
+        -4.821989162129281e-17,
+        -8.714274961352242e-18
+      ],
+      "uncertainty": "conditional_on_f0_Z_model_drift"
+    },
+    "kernel_m_minus2": [
+      1.8672243232506525,
+      1.5031300180901228,
+      0.8091900988213023
+    ],
+    "source_rate_kg_s": 2.0000000000025723e-06,
+    "workpiece_arrival": [
+      {
+        "particle_fluxes_m2_s": {
+          "Al": 6.709817961700587e+19
+        },
+        "element_flux_atoms_m2_s": {
+          "Al": 6.709817961700587e+19
+        },
+        "total_atomic_flux_atoms_m2_s": 6.709817961700587e+19,
+        "mass_flux_kg_m2_s": 3.0062600361841117e-06
+      },
+      {
+        "particle_fluxes_m2_s": {
+          "Al": 3.612141460923117e+19
+        },
+        "element_flux_atoms_m2_s": {
+          "Al": 3.612141460923117e+19
+        },
+        "total_atomic_flux_atoms_m2_s": 3.612141460923117e+19,
+        "mass_flux_kg_m2_s": 1.618380197644686e-06
+      }
+    ],
+    "normalization": "per_actual_workpiece_area_per_second",
+    "T04_interface": "incident_element_flux_not_net_retained",
+    "density_or_tooling_used": false,
+    "film_thickness_or_n_k": "not_predicted"
+  },
+  "actual_record": {
+    "status": "blocked_unmeasured",
+    "missing": [
+      "f0_hz",
+      "z_ratio",
+      "capture_qcm",
+      "source_exponent_n",
+      "source_anisotropy_a",
+      "raw_qcm_time_series",
+      "geometry",
+      "rigid_bonded_model_validity",
+      "vapor_species_fractions",
+      "reaction_outgoing_mass_balance"
+    ],
+    "production_qualified": false
+  },
+  "finite_load_comparison": [
+    {
+      "f_over_f0": 0.999999,
+      "sauerbrey_kg_m2": 7.278724565667113e-07,
+      "zmatch_kg_m2": 7.278731844394973e-07
+    },
+    {
+      "f_over_f0": 0.999,
+      "sauerbrey_kg_m2": 0.0007278724565756824,
+      "zmatch_kg_m2": 0.0007286006587734628
+    },
+    {
+      "f_over_f0": 0.99,
+      "sauerbrey_kg_m2": 0.007278724565756824,
+      "zmatch_kg_m2": 0.007351844668152698
+    },
+    {
+      "f_over_f0": 0.95,
+      "sauerbrey_kg_m2": 0.03639362282878412,
+      "zmatch_kg_m2": 0.03825703282716981
+    },
+    {
+      "f_over_f0": 0.9,
+      "sauerbrey_kg_m2": 0.07278724565756824,
+      "zmatch_kg_m2": 0.08044475464687298
+    }
+  ],
+  "known_truth_recovery": {
+    "Q_kg_s": 2.0000000000000046e-06,
+    "n": 2.399999999999994,
+    "a": 0.24999999999999953,
+    "capture": [
+      0.92,
+      0.92,
+      0.92,
+      0.92,
+      0.92,
+      0.92
+    ],
+    "parameters_logQ_n_a_logeta": [
+      -13.122363377404326,
+      2.399999999999994,
+      0.24999999999999953
+    ],
+    "covariance": [
+      [
+        0.00011299873697604445,
+        -0.0004906136293202425,
+        0.00013583492411942238
+      ],
+      [
+        -0.0004906136293202426,
+        0.002549956994208121,
+        -0.0005638140125869361
+      ],
+      [
+        0.00013583492411942244,
+        -0.0005638140125869362,
+        0.0005109000588896441
+      ]
+    ],
+    "rank": {
+      "rank": 3,
+      "columns": 3,
+      "rows": 6,
+      "column_normalized_singular_values": [
+        1.4019598964679256,
+        0.9779612624040777,
+        0.2794641621615659
+      ],
+      "condition_column_normalized": 5.0165999304677005,
+      "identifiable": true
+    },
+    "active_bound": false,
+    "standardized_residuals": [
+      0.0,
+      0.0,
+      1.7763568394002505e-13,
+      1.7763568394002505e-13,
+      1.7763568394002505e-13,
+      1.7763568394002505e-13
+    ],
+    "cost": 6.310887241768094e-26,
+    "loss": "linear",
+    "uncertainty_note": "conditional known log noise; robust or boundary fits require bootstrap/profile",
+    "nfev": 7
+  },
+  "capture_with_independent_source": {
+    "Q_kg_s": 2.000000000000001e-06,
+    "n": 2.399999999999999,
+    "a": 0.24999999999999817,
+    "capture": 0.9199999999999985,
+    "parameters_logQ_n_a_logeta": [
+      -13.122363377404328,
+      2.399999999999999,
+      0.24999999999999817,
+      -0.08338160893905273
+    ],
+    "covariance": [
+      [
+        9.999999999999998e-05,
+        -1.024906777260872e-19,
+        2.1871089362381278e-20,
+        -9.999999999999998e-05
+      ],
+      [
+        -4.5293034475017575e-19,
+        0.0025499569942081194,
+        -0.0005638140125869357,
+        -0.0004906136293202404
+      ],
+      [
+        8.329141118646059e-20,
+        -0.0005638140125869357,
+        0.0005109000588896441,
+        0.00013583492411942195
+      ],
+      [
+        -9.99999999999999e-05,
+        -0.0004906136293202408,
+        0.000135834924119422,
+        0.00021299873697604375
+      ]
+    ],
+    "rank": {
+      "rank": 4,
+      "columns": 4,
+      "rows": 7,
+      "column_normalized_singular_values": [
+        1.6858357220093885,
+        0.9787499675923241,
+        0.3846173433297241,
+        0.22820148672849025
+      ],
+      "condition_column_normalized": 7.387487900178159,
+      "identifiable": true
+    },
+    "active_bound": false,
+    "standardized_residuals": [
+      -1.7763568394002505e-13,
+      -1.7763568394002505e-13,
+      -1.7763568394002505e-13,
+      -1.7763568394002505e-13,
+      -1.7763568394002505e-13,
+      -1.7763568394002505e-13,
+      0.0
+    ],
+    "cost": 9.466330862652142e-26,
+    "loss": "linear",
+    "uncertainty_note": "conditional known log noise; robust or boundary fits require bootstrap/profile",
+    "nfev": 8
+  },
+  "identifiability": {
+    "single_qcm": {
+      "rank": 1,
+      "columns": 3,
+      "rows": 1,
+      "column_normalized_singular_values": [
+        1.4142135623730951
+      ],
+      "condition_column_normalized": null,
+      "identifiable": false
+    },
+    "diverse_monitors_known_capture": {
+      "rank": 3,
+      "columns": 3,
+      "rows": 6,
+      "column_normalized_singular_values": [
+        1.4019598964679254,
+        0.9779612624040781,
+        0.2794641621615666
+      ],
+      "condition_column_normalized": 5.016599930467687,
+      "identifiable": true
+    },
+    "diverse_monitors_unknown_common_capture": {
+      "rank": 3,
+      "columns": 4,
+      "rows": 6,
+      "column_normalized_singular_values": [
+        1.7139765308700776,
+        0.9787469421183377,
+        0.32301528589306694,
+        1.4403615700729251e-16
+      ],
+      "condition_column_normalized": null,
+      "identifiable": false
+    },
+    "diverse_monitors_plus_independent_source": {
+      "rank": 4,
+      "columns": 4,
+      "rows": 7,
+      "column_normalized_singular_values": [
+        1.6858357220093885,
+        0.9787499675923242,
+        0.3846173433297243,
+        0.22820148672849033
+      ],
+      "condition_column_normalized": 7.387487900178156,
+      "identifiable": true
+    }
+  },
+  "blind_shape_change": {
+    "sensor_equal_relative_difference": 0.0,
+    "off_axis_flux_ratio": 0.49999999999999983,
+    "truth_A": [
+      2e-06,
+      1.0
+    ],
+    "truth_B": [
+      1e-06,
+      3.0
+    ]
+  },
+  "drift_counterexample": {
+    "true_rate_kg_m2_s": 1e-08,
+    "corrected_rate": 1.0000000002714496e-08,
+    "uncorrected_rate": -2.3082390347572422e-07,
+    "unmodeled_drift_hz_s": 2.0,
+    "consequence": "uncorrected negative net slope cannot be called source evaporation"
+  },
+  "occlusion_counterexample": {
+    "known_visibility": 0.2,
+    "inferred_source_ratio_if_ignored": 0.2,
+    "fully_occluded": "division rejected; no source information"
+  },
+  "outlier_fit": {
+    "truth": [
+      2e-06,
+      2.4,
+      0.25
+    ],
+    "robust": [
+      1.9862903767872046e-06,
+      2.4599211950931954,
+      0.24303615384426033
+    ],
+    "linear": [
+      1.8349106941833043e-06,
+      3.4467720150195658,
+      0.1294722997898988
+    ],
+    "not_guaranteed": "robust loss cannot fix coordinated drift, many occlusions or wrong model"
+  },
+  "uncertainty": {
+    "mean": [
+      2.293045685969464e+19
+    ],
+    "jacobian": [
+      [
+        2.2930456919804432e+19,
+        -2.29304568590336e+19,
+        -5.222130980864e+18,
+        -1.07894144503808e+19
+      ]
+    ],
+    "covariance": [
+      [
+        9.470198277355531e+35
+      ]
+    ],
+    "std": [
+      9.731494375148933e+17
+    ],
+    "kind": "local_first_order_conditional"
+  },
+  "cluster_example": {
+    "particle_fluxes_m2_s": {
+      "Al": 1.4879657516736207e+19,
+      "Al2": 1.4879657516736207e+19
+    },
+    "element_flux_atoms_m2_s": {
+      "Al": 4.463897255020862e+19
+    },
+    "total_atomic_flux_atoms_m2_s": 4.463897255020862e+19,
+    "mass_flux_kg_m2_s": 2e-06
+  },
+  "gas_example_O2_particles_m2_s": 2.689192127971118e+18,
+  "reactive_atom_balance": {
+    "net_element_flux_atoms_m2_s": {
+      "Al": 2e+19,
+      "O": 3e+19
+    },
+    "net_mass_flux_kg_m2_s": 1.6930869081844578e-06,
+    "thickness_prediction": "requires_independent_composition_and_actual_film_density"
+  },
+  "device_validation": "not_run",
+  "heavy_validation": "not_run",
+  "truth_origin": "declared synthetic inputs, no requested film thickness targets"
+}

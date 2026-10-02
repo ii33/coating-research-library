@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "meaning": "Executable requirements in contract.py; unknown records remain valid but dependent calculations block",
+  "N_net": ["all retained elements covered, not only depositing cations", "signed net element flux with interval in each resolved time bin", "matched initial element inventories, no possible exhaustion in any bin"],
+  "h_increment": ["N_net available", "verified fixed stoichiometry compatible with element fluxes", "matching positive molar masses and intervals", "actual effective film density and positive interval", "density/composition invariant; no compaction or phase-change inference"],
+  "D": ["joint local energy-angle particle flux records with positive-charge species labeled", "actual surface-area normalization, correct time integration", "particle count distinct from charge or nuclei count"],
+  "U": ["declared particle energy in eV/particle", "charged and fast-neutral inventory complete or measured negligible", "sum energy over joint cells before time integration"],
+  "R_and_epsilon": ["strictly positive N lower bound", "N interval width smaller than lower bound", "D or U respectively available", "otherwise null, diagnostic-only interval for ill-conditioned positive case"],
+  "n_k_stress_adhesion": ["not predicted by this implementation", "sample-specific measurement or explicitly validated physical model", "wavelength, test method/geometry/failure mode as appropriate", "matching composition/state/temperature/spectrum/flux/history and validation domain for transfer"],
+  "resputter_Y": ["evidence descriptor only in v1, not an executable interpolation grid", "element-specific atoms per incident particle, target composition and state", "projectile, energy/angle/temperature/fluence domain and original evidence", "all actual values unknown in this release; no source-type or bulk/film transfer"]
+}

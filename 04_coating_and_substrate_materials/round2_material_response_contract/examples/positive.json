@@ -1,0 +1,831 @@
+{
+  "schema_version": "1.0",
+  "record_id": "SYNTH-POSITIVE-001",
+  "record_role": "synthetic_fixture",
+  "production_qualified": false,
+  "film": {
+    "material_id": "SiO2_film",
+    "label": "Synthetic stoichiometric amorphous silica film",
+    "manufacturer": null,
+    "grade": null,
+    "lot": null,
+    "identity_status": "synthetic",
+    "physical_state": "thin_film",
+    "phase": "amorphous_assumed_for_synthetic_only",
+    "nominal_formula": "SiO2",
+    "composition_verified": true,
+    "stoichiometry": {
+      "Si": 1.0,
+      "O": 2.0
+    },
+    "element_molar_mass_kg_mol": {
+      "Si": {
+        "value": 0.028085,
+        "unit": "kg/mol",
+        "status": "synthetic",
+        "interval": [
+          0.0280844383,
+          0.028085561699999997
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      },
+      "O": {
+        "value": 0.015999,
+        "unit": "kg/mol",
+        "status": "synthetic",
+        "interval": [
+          0.01599868002,
+          0.01599931998
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      }
+    },
+    "density": {
+      "value": 2150.0,
+      "unit": "kg/m3",
+      "status": "synthetic",
+      "interval": [
+        2096.25,
+        2203.75
+      ],
+      "interval_kind": "synthetic_bound",
+      "standard_u": null,
+      "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+      "source_ids": [
+        "SYNTHETIC-DEFINITION"
+      ],
+      "condition_id": "SYNTH-LOCAL-001"
+    },
+    "density_basis": "effective_film",
+    "density_composition_invariant": true
+  },
+  "substrate": {
+    "material_id": "fused_silica_method_example",
+    "label": "Synthetic fused-silica witness substrate",
+    "manufacturer": null,
+    "grade": null,
+    "lot": null,
+    "identity_status": "synthetic",
+    "physical_state": "bulk_substrate",
+    "phase": "amorphous_assumed_for_synthetic_only",
+    "nominal_formula": "SiO2",
+    "composition_verified": true,
+    "stoichiometry": {
+      "Si": 1.0,
+      "O": 2.0
+    },
+    "element_molar_mass_kg_mol": {
+      "Si": {
+        "value": 0.028085,
+        "unit": "kg/mol",
+        "status": "synthetic",
+        "interval": [
+          0.0280844383,
+          0.028085561699999997
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      },
+      "O": {
+        "value": 0.015999,
+        "unit": "kg/mol",
+        "status": "synthetic",
+        "interval": [
+          0.01599868002,
+          0.01599931998
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      }
+    },
+    "density": {
+      "value": 2150.0,
+      "unit": "kg/m3",
+      "status": "synthetic",
+      "interval": [
+        2096.25,
+        2203.75
+      ],
+      "interval_kind": "synthetic_bound",
+      "standard_u": null,
+      "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+      "source_ids": [
+        "SYNTHETIC-DEFINITION"
+      ],
+      "condition_id": "SYNTH-LOCAL-001"
+    },
+    "density_basis": "bulk_substrate",
+    "density_composition_invariant": true
+  },
+  "process_context": {
+    "deposition_method": "synthetic net-inventory demonstration",
+    "source_type": null,
+    "source_model": null,
+    "chamber_id": null,
+    "source_material_identity": {
+      "label": "nominal SiO2, hypothetical source",
+      "manufacturer": null,
+      "grade": null,
+      "lot": null
+    },
+    "surface_preparation": "not specified; no actual sample",
+    "underlayers": [],
+    "post_treatment_history": [],
+    "environment_history": [],
+    "gas_species": [
+      "Ar",
+      "O2"
+    ],
+    "spectrum_resolution_note": "One bin per species per time interval is an artificial joint-spectrum fixture, not a measured narrow beam"
+  },
+  "spatial_support": {
+    "point_id": "synthetic-local-point",
+    "area_m2": 0.0001,
+    "coordinate_frame": "substrate_local_SI",
+    "normal_convention": "outward_surface_normal",
+    "scope": "local_point"
+  },
+  "flux_area_basis": "actual_substrate_surface_area",
+  "time_sampling": "piecewise_constant_bin_averages",
+  "history_resolution": "resolved_bins",
+  "atom_inventory_coverage": "all_retained_elements",
+  "initial_inventory_atoms_m2": {
+    "Si": {
+      "value": 1e+20,
+      "unit": "atoms/m2",
+      "status": "synthetic",
+      "interval": [
+        1e+20,
+        1e+20
+      ],
+      "interval_kind": "synthetic_bound",
+      "standard_u": null,
+      "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+      "source_ids": [
+        "SYNTHETIC-DEFINITION"
+      ],
+      "condition_id": "SYNTH-LOCAL-001"
+    },
+    "O": {
+      "value": 2e+20,
+      "unit": "atoms/m2",
+      "status": "synthetic",
+      "interval": [
+        2e+20,
+        2e+20
+      ],
+      "interval_kind": "synthetic_bound",
+      "standard_u": null,
+      "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+      "source_ids": [
+        "SYNTHETIC-DEFINITION"
+      ],
+      "condition_id": "SYNTH-LOCAL-001"
+    }
+  },
+  "initial_thickness": {
+    "value": null,
+    "unit": "m",
+    "status": "unknown",
+    "interval": null,
+    "interval_kind": "none",
+    "standard_u": null,
+    "uncertainty_note": "Unmeasured, not zero uncertainty",
+    "source_ids": [],
+    "condition_id": "UNMEASURED"
+  },
+  "bins": [
+    {
+      "bin_id": "b0",
+      "t_start_s": 0.0,
+      "dt_s": 10.0,
+      "surface_temperature": {
+        "value": 300.0,
+        "unit": "K",
+        "status": "synthetic",
+        "interval": [
+          297.0,
+          303.0
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      },
+      "net_element_flux": {
+        "Si": {
+          "value": 4e+17,
+          "unit": "atoms/m2/s",
+          "status": "synthetic",
+          "interval": [
+            3.92e+17,
+            4.08e+17
+          ],
+          "interval_kind": "synthetic_bound",
+          "standard_u": null,
+          "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+          "source_ids": [
+            "SYNTHETIC-DEFINITION"
+          ],
+          "condition_id": "SYNTH-LOCAL-001"
+        },
+        "O": {
+          "value": 8e+17,
+          "unit": "atoms/m2/s",
+          "status": "synthetic",
+          "interval": [
+            7.84e+17,
+            8.16e+17
+          ],
+          "interval_kind": "synthetic_bound",
+          "standard_u": null,
+          "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+          "source_ids": [
+            "SYNTHETIC-DEFINITION"
+          ],
+          "condition_id": "SYNTH-LOCAL-001"
+        }
+      },
+      "net_flux_method": "synthetic_balance",
+      "net_flux_evidence": "Toy resolved elemental inventory balance, not QCM arrival flux",
+      "beams": [
+        {
+          "species": "Ar+",
+          "charge_number": 1,
+          "nuclei_per_particle": 1,
+          "azimuth_policy": "axisymmetric_assumed_for_fixture",
+          "distribution_basis": "joint_energy_angle_bin_integrated_particle_flux",
+          "cells": [
+            {
+              "flux": {
+                "value": 2e+17,
+                "unit": "particles/m2/s",
+                "status": "synthetic",
+                "interval": [
+                  1.96e+17,
+                  2.04e+17
+                ],
+                "interval_kind": "synthetic_bound",
+                "standard_u": null,
+                "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+                "source_ids": [
+                  "SYNTHETIC-DEFINITION"
+                ],
+                "condition_id": "SYNTH-LOCAL-001"
+              },
+              "energy": {
+                "value": 100.0,
+                "unit": "eV/particle",
+                "status": "synthetic",
+                "interval": [
+                  95.0,
+                  105.0
+                ],
+                "interval_kind": "synthetic_bound",
+                "standard_u": null,
+                "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+                "source_ids": [
+                  "SYNTHETIC-DEFINITION"
+                ],
+                "condition_id": "SYNTH-LOCAL-001"
+              },
+              "theta": {
+                "value": 20.0,
+                "unit": "deg_from_normal",
+                "status": "synthetic",
+                "interval": [
+                  19.5,
+                  20.5
+                ],
+                "interval_kind": "synthetic_bound",
+                "standard_u": null,
+                "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+                "source_ids": [
+                  "SYNTHETIC-DEFINITION"
+                ],
+                "condition_id": "SYNTH-LOCAL-001"
+              },
+              "phi": {
+                "value": null,
+                "unit": "deg_about_normal",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              }
+            }
+          ]
+        }
+      ],
+      "neutral_inventory": "measured_negligible",
+      "history_class": "codeposition",
+      "surface_potential": {
+        "value": 0.0,
+        "unit": "V",
+        "status": "synthetic",
+        "interval": [
+          0.0,
+          0.0
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      },
+      "reactive_gas_partial_pressure": {
+        "value": 0.01,
+        "unit": "Pa",
+        "status": "synthetic",
+        "interval": [
+          0.009000000000000001,
+          0.011
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      }
+    },
+    {
+      "bin_id": "b1",
+      "t_start_s": 10.0,
+      "dt_s": 10.0,
+      "surface_temperature": {
+        "value": 310.0,
+        "unit": "K",
+        "status": "synthetic",
+        "interval": [
+          306.9,
+          313.1
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      },
+      "net_element_flux": {
+        "Si": {
+          "value": 2.6666666666666666e+17,
+          "unit": "atoms/m2/s",
+          "status": "synthetic",
+          "interval": [
+            2.613333333333333e+17,
+            2.72e+17
+          ],
+          "interval_kind": "synthetic_bound",
+          "standard_u": null,
+          "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+          "source_ids": [
+            "SYNTHETIC-DEFINITION"
+          ],
+          "condition_id": "SYNTH-LOCAL-001"
+        },
+        "O": {
+          "value": 5.333333333333333e+17,
+          "unit": "atoms/m2/s",
+          "status": "synthetic",
+          "interval": [
+            5.226666666666666e+17,
+            5.44e+17
+          ],
+          "interval_kind": "synthetic_bound",
+          "standard_u": null,
+          "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+          "source_ids": [
+            "SYNTHETIC-DEFINITION"
+          ],
+          "condition_id": "SYNTH-LOCAL-001"
+        }
+      },
+      "net_flux_method": "synthetic_balance",
+      "net_flux_evidence": "Toy resolved elemental inventory balance, not QCM arrival flux",
+      "beams": [
+        {
+          "species": "Ar+",
+          "charge_number": 1,
+          "nuclei_per_particle": 1,
+          "azimuth_policy": "axisymmetric_assumed_for_fixture",
+          "distribution_basis": "joint_energy_angle_bin_integrated_particle_flux",
+          "cells": [
+            {
+              "flux": {
+                "value": 4e+17,
+                "unit": "particles/m2/s",
+                "status": "synthetic",
+                "interval": [
+                  3.92e+17,
+                  4.08e+17
+                ],
+                "interval_kind": "synthetic_bound",
+                "standard_u": null,
+                "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+                "source_ids": [
+                  "SYNTHETIC-DEFINITION"
+                ],
+                "condition_id": "SYNTH-LOCAL-001"
+              },
+              "energy": {
+                "value": 150.0,
+                "unit": "eV/particle",
+                "status": "synthetic",
+                "interval": [
+                  142.5,
+                  157.5
+                ],
+                "interval_kind": "synthetic_bound",
+                "standard_u": null,
+                "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+                "source_ids": [
+                  "SYNTHETIC-DEFINITION"
+                ],
+                "condition_id": "SYNTH-LOCAL-001"
+              },
+              "theta": {
+                "value": 20.0,
+                "unit": "deg_from_normal",
+                "status": "synthetic",
+                "interval": [
+                  19.5,
+                  20.5
+                ],
+                "interval_kind": "synthetic_bound",
+                "standard_u": null,
+                "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+                "source_ids": [
+                  "SYNTHETIC-DEFINITION"
+                ],
+                "condition_id": "SYNTH-LOCAL-001"
+              },
+              "phi": {
+                "value": null,
+                "unit": "deg_about_normal",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              }
+            }
+          ]
+        }
+      ],
+      "neutral_inventory": "measured_negligible",
+      "history_class": "codeposition",
+      "surface_potential": {
+        "value": 0.0,
+        "unit": "V",
+        "status": "synthetic",
+        "interval": [
+          0.0,
+          0.0
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      },
+      "reactive_gas_partial_pressure": {
+        "value": 0.01,
+        "unit": "Pa",
+        "status": "synthetic",
+        "interval": [
+          0.009000000000000001,
+          0.011
+        ],
+        "interval_kind": "synthetic_bound",
+        "standard_u": null,
+        "uncertainty_note": "Artificial deterministic ±relative bound; not a confidence interval",
+        "source_ids": [
+          "SYNTHETIC-DEFINITION"
+        ],
+        "condition_id": "SYNTH-LOCAL-001"
+      }
+    }
+  ],
+  "resputter_yield_records": [
+    {
+      "state": "unknown",
+      "target_composition_id": "SiO2_actual_film",
+      "target_state": "unknown",
+      "projectile": "Ar+",
+      "evidence_source_ids": [],
+      "energy_domain_eV": null,
+      "angle_domain_deg": null,
+      "temperature_domain_K": null,
+      "fluence_domain_m2": null,
+      "yield_basis": "atoms_per_incident_particle",
+      "values_by_element": {},
+      "interpolation": "none",
+      "extrapolation": "forbidden",
+      "note": "No qualified Y(E,theta,state) transferred; measured net-element route does not require assigning a yield"
+    }
+  ],
+  "response_records": [
+    {
+      "property": "n",
+      "value": {
+        "value": null,
+        "unit": "1",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    },
+    {
+      "property": "k",
+      "value": {
+        "value": null,
+        "unit": "1",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    },
+    {
+      "property": "biaxial_stress",
+      "value": {
+        "value": null,
+        "unit": "Pa",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    },
+    {
+      "property": "adhesion",
+      "value": {
+        "value": null,
+        "unit": "method_defined",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    },
+    {
+      "property": "rms_roughness",
+      "value": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    }
+  ],
+  "uncertainty_axes": {
+    "source": {
+      "status": "unknown",
+      "note": "No independent closure in this local fixture",
+      "bound_reference": null
+    },
+    "time": {
+      "status": "unknown",
+      "note": "No independent closure in this local fixture",
+      "bound_reference": null
+    },
+    "space": {
+      "status": "unknown",
+      "note": "No independent closure in this local fixture",
+      "bound_reference": null
+    },
+    "geometry": {
+      "status": "unknown",
+      "note": "No independent closure in this local fixture",
+      "bound_reference": null
+    },
+    "kernel": {
+      "status": "unknown",
+      "note": "No independent closure in this local fixture",
+      "bound_reference": null
+    },
+    "input": {
+      "status": "bounded",
+      "note": "Synthetic input intervals only",
+      "bound_reference": "quantity intervals"
+    },
+    "model": {
+      "status": "unknown",
+      "note": "No independent closure in this local fixture",
+      "bound_reference": null
+    }
+  },
+  "provenance": {
+    "source_ids": [
+      "SYNTHETIC-DEFINITION"
+    ],
+    "dependency_hashes": {},
+    "ray_bundle_id": null,
+    "measurement_ids": [],
+    "notes": "Entire numerical record is synthetic. Does not assert user equipment, rates, actual material identity, film density, neutral fraction or production response."
+  },
+  "requested_outputs": [
+    "N_net",
+    "h_increment",
+    "D",
+    "U",
+    "R",
+    "epsilon"
+  ]
+}

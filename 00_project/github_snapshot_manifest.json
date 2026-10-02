@@ -1,6 +1,6 @@
 {
-  "snapshot": "coating-research-library-T02-round2-v0.2-bounded-predicate",
-  "created_at_utc": "2026-10-02T05:21:14.220864+00:00",
+  "snapshot": "coating-research-library-round2-batch01-T02v03-through-T05",
+  "created_at_utc": "2026-10-02T07:21:16.301375+00:00",
   "repository": "ii33/coating-research-library",
   "visibility": "private",
   "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
@@ -25,8 +25,8 @@
     },
     {
       "path": "00_project/GITHUB_PUBLICATION.md",
-      "size_bytes": 9807,
-      "sha256": "bbf35c801a758d7b7af1ba7616247e69ed9f8cddeea9864df47778eea1ffeaa6"
+      "size_bytes": 11109,
+      "sha256": "9607c00345278babfbebea0d0bb01f4ca06dab370fb2cdae64ae27bcc5cf8ebf"
     },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
@@ -55,8 +55,8 @@
     },
     {
       "path": "00_project/planning_baseline_manifest.json",
-      "size_bytes": 7842,
-      "sha256": "0abfc1c1c9d0efb3acefba50456a47841d790da1a0fed32b7e0190a8455c37d0"
+      "size_bytes": 7845,
+      "sha256": "375a0d8d4949199071cff9b4eb54d2067932aabc96d7c75b90d6fa9614ea3af0"
     },
     {
       "path": "00_project/requirements_traceability.json",
@@ -65,8 +65,8 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 37214,
-      "sha256": "7b4552117941eaa0dfe9985074bb95ec93616025efb162405439450043983e30"
+      "size_bytes": 38351,
+      "sha256": "7597f9728bac3fb8be8e364fcbfbfef3e7ef3089b7806b7eceab77c64104b017"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -854,6 +854,226 @@
       "sha256": "9165da1cf2fa9aace36eaea6e63381bdec817573fc8d38150590cb57361dc812"
     },
     {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/.gitignore",
+      "size_bytes": 35,
+      "sha256": "370d0ccc7a14b89f04fe8c0e903487394922034a70a0c73269b1180c2cdc6159"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/README.md",
+      "size_bytes": 3737,
+      "sha256": "7ae5b688b8d5d5bf699cdb4e9f9d29eaba1cde035d11e605c01464b03749aa1e"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/data/C_diagnostic_holdout.csv",
+      "size_bytes": 2547,
+      "sha256": "bd91f6877dad04f0c58346508e21ba1a7ce52b0a6ac8ce05ea3fe02882dc3b49"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/data/error_comparisons.csv",
+      "size_bytes": 2305,
+      "sha256": "fc3fd21dbb9945387f169f35f8364a2e73768e003cfa9906906ecaf59e3b1c14"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/data/localization.json",
+      "size_bytes": 3400,
+      "sha256": "508bbd22dd6178b0cbae958074e1eb3e3b09039a7447abc6e7600322104098f8"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/data/partial_reference.json",
+      "size_bytes": 703,
+      "sha256": "ac71b8d13fe35653e4794d46e2dee21a9a0efd544861bbe8a05a31ad465596b0"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/data/provenance.json",
+      "size_bytes": 2194,
+      "sha256": "f7c4ccb078f30ab2a5c6644fa401d729fc49bcba7d871a487fc2a750ae13bbc8"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/data/small_checks.json",
+      "size_bytes": 5909,
+      "sha256": "d93498c9316d9f4834c70d369234eaff1a7364dd752fb16f84a5e7319a0a8d2c"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/data/t01_contract.json",
+      "size_bytes": 4685,
+      "sha256": "4ff0223bedca6529585f3c85754525930de51142cbe260ddc94b8013dcde9606"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/data/work_comparisons.csv",
+      "size_bytes": 434,
+      "sha256": "7d42a3d33ee778c469404c77d0dac92e17326f2f05257bbe44f9c8747f9b399d"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/diagrams/01_error_and_work.png",
+      "size_bytes": 203350,
+      "sha256": "21ab5bee991ba197f6c270996a428fe813bdd8ecaa177185f9d3dffb6d76a522"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/diagrams/01_error_and_work.svg",
+      "size_bytes": 92165,
+      "sha256": "c873f704062705a7b55657498e499349e1488104136eed798c77f542d3baac49"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/diagrams/draw_results.py",
+      "size_bytes": 2100,
+      "sha256": "547bd528d6b9551e6d8edf2755fd678fe47a998691dfc181e4e266b62074c56f"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/device_driver.py",
+      "size_bytes": 11105,
+      "sha256": "0caace442f71f7b9fe33dc6437130334880fe7dd5d213a4218aee825f21eddbc"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/frozen/robust_mask_v02.py",
+      "size_bytes": 8335,
+      "sha256": "2c6006636c2728d226fafcb854d5ef45a96ddbbcc3e4e57cc90f31f52c17464c"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/frozen/t01_dual_coverage.py",
+      "size_bytes": 15428,
+      "sha256": "cf3e483cc1b9b2d50d09ca71c1f7bfb05a901f975c5c61d77f85184ed5d9dd5b"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/frozen/t02_deposition_reference.py",
+      "size_bytes": 13000,
+      "sha256": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/frozen/t05_source_reference.py",
+      "size_bytes": 13018,
+      "sha256": "180fb1e9359c31855c0b9151d48071ec500627714c0ddd7095e91a903a65e842"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/frozen/t10_ion_assist_reference.py",
+      "size_bytes": 7703,
+      "sha256": "3d32e7453086c1454e6f3a2edc154f5a983c9285b27aae3fb67e9866bb727e4f"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/legacy_adapter.py",
+      "size_bytes": 6477,
+      "sha256": "2cb99c4d553fe81879a4dd701e2e18e17c2a57956699013530a1829d40c72dc1"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/run_control.py",
+      "size_bytes": 9384,
+      "sha256": "6df741fb60b6dbb6263a9f194c7f21ec6200ad9199b3c657439b4570f9e4394a"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/shadow_integral.py",
+      "size_bytes": 8687,
+      "sha256": "91e7a44344f02a8f8160349ad97a3ab3df6bf8890478d55c3e78307c40ef8f93"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/quadrature_stage.json",
+      "size_bytes": 1305,
+      "sha256": "8cdcd72dc1414a10f3200d02cd6610ce2908ebbe279ae0b18a5b3c82fc2f485a"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/reports/01_method_and_controls.md",
+      "size_bytes": 5358,
+      "sha256": "ccc564da36fe7726343b69ec797a9a5fbfcc3aa86270c9adaeb87928f3dec1ed"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/reports/02_results_and_t03_boundary.md",
+      "size_bytes": 5682,
+      "sha256": "7a6fd49bbf2ed7a4371c1bde7f72c0d5f490a3bd67c6668be5d3f6b6cfad0266"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/reports/03_stop_alert_device_protocol.md",
+      "size_bytes": 5636,
+      "sha256": "c6b5b73c1873c1e2113dcfca4b9aeb7b25f455267753ac89d2cdb74ae3db807a"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/reviews/INDEPENDENT_CHECK.md",
+      "size_bytes": 3762,
+      "sha256": "65a91d9f511002dee9b511e69c2cfe5458f09ebc31439ecda3cc879be498a5f3"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/reviews/independent_check.py",
+      "size_bytes": 23730,
+      "sha256": "a8fbacb0173e510da06115776a9193f42688d18732c4a7479e7b5fddd43565cc"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/reviews/independent_results.json",
+      "size_bytes": 4909,
+      "sha256": "cfa0c35d5f86d873a12ece800907c72b37db8cd2c57ef3b3fa73913ffd9d42cf"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/sources/source_cards.md",
+      "size_bytes": 1763,
+      "sha256": "f758ca8bccc4d13479c0c6d142585370d50f808d7d9bea9caed40e7575290a6c"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/PRE_REGISTERED_PROTOCOL.md",
+      "size_bytes": 3315,
+      "sha256": "d04ca1b62d9a18aab3c85d7d9ec2272d7315ceb84eb6802aa3cfc446ac582de5"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/PROTOCOL_AMENDMENT_01.md",
+      "size_bytes": 1630,
+      "sha256": "7675fb627c1b773d10198364631cde4ec13cd7cc2e215007663640a05b2ca187"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/device_plan_dryrun.json",
+      "size_bytes": 391,
+      "sha256": "c6d4460dfd40045be586730bb843aa5b91c8d86bf2204b4ac55690e442207d4d"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/device_validation_plan.json",
+      "size_bytes": 1664,
+      "sha256": "5f3b6afdb87b9c826641c25ebc82ef51d7759a59c22d1bf90b19222ed5a2ab45"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/execution_ledger.json",
+      "size_bytes": 1212,
+      "sha256": "6fe2d057ec9da7150555a66ce116c4e6a41ad48bc12b4b66d5f459ce705d4390"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/main_run_1.log",
+      "size_bytes": 419,
+      "sha256": "36be40be80ee18535aa56e21bf35e7d057ebd4afb040351fe2b0ad82d5305fe3"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/public_allowlist.txt",
+      "size_bytes": 1305,
+      "sha256": "499d25a8a0b6a718d5937cf6807244592300214e6d28bb4cd96bbf3c14eb318d"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/reader_check.py",
+      "size_bytes": 1971,
+      "sha256": "c44bd5946fde2170923a14200e33edeaa025329d2d941e749d5696275997a42a"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/reader_manifest.json",
+      "size_bytes": 4667,
+      "sha256": "d0a7ca29eee77f8e8e6db23971f4edc765bcf8c15a4d0f8091065c4fb14c8d7d"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/reader_qa.json",
+      "size_bytes": 2769,
+      "sha256": "c1794af6ba14ccbd30b0860dd584a504ce4166f75bd16e3869871e49e0a5a1ce"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/summarize_results.py",
+      "size_bytes": 4581,
+      "sha256": "2e20f34edca935ca1cfb47e168c0bf6ccd5e87e816aa91378af5a9b880e82526"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/summary.log",
+      "size_bytes": 176,
+      "sha256": "b6a8962a7f133699e1cc17499880a61069cf753b0cf983bf969409dd12f5f710"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/test_small.py",
+      "size_bytes": 4040,
+      "sha256": "15e2694c5edf64b1ad6b56f963913d3150275931d98287c0770aafeafa184999"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/unit_tests.log",
+      "size_bytes": 1185,
+      "sha256": "0b8370f82ba56b5b7a45814fa0f4badb10c003fd65f8e6acb2f7a5f207dc124a"
+    },
+    {
       "path": "02_machine_modeling/round2_dual_coverage_error_budget/reports/01_engineering_model.md",
       "size_bytes": 6823,
       "sha256": "7d8534b14471a4904c72c5969ecd7d30515691eeb1cd560a5615bff7d41b2cac"
@@ -1169,6 +1389,226 @@
       "sha256": "f737c63215aacf3f66397eb3c4182761728430bf3dd1dd94a88bcb30648a0bcf"
     },
     {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/.gitignore",
+      "size_bytes": 78,
+      "sha256": "770e0bdff1001323cca653b79ebe946dd81d54173296b8e83b6db28ddc4818ad"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/README.md",
+      "size_bytes": 3616,
+      "sha256": "a46d2b29dbb6c51f0350ac417ea19735c8a15b16850f84258d87ea20f322ce58"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/T04_ROUND2_HANDOFF.md",
+      "size_bytes": 1914,
+      "sha256": "6c28a1882c2232d200a789bb0e33a220ea66247ca7c2d005a67b57ee893f0dc8"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/data/eight_ray_result.json",
+      "size_bytes": 5294,
+      "sha256": "8f91ce130604879a00b250d991c19373a9aa7e7033547949988a106b76504388"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/data/fixture_results.json",
+      "size_bytes": 118579,
+      "sha256": "b782696333e057d43f800f849663e8bca9fd360f3ea8d18dce2df38faf6a57fa"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/data/provenance.json",
+      "size_bytes": 620,
+      "sha256": "c85bc80c49459c88b926756ca76a7cd393c5f2ffb219bbfbc4483b1237bb2469"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/data/small_designs.json",
+      "size_bytes": 513,
+      "sha256": "c642a94673b4a3058ddf5bd92330618d15077a58299e875017c2d10c246efc05"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/data/small_device_execution.json",
+      "size_bytes": 386,
+      "sha256": "74bb585a633dfcb7ac2fa359cde6af18d779da2993fefd01f0c4148dd15dd59c"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/data/small_ray_bundle.json",
+      "size_bytes": 2362,
+      "sha256": "d7ab8c3a7a9394b3cad58e9f49ac8ea6155682afe89f7b6cda6c595c065780be"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/diagrams/01_method.png",
+      "size_bytes": 135760,
+      "sha256": "ad181548e452d81b044c3276506e158d4c525f1010544a3b9f242fc5d1519f1e"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/diagrams/01_method.svg",
+      "size_bytes": 88267,
+      "sha256": "096041de84a6229352eb04f2e9b22edad08d82c4bb1b8f670b10e883a4554cf6"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/diagrams/02_fixture_intervals.png",
+      "size_bytes": 74444,
+      "sha256": "1ec107d547db28697a3bf74a66c6d2a59d75fe058206bac2b14bd80ed0f21c27"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/diagrams/02_fixture_intervals.svg",
+      "size_bytes": 71537,
+      "sha256": "61133a0b2157fba9223b228148d672c7de6bbf0f3509c71fe7af478873f419b7"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/diagrams/draw_diagrams.py",
+      "size_bytes": 3121,
+      "sha256": "78692ee8a34df8256fc48623bbe340f2d2f776420ff2d09a2fc27449f21a9704"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/chunked_oracle.py",
+      "size_bytes": 5880,
+      "sha256": "c93398f47e97a2974233b610ee8db4f6553f349abfaace1a56de864e4e2b2111"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/contracts.py",
+      "size_bytes": 5483,
+      "sha256": "68066272a9d136618f25e5fc0816f8ea3fecfc977f8631d84c2637d56350d7cb"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/device_runner.py",
+      "size_bytes": 9004,
+      "sha256": "4a4052a692b3284d6f3b7fe38c9f247034ebbca958b50ed5f168a48b3c763372"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/frozen/robust_mask_v02.py",
+      "size_bytes": 8335,
+      "sha256": "2c6006636c2728d226fafcb854d5ef45a96ddbbcc3e4e57cc90f31f52c17464c"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/geometry.py",
+      "size_bytes": 8033,
+      "sha256": "95873c8a5891f1e1c0dca4563257844d4e9419dd264c2e70632b16da93ebfe04"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/intervals.py",
+      "size_bytes": 3236,
+      "sha256": "ea71d8357a8c6777da19b6211ca8d78616f69d7d7b86352767b346852f33767f"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/optimizer.py",
+      "size_bytes": 13083,
+      "sha256": "98e4d6dc3e929d6d4e9cb5cce5787ab015467460137f0d7ce0efbd27b1cd6675"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/oracle.py",
+      "size_bytes": 18077,
+      "sha256": "10a485ab1fecde247e47f679cf0e569e7d59eaf3cd13227256232e711e468a38"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/run_optimizer.py",
+      "size_bytes": 2543,
+      "sha256": "7d2ec78805942cf8f46ebe5670a3b8190306ca7868c793d38bb861134c3b8829"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/optimizer_stage.json",
+      "size_bytes": 1596,
+      "sha256": "5bfbdc35ae790dc8c6674577425c905e74e1ac89964867ac1024028b4ae66afe"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/reports/01_algorithm_spec_and_decision_semantics.md",
+      "size_bytes": 14480,
+      "sha256": "cd06c5094b38435beac6dc6e07eaff835f187d4a47f12ed1f70148ee3a8775d2"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/reports/02_device_validation_plan.md",
+      "size_bytes": 7482,
+      "sha256": "797fe93873fe2b465bc187f2a2e3f7cbf3a3c47a76eb0354a695ef19bda81eb0"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/reports/03_interfaces_execution_and_results.md",
+      "size_bytes": 6764,
+      "sha256": "2e20ba8eb5bfef5cd908d9ad3ae7f8cecc460f0024e1f366460975c0ea713eb3"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/reports/04_implementation_evidence_and_limits.md",
+      "size_bytes": 3718,
+      "sha256": "c73f0cf3cff8b46a67f3ea24c232cb1278178e3b5d817b0f39eff21bafd4ad65"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/reviews/independent_optimizer_review.md",
+      "size_bytes": 4183,
+      "sha256": "a6e24f33b2a66e875763769ec8a10d2dcc99e451677974a4974228998b619e47"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/reviews/independent_tests.log",
+      "size_bytes": 2701,
+      "sha256": "700e2a7eb56150e575b7cad9e505a0cd321dc6527920d60009dd042cf1a5bb42"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/reviews/test_optimizer_counterexamples.py",
+      "size_bytes": 12309,
+      "sha256": "b9a23b2a9eda237762ec176a397d3a2b74ac8a1d7da5f8a60ddd7b5d8f763a85"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/sources/source_cards.md",
+      "size_bytes": 5414,
+      "sha256": "bd4c94e320010cb77d33cc19435de6dfc9e1b3a23c5f4694e3e5854efd163a11"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/PRE_REGISTERED_PROTOCOL.md",
+      "size_bytes": 1437,
+      "sha256": "f6d4a2dafb441caf70cacd64b184be63759696ebfa221d72b20e420a31eb43bc"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/device_plan_dryrun.json",
+      "size_bytes": 5472,
+      "sha256": "2bb98dd7c2df7a440f9c3fa3e6a006bbb2d5d56ed671ac2265aa193d88e4d3db"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/device_validation_plan.json",
+      "size_bytes": 4854,
+      "sha256": "ad8e17ac3a1d04184b269d2e04c1afe73bccd1082ed3f93b2a6fb88fe2327402"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/execution_ledger.json",
+      "size_bytes": 1657,
+      "sha256": "c293967d6119e2ce1491e46e8c7f468bb6145f219f14de3193651e4349e34d4d"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/initial_unit_tests_failure.log",
+      "size_bytes": 3747,
+      "sha256": "34b3ec2a2f25e143e50ddb7b04d9bd006e966194a315b57ab7d960582df71dee"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/public_allowlist.txt",
+      "size_bytes": 1302,
+      "sha256": "74712badeb452d4bb2c2424b330792c4079c1eb2a7adde4061bc22920e30001b"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/reader_check.py",
+      "size_bytes": 3209,
+      "sha256": "6dc2c65394b0a251e9c3cac0c1ab6907dc55466564d02af015d602e92eb26da2"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/reader_manifest.json",
+      "size_bytes": 6602,
+      "sha256": "1b5755303e75c3d88edb78f204a1a9f7ac85b6aff931cb21051c42e46cc9dc27"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/reader_qa.json",
+      "size_bytes": 2433,
+      "sha256": "818ae8265ecaed2fd8d9aab3c0d03add6a3a5ae102bfc21ef9ac2948580a7254"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/small_device_contract.json",
+      "size_bytes": 1314,
+      "sha256": "f3fd3c9d7495759cef1ef828eae370ba1a744068a09c55c5edc261fd3f6c9b11"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/test_small.py",
+      "size_bytes": 14667,
+      "sha256": "edc36d240a3342641ab609e5759d9e4c2840fa90327ffd294ea63676991545b9"
+    },
+    {
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/unit_tests.log",
+      "size_bytes": 3557,
+      "sha256": "ddc252517bc8f91c79b33f1e35830be6e1522e7eb44f2e4a000a2292fea3eef9"
+    },
+    {
       "path": "03_correction_plate_optimization/sources/RIGHTS_AND_ACCESS.md",
       "size_bytes": 953,
       "sha256": "6821b6cade045bf29b13c2c2f09c0dce425515324695c1c605050f0638b17510"
@@ -1447,6 +1887,286 @@
       "path": "04_coating_and_substrate_materials/reviews/stage_status.json",
       "size_bytes": 666,
       "sha256": "3414050ede16fb555f10d90fe01de2153f04ce2f57017af6c6c3d792c96490b5"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/README.md",
+      "size_bytes": 3935,
+      "sha256": "6d11cd73451026e8e1ad42f1c9a68741e66d18c4f417ebf2cf08f822de819a8f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/T05_ROUND2_HANDOFF.md",
+      "size_bytes": 1961,
+      "sha256": "405e95294876287032d8092e41f39d0b42fc6c471c626a9429206b1a3f05792f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/data/frozen_dependencies.json",
+      "size_bytes": 1425,
+      "sha256": "0b4939967720d6fbba6f3dc6ba9315b92d0eda713eab17ea4d2c4314f8269bde"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/data/inherited_evidence_index.json",
+      "size_bytes": 71701,
+      "sha256": "9755d07624f894b6ed3ebd52539b2ee741e74e5b3a3acbf04ecc60ee83baf502"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/data/material_response.schema.json",
+      "size_bytes": 28309,
+      "sha256": "c767439089ba6229d370d24e3ffcc0548e549d5867e9426c8957931108210ef7"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/data/output_requirements.json",
+      "size_bytes": 1874,
+      "sha256": "ae80d29474fdccffaa08dfa8ba115d10d430ee9860b14a033dd238cfc75d9001"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/data/priority_material_mapping.json",
+      "size_bytes": 219894,
+      "sha256": "ed667f83e4493479b0202ddce282c40438905f2f8dd177941c437057cfb07c88"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/examples/bulk_density_misuse.json",
+      "size_bytes": 24810,
+      "sha256": "2c63800b39fb76a4d1063d4de62bca7102785b7f7bf421c1a763046b6be521d7"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/examples/cross_zero.json",
+      "size_bytes": 24826,
+      "sha256": "9509090de4c5832d50c828d3d7b43e4bfb8b171add15e25c3816728514744e02"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/examples/erosion.json",
+      "size_bytes": 24909,
+      "sha256": "58165d8ef9041760ae93c46e7e0f09d651401c0e98afbe01c314badf168dcaf6"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/examples/ill_conditioned.json",
+      "size_bytes": 24828,
+      "sha256": "51595d4430bf7cf1b5b603b9058ced67265ddb9dcdcc6505e040f6df46f7ec34"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/examples/positive.json",
+      "size_bytes": 24803,
+      "sha256": "506163c5ef401a20582288eee69fb1cd003c8c38f4a8e6835222d571d037dfae"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/examples/reference_unmeasured.json",
+      "size_bytes": 20728,
+      "sha256": "35097c1633f1866da004bf132a3057a4f3e4c3aadab8d981d2241de9ffa5da2e"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/examples/unknown_neutrals.json",
+      "size_bytes": 24795,
+      "sha256": "018882a5104c8775c901cb8d45ea80eba334da0beceb6e74605cb716bef77e0c"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/examples/zero.json",
+      "size_bytes": 24680,
+      "sha256": "84cfa561b1a528d7786e164192ff710a2fdcab95f8e76830c27d6a18d25a5366"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/figures/01_contract_flow.png",
+      "size_bytes": 145553,
+      "sha256": "2f31043fc911254c03df42438160b48c55743fc61fa2b87502e8dec621f73506"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/figures/01_contract_flow.svg",
+      "size_bytes": 73337,
+      "sha256": "6ed1df703daa2f626cdbe479c9cb0780a4572a937b1d727d7d21d39b0e243505"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/figures/02_identifiability.png",
+      "size_bytes": 104870,
+      "sha256": "0e8c0b5214f5793857bbde0550d9bd8b00aa419e92ba9ee2b5c2dc6ac532b7a5"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/figures/02_identifiability.svg",
+      "size_bytes": 69817,
+      "sha256": "5bc91f3236aae4c8c9960a3799d90178270e868e027e86ddd0e9739d8130ae82"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/figures/03_denominator_states.png",
+      "size_bytes": 65588,
+      "sha256": "fdb611cf33a75cd856d09d79a3007e367bc070c3b7763048a4510b7e9def2c42"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/figures/03_denominator_states.svg",
+      "size_bytes": 44663,
+      "sha256": "1192a23599dfc7c488979d9980dcb502f882789c705d114df11721c422bfc773"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/freeze_manifest.json",
+      "size_bytes": 9459,
+      "sha256": "6475a92ab17538bea48c02524d55cad78e2a58845bfa035783176bcc6630ef90"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/models/build_examples.py",
+      "size_bytes": 8691,
+      "sha256": "0ef18e66dca130c4c7c746f545fbd9af0fe96d5aa4e6180933ab2fd1a120c90a"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/models/build_schema.py",
+      "size_bytes": 5710,
+      "sha256": "6d008d4c560741a98a0ebf0e2a89cb794b13fc9224e0ab216f5c1ccf22029306"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/models/calibration_driver.py",
+      "size_bytes": 5413,
+      "sha256": "9f5d918baacd7753e7da26236712101225d7d55c3a1d05ace8274bbb28c03071"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/models/contract.py",
+      "size_bytes": 19705,
+      "sha256": "b601099bb5e4a62a9c4dc7d6de2f7a8068c1305bcf055bc9137d2fc741414f07"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/models/freeze_package.py",
+      "size_bytes": 2669,
+      "sha256": "26ccdb712e57481d7057e6a1219782066592839673cfe71b3fe1114ec72a4f2f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/models/plot_figures.py",
+      "size_bytes": 4047,
+      "sha256": "dd796564cde01b4d92c91bc7e013a4a5456ba87b7ded0351a4c1b45b3fb0e083"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/models/reader.py",
+      "size_bytes": 5590,
+      "sha256": "26270c0c0dc33669c78e75c3b2e3f7f3ef784f6cc73d9ca5b7c6c3a72b1f6379"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/reports/01_material_response_contract.md",
+      "size_bytes": 8483,
+      "sha256": "38a2ca7c30945b314d0922a27ac91008f899fe394d27469ea5a9d8cd24594d3b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/reports/02_uncertainty_and_validation.md",
+      "size_bytes": 4855,
+      "sha256": "55c964bde6e9a7ffe11ae60cd2bc1f09826b2c1d73fec38de3aafeb93f264e84"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/reports/03_identification_experiment_plan.md",
+      "size_bytes": 5603,
+      "sha256": "776e8e75c8efca3a979c280b5364cffe3ea3730e367e77d11f12469a2dc4c829"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/reviews/author_acceptance.md",
+      "size_bytes": 1420,
+      "sha256": "a8a8315c545c259f339d569c0c2f1f9503f4783dd4335efb85d179bc5f89aa5b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/reviews/independent_dimension_review.md",
+      "size_bytes": 5904,
+      "sha256": "66bcd72944d0f1e4e823ce51f5bc38ff7d7fdc045f5076ce4a59417784b61b12"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/README.md",
+      "size_bytes": 2011,
+      "sha256": "3f221abbee89d4b8d7d82355918cdca27799580de65077f97d4b296e6a5eeda2"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/source_audit.json",
+      "size_bytes": 3254,
+      "sha256": "e8477a2380731a0067a2e389ee81b56be0814d8b7d41a7957d09088ec3bb8f92"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/source_registry.json",
+      "size_bytes": 14529,
+      "sha256": "aa723e3514d0709916b40fe79aa4dd398c51a0e5fd593f0c33a7890369f6e42c"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S01.md",
+      "size_bytes": 1291,
+      "sha256": "5c04878540b87cfee4c97c7e6c3e9e23695850989a982bc82c4c2b36b4569e4c"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S02.md",
+      "size_bytes": 1227,
+      "sha256": "5486eee57c3c580ede928d797cded2c5f8b4423f63671581de682d4d87676ef4"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S03.md",
+      "size_bytes": 1212,
+      "sha256": "ed5ac5ac8353a2498a89b53301d031cba361fac211678eab626acac5034a772e"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S04.md",
+      "size_bytes": 1246,
+      "sha256": "c6a440052e5444b9174d92e3f232c5858ed5304f15ff12b8d73732567edc3a8a"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S05.md",
+      "size_bytes": 1096,
+      "sha256": "34a0a725b613fd0410e9441d8a140f1113f471c1fcb1e352cac5a5f16aa5a745"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S06.md",
+      "size_bytes": 1317,
+      "sha256": "aa829045b702262a8cefda59a36c3f9bc0f015304316e265d90bc01c92e9a120"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S07.md",
+      "size_bytes": 1172,
+      "sha256": "3893c8634d5c4e1ca559107762d5a8229f61d431aa70b66fef1a6487e62443d7"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S08.md",
+      "size_bytes": 1169,
+      "sha256": "d824422853c8054f91b944e70251f5c9310a35ca4e818707b9f0a7a1c3cc6d31"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S09.md",
+      "size_bytes": 1127,
+      "sha256": "7c16f1bdc60e3b0e36df0aa9254376969c353de0684f789eb90b1a70b8f5d9c8"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/sources/summaries/MR-S10.md",
+      "size_bytes": 1495,
+      "sha256": "9ddc7a1de1dd1adf055bb7f91af94a9d2647adb82f030d338ef33d006858900b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/stage_status.json",
+      "size_bytes": 1987,
+      "sha256": "beec8833f5e6d95ec49887b9f7d62eced3158260adbdd97d569ef6c55d7d43f4"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/tests/test_contract.py",
+      "size_bytes": 7791,
+      "sha256": "747bf85b8526dae9f89478321d56073e1efc436b8d978d7125ebef167c438ab5"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/tests/test_independent_dimensions.py",
+      "size_bytes": 5931,
+      "sha256": "2e7a8942a6a8c27bc33088402614322b24db4c0326768578d9fcc4d1b8c26b08"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/verification/device_validation_plan.json",
+      "size_bytes": 1005,
+      "sha256": "a3c154de56b4f9083ccb54d247164d8ab0c1b81a0de68a726c7e25e2d2a10b6a"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/verification/example_results.json",
+      "size_bytes": 82544,
+      "sha256": "e94c9d73842eb7d39b3c4cc6238177a767f6bbccc0e9cef9836208449275a02a"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/verification/outside_scope_check.json",
+      "size_bytes": 182,
+      "sha256": "b76804fa81f818d62183a71c334e9560cbc978fee4af1c649dcf2e1cff8c9572"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/verification/schema_crosscheck.json",
+      "size_bytes": 165,
+      "sha256": "a8331c836d91d290174c6d79b17db085616933d2941c3a4813825dd26e61c362"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/verification/synthetic_calibration.json",
+      "size_bytes": 4090,
+      "sha256": "47e4a82c26b63fe2f438337388d6347dd21d1f4c6f68946393e044c2dd8a8e01"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract/verification/unit_tests.txt",
+      "size_bytes": 5893,
+      "sha256": "311fb6f590bc4649db515c996e061b0c7f005fef2a2112104a5da8eeac35ddb7"
     },
     {
       "path": "04_coating_and_substrate_materials/sources/README.md",
@@ -2037,6 +2757,306 @@
       "path": "05_evaporation_sources/reviews/test_output.txt",
       "size_bytes": 4249,
       "sha256": "b0febaf886e2c283362e774e7f6870554ab263509541f76cd3b4b2e096f70542"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/README.md",
+      "size_bytes": 3059,
+      "sha256": "776811d1efac78374877f0ea34d7708588eb4d1ca4b4c56049ce13efb868a2f1"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/T06_ROUND2_HANDOFF.md",
+      "size_bytes": 2075,
+      "sha256": "a1b408cf03349a50c36d325240177061da02d6c369902a516deeb69c8847f9c6"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/data/measurement_columns.csv",
+      "size_bytes": 416,
+      "sha256": "64fde118311bba4bdd3be46875ae59b6d469ff1646b84b9254810acfc89ec1f6"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/data/qcm_flux.schema.json",
+      "size_bytes": 16090,
+      "sha256": "76331cc39d6ceaa8cb66571453dc13e75bad3152d101272d18c652dfee405973"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/data/synthetic_truth.json",
+      "size_bytes": 272,
+      "sha256": "8ec8b891f82e48b27e8be350a59adeec086f1325924339718cdc6a3df67bd406"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/data/upstream_readonly_dependencies.json",
+      "size_bytes": 1592,
+      "sha256": "1e1d368b7ce1f23314f9f5ab61c0ebb2dba0f7dc9d45149d6d5170ada01215f6"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/examples/actual_unknown.json",
+      "size_bytes": 3230,
+      "sha256": "570adeff8f6813facd260b2c2c2f05a85d859f2895efbef080ee92a61cd7e217"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/examples/synthetic_al.json",
+      "size_bytes": 6517,
+      "sha256": "cf4a845f422ca68b7c6b5adcdfb84fce6b3d041ab8519650cd98df862eb53abe"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/figures/01_transfer_contract.png",
+      "size_bytes": 81690,
+      "sha256": "c2cfe56186dc463885983206e1b412415f09cf33929b369a445cd62fdafa3a32"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/figures/01_transfer_contract.svg",
+      "size_bytes": 57311,
+      "sha256": "15df9bdd2bdceea09b7a1fc6bb167f07f44b3ce00a6d79087ea37698094971b3"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/figures/02_finite_load.png",
+      "size_bytes": 81498,
+      "sha256": "c02552d232348f1557818307224a5be1e309131c27b90ec84d9c37a872eb0ff8"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/figures/02_finite_load.svg",
+      "size_bytes": 43574,
+      "sha256": "88b2bc6f5ab8365bdb6b7cc3f64ab0e1f9cafa9d6f12951123f5489e4a4038a2"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/figures/03_blind_shape_change.png",
+      "size_bytes": 80360,
+      "sha256": "b58d135f7575abeb5f26e54116a6ab4335b5af6db00f648f398a05f365a0882d"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/figures/03_blind_shape_change.svg",
+      "size_bytes": 45383,
+      "sha256": "f0e66c3357b18f766f7e3ba6410f08b81a9d2f53acb114b3cbc4bb8d49247e22"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/figures/04_identifiability.png",
+      "size_bytes": 35418,
+      "sha256": "ee7973b2d055dc4473b35fe56b19df19bc817c85b9577391e060cbedf7aa2fdf"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/figures/04_identifiability.svg",
+      "size_bytes": 31954,
+      "sha256": "f6c9e58dc0155530c408da3e208c809120985d747375a0791dfff7bc9779813c"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/freeze_manifest.json",
+      "size_bytes": 9956,
+      "sha256": "662af5524bb13c1094106dba2f9236af2e1f12d0dd57510ca547d338edf89e10"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/index.html",
+      "size_bytes": 27222,
+      "sha256": "59097b6e9c42f67078dc9af8a08ce0b94f07f5980abf644c98f087343f6ebd71"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/models/build_inputs.py",
+      "size_bytes": 6347,
+      "sha256": "c5dc52a02c3e9d61e2311edb38b11e0235fcf6e72f4428a111bde9da859d4aa8"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/models/contract.py",
+      "size_bytes": 4664,
+      "sha256": "564fc0dd0ffbb3461b898e905dbd182d19c32c0bacea2925e1b515e9078ba4ce"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/models/data_qa.py",
+      "size_bytes": 1669,
+      "sha256": "5841286d475e09bcc16004afe5385d345d65ee20fef6ba21194588438a64caac"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/models/diagnostics.py",
+      "size_bytes": 3892,
+      "sha256": "d9ca7c70e1f46b9d7962248e79c2c176bd374dff3b381d36607da2493ccd6e36"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/models/freeze_package.py",
+      "size_bytes": 3222,
+      "sha256": "7f18cb555ed348eb1785783cc38538b1e1904ec27f8ae24c9ccc8ac15f639e30"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/models/plot_figures.py",
+      "size_bytes": 3278,
+      "sha256": "a75a666cac1cf7e4460b853077330a2ec872e5fef201d81c2c3cb131b7386ebf"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/models/qcm_flux.py",
+      "size_bytes": 16159,
+      "sha256": "b5ab2e502613654059dfd8589f4664263fd70a46d48809d7ffb15a1aa29aeaed"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/models/reader.py",
+      "size_bytes": 4157,
+      "sha256": "be284d304f5cf3aef1622c791c45af4cf4a494dbbaab134112a01e016289555a"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/models/validation_driver.py",
+      "size_bytes": 8552,
+      "sha256": "9568a0bfacfaca5608f3cb38d48a1e283dfd7989795a21020603ad17a2faa1f9"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/reports/01_qcm_acoustics_and_units.md",
+      "size_bytes": 5421,
+      "sha256": "193a84f093977867a84a86bbb2aa60416a618b7e52ee622b1cff0dec4cd183b8"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/reports/02_geometry_species_and_contract.md",
+      "size_bytes": 6183,
+      "sha256": "bfd7bf447c40cf84165e49c1d462683d8b268afb8f89ec994c60fee7951e32a2"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/reports/03_identifiability_and_uncertainty.md",
+      "size_bytes": 5167,
+      "sha256": "5080b2077e2e764ea1f78a0c718052391372548d95d858116075c640d2c41f76"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/reports/04_results_reproduction_and_limits.md",
+      "size_bytes": 5390,
+      "sha256": "022134df04784b4523fe85af03b60a2b8f8dc642742516279f772d5f1361c7c7"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/requirements.txt",
+      "size_bytes": 160,
+      "sha256": "d09ee7b7dcb75b05fdc5214b97c04b335d9be7aab19c04bf09ca849caf2918bb"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/reviews/author_acceptance.md",
+      "size_bytes": 2253,
+      "sha256": "a34695d1e9f9f5798a936b906eb15eaed84e0d52074effa87f9a32fa6e3ed133"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/reviews/independent_dimension_review.md",
+      "size_bytes": 3198,
+      "sha256": "0cc95644256a25aa0ae6fe81fd07753e1673e346c8398d6e7f0e3848026b0514"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/sources/RIGHTS_AND_ACCESS.md",
+      "size_bytes": 1473,
+      "sha256": "8aafd6640d21c92e62f812b9655cabf6639cbc79969a20e313ebbe4776e64949"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/sources/source_registry.json",
+      "size_bytes": 8733,
+      "sha256": "8057f4bd58881efc1a8cb1e022e0d69ea32fc3e24593413a66554dff4be8f3bb"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/sources/summaries/T05-R2-S01.md",
+      "size_bytes": 2432,
+      "sha256": "14af068ced141e1ef8e691262548d13c75b6b3ec6bc219166861e3de5995d624"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/sources/summaries/T05-R2-S02.md",
+      "size_bytes": 1199,
+      "sha256": "14890f4dbfc00e39fe18384ddc0e0c4d60f015caf5fc113858bf965d54a09648"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/sources/summaries/T05-R2-S03.md",
+      "size_bytes": 1068,
+      "sha256": "980670b2cfe99491117867f672ef584c9090cc8e4a5a67beac008d05acb3cb32"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/sources/summaries/T05-R2-S04.md",
+      "size_bytes": 1026,
+      "sha256": "4f40829c215c8d08cb56ff33ed0cccd9860412c80a67d7a6d30d9b721326831a"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/sources/summaries/T05-R2-S05.md",
+      "size_bytes": 957,
+      "sha256": "fc897bf68985d863409ef8b25ced1fe20cab8ec83c4060b09c5f474e4d80a96d"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/sources/summaries/T05-R2-S06.md",
+      "size_bytes": 837,
+      "sha256": "fe1d6d67beb16939026939cc380e5395282f8f174bc8ad77e20ed5e7297a2bdb"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/sources/summaries/T05-R2-S07.md",
+      "size_bytes": 636,
+      "sha256": "e0003f032b9438743f15ac6ae0f2daf2a2a3a55ae75083a77d3008ffef1522c6"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/stage_status.json",
+      "size_bytes": 921,
+      "sha256": "54fa67d165dea5f8770f9337f438e68e6783aeaabdd5492c8b6e4de5690e4bc1"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/tests/test_driver_and_qa.py",
+      "size_bytes": 1223,
+      "sha256": "ddfc6244316162b7bcc3909ea4a030768083548edc6fc6d6cd74fa8437d03b04"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/tests/test_independent_dimensions.py",
+      "size_bytes": 4841,
+      "sha256": "0250307867fcd621fca30d7516364775d543443d9396cebf17a52fdafd654595"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/tests/test_qcm_flux.py",
+      "size_bytes": 7310,
+      "sha256": "299ee19dafbf0da673045576dfe097f1e8bf4b9424f9ec81367646127b188fa3"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/data_qa.json",
+      "size_bytes": 606,
+      "sha256": "8951c35c5912a7e6af402c538034da25a107d40006037e8d07fae3cce8798fae"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/diagnostics.json",
+      "size_bytes": 10040,
+      "sha256": "d6923b28d0eed9d22e28a59ca4cbe02565ebb2a4b103f48ac94fc65238c32824"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/environment.json",
+      "size_bytes": 238,
+      "sha256": "10a48f3d5f1366968a89ce5c77a4917eee525042a8b5fd66e9fbb5a8baac6d44"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/freeze_receipt.json",
+      "size_bytes": 619,
+      "sha256": "049e2022bf2869fbc82ae8fa597cf87d7aca9174574bfc2dde5dd4be9f6cb21c"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/heavy_plan.json",
+      "size_bytes": 1156,
+      "sha256": "9023bcb11004dceae7d1c05a319d9cffa693e51a9de8b7ba2bbc9cf400c7e297"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/integrity_negative_checks.json",
+      "size_bytes": 252,
+      "sha256": "73682a4339c3eabfc21c1ef1c853444b6660c6376b4366d6a87bf2bf57d01208"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/light_driver/correlated_drift_000000.json",
+      "size_bytes": 2898,
+      "sha256": "1c92a002dc805b8492470dbdefdabc5426eed4b1cd1bb7ee288cbe4040ed3dd9"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/light_driver/nominal_000000.json",
+      "size_bytes": 3089,
+      "sha256": "50ac45d20b54481a15f2ea9b9a311f59ecdb27d09e82f749477b6e5f05f68d7f"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/light_driver/progress.json",
+      "size_bytes": 7369,
+      "sha256": "89552ba1f58232beced0abd68a7b4d8ce7e8dba8d080df6e03b22057e27a9e98"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/light_driver/sensor_obscuration_000000.json",
+      "size_bytes": 2906,
+      "sha256": "79fdbc908f1162335329cbf28e52ebf562811228ba54b3c3e3f71e0205dfcd5a"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/light_driver/single_outlier_000000.json",
+      "size_bytes": 2899,
+      "sha256": "9ef55e95007b0604ba653717240e5ea869a9e8db49c09320c63b08da509b7e5e"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/light_driver_summary.json",
+      "size_bytes": 7369,
+      "sha256": "89552ba1f58232beced0abd68a7b4d8ce7e8dba8d080df6e03b22057e27a9e98"
+    },
+    {
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer/verification/unit_tests.txt",
+      "size_bytes": 4946,
+      "sha256": "fa25810c4fa674cac794956503d8603cee5ecd0c1ecceb29d3c78a665300bdb4"
     },
     {
       "path": "05_evaporation_sources/sources/RIGHTS_AND_ACCESS.md",
@@ -4180,28 +5200,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 9020,
-      "sha256": "1acc9a3c77c21ec1753a357431fa070a35c9ce5e9970271c46cc1e9402afd30f"
+      "size_bytes": 9635,
+      "sha256": "62f2eb5b6c1734042b44b869b5fac78425b77337e76d63338c5c96afbf7a70d0"
     },
     {
       "path": "README.md",
-      "size_bytes": 5804,
-      "sha256": "32e4d089c31c79c1450e8c97fb66161e6321ba1f5cc9c1b63d4803d1e249754f"
+      "size_bytes": 5784,
+      "sha256": "e79151527f882403d90ad568b667b2129785402c1961314aedc5e738c04a66c6"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 5034,
-      "sha256": "e78a77d0fb0495da47a79d3ccb7cccd421d83082491a7fe2c44888eda4cb0ab7"
+      "size_bytes": 4973,
+      "sha256": "db45f347466564f48f0d767cb449fa5b8f70d221d7bf499600e95ae29be5c92f"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 4659,
-      "sha256": "c045fd5a87cab85074f5491bedd3f0d19c8924169e7091b3fd2e687abd887d1f"
+      "size_bytes": 6373,
+      "sha256": "2c0a42382c7b50bae96a35a44b16d02842618e5766aecd48ecdf4c433df811b9"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 2094,
-      "sha256": "b387ffad60dad655660f68bb0a86ee720fe451bcb36df1a5f3e059579f65b78b"
+      "size_bytes": 2058,
+      "sha256": "dee8a8d7f1426208bdd66ae478da848948cf001e9c165786ad8fb496ecbf83b7"
     }
   ],
   "source_T02_zip_sha256": "684b63f228b31a2ba882b08f60cbc1e7a13173283d0e79b03fa4fc861d3c344b",
@@ -4217,5 +5237,35 @@
   "source_T10_deliverable_manifest_sha256": "fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f",
   "source_T01_round2_reader_manifest_sha256": "4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23",
   "source_T02_round2_manifest_sha256": "9e0b83b83367ae82a3968be4f35ad450d56811a5e357f768fb20ebb390a40253",
-  "source_T02_round2_v02_manifest_sha256": "38cace86fd120248788747c5cbb3d14d2a462ca72b7b03d510a2236a38aa85af"
+  "source_T02_round2_v02_manifest_sha256": "38cace86fd120248788747c5cbb3d14d2a462ca72b7b03d510a2236a38aa85af",
+  "round2_batch01_manifests": [
+    {
+      "id": "T02v03",
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3",
+      "manifest": "verification/reader_manifest.json",
+      "sha": "d0a7ca29eee77f8e8e6db23971f4edc765bcf8c15a4d0f8091065c4fb14c8d7d",
+      "count": 44
+    },
+    {
+      "id": "T03R2",
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer",
+      "manifest": "verification/reader_manifest.json",
+      "sha": "1b5755303e75c3d88edb78f204a1a9f7ac85b6aff931cb21051c42e46cc9dc27",
+      "count": 44
+    },
+    {
+      "id": "T04R2",
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract",
+      "manifest": "freeze_manifest.json",
+      "sha": "6475a92ab17538bea48c02524d55cad78e2a58845bfa035783176bcc6630ef90",
+      "count": 56
+    },
+    {
+      "id": "T05R2",
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer",
+      "manifest": "freeze_manifest.json",
+      "sha": "662af5524bb13c1094106dba2f9236af2e1f12d0dd57510ca547d338edf89e10",
+      "count": 60
+    }
+  ]
 }

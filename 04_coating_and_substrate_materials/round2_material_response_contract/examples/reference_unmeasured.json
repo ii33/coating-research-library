@@ -1,0 +1,712 @@
+{
+  "schema_version": "1.0",
+  "record_id": "REF-SIO2-FUSED-SILICA-UNMEASURED",
+  "record_role": "reference_unmeasured",
+  "production_qualified": false,
+  "film": {
+    "material_id": "SiO2_film",
+    "label": "Synthetic stoichiometric amorphous silica film",
+    "manufacturer": null,
+    "grade": null,
+    "lot": null,
+    "identity_status": "unresolved",
+    "physical_state": "thin_film",
+    "phase": null,
+    "nominal_formula": "SiO2",
+    "composition_verified": false,
+    "stoichiometry": {
+      "Si": 1.0,
+      "O": 2.0
+    },
+    "element_molar_mass_kg_mol": {
+      "Si": {
+        "value": null,
+        "unit": "kg/mol",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "O": {
+        "value": null,
+        "unit": "kg/mol",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      }
+    },
+    "density": {
+      "value": null,
+      "unit": "kg/m3",
+      "status": "unknown",
+      "interval": null,
+      "interval_kind": "none",
+      "standard_u": null,
+      "uncertainty_note": "Unmeasured, not zero uncertainty",
+      "source_ids": [],
+      "condition_id": "UNMEASURED"
+    },
+    "density_basis": "effective_film",
+    "density_composition_invariant": false
+  },
+  "substrate": {
+    "material_id": "fused_silica_method_example",
+    "label": "Synthetic fused-silica witness substrate",
+    "manufacturer": null,
+    "grade": null,
+    "lot": null,
+    "identity_status": "unresolved",
+    "physical_state": "bulk_substrate",
+    "phase": null,
+    "nominal_formula": "SiO2",
+    "composition_verified": false,
+    "stoichiometry": {
+      "Si": 1.0,
+      "O": 2.0
+    },
+    "element_molar_mass_kg_mol": {
+      "Si": {
+        "value": null,
+        "unit": "kg/mol",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "O": {
+        "value": null,
+        "unit": "kg/mol",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      }
+    },
+    "density": {
+      "value": null,
+      "unit": "kg/m3",
+      "status": "unknown",
+      "interval": null,
+      "interval_kind": "none",
+      "standard_u": null,
+      "uncertainty_note": "Unmeasured, not zero uncertainty",
+      "source_ids": [],
+      "condition_id": "UNMEASURED"
+    },
+    "density_basis": "bulk_substrate",
+    "density_composition_invariant": false
+  },
+  "process_context": {
+    "deposition_method": "unknown",
+    "source_type": null,
+    "source_model": null,
+    "chamber_id": null,
+    "source_material_identity": {
+      "label": "unknown source material",
+      "manufacturer": null,
+      "grade": null,
+      "lot": null
+    },
+    "surface_preparation": "not specified; no actual sample",
+    "underlayers": [],
+    "post_treatment_history": [],
+    "environment_history": [],
+    "gas_species": [],
+    "spectrum_resolution_note": "No measured energy-angle spectrum"
+  },
+  "spatial_support": {
+    "point_id": "synthetic-local-point",
+    "area_m2": 0.0001,
+    "coordinate_frame": "substrate_local_SI",
+    "normal_convention": "outward_surface_normal",
+    "scope": "local_point"
+  },
+  "flux_area_basis": "actual_substrate_surface_area",
+  "time_sampling": "piecewise_constant_bin_averages",
+  "history_resolution": "unresolved",
+  "atom_inventory_coverage": "unknown",
+  "initial_inventory_atoms_m2": {
+    "Si": {
+      "value": null,
+      "unit": "atoms/m2",
+      "status": "unknown",
+      "interval": null,
+      "interval_kind": "none",
+      "standard_u": null,
+      "uncertainty_note": "Unmeasured, not zero uncertainty",
+      "source_ids": [],
+      "condition_id": "UNMEASURED"
+    },
+    "O": {
+      "value": null,
+      "unit": "atoms/m2",
+      "status": "unknown",
+      "interval": null,
+      "interval_kind": "none",
+      "standard_u": null,
+      "uncertainty_note": "Unmeasured, not zero uncertainty",
+      "source_ids": [],
+      "condition_id": "UNMEASURED"
+    }
+  },
+  "initial_thickness": {
+    "value": null,
+    "unit": "m",
+    "status": "unknown",
+    "interval": null,
+    "interval_kind": "none",
+    "standard_u": null,
+    "uncertainty_note": "Unmeasured, not zero uncertainty",
+    "source_ids": [],
+    "condition_id": "UNMEASURED"
+  },
+  "bins": [
+    {
+      "bin_id": "b0",
+      "t_start_s": 0.0,
+      "dt_s": 10.0,
+      "surface_temperature": {
+        "value": null,
+        "unit": "K",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "net_element_flux": {
+        "Si": {
+          "value": null,
+          "unit": "atoms/m2/s",
+          "status": "unknown",
+          "interval": null,
+          "interval_kind": "none",
+          "standard_u": null,
+          "uncertainty_note": "Unmeasured, not zero uncertainty",
+          "source_ids": [],
+          "condition_id": "UNMEASURED"
+        },
+        "O": {
+          "value": null,
+          "unit": "atoms/m2/s",
+          "status": "unknown",
+          "interval": null,
+          "interval_kind": "none",
+          "standard_u": null,
+          "uncertainty_note": "Unmeasured, not zero uncertainty",
+          "source_ids": [],
+          "condition_id": "UNMEASURED"
+        }
+      },
+      "net_flux_method": "unknown",
+      "net_flux_evidence": "No user campaign data",
+      "beams": [
+        {
+          "species": "Ar+",
+          "charge_number": 1,
+          "nuclei_per_particle": 1,
+          "azimuth_policy": "unknown",
+          "distribution_basis": "joint_energy_angle_bin_integrated_particle_flux",
+          "cells": [
+            {
+              "flux": {
+                "value": null,
+                "unit": "particles/m2/s",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              },
+              "energy": {
+                "value": null,
+                "unit": "eV/particle",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              },
+              "theta": {
+                "value": null,
+                "unit": "deg_from_normal",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              },
+              "phi": {
+                "value": null,
+                "unit": "deg_about_normal",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              }
+            }
+          ]
+        }
+      ],
+      "neutral_inventory": "unknown",
+      "history_class": "unknown",
+      "surface_potential": {
+        "value": null,
+        "unit": "V",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "reactive_gas_partial_pressure": {
+        "value": null,
+        "unit": "Pa",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      }
+    },
+    {
+      "bin_id": "b1",
+      "t_start_s": 10.0,
+      "dt_s": 10.0,
+      "surface_temperature": {
+        "value": null,
+        "unit": "K",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "net_element_flux": {
+        "Si": {
+          "value": null,
+          "unit": "atoms/m2/s",
+          "status": "unknown",
+          "interval": null,
+          "interval_kind": "none",
+          "standard_u": null,
+          "uncertainty_note": "Unmeasured, not zero uncertainty",
+          "source_ids": [],
+          "condition_id": "UNMEASURED"
+        },
+        "O": {
+          "value": null,
+          "unit": "atoms/m2/s",
+          "status": "unknown",
+          "interval": null,
+          "interval_kind": "none",
+          "standard_u": null,
+          "uncertainty_note": "Unmeasured, not zero uncertainty",
+          "source_ids": [],
+          "condition_id": "UNMEASURED"
+        }
+      },
+      "net_flux_method": "unknown",
+      "net_flux_evidence": "No user campaign data",
+      "beams": [
+        {
+          "species": "Ar+",
+          "charge_number": 1,
+          "nuclei_per_particle": 1,
+          "azimuth_policy": "unknown",
+          "distribution_basis": "joint_energy_angle_bin_integrated_particle_flux",
+          "cells": [
+            {
+              "flux": {
+                "value": null,
+                "unit": "particles/m2/s",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              },
+              "energy": {
+                "value": null,
+                "unit": "eV/particle",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              },
+              "theta": {
+                "value": null,
+                "unit": "deg_from_normal",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              },
+              "phi": {
+                "value": null,
+                "unit": "deg_about_normal",
+                "status": "unknown",
+                "interval": null,
+                "interval_kind": "none",
+                "standard_u": null,
+                "uncertainty_note": "Unmeasured, not zero uncertainty",
+                "source_ids": [],
+                "condition_id": "UNMEASURED"
+              }
+            }
+          ]
+        }
+      ],
+      "neutral_inventory": "unknown",
+      "history_class": "unknown",
+      "surface_potential": {
+        "value": null,
+        "unit": "V",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "reactive_gas_partial_pressure": {
+        "value": null,
+        "unit": "Pa",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      }
+    }
+  ],
+  "resputter_yield_records": [
+    {
+      "state": "unknown",
+      "target_composition_id": "SiO2_actual_film",
+      "target_state": "unknown",
+      "projectile": "Ar+",
+      "evidence_source_ids": [],
+      "energy_domain_eV": null,
+      "angle_domain_deg": null,
+      "temperature_domain_K": null,
+      "fluence_domain_m2": null,
+      "yield_basis": "atoms_per_incident_particle",
+      "values_by_element": {},
+      "interpolation": "none",
+      "extrapolation": "forbidden",
+      "note": "No qualified Y(E,theta,state) transferred; measured net-element route does not require assigning a yield"
+    }
+  ],
+  "response_records": [
+    {
+      "property": "n",
+      "value": {
+        "value": null,
+        "unit": "1",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    },
+    {
+      "property": "k",
+      "value": {
+        "value": null,
+        "unit": "1",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    },
+    {
+      "property": "biaxial_stress",
+      "value": {
+        "value": null,
+        "unit": "Pa",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    },
+    {
+      "property": "adhesion",
+      "value": {
+        "value": null,
+        "unit": "method_defined",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    },
+    {
+      "property": "rms_roughness",
+      "value": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "sample_id": "SYNTH-FILM-001",
+      "sample_state": "thin_film",
+      "evidence": "unavailable",
+      "method": "unknown",
+      "wavelength": {
+        "value": null,
+        "unit": "m",
+        "status": "unknown",
+        "interval": null,
+        "interval_kind": "none",
+        "standard_u": null,
+        "uncertainty_note": "Unmeasured, not zero uncertainty",
+        "source_ids": [],
+        "condition_id": "UNMEASURED"
+      },
+      "test_geometry": "unknown",
+      "failure_mode": "unknown",
+      "model_id": null,
+      "domain": {
+        "temperature_K": [],
+        "incident_energy_eV": [],
+        "fluence_m2": [],
+        "flux_m2_s": [],
+        "history_classes": [],
+        "sample_ids": [],
+        "validation_evidence": []
+      },
+      "production_ready": false
+    }
+  ],
+  "uncertainty_axes": {
+    "source": {
+      "status": "unknown",
+      "note": "No campaign measurement or numerical closure",
+      "bound_reference": null
+    },
+    "time": {
+      "status": "unknown",
+      "note": "No campaign measurement or numerical closure",
+      "bound_reference": null
+    },
+    "space": {
+      "status": "unknown",
+      "note": "No campaign measurement or numerical closure",
+      "bound_reference": null
+    },
+    "geometry": {
+      "status": "unknown",
+      "note": "No campaign measurement or numerical closure",
+      "bound_reference": null
+    },
+    "kernel": {
+      "status": "unknown",
+      "note": "No campaign measurement or numerical closure",
+      "bound_reference": null
+    },
+    "input": {
+      "status": "unknown",
+      "note": "No campaign measurement or numerical closure",
+      "bound_reference": null
+    },
+    "model": {
+      "status": "unknown",
+      "note": "No campaign measurement or numerical closure",
+      "bound_reference": null
+    }
+  },
+  "provenance": {
+    "source_ids": [
+      "MR-S01",
+      "MR-S02",
+      "MR-S03",
+      "MR-S04",
+      "MR-S05"
+    ],
+    "dependency_hashes": {},
+    "ray_bundle_id": null,
+    "measurement_ids": [],
+    "notes": "Public-evidence selection only; time/position entries are template placeholders, not a campaign. No bulk reference value copied into actual film inputs."
+  },
+  "requested_outputs": [
+    "N_net",
+    "h_increment",
+    "D",
+    "U",
+    "R",
+    "epsilon"
+  ]
+}

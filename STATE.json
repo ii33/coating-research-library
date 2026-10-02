@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T05:21:47.288102+00:00",
+  "updated_at_utc": "2026-10-02T07:21:16.301375+00:00",
   "project_status": "active",
   "setup_status": "complete_integrity_checked",
   "round": 2,
-  "active_topic_id": "T02",
-  "active_task_id": "ROUND2.T02_QUADRATURE_ERROR_CONTROL",
-  "active_scope": "T02限定三个代表阴影不连续求积案例、预置预算与参考积分；区分误差估计与严格界，独立v0.3进行中",
-  "later_topics_policy": "T02_quadrature_error_control_planning_T03_not_started",
+  "active_topic_id": "T06",
+  "active_task_id": "ROUND2.T06_PROCESS_OPTICAL_OBSERVABLES",
+  "active_scope": "T06第二轮：工艺与膜态输入到光学可观测量的有条件接口；完整实现与设备验证计划分开",
+  "later_topics_policy": "T06_round2_bounded_method_and_implementation_then_ordered_handoff",
   "topic_order": [
     "T01",
     "T02",
@@ -44,7 +44,7 @@
     "T09": "bounded_public_research_complete_paid_text_GJB_and_real_sample_gaps_retained_not_certified",
     "T10": "bounded_public_theory_and_synthetic_handoff_with_limited_independent_numerical_checks_formal_review_and_machine_qualification_pending"
   },
-  "next_action": "在独立quadrature_control_v0_3研究三个代表案例，不改原partial或扩大几何；未冻结v0.3不发布，T03未启动",
+  "next_action": "开展T06工艺/膜态到光学可观测量接口；完整算法与设备driver先写，重型精度/性能验证待用户安排设备",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -54,9 +54,11 @@
   ],
   "notes": [
     "T01–T10第一轮优先公共资料、理论和合成基础已覆盖；这不是完整工程资格、正式审查签署或实机校准完成",
-    "独立v0.2受限参考求交模块闭合已知侧壁反例；8265名义几何比较、256扰动见证、18拒绝例及185项局部复看支持限定范围，初次FAIL证据保留",
-    "旧v0.1的55项冻结哈希及frozen_bounded_partial完全不变；0.203%源求积差和14.3ms独曝差未解决，没有重跑/提高源时间网格",
-    "v0.2仅为编码几何条件下的小批量求交子参考器；不是完整T02/T03认证参考，不是物理校准或生产资格，未自动替换旧核"
+    "本批统一发布T02v0.3、T03优化、T04材料响应合同、T05 QCM通量转移四个冻结增补，减少上传频率",
+    "T02v0.3仍partial：点12离子连续参考及tight/device任务未运行；点2支集结果仅条件数值包络，非严格认证",
+    "T03/T04/T05为implementation_ready_validation_pending；小测试、合成校准和有限独立核查不是生产验收",
+    "高计算量算法与设备driver完整实现；重型精度、性能和设备资源验证等待用户安排设备，不为当前云端算力缩减设计",
+    "T06正在独立目录研究，未冻结成果不纳入本次批量发布；全部此前冻结研究保持不变"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -69,10 +71,11 @@
     "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
   },
   "handoff_evidence": [
-    "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/README.md",
-    "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/closure_stage.json",
-    "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/reviews/INDEPENDENT_REVIEW.md",
-    "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/reader_manifest.json"
+    "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/reader_manifest.json",
+    "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/reader_manifest.json",
+    "04_coating_and_substrate_materials/round2_material_response_contract/freeze_manifest.json",
+    "05_evaporation_sources/round2_qcm_flux_transfer/freeze_manifest.json",
+    "05_evaporation_sources/round2_qcm_flux_transfer/T06_ROUND2_HANDOFF.md"
   ],
   "machine_validation": "not_performed",
   "formal_review_signoff": "not_performed",
@@ -83,6 +86,38 @@
     "T01_TOPOLOGY_ALIGNMENT": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
     "T02_DUAL_COVERAGE_ERROR_BUDGET": "frozen_bounded_partial",
     "T02_INTERSECTION_CORRECTNESS_CLOSURE": "frozen_bounded_predicate_closure",
-    "T02_QUADRATURE_ERROR_CONTROL": "in_progress"
-  }
+    "T02_QUADRATURE_ERROR_CONTROL": "frozen_local_partial_with_device_validation_pending",
+    "T03_DUAL_COVERAGE_OPTIMIZER": "implementation_ready_validation_pending",
+    "T04_MATERIAL_RESPONSE_INPUT_CONTRACT": "implementation_ready_validation_pending",
+    "T05_QCM_FLUX_TRANSFER": "implementation_ready_validation_pending",
+    "T06_PROCESS_OPTICAL_OBSERVABLES": "in_progress"
+  },
+  "execution_policy": {
+    "high_compute": "implement_complete_algorithm_and_device_driver_now_heavy_validation_after_user_device_arrangement",
+    "acceptance": "small_tests_are_implementation_checks_not_production_acceptance",
+    "publication": "accumulate_meaningful_frozen_batches_reduce_upload_frequency_no_per_minor_revision_push",
+    "freeze": "prior_frozen_artifacts_remain_unchanged_new_work_in_independent_directories"
+  },
+  "device_validation_backlog": [
+    {
+      "stage": "T02v03",
+      "status": "awaiting_user_arranged_device_not_run",
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3"
+    },
+    {
+      "stage": "T03R2",
+      "status": "awaiting_user_arranged_device_not_run",
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer"
+    },
+    {
+      "stage": "T04R2",
+      "status": "awaiting_user_arranged_device_not_run",
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract"
+    },
+    {
+      "stage": "T05R2",
+      "status": "awaiting_user_arranged_device_not_run",
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer"
+    }
+  ]
 }

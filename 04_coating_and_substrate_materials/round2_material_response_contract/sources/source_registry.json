@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0.0",
+  "created_at_utc": "2026-10-02",
+  "purpose": "T04第二轮材料响应接口：有界一手来源核查与原创摘要，不是完整材料数据库或工艺资格证明",
+  "sources": [
+    {
+      "source_id": "MR-S01",
+      "title": "Malitson (1965), Interspecimen Comparison of the Refractive Index of Fused Silica",
+      "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-55-10-1205",
+      "doi": "10.1364/JOSA.55.001205",
+      "source_class": "original_experimental_paper",
+      "access_date": "2026-10-02",
+      "access_scope": "publisher_abstract_equation_and_exposed_tables",
+      "locator": "JOSA 55, 1205–1209; abstract and dispersion equation",
+      "supported_scope": "块材熔融硅石在20°C、0.21–3.71 µm范围的色散；可作基片方法示例",
+      "limitations": "不是沉积膜的n、k或密度；拟合残差不是用户样片不确定度；不外推至中远红外",
+      "inherited_aliases": [
+        "T04:OX-11"
+      ],
+      "short_quote": {
+        "text": "where λ is expressed in microns",
+        "locator": "abstract immediately after dispersion equation",
+        "word_count": 6
+      },
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S01.md"
+    },
+    {
+      "source_id": "MR-S02",
+      "title": "Corning, HPFS Fused Silica Industrial Grade",
+      "url": "https://www.corning.com/media/worldwide/csm/documents/1e624b3034474193b5b00ea6f558dd3d2.pdf",
+      "doi": null,
+      "source_class": "manufacturer_primary_datasheet",
+      "access_date": "2026-10-02",
+      "access_scope": "official_public_pdf_read_via_web_no_local_copy",
+      "locator": "PDF p.2, Mechanical and Thermal Properties; Refractive Index and Dispersion",
+      "supported_scope": "指定商品块材的密度、力热与折射率典型值，明确不同测量温度",
+      "limitations": "不是沉积薄膜；不是用户来料COA；商品等级和温度必须保留",
+      "inherited_aliases": [],
+      "short_quote": {
+        "text": "Unless otherwise stated, all values represent typical data @ 25 ºC",
+        "locator": "PDF p.2 bottom note",
+        "word_count": 11
+      },
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S02.md"
+    },
+    {
+      "source_id": "MR-S03",
+      "title": "McNeil et al. (1984), Ion-assisted deposition of optical thin films: low energy vs high energy bombardment",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-23-4-552",
+      "doi": "10.1364/AO.23.000552",
+      "source_class": "original_experimental_paper",
+      "access_date": "2026-10-02",
+      "access_scope": "publisher_abstract_and_exposed_html_tables_not_fulltext",
+      "locator": "Applied Optics 23, 552–559; abstract; Table I",
+      "supported_scope": "SiO2/TiO2氧IAD响应有材料、能量、到靶电流密度及基片温度条件",
+      "limitations": "不把摘要能区与其他表组拼接；不能由其化学计量结论求用户n/k、应力、Y或通用最佳电压",
+      "inherited_aliases": [
+        "T10:IS-11"
+      ],
+      "short_quote": {
+        "text": "at the optic",
+        "locator": "abstract, energy and current-density sentence",
+        "word_count": 3
+      },
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S03.md"
+    },
+    {
+      "source_id": "MR-S04",
+      "title": "McNeil et al. (1985), Properties of TiO2 and SiO2 thin films deposited using ion assisted deposition",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-24-4-486",
+      "doi": "10.1364/AO.24.000486",
+      "source_class": "original_experimental_paper",
+      "access_date": "2026-10-02",
+      "access_scope": "publisher_abstract_and_exposed_html_tables_not_fulltext",
+      "locator": "Applied Optics 24, 486–489; abstract; Table I; Tables II–III are TiO2",
+      "supported_scope": "温度、速率、粒种、到达通量、氧背景和源污染须共同记录",
+      "limitations": "TiO2表II/III不得错赋SiO2；表中n波长在本次可读内容未明确，不输入通用n；完整源结构未核",
+      "inherited_aliases": [
+        "T10:IS-12"
+      ],
+      "short_quote": {
+        "text": "Experimental Conditions at the Optical Surface for Film Deposition",
+        "locator": "Table I title",
+        "word_count": 9
+      },
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S04.md"
+    },
+    {
+      "source_id": "MR-S05",
+      "title": "Niederwald et al. (1999), Ion-assisted deposition of oxide materials at room temperature by use of different ion sources",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-38-16-3610",
+      "doi": "10.1364/AO.38.003610",
+      "source_class": "original_experimental_paper",
+      "access_date": "2026-10-02",
+      "access_scope": "publisher_abstract_and_exposed_html_tables_not_fulltext",
+      "locator": "Applied Optics 38, 3610–3613; abstract; Tables 1–4",
+      "supported_scope": "非加热玻璃上电子束辅助蒸发；SiO2的n及损耗随三种源条件不同",
+      "limitations": "End-Hall、plasma、cold-cathode各自条件不是Kaufman配方；吸收ppm不是k；非加热不等于已知恒定室温",
+      "inherited_aliases": [
+        "T04:OX-05"
+      ],
+      "short_quote": null,
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S05.md"
+    },
+    {
+      "source_id": "MR-S06",
+      "title": "Kaufman & Robinson, Technical Note TN-05: Ion-Assist Doses",
+      "url": "https://ionsources.com/wp-content/uploads/2024/01/TN-05_Ion-Assist-Doses-Resource.pdf",
+      "doi": null,
+      "source_class": "manufacturer_primary_technical_note",
+      "access_date": "2026-10-02",
+      "access_scope": "official_public_pdf_read_via_web_no_local_copy",
+      "locator": "PDF pp.2–3 (printed pp.1–2); Accuracy section; end-Hall worked example",
+      "supported_scope": "剂量归一化依赖沉积速率、到靶电流估计；厂家明确推荐量只是实验起点",
+      "limitations": "示例为End-Hall；推荐剂量不是材料响应测量；等总能量/原子不证明等n/k、应力、附着；不引用其剂量数为生产设定",
+      "inherited_aliases": [
+        "T10:IS-06"
+      ],
+      "short_quote": {
+        "text": "starting points for experimental tests, not final values",
+        "locator": "Accuracy, PDF p.3",
+        "word_count": 8
+      },
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S06.md"
+    },
+    {
+      "source_id": "MR-S07",
+      "title": "Shibanov et al., SiO2 sputtering by low-energy Ar+, Kr+, and Xe+ ions in plasma conditions",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0042207X24008133",
+      "doi": "10.1016/j.vacuum.2024.113767",
+      "source_class": "original_experimental_paper",
+      "access_date": "2026-10-02",
+      "access_scope": "official_publisher_search_index_excerpt_only_direct_open_failed",
+      "locator": "Vacuum 2025, article 113767; indexed publisher abstract; DOI year suffix is 2024",
+      "supported_scope": "TEOS沉积SiO2在20–200 eV、低压ICP纯稀有气体等离子体下研究再溅射",
+      "limitations": "不是蒸发IAD膜或单束Kaufman；本次未核完整角度/能谱/通量/误差和数值Y，不能补成Y(E,theta)表",
+      "inherited_aliases": [],
+      "short_quote": null,
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S07.md"
+    },
+    {
+      "source_id": "MR-S08",
+      "title": "Grigoriev, Sulimov and Tikhonravov (2022), Atomistic Simulation of the Ion-Assisted Deposition of Silicon Dioxide Thin Films",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9500739/",
+      "doi": "10.3390/nano12183242",
+      "source_class": "original_computational_paper",
+      "access_date": "2026-10-02",
+      "access_scope": "public_full_html_primary_article",
+      "locator": "Nanomaterials 12(18), 3242; sections 2–3; Figure 6 discussion",
+      "supported_scope": "熔融硅石模型基片上的SiO2 IAD分子动力学显式改变入射方向与辅助比例",
+      "limitations": "计算证据不是实测材料常数；固定300 K、小尺度、DESIL势及分子离子处理近似；不得将模拟致密化/n或模拟最优值移植生产",
+      "inherited_aliases": [],
+      "short_quote": null,
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S08.md"
+    },
+    {
+      "source_id": "MR-S09",
+      "title": "Zeng et al. (2020), Effects of water adsorption on properties of electron-beam HfO2/SiO2 high-reflection coatings",
+      "url": "https://api.creol.ucf.edu/Publications/14040.pdf",
+      "doi": "10.1016/j.tsf.2020.137826",
+      "source_class": "original_experimental_paper_author_institution_host",
+      "access_date": "2026-10-02",
+      "access_scope": "institutional_public_pdf_read_via_web_no_local_copy",
+      "locator": "Thin Solid Films 697, 137826; sections 2.1–2.2 and 3.2–3.3",
+      "supported_scope": "水分暴露/时间与光谱、应力演化相关；PIAD SiO2封帽改变吸水过程",
+      "limitations": "特定HfO2/SiO2及封帽体系；基片为BaF2/BK7/ZF7，不是本轮熔融硅石组合的验证；不直接推出单层孔隙率/永久阻水",
+      "inherited_aliases": [
+        "T04:OX-27"
+      ],
+      "short_quote": null,
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S09.md"
+    },
+    {
+      "source_id": "MR-S10",
+      "title": "BIPM, SI defining constants and The International System of Units (SI), 9th edition",
+      "url": "https://www.bipm.org/en/measurement-units/si-defining-constants",
+      "doi": null,
+      "source_class": "official_metrology_definition",
+      "access_date": "2026-10-02",
+      "access_scope": "official_full_html_and_public_SI_brochure_selected_sections_read_no_local_copy",
+      "locator": "BIPM defining-constants table; SI Brochure 9th ed. §§2.2 and 4, Table 8, printed pp.127–128 and 145–146 (PDF pp.13–14 and 31–32)",
+      "additional_verified_url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=1.9",
+      "version_note": "PDF URL includes version=1.9; the actual fetched cover marks v1.08. Record observed text rather than infer revision from URL. SI defining values agree with official current HTML.",
+      "supported_scope": "NA=6.02214076e23 mol^-1、e=1.602176634e-19 C为SI定义精确值；1 eV=1.602176634e-19 J用于单位换算",
+      "limitations": "只引单位/常数定义；不能消除粒种、电荷态、谱测量、质量、密度和流量的实验不确定度；不是材料物性来源",
+      "inherited_aliases": [],
+      "short_quote": {
+        "text": "The numerical values of the seven defining constants have no uncertainty.",
+        "locator": "official HTML, paragraph following constants table",
+        "word_count": 11
+      },
+      "original_saved": false,
+      "fulltext_downloaded": false,
+      "redistribute_original": false,
+      "summary_is_original_chinese": true,
+      "summary_path": "sources/summaries/MR-S10.md"
+    }
+  ],
+  "inherited_inputs": [
+    {
+      "path_from_project_root": "04_coating_and_substrate_materials/data/property_records.json",
+      "sha256": "f6ae994bd9a63f91cc937be61dd2deb4d80c5c9f1948a0dd093166fc0f0bb87f",
+      "bytes": 158253,
+      "external_sources_reverified_this_round": false
+    },
+    {
+      "path_from_project_root": "04_coating_and_substrate_materials/data/materials_manifest.json",
+      "sha256": "080c8cee98c46f75e83298cb9f22f679ae63899802575471857d91fa15cac09f",
+      "bytes": 7185,
+      "external_sources_reverified_this_round": false
+    },
+    {
+      "path_from_project_root": "04_coating_and_substrate_materials/data/source_registry.json",
+      "sha256": "6e1f3b727bb9865c75d2a93bab17ef1170143c91828e3283f9dff63f463f9e7b",
+      "bytes": 66060,
+      "external_sources_reverified_this_round": false
+    },
+    {
+      "path_from_project_root": "10_ion_sources/data/material_response_matrix.json",
+      "sha256": "b8bf30d8d53ecc469c748d050252046f1857102cdbb6237417a3a2fe534cf1b8",
+      "bytes": 18179,
+      "external_sources_reverified_this_round": false
+    },
+    {
+      "path_from_project_root": "10_ion_sources/data/source_registry.json",
+      "sha256": "22d451c4da3f5b0fe5cfcec850fc431a8a0a4b53fe46cee319517af480238f9b",
+      "bytes": 24430,
+      "external_sources_reverified_this_round": false
+    }
+  ],
+  "source_namespaces": {
+    "T04": "../data/source_registry.json (relative to round2 directory)",
+    "T10": "../../10_ion_sources/data/source_registry.json (relative to round2 directory)"
+  },
+  "rights_policy": {
+    "save_originals": false,
+    "paid_fulltext_obtained": false,
+    "save_copyright_originals": false,
+    "original_figures_reproduced": false,
+    "release_content": "原创中文摘要、少量必要事实和短引、精确来源链接及适用域",
+    "open_access_is_not_blanket_permission": true
+  },
+  "access_failures": [
+    {
+      "url": "https://doi.org/10.1016/j.vacuum.2024.113767",
+      "result": "web open internal error",
+      "fallback": "官方ScienceDirect搜索索引只支持摘要片段，未访问非授权副本"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0042207X24008133",
+      "result": "web open internal error",
+      "fallback": "同上，保持indexed_excerpt_only"
+    }
+  ]
+}

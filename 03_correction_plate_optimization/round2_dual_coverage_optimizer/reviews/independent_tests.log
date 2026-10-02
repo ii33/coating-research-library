@@ -1,0 +1,22 @@
+test_cache_reuses_geometry_but_not_weighted_rates (test_optimizer_counterexamples.Counterexamples.test_cache_reuses_geometry_but_not_weighted_rates) ... ok
+test_cancel_checkpoint_resume_retains_reservations_and_progress (test_optimizer_counterexamples.Counterexamples.test_cancel_checkpoint_resume_retains_reservations_and_progress) ... ok
+test_denominator_spanning_zero_fails_closed (test_optimizer_counterexamples.Counterexamples.test_denominator_spanning_zero_fails_closed) ... ok
+test_empty_decision_schema_is_rejected (test_optimizer_counterexamples.Counterexamples.test_empty_decision_schema_is_rejected)
+An evaluation with no objectives must not appear decision-resolved. ... ok
+test_error_source_points_input_cannot_mutate_after_validation (test_optimizer_counterexamples.Counterexamples.test_error_source_points_input_cannot_mutate_after_validation) ... ok
+test_geometry_unknown_retains_point_time_and_is_not_widened_twice (test_optimizer_counterexamples.Counterexamples.test_geometry_unknown_retains_point_time_and_is_not_widened_twice) ... ok
+test_incompatible_units_cannot_take_feasibility_shortcut (test_optimizer_counterexamples.Counterexamples.test_incompatible_units_cannot_take_feasibility_shortcut) ... ok
+test_measure_error_qualification_cannot_be_hidden (test_optimizer_counterexamples.Counterexamples.test_measure_error_qualification_cannot_be_hidden)
+Estimated/unknown error provenance must not be hidden by a bounded measure. ... ok
+test_noise_overlap_is_not_dominance (test_optimizer_counterexamples.Counterexamples.test_noise_overlap_is_not_dominance) ... ok
+test_out_of_range_error_point_is_rejected (test_optimizer_counterexamples.Counterexamples.test_out_of_range_error_point_is_rejected) ... ok
+test_physical_error_axes_must_cover_each_field_point (test_optimizer_counterexamples.Counterexamples.test_physical_error_axes_must_cover_each_field_point) ... ok
+test_ray_bundle_error_list_cannot_be_cleared_after_validation (test_optimizer_counterexamples.Counterexamples.test_ray_bundle_error_list_cannot_be_cleared_after_validation) ... ok
+test_single_candidate_estimated_objective_is_unresolved_not_archived (test_optimizer_counterexamples.Counterexamples.test_single_candidate_estimated_objective_is_unresolved_not_archived) ... ok
+test_two_plate_envelope_conflict_and_connected_mount (test_optimizer_counterexamples.Counterexamples.test_two_plate_envelope_conflict_and_connected_mount) ... ok
+test_unknown_and_estimated_measures_never_certify_feasibility (test_optimizer_counterexamples.Counterexamples.test_unknown_and_estimated_measures_never_certify_feasibility) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.018s
+
+OK

@@ -1,0 +1,3900 @@
+{
+  "archive_semantics": "qualified feasible candidates not eliminated by certified dominance; overlapping interval survivors are not proven true Pareto members",
+  "budget": {
+    "elapsed_seconds": 0.04346531200280879,
+    "limits": {
+      "evaluations": 30,
+      "plate_tests": 1000000,
+      "point_time_samples": 100000,
+      "rays": 10000,
+      "source_samples": 100000,
+      "time_panels": 100000,
+      "wall_seconds": 60.0
+    },
+    "reservation_is_upper_budget_not_measured_device_work": true,
+    "reserved": {
+      "evaluations": 13,
+      "plate_tests": 0,
+      "point_time_samples": 26,
+      "rays": 52,
+      "source_samples": 26,
+      "time_panels": 13
+    }
+  },
+  "certified_feasible_nondominated_ids": [
+    "10390a2a9985f1add386",
+    "e564cd41e80acaf42b74",
+    "583a33d4f5edcd00fdda",
+    "135badfa368e04bbfbda",
+    "fe5f49aeca1e861933db",
+    "3d9d8a0055d385f2e9b4",
+    "70b10b81d816f4468865",
+    "e5681cf91f8e09c936cb",
+    "5b970038df1a64791c5f",
+    "e8d468b6115062606ce1"
+  ],
+  "comparisons": [
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "52d434dfb493dcc59a23",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "52d434dfb493dcc59a23",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "9c6a7edd4bf7bd269cd7",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "9c6a7edd4bf7bd269cd7",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "a6962477116a58ed6b54",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "a6962477116a58ed6b54",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "e564cd41e80acaf42b74",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "583a33d4f5edcd00fdda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "135badfa368e04bbfbda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "fe5f49aeca1e861933db",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "fe5f49aeca1e861933db",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "3d9d8a0055d385f2e9b4",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "3d9d8a0055d385f2e9b4",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "70b10b81d816f4468865",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "70b10b81d816f4468865",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "10390a2a9985f1add386",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "10390a2a9985f1add386",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "9c6a7edd4bf7bd269cd7",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "52d434dfb493dcc59a23",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "9c6a7edd4bf7bd269cd7",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "a6962477116a58ed6b54",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "52d434dfb493dcc59a23",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "a6962477116a58ed6b54",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "e564cd41e80acaf42b74",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "52d434dfb493dcc59a23",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "583a33d4f5edcd00fdda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "52d434dfb493dcc59a23",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "135badfa368e04bbfbda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "52d434dfb493dcc59a23",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "fe5f49aeca1e861933db",
+      "basis": "outward_interval_pareto",
+      "refinements": [],
+      "relation": "b_dominates"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "3d9d8a0055d385f2e9b4",
+      "basis": "opposing_resolved_objectives",
+      "refinements": [],
+      "relation": "tradeoff"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "70b10b81d816f4468865",
+      "basis": "outward_interval_pareto",
+      "refinements": [],
+      "relation": "b_dominates"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "52d434dfb493dcc59a23",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "52d434dfb493dcc59a23",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "52d434dfb493dcc59a23",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "52d434dfb493dcc59a23",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "a6962477116a58ed6b54",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "9c6a7edd4bf7bd269cd7",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "a6962477116a58ed6b54",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "e564cd41e80acaf42b74",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "9c6a7edd4bf7bd269cd7",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "583a33d4f5edcd00fdda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "9c6a7edd4bf7bd269cd7",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "135badfa368e04bbfbda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "9c6a7edd4bf7bd269cd7",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "fe5f49aeca1e861933db",
+      "basis": "outward_interval_pareto",
+      "refinements": [],
+      "relation": "b_dominates"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "3d9d8a0055d385f2e9b4",
+      "basis": "opposing_resolved_objectives",
+      "refinements": [],
+      "relation": "tradeoff"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "70b10b81d816f4468865",
+      "basis": "outward_interval_pareto",
+      "refinements": [],
+      "relation": "b_dominates"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "9c6a7edd4bf7bd269cd7",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "9c6a7edd4bf7bd269cd7",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "9c6a7edd4bf7bd269cd7",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "9c6a7edd4bf7bd269cd7",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "a6962477116a58ed6b54",
+      "b": "e564cd41e80acaf42b74",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "a6962477116a58ed6b54",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "a6962477116a58ed6b54",
+      "b": "583a33d4f5edcd00fdda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "a6962477116a58ed6b54",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "a6962477116a58ed6b54",
+      "b": "135badfa368e04bbfbda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "a6962477116a58ed6b54",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "a6962477116a58ed6b54",
+      "b": "fe5f49aeca1e861933db",
+      "basis": "outward_interval_pareto",
+      "refinements": [],
+      "relation": "b_dominates"
+    },
+    {
+      "a": "a6962477116a58ed6b54",
+      "b": "3d9d8a0055d385f2e9b4",
+      "basis": "opposing_resolved_objectives",
+      "refinements": [],
+      "relation": "tradeoff"
+    },
+    {
+      "a": "a6962477116a58ed6b54",
+      "b": "70b10b81d816f4468865",
+      "basis": "outward_interval_pareto",
+      "refinements": [],
+      "relation": "b_dominates"
+    },
+    {
+      "a": "a6962477116a58ed6b54",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "a6962477116a58ed6b54",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "a6962477116a58ed6b54",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "a6962477116a58ed6b54",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "a6962477116a58ed6b54",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "a6962477116a58ed6b54",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e564cd41e80acaf42b74",
+      "b": "583a33d4f5edcd00fdda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e564cd41e80acaf42b74",
+      "b": "135badfa368e04bbfbda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e564cd41e80acaf42b74",
+      "b": "fe5f49aeca1e861933db",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "fe5f49aeca1e861933db",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e564cd41e80acaf42b74",
+      "b": "3d9d8a0055d385f2e9b4",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "3d9d8a0055d385f2e9b4",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e564cd41e80acaf42b74",
+      "b": "70b10b81d816f4468865",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "70b10b81d816f4468865",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e564cd41e80acaf42b74",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e564cd41e80acaf42b74",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e564cd41e80acaf42b74",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e564cd41e80acaf42b74",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "583a33d4f5edcd00fdda",
+      "b": "135badfa368e04bbfbda",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "583a33d4f5edcd00fdda",
+      "b": "fe5f49aeca1e861933db",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "fe5f49aeca1e861933db",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "583a33d4f5edcd00fdda",
+      "b": "3d9d8a0055d385f2e9b4",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "3d9d8a0055d385f2e9b4",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "583a33d4f5edcd00fdda",
+      "b": "70b10b81d816f4468865",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "70b10b81d816f4468865",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "583a33d4f5edcd00fdda",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "583a33d4f5edcd00fdda",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "583a33d4f5edcd00fdda",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "583a33d4f5edcd00fdda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "135badfa368e04bbfbda",
+      "b": "fe5f49aeca1e861933db",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "fe5f49aeca1e861933db",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "135badfa368e04bbfbda",
+      "b": "3d9d8a0055d385f2e9b4",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "3d9d8a0055d385f2e9b4",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "135badfa368e04bbfbda",
+      "b": "70b10b81d816f4468865",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "70b10b81d816f4468865",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "135badfa368e04bbfbda",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "135badfa368e04bbfbda",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "135badfa368e04bbfbda",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "135badfa368e04bbfbda",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "fe5f49aeca1e861933db",
+      "b": "3d9d8a0055d385f2e9b4",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "fe5f49aeca1e861933db",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "3d9d8a0055d385f2e9b4",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "fe5f49aeca1e861933db",
+      "b": "70b10b81d816f4468865",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "fe5f49aeca1e861933db",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "70b10b81d816f4468865",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "fe5f49aeca1e861933db",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "fe5f49aeca1e861933db",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "fe5f49aeca1e861933db",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "fe5f49aeca1e861933db",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "fe5f49aeca1e861933db",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "fe5f49aeca1e861933db",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "3d9d8a0055d385f2e9b4",
+      "b": "70b10b81d816f4468865",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "3d9d8a0055d385f2e9b4",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "70b10b81d816f4468865",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "3d9d8a0055d385f2e9b4",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "3d9d8a0055d385f2e9b4",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "3d9d8a0055d385f2e9b4",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "3d9d8a0055d385f2e9b4",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "3d9d8a0055d385f2e9b4",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "3d9d8a0055d385f2e9b4",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "70b10b81d816f4468865",
+      "b": "e5681cf91f8e09c936cb",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "70b10b81d816f4468865",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "70b10b81d816f4468865",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "70b10b81d816f4468865",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "70b10b81d816f4468865",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "70b10b81d816f4468865",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e5681cf91f8e09c936cb",
+      "b": "5b970038df1a64791c5f",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "e5681cf91f8e09c936cb",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e5681cf91f8e09c936cb",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    },
+    {
+      "a": "5b970038df1a64791c5f",
+      "b": "e8d468b6115062606ce1",
+      "basis": "overlapping_uncertainty_or_equal_objectives",
+      "refinements": [
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "5b970038df1a64791c5f",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        },
+        {
+          "action": "change_source_family_and_increase_local_source_order",
+          "automatic_refinement_allowed": true,
+          "axis": "source",
+          "candidate_id": "e8d468b6115062606ce1",
+          "field": "N",
+          "from_fidelity": 0,
+          "point_ids": [
+            0
+          ],
+          "reason": "analytic fixture interval, not measured process noise",
+          "time_window_s": null
+        }
+      ],
+      "relation": "inconclusive"
+    }
+  ],
+  "decision_status": "inconclusive",
+  "evaluated_candidate_count": 13,
+  "evaluations": [
+    {
+      "candidate_id": "10390a2a9985f1add386",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.245,
+          "lo": -0.275,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09499999999999999,
+          "lo": 0.06499999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "52d434dfb493dcc59a23",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.18499999999999994,
+          "lo": -0.21499999999999997,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.11500000000000003,
+          "lo": 0.08500000000000003,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09499999999999999,
+          "lo": 0.06499999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "9c6a7edd4bf7bd269cd7",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.30500000000000005,
+          "lo": -0.3350000000000001,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.115,
+          "lo": 0.085,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09499999999999999,
+          "lo": 0.06499999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "a6962477116a58ed6b54",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.18499999999999994,
+          "lo": -0.21499999999999997,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.11500000000000003,
+          "lo": 0.08500000000000003,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09499999999999999,
+          "lo": 0.06499999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "e564cd41e80acaf42b74",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.245,
+          "lo": -0.275,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09499999999999999,
+          "lo": 0.06499999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "583a33d4f5edcd00fdda",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.245,
+          "lo": -0.275,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.02,
+          "lo": -0.009999999999999998,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09499999999999999,
+          "lo": 0.06499999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "135badfa368e04bbfbda",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.245,
+          "lo": -0.275,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.019999999999999997,
+          "lo": -0.010000000000000002,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09499999999999999,
+          "lo": 0.06499999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "fe5f49aeca1e861933db",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.18499999999999994,
+          "lo": -0.21499999999999997,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "3d9d8a0055d385f2e9b4",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.30500000000000005,
+          "lo": -0.3350000000000001,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.175,
+          "lo": 0.14499999999999996,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "70b10b81d816f4468865",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.18499999999999994,
+          "lo": -0.21499999999999997,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "e5681cf91f8e09c936cb",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.245,
+          "lo": -0.275,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09499999999999999,
+          "lo": 0.06499999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "5b970038df1a64791c5f",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.245,
+          "lo": -0.275,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09999999999999999,
+          "lo": 0.06999999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    },
+    {
+      "candidate_id": "e8d468b6115062606ce1",
+      "constraints": {
+        "throughput": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": -0.245,
+          "lo": -0.275,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "error_sources": [
+        {
+          "absolute_radius": 0.015,
+          "axis": "source",
+          "evidence": "analytic fixture interval, not measured process noise",
+          "field": "N",
+          "points": [
+            0
+          ],
+          "status": "bounded_conditional",
+          "time_window_s": null
+        }
+      ],
+      "fidelity": 0,
+      "objectives": {
+        "h_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.015,
+          "lo": -0.015,
+          "status": "bounded_conditional",
+          "unit": "1"
+        },
+        "ion_target_max_deviation": {
+          "definition": "",
+          "errors": [
+            {
+              "absolute_radius": 0.015,
+              "axis": "source",
+              "evidence": "analytic fixture interval, not measured process noise",
+              "field": "N",
+              "points": [
+                0
+              ],
+              "status": "bounded_conditional",
+              "time_window_s": null
+            }
+          ],
+          "hi": 0.09999999999999999,
+          "lo": 0.06999999999999999,
+          "status": "bounded_conditional",
+          "unit": "1"
+        }
+      },
+      "physical_certification": false,
+      "point_fields": [],
+      "provenance": {
+        "fixture_only": true,
+        "oracle_signature": "ce787951eb63bbbdcc33ce1bd203c489ed4d381fe56ceb563271ff612f1b68b6"
+      },
+      "status": "bounded_conditional",
+      "work": {
+        "evaluations": 1,
+        "plate_tests": 0,
+        "point_time_samples": 2,
+        "rays": 4,
+        "source_samples": 2,
+        "time_panels": 1
+      }
+    }
+  ],
+  "execution_status": "completed_finite_candidate_set",
+  "failures": [],
+  "global_optimality_claim": false,
+  "manufacturing_rejections": {
+    "5b715a8d1780795d6862": [
+      "ion_side:unsupported_or_disconnected_material"
+    ],
+    "b63f6615be072d890f79": [
+      "vapor_side:unsupported_or_disconnected_material"
+    ]
+  },
+  "physical_certification": false,
+  "planned_candidate_count": 15,
+  "refinement_requests": [
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "10390a2a9985f1add386",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "52d434dfb493dcc59a23",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "9c6a7edd4bf7bd269cd7",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "a6962477116a58ed6b54",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "e564cd41e80acaf42b74",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "583a33d4f5edcd00fdda",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "135badfa368e04bbfbda",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "fe5f49aeca1e861933db",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "3d9d8a0055d385f2e9b4",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "70b10b81d816f4468865",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "e5681cf91f8e09c936cb",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "5b970038df1a64791c5f",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    },
+    {
+      "action": "change_source_family_and_increase_local_source_order",
+      "automatic_refinement_allowed": true,
+      "axis": "source",
+      "candidate_id": "e8d468b6115062606ce1",
+      "field": "N",
+      "from_fidelity": 0,
+      "point_ids": [
+        0
+      ],
+      "reason": "analytic fixture interval, not measured process noise",
+      "time_window_s": null
+    }
+  ],
+  "schema_version": "T03-R2-search-v1",
+  "stage_status": "implementation_ready_validation_pending",
+  "unresolved_ids": [
+    "10390a2a9985f1add386",
+    "135badfa368e04bbfbda",
+    "3d9d8a0055d385f2e9b4",
+    "52d434dfb493dcc59a23",
+    "583a33d4f5edcd00fdda",
+    "5b970038df1a64791c5f",
+    "70b10b81d816f4468865",
+    "9c6a7edd4bf7bd269cd7",
+    "a6962477116a58ed6b54",
+    "e564cd41e80acaf42b74",
+    "e5681cf91f8e09c936cb",
+    "e8d468b6115062606ce1",
+    "fe5f49aeca1e861933db"
+  ]
+}

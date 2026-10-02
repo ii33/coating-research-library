@@ -1,0 +1,108 @@
+{
+  "schema_version": "T05-QCM-2.0",
+  "record_id": "actual_machine_unknown",
+  "record_kind": "actual_unmeasured",
+  "source_material": "Al",
+  "substrate": "unknown",
+  "parameters": {
+    "f0_hz": {
+      "value": null,
+      "unit": "Hz",
+      "status": "unknown",
+      "source": "actual measurement/calibration absent"
+    },
+    "z_ratio": {
+      "value": null,
+      "unit": "1",
+      "status": "unknown",
+      "source": "actual measurement/calibration absent"
+    },
+    "capture_qcm": {
+      "value": null,
+      "unit": "1",
+      "status": "unknown",
+      "source": "actual measurement/calibration absent"
+    },
+    "source_exponent_n": {
+      "value": null,
+      "unit": "1",
+      "status": "unknown",
+      "source": "actual measurement/calibration absent"
+    },
+    "source_anisotropy_a": {
+      "value": null,
+      "unit": "1",
+      "status": "unknown",
+      "source": "actual measurement/calibration absent"
+    },
+    "display_density_setting": {
+      "value": null,
+      "unit": "kg/m3",
+      "status": "unknown",
+      "source": "actual measurement/calibration absent"
+    },
+    "actual_qcm_film_density": {
+      "value": null,
+      "unit": "kg/m3",
+      "status": "unknown",
+      "source": "actual measurement/calibration absent"
+    },
+    "actual_workpiece_film_density": {
+      "value": null,
+      "unit": "kg/m3",
+      "status": "unknown",
+      "source": "actual measurement/calibration absent"
+    },
+    "tooling_percent": {
+      "value": null,
+      "unit": "%",
+      "status": "unknown",
+      "source": "actual measurement/calibration absent"
+    }
+  },
+  "qcm": {
+    "controller_model": null,
+    "model": "zmatch",
+    "fundamental_mode": true,
+    "rigid_bonded_validated": false,
+    "times_s": null,
+    "frequency_hz": null,
+    "drift_hz": null,
+    "frequency_covariance_hz2": null,
+    "drift_evidence": "unknown",
+    "side_terms_status": "unknown",
+    "reactive_retained_kg_m2_s": 0.0,
+    "outgoing_kg_m2_s": 0.0,
+    "sensor_temperature_K": null,
+    "quality_notes": "no actual data supplied"
+  },
+  "geometry": {
+    "source_center_m": null,
+    "source_normal": null,
+    "azimuth_axis": null,
+    "qcm_position_m": null,
+    "qcm_normal": null,
+    "workpiece_positions_m": null,
+    "workpiece_normals": null,
+    "visibility": null
+  },
+  "species": {
+    "number_fractions": null,
+    "stoichiometries": {
+      "Al": {
+        "Al": 1
+      }
+    },
+    "evidence": "actual vapor composition unknown"
+  },
+  "error_budget": {
+    "source": "synthetic input exact for this case; actual machine source uncertainty unknown",
+    "time": "synthetic input exact for this case; actual machine time uncertainty unknown",
+    "space": "synthetic input exact for this case; actual machine space uncertainty unknown",
+    "geometry": "synthetic input exact for this case; actual machine geometry uncertainty unknown",
+    "kernel": "synthetic input exact for this case; actual machine kernel uncertainty unknown",
+    "input": "synthetic input exact for this case; actual machine input uncertainty unknown",
+    "model": "synthetic input exact for this case; actual machine model uncertainty unknown"
+  },
+  "qualification": "research_only_not_production"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "T03-device-request-v1",
+  "prerequisites": [
+    "8-ray finite point-source fixture only; not T02 physical validation"
+  ],
+  "global_ray_reservation_limit": 8,
+  "jobs": [
+    {
+      "job_id": "eight_ray_contract_smoke",
+      "device_ready": true,
+      "fidelity": "finite_fixture",
+      "inputs": {
+        "ray_bundle": {
+          "path": "small_ray_bundle.json",
+          "sha256": "d7ab8c3a7a9394b3cad58e9f49ac8ea6155682afe89f7b6cda6c595c065780be"
+        },
+        "designs": {
+          "path": "small_designs.json",
+          "sha256": "c642a94673b4a3058ddf5bd92330618d15077a58299e875017c2d10c246efc05"
+        }
+      },
+      "work_shape": {
+        "candidate_count": 1,
+        "point_count": 2,
+        "time_panels": 2,
+        "vapor_source_nodes": 1,
+        "ion_source_nodes": 1,
+        "max_opaque_cells": 2
+      },
+      "limits": {
+        "evaluations": 1,
+        "rays": 8,
+        "source_samples": 8,
+        "point_time_samples": 4,
+        "time_panels": 2,
+        "plate_tests": 16,
+        "wall_seconds": 30
+      },
+      "objectives": {
+        "target_h_m": 3.1578401820015834e-12,
+        "target_D_m2": 1e+16,
+        "min_throughput": 0.5
+      },
+      "acceptance": [
+        "Validates interchange, not optimization performance"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "schema_version": "T05-QCM-2.0",
+  "record_id": "Al_synthetic_known_truth",
+  "record_kind": "synthetic",
+  "source_material": "Al",
+  "substrate": "synthetic inert flat coupon; actual user substrate unknown",
+  "parameters": {
+    "f0_hz": {
+      "value": 6045000.0,
+      "unit": "Hz",
+      "status": "assumed_synthetic",
+      "source": "synthetic known truth"
+    },
+    "z_ratio": {
+      "value": 1.08,
+      "unit": "1",
+      "status": "assumed_synthetic",
+      "source": "T05-R2-S01 manual table value used as synthetic truth only"
+    },
+    "capture_qcm": {
+      "value": 0.92,
+      "unit": "1",
+      "status": "assumed_synthetic",
+      "source": "synthetic known truth"
+    },
+    "source_exponent_n": {
+      "value": 2.4,
+      "unit": "1",
+      "status": "assumed_synthetic",
+      "source": "synthetic known truth"
+    },
+    "source_anisotropy_a": {
+      "value": 0.25,
+      "unit": "1",
+      "status": "assumed_synthetic",
+      "source": "synthetic known truth"
+    },
+    "display_density_setting": {
+      "value": 2700.0,
+      "unit": "kg/m3",
+      "status": "assumed_synthetic",
+      "source": "synthetic known truth"
+    },
+    "actual_qcm_film_density": {
+      "value": 2600.0,
+      "unit": "kg/m3",
+      "status": "assumed_synthetic",
+      "source": "synthetic known truth"
+    },
+    "actual_workpiece_film_density": {
+      "value": 2500.0,
+      "unit": "kg/m3",
+      "status": "assumed_synthetic",
+      "source": "synthetic known truth"
+    },
+    "tooling_percent": {
+      "value": null,
+      "unit": "%",
+      "status": "unknown",
+      "source": "not calibrated; not needed for raw-frequency transfer"
+    }
+  },
+  "qcm": {
+    "controller_model": "INFICON SQM-160 equations used as literature example, no connected instrument",
+    "model": "zmatch",
+    "fundamental_mode": true,
+    "rigid_bonded_validated": true,
+    "times_s": [
+      0.0,
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0,
+      12.0,
+      14.0,
+      16.0,
+      18.0,
+      20.0
+    ],
+    "frequency_hz": [
+      6044916.950876534,
+      6044860.185944858,
+      6044803.422090535,
+      6044746.659313519,
+      6044689.897613758,
+      6044633.136991209,
+      6044576.377445823,
+      6044519.618977552,
+      6044462.861586352,
+      6044406.105272172,
+      6044349.350034966
+    ],
+    "drift_hz": [
+      0.0,
+      0.3,
+      0.6,
+      0.8999999999999999,
+      1.2,
+      1.5,
+      1.7999999999999998,
+      2.1,
+      2.4,
+      2.6999999999999997,
+      3.0
+    ],
+    "frequency_covariance_hz2": [
+      [
+        0.0025000000000000005,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0025000000000000005,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0025000000000000005,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0025000000000000005,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0025000000000000005,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0025000000000000005,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0025000000000000005,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0025000000000000005,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0025000000000000005,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0025000000000000005,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0025000000000000005
+      ]
+    ],
+    "drift_evidence": "synthetic independent blank truth; covariance conditional on drift truth",
+    "side_terms_status": "assumed_synthetic",
+    "reactive_retained_kg_m2_s": 0.0,
+    "outgoing_kg_m2_s": 0.0,
+    "sensor_temperature_K": null,
+    "quality_notes": "All values synthetic. No actual mass sensitivity profile or bond validation."
+  },
+  "geometry": {
+    "source_center_m": [
+      0,
+      0,
+      0
+    ],
+    "source_normal": [
+      0,
+      0,
+      1
+    ],
+    "azimuth_axis": [
+      1,
+      0,
+      0
+    ],
+    "qcm_position_m": [
+      0.12,
+      0.03,
+      0.5
+    ],
+    "qcm_normal": [
+      0,
+      0,
+      -1
+    ],
+    "workpiece_positions_m": [
+      [
+        0,
+        0,
+        0.6
+      ],
+      [
+        0.3,
+        0.1,
+        0.6
+      ]
+    ],
+    "workpiece_normals": [
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "visibility": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "species": {
+    "number_fractions": {
+      "Al": 1.0
+    },
+    "stoichiometries": {
+      "Al": {
+        "Al": 1
+      }
+    },
+    "evidence": "T05-R2-S07 NIST confirms Al(g) species existence, not actual plume purity; pure atomic vapor is synthetic assumption"
+  },
+  "error_budget": {
+    "source": "synthetic input exact for this case; actual machine source uncertainty unknown",
+    "time": "synthetic input exact for this case; actual machine time uncertainty unknown",
+    "space": "synthetic input exact for this case; actual machine space uncertainty unknown",
+    "geometry": "synthetic input exact for this case; actual machine geometry uncertainty unknown",
+    "kernel": "synthetic input exact for this case; actual machine kernel uncertainty unknown",
+    "input": "synthetic input exact for this case; actual machine input uncertainty unknown",
+    "model": "synthetic input exact for this case; actual machine model uncertainty unknown"
+  },
+  "qualification": "research_only_not_production"
+}

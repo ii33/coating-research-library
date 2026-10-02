@@ -14,7 +14,7 @@
 - T09：81份清单内文件及清单自身；`data/deliverable_manifest.json` SHA-256 `f375623abea029b72bc5ccfa1ac80a07099fde6af28c406794925057483ac441`
 - T10：82份清单内文件及清单自身；`release_manifest.json` SHA-256 `fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f`
 - T01第二轮：46项允许文件及读者哈希清单；reader_manifest.json SHA-256 `4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23`
-- 阶段边界：首轮、T01第二轮和T02v0.1冻结研究不变；独立v0.2有限求交闭环完成，完整T02仍partial；独立v0.3求积误差控制进行中；未冻结v0.3不纳入此快照，T03未启动
+- 阶段边界：先前冻结内容不改；T02v0.3仍partial，T03/T04/T05实现就绪验证待完成；T06活动但未冻结成果不上传
 
 ## 不纳入仓库的内容
 
@@ -87,3 +87,14 @@ T10按release_manifest.json精确允许列表及清单自身发布，全部sourc
 仅发布 `02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2` 17项允许文件，manifest SHA-256 `38cace86fd120248788747c5cbb3d14d2a462ca72b7b03d510a2236a38aa85af`。初次独立FAIL与修复后局部PASS证据均保留；只称受限编码几何求交子参考。旧v0.1的55文件和partial状态不变，0.203%/14.3ms源时间误差未解决，原件、ZIP、缓存排除。
 
 只读完整性核验：`python -B 02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/reader_check.py --check --reader`，不运行会覆盖历史结果的独立审查脚本。
+
+## 第二轮合并批次01
+
+高计算量算法/设备driver完整实现，重型精度/性能验证待用户设备；小测试不是生产验收。减少上传频率，四项冻结增补合并一次提交。
+
+- T02v03：44文件，`02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/reader_manifest.json` SHA-256 `d0a7ca29eee77f8e8e6db23971f4edc765bcf8c15a4d0f8091065c4fb14c8d7d`
+- T03R2：44文件，`03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/reader_manifest.json` SHA-256 `1b5755303e75c3d88edb78f204a1a9f7ac85b6aff931cb21051c42e46cc9dc27`
+- T04R2：56文件，`04_coating_and_substrate_materials/round2_material_response_contract/freeze_manifest.json` SHA-256 `6475a92ab17538bea48c02524d55cad78e2a58845bfa035783176bcc6630ef90`
+- T05R2：60文件，`05_evaporation_sources/round2_qcm_flux_transfer/freeze_manifest.json` SHA-256 `662af5524bb13c1094106dba2f9236af2e1f12d0dd57510ca547d338edf89e10`
+
+严格按清单保留原创报告、代码、合成数据、原创图、短来源摘要及固定审计证据；ZIP、原文、缓存、无关日志不在集合中，不上传。T04含manifest自身，外层receipt不上传；T05另附作者明确确认的freeze_receipt，保留其引用的manifest哈希。T02条件包络、T03 inconclusive演示、未知真实参数和未执行重验证均保留。

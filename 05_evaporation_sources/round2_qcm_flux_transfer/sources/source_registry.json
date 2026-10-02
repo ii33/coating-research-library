@@ -1,0 +1,130 @@
+[
+  {
+    "source_id": "T05-R2-S01",
+    "title": "INFICON SQM-160 Operating Manual 074-511-P1-G",
+    "url": "https://www.inficon.com/media/4271/download/SQM-160-Multi-Film-Rate---Thickness-Monitor-Operating-Manual-(English).pdf?inline=true&language=en&v=4",
+    "source_type": "manufacturer_manual",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "official_PDF_text_and_relevant_pages",
+    "locator": "\u00a710.1\u201310.4, printed pp.92\u201395/PDF pp.91\u201394 (density/tooling/Z and Eq.5); \u00a711.1.1, printed pp.96\u201398/PDF pp.95\u201397 (Sauerbrey sign and temperature/stress); \u00a711.1.3 printed p.100/PDF p.99 (Z-match); Appendix A printed p.101/PDF p.100 (Al row)",
+    "claims": "SQM-160 equation/variable definitions and units, sign convention, density/tooling/Z distinction and calibration procedures; AT-cut crystal thermal/stress interference caveat; Al controller-table values",
+    "limitations": "Device/version-specific manual; no local film density or production calibration supplied; no universal numeric temperature-drift limit",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "Official manual; no explicit redistribution license checked; retain only original short Chinese summary and page locators"
+    },
+    "summary_path": "sources/summaries/T05-R2-S01.md"
+  },
+  {
+    "source_id": "T05-R2-S02",
+    "title": "INFICON SQC-310 Operating Manual 074-550-P1-H",
+    "url": "https://www.inficon.com/media/11922/download/SQC-310-Operating-Manual-.pdf?inline=true&language=en&v=1",
+    "source_type": "manufacturer_manual",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "official_PDF_text_and_relevant_pages",
+    "locator": "\u00a710.1\u201310.4, printed pp.136\u2013139/PDF pp.135\u2013138; \u00a711.2\u201311.4, printed pp.145\u2013148/PDF pp.144\u2013147; Appendix A printed pp.149\u2013155/PDF pp.148\u2013154",
+    "claims": "Cross-check of QCM mass-to-thickness conversion, separate density/tooling/Z parameters, Z-match equation, temperature/stress caveat, load-range note, and AT-cut-normalized material table",
+    "limitations": "SQC-310 firmware/manual version-specific; same vendor parameter convention is not a universal calibration protocol or a measured deposited-film density",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "Official manual; no explicit redistribution license checked; retain only original short Chinese summary and page locators"
+    },
+    "summary_path": "sources/summaries/T05-R2-S02.md"
+  },
+  {
+    "source_id": "T05-R2-S03",
+    "title": "G. Sauerbrey, Verwendung von Schwingquarzen zur W\u00e4gung d\u00fcnner Schichten und zur Mikrow\u00e4gung",
+    "url": "https://link.springer.com/article/10.1007/BF01337937",
+    "source_type": "primary_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "publisher_metadata_and_abstract_only; subscription full text unavailable",
+    "locator": "Zeitschrift f\u00fcr Physik 155, 206\u2013222 (1959), abstract lines 33\u201339 on publisher page; DOI 10.1007/BF01337937",
+    "claims": "Original small-load mass-frequency proportionality; publisher abstract reports temperature-limited precision and an illustrative 1\u00b0C / areal-mass bound",
+    "limitations": "Original article full text not accessible in this pass; abstract does not establish a universal film-rigidity or load limit",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "Springer subscription article; do not copy full text; original Chinese synopsis only"
+    },
+    "summary_path": "sources/summaries/T05-R2-S03.md"
+  },
+  {
+    "source_id": "T05-R2-S04",
+    "title": "C.-S. Lu and O. Lewis, Investigation of film-thickness determination by oscillating quartz resonators with large mass load",
+    "url": "https://doi.org/10.1063/1.1660931",
+    "source_type": "primary_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "publisher_DOI_landing_attempted_but_unavailable; bibliographic citation cross-checked against INFICON official manual reference; no full text or publisher abstract read",
+    "locator": "Journal of Applied Physics 43(11), 4385\u20134390 (1972), DOI 10.1063/1.1660931; SQM-160 \u00a711.1.3 and SQC-310 \u00a711.4 cite the work and present the Z-match relation",
+    "claims": "Only the publication identity/title and its connection to the Z-match relation as described by the INFICON manuals; no independent claim extracted from paper body",
+    "limitations": "Publisher page was inaccessible in this pass; do not treat this record as full-paper review or attribute instrument-manual equation transcription to paper pages without direct access",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "Primary publisher DOI page not accessible; no paper file retained; link and original limited synopsis only"
+    },
+    "summary_path": "sources/summaries/T05-R2-S04.md"
+  },
+  {
+    "source_id": "T05-R2-S05",
+    "title": "J. F. Gonzalez-Martinez et al., Humidity-Induced Phase Transitions of Surfactants Embedded in Latex Coatings Can Drastically Alter Their Water Barrier and Mechanical Properties",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6415026/",
+    "source_type": "primary_open_paper",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "primary_article_search-index text/abstract and relevant results; full publisher page rate-limited and PMC page returned CAPTCHA; metadata/license verified in PMC-indexed article record",
+    "locator": "Polymers 10(3), 284 (2018), DOI 10.3390/polym10030284; QCM-D frequency/dissipation results for latex/surfactant films, RH-dependent overtone and dissipation behavior; CC BY notice in PMC-indexed record",
+    "claims": "An actual QCM-D study reports material-dependent transition from low-dissipation/near-overtone-independent behavior to increased dissipation and viscoelastic response in softening/hydrating coatings",
+    "limitations": "Hydrated polymer/surfactant coatings are not evaporated Al in vacuum; evidence supports a boundary condition and need for suitable rigidity assessment, not an Al-specific threshold or transfer correction",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": true,
+      "redistribution_allowed": true,
+      "license": "CC BY 4.0",
+      "basis": "PMC-indexed record states article is open access under CC BY; no local copy retained"
+    },
+    "summary_path": "sources/summaries/T05-R2-S05.md"
+  },
+  {
+    "source_id": "T05-R2-S06",
+    "title": "CIAAW / NIST atomic weight and isotope data for aluminium",
+    "url": "https://www.ciaaw.org/aluminium.htm",
+    "secondary_url": "https://physics.nist.gov/cgi-bin/Compositions/stand_alone.pl?ascii=ascii&ele=Al",
+    "source_type": "standards_reference_data",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "official_data_pages",
+    "locator": "CIAAW aluminium page and 2024 standard atomic weight table; NIST isotope table for 27Al atomic mass",
+    "claims": "Al is effectively monoisotopic for standard atomic-weight purposes; 27Al atomic mass and current standard atomic-weight value",
+    "limitations": "Atomic-mass data do not establish the density, composition, oxidation, or porosity of an evaporated Al film",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "Public reference-data pages; no data-table copy retained; cite and summarize values"
+    },
+    "summary_path": "sources/summaries/T05-R2-S06.md"
+  },
+  {
+    "source_id": "T05-R2-S07",
+    "title": "NIST Chemistry WebBook SRD69: Aluminum, gas-phase thermochemistry",
+    "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7429905&Mask=1&Units=SI",
+    "source_type": "official_reference_data",
+    "accessed_utc": "2026-10-02",
+    "read_scope": "official_species_identity_and_gas_phase_table",
+    "locator": "Al formula, aluminum atom identity, gas-phase table; no actual plume composition inference",
+    "claims": "Al(g) is an explicit atomic gas species; source material identity does not establish plume composition",
+    "limitations": "NIST page molecular-weight number has older rounding; code follows current CIAAW T05-R2-S06. No thermochemistry fitted or temperature inferred.",
+    "original_path": null,
+    "rights": {
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "basis": "Copyrighted NIST SRD compilation; no local source copy retained"
+    },
+    "summary_path": "sources/summaries/T05-R2-S07.md"
+  }
+]

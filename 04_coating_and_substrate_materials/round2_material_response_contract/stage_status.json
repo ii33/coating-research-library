@@ -1,0 +1,38 @@
+{
+  "task_id": "ROUND2.T04_MATERIAL_RESPONSE_INPUT_CONTRACT",
+  "date_utc": "2026-10-02",
+  "stage_status": "implementation_ready_validation_pending",
+  "publication_status": "local_unpublished_pending_consolidated_batch",
+  "scope": "new T04 round2 subdirectory only",
+  "representative": "SiO2 film / fused silica method demonstration, not user hardware or inventory",
+  "acceptance": {
+    "strict_schema_and_validator": "implemented",
+    "main_small_tests": 46,
+    "independent_narrow_tests": 8,
+    "total_passed": 54,
+    "independent_review_findings": "3 boundary gates found and fixed; final regression passed",
+    "examples": 8,
+    "mapped_priority_materials": 16,
+    "mapped_upstream_records": 207,
+    "mapped_fields": 336,
+    "new_primary_source_cards": 10,
+    "original_figures": 3,
+    "synthetic_calibration": "identifiable and rank-deficient cases preserved",
+    "actual_material_calibration": "not_run",
+    "high_compute_bootstrap": "plan_only/not_run",
+    "device_resource_sampling": "not_run",
+    "physical_machine": "not_run",
+    "production_qualification": "not_run"
+  },
+  "formal_review": {
+    "requested_DeepSeek_execution": "not_claimed",
+    "requested_Seed_independent": "pending_not_available_in_this_run",
+    "requested_Sol_algorithm_signoff": "pending_not_claimed",
+    "actual_review": "one narrow dimensional and denominator check; 8 small tests",
+    "status": "full_chain_not_asserted"
+  },
+  "inherited_limits": ["T02 full oracle partial", "ion point 12 reference not_run", "tau conditional envelope not a strict certificate", "T03 nonnegative-only contributions", "source/time/space/geometry/kernel/input/model errors remain separate"],
+  "next_suggested_task": "ROUND2.T05_SOURCE_QCM_ARRIVAL_INPUT_CONTRACT",
+  "next_task_is_recommendation_not_started": true,
+  "user_policy": {"high_compute":"implement_now_validate_on_device_later","uploads":"no_push_no_upload_this_stage","paid_compute":"not_run","product_integration":"not_done"}
+}

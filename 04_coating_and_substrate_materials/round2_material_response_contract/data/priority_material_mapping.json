@@ -1,0 +1,5749 @@
+{
+  "schema_version": "1.0.0",
+  "created_at_utc": "2026-10-02",
+  "scope": "12种原优先膜材+4种原优先基片；逐字段响应可用性与证据指针，不是可直接执行的生产材料库",
+  "status_definitions": {
+    "cited": "有可定位的来源条件化事实/记录；不宣称与目标工艺匹配。value为null时通过evidence_refs保留多个来源而未选择默认值。",
+    "calculable": "有明确计算关系或来源数据内插途径；全部所需输入及适用域核定后才允许数值执行；本标签不声称输入当前齐全。",
+    "calibration_required": "目标响应/样品量需要本机校准或资格验证；方法可指定，当前无可执行响应常数。",
+    "unknown": "身份、必要输入或合格证据不足；保留null，不得填0、猜配方或用类比数据自动补齐。"
+  },
+  "reference_resolution": {
+    "path_basis": "所有path_from_project_root从coating-research-library根目录起算",
+    "T04_PROPERTY": {
+      "path_from_project_root": "04_coating_and_substrate_materials/data/property_records.json",
+      "key": "record_id",
+      "container": "records"
+    },
+    "T04_SOURCE": {
+      "path_from_project_root": "04_coating_and_substrate_materials/data/source_registry.json",
+      "container": "sources",
+      "key": "id"
+    },
+    "T10_RECORD": {
+      "path_from_project_root": "10_ion_sources/data/material_response_matrix.json",
+      "key": "record_id"
+    },
+    "T10_SOURCE": {
+      "path_from_project_root": "10_ion_sources/data/source_registry.json",
+      "key": "source_id"
+    },
+    "MR_SOURCE": {
+      "path_from_project_root": "04_coating_and_substrate_materials/round2_material_response_contract/sources/source_registry.json",
+      "container": "sources",
+      "key": "source_id"
+    }
+  },
+  "inherited_record_coverage": {
+    "T04_expected": 207,
+    "T04_observed": 207,
+    "T04_mapped": 207,
+    "T10_expected": 16,
+    "T10_observed": 16,
+    "full_reverification_of_inherited_sources": false,
+    "freeze_hashes": "sources/source_registry.json#/inherited_inputs"
+  },
+  "global_guards": [
+    "unknown与calibration_required的响应值均为null；全部条目process_qualified=false",
+    "先验证材料身份/层次/牌号再读取数值；H4不猜配方，YbF3不改成YF3",
+    "bulk/source/QCM density与deposited film density分字段；基片n与薄膜n分开",
+    "n/k、应力、附着与化学计量不能由总注量/能量每原子唯一推得",
+    "文献中的IBS、End-Hall、RF/PIAD、cold-cathode和Kaufman不可无校准迁移",
+    "非加热ambient不是固定室温；总剂量不替代通量率、谱形及脉冲/覆盖次序",
+    "cited仅证明存在可追溯来源；不等于numerically_executable、machine_calibrated或process_qualified",
+    "未知k不能视为0；未知再溅射不能视为0；被隔离/冲突数据不参与默认选择"
+  ],
+  "required_response_domain": {
+    "identity": [
+      "source_material_and_lot",
+      "film_target_and_measured_composition",
+      "substrate_grade_and_lot",
+      "film_phase",
+      "underlayer_and_surface_preparation"
+    ],
+    "ion_and_geometry": [
+      "source_type_and_model",
+      "species_charge_state_and_fast_neutrals",
+      "surface_potential",
+      "energy_angle_joint_spectrum",
+      "theta_from_local_normal",
+      "phi_reference",
+      "local_coordinate_and_visibility",
+      "time_clock_and_sampling"
+    ],
+    "rate_and_history": [
+      "ion_flux_rate_and_uncertainty",
+      "gross_and_net_deposition_rate_definitions",
+      "material_mass_flux",
+      "dose_rate_pulse_duty",
+      "cumulative_ion_and_energy_fluence",
+      "coverage_and_shutter_sequence",
+      "preclean_vs_growth_segments"
+    ],
+    "thermochemical": [
+      "substrate_temperature_time_history",
+      "oxygen_and_residual_gas_partial_pressures",
+      "initial_roughness_contamination",
+      "film_thickness_and_composition_history",
+      "anneal_and_cooldown",
+      "postdeposition_humidity_air_time"
+    ],
+    "measurement": [
+      "wavelength_range",
+      "optical_angle_and_polarization",
+      "instrument_calibration_and_model",
+      "density_measurement_method",
+      "stress_geometry_and_elastic_constants",
+      "adhesion_test_and_failure_mode",
+      "uncertainty_detection_limit_and_covariance"
+    ],
+    "qualification": [
+      "training_sample_ids_and_domain",
+      "independent_holdout_sample_ids",
+      "interpolation_policy",
+      "out_of_domain_rejection",
+      "version_and_traceable_sources",
+      "production_acceptance_is_separate"
+    ]
+  },
+  "representative_combination": {
+    "film_material_id": "SiO2_film",
+    "substrate_material_id": "fused_silica_method_demonstrator",
+    "method_demonstration_only": true,
+    "substrate_is_original_priority": false,
+    "selection_reason": "公开bulk色散/商品属性与IAD/IBAD薄膜响应证据可清楚分层；不足以称为已校准组合。",
+    "scope_warning": "原基片清单只有ZnS、Ge、K9、ZnSe；熔融硅石仅为方法示范，未替代用户实材/设备。各来源样品也不能拼为同一已测组合。",
+    "separated_references": {
+      "bulk_density": {
+        "status": "cited",
+        "value": 2.201,
+        "unit": "g/cm3",
+        "conditions": {
+          "sample": "Corning HPFS Industrial Grade bulk",
+          "temperature_degC": 25,
+          "statistic": "manufacturer_typical",
+          "uncertainty": null
+        },
+        "source_ref": "MR_SOURCE:MR-S02",
+        "allowed_as_film_density": false
+      },
+      "bulk_refractive_index": {
+        "status": "calculable",
+        "value": null,
+        "model": "Malitson three-term Sellmeier",
+        "conditions": {
+          "temperature_degC": 20,
+          "wavelength_um_range": [
+            0.21,
+            3.71
+          ],
+          "B": [
+            0.6961663,
+            0.4079426,
+            0.8974794
+          ],
+          "resonance_wavelength_um": [
+            0.0684043,
+            0.1162414,
+            9.896161
+          ]
+        },
+        "source_ref": "MR_SOURCE:MR-S01",
+        "allowed_as_film_n": false,
+        "k_not_supplied": true
+      },
+      "IAD_film_n_comparison": {
+        "status": "cited",
+        "values": [
+          1.49,
+          1.49,
+          1.47
+        ],
+        "unit": "1",
+        "conditions": {
+          "wavelength_nm": 550,
+          "source_labels": [
+            "End-Hall",
+            "plasma",
+            "cold-cathode"
+          ],
+          "substrate": "nonheated glass",
+          "deposition": "electron_beam_evaporation_with_ion_assistance",
+          "uncertainty": null
+        },
+        "source_ref": "MR_SOURCE:MR-S05",
+        "production_default": false
+      },
+      "actual_film_density": {
+        "status": "calibration_required",
+        "value": null,
+        "evidence_refs": [
+          "MR_SOURCE:MR-S02",
+          "T04_PROPERTY:OXP-031"
+        ],
+        "conditions": [],
+        "limits": "无实际蒸发IAD薄膜ρ；不得填2.201。",
+        "production_ready": false
+      },
+      "actual_n_k_stress_adhesion_response": {
+        "status": "calibration_required",
+        "value": null,
+        "evidence_refs": [
+          "MR_SOURCE:MR-S03",
+          "MR_SOURCE:MR-S04",
+          "MR_SOURCE:MR-S09"
+        ],
+        "conditions": [],
+        "limits": "尚未在本材料对与本机上建立响应。",
+        "production_ready": false
+      },
+      "resputter_yield_E_theta": {
+        "status": "unknown",
+        "value": null,
+        "evidence_refs": [
+          "MR_SOURCE:MR-S07"
+        ],
+        "conditions": [],
+        "limits": "TEOS/ICP索引线索不满足蒸发IAD材料对的合格Y条件。",
+        "production_ready": false
+      }
+    },
+    "fully_matched_experimental_combination_found": false,
+    "calibration_required": true
+  },
+  "materials": [
+    {
+      "priority_order": 1,
+      "material_id": "Ta2O5_film",
+      "material_name": "Ta2O5",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/01_Ta2O5_film.md",
+      "T04_property_record_ids": [
+        "OXP-001",
+        "OXP-002",
+        "OXP-003",
+        "OXP-004",
+        "OXP-005",
+        "OXP-006",
+        "OXP-007",
+        "OXP-008",
+        "OXP-009",
+        "OXP-010",
+        "OXP-011",
+        "OXP-012"
+      ],
+      "T04_record_count": 12,
+      "T04_rejected_reference_ids": [
+        "OXP-011",
+        "OXP-012"
+      ],
+      "T10_record_id": "MAT-01",
+      "T10_evidence_conditions": "Kaufman + e-beam, fused silica, room temperature; study-specific beam/flow/rate",
+      "identity_and_transfer_limits": "名义Ta2O5不保证实膜纯相；检出Ti的OXP-011/012保持隔离；IBS密度不迁移蒸发IAD。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "Ta2O5",
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "纯Ta2O5目标；源料批次/氧比需核",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Ta": 2,
+            "O": 5
+          },
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 7,
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-005",
+            "T04_PROPERTY:OXP-007",
+            "T04_PROPERTY:OXP-009"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。IBS/文献薄膜值不自动迁移到蒸发IAD。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-001",
+            "T04_PROPERTY:OXP-002",
+            "T04_PROPERTY:OXP-003",
+            "T04_PROPERTY:OXP-004",
+            "T04_PROPERTY:OXP-006",
+            "T04_PROPERTY:OXP-008"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-010"
+          ],
+          "conditions": [],
+          "limits": "没有已选可用k数值；不能将未报告当k=0；吸收上限不是精确k。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-13",
+            "T10_SOURCE:IS-11",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01",
+            "T10_SOURCE:IS-13",
+            "T10_SOURCE:IS-11"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01",
+            "T10_SOURCE:IS-13",
+            "T10_SOURCE:IS-11"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01",
+            "T10_SOURCE:IS-13",
+            "T10_SOURCE:IS-11"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-01",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-06",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-20",
+            "T10_RECORD:MAT-01",
+            "T10_SOURCE:IS-13",
+            "T10_SOURCE:IS-11"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-13",
+            "T10_SOURCE:IS-11"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-13",
+            "T10_SOURCE:IS-11"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-13",
+            "T10_SOURCE:IS-11"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "R/T+SE+吸收",
+        "O/Ta",
+        "XRR",
+        "曲率",
+        "温度",
+        "二维厚度"
+      ],
+      "decision_gate": "先以吸收/应力预算作硬约束，再比较n和稳定性",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 2,
+      "material_id": "ZnS_film",
+      "material_name": "ZnS",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/02_ZnS_film.md",
+      "T04_property_record_ids": [
+        "IRP-001",
+        "IRP-002",
+        "IRP-003",
+        "IRP-004",
+        "IRP-005",
+        "IRP-006",
+        "IRP-007",
+        "IRP-008",
+        "IRP-009",
+        "IRP-010"
+      ],
+      "T04_record_count": 10,
+      "T04_rejected_reference_ids": [
+        "IRP-007"
+      ],
+      "T10_record_id": "MAT-02",
+      "T10_evidence_conditions": "IAD source/gas unverified in primary abstract; Zn(O,S) evidence is RF reactive sputtering",
+      "identity_and_transfer_limits": "ZnS膜与CVD/HIP块材分开；IRP-008仅QCM设定密度；可疑k=3.85的IRP-007不能读取；含氧气氛不能假定仍为纯ZnS。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "ZnS",
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "ZnS源料与ZnS块材分开",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Zn": 1,
+            "S": 1
+          },
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 2,
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可直接读取的匹配膜/基片质量密度记录；bulk/source/QCM密度被排除。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-008"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。禁止读取为film.rho；只保留仪器/原料出处。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-001",
+            "T04_PROPERTY:IRP-002",
+            "T04_PROPERTY:IRP-003",
+            "T04_PROPERTY:IRP-004",
+            "T04_PROPERTY:IRP-005",
+            "T04_PROPERTY:IRP-006"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-007"
+          ],
+          "conditions": [],
+          "limits": "没有已选可用k数值；不能将未报告当k=0；吸收上限不是精确k。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-010"
+          ],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-21",
+            "T10_SOURCE:IS-28",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-21",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-21",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-21",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR01",
+            "T04_SOURCE:IR02",
+            "T04_SOURCE:IR03",
+            "T04_SOURCE:IR04",
+            "T10_RECORD:MAT-02",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-21",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-21",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-21",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-21",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "Zn/S/O",
+        "FTIR",
+        "XRD",
+        "AFM/散射",
+        "应力",
+        "附着",
+        "净速率"
+      ],
+      "decision_gate": "先单层基线与低剂量对照，缺目标IR吸收不得用可见透过放行",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 3,
+      "material_id": "TiO2_film",
+      "material_name": "TiO2",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/03_TiO2_film.md",
+      "T04_property_record_ids": [
+        "OXP-013",
+        "OXP-014",
+        "OXP-015",
+        "OXP-016",
+        "OXP-017",
+        "OXP-018",
+        "OXP-019",
+        "OXP-020",
+        "OXP-021",
+        "OXP-022",
+        "OXP-023",
+        "OXP-024"
+      ],
+      "T04_record_count": 12,
+      "T04_rejected_reference_ids": [
+        "OXP-016",
+        "OXP-020",
+        "OXP-024"
+      ],
+      "T10_record_id": "MAT-03",
+      "T10_evidence_conditions": "oxygen IAD; primary legacy studies with temperature/energy groups; CC103 comparison separate",
+      "identity_and_transfer_limits": "源料TiO2/Ti3O5、非晶/锐钛/金红石分开；光学拟合填充比不是XRR质量密度；高n不自动是低损耗。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "TiO2",
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "源料TiO2/Ti3O5等与成膜相态分开",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Ti": 1,
+            "O": 2
+          },
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 3,
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可直接读取的匹配膜/基片质量密度记录；bulk/source/QCM密度被排除。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-013",
+            "T04_PROPERTY:OXP-017",
+            "T04_PROPERTY:OXP-021"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-014",
+            "T04_PROPERTY:OXP-018",
+            "T04_PROPERTY:OXP-022"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。被隔离数据不可恢复；探测下限/上限必须保留。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "T10_SOURCE:IS-16",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03",
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03",
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03",
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-02",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-08",
+            "T04_SOURCE:OX-09",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-21",
+            "T04_SOURCE:OX-28",
+            "T04_SOURCE:OX-29",
+            "T10_RECORD:MAT-03",
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "SE(n,k,d)",
+        "R/T/散射",
+        "O/Ti",
+        "XRD",
+        "XRR",
+        "曲率"
+      ],
+      "decision_gate": "不以最大n作唯一目标；同厚度、同温度比较",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 4,
+      "material_id": "YbF3_film",
+      "material_name": "YbF3",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/04_YbF3_film.md",
+      "T04_property_record_ids": [
+        "IRP-011",
+        "IRP-012",
+        "IRP-013",
+        "IRP-014",
+        "IRP-015",
+        "IRP-016",
+        "IRP-017",
+        "IRP-018",
+        "IRP-019",
+        "IRP-020",
+        "IRP-021",
+        "IRP-022",
+        "IRP-023",
+        "IRP-024",
+        "IRP-025",
+        "IRP-026",
+        "IRP-027",
+        "IRP-028",
+        "IRP-029",
+        "IRP-030"
+      ],
+      "T04_record_count": 20,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-04",
+      "T10_evidence_conditions": "End-Hall MarkII, room temperature; not Kaufman evidence",
+      "identity_and_transfer_limits": "固定名称为氟化镱YbF3，不是YF3；F/Yb偏离3已在特定样品出现，因此理想式量只作名义归一化；End-Hall文献不转Kaufman。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "YbF3",
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "镱氟化物；不得写成YF3",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Yb": 1,
+            "F": 3
+          },
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 4,
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可直接读取的匹配膜/基片质量密度记录；bulk/source/QCM密度被排除。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-021"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。禁止读取为film.rho；只保留仪器/原料出处。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-011",
+            "T04_PROPERTY:IRP-013",
+            "T04_PROPERTY:IRP-015",
+            "T04_PROPERTY:IRP-017",
+            "T04_PROPERTY:IRP-019"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-012",
+            "T04_PROPERTY:IRP-014",
+            "T04_PROPERTY:IRP-016",
+            "T04_PROPERTY:IRP-018",
+            "T04_PROPERTY:IRP-020"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。被隔离数据不可恢复；探测下限/上限必须保留。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-030"
+          ],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-025",
+            "T04_PROPERTY:IRP-027",
+            "T04_PROPERTY:IRP-029"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。单篇样品数值不是响应曲线。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-19",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04",
+            "T10_SOURCE:IS-19"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04",
+            "T10_SOURCE:IS-19"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04",
+            "T10_SOURCE:IS-19"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR05",
+            "T04_SOURCE:IR06",
+            "T04_SOURCE:IR07",
+            "T04_SOURCE:IR08",
+            "T04_SOURCE:IR09",
+            "T10_RECORD:MAT-04",
+            "T10_SOURCE:IS-19"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-19"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-19"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-19"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "F/Yb/O",
+        "XRR",
+        "FTIR",
+        "应力",
+        "附着/湿热前后"
+      ],
+      "decision_gate": "不将Xe优于Ar的End-Hall结论升级到Kaufman",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 5,
+      "material_id": "SiO2_film",
+      "material_name": "SiO2",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/05_SiO2_film.md",
+      "T04_property_record_ids": [
+        "OXP-025",
+        "OXP-026",
+        "OXP-027",
+        "OXP-028",
+        "OXP-029",
+        "OXP-030",
+        "OXP-031"
+      ],
+      "T04_record_count": 7,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-05",
+      "T10_evidence_conditions": "oxygen IAD; 1984/1985 source-specific temperature/energy conditions",
+      "identity_and_transfer_limits": "SiO蒸气、SiO2源料、沉积SiOx/SiO2及熔融硅石块材分开；OH/含水/孔隙、成分、应力分别测量；bulk ρ/n禁止默认。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "SiO2",
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "SiO/SiO2源料；膜OH/密度单独记录",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Si": 1,
+            "O": 2
+          },
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 3,
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-029"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。IBS/文献薄膜值不自动迁移到蒸发IAD。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-025",
+            "T04_PROPERTY:OXP-026",
+            "T04_PROPERTY:OXP-027",
+            "T04_PROPERTY:OXP-028"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "没有已选可用k数值；不能将未报告当k=0；吸收上限不是精确k。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-030"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05",
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05",
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05",
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-03",
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-07",
+            "T04_SOURCE:OX-10",
+            "T04_SOURCE:OX-11",
+            "T04_SOURCE:OX-15",
+            "T04_SOURCE:OX-22",
+            "T04_SOURCE:OX-25",
+            "T04_SOURCE:OX-26",
+            "T04_SOURCE:OX-27",
+            "T10_RECORD:MAT-05",
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12",
+            "MR_SOURCE:MR-S07"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-11",
+            "T10_SOURCE:IS-12"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "FTIR",
+        "干/湿/再真空光谱",
+        "XRR",
+        "曲率",
+        "O/Si",
+        "电位"
+      ],
+      "decision_gate": "高密度与低OH/低应力共同约束",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 6,
+      "material_id": "MgF2_film",
+      "material_name": "MgF2",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/06_MgF2_film.md",
+      "T04_property_record_ids": [
+        "IRP-031",
+        "IRP-032",
+        "IRP-033",
+        "IRP-034",
+        "IRP-035",
+        "IRP-036",
+        "IRP-037",
+        "IRP-038",
+        "IRP-039",
+        "IRP-040",
+        "IRP-041",
+        "IRP-042",
+        "IRP-043",
+        "IRP-044"
+      ],
+      "T04_record_count": 14,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-06",
+      "T10_evidence_conditions": "mixed evidence: source-unverified Ar; Kaufman O2 2019 index; End-Hall Dumas separate",
+      "identity_and_transfer_limits": "晶体、蒸发膜、IBS膜分开；名义MgF2不保证无F损失；氧辅助须按目标VUV/可见/IR域评价，不能用单波段结论放行。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "MgF2",
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "MgF2相态、纯度和基片温度要绑定",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Mg": 1,
+            "F": 2
+          },
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 3,
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-043"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。IBS/文献薄膜值不自动迁移到蒸发IAD。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-031",
+            "T04_PROPERTY:IRP-033",
+            "T04_PROPERTY:IRP-035",
+            "T04_PROPERTY:IRP-037",
+            "T04_PROPERTY:IRP-041"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-032",
+            "T04_PROPERTY:IRP-034",
+            "T04_PROPERTY:IRP-036",
+            "T04_PROPERTY:IRP-038"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。被隔离数据不可恢复；探测下限/上限必须保留。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-042"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。条件仍不是实际夹具热边界。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-17",
+            "T10_SOURCE:IS-18",
+            "T10_SOURCE:IS-26",
+            "T10_SOURCE:IS-29",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06",
+            "T10_SOURCE:IS-17",
+            "T10_SOURCE:IS-18",
+            "T10_SOURCE:IS-26",
+            "T10_SOURCE:IS-29"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06",
+            "T10_SOURCE:IS-17",
+            "T10_SOURCE:IS-18",
+            "T10_SOURCE:IS-26",
+            "T10_SOURCE:IS-29"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06",
+            "T10_SOURCE:IS-17",
+            "T10_SOURCE:IS-18",
+            "T10_SOURCE:IS-26",
+            "T10_SOURCE:IS-29"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR10",
+            "T04_SOURCE:IR11",
+            "T04_SOURCE:IR12",
+            "T04_SOURCE:IR13",
+            "T04_SOURCE:IR14",
+            "T04_SOURCE:IR24",
+            "T10_RECORD:MAT-06",
+            "T10_SOURCE:IS-17",
+            "T10_SOURCE:IS-18",
+            "T10_SOURCE:IS-26",
+            "T10_SOURCE:IS-29"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-17",
+            "T10_SOURCE:IS-18",
+            "T10_SOURCE:IS-26",
+            "T10_SOURCE:IS-29"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-17",
+            "T10_SOURCE:IS-18",
+            "T10_SOURCE:IS-26",
+            "T10_SOURCE:IS-29"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-17",
+            "T10_SOURCE:IS-18",
+            "T10_SOURCE:IS-26",
+            "T10_SOURCE:IS-29"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "F/Mg/O",
+        "VUV仅如适用",
+        "FTIR",
+        "XRR",
+        "曲率",
+        "附着"
+      ],
+      "decision_gate": "先定义使用波段和底层界面；不自动把O2列禁用或优选",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 7,
+      "material_id": "Al2O3_film",
+      "material_name": "Al2O3",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/07_Al2O3_film.md",
+      "T04_property_record_ids": [
+        "OXP-032",
+        "OXP-033",
+        "OXP-034",
+        "OXP-035"
+      ],
+      "T04_record_count": 4,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-07",
+      "T10_evidence_conditions": "oxygen/argon original IAD studies; source model unverified; CC103 separate",
+      "identity_and_transfer_limits": "非晶Al2O3膜不等于蓝宝石；n或有效介质填充参数不能直接当质量密度；粒种及温度需分别对照。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "Al2O3",
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "非晶薄膜不是蓝宝石",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Al": 2,
+            "O": 3
+          },
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 5,
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-035"
+          ],
+          "conditions": [],
+          "limits": "无可直接读取的匹配膜/基片质量密度记录；bulk/source/QCM密度被排除。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-032",
+            "T04_PROPERTY:OXP-033"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-034"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。被隔离数据不可恢复；探测下限/上限必须保留。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-14",
+            "T10_SOURCE:IS-15",
+            "T10_SOURCE:IS-16",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07",
+            "T10_SOURCE:IS-14",
+            "T10_SOURCE:IS-15",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07",
+            "T10_SOURCE:IS-14",
+            "T10_SOURCE:IS-15",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07",
+            "T10_SOURCE:IS-14",
+            "T10_SOURCE:IS-15",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-04",
+            "T04_SOURCE:OX-12",
+            "T04_SOURCE:OX-13",
+            "T04_SOURCE:OX-14",
+            "T04_SOURCE:OX-23",
+            "T10_RECORD:MAT-07",
+            "T10_SOURCE:IS-14",
+            "T10_SOURCE:IS-15",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-14",
+            "T10_SOURCE:IS-15",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-14",
+            "T10_SOURCE:IS-15",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-14",
+            "T10_SOURCE:IS-15",
+            "T10_SOURCE:IS-16"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "SE",
+        "吸收",
+        "Al/O",
+        "XRR",
+        "XRD",
+        "应力",
+        "附着"
+      ],
+      "decision_gate": "不搬1000eV/300°C实验组为本机推荐",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 8,
+      "material_id": "H4_film",
+      "material_name": "H4",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/08_H4_film.md",
+      "T04_property_record_ids": [
+        "OXP-036",
+        "OXP-037",
+        "OXP-038",
+        "OXP-039",
+        "OXP-040",
+        "OXP-041",
+        "OXP-042",
+        "OXP-043",
+        "OXP-044",
+        "OXP-045",
+        "OXP-046",
+        "OXP-047",
+        "OXP-048",
+        "OXP-049"
+      ],
+      "T04_record_count": 14,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-08",
+      "T10_evidence_conditions": "Patinal H4/H4HD, RF IAD manufacturer example; not Kaufman",
+      "identity_and_transfer_limits": "H4是商品名，实际厂家/货号/版本/COA及成膜组成未提供，不猜固定配方。H4 HD源料装填密度不是膜密度。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "H4",
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "厂商/货号/COA明确才可用；非固定化学式",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08"
+          ],
+          "conditions": [],
+          "limits": "商品名/玻璃等级无唯一化学式；不猜成分。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "组成未解析，M保持null；允许独立使用已测质量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-048"
+          ],
+          "conditions": [],
+          "limits": "无可直接读取的匹配膜/基片质量密度记录；bulk/source/QCM密度被排除。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-036",
+            "T04_PROPERTY:OXP-038",
+            "T04_PROPERTY:OXP-040",
+            "T04_PROPERTY:OXP-042",
+            "T04_PROPERTY:OXP-044",
+            "T04_PROPERTY:OXP-046"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:OXP-037",
+            "T04_PROPERTY:OXP-039",
+            "T04_PROPERTY:OXP-041",
+            "T04_PROPERTY:OXP-043",
+            "T04_PROPERTY:OXP-045",
+            "T04_PROPERTY:OXP-047"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。被隔离数据不可恢复；探测下限/上限必须保留。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-24",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08",
+            "T10_SOURCE:IS-24"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08",
+            "T10_SOURCE:IS-24"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08",
+            "T10_SOURCE:IS-24"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:OX-05",
+            "T04_SOURCE:OX-16",
+            "T04_SOURCE:OX-17",
+            "T04_SOURCE:OX-18",
+            "T04_SOURCE:OX-19",
+            "T04_SOURCE:OX-24",
+            "T10_RECORD:MAT-08",
+            "T10_SOURCE:IS-24"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-24"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-24"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-24"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "COA",
+        "组成",
+        "SE/FTIR",
+        "密度",
+        "曲率",
+        "温度"
+      ],
+      "decision_gate": "组成未知时归一化摩尔质量保持null，允许先做质量基准比较",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 9,
+      "material_id": "Ge_film",
+      "material_name": "Ge",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/09_Ge_film.md",
+      "T04_property_record_ids": [
+        "MP-001",
+        "MP-002",
+        "MP-003",
+        "MP-004",
+        "MP-005"
+      ],
+      "T04_record_count": 5,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-09",
+      "T10_evidence_conditions": "Ar-assisted AR stack at 220°C; source unspecified in abstract; reactive oxide route separate",
+      "identity_and_transfer_limits": "元素Ge膜与GeO2及Ge晶体基片分开；结晶性、掺杂、氧化与厚度影响光学；块材n不能默认赋膜。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "Ge",
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "元素Ge膜；与GeO2、晶体基片分开",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Ge": 1
+          },
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 1,
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-005"
+          ],
+          "conditions": [],
+          "limits": "无可直接读取的匹配膜/基片质量密度记录；bulk/source/QCM密度被排除。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-001"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。禁止读取为film.rho；只保留仪器/原料出处。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无满足当前冻结参数表的n数值记录；不从同名块材补齐。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "没有已选可用k数值；不能将未报告当k=0；吸收上限不是精确k。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-27",
+            "T10_SOURCE:IS-23",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09",
+            "T10_SOURCE:IS-27",
+            "T10_SOURCE:IS-23"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09",
+            "T10_SOURCE:IS-27",
+            "T10_SOURCE:IS-23"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09",
+            "T10_SOURCE:IS-27",
+            "T10_SOURCE:IS-23"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M01",
+            "T04_SOURCE:M12",
+            "T04_SOURCE:M13",
+            "T04_SOURCE:M14",
+            "T04_SOURCE:M15",
+            "T04_SOURCE:M16",
+            "T10_RECORD:MAT-09",
+            "T10_SOURCE:IS-27",
+            "T10_SOURCE:IS-23"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-27",
+            "T10_SOURCE:IS-23"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-27",
+            "T10_SOURCE:IS-23"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-27",
+            "T10_SOURCE:IS-23"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "FTIR/SE",
+        "Ge/O/Ar",
+        "XRD/拉曼",
+        "应力",
+        "净厚度"
+      ],
+      "decision_gate": "分离真空内/出腔后氧化；不能用高n保证低k",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 10,
+      "material_id": "Cu_film",
+      "material_name": "Cu",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/10_Cu_film.md",
+      "T04_property_record_ids": [
+        "MP-006",
+        "MP-007",
+        "MP-008",
+        "MP-009",
+        "MP-010",
+        "MP-021",
+        "MP-022",
+        "MP-023",
+        "MP-024",
+        "MP-025",
+        "MP-026",
+        "MP-027",
+        "MP-028",
+        "MP-029",
+        "MP-030",
+        "MP-031",
+        "MP-032"
+      ],
+      "T04_record_count": 17,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-10",
+      "T10_evidence_conditions": "manufacturer general dose guidance only; no matched Kaufman optical primary study in round1",
+      "identity_and_transfer_limits": "参考光谱是特定制样/氧化状态；膜连续性、表面氧化和界面不同会破坏块材近似；不能由k下降单独断言R更好。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "Cu",
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "Cu反射/导电用途与氧化铜用途区分",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Cu": 1
+          },
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 1,
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-010"
+          ],
+          "conditions": [],
+          "limits": "无可直接读取的匹配膜/基片质量密度记录；bulk/source/QCM密度被排除。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-006"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。禁止读取为film.rho；只保留仪器/原料出处。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-021",
+            "T04_PROPERTY:MP-023",
+            "T04_PROPERTY:MP-025",
+            "T04_PROPERTY:MP-027",
+            "T04_PROPERTY:MP-029",
+            "T04_PROPERTY:MP-031"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-022",
+            "T04_PROPERTY:MP-024",
+            "T04_PROPERTY:MP-026",
+            "T04_PROPERTY:MP-028",
+            "T04_PROPERTY:MP-030",
+            "T04_PROPERTY:MP-032"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。被隔离数据不可恢复；探测下限/上限必须保留。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10",
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10",
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10",
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M02",
+            "T04_SOURCE:M05",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M17",
+            "T04_SOURCE:M22",
+            "T04_SOURCE:M23",
+            "T10_RECORD:MAT-10",
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "Cu/O",
+        "R/T/吸收",
+        "AFM",
+        "片阻",
+        "应力",
+        "附着"
+      ],
+      "decision_gate": "不得照搬Al/Ag或厂家剂量轮作Cu保证",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 11,
+      "material_id": "Cr_film",
+      "material_name": "Cr",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/11_Cr_film.md",
+      "T04_property_record_ids": [
+        "MP-011",
+        "MP-012",
+        "MP-013",
+        "MP-014",
+        "MP-015",
+        "MP-033",
+        "MP-034",
+        "MP-035",
+        "MP-036",
+        "MP-037",
+        "MP-038"
+      ],
+      "T04_record_count": 11,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-11",
+      "T10_evidence_conditions": "manufacturer guidance; no matched Kaufman optical study in round1",
+      "identity_and_transfer_limits": "薄Cr粘接层不能等同半无限Cr；连续性、界面混合及Cr氧化物需显式建模；无通用附着收益。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "Cr",
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "Cr金属/粘接层与Cr氧化物分开",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Cr": 1
+          },
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 1,
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-015"
+          ],
+          "conditions": [],
+          "limits": "无可直接读取的匹配膜/基片质量密度记录；bulk/source/QCM密度被排除。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-011"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。禁止读取为film.rho；只保留仪器/原料出处。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-033",
+            "T04_PROPERTY:MP-035",
+            "T04_PROPERTY:MP-037"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-034",
+            "T04_PROPERTY:MP-036",
+            "T04_PROPERTY:MP-038"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。被隔离数据不可恢复；探测下限/上限必须保留。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11",
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11",
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11",
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M03",
+            "T04_SOURCE:M06",
+            "T04_SOURCE:M18",
+            "T10_RECORD:MAT-11",
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-06",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "XPS/截面如适用",
+        "R/T",
+        "应力",
+        "附着",
+        "厚度"
+      ],
+      "decision_gate": "最终膜系吸收预算必须包含粘接层，不只看胶带测试",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 12,
+      "material_id": "Al_film",
+      "material_name": "Al",
+      "role": "film",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/12_Al_film.md",
+      "T04_property_record_ids": [
+        "MP-016",
+        "MP-017",
+        "MP-018",
+        "MP-019",
+        "MP-020",
+        "MP-039",
+        "MP-040",
+        "MP-041",
+        "MP-042",
+        "MP-043",
+        "MP-044",
+        "MP-045",
+        "MP-046",
+        "MP-047",
+        "MP-048",
+        "MP-049",
+        "MP-050",
+        "MP-051",
+        "MP-052"
+      ],
+      "T04_record_count": 19,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-12",
+      "T10_evidence_conditions": "thermally evaporated Al with Ar IAD; original optical/mechanical study",
+      "identity_and_transfer_limits": "金属Al与原生/保护氧化层分开；Ar俘获、压应力和电阻/光学变化不能单目标替代；参考光谱不可直接成为本机库。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "Al",
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "金属Al薄膜及原生氧化层分别建模",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Al": 1
+          },
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 1,
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-020"
+          ],
+          "conditions": [],
+          "limits": "无可直接读取的匹配膜/基片质量密度记录；bulk/source/QCM密度被排除。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-016"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。禁止读取为film.rho；只保留仪器/原料出处。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-039",
+            "T04_PROPERTY:MP-041",
+            "T04_PROPERTY:MP-043",
+            "T04_PROPERTY:MP-045",
+            "T04_PROPERTY:MP-047",
+            "T04_PROPERTY:MP-049",
+            "T04_PROPERTY:MP-051"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-040",
+            "T04_PROPERTY:MP-042",
+            "T04_PROPERTY:MP-044",
+            "T04_PROPERTY:MP-046",
+            "T04_PROPERTY:MP-048",
+            "T04_PROPERTY:MP-050",
+            "T04_PROPERTY:MP-052"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。被隔离数据不可恢复；探测下限/上限必须保留。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "无可用吸收/内透过数值索引；不从外透过率忽略反射求吸收。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "未有可选用的匹配力热参数；不从bulk/source替代薄膜。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-22",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12",
+            "T10_SOURCE:IS-22"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12",
+            "T10_SOURCE:IS-22"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12",
+            "T10_SOURCE:IS-22"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M04",
+            "T04_SOURCE:M07",
+            "T04_SOURCE:M08",
+            "T04_SOURCE:M19",
+            "T10_RECORD:MAT-12",
+            "T10_SOURCE:IS-22"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-22"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-22"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-22"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "R/T/吸收",
+        "Al/O/Ar",
+        "AFM",
+        "片阻",
+        "应力"
+      ],
+      "decision_gate": "Al的k变小不自动推出所有λ反射变大",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 13,
+      "material_id": "ZnS_substrate",
+      "material_name": "ZnS",
+      "role": "substrate",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/13_ZnS_substrate.md",
+      "T04_property_record_ids": [
+        "IRP-045",
+        "IRP-046",
+        "IRP-047",
+        "IRP-048",
+        "IRP-049",
+        "IRP-050",
+        "IRP-051",
+        "IRP-052",
+        "IRP-053",
+        "IRP-054",
+        "IRP-055",
+        "IRP-056",
+        "IRP-057",
+        "IRP-058",
+        "IRP-059",
+        "IRP-060"
+      ],
+      "T04_record_count": 16,
+      "T04_rejected_reference_ids": [
+        "IRP-047",
+        "IRP-053",
+        "IRP-057",
+        "IRP-058"
+      ],
+      "T10_record_id": "MAT-13",
+      "T10_evidence_conditions": "T04 substrate card + indirect film chemistry evidence",
+      "identity_and_transfer_limits": "标准CVD与HIP/多光谱等级不得混合；薄膜成分旁证不是基片预清洗安全数据；硬度冲突记录保持隔离。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "ZnS",
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "标准CVD与HIP/MS等级、抛光损伤分开",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Zn": 1,
+            "S": 1
+          },
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 2,
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-045",
+            "T04_PROPERTY:IRP-051"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。商品典型密度不是本用户来料值。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-060"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "没有已选可用k数值；不能将未报告当k=0；吸收上限不是精确k。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-050",
+            "T04_PROPERTY:IRP-056",
+            "T04_PROPERTY:IRP-059"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-046",
+            "T04_PROPERTY:IRP-049",
+            "T04_PROPERTY:IRP-052",
+            "T04_PROPERTY:IRP-055"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。条件仍不是实际夹具热边界。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-28",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13",
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13",
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13",
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR04",
+            "T04_SOURCE:IR15",
+            "T04_SOURCE:IR16",
+            "T04_SOURCE:IR17",
+            "T04_SOURCE:IR18",
+            "T10_RECORD:MAT-13",
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-20",
+            "T10_SOURCE:IS-28"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "前后AFM/散射",
+        "Zn/S/O",
+        "T/R",
+        "波前",
+        "温度"
+      ],
+      "decision_gate": "预清洗与IAD分组，空白基片先验，不能用膜数据保证块材",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 14,
+      "material_id": "Ge_substrate",
+      "material_name": "Ge",
+      "role": "substrate",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/14_Ge_substrate.md",
+      "T04_property_record_ids": [
+        "MP-053",
+        "MP-054",
+        "MP-055",
+        "MP-056",
+        "MP-057",
+        "MP-058",
+        "MP-059",
+        "MP-060",
+        "MP-061",
+        "MP-062"
+      ],
+      "T04_record_count": 10,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-14",
+      "T10_evidence_conditions": "T04 substrate card; no exact preclean qualification",
+      "identity_and_transfer_limits": "晶向、掺杂/电阻率、温度、厚度和表面氧化必须匹配；Ar辅助AR膜系不能证明基片预清洗安全。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "Ge",
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "掺杂/电阻率、晶向、批次与面形",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Ge": 1
+          },
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 1,
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-058"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。商品典型密度不是本用户来料值。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-053",
+            "T04_PROPERTY:MP-054",
+            "T04_PROPERTY:MP-055",
+            "T04_PROPERTY:MP-056",
+            "T04_PROPERTY:MP-057"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "没有已选可用k数值；不能将未报告当k=0；吸收上限不是精确k。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-062"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:MP-059",
+            "T04_PROPERTY:MP-060",
+            "T04_PROPERTY:MP-061"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。条件仍不是实际夹具热边界。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-23",
+            "T10_SOURCE:IS-27",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14",
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-23",
+            "T10_SOURCE:IS-27"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14",
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-23",
+            "T10_SOURCE:IS-27"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14",
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-23",
+            "T10_SOURCE:IS-27"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:M09",
+            "T04_SOURCE:M10",
+            "T04_SOURCE:M11",
+            "T04_SOURCE:M20",
+            "T10_RECORD:MAT-14",
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-23",
+            "T10_SOURCE:IS-27"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-23",
+            "T10_SOURCE:IS-27"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-23",
+            "T10_SOURCE:IS-27"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07",
+            "T10_SOURCE:IS-23",
+            "T10_SOURCE:IS-27"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "Ge/O",
+        "AFM",
+        "IR T/R/吸收",
+        "波前",
+        "T(t)"
+      ],
+      "decision_gate": "温升上限由基片/夹具/功能共同确定，不取文献沉积温度作上限",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 15,
+      "material_id": "K9_substrate",
+      "material_name": "K9",
+      "role": "substrate",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/15_K9_substrate.md",
+      "T04_property_record_ids": [
+        "IRP-061",
+        "IRP-062",
+        "IRP-063",
+        "IRP-064",
+        "IRP-065",
+        "IRP-066",
+        "IRP-067",
+        "IRP-068",
+        "IRP-069",
+        "IRP-070",
+        "IRP-071",
+        "IRP-072",
+        "IRP-073",
+        "IRP-074",
+        "IRP-075",
+        "IRP-076",
+        "IRP-077",
+        "IRP-078",
+        "IRP-079",
+        "IRP-080",
+        "IRP-081",
+        "IRP-082"
+      ],
+      "T04_record_count": 22,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-15",
+      "T10_evidence_conditions": "dielectric charging principle + T04 H-K9L card",
+      "identity_and_transfer_limits": "用户K9具体牌号未知；H-K9L仅为首轮厂家代表，不能替代任意K9或N-BK7；无固定化学式及通用原子数。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "K9",
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "实际牌号先核；T04代表H-K9L不等于任意K9",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15"
+          ],
+          "conditions": [],
+          "limits": "商品名/玻璃等级无唯一化学式；不猜成分。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "组成未解析，M保持null；允许独立使用已测质量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-079"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。商品典型密度不是本用户来料值。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-061",
+            "T04_PROPERTY:IRP-062",
+            "T04_PROPERTY:IRP-063",
+            "T04_PROPERTY:IRP-064",
+            "T04_PROPERTY:IRP-065"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "没有已选可用k数值；不能将未报告当k=0；吸收上限不是精确k。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-066",
+            "T04_PROPERTY:IRP-067",
+            "T04_PROPERTY:IRP-068",
+            "T04_PROPERTY:IRP-069",
+            "T04_PROPERTY:IRP-070",
+            "T04_PROPERTY:IRP-071",
+            "T04_PROPERTY:IRP-072",
+            "T04_PROPERTY:IRP-073",
+            "T04_PROPERTY:IRP-074",
+            "T04_PROPERTY:IRP-075"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-076",
+            "T04_PROPERTY:IRP-077",
+            "T04_PROPERTY:IRP-078",
+            "T04_PROPERTY:IRP-080",
+            "T04_PROPERTY:IRP-081"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。条件仍不是实际夹具热边界。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-03",
+            "T10_SOURCE:IS-07",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15",
+            "T10_SOURCE:IS-03",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15",
+            "T10_SOURCE:IS-03",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15",
+            "T10_SOURCE:IS-03",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR19",
+            "T04_SOURCE:IR20",
+            "T10_RECORD:MAT-15",
+            "T10_SOURCE:IS-03",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-03",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-03",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-03",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "AFM/散射",
+        "表面化学",
+        "波前",
+        "T(t)",
+        "电位",
+        "附着"
+      ],
+      "decision_gate": "空白实材对照不能仅用Si见证替代",
+      "machine_calibrated": false,
+      "process_qualified": false
+    },
+    {
+      "priority_order": 16,
+      "material_id": "ZnSe_substrate",
+      "material_name": "ZnSe",
+      "role": "substrate",
+      "is_original_priority": true,
+      "T04_card_path_from_project_root": "04_coating_and_substrate_materials/cards/16_ZnSe_substrate.md",
+      "T04_property_record_ids": [
+        "IRP-083",
+        "IRP-084",
+        "IRP-085",
+        "IRP-086",
+        "IRP-087",
+        "IRP-088",
+        "IRP-089",
+        "IRP-090",
+        "IRP-091",
+        "IRP-092",
+        "IRP-093",
+        "IRP-094",
+        "IRP-095",
+        "IRP-096"
+      ],
+      "T04_record_count": 14,
+      "T04_rejected_reference_ids": [],
+      "T10_record_id": "MAT-16",
+      "T10_evidence_conditions": "T04 material/SDS + generic preclean, no matched Kaufman dataset",
+      "identity_and_transfer_limits": "CVD光学级与批次/抛光状态需核；无本机Kaufman预清洗放行数据；表面损伤、Zn/Se/O与IR损耗须合看。",
+      "fields": {
+        "nominal_identity": {
+          "status": "cited",
+          "value": "ZnSe",
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16"
+          ],
+          "conditions": [
+            "仅声明目标/商业名称，不认证本机样品组成"
+          ],
+          "limits": "CVD光学级、缺陷/抛光批与SDS",
+          "production_ready": false
+        },
+        "lot_grade_phase_identity": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16"
+          ],
+          "conditions": [],
+          "limits": "需实际批次/COA、源料和膜/基片相态；未提供，不自动从商品名推定",
+          "production_ready": false
+        },
+        "nominal_stoichiometry": {
+          "status": "calculable",
+          "value": {
+            "Zn": 1,
+            "Se": 1
+          },
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16"
+          ],
+          "conditions": [],
+          "limits": "仅理想化学式计数；实测非化学计量、氧化/掺杂/混合物必须改用实测组成。",
+          "production_ready": false
+        },
+        "nominal_molar_mass_kg_mol": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16"
+          ],
+          "conditions": [
+            "原子量/同位素约定必须可追溯；名义式量不是测得的膜组成"
+          ],
+          "limits": "理想组分与经版本冻结的原子量完整时可求M=Σν_i A_i；本轮未填值。实际成膜组成不明不得自动转物质的量基准。",
+          "production_ready": false
+        },
+        "nominal_atoms_per_formula_unit": {
+          "status": "calculable",
+          "value": 2,
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16"
+          ],
+          "conditions": [],
+          "limits": "化学式单元计数ν用于原子基准换算，不保证溅射按完整式单元发生。",
+          "production_ready": false
+        },
+        "film_or_substrate_density_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-088"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。商品典型密度不是本用户来料值。",
+          "production_ready": false
+        },
+        "bulk_source_or_qcm_density_not_film": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "此类记录未在本条上游参数表出现。",
+          "production_ready": false
+        },
+        "n_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-083",
+            "T04_PROPERTY:IRP-084",
+            "T04_PROPERTY:IRP-085",
+            "T04_PROPERTY:IRP-086"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。本机n仍需独立校准。",
+          "production_ready": false
+        },
+        "k_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "没有已选可用k数值；不能将未报告当k=0；吸收上限不是精确k。",
+          "production_ready": false
+        },
+        "absorption_or_internal_transmittance_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-087"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。",
+          "production_ready": false
+        },
+        "thermal_mechanical_reference": {
+          "status": "cited",
+          "value": null,
+          "evidence_refs": [
+            "T04_PROPERTY:IRP-089",
+            "T04_PROPERTY:IRP-090",
+            "T04_PROPERTY:IRP-091",
+            "T04_PROPERTY:IRP-092",
+            "T04_PROPERTY:IRP-093",
+            "T04_PROPERTY:IRP-095"
+          ],
+          "conditions": [
+            "逐条沿用上游state、conditions、source_id、uncertainty和波段；禁止跨状态平均",
+            "当前value=null表示尚未选择目标工艺匹配记录，不表示来源没有数字"
+          ],
+          "limits": "仅索引冻结来源条件化记录，不选取单一默认值。条件仍不是实际夹具热边界。",
+          "production_ready": false
+        },
+        "stress_reference": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [],
+          "conditions": [],
+          "limits": "冻结参数表未给可直接使用的应力数值，不由n、密度或累计剂量补填。",
+          "production_ready": false
+        },
+        "incident_fluence_and_energy_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07",
+            "MR_SOURCE:MR-S06",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "需要时间分辨f_s(E,theta,phi,x,t)、单位、法线角度定义、粒种/电荷态、中性贡献与遮挡",
+            "若仅有源面板V/I或未校准总电流则不能数值执行"
+          ],
+          "limits": "由同一坐标/时钟下、已校准到样片处的粒子能角通量积分；只得入射量，不等于吸收热量或性能。",
+          "production_ready": false
+        },
+        "material_atom_or_formula_unit_fluence": {
+          "status": "calculable",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16",
+            "MR_SOURCE:MR-S10"
+          ],
+          "conditions": [
+            "M、ν或实际组成、质量/厚度与密度必须匹配；优先质量基准避免错误膜密度",
+            "无入射/黏附/再溅射分离时不得称gross-arriving atom fluence"
+          ],
+          "limits": "膜沉积使用已测净质量/面积及正确组成M、ν；不能无条件将净厚度当gross入射原子量。基片仅对实测去除质量定义等效去除原子数，不把整个块材当沉积通量。",
+          "production_ready": false
+        },
+        "actual_density_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "ρ随工艺/厚度/成分/孔隙/含水变化的响应未标定；XRR或质量-厚度交叉测量并记录不确定度。",
+          "production_ready": false
+        },
+        "actual_n_k_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "需同基片/工艺/层次下SE、R/T、必要吸收/散射联合辨识；波段、角度、偏振、模型及厚度相关性不可省略。",
+          "production_ready": false
+        },
+        "stress_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "需曲率/厚度/基片力学及温度、湿度和时间历史；累计剂量不足以唯一决定应力。",
+          "production_ready": false
+        },
+        "adhesion_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T04_SOURCE:IR21",
+            "T04_SOURCE:IR22",
+            "T04_SOURCE:IR23",
+            "T10_RECORD:MAT-16",
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "界面特有响应；须明确实际材料对、清洗/底层、样品结构、测试方法/失效模式和环境，不能从膜密度或n推出。",
+          "production_ready": false
+        },
+        "absorbed_energy_or_temperature_response": {
+          "status": "calibration_required",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "入射能流与实际吸热不同；需热接触、夹具、辐射、电子/中性通量和T(t)标定。",
+          "production_ready": false
+        },
+        "resputter_yield_E_theta": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [
+            "要求yields的atoms/ion或formula-units/ion基准、粒种电荷态、能量谱和角度分布",
+            "要求样片温度、背景气体、成分/相态、粗糙/污染、束流率、累积剂量/前处理历史和测量不确定度",
+            "若化学选择性去除，需部分产额和组分守恒；不能只用总Y默认化学计量不变"
+          ],
+          "limits": "无本材料/表面/粒种/能角谱与历史匹配且测量条件完备的合格数值Y。保持null；再溅射未测不等于零。",
+          "production_ready": false
+        },
+        "qualified_process_window": {
+          "status": "unknown",
+          "value": null,
+          "evidence_refs": [
+            "T10_SOURCE:IS-07"
+          ],
+          "conditions": [],
+          "limits": "实际设备/工艺窗口与验收阈值均未提供；不推荐源电压、电流、氧流或最佳剂量。",
+          "production_ready": false
+        }
+      },
+      "minimal_validation": [
+        "FTIR/适用量热",
+        "Zn/Se/O",
+        "AFM",
+        "波前",
+        "温度"
+      ],
+      "decision_gate": "先EHS核清腔/废料；破损/烧损不按普通光学玻璃处理",
+      "machine_calibrated": false,
+      "process_qualified": false
+    }
+  ],
+  "normalization_constants": {
+    "source_ref": "MR_SOURCE:MR-S10",
+    "scope": "SI定义/单位换算，独立于全部材料响应与synthetic算例物性",
+    "Avogadro_constant": {
+      "symbol": "N_A",
+      "decimal_value": "6.02214076e23",
+      "unit": "mol^-1",
+      "exact": true
+    },
+    "elementary_charge": {
+      "symbol": "e",
+      "decimal_value": "1.602176634e-19",
+      "unit": "C",
+      "exact": true
+    },
+    "electronvolt_to_joule": {
+      "decimal_value": "1.602176634e-19",
+      "unit": "J/eV",
+      "exact": true
+    },
+    "guard": "定义常数精确不代表输入电流、谱、组成、质量或派生通量零不确定度；电荷态z不可省略。"
+  }
+}

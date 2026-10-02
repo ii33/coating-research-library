@@ -1,0 +1,52 @@
+{
+  "status": "passed_isolated_reader",
+  "allowlisted_files": 44,
+  "no_zip": true,
+  "no_parent": true,
+  "no_third_party_originals": true,
+  "source_time_high_cost_run": false,
+  "tests": 14,
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "verification",
+        "-p",
+        "test_small.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_admitted_points (test_small.SmallTests.test_admitted_points) ... ok\ntest_bad_channel (test_small.SmallTests.test_bad_channel) ... ok\ntest_bad_support_controls (test_small.SmallTests.test_bad_support_controls) ... ok\ntest_bandwidth_splitting (test_small.SmallTests.test_bandwidth_splitting) ... ok\ntest_device_outer_wrapper_analytic (test_small.SmallTests.test_device_outer_wrapper_analytic) ... ok\ntest_device_plan_only (test_small.SmallTests.test_device_plan_only) ... ok\ntest_duration_unknown_propagation (test_small.SmallTests.test_duration_unknown_propagation) ... ok\ntest_hull (test_small.SmallTests.test_hull) ... ok\ntest_rate_contract (test_small.SmallTests.test_rate_contract) ... ok\ntest_rate_knots (test_small.SmallTests.test_rate_knots) ... ok\ntest_rate_zero_not_positive (test_small.SmallTests.test_rate_zero_not_positive) ... ok\ntest_small_evidence (test_small.SmallTests.test_small_evidence) ... ok\ntest_source_kernel_unmasked_reference (test_small.SmallTests.test_source_kernel_unmasked_reference) ... ok\ntest_work_stop (test_small.SmallTests.test_work_stop) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.019s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "models/device_driver.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"not_run_awaiting_device\",\n  \"points\": 2,\n  \"reference_jobs\": 8,\n  \"fixed_ray_nominal_estimate\": 2450612480,\n  \"work_unit_hard_cap\": 200000000000,\n  \"wall_hard_cap_serial_s\": 172800,\n  \"workers\": 1,\n  \"memory\": \"streamed per-point/time chunk; measure peak RSS on device, not benchmarked\",\n  \"high_frequency_rates_can_increase_panels\": true,\n  \"physical_certification\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "verification/reader_check.py",
+        "--check",
+        "--reader"
+      ],
+      "returncode": 0,
+      "stdout": "{\"status\": \"pass\", \"allowlisted_files\": 44, \"hashed_files\": 43, \"parent_or_originals_required\": false, \"zip_required\": false, \"mode\": \"read_only\"}\n",
+      "stderr": ""
+    }
+  ],
+  "figure_visual_qa": "passed_2026-10-02_no_clipping",
+  "temporary_copy_removed_on_exit": true
+}

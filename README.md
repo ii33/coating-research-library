@@ -1,6 +1,6 @@
 # 镀膜工程科研长期研究库
 
-本库保存用户原始清单，并把它落实为可延续、可追溯、分阶段验收的工程研究项目。最终报告以工程手册与教材级知识库为目标；T01–T10已覆盖第一轮优先公共资料、理论和合成基础，T01第二轮有限拓扑接口已移交，T02第二轮双覆盖误差预算以部分数值接受状态冻结，独立v0.2求交正确性已有限收口，当前推进三个限定阴影不连续求积案例。正式完整审查、实机校准与生产资格仍未完成。
+本库保存用户原始清单，并把它落实为可延续、可追溯、分阶段验收的工程研究项目。T01–T10首轮公共理论与合成基础已覆盖；第二轮T02v0.3、T03、T04、T05实现增补已冻结，当前开展T06工艺/膜态到光学可观测量接口。T02仍partial，完整设备验证、正式审查与生产资格未完成。
 
 ## 从这里开始
 
@@ -31,7 +31,7 @@
 ## 执行原则
 
 1. 按原文大项目顺序推进。每个大项目先完成明确优先项，验收后进入下一个；所有大项目首轮完成后，才回头补充扩展。
-2. T01–T10第一轮优先公共资料、理论和合成基础已覆盖；当前为T02第二轮源/时间求积误差控制进行中；已交付增量仍为frozen_bounded_partial。第一轮基线保留不变，实机与产品资格需独立证据。
+2. 按原顺序推进第二轮；当前为T06工艺/膜态到光学可观测量接口。T02保持partial，T03/T04/T05实现就绪但验证待完成。
 3. 每个阶段产出可复用报告、来源摘要、数据/模型接口及未决问题，不以无限穷尽文献作为完成标准。
 4. 工程结论必须注明证据、条件、单位、不确定度和验证状态。概念推导、仿真和实测不是同一层面的证明。
 5. 合法存档公开许可允许保存的原文；受限、付费或权利不明内容仅存元数据、链接及合规摘要，不绕过付费墙。
@@ -52,8 +52,19 @@
 
 ## 首轮复核与第二轮入口
 
-[十专题成熟度地图及有限复核](00_project/FIRST_SWEEP_REVIEW_DRAFT.md)说明现有资产、实用化证据缺口与第二轮停止条件。[T01第二轮冻结增量](01_machine_structures/round2_topology_alignment/README.md)已可带缺口移交；C/I原图准入、最终全网格时间再加密和连续极值仍未完成。[T02第二轮冻结部分结果](02_machine_modeling/round2_dual_coverage_error_budget/README.md)保留侧壁漏挡、源/时间数值未达与混叠反例；[独立v0.2求交修复](02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/README.md)已冻结，保留初次FAIL与修复后局部PASS；原v0.1部分数值状态和求积误差不变，尚不进入T03。
+[十专题成熟度地图](00_project/FIRST_SWEEP_REVIEW_DRAFT.md)保留首轮有限复核边界。第二轮增补入口：
+
+- [T02v03](02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/README.md)
+- [T03R2](03_correction_plate_optimization/round2_dual_coverage_optimizer/README.md)
+- [T04R2](04_coating_and_substrate_materials/round2_material_response_contract/README.md)
+- [T05R2](05_evaporation_sources/round2_qcm_flux_transfer/README.md)
+
+## 计算验证与发布准则
+
+高计算量算法与设备driver完整实现，重型精度、性能和资源验证待用户安排设备；不为当前云端机器缩减方法。当前小测试和合成结果只用于实现核查，不代表生产验收。完整与未运行任务分开记录，真实输入unknown及partial状态不掩盖。
+
+先在云端积累并冻结成果，攒成有实质进展的批次再统一上传；不逐个小修订提交。当前T06未冻结成果不纳入本次发布。
 
 ## GitHub发布范围与复核
 
-本私有仓库包括原创研究和合规引用，不包含第三方原文PDF/HTML或完整原始光谱。发布边界、冻结包校验和复算命令见[发布说明](00_project/GITHUB_PUBLICATION.md)。
+本私有仓库包括原创研究和合规引用，不包含第三方全文或完整原始光谱。发布边界、冻结包校验和复算命令见[发布说明](00_project/GITHUB_PUBLICATION.md)。

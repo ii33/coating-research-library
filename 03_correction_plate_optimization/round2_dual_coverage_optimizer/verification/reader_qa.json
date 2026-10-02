@@ -1,0 +1,66 @@
+{
+  "date_utc": "2026-10-02",
+  "scope": "exact allowlist isolated reader, no parent repository or third-party originals",
+  "isolated_reader": {
+    "status": "pass",
+    "copied_exact_allowlist_only": true,
+    "parent_repository_required": false,
+    "commands": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "verification",
+          "-p",
+          "test_small.py",
+          "-v"
+        ],
+        "returncode": 0,
+        "tail": "st_physical_unknowns_propagate) ... ok\ntest_smoke_eight_rays (test_small.RayChecks.test_smoke_eight_rays) ... ok\ntest_t02_estimate_no_upgrade (test_small.RayChecks.test_t02_estimate_no_upgrade) ... ok\n\n----------------------------------------------------------------------\nRan 40 tests in 0.259s\n\nOK\n"
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "reviews",
+          "-p",
+          "test_optimizer_counterexamples.py",
+          "-v"
+        ],
+        "returncode": 0,
+        "tail": "nected_mount) ... ok\ntest_unknown_and_estimated_measures_never_certify_feasibility (test_optimizer_counterexamples.Counterexamples.test_unknown_and_estimated_measures_never_certify_feasibility) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.019s\n\nOK\n"
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "models/run_optimizer.py"
+        ],
+        "returncode": 0,
+        "tail": "{\n  \"status\": \"plan_only\",\n  \"candidate_count\": 15,\n  \"fixture_only\": true,\n  \"workers\": 1,\n  \"nominal_ray_upper_estimate\": 60,\n  \"gpu_execution\": false,\n  \"execute_required\": true\n}\n"
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "models/device_runner.py"
+        ],
+        "returncode": 0,
+        "tail": "dle_chunks; each point keeps full source/time nodes. Validate chunk hashes/counts. Peak RAM still requires device measurement; no full-grid materialization is needed.\",\n    \"Invented targets in this plan are placeholders requiring experiment/target approval\"\n  ],\n  \"physical_certification\": false\n}\n"
+      }
+    ]
+  },
+  "test_counts": {
+    "main": 40,
+    "independent": 15
+  },
+  "expensive_work_executed": false
+}

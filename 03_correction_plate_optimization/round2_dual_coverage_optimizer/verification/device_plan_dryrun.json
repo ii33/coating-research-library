@@ -1,0 +1,144 @@
+{
+  "schema": "T03-device-plan-v1",
+  "status": "plan_only",
+  "config_sha256": "0e5f09a9fdf23e1b571dfe70085a3c5e796217ad195d1c236e2b4181bebbfd34",
+  "jobs": [
+    {
+      "job_id": "training",
+      "fidelity": "training",
+      "status": "not_run_awaiting_device",
+      "work": {
+        "evaluations": 24,
+        "rays": 12387024,
+        "source_samples": 12387024,
+        "point_time_samples": 158808,
+        "time_panels": 158808,
+        "plate_tests": 396384768,
+        "largest_chunk_base_bytes_estimate_range": [
+          7622784,
+          30491136
+        ],
+        "point_chunks": 13,
+        "parse_copy_cache_peak_multiplier_unmeasured": [
+          2,
+          6
+        ],
+        "visibility_cache_note": "cache is per-oracle in memory, LRU default 16 geometry entries; plan peak must include up to min(candidate_count,16) visibility object lists; lower max_entries for constrained RAM",
+        "wall_seconds": "unknown_until_device_benchmark",
+        "gpu_speedup": "not_measured"
+      },
+      "required_inputs": {
+        "ray_bundle": {
+          "path": null,
+          "sha256": null
+        },
+        "designs": {
+          "path": null,
+          "sha256": null
+        },
+        "ray_bundle_chunks": []
+      },
+      "acceptance": [
+        "Replace invented targets with user-approved research conditions, not production dimensions",
+        "Independent source family, non-nested time phase and edge witness holdout",
+        "Unknown remains unknown until candidate-local validated bounds exist",
+        "Compare feasible archive and refine overlap; no fixed convergence threshold invented"
+      ]
+    },
+    {
+      "job_id": "independent_holdout",
+      "fidelity": "independent_holdout",
+      "status": "not_run_awaiting_device",
+      "work": {
+        "evaluations": 24,
+        "rays": 93558480,
+        "source_samples": 93558480,
+        "point_time_samples": 406776,
+        "time_panels": 406776,
+        "plate_tests": 2993871360,
+        "largest_chunk_base_bytes_estimate_range": [
+          44027520,
+          176110080
+        ],
+        "point_chunks": 17,
+        "parse_copy_cache_peak_multiplier_unmeasured": [
+          2,
+          6
+        ],
+        "visibility_cache_note": "cache is per-oracle in memory, LRU default 16 geometry entries; plan peak must include up to min(candidate_count,16) visibility object lists; lower max_entries for constrained RAM",
+        "wall_seconds": "unknown_until_device_benchmark",
+        "gpu_speedup": "not_measured"
+      },
+      "required_inputs": {
+        "ray_bundle": {
+          "path": null,
+          "sha256": null
+        },
+        "designs": {
+          "path": null,
+          "sha256": null
+        },
+        "ray_bundle_chunks": []
+      },
+      "acceptance": [
+        "Replace invented targets with user-approved research conditions, not production dimensions",
+        "Independent source family, non-nested time phase and edge witness holdout",
+        "Unknown remains unknown until candidate-local validated bounds exist",
+        "Compare feasible archive and refine overlap; no fixed convergence threshold invented"
+      ]
+    },
+    {
+      "job_id": "area_validation",
+      "fidelity": "area_validation",
+      "status": "not_run_awaiting_device",
+      "work": {
+        "evaluations": 24,
+        "rays": 1994464320,
+        "source_samples": 1994464320,
+        "point_time_samples": 8671584,
+        "time_panels": 8671584,
+        "plate_tests": 63822858240,
+        "largest_chunk_base_bytes_estimate_range": [
+          67608960,
+          270435840
+        ],
+        "point_chunks": 236,
+        "parse_copy_cache_peak_multiplier_unmeasured": [
+          2,
+          6
+        ],
+        "visibility_cache_note": "cache is per-oracle in memory, LRU default 16 geometry entries; plan peak must include up to min(candidate_count,16) visibility object lists; lower max_entries for constrained RAM",
+        "wall_seconds": "unknown_until_device_benchmark",
+        "gpu_speedup": "not_measured"
+      },
+      "required_inputs": {
+        "ray_bundle": {
+          "path": null,
+          "sha256": null
+        },
+        "designs": {
+          "path": null,
+          "sha256": null
+        },
+        "ray_bundle_chunks": []
+      },
+      "acceptance": [
+        "Replace invented targets with user-approved research conditions, not production dimensions",
+        "Independent source family, non-nested time phase and edge witness holdout",
+        "Unknown remains unknown until candidate-local validated bounds exist",
+        "Compare feasible archive and refine overlap; no fixed convergence threshold invented"
+      ]
+    }
+  ],
+  "total_nominal_rays": 2100409824,
+  "workers": 1,
+  "execution_backend": "Python serial or bounded ThreadPoolExecutor; no GPU implementation claimed",
+  "prerequisites": [
+    "Finish T02 point12 ion continuous reference separately; T02 v0.3 remains partial",
+    "Prepare authenticated explicit finite ray bundles with seven error axes per channel",
+    "Set finite_fixture=false for physical claims; no certified total model without calibration",
+    "Use point-partitioned ray_bundle_chunks; each point keeps full source/time nodes. Validate chunk hashes/counts. Peak RAM still requires device measurement; no full-grid materialization is needed.",
+    "Invented targets in this plan are placeholders requiring experiment/target approval"
+  ],
+  "physical_certification": false
+}

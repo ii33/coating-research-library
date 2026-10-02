@@ -1,0 +1,17 @@
+{
+  "stage_id": "T05_round2_qcm_flux_transfer",
+  "algorithmic": true,
+  "status": "implementation_ready_validation_pending",
+  "scope": "new local directory only; source-QCM-workpiece arrival input contract",
+  "actual_calibration": "not_run",
+  "heavy_calibration_validation": "plan_only_not_run",
+  "device_validation": "not_run",
+  "physical_experiment": "not_run",
+  "small_tests": 60,
+  "narrow_dimension_review": {"model": "gpt-6-luna", "status": "passed", "tests": 7, "rounds": 1},
+  "specified_review_chain": {"DeepSeek": "not_run", "Seed_Pro": "not_run", "Sol_full_algorithm_review": "not_run"},
+  "production_qualified": false,
+  "tooling_factor_calibration": "unknown",
+  "upstream": {"T02_full_oracle": "partial", "T03_nonnegative_optimizer_net_erosion": "unsupported", "point12_ion_reference": "not_run", "tau": "not_strict_conditional_envelope"},
+  "publication": "local_freeze_no_push_no_upload_no_zip"
+}

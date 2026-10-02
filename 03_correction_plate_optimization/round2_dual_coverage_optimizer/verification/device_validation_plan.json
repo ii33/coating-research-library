@@ -1,0 +1,151 @@
+{
+  "schema": "T03-device-request-v1",
+  "stage_status": "implementation_ready_validation_pending",
+  "prerequisites": [
+    "Finish T02 point12 ion continuous reference separately; T02 v0.3 remains partial",
+    "Prepare authenticated explicit finite ray bundles with seven error axes per channel",
+    "Set finite_fixture=false for physical claims; no certified total model without calibration",
+    "Use point-partitioned ray_bundle_chunks; each point keeps full source/time nodes. Validate chunk hashes/counts. Peak RAM still requires device measurement; no full-grid materialization is needed.",
+    "Invented targets in this plan are placeholders requiring experiment/target approval"
+  ],
+  "global_ray_reservation_limit": 2100409824,
+  "jobs": [
+    {
+      "job_id": "training",
+      "fidelity": "training",
+      "device_ready": false,
+      "inputs": {
+        "ray_bundle": {
+          "path": null,
+          "sha256": null
+        },
+        "designs": {
+          "path": null,
+          "sha256": null
+        },
+        "ray_bundle_chunks": []
+      },
+      "work_shape": {
+        "candidate_count": 24,
+        "point_count": 13,
+        "time_panels": 509,
+        "vapor_source_nodes": 39,
+        "ion_source_nodes": 39,
+        "max_opaque_cells": 32,
+        "point_chunk_size": 1
+      },
+      "limits": {
+        "evaluations": 24,
+        "rays": 12387024,
+        "source_samples": 12387024,
+        "point_time_samples": 158808,
+        "time_panels": 158808,
+        "plate_tests": 396384768,
+        "wall_seconds": 86400
+      },
+      "objectives": {
+        "target_h_m": 1e-07,
+        "target_D_m2": 1e+18,
+        "min_throughput": 0.7
+      },
+      "acceptance": [
+        "Replace invented targets with user-approved research conditions, not production dimensions",
+        "Independent source family, non-nested time phase and edge witness holdout",
+        "Unknown remains unknown until candidate-local validated bounds exist",
+        "Compare feasible archive and refine overlap; no fixed convergence threshold invented"
+      ]
+    },
+    {
+      "job_id": "independent_holdout",
+      "fidelity": "independent_holdout",
+      "device_ready": false,
+      "inputs": {
+        "ray_bundle": {
+          "path": null,
+          "sha256": null
+        },
+        "designs": {
+          "path": null,
+          "sha256": null
+        },
+        "ray_bundle_chunks": []
+      },
+      "work_shape": {
+        "candidate_count": 24,
+        "point_count": 17,
+        "time_panels": 997,
+        "vapor_source_nodes": 115,
+        "ion_source_nodes": 115,
+        "max_opaque_cells": 32,
+        "point_chunk_size": 1
+      },
+      "limits": {
+        "evaluations": 24,
+        "rays": 93558480,
+        "source_samples": 93558480,
+        "point_time_samples": 406776,
+        "time_panels": 406776,
+        "plate_tests": 2993871360,
+        "wall_seconds": 86400
+      },
+      "objectives": {
+        "target_h_m": 1e-07,
+        "target_D_m2": 1e+18,
+        "min_throughput": 0.7
+      },
+      "acceptance": [
+        "Replace invented targets with user-approved research conditions, not production dimensions",
+        "Independent source family, non-nested time phase and edge witness holdout",
+        "Unknown remains unknown until candidate-local validated bounds exist",
+        "Compare feasible archive and refine overlap; no fixed convergence threshold invented"
+      ]
+    },
+    {
+      "job_id": "area_validation",
+      "fidelity": "area_validation",
+      "device_ready": false,
+      "inputs": {
+        "ray_bundle": {
+          "path": null,
+          "sha256": null
+        },
+        "designs": {
+          "path": null,
+          "sha256": null
+        },
+        "ray_bundle_chunks": []
+      },
+      "work_shape": {
+        "candidate_count": 24,
+        "point_count": 236,
+        "time_panels": 1531,
+        "vapor_source_nodes": 115,
+        "ion_source_nodes": 115,
+        "max_opaque_cells": 32,
+        "point_chunk_size": 1
+      },
+      "limits": {
+        "evaluations": 24,
+        "rays": 1994464320,
+        "source_samples": 1994464320,
+        "point_time_samples": 8671584,
+        "time_panels": 8671584,
+        "plate_tests": 63822858240,
+        "wall_seconds": 86400
+      },
+      "objectives": {
+        "target_h_m": 1e-07,
+        "target_D_m2": 1e+18,
+        "min_throughput": 0.7
+      },
+      "acceptance": [
+        "Replace invented targets with user-approved research conditions, not production dimensions",
+        "Independent source family, non-nested time phase and edge witness holdout",
+        "Unknown remains unknown until candidate-local validated bounds exist",
+        "Compare feasible archive and refine overlap; no fixed convergence threshold invented"
+      ]
+    }
+  ],
+  "not_run": true,
+  "physical_certification": false
+}

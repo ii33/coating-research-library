@@ -1,0 +1,151 @@
+{
+  "rays": [
+    {
+      "channel": "vapor",
+      "point": 0,
+      "time": 0,
+      "source": [
+        -0.06,
+        0,
+        0
+      ],
+      "target": [
+        -0.02,
+        0,
+        1.0
+      ],
+      "contribution": 1.5864686698157478e+16
+    },
+    {
+      "channel": "vapor",
+      "point": 0,
+      "time": 1,
+      "source": [
+        -0.06,
+        0,
+        0
+      ],
+      "target": [
+        -0.02,
+        0,
+        1.0
+      ],
+      "contribution": 1.5864686698157478e+16
+    },
+    {
+      "channel": "vapor",
+      "point": 1,
+      "time": 0,
+      "source": [
+        -0.06,
+        0,
+        0
+      ],
+      "target": [
+        0.02,
+        0,
+        1.0
+      ],
+      "contribution": 1.5713715121858354e+16
+    },
+    {
+      "channel": "vapor",
+      "point": 1,
+      "time": 1,
+      "source": [
+        -0.06,
+        0,
+        0
+      ],
+      "target": [
+        0.02,
+        0,
+        1.0
+      ],
+      "contribution": 1.5713715121858354e+16
+    },
+    {
+      "channel": "ion",
+      "point": 0,
+      "time": 0,
+      "source": [
+        0.06,
+        0,
+        0
+      ],
+      "target": [
+        -0.02,
+        0,
+        1.0
+      ],
+      "contribution": 3142743024371671.0
+    },
+    {
+      "channel": "ion",
+      "point": 0,
+      "time": 1,
+      "source": [
+        0.06,
+        0,
+        0
+      ],
+      "target": [
+        -0.02,
+        0,
+        1.0
+      ],
+      "contribution": 3142743024371671.0
+    },
+    {
+      "channel": "ion",
+      "point": 1,
+      "time": 0,
+      "source": [
+        0.06,
+        0,
+        0
+      ],
+      "target": [
+        0.02,
+        0,
+        1.0
+      ],
+      "contribution": 3172937339631495.5
+    },
+    {
+      "channel": "ion",
+      "point": 1,
+      "time": 1,
+      "source": [
+        0.06,
+        0,
+        0
+      ],
+      "target": [
+        0.02,
+        0,
+        1.0
+      ],
+      "contribution": 3172937339631495.5
+    }
+  ],
+  "area_weights": [
+    0.5,
+    0.5
+  ],
+  "time_weights_s": [
+    0.5,
+    0.5
+  ],
+  "atomic_density_m3": 1e+28,
+  "energy_per_ion_eV": 100.0,
+  "baseline_mean_h_m": 3.1578401820015834e-12,
+  "provenance": {
+    "origin": "original analytic static fixture",
+    "units": "SI",
+    "clock": "two exact constant half-second panels"
+  },
+  "errors": [],
+  "finite_fixture": true,
+  "margin_m": 0.0
+}

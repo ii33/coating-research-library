@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "source_count": 7,
+  "source_ids_unique": true,
+  "all_summaries_present": true,
+  "local_primary_originals": 0,
+  "referenced_source_ids_resolve": true,
+  "examples": {
+    "actual_unknown.json": "blocked_unmeasured",
+    "synthetic_al.json": "synthetic_computed"
+  },
+  "actual_unknowns_imputed": false,
+  "schema": "Draft202012 strict additionalProperties false",
+  "not_checked": [
+    "actual instrument model or raw device logs",
+    "true vapor mixture",
+    "real geometry/capture/density",
+    "full Lu-Lewis paper",
+    "production tooling or optical performance"
+  ]
+}

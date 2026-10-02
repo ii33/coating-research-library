@@ -1,0 +1,125 @@
+{
+  "status": "independent_narrow_check_complete_not_certified",
+  "scope": "Frozen synthetic D geometry only; no full source/time integral, no device-scale run, no physical certification.",
+  "geometry": {
+    "projection": "For every vertex, 0 < dv < dX. A positive-denominator projective map sends a convex box to the convex hull of the images of its vertices; independently checked against robust_mask_v02 on sampled rays.",
+    "oracle": {
+      "vapor": {
+        "rays": 128,
+        "polygon_blocked": 13,
+        "oracle_blocked": 13,
+        "unknown": 0,
+        "mismatch_count": 0,
+        "boundary_exclusion_m": 5e-07
+      },
+      "ion": {
+        "rays": 128,
+        "polygon_blocked": 48,
+        "oracle_blocked": 48,
+        "unknown": 0,
+        "mismatch_count": 0,
+        "boundary_exclusion_m": 5e-07
+      }
+    },
+    "oracle_rays_total": 256,
+    "oracle_limit": 256
+  },
+  "analytic_y_vs_independent_gauss": {
+    "channels": {
+      "vapor": {
+        "exponent": 1,
+        "slice_cases": 1200,
+        "visible_y_intervals_compared": 1160,
+        "max_abs_primitive_integral_difference": 8.881784197001252e-16,
+        "max_relative_primitive_integral_difference": 7.002079716828672e-15
+      },
+      "ion": {
+        "exponent": 12,
+        "slice_cases": 1200,
+        "visible_y_intervals_compared": 834,
+        "max_abs_primitive_integral_difference": 2.930988785010413e-14,
+        "max_relative_primitive_integral_difference": 1.8948420050573014e-13
+      }
+    },
+    "gauss_order": 32,
+    "smooth_gauss_samples": 63808,
+    "smooth_sample_limit": 200000
+  },
+  "duration_event_independent_check": {
+    "point_local_m": [
+      0.05196152422706632,
+      0.029999999999999995,
+      0.0
+    ],
+    "left_root_s": 3.9711151235587456,
+    "right_root_s": 4.034107211955879,
+    "covered_duration_s": 0.06299208839713355,
+    "gate_off_duration_s": 1.2999999999999998,
+    "independent_ion_only_duration_s_if_ion_visible": 1.3629920883971334,
+    "root_signs_at_2us_m": {
+      "left_before_m": -2.290518854239365e-07,
+      "left_after_m": 2.2904943756951734e-07,
+      "right_before_m": 9.10155019476222e-08,
+      "right_after_m": -9.101394499166915e-08
+    },
+    "event_root_method": "independent corner projection, monotone-chain hull, point-to-edge distance, bisection",
+    "duration_scope_note": "The vapor full-cover interval is independently recomputed. An independent open ion-source patch stays clear of the ion plate for every target position; cross-source separation is also established, so ion flux is positive throughout. This establishes the duration decomposition for this frozen geometry, not float-certified endpoint bounds."
+  },
+  "cross_source_coordinate_bounds": {
+    "target_x_m": [
+      -0.372,
+      0.372
+    ],
+    "vapor_plate_x_m": [
+      0.175,
+      0.245
+    ],
+    "ion_plate_x_m": [
+      -0.49,
+      -0.37
+    ],
+    "vapor_to_ignored_ion_plate": {
+      "ray_x_lower_bound_m": 0.06207499999999999,
+      "plate_x_upper_bound_m": -0.37,
+      "gap_m": 0.432075
+    },
+    "ion_to_ignored_vapor_plate": {
+      "ray_x_upper_bound_m": -0.21974528301886792,
+      "plate_x_lower_bound_m": 0.175,
+      "gap_m": 0.3947452830188679
+    },
+    "ion_own_plate_open_clear_source_patch": {
+      "chosen_local_source_uv_m": [
+        -0.044,
+        0.0
+      ],
+      "source_disk_radius_m": 0.045,
+      "source_x_m": -0.6464,
+      "source_z_m": 0.0352,
+      "max_crossing_lambda": 0.1412889518413598,
+      "ray_x_upper_bound_m": -0.5025113314447591,
+      "plate_x_interval_m": [
+        -0.49,
+        -0.37
+      ],
+      "gap_to_plate_m": 0.012511331444759133,
+      "conclusion": "strict x separation for an interior source point and therefore an open positive-area source neighborhood for all target positions; beam-emission and target-incidence cosines are positive"
+    }
+  },
+  "cover_slack_lipschitz": {
+    "target_speed_bound_m_s": 0.8984954989266808,
+    "vapor_projected_vertex_speed_bound_m_s": 0.4838052686528281,
+    "vapor_slope_limit_m_s": 0.5,
+    "vapor_margin_m_s": 0.01619473134717192,
+    "ion_dX_min_m": 0.5584,
+    "ion_dv_max_m": 0.269,
+    "ion_projection_denominator_min_m": 0.2894,
+    "ion_vertex_target_distance_bound_m": 1.023850086682616,
+    "ion_projected_vertex_speed_bound_m_s": 3.1988878993444536,
+    "ion_slope_limit_m_s": 6.0,
+    "ion_margin_m_s": 2.8011121006555464,
+    "argument": "Corresponding projected box vertices move no faster than these bounds; their convex hull Hausdorff speed is no larger. Signed distance of the origin to a convex polygon is 1-Lipschitz under Hausdorff motion, hence cover_slack inherits the same bound."
+  },
+  "float_guard": "The 1e-11 m guard in support_intervals is not an outward-rounded or otherwise validated floating-point error bound. Numerical results remain conditional; no strict enclosure claim.",
+  "runtime_seconds": 0.5239685499982443
+}

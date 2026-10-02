@@ -1,14 +1,12 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T05:21:47.288102+00:00",
+  "updated_at_utc": "2026-10-02T07:21:16.301375+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
-    "major_topics": "serial_original_order",
-    "priority_items": "preserve_original_order",
-    "expansion": "only_after_all_round1_topics_accepted",
-    "current_active_topic_limit": 1,
-    "unresolved_standalone_research_line": "clarification_only",
-    "status_changes_require_evidence": true
+    "high_compute": "implement_complete_algorithm_and_device_driver_now_heavy_validation_after_user_device_arrangement",
+    "acceptance": "small_tests_are_implementation_checks_not_production_acceptance",
+    "publication": "accumulate_meaningful_frozen_batches_reduce_upload_frequency_no_per_minor_revision_push",
+    "freeze": "prior_frozen_artifacts_remain_unchanged_new_work_in_independent_directories"
   },
   "topics": [
     {
@@ -796,14 +794,40 @@
     }
   ],
   "round2_status": "in_progress",
-  "round2_active_topic_id": "T02",
-  "round2_active_task_id": "ROUND2.T02_QUADRATURE_ERROR_CONTROL",
-  "round2_active_scope": "T02限定三个代表阴影不连续求积案例、预置预算与参考积分；区分误差估计与严格界，独立v0.3进行中",
+  "round2_active_topic_id": "T06",
+  "round2_active_task_id": "ROUND2.T06_PROCESS_OPTICAL_OBSERVABLES",
+  "round2_active_scope": "T06第二轮：工艺与膜态输入到光学可观测量的有条件接口；完整实现与设备验证计划分开",
   "round2_stage_status": {
     "T01_TOPOLOGY_ALIGNMENT": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
     "T02_DUAL_COVERAGE_ERROR_BUDGET": "frozen_bounded_partial",
     "T02_INTERSECTION_CORRECTNESS_CLOSURE": "frozen_bounded_predicate_closure",
-    "T02_QUADRATURE_ERROR_CONTROL": "in_progress"
+    "T02_QUADRATURE_ERROR_CONTROL": "frozen_local_partial_with_device_validation_pending",
+    "T03_DUAL_COVERAGE_OPTIMIZER": "implementation_ready_validation_pending",
+    "T04_MATERIAL_RESPONSE_INPUT_CONTRACT": "implementation_ready_validation_pending",
+    "T05_QCM_FLUX_TRANSFER": "implementation_ready_validation_pending",
+    "T06_PROCESS_OPTICAL_OBSERVABLES": "in_progress"
   },
-  "round2_handoff_record": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/closure_stage.json"
+  "round2_handoff_record": "05_evaporation_sources/round2_qcm_flux_transfer/T06_ROUND2_HANDOFF.md",
+  "device_validation_backlog": [
+    {
+      "stage": "T02v03",
+      "status": "awaiting_user_arranged_device_not_run",
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3"
+    },
+    {
+      "stage": "T03R2",
+      "status": "awaiting_user_arranged_device_not_run",
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer"
+    },
+    {
+      "stage": "T04R2",
+      "status": "awaiting_user_arranged_device_not_run",
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract"
+    },
+    {
+      "stage": "T05R2",
+      "status": "awaiting_user_arranged_device_not_run",
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer"
+    }
+  ]
 }

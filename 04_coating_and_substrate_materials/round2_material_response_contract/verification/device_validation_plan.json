@@ -1,0 +1,28 @@
+{
+  "status": "plan_only",
+  "execution": "not_run",
+  "jobs": [
+    {
+      "job_id": "future_calibration_resampling",
+      "bootstrap_replicates": 100000,
+      "fit_parameters": 2,
+      "device": "user-selected device later, not selected or sampled",
+      "work_units": "one eight-row weighted fit per replicate",
+      "resource_measurements": null,
+      "inputs": "synthetic dataset by default; approved calibrated campaign required for physical inference",
+      "exit_conditions": [
+        "all requested replicates written with exact seed and input hashes",
+        "validation failures retained",
+        "no production qualification"
+      ]
+    }
+  ],
+  "prerequisites": [
+    "explicit approval for heavy execution and chosen resources",
+    "state/temperature/spectrum/history matched calibration data",
+    "full input covariance or errors-in-variables model where required"
+  ],
+  "no_machine_sampling": true,
+  "no_paid_compute": true,
+  "physical_experiments": "plan_only/not_run"
+}

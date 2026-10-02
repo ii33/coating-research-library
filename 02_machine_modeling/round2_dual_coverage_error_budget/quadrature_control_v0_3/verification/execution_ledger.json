@@ -1,0 +1,34 @@
+{
+  "localization_measured": {
+    "ray_evaluations": 4583670,
+    "ray_limit": 5000000,
+    "wall_seconds": 2.2748392689973116,
+    "wall_limit_seconds": 60
+  },
+  "unmetered_smoke_conservative_allowance": 10000,
+  "interrupted_main_conservative_work_upper_bound": 30000000,
+  "interrupted_exit_code": 130,
+  "small_checks_measured": {
+    "source_slice_evaluations": 0,
+    "analytic_endpoint_evaluations": 0,
+    "ray_evaluations": 1922,
+    "projection_evaluations": 3850,
+    "oracle_evaluations": 2,
+    "total_work_units": 5774,
+    "limit": 200000,
+    "wall_seconds": 0.2874638350040186,
+    "wall_limit_seconds": 60
+  },
+  "main_cumulative_conservative_work_upper_bound": 34629444,
+  "small_api_test_and_isolated_reader_conservative_allowance": 30000,
+  "main_original_cumulative_limit": 60000000,
+  "device_high_cost_work_executed": false,
+  "note": "Mixed-operation counts are not FLOPs or performance comparisons. Original preserved holdout has zero new work. Independent review counted separately.",
+  "independent_narrow_review": {
+    "smooth_samples": 63808,
+    "oracle_calls": 256,
+    "budget_samples": 200000,
+    "budget_oracle_calls": 512,
+    "status": "completed_one_narrow_check"
+  }
+}

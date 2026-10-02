@@ -1,0 +1,41 @@
+{
+  "task_id": "ROUND2.T03_DUAL_COVERAGE_OPTIMIZER",
+  "topic_id": "T03",
+  "date_utc": "2026-10-02",
+  "algorithmic": true,
+  "stage_status": "implementation_ready_validation_pending",
+  "publication_status": "local_unpublished_pending_consolidated_batch",
+  "scope": "new subdirectory only; frozen first round and T02 unchanged",
+  "acceptance": {
+    "implementation": "ready",
+    "main_small_tests": 40,
+    "independent_counterexample_tests": 15,
+    "eight_ray_smoke": "passed",
+    "high_fidelity_device": "not_run",
+    "physical_machine": "not_run",
+    "optimization_performance": "not_established",
+    "GPU": "not_run"
+  },
+  "formal_review": {
+    "requested_DeepSeek_execution": "not_claimed",
+    "requested_Seed_independent": "pending_not_available_in_this_run",
+    "requested_Sol_algorithm_signoff": "pending_not_claimed",
+    "actual_narrow_review": "GPT-6 Luna; scope recorded in reviews/independent_optimizer_review.md",
+    "status": "awaiting_formal_review"
+  },
+  "remaining": [
+    "T02 continuous oracle/error closure",
+    "device bundles and calibrated inputs",
+    "high fidelity candidate training/holdout/full area jobs",
+    "device resource measurements",
+    "formal algorithm signoff",
+    "physical manufacturing/material qualification"
+  ],
+  "next_suggested_task": "ROUND2.T04_MATERIAL_RESPONSE_INPUT_CONTRACT",
+  "next_task_is_recommendation_not_started": true,
+  "user_policy": {
+    "high_compute": "implement_now_device_validation_later",
+    "uploads": "reduced_frequency_no_push_this_stage",
+    "product_integration": "not_authorized_not_done"
+  }
+}

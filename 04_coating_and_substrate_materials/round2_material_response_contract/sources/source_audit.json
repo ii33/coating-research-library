@@ -1,0 +1,59 @@
+{
+  "audit_type": "author_bounded_source_and_mapping_check_not_independent_physics_review",
+  "checked_at_utc": "2026-10-02T06:33:00Z",
+  "result": "pass",
+  "checks": {
+    "json_parse": true,
+    "16_original_priority_materials_in_original_order": true,
+    "207_property_records_unique_and_complete": true,
+    "all_1476_field_evidence_refs_resolve": true,
+    "status_enum_and_unknown_null": true,
+    "source_summary_paths_exist": true,
+    "source_short_quotes_at_most_25_words_each": true,
+    "all_16_Y_E_theta_unknown_null": true,
+    "all_production_qualified_false": true,
+    "H4_no_guessed_formula_mass_or_atom_count": true,
+    "YbF3_not_YF3": true,
+    "fused_silica_is_additional_method_demonstrator": true,
+    "bulk_density_and_n_disallowed_as_film_defaults": true,
+    "frozen_upstream_sha256_match": true,
+    "no_copyright_originals_or_executable_code_created": true,
+    "BIPM_constants_have_exact_decimal_strings_and_are_not_material_properties": true
+  },
+  "errors": [],
+  "counts": {
+    "source_cards": 10,
+    "materials": 16,
+    "T04_property_records": 207,
+    "material_fields": 336,
+    "resolved_field_evidence_refs": 1476,
+    "status_counts": {
+      "cited": 57,
+      "calibration_required": 94,
+      "calculable": 78,
+      "unknown": 107
+    }
+  },
+  "limitations": [
+    "本次只重核10条来源；T04/T10其他资料保留继承访问层级，未冒充重新联网验证。",
+    "MR-S07仅核官方出版社索引片段，直接页面访问失败；无Y数值被导入。",
+    "SiO2与熔融硅石来源是分层方法示例，未找到并验收完整本机材料对响应数据。",
+    "BIPM手册URL参数与实际封面版本不一致，登记实际观察版本；定义值另由当前官方HTML复核。",
+    "本审计只核结构、引用、边界和上游完整性；不代表材料测量、生产资格或独立科学审查。"
+  ],
+  "files_sha256": {
+    "data/priority_material_mapping.json": "ed667f83e4493479b0202ddce282c40438905f2f8dd177941c437057cfb07c88",
+    "sources/README.md": "3f221abbee89d4b8d7d82355918cdca27799580de65077f97d4b296e6a5eeda2",
+    "sources/source_registry.json": "aa723e3514d0709916b40fe79aa4dd398c51a0e5fd593f0c33a7890369f6e42c",
+    "sources/summaries/MR-S01.md": "5c04878540b87cfee4c97c7e6c3e9e23695850989a982bc82c4c2b36b4569e4c",
+    "sources/summaries/MR-S02.md": "5486eee57c3c580ede928d797cded2c5f8b4423f63671581de682d4d87676ef4",
+    "sources/summaries/MR-S03.md": "ed5ac5ac8353a2498a89b53301d031cba361fac211678eab626acac5034a772e",
+    "sources/summaries/MR-S04.md": "c6a440052e5444b9174d92e3f232c5858ed5304f15ff12b8d73732567edc3a8a",
+    "sources/summaries/MR-S05.md": "34a0a725b613fd0410e9441d8a140f1113f471c1fcb1e352cac5a5f16aa5a745",
+    "sources/summaries/MR-S06.md": "aa829045b702262a8cefda59a36c3f9bc0f015304316e265d90bc01c92e9a120",
+    "sources/summaries/MR-S07.md": "3893c8634d5c4e1ca559107762d5a8229f61d431aa70b66fef1a6487e62443d7",
+    "sources/summaries/MR-S08.md": "d824422853c8054f91b944e70251f5c9310a35ca4e818707b9f0a7a1c3cc6d31",
+    "sources/summaries/MR-S09.md": "7c16f1bdc60e3b0e36df0aa9254376969c353de0684f789eb90b1a70b8f5d9c8",
+    "sources/summaries/MR-S10.md": "9ddc7a1de1dd1adf055bb7f91af94a9d2647adb82f030d338ef33d006858900b"
+  }
+}

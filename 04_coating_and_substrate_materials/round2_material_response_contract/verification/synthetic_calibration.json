@@ -1,0 +1,173 @@
+{
+  "all_numbers_synthetic": true,
+  "normalization": {
+    "arrival": "1e18 atoms/m2/s",
+    "energetic": "1e18 particles/m2/s",
+    "net": "1e18 atoms/m2/s"
+  },
+  "rows": [
+    {
+      "arrival": 1.0,
+      "energetic": 0.2,
+      "net": 0.784,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 1.0,
+      "energetic": 0.7,
+      "net": 0.604,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 2.0,
+      "energetic": 0.2,
+      "net": 1.6199999999999999,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 2.0,
+      "energetic": 0.7,
+      "net": 1.4669999999999999,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 1.5,
+      "energetic": 0.4,
+      "net": 1.1290000000000002,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 1.2,
+      "energetic": 0.6,
+      "net": 0.8210000000000001,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 1.8,
+      "energetic": 0.3,
+      "net": 1.409,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 1.4,
+      "energetic": 0.5,
+      "net": 1.01,
+      "sigma": 0.02
+    }
+  ],
+  "fit": {
+    "status": "synthetic_identifiable",
+    "eta": 0.8424294284518439,
+    "yield_atoms_per_particle": 0.32748895502953074,
+    "covariance": [
+      [
+        8.92898665302516e-05,
+        0.0002446170301818351
+      ],
+      [
+        0.0002446170301818351,
+        0.0008784820722689857
+      ]
+    ],
+    "condition_number": 48.3276430247672,
+    "residuals": [
+      0.007068362554062305,
+      -0.00918715993117239,
+      0.0006389341022182832,
+      0.011383411616983613,
+      -0.0036485606659532877,
+      0.0065780588755058045,
+      -0.009126284704459683,
+      -0.005656722317815915
+    ],
+    "weighted_chi2": 1.0905659675393955,
+    "degrees_of_freedom": 6,
+    "limits": "Known independent Gaussian observation sigma; predictors treated exact. Errors-in-variables, drift, composition evolution and sample transfer not identified."
+  },
+  "unidentifiable_rows": [
+    {
+      "arrival": 1.0,
+      "energetic": 0.5,
+      "net": 0.68,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 2.0,
+      "energetic": 1.0,
+      "net": 1.36,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 3.0,
+      "energetic": 1.5,
+      "net": 2.04,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 4.0,
+      "energetic": 2.0,
+      "net": 2.72,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 5.0,
+      "energetic": 2.5,
+      "net": 3.4000000000000004,
+      "sigma": 0.02
+    },
+    {
+      "arrival": 6.0,
+      "energetic": 3.0,
+      "net": 4.08,
+      "sigma": 0.02
+    }
+  ],
+  "unidentifiable_fit": {
+    "status": "unidentifiable",
+    "eta": null,
+    "yield_atoms_per_particle": null,
+    "covariance": null,
+    "condition_number": null,
+    "reason": "Rank deficient or ill-conditioned weighted design; retain nulls, do not use pseudoinverse as calibration"
+  },
+  "truth": {
+    "eta": 0.84,
+    "yield_atoms_per_particle": 0.32
+  },
+  "not_inferred": [
+    "n",
+    "k",
+    "stress",
+    "adhesion",
+    "production_window"
+  ],
+  "bootstrap_status": "not_run",
+  "heavy_plan": {
+    "status": "plan_only",
+    "execution": "not_run",
+    "jobs": [
+      {
+        "job_id": "future_calibration_resampling",
+        "bootstrap_replicates": 100000,
+        "fit_parameters": 2,
+        "device": "user-selected device later, not selected or sampled",
+        "work_units": "one eight-row weighted fit per replicate",
+        "resource_measurements": null,
+        "inputs": "synthetic dataset by default; approved calibrated campaign required for physical inference",
+        "exit_conditions": [
+          "all requested replicates written with exact seed and input hashes",
+          "validation failures retained",
+          "no production qualification"
+        ]
+      }
+    ],
+    "prerequisites": [
+      "explicit approval for heavy execution and chosen resources",
+      "state/temperature/spectrum/history matched calibration data",
+      "full input covariance or errors-in-variables model where required"
+    ],
+    "no_machine_sampling": true,
+    "no_paid_compute": true,
+    "physical_experiments": "plan_only/not_run"
+  }
+}

@@ -100,6 +100,6 @@
 
 ## 当前下一步
 
-T01–T10首轮及T01第二轮基线不变。T02独立v0.2在受限编码输入下闭合极近侧壁求交反例，保留初次独立FAIL和修复后185项局部复看通过记录。旧v0.1仍frozen_bounded_partial，0.203%源求积差与14.3ms独曝差未解决。当前ROUND2.T02_QUADRATURE_ERROR_CONTROL，独立v0.3限定三个代表阴影不连续案例、预置预算和参考积分，不改原partial，不推进T03。该求交子参考不是完整前向模型/物理校准/生产资格证明。
+当前ROUND2.T06_PROCESS_OPTICAL_OBSERVABLES，承接[T05移交](05_evaporation_sources/round2_qcm_flux_transfer/T06_ROUND2_HANDOFF.md)建立工艺/膜态输入到光学可观测量的有条件接口。T02v0.3仍partial，点12连续参考与设备高算量验证未完成；T03/T04/T05为implementation_ready_validation_pending。
 
-见[v0.2范围边界](02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/reports/02_results_and_boundaries.md)。
+高算量算法和设备driver先完整实现，重型精度/性能验证待用户设备。小型实现测试不视为生产验收。采用积累后批量发布，未冻结T06及原文/ZIP/cache不纳入本批，所有既有冻结内容保持不变。
