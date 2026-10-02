@@ -1,0 +1,27 @@
+{
+  "schema": "T02R2-correctness-closure-0.2",
+  "status": "frozen_bounded_predicate_closure",
+  "date_utc": "2026-10-02",
+  "nominal_predicate_status": "known_counterexample_closed_within_encoded_input_contract",
+  "uncertain_geometry_status": "conditional_tri_state_enclosure_not_calibration",
+  "full_T02_forward_model_status": "unchanged_frozen_bounded_partial",
+  "T03_work_performed": false,
+  "source_time_grid_runs": 0,
+  "old_v0_1_modified": false,
+  "main_nominal_comparisons": 8265,
+  "main_uncertainty_witnesses": 256,
+  "main_invalid_input_cases": 18,
+  "independent_initial_status": "FAIL_two_public_API_validation_defects",
+  "independent_final_status": "PASS_targeted_correction_recheck",
+  "independent_total_predicate_oracle_evaluations": 11422,
+  "reader_copy_verification": "passed_hash_check_and_full_read_only_main_suite_in_isolated_allowlist_copy",
+  "publish_scope": "only verification/public_allowlist.txt; no recursive discovery; no ZIP/cache/archive/third-party originals",
+  "unresolved": [
+    "source and time partial convergence, including original ~0.203% / 14.3ms findings",
+    "unvalidated physical input margin and calibration",
+    "zero-thickness convention and conservative unknown width",
+    "reference arithmetic throughput not qualified for production",
+    "old forward kernel not silently replaced; explicit tri-state integration required"
+  ],
+  "main_cumulative_predicate_oracle_evaluations": 50394
+}

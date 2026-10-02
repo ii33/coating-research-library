@@ -14,7 +14,7 @@
 - T09：81份清单内文件及清单自身；`data/deliverable_manifest.json` SHA-256 `f375623abea029b72bc5ccfa1ac80a07099fde6af28c406794925057483ac441`
 - T10：82份清单内文件及清单自身；`release_manifest.json` SHA-256 `fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f`
 - T01第二轮：46项允许文件及读者哈希清单；reader_manifest.json SHA-256 `4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23`
-- 阶段边界：首轮及T01第二轮冻结研究不变；T02第二轮frozen_bounded_partial，当前确定性侧壁正确性收口进行中；正式审查与实机资格未完成
+- 阶段边界：首轮、T01第二轮和T02v0.1冻结研究不变；独立v0.2有限求交闭环完成，完整T02仍partial；独立v0.3求积误差控制进行中；未冻结v0.3不纳入此快照，T03未启动
 
 ## 不纳入仓库的内容
 
@@ -81,3 +81,9 @@ T10按release_manifest.json精确允许列表及清单自身发布，全部sourc
 发布 `02_machine_modeling/round2_dual_coverage_error_budget` 的精确允许文件及独立哈希清单；清单SHA-256 `9e0b83b83367ae82a3968be4f35ad450d56811a5e357f768fb20ebb390a40253`。状态frozen_bounded_partial，保留极近侧壁漏挡、源求积0.203%、独曝14.3ms>10ms和共同混叠反例。仅包检查通过，不能提升为全数值精度验证；尚不进入T03。原文、ZIP、缓存及后续未冻结修正不上传。
 
 读者核验：`python -B 02_machine_modeling/round2_dual_coverage_error_budget/verification/build_reader.py --check --reader`。
+
+## T02独立v0.2有限求交闭环
+
+仅发布 `02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2` 17项允许文件，manifest SHA-256 `38cace86fd120248788747c5cbb3d14d2a462ca72b7b03d510a2236a38aa85af`。初次独立FAIL与修复后局部PASS证据均保留；只称受限编码几何求交子参考。旧v0.1的55文件和partial状态不变，0.203%/14.3ms源时间误差未解决，原件、ZIP、缓存排除。
+
+只读完整性核验：`python -B 02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/reader_check.py --check --reader`，不运行会覆盖历史结果的独立审查脚本。

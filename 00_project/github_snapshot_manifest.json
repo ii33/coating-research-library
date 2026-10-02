@@ -1,6 +1,6 @@
 {
-  "snapshot": "coating-research-library-T02-round2-bounded-partial",
-  "created_at_utc": "2026-10-02T05:05:09.956112+00:00",
+  "snapshot": "coating-research-library-T02-round2-v0.2-bounded-predicate",
+  "created_at_utc": "2026-10-02T05:21:14.220864+00:00",
   "repository": "ii33/coating-research-library",
   "visibility": "private",
   "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
@@ -25,8 +25,8 @@
     },
     {
       "path": "00_project/GITHUB_PUBLICATION.md",
-      "size_bytes": 9108,
-      "sha256": "4d427ac94e9e83755f2476ed1d36acdea8934310b28fb809f7f6f356a06954dc"
+      "size_bytes": 9807,
+      "sha256": "bbf35c801a758d7b7af1ba7616247e69ed9f8cddeea9864df47778eea1ffeaa6"
     },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
@@ -55,8 +55,8 @@
     },
     {
       "path": "00_project/planning_baseline_manifest.json",
-      "size_bytes": 7885,
-      "sha256": "45ebc2d44c61e51bcf2d15e22783ebebe76cd6db49ed77edd425e857f669cb1b"
+      "size_bytes": 7842,
+      "sha256": "0abfc1c1c9d0efb3acefba50456a47841d790da1a0fed32b7e0190a8455c37d0"
     },
     {
       "path": "00_project/requirements_traceability.json",
@@ -65,8 +65,8 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 37127,
-      "sha256": "eb5308d53c942de30631cd0dc528dac02b9782d07a2c02df0dcebd1ca19d280b"
+      "size_bytes": 37214,
+      "sha256": "7b4552117941eaa0dfe9985074bb95ec93616025efb162405439450043983e30"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -632,6 +632,91 @@
       "path": "02_machine_modeling/round2_dual_coverage_error_budget/T03_ROUND2_HANDOFF.md",
       "size_bytes": 2507,
       "sha256": "011dfbdf9e166845bbf44a335dfe58dcd80819673db768115494c8b0b0c318c9"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/.gitignore",
+      "size_bytes": 29,
+      "sha256": "921eeb70c0c8ee4b0d2932344b9beffb7d08afbb64ba8a3eee243a365574b340"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/README.md",
+      "size_bytes": 2772,
+      "sha256": "70861b65994e2e4aac3ca358f3600dfdea65c20f42c8633037089da81f597f91"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/closure_stage.json",
+      "size_bytes": 1448,
+      "sha256": "46aa4e2e2c88e38ae72f843125cda482b16cd7ddd841a0947f41b875f6c372ba"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/data/check_results.json",
+      "size_bytes": 1642,
+      "sha256": "c262e391d14e2c23351fcaf624db5e2af41886e6655fa642d372e171ea27dcc4"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/data/legacy_provenance.json",
+      "size_bytes": 1264,
+      "sha256": "a93ff8772f3fb5398b769f5cfc90bae8a976c5330fbc2cbd3b66540a91f13c8c"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/models/robust_mask.py",
+      "size_bytes": 8335,
+      "sha256": "2c6006636c2728d226fafcb854d5ef45a96ddbbcc3e4e57cc90f31f52c17464c"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/reports/01_predicate_and_api.md",
+      "size_bytes": 7161,
+      "sha256": "492b16c4f946a20c3bad36d14cde43b879f8c72e0d87cf2f82976a2a5866b8da"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/reports/02_results_and_boundaries.md",
+      "size_bytes": 4722,
+      "sha256": "e19ece9b29f0d2fff4fa04b6f31d32f4746bea45414fef023f5d5cf3c2f98091"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/reviews/INDEPENDENT_REVIEW.md",
+      "size_bytes": 13414,
+      "sha256": "226075d5d2f662852281df2cfd7768f59f493e501257c416dc8d3f1835ac0edb"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/reviews/independent_results.json",
+      "size_bytes": 2851,
+      "sha256": "3b34ed7f88f5b41e15644b3829f64d1eb8cc884859b6cfa90fe56740e2d7bbd5"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/reviews/independent_review.py",
+      "size_bytes": 13232,
+      "sha256": "4b2fa709df0d1583fda8f01980307db36accd58bdc6679f5cd47651322fb6adc"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/PRE_REGISTERED_PROTOCOL.md",
+      "size_bytes": 4168,
+      "sha256": "5f6282d8558e6f1f8e7f7148bca33242fa520a709db55d641f7eb599ba240925"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/execution_ledger.json",
+      "size_bytes": 940,
+      "sha256": "deb0095fc237558be8a32749b3642765b5a438e4d7a2a2a2eaf7a14536998cb2"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/public_allowlist.txt",
+      "size_bytes": 475,
+      "sha256": "77f90ee1ad580039e4ebf4e948b315bdc9dacf312dffdc994fd839b491f3d4ca"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/reader_check.py",
+      "size_bytes": 3324,
+      "sha256": "13437ba72c939b6f910384f7132716033e07efcfef8fa51ed99e5c7e9efb2229"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/reader_manifest.json",
+      "size_bytes": 1933,
+      "sha256": "38cace86fd120248788747c5cbb3d14d2a462ca72b7b03d510a2236a38aa85af"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/run_checks.py",
+      "size_bytes": 12803,
+      "sha256": "3950ea065a017177c99fb6bee2dfcad169cd1ecdaec08243a22a7eaa6e3898cb"
     },
     {
       "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/B_penumbra.csv",
@@ -4095,28 +4180,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 8495,
-      "sha256": "38a10008099d5684e57d07ffbc9e1b39974c2114cc5818fac94f8d95d330f06a"
+      "size_bytes": 9020,
+      "sha256": "1acc9a3c77c21ec1753a357431fa070a35c9ce5e9970271c46cc1e9402afd30f"
     },
     {
       "path": "README.md",
-      "size_bytes": 5578,
-      "sha256": "88da5818f5302baaa6f164d341be16c9fa03285becadf1f1d86f2f8161222784"
+      "size_bytes": 5804,
+      "sha256": "32e4d089c31c79c1450e8c97fb66161e6321ba1f5cc9c1b63d4803d1e249754f"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 5117,
-      "sha256": "50beaa32d46f1ee8d3cd5dcb7a7c2247fb39db6a1e040034872776e5a61f0014"
+      "size_bytes": 5034,
+      "sha256": "e78a77d0fb0495da47a79d3ccb7cccd421d83082491a7fe2c44888eda4cb0ab7"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 4601,
-      "sha256": "1e3f750f2fe1d6c6eb2d057b05367d9a49c902b6ab94fbf9305ade2c65e4da3c"
+      "size_bytes": 4659,
+      "sha256": "c045fd5a87cab85074f5491bedd3f0d19c8924169e7091b3fd2e687abd887d1f"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 2103,
-      "sha256": "40dcd2d3b357338bd199d86efda717e40972d4caf2e135f0d3e25e803178046c"
+      "size_bytes": 2094,
+      "sha256": "b387ffad60dad655660f68bb0a86ee720fe451bcb36df1a5f3e059579f65b78b"
     }
   ],
   "source_T02_zip_sha256": "684b63f228b31a2ba882b08f60cbc1e7a13173283d0e79b03fa4fc861d3c344b",
@@ -4131,5 +4216,6 @@
   "source_T09_deliverable_manifest_sha256": "f375623abea029b72bc5ccfa1ac80a07099fde6af28c406794925057483ac441",
   "source_T10_deliverable_manifest_sha256": "fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f",
   "source_T01_round2_reader_manifest_sha256": "4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23",
-  "source_T02_round2_manifest_sha256": "9e0b83b83367ae82a3968be4f35ad450d56811a5e357f768fb20ebb390a40253"
+  "source_T02_round2_manifest_sha256": "9e0b83b83367ae82a3968be4f35ad450d56811a5e357f768fb20ebb390a40253",
+  "source_T02_round2_v02_manifest_sha256": "38cace86fd120248788747c5cbb3d14d2a462ca72b7b03d510a2236a38aa85af"
 }

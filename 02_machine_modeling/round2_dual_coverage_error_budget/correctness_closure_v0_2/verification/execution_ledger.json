@@ -1,0 +1,40 @@
+{
+  "main_cumulative_limit": 160000,
+  "runs": [
+    {
+      "counts": {
+        "predicate": 8276,
+        "oracle": 8521,
+        "legacy": 1
+      },
+      "total_evaluations": 16798,
+      "limit_evaluations": 40000,
+      "wall_seconds": 2.3152562039977056,
+      "wall_limit_seconds": 180
+    },
+    {
+      "counts": {
+        "predicate": 8276,
+        "oracle": 8521,
+        "legacy": 1
+      },
+      "total_evaluations": 16798,
+      "limit_evaluations": 40000,
+      "wall_seconds": 2.994073922003736,
+      "wall_limit_seconds": 180
+    },
+    {
+      "counts": {
+        "predicate": 8276,
+        "oracle": 8521,
+        "legacy": 1
+      },
+      "total_evaluations": 16798,
+      "limit_evaluations": 40000,
+      "wall_seconds": 2.9920709900034126,
+      "wall_limit_seconds": 180,
+      "run_purpose": "isolated_allowlisted_reader_reproduction_no_zip_or_parent_files"
+    }
+  ],
+  "main_cumulative_evaluations": 50394
+}

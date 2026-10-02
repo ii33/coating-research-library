@@ -100,6 +100,6 @@
 
 ## 当前下一步
 
-T01–T10首轮基础和T01第二轮冻结资料保持不变。T02第二轮扩展源/厚板双覆盖以frozen_bounded_partial移交：20项测试、60000普通随机射线对照通过有限检查，极近侧壁漏挡、最高源求积差0.203%、独曝差14.3ms超过10ms及共同混叠反例均保留。当前ROUND2.T02_INTERSECTION_CORRECTNESS_CLOSURE，仅在独立v0.2修正确定性侧壁漏挡，不扩大源/时间求积，尚不进入T03。正式审查、全域数值保证和实机资格未完成。
+T01–T10首轮及T01第二轮基线不变。T02独立v0.2在受限编码输入下闭合极近侧壁求交反例，保留初次独立FAIL和修复后185项局部复看通过记录。旧v0.1仍frozen_bounded_partial，0.203%源求积差与14.3ms独曝差未解决。当前ROUND2.T02_QUADRATURE_ERROR_CONTROL，独立v0.3限定三个代表阴影不连续案例、预置预算和参考积分，不改原partial，不推进T03。该求交子参考不是完整前向模型/物理校准/生产资格证明。
 
-见[T02有限验收](02_machine_modeling/round2_dual_coverage_error_budget/reviews/BOUNDED_ACCEPTANCE.md)与[数值边界](02_machine_modeling/round2_dual_coverage_error_budget/reports/03_scientific_error_budget.md)。
+见[v0.2范围边界](02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/reports/02_results_and_boundaries.md)。

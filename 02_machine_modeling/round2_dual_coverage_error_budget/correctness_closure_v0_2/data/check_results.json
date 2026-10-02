@@ -1,0 +1,63 @@
+{
+  "status": "pass",
+  "seed": 202610020506,
+  "groups": {
+    "deterministic": 23,
+    "scale_symmetry": 240,
+    "translation": 2,
+    "ordinary": 6000,
+    "adversarial": 2000,
+    "margin_perturbation_witness": 256
+  },
+  "nominal_verdicts": {
+    "blocked": 1452,
+    "clear": 6813
+  },
+  "known_counterexample": {
+    "source_m": [
+      0.100000000000004,
+      0.0,
+      -0.1
+    ],
+    "target_m": [
+      0.09999999999999601,
+      0.0,
+      0.1
+    ],
+    "encoded_x_displacement_m": -7.993605777301127e-15,
+    "legacy_blocked": false,
+    "replacement": "blocked",
+    "independent_face_oracle": "blocked",
+    "source_x_hex": "0x1.9999999999abap-4",
+    "target_x_hex": "0x1.999999999987ap-4"
+  },
+  "margin_case_verdicts": {
+    "blocked": 1,
+    "clear": 1,
+    "unknown": 2
+  },
+  "thin_positive_margin": "unknown_by_design",
+  "invalid_cases_rejected": 18,
+  "visibility_sum_example": [
+    0.1,
+    0.30000000000000004
+  ],
+  "budget": {
+    "counts": {
+      "predicate": 8276,
+      "oracle": 8521,
+      "legacy": 1
+    },
+    "total_evaluations": 16798,
+    "limit_evaluations": 40000,
+    "wall_seconds": 2.994073922003736,
+    "wall_limit_seconds": 180
+  },
+  "source_time_grid_runs": 0,
+  "scope": "encoded_geometry_only; input uncertainty conditional on supplied margin",
+  "source_sha256": {
+    "models/robust_mask.py": "2c6006636c2728d226fafcb854d5ef45a96ddbbcc3e4e57cc90f31f52c17464c",
+    "verification/run_checks.py": "3950ea065a017177c99fb6bee2dfcad169cd1ecdaec08243a22a7eaa6e3898cb",
+    "verification/PRE_REGISTERED_PROTOCOL.md": "5f6282d8558e6f1f8e7f7148bca33242fa520a709db55d641f7eb599ba240925"
+  }
+}

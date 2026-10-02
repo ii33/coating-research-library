@@ -1,0 +1,24 @@
+{
+  "schema": "T02R2-correctness-closure-reader-0.2",
+  "allowlist_file_count": 17,
+  "manifest_self_exclusion": "verification/reader_manifest.json",
+  "self_exclusion_reason": "No ordinary SHA-256 self-reference. Integrity hashes are not an authenticity signature.",
+  "file_sha256": {
+    ".gitignore": "921eeb70c0c8ee4b0d2932344b9beffb7d08afbb64ba8a3eee243a365574b340",
+    "README.md": "70861b65994e2e4aac3ca358f3600dfdea65c20f42c8633037089da81f597f91",
+    "closure_stage.json": "46aa4e2e2c88e38ae72f843125cda482b16cd7ddd841a0947f41b875f6c372ba",
+    "models/robust_mask.py": "2c6006636c2728d226fafcb854d5ef45a96ddbbcc3e4e57cc90f31f52c17464c",
+    "data/check_results.json": "c262e391d14e2c23351fcaf624db5e2af41886e6655fa642d372e171ea27dcc4",
+    "data/legacy_provenance.json": "a93ff8772f3fb5398b769f5cfc90bae8a976c5330fbc2cbd3b66540a91f13c8c",
+    "reports/01_predicate_and_api.md": "492b16c4f946a20c3bad36d14cde43b879f8c72e0d87cf2f82976a2a5866b8da",
+    "reports/02_results_and_boundaries.md": "e19ece9b29f0d2fff4fa04b6f31d32f4746bea45414fef023f5d5cf3c2f98091",
+    "reviews/INDEPENDENT_REVIEW.md": "226075d5d2f662852281df2cfd7768f59f493e501257c416dc8d3f1835ac0edb",
+    "reviews/independent_review.py": "4b2fa709df0d1583fda8f01980307db36accd58bdc6679f5cd47651322fb6adc",
+    "reviews/independent_results.json": "3b34ed7f88f5b41e15644b3829f64d1eb8cc884859b6cfa90fe56740e2d7bbd5",
+    "verification/PRE_REGISTERED_PROTOCOL.md": "5f6282d8558e6f1f8e7f7148bca33242fa520a709db55d641f7eb599ba240925",
+    "verification/run_checks.py": "3950ea065a017177c99fb6bee2dfcad169cd1ecdaec08243a22a7eaa6e3898cb",
+    "verification/execution_ledger.json": "deb0095fc237558be8a32749b3642765b5a438e4d7a2a2a2eaf7a14536998cb2",
+    "verification/reader_check.py": "13437ba72c939b6f910384f7132716033e07efcfef8fa51ed99e5c7e9efb2229",
+    "verification/public_allowlist.txt": "77f90ee1ad580039e4ebf4e948b315bdc9dacf312dffdc994fd839b491f3d4ca"
+  }
+}

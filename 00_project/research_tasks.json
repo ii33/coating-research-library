@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T05:05:09.956112+00:00",
+  "updated_at_utc": "2026-10-02T05:21:47.288102+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
     "major_topics": "serial_original_order",
@@ -797,12 +797,13 @@
   ],
   "round2_status": "in_progress",
   "round2_active_topic_id": "T02",
-  "round2_active_task_id": "ROUND2.T02_INTERSECTION_CORRECTNESS_CLOSURE",
-  "round2_active_scope": "T02第二轮确定性近平行侧壁相交正确性收口；仅新建correctness_closure_v0_2，不扩大求积或修改v0.1",
+  "round2_active_task_id": "ROUND2.T02_QUADRATURE_ERROR_CONTROL",
+  "round2_active_scope": "T02限定三个代表阴影不连续求积案例、预置预算与参考积分；区分误差估计与严格界，独立v0.3进行中",
   "round2_stage_status": {
     "T01_TOPOLOGY_ALIGNMENT": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
     "T02_DUAL_COVERAGE_ERROR_BUDGET": "frozen_bounded_partial",
-    "T02_INTERSECTION_CORRECTNESS_CLOSURE": "in_progress"
+    "T02_INTERSECTION_CORRECTNESS_CLOSURE": "frozen_bounded_predicate_closure",
+    "T02_QUADRATURE_ERROR_CONTROL": "in_progress"
   },
-  "round2_handoff_record": "02_machine_modeling/round2_dual_coverage_error_budget/reviews/BOUNDED_ACCEPTANCE.md"
+  "round2_handoff_record": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/closure_stage.json"
 }

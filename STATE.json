@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T05:05:09.956112+00:00",
+  "updated_at_utc": "2026-10-02T05:21:47.288102+00:00",
   "project_status": "active",
   "setup_status": "complete_integrity_checked",
   "round": 2,
   "active_topic_id": "T02",
-  "active_task_id": "ROUND2.T02_INTERSECTION_CORRECTNESS_CLOSURE",
-  "active_scope": "T02第二轮确定性近平行侧壁相交正确性收口；仅新建correctness_closure_v0_2，不扩大求积或修改v0.1",
-  "later_topics_policy": "bounded_T02_intersection_correctness_closure_in_progress_T03_not_started",
+  "active_task_id": "ROUND2.T02_QUADRATURE_ERROR_CONTROL",
+  "active_scope": "T02限定三个代表阴影不连续求积案例、预置预算与参考积分；区分误差估计与严格界，独立v0.3进行中",
+  "later_topics_policy": "T02_quadrature_error_control_planning_T03_not_started",
   "topic_order": [
     "T01",
     "T02",
@@ -44,7 +44,7 @@
     "T09": "bounded_public_research_complete_paid_text_GJB_and_real_sample_gaps_retained_not_certified",
     "T10": "bounded_public_theory_and_synthetic_handoff_with_limited_independent_numerical_checks_formal_review_and_machine_qualification_pending"
   },
-  "next_action": "在独立correctness_closure_v0_2中修确定性近平行侧壁漏挡反例；不扩大源/时间求积、不动v0.1、不进入T03",
+  "next_action": "在独立quadrature_control_v0_3研究三个代表案例，不改原partial或扩大几何；未冻结v0.3不发布，T03未启动",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -54,9 +54,9 @@
   ],
   "notes": [
     "T01–T10第一轮优先公共资料、理论和合成基础已覆盖；这不是完整工程资格、正式审查签署或实机校准完成",
-    "T02第二轮按frozen_bounded_partial冻结；20项测试通过，独立60000条普通随机射线与六面参考一致，但不代表所有边界或数值精度通过",
-    "极近侧壁浮点漏挡保留；最高源求积差0.203%，独曝时长差14.3ms超过10ms；共同欠采样混叠反例和完整最终网格/连续极值缺口保留",
-    "T01第二轮与全部首轮冻结研究不改；根状态为T02确定性侧壁相交正确性收口进行中，不将T03标为已启动或已验证"
+    "独立v0.2受限参考求交模块闭合已知侧壁反例；8265名义几何比较、256扰动见证、18拒绝例及185项局部复看支持限定范围，初次FAIL证据保留",
+    "旧v0.1的55项冻结哈希及frozen_bounded_partial完全不变；0.203%源求积差和14.3ms独曝差未解决，没有重跑/提高源时间网格",
+    "v0.2仅为编码几何条件下的小批量求交子参考器；不是完整T02/T03认证参考，不是物理校准或生产资格，未自动替换旧核"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -69,11 +69,10 @@
     "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
   },
   "handoff_evidence": [
-    "02_machine_modeling/round2_dual_coverage_error_budget/README.md",
-    "02_machine_modeling/round2_dual_coverage_error_budget/reviews/BOUNDED_ACCEPTANCE.md",
-    "02_machine_modeling/round2_dual_coverage_error_budget/reviews/INDEPENDENT_NARROW_REVIEW.md",
-    "02_machine_modeling/round2_dual_coverage_error_budget/round2_stage.json",
-    "02_machine_modeling/round2_dual_coverage_error_budget/verification/public_allowlist.txt"
+    "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/README.md",
+    "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/closure_stage.json",
+    "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/reviews/INDEPENDENT_REVIEW.md",
+    "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/verification/reader_manifest.json"
   ],
   "machine_validation": "not_performed",
   "formal_review_signoff": "not_performed",
@@ -83,6 +82,7 @@
   "round2_stage_status": {
     "T01_TOPOLOGY_ALIGNMENT": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
     "T02_DUAL_COVERAGE_ERROR_BUDGET": "frozen_bounded_partial",
-    "T02_INTERSECTION_CORRECTNESS_CLOSURE": "in_progress"
+    "T02_INTERSECTION_CORRECTNESS_CLOSURE": "frozen_bounded_predicate_closure",
+    "T02_QUADRATURE_ERROR_CONTROL": "in_progress"
   }
 }

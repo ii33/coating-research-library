@@ -1,0 +1,89 @@
+{
+  "review_status": "FAIL",
+  "seed": 2718281828,
+  "counts": {
+    "predicate_evaluations": 3299,
+    "oracle_evaluations": 8099,
+    "aggregate_checks": 801,
+    "assertions": 10138,
+    "invalid_checks": 22
+  },
+  "groups": {
+    "deterministic_cases": 51,
+    "scale_sign_translation_cases": 244,
+    "seeded_ordinary_cases": 1800,
+    "seeded_adversarial_cases": 800,
+    "extreme_numeric_cases": 4,
+    "margin_cases": 400,
+    "perturbed_margin_witnesses": 4800
+  },
+  "margin_verdict_distribution": {
+    "blocked": 103,
+    "clear": 215,
+    "unknown": 82
+  },
+  "failures": [
+    {
+      "label": "malformed_verdict_accepted_blocked",
+      "data": {
+        "input_verdict": "blocked",
+        "union_verdict": "clear"
+      }
+    },
+    {
+      "label": "malformed_verdict_accepted_unknown",
+      "data": {
+        "input_verdict": "unknown",
+        "union_verdict": "clear"
+      }
+    },
+    {
+      "label": "malformed_verdict_accepted_nonsense",
+      "data": {
+        "input_verdict": "nonsense",
+        "union_verdict": "clear"
+      }
+    },
+    {
+      "label": "malformed_verdict_accepted_None",
+      "data": {
+        "input_verdict": null,
+        "union_verdict": "clear"
+      }
+    },
+    {
+      "label": "empty_batch_negative_margin_rejected",
+      "data": null
+    }
+  ],
+  "elapsed_seconds": 1.471023222002259,
+  "limits": {
+    "predicate_plus_oracle": 20000,
+    "run_seconds": 180
+  },
+  "hashes": {
+    "models/robust_mask.py": "d94aea185190f2339ee175335442216f0c65b9ff749d12f71c03787627c09f33",
+    "verification/PRE_REGISTERED_PROTOCOL.md": "5f6282d8558e6f1f8e7f7148bca33242fa520a709db55d641f7eb599ba240925",
+    "reviews/independent_review.py": "4b2fa709df0d1583fda8f01980307db36accd58bdc6679f5cd47651322fb6adc"
+  },
+  "scope": "One bounded independent review; world-halfspace rational candidate enumeration; no source/time integration or physical exactness claim.",
+  "final_targeted_recheck": {
+    "status": "PASS",
+    "scope": "Targeted public API correction review only; no repeated random suite. Both insertions removed reconstruct the exact original audited file SHA256.",
+    "counts": {
+      "predicate_evaluations": 24,
+      "oracle_evaluations": 0,
+      "invalid_checks": 21,
+      "union_combinations": 121,
+      "aggregate_checks": 27,
+      "assertions": 185
+    },
+    "elapsed_seconds": 0.020820491001359187,
+    "failures": [],
+    "final_model_sha256": "2c6006636c2728d226fafcb854d5ef45a96ddbbcc3e4e57cc90f31f52c17464c",
+    "original_model_sha256": "d94aea185190f2339ee175335442216f0c65b9ff749d12f71c03787627c09f33",
+    "review_script_sha256": "4b2fa709df0d1583fda8f01980307db36accd58bdc6679f5cd47651322fb6adc",
+    "protocol_sha256": "5f6282d8558e6f1f8e7f7148bca33242fa520a709db55d641f7eb599ba240925"
+  },
+  "resolution_status": "INITIAL_FAILURES_RESOLVED_TARGETED_RECHECK_PASS"
+}
