@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T03:27:45.658173+00:00",
+  "updated_at_utc": "2026-10-02T04:09:16.842960+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
     "major_topics": "serial_original_order",
@@ -750,12 +750,12 @@
         14
       ],
       "round": 1,
-      "state": "starting",
+      "state": "round1_priority_public_theory_and_synthetic_scope_complete",
       "depends_on": [
         "T09"
       ],
       "algorithmic": true,
-      "review_status": "pending",
+      "review_status": "50_tests_and_limited_independent_key_numerical_checks_passed_designated_full_review_and_real_qualification_pending",
       "entry_condition": "T09.round1_public_theory_evidence_and_planning_scope_complete; designated formal review and real-machine qualification remain disclosed",
       "scope": "优先考夫曼离子源，研究材料、膜系与离子源条件的相互作用，建立按镀膜要求优化参数并通过实验验证的流程。禁止把无工况上下文的参数组合直接作为生产配方。",
       "deliverables": [
@@ -776,15 +776,27 @@
           "sequence": 1,
           "label": "考夫曼离子源",
           "is_explicit_priority": true,
-          "state": "starting",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_priority_public_theory_and_synthetic_scope_complete",
+          "evidence_paths": [
+            "10_ion_sources/README.md",
+            "10_ion_sources/data/material_response_matrix.json",
+            "10_ion_sources/data/demo_results.json",
+            "10_ion_sources/release_manifest.json"
+          ],
+          "acceptance_record": "10_ion_sources/reviews/ROUND1_ACCEPTANCE.md"
         }
       ],
       "expansion_round": 2,
       "expansion_backlog": [
         "其他离子源及更广材料/膜系的工况扩展"
-      ]
+      ],
+      "handoff_record": "10_ion_sources/T01_ROUND2_HANDOFF.md",
+      "machine_validation": "not_performed",
+      "production_qualification": "not_performed"
     }
-  ]
+  ],
+  "round2_status": "in_progress",
+  "round2_active_topic_id": "T01",
+  "round2_active_task_id": "ROUND2.T01_TOPOLOGY_ALIGNMENT",
+  "round2_active_scope": "最多两新拓扑、蒸气/离子/板/探头共同坐标时钟与有限层合成覆盖；独立增量目录，未冻结不发布"
 }

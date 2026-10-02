@@ -1,0 +1,32 @@
+{
+  "topic": "T10",
+  "version": "T10-r1-v0.1.0",
+  "status": "ready_for_review",
+  "date_utc": "2026-10-02",
+  "scope": "Kaufman-priority ion sources for general optical coating manufacturing",
+  "report_chapters": 9,
+  "source_records": 29,
+  "material_and_substrate_records": 16,
+  "test_matrix_rows": 16,
+  "failure_matrix_rows": 12,
+  "original_figure_sets": 3,
+  "unit_tests_passed": 50,
+  "source_independent_check": "completed_narrow_scope",
+  "numerical_independent_review": "limited_key_numerical_cases_passed_not_full_model_audit",
+  "theory_round1_deliverables": "complete_pending_coordinator_acceptance",
+  "synthetic_validation": "passed_for_explicit_assumptions",
+  "hardware_operated": false,
+  "process_qualified": false,
+  "production_recipe_issued": false,
+  "global_state_modified": false,
+  "next_round": "T01 only after coordinator accepts all ten first rounds",
+  "blocking_process_inputs": [
+    "actual equipment/current manual",
+    "source and substrate metrology",
+    "approved safety procedure",
+    "material/substrate batch",
+    "product requirements and authorized methods",
+    "real test evidence"
+  ],
+  "reader_package_check": "passed_with_local_only_originals_excluded_by_design"
+}

@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T03:27:45.658173+00:00",
+  "updated_at_utc": "2026-10-02T04:09:16.842960+00:00",
   "project_status": "active",
   "setup_status": "complete_integrity_checked",
-  "round": 1,
-  "active_topic_id": "T10",
-  "active_task_id": "T10.P01",
-  "active_scope": "离子源特性与生产参数优化首轮公开理论研究，优先考夫曼离子源",
-  "later_topics_policy": "round2_expansion_only_after_T10_round1_scope_handoff",
+  "round": 2,
+  "active_topic_id": "T01",
+  "active_task_id": "ROUND2.T01_TOPOLOGY_ALIGNMENT",
+  "active_scope": "T01第二轮：最多两种新传动拓扑与蒸气/离子/修正板/探头共同坐标时钟接口，有限层合成覆盖研究",
+  "later_topics_policy": "bounded_T01_round2_increment_first_other_expansions_pending",
   "topic_order": [
     "T01",
     "T02",
@@ -30,7 +30,7 @@
     "T07": "round1_priority_theory_and_reference_numerical_scope_complete",
     "T08": "round1_bounded_algorithm_research_delivery_complete",
     "T09": "round1_public_theory_evidence_and_planning_scope_complete",
-    "T10": "starting"
+    "T10": "round1_priority_public_theory_and_synthetic_scope_complete"
   },
   "research_stage_acceptance": {
     "T01": "theory_handoff_ready_not_machine_validated_or_formally_signed_off",
@@ -42,9 +42,9 @@
     "T07": "bounded_design_theory_and_reference_numerics_complete_real_material_machine_and_formal_review_unverified",
     "T08": "bounded_algorithm_research_complete_B03_nonconvergence_and_real_validation_limits_retained",
     "T09": "bounded_public_research_complete_paid_text_GJB_and_real_sample_gaps_retained_not_certified",
-    "T10": "pending"
+    "T10": "bounded_public_theory_and_synthetic_handoff_with_limited_independent_numerical_checks_formal_review_and_machine_qualification_pending"
   },
-  "next_action": "接收T09检验规划与T10移交，优先研究考夫曼离子源的物理、设备接口、材料耦合与有边界的参数研究",
+  "next_action": "执行T01第二轮有界拓扑与双覆盖接口研究；首轮冻结基线保持不变，扩展成果另行复核后发布",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -53,9 +53,10 @@
     "Q06"
   ],
   "notes": [
-    "T01–T09首轮优先公开研究已形成可移交基线；T09只完成标准身份/规划与合成演示，不代表产品合格或认证",
-    "T09包含9章、62条标准映射、66来源、15试验矩阵、12根因矩阵及28项单元/合成演示测试；付费全文、GJB现行证据、真实样品与实验室能力缺口保留",
-    "T10按原清单优先考夫曼离子源；全部首轮完成前不提前开启扩展，实际设备/工艺窗口仍需证据"
+    "T01–T10第一轮优先公共资料、理论和合成基础已覆盖；这不是完整工程资格、正式审查签署或实机校准完成",
+    "T10包含9章、29来源、16种材料/基片条件卡、16项检验、12类故障矩阵、3组原创图；50项测试及有限关键数值独立复核通过",
+    "独立复核只覆盖多电荷、净原子通量、能流、快中性补能、零/负净沉积及角度等边界，不替代指定完整外模型审查；实际设备与材料证据缺口保留",
+    "已按原研究顺序启动T01第二轮有界扩展，仅在独立round2_topology_alignment目录工作；尚未冻结的扩展文件不纳入本次发布"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -68,11 +69,15 @@
     "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
   },
   "handoff_evidence": [
-    "09_standards_and_qualification/T10_HANDOFF.md",
-    "09_standards_and_qualification/reviews/acceptance.json",
-    "09_standards_and_qualification/reviews/SELF_REVIEW.md",
-    "09_standards_and_qualification/data/deliverable_manifest.json"
+    "10_ion_sources/T01_ROUND2_HANDOFF.md",
+    "10_ion_sources/reviews/ROUND1_ACCEPTANCE.md",
+    "10_ion_sources/reviews/SELF_REVIEW.md",
+    "10_ion_sources/release_manifest.json",
+    "00_project/FIRST_SWEEP_REVIEW_DRAFT.md"
   ],
   "machine_validation": "not_performed",
-  "formal_review_signoff": "not_performed"
+  "formal_review_signoff": "not_performed",
+  "round_status": "in_progress",
+  "round1_scope_status": "all_ten_topics_public_theory_and_synthetic_foundations_covered",
+  "round2_active_status": "in_progress"
 }

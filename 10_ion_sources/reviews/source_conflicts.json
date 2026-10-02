@@ -1,0 +1,91 @@
+[
+  {
+    "id": "C01",
+    "sources": [
+      "IS-06"
+    ],
+    "issue": "厂家剂量表括号为估算，EH1000例属End-Hall",
+    "resolution": "只作经验起点/计量反例，不转成Kaufman配方",
+    "blocking_round1": false
+  },
+  {
+    "id": "C02",
+    "sources": [
+      "IS-17",
+      "IS-18"
+    ],
+    "issue": "氧辅助MgF2在VUV与vis/IR研究报告不同光学方向且有附着代价",
+    "resolution": "按波段/设备/温度/界面分层，非同条件冲突；不写氧一律增损",
+    "blocking_round1": false
+  },
+  {
+    "id": "C03",
+    "sources": [
+      "IS-10"
+    ],
+    "issue": "水冷需求易泛化",
+    "resolution": "KDC160仅源本体无需水冷，其他组件依本机手册",
+    "blocking_round1": false
+  },
+  {
+    "id": "C04",
+    "sources": [
+      "IS-13"
+    ],
+    "issue": "UM旧库链接现跳KNOVA且出版社全文未取",
+    "resolution": "保留官方索引/机构摘要等级；不冒充全文或曲线数字化",
+    "blocking_round1": false
+  },
+  {
+    "id": "C05",
+    "sources": [
+      "IS-18"
+    ],
+    "issue": "单篇/官方重印本HTTP403；web书文件过大",
+    "resolution": "仅官方章节索引片段；未落盘全文；不解读未见图表统计",
+    "blocking_round1": false
+  },
+  {
+    "id": "C06",
+    "sources": [
+      "IS-19",
+      "IS-29"
+    ],
+    "issue": "End-Hall材料数据容易误归Kaufman",
+    "resolution": "源型明确隔离；Kaufman-YbF3直接证据保留缺口",
+    "blocking_round1": false
+  },
+  {
+    "id": "C07",
+    "sources": [
+      "IS-11"
+    ],
+    "issue": "摘要30–500eV而HTML应力表含700eV、OCR单位可能误读",
+    "resolution": "不拼接统一窗口、不转录有疑问应力数字",
+    "blocking_round1": false
+  },
+  {
+    "id": "C08",
+    "sources": [
+      "IS-16"
+    ],
+    "issue": "原文CC103 cold/hollow命名并见且含旧改装",
+    "resolution": "按具体型号标非Kaufman，不传递改装操作",
+    "blocking_round1": false
+  },
+  {
+    "id": "C09",
+    "sources": [],
+    "issue": "Cu/Cr定量Kaufman光学工艺、Ge void论文一手全文、Targove全文不足",
+    "resolution": "未知/待核，不以第三方摘要补主证据",
+    "blocking_round1": false
+  },
+  {
+    "id": "C10",
+    "sources": [],
+    "issue": "缺真实设备/样品/计量/产品判据/安全许可",
+    "resolution": "阻止实机操作与工艺资格；不阻止资料首轮收口",
+    "blocking_round1": false,
+    "blocking_process_qualification": true
+  }
+]

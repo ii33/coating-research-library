@@ -1,0 +1,464 @@
+[
+  {
+    "record_id": "MAT-01",
+    "material": "Ta2O5",
+    "form": "film",
+    "identity": "纯Ta2O5目标；源料批次/氧比需核",
+    "source_ids": [
+      "IS-13",
+      "IS-11"
+    ],
+    "evidence_conditions": "Kaufman + e-beam, fused silica, room temperature; study-specific beam/flow/rate",
+    "demonstrated_scope": "原研究确有束参数–光学–压应力耦合，不把其单点最优移植",
+    "Ar_conditional": "Ar仅有动量作用仍可能改变氧含量；本轮不声称确定亏氧阈值",
+    "O2_conditional": "O2可提供反应氧；高辅助不等于一定更好",
+    "risks": "氧亏/污染、压应力、再溅射、热负载",
+    "unknowns": "目标波段n/k、体组成、密度、应力随厚度/时间的本机联合图",
+    "required_measurements": [
+      "R/T+SE+吸收",
+      "O/Ta",
+      "XRR",
+      "曲率",
+      "温度",
+      "二维厚度"
+    ],
+    "decision_gate": "先以吸收/应力预算作硬约束，再比较n和稳定性",
+    "T04_card": "../04_coating_and_substrate_materials/cards/01_Ta2O5_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-02",
+    "material": "ZnS",
+    "form": "film",
+    "identity": "ZnS源料与ZnS块材分开",
+    "source_ids": [
+      "IS-20",
+      "IS-21",
+      "IS-28"
+    ],
+    "evidence_conditions": "IAD source/gas unverified in primary abstract; Zn(O,S) evidence is RF reactive sputtering",
+    "demonstrated_scope": "ZnS应力、损耗、结晶性与沉积温度耦合；源/气体未充分核",
+    "Ar_conditional": "候选惰性辅助；需检S/Zn、Ar俘获和粗糙，不能说必然优先失硫",
+    "O2_conditional": "氧是化学变量，可能改变硫氧组成；跨方法证据不能给IAD氧阈值",
+    "risks": "成分偏移、吸收/散射、应力、晶相和再溅射",
+    "unknowns": "Kaufman Ar/O2同条件的化学计量和IR吸收数据",
+    "required_measurements": [
+      "Zn/S/O",
+      "FTIR",
+      "XRD",
+      "AFM/散射",
+      "应力",
+      "附着",
+      "净速率"
+    ],
+    "decision_gate": "先单层基线与低剂量对照，缺目标IR吸收不得用可见透过放行",
+    "T04_card": "../04_coating_and_substrate_materials/cards/02_ZnS_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-03",
+    "material": "TiO2",
+    "form": "film",
+    "identity": "源料TiO2/Ti3O5等与成膜相态分开",
+    "source_ids": [
+      "IS-11",
+      "IS-12",
+      "IS-16"
+    ],
+    "evidence_conditions": "oxygen IAD; primary legacy studies with temperature/energy groups; CC103 comparison separate",
+    "demonstrated_scope": "低/高能轰击可呈相反化学计量趋势，污染与温度不能省略",
+    "Ar_conditional": "必须核氧亏与缺陷，不把惰性气体理解为材料无反应",
+    "O2_conditional": "供氧和轰击能共同改变组成；高能可能损害光学",
+    "risks": "n上升同时k/散射/应力变坏；W等污染",
+    "unknowns": "本机非晶/晶相、O/Ti、吸收检测限和膜厚匹配",
+    "required_measurements": [
+      "SE(n,k,d)",
+      "R/T/散射",
+      "O/Ti",
+      "XRD",
+      "XRR",
+      "曲率"
+    ],
+    "decision_gate": "不以最大n作唯一目标；同厚度、同温度比较",
+    "T04_card": "../04_coating_and_substrate_materials/cards/03_TiO2_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-04",
+    "material": "YbF3",
+    "form": "film",
+    "identity": "镱氟化物；不得写成YF3",
+    "source_ids": [
+      "IS-19"
+    ],
+    "evidence_conditions": "End-Hall MarkII, room temperature; not Kaufman evidence",
+    "demonstrated_scope": "End-Hall研究有耐久/光学条件证据；Kaufman精确窗口仍未知",
+    "Ar_conditional": "可能致密但F损失、俘获气体和应力须实测",
+    "O2_conditional": "氧化/氧氟化风险作为待验证机制；本轮无特定相确证",
+    "risks": "F亏、氧/水污染、应力、IR损耗",
+    "unknowns": "Kaufman下F/Yb、O、相态与波段损耗联合数据",
+    "required_measurements": [
+      "F/Yb/O",
+      "XRR",
+      "FTIR",
+      "应力",
+      "附着/湿热前后"
+    ],
+    "decision_gate": "不将Xe优于Ar的End-Hall结论升级到Kaufman",
+    "T04_card": "../04_coating_and_substrate_materials/cards/04_YbF3_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-05",
+    "material": "SiO2",
+    "form": "film",
+    "identity": "SiO/SiO2源料；膜OH/密度单独记录",
+    "source_ids": [
+      "IS-11",
+      "IS-12"
+    ],
+    "evidence_conditions": "oxygen IAD; 1984/1985 source-specific temperature/energy conditions",
+    "demonstrated_scope": "辅助可改变化学计量、含氢和污染；不能由n独断孔隙",
+    "Ar_conditional": "惰性致密化候选，Si/O及缺陷仍需核",
+    "O2_conditional": "氧化SiO蒸气与致密化是两条机制，O2不能代替能流计量",
+    "risks": "压应力、OH/水、充电、源污染、再溅射",
+    "unknowns": "本机净密度、湿度漂移、3µm附近吸收、真实温升",
+    "required_measurements": [
+      "FTIR",
+      "干/湿/再真空光谱",
+      "XRR",
+      "曲率",
+      "O/Si",
+      "电位"
+    ],
+    "decision_gate": "高密度与低OH/低应力共同约束",
+    "T04_card": "../04_coating_and_substrate_materials/cards/05_SiO2_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-06",
+    "material": "MgF2",
+    "form": "film",
+    "identity": "MgF2相态、纯度和基片温度要绑定",
+    "source_ids": [
+      "IS-17",
+      "IS-18",
+      "IS-26",
+      "IS-29"
+    ],
+    "evidence_conditions": "mixed evidence: source-unverified Ar; Kaufman O2 2019 index; End-Hall Dumas separate",
+    "demonstrated_scope": "Ar低能研究有失氟/UV边变化；氧辅助的VUV与vis/IR结果不可混为同波段",
+    "Ar_conditional": "可能改善力学同时失氟；无额外可见损耗不证明VUV/IR均合格",
+    "O2_conditional": "MgO解释在1987为作者推断；2019报告光学与附着权衡",
+    "risks": "F亏、氧/水摄入、应力、附着劣化、波段依赖损耗",
+    "unknowns": "本机粒种/通量与F/Mg、O、附着的剂量曲线",
+    "required_measurements": [
+      "F/Mg/O",
+      "VUV仅如适用",
+      "FTIR",
+      "XRR",
+      "曲率",
+      "附着"
+    ],
+    "decision_gate": "先定义使用波段和底层界面；不自动把O2列禁用或优选",
+    "T04_card": "../04_coating_and_substrate_materials/cards/06_MgF2_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-07",
+    "material": "Al2O3",
+    "form": "film",
+    "identity": "非晶薄膜不是蓝宝石",
+    "source_ids": [
+      "IS-14",
+      "IS-15",
+      "IS-16"
+    ],
+    "evidence_conditions": "oxygen/argon original IAD studies; source model unverified; CC103 separate",
+    "demonstrated_scope": "n/k与辅助、温度共同变化；高电流并非持续提高n",
+    "Ar_conditional": "Ar辅助物性敏感；不能把高n当准确密度",
+    "O2_conditional": "氧供给可能改善组成，但过量/强轰击需测缺陷及应力",
+    "risks": "应力、缺陷、吸收、再溅射、相态变化",
+    "unknowns": "同机氧/氩对照，UV/IR k检测限，真实薄膜密度",
+    "required_measurements": [
+      "SE",
+      "吸收",
+      "Al/O",
+      "XRR",
+      "XRD",
+      "应力",
+      "附着"
+    ],
+    "decision_gate": "不搬1000eV/300°C实验组为本机推荐",
+    "T04_card": "../04_coating_and_substrate_materials/cards/07_Al2O3_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-08",
+    "material": "H4",
+    "form": "film",
+    "identity": "厂商/货号/COA明确才可用；非固定化学式",
+    "source_ids": [
+      "IS-24"
+    ],
+    "evidence_conditions": "Patinal H4/H4HD, RF IAD manufacturer example; not Kaufman",
+    "demonstrated_scope": "T04有牌号条件化n/k和过强辅助风险；没有Kaufman通用配方",
+    "Ar_conditional": "对未核组成不预测响应；先核La/Ti/O或实际牌号元素",
+    "O2_conditional": "依具体商品反应氧需求验证，不能从H4缩写推流量",
+    "risks": "吸收、应力变化、化学计量和源料历史",
+    "unknowns": "用户实际牌号、膜M/ν/ρ、全谱k和应力",
+    "required_measurements": [
+      "COA",
+      "组成",
+      "SE/FTIR",
+      "密度",
+      "曲率",
+      "温度"
+    ],
+    "decision_gate": "组成未知时归一化摩尔质量保持null，允许先做质量基准比较",
+    "T04_card": "../04_coating_and_substrate_materials/cards/08_H4_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-09",
+    "material": "Ge",
+    "form": "film",
+    "identity": "元素Ge膜；与GeO2、晶体基片分开",
+    "source_ids": [
+      "IS-27",
+      "IS-23"
+    ],
+    "evidence_conditions": "Ar-assisted AR stack at 220°C; source unspecified in abstract; reactive oxide route separate",
+    "demonstrated_scope": "Ge层Ar辅助的特定AR系统有耐久收益；不构成本机剂量窗口",
+    "Ar_conditional": "候选致密化；Ar俘获、缺陷、应力和净侵蚀仍需检",
+    "O2_conditional": "目标元素Ge时须防氧化；GeO2旁证不等于低能氧化率已知",
+    "risks": "相态/孔隙、O污染、俘获Ar、温敏吸收、再溅射",
+    "unknowns": "Kaufman粒种/角度下Ge结构与目标IR n/k",
+    "required_measurements": [
+      "FTIR/SE",
+      "Ge/O/Ar",
+      "XRD/拉曼",
+      "应力",
+      "净厚度"
+    ],
+    "decision_gate": "分离真空内/出腔后氧化；不能用高n保证低k",
+    "T04_card": "../04_coating_and_substrate_materials/cards/09_Ge_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-10",
+    "material": "Cu",
+    "form": "film",
+    "identity": "Cu反射/导电用途与氧化铜用途区分",
+    "source_ids": [
+      "IS-06",
+      "IS-07"
+    ],
+    "evidence_conditions": "manufacturer general dose guidance only; no matched Kaufman optical primary study in round1",
+    "demonstrated_scope": "本轮仅建立机理与测试门槛，Cu定量Kaufman最佳条件未知",
+    "Ar_conditional": "动量/清洗可能影响成核与界面；未证明净收益",
+    "O2_conditional": "元素金属目标下氧化为主要化学风险假说，应实测",
+    "risks": "反射损耗、氧/杂质、应力、粗糙、再溅射",
+    "unknowns": "同厚度Cu的反射/电阻/附着与通量能量关系",
+    "required_measurements": [
+      "Cu/O",
+      "R/T/吸收",
+      "AFM",
+      "片阻",
+      "应力",
+      "附着"
+    ],
+    "decision_gate": "不得照搬Al/Ag或厂家剂量轮作Cu保证",
+    "T04_card": "../04_coating_and_substrate_materials/cards/10_Cu_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-11",
+    "material": "Cr",
+    "form": "film",
+    "identity": "Cr金属/粘接层与Cr氧化物分开",
+    "source_ids": [
+      "IS-06",
+      "IS-07"
+    ],
+    "evidence_conditions": "manufacturer guidance; no matched Kaufman optical study in round1",
+    "demonstrated_scope": "只支持作为待验证工程候选；没有无条件更好附着结论",
+    "Ar_conditional": "界面混合可能增附着也可能增加吸收/损伤",
+    "O2_conditional": "会改变金属与氧化物目标，不能当无害辅助气",
+    "risks": "薄粘接层连续性、光损耗、应力、界面混层",
+    "unknowns": "纳米Cr层有效厚度/组成/附着关系",
+    "required_measurements": [
+      "XPS/截面如适用",
+      "R/T",
+      "应力",
+      "附着",
+      "厚度"
+    ],
+    "decision_gate": "最终膜系吸收预算必须包含粘接层，不只看胶带测试",
+    "T04_card": "../04_coating_and_substrate_materials/cards/11_Cr_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-12",
+    "material": "Al",
+    "form": "film",
+    "identity": "金属Al薄膜及原生氧化层分别建模",
+    "source_ids": [
+      "IS-22"
+    ],
+    "evidence_conditions": "thermally evaporated Al with Ar IAD; original optical/mechanical study",
+    "demonstrated_scope": "Ar辅助可使Al压应力和电阻率上升，光学常数随动量输入变化",
+    "Ar_conditional": "可能改变致密度与空隙，但不可只最大化n",
+    "O2_conditional": "氧化层形成与元素Al反射目标有竞争，界面暴露需控",
+    "risks": "压应力、Ar俘获、氧化、粗糙、再溅射",
+    "unknowns": "本机反射目标波段与保护层/Al界面工艺",
+    "required_measurements": [
+      "R/T/吸收",
+      "Al/O/Ar",
+      "AFM",
+      "片阻",
+      "应力"
+    ],
+    "decision_gate": "Al的k变小不自动推出所有λ反射变大",
+    "T04_card": "../04_coating_and_substrate_materials/cards/12_Al_film.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-13",
+    "material": "ZnS",
+    "form": "substrate",
+    "identity": "标准CVD与HIP/MS等级、抛光损伤分开",
+    "source_ids": [
+      "IS-07",
+      "IS-20",
+      "IS-28"
+    ],
+    "evidence_conditions": "T04 substrate card + indirect film chemistry evidence",
+    "demonstrated_scope": "没有取得本机ZnS块材Kaufman预清洗安全窗口",
+    "Ar_conditional": "污层去除需与表面粗化/计量偏差分离",
+    "O2_conditional": "可能改变表面S/O；具体产物/速率未知",
+    "risks": "表面化学、软基片粗糙/散射、局部热与充电",
+    "unknowns": "不同等级/抛光批的清洗去除率和附着收益",
+    "required_measurements": [
+      "前后AFM/散射",
+      "Zn/S/O",
+      "T/R",
+      "波前",
+      "温度"
+    ],
+    "decision_gate": "预清洗与IAD分组，空白基片先验，不能用膜数据保证块材",
+    "T04_card": "../04_coating_and_substrate_materials/cards/13_ZnS_substrate.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-14",
+    "material": "Ge",
+    "form": "substrate",
+    "identity": "掺杂/电阻率、晶向、批次与面形",
+    "source_ids": [
+      "IS-07",
+      "IS-23",
+      "IS-27"
+    ],
+    "evidence_conditions": "T04 substrate card; no exact preclean qualification",
+    "demonstrated_scope": "Ar辅助膜系收益不等于Ge清洗任意剂量安全",
+    "Ar_conditional": "去氧化/污染候选，须核缺陷、粗化和表面残留",
+    "O2_conditional": "表面氧化可能改变界面；氧化率未确定",
+    "risks": "温敏吸收、表面缺陷、充电、面形",
+    "unknowns": "实际基片电阻率与T依赖光损耗、表面剂量界限",
+    "required_measurements": [
+      "Ge/O",
+      "AFM",
+      "IR T/R/吸收",
+      "波前",
+      "T(t)"
+    ],
+    "decision_gate": "温升上限由基片/夹具/功能共同确定，不取文献沉积温度作上限",
+    "T04_card": "../04_coating_and_substrate_materials/cards/14_Ge_substrate.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-15",
+    "material": "K9",
+    "form": "substrate",
+    "identity": "实际牌号先核；T04代表H-K9L不等于任意K9",
+    "source_ids": [
+      "IS-03",
+      "IS-07"
+    ],
+    "evidence_conditions": "dielectric charging principle + T04 H-K9L card",
+    "demonstrated_scope": "无本机K9 Kaufman预清洗/充电放行数据",
+    "Ar_conditional": "污染去除与碱组分/粗糙改变风险需对照",
+    "O2_conditional": "表面化学变化须测；对玻璃适用不等于对已镀面适用",
+    "risks": "介质充电、局部热、表面粗化、波前/应力",
+    "unknowns": "真实玻璃牌号、前后表面状态、温度/电位",
+    "required_measurements": [
+      "AFM/散射",
+      "表面化学",
+      "波前",
+      "T(t)",
+      "电位",
+      "附着"
+    ],
+    "decision_gate": "空白实材对照不能仅用Si见证替代",
+    "T04_card": "../04_coating_and_substrate_materials/cards/15_K9_substrate.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  },
+  {
+    "record_id": "MAT-16",
+    "material": "ZnSe",
+    "form": "substrate",
+    "identity": "CVD光学级、缺陷/抛光批与SDS",
+    "source_ids": [
+      "IS-07"
+    ],
+    "evidence_conditions": "T04 material/SDS + generic preclean, no matched Kaufman dataset",
+    "demonstrated_scope": "本輪不宣称已验证ZnSe预清洗窗口",
+    "Ar_conditional": "表面去除可能影响Zn/Se比例、粗糙和残留；方向未确定",
+    "O2_conditional": "氧化是待检风险，不能给低能阈值",
+    "risks": "软脆表面损伤、吸收/散射、毒性清腔废料",
+    "unknowns": "Kaufman前后Zn/Se/O、吸收与附着及安全清腔程序",
+    "required_measurements": [
+      "FTIR/适用量热",
+      "Zn/Se/O",
+      "AFM",
+      "波前",
+      "温度"
+    ],
+    "decision_gate": "先EHS核清腔/废料；破损/烧损不按普通光学玻璃处理",
+    "T04_card": "../04_coating_and_substrate_materials/cards/16_ZnSe_substrate.md",
+    "kaufman_production_voltage_V": null,
+    "kaufman_production_current_A": null,
+    "process_qualified": false
+  }
+]

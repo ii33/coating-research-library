@@ -1,0 +1,192 @@
+{
+  "schema_version": "T10-0.1.0",
+  "record_kind": "template",
+  "run_id": null,
+  "source_identity": {
+    "manufacturer": null,
+    "source_model": null,
+    "power_supply_model": null,
+    "manual_revision": null,
+    "grid_material": null,
+    "neutralizer_model": null,
+    "gas_species": null,
+    "maintenance_state_id": null,
+    "source_type": "unknown",
+    "grid_count": null
+  },
+  "settings": {
+    "beam_supply": {
+      "value": null,
+      "unit": "V",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "accelerator_grid": {
+      "value": null,
+      "unit": "V",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "discharge_voltage": {
+      "value": null,
+      "unit": "V",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "discharge_current": {
+      "value": null,
+      "unit": "A",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "source_reported_beam_current": {
+      "value": null,
+      "unit": "A",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "neutralizer_emission": {
+      "value": null,
+      "unit": "A",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "gas_flow": {
+      "value": null,
+      "unit": "sccm",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    }
+  },
+  "at_substrate": {
+    "positive_ion_current_density": {
+      "value": null,
+      "unit": "A/m2",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "mean_impact_energy": {
+      "value": null,
+      "unit": "eV/particle",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "mean_energy_per_charge": {
+      "value": null,
+      "unit": "eV/charge",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "surface_potential": {
+      "value": null,
+      "unit": "V",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "film_net_growth_rate": {
+      "value": null,
+      "unit": "nm/s",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "film_density": {
+      "value": null,
+      "unit": "g/cm3",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "surface_temperature": {
+      "value": null,
+      "unit": "K",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "pressure": {
+      "value": null,
+      "unit": "Pa",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    },
+    "fast_neutral_energy_flux": {
+      "value": null,
+      "unit": "W/m2",
+      "status": "unknown",
+      "standard_uncertainty": null,
+      "method": null,
+      "raw_data_ref": null
+    }
+  },
+  "species": [],
+  "geometry": {
+    "position_m": null,
+    "surface_normal": null,
+    "incidence_angle_deg": null,
+    "current_density_area_basis": "unknown",
+    "trajectory_ref": null,
+    "probe_aperture_area_m2": null
+  },
+  "deposition": {
+    "material": null,
+    "grade": null,
+    "substrate": null,
+    "formula_mass_g_mol": null,
+    "atoms_per_formula": null,
+    "rate_basis": "unknown"
+  },
+  "normalization": {
+    "denominator": "unknown",
+    "include_fast_neutrals": null,
+    "ion_atom_ratio": null,
+    "incident_eV_per_atom": null,
+    "assumptions": []
+  },
+  "safety_gate": {
+    "actual_manual_verified": false,
+    "approved_procedure_id": null,
+    "interlock_review": "not_reviewed",
+    "cooling_components": [],
+    "qualified_person_authorization": null
+  },
+  "qualification": {
+    "process_qualified": false,
+    "product_requirement_id": null,
+    "acceptance_thresholds": null,
+    "decision_rule": null,
+    "test_record_ref": null
+  },
+  "recorded_at": null,
+  "time_interval_s": null,
+  "coordinate_frame": null,
+  "gas_reference_conditions": null,
+  "gas_feeds": []
+}

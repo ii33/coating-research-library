@@ -12,7 +12,8 @@
 - T07：65份清单内文件及清单自身；`data/deliverable_manifest.json` SHA-256 `9f382bc2d7d2f5a86570105695f1f9b95d5454caccadd19c0bed1ee85588b238`
 - T08：73份精确允许文件；发布控制清单SHA-256 `6d0128b90679ef76e6b3bb9a59a88992ac1f72551647e00cbb556a2e05db6653`（控制清单自身不上传）
 - T09：81份清单内文件及清单自身；`data/deliverable_manifest.json` SHA-256 `f375623abea029b72bc5ccfa1ac80a07099fde6af28c406794925057483ac441`
-- 阶段边界：T01–T09首轮优先研究可移交，T10接续启动；实机/量产验证和指定完整审查未完成
+- T10：82份清单内文件及清单自身；`release_manifest.json` SHA-256 `fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f`
+- 阶段边界：T01–T10第一轮优先公共资料、理论和合成基础已覆盖，T01第二轮有界拓扑与双覆盖接口研究进行中；正式完整审查、实机校准和生产资格未完成
 
 ## 不纳入仓库的内容
 
@@ -42,6 +43,8 @@ PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python -m unittest discover -s 
 PYTHONDONTWRITEBYTECODE=1 python 08_stack_optimization_algorithms/models/check_package.py
 PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s 09_standards_and_qualification/tests -v
 PYTHONDONTWRITEBYTECODE=1 python 09_standards_and_qualification/models/check_package.py
+PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s 10_ion_sources/tests -v
+PYTHONDONTWRITEBYTECODE=1 python 10_ion_sources/models/check_package.py --reader
 ```
 
 读者模式的来源schema检查使用 `jsonschema`；原文PDF未随仓库发布，四项缺失原文检查会明确标为跳过。轻量检查不代表已进行实体设备校准或生产验证。
@@ -61,3 +64,7 @@ T07按明确允许列表发布；4份PDF和2份原文提取仅本地留存。读
 T08使用作者明确的发布允许清单；整个sources/originals下6份第三方原文、缓存、ZIP与重复控制台日志排除。B03预算耗尽未收敛/未达教学规格等失败证据随冻结结果保留；原文缺席的读者副本只核查可用公开包，不误称查过未打包全文。T06/T07文件未改。
 
 T09按81项原创文件清单及清单自身发布，排除整个originals、qa_render、缓存和临时文件；最终unit_test_output.txt保留为28项合成/单元检查证据。没有付费获取或分发标准全文；GJB现行证据、真实样品与能力缺口保留，不作产品合格或认证声明。
+
+T10按release_manifest.json精确允许列表及清单自身发布，全部sources/originals、NASA原文/全文提取、缓存和ZIP排除。最终测试/来源检查记录保留为审计证据。有限关键数值独立复核通过，不等同指定完整外模型链、实际设备校准或生产资格。T01第二轮有界拓扑与双覆盖接口研究已启动，尚未冻结的扩展文件不纳入本次快照。
+
+同次发布首轮有限复核与成熟度汇总：FIRST_SWEEP_REVIEW_DRAFT.md，SHA256 de68d0ac6ad78e4099202e863c4929a1681ebb950ffbab3d4de826bfa8a943aa；不补签指定完整外模型审查链。

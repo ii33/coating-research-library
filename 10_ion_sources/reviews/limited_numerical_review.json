@@ -1,0 +1,23 @@
+{
+  "date_utc": "2026-10-02",
+  "scope": "有限关键数值独立复核；非完整模型审查或指定外模型验收",
+  "existing_tests_rerun": 50,
+  "existing_tests_result": "all_passed",
+  "independent_cases": [
+    "three charge states with nonuniform energy per charge",
+    "electric-current fractions inverted species by species",
+    "net atomic flux independent unit conversion",
+    "fast-neutral energy contribution",
+    "zero and negative net growth after resputter",
+    "angle boundaries",
+    "ion-only exposure integrated separately"
+  ],
+  "blocking_issues": [],
+  "major_issues": [],
+  "minor_issues": [
+    "test_package_data.py CSV reader handle ResourceWarning, no numerical effect; deferred as requested"
+  ],
+  "numerical_changes_required": false,
+  "process_qualified": false,
+  "conclusion": "理论与合成研究可移交；不改变实际设备/材料/产品资格未验证的边界"
+}

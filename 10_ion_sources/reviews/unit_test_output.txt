@@ -1,0 +1,58 @@
+test_angle_validation (test_ion_assist_reference.Physics.test_angle_validation) ... ok
+test_bad_integrals (test_ion_assist_reference.Physics.test_bad_integrals) ... ok
+test_compound (test_ion_assist_reference.Physics.test_compound) ... ok
+test_cx_conservation (test_ion_assist_reference.Physics.test_cx_conservation) ... ok
+test_cx_long (test_ion_assist_reference.Physics.test_cx_long) ... ok
+test_cx_vacuum (test_ion_assist_reference.Physics.test_cx_vacuum) ... ok
+test_empty (test_ion_assist_reference.Physics.test_empty) ... ok
+test_energy_potential (test_ion_assist_reference.Physics.test_energy_potential) ... ok
+test_growth_units (test_ion_assist_reference.Physics.test_growth_units) ... ok
+test_integral_ratio (test_ion_assist_reference.Physics.test_integral_ratio) ... ok
+test_invalid_species (test_ion_assist_reference.Physics.test_invalid_species) ... ok
+test_mixed_charge (test_ion_assist_reference.Physics.test_mixed_charge) ... ok
+test_molecular_count (test_ion_assist_reference.Physics.test_molecular_count) ... ok
+test_nan (test_ion_assist_reference.Physics.test_nan) ... ok
+test_negative_fraction (test_ion_assist_reference.Physics.test_negative_fraction) ... ok
+test_neutrals_add_energy (test_ion_assist_reference.Physics.test_neutrals_add_energy) ... ok
+test_no_implicit_charge_fractions (test_ion_assist_reference.Physics.test_no_implicit_charge_fractions) ... ok
+test_normalization (test_ion_assist_reference.Physics.test_normalization) ... ok
+test_not_mean_ratio (test_ion_assist_reference.Physics.test_not_mean_ratio) ... ok
+test_projection (test_ion_assist_reference.Physics.test_projection) ... ok
+test_retarded (test_ion_assist_reference.Physics.test_retarded) ... ok
+test_single_charge (test_ion_assist_reference.Physics.test_single_charge) ... ok
+test_sputter_erosion (test_ion_assist_reference.Physics.test_sputter_erosion) ... ok
+test_sputter_zero (test_ion_assist_reference.Physics.test_sputter_zero) ... ok
+test_thermal_limits (test_ion_assist_reference.Physics.test_thermal_limits) ... ok
+test_uncertainty_correlation (test_ion_assist_reference.Physics.test_uncertainty_correlation) ... ok
+test_uncertainty_independent (test_ion_assist_reference.Physics.test_uncertainty_independent) ... ok
+test_unknown_density_not_zero (test_ion_assist_reference.Physics.test_unknown_density_not_zero) ... ok
+test_zero_beam (test_ion_assist_reference.Physics.test_zero_beam) ... ok
+test_zero_growth_no_ratio (test_ion_assist_reference.Physics.test_zero_growth_no_ratio) ... ok
+test_endhall_has_no_grids (test_package_data.AdditionalSchema.test_endhall_has_no_grids) ... ok
+test_species_current_basis_explicit (test_package_data.AdditionalSchema.test_species_current_basis_explicit) ... ok
+test_synthetic_cannot_qualify (test_package_data.AdditionalSchema.test_synthetic_cannot_qualify) ... ok
+test_units_cannot_silently_change (test_package_data.AdditionalSchema.test_units_cannot_silently_change) ... ok
+test_hall_is_not_kaufman (test_package_data.Package.test_hall_is_not_kaufman) ... ok
+test_material_count_and_coverage (test_package_data.Package.test_material_count_and_coverage) ... ok
+test_measured_requires_evidence (test_package_data.Package.test_measured_requires_evidence) ... ok
+test_monte_carlo_matches_log_analytic (test_package_data.Package.test_monte_carlo_matches_log_analytic) ... ok
+test_motion_converges (test_package_data.Package.test_motion_converges) ... ok
+test_no_production_recipe (test_package_data.Package.test_no_production_recipe) ... ok
+test_no_real_qualification (test_package_data.Package.test_no_real_qualification) ... ok
+test_original_license (test_package_data.Package.test_original_license) ... ok
+test_power_independent_charge_count (test_package_data.Package.test_power_independent_charge_count) ... ok
+test_schema_valid (test_package_data.Package.test_schema_valid) ... ok
+test_source_originals_not_release (test_package_data.Package.test_source_originals_not_release) ... ok
+test_source_references_exist (test_package_data.Package.test_source_references_exist) ... ok
+test_sources_unique_and_summarized (test_package_data.Package.test_sources_unique_and_summarized) ... ok
+test_template_valid (test_package_data.Package.test_template_valid) ... ok
+test_test_matrix_has_no_thresholds (test_package_data.Package.test_test_matrix_has_no_thresholds) ... /workspace/scratch/d35c7d80562e/projects/coating-research-library/10_ion_sources/tests/test_package_data.py:45: ResourceWarning: unclosed file <_io.TextIOWrapper name='/workspace/scratch/d35c7d80562e/projects/coating-research-library/10_ion_sources/data/test_matrix.csv' mode='r' encoding='UTF-8'>
+  rows=list(csv.DictReader((P/'data/test_matrix.csv').open()));self.assertEqual(len(rows),16)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_unknown_is_null (test_package_data.Package.test_unknown_is_null) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.378s
+
+OK

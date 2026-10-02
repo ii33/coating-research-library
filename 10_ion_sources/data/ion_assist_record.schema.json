@@ -1,0 +1,891 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "T10 ion assist record v0.1.0; template does not qualify operation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_kind",
+    "run_id",
+    "source_identity",
+    "settings",
+    "at_substrate",
+    "species",
+    "geometry",
+    "deposition",
+    "normalization",
+    "safety_gate",
+    "qualification",
+    "recorded_at",
+    "time_interval_s",
+    "coordinate_frame",
+    "gas_reference_conditions",
+    "gas_feeds"
+  ],
+  "$defs": {
+    "quantity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "unit",
+        "status",
+        "standard_uncertainty",
+        "method",
+        "raw_data_ref"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "unknown",
+            "setpoint",
+            "readback",
+            "measured",
+            "derived",
+            "synthetic"
+          ]
+        },
+        "standard_uncertainty": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_data_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "unknown"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "measured"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "number"
+              },
+              "method": {
+                "type": "string",
+                "minLength": 1
+              },
+              "raw_data_ref": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "const": "T10-0.1.0"
+    },
+    "record_kind": {
+      "enum": [
+        "template",
+        "synthetic",
+        "measured"
+      ]
+    },
+    "run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manufacturer",
+        "source_model",
+        "power_supply_model",
+        "manual_revision",
+        "grid_material",
+        "neutralizer_model",
+        "gas_species",
+        "maintenance_state_id",
+        "source_type",
+        "grid_count"
+      ],
+      "properties": {
+        "manufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "power_supply_model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "manual_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "grid_material": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "neutralizer_model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gas_species": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maintenance_state_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "grid_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 4
+        },
+        "source_type": {
+          "enum": [
+            "kaufman_dc_gridded",
+            "rf_gridded",
+            "end_hall_gridless",
+            "other",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "beam_supply",
+        "accelerator_grid",
+        "discharge_voltage",
+        "discharge_current",
+        "source_reported_beam_current",
+        "neutralizer_emission",
+        "gas_flow"
+      ],
+      "properties": {
+        "beam_supply": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "accelerator_grid": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "discharge_voltage": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "discharge_current": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "A"
+                }
+              }
+            }
+          ]
+        },
+        "source_reported_beam_current": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "A"
+                }
+              }
+            }
+          ]
+        },
+        "neutralizer_emission": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "A"
+                }
+              }
+            }
+          ]
+        },
+        "gas_flow": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "sccm"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "at_substrate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "positive_ion_current_density",
+        "mean_impact_energy",
+        "mean_energy_per_charge",
+        "surface_potential",
+        "film_net_growth_rate",
+        "film_density",
+        "surface_temperature",
+        "pressure",
+        "fast_neutral_energy_flux"
+      ],
+      "properties": {
+        "positive_ion_current_density": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "A/m2"
+                }
+              }
+            }
+          ]
+        },
+        "mean_impact_energy": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "eV/particle"
+                }
+              }
+            }
+          ]
+        },
+        "mean_energy_per_charge": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "eV/charge"
+                }
+              }
+            }
+          ]
+        },
+        "surface_potential": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "film_net_growth_rate": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "nm/s"
+                }
+              }
+            }
+          ]
+        },
+        "film_density": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "g/cm3"
+                }
+              }
+            }
+          ]
+        },
+        "surface_temperature": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "K"
+                }
+              }
+            }
+          ]
+        },
+        "pressure": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "Pa"
+                }
+              }
+            }
+          ]
+        },
+        "fast_neutral_energy_flux": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/quantity"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "W/m2"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "species": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "charge_number",
+          "fraction",
+          "fraction_basis",
+          "energy_eV",
+          "status"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "charge_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "fraction": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "fraction_basis": {
+            "enum": [
+              "particle",
+              "electric_current"
+            ]
+          },
+          "energy_eV": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "status": {
+            "enum": [
+              "measured",
+              "hypothesis",
+              "synthetic"
+            ]
+          }
+        }
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "position_m",
+        "surface_normal",
+        "incidence_angle_deg",
+        "current_density_area_basis",
+        "trajectory_ref",
+        "probe_aperture_area_m2"
+      ],
+      "properties": {
+        "position_m": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "surface_normal": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "incidence_angle_deg": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 180
+        },
+        "current_density_area_basis": {
+          "enum": [
+            "actual_substrate_plane",
+            "beam_normal_plane",
+            "unknown"
+          ]
+        },
+        "trajectory_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "probe_aperture_area_m2": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "deposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "material",
+        "grade",
+        "substrate",
+        "formula_mass_g_mol",
+        "atoms_per_formula",
+        "rate_basis"
+      ],
+      "properties": {
+        "material": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "grade": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "substrate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "formula_mass_g_mol": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "atoms_per_formula": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "rate_basis": {
+          "enum": [
+            "net_incorporated",
+            "incident_arrival",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "normalization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "denominator",
+        "include_fast_neutrals",
+        "ion_atom_ratio",
+        "incident_eV_per_atom",
+        "assumptions"
+      ],
+      "properties": {
+        "denominator": {
+          "enum": [
+            "net_total_atoms",
+            "net_formula_units",
+            "incident_total_atoms",
+            "metal_atoms",
+            "unknown"
+          ]
+        },
+        "include_fast_neutrals": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "ion_atom_ratio": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "incident_eV_per_atom": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "safety_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actual_manual_verified",
+        "approved_procedure_id",
+        "interlock_review",
+        "cooling_components",
+        "qualified_person_authorization"
+      ],
+      "properties": {
+        "actual_manual_verified": {
+          "type": "boolean"
+        },
+        "approved_procedure_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interlock_review": {
+          "enum": [
+            "not_reviewed",
+            "reviewed_by_authorized_staff"
+          ]
+        },
+        "cooling_components": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "qualified_person_authorization": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "qualification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "process_qualified",
+        "product_requirement_id",
+        "acceptance_thresholds",
+        "decision_rule",
+        "test_record_ref"
+      ],
+      "properties": {
+        "process_qualified": {
+          "type": "boolean"
+        },
+        "product_requirement_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "acceptance_thresholds": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "decision_rule": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "test_record_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "recorded_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "ISO8601 timestamp with timezone; null in blank template"
+    },
+    "time_interval_s": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      },
+      "description": "start/end in shared run clock, monotonicity checked separately"
+    },
+    "coordinate_frame": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gas_reference_conditions": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "sccm reference T/P, MFC calibrated gas, calibration ID; not chamber pressure"
+    },
+    "gas_feeds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "species",
+          "flow",
+          "destination"
+        ],
+        "properties": {
+          "species": {
+            "type": "string"
+          },
+          "flow": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/quantity"
+              },
+              {
+                "properties": {
+                  "unit": {
+                    "const": "sccm"
+                  }
+                }
+              }
+            ]
+          },
+          "destination": {
+            "enum": [
+              "discharge_chamber",
+              "neutralizer",
+              "process_chamber",
+              "other"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "record_kind": {
+            "enum": [
+              "template",
+              "synthetic"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "qualification": {
+            "properties": {
+              "process_qualified": {
+                "const": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "source_identity": {
+            "properties": {
+              "source_type": {
+                "const": "end_hall_gridless"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source_identity": {
+            "properties": {
+              "grid_count": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
