@@ -1,0 +1,4983 @@
+{
+  "schema_version": "1.0",
+  "frozen_at": "2026-10-02",
+  "scope": "Conditioned reference records, not a complete certified material database",
+  "records": [
+    {
+      "record_id": "OXP-001",
+      "material_id": "Ta2O5_film",
+      "property": "refractive_index_n",
+      "value": 2.15,
+      "unit": "1",
+      "source_id": "OX-05",
+      "conditions": {
+        "wavelength_nm": 550,
+        "method": "electron_beam_evaporation_with_ion_assistance",
+        "substrate": "unheated_glass",
+        "ion_source_type": "EH",
+        "measurement": "spectrophotometric",
+        "source_locator": "Table 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-002",
+      "material_id": "Ta2O5_film",
+      "property": "refractive_index_n",
+      "value": 2.13,
+      "unit": "1",
+      "source_id": "OX-05",
+      "conditions": {
+        "wavelength_nm": 550,
+        "method": "electron_beam_evaporation_with_ion_assistance",
+        "substrate": "unheated_glass",
+        "ion_source_type": "PS",
+        "measurement": "spectrophotometric",
+        "source_locator": "Table 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-003",
+      "material_id": "Ta2O5_film",
+      "property": "refractive_index_n",
+      "value": 2.01,
+      "unit": "1",
+      "source_id": "OX-05",
+      "conditions": {
+        "wavelength_nm": 550,
+        "method": "electron_beam_evaporation_with_ion_assistance",
+        "substrate": "unheated_glass",
+        "ion_source_type": "CC",
+        "measurement": "spectrophotometric",
+        "source_locator": "Table 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-004",
+      "material_id": "Ta2O5_film",
+      "property": "refractive_index_n",
+      "value": 2.03,
+      "unit": "1",
+      "source_id": "OX-07",
+      "conditions": {
+        "method": "ion_beam_sputtering",
+        "coater": "Grand Coater",
+        "wavelength_nm": 1064,
+        "source_locator": "Table 1",
+        "anneal_state": "not_explicit_per_optical_density_row",
+        "deposition_temperature": "not_frozen"
+      },
+      "uncertainty": {
+        "status": "reported_plus_minus",
+        "absolute": 0.02,
+        "unit": "1",
+        "coverage": "not_stated_in_table"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state_flag": "thermal_history_incomplete",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-005",
+      "material_id": "Ta2O5_film",
+      "property": "mass_density",
+      "value": 7.34,
+      "unit": "g/cm3",
+      "source_id": "OX-07",
+      "conditions": {
+        "method": "ion_beam_sputtering",
+        "coater": "Grand Coater",
+        "wavelength_nm": 1064,
+        "source_locator": "Table 1",
+        "anneal_state": "not_explicit_per_optical_density_row",
+        "deposition_temperature": "not_frozen"
+      },
+      "uncertainty": {
+        "status": "reported_plus_minus",
+        "absolute": 0.07,
+        "unit": "g/cm3",
+        "coverage": "not_stated_in_table"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state_flag": "thermal_history_incomplete",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-006",
+      "material_id": "Ta2O5_film",
+      "property": "refractive_index_n",
+      "value": 2.08,
+      "unit": "1",
+      "source_id": "OX-07",
+      "conditions": {
+        "method": "ion_beam_sputtering",
+        "coater": "Spector",
+        "wavelength_nm": 1064,
+        "source_locator": "Table 1",
+        "anneal_state": "not_explicit_per_optical_density_row",
+        "deposition_temperature": "not_frozen"
+      },
+      "uncertainty": {
+        "status": "reported_plus_minus",
+        "absolute": 0.02,
+        "unit": "1",
+        "coverage": "not_stated_in_table"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state_flag": "thermal_history_incomplete",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-007",
+      "material_id": "Ta2O5_film",
+      "property": "mass_density",
+      "value": 7.5,
+      "unit": "g/cm3",
+      "source_id": "OX-07",
+      "conditions": {
+        "method": "ion_beam_sputtering",
+        "coater": "Spector",
+        "wavelength_nm": 1064,
+        "source_locator": "Table 1",
+        "anneal_state": "not_explicit_per_optical_density_row",
+        "deposition_temperature": "not_frozen"
+      },
+      "uncertainty": {
+        "status": "reported_plus_minus",
+        "absolute": 0.1,
+        "unit": "g/cm3",
+        "coverage": "not_stated_in_table"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state_flag": "thermal_history_incomplete",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-008",
+      "material_id": "Ta2O5_film",
+      "property": "refractive_index_n",
+      "value": 2.014,
+      "unit": "1",
+      "source_id": "OX-07",
+      "conditions": {
+        "method": "ion_beam_sputtering",
+        "coater": "DIBS",
+        "wavelength_nm": 1064,
+        "source_locator": "Table 1",
+        "anneal_state": "not_explicit_per_optical_density_row",
+        "deposition_temperature": "not_frozen"
+      },
+      "uncertainty": {
+        "status": "reported_plus_minus",
+        "absolute": 0.005,
+        "unit": "1",
+        "coverage": "not_stated_in_table"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state_flag": "thermal_history_incomplete",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-009",
+      "material_id": "Ta2O5_film",
+      "property": "mass_density",
+      "value": 6.9,
+      "unit": "g/cm3",
+      "source_id": "OX-07",
+      "conditions": {
+        "method": "ion_beam_sputtering",
+        "coater": "DIBS",
+        "wavelength_nm": 1064,
+        "source_locator": "Table 1",
+        "anneal_state": "not_explicit_per_optical_density_row",
+        "deposition_temperature": "not_frozen"
+      },
+      "uncertainty": {
+        "status": "reported_plus_minus",
+        "absolute": 0.2,
+        "unit": "g/cm3",
+        "coverage": "not_stated_in_table"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state_flag": "thermal_history_incomplete",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-010",
+      "material_id": "Ta2O5_film",
+      "property": "extinction_coefficient_k",
+      "value": null,
+      "unit": "1",
+      "source_id": null,
+      "conditions": {
+        "target_band": "user_target_NIR_MWIR_not_fixed",
+        "method": "user_machine_evaporation"
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "note": "本轮未取得同时匹配本机成膜/热史/目标波段且有检出限的k"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "unknown_reason": "需本机单层光谱与独立吸收测量，不能以透明标签赋零",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "unknown",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-011",
+      "material_id": "Ta2O5_film",
+      "property": "refractive_index_n",
+      "value": 2.062,
+      "unit": "1",
+      "source_id": "OX-06",
+      "conditions": {
+        "wavelength_nm": 1064,
+        "method": "ion_beam_sputtering",
+        "coater": "LMA_Grand_Coater",
+        "substrate_for_optical_characterization": "Si",
+        "sample_nominal_Ti_cation_percent": 0,
+        "sample_measured_Ti_cation_percent": 7.1,
+        "measured_Ti_cation_percent_uncertainty": 0.6,
+        "composition_method": "EDS",
+        "anneal_state": "as_deposited",
+        "anneal_note": "Si procedure: air, 12h plateau; silica samples elsewhere use10h; do not merge",
+        "measurement": "VASE_Cauchy_model",
+        "source_locator": "Tables 1 and 2; sections 2.2 and 2.5"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "nominal_Ta2O5_with_detected_Ti",
+      "use_as_universal_constant": false,
+      "state_flag": "comparison_only_not_pure_material",
+      "conflict_flag": true,
+      "eligible_for_pure_material_default": false,
+      "conflict_note": "名义0%Ti与EDS7.1±0.6%不一致；不推定是污染还是分析偏差",
+      "state": "nominal_Ta2O5_with_detected_Ti",
+      "original_status": null,
+      "status": "quarantined",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-012",
+      "material_id": "Ta2O5_film",
+      "property": "refractive_index_n",
+      "value": 2.046,
+      "unit": "1",
+      "source_id": "OX-06",
+      "conditions": {
+        "wavelength_nm": 1064,
+        "method": "ion_beam_sputtering",
+        "coater": "LMA_Grand_Coater",
+        "substrate_for_optical_characterization": "Si",
+        "sample_nominal_Ti_cation_percent": 0,
+        "sample_measured_Ti_cation_percent": 7.1,
+        "measured_Ti_cation_percent_uncertainty": 0.6,
+        "composition_method": "EDS",
+        "anneal_state": "annealed_500C",
+        "anneal_note": "Si procedure: air, 12h plateau; silica samples elsewhere use10h; do not merge",
+        "measurement": "VASE_Cauchy_model",
+        "source_locator": "Tables 1 and 2; sections 2.2 and 2.5"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "nominal_Ta2O5_with_detected_Ti",
+      "use_as_universal_constant": false,
+      "state_flag": "comparison_only_not_pure_material",
+      "conflict_flag": true,
+      "eligible_for_pure_material_default": false,
+      "conflict_note": "名义0%Ti与EDS7.1±0.6%不一致；不推定是污染还是分析偏差",
+      "state": "nominal_Ta2O5_with_detected_Ti",
+      "original_status": null,
+      "status": "quarantined",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-013",
+      "material_id": "TiO2_film",
+      "property": "refractive_index_n",
+      "value": 1.99,
+      "unit": "1",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S0A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 0,
+        "ion_gun_voltage_V": null,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 350,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-014",
+      "material_id": "TiO2_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00212,
+      "unit": "1",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S0A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 0,
+        "ion_gun_voltage_V": null,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 350,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-015",
+      "material_id": "TiO2_film",
+      "property": "optically_inferred_packing_density_ratio",
+      "value": 0.79,
+      "unit": "1",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S0A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 0,
+        "ion_gun_voltage_V": null,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 350,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "model_derived": true,
+      "independent_density_measurement": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "model",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-016",
+      "material_id": "TiO2_film",
+      "property": "optically_inferred_porosity",
+      "value": 40.8,
+      "unit": "percent",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S0A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 0,
+        "ion_gun_voltage_V": null,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 350,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "model_derived": true,
+      "independent_porosity_measurement": false,
+      "conflict_flag": true,
+      "conflict_note": "与PD使用不同有效介质式，不可用P=1−PD；不可当独立孔隙测量",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "comparison_only",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-017",
+      "material_id": "TiO2_film",
+      "property": "refractive_index_n",
+      "value": 2.06,
+      "unit": "1",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S3A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "IBAD_EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 3,
+        "ion_gun_voltage_V": 80,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 300,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-018",
+      "material_id": "TiO2_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00271,
+      "unit": "1",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S3A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "IBAD_EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 3,
+        "ion_gun_voltage_V": 80,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 300,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-019",
+      "material_id": "TiO2_film",
+      "property": "optically_inferred_packing_density_ratio",
+      "value": 0.83,
+      "unit": "1",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S3A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "IBAD_EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 3,
+        "ion_gun_voltage_V": 80,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 300,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "model_derived": true,
+      "independent_density_measurement": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "model",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-020",
+      "material_id": "TiO2_film",
+      "property": "optically_inferred_porosity",
+      "value": 34.8,
+      "unit": "percent",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S3A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "IBAD_EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 3,
+        "ion_gun_voltage_V": 80,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 300,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "model_derived": true,
+      "independent_porosity_measurement": false,
+      "conflict_flag": true,
+      "conflict_note": "与PD使用不同有效介质式，不可用P=1−PD；不可当独立孔隙测量",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "comparison_only",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-021",
+      "material_id": "TiO2_film",
+      "property": "refractive_index_n",
+      "value": 2.14,
+      "unit": "1",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S4A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "IBAD_EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 4,
+        "ion_gun_voltage_V": 90,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 200,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-022",
+      "material_id": "TiO2_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00464,
+      "unit": "1",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S4A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "IBAD_EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 4,
+        "ion_gun_voltage_V": 90,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 200,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-023",
+      "material_id": "TiO2_film",
+      "property": "optically_inferred_packing_density_ratio",
+      "value": 0.87,
+      "unit": "1",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S4A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "IBAD_EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 4,
+        "ion_gun_voltage_V": 90,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 200,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "model_derived": true,
+      "independent_density_measurement": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "model",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-024",
+      "material_id": "TiO2_film",
+      "property": "optically_inferred_porosity",
+      "value": 28.6,
+      "unit": "percent",
+      "source_id": "OX-09",
+      "conditions": {
+        "sample": "S4A",
+        "wavelength_nm": 550,
+        "source_material": "Ti3O5",
+        "method": "IBAD_EBE",
+        "liner": "Mo",
+        "substrate_temperature_C_upper_bound": 50,
+        "ion_gun_current_A": 4,
+        "ion_gun_voltage_V": 90,
+        "oxygen_flow_sccm": 100,
+        "working_pressure_mbar_range": [
+          0.0012,
+          0.0017
+        ],
+        "thickness_nm": 200,
+        "anneal_state": "as_deposited",
+        "measurement": "Scout optical inversion with Sellmeier and OJL",
+        "source_locator": "Tables 1 and 4"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "model_derived": true,
+      "independent_porosity_measurement": false,
+      "conflict_flag": true,
+      "conflict_note": "与PD使用不同有效介质式，不可用P=1−PD；不可当独立孔隙测量",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "comparison_only",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-025",
+      "material_id": "SiO2_film",
+      "property": "refractive_index_n",
+      "value": 1.49,
+      "unit": "1",
+      "source_id": "OX-05",
+      "conditions": {
+        "wavelength_nm": 550,
+        "method": "electron_beam_evaporation_with_ion_assistance",
+        "substrate": "unheated_glass",
+        "ion_source_type": "EH",
+        "source_locator": "Table 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-026",
+      "material_id": "SiO2_film",
+      "property": "refractive_index_n",
+      "value": 1.49,
+      "unit": "1",
+      "source_id": "OX-05",
+      "conditions": {
+        "wavelength_nm": 550,
+        "method": "electron_beam_evaporation_with_ion_assistance",
+        "substrate": "unheated_glass",
+        "ion_source_type": "PS",
+        "source_locator": "Table 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-027",
+      "material_id": "SiO2_film",
+      "property": "refractive_index_n",
+      "value": 1.47,
+      "unit": "1",
+      "source_id": "OX-05",
+      "conditions": {
+        "wavelength_nm": 550,
+        "method": "electron_beam_evaporation_with_ion_assistance",
+        "substrate": "unheated_glass",
+        "ion_source_type": "CC",
+        "source_locator": "Table 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-028",
+      "material_id": "SiO2_film",
+      "property": "refractive_index_n",
+      "value": 1.474,
+      "unit": "1",
+      "source_id": "OX-07",
+      "conditions": {
+        "wavelength_nm": 1064,
+        "method": "ion_beam_sputtering",
+        "coater": "Spector",
+        "anneal_state": "not_explicit_per_optical_density_row",
+        "source_locator": "Table 1"
+      },
+      "uncertainty": {
+        "status": "reported_plus_minus",
+        "absolute": 0.005,
+        "unit": "1",
+        "coverage": "not_stated"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state_flag": "thermal_history_incomplete",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-029",
+      "material_id": "SiO2_film",
+      "property": "mass_density",
+      "value": 2.34,
+      "unit": "g/cm3",
+      "source_id": "OX-07",
+      "conditions": {
+        "method": "ion_beam_sputtering",
+        "coater": "Spector",
+        "anneal_state": "not_explicit_per_optical_density_row",
+        "source_locator": "Table 1"
+      },
+      "uncertainty": {
+        "status": "reported_plus_minus",
+        "absolute": 0.01,
+        "unit": "g/cm3",
+        "coverage": "not_stated"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "state_flag": "thermal_history_incomplete",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-030",
+      "material_id": "SiO2_film",
+      "property": "absorption_coefficient_alpha_upper_bound",
+      "value": 40,
+      "unit": "cm^-1",
+      "source_id": "OX-10",
+      "conditions": {
+        "wavelength_nm": 190,
+        "method": "reactive_evaporation_in_ionized_gases",
+        "phase": "Xray_amorphous"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "bound_type": "strict_upper_bound",
+      "not_a_zero_absorption_claim": true,
+      "state": "thin_film",
+      "original_status": null,
+      "status": "limit",
+      "qualifier": "<",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-031",
+      "material_id": "SiO2_film",
+      "property": "mass_density",
+      "value": null,
+      "unit": "g/cm3",
+      "source_id": null,
+      "conditions": {
+        "method": "user_machine_electron_beam_evaporation"
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "note": "源料石英/玻璃及SDS密度不等于待测薄膜密度"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "unknown_reason": "需独立膜厚和面密度或XRR，不使用2.20/2.32/2.65商品块材值替代",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "unknown",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-032",
+      "material_id": "Al2O3_film",
+      "property": "refractive_index_n",
+      "value": 1.61,
+      "unit": "1",
+      "source_id": "OX-13",
+      "conditions": {
+        "wavelength_nm": 350,
+        "method": "electron_beam_evaporation",
+        "chamber_temperature_C": 100,
+        "substrate_temperature_C": null,
+        "ion_assistance": "no_ion_assistance",
+        "anneal_state": "no_post_anneal_specified",
+        "source_locator": "conference abstract"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "approximately",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-033",
+      "material_id": "Al2O3_film",
+      "property": "refractive_index_n",
+      "value": 1.7,
+      "unit": "1",
+      "source_id": "OX-13",
+      "conditions": {
+        "wavelength_nm": 350,
+        "method": "electron_beam_evaporation",
+        "chamber_temperature_C": 100,
+        "substrate_temperature_C": null,
+        "ion_assistance": "Ar_and_or_O2_ion_assistance",
+        "anneal_state": "no_post_anneal_specified",
+        "source_locator": "conference abstract"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "approximately",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-034",
+      "material_id": "Al2O3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.0002,
+      "unit": "1",
+      "source_id": "OX-13",
+      "conditions": {
+        "wavelength_nm": 350,
+        "method": "electron_beam_evaporation",
+        "chamber_temperature_C": 100,
+        "ion_assistance": "Ar_and_or_O2_vs_unassisted",
+        "source_locator": "conference abstract"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "approximately; essentially unchanged by assistance",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-035",
+      "material_id": "Al2O3_film",
+      "property": "mass_density",
+      "value": null,
+      "unit": "g/cm3",
+      "source_id": null,
+      "conditions": {
+        "phase": "amorphous_or_process_specific"
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "note": "低吸水和无空气真空漂移不是绝对膜密度测量"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "unknown_reason": "不可从蓝宝石密度或折射率单独判定",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "unknown",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-036",
+      "material_id": "H4_film",
+      "property": "refractive_index_n",
+      "value": 1.99,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 500,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": "RT",
+        "deposition_state": "conventional_RT",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-037",
+      "material_id": "H4_film",
+      "property": "extinction_coefficient_k",
+      "value": 7.5e-05,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 500,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": "RT",
+        "deposition_state": "conventional_RT",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-038",
+      "material_id": "H4_film",
+      "property": "refractive_index_n",
+      "value": 1.94,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 1000,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": "RT",
+        "deposition_state": "conventional_RT",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-039",
+      "material_id": "H4_film",
+      "property": "extinction_coefficient_k",
+      "value": 1.9e-05,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 1000,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": "RT",
+        "deposition_state": "conventional_RT",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-040",
+      "material_id": "H4_film",
+      "property": "refractive_index_n",
+      "value": 2.05,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 500,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": 300,
+        "deposition_state": "conventional_300C",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-041",
+      "material_id": "H4_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00024,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 500,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": 300,
+        "deposition_state": "conventional_300C",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-042",
+      "material_id": "H4_film",
+      "property": "refractive_index_n",
+      "value": 2.0,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 1000,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": 300,
+        "deposition_state": "conventional_300C",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-043",
+      "material_id": "H4_film",
+      "property": "extinction_coefficient_k",
+      "value": 5.1e-05,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 1000,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": 300,
+        "deposition_state": "conventional_300C",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-044",
+      "material_id": "H4_film",
+      "property": "refractive_index_n",
+      "value": 2.11,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 500,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": "RT",
+        "deposition_state": "IAD_RT",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-045",
+      "material_id": "H4_film",
+      "property": "extinction_coefficient_k",
+      "value": 7.6e-05,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 500,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": "RT",
+        "deposition_state": "IAD_RT",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-046",
+      "material_id": "H4_film",
+      "property": "refractive_index_n",
+      "value": 2.05,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 1000,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": "RT",
+        "deposition_state": "IAD_RT",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-047",
+      "material_id": "H4_film",
+      "property": "extinction_coefficient_k",
+      "value": 1.7e-05,
+      "unit": "1",
+      "source_id": "OX-17",
+      "conditions": {
+        "wavelength_nm": 1000,
+        "manufacturer_family": "Merck_EMD_Patinal_H4_H4HD",
+        "datasheet_issue": "2021-12",
+        "substrate_temperature_C_or_label": "RT",
+        "deposition_state": "IAD_RT",
+        "source_composition_description": "La_xTi_yO_z; titanium/lanthanum oxide mixture",
+        "film_stoichiometry_verified": false,
+        "source_locator": "page 2"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "来源未报告逐值测量不确定度，不解释为零"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "value_qualifier": "manufacturer_typical",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "literature_reference",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-048",
+      "material_id": "H4_film",
+      "property": "mass_density",
+      "value": null,
+      "unit": "g/cm3",
+      "source_id": null,
+      "conditions": {
+        "manufacturer_grade": "user_inventory_unknown"
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "note": "5.9 g/cm3是厂商QCR输入建议，不是独立膜密度；HD是源料表观密度"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "unknown_reason": "须识别货号后独立表征",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "unknown",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "record_id": "OXP-049",
+      "material_id": "H4_film",
+      "property": "stoichiometric_La_Ti_O_ratio",
+      "value": null,
+      "unit": "atomic_ratio",
+      "source_id": null,
+      "conditions": {
+        "manufacturer_grade": "not_universal"
+      },
+      "uncertainty": {
+        "status": "unknown",
+        "note": "商品页LaTiO3相描述不能赋予所有H4或最终氧化膜固定化学式"
+      },
+      "validation_level": "literature_only",
+      "sample_state": "thin_film",
+      "use_as_universal_constant": false,
+      "unknown_reason": "需牌号与实际膜成分证据",
+      "state": "thin_film",
+      "original_status": null,
+      "status": "unknown",
+      "design_ready": false,
+      "registry_origin": "oxide_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.44,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 0.45,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-001",
+      "state": "evaporated Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.26,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 1,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-002",
+      "state": "evaporated Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.22,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 4,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-003",
+      "state": "evaporated Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.17,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 10,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-004",
+      "state": "evaporated Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.12,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 13,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-005",
+      "state": "evaporated Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.22,
+      "unit": "1",
+      "source_id": "IR02",
+      "conditions": {
+        "wavelength_um": 10,
+        "supplier": "Umicore",
+        "product": "0481699"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-006",
+      "state": "see_conditions_and_source_card",
+      "original_status": "separate_supplier_record",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "extinction_coefficient_k",
+      "value": 3.85,
+      "unit": "1",
+      "source_id": "IR02",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "raw_web_value": true
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "quarantined",
+      "notes": "与透明用途矛盾，疑似网页字段/指数错误，未擅自修正",
+      "record_id": "IRP-007",
+      "state": "see_conditions_and_source_card",
+      "original_status": "quarantined_do_not_use",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "QCM_reference_density",
+      "value": 4.09,
+      "unit": "g/cm3",
+      "source_id": "IR01",
+      "conditions": {
+        "state": "instrument_setting_not_film_density"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-008",
+      "state": "instrument_setting_not_film_density",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "deposition_rate_range",
+      "value": [
+        0.8,
+        2.5
+      ],
+      "unit": "nm/s",
+      "source_id": "IR01",
+      "conditions": {
+        "source": "resistive/electron_beam supplier guidance",
+        "substrate_temperature_C": [
+          150,
+          160
+        ]
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-009",
+      "state": "see_conditions_and_source_card",
+      "original_status": "supplier_process_range",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "thermal_conductivity",
+      "value": null,
+      "unit": "W/(m K)",
+      "source_id": null,
+      "conditions": {
+        "material_state": "ZnS_film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "未得到与本蒸发状态相符的数据，不以CVD块材代替"
+      },
+      "status": "unknown",
+      "notes": "未得到与本蒸发状态相符的数据，不以CVD块材代替",
+      "record_id": "IRP-010",
+      "state": "ZnS_film",
+      "original_status": "not_available",
+      "unknown_reason": "未得到与本蒸发状态相符的数据，不以CVD块材代替",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.548,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 0.5,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-011",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00012,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 0.5,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-012",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.538,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 1,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-013",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00011,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 1,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-014",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.529,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 2,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-015",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.0005,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 2,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-016",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.509,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 5,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-017",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.0015,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 5,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-018",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.372,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 10,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-019",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.0024,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 10,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-020",
+      "state": "Patinal film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "QCM_reference_density",
+      "value": 8.168,
+      "unit": "g/cm3",
+      "source_id": "IR05",
+      "conditions": {
+        "state": "instrument_setting_not_film_density"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-021",
+      "state": "instrument_setting_not_film_density",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "substrate_temperature_range",
+      "value": [
+        150,
+        200
+      ],
+      "unit": "degC",
+      "source_id": "IR05",
+      "conditions": {
+        "supplier": "Merck/EMD",
+        "ZnS_combination_preferred_C": 160
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-022",
+      "state": "see_conditions_and_source_card",
+      "original_status": "supplier_process_range",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "substrate_temperature_upper_warning_range",
+      "value": [
+        150,
+        180
+      ],
+      "unit": "degC",
+      "source_id": "IR06",
+      "conditions": {
+        "supplier": "Umicore"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "notes": "超过该范围可能增大损耗/应力；不是精确熔解阈值",
+      "record_id": "IRP-023",
+      "state": "see_conditions_and_source_card",
+      "original_status": "separate_supplier_record",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "F_to_Yb_atomic_ratio",
+      "value": 2.625,
+      "unit": "1",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 0,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "measured",
+      "record_id": "IRP-024",
+      "state": "see_conditions_and_source_card",
+      "original_status": "published_experiment",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "residual_tensile_stress",
+      "value": 0.101,
+      "unit": "GPa",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 0,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "measured",
+      "record_id": "IRP-025",
+      "state": "see_conditions_and_source_card",
+      "original_status": "published_experiment",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "F_to_Yb_atomic_ratio",
+      "value": 2.329,
+      "unit": "1",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 180,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "measured",
+      "record_id": "IRP-026",
+      "state": "see_conditions_and_source_card",
+      "original_status": "published_experiment",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "residual_tensile_stress",
+      "value": 0.106,
+      "unit": "GPa",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 180,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "measured",
+      "record_id": "IRP-027",
+      "state": "see_conditions_and_source_card",
+      "original_status": "published_experiment",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "F_to_Yb_atomic_ratio",
+      "value": 1.789,
+      "unit": "1",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 360,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "measured",
+      "record_id": "IRP-028",
+      "state": "see_conditions_and_source_card",
+      "original_status": "published_experiment",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "residual_tensile_stress",
+      "value": 0.146,
+      "unit": "GPa",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 360,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "measured",
+      "record_id": "IRP-029",
+      "state": "see_conditions_and_source_card",
+      "original_status": "published_experiment",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "Young_modulus",
+      "value": null,
+      "unit": "GPa",
+      "source_id": null,
+      "conditions": {
+        "material_state": "YbF3_film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "本轮未得到适用牌号/工艺的定量膜数据；不得用YF3替代"
+      },
+      "status": "unknown",
+      "notes": "本轮未得到适用牌号/工艺的定量膜数据；不得用YF3替代",
+      "record_id": "IRP-030",
+      "state": "YbF3_film",
+      "original_status": "not_available",
+      "unknown_reason": "本轮未得到适用牌号/工艺的定量膜数据；不得用YF3替代",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.612,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 120,
+        "state": "Patinal evaporated film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-031",
+      "state": "Patinal evaporated film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.0035,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 120,
+        "state": "Patinal evaporated film",
+        "comparison": "="
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-032",
+      "state": "Patinal evaporated film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.396,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 250,
+        "state": "Patinal evaporated film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-033",
+      "state": "Patinal evaporated film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00015,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 250,
+        "state": "Patinal evaporated film",
+        "comparison": "="
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-034",
+      "state": "Patinal evaporated film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.383,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 500,
+        "state": "Patinal evaporated film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-035",
+      "state": "Patinal evaporated film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "extinction_coefficient_k",
+      "value": 3.4e-05,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 500,
+        "state": "Patinal evaporated film",
+        "comparison": "="
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-036",
+      "state": "Patinal evaporated film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.375,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 1500,
+        "state": "Patinal evaporated film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-037",
+      "state": "Patinal evaporated film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "extinction_coefficient_k",
+      "value": 2e-05,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 1500,
+        "state": "Patinal evaporated film",
+        "comparison": "<"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "limit",
+      "record_id": "IRP-038",
+      "state": "Patinal evaporated film",
+      "original_status": "upper_bound",
+      "qualifier": "<",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "packing_density",
+      "value": 0.72,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "substrate_temperature_C": 20,
+        "state": "evaporated film",
+        "measurement_method": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-039",
+      "state": "evaporated film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "packing_density",
+      "value": 0.98,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "substrate_temperature_C": 300,
+        "state": "evaporated film",
+        "measurement_method": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-040",
+      "state": "evaporated film",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.401,
+      "unit": "1",
+      "source_id": "IR13",
+      "conditions": {
+        "wavelength_nm": 1550,
+        "state": "IBS film",
+        "thickness_nm": 200
+      },
+      "uncertainty": {
+        "value": 0.005,
+        "type": "reported_plus_minus",
+        "coverage": null
+      },
+      "status": "measured",
+      "record_id": "IRP-041",
+      "state": "IBS film",
+      "original_status": "published_experiment",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "Young_modulus",
+      "value": 115,
+      "unit": "GPa",
+      "source_id": "IR13",
+      "conditions": {
+        "state": "IBS film",
+        "thickness_nm": 206,
+        "method": "mechanical resonance inversion"
+      },
+      "uncertainty": {
+        "value": 3,
+        "type": "reported_plus_minus",
+        "coverage": null
+      },
+      "status": "measured",
+      "record_id": "IRP-042",
+      "state": "IBS film",
+      "original_status": "published_experiment",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "mass_thickness_density",
+      "value": 2.7,
+      "unit": "g/cm3",
+      "source_id": "IR13",
+      "conditions": {
+        "state": "IBS film",
+        "method": "mass/thickness"
+      },
+      "uncertainty": {
+        "value": 0.2,
+        "type": "reported_plus_minus",
+        "coverage": null
+      },
+      "status": "measured",
+      "record_id": "IRP-043",
+      "state": "IBS film",
+      "original_status": "published_experiment",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "thermal_expansion_coefficient",
+      "value": null,
+      "unit": "1/K",
+      "source_id": null,
+      "conditions": {
+        "material_state": "MgF2_film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "未得到与蒸发膜状态对应的验证值；单晶各向异性CTE不可直接代入"
+      },
+      "status": "unknown",
+      "notes": "未得到与蒸发膜状态对应的验证值；单晶各向异性CTE不可直接代入",
+      "record_id": "IRP-044",
+      "state": "MgF2_film",
+      "original_status": "not_available",
+      "unknown_reason": "未得到与蒸发膜状态对应的验证值；单晶各向异性CTE不可直接代入",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "density",
+      "value": 4.09,
+      "unit": "g/cm3",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "temperature_K": 298
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-045",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "thermal_conductivity",
+      "value": 16.7,
+      "unit": "W/(m K)",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "temperature_K": 298
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-046",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Knoop_hardness",
+      "value": [
+        200,
+        235
+      ],
+      "unit": "kgf/mm2",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "indenter_load_g": 50
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "comparison_only",
+      "record_id": "IRP-047",
+      "state": "see_conditions_and_source_card",
+      "original_status": "conflicting_sources_keep_separate",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "flexural_strength",
+      "value": 103,
+      "unit": "MPa",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "method": "four_point_bending",
+        "sample_geometry": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "notes": "非设计许用应力；统计分布未知",
+      "record_id": "IRP-048",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Poisson_ratio",
+      "value": 0.29,
+      "unit": "1",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-049",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "absorption_coefficient_alpha",
+      "value": 0.2,
+      "unit": "1/cm",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "wavelength_um": 10.6
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-050",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "density",
+      "value": 4.09,
+      "unit": "g/cm3",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "temperature_K": 298
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-051",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "thermal_conductivity",
+      "value": 28.4,
+      "unit": "W/(m K)",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "temperature_K": 298
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-052",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Knoop_hardness",
+      "value": 160,
+      "unit": "kgf/mm2",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "indenter_load_g": 50
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "comparison_only",
+      "record_id": "IRP-053",
+      "state": "see_conditions_and_source_card",
+      "original_status": "conflicting_sources_keep_separate",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "flexural_strength",
+      "value": 75,
+      "unit": "MPa",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "method": "four_point_bending",
+        "sample_geometry": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "notes": "非设计许用应力；统计分布未知",
+      "record_id": "IRP-054",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Poisson_ratio",
+      "value": 0.28,
+      "unit": "1",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-055",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "absorption_coefficient_alpha",
+      "value": 0.2,
+      "unit": "1/cm",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "wavelength_um": 10.6
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-056",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Knoop_hardness",
+      "value": 160,
+      "unit": "kgf/mm2",
+      "source_id": "IR17",
+      "conditions": {
+        "grade": "FLIR",
+        "indenter_load_g": 50
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "comparison_only",
+      "record_id": "IRP-057",
+      "state": "see_conditions_and_source_card",
+      "original_status": "conflicting_sources_keep_separate",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Knoop_hardness",
+      "value": 240,
+      "unit": "kgf/mm2",
+      "source_id": "IR16",
+      "conditions": {
+        "grade": "MS",
+        "indenter_load_g": 50
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "comparison_only",
+      "record_id": "IRP-058",
+      "state": "see_conditions_and_source_card",
+      "original_status": "conflicting_sources_keep_separate",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "absorption_coefficient_alpha",
+      "value": 0.0006,
+      "unit": "1/cm",
+      "source_id": "IR16",
+      "conditions": {
+        "grade": "MS",
+        "wavelength_um": 3.8
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-059",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "refractive_index_n",
+      "value": 2.20084,
+      "unit": "1",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD_or_Cleartran",
+        "wavelength_um": 10
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-060",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.536288,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 365.01,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号",
+      "record_id": "IRP-061",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.5168,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 587.56,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号",
+      "record_id": "IRP-062",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.506743,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 1060,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号",
+      "record_id": "IRP-063",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.50106,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 1529.58,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号",
+      "record_id": "IRP-064",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.48964,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 2325.42,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号",
+      "record_id": "IRP-065",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.746,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 300,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-066",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.557,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 300,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-067",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.998,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 550,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-068",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.997,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 550,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-069",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.999,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 1060,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-070",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.998,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 1060,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-071",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.951,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 2000,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-072",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.904,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 2000,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-073",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.842,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 2400,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-074",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.709,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 2400,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-075",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "Young_modulus",
+      "value": 79.2,
+      "unit": "GPa",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-076",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "thermal_conductivity",
+      "value": 0.931,
+      "unit": "W/(m K)",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-077",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "specific_heat_capacity",
+      "value": 736,
+      "unit": "J/(kg K)",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-078",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "density",
+      "value": 2.52,
+      "unit": "g/cm3",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-079",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "thermal_expansion_coefficient",
+      "value": 7.6e-06,
+      "unit": "1/K",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "temperature_range_C": [
+          -30,
+          70
+        ]
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-080",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "thermal_expansion_coefficient",
+      "value": 9.5e-06,
+      "unit": "1/K",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "temperature_range_C": [
+          100,
+          300
+        ]
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-081",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "actual_user_grade",
+      "value": null,
+      "unit": "text",
+      "source_id": null,
+      "conditions": {
+        "material_state": "K9_substrate"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "用户原始材料名为K9，实际厂家/牌号/熔次尚未知；禁止自动等同N-BK7"
+      },
+      "status": "unknown",
+      "notes": "用户原始材料名为K9，实际厂家/牌号/熔次尚未知；禁止自动等同N-BK7",
+      "record_id": "IRP-082",
+      "state": "K9_substrate",
+      "original_status": "not_available",
+      "unknown_reason": "用户原始材料名为K9，实际厂家/牌号/熔次尚未知；禁止自动等同N-BK7",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "refractive_index_n",
+      "value": 2.5994,
+      "unit": "1",
+      "source_id": "IR21",
+      "conditions": {
+        "wavelength_um": 0.62,
+        "state": "optical polycrystalline ZnSe",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-083",
+      "state": "optical polycrystalline ZnSe",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "refractive_index_n",
+      "value": 2.4295,
+      "unit": "1",
+      "source_id": "IR21",
+      "conditions": {
+        "wavelength_um": 5,
+        "state": "optical polycrystalline ZnSe",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-084",
+      "state": "optical polycrystalline ZnSe",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "refractive_index_n",
+      "value": 2.4028,
+      "unit": "1",
+      "source_id": "IR21",
+      "conditions": {
+        "wavelength_um": 10.6,
+        "state": "optical polycrystalline ZnSe",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-085",
+      "state": "optical polycrystalline ZnSe",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "refractive_index_n",
+      "value": 2.3665,
+      "unit": "1",
+      "source_id": "IR21",
+      "conditions": {
+        "wavelength_um": 15,
+        "state": "optical polycrystalline ZnSe",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-086",
+      "state": "optical polycrystalline ZnSe",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "absorption_coefficient_alpha",
+      "value": 0.0005,
+      "unit": "1/cm",
+      "source_id": "IR22",
+      "conditions": {
+        "wavelength_um": 10.6,
+        "temperature_C": 20,
+        "comparison": "<",
+        "method": "CO2 vacuum calorimetry manufacturer specification"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "limit",
+      "record_id": "IRP-087",
+      "state": "see_conditions_and_source_card",
+      "original_status": "upper_bound",
+      "qualifier": "<",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "density",
+      "value": 5.27,
+      "unit": "g/cm3",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-088",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "thermal_conductivity",
+      "value": 18,
+      "unit": "W/(m K)",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-089",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "specific_heat_capacity",
+      "value": 356,
+      "unit": "J/(kg K)",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-090",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "thermal_expansion_coefficient",
+      "value": 7.57e-06,
+      "unit": "1/K",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-091",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "Young_modulus",
+      "value": 67.2,
+      "unit": "GPa",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-092",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "Poisson_ratio",
+      "value": 0.28,
+      "unit": "1",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-093",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "rupture_modulus",
+      "value": 55.1,
+      "unit": "MPa",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-094",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "specific_heat_capacity",
+      "value": 339,
+      "unit": "J/(kg K)",
+      "source_id": "IR21",
+      "conditions": {
+        "supplier": "Crystran",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-095",
+      "state": "see_conditions_and_source_card",
+      "original_status": "separate_supplier_record",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "thermo_optic_coefficient",
+      "value": 6.1e-05,
+      "unit": "1/K",
+      "source_id": "IR22",
+      "conditions": {
+        "wavelength_um": 10.6,
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "typical",
+      "record_id": "IRP-096",
+      "state": "see_conditions_and_source_card",
+      "original_status": "catalog_typical",
+      "design_ready": false,
+      "registry_origin": "ir_property_records.json"
+    },
+    {
+      "record_id": "MP-001",
+      "material_id": "Ge_film",
+      "property": "source_theoretical_density",
+      "value": 5.32,
+      "unit": "g/cm3",
+      "source_id": "M01",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-002",
+      "material_id": "Ge_film",
+      "property": "melting_temperature",
+      "value": 937,
+      "unit": "degC",
+      "source_id": "M01",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-003",
+      "material_id": "Ge_film",
+      "property": "source_thermal_conductivity",
+      "value": 60,
+      "unit": "W/(m K)",
+      "source_id": "M01",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-004",
+      "material_id": "Ge_film",
+      "property": "source_linear_expansion",
+      "value": 6e-06,
+      "unit": "1/K",
+      "source_id": "M01",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-005",
+      "material_id": "Ge_film",
+      "property": "film_effective_density",
+      "value": null,
+      "unit": "g/cm3",
+      "source_id": null,
+      "state": "user_machine_thin_film",
+      "conditions": {
+        "notes": "真实膜密度未知，块材不可代填"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "unknown",
+      "design_ready": false,
+      "unknown_reason": "需要独立膜厚与面密度或其他适用测量"
+    },
+    {
+      "record_id": "MP-006",
+      "material_id": "Cu_film",
+      "property": "source_theoretical_density",
+      "value": 8.92,
+      "unit": "g/cm3",
+      "source_id": "M02",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-007",
+      "material_id": "Cu_film",
+      "property": "melting_temperature",
+      "value": 1083,
+      "unit": "degC",
+      "source_id": "M02",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-008",
+      "material_id": "Cu_film",
+      "property": "source_thermal_conductivity",
+      "value": 400,
+      "unit": "W/(m K)",
+      "source_id": "M02",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-009",
+      "material_id": "Cu_film",
+      "property": "source_linear_expansion",
+      "value": 1.65e-05,
+      "unit": "1/K",
+      "source_id": "M02",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-010",
+      "material_id": "Cu_film",
+      "property": "film_effective_density",
+      "value": null,
+      "unit": "g/cm3",
+      "source_id": null,
+      "state": "user_machine_thin_film",
+      "conditions": {
+        "notes": "真实膜密度未知，块材不可代填"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "unknown",
+      "design_ready": false,
+      "unknown_reason": "需要独立膜厚与面密度或其他适用测量"
+    },
+    {
+      "record_id": "MP-011",
+      "material_id": "Cr_film",
+      "property": "source_theoretical_density",
+      "value": 7.2,
+      "unit": "g/cm3",
+      "source_id": "M03",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-012",
+      "material_id": "Cr_film",
+      "property": "melting_temperature",
+      "value": 1857,
+      "unit": "degC",
+      "source_id": "M03",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-013",
+      "material_id": "Cr_film",
+      "property": "source_thermal_conductivity",
+      "value": 94,
+      "unit": "W/(m K)",
+      "source_id": "M03",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-014",
+      "material_id": "Cr_film",
+      "property": "source_linear_expansion",
+      "value": 4.9e-06,
+      "unit": "1/K",
+      "source_id": "M03",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-015",
+      "material_id": "Cr_film",
+      "property": "film_effective_density",
+      "value": null,
+      "unit": "g/cm3",
+      "source_id": null,
+      "state": "user_machine_thin_film",
+      "conditions": {
+        "notes": "真实膜密度未知，块材不可代填"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "unknown",
+      "design_ready": false,
+      "unknown_reason": "需要独立膜厚与面密度或其他适用测量"
+    },
+    {
+      "record_id": "MP-016",
+      "material_id": "Al_film",
+      "property": "source_theoretical_density",
+      "value": 2.7,
+      "unit": "g/cm3",
+      "source_id": "M04",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-017",
+      "material_id": "Al_film",
+      "property": "melting_temperature",
+      "value": 660,
+      "unit": "degC",
+      "source_id": "M04",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-018",
+      "material_id": "Al_film",
+      "property": "source_thermal_conductivity",
+      "value": 235,
+      "unit": "W/(m K)",
+      "source_id": "M04",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-019",
+      "material_id": "Al_film",
+      "property": "source_linear_expansion",
+      "value": 2.31e-05,
+      "unit": "1/K",
+      "source_id": "M04",
+      "state": "source_bulk_not_film",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-020",
+      "material_id": "Al_film",
+      "property": "film_effective_density",
+      "value": null,
+      "unit": "g/cm3",
+      "source_id": null,
+      "state": "user_machine_thin_film",
+      "conditions": {
+        "notes": "真实膜密度未知，块材不可代填"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "unknown",
+      "design_ready": false,
+      "unknown_reason": "需要独立膜厚与面密度或其他适用测量"
+    },
+    {
+      "record_id": "MP-021",
+      "material_id": "Cu_film",
+      "property": "refractive_index_n",
+      "value": 1.006626865671641,
+      "unit": "1",
+      "source_id": "M05",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Cu_Johnson",
+        "source_sha256": "265ef243207866361daff0544b5d11fe7142bb2ec79681913546d4334f81a009",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-022",
+      "material_id": "Cu_film",
+      "property": "extinction_coefficient_k",
+      "value": 2.5823074626865674,
+      "unit": "1",
+      "source_id": "M05",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Cu_Johnson",
+        "source_sha256": "265ef243207866361daff0544b5d11fe7142bb2ec79681913546d4334f81a009",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-023",
+      "material_id": "Cu_film",
+      "property": "refractive_index_n",
+      "value": 0.270023419203747,
+      "unit": "1",
+      "source_id": "M05",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Cu_Johnson",
+        "source_sha256": "265ef243207866361daff0544b5d11fe7142bb2ec79681913546d4334f81a009",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-024",
+      "material_id": "Cu_film",
+      "property": "extinction_coefficient_k",
+      "value": 3.408091334894614,
+      "unit": "1",
+      "source_id": "M05",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Cu_Johnson",
+        "source_sha256": "265ef243207866361daff0544b5d11fe7142bb2ec79681913546d4334f81a009",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-025",
+      "material_id": "Cu_film",
+      "property": "refractive_index_n",
+      "value": 0.7157603686635945,
+      "unit": "1",
+      "source_id": "M05",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Cu_Johnson",
+        "source_sha256": "265ef243207866361daff0544b5d11fe7142bb2ec79681913546d4334f81a009",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-026",
+      "material_id": "Cu_film",
+      "property": "extinction_coefficient_k",
+      "value": 10.655207373271889,
+      "unit": "1",
+      "source_id": "M05",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Cu_Johnson",
+        "source_sha256": "265ef243207866361daff0544b5d11fe7142bb2ec79681913546d4334f81a009",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-027",
+      "material_id": "Cu_film",
+      "property": "refractive_index_n",
+      "value": 0.79745994,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Cu_McPeak",
+        "source_sha256": "b088b10b7871a831d4217d68c36c5783ab015d1cf7f59b8c0814c1b8c6758e0e",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-028",
+      "material_id": "Cu_film",
+      "property": "extinction_coefficient_k",
+      "value": 2.56420404,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Cu_McPeak",
+        "source_sha256": "b088b10b7871a831d4217d68c36c5783ab015d1cf7f59b8c0814c1b8c6758e0e",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-029",
+      "material_id": "Cu_film",
+      "property": "refractive_index_n",
+      "value": 0.10926466504,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Cu_McPeak",
+        "source_sha256": "b088b10b7871a831d4217d68c36c5783ab015d1cf7f59b8c0814c1b8c6758e0e",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-030",
+      "material_id": "Cu_film",
+      "property": "extinction_coefficient_k",
+      "value": 3.5802326054,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Cu_McPeak",
+        "source_sha256": "b088b10b7871a831d4217d68c36c5783ab015d1cf7f59b8c0814c1b8c6758e0e",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-031",
+      "material_id": "Cu_film",
+      "property": "refractive_index_n",
+      "value": 0.194332409,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Cu_McPeak",
+        "source_sha256": "b088b10b7871a831d4217d68c36c5783ab015d1cf7f59b8c0814c1b8c6758e0e",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-032",
+      "material_id": "Cu_film",
+      "property": "extinction_coefficient_k",
+      "value": 10.92097821,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Cu_McPeak",
+        "source_sha256": "b088b10b7871a831d4217d68c36c5783ab015d1cf7f59b8c0814c1b8c6758e0e",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-033",
+      "material_id": "Cr_film",
+      "property": "refractive_index_n",
+      "value": 3.181212121212121,
+      "unit": "1",
+      "source_id": "M06",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Cr_Johnson",
+        "source_sha256": "756f5c6be6c19c46dc3fb1580db069aafef1bb3b914293e141d7fc4b738ee5e4",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-034",
+      "material_id": "Cr_film",
+      "property": "extinction_coefficient_k",
+      "value": 3.329090909090909,
+      "unit": "1",
+      "source_id": "M06",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Cr_Johnson",
+        "source_sha256": "756f5c6be6c19c46dc3fb1580db069aafef1bb3b914293e141d7fc4b738ee5e4",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-035",
+      "material_id": "Cr_film",
+      "property": "refractive_index_n",
+      "value": 3.139904761904762,
+      "unit": "1",
+      "source_id": "M06",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Cr_Johnson",
+        "source_sha256": "756f5c6be6c19c46dc3fb1580db069aafef1bb3b914293e141d7fc4b738ee5e4",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-036",
+      "material_id": "Cr_film",
+      "property": "extinction_coefficient_k",
+      "value": 3.315047619047619,
+      "unit": "1",
+      "source_id": "M06",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Cr_Johnson",
+        "source_sha256": "756f5c6be6c19c46dc3fb1580db069aafef1bb3b914293e141d7fc4b738ee5e4",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-037",
+      "material_id": "Cr_film",
+      "property": "refractive_index_n",
+      "value": 3.668294930875576,
+      "unit": "1",
+      "source_id": "M06",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Cr_Johnson",
+        "source_sha256": "756f5c6be6c19c46dc3fb1580db069aafef1bb3b914293e141d7fc4b738ee5e4",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-038",
+      "material_id": "Cr_film",
+      "property": "extinction_coefficient_k",
+      "value": 4.180046082949309,
+      "unit": "1",
+      "source_id": "M06",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Cr_Johnson",
+        "source_sha256": "756f5c6be6c19c46dc3fb1580db069aafef1bb3b914293e141d7fc4b738ee5e4",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-039",
+      "material_id": "Al_film",
+      "property": "refractive_index_n",
+      "value": 1.0151917819885035,
+      "unit": "1",
+      "source_id": "M07",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Al_Rakic",
+        "source_sha256": "e93b31fe821551836e5b000949c67c633b8a1ca1f2c5549f4db0f1c03b24844d",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-040",
+      "material_id": "Al_film",
+      "property": "extinction_coefficient_k",
+      "value": 6.627283074302747,
+      "unit": "1",
+      "source_id": "M07",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Al_Rakic",
+        "source_sha256": "e93b31fe821551836e5b000949c67c633b8a1ca1f2c5549f4db0f1c03b24844d",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-041",
+      "material_id": "Al_film",
+      "property": "refractive_index_n",
+      "value": 1.4481896039603963,
+      "unit": "1",
+      "source_id": "M07",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Al_Rakic",
+        "source_sha256": "e93b31fe821551836e5b000949c67c633b8a1ca1f2c5549f4db0f1c03b24844d",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-042",
+      "material_id": "Al_film",
+      "property": "extinction_coefficient_k",
+      "value": 7.536687438118812,
+      "unit": "1",
+      "source_id": "M07",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Al_Rakic",
+        "source_sha256": "e93b31fe821551836e5b000949c67c633b8a1ca1f2c5549f4db0f1c03b24844d",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-043",
+      "material_id": "Al_film",
+      "property": "refractive_index_n",
+      "value": 1.5785092140921408,
+      "unit": "1",
+      "source_id": "M07",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Al_Rakic",
+        "source_sha256": "e93b31fe821551836e5b000949c67c633b8a1ca1f2c5549f4db0f1c03b24844d",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-044",
+      "material_id": "Al_film",
+      "property": "extinction_coefficient_k",
+      "value": 15.658109304426379,
+      "unit": "1",
+      "source_id": "M07",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Al_Rakic",
+        "source_sha256": "e93b31fe821551836e5b000949c67c633b8a1ca1f2c5549f4db0f1c03b24844d",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-045",
+      "material_id": "Al_film",
+      "property": "refractive_index_n",
+      "value": 27.162881470730525,
+      "unit": "1",
+      "source_id": "M07",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 10.6,
+        "dataset_id": "Al_Rakic",
+        "source_sha256": "e93b31fe821551836e5b000949c67c633b8a1ca1f2c5549f4db0f1c03b24844d",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-046",
+      "material_id": "Al_film",
+      "property": "extinction_coefficient_k",
+      "value": 89.89329608127721,
+      "unit": "1",
+      "source_id": "M07",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 10.6,
+        "dataset_id": "Al_Rakic",
+        "source_sha256": "e93b31fe821551836e5b000949c67c633b8a1ca1f2c5549f4db0f1c03b24844d",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-047",
+      "material_id": "Al_film",
+      "property": "refractive_index_n",
+      "value": 0.789405353,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Al_McPeak",
+        "source_sha256": "4cc03719aeee3f9c9ea2ecd78affeb3212fbd19a60988d228b59d4f78245a7ec",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-048",
+      "material_id": "Al_film",
+      "property": "extinction_coefficient_k",
+      "value": 5.851936501,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "dataset_id": "Al_McPeak",
+        "source_sha256": "4cc03719aeee3f9c9ea2ecd78affeb3212fbd19a60988d228b59d4f78245a7ec",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-049",
+      "material_id": "Al_film",
+      "property": "refractive_index_n",
+      "value": 1.15279428928,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Al_McPeak",
+        "source_sha256": "4cc03719aeee3f9c9ea2ecd78affeb3212fbd19a60988d228b59d4f78245a7ec",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-050",
+      "material_id": "Al_film",
+      "property": "extinction_coefficient_k",
+      "value": 6.6898271656,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 0.6328,
+        "dataset_id": "Al_McPeak",
+        "source_sha256": "4cc03719aeee3f9c9ea2ecd78affeb3212fbd19a60988d228b59d4f78245a7ec",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-051",
+      "material_id": "Al_film",
+      "property": "refractive_index_n",
+      "value": 1.347399401,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Al_McPeak",
+        "source_sha256": "4cc03719aeee3f9c9ea2ecd78affeb3212fbd19a60988d228b59d4f78245a7ec",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-052",
+      "material_id": "Al_film",
+      "property": "extinction_coefficient_k",
+      "value": 14.13278052,
+      "unit": "1",
+      "source_id": "M08",
+      "state": "dataset_specific_reference_film",
+      "conditions": {
+        "wavelength_um": 1.55,
+        "dataset_id": "Al_McPeak",
+        "source_sha256": "4cc03719aeee3f9c9ea2ecd78affeb3212fbd19a60988d228b59d4f78245a7ec",
+        "method": "linear interpolation of n and k in wavelength within one source dataset"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "derived",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-053",
+      "material_id": "Ge_substrate",
+      "property": "refractive_index_n",
+      "value": 4.10973,
+      "unit": "1",
+      "source_id": "M09",
+      "state": "crystalline_bulk",
+      "conditions": {
+        "wavelength_um": 2,
+        "temperature_K": 295,
+        "locator": "CHARMS Table7; uncertainty Table6"
+      },
+      "uncertainty": {
+        "value": 0.000121,
+        "unit": "1",
+        "note": "原论文所列特定测量不确定度，置信定义沿用原文"
+      },
+      "status": "measured",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-054",
+      "material_id": "Ge_substrate",
+      "property": "refractive_index_n",
+      "value": 4.04579,
+      "unit": "1",
+      "source_id": "M09",
+      "state": "crystalline_bulk",
+      "conditions": {
+        "wavelength_um": 3,
+        "temperature_K": 295,
+        "locator": "CHARMS Table7; uncertainty Table6"
+      },
+      "uncertainty": {
+        "value": 6.97e-05,
+        "unit": "1",
+        "note": "原论文所列特定测量不确定度，置信定义沿用原文"
+      },
+      "status": "measured",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-055",
+      "material_id": "Ge_substrate",
+      "property": "refractive_index_n",
+      "value": 4.02577,
+      "unit": "1",
+      "source_id": "M09",
+      "state": "crystalline_bulk",
+      "conditions": {
+        "wavelength_um": 4,
+        "temperature_K": 295,
+        "locator": "CHARMS Table7; uncertainty Table6"
+      },
+      "uncertainty": {
+        "value": 6.52e-05,
+        "unit": "1",
+        "note": "原论文所列特定测量不确定度，置信定义沿用原文"
+      },
+      "status": "measured",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-056",
+      "material_id": "Ge_substrate",
+      "property": "refractive_index_n",
+      "value": 4.01678,
+      "unit": "1",
+      "source_id": "M09",
+      "state": "crystalline_bulk",
+      "conditions": {
+        "wavelength_um": 5,
+        "temperature_K": 295,
+        "locator": "CHARMS Table7; uncertainty Table6"
+      },
+      "uncertainty": {
+        "value": 6.41e-05,
+        "unit": "1",
+        "note": "原论文所列特定测量不确定度，置信定义沿用原文"
+      },
+      "status": "measured",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-057",
+      "material_id": "Ge_substrate",
+      "property": "refractive_index_n",
+      "value": 4.0026,
+      "unit": "1",
+      "source_id": "M10",
+      "state": "crystalline_bulk",
+      "conditions": {
+        "wavelength_um": 11,
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-058",
+      "material_id": "Ge_substrate",
+      "property": "mass_density",
+      "value": 5.33,
+      "unit": "g/cm3",
+      "source_id": "M10",
+      "state": "crystalline_bulk",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-059",
+      "material_id": "Ge_substrate",
+      "property": "thermal_conductivity",
+      "value": 58.62,
+      "unit": "W/(m K)",
+      "source_id": "M10",
+      "state": "crystalline_bulk",
+      "conditions": {
+        "temperature_K": 293
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-060",
+      "material_id": "Ge_substrate",
+      "property": "linear_expansion",
+      "value": 6.1e-06,
+      "unit": "1/K",
+      "source_id": "M10",
+      "state": "crystalline_bulk",
+      "conditions": {
+        "temperature_K": 298
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-061",
+      "material_id": "Ge_substrate",
+      "property": "specific_heat",
+      "value": 310,
+      "unit": "J/(kg K)",
+      "source_id": "M10",
+      "state": "crystalline_bulk",
+      "conditions": {
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "typical",
+      "design_ready": false
+    },
+    {
+      "record_id": "MP-062",
+      "material_id": "Ge_substrate",
+      "property": "absorption_coefficient",
+      "value": 0.027,
+      "unit": "1/cm",
+      "source_id": "M10",
+      "state": "optical_crystal",
+      "conditions": {
+        "wavelength_um": 10.6,
+        "grade": "not_reported",
+        "temperature": "not_reported"
+      },
+      "uncertainty": {
+        "status": "not_reported",
+        "note": "无逐批/逐点误差；不解释为零"
+      },
+      "status": "limit",
+      "design_ready": false,
+      "qualifier": "<"
+    }
+  ]
+}

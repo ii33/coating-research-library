@@ -1,0 +1,393 @@
+{
+  "schema_version": "1.0",
+  "scope": "coating ZnS,YbF3,MgF2; substrate ZnS,K9(H-K9L exemplar),ZnSe",
+  "access_date": "2026-10-02",
+  "archival_policy": "原创中文摘要和必要事实；版权不明原文不入库；开放许可仍逐项核验",
+  "sources": [
+    {
+      "id": "IR01",
+      "title": "Merck/EMD Zinc Sulfide Patinal Product Information",
+      "url": "https://www.emdgroup.com/Products/PM/us/ZnS_tcm2080-us.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical",
+      "version_or_date": "2019-08",
+      "locator": "p1–3",
+      "access_status": "原厂PDF相关页/表已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "ZnS膜光学色散、应力、源材货号及阻蒸/电子束工艺建议"
+      ],
+      "limitations": "源温2000–2200°C与其他来源温度定义不一致；不作设备设定。n/k完整测试工况、误差未列。",
+      "summary_path": "sources/summaries/ir_01_manufacturer_technical.md"
+    },
+    {
+      "id": "IR02",
+      "title": "Umicore ZnS 99.99% 4.0–8.0 mm, 0481699",
+      "url": "https://mds.umicore.com/en/thin-film-products/products/evaporation-materials/zns-99-99-4-0-8-0mm-500g-0481699",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical",
+      "version_or_date": "网页未标版本",
+      "locator": "Specifications; evaporation source; film optical constants",
+      "access_status": "原厂网页已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "ZnS源料物性、Mo衬套/Mo-Ta舟、基片温度类别和部分薄膜数据"
+      ],
+      "limitations": "550 nm k=3.85与透明用途矛盾，隔离不采纳；10 µm n与Merck不同。",
+      "summary_path": "sources/summaries/ir_02_manufacturer_technical.md"
+    },
+    {
+      "id": "IR03",
+      "title": "Rahul Vishwakarma, Effect of substrate temperature on ZnS films prepared by thermal evaporation technique",
+      "url": "https://link.springer.com/article/10.1007/s40094-015-0177-5",
+      "access_date": "2026-10-02",
+      "source_class": "original_research",
+      "version_or_date": "2015-06-02",
+      "locator": "Experimental; structural analysis",
+      "access_status": "出版商开放全文可读；未保存原文",
+      "license_and_archival_status": "出版商标为Open access；本轮未核对具体许可条款，未保存全文",
+      "supported_claims": [
+        "500 nm热蒸发ZnS的基片温度、化学计量与晶粒变化实例"
+      ],
+      "limitations": "目标为半导体膜；压力/速率不等同IR低损耗。网页吸收公式疑似排版问题，未采其反演α。",
+      "summary_path": "sources/summaries/ir_03_original_research.md"
+    },
+    {
+      "id": "IR04",
+      "title": "Crystran Zinc Sulphide FLIR Optical SDS",
+      "url": "https://www.crystran.com/media/wysiwyg/MSDS/zinc-sulphide-flir-zns-msds.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "official_sds",
+      "version_or_date": "2016-05-11",
+      "locator": "Sections 1–3,5–8,10,13",
+      "access_status": "官方PDF可读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "ZnS晶体身份、粉尘/酸接触及废弃风险识别"
+      ],
+      "limitations": "公开路径为2016版，实际来料必须核最新地区版；不替代蒸发颗粒SDS。",
+      "summary_path": "sources/summaries/ir_04_official_sds.md"
+    },
+    {
+      "id": "IR05",
+      "title": "Merck/EMD Ytterbium Fluoride Patinal Product Information",
+      "url": "https://www.emdgroup.com/Products/PM/us/101601_YbF3_tcm2080_127462-us.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical",
+      "version_or_date": "2019-08",
+      "locator": "p1–3",
+      "access_status": "官方PDF已全文核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "YbF3膜n/k表、低拉应力、舟/衬套、蒸发及基片温度"
+      ],
+      "limitations": "典型范围200–12 µm首项单位错误/歧义；以其他原厂200 nm起端核对。实验误差、膜厚未给。",
+      "summary_path": "sources/summaries/ir_05_manufacturer_technical.md"
+    },
+    {
+      "id": "IR06",
+      "title": "Umicore Special materials — Ytterbium Fluoride application guidelines",
+      "url": "https://eom.umicore.com/storage/eom/tfp/6.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical",
+      "version_or_date": "版本未明",
+      "locator": "Ytterbium Fluoride YbF3章节",
+      "access_status": "官方PDF文本可读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "源料密度/熔点、薄膜折射率范围、透明边界、基片过热和蒸发速率"
+      ],
+      "limitations": "不同牌号与Merck温度上限并非一致，不合并成通用处方；吸收带和水峰必须保留。",
+      "summary_path": "sources/summaries/ir_06_manufacturer_technical.md"
+    },
+    {
+      "id": "IR07",
+      "title": "Properties of the YbF3 Films Prepared by Ion-Assisted Deposition, Coatings 12(11),1693",
+      "url": "https://www.mdpi.com/2079-6412/12/11/1693",
+      "access_date": "2026-10-02",
+      "source_class": "original_research",
+      "version_or_date": "2022",
+      "locator": "Sections 2.1,3; Figs3–8",
+      "access_status": "官方搜索索引全文片段可读；PDF抓取失败；摘要存档",
+      "license_and_archival_status": "MDPI开放出版政策指向CC BY；本篇PDF抓取失败，未保存全文；政策链接https://www.mdpi.com/openaccess",
+      "supported_claims": [
+        "Kaufman Ar IAD参数、F/Yb变化、短波吸收/IR水峰权衡及拉应力"
+      ],
+      "limitations": "主要网页open失败；同一出版商完整索引文本包含方法与结果，已核读。图中n/k未数字化，未捏造数据点。",
+      "summary_path": "sources/summaries/ir_07_original_research.md"
+    },
+    {
+      "id": "IR08",
+      "title": "Sigma-Aldrich 432121 Ytterbium(III) fluoride SDS Version 6.6",
+      "url": "https://www.sigmaaldrich.com/GB/en/sds/ALDRICH/432121",
+      "access_date": "2026-10-02",
+      "source_class": "official_sds",
+      "version_or_date": "原文11/07/2024（保留原格式）",
+      "locator": "Sections1–3,5–8",
+      "access_status": "官方10页PDF已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "YbF3 CAS/摩尔质量及HF释放、干燥密闭和暴露风险"
+      ],
+      "limitations": "入口为GB路径但返回美国公司/法规文本；与Materion分类不同，不据此推广为全球未分类。",
+      "summary_path": "sources/summaries/ir_08_official_sds.md"
+    },
+    {
+      "id": "IR09",
+      "title": "Materion 2DI Ytterbium fluoride powder and pieces SDS",
+      "url": "https://www.materion.com/en/resources/environmental-health-safety/safety-data-sheets/DownloadSds?sdsId=2DI_YTTERBIUM+FLUORIDE_SDS-US_English.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "official_sds",
+      "version_or_date": "版本日期未核定",
+      "locator": "Sections1–2（可检索部分）",
+      "access_status": "官方搜索摘要已核；全文工具不可读",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "与Aldrich分类差异：口服/皮肤/吸入急性毒性Category3"
+      ],
+      "limitations": "工具直接打开报octet-stream不支持；仅采官方索引明确可读条文，不声称完整SDS已经复核。",
+      "summary_path": "sources/summaries/ir_09_official_sds.md"
+    },
+    {
+      "id": "IR10",
+      "title": "Merck/EMD Magnesium Fluoride Patinal Product Information",
+      "url": "https://www.emdgroup.com/Products/PM/us/MgF2_EMD_2022.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical",
+      "version_or_date": "2023-01",
+      "locator": "p1–4",
+      "access_status": "官方5页PDF已全文核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "MgF2薄膜n/k、packing density、膜厚/应力适用边界、蒸发范围及低氧料"
+      ],
+      "limitations": "文件名2022而正文2023，以正文为准。W舟/源温与KJLC不能直接合并。",
+      "summary_path": "sources/summaries/ir_10_manufacturer_technical.md"
+    },
+    {
+      "id": "IR11",
+      "title": "Kurt J. Lesker Magnesium Fluoride MgF2 Evaporation Process Notes",
+      "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=mg2",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_process_notes",
+      "version_or_date": "页面未标日期",
+      "locator": "Specifications; thermal/e-beam evaporation",
+      "access_status": "官方网页已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "Mo/Ta舟、衬套选择、W反应警告、源温与压力示例、低功率扫束风险"
+      ],
+      "limitations": "是供应商特定设备经验，不是跨设备保证；未将填料比例或枪功率扩展为用户机台处方。",
+      "summary_path": "sources/summaries/ir_11_manufacturer_process_notes.md"
+    },
+    {
+      "id": "IR12",
+      "title": "Crystran Magnesium Fluoride MgF2 optical material data",
+      "url": "https://www.crystran.com/optical-materials/magnesium-fluoride-mgf2/",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical_compilation",
+      "version_or_date": "页面未标版本",
+      "locator": "Product Data; Refractive Index; References",
+      "access_status": "官方网页已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "单晶n_o/n_e及各向异性热/力学参数，对照薄膜状态"
+      ],
+      "limitations": "含历史文献汇编；误差和部分测温缺失。仅选无明显排版歧义项；dn/dT未带完整单位不导入。",
+      "summary_path": "sources/summaries/ir_12_manufacturer_technical_compilation.md"
+    },
+    {
+      "id": "IR13",
+      "title": "Granata et al., Optical and mechanical properties of ion-beam-sputtered MgF2 thin films for gravitational-wave interferometers",
+      "url": "https://arxiv.org/abs/2111.01646",
+      "access_date": "2026-10-02",
+      "source_class": "original_research_preprint",
+      "version_or_date": "2021-11-02首发",
+      "locator": "Methods; optical/mechanical properties; Tables4–6",
+      "access_status": "作者预印本全文文本可读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "IBS膜n、密度、E/ν不确定度及退火吸收/裂纹证据"
+      ],
+      "limitations": "非阻蒸薄膜；保存原始预印本编号，不采用工具自动插入的后续日期。许可未核定，未复制全文。",
+      "summary_path": "sources/summaries/ir_13_original_research_preprint.md"
+    },
+    {
+      "id": "IR14",
+      "title": "Crystran Magnesium Fluoride Optical Crystal SDS",
+      "url": "https://www.crystran.com/wp-content/uploads/2025/09/magnesium-fluoride-mgf2-msds.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "official_sds",
+      "version_or_date": "2026-07-06",
+      "locator": "Sections2,7–8,10,13",
+      "access_status": "官方2页PDF已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "晶体MgF2粉尘/刺激、强酸不相容、HF分解风险"
+      ],
+      "limitations": "晶体不是所有颗粒/纳米粉规格；本文不转载医疗处理细节。",
+      "summary_path": "sources/summaries/ir_14_official_sds.md"
+    },
+    {
+      "id": "IR15",
+      "title": "Hellma Materials CVD Zinc Sulfide and Cleartran",
+      "url": "https://www.hellma-materials.com/wp-content/uploads/2024/11/ZincSulfide_Cleartran.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical",
+      "version_or_date": "2020-01（01/20 EN-1）",
+      "locator": "p3对照表",
+      "access_status": "官方4页PDF已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "标准CVD与Cleartran的6mm阈值带宽、光热/力学及n/α数据"
+      ],
+      "limitations": "硬度与Crystran冲突；强度有试验类别但缺统计，不能当许用值。",
+      "summary_path": "sources/summaries/ir_15_manufacturer_technical.md"
+    },
+    {
+      "id": "IR16",
+      "title": "Crystran Zinc Sulphide Multispectral product page and datasheet",
+      "url": "https://www.crystran.com/optical-materials/zinc-sulphide-zinc-sulfide-multispectral-zns/",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical_compilation",
+      "version_or_date": "网页未标版本；PDF封装Handbook_2018 v1",
+      "locator": "Product Data; Refractive Index; PDF pp1–2",
+      "access_status": "官方网页与PDF已核读；公开数据下载链接抓取失败",
+      "license_and_archival_status": "网页图文版权未明；两份2020透过率数据明确允许署名Crystran使用，但下载失败，未保存数据",
+      "supported_claims": [
+        "HIP状态、n/α和MS物性；公开光谱数据许可线索"
+      ],
+      "limitations": "网页与旧PDF强度、折射率局部项目不同；硬度与Hellma冲突；2.7µm α亦有差异，未用于模型。",
+      "summary_path": "sources/summaries/ir_16_manufacturer_technical_compilation.md",
+      "related_url": "https://www.crystran.com/wp-content/uploads/2025/09/zinc-sulfide-zns-ms-data-sheet.pdf"
+    },
+    {
+      "id": "IR17",
+      "title": "Crystran Handbook — Zinc Sulphide FLIR materials data",
+      "url": "https://www.crystran.com/media/wysiwyg/PDF/Handbook_2023_website.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical_compilation",
+      "version_or_date": "Handbook 2023",
+      "locator": "印刷p118",
+      "access_status": "官方手册相关页已核；未保存整本",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "未HIP ZnS FLIR的光学、热参数及硬度冲突依据"
+      ],
+      "limitations": "来源将其描述为比MS强，但硬度项目与Hellma排序相反；不据此建立通用等级排名。",
+      "summary_path": "sources/summaries/ir_17_manufacturer_technical_compilation.md"
+    },
+    {
+      "id": "IR18",
+      "title": "Crystran Zinc Sulphide Multispectral Optical SDS",
+      "url": "https://www.crystran.com/wp-content/uploads/2025/09/zinc-sulphide-multispectral-zns-msds.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "official_sds",
+      "version_or_date": "日期需入厂再核",
+      "locator": "身份/危害/处理栏目",
+      "access_status": "官方PDF可读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "多光谱ZnS与FLIR分列的官方SDS入口"
+      ],
+      "limitations": "已定位并确认2页官方SDS，不将FLIR危害分级自动作为每种MS来料的法定分类。",
+      "summary_path": "sources/summaries/ir_18_official_sds.md"
+    },
+    {
+      "id": "IR19",
+      "title": "CDGM H-K9L optical glass datasheet 517642",
+      "url": "https://www.cdgmgd.com/webapp/pdf/H-K9L.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical",
+      "version_or_date": "单页未标日期",
+      "locator": "单页n/透过率/热/机械表",
+      "access_status": "官方单页PDF已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "特定CDGM牌号的n、5/10mm内透过率、热/力学及relative dn/dT"
+      ],
+      "limitations": "不代表所有K9或N-BK7。误差、部分条件未给；不把Tg当工艺安全上限。",
+      "summary_path": "sources/summaries/ir_19_manufacturer_technical.md"
+    },
+    {
+      "id": "IR20",
+      "title": "CDGM optical glass database search K9",
+      "url": "https://www.cdgmgd.com/database/search.htm?content=K9&key=1&pageIndex=1",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_catalog",
+      "version_or_date": "访问时在线版",
+      "locator": "H-K9L、H-K9LGT、H-K9L*、H-K9LA行",
+      "access_status": "官方网页已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "K9家族具体牌号、交叉对照及牌号不能自动等同"
+      ],
+      "limitations": "近似交叉对照并非成分/物性完全等同的证据。",
+      "summary_path": "sources/summaries/ir_20_manufacturer_catalog.md"
+    },
+    {
+      "id": "IR21",
+      "title": "Crystran Zinc Selenide ZnSe optical material data",
+      "url": "https://www.crystran.co.uk/optical-materials/zinc-selenide-znse/",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical_compilation",
+      "version_or_date": "页面未标日期",
+      "locator": "Product Data; Refractive Index; Notes",
+      "access_status": "官方网页已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "ZnSe n(λ)、α离散点、机械热数据、正常空气温度警示"
+      ],
+      "limitations": "没有完整k谱/误差；表中物性应与各自测温匹配。",
+      "summary_path": "sources/summaries/ir_21_manufacturer_technical_compilation.md"
+    },
+    {
+      "id": "IR22",
+      "title": "Coherent Optical Materials — ZnSe",
+      "url": "https://www.coherent.com/content/dam/coherent/site/en/resources/datasheet/optics/optical-materials-ds.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "manufacturer_technical",
+      "version_or_date": "文件未标明确日期",
+      "locator": "印刷p4–5",
+      "access_status": "官方9页PDF相关页已核；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "ZnSe20°C材料性质、体吸收上限、真空量热、厚度/温变曲线"
+      ],
+      "limitations": "目录上限不代表用户来料实测；强度统计和膜吸收须另验。",
+      "summary_path": "sources/summaries/ir_22_manufacturer_technical.md"
+    },
+    {
+      "id": "IR23",
+      "title": "Crystran Zinc Selenide Optical Crystal SDS",
+      "url": "https://www.crystran.com/wp-content/uploads/2025/09/zinc-selenide-znse-msds.pdf",
+      "access_date": "2026-10-02",
+      "source_class": "official_sds",
+      "version_or_date": "2026-07-06",
+      "locator": "Sections2–3,5–8,10,13",
+      "access_status": "官方2页PDF已核读；未保存原文",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "ZnSe粉尘毒性、水生环境风险、酸接触/火灾分解"
+      ],
+      "limitations": "完整件与粉尘/烧损件暴露情景不同；不据商业数据页的safe泛称削弱SDS。",
+      "summary_path": "sources/summaries/ir_23_official_sds.md"
+    },
+    {
+      "id": "IR24",
+      "title": "Merck Magnesium fluoride 105834 Patinal SDS official entry",
+      "url": "https://www.merckmillipore.com/INTL/en/product/msds/MDA_CHEM-105834",
+      "access_date": "2026-10-02",
+      "source_class": "official_sds_entry",
+      "version_or_date": "专属PDF检索显示v4.1，2024-03-20",
+      "locator": "SDS官方入口及产品名称",
+      "access_status": "官方入口可读，已定位专属SDS版本",
+      "license_and_archival_status": "版权归发布者/作者；未见明确再分发许可；仅摘要与必要事实，不存原文",
+      "supported_claims": [
+        "与MgF2蒸发颗粒货号对应的安全文件线索"
+      ],
+      "limitations": "仅入口及版本/身份已确认；未用于完整危害分类，生产须取实际地区全文。",
+      "summary_path": "sources/summaries/ir_24_official_sds_entry.md"
+    }
+  ]
+}

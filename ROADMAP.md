@@ -100,4 +100,4 @@
 
 ## 当前下一步
 
-T01行星盘结构v0.2、T02建模仿真v0.1与T03修正板优化v0.1已形成首轮理论优先范围的冻结基线。T03包含6章、7项来源、实体板参考优化器、合成对照、失败反例和数值加密；47项硬断言与42项交付检查通过，见[验收记录](03_correction_plate_optimization/reviews/ROUND1_ACCEPTANCE.md)。下一步按[T04移交](03_correction_plate_optimization/T04_HANDOFF.md)研究镀膜材料与基片材料，从Ta2O5开始严格遵循原优先顺序。实际机器性能、制造放行和指定模型完整正式签署均未完成，不从合成验证推导实机达标。T05–T10仍排队。
+T01–T04首轮优先研究已形成冻结基线。T04 v1包括6份报告、16张独立材料/基片卡、76项来源、207条条件化参数和可复算光学例；12项本地测试通过，见[验收记录](04_coating_and_substrate_materials/reviews/first_round_acceptance.md)。原始光谱保持本地，公开副本测试明确跳过原件重建。下一步按[T05移交](04_coating_and_substrate_materials/T05_HANDOFF.md)研究阻蒸、电子枪蒸发源及材料耦合。薄膜/块材/基片、来料牌号、严格上界和来源隔离继续保留，不从公开表值推导实机或量产达标。T06–T10仍排队；完整指定模型审查状态不冒称完成。

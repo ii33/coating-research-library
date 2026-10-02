@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:coating-research:T04:property-record:1.0",
+  "title": "Conditioned material property record",
+  "type": "object",
+  "required": ["record_id", "material_id", "property", "value", "unit", "source_id", "state", "conditions", "uncertainty", "status", "design_ready"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "material_id": {"enum": ["Ta2O5_film", "ZnS_film", "TiO2_film", "YbF3_film", "SiO2_film", "MgF2_film", "Al2O3_film", "H4_film", "Ge_film", "Cu_film", "Cr_film", "Al_film", "ZnS_substrate", "Ge_substrate", "K9_substrate", "ZnSe_substrate"]},
+    "property": {"type": "string", "minLength": 1},
+    "value": {"type": ["number", "array", "string", "null"], "items": {"type": "number"}},
+    "unit": {"type": "string", "minLength": 1},
+    "source_id": {"type": ["string", "null"]},
+    "state": {"type": "string", "minLength": 1},
+    "conditions": {"type": "object", "minProperties": 1},
+    "uncertainty": {"type": "object", "minProperties": 1},
+    "status": {"enum": ["measured", "typical", "limit", "derived", "model", "unknown", "quarantined", "comparison_only", "literature_reference"]},
+    "qualifier": {"enum": ["<", "<=", ">", ">=", "approximately"]},
+    "unknown_reason": {"type": "string", "minLength": 1},
+    "design_ready": {"const": false}
+  },
+  "allOf": [
+    {"if": {"properties": {"value": {"type": "null"}}}, "then": {"required": ["unknown_reason"], "properties": {"status": {"const": "unknown"}}}},
+    {"if": {"properties": {"status": {"const": "limit"}}}, "then": {"required": ["qualifier"]}}
+  ],
+  "additionalProperties": true,
+  "$comment": "Additional fields preserve group-specific provenance. Data records are literature references only; independent production validation is outside T04 v1."
+}

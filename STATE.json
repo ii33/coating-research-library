@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T00:29:41.661512+00:00",
+  "updated_at_utc": "2026-10-02T00:56:24.569350+00:00",
   "project_status": "active",
   "setup_status": "complete_integrity_checked",
   "round": 1,
-  "active_topic_id": "T04",
-  "active_task_id": "T04.P01",
-  "active_scope": "镀膜材料与基片材料首轮公开证据研究，按原优先顺序从Ta2O5接续启动",
-  "later_topics_policy": "T05_to_T10_planning_only_until_preceding_round1_scope_handoff",
+  "active_topic_id": "T05",
+  "active_task_id": "T05.P01",
+  "active_scope": "蒸发源特性与材料耦合建模首轮公开理论研究，按阻蒸、电子枪原优先顺序接续启动",
+  "later_topics_policy": "T06_to_T10_planning_only_until_preceding_round1_scope_handoff",
   "topic_order": [
     "T01",
     "T02",
@@ -24,8 +24,8 @@
     "T01": "round1_theory_ready_for_handoff",
     "T02": "round1_theory_and_synthetic_scope_complete",
     "T03": "round1_theory_and_synthetic_scope_complete",
-    "T04": "starting",
-    "T05": "queued",
+    "T04": "round1_priority_public_research_complete",
+    "T05": "starting",
     "T06": "queued",
     "T07": "queued",
     "T08": "queued",
@@ -36,7 +36,7 @@
     "T01": "theory_handoff_ready_not_machine_validated_or_formally_signed_off",
     "T02": "bounded_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
     "T03": "bounded_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
-    "T04": "pending",
+    "T04": "bounded_priority_public_research_complete_not_experimentally_or_production_validated",
     "T05": "pending",
     "T06": "pending",
     "T07": "pending",
@@ -44,7 +44,7 @@
     "T09": "pending",
     "T10": "pending"
   },
-  "next_action": "接收T03 v0.1冻结优化研究与T04移交，依原顺序建立12项镀膜材料和4项基片的证据数据卡",
+  "next_action": "接收T04 v1材料证据和T05移交，研究阻蒸与电子枪的电热、功率沉积、蒸发通量及材料耦合接口",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -53,9 +53,9 @@
     "Q06"
   ],
   "notes": [
-    "T01 v0.2、T02 v0.1与T03 v0.1理论优先范围已形成可移交基线；不等同实机验证或指定模型完整正式审查",
-    "T03完成47项硬断言和42项交付检查，含合成改善、二维恶化反例及数值加密；实机性能和制造放行未验证",
-    "T04接续启动，从Ta2O5开始按原清单串行研究；T05–T10仍排队，缺失材料参数保留为空"
+    "T01–T04首轮优先研究已形成可移交基线；不等同实机验证、量产验收或指定完整模型审查",
+    "T04完成16张材料/基片卡、76项来源、207条条件化参数和12项本地测试；原始光谱不随仓库发布，公开副本明确跳过原件重建检查",
+    "T05按阻蒸、电子枪原优先顺序接续启动；T06–T10仍排队，条件依赖、隔离值与未知参数继续保留"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -68,10 +68,10 @@
     "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
   },
   "handoff_evidence": [
-    "03_correction_plate_optimization/T04_HANDOFF.md",
-    "03_correction_plate_optimization/reviews/ROUND1_ACCEPTANCE.md",
-    "03_correction_plate_optimization/stage_status.json",
-    "03_correction_plate_optimization/verification/frozen_manifest.json"
+    "04_coating_and_substrate_materials/T05_HANDOFF.md",
+    "04_coating_and_substrate_materials/reviews/first_round_acceptance.md",
+    "04_coating_and_substrate_materials/reviews/stage_status.json",
+    "04_coating_and_substrate_materials/reviews/freeze_manifest.json"
   ],
   "machine_validation": "not_performed",
   "formal_review_signoff": "not_performed"

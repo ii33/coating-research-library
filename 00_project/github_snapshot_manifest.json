@@ -1,6 +1,6 @@
 {
-  "snapshot": "coating-research-library-T03-v0.1-handoff",
-  "created_at_utc": "2026-10-02T00:29:41.661512+00:00",
+  "snapshot": "coating-research-library-T04-v1-handoff",
+  "created_at_utc": "2026-10-02T00:56:24.569350+00:00",
   "repository": "ii33/coating-research-library",
   "visibility": "private",
   "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
@@ -20,8 +20,8 @@
     },
     {
       "path": "00_project/GITHUB_PUBLICATION.md",
-      "size_bytes": 2903,
-      "sha256": "ccdf291b4e168d8a7cd09648d8da1563b9083cee7bed1fd553db320b9a7601e7"
+      "size_bytes": 3513,
+      "sha256": "d702418384fd331f71341e73780bec55dd06f09e61c26e4cef3d240ed2eca0df"
     },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
@@ -51,7 +51,7 @@
     {
       "path": "00_project/planning_baseline_manifest.json",
       "size_bytes": 7665,
-      "sha256": "95d8d6c45f21d600067fb1044801d3a0127733d63070c6485a4d95e46b0aaffa"
+      "sha256": "66cfb6539d42fc87c9a894f024a06d9df272a31c4c4c941228a307d024172aa3"
     },
     {
       "path": "00_project/requirements_traceability.json",
@@ -60,8 +60,8 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 24744,
-      "sha256": "e72929fdac4d2f1b35a33b548f308f24f54d2a89b1eadb879385014f63972249"
+      "size_bytes": 30585,
+      "sha256": "fd38531e6be62dd2fc6270fe7def6315b3e7842f6b5d18a2776429c9e06bd227"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -619,9 +619,624 @@
       "sha256": "c45a8afcc95147c69b1b00b17b3ebd38f9f0379357ff98e6e3e6f849c26ed307"
     },
     {
+      "path": "04_coating_and_substrate_materials/.gitignore",
+      "size_bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
       "path": "04_coating_and_substrate_materials/README.md",
-      "size_bytes": 2737,
-      "sha256": "8ce34f05deae92b6080e35596ad405c36a481df15f9a0ee30ca012c8697f2534"
+      "size_bytes": 4680,
+      "sha256": "de7eab02c7018eeae48e160687c72fb566572f88260d6c31eda927bff8569170"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/T05_HANDOFF.md",
+      "size_bytes": 3112,
+      "sha256": "981cdf14491ce4217cd433dcc070cf1dd84567f67ef6b933ac4fcb9e37619918"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/01_Ta2O5_film.md",
+      "size_bytes": 6528,
+      "sha256": "277b8bb4cb06ddef0a6f64df18bade974ec93f45698f3932d875a9c85cb97224"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/02_ZnS_film.md",
+      "size_bytes": 5623,
+      "sha256": "ce4b6f0b8e6ae49fbab5d9ea4de180076b5a006246716662796f566563c70e26"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/03_TiO2_film.md",
+      "size_bytes": 6827,
+      "sha256": "10400072ce7fc7166c1837908ab3a4808bb52fd9dcd4eba4b10a11c2fdde4ece"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/04_YbF3_film.md",
+      "size_bytes": 5788,
+      "sha256": "fa6e9ededbf2fe2bf49e53f0e867f6fa4c599d4b3670f5cf8a5f1a8cb615cc30"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/05_SiO2_film.md",
+      "size_bytes": 7023,
+      "sha256": "d41a9f6e2adac732c42564550a82451eac7427d9e43f61ac1eaa0dd1afe7d670"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/06_MgF2_film.md",
+      "size_bytes": 5767,
+      "sha256": "9eceba95c232847d486858d4206bd01fcbf50a896979f863a813d272cdb7d7c0"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/07_Al2O3_film.md",
+      "size_bytes": 5730,
+      "sha256": "00723371e8f8e56bd3ce0403e1f44f793420b3de9fa355b83a3d02b1430eed6a"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/08_H4_film.md",
+      "size_bytes": 6809,
+      "sha256": "595b23ca7aefb9faf907011cd4f599f52c33faaf9386c458aeab0bd0670fd781"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/09_Ge_film.md",
+      "size_bytes": 5148,
+      "sha256": "48605ca0164d9963c603885b9d74e5d95e2fda90a6828d6a6aa5319376a5b906"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/10_Cu_film.md",
+      "size_bytes": 5028,
+      "sha256": "54a13f7d8a286a54ed0c1f561fd307932afabcd9b794cb0bac9627e2ba436b37"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/11_Cr_film.md",
+      "size_bytes": 3566,
+      "sha256": "507b9b619d821346a1b93204be218c63d6f65b7b604d201a5cb372b03354174f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/12_Al_film.md",
+      "size_bytes": 4186,
+      "sha256": "ef3d46146d33b8b843f26fa8fb535c5fad127c01b0ffcb77e45af9029e1a2480"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/13_ZnS_substrate.md",
+      "size_bytes": 5429,
+      "sha256": "36a2bf8b1f2c18b8de42b5fa9b57037d236535425c3c961e0b069a813664ef6d"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/14_Ge_substrate.md",
+      "size_bytes": 4574,
+      "sha256": "1ac57675cbffbb638eee48b1c85a9967e59734051aface84ee4a3437adabf30e"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/15_K9_substrate.md",
+      "size_bytes": 4323,
+      "sha256": "d9f914e9940e987358df230799f387952780e53e155d0027f8761b1a756695c3"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/cards/16_ZnSe_substrate.md",
+      "size_bytes": 4647,
+      "sha256": "18c70f071aa4d74c3ae3dc2a2f72bb9c725a70d9a20fc65f5b14bc98b6fbc0a9"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/archival_rights.json",
+      "size_bytes": 342,
+      "sha256": "89cdbd7efa23e23620cfb572f0f18ac6e98defc50d44ef7ff8579a25cc5997b7"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/ir_property_records.json",
+      "size_bytes": 48411,
+      "sha256": "3070d263b6c6f11f6d96c9398b78dd8e27a926f20d367c85f0d1a2039fca447b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/ir_sources.json",
+      "size_bytes": 22025,
+      "sha256": "48d58a7910b4859f11cc3523cfb11fea0ab9a71c26f4e51b03b403eae3b05592"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/local_originals_manifest.json",
+      "size_bytes": 3884,
+      "sha256": "8038edbf81361eb38d1d42530f8eba8e97a5b620380fc5b1b8730fb8e3770ec3"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/materials_manifest.json",
+      "size_bytes": 7185,
+      "sha256": "080c8cee98c46f75e83298cb9f22f679ae63899802575471857d91fa15cac09f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/metal_nk_derived_points.json",
+      "size_bytes": 8323,
+      "sha256": "ac2aa01329a23d00573345d97a8dc44f17c64be497f226f413bc313354f1cc75"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/metal_sources.json",
+      "size_bytes": 13401,
+      "sha256": "0d34f5ce759144bdbe3aadcb5bddc4e90e589cc8b1e31b3c74c00b52d7b0edf3"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/oxide_property_records.json",
+      "size_bytes": 44402,
+      "sha256": "caeeed66b937d9ca32e1b2725561883a99156b49ac312c531697997bf0803f7f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/oxide_sources.json",
+      "size_bytes": 25769,
+      "sha256": "1caf7ff93fdf6b48e3518fb21122078a7f890eee43a826450564982f1d2c3120"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/property_record.schema.json",
+      "size_bytes": 1839,
+      "sha256": "a12b4c3174ce19f2973f76ef82558e5af8284f99aabcd88c010a8c001c2921e7"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/property_records.json",
+      "size_bytes": 158253,
+      "sha256": "f6ae994bd9a63f91cc937be61dd2deb4d80c5c9f1948a0dd093166fc0f0bb87f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/source_registry.json",
+      "size_bytes": 66060,
+      "sha256": "6e1f3b727bb9865c75d2a93bab17ef1170143c91828e3283f9dff63f463f9e7b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/data/worked_examples.json",
+      "size_bytes": 11392,
+      "sha256": "9a2f7d8ea51a7d62ba25b70a32165cb9e4049372536ba71a3ed80dac0c1ec6c5"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/models/build_material_package.py",
+      "size_bytes": 8020,
+      "sha256": "369ace745ca8413b0c15ae77b095682792b05aaa30d309d27f510648e8036dbf"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/models/build_nk_points.py",
+      "size_bytes": 1316,
+      "sha256": "9abe22f2f94734793f1bff25178f7aeac43ea8a7826144a7c753e248b6dee58d"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/models/optical_examples.py",
+      "size_bytes": 4046,
+      "sha256": "dfe743b2af682df5bde8067e8de829a9e56b3a8fc0dd49c1046f4be2cbed8cd7"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reports/01_engineering_handbook.md",
+      "size_bytes": 14476,
+      "sha256": "4e6fc811ad4ba1982969177f671355606ad817a9ee338d3860b4192c0afdfa6b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reports/02_cross_material_selection.md",
+      "size_bytes": 7814,
+      "sha256": "fb333d800a07084795ad157f36392a5d50a45b3f9042bd6aadc542d2481af568"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reports/03_data_quality_and_validation.md",
+      "size_bytes": 4237,
+      "sha256": "1224d8461896215720258b5c4b0a332489cb794bdedb0e75c804dee172eff21c"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reports/fluoride_sulfide_substrate_cards.md",
+      "size_bytes": 34113,
+      "sha256": "64d9c1fdd68c761424ff32f08b84dcc38ab009d53282d21b37e2ce19aa90a404"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reports/metal_ge_material_cards.md",
+      "size_bytes": 18641,
+      "sha256": "fad7e89528e50d94f8e8b1ec968c4a8ddfd13a4f7a8e79c69f932063da5774a6"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reports/oxide_material_cards.md",
+      "size_bytes": 38683,
+      "sha256": "25367ad9fbf22ada7c8fadaf3ebf221bf7d64e5e222c41063d72d8490f6837cc"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reviews/first_round_acceptance.md",
+      "size_bytes": 2575,
+      "sha256": "f3a40104f610a0fbce52c066bf940e8a5172c5badb09b57fdaf365bdff0a8e97"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reviews/freeze_manifest.json",
+      "size_bytes": 20722,
+      "sha256": "c85960d3b9703426a6fa7f2fe75d1f0ed699c267702df3eb1e2566865fd907f4"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reviews/independent_evidence_review.md",
+      "size_bytes": 2350,
+      "sha256": "4d3d770b52a76e6ebeab1d00ac3f1e573c5323e59390e91c99500817c3acfaba"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reviews/numerical_qa.txt",
+      "size_bytes": 1447,
+      "sha256": "acdb7c54ae6254b3c7f83ca8e517f0e2bb1980cb387db39858affebf49153b39"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/reviews/stage_status.json",
+      "size_bytes": 666,
+      "sha256": "3414050ede16fb555f10d90fe01de2153f04ce2f57017af6c6c3d792c96490b5"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/README.md",
+      "size_bytes": 1291,
+      "sha256": "012be88173e6b16a0963ad710cacf04031d8a9504f1197c84fa6b2e14430ff67"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_01_manufacturer_technical.md",
+      "size_bytes": 1320,
+      "sha256": "77b65f3005be1937270ca6056ee8ef5ab23815b0bb7f0d1757d7e8b6c581416f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_02_manufacturer_technical.md",
+      "size_bytes": 1354,
+      "sha256": "c43e7e8af565c4bb663d96a836107c0a0db5973c4c999f191db1cd6ebd47f771"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_03_original_research.md",
+      "size_bytes": 1357,
+      "sha256": "d78fc36157e9068d3d742f1209f368dd396084c7909c0e0f4f947a93cce2fe7f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_04_official_sds.md",
+      "size_bytes": 1244,
+      "sha256": "2c7fd6ab2df6e5253b5ee463126d81af8ff87405f7fc6264396815767d5789fa"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_05_manufacturer_technical.md",
+      "size_bytes": 1258,
+      "sha256": "2dbcfdb4f566b35575d3c6dc385ecaa34e190b608ad9411484aa896964c71d59"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_06_manufacturer_technical.md",
+      "size_bytes": 1308,
+      "sha256": "16dfbc2f1256bc066a8764e47a96af9ad7c1c3d3685d0299eed4a616e4a9cc41"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_07_original_research.md",
+      "size_bytes": 1363,
+      "sha256": "a20db217764fdf98bf0b7f6c07028a3efce71dc7b40142a0a41015d61baef0dd"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_08_official_sds.md",
+      "size_bytes": 1269,
+      "sha256": "381393e886369d0cd524284aa941002db9e26d4bc81f2116892544c9b5dfb78a"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_09_official_sds.md",
+      "size_bytes": 1404,
+      "sha256": "977a7c8dcfd456adebfff87f89e91792daf54649e8a4f2672c87d81172d2f4d5"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_10_manufacturer_technical.md",
+      "size_bytes": 1235,
+      "sha256": "81b17866c4e3e97825c2d44bfa96866f38a4df4f43d71b1ce0ae47eea2f667f7"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_11_manufacturer_process_notes.md",
+      "size_bytes": 1399,
+      "sha256": "62b1625b8140f096ebe2feae3c0e96cde2f65be57d9b16b89eed4d8dd7b1b9c3"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_12_manufacturer_technical_compilation.md",
+      "size_bytes": 1311,
+      "sha256": "2db51409e6884d4497f3817708cd6befe97295279791ccd01131d92a7c921c98"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_13_original_research_preprint.md",
+      "size_bytes": 1370,
+      "sha256": "bd12e651df7e4015f11a1393362514d038de59008ce08431ec87976bb28495d3"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_14_official_sds.md",
+      "size_bytes": 1215,
+      "sha256": "973b1d3e486c02a9788b6cdf5a65c82eb64e6da75490a5e2272f448ac8f06dfb"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_15_manufacturer_technical.md",
+      "size_bytes": 1264,
+      "sha256": "284de42b96fbe14bd4b63f2fc941022eac44f123ff98cb951b585a91113fb8e0"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_16_manufacturer_technical_compilation.md",
+      "size_bytes": 1425,
+      "sha256": "973a7682e4be6245ebf25754df439fcee56eaff2182bc2e144c420a86d33dc5b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_17_manufacturer_technical_compilation.md",
+      "size_bytes": 1278,
+      "sha256": "b3d0abd14a39f892e061c326d5b0cbcd2807e71afdb745b5d5e5002232c789ac"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_18_official_sds.md",
+      "size_bytes": 1236,
+      "sha256": "a451cc65a6039e4b9b670cf8a221e88be2cea9b9594aa7bad2d6167baaea786a"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_19_manufacturer_technical.md",
+      "size_bytes": 1222,
+      "sha256": "24ba265d7995712e065ec3143b2c4f5e187f45e0c003aa9c403b3edec487f3d6"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_20_manufacturer_catalog.md",
+      "size_bytes": 1204,
+      "sha256": "e52e3b5b727799bb1620a4bc1d4b5af276d97f1161d86eaba461573f320349fb"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_21_manufacturer_technical_compilation.md",
+      "size_bytes": 1246,
+      "sha256": "e6f8ecbb243d0c2cfc5998276ffdf3d8cf9b491a6ffec6580349673cb79f48c0"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_22_manufacturer_technical.md",
+      "size_bytes": 1290,
+      "sha256": "70d2e818ff443e435d647e66a61ef3f6630476e0eee786ba738f1f5436b4f4a2"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_23_official_sds.md",
+      "size_bytes": 1256,
+      "sha256": "8342e89b5f7e2b38ceae483d8efd193fb121c3974c69c9f75c3051cb2dc83c9f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/ir_24_official_sds_entry.md",
+      "size_bytes": 1288,
+      "sha256": "772ec393b0a00a18d2178589fd87c3054e7f2aaeda953af8c2ae763e91fc61a4"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M01.md",
+      "size_bytes": 585,
+      "sha256": "af426bca01100df44de2fe92611951683f580be6fa63481d78bc75e0e12af81a"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M02.md",
+      "size_bytes": 533,
+      "sha256": "dbb36bf554e8a09543a1e3efbce5e0fdfe841ad46485eb9ba433226288eed38b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M03.md",
+      "size_bytes": 496,
+      "sha256": "b9040e27b15c25f0cb5a18bd1c952573b12e24f280ee882bc1eca493cc3b44df"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M04.md",
+      "size_bytes": 501,
+      "sha256": "4ac0bed91d62031101bb629b572f5e4075a5d32977aa7bc56d35fb96f63f86c9"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M05.md",
+      "size_bytes": 562,
+      "sha256": "edec988cdf34efd8c0b06481e8043aa9066f4f7b668f02e90eabe8213bf7c944"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M06.md",
+      "size_bytes": 532,
+      "sha256": "6f58eb75e65a493a857d0728994e6dd6b915e68d5c35e58a5bc0042a94b1b0b1"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M07.md",
+      "size_bytes": 547,
+      "sha256": "a333398b9a9bbfaef0c81a81341e0e83bc75b3129c2dcf8a96aaa7c91e7d2eae"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M08.md",
+      "size_bytes": 585,
+      "sha256": "08fb07f987ea583c75a922e6e7fa4bd2d411c13d208966b0877dff3088128332"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M09.md",
+      "size_bytes": 556,
+      "sha256": "e0c8dae7a48b09d7a43da8cc8a5a2960bc47b68bf55d886dd624b698c2b8b255"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M10.md",
+      "size_bytes": 536,
+      "sha256": "0861ba1ab5b6ebce95ba5c9c4a6e7d17d66903d78b3c969c837fc64325e7c79b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M11.md",
+      "size_bytes": 505,
+      "sha256": "20171c4b3494b1eced489384e1c1284522f182583b2d2886fe9701afbb0170cf"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M12.md",
+      "size_bytes": 512,
+      "sha256": "4492548e4a98d09b87eb950dd5413e4eac3db1878a7d296b9330145d8f398d91"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M13.md",
+      "size_bytes": 494,
+      "sha256": "278e080f3a44b8fc58942302c12ca66f97adc8b6f6a3ef213bf77ddb2aac18d1"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M14.md",
+      "size_bytes": 541,
+      "sha256": "1fb0b1a1612bf8d54cb97934617161db31f6d733ba48a4d4c77655188c54445f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M15.md",
+      "size_bytes": 449,
+      "sha256": "e408bbef1907ec346dcaeff60b39e47d1e1b1f30b11d702cd28ce4038f07e619"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M16.md",
+      "size_bytes": 555,
+      "sha256": "edb7adb0c9069ebd52b726a371d539c975a5b11dd941382c1e3a698c200c459e"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M17.md",
+      "size_bytes": 555,
+      "sha256": "3953b3ac4641ad9ec0a911851e42ac5be50fc81a20fdf6c10e86183838f94a21"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M18.md",
+      "size_bytes": 511,
+      "sha256": "addd4848c31f4d696326f8473b18b19f51f260816f817440a4db65fbc872adf6"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M19.md",
+      "size_bytes": 586,
+      "sha256": "5b08fb6eed4f6285691434cfbc5c3a4a03a30225829556d94eb09bfa61e24a0a"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M20.md",
+      "size_bytes": 549,
+      "sha256": "89a350e40ea5aa6279a71e01e99571e391564cf0dd7694a26f21f14bc03937c2"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M21.md",
+      "size_bytes": 505,
+      "sha256": "524d3256d604e2c5bc0da82d9db190a700faced2236a89c8cd879b9b9a9f4f18"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M22.md",
+      "size_bytes": 518,
+      "sha256": "1659b7b05da386a64457e3bae42c32bae508893075f50a23ceedffc20a508d4b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/metal_M23.md",
+      "size_bytes": 512,
+      "sha256": "6c769ace580ef0b0e3d6be900b3848d9a5c23d4c0cbe60131d9616ee1ecbcb7b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_01.md",
+      "size_bytes": 988,
+      "sha256": "bf22a887be18654499870b342c547718f99b1fa6dcec1100346a77495cb67900"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_02.md",
+      "size_bytes": 941,
+      "sha256": "80238cfc8ef883e5fbf83efbe62347b87a5da9f7c3ccacf59f46d2c3d2862829"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_03.md",
+      "size_bytes": 978,
+      "sha256": "c21b109040b30eee8e1e7da6c47707621662ade4e9f987dea8a8a714279c5d89"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_04.md",
+      "size_bytes": 906,
+      "sha256": "177b1af577e80af66e036bb442d348bcdedc5eb555d46f94dffca44be282afce"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_05.md",
+      "size_bytes": 1055,
+      "sha256": "fc2d818701fd2ee40cf754b0f5b76fd0bebe4ca971ae0f483d6cd9c33b0e2c46"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_06.md",
+      "size_bytes": 1065,
+      "sha256": "304dfa2de4989d9e991b268610cef7c0642bc448ce7ecf92946afdb7224caa4b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_07.md",
+      "size_bytes": 1028,
+      "sha256": "9f4e62e3cb4b02a4ee6e6d4fa1e0f2d04f75c7fb67afa1a495b3a3fbc6dfe427"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_08.md",
+      "size_bytes": 1068,
+      "sha256": "a602693fdcb0c70768262a30f3cd755a4ce45aec3d3ef52f89d0b381e46044ae"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_09.md",
+      "size_bytes": 1064,
+      "sha256": "516449cd4fced2d892483e55b2a973f2fe3b4cbf472260d6fcacc7a0df75b3df"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_10.md",
+      "size_bytes": 928,
+      "sha256": "fa65d60cc83b19f26397f7f8eec680edf16b49109f4dc451c448c07fd92a5c24"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_11.md",
+      "size_bytes": 982,
+      "sha256": "72e42f02848fcf0c5a6ca75aecf74cc8f09100c72beb4bbaa2ff82052bbc377b"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_12.md",
+      "size_bytes": 932,
+      "sha256": "3547d1ee2ac5b826392c4f99ec63047421cf38e2a1c0c142c773a83271874093"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_13.md",
+      "size_bytes": 1002,
+      "sha256": "664dfb4594481d8c45aca4633c952fe584684f83040b77de9f6aa0480108c869"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_14.md",
+      "size_bytes": 942,
+      "sha256": "e27b99fbfd425ea218b5cb9d160c8397b157b9f4151d55b1de02854faef3e83d"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_15.md",
+      "size_bytes": 1044,
+      "sha256": "8dcdd1279d5dc7e98b60cf88164e1c2c4fe509f735cf3050c4cc58eeb7ac510c"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_16.md",
+      "size_bytes": 1048,
+      "sha256": "9c851ab086c47c6ce64d4163abcbe3766b49081312ca6a47a6f316e1a4dbb5f5"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_17.md",
+      "size_bytes": 1011,
+      "sha256": "4467989c378ebd654ad7212a02c658f50d061fb660ac14ea4a163c7458af0653"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_18.md",
+      "size_bytes": 1062,
+      "sha256": "1b7d3943695adadd47ca4231f1995c1c3b03ccc2a791fb80a93a507392a35ef9"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_19.md",
+      "size_bytes": 950,
+      "sha256": "bd546e70dde88bef75660df20fc418eadaf3b251c323c6d8792295b49a97d977"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_20.md",
+      "size_bytes": 1078,
+      "sha256": "fb1e515ab9a4437dcd4cb0467c7360076ec1803f9341da93c93db981d5090555"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_21.md",
+      "size_bytes": 1086,
+      "sha256": "da8cb91351d7a835facc33f68e8d797b3c7ce77fa26f5747aafb5e7e31f131cf"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_22.md",
+      "size_bytes": 1105,
+      "sha256": "58b9b870bdd5de8bcdf137a0145841f14f899731fe701ab8379cda7249c70d4c"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_23.md",
+      "size_bytes": 1063,
+      "sha256": "a30433b301c790a587744aa4427a4c0bc28367c0c1f0a4dd924d0c7253d000ca"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_24.md",
+      "size_bytes": 1107,
+      "sha256": "3c1a03e3b5a2a762434853da38b31c561a79c7735154e5f9c552648750d48746"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_25.md",
+      "size_bytes": 906,
+      "sha256": "816dc9eba74ef17b792c78f183b6d29467f3b7ee0371702d4a99bcb4b6661b39"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_26.md",
+      "size_bytes": 845,
+      "sha256": "124ac73d0170c4b8ad871277f4dd2979a716f2437fc773c3a2a36d2e51410b62"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_27.md",
+      "size_bytes": 1006,
+      "sha256": "26d869bf5ca0f6289516a22a43a24cd3e730aa568cc832fad3ed70eb4ca82637"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_28.md",
+      "size_bytes": 884,
+      "sha256": "f5d6be37cd807e2a1cfa9e72cf4ed2a2ad5f667b4c9f216313c1cce0bf680405"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/sources/summaries/oxides_ox_29.md",
+      "size_bytes": 767,
+      "sha256": "3e8d12731de4eac9734521fd833b661554f2c35f28e685e10adb83299ab2d79f"
+    },
+    {
+      "path": "04_coating_and_substrate_materials/tests/test_material_data.py",
+      "size_bytes": 5887,
+      "sha256": "9f9ec2e25f6cc8c306c77a3578f8f31251e4bf6a701acb9a88a228ec45ac4b1f"
     },
     {
       "path": "05_evaporation_sources/README.md",
@@ -775,32 +1390,33 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 2483,
-      "sha256": "78ebf114e58dc5db1e2d300263a109781f0d5f8a0bc1916dfc03a54affb5ce51"
+      "size_bytes": 3093,
+      "sha256": "5bbf2a90297b6d1234a85546a4d6aa1f03941b2fb9077e27ab690b87756ac0a1"
     },
     {
       "path": "README.md",
-      "size_bytes": 4872,
-      "sha256": "279144e171bd6feaf44633c984d3de0e11047f7664db793afefcce04fa3dafe7"
+      "size_bytes": 4938,
+      "sha256": "cb7e86d6aa818cab299ec04d707214ebf9c7d30a8b54ba5bb8ca9f3e850bf721"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 5029,
-      "sha256": "879804c31dd9b642641275d8347845277578e066d591cb16658329c2fa8b5768"
+      "size_bytes": 5064,
+      "sha256": "397452d2fcc963c24d3ca031a5497c2309d71aa38b5b8a2f51a052010539dafc"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 2657,
-      "sha256": "781e9dc6db436429e4b33e42e5caeb4bb76ca2da6e9cbb6bc0f7ec48a0dfbaa5"
+      "size_bytes": 2847,
+      "sha256": "dcb751b8907a18985679060e36ea25aff837b78552f64a27b0d7311b5fcb6657"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 1994,
-      "sha256": "100119478c32fb0988aa8bcc6429b78a237bb7fd04fc0164e23b5a9b53407308"
+      "size_bytes": 2104,
+      "sha256": "186cf706ff7ea213e2dc714d5157fd224dc4ed309d3f1daa6e45213bbe916913"
     }
   ],
   "source_T02_zip_sha256": "684b63f228b31a2ba882b08f60cbc1e7a13173283d0e79b03fa4fc861d3c344b",
   "source_T02_content_id": "db16fe512e848532c5e2b00c3fc8d5ec3469d6a7764e5872840f98eff69ba1a2",
   "source_T03_zip_sha256": "36b2759639d2d7f519304c5bf77ebc6a38de44c572f78bfa6fa02f4a24debe73",
-  "source_T03_content_id": "64f7ea5beaa18ef916b28ee20aff5f0abee6826698ac365b752ba0e561cd46cd"
+  "source_T03_content_id": "64f7ea5beaa18ef916b28ee20aff5f0abee6826698ac365b752ba0e561cd46cd",
+  "source_T04_freeze_manifest_sha256": "c85960d3b9703426a6fa7f2fe75d1f0ed699c267702df3eb1e2566865fd907f4"
 }

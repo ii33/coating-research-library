@@ -1,0 +1,1684 @@
+{
+  "schema_version": "1.0",
+  "created_date": "2026-10-02",
+  "scope_notes": "源料设置、薄膜实验、块材目录严格分状态；禁止自动平均冲突或把unknown置零。suppliers不保证同一批次。",
+  "records": [
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.44,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 0.45,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.26,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 1,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.22,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 4,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.17,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 10,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.12,
+      "unit": "1",
+      "source_id": "IR01",
+      "conditions": {
+        "wavelength_um": 13,
+        "state": "evaporated Patinal film",
+        "measurement_temperature_C": null,
+        "thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "refractive_index_n",
+      "value": 2.22,
+      "unit": "1",
+      "source_id": "IR02",
+      "conditions": {
+        "wavelength_um": 10,
+        "supplier": "Umicore",
+        "product": "0481699"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "separate_supplier_record"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "extinction_coefficient_k",
+      "value": 3.85,
+      "unit": "1",
+      "source_id": "IR02",
+      "conditions": {
+        "wavelength_um": 0.55,
+        "raw_web_value": true
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "quarantined_do_not_use",
+      "notes": "与透明用途矛盾，疑似网页字段/指数错误，未擅自修正"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "QCM_reference_density",
+      "value": 4.09,
+      "unit": "g/cm3",
+      "source_id": "IR01",
+      "conditions": {
+        "state": "instrument_setting_not_film_density"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "deposition_rate_range",
+      "value": [
+        0.8,
+        2.5
+      ],
+      "unit": "nm/s",
+      "source_id": "IR01",
+      "conditions": {
+        "source": "resistive/electron_beam supplier guidance",
+        "substrate_temperature_C": [
+          150,
+          160
+        ]
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "supplier_process_range"
+    },
+    {
+      "material_id": "ZnS_film",
+      "property": "thermal_conductivity",
+      "value": null,
+      "unit": "W/(m K)",
+      "source_id": null,
+      "conditions": {
+        "material_state": "ZnS_film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "未得到与本蒸发状态相符的数据，不以CVD块材代替"
+      },
+      "status": "not_available",
+      "notes": "未得到与本蒸发状态相符的数据，不以CVD块材代替"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.548,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 0.5,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00012,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 0.5,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.538,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 1,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00011,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 1,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.529,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 2,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.0005,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 2,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.509,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 5,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.0015,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 5,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "refractive_index_n",
+      "value": 1.372,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 10,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.0024,
+      "unit": "1",
+      "source_id": "IR05",
+      "conditions": {
+        "wavelength_um": 10,
+        "state": "Patinal film",
+        "measurement_temperature_C": null,
+        "film_thickness_nm": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "QCM_reference_density",
+      "value": 8.168,
+      "unit": "g/cm3",
+      "source_id": "IR05",
+      "conditions": {
+        "state": "instrument_setting_not_film_density"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "substrate_temperature_range",
+      "value": [
+        150,
+        200
+      ],
+      "unit": "degC",
+      "source_id": "IR05",
+      "conditions": {
+        "supplier": "Merck/EMD",
+        "ZnS_combination_preferred_C": 160
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "supplier_process_range"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "substrate_temperature_upper_warning_range",
+      "value": [
+        150,
+        180
+      ],
+      "unit": "degC",
+      "source_id": "IR06",
+      "conditions": {
+        "supplier": "Umicore"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "separate_supplier_record",
+      "notes": "超过该范围可能增大损耗/应力；不是精确熔解阈值"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "F_to_Yb_atomic_ratio",
+      "value": 2.625,
+      "unit": "1",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 0,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "published_experiment"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "residual_tensile_stress",
+      "value": 0.101,
+      "unit": "GPa",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 0,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "published_experiment"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "F_to_Yb_atomic_ratio",
+      "value": 2.329,
+      "unit": "1",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 180,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "published_experiment"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "residual_tensile_stress",
+      "value": 0.106,
+      "unit": "GPa",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 180,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "published_experiment"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "F_to_Yb_atomic_ratio",
+      "value": 1.789,
+      "unit": "1",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 360,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "published_experiment"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "residual_tensile_stress",
+      "value": 0.146,
+      "unit": "GPa",
+      "source_id": "IR07",
+      "conditions": {
+        "ion_energy_eV": 360,
+        "substrate_temperature_C": 140,
+        "rate_nm_per_s": 0.3,
+        "film_thickness_nm": 700,
+        "Ar_flow_sccm": 25,
+        "ion_source_total_current_mA": 100,
+        "ion_source": "12cm Kaufman",
+        "measurement": "XPS ratio; curvature-derived stress"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "published_experiment"
+    },
+    {
+      "material_id": "YbF3_film",
+      "property": "Young_modulus",
+      "value": null,
+      "unit": "GPa",
+      "source_id": null,
+      "conditions": {
+        "material_state": "YbF3_film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "本轮未得到适用牌号/工艺的定量膜数据；不得用YF3替代"
+      },
+      "status": "not_available",
+      "notes": "本轮未得到适用牌号/工艺的定量膜数据；不得用YF3替代"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.612,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 120,
+        "state": "Patinal evaporated film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.0035,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 120,
+        "state": "Patinal evaporated film",
+        "comparison": "="
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.396,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 250,
+        "state": "Patinal evaporated film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "extinction_coefficient_k",
+      "value": 0.00015,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 250,
+        "state": "Patinal evaporated film",
+        "comparison": "="
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.383,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 500,
+        "state": "Patinal evaporated film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "extinction_coefficient_k",
+      "value": 3.4e-05,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 500,
+        "state": "Patinal evaporated film",
+        "comparison": "="
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.375,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 1500,
+        "state": "Patinal evaporated film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "extinction_coefficient_k",
+      "value": 2e-05,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "wavelength_nm": 1500,
+        "state": "Patinal evaporated film",
+        "comparison": "<"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "upper_bound"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "packing_density",
+      "value": 0.72,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "substrate_temperature_C": 20,
+        "state": "evaporated film",
+        "measurement_method": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "packing_density",
+      "value": 0.98,
+      "unit": "1",
+      "source_id": "IR10",
+      "conditions": {
+        "substrate_temperature_C": 300,
+        "state": "evaporated film",
+        "measurement_method": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "refractive_index_n",
+      "value": 1.401,
+      "unit": "1",
+      "source_id": "IR13",
+      "conditions": {
+        "wavelength_nm": 1550,
+        "state": "IBS film",
+        "thickness_nm": 200
+      },
+      "uncertainty": {
+        "value": 0.005,
+        "type": "reported_plus_minus",
+        "coverage": null
+      },
+      "status": "published_experiment"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "Young_modulus",
+      "value": 115,
+      "unit": "GPa",
+      "source_id": "IR13",
+      "conditions": {
+        "state": "IBS film",
+        "thickness_nm": 206,
+        "method": "mechanical resonance inversion"
+      },
+      "uncertainty": {
+        "value": 3,
+        "type": "reported_plus_minus",
+        "coverage": null
+      },
+      "status": "published_experiment"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "mass_thickness_density",
+      "value": 2.7,
+      "unit": "g/cm3",
+      "source_id": "IR13",
+      "conditions": {
+        "state": "IBS film",
+        "method": "mass/thickness"
+      },
+      "uncertainty": {
+        "value": 0.2,
+        "type": "reported_plus_minus",
+        "coverage": null
+      },
+      "status": "published_experiment"
+    },
+    {
+      "material_id": "MgF2_film",
+      "property": "thermal_expansion_coefficient",
+      "value": null,
+      "unit": "1/K",
+      "source_id": null,
+      "conditions": {
+        "material_state": "MgF2_film"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "未得到与蒸发膜状态对应的验证值；单晶各向异性CTE不可直接代入"
+      },
+      "status": "not_available",
+      "notes": "未得到与蒸发膜状态对应的验证值；单晶各向异性CTE不可直接代入"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "density",
+      "value": 4.09,
+      "unit": "g/cm3",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "temperature_K": 298
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "thermal_conductivity",
+      "value": 16.7,
+      "unit": "W/(m K)",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "temperature_K": 298
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Knoop_hardness",
+      "value": [
+        200,
+        235
+      ],
+      "unit": "kgf/mm2",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "indenter_load_g": 50
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "conflicting_sources_keep_separate"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "flexural_strength",
+      "value": 103,
+      "unit": "MPa",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "method": "four_point_bending",
+        "sample_geometry": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical",
+      "notes": "非设计许用应力；统计分布未知"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Poisson_ratio",
+      "value": 0.29,
+      "unit": "1",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "absorption_coefficient_alpha",
+      "value": 0.2,
+      "unit": "1/cm",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD",
+        "wavelength_um": 10.6
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "density",
+      "value": 4.09,
+      "unit": "g/cm3",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "temperature_K": 298
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "thermal_conductivity",
+      "value": 28.4,
+      "unit": "W/(m K)",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "temperature_K": 298
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Knoop_hardness",
+      "value": 160,
+      "unit": "kgf/mm2",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "indenter_load_g": 50
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "conflicting_sources_keep_separate"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "flexural_strength",
+      "value": 75,
+      "unit": "MPa",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "method": "four_point_bending",
+        "sample_geometry": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical",
+      "notes": "非设计许用应力；统计分布未知"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Poisson_ratio",
+      "value": 0.28,
+      "unit": "1",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "absorption_coefficient_alpha",
+      "value": 0.2,
+      "unit": "1/cm",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "Cleartran",
+        "wavelength_um": 10.6
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Knoop_hardness",
+      "value": 160,
+      "unit": "kgf/mm2",
+      "source_id": "IR17",
+      "conditions": {
+        "grade": "FLIR",
+        "indenter_load_g": 50
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "conflicting_sources_keep_separate"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "Knoop_hardness",
+      "value": 240,
+      "unit": "kgf/mm2",
+      "source_id": "IR16",
+      "conditions": {
+        "grade": "MS",
+        "indenter_load_g": 50
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "conflicting_sources_keep_separate"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "absorption_coefficient_alpha",
+      "value": 0.0006,
+      "unit": "1/cm",
+      "source_id": "IR16",
+      "conditions": {
+        "grade": "MS",
+        "wavelength_um": 3.8
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnS_substrate",
+      "property": "refractive_index_n",
+      "value": 2.20084,
+      "unit": "1",
+      "source_id": "IR15",
+      "conditions": {
+        "grade": "standard_CVD_or_Cleartran",
+        "wavelength_um": 10
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.536288,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 365.01,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.5168,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 587.56,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.506743,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 1060,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.50106,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 1529.58,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "refractive_index_n",
+      "value": 1.48964,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "manufacturer": "CDGM",
+        "grade": "H-K9L",
+        "wavelength_nm": 2325.42,
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical",
+      "notes": "H-K9L是本轮有证据的代表，不宣称用户K9来料就是此牌号"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.746,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 300,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.557,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 300,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.998,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 550,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.997,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 550,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.999,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 1060,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.998,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 1060,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.951,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 2000,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.904,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 2000,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.842,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 2400,
+        "thickness_mm": 5,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "internal_transmittance",
+      "value": 0.709,
+      "unit": "1",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "wavelength_nm": 2400,
+        "thickness_mm": 10,
+        "surface_reflection_included": false
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "Young_modulus",
+      "value": 79.2,
+      "unit": "GPa",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "thermal_conductivity",
+      "value": 0.931,
+      "unit": "W/(m K)",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "specific_heat_capacity",
+      "value": 736,
+      "unit": "J/(kg K)",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "density",
+      "value": 2.52,
+      "unit": "g/cm3",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "thermal_expansion_coefficient",
+      "value": 7.6e-06,
+      "unit": "1/K",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "temperature_range_C": [
+          -30,
+          70
+        ]
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "thermal_expansion_coefficient",
+      "value": 9.5e-06,
+      "unit": "1/K",
+      "source_id": "IR19",
+      "conditions": {
+        "grade": "CDGM H-K9L",
+        "temperature_range_C": [
+          100,
+          300
+        ]
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "K9_substrate",
+      "property": "actual_user_grade",
+      "value": null,
+      "unit": "text",
+      "source_id": null,
+      "conditions": {
+        "material_state": "K9_substrate"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "用户原始材料名为K9，实际厂家/牌号/熔次尚未知；禁止自动等同N-BK7"
+      },
+      "status": "not_available",
+      "notes": "用户原始材料名为K9，实际厂家/牌号/熔次尚未知；禁止自动等同N-BK7"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "refractive_index_n",
+      "value": 2.5994,
+      "unit": "1",
+      "source_id": "IR21",
+      "conditions": {
+        "wavelength_um": 0.62,
+        "state": "optical polycrystalline ZnSe",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "refractive_index_n",
+      "value": 2.4295,
+      "unit": "1",
+      "source_id": "IR21",
+      "conditions": {
+        "wavelength_um": 5,
+        "state": "optical polycrystalline ZnSe",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "refractive_index_n",
+      "value": 2.4028,
+      "unit": "1",
+      "source_id": "IR21",
+      "conditions": {
+        "wavelength_um": 10.6,
+        "state": "optical polycrystalline ZnSe",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "refractive_index_n",
+      "value": 2.3665,
+      "unit": "1",
+      "source_id": "IR21",
+      "conditions": {
+        "wavelength_um": 15,
+        "state": "optical polycrystalline ZnSe",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "absorption_coefficient_alpha",
+      "value": 0.0005,
+      "unit": "1/cm",
+      "source_id": "IR22",
+      "conditions": {
+        "wavelength_um": 10.6,
+        "temperature_C": 20,
+        "comparison": "<",
+        "method": "CO2 vacuum calorimetry manufacturer specification"
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "upper_bound"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "density",
+      "value": 5.27,
+      "unit": "g/cm3",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "thermal_conductivity",
+      "value": 18,
+      "unit": "W/(m K)",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "specific_heat_capacity",
+      "value": 356,
+      "unit": "J/(kg K)",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "thermal_expansion_coefficient",
+      "value": 7.57e-06,
+      "unit": "1/K",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "Young_modulus",
+      "value": 67.2,
+      "unit": "GPa",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "Poisson_ratio",
+      "value": 0.28,
+      "unit": "1",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "rupture_modulus",
+      "value": 55.1,
+      "unit": "MPa",
+      "source_id": "IR22",
+      "conditions": {
+        "supplier": "Coherent",
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "specific_heat_capacity",
+      "value": 339,
+      "unit": "J/(kg K)",
+      "source_id": "IR21",
+      "conditions": {
+        "supplier": "Crystran",
+        "measurement_temperature_C": null
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "separate_supplier_record"
+    },
+    {
+      "material_id": "ZnSe_substrate",
+      "property": "thermo_optic_coefficient",
+      "value": 6.1e-05,
+      "unit": "1/K",
+      "source_id": "IR22",
+      "conditions": {
+        "wavelength_um": 10.6,
+        "temperature_C": 20
+      },
+      "uncertainty": {
+        "value": null,
+        "reason": "来源未给测量不确定度或批次分布；目录位数不是误差界限"
+      },
+      "status": "catalog_typical"
+    }
+  ]
+}
