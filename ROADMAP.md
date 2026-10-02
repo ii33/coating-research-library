@@ -100,4 +100,4 @@
 
 ## 当前下一步
 
-T01–T06首轮优先研究已形成冻结基线。T06包括8章、24来源、6组完整可调起始膜系、6份多角度s/p光谱CSV、2张原创SVG，以及42项数值测试和15项包检查，见[验收记录](06_optical_coating_families/reviews/ROUND1_ACCEPTANCE.md)。下一步按[T07移交](06_optical_coating_families/T07_HANDOFF.md)接续薄膜设计理论。文献实测、合成参考与用户设备验证不互相替代；未执行的指定阶段审查继续pending，环境/损伤及量产资格未验证。T08–T10仍排队。
+T01–T07首轮优先研究已形成冻结基线。T07包括9章、8组算例/CSV、4幅原创图、18来源卡和32公式；28项测试、22项包检查通过，见[验收记录](07_thin_film_design_theory/reviews/ROUND1_ACCEPTANCE.md)。下一步按[T08移交](07_thin_film_design_theory/T08_HANDOFF.md)研究高精度高性能膜系优化、快速近似与可持续迭代算法。真实材料与机台未验证，正式审查pending不改为通过；T09–T10仍排队。

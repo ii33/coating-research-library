@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T02:17:37.093932+00:00",
+  "updated_at_utc": "2026-10-02T02:33:25.252095+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
     "major_topics": "serial_original_order",
@@ -567,12 +567,12 @@
         11
       ],
       "round": 1,
-      "state": "starting",
+      "state": "round1_priority_theory_and_reference_numerical_scope_complete",
       "depends_on": [
         "T06"
       ],
       "algorithmic": true,
-      "review_status": "pending",
+      "review_status": "28_numerical_tests_and_22_package_checks_passed_actual_math_spot_check_complete_designated_formal_review_pending",
       "entry_condition": "T06.round1_priority_theory_and_numerical_scope_complete; designated formal review and machine qualification remain disclosed",
       "scope": "规划从物理假设、基本模型、设计思想到可复算例题的系统性教材结构；研究启动后用原始文献和权威资料核验推导、符号、边界条件与适用范围。",
       "deliverables": [
@@ -593,15 +593,22 @@
           "sequence": 1,
           "label": "首轮核心范围（原文未细分优先项）",
           "is_explicit_priority": false,
-          "state": "starting",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_priority_theory_and_reference_numerical_scope_complete",
+          "evidence_paths": [
+            "07_thin_film_design_theory/README.md",
+            "07_thin_film_design_theory/data/formula_index.csv",
+            "07_thin_film_design_theory/data/deliverable_manifest.json"
+          ],
+          "acceptance_record": "07_thin_film_design_theory/reviews/ROUND1_ACCEPTANCE.md"
         }
       ],
       "expansion_round": 2,
       "expansion_backlog": [
         "更专门的理论与特殊应用拓展"
-      ]
+      ],
+      "handoff_record": "07_thin_film_design_theory/T08_HANDOFF.md",
+      "machine_validation": "not_performed",
+      "production_qualification": "not_performed"
     },
     {
       "id": "T08",
@@ -612,13 +619,13 @@
         12
       ],
       "round": 1,
-      "state": "queued",
+      "state": "starting",
       "depends_on": [
         "T07"
       ],
       "algorithmic": true,
       "review_status": "pending",
-      "entry_condition": "T07.round1_accepted",
+      "entry_condition": "T07.round1_priority_theory_and_reference_numerical_scope_complete; designated formal review and real-machine qualification remain disclosed",
       "scope": "兼顾高精度/性能、快速近似求解和持续迭代三类目标；这些是原文目标，非现成方法名单。统一参数化、材料模型、损失函数、约束和数据集后比较算法。",
       "deliverables": [
         "基准问题集、准确参考与统一评测协议",
@@ -638,7 +645,7 @@
           "sequence": 1,
           "label": "高精度的高性能优化算法",
           "is_explicit_priority": true,
-          "state": "queued",
+          "state": "starting",
           "evidence_paths": [],
           "acceptance_record": null
         },

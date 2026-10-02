@@ -1,6 +1,6 @@
 {
-  "snapshot": "coating-research-library-T06-round1-handoff",
-  "created_at_utc": "2026-10-02T02:17:37.093932+00:00",
+  "snapshot": "coating-research-library-T07-round1-handoff",
+  "created_at_utc": "2026-10-02T02:33:25.252095+00:00",
   "repository": "ii33/coating-research-library",
   "visibility": "private",
   "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
@@ -20,8 +20,8 @@
     },
     {
       "path": "00_project/GITHUB_PUBLICATION.md",
-      "size_bytes": 4738,
-      "sha256": "d7f249b1f53a105f182ce57c806cb8e75a5c66c56a792bffc31dcfa87b001d36"
+      "size_bytes": 5445,
+      "sha256": "f0253eca4589063d225f337f07024b9972aaaaf0017d0213ffe1c3e4737f437c"
     },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
@@ -51,7 +51,7 @@
     {
       "path": "00_project/planning_baseline_manifest.json",
       "size_bytes": 7665,
-      "sha256": "e30b07ad853ff1a94d2e5a03ddf39496b728438bccd9702136bb7204d7121887"
+      "sha256": "121e4f1fa913f7c0721e9e6eb4a2d0cea818776f03e808f475ad7f020767b261"
     },
     {
       "path": "00_project/requirements_traceability.json",
@@ -60,8 +60,8 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 32837,
-      "sha256": "9ba734e25734f7c947d2eca08e9d68ba8fa498bd83233a7d997deeb95c5027e7"
+      "size_bytes": 33590,
+      "sha256": "3d63c6b66642712f407fa0a79e7e11583b4ff37d500312e8d03a65703d8dcc33"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -1939,9 +1939,334 @@
       "sha256": "c1237741c4229d8f68a111cd16d50aa2e01eaca832480d940c887fb3bd9e382e"
     },
     {
+      "path": "07_thin_film_design_theory/.gitignore",
+      "size_bytes": 98,
+      "sha256": "31984f54751f64b167fb03825f6f5aed61e4ac16f6d3ca0651e63608c5826a96"
+    },
+    {
       "path": "07_thin_film_design_theory/README.md",
-      "size_bytes": 2174,
-      "sha256": "c3693b6a26cd90805096c030b09b7a4d6d385a2f573d2659aa8db4d64fde4792"
+      "size_bytes": 3425,
+      "sha256": "a2a1d54bd681d9a58a359db1bf642ee71d45537b6b3a8617cbbcc7bcc1b9cc34"
+    },
+    {
+      "path": "07_thin_film_design_theory/T08_HANDOFF.md",
+      "size_bytes": 3086,
+      "sha256": "8279bb25bf5211ab2edb857a463a4c83a8d461cebbf2d5bf60590308cc996974"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/deliverable_manifest.json",
+      "size_bytes": 11441,
+      "sha256": "9f382bc2d7d2f5a86570105695f1f9b95d5454caccadd19c0bed1ee85588b238"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/design_theory_contract.json",
+      "size_bytes": 2837,
+      "sha256": "02b6bb6b43fdc250c471fcf8007cdc9523187dbf002bd1a2e74a5ab55c99254c"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/example_results.json",
+      "size_bytes": 16776,
+      "sha256": "83d46112682be9ad823b2c292a55846bdbc9a8f77c164685f5e62c14677956ea"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/formula_index.csv",
+      "size_bytes": 4732,
+      "sha256": "9d611730143cdec5f6ee630192d90eb9cd72845aa512317ee8a9e94123edfb6e"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/source_registry.json",
+      "size_bytes": 17987,
+      "sha256": "a688482d0a07876234e75cc16d460fd2b269bf9fd93d60ccb4f8f1db42ff06b4"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/spectra/W01_ar.csv",
+      "size_bytes": 51368,
+      "sha256": "55b5b890943161447ae2502d5baa09381a87de5bcbb6e2d241a613d680483817"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/spectra/W02_bragg.csv",
+      "size_bytes": 117108,
+      "sha256": "37bae6c75b2a765dcc1f405d840c629482f00d5445dc1eab98590588daa21e6d"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/spectra/W03_stability.csv",
+      "size_bytes": 1686,
+      "sha256": "ff54137d4a2218bdc2bbd476cff604877c703cc4dc266a76549f12434470f70f"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/spectra/W04_phase_average.csv",
+      "size_bytes": 157040,
+      "sha256": "58e769ef1eece84167a955554774973283c5b0608b3a38392cc406a72946b972"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/spectra/W05_absorption.csv",
+      "size_bytes": 134625,
+      "sha256": "fad729528025c3017bb1566d2fe513c24e9e96b4b55f25755dfeb41bbea188df"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/spectra/W05_phase.csv",
+      "size_bytes": 231756,
+      "sha256": "34344c3957eb60101f177e52e8ca06ac81ca03a94de467a43c7d31de7ff82918"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/spectra/W07_gradient.csv",
+      "size_bytes": 93766,
+      "sha256": "24e544299a42a7053899be3a84335d9d389d177e25657f55a30222fcfe0c5b85"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/spectra/W08_sensitivity.csv",
+      "size_bytes": 745,
+      "sha256": "e9568f66860b7b9d11dde038a7ee611e86eb889db8edc18255190c3ee570b8c7"
+    },
+    {
+      "path": "07_thin_film_design_theory/data/t06_dependency_manifest.json",
+      "size_bytes": 298,
+      "sha256": "f23e61d98f49f4e0dbb4fab2f284856396733ba51831cc1dafc1fb15e41ad9fe"
+    },
+    {
+      "path": "07_thin_film_design_theory/figures/01_matching_and_bandgap.svg",
+      "size_bytes": 45764,
+      "sha256": "bccd1778635546d2b8a917723c1be115eb9ded77444c9410605230ec6a6b2c46"
+    },
+    {
+      "path": "07_thin_film_design_theory/figures/02_numerical_stability.svg",
+      "size_bytes": 47046,
+      "sha256": "aee1ad272bd0b5282547bd13b72ea093dcdeeeb7bdd7e549613dc36a319ba930"
+    },
+    {
+      "path": "07_thin_film_design_theory/figures/03_coherence_phase_and_absorption.svg",
+      "size_bytes": 52980,
+      "sha256": "d89ce5e5f461e7488662243a7cd3194adf0f2e514ef6745de2dca4dda7c43765"
+    },
+    {
+      "path": "07_thin_film_design_theory/figures/04_gradient_and_tolerance.svg",
+      "size_bytes": 61786,
+      "sha256": "d402ad70f93da186d1ed05efc72965c1b9607f958ae20be680ba374a30a1e9fa"
+    },
+    {
+      "path": "07_thin_film_design_theory/models/build_sources.py",
+      "size_bytes": 11914,
+      "sha256": "6a7f5bd1e7d75f502397ad1bf4ec5aa6c0a721d6a828dbf1bd1a58fda36445fb"
+    },
+    {
+      "path": "07_thin_film_design_theory/models/check_package.py",
+      "size_bytes": 5249,
+      "sha256": "2c473f7d348acc047e2afe3bc981586c3b02f478f123cba1a0a4368fed2a791c"
+    },
+    {
+      "path": "07_thin_film_design_theory/models/optics_kernel.py",
+      "size_bytes": 10007,
+      "sha256": "c57dbf87435a2d52bf04946c77a8935a393f2379fc261f8a870c027652cedd57"
+    },
+    {
+      "path": "07_thin_film_design_theory/models/run_examples.py",
+      "size_bytes": 15375,
+      "sha256": "fabc49e6aab151df407ce0560e29f642042a898ef9d0b1cf73d6acb22bd3fa06"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/01_maxwell_conventions_and_observables.md",
+      "size_bytes": 7145,
+      "sha256": "f5cf382e6ed366faa7172a99cdfef54b8a3f4c0c1aeed9889a07e1a067685e85"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/02_admittance_transfer_and_scattering.md",
+      "size_bytes": 6123,
+      "sha256": "f18d1a986b62056de19a604155e78c6fa058829d7d1f12e3433f5be4022b5473"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/03_coherence_substrates_angles_and_polarization.md",
+      "size_bytes": 6521,
+      "sha256": "e93c32576b972a46a99804584929a18a79b7ca76804c04ab8cdb73ee7af43e00"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/04_quarter_wave_matching_and_periodic_bands.md",
+      "size_bytes": 5409,
+      "sha256": "61bb08bd6ee4e2d4e96a47bfbbf829488533dbae85f31b0b38236f2336bad5d6"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/05_symmetric_equivalent_layers_and_synthesis.md",
+      "size_bytes": 5065,
+      "sha256": "13a1584495773f6bdcabdf0d555fed38f8a5313cba7695c98f7ec390c9174f79"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/06_cavities_phase_and_group_delay.md",
+      "size_bytes": 5699,
+      "sha256": "0ab6ac120c0b86b2ab94ce868584ded96341f2d589ef3fcce620f2e82c3add53"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/07_gradients_rugates_and_needle_variations.md",
+      "size_bytes": 6246,
+      "sha256": "e3165cfe37b5f599b173106d25d13e327396673a5a61a194e77eb31f9d44af50"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/08_specifications_sensitivity_and_manufacturing.md",
+      "size_bytes": 6809,
+      "sha256": "0f1005b0537de5e815567191114f57f55a2acd54f9f2a4d895621b149c139fbc"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/09_worked_examples_and_reproduction.md",
+      "size_bytes": 6458,
+      "sha256": "be8a2817b2fdb0a9e25ac689e03a2c1e8d80ded82cfa7492ae6bb87e2c2db3d2"
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/09a_generated_results.md",
+      "size_bytes": 4881,
+      "sha256": "19850fe1216534f08a0340b20c671791bb0675b2a815ab5632de462c8a438a9a"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/01_matching_and_bandgap_preview.png",
+      "size_bytes": 129538,
+      "sha256": "8aeb67ae7e05ca6d6f5d69a16d345f7e6bb7a5db5b2032ebc105c25127378bdd"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/02_numerical_stability_preview.png",
+      "size_bytes": 78651,
+      "sha256": "69b01d5c4e533dd2cfafd519eb3ba29bdb4a72db5d6ffc9b99d942c3daad4fa5"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/03_coherence_phase_and_absorption_preview.png",
+      "size_bytes": 126542,
+      "sha256": "6a9338f9e498bec53d738564ce3de22acfa72d93003ef02e06da76e121f4722b"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/04_gradient_and_tolerance_preview.png",
+      "size_bytes": 88374,
+      "sha256": "4e1fca0ce8e66a4c147c505be3a981b25c2041b52122c5c8844953b949776ccd"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/MATH_SPOT_CHECK.md",
+      "size_bytes": 9631,
+      "sha256": "fb74a5ec993a7276910bd4fbe660ab65144a22a86713fb6da4f6e11a97e0ad26"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/OPEN_ISSUES.md",
+      "size_bytes": 2041,
+      "sha256": "a3f79beccb5e7807e51d181ceadfb6fb8b78bd6da7c3797b462994ea5e3b12e4"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/ROUND1_ACCEPTANCE.md",
+      "size_bytes": 2729,
+      "sha256": "fa0a4b94287076bb8af9f3d55da4e6a5215ddb56435412f926f27914d79a0f6c"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/ROUND1_STAGE_PACKAGE.json",
+      "size_bytes": 7382,
+      "sha256": "cb20a5e81c81bab12cf79d3392208351b0db8bc05ea7a537652c0adfb2377617"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/SOURCE_VERIFICATION.md",
+      "size_bytes": 1931,
+      "sha256": "086e97a28282e1c1bdbc509662a4666232c2ac02896e31aaa343807acb6fb45f"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/package_check_output.json",
+      "size_bytes": 2694,
+      "sha256": "874f3de7eab0b42dfbc18a264e760e7cf4098ee6588572546ede6fe07c794b5e"
+    },
+    {
+      "path": "07_thin_film_design_theory/reviews/test_output.txt",
+      "size_bytes": 2767,
+      "sha256": "6d96bb7ad93e8a0e9190c5e81bb6bfd88c36a74d95ba2ac745e6fa85cd1e1dce"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/README.md",
+      "size_bytes": 1664,
+      "sha256": "fdadc56b0e62c7f7e456de9d881979e1f53a7d8391aadc488a54a710369dc2ea"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S01.md",
+      "size_bytes": 1089,
+      "sha256": "208cf07d2d4c0a4beaa6862c1b8b93607b92f21cd167bb942a4711a7119e57d6"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S02.md",
+      "size_bytes": 1263,
+      "sha256": "e01a91264de5cec681c94c908272c95ecf251106c5c8407d0a8e0722ca49be19"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S03.md",
+      "size_bytes": 1237,
+      "sha256": "964f86cd7e569910bd6c668253dfa372511cff95585621055eb2265687eb59c6"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S04.md",
+      "size_bytes": 1040,
+      "sha256": "e95b19eca8d135a80f0c7fe9cc21228f573a33e83318150d5f746cdf8bf06b08"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S05.md",
+      "size_bytes": 1181,
+      "sha256": "df74f4c80ac30ce767eeb5af4aa55136a6e1324a37d828f4de893f03f6fd0e0e"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S06.md",
+      "size_bytes": 979,
+      "sha256": "253dd061acd230391f2eb3e75b4d7c1091d5879a4f90c2dc31a3d22395ab6be1"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S07.md",
+      "size_bytes": 953,
+      "sha256": "ae24a393063e4f6d1a43ca138d686b89fc028ff7ab81009060b680bddfea77a8"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S08.md",
+      "size_bytes": 1135,
+      "sha256": "7536800bd90faaedf6b6e230d015d8004cfe4376719486d333b26a23f3174aa4"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S09.md",
+      "size_bytes": 1046,
+      "sha256": "eed94df7f6fddeb985e9ef9b1221e36d7c5fd066a76964cec523db67e2282b6f"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S10.md",
+      "size_bytes": 1212,
+      "sha256": "5874977eaadc51b0288a6e20572c314cf6c8dbd80f3f06b55829e5b4a7c7a75a"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S11.md",
+      "size_bytes": 1178,
+      "sha256": "67fde13abf136ecb08eb7f03b73c5873e7b09385f1bd886c2a862bfeb3f10863"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S12.md",
+      "size_bytes": 1295,
+      "sha256": "26e5434f7ba31eabc5a2bf1385f8cce7c6ace5c7005214af30d276ed06c41e04"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S13.md",
+      "size_bytes": 1124,
+      "sha256": "ad80db65489a0ecd56bcb484faa7cbca5c6c021472aec2fadc9743752bb3a483"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S14.md",
+      "size_bytes": 1008,
+      "sha256": "d81f759c645ac9f669150e81544845280bb3c8e94e8badb17b56e69fbe225215"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S15.md",
+      "size_bytes": 1274,
+      "sha256": "612273bfd2d1059126739311ea0e87259412d7bd46724069d04806bd67a02978"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S16.md",
+      "size_bytes": 1064,
+      "sha256": "3462abeeb2c61043799b83e9c745dd7041e80f3df6756e03fc23b4c3584c2613"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S17.md",
+      "size_bytes": 981,
+      "sha256": "a267871777bdb5b0b96afdb66fa1ca4626c77fbfb45772b5b69a4e805826a196"
+    },
+    {
+      "path": "07_thin_film_design_theory/sources/summaries/S18.md",
+      "size_bytes": 1085,
+      "sha256": "f597d4871f55ab2880e3fc103b9e8267edb1d5555719823034421a2ca6f44e7b"
+    },
+    {
+      "path": "07_thin_film_design_theory/tests/test_optics_kernel.py",
+      "size_bytes": 9847,
+      "sha256": "15f86baf5ac8441fac3010133485356bb20b3ba5d62c1f422657fcb9aa427679"
     },
     {
       "path": "08_stack_optimization_algorithms/README.md",
@@ -2080,28 +2405,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 4523,
-      "sha256": "40c7c4fdb951d0be78c5d97a38689f4265c97c62b8e4438974c84db5ac8bdf37"
+      "size_bytes": 5147,
+      "sha256": "a308f6b218f043e54b478210836d5f9f8559076ec0ee1fcaed800c13d2d59e59"
     },
     {
       "path": "README.md",
-      "size_bytes": 4780,
-      "sha256": "c3c8e819059bf68ea21b22615876b8df18d5fc7ca64e13bf5ce79de78127a75e"
+      "size_bytes": 4849,
+      "sha256": "fef805af5f9f383afb7e53d3525e61800621f4298cc1a2d7ff16f212ffa9845c"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 4930,
-      "sha256": "2ac6f3837bbc0ec1093f328a4b32ab012cc0d838a5ad447cc4b1bffafe805b43"
+      "size_bytes": 4863,
+      "sha256": "b78963579c3cb2cc8ff4828b7808ec416aa890ef185c9b44ae7d4405b9de172e"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 3048,
-      "sha256": "c37c90c2ce72a41a09b8f13be465e2b6a108310c1d74a1bf89c0a979a0277ad5"
+      "size_bytes": 3168,
+      "sha256": "2549008c9f9186effd2ddfbf206ff71506518dc5e57d81c8b01a6b777c678d19"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 2017,
-      "sha256": "c71eca544d55cd2106731561c6f06d406ec0aeaaf6a952670d630d87b5e5626c"
+      "size_bytes": 1933,
+      "sha256": "4d5f030f30ee7992bbc756316b05aed71af2e2a29256f1762b3f6e966654bb2b"
     }
   ],
   "source_T02_zip_sha256": "684b63f228b31a2ba882b08f60cbc1e7a13173283d0e79b03fa4fc861d3c344b",
@@ -2110,5 +2435,6 @@
   "source_T03_content_id": "64f7ea5beaa18ef916b28ee20aff5f0abee6826698ac365b752ba0e561cd46cd",
   "source_T04_freeze_manifest_sha256": "c85960d3b9703426a6fa7f2fe75d1f0ed699c267702df3eb1e2566865fd907f4",
   "source_T05_release_manifest_sha256": "fc54cef8e0f0f4f16ebc73dbbb7b4e39c69580af1bc2dd68b9c4c3a1a556fb26",
-  "source_T06_deliverable_manifest_sha256": "8311a45c4bb45542f2abe8098071d713497754a9bd01731b772f7143cef724f9"
+  "source_T06_deliverable_manifest_sha256": "8311a45c4bb45542f2abe8098071d713497754a9bd01731b772f7143cef724f9",
+  "source_T07_deliverable_manifest_sha256": "9f382bc2d7d2f5a86570105695f1f9b95d5454caccadd19c0bed1ee85588b238"
 }

@@ -1,48 +1,45 @@
-# T07 · 薄膜设计理论
+# T07 薄膜设计理论
 
-## 来源与状态
+首轮版本：2026-10-02。原始需求为“研究薄膜设计，总结各类设计理论”。本轮形成从Maxwell边界到设计规格的连贯理论手册、8组原创可运行算例、稳定散射矩阵小核及18条主要原作者/论文/官方资料来源。
 
-- 原文定位：`00_project/工程科研.txt` 第11行
-- 顺序：第7个大项目；第一轮
-- 当前状态：仅规划，尚未启动研究
-- 前置阶段：T06首轮验收完成
-- 算法/数值验证要求：适用；启用算法评测、边界情形与独立复核
+状态：公开理论与合成计算包可交协调验收和T08衔接。实际材料、真实设备、生产/环境/损伤验证尚未执行；指定阶段审查状态另见验收记录。没有以首轮完成代替生产资格。
 
-## 首轮范围
+## 阅读路线
 
-规划从物理假设、基本模型、设计思想到可复算例题的系统性教材结构；研究启动后用原始文献和权威资料核验推导、符号、边界条件与适用范围。
+1. [Maxwell边界、复数约定与功率](reports/01_maxwell_conventions_and_observables.md)
+2. [导纳、特征矩阵与稳定散射矩阵](reports/02_admittance_transfer_and_scattering.md)
+3. [相干边界、厚基片、角谱与偏振](reports/03_coherence_substrates_angles_and_polarization.md)
+4. [四分之一波、匹配与周期反射带](reports/04_quarter_wave_matching_and_periodic_bands.md)
+5. [对称膜系、等效层与结构综合](reports/05_symmetric_equivalent_layers_and_synthesis.md)
+6. [腔、相位与群延迟](reports/06_cavities_phase_and_group_delay.md)
+7. [渐变剖面、rugate与needle变化](reports/07_gradients_rugates_and_needle_variations.md)
+8. [规格、公差与实际制造边界](reports/08_specifications_sensitivity_and_manufacturing.md)
+9. [算例与复算说明](reports/09_worked_examples_and_reproduction.md)，[自动生成指标](reports/09a_generated_results.md)
 
-## 优先顺序
+## 可直接复用
 
-原文未明确子优先项。先完成本README界定的核心范围；不得自行把新增分支当作用户指定优先任务。
+- [8组算例的完整结果](data/example_results.json)、[CSV数据](data/spectra/)、4张原创图
+- [教学计算核](models/optics_kernel.py)、[算例生成器](models/run_examples.py)、[单元测试](tests/test_optics_kernel.py)
+- [有单位的设计/测量/制造接口](data/design_theory_contract.json)、[公式索引](data/formula_index.csv)
+- [18条来源登记](data/source_registry.json)、[来源摘要目录](sources/README.md)
+- [验收与证据](reviews/ROUND1_ACCEPTANCE.md)、[未决边界](reviews/OPEN_ISSUES.md)、[T08移交](T08_HANDOFF.md)
 
-## 交付物
+## 贯穿全册的约定
 
-- 设计理论主线与概念/公式索引
-- 有假设与边界的推导、典型例题和数值复算
-- 理论之间的关系、适用条件与局限对照
-- 与材料数据和后续优化算法的接口
+时间exp(−iωt)，被动材料N=n+iκ；波长为真空µm，厚度为物理µm，层序incident→substrate，幅度为切向E。s/p都使用同一切向E反射符号。给反射/透射功率必须携带端口导纳，给相位/GD必须携带参考面。
 
-## 阶段验收标准
+## 本轮优先范围与停止边界
 
-1. 所有关键公式有符号、单位、假设、来源和边界条件
-2. 代表例题可以独立复算且结果与参考相符或解释差异
-3. 区分物理模型误差、参数误差与数值误差
-4. 形成连贯章节结构和可复用例题，不停留于文献摘要堆叠
+优先完成系统设计理论、公式假设、稳定数值表达、相干/角偏振、匹配/等效/腔/渐变/needle概念、规格/公差和实际制程接口。完整优化器和高性能实现留T08；特定标准与试验留T09；各向异性、通用部分相干和特殊扩展待十个大项目首轮之后再排。
 
-共同门槛：关键结论能回溯来源与条件；有可复用结果、未决问题、失效/适用边界及下一阶段接口；审查结论有记录。资料完成、仿真验证、实测验证分开标注。研究范围有限，文献不要求无限穷尽；关键缺口不得隐藏。
+核心结论不能只靠单一来源：基本边界交叉用作者教材与方法论文，数值用解析极限/三种表达/冻结T06核检查。对发现的公式归一化与网页导数不一致显式记录，不假装原文都已正确或完整取得。
 
-## 目录约定
+## 公开阅读包复核
 
-- `reports/`：分章节报告与有版本号的阶段成果
-- `sources/summaries/`：逐来源摘要、原文定位、限制与证据等级
-- `sources/originals/`：仅保存已核对合法存档权利的原文
-- `data/`：可复用参数、数据表与来源/单位/不确定度
-- `reviews/`：阶段验收、纠错与未决问题处理
-- 需要模型、实验、benchmark时，在本专题下新增对应目录，并更新共享索引
+公开包不含原文目录，也不含重复console日志。第09章列出的无参数包检查是完整本地归档模式；公开包请使用：
 
-## 首轮之后的扩展候选
+```bash
+PYTHONDONTWRITEBYTECODE=1 python 07_thin_film_design_theory/models/check_package.py --reader
+```
 
-- 更专门的理论与特殊应用拓展
-
-只有所有十个大项目首轮均验收后才进入此扩展列表。与当前专题无关的后续研究不可并行抢先启动。
+reader模式明确跳过本地原文存在/哈希检查，仍验证公式、来源登记、本地链接、冻结数值、T06依赖和最终测试证据；不表示原件已随包发布。

@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "status": "template_not_production_specification",
+  "application": "ordinary_optical_imaging_spectroscopy_filters",
+  "conventions": {
+    "time_factor": "exp(-i omega t)",
+    "complex_index": "N=n+i kappa; passive kappa>=0",
+    "amplitude": "tangential_electric_field",
+    "layer_order": "incident_to_substrate",
+    "wavelength": "vacuum_um",
+    "thickness": "physical_um",
+    "angle": "degrees_from_surface_normal",
+    "phase_reference_planes": "first_and_last_finite_layer_faces"
+  },
+  "source_configuration": {
+    "spectral_power_density": null,
+    "linewidth_and_coherence_model": null,
+    "AOI_deg": null,
+    "cone_half_angle_deg": null,
+    "angular_power_measure": "must specify solid-angle or pupil weighting",
+    "polarization_state": null
+  },
+  "materials": {
+    "source_topic": "T04",
+    "required": ["material_id", "film_or_bulk", "n_k_data_id", "valid_wavelength_um", "temperature_K", "process", "uncertainty_and_covariance"],
+    "unknown_value_policy": "null means unknown; kappa=0 requires explicit assumption",
+    "allow_extrapolation": false
+  },
+  "layers": [],
+  "substrate": {
+    "material_id": null,
+    "thickness_mm": null,
+    "bulk_alpha_cm_inv": null,
+    "wedge_deg": null,
+    "rear_coating": null,
+    "coherence_model": null
+  },
+  "targets": [
+    {
+      "id": "fill_me",
+      "observable": null,
+      "wavelength_band_um": null,
+      "angle_domain_deg": null,
+      "polarization": null,
+      "aggregation": null,
+      "lower": null,
+      "upper": null,
+      "units": null,
+      "hard_or_soft": null,
+      "weight": null,
+      "residual_scale": null
+    }
+  ],
+  "manufacturing": {
+    "min_layer_um": null,
+    "max_layer_um": null,
+    "max_total_um": null,
+    "max_layers": null,
+    "material_mix_rules": null,
+    "monitoring_strategy": null,
+    "QCM_to_physical_thickness_model": null,
+    "source_common_mode_errors": null
+  },
+  "tolerances": {
+    "parameter_order": [],
+    "parameter_units": [],
+    "covariance": null,
+    "distribution_evidence": null,
+    "bounded_error_scenarios": [],
+    "required_yield": null,
+    "confidence": null
+  },
+  "measurement": {
+    "instrument_line_shape": null,
+    "spectral_resolution_um": null,
+    "collection_NA": null,
+    "collected_orders": null,
+    "specular_or_total": null,
+    "measurement_uncertainty": null
+  },
+  "numerical_contract": {
+    "preferred_engine": "stable_scattering_matrix",
+    "reject_unsupported_physics": true,
+    "check_energy_and_same_beta_reciprocity": true,
+    "check_wavelength_angle_convergence": true,
+    "underflow_T_policy": "report unresolved_logT; do not certify infinite_OD",
+    "derivative_validation": "analytic or stable differentiated method plus independent finite-difference checks",
+    "production_validation": "not_performed"
+  }
+}

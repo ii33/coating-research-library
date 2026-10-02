@@ -1,0 +1,107 @@
+{
+  "stage_id": "T07",
+  "algorithmic": true,
+  "baseline": {
+    "kind": "sha256_of_sorted_core_file_hashes",
+    "value": "af8614e282f0af78e59a03f7d35c9a42866db9ab81a2b793022ba49d78bb0ef4"
+  },
+  "research_first_pass_status": "ready_for_coordinator_acceptance_and_T08_handoff",
+  "actual_checks": {
+    "unit_tests": {
+      "result": "pass",
+      "count": 28,
+      "evidence": "reviews/test_output.txt"
+    },
+    "package": {
+      "result": "pass",
+      "evidence": "reviews/package_check_output.json"
+    },
+    "mathematical_spot_check": {
+      "result": "completed_narrow_scope",
+      "executor": "GPT-6 Luna",
+      "evidence": "reviews/MATH_SPOT_CHECK.md"
+    },
+    "production_measurements": {
+      "result": "not_performed"
+    }
+  },
+  "deepseek_self_review": {
+    "result": "pending",
+    "evidence": []
+  },
+  "seed_review": {
+    "result": "pending",
+    "findings": []
+  },
+  "sol_algorithm_review": {
+    "result": "pending",
+    "findings": []
+  },
+  "final_status": "awaiting_seed",
+  "assumptions": [
+    "isotropic local passive nonmagnetic planar media",
+    "transparent incident medium",
+    "synthetic material constants are not production data"
+  ],
+  "open_issues": "reviews/OPEN_ISSUES.md",
+  "core_sha256": {
+    "T08_HANDOFF.md": "8279bb25bf5211ab2edb857a463a4c83a8d461cebbf2d5bf60590308cc996974",
+    "data/design_theory_contract.json": "02b6bb6b43fdc250c471fcf8007cdc9523187dbf002bd1a2e74a5ab55c99254c",
+    "data/example_results.json": "83d46112682be9ad823b2c292a55846bdbc9a8f77c164685f5e62c14677956ea",
+    "data/formula_index.csv": "9d611730143cdec5f6ee630192d90eb9cd72845aa512317ee8a9e94123edfb6e",
+    "data/source_registry.json": "a688482d0a07876234e75cc16d460fd2b269bf9fd93d60ccb4f8f1db42ff06b4",
+    "data/spectra/W01_ar.csv": "55b5b890943161447ae2502d5baa09381a87de5bcbb6e2d241a613d680483817",
+    "data/spectra/W02_bragg.csv": "37bae6c75b2a765dcc1f405d840c629482f00d5445dc1eab98590588daa21e6d",
+    "data/spectra/W03_stability.csv": "ff54137d4a2218bdc2bbd476cff604877c703cc4dc266a76549f12434470f70f",
+    "data/spectra/W04_phase_average.csv": "58e769ef1eece84167a955554774973283c5b0608b3a38392cc406a72946b972",
+    "data/spectra/W05_absorption.csv": "fad729528025c3017bb1566d2fe513c24e9e96b4b55f25755dfeb41bbea188df",
+    "data/spectra/W05_phase.csv": "34344c3957eb60101f177e52e8ca06ac81ca03a94de467a43c7d31de7ff82918",
+    "data/spectra/W07_gradient.csv": "24e544299a42a7053899be3a84335d9d389d177e25657f55a30222fcfe0c5b85",
+    "data/spectra/W08_sensitivity.csv": "e9568f66860b7b9d11dde038a7ee611e86eb889db8edc18255190c3ee570b8c7",
+    "data/t06_dependency_manifest.json": "f23e61d98f49f4e0dbb4fab2f284856396733ba51831cc1dafc1fb15e41ad9fe",
+    "figures/01_matching_and_bandgap.svg": "bccd1778635546d2b8a917723c1be115eb9ded77444c9410605230ec6a6b2c46",
+    "figures/02_numerical_stability.svg": "aee1ad272bd0b5282547bd13b72ea093dcdeeeb7bdd7e549613dc36a319ba930",
+    "figures/03_coherence_phase_and_absorption.svg": "d89ce5e5f461e7488662243a7cd3194adf0f2e514ef6745de2dca4dda7c43765",
+    "figures/04_gradient_and_tolerance.svg": "d402ad70f93da186d1ed05efc72965c1b9607f958ae20be680ba374a30a1e9fa",
+    "models/build_sources.py": "6a7f5bd1e7d75f502397ad1bf4ec5aa6c0a721d6a828dbf1bd1a58fda36445fb",
+    "models/check_package.py": "2c473f7d348acc047e2afe3bc981586c3b02f478f123cba1a0a4368fed2a791c",
+    "models/optics_kernel.py": "c57dbf87435a2d52bf04946c77a8935a393f2379fc261f8a870c027652cedd57",
+    "models/run_examples.py": "fabc49e6aab151df407ce0560e29f642042a898ef9d0b1cf73d6acb22bd3fa06",
+    "reports/01_maxwell_conventions_and_observables.md": "f5cf382e6ed366faa7172a99cdfef54b8a3f4c0c1aeed9889a07e1a067685e85",
+    "reports/02_admittance_transfer_and_scattering.md": "f18d1a986b62056de19a604155e78c6fa058829d7d1f12e3433f5be4022b5473",
+    "reports/03_coherence_substrates_angles_and_polarization.md": "e93c32576b972a46a99804584929a18a79b7ca76804c04ab8cdb73ee7af43e00",
+    "reports/04_quarter_wave_matching_and_periodic_bands.md": "61bb08bd6ee4e2d4e96a47bfbbf829488533dbae85f31b0b38236f2336bad5d6",
+    "reports/05_symmetric_equivalent_layers_and_synthesis.md": "13a1584495773f6bdcabdf0d555fed38f8a5313cba7695c98f7ec390c9174f79",
+    "reports/06_cavities_phase_and_group_delay.md": "0ab6ac120c0b86b2ab94ce868584ded96341f2d589ef3fcce620f2e82c3add53",
+    "reports/07_gradients_rugates_and_needle_variations.md": "e3165cfe37b5f599b173106d25d13e327396673a5a61a194e77eb31f9d44af50",
+    "reports/08_specifications_sensitivity_and_manufacturing.md": "0f1005b0537de5e815567191114f57f55a2acd54f9f2a4d895621b149c139fbc",
+    "reports/09_worked_examples_and_reproduction.md": "be8a2817b2fdb0a9e25ac689e03a2c1e8d80ded82cfa7492ae6bb87e2c2db3d2",
+    "reports/09a_generated_results.md": "19850fe1216534f08a0340b20c671791bb0675b2a815ab5632de462c8a438a9a",
+    "reviews/MATH_SPOT_CHECK.md": "fb74a5ec993a7276910bd4fbe660ab65144a22a86713fb6da4f6e11a97e0ad26",
+    "sources/summaries/S01.md": "208cf07d2d4c0a4beaa6862c1b8b93607b92f21cd167bb942a4711a7119e57d6",
+    "sources/summaries/S02.md": "e01a91264de5cec681c94c908272c95ecf251106c5c8407d0a8e0722ca49be19",
+    "sources/summaries/S03.md": "964f86cd7e569910bd6c668253dfa372511cff95585621055eb2265687eb59c6",
+    "sources/summaries/S04.md": "e95b19eca8d135a80f0c7fe9cc21228f573a33e83318150d5f746cdf8bf06b08",
+    "sources/summaries/S05.md": "df74f4c80ac30ce767eeb5af4aa55136a6e1324a37d828f4de893f03f6fd0e0e",
+    "sources/summaries/S06.md": "253dd061acd230391f2eb3e75b4d7c1091d5879a4f90c2dc31a3d22395ab6be1",
+    "sources/summaries/S07.md": "ae24a393063e4f6d1a43ca138d686b89fc028ff7ab81009060b680bddfea77a8",
+    "sources/summaries/S08.md": "7536800bd90faaedf6b6e230d015d8004cfe4376719486d333b26a23f3174aa4",
+    "sources/summaries/S09.md": "eed94df7f6fddeb985e9ef9b1221e36d7c5fd066a76964cec523db67e2282b6f",
+    "sources/summaries/S10.md": "5874977eaadc51b0288a6e20572c314cf6c8dbd80f3f06b55829e5b4a7c7a75a",
+    "sources/summaries/S11.md": "67fde13abf136ecb08eb7f03b73c5873e7b09385f1bd886c2a862bfeb3f10863",
+    "sources/summaries/S12.md": "26e5434f7ba31eabc5a2bf1385f8cce7c6ace5c7005214af30d276ed06c41e04",
+    "sources/summaries/S13.md": "ad80db65489a0ecd56bcb484faa7cbca5c6c021472aec2fadc9743752bb3a483",
+    "sources/summaries/S14.md": "d81f759c645ac9f669150e81544845280bb3c8e94e8badb17b56e69fbe225215",
+    "sources/summaries/S15.md": "612273bfd2d1059126739311ea0e87259412d7bd46724069d04806bd67a02978",
+    "sources/summaries/S16.md": "3462abeeb2c61043799b83e9c745dd7041e80f3df6756e03fc23b4c3584c2613",
+    "sources/summaries/S17.md": "a267871777bdb5b0b96afdb66fa1ca4626c77fbfb45772b5b69a4e805826a196",
+    "sources/summaries/S18.md": "f597d4871f55ab2880e3fc103b9e8267edb1d5555719823034421a2ca6f44e7b",
+    "tests/test_optics_kernel.py": "15f86baf5ac8441fac3010133485356bb20b3ba5d62c1f422657fcb9aa427679"
+  },
+  "publication_compatibility_update": {
+    "supersedes_baseline": "3c23cbb94f063fb91d86866e32f5d87e1130857531547b442fdd58bca3934208",
+    "initial_research_baseline": "4671d3930b4ff9eb6aefe40e4e64c4b6438d5126978709375f9b0bea9763fabf",
+    "change": "Explicit --reader package-check mode; all originals and two duplicate console logs excluded; reader entrypoint clarified. No optical kernel, numerical values, or research chapter changes.",
+    "verification": "Local --reader and allowlist-only --reader package checks passed, 22 checks; unit tests were not rerun."
+  }
+}

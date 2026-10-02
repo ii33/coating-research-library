@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "mode": "reader",
+  "scope": "local package and frozen numerical evidence; no HTTP, production or external review certification",
+  "checks": [
+    {
+      "check": "18 distinct primary or official sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every source has card, scope, locator, limit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4 archival originals registered; raw-file checks skipped in reader mode",
+      "passed": true,
+      "detail": "Reader publication excludes all originals; presence and file hashes were not checked."
+    },
+    {
+      "check": "9 narrative chapters",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "32 formula entries with units assumptions evidence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all local Markdown links resolve",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "all source IDs registered",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "synthetic not measured status explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "W01 ideal AR and material-limited residual",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "W03 stable finite opaque limit and naive failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "W04 phase mean matches intensity sum",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "W05 GD analytic agreement",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "W05 absorbed density vs flux",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "W06 equivalent matrix reconstruction",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "W07 slicing converges over reported sequence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "W08 illustrative Monte Carlo agrees with local covariance to 5 percent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "28 T06 crosschecks within 5e-11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "T06 frozen dependencies unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4 SVG figures with PNG previews",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "28 unit tests passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "T08 handoff and contract present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "originals exclusion rule explicit",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}
