@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-01T23:19:54+00:00",
+  "updated_at_utc": "2026-10-01T23:57:07+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
     "major_topics": "serial_original_order",
@@ -71,12 +71,12 @@
         5
       ],
       "round": 1,
-      "state": "starting",
+      "state": "round1_theory_and_synthetic_scope_complete",
       "depends_on": [
         "T01"
       ],
       "algorithmic": true,
-      "review_status": "pending",
+      "review_status": "34_math_checks_and_14_delivery_checks_passed_formal_signoff_not_performed",
       "entry_condition": "T01.round1_theory_handoff_ready; physical calibration and formal review remain disclosed",
       "scope": "规划几何与运动、蒸发源分布、遮挡与修正板、膜厚分布及误差传播等模型接口；研究启动后先定义“高精度”的输出、单位、参考数据与容差，再实施和验证。不得在缺乏实测证据时宣称达到工程精度。",
       "deliverables": [
@@ -97,15 +97,21 @@
           "sequence": 1,
           "label": "首轮核心范围（原文未细分优先项）",
           "is_explicit_priority": false,
-          "state": "starting",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_theory_and_synthetic_scope_complete",
+          "evidence_paths": [
+            "02_machine_modeling/README.md",
+            "02_machine_modeling/verification/frozen_manifest.json",
+            "02_machine_modeling/T03_HANDOFF.md"
+          ],
+          "acceptance_record": "02_machine_modeling/reviews/ROUND1_ACCEPTANCE.md"
         }
       ],
       "expansion_round": 2,
       "expansion_backlog": [
         "超出基线设备与已验证参数域的扩展模型"
-      ]
+      ],
+      "handoff_record": "02_machine_modeling/T03_HANDOFF.md",
+      "machine_validation": "not_performed"
     },
     {
       "id": "T03",
@@ -116,13 +122,13 @@
         6
       ],
       "round": 1,
-      "state": "queued",
+      "state": "starting",
       "depends_on": [
         "T02"
       ],
       "algorithmic": true,
       "review_status": "pending",
-      "entry_condition": "T02.round1_accepted",
+      "entry_condition": "T02.round1_theory_and_synthetic_scope_complete; physical calibration and designated review remain disclosed",
       "scope": "以前一专题的冻结仿真接口为依据，规划修正板几何参数化、均匀性目标、约束、求解方法、制造可行性与实测闭环。算法实现与数值研究仅在本专题轮到时启动。",
       "deliverables": [
         "目标函数、约束、参数化与数据协议",
@@ -142,7 +148,7 @@
           "sequence": 1,
           "label": "首轮核心范围（原文未细分优先项）",
           "is_explicit_priority": false,
-          "state": "queued",
+          "state": "starting",
           "evidence_paths": [],
           "acceptance_record": null
         }

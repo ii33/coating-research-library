@@ -1,0 +1,19 @@
+{
+  "model_version": "T02-reference-0.1",
+  "case_status": "synthetic_assumptions_only",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "cpu_count": 9,
+  "timing_method": "perf_counter; warm-up once; median/min/max of 3 sequential trials; no claimed cross-machine speedup",
+  "smooth_reference_refinement_error": 3.444935811411752e-15,
+  "mask_reference_refinement_error": 2.3856121362568754e-05,
+  "extended_source_reference_refinement_error": 0.00017284368685922233,
+  "smooth_reference_panels": 16384,
+  "smooth_reference_order": 4,
+  "mask_reference_panels": 65536,
+  "mask_reference_order": 4,
+  "extended_source_reference_nodes": 147456,
+  "point_count": 72,
+  "model_sha256": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb"
+}

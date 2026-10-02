@@ -1,0 +1,256 @@
+{
+  "model_version": "T02-reference-0.1",
+  "validation_scope": "synthetic analytical/code verification only; no physical-machine data",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "checks": [
+    {
+      "name": "angular_normalization_p0",
+      "error": 0.0,
+      "tolerance": 2e-13,
+      "passed": true,
+      "evidence": "Integral f dOmega=(p+1) integral_0^1 mu^p dmu=1"
+    },
+    {
+      "name": "angular_normalization_p1",
+      "error": 0.0,
+      "tolerance": 2e-13,
+      "passed": true,
+      "evidence": "Integral f dOmega=(p+1) integral_0^1 mu^p dmu=1"
+    },
+    {
+      "name": "angular_normalization_p4",
+      "error": 1.887379141862766e-15,
+      "tolerance": 2e-13,
+      "passed": true,
+      "evidence": "Integral f dOmega=(p+1) integral_0^1 mu^p dmu=1"
+    },
+    {
+      "name": "angular_normalization_p20",
+      "error": 1.1546319456101628e-14,
+      "tolerance": 2e-13,
+      "passed": true,
+      "evidence": "Integral f dOmega=(p+1) integral_0^1 mu^p dmu=1"
+    },
+    {
+      "name": "parallel_plane_analytic_profile",
+      "error": 1.743934249004316e-16,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "K=h^2/[pi(h^2+r^2)^2], h=1m"
+    },
+    {
+      "name": "inverse_square_scale",
+      "error": 2.942889045194783e-16,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "All source-target separations scaled by 3"
+    },
+    {
+      "name": "backside_target_zero",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Receiver normal reversed"
+    },
+    {
+      "name": "backside_emission_p0_zero",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Isotropic hemisphere must not emit backward: avoid 0**0"
+    },
+    {
+      "name": "capture_mass_conservation_disk",
+      "error": 1.4876988529977098e-14,
+      "tolerance": 1e-12,
+      "passed": true,
+      "evidence": "Integral K dA equals finite disk capture fraction <=1"
+    },
+    {
+      "name": "extended_disk_on_axis",
+      "error": 1.216568532105411e-16,
+      "tolerance": 1e-13,
+      "passed": true,
+      "evidence": "Analytic area integral of a uniform disk, fixed total emitted mass rate"
+    },
+    {
+      "name": "extended_source_point_limit",
+      "error": 9.997975049541743e-13,
+      "tolerance": 5e-12,
+      "passed": true,
+      "evidence": "Uniform source radius ->0 at fixed total kg/s"
+    },
+    {
+      "name": "global_rigid_transform_invariance",
+      "error": 8.71967124502158e-17,
+      "tolerance": 2e-14,
+      "passed": true,
+      "evidence": "Transforms positions and both source/receiver normals"
+    },
+    {
+      "name": "mask_at_actual_plane_blocked",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Ray x=.2 at z=.5 intersects rectangle"
+    },
+    {
+      "name": "mask_height_changes_shadow",
+      "error": 0.0,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "Same xy silhouette at z=.25 no longer intersects"
+    },
+    {
+      "name": "thick_mask_side_intersection",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Oblique segment hits finite box side but misses central thin plane"
+    },
+    {
+      "name": "mask_outside_segment_ignored",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Occluder behind target is not on source-target segment"
+    },
+    {
+      "name": "masked_rigid_transform_invariance",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Mask center and basis also transformed"
+    },
+    {
+      "name": "zero_weight_source_node_ignored",
+      "error": 0.0,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "Inactive source node coincident with target must not create a singularity"
+    },
+    {
+      "name": "extended_source_half_penumbra",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 2e-14,
+      "passed": true,
+      "evidence": "Symmetry of disk and half-plane mask gives visibility-weighted half flux"
+    },
+    {
+      "name": "pose_closure_36",
+      "error": 2.3482198520736835e-15,
+      "tolerance": 1e-13,
+      "passed": true,
+      "evidence": "Fixed 120 tooth external sun direct mesh, no slip; conditional ideal topology"
+    },
+    {
+      "name": "pose_closure_37",
+      "error": 2.697018610061163e-14,
+      "tolerance": 1e-13,
+      "passed": true,
+      "evidence": "Fixed 120 tooth external sun direct mesh, no slip; conditional ideal topology"
+    },
+    {
+      "name": "tilted_normals_unit",
+      "error": 0.0,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "Both position and normal use common rotation chain"
+    },
+    {
+      "name": "rigid_distance_preservation",
+      "error": 2.7755575615628914e-17,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "Local inter-point distances unchanged"
+    },
+    {
+      "name": "duration_seconds_si",
+      "error": 1.2993322677942483e-16,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "60s at fixed kg/s yields 60x thickness, not normalized mean flux"
+    },
+    {
+      "name": "rate_density_units",
+      "error": 1.218124001057108e-16,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "kg/s * s * 1/m2 / (kg/m3) = m"
+    },
+    {
+      "name": "linear_rate_exact",
+      "error": 0.0,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "Midpoint integrates affine temporal rate exactly at fixed geometry"
+    },
+    {
+      "name": "shutter_event_split",
+      "error": 0.0,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "Quadrature intervals explicitly split at known discontinuity"
+    },
+    {
+      "name": "spherical_cap_area",
+      "error": 1.918089652580788e-16,
+      "tolerance": 2e-13,
+      "passed": true,
+      "evidence": "Weights include 1/|nz| Jacobian; analytic spherical cap area"
+    },
+    {
+      "name": "spherical_normals_unit",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 1e-14,
+      "passed": true,
+      "evidence": "Normal (x/R,y/R,-sqrt(R2-r2)/R)"
+    },
+    {
+      "name": "negative_density",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Invalid input must raise ValueError"
+    },
+    {
+      "name": "negative_rate",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Invalid input must raise ValueError"
+    },
+    {
+      "name": "invalid_source_fraction",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Invalid input must raise ValueError"
+    },
+    {
+      "name": "source_target_coincidence",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true,
+      "evidence": "Invalid input must raise ValueError"
+    },
+    {
+      "name": "midpoint_order_two",
+      "error": 8.544702073987054e-05,
+      "tolerance": 0.002,
+      "passed": true,
+      "evidence": "Refinement halves dt, smooth exp(t) integral error should drop by ~4"
+    }
+  ],
+  "passed": true,
+  "passed_count": 34,
+  "total_count": 34,
+  "midpoint_exp_errors": [
+    0.001118163463358135,
+    0.0002796364063848422,
+    6.991507518594453e-05,
+    1.747914218164226e-05
+  ],
+  "model_sha256": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb"
+}

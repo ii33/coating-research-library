@@ -1,0 +1,23 @@
+{
+  "model_version": "T02-reference-0.1",
+  "case_id": "synthetic_planetary_ring_7p3s",
+  "value_status": "synthetic_assumption",
+  "validation_status": "synthetic_example_only",
+  "input_sha256": "30f041d858979c196788d184c72b4a7b432bbef45724c5dc8e6f10fb4f8af002",
+  "model_sha256": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sampling": "ring_line_samples",
+  "time_nodes": 512,
+  "source_nodes": 1,
+  "emitted_mass_kg": 7.3223623242471825e-06,
+  "metrics": {
+    "mean_m": 8.704167173657433e-10,
+    "min_m": 8.664841476164041e-10,
+    "max_m": 8.744393176407961e-10,
+    "peak_to_valley_over_mean": 0.009139495905441495,
+    "max_absolute_deviation_over_mean": 0.004621464862516581,
+    "coefficient_of_variation": 0.003187374790513238
+  },
+  "actual_surface_integrated_mass_kg": null
+}

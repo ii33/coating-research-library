@@ -1,0 +1,197 @@
+{
+  "schema_version": "T02-measurement-template-0.1",
+  "not_executable_case": true,
+  "machine_id": null,
+  "configuration_revision": null,
+  "run_id": null,
+  "measured_at_utc": null,
+  "geometry": {
+    "orbit_radius": {
+      "value": null,
+      "unit": "m",
+      "frame": "L",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "height_difference": {
+      "value": null,
+      "unit": "m",
+      "frame": "L",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "source_position_xyz": {
+      "value": null,
+      "unit": "m",
+      "frame": "L",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "source_extent": {
+      "value": null,
+      "unit": "m",
+      "frame": "source",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "source_normal": {
+      "value": null,
+      "unit": "1",
+      "frame": "L",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "holder_mount_tilt": {
+      "value": null,
+      "unit": "rad",
+      "frame": "carrier",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "mask_center_xyz": {
+      "value": null,
+      "unit": "m",
+      "frame": "L",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "mask_orientation": {
+      "value": null,
+      "unit": "rotation matrix",
+      "frame": "L",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "mask_thickness": {
+      "value": null,
+      "unit": "m",
+      "frame": null,
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    }
+  },
+  "kinematics": {
+    "mechanism_description": null,
+    "carrier_speed": {
+      "value": null,
+      "unit": "rad/s",
+      "frame": "L",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "relative_spin_speed": {
+      "value": null,
+      "unit": "rad/s",
+      "frame": "carrier",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "carrier_phase": {
+      "value": null,
+      "unit": "rad",
+      "frame": "L",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "relative_phase": {
+      "value": null,
+      "unit": "rad",
+      "frame": "carrier",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "encoder_or_video_source": null
+  },
+  "process": {
+    "start_time": {
+      "value": null,
+      "unit": "s",
+      "frame": "common clock",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "end_time": {
+      "value": null,
+      "unit": "s",
+      "frame": "common clock",
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "shutter_events": [],
+    "rate_log": null,
+    "rate_log_quantity_and_units": null,
+    "rate_time_delay": {
+      "value": null,
+      "unit": "s",
+      "frame": null,
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "source_shape_log": null
+  },
+  "material": {
+    "name": null,
+    "supplier_grade": null,
+    "effective_film_density": {
+      "value": null,
+      "unit": "kg/m3",
+      "frame": null,
+      "value_status": "unknown",
+      "source": null,
+      "standard_uncertainty": null,
+      "distribution_or_bounds": null
+    },
+    "retention_model": null,
+    "retention_parameters": null
+  },
+  "observation": {
+    "raw_data_source": null,
+    "measurand": null,
+    "positions_and_frame": null,
+    "footprint": null,
+    "instrument_calibration": null,
+    "optical_inversion_model_if_any": null,
+    "covariance_or_uncertainty": null,
+    "holdout_runs": []
+  },
+  "acceptance": {
+    "effective_aperture": null,
+    "metric_definition": null,
+    "tolerance": null,
+    "coverage_rule": null,
+    "allowed_parameter_domain": null,
+    "compute_budget": null
+  }
+}

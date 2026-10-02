@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-01T23:19:54+00:00",
+  "updated_at_utc": "2026-10-01T23:57:07+00:00",
   "project_status": "active",
   "setup_status": "complete_integrity_checked",
   "round": 1,
-  "active_topic_id": "T02",
-  "active_task_id": "T02.P01",
-  "active_scope": "高精度镀膜机建模与仿真首轮理论与方法研究，接续启动",
-  "later_topics_policy": "T03_to_T10_planning_only_until_preceding_round1_scope_handoff",
+  "active_topic_id": "T03",
+  "active_task_id": "T03.P01",
+  "active_scope": "修正板自动设计优化首轮理论与合成算法研究，接续启动",
+  "later_topics_policy": "T04_to_T10_planning_only_until_preceding_round1_scope_handoff",
   "topic_order": [
     "T01",
     "T02",
@@ -22,8 +22,8 @@
   ],
   "topic_status": {
     "T01": "round1_theory_ready_for_handoff",
-    "T02": "starting",
-    "T03": "queued",
+    "T02": "round1_theory_and_synthetic_scope_complete",
+    "T03": "starting",
     "T04": "queued",
     "T05": "queued",
     "T06": "queued",
@@ -34,7 +34,7 @@
   },
   "research_stage_acceptance": {
     "T01": "theory_handoff_ready_not_machine_validated_or_formally_signed_off",
-    "T02": "pending",
+    "T02": "bounded_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
     "T03": "pending",
     "T04": "pending",
     "T05": "pending",
@@ -44,7 +44,7 @@
     "T09": "pending",
     "T10": "pending"
   },
-  "next_action": "接收T01 v0.2理论移交，定义T02模型假设、坐标、输入输出、精度指标和验证层级",
+  "next_action": "接收T02 v0.1冻结正向模型与T03移交，研究修正板参数化、约束目标、合成优化和稳健性",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -53,8 +53,9 @@
     "Q06"
   ],
   "notes": [
-    "T01 v0.2理论资料首轮已形成可移交基线；不将资料收口等同实机验证或指定模型正式审查",
-    "T02接续启动，不同时展开T03–T10；用户实机数据缺口保留，不阻断公开理论与方法研究"
+    "T01 v0.2与T02 v0.1理论优先范围已形成可移交基线；不等同实机验证或指定模型正式审查",
+    "T02完成34项数学检查和14项交付检查；实机精度和生产参数仍未验证",
+    "T03接续启动，不同时展开T04–T10；保留实际数据缺口，不阻断公开理论与合成算法研究"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -67,9 +68,10 @@
     "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
   },
   "handoff_evidence": [
-    "01_machine_structures/T02_HANDOFF.md",
-    "01_machine_structures/ROUND1_ACCEPTANCE_GAPS.md",
-    "01_machine_structures/stage_status.json"
+    "02_machine_modeling/T03_HANDOFF.md",
+    "02_machine_modeling/reviews/ROUND1_ACCEPTANCE.md",
+    "02_machine_modeling/stage_status.json",
+    "02_machine_modeling/verification/frozen_manifest.json"
   ],
   "machine_validation": "not_performed",
   "formal_review_signoff": "not_performed"

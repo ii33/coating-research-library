@@ -1,0 +1,26 @@
+{
+  "exponent_log_jacobian_columns": [
+    "log_amplitude",
+    "emission_exponent",
+    "extra_incidence_exponent"
+  ],
+  "singular_values": [
+    6.407378429744877,
+    0.20732768136344626,
+    3.710504064224352e-17
+  ],
+  "rank": 2,
+  "sample_count": 41,
+  "scale_columns": [
+    "log_rate",
+    "log_sticking",
+    "log_density"
+  ],
+  "scale_singular_values": [
+    11.090536506409414,
+    1.4787538098415842e-15,
+    1.685269297691973e-31
+  ],
+  "scale_rank": 1,
+  "interpretation": "Synthetic structural degeneracy; fitting more points in the same geometry cannot remove equal Jacobian columns."
+}

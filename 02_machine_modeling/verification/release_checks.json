@@ -1,0 +1,112 @@
+{
+  "scope": "artifact_integrity_only",
+  "passed": true,
+  "passed_count": 14,
+  "total_count": 14,
+  "checks": [
+    {
+      "name": "required_files",
+      "passed": true,
+      "detail": [
+        "README.md",
+        "T03_HANDOFF.md",
+        "stage_status.json",
+        "data/synthetic_case.json",
+        "data/measurement_template.json",
+        "models/deposition_reference.py",
+        "models/run_case.py",
+        "verification/verification_results.json",
+        "reviews/ROUND1_ACCEPTANCE.md",
+        "reviews/OPEN_ISSUES.md",
+        "reviews/independent_math_check.md",
+        "sources/source_registry.json",
+        "sources/RIGHTS_AND_ACCESS.md",
+        "sources/summaries/source_summaries.md",
+        "benchmarks/results/benchmark_summary.json",
+        "benchmarks/results/example.json",
+        "benchmarks/results/example.csv"
+      ]
+    },
+    {
+      "name": "six_substantive_chapters",
+      "passed": true,
+      "detail": [
+        "01_physics_and_fidelity.md",
+        "03_numerical_integration.md",
+        "04_calibration_uncertainty.md",
+        "06_reproducibility_and_interfaces.md",
+        "05_validation_and_benchmark_results.md",
+        "02_geometry_kinematics_visibility.md"
+      ]
+    },
+    {
+      "name": "json_parse",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "numerical_checks_34_pass",
+      "passed": true,
+      "detail": "Hard assertions executed separately"
+    },
+    {
+      "name": "model_hash_verification/verification_results.json",
+      "passed": true,
+      "detail": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb"
+    },
+    {
+      "name": "model_hash_benchmarks/results/benchmark_summary.json",
+      "passed": true,
+      "detail": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb"
+    },
+    {
+      "name": "model_hash_benchmarks/results/example.json",
+      "passed": true,
+      "detail": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb"
+    },
+    {
+      "name": "input_hash",
+      "passed": true,
+      "detail": "JSON run uses current input"
+    },
+    {
+      "name": "eight_source_records",
+      "passed": true,
+      "detail": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08"
+      ]
+    },
+    {
+      "name": "permitted_archive_omission_M04",
+      "passed": true,
+      "detail": "Original hash not checked: restricted raw archive intentionally absent from reader/public copy"
+    },
+    {
+      "name": "local_markdown_links",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "physical_validation_unverified",
+      "passed": true,
+      "detail": "No device data claimed"
+    },
+    {
+      "name": "next_topic_is_t03",
+      "passed": true,
+      "detail": "Serial roadmap preserved"
+    },
+    {
+      "name": "no_pyc_in_publish_selection",
+      "passed": true,
+      "detail": "Publication excludes __pycache__, sources/originals, deliverables and temporary files"
+    }
+  ]
+}

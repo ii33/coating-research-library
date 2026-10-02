@@ -1,0 +1,520 @@
+[
+  {
+    "source_id": "M01",
+    "title": "The distribution of thin films condensed on surfaces by the vacuum evaporation method",
+    "authors_or_organization": [
+      "L. Holland",
+      "W. Steckelmacher"
+    ],
+    "source_type": "primary_paper",
+    "year": 1952,
+    "version_or_edition": "Vacuum 2(4), pp. 346–364",
+    "doi": "10.1016/0042-207X(52)93784-6",
+    "url": "https://www.sciencedirect.com/science/article/pii/0042207X52937846",
+    "accessed_at_utc": "2026-10-01",
+    "topic_ids": [
+      "T02"
+    ],
+    "evidence_level": "B",
+    "read_status": "abstract_only",
+    "summary_path": "sources/summaries/source_summaries.md#m01",
+    "original_path": null,
+    "original_sha256": null,
+    "rights": {
+      "status": "restricted",
+      "license": null,
+      "basis": "出版社页面可读书目与摘要；全文按机构访问/付费，未存档。公开摘要不意味着开放再分发许可。",
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "redistribution_basis": "未核实再分发许可；只保留必要摘要与出版社链接。"
+    },
+    "conditions": {
+      "read_scope": "出版社元数据与摘要；未读全文/公式",
+      "scope": "历史真空热蒸发文献，作为模型来源几何的基础入口；不代表用户设备参数"
+    },
+    "claims": [
+      {
+        "claim_id": "M01-C1",
+        "statement": "摘要称作者以Knudsen余弦定律为基本律，扩展计算至点、长条、线和环形源以及平面/球面接收面，并报告特定材料实验验证及结果适用范围讨论。",
+        "locator": "出版社摘要；Vacuum 2(4), 1952, pp.346–364",
+        "verification_status": "reported",
+        "limitations": [
+          "仅核读摘要，未读正文推导或实验细节；不能据此直接引用/复现未读公式。",
+          "几何源模型的适用范围需结合全文与当前源几何另行核验。"
+        ]
+      }
+    ],
+    "standard_metadata": null,
+    "limitations": [
+      "摘要层级证据；不得将其当作具体公式或现代源型参数的全文验证。"
+    ],
+    "conflicts": [],
+    "record_version": 1
+  },
+  {
+    "source_id": "M02",
+    "title": "Thickness Distribution of Evaporated Films",
+    "authors_or_organization": [
+      "Anthony Musset",
+      "Ian Stevenson"
+    ],
+    "source_type": "primary_paper",
+    "year": 1988,
+    "version_or_edition": "Optical Interference Coatings 1988, Technical Digest Series, paper ThE3",
+    "doi": "10.1364/OIC.1988.ThE3",
+    "url": "https://opg.optica.org/abstract.cfm?uri=OIC-1988-ThE3",
+    "accessed_at_utc": "2026-10-01",
+    "topic_ids": [
+      "T02"
+    ],
+    "evidence_level": "B",
+    "read_status": "partial",
+    "summary_path": "sources/summaries/source_summaries.md#m02",
+    "original_path": null,
+    "original_sha256": null,
+    "rights": {
+      "status": "restricted",
+      "license": null,
+      "basis": "Optica官方页面确认书目信息但标示全文不可访问；Denton Vacuum作者/雇主官方技术页公开方法摘录。未存档全文。",
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "redistribution_basis": "未核实再分发许可；仅保留必要摘要与官方链接。"
+    },
+    "conditions": {
+      "read_scope": "Optica书目元数据/摘要及Denton官方技术页摘录；未读Optica全文",
+      "source_measurement": "单转平面rack上的已知径向位置测试片；用沉积厚度拟合源发射函数",
+      "scope": "特定源/单转架和calotte布置的经验校准示例，不是普适源函数"
+    },
+    "claims": [
+      {
+        "claim_id": "M02-C1",
+        "statement": "官方技术页称：先测量单转平面架上已知径向位置测试片的膜厚，以程序拟合源发射函数cos^Q(phi)；再用已知函数选择源偏置与calotte曲率以改进直径方向厚度均匀性。",
+        "locator": "Denton Vacuum官方技术页正文（“We first measured…”和“The known emission function…”）；Optica proceedings元数据确认题名、作者与ThE3",
+        "verification_status": "reported",
+        "limitations": [
+          "Optica正式全文未读，Denton页为摘要/技术页摘录而非原文完整页；不声称已核对原文算法或误差。",
+          "单转平面rack、所测材料和几何下的拟合不能证明参数对不同几何可辨识。"
+        ]
+      }
+    ],
+    "standard_metadata": null,
+    "limitations": [
+      "部分访问；只用官方Denton技术页明确披露的方法描述，不扩展为未读推导。"
+    ],
+    "conflicts": [],
+    "record_version": 1
+  },
+  {
+    "source_id": "M03",
+    "title": "Control of the thickness distribution of evaporated functional electroceramic NTC thermistor thin films",
+    "authors_or_organization": [
+      "Rainer Schmidt",
+      "Mehmet Parlak",
+      "A. W. Brinkman"
+    ],
+    "source_type": "primary_paper",
+    "year": 2008,
+    "version_or_edition": "Journal of Materials Processing Technology 199, pp. 412–416",
+    "doi": "10.1016/j.jmatprotec.2007.08.014",
+    "url": "https://avesis.metu.edu.tr/yayin/8210cab0-907c-4aab-a923-28ccff0ef0a9/control-of-the-thickness-distribution-of-evaporated-functional-electroceramic-ntc-thermistor-thin-films",
+    "accessed_at_utc": "2026-10-01",
+    "topic_ids": [
+      "T02"
+    ],
+    "evidence_level": "B",
+    "read_status": "abstract_only",
+    "summary_path": "sources/summaries/source_summaries.md#m03",
+    "original_path": null,
+    "original_sha256": null,
+    "rights": {
+      "status": "restricted",
+      "license": null,
+      "basis": "作者机构（Middle East Technical University）公开书目/摘要；全文未取得，未存档。",
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "redistribution_basis": "未核实再分发许可。"
+    },
+    "conditions": {
+      "read_scope": "机构库书目与摘要；未读全文",
+      "process": "低速率0.8 nm/s电子束蒸发；Alpha Step触针式轮廓仪测厚；NTC热敏薄膜",
+      "scope": "特定Ni-Mn-O功能薄膜工艺与几何"
+    },
+    "claims": [
+      {
+        "claim_id": "M03-C1",
+        "statement": "摘要报告在宏观薄膜表面测量厚度分布，并以基于Hertz–Knudsen关系及改进余弦发射律的几何模型拟合；文中估计黏附系数80 ± 1.5%。",
+        "locator": "METU AVESIS官方机构摘要；期刊pp.412–416，摘要",
+        "verification_status": "reported",
+        "limitations": [
+          "仅读机构摘要；未核对仪器校准、误差定义、原始数据或置信区间。",
+          "80 ± 1.5%是该文材料/工况下的估计，不能移植为别的材料或用户机参数。"
+        ]
+      }
+    ],
+    "standard_metadata": null,
+    "limitations": [
+      "摘要层级证据；具体模型细节与不确定度定义需全文复核。"
+    ],
+    "conflicts": [],
+    "record_version": 1
+  },
+  {
+    "source_id": "M04",
+    "title": "Uniformity Masks Design Method Based on the Shadow Matrix for Coating Materials with Different Condensation Characteristics",
+    "authors_or_organization": [
+      "Lichao Zhang",
+      "Xikun Cai"
+    ],
+    "source_type": "primary_paper",
+    "year": 2013,
+    "version_or_edition": "The Scientific World Journal 2013, Article 160792; full-text HTML in PMC",
+    "doi": "10.1155/2013/160792",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3817662/",
+    "accessed_at_utc": "2026-10-01",
+    "topic_ids": [
+      "T02"
+    ],
+    "evidence_level": "A",
+    "read_status": "full",
+    "summary_path": "sources/summaries/source_summaries.md#m04",
+    "original_path": "sources/originals/M04_Zhang_Cai_2013_PMC.html",
+    "original_sha256": "76d3753a43938ba0e77c0bb50bea80ed18ba3e88947e2e73ab36b1e7b41ac0f6",
+    "rights": {
+      "status": "open_licensed",
+      "license": "Creative Commons Attribution License (version not specified in the article page)",
+      "basis": "PMC官方HTML公开全文已存单份研究档案；文章正文明确CC Attribution。完整HTML还含网站导航/标识，读者包默认不打包原始抓取页。",
+      "archive_allowed": true,
+      "redistribution_allowed": false,
+      "redistribution_basis": "文章正文的CC Attribution权利与整个网页抓取文件不同；完整HTML仅保留本地研究档案，发布只给官方全文链接，避免将网站其他内容误当成文章许可。"
+    },
+    "conditions": {
+      "read_scope": "PMC官方全文HTML；已读理论与实验、结果和结论",
+      "test_setup": "SYRUSpro 1110 DUV；1100 mm腔体；4个工件架，行星半径300 mm；凸球面半径200 mm、直径280 mm；MgF2/LaF3单层；700 mm源-工件距离",
+      "scope": "作者材料、曲率、腔体和遮挡设计案例；方程(1)是文内点源近似核，不等于所有扩展源"
+    },
+    "claims": [
+      {
+        "claim_id": "M04-C1",
+        "statement": "膜厚速率模型写作 t_p = K cos^n(alpha) cos^m(beta) / r_p^2；n、m分别表示源发射和凝结角响应，r_p为源到工件点距离。",
+        "locator": "全文 §2 Theory and Experiment, Eq. (1)",
+        "verification_status": "reported",
+        "limitations": [
+          "该文将其用作简化角响应模型，非对用户设备的扩展源积分/遮挡/动态率验证。"
+        ]
+      },
+      {
+        "claim_id": "M04-C2",
+        "statement": "作者以无修正板的实测厚度分布拟合发射参数n与凝结参数m；报告MgF2 n=2,m=1及LaF3 n=2,m=0.5。",
+        "locator": "全文 §3 Results, Fig. 2及其前后段落",
+        "verification_status": "reported",
+        "limitations": [
+          "n、m是该研究的材料/设备/模型拟合结果；文中没有对用户设备的参数可辨识性证据。",
+          "m是经验凝结角响应指数，不可直接解释为概率型sticking coefficient；若把cos^m(beta)分解成cos(beta)投影项乘c(beta)，则c=cos^(m-1)(beta)，m<1时在掠入射发散。"
+        ]
+      },
+      {
+        "claim_id": "M04-C3",
+        "statement": "shadow matrix用分区系数将遮挡份额与掩模形状参数建立线性关系，并由矩阵求解形状参数；针对不同材料响应联合设计互补掩模。",
+        "locator": "全文 §2 Eqs. (2)–(5); Eq. (2)是shadow matrix关系，不是n/m拟合式",
+        "verification_status": "reported",
+        "limitations": [
+          "分区、线性化和逆解建立在文中掩模/球面/运动设置上；本项目须另做空间步长与矩阵条件性检查。"
+        ]
+      },
+      {
+        "claim_id": "M04-C4",
+        "statement": "互补修正板在该凸球面行星夹具案例中实现两种材料厚度均匀度优于98%，并与设计分布吻合。",
+        "locator": "摘要；§2设备/测量条件；§3 Fig. 3与讨论；§4结论",
+        "verification_status": "reported",
+        "limitations": [
+          "结果只验证文中给定表面、材料、机台、测量和定义；不可当作用户机预测精度。"
+        ]
+      }
+    ],
+    "standard_metadata": null,
+    "limitations": [
+      "原文全文已读；已存单份官方HTML研究档案；默认不再分发整个网页抓取文件。",
+      "公式来源与几何假设须随模型一起记录；论文的掩模实验不是扩展源或所有遮挡条件的通用验证。",
+      "经验指数m<1不是概率型黏附系数；若由模型分解得到掠入射发散的c(beta)，应视为对这种分解不适用的警讯。"
+    ],
+    "conflicts": [],
+    "record_version": 1
+  },
+  {
+    "source_id": "M05",
+    "title": "Impact of deposition-rate fluctuations on thin-film thickness and uniformity",
+    "authors_or_organization": [
+      "J. B. Oliver"
+    ],
+    "source_type": "primary_paper",
+    "year": 2016,
+    "version_or_edition": "Optics Letters 41(22), pp. 5182–5185; OSTI accepted author manuscript",
+    "doi": "10.1364/OL.41.005182",
+    "url": "https://opg.optica.org/ol/abstract.cfm?uri=ol-41-22-5182",
+    "accessed_at_utc": "2026-10-01",
+    "topic_ids": [
+      "T02"
+    ],
+    "evidence_level": "A",
+    "read_status": "full",
+    "summary_path": "sources/summaries/source_summaries.md#m05",
+    "original_path": null,
+    "original_sha256": null,
+    "rights": {
+      "status": "restricted",
+      "license": null,
+      "basis": "OSTI public repository author manuscript is already archived in T01:S12; T02 uses cross-reference only and makes no duplicate.",
+      "archive_allowed": true,
+      "redistribution_allowed": false,
+      "redistribution_basis": "No redistribution license verified; the reader package does not include the manuscript."
+    },
+    "conditions": {
+      "read_scope": "full OSTI accepted manuscript read from existing T01:S12 local original; publisher page separately verifies formal DOI/citation",
+      "t01_cross_reference": "T01:S12; projects/coating-research-library/01_machine_structures/sources/originals/S12_Oliver_2016_Rate_Fluctuations_Accepted.pdf",
+      "model_geometry": "1.37 m chamber, four 533 mm planets; dual sources; manuscript models complete trajectory cycle to isolate rate fluctuation; compares planet/solar gear ratios 171/53 and 237/70",
+      "scope": "Illustrative modeled system and assumed rate signals; not user equipment validation"
+    },
+    "claims": [
+      {
+        "claim_id": "M05-C1",
+        "statement": "Eq. (1) gives the incremental point contribution from source-to-substrate coordinates and plume exponent n; Eq. (2) weights each motion step by normalized time-dependent rate R_N(t) and sums through planetary motion. Each step uses 60/(wU) seconds for planetary carrier revolution rate w rpm and U subdivisions per revolution.",
+        "locator": "Accepted manuscript PDF pp.1–2, Eqs. (1)–(2); text immediately after Eq. (2)",
+        "verification_status": "reported",
+        "limitations": [
+          "Accepted manuscript first-page DOI/date fields are placeholders; journal citation and DOI verified separately at Optica/PubMed.",
+          "Full-trajectory-cycle assumption, sample chamber/gear ratios and modeled oscillations isolate one effect; they do not describe every finite real layer or support applying the reported maximum ~3% error to user hardware."
+        ]
+      },
+      {
+        "claim_id": "M05-C2",
+        "statement": "Modeled rate fluctuation effects depend on the fluctuation period relative to planetary motion; the paper reports fast oscillations as less impactful and slow/harmonic oscillations as potentially problematic.",
+        "locator": "Abstract and manuscript Figs. 1–3 with results/discussion, pp.2–4",
+        "verification_status": "reported",
+        "limitations": [
+          "Conclusions are model-specific. Author notes system-specific resonances and recommends evaluating actual rate harmonics rather than assuming universal error levels."
+        ]
+      }
+    ],
+    "standard_metadata": null,
+    "limitations": [
+      "Do not rewrite or duplicate the T01 source archive; cite this as T02:M05 and T01:S12.",
+      "This is a source-model paper, not an independent experimental validation of every geometry or model component."
+    ],
+    "conflicts": [],
+    "record_version": 1
+  },
+  {
+    "source_id": "M06",
+    "title": "Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM) and Amendment 1: Nonlinearity in measurement models",
+    "authors_or_organization": [
+      "Joint Committee for Guides in Metrology (JCGM); BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, OIML"
+    ],
+    "source_type": "standard",
+    "year": 2026,
+    "version_or_edition": "JCGM 100:2008(E); BIPM also lists Amendment 1:2026 (10.59161/PPDI3267)",
+    "doi": "10.59161/JCGM100-2008E",
+    "url": "https://www.bipm.org/en/committees/jc/jcgm/publications",
+    "accessed_at_utc": "2026-10-01",
+    "topic_ids": [
+      "T02"
+    ],
+    "evidence_level": "A",
+    "read_status": "partial",
+    "summary_path": "sources/summaries/source_summaries.md#m06",
+    "original_path": null,
+    "original_sha256": null,
+    "rights": {
+      "status": "restricted",
+      "license": null,
+      "basis": "BIPM官方页面提供免费阅读；PDF版权页说明版权由JCGM成员组织共有。未复制原件。",
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "redistribution_basis": "BIPM/JCGM声明未经许可不得复制再发布；保留官方入口。"
+    },
+    "conditions": {
+      "read_scope": "BIPM官方JCGM 100:2008 PDF及官方Amd.1:2026 PDF；全文读相关不确定度传播、非线性说明",
+      "scope": "一般测量不确定度指南；非镀膜专用标准"
+    },
+    "claims": [
+      {
+        "claim_id": "M06-C1",
+        "statement": "GUM提供测量模型输入量、灵敏度系数、协方差与输出量合成标准不确定度的规则，适合将测厚、几何/运动参数与模型输出不确定度连起来。",
+        "locator": "JCGM 100:2008 §§4.1, 5.1.2–5.1.3 （按条款定位，不混用PDF页码与印刷页码）; covariances also in §5.2",
+        "verification_status": "reported",
+        "limitations": [
+          "这是测量不确定度框架，不会自行定义镀膜模型或参数的概率分布；输入不确定度需由测量/记录证据给出。"
+        ]
+      },
+      {
+        "claim_id": "M06-C2",
+        "statement": "2026正式修订Amd.1指出，当模型函数非线性显著时可用JCGM 101蒙特卡洛传播，或在满足条件时补入Taylor高阶项；修订并讨论GUM 100 Annex H.1.7示例。",
+        "locator": "JCGM 100:2008/Amd.1:2026, p.1, 改4.1.4及H.1.7；BIPM官方版本页/DOI记录",
+        "verification_status": "reported",
+        "limitations": [
+          "Amd.1只补充非线性处理提示，不取代对适用分布、相关性和数值收敛的论证。"
+        ]
+      }
+    ],
+    "standard_metadata": {
+      "issuing_body": "Joint Committee for Guides in Metrology (JCGM)",
+      "full_identifier": "JCGM 100:2008(E); JCGM 100:2008/Amd.1:2026",
+      "status": "BIPM official listing; Amendment 1:2026",
+      "revision_checked_at": "2026-10-01",
+      "replacement_or_amendments": [
+        "BIPM official publication list includes JCGM 100:2008/Amd.1:2026, Nonlinearity in measurement models (DOI 10.59161/PPDI3267)"
+      ],
+      "applicability": "General evaluation/expression of measurement uncertainty; not a deposition process standard",
+      "relevant_clauses": [
+        "100:2008 §§4.1–4.4, 5.1.2–5.1.3; Amd.1:2026 p.1, amendments to §4.1.4 and Annex H.1.7"
+      ]
+    },
+    "limitations": [
+      "General metrology guidance; does not prescribe an appropriate deposition measurement model.",
+      "No local standard copy retained due copyright."
+    ],
+    "conflicts": [],
+    "record_version": 1
+  },
+  {
+    "source_id": "M07",
+    "title": "Evaluation of measurement data — Supplement 1 to the GUM: Propagation of distributions using a Monte Carlo method",
+    "authors_or_organization": [
+      "Joint Committee for Guides in Metrology (JCGM); BIPM, IEC, IFCC, ILAC, ISO, IUPAC, IUPAP, OIML"
+    ],
+    "source_type": "standard",
+    "year": 2008,
+    "version_or_edition": "JCGM 101:2008",
+    "doi": "10.59161/JCGM101-2008",
+    "url": "https://www.bipm.org/en/web/guest/publications/guides",
+    "accessed_at_utc": "2026-10-01",
+    "topic_ids": [
+      "T02"
+    ],
+    "evidence_level": "A",
+    "read_status": "partial",
+    "summary_path": "sources/summaries/source_summaries.md#m07",
+    "original_path": null,
+    "original_sha256": null,
+    "rights": {
+      "status": "restricted",
+      "license": null,
+      "basis": "BIPM官方免费PDF；版权页声明受JCGM成员组织版权保护；未复制原件。",
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "redistribution_basis": "未经许可不再分发原文。"
+    },
+    "conditions": {
+      "read_scope": "BIPM官方PDF，全文相关章节",
+      "scope": "非线性/非高斯不确定度传播的通用计量方法；非镀膜专用"
+    },
+    "claims": [
+      {
+        "claim_id": "M07-C1",
+        "statement": "方法将输入概率分布通过测量模型传播为输出分布，可用于在非线性厚度模型中传播几何、速率、材料响应和测量输入不确定度。",
+        "locator": "JCGM 101:2008 §5.9.6; §§7.1–7.2, especially 7.2.1–7.2.3 (PDF printed pp.27–28)",
+        "verification_status": "reported",
+        "limitations": [
+          "传播结果受输入分布、相关性、模型结构与采样质量控制；模型偏差、缺测参数和错误几何不会被Monte Carlo自动修复。"
+        ]
+      },
+      {
+        "claim_id": "M07-C2",
+        "statement": "指南明确指出所需Monte Carlo样本数取决于输出概率分布形状和目标覆盖概率，建议以数值容差控制/自适应选择试验数，而非仅报告任意固定种子或试验数。",
+        "locator": "JCGM 101:2008, §7.2.1–7.2.3, pp.27–28",
+        "verification_status": "reported",
+        "limitations": [
+          "计算量较大时，指南也说明输出分布刻画精度会受限；需报告样本数、收敛检查和输出容差。"
+        ]
+      }
+    ],
+    "standard_metadata": {
+      "issuing_body": "Joint Committee for Guides in Metrology (JCGM)",
+      "full_identifier": "JCGM 101:2008",
+      "status": "Published; listed by BIPM",
+      "revision_checked_at": "2026-10-01",
+      "replacement_or_amendments": [],
+      "applicability": "Propagation of probability distributions using Monte Carlo; uncertainty in measurement",
+      "relevant_clauses": [
+        "§5.9.6; §7.1–7.2"
+      ]
+    },
+    "limitations": [
+      "General uncertainty propagation guidance, not a coating-specific validation source.",
+      "No local standard copy retained due copyright."
+    ],
+    "conflicts": [],
+    "record_version": 1
+  },
+  {
+    "source_id": "M08",
+    "title": "NASA-STD-7009B Change 1: Standard for Models and Simulations",
+    "authors_or_organization": [
+      "NASA Office of the Chief Engineer; NASA Technical Standards System"
+    ],
+    "source_type": "standard",
+    "year": 2024,
+    "version_or_edition": "NASA-STD-7009B, Change 1; document date 2024-03-05",
+    "doi": null,
+    "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-7009",
+    "accessed_at_utc": "2026-10-01",
+    "topic_ids": [
+      "T02"
+    ],
+    "evidence_level": "A",
+    "read_status": "partial",
+    "summary_path": "sources/summaries/source_summaries.md#m08",
+    "original_path": null,
+    "original_sha256": null,
+    "rights": {
+      "status": "restricted",
+      "license": null,
+      "basis": "NASA官方标准登记页将文档标为Internet Public且active；文档再分发许可未另行核实，本地不存档。",
+      "archive_allowed": false,
+      "redistribution_allowed": false,
+      "redistribution_basis": "仅保留NASA官方标准登记页与官方PDF链接。"
+    },
+    "conditions": {
+      "read_scope": "NASA官方登记页与官方PDF全文；核读标准正文与附录E相关段",
+      "scope": "跨领域模型与仿真生命周期、可信度、验证、误差/不确定度管理指南；非镀膜专用"
+    },
+    "claims": [
+      {
+        "claim_id": "M08-C1",
+        "statement": "标准将solution verification界定为识别模型数值误差、评估其对结果精度的影响并采取措施；明确包括迭代收敛容差与离散/分辨率误差。",
+        "locator": "NASA-STD-7009B, Appendix E.3.3, PDF pp.66–67",
+        "verification_status": "reported",
+        "limitations": [
+          "标准给出可信度流程要求，不替本项目选择具体网格/时间步、解析基准或容差；需按项目用途定接受准则。"
+        ]
+      },
+      {
+        "claim_id": "M08-C2",
+        "statement": "要求记录输入、结果及派生量不确定度表征过程和理由，并维护敏感度分析记录；模型结果报告应给最佳估计、不确定度、能力/结果评价与显式适用限制。",
+        "locator": "§4.3.3.1 [M&S 28], §4.3.5 [M&S 30], §4.3.8; PDF pp.31–33",
+        "verification_status": "reported",
+        "limitations": [
+          "NASA标准适用于NASA M&S活动；本项目将其作为自愿工程参考，不宣称符合NASA合规体系。"
+        ]
+      }
+    ],
+    "standard_metadata": {
+      "issuing_body": "NASA Office of the Chief Engineer",
+      "full_identifier": "NASA-STD-7009B Change 1",
+      "status": "ACTIVE per NASA standards registry",
+      "revision_checked_at": "2026-10-01",
+      "replacement_or_amendments": [
+        "B revision dated 2016-12-07; Change 1 dated 2024-03-05; previous versions listed in NASA lifecycle page"
+      ],
+      "applicability": "Model and simulation development, use, verification, validation, uncertainty, sensitivity and reporting; broad discipline scope",
+      "relevant_clauses": [
+        "§4.3.3.1; §4.3.5; §4.3.8; Appendix E.3.3–E.3.4"
+      ]
+    },
+    "limitations": [
+      "Use as project engineering guidance, not a claim of NASA standard compliance.",
+      "No local standard copy retained; use current official NASA version."
+    ],
+    "conflicts": [],
+    "record_version": 1
+  }
+]

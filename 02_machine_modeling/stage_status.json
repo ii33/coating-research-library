@@ -1,0 +1,33 @@
+{
+  "topic": "T02",
+  "round": 1,
+  "version": "0.1",
+  "updated_at_utc": "2026-10-01T23:51:22.588297+00:00",
+  "status": "frozen_theory_and_synthetic_scope",
+  "bounded_research_acceptance": "complete_with_declared_limits",
+  "physical_validation": "not_performed",
+  "numerical_checks": {
+    "passed": 34,
+    "total": 34
+  },
+  "source_records": 8,
+  "chapter_count": 6,
+  "algorithmic": true,
+  "actual_review": "Independent narrow mathematical check by GPT-6 Luna; one low-severity edge case fixed and rechecked",
+  "designated_model_reviews": {
+    "DeepSeek_execution": "not_performed",
+    "Seed_stage_review": "not_performed",
+    "Sol_independent_algorithm_signoff": "not_performed"
+  },
+  "next_topic": "T03",
+  "next_scope": "Correction-mask design theory and synthetic constrained optimization; actual machine calibration remains unverified",
+  "blocking_issues_in_bounded_scope": [],
+  "open_issues_file": "reviews/OPEN_ISSUES.md",
+  "acceptance_file": "reviews/ROUND1_ACCEPTANCE.md",
+  "publication_exclude": [
+    "sources/originals/**",
+    "**/__pycache__/**",
+    "deliverables/**"
+  ],
+  "root_state_policy": "Parent coordinates root roadmap and state; this topic does not overwrite them"
+}

@@ -1,6 +1,6 @@
 {
-  "snapshot": "coating-research-library-initial-private-v0.2",
-  "created_at_utc": "2026-10-01T23:20:55+00:00",
+  "snapshot": "coating-research-library-T02-v0.1-handoff",
+  "created_at_utc": "2026-10-01T23:57:07+00:00",
   "repository": "ii33/coating-research-library",
   "visibility": "private",
   "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
@@ -20,8 +20,8 @@
     },
     {
       "path": "00_project/GITHUB_PUBLICATION.md",
-      "size_bytes": 1676,
-      "sha256": "710f893aa06e95716b1762ba03be54977c2f823f4571093e6fccac5184378876"
+      "size_bytes": 2164,
+      "sha256": "81c974caf56255b778ec14804922a61a9f4615367b3e1661299d717c6b6da385"
     },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
@@ -50,8 +50,8 @@
     },
     {
       "path": "00_project/planning_baseline_manifest.json",
-      "size_bytes": 7668,
-      "sha256": "1d305f654fe2daf5d4c38a30e925cf9feeb134dfdfe9f96f241b784703ed16b9"
+      "size_bytes": 7665,
+      "sha256": "89e9f62c50890266ef958ec75fb76ee8c6ab7dd967974311756637930a076c24"
     },
     {
       "path": "00_project/requirements_traceability.json",
@@ -60,8 +60,8 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 23454,
-      "sha256": "95843c2ebbaa3baf8098b54c4b8836f38427838bd2664053cea947b1ed121a56"
+      "size_bytes": 24007,
+      "sha256": "334520b053a2a038bedd1469d9cc82796de643c7f7e773b0e882f96adb4f681f"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -235,8 +235,193 @@
     },
     {
       "path": "02_machine_modeling/README.md",
-      "size_bytes": 2474,
-      "sha256": "ae02e666c2132fa4f5fa6d9caff0102195b6703821f08a2288a19e23d0cbad15"
+      "size_bytes": 3425,
+      "sha256": "0d8d59207225e8807df7d1734a38299556e80715c705408f908bb8749614fb14"
+    },
+    {
+      "path": "02_machine_modeling/T03_HANDOFF.md",
+      "size_bytes": 3238,
+      "sha256": "729fd1c889f564f3dff8201b6c85bbbcbb5c6da8bdd52727e13504c0d64f1fda"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/plot_results.py",
+      "size_bytes": 2320,
+      "sha256": "01a44fdf5de1ab18b1d54b50d2d9abe35ce5067841befaffba3c46ff7af3f59f"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/benchmark_summary.json",
+      "size_bytes": 803,
+      "sha256": "0e56fefa0efb12d1bb748758fa0126c50e10735bc540e1c89a034b2a3866b21f"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/example.csv",
+      "size_bytes": 6819,
+      "sha256": "d37640d21d1b5ca37632a557f6faaf969f839d6779392b8aca2cfc84a30adea4"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/example.json",
+      "size_bytes": 860,
+      "sha256": "bbdbd25c91515eef683b545704db635dffeccfeff82fcca632143a583f2349de"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/extended_source_shadow_accuracy.csv",
+      "size_bytes": 419,
+      "sha256": "37a5b676e9b9ac0ece3664c10dd6b0cfbd3edb15014adcfe75296195cb8bcb41"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/gear_center_distance_confound.csv",
+      "size_bytes": 3941,
+      "sha256": "cbf7a0c26e494f733b4998c10d88545548f46cbe89d54cddd8ab6ea6924ae11a"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/identifiability.json",
+      "size_bytes": 605,
+      "sha256": "24455084c449a9dc332c20ffecb0ac1f4b8c0108d60948e320635caf883e30fd"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/mask_time_accuracy.csv",
+      "size_bytes": 1037,
+      "sha256": "929274e002b0169d03473aedebc93f9b02b463a057ecaf62a1ac0e2ca751abe2"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/numerical_evidence.png",
+      "size_bytes": 199115,
+      "sha256": "e832ef87979d2ff7525cd6419a0d08ca19942f3d2323468cb559322b5817e3b5"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/numerical_evidence.svg",
+      "size_bytes": 125890,
+      "sha256": "a674aad759151e266001142e757e3f90a77f43af54aa7101736a52c79702c265"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/quadrature_aliasing.csv",
+      "size_bytes": 272,
+      "sha256": "f7df495a2641b1105f711791d381e4681d4b3a9c08bc26d8c5a0f384c5df054a"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/surface_area_accuracy.csv",
+      "size_bytes": 499,
+      "sha256": "356fa1ccab4627216e1695d98173b24dc84264e0e812aa5d288943b57d2767ff"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/results/time_accuracy.csv",
+      "size_bytes": 1508,
+      "sha256": "223b5cc0bea2d37791677d1a55eb1590ac0ec0a55d832b12e7f5cbe605409f4a"
+    },
+    {
+      "path": "02_machine_modeling/benchmarks/run_benchmarks.py",
+      "size_bytes": 7901,
+      "sha256": "0969f71283034b52278e52cdf7f176e1b40487f6166bcbf9b9bff16830f5bee0"
+    },
+    {
+      "path": "02_machine_modeling/chapters/01_physics_and_fidelity.md",
+      "size_bytes": 9531,
+      "sha256": "a0943b2f71e2024b25dfc6d0a59ecb77e600c78546f378da307da87651ebf770"
+    },
+    {
+      "path": "02_machine_modeling/chapters/02_geometry_kinematics_visibility.md",
+      "size_bytes": 6544,
+      "sha256": "783a889343e2b5597d6f6ea0dae187933815cdc089d89dc5534f0060650e7c89"
+    },
+    {
+      "path": "02_machine_modeling/chapters/03_numerical_integration.md",
+      "size_bytes": 9177,
+      "sha256": "a45806d58ec83810c351ede2416f7db569d4770bf73069317c20ad1330910a72"
+    },
+    {
+      "path": "02_machine_modeling/chapters/04_calibration_uncertainty.md",
+      "size_bytes": 9023,
+      "sha256": "23364745f7a6670e03a5448a01ce4a96a13e16737ef5c32ca2445413e6ec2299"
+    },
+    {
+      "path": "02_machine_modeling/chapters/05_validation_and_benchmark_results.md",
+      "size_bytes": 7398,
+      "sha256": "fdf197283e82428246a8b62ace20d6a723e123a2fec73a4f3ca83392e7ba2c29"
+    },
+    {
+      "path": "02_machine_modeling/chapters/06_reproducibility_and_interfaces.md",
+      "size_bytes": 6047,
+      "sha256": "36670f592c545998b0e7e3b5daa79bb99f906b3fd0953eb6020352b33b20f79b"
+    },
+    {
+      "path": "02_machine_modeling/data/measurement_template.json",
+      "size_bytes": 4858,
+      "sha256": "77bb7183af9501937ea1cc4460aba0d50af3f53da359b719a79fe6ecd0fc18a3"
+    },
+    {
+      "path": "02_machine_modeling/data/synthetic_case.json",
+      "size_bytes": 1671,
+      "sha256": "30f041d858979c196788d184c72b4a7b432bbef45724c5dc8e6f10fb4f8af002"
+    },
+    {
+      "path": "02_machine_modeling/models/deposition_reference.py",
+      "size_bytes": 13000,
+      "sha256": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb"
+    },
+    {
+      "path": "02_machine_modeling/models/run_case.py",
+      "size_bytes": 4517,
+      "sha256": "44ff20776773edaf18fbf0c11c4ce2818f0f35e5ce794e1dd84c137fdcf05443"
+    },
+    {
+      "path": "02_machine_modeling/reviews/OPEN_ISSUES.md",
+      "size_bytes": 2013,
+      "sha256": "2cbf07aaa96e885b8a21bd4f3000fe9d5cc934719d1eafe617cfd25da384a52a"
+    },
+    {
+      "path": "02_machine_modeling/reviews/ROUND1_ACCEPTANCE.md",
+      "size_bytes": 3620,
+      "sha256": "21d1d9d9f7900b9760ad61663cf5c27f7f9d845aef84c21dd973b1350d992a84"
+    },
+    {
+      "path": "02_machine_modeling/reviews/independent_math_check.md",
+      "size_bytes": 7377,
+      "sha256": "e6e73047790205a401b3bbf2c815d008717f2ecc5276ee5d007acef53b8ee935"
+    },
+    {
+      "path": "02_machine_modeling/sources/RIGHTS_AND_ACCESS.md",
+      "size_bytes": 1495,
+      "sha256": "ad484765565e6c9552b3942bef6b59e7a91f0fb03b64601fed17fead5dff7e5e"
+    },
+    {
+      "path": "02_machine_modeling/sources/source_registry.json",
+      "size_bytes": 25356,
+      "sha256": "133bb63ae12d71266ae2e22a9fea790b82fb95973b34d95d16d6ecad44db60ea"
+    },
+    {
+      "path": "02_machine_modeling/sources/summaries/source_summaries.md",
+      "size_bytes": 12773,
+      "sha256": "ef5842bf7b7402cfa71a924ceefc092ec79b652a91448ef1e52dc247d2c9fb0b"
+    },
+    {
+      "path": "02_machine_modeling/stage_status.json",
+      "size_bytes": 1212,
+      "sha256": "90fafdde45db8ec99a7317da59183ffcf4b17e4d243a32b268fa0166c29593d8"
+    },
+    {
+      "path": "02_machine_modeling/verification/check_release.py",
+      "size_bytes": 4003,
+      "sha256": "db13b8b8119ff2f6891491af3e00411da59ebe1e38b598053ea00d02d603c0ce"
+    },
+    {
+      "path": "02_machine_modeling/verification/frozen_manifest.json",
+      "size_bytes": 6675,
+      "sha256": "9ef90752501aba76032e9f1733fca2be34c1877228d74aa7ecb8a5715066d075"
+    },
+    {
+      "path": "02_machine_modeling/verification/release_checks.json",
+      "size_bytes": 3040,
+      "sha256": "7c7187bc23ff09f623ef25c9bb691059e9a05d496dab479fa6be803c4887c7ec"
+    },
+    {
+      "path": "02_machine_modeling/verification/run_verification.py",
+      "size_bytes": 8969,
+      "sha256": "a0716175f852659e7a6d3ea2ff754573299d2100cbf2882cc5c37c4aba80396b"
+    },
+    {
+      "path": "02_machine_modeling/verification/verification_results.json",
+      "size_bytes": 7347,
+      "sha256": "ccd0678ae9cca8964ddb4128340c8dae0b77a9a69654d1151c1272994f936cee"
     },
     {
       "path": "03_correction_plate_optimization/README.md",
@@ -400,28 +585,30 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 1296,
-      "sha256": "54a107f84f051e7f04db686e8985c47fa8a72d44a9dbaaf3bd35b2e9fafff5ee"
+      "size_bytes": 1811,
+      "sha256": "97923709e51fc51f483a35325949710e97fb11723f1a56f319a3eceb2cf73cfc"
     },
     {
       "path": "README.md",
-      "size_bytes": 4773,
-      "sha256": "662e933f7f4b9dee90e55ded6788d9060050366810702df8f40f938f53bd2761"
+      "size_bytes": 4804,
+      "sha256": "3e676d88c706010f2cbba165ba4ec12693728faa33c1a1078c96fd221dc071da"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 4851,
-      "sha256": "5de7c78132f8ba9a62eded91dbf0b80e5ac12d92568fdc1668f55ad331c94da8"
+      "size_bytes": 4944,
+      "sha256": "a55ac779315bbbfa23d6adf9efa82e0a5cb240dcda2e57baf41c08e0e369cee3"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 2127,
-      "sha256": "f8ce9a9936032b54b322b76ae63208d28b648e0b79be6b95cc297214611d7f72"
+      "size_bytes": 2403,
+      "sha256": "ba291f4293964324f16ca64d4ecc69bb77f99c8b80e0a223f41813a8ddb7eaa5"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 1892,
-      "sha256": "282f218ab6864fc1f75875371d4701e20e0de207c17de3d57dc08e537b2dc92f"
+      "size_bytes": 1880,
+      "sha256": "bc669a2c2a57649b37d07061f2ae5e41a2b65f35e4b5686694c5eadd28b65b49"
     }
-  ]
+  ],
+  "source_T02_zip_sha256": "684b63f228b31a2ba882b08f60cbc1e7a13173283d0e79b03fa4fc861d3c344b",
+  "source_T02_content_id": "db16fe512e848532c5e2b00c3fc8d5ec3469d6a7764e5872840f98eff69ba1a2"
 }
