@@ -1,0 +1,243 @@
+{
+  "version": "T03-mask-0.1",
+  "check_count": 47,
+  "passed": true,
+  "scope": "analytic and synthetic only",
+  "checks": [
+    {
+      "name": "cached unmasked equals frozen T02",
+      "passed": true,
+      "detail": 1.7763568394002505e-15
+    },
+    {
+      "name": "zero thickness config is supported",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source mass fractions normalized",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "area weights normalized positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal thickness scales with source rate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal thickness scales inverse density",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "normal thickness scales with sticking",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passive mask cannot increase point thickness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "passive mask nonnegative thickness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "wider shape monotonic loss",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite slab blocks superset of thin plane",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cached equals unpruned all-ray finite slab",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "trapezoid union slab equals T02 rectangle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "closed boundary counted opaque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside lateral footprint transparent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "negative thickness rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "larger cached slab override rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "thicker-mask bug fixture has empty old cache",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact former silent wrong-answer repro now rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rebuild thicker fixture produces all blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "streaming grayscale equals response matrix",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "influence nonnegative",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell losses sum no more than unmasked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "opacity attenuation linear interpolation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "radial projection idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "radial angular variance sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "uniform field metric zero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero mean relative metrics rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "throughput projection feasible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "throughput projection idempotent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero opacity allowed at zero loss budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "projection KKT shared multiplier",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "negative regularization rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid throughput ratio rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonfinite config rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "convex solver meets stated residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "convex solver feasible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid shape geometric screen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid shape screen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "too narrow shape rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "slope curvature violation rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "polygon closed and finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "infeasible requested throughput rejected by shape",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "shape evaluation budget respected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pattern search score nonincreasing",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two-material Schur solution agrees block solve",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "published explicit Eq5 not generic block identity",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

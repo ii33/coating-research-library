@@ -1,0 +1,357 @@
+{
+  "pattern_constant_seed": {
+    "widths_m": [
+      0.0021250000000000097,
+      0.004375000000000002,
+      0.012625,
+      0.033625,
+      0.050875000000000004,
+      0.046375000000000006,
+      0.029125000000000005,
+      0.011875000000000004
+    ],
+    "objective": 3.761420155806368e-05,
+    "evaluations": 369,
+    "stopping_reason": "step_floor",
+    "last_step_m": 0.0001875,
+    "trace": [
+      {
+        "evaluations": 1,
+        "objective": 0.00035498182222248854,
+        "step_m": 0.0
+      },
+      {
+        "evaluations": 17,
+        "objective": 0.0001541184406429037,
+        "step_m": 0.012
+      },
+      {
+        "evaluations": 33,
+        "objective": 0.00014931844064290368,
+        "step_m": 0.012
+      },
+      {
+        "evaluations": 49,
+        "objective": 0.00014931844064290368,
+        "step_m": 0.012
+      },
+      {
+        "evaluations": 65,
+        "objective": 7.990156237375091e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 81,
+        "objective": 5.9813978416151055e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 97,
+        "objective": 5.4931428108913886e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 113,
+        "objective": 5.1331428108913886e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 129,
+        "objective": 4.8834718857067494e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 145,
+        "objective": 4.5234718857067494e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 161,
+        "objective": 4.5234718857067494e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 177,
+        "objective": 4.138237550386074e-05,
+        "step_m": 0.003
+      },
+      {
+        "evaluations": 193,
+        "objective": 4.103282602846965e-05,
+        "step_m": 0.003
+      },
+      {
+        "evaluations": 209,
+        "objective": 4.103282602846965e-05,
+        "step_m": 0.003
+      },
+      {
+        "evaluations": 225,
+        "objective": 3.8968175869281896e-05,
+        "step_m": 0.0015
+      },
+      {
+        "evaluations": 241,
+        "objective": 3.8968175869281896e-05,
+        "step_m": 0.0015
+      },
+      {
+        "evaluations": 257,
+        "objective": 3.8687028704876953e-05,
+        "step_m": 0.00075
+      },
+      {
+        "evaluations": 273,
+        "objective": 3.820713919628817e-05,
+        "step_m": 0.00075
+      },
+      {
+        "evaluations": 289,
+        "objective": 3.8057093708857614e-05,
+        "step_m": 0.00075
+      },
+      {
+        "evaluations": 305,
+        "objective": 3.803834370885762e-05,
+        "step_m": 0.00075
+      },
+      {
+        "evaluations": 321,
+        "objective": 3.803834370885762e-05,
+        "step_m": 0.00075
+      },
+      {
+        "evaluations": 337,
+        "objective": 3.771428111855908e-05,
+        "step_m": 0.000375
+      },
+      {
+        "evaluations": 353,
+        "objective": 3.761420155806368e-05,
+        "step_m": 0.000375
+      },
+      {
+        "evaluations": 369,
+        "objective": 3.761420155806368e-05,
+        "step_m": 0.000375
+      }
+    ],
+    "manufacturing": {
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "bounded": true,
+        "min_horizontal_segment": true,
+        "connected": true,
+        "max_slope": true,
+        "second_difference": true
+      },
+      "minimum_full_width_m": 0.004250000000000019,
+      "maximum_slope": 0.47419354838709704,
+      "maximum_second_difference_m": 0.02175,
+      "scope": "2D polygon geometric screen only; no stress/thermal/fixture/edge-radius certification"
+    },
+    "wall_s": 2.496835653000744,
+    "scenario_oracle_evaluations": 369
+  },
+  "pattern_relaxation_seed": {
+    "widths_m": [
+      0.0022174837606823627,
+      0.010520247560134702,
+      0.0236212463726961,
+      0.04525016158745173,
+      0.051430712210193484,
+      0.03682009279967003,
+      0.017431058885759933,
+      0.002
+    ],
+    "objective": 4.097495646247776e-05,
+    "evaluations": 241,
+    "stopping_reason": "step_floor",
+    "last_step_m": 0.0001875,
+    "trace": [
+      {
+        "evaluations": 1,
+        "objective": 7.291391638629158e-05,
+        "step_m": 0.0
+      },
+      {
+        "evaluations": 17,
+        "objective": 6.483554417812495e-05,
+        "step_m": 0.012
+      },
+      {
+        "evaluations": 33,
+        "objective": 6.483554417812495e-05,
+        "step_m": 0.012
+      },
+      {
+        "evaluations": 49,
+        "objective": 5.6647827609080715e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 65,
+        "objective": 4.414076445010419e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 81,
+        "objective": 4.414076445010419e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 97,
+        "objective": 4.320587519801538e-05,
+        "step_m": 0.003
+      },
+      {
+        "evaluations": 113,
+        "objective": 4.320587519801538e-05,
+        "step_m": 0.003
+      },
+      {
+        "evaluations": 129,
+        "objective": 4.144668638654612e-05,
+        "step_m": 0.0015
+      },
+      {
+        "evaluations": 145,
+        "objective": 4.144668638654612e-05,
+        "step_m": 0.0015
+      },
+      {
+        "evaluations": 161,
+        "objective": 4.1381900111500704e-05,
+        "step_m": 0.00075
+      },
+      {
+        "evaluations": 177,
+        "objective": 4.120179330695809e-05,
+        "step_m": 0.00075
+      },
+      {
+        "evaluations": 193,
+        "objective": 4.120179330695809e-05,
+        "step_m": 0.00075
+      },
+      {
+        "evaluations": 209,
+        "objective": 4.0979487616637e-05,
+        "step_m": 0.000375
+      },
+      {
+        "evaluations": 225,
+        "objective": 4.097495646247776e-05,
+        "step_m": 0.000375
+      },
+      {
+        "evaluations": 241,
+        "objective": 4.097495646247776e-05,
+        "step_m": 0.000375
+      }
+    ],
+    "manufacturing": {
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "bounded": true,
+        "min_horizontal_segment": true,
+        "connected": true,
+        "max_slope": true,
+        "second_difference": true
+      },
+      "minimum_full_width_m": 0.004,
+      "maximum_slope": 0.4883948596880306,
+      "maximum_second_difference_m": 0.020791170033265208,
+      "scope": "2D polygon geometric screen only; no stress/thermal/fixture/edge-radius certification"
+    },
+    "wall_s": 1.5456838699992659,
+    "scenario_oracle_evaluations": 241
+  },
+  "robust_pattern_equal_oracle_budget": {
+    "widths_m": [
+      0.0025924837606823626,
+      0.011645247560134702,
+      0.0236212463726961,
+      0.04525016158745173,
+      0.05068071221019348,
+      0.03607009279967003,
+      0.015556058885759932,
+      0.002
+    ],
+    "objective": 4.3318945191011485e-05,
+    "evaluations": 145,
+    "stopping_reason": "budget",
+    "last_step_m": 0.0015,
+    "trace": [
+      {
+        "evaluations": 1,
+        "objective": 7.504076143221631e-05,
+        "step_m": 0.0
+      },
+      {
+        "evaluations": 17,
+        "objective": 6.509809467595142e-05,
+        "step_m": 0.012
+      },
+      {
+        "evaluations": 33,
+        "objective": 6.509809467595142e-05,
+        "step_m": 0.012
+      },
+      {
+        "evaluations": 49,
+        "objective": 5.689367608371847e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 65,
+        "objective": 4.4705884557574784e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 81,
+        "objective": 4.4705884557574784e-05,
+        "step_m": 0.006
+      },
+      {
+        "evaluations": 97,
+        "objective": 4.467197545896652e-05,
+        "step_m": 0.003
+      },
+      {
+        "evaluations": 113,
+        "objective": 4.467197545896652e-05,
+        "step_m": 0.003
+      },
+      {
+        "evaluations": 129,
+        "objective": 4.349884301068693e-05,
+        "step_m": 0.0015
+      },
+      {
+        "evaluations": 145,
+        "objective": 4.3318945191011485e-05,
+        "step_m": 0.0015
+      }
+    ],
+    "manufacturing": {
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "bounded": true,
+        "min_horizontal_segment": true,
+        "connected": true,
+        "max_slope": true,
+        "second_difference": true
+      },
+      "minimum_full_width_m": 0.004,
+      "maximum_slope": 0.4883948596880306,
+      "maximum_second_difference_m": 0.020041170033265207,
+      "scope": "2D polygon geometric screen only; no stress/thermal/fixture/edge-radius certification"
+    },
+    "wall_s": 2.5041031560012925,
+    "scenario_oracle_evaluations": 435
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "scope": "bounded research release checks, not formal model-review sign-off",
+  "passed": true,
+  "count": 42,
+  "checks": [
+    {
+      "name": "JSON files parse",
+      "passed": true
+    },
+    {
+      "name": "Python source syntax",
+      "passed": true
+    },
+    {
+      "name": "hard checks all pass",
+      "passed": true
+    },
+    {
+      "name": "benchmark belongs to final T03 model",
+      "passed": true
+    },
+    {
+      "name": "frozen T02 dependency unchanged",
+      "passed": true
+    },
+    {
+      "name": "heldout synthetic improvement gate",
+      "passed": true
+    },
+    {
+      "name": "counterexample preserved",
+      "passed": true
+    },
+    {
+      "name": "opacity validation independent samples exists",
+      "passed": true
+    },
+    {
+      "name": "reported convex solver converged",
+      "passed": true
+    },
+    {
+      "name": "scenario throughput constraints checked",
+      "passed": true
+    },
+    {
+      "name": "P01 original hash",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> reports/01_forward_operator.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> reports/02_objectives_and_constraints.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> reports/03_algorithms_and_linear_algebra.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> reports/04_robustness_and_calibration.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> reports/05_benchmark_results.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> reports/06_reproducibility_and_limits.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> benchmarks/results/benchmark_summary.json",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> benchmarks/results/comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> data/synthetic_case.json",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> data/measurement_template.json",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> benchmarks/results/designs.json",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> sources/summaries/source_summaries.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> sources/source_registry.json",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> sources/RIGHTS_AND_ACCESS.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> reviews/ROUND1_ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> reviews/independent_math_check.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> reviews/OPEN_ISSUES.md",
+      "passed": true
+    },
+    {
+      "name": "local link README.md -> T04_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "name": "local link reports/05_benchmark_results.md -> ../benchmarks/results/numerical_evidence.png",
+      "passed": true
+    },
+    {
+      "name": "required artifact reports/01_forward_operator.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact reports/02_objectives_and_constraints.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact reports/03_algorithms_and_linear_algebra.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact reports/04_robustness_and_calibration.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact reports/05_benchmark_results.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact reports/06_reproducibility_and_limits.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact T04_HANDOFF.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact reviews/ROUND1_ACCEPTANCE.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact reviews/OPEN_ISSUES.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact reviews/independent_math_check.md",
+      "passed": true
+    },
+    {
+      "name": "required artifact benchmarks/results/numerical_evidence.png",
+      "passed": true
+    },
+    {
+      "name": "required artifact data/measurement_template.json",
+      "passed": true
+    }
+  ]
+}

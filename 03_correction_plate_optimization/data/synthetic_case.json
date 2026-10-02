@@ -1,0 +1,59 @@
+{
+  "scope": "invented synthetic geometry; no machine calibration",
+  "config": {
+    "orbit_m": 0.22,
+    "height_m": 0.65,
+    "radius_m": 0.12,
+    "carrier_rpm": 15.0,
+    "spin_ratio": 3.7,
+    "carrier_phase": 0.23,
+    "relative_phase": 0.51,
+    "duration_s": 40.0,
+    "source_x_m": 0.12,
+    "source_y_m": 0.0,
+    "source_radius_m": 0.015,
+    "source_exponent": 2.0,
+    "mask_z_m": 0.5,
+    "mask_x_shift_m": 0.0,
+    "mask_y_shift_m": 0.0,
+    "mask_thickness_m": 0.001,
+    "rate_kg_s": 1e-06,
+    "rate_ripple": 0.0,
+    "density_kg_m3": 3000.0,
+    "sticking": 1.0
+  },
+  "train": {
+    "nr": 4,
+    "na": 16,
+    "panels": 2048,
+    "source_nr": 2,
+    "source_na": 8,
+    "azimuth_offset": 0
+  },
+  "validation": {
+    "nr": 6,
+    "na": 24,
+    "panels": 4096,
+    "source_nr": 3,
+    "source_na": 16,
+    "azimuth_offset": 0.137
+  },
+  "shape_max_evaluations": 480,
+  "robust_max_evaluations": 160,
+  "min_throughput": 0.8,
+  "target_ratio": 0.9,
+  "success_gate": "heldout CV and PV below no-mask baseline; all tested throughputs >= .80; geometric screen passes; this is not a production tolerance",
+  "nominal_scenario_policy": "single cfg",
+  "robust_train_changes": [
+    {},
+    {
+      "source_x_m": 0.115,
+      "source_exponent": 1.85
+    },
+    {
+      "source_x_m": 0.125,
+      "source_exponent": 2.15
+    }
+  ],
+  "uncertainty_status": "hypothetical deterministic scenarios, no probability distribution"
+}

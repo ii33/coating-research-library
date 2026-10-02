@@ -1,0 +1,63 @@
+{
+  "config": {
+    "orbit_m": 0.22,
+    "height_m": 0.65,
+    "radius_m": 0.12,
+    "carrier_rpm": 15.0,
+    "spin_ratio": 3.7,
+    "carrier_phase": 0.23,
+    "relative_phase": 0.51,
+    "duration_s": 17.3,
+    "source_x_m": 0.12,
+    "source_y_m": 0.0,
+    "source_radius_m": 0.015,
+    "source_exponent": 2.0,
+    "mask_z_m": 0.5,
+    "mask_x_shift_m": 0.0,
+    "mask_y_shift_m": 0.0,
+    "mask_thickness_m": 0.001,
+    "rate_kg_s": 1e-06,
+    "rate_ripple": 0.08,
+    "density_kg_m3": 3000.0,
+    "sticking": 1.0
+  },
+  "widths_m": [
+    0.0020569970339111353,
+    0.0022469084126883355,
+    0.00347119044711598,
+    0.0315163557354885,
+    0.04761927514049514,
+    0.04343218853665694,
+    0.030301279664739715,
+    0.017176279664739717
+  ],
+  "train_objective": 0.0004652918014455973,
+  "unmasked": {
+    "mean_nm": 4.688243686404501,
+    "minimum_nm": 4.555312096076696,
+    "maximum_nm": 4.800935400520717,
+    "pv_over_mean": 0.052391326235090435,
+    "max_deviation_over_mean": 0.028354240781744235,
+    "cv": 0.014393127107027741,
+    "radial_cv": 0.014103980470750078,
+    "angular_cv": 0.002870512637101115,
+    "throughput_ratio": 1.0,
+    "same_mean_time_multiplier_estimate": 1.0,
+    "max_pointwise_increase_nm": 0.0
+  },
+  "binary_mask": {
+    "mean_nm": 4.255396312137378,
+    "minimum_nm": 4.001977673076228,
+    "maximum_nm": 4.452506937656609,
+    "pv_over_mean": 0.1058724573538232,
+    "max_deviation_over_mean": 0.059552300296529796,
+    "cv": 0.0226758337911649,
+    "radial_cv": 0.0034872849405301943,
+    "angular_cv": 0.022406076895969265,
+    "throughput_ratio": 0.9076738746489773,
+    "same_mean_time_multiplier_estimate": 1.1017172884773485,
+    "max_pointwise_increase_nm": -0.2609384011502378
+  },
+  "cv_worsens": true,
+  "reason": "finite-run angular structure and target-throughput term; radial flattening alone is not full-field uniformity"
+}

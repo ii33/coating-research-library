@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-01T23:57:07+00:00",
+  "updated_at_utc": "2026-10-02T00:29:41.661512+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
     "major_topics": "serial_original_order",
@@ -122,12 +122,12 @@
         6
       ],
       "round": 1,
-      "state": "starting",
+      "state": "round1_theory_and_synthetic_scope_complete",
       "depends_on": [
         "T02"
       ],
       "algorithmic": true,
-      "review_status": "pending",
+      "review_status": "47_hard_checks_and_42_delivery_checks_passed_bounded_sol_math_check_complete_designated_formal_chain_pending",
       "entry_condition": "T02.round1_theory_and_synthetic_scope_complete; physical calibration and designated review remain disclosed",
       "scope": "以前一专题的冻结仿真接口为依据，规划修正板几何参数化、均匀性目标、约束、求解方法、制造可行性与实测闭环。算法实现与数值研究仅在本专题轮到时启动。",
       "deliverables": [
@@ -148,15 +148,22 @@
           "sequence": 1,
           "label": "首轮核心范围（原文未细分优先项）",
           "is_explicit_priority": false,
-          "state": "starting",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_theory_and_synthetic_scope_complete",
+          "evidence_paths": [
+            "03_correction_plate_optimization/README.md",
+            "03_correction_plate_optimization/verification/frozen_manifest.json",
+            "03_correction_plate_optimization/T04_HANDOFF.md"
+          ],
+          "acceptance_record": "03_correction_plate_optimization/reviews/ROUND1_ACCEPTANCE.md"
         }
       ],
       "expansion_round": 2,
       "expansion_backlog": [
         "更多机型、工艺和制造约束的扩展优化"
-      ]
+      ],
+      "handoff_record": "03_correction_plate_optimization/T04_HANDOFF.md",
+      "machine_validation": "not_performed",
+      "manufacturing_release": "not_performed"
     },
     {
       "id": "T04",
@@ -167,13 +174,13 @@
         7
       ],
       "round": 1,
-      "state": "queued",
+      "state": "starting",
       "depends_on": [
         "T03"
       ],
       "algorithmic": false,
       "review_status": "pending",
-      "entry_condition": "T03.round1_accepted",
+      "entry_condition": "T03.round1_theory_and_synthetic_scope_complete; physical validation, manufacturing release and designated formal review remain disclosed",
       "scope": "先按原文顺序研究12项镀膜材料，再研究4项基片材料。覆盖光学、物理和蒸发特性，并区分块材、薄膜、基片、牌号、沉积条件、测量条件与不确定度。保留原始标记，用户已确认H4为常见的高折射率材料、YbF3为氟化镱；具体牌号/配方与测量条件的证据核对先于不同来源的数据合并，不要求供应商回复后才启动研究。",
       "deliverables": [
         "各优先材料与基片独立数据卡和证据索引",
@@ -193,7 +200,7 @@
           "sequence": 1,
           "label": "ta2o5",
           "is_explicit_priority": true,
-          "state": "queued",
+          "state": "starting",
           "evidence_paths": [],
           "acceptance_record": null
         },

@@ -1,6 +1,6 @@
 {
-  "snapshot": "coating-research-library-T02-v0.1-handoff",
-  "created_at_utc": "2026-10-01T23:57:07+00:00",
+  "snapshot": "coating-research-library-T03-v0.1-handoff",
+  "created_at_utc": "2026-10-02T00:29:41.661512+00:00",
   "repository": "ii33/coating-research-library",
   "visibility": "private",
   "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
@@ -20,8 +20,8 @@
     },
     {
       "path": "00_project/GITHUB_PUBLICATION.md",
-      "size_bytes": 2164,
-      "sha256": "81c974caf56255b778ec14804922a61a9f4615367b3e1661299d717c6b6da385"
+      "size_bytes": 2903,
+      "sha256": "ccdf291b4e168d8a7cd09648d8da1563b9083cee7bed1fd553db320b9a7601e7"
     },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
@@ -51,7 +51,7 @@
     {
       "path": "00_project/planning_baseline_manifest.json",
       "size_bytes": 7665,
-      "sha256": "89e9f62c50890266ef958ec75fb76ee8c6ab7dd967974311756637930a076c24"
+      "sha256": "95d8d6c45f21d600067fb1044801d3a0127733d63070c6485a4d95e46b0aaffa"
     },
     {
       "path": "00_project/requirements_traceability.json",
@@ -60,8 +60,8 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 24007,
-      "sha256": "334520b053a2a038bedd1469d9cc82796de643c7f7e773b0e882f96adb4f681f"
+      "size_bytes": 24744,
+      "sha256": "e72929fdac4d2f1b35a33b548f308f24f54d2a89b1eadb879385014f63972249"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -425,8 +425,198 @@
     },
     {
       "path": "03_correction_plate_optimization/README.md",
-      "size_bytes": 2212,
-      "sha256": "fa1d47862ed49299b7ce2db2f4bdb64af3b54fd91f8e8c8c73ca402dee26d0f9"
+      "size_bytes": 3375,
+      "sha256": "cc782c008d1fe1a5d28320c8a60846296d59bf82c70894e9b8eab2586d848e75"
+    },
+    {
+      "path": "03_correction_plate_optimization/T04_HANDOFF.md",
+      "size_bytes": 2119,
+      "sha256": "72e4277f7e77e0864c2a9086948b22caa05c7793ad6b1eb6dc80a55ffe6cf06d"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/plot_results.py",
+      "size_bytes": 2750,
+      "sha256": "4f3b1b59ce75320696764639af857f80e6c09a08dfa7bdcdd4f4509c98cb5d9d"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/benchmark_summary.json",
+      "size_bytes": 10592,
+      "sha256": "aec9e88740cb9386134865661cb52c87783cce8e73e873da2102bd53dcfc11be"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/comparison.csv",
+      "size_bytes": 1701,
+      "sha256": "1cfbbc12f7b4dd4031c51ca6221a845bf22708493775181532a258805eb8dceb"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/designs.json",
+      "size_bytes": 9873,
+      "sha256": "69a27d28ddb25e205dd34006bc72d4b5e6e35c5315fee593f1dda56af2613f0b"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/edge_probes.json",
+      "size_bytes": 12333,
+      "sha256": "7f4e64092ea07296784c5925c45f9c42a90f4ad6c9d3b01aea42fb34b53cc302"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/failure_case.json",
+      "size_bytes": 1881,
+      "sha256": "664d53cffaa3a77c6793fc78613b07cf36010073bc1af9b35719f630d8adec89"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/infeasibility.json",
+      "size_bytes": 298,
+      "sha256": "39c25b9b39fe7024b295821a8f97867d571318b30d180fbfc56d401e0262c861"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/numerical_evidence.png",
+      "size_bytes": 162114,
+      "sha256": "a2a0e571b1c8eea8b4f57d04c1118f5cd2afa2240dec5837586dbb59012fa704"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/numerical_evidence.svg",
+      "size_bytes": 99406,
+      "sha256": "36b0f4564cf71dfac2f15290522ca40ec3f48bcf46e0656738b910ade3dc8184"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/optimization_traces.json",
+      "size_bytes": 8645,
+      "sha256": "9dd8877b26b380818e2d5ca775aeae8d4f09d0c9fabf9cf989ae21c9f8124e2f"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/robustness_scenarios.csv",
+      "size_bytes": 6173,
+      "sha256": "42303b2cb2b4b3658084de4ed445e7ccff5b0e205c13a3c4b34d5d8b01285c10"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/source_convergence.csv",
+      "size_bytes": 1199,
+      "sha256": "020bd8cc862ac7bbff3609cebbed089a1b1936918cf4d1925b3734e1d4962ef5"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/surface_convergence.csv",
+      "size_bytes": 1115,
+      "sha256": "d480f1e4cb4717c53fc19c2a73128c9b5282d60cf0e0b2be0fb46585ecc6fb82"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/results/time_convergence.csv",
+      "size_bytes": 1411,
+      "sha256": "36af22c4854b44a4d414827378a3242cf1ad8af58a6d823177fb35206dfa8cee"
+    },
+    {
+      "path": "03_correction_plate_optimization/benchmarks/run_benchmarks.py",
+      "size_bytes": 11353,
+      "sha256": "2abb7d12033b922388e67885dd20f4fa78e0b2013a209a4736d49d57b60b5c5d"
+    },
+    {
+      "path": "03_correction_plate_optimization/data/measurement_template.json",
+      "size_bytes": 1184,
+      "sha256": "b15f43ea246dc8cbfc60281cd45ca0fdcc97bde633da036a9bda6c10bad1fa00"
+    },
+    {
+      "path": "03_correction_plate_optimization/data/synthetic_case.json",
+      "size_bytes": 1439,
+      "sha256": "751eb29e0b5b479f549cfce78463483a643fc3e029b7ea02f21791d097f6916c"
+    },
+    {
+      "path": "03_correction_plate_optimization/models/mask_design.py",
+      "size_bytes": 19278,
+      "sha256": "d92bf6926f5605866d59b110c76880e8d67798e4db1b35e12402a143c02be8b9"
+    },
+    {
+      "path": "03_correction_plate_optimization/reports/01_forward_operator.md",
+      "size_bytes": 5017,
+      "sha256": "e8a684cdb8712ba5fd37b8abdc73c9518c0f2cdfc27e1cc3ba467def624ac381"
+    },
+    {
+      "path": "03_correction_plate_optimization/reports/02_objectives_and_constraints.md",
+      "size_bytes": 4383,
+      "sha256": "dc705ad64034d6aae6594b561fe9bc1f6f0fdd909f8434a525ac8ad86e31baa5"
+    },
+    {
+      "path": "03_correction_plate_optimization/reports/03_algorithms_and_linear_algebra.md",
+      "size_bytes": 5326,
+      "sha256": "ad4d5e5bead7ed812362768d942b474856c463becf11fd56bd79f74b97e71742"
+    },
+    {
+      "path": "03_correction_plate_optimization/reports/04_robustness_and_calibration.md",
+      "size_bytes": 4261,
+      "sha256": "1cbaa95a15aa50769a9310c3a588357bb0a4e42c4ebec6aa972a2e16a5c15194"
+    },
+    {
+      "path": "03_correction_plate_optimization/reports/05_benchmark_results.md",
+      "size_bytes": 6121,
+      "sha256": "d74f17e009f728dbef0e4a57daf1ab11831e163614b651efd501ce30f59d7958"
+    },
+    {
+      "path": "03_correction_plate_optimization/reports/06_reproducibility_and_limits.md",
+      "size_bytes": 4147,
+      "sha256": "a41b223443ce28dc78c8421ece9d8763dc3680e5a8d1bb276399195e2650ab63"
+    },
+    {
+      "path": "03_correction_plate_optimization/reviews/OPEN_ISSUES.md",
+      "size_bytes": 2141,
+      "sha256": "b979aa0a7f5ce18055ee4236b00a7cedd605cceb034f5f31c6fe3250efd801c2"
+    },
+    {
+      "path": "03_correction_plate_optimization/reviews/ROUND1_ACCEPTANCE.md",
+      "size_bytes": 2924,
+      "sha256": "cf464b2df7f80cbef70c2bfe9fdf6c979def6f9a4acc2c864fa37f0c9b340e68"
+    },
+    {
+      "path": "03_correction_plate_optimization/reviews/independent_math_check.md",
+      "size_bytes": 2062,
+      "sha256": "f737c63215aacf3f66397eb3c4182761728430bf3dd1dd94a88bcb30648a0bcf"
+    },
+    {
+      "path": "03_correction_plate_optimization/sources/RIGHTS_AND_ACCESS.md",
+      "size_bytes": 953,
+      "sha256": "6821b6cade045bf29b13c2c2f09c0dce425515324695c1c605050f0638b17510"
+    },
+    {
+      "path": "03_correction_plate_optimization/sources/source_registry.json",
+      "size_bytes": 6341,
+      "sha256": "6db7d4647485b6d26dfd487e975870c7cc847797d41711804c2d7715427f343c"
+    },
+    {
+      "path": "03_correction_plate_optimization/sources/summaries/source_summaries.md",
+      "size_bytes": 5976,
+      "sha256": "ef1be5596f13144ea9ae3b75d5c9c9d832ea1e2f87eb2289c5a3f1fad9f64eb4"
+    },
+    {
+      "path": "03_correction_plate_optimization/stage_status.json",
+      "size_bytes": 1338,
+      "sha256": "7ca6a25f96b275fdc963d22f4328d92ca4ef0a4a4c949fa25e26b2aaee65589c"
+    },
+    {
+      "path": "03_correction_plate_optimization/verification/build_release.py",
+      "size_bytes": 1980,
+      "sha256": "7a4c65cce1a991c77f98cc0574d0dd2fb33b265dd6926cbdb48ddaa5934928c8"
+    },
+    {
+      "path": "03_correction_plate_optimization/verification/check_release.py",
+      "size_bytes": 2886,
+      "sha256": "294bd0fb80dcea2353aa00c640e407459ada8ead13c65f18baaefc0dd9b79295"
+    },
+    {
+      "path": "03_correction_plate_optimization/verification/frozen_manifest.json",
+      "size_bytes": 6698,
+      "sha256": "a1853fc08b56dbc6a99565c9bad92b66f1c43063618803b796c37438116d9bcd"
+    },
+    {
+      "path": "03_correction_plate_optimization/verification/release_checks.json",
+      "size_bytes": 4335,
+      "sha256": "7279d7e40b045fd3b1eb806a11754a2fa776ea4fb3a3ec1aa1695366ac673fcf"
+    },
+    {
+      "path": "03_correction_plate_optimization/verification/run_verification.py",
+      "size_bytes": 7502,
+      "sha256": "3a09a07130ee26b3771bd719c9d37e2e2577e3eb2a4a7b8a7e331b6766229932"
+    },
+    {
+      "path": "03_correction_plate_optimization/verification/verification_results.json",
+      "size_bytes": 5250,
+      "sha256": "c45a8afcc95147c69b1b00b17b3ebd38f9f0379357ff98e6e3e6f849c26ed307"
     },
     {
       "path": "04_coating_and_substrate_materials/README.md",
@@ -585,30 +775,32 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 1811,
-      "sha256": "97923709e51fc51f483a35325949710e97fb11723f1a56f319a3eceb2cf73cfc"
+      "size_bytes": 2483,
+      "sha256": "78ebf114e58dc5db1e2d300263a109781f0d5f8a0bc1916dfc03a54affb5ce51"
     },
     {
       "path": "README.md",
-      "size_bytes": 4804,
-      "sha256": "3e676d88c706010f2cbba165ba4ec12693728faa33c1a1078c96fd221dc071da"
+      "size_bytes": 4872,
+      "sha256": "279144e171bd6feaf44633c984d3de0e11047f7664db793afefcce04fa3dafe7"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 4944,
-      "sha256": "a55ac779315bbbfa23d6adf9efa82e0a5cb240dcda2e57baf41c08e0e369cee3"
+      "size_bytes": 5029,
+      "sha256": "879804c31dd9b642641275d8347845277578e066d591cb16658329c2fa8b5768"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 2403,
-      "sha256": "ba291f4293964324f16ca64d4ecc69bb77f99c8b80e0a223f41813a8ddb7eaa5"
+      "size_bytes": 2657,
+      "sha256": "781e9dc6db436429e4b33e42e5caeb4bb76ca2da6e9cbb6bc0f7ec48a0dfbaa5"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 1880,
-      "sha256": "bc669a2c2a57649b37d07061f2ae5e41a2b65f35e4b5686694c5eadd28b65b49"
+      "size_bytes": 1994,
+      "sha256": "100119478c32fb0988aa8bcc6429b78a237bb7fd04fc0164e23b5a9b53407308"
     }
   ],
   "source_T02_zip_sha256": "684b63f228b31a2ba882b08f60cbc1e7a13173283d0e79b03fa4fc861d3c344b",
-  "source_T02_content_id": "db16fe512e848532c5e2b00c3fc8d5ec3469d6a7764e5872840f98eff69ba1a2"
+  "source_T02_content_id": "db16fe512e848532c5e2b00c3fc8d5ec3469d6a7764e5872840f98eff69ba1a2",
+  "source_T03_zip_sha256": "36b2759639d2d7f519304c5bf77ebc6a38de44c572f78bfa6fa02f4a24debe73",
+  "source_T03_content_id": "64f7ea5beaa18ef916b28ee20aff5f0abee6826698ac365b752ba0e561cd46cd"
 }

@@ -1,0 +1,38 @@
+{
+  "topic": "T03",
+  "round": 1,
+  "version": "0.1",
+  "updated_at_utc": "2026-10-02T00:25:14.259426+00:00",
+  "status": "frozen_theory_and_synthetic_scope",
+  "bounded_research_acceptance": "complete_with_declared_limits",
+  "formal_designated_review_status": "awaiting_seed",
+  "physical_validation": "not_performed",
+  "algorithmic": true,
+  "numerical_checks": {
+    "passed": 47,
+    "total": 47
+  },
+  "release_checks": {
+    "passed": 42,
+    "total": 42
+  },
+  "chapter_count": 6,
+  "source_records": 7,
+  "actual_review": "One bounded GPT-6 Sol high mathematical check; two substantive precondition/cache issues fixed and regression-tested by executor",
+  "designated_model_reviews": {
+    "DeepSeek_execution": "pending_not_performed",
+    "Seed_stage_review": "pending_not_performed",
+    "Sol_after_Seed_full_algorithm_signoff": "pending_not_performed"
+  },
+  "next_topic": "T04",
+  "next_scope": "Priority coating materials and substrates; no direct mask fabrication release",
+  "blocking_issues_in_bounded_scope": [],
+  "open_issues_file": "reviews/OPEN_ISSUES.md",
+  "acceptance_file": "reviews/ROUND1_ACCEPTANCE.md",
+  "publication_exclude": [
+    "sources/originals/**",
+    "**/__pycache__/**",
+    "deliverables/**"
+  ],
+  "root_state_policy": "Parent coordinates root roadmap/publication; this task edits only T03"
+}

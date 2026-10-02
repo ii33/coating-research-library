@@ -1,0 +1,55 @@
+{
+  "status": "template_not_measurements",
+  "units": {
+    "length": "m",
+    "thickness": "nm",
+    "mass_rate": "kg/s",
+    "density": "kg/m^3",
+    "time": "s",
+    "phase": "rad"
+  },
+  "machine_id": null,
+  "geometry_version": null,
+  "material": null,
+  "batch": null,
+  "source": {
+    "position_m": null,
+    "radius_m": null,
+    "exponent": null,
+    "rate_time_series": null
+  },
+  "mask": {
+    "polygon_m": null,
+    "thickness_m": null,
+    "plane_pose": null,
+    "fixture_geometry": null,
+    "measured_boundary_uncertainty_m": null
+  },
+  "motion": {
+    "carrier_rpm": null,
+    "absolute_spin_ratio": null,
+    "initial_phases_rad": null,
+    "duration_s": null
+  },
+  "metrology": {
+    "method": null,
+    "calibration_id": null,
+    "standard_uncertainty_nm": null,
+    "repeats": null
+  },
+  "points": [
+    {
+      "position_m": null,
+      "normal": null,
+      "area_weight": null,
+      "unmasked_thickness_nm": null,
+      "masked_thickness_nm": null
+    }
+  ],
+  "acceptance": {
+    "max_cv": null,
+    "max_pv_over_mean": null,
+    "min_throughput_ratio": null
+  },
+  "warning": "null means unknown; synthetic study does not populate measured values"
+}
