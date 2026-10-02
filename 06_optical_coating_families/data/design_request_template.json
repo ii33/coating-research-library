@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "case_id": "T07_new_case",
+  "status": "template_not_a_specification",
+  "evidence_status": "unknown_until_supplied",
+  "units": {
+    "vacuum_wavelength": "um",
+    "physical_layer_thickness": "nm",
+    "substrate_thickness": "mm",
+    "bulk_alpha": "cm^-1",
+    "AOI": "deg",
+    "R_T_A": "fraction"
+  },
+  "material_data": {
+    "dataset_id": null,
+    "sample_state": null,
+    "n_k_source_and_locator": null,
+    "temperature_K": null,
+    "measured_validity_um": null,
+    "calculation_bounds_um": null,
+    "uncertainty": null,
+    "allow_extrapolation": false
+  },
+  "geometry": {
+    "layer_order": "incident_to_substrate",
+    "layers": [],
+    "substrate_grade": null,
+    "substrate_thickness_mm": null,
+    "bulk_alpha": null,
+    "rear_stack": null,
+    "coherence_model": null,
+    "collection_aperture_and_wedge": null
+  },
+  "operating_conditions": {
+    "AOI_deg": null,
+    "cone_distribution": null,
+    "polarizations": [
+      "s",
+      "p"
+    ],
+    "temperature_range_K": null,
+    "laser_pulse_or_cw": null
+  },
+  "targets": [
+    {
+      "name": "replace_me",
+      "wavelength_band_um": null,
+      "port": null,
+      "T_min": null,
+      "T_weighted_mean_min": null,
+      "R_min": null,
+      "A_max": null,
+      "OD_worst_min": null,
+      "spectral_weight_definition": null
+    }
+  ],
+  "manufacturing_constraints": {
+    "allowed_materials": [],
+    "max_layers": null,
+    "min_layer_nm": null,
+    "max_layer_nm": null,
+    "max_total_um": null,
+    "thickness_error_covariance": null,
+    "source_position_map": null,
+    "QCM_density_and_tooling": null
+  },
+  "qualification": {
+    "bare_substrate_evidence": null,
+    "single_layer_metrology": null,
+    "full_part_spectra": null,
+    "environment": null,
+    "wavefront_scatter": null,
+    "LIDT": null,
+    "acceptance_standard_revision": null,
+    "production_ready": false
+  }
+}

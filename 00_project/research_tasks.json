@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T01:31:37.032385+00:00",
+  "updated_at_utc": "2026-10-02T02:17:37.093932+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
     "major_topics": "serial_original_order",
@@ -489,12 +489,12 @@
         10
       ],
       "round": 1,
-      "state": "starting",
+      "state": "round1_priority_theory_and_numerical_scope_complete",
       "depends_on": [
         "T05"
       ],
       "algorithmic": false,
-      "review_status": "pending",
+      "review_status": "42_numerical_tests_and_15_package_checks_passed_designated_full_chain_pending",
       "entry_condition": "T05.round1_priority_theory_and_synthetic_scope_complete; machine calibration and complete designated review remain disclosed",
       "scope": "以近红外、中红外、多光谱为首轮重点，建立应用需求、膜类、基片、环境和测试条件的对应关系。具体波段范围与评价指标在研究启动时定义，不把名称当固定数值边界。",
       "deliverables": [
@@ -515,33 +515,48 @@
           "sequence": 1,
           "label": "近红外",
           "is_explicit_priority": true,
-          "state": "starting",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_priority_theory_and_numerical_scope_complete",
+          "evidence_paths": [
+            "06_optical_coating_families/README.md",
+            "06_optical_coating_families/data/starter_stacks.json",
+            "06_optical_coating_families/data/deliverable_manifest.json"
+          ],
+          "acceptance_record": "06_optical_coating_families/reviews/ROUND1_ACCEPTANCE.md"
         },
         {
           "id": "T06.P02",
           "sequence": 2,
           "label": "中红外",
           "is_explicit_priority": true,
-          "state": "queued",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_priority_theory_and_numerical_scope_complete",
+          "evidence_paths": [
+            "06_optical_coating_families/README.md",
+            "06_optical_coating_families/data/starter_stacks.json",
+            "06_optical_coating_families/data/deliverable_manifest.json"
+          ],
+          "acceptance_record": "06_optical_coating_families/reviews/ROUND1_ACCEPTANCE.md"
         },
         {
           "id": "T06.P03",
           "sequence": 3,
           "label": "多光谱",
           "is_explicit_priority": true,
-          "state": "queued",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_priority_theory_and_numerical_scope_complete",
+          "evidence_paths": [
+            "06_optical_coating_families/README.md",
+            "06_optical_coating_families/data/starter_stacks.json",
+            "06_optical_coating_families/data/deliverable_manifest.json"
+          ],
+          "acceptance_record": "06_optical_coating_families/reviews/ROUND1_ACCEPTANCE.md"
         }
       ],
       "expansion_round": 2,
       "expansion_backlog": [
         "其他波段和非首轮重点膜类"
-      ]
+      ],
+      "handoff_record": "06_optical_coating_families/T07_HANDOFF.md",
+      "machine_validation": "not_performed",
+      "production_qualification": "not_performed"
     },
     {
       "id": "T07",
@@ -552,13 +567,13 @@
         11
       ],
       "round": 1,
-      "state": "queued",
+      "state": "starting",
       "depends_on": [
         "T06"
       ],
       "algorithmic": true,
       "review_status": "pending",
-      "entry_condition": "T06.round1_accepted",
+      "entry_condition": "T06.round1_priority_theory_and_numerical_scope_complete; designated formal review and machine qualification remain disclosed",
       "scope": "规划从物理假设、基本模型、设计思想到可复算例题的系统性教材结构；研究启动后用原始文献和权威资料核验推导、符号、边界条件与适用范围。",
       "deliverables": [
         "设计理论主线与概念/公式索引",
@@ -578,7 +593,7 @@
           "sequence": 1,
           "label": "首轮核心范围（原文未细分优先项）",
           "is_explicit_priority": false,
-          "state": "queued",
+          "state": "starting",
           "evidence_paths": [],
           "acceptance_record": null
         }

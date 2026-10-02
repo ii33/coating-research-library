@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "24 unique source identifiers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all source summaries exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source locators and limitations explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "6 complete synthetic examples",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all layers reference known proxies",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every proxy carries source and uncertainty",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "back surface and absorption explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV counts and columns match definitions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "metrics cover every angle and band",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8 narrative chapters exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "local Markdown targets exist",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "all F citations registered",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "2 SVG files parse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no originals in this topic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "T07 interface and handoff exist",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "scope": "local structural and provenance checks only",
+  "files_sha256": {
+    "models/build_atlas_inputs.py": "485ddc3c428e84d8e0256d16c8499f20022af2ab5814e260409cf71f86949d47",
+    "models/build_source_registry.py": "b6c6d9e8f99d9aa920a9d870b7d0124949c786cae28ff951accd250c08f458de",
+    "models/check_package.py": "fe8b65537edead3a6413d028246552726ac49a906c1a5d20b34369b49ceab44d",
+    "models/reference_tmm.py": "e882c37dff7c9843e23dd0837f9e1ebb226926573edd07db1d799ec64588a678",
+    "models/render_chart_previews.py": "fb8e9feee2bfa892821e34446736e4275126a3847fe12cda73ff7f9eefe28a62",
+    "models/run_atlas.py": "ecf4dfb6c4c09d5a537ef3a3da32c638c1e52bfa08f2c7eb68002436cb5c11e4"
+  }
+}

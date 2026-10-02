@@ -8,7 +8,8 @@
 - T03：冻结读者包 `T03_mask_optimization_v0.1_reader.zip`，SHA-256 `36b2759639d2d7f519304c5bf77ebc6a38de44c572f78bfa6fa02f4a24debe73`；内容标识 `64f7ea5beaa18ef916b28ee20aff5f0abee6826698ac365b752ba0e561cd46cd`
 - T04：公开研究v1，123份清单内文件及冻结清单；`reviews/freeze_manifest.json` SHA-256 `c85960d3b9703426a6fa7f2fe75d1f0ed699c267702df3eb1e2566865fd907f4`
 - T05：v0.1首轮源研究，71份清单内文件及冻结清单；`release_manifest.json` SHA-256 `fc54cef8e0f0f4f16ebc73dbbb7b4e39c69580af1bc2dd68b9c4c3a1a556fb26`
-- 阶段边界：T01–T05首轮优先研究可移交，T06接续启动；实测、量产验收和指定模型完整正式审查未完成
+- T06：67份清单内冻结文件及清单自身；`data/deliverable_manifest.json` SHA-256 `8311a45c4bb45542f2abe8098071d713497754a9bd01731b772f7143cef724f9`
+- 阶段边界：T01–T06首轮优先研究可移交，T07接续启动；实测、量产验收和指定模型完整正式审查未完成
 
 ## 不纳入仓库的内容
 
@@ -30,6 +31,8 @@ python 03_correction_plate_optimization/verification/check_release.py --reader
 PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s 04_coating_and_substrate_materials/tests -v
 PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python 05_evaporation_sources/tests/test_source_reference.py
 PYTHONDONTWRITEBYTECODE=1 python 05_evaporation_sources/tests/check_release.py --reader
+PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s 06_optical_coating_families/tests -v
+PYTHONDONTWRITEBYTECODE=1 python 06_optical_coating_families/models/check_package.py
 ```
 
 读者模式的来源schema检查使用 `jsonschema`；原文PDF未随仓库发布，四项缺失原文检查会明确标为跳过。轻量检查不代表已进行实体设备校准或生产验证。
@@ -41,3 +44,5 @@ T03冻结清单保留原始研究工作区的交付检查记录；原文HTML不�
 T04本地完整测试为12/12通过；发布副本没有原始光谱，因此12项测试中原件哈希/重建项明确跳过，其余11项可离线运行。冻结检查记录不表示仓库包含原始数据；来源条件、未知值、严格上界和隔离参数未被发布流程改写。
 
 T05清单排除完整originals目录、字节码、自清单与生成检查日志；发布保留原研究的数值和限制。`--reader`跳过原文存档存在/哈希/许可三项核查，不将本地原文的可读权限推导为仓库含全文。
+
+T06六份光谱CSV为本库原创参考计算结果，按冻结字节发布，非第三方原始光谱。完整originals目录、缓存和两份重复控制台输出排除；最终测试日志、包检查JSON及两张原创图的预览作为冻结审计证据保留。

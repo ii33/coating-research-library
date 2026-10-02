@@ -100,4 +100,4 @@
 
 ## 当前下一步
 
-T01–T05首轮优先研究已形成冻结基线。T05 v0.1包括7章、27项来源、12材料源记录、3幅原创图、51项数值测试和误差/失效反例，见[验收记录](05_evaporation_sources/reviews/ROUND1_ACCEPTANCE.md)。下一步按[T06移交](05_evaporation_sources/T06_HANDOFF.md)研究近红外、中红外、多光谱薄膜家族和应用。总质量率、源形/角律、传感器与膜光学响应保持区分；没有实机校准或生产设定保证，指定完整模型审查未冒称完成。T07–T10仍排队。
+T01–T06首轮优先研究已形成冻结基线。T06包括8章、24来源、6组完整可调起始膜系、6份多角度s/p光谱CSV、2张原创SVG，以及42项数值测试和15项包检查，见[验收记录](06_optical_coating_families/reviews/ROUND1_ACCEPTANCE.md)。下一步按[T07移交](06_optical_coating_families/T07_HANDOFF.md)接续薄膜设计理论。文献实测、合成参考与用户设备验证不互相替代；未执行的指定阶段审查继续pending，环境/损伤及量产资格未验证。T08–T10仍排队。

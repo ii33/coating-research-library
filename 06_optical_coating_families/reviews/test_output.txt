@@ -1,0 +1,47 @@
+test_all_sampled_passive (test_reference_tmm.Atlas.test_all_sampled_passive) ... ok
+test_ar_backsurface_matters (test_reference_tmm.Atlas.test_ar_backsurface_matters) ... ok
+test_dual_minimum_is_not_broadband (test_reference_tmm.Atlas.test_dual_minimum_is_not_broadband) ... ok
+test_grid_convergence (test_reference_tmm.Atlas.test_grid_convergence) ... ok
+test_protected_al_absorbs (test_reference_tmm.Atlas.test_protected_al_absorbs) ... ok
+test_single_cavity_does_not_prove_od3 (test_reference_tmm.Atlas.test_single_cavity_does_not_prove_od3) ... ok
+test_six_stacks_and_explicit_assumptions (test_reference_tmm.Atlas.test_six_stacks_and_explicit_assumptions) ... ok
+test_unit_consistency (test_reference_tmm.Atlas.test_unit_consistency) ... ok
+test_absorbing_incident (test_reference_tmm.Guards.test_absorbing_incident) ... ok
+test_absorbing_substrate_plate_guard (test_reference_tmm.Guards.test_absorbing_substrate_plate_guard) ... ok
+test_bad_band (test_reference_tmm.Guards.test_bad_band) ... ok
+test_bad_polarization (test_reference_tmm.Guards.test_bad_polarization) ... ok
+test_bad_rear (test_reference_tmm.Guards.test_bad_rear) ... ok
+test_bad_unit_value (test_reference_tmm.Guards.test_bad_unit_value) ... ok
+test_forbid_extrapolation (test_reference_tmm.Guards.test_forbid_extrapolation) ... ok
+test_negative_alpha (test_reference_tmm.Guards.test_negative_alpha) ... ok
+test_negative_k (test_reference_tmm.Guards.test_negative_k) ... ok
+test_negative_thickness (test_reference_tmm.Guards.test_negative_thickness) ... ok
+test_no_ybf3_lwir_extrapolation (test_reference_tmm.Guards.test_no_ybf3_lwir_extrapolation) ... ok
+test_nonfinite (test_reference_tmm.Guards.test_nonfinite) ... ok
+test_opaque_layer_guard (test_reference_tmm.Guards.test_opaque_layer_guard) ... ok
+test_table_order (test_reference_tmm.Guards.test_table_order) ... ok
+test_absorbing_exit_flux_not_bulk_absorption (test_reference_tmm.Physics.test_absorbing_exit_flux_not_bulk_absorption) ... ok
+test_bare_absorbing_plate (test_reference_tmm.Physics.test_bare_absorbing_plate) ... ok
+test_bare_lossless_ge_plate (test_reference_tmm.Physics.test_bare_lossless_ge_plate) ... ok
+test_dispersive_oblique_plate_scalar_equivalence (test_reference_tmm.Physics.test_dispersive_oblique_plate_scalar_equivalence) ... ok
+test_incoherent_equals_phase_average (test_reference_tmm.Physics.test_incoherent_equals_phase_average) ... ok
+test_normal_fresnel (test_reference_tmm.Physics.test_normal_fresnel) ... ok
+test_normal_s_p_equality (test_reference_tmm.Physics.test_normal_s_p_equality) ... ok
+test_oblique_bulk_path (test_reference_tmm.Physics.test_oblique_bulk_path) ... ok
+test_p_brewster (test_reference_tmm.Physics.test_p_brewster) ... ok
+test_p_oblique_fresnel (test_reference_tmm.Physics.test_p_oblique_fresnel) ... ok
+test_quarter_wave_ar (test_reference_tmm.Physics.test_quarter_wave_ar) ... ok
+test_random_absorbing_independent_recursion (test_reference_tmm.Physics.test_random_absorbing_independent_recursion) ... ok
+test_random_lossless_conservation (test_reference_tmm.Physics.test_random_lossless_conservation) ... ok
+test_reciprocity_transmission (test_reference_tmm.Physics.test_reciprocity_transmission) ... ok
+test_s_oblique_fresnel (test_reference_tmm.Physics.test_s_oblique_fresnel) ... ok
+test_single_film_airy (test_reference_tmm.Physics.test_single_film_airy) ... ok
+test_split_homogeneous_layer (test_reference_tmm.Physics.test_split_homogeneous_layer) ... ok
+test_total_internal_reflection_p (test_reference_tmm.Physics.test_total_internal_reflection_p) ... ok
+test_total_internal_reflection_s (test_reference_tmm.Physics.test_total_internal_reflection_s) ... ok
+test_zero_thickness_identity (test_reference_tmm.Physics.test_zero_thickness_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 9.260s
+
+OK
