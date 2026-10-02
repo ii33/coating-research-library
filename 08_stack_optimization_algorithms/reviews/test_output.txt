@@ -1,0 +1,41 @@
+test_13_quadrature_normalization (test_optimization.ObjectiveTests.test_13_quadrature_normalization) ... ok
+test_14_quadrature_reject_order (test_optimization.ObjectiveTests.test_14_quadrature_reject_order) ... ok
+test_15_chain_rule (test_optimization.ObjectiveTests.test_15_chain_rule) ... ok
+test_16_cache (test_optimization.ObjectiveTests.test_16_cache) ... ok
+test_17_cache_context_identity (test_optimization.ObjectiveTests.test_17_cache_context_identity) ... ok
+test_18_fingerprint_scale (test_optimization.ObjectiveTests.test_18_fingerprint_scale) ... ok
+test_19_repeated_scenario_cost_invariance (test_optimization.ObjectiveTests.test_19_repeated_scenario_cost_invariance) ... ok
+test_20_hinge_inactive (test_optimization.ObjectiveTests.test_20_hinge_inactive) ... ok
+test_21_bad_material_range (test_optimization.ObjectiveTests.test_21_bad_material_range) ... ok
+test_22_directional_objective_gradient (test_optimization.ObjectiveTests.test_22_directional_objective_gradient) ... ok
+test_23_solver_reduces (test_optimization.ObjectiveTests.test_23_solver_reduces) ... ok
+test_24_fd_vs_analytic_solver (test_optimization.ObjectiveTests.test_24_fd_vs_analytic_solver) ... ok
+test_25_total_thickness_constraint (test_optimization.ObjectiveTests.test_25_total_thickness_constraint) ... ok
+test_26_minimax (test_optimization.ObjectiveTests.test_26_minimax) ... ok
+test_01_forward_prefix_match (test_optimization.OpticsDerivatives.test_01_forward_prefix_match) ... ok
+test_02_independent_airy_gradient (test_optimization.OpticsDerivatives.test_02_independent_airy_gradient) ... ok
+test_03_absorbing_gradient (test_optimization.OpticsDerivatives.test_03_absorbing_gradient) ... ok
+test_04_energy_derivative (test_optimization.OpticsDerivatives.test_04_energy_derivative) ... ok
+test_05_energy_bookkeeping (test_optimization.OpticsDerivatives.test_05_energy_bookkeeping) ... ok
+test_06_zero_thickness (test_optimization.OpticsDerivatives.test_06_zero_thickness) ... ok
+test_07_opaque_layer (test_optimization.OpticsDerivatives.test_07_opaque_layer) ... ok
+test_08_eighty_layers (test_optimization.OpticsDerivatives.test_08_eighty_layers) ... ok
+test_09_negative_thickness_rejected (test_optimization.OpticsDerivatives.test_09_negative_thickness_rejected) ... ok
+test_10_gain_rejected (test_optimization.OpticsDerivatives.test_10_gain_rejected) ... ok
+test_11_bad_complex_step_counterexample (test_optimization.OpticsDerivatives.test_11_bad_complex_step_counterexample) ... ok
+test_12_no_layer (test_optimization.OpticsDerivatives.test_12_no_layer) ... ok
+test_27_add_conservation (test_optimization.TopologyTests.test_27_add_conservation) ... ok
+test_28_replace_conservation (test_optimization.TopologyTests.test_28_replace_conservation) ... ok
+test_29_replace_invalid (test_optimization.TopologyTests.test_29_replace_invalid) ... ok
+test_30_merge_same (test_optimization.TopologyTests.test_30_merge_same) ... ok
+test_31_merged_spectrum (test_optimization.TopologyTests.test_31_merged_spectrum) ... ok
+test_32_nonidentifiability (test_optimization.TopologyTests.test_32_nonidentifiability) ... ok
+test_33_manufacturing_violations (test_optimization.TopologyTests.test_33_manufacturing_violations) ... ok
+test_34_surrogate_actual_acceptance (test_optimization.TopologyTests.test_34_surrogate_actual_acceptance) ... ok
+test_35_undersampling (test_optimization.TopologyTests.test_35_undersampling) ... ok
+test_36_frozen_kernel_copy (test_optimization.TopologyTests.test_36_frozen_kernel_copy) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.525s
+
+OK

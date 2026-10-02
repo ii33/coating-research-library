@@ -1,0 +1,131 @@
+{
+  "B01": {
+    "source_seed": "E02",
+    "bands": [
+      {
+        "name": "AR",
+        "lo": 3.5,
+        "hi": 4.5,
+        "observable": "R",
+        "target": 0,
+        "scale": 0.03,
+        "weight": 1.0,
+        "sense": "equality"
+      }
+    ],
+    "train_points": 31,
+    "coarse_points": 5,
+    "train_angles": [
+      0,
+      30
+    ],
+    "holdout_points_per_band": 601,
+    "holdout_angles": [
+      0,
+      7.5,
+      15,
+      22.5,
+      30
+    ],
+    "stress_angles": [
+      45
+    ],
+    "bounds_scaled": [
+      0.4,
+      1.6
+    ]
+  },
+  "B02": {
+    "source_seed": "E04",
+    "bands": [
+      {
+        "name": "HR",
+        "lo": 9,
+        "hi": 11,
+        "observable": "R",
+        "target": 1,
+        "scale": 0.02,
+        "weight": 1.0,
+        "sense": "equality"
+      }
+    ],
+    "train_points": 31,
+    "coarse_points": 5,
+    "train_angles": [
+      0,
+      45
+    ],
+    "holdout_points_per_band": 601,
+    "holdout_angles": [
+      0,
+      11.25,
+      22.5,
+      33.75,
+      45
+    ],
+    "stress_angles": [
+      60
+    ],
+    "bounds_scaled": [
+      0.55,
+      1.45
+    ]
+  },
+  "B03": {
+    "source_seed": "E05",
+    "bands": [
+      {
+        "name": "pass",
+        "lo": 1.059,
+        "hi": 1.069,
+        "observable": "T",
+        "target": 1,
+        "scale": 0.05,
+        "weight": 1,
+        "sense": "equality"
+      },
+      {
+        "name": "left_block",
+        "lo": 0.97,
+        "hi": 1.0,
+        "observable": "T",
+        "target": 0,
+        "scale": 0.03,
+        "weight": 0.3,
+        "sense": "equality"
+      },
+      {
+        "name": "right_block",
+        "lo": 1.13,
+        "hi": 1.16,
+        "observable": "T",
+        "target": 0,
+        "scale": 0.03,
+        "weight": 0.3,
+        "sense": "equality"
+      }
+    ],
+    "train_points": 31,
+    "coarse_points": 5,
+    "train_angles": [
+      0,
+      5
+    ],
+    "holdout_points_per_band": 601,
+    "holdout_angles": [
+      0,
+      1.25,
+      2.5,
+      3.75,
+      5
+    ],
+    "stress_angles": [
+      10,
+      30
+    ],
+    "bounds_scaled": [
+      0.75,
+      1.25
+    ]
+  }
+}

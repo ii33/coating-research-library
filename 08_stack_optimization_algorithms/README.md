@@ -1,50 +1,53 @@
-# T08 · 膜系设计优化算法
+# T08 · 膜系设计优化算法（首轮工程手册与可复算参考）
 
-## 来源与状态
+原文：`00_project/工程科研.txt` 第12行。范围：高精度/高性能、快速近似、持续迭代。9章报告、16条来源卡、3个T06起始膜系、参考代码、36项测试与失败反例。没有修改T06/T07或产品程序，没有推送。
 
-- 原文定位：`00_project/工程科研.txt` 第12行
-- 顺序：第8个大项目；第一轮
-- 当前状态：仅规划，尚未启动研究
-- 前置阶段：T07首轮验收完成
-- 算法/数值验证要求：适用；启用算法评测、边界情形与独立复核
+## 先读结论
 
-## 首轮范围
+- 稳定S核配合prefix/suffix解析厚度Jacobian，层数复杂度O(M L)；与全方向切线及独立Airy差分对照
+- 有界TRF/L-BFGS-B精修、粗网格快解、粗到细继续、多起点/有限枚举、显式总厚度约束及有限minimax均可复跑
+- 结构插入必须经过有限厚度与制造约束回证；本轮needle候选退化，保留原设计
+- B03窄带滤波精修在设定预算内未收敛且未达教学规格，未隐藏失败或继续无限调参
+- 材料都是冻结proxy，所有光谱/公差为合成计算；没有材料实测、设备或量产资格证明，无全局最优保证
 
-兼顾高精度/性能、快速近似求解和持续迭代三类目标；这些是原文目标，非现成方法名单。统一参数化、材料模型、损失函数、约束和数据集后比较算法。
+## 阅读路线
 
-## 优先顺序
+1. [设计契约与目标](reports/01_design_contract_and_objectives.md)
+2. [稳定正问题与导数](reports/02_stable_forward_model_and_derivatives.md)
+3. [局部精修与约束](reports/03_local_refinement_and_constraints.md)
+4. [全局探索与needle](reports/04_global_search_needle_and_topology.md)
+5. [快速近似与代理控制](reports/05_fast_approximations_and_surrogate_control.md)
+6. [鲁棒性与不可辨识性](reports/06_robustness_and_identifiability.md)
+7. [持续迭代工程结构](reports/07_incremental_iterations_and_engineering_architecture.md)
+8. [基准与复现](reports/08_reproducible_benchmarks.md)
+9. [失败与验收](reports/09_failure_modes_and_acceptance.md)
+10. [自动结果表](reports/09a_generated_results.md)
 
-1. 高精度的高性能优化算法
-2. 快速求解的近似算法
-3. 方便不停迭代的算法
+## 一次离线复跑
 
-## 交付物
+```bash
+cd 08_stack_optimization_algorithms
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1
+export MPLCONFIGDIR=/tmp/t08-matplotlib
+python -m unittest discover -s tests -v
+python models/run_benchmarks.py
+python models/run_extensions.py
+python models/render_results.py
+python models/check_package.py
+```
 
-- 基准问题集、准确参考与统一评测协议
-- 高精度方法、快速近似方法和迭代更新机制
-- 消融、鲁棒性、随机重复和预算对比
-- 误差/速度/复杂度权衡与失败案例报告
+运行依赖Python3.12 / NumPy2.3.5 / SciPy1.17.0 / Matplotlib3.10.8已安装可信环境；兼容范围见requirements，其他版本未全面测。数值不依赖联网或原文PDF。本专题复制出去可以独立运行，因为T06材料/层表和T07核已冻结成逐字快照并标记来源；既不导入上游目录，也不修改它们。
 
-## 阶段验收标准
+## 数据与代码导航
 
-1. 准确度、约束违例、运行时间、资源和预算完整报告
-2. 使用冻结基准、独立验证集（适用时）及一致数据/材料模型
-3. 近似误差与物理偏差分开，记录域外退化和失效
-4. 能从保存的配置、版本与日志重跑；没有证据不称最优或通用
+- `models/optimization_core.py`：导数、目标、求解器、插层/合并、局部代理、minimax
+- `models/vendor/t07_optics_kernel.py`：T07冻结稳定核（自有项目源码）
+- `data/benchmark_config.json` / `optimization_contract.json`：可重复协议与未知输入
+- `data/benchmark_results.json` / `extension_results.json`：全部预算/误差/失败
+- `data/checkpoints.json`：继续迭代的厚度和上下文标识
+- `data/spectra/`：独立谱审计CSV
+- `figures/`：4张原创SVG；reviews内预览
+- [来源说明](sources/README.md)、[来源注册表](data/source_registry.json)
+- [首轮验收](reviews/ROUND1_ACCEPTANCE.md)、[未决问题](reviews/OPEN_ISSUES.md)、[T09移交](T09_HANDOFF.md)
 
-共同门槛：关键结论能回溯来源与条件；有可复用结果、未决问题、失效/适用边界及下一阶段接口；审查结论有记录。资料完成、仿真验证、实测验证分开标注。研究范围有限，文献不要求无限穷尽；关键缺口不得隐藏。
-
-## 目录约定
-
-- `reports/`：分章节报告与有版本号的阶段成果
-- `sources/summaries/`：逐来源摘要、原文定位、限制与证据等级
-- `sources/originals/`：仅保存已核对合法存档权利的原文
-- `data/`：可复用参数、数据表与来源/单位/不确定度
-- `reviews/`：阶段验收、纠错与未决问题处理
-- 需要模型、实验、benchmark时，在本专题下新增对应目录，并更新共享索引
-
-## 首轮之后的扩展候选
-
-- 新的约束、应用族和加速路径
-
-只有所有十个大项目首轮均验收后才进入此扩展列表。与当前专题无关的后续研究不可并行抢先启动。
+指定完整模型审查链缺席仅在阶段schema中保持pending，不影响阅读工程方法；不得将本轮窄核查冒称完整独审通过。第三方原文仅本地排除存档，公开包只保留摘要和来源链接。

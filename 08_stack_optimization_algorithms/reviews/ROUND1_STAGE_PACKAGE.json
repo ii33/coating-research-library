@@ -1,0 +1,113 @@
+{
+  "stage_id": "T08",
+  "algorithmic": true,
+  "baseline": {
+    "kind": "sha256_of_sorted_core_file_hashes",
+    "value": "a07e08f8b111f2d0135d2da02764d7b8c5bc571fb9a218c6669767894f303eec"
+  },
+  "research_first_pass_status": "ready_for_coordinator_acceptance_and_T09_handoff",
+  "actual_checks": {
+    "unit_tests": {
+      "result": "pass",
+      "count": 36,
+      "evidence": "reviews/test_output.txt"
+    },
+    "package": {
+      "result": "pass",
+      "evidence": "reviews/package_check_output.json"
+    },
+    "clean_copy": {
+      "result": "pass_smoke_not_full_benchmark",
+      "evidence": "reviews/clean_copy_output.txt"
+    },
+    "mathematical_spot_check": {
+      "result": "completed_narrow_scope",
+      "executor": "GPT-6 Luna",
+      "evidence": "reviews/MATH_SPOT_CHECK.md"
+    },
+    "production_measurements": {
+      "result": "not_performed"
+    }
+  },
+  "deepseek_self_review": {
+    "result": "pending",
+    "evidence": []
+  },
+  "seed_review": {
+    "result": "pending",
+    "findings": []
+  },
+  "sol_algorithm_review": {
+    "result": "pending",
+    "findings": []
+  },
+  "final_status": "awaiting_seed",
+  "assumptions": [
+    "isotropic passive planar media",
+    "fixed proxy material data, not measured",
+    "front finite stack only",
+    "all extrema sampled, no continuous guarantee"
+  ],
+  "open_issues": "reviews/OPEN_ISSUES.md",
+  "core_sha256": {
+    ".gitignore": "31984f54751f64b167fb03825f6f5aed61e4ac16f6d3ca0651e63608c5826a96",
+    "README.md": "e8512b002fb7c11a0770f0d011ebde033a5c3d1f99912af9fe7d7e5beae84318",
+    "T09_HANDOFF.md": "6ebcce2b525a0b90fefffd474006531beee8e1347092c8741bd131f27a3e2714",
+    "data/benchmark_config.json": "674aaa22cdef8e9592f2296c6d7816e91bb2ab1e211db4b84720af99b0d1bed0",
+    "data/benchmark_results.json": "ef19e14acafd17d81f5160c815beedeb9a624781aa2b61dc399467b7812c92b0",
+    "data/checkpoints.json": "a36e9a53c66b801abf875d664884384c812ad69b7d19e902896e3da3adda4879",
+    "data/extension_results.json": "9d129c11cea981bc4abdabe5a6d3df483d0201b237201a9e71537359faf250c3",
+    "data/frozen_dependencies.json": "eb227eff9bbee757d532e5a9daca790524260b60c407cd669415b0fd12367cc3",
+    "data/material_proxies_frozen.json": "0b1b0536a07be9d97b39601d0d5e3933c958b044e50efc3bd4b4db1788c97873",
+    "data/optimization_contract.json": "3a482d57fb17df40d3654c588ba5d44e0fbb4b8cbf05663dfd09fe78f9eb79a2",
+    "data/source_registry.json": "50ce0ae68c2442ff1790dffa8484c7d9cdfb556013560c8f914c54d5b2d7ed4a",
+    "data/spectra/B01_AR.csv": "8c13459c54cddd1f1df5e98468cbc8b6af6b281eb6634234a737ce1a739863ed",
+    "data/spectra/B02_HR.csv": "0d4fad779b13f7fb85ed6c425009e1cc2fb4f9d9056571ba2c5c2f79a49206e9",
+    "data/spectra/B03_left_block.csv": "6baabf68286a1622ca3927a14ae486b77be8f09985d908f7d2bb665b0a976c06",
+    "data/spectra/B03_pass.csv": "0abef493eb2107e964d2e51ab60afb229072961955066118dad01bb74f023b4c",
+    "data/spectra/B03_right_block.csv": "9ef0a544c16c760fd21bbf977755458007b486d2141da38b9708fca08055afb3",
+    "data/spectra/undersampling.csv": "c10a6932d5cb74e7a92c814ff35277710eaa808ca72c2fd49664aca996bda089",
+    "data/t06_starter_stacks_frozen.json": "d94d3855a9fbeed3e6f5efbe1ce7b1d8e39374b72b86ac46cf678456561a41dd",
+    "figures/01_budget_accuracy.svg": "a79fb41f4b606e089caaf8f67e937858bac923eb444a7c6c6a2a72cb67bc2fbe",
+    "figures/02_holdout_spectra.svg": "844a7b060924d328e3c0c6d00d733fa22b75bee85eeca2ba63af764aacbddb79",
+    "figures/03_failures_and_robustness.svg": "2184e9a38b5b239f120e8c29cc3966fd4085c61e0480d3312a53e7d6d1b3a8a8",
+    "figures/04_gradients_and_constraints.svg": "712ddeaae3f5aeb71d46f275ac03aaec534e68e0369e1fdd49ff12c56cd4cb5c",
+    "models/build_manifest.py": "cb8a0e06854288471047b470fb6ddf3f6d1ad8b5238b7f0b4978ab3a71da9f96",
+    "models/build_sources.py": "b9aa84809b16452d84584d50a8b95aa9ff87065b96b257c1b8dbe2dc88cb61c0",
+    "models/check_package.py": "e665aefbb8f6017c5f6216cfac903d18705018ce69a2eef65339063c18e5a2c2",
+    "models/optimization_core.py": "3234dd871008f4bf3c5fc322deef04e828279ed3d3214a5c93654f4e0133d2e3",
+    "models/render_results.py": "9f46375ec0ffbb52854de3d4cc928bc423c85e6c1a39ec7df28b480cf6d850d0",
+    "models/run_benchmarks.py": "32d318880b51253623e85b5e300c42efb2c5f6565c31a2b88be526516492f43b",
+    "models/run_extensions.py": "d864ac7bd3514859651811ca3fd596f6ad32d9c0447ee154b2494584e7e2b249",
+    "models/vendor/t07_optics_kernel.py": "c57dbf87435a2d52bf04946c77a8935a393f2379fc261f8a870c027652cedd57",
+    "reports/01_design_contract_and_objectives.md": "2ba844be5e5e7ea95c7737a2aa70ef9c971bd5c6b66fe5423e31814fb3f4931d",
+    "reports/02_stable_forward_model_and_derivatives.md": "7e8295481514c2cd1f3b96b26b8874d06a3f2c211978eb8ffdb1b446af6070b1",
+    "reports/03_local_refinement_and_constraints.md": "cffb52433c92d1bc79d12fc38000745d363228a70d284f82e7aa88ca63f6d4fe",
+    "reports/04_global_search_needle_and_topology.md": "0825fb2807a4e419bb77dc4d484abc7c54a5e7a26689d615c149e33ad67d7620",
+    "reports/05_fast_approximations_and_surrogate_control.md": "cd63cd763187d2abcbf0bc7d3ed04a468161a4877d8a5f2219fd62a7f70d58df",
+    "reports/06_robustness_and_identifiability.md": "da1da420718fb4d69cd68eed737d76a77cb68c220ff7035e4f2c8d26e924f423",
+    "reports/07_incremental_iterations_and_engineering_architecture.md": "2fab270dee7b310cf9cb8be9dd885a11cdea1ecd068ff859408f7bff3a29549f",
+    "reports/08_reproducible_benchmarks.md": "ba4f0cb81e36070ad4cb75dbe455265e905be8399251c97adae5b106b4eedc59",
+    "reports/09_failure_modes_and_acceptance.md": "cbe31ab5ff8667ac4da756f098571d4c839cd71c0d3631101d5091c19a03f17b",
+    "reports/09a_generated_results.md": "ff57fa397f7d480accf9361a89899e53edcd280776b2df4360f2a5d8b4f892d0",
+    "requirements.txt": "1f1efd83db9e3b22374cecddb6ba60e24a4192de589f9f4d37d598bb96d2d378",
+    "sources/README.md": "83cbb436ccc5da3058dd42a3cf9a577b272dcf2f83b79c75748068e5632a3c4b",
+    "sources/summaries/O01.md": "09aa71da1a6d9c5904470ed6c5b2dc36bff7516153801089ea52c71861ff8d37",
+    "sources/summaries/O02.md": "3affd916060723fab64bd65930eb2cafadefff7774d11f8fd31d0799a69ae7e0",
+    "sources/summaries/O03.md": "f4509492c35e461f747c336ac5ea17ce971dffdb6d49741613b498464b46533b",
+    "sources/summaries/O04.md": "322464f2e094fde3131bb52753b721953ed2126b983cfac9953bc4791e732a46",
+    "sources/summaries/O05.md": "a2d6fc10127ffc2218d3fb10008a0e6858f56b422860e27154969440f9aa6f36",
+    "sources/summaries/O06.md": "231a897e90656b2689a46ccb8231bc2f959453f8cbb3abef8a976ec58485fdb6",
+    "sources/summaries/O07.md": "e2028407b2abe13afffde499017ece1870240591d41d23898e27565e0b7edd97",
+    "sources/summaries/O08.md": "a74ffb0c437fa830d527a01318dc1264210d43e710537bec5e23e97b4fac786c",
+    "sources/summaries/O09.md": "6e5df9b815116e89e09e679b4815ba49e0d2d7a9207c99d99884e5e247aa8da3",
+    "sources/summaries/O10.md": "4a8b92d4341955a770bdc65b86c44047cbe75b3a49db73fb6164d2242b7e1beb",
+    "sources/summaries/O11.md": "37a174b7aa968d2b23a2f7a8cb2aeb92eafd2003c4ecf39e48dd574dcc879886",
+    "sources/summaries/O12.md": "0ccc8541a81d09a84c587563378a8d5087eba115c5b24801bed4c02e9712f944",
+    "sources/summaries/O13.md": "7e01512a5c94e06882c748042cd2c6e99d072620a0974c6554718528a7947ffb",
+    "sources/summaries/O14.md": "b28c40c75dd0e2db1fe1a95ffebb02171de1fc92c70ed457e5655b2328af006a",
+    "sources/summaries/O15.md": "e99e812238a6e9aa58b9f0acaf05b06ec5b5823699ab531bf7f576040b19e3cf",
+    "sources/summaries/O16.md": "7a580a20f187ae9eac724329e22783436a1e9923aa4ae4303425c7b511362b6f",
+    "tests/test_optimization.py": "f794c2104e8e0a7ed1d8afdcf4269d019cd5dbe6cae279edbff61bad1ee40ee1"
+  }
+}

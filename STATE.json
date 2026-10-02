@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T02:33:25.252095+00:00",
+  "updated_at_utc": "2026-10-02T03:01:57.279249+00:00",
   "project_status": "active",
   "setup_status": "complete_integrity_checked",
   "round": 1,
-  "active_topic_id": "T08",
-  "active_task_id": "T08.P01",
-  "active_scope": "膜系设计优化算法首轮研究，按高精度高性能、快速近似、持续迭代原优先顺序接续启动",
-  "later_topics_policy": "T09_to_T10_planning_only_until_preceding_round1_scope_handoff",
+  "active_topic_id": "T09",
+  "active_task_id": "T09.P01",
+  "active_scope": "生产标准、环境与损伤试验首轮公开证据研究，接续启动",
+  "later_topics_policy": "T10_planning_only_until_T09_round1_scope_handoff",
   "topic_order": [
     "T01",
     "T02",
@@ -28,8 +28,8 @@
     "T05": "round1_priority_theory_and_synthetic_scope_complete",
     "T06": "round1_priority_theory_and_numerical_scope_complete",
     "T07": "round1_priority_theory_and_reference_numerical_scope_complete",
-    "T08": "starting",
-    "T09": "queued",
+    "T08": "round1_bounded_algorithm_research_delivery_complete",
+    "T09": "starting",
     "T10": "queued"
   },
   "research_stage_acceptance": {
@@ -40,11 +40,11 @@
     "T05": "bounded_priority_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
     "T06": "bounded_priority_theory_and_reference_numerical_scope_complete_not_machine_validated_or_formally_signed_off",
     "T07": "bounded_design_theory_and_reference_numerics_complete_real_material_machine_and_formal_review_unverified",
-    "T08": "pending",
+    "T08": "bounded_algorithm_research_complete_B03_nonconvergence_and_real_validation_limits_retained",
     "T09": "pending",
     "T10": "pending"
   },
-  "next_action": "接收T07冻结设计理论与T08移交，研究高精度高性能优化、快速近似与可持续迭代算法",
+  "next_action": "接收T08冻结算法与T09移交，研究适用标准、环境耐久性、损伤试验、测量和验收证据",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -53,9 +53,9 @@
     "Q06"
   ],
   "notes": [
-    "T01–T07首轮优先研究已形成可移交基线；正式审查pending和真实材料/设备未验证继续如实保留",
-    "T07完成9章、8组算例及CSV、4张原创图、18来源卡、32公式；28项测试和22项包检查通过",
-    "T08依原优先项研究膜系优化，T09–T10排队；完整优化实现不冒充已在T07完成"
+    "T01–T08首轮优先研究已形成可移交基线；算法资料完成不等同膜系达标、正式审查或真实材料/设备验收",
+    "T08完成9章、16来源、三膜系五路线比较、4图、36测试和28包检查；B03预算耗尽未收敛且未达教学规格，失败证据保留",
+    "T09接续标准/环境/损伤试验研究；T10仍排队，未有实测分布或适用产品时不制造生产合格结论"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -68,10 +68,10 @@
     "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
   },
   "handoff_evidence": [
-    "07_thin_film_design_theory/T08_HANDOFF.md",
-    "07_thin_film_design_theory/reviews/ROUND1_ACCEPTANCE.md",
-    "07_thin_film_design_theory/reviews/ROUND1_STAGE_PACKAGE.json",
-    "07_thin_film_design_theory/data/deliverable_manifest.json"
+    "08_stack_optimization_algorithms/T09_HANDOFF.md",
+    "08_stack_optimization_algorithms/reviews/ROUND1_ACCEPTANCE.md",
+    "08_stack_optimization_algorithms/reviews/ROUND1_STAGE_PACKAGE.json",
+    "08_stack_optimization_algorithms/data/deliverable_manifest.json"
   ],
   "machine_validation": "not_performed",
   "formal_review_signoff": "not_performed"

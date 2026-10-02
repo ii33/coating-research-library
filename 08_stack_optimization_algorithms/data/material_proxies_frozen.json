@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.0",
+  "warning": "Every dielectric model has explicit approximations; calculation bounds are not evidence of physical validity.",
+  "materials": {
+    "MgF2_NIR_proxy": {
+      "id": "MgF2_NIR_proxy",
+      "model": "constant",
+      "n": 1.375,
+      "k": 0,
+      "calculation_bounds_um": [
+        1.3,
+        1.7
+      ],
+      "anchor_records": [
+        "T04:IRP-037",
+        "T04:IRP-038"
+      ],
+      "assumptions": "n frozen from 1.5um catalog film; k=0 is idealization, not the <2e-5 catalog limit",
+      "uncertainty": "not quantified; reference model only",
+      "design_ready": false
+    },
+    "K9_NIR_proxy": {
+      "id": "K9_NIR_proxy",
+      "model": "constant",
+      "n": 1.50106,
+      "k": 0,
+      "calculation_bounds_um": [
+        1.3,
+        2.0
+      ],
+      "anchor_records": [
+        "T04:IRP-064"
+      ],
+      "assumptions": "H-K9L n at1.52958um frozen; zero interface k and alpha=0 scenario do not certify real bulk transmission",
+      "uncertainty": "not quantified; reference model only",
+      "design_ready": false
+    },
+    "K9_1064_proxy": {
+      "id": "K9_1064_proxy",
+      "model": "constant",
+      "n": 1.506743,
+      "k": 0,
+      "calculation_bounds_um": [
+        0.78,
+        1.3
+      ],
+      "anchor_records": [
+        "T04:IRP-063"
+      ],
+      "assumptions": "H-K9L at1.060um, frozen for 1.064um teaching filter; not all K9",
+      "uncertainty": "not quantified; reference model only",
+      "design_ready": false
+    },
+    "Ta2O5_1064_proxy": {
+      "id": "Ta2O5_1064_proxy",
+      "model": "constant",
+      "n": 2.08,
+      "k": 0,
+      "calculation_bounds_um": [
+        0.78,
+        1.3
+      ],
+      "anchor_records": [
+        "T04:OXP-006"
+      ],
+      "assumptions": "Spector IBS film n at1.064um frozen; k=0 assumed, not measured; no process transfer",
+      "uncertainty": "not quantified; reference model only",
+      "design_ready": false
+    },
+    "SiO2_1064_proxy": {
+      "id": "SiO2_1064_proxy",
+      "model": "constant",
+      "n": 1.474,
+      "k": 0,
+      "calculation_bounds_um": [
+        0.78,
+        2.0
+      ],
+      "anchor_records": [
+        "T04:OXP-028"
+      ],
+      "assumptions": "Spector IBS film n at1.064um frozen; k=0 assumed, no broadband certified data",
+      "uncertainty": "not quantified; reference model only",
+      "design_ready": false
+    },
+    "ZnS_IR_proxy": {
+      "id": "ZnS_IR_proxy",
+      "model": "linear_table",
+      "table_wavelength_n_k": [
+        [
+          2,
+          2.24,
+          0
+        ],
+        [
+          4,
+          2.22,
+          0
+        ],
+        [
+          6,
+          2.21,
+          0
+        ],
+        [
+          8,
+          2.19,
+          0
+        ],
+        [
+          10,
+          2.17,
+          0
+        ],
+        [
+          13,
+          2.12,
+          0
+        ]
+      ],
+      "calculation_bounds_um": [
+        3,
+        13
+      ],
+      "anchor_records": [
+        "T04:IR01 p2",
+        "T06:F08 p2"
+      ],
+      "assumptions": "piecewise-linear catalog n; k=0 not supplied by the table and explicitly idealized",
+      "uncertainty": "sparse interpolation has unquantified error; cannot resolve absorption bands",
+      "design_ready": false
+    },
+    "YbF3_MWIR_proxy": {
+      "id": "YbF3_MWIR_proxy",
+      "model": "linear_table",
+      "table_wavelength_n_k": [
+        [
+          2,
+          1.529,
+          0.0005
+        ],
+        [
+          5,
+          1.509,
+          0.0015
+        ]
+      ],
+      "calculation_bounds_um": [
+        3,
+        5
+      ],
+      "anchor_records": [
+        "T04:IRP-015",
+        "T04:IRP-016",
+        "T04:IRP-017",
+        "T04:IRP-018"
+      ],
+      "assumptions": "linear n,k between2 and5um catalog points; water peaks and process dependence unresolved",
+      "uncertainty": "sparse interpolation has unquantified error; cannot resolve absorption bands",
+      "design_ready": false
+    },
+    "Ge_MWIR_bulk_proxy": {
+      "id": "Ge_MWIR_bulk_proxy",
+      "model": "linear_table",
+      "table_wavelength_n_k": [
+        [
+          3,
+          4.04579,
+          0
+        ],
+        [
+          4,
+          4.02577,
+          0
+        ],
+        [
+          5,
+          4.01678,
+          0
+        ]
+      ],
+      "calculation_bounds_um": [
+        3,
+        5
+      ],
+      "anchor_records": [
+        "T04:MP-054",
+        "T04:MP-055",
+        "T04:MP-056"
+      ],
+      "assumptions": "295K crystalline Ge n; k=0 at interfaces, independent bulk alpha; not Ge film",
+      "uncertainty": "sparse interpolation has unquantified error; cannot resolve absorption bands",
+      "design_ready": false
+    },
+    "Ge_dualband_ideal": {
+      "id": "Ge_dualband_ideal",
+      "model": "constant",
+      "n": 4.0026,
+      "k": 0,
+      "calculation_bounds_um": [
+        3,
+        12
+      ],
+      "anchor_records": [
+        "T04:MP-057"
+      ],
+      "assumptions": "synthetic broad-band constant using11um bulk anchor; not measured3-12um dispersion or absorption",
+      "uncertainty": "not quantified; reference model only",
+      "design_ready": false
+    },
+    "Ge_LWIR_film_proxy": {
+      "id": "Ge_LWIR_film_proxy",
+      "model": "constant",
+      "n": 4.3,
+      "k": 0,
+      "calculation_bounds_um": [
+        8,
+        13
+      ],
+      "anchor_records": [
+        "T04:M15",
+        "T04:cards/09_Ge_film.md"
+      ],
+      "assumptions": "historical evaporated-film n about4.3 above6um frozen; k=0 idealization; not contemporary process data",
+      "uncertainty": "not quantified; reference model only",
+      "design_ready": false
+    },
+    "ZnSe_LWIR_bulk_proxy": {
+      "id": "ZnSe_LWIR_bulk_proxy",
+      "model": "constant",
+      "n": 2.4028,
+      "k": 0,
+      "calculation_bounds_um": [
+        8,
+        13
+      ],
+      "anchor_records": [
+        "T04:IRP-085"
+      ],
+      "assumptions": "10.6um bulk ZnSe n frozen; alpha=0 baseline, no thermal/loss certification",
+      "uncertainty": "not quantified; reference model only",
+      "design_ready": false
+    },
+    "Al_Rakic_sparse": {
+      "id": "Al_Rakic_sparse",
+      "model": "linear_table",
+      "table_wavelength_n_k": [
+        [
+          1.3,
+          1.3480850399419027,
+          12.916705882352941
+        ],
+        [
+          1.4,
+          1.4143943089430893,
+          14.027512195121952
+        ],
+        [
+          1.5,
+          1.5237439024390245,
+          15.114620209059234
+        ],
+        [
+          1.55,
+          1.5785092140921408,
+          15.658109304426379
+        ],
+        [
+          1.6,
+          1.6558127371273714,
+          16.185435411020777
+        ],
+        [
+          1.7,
+          1.810419783197832,
+          17.240087624209576
+        ],
+        [
+          1.8,
+          1.974480487804878,
+          18.28280487804878
+        ],
+        [
+          1.9,
+          2.161912737127371,
+          19.296016260162602
+        ],
+        [
+          2.0,
+          2.349344986449865,
+          20.309227642276422
+        ]
+      ],
+      "calculation_bounds_um": [
+        1.3,
+        2.0
+      ],
+      "anchor_records": [
+        "T04:M07",
+        "T04:Al_Rakic CC0 dataset"
+      ],
+      "assumptions": "nine wavelength-resampled points; linear interpolation of that derived sample; homogeneous metal, excludes oxide/roughness/microstructure",
+      "uncertainty": "sparse interpolation has unquantified error; cannot resolve absorption bands",
+      "design_ready": false,
+      "original_sha256": "e93b31fe821551836e5b000949c67c633b8a1ca1f2c5549f4db0f1c03b24844d",
+      "data_license": "CC0-1.0"
+    }
+  }
+}

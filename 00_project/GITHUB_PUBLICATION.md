@@ -10,7 +10,8 @@
 - T05：v0.1首轮源研究，71份清单内文件及冻结清单；`release_manifest.json` SHA-256 `fc54cef8e0f0f4f16ebc73dbbb7b4e39c69580af1bc2dd68b9c4c3a1a556fb26`
 - T06：67份清单内冻结文件及清单自身；`data/deliverable_manifest.json` SHA-256 `8311a45c4bb45542f2abe8098071d713497754a9bd01731b772f7143cef724f9`
 - T07：65份清单内文件及清单自身；`data/deliverable_manifest.json` SHA-256 `9f382bc2d7d2f5a86570105695f1f9b95d5454caccadd19c0bed1ee85588b238`
-- 阶段边界：T01–T07首轮优先研究可移交，T08接续启动；实机/量产验证和指定完整审查未完成
+- T08：73份精确允许文件；发布控制清单SHA-256 `6d0128b90679ef76e6b3bb9a59a88992ac1f72551647e00cbb556a2e05db6653`（控制清单自身不上传）
+- 阶段边界：T01–T08首轮优先研究可移交，T09接续启动；实机/量产验证和指定完整审查未完成
 
 ## 不纳入仓库的内容
 
@@ -36,6 +37,8 @@ PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s 06_optical_coating_fami
 PYTHONDONTWRITEBYTECODE=1 python 06_optical_coating_families/models/check_package.py
 PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s 07_thin_film_design_theory/tests -v
 PYTHONDONTWRITEBYTECODE=1 python 07_thin_film_design_theory/models/check_package.py --reader
+PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 python -m unittest discover -s 08_stack_optimization_algorithms/tests -v
+PYTHONDONTWRITEBYTECODE=1 python 08_stack_optimization_algorithms/models/check_package.py
 ```
 
 读者模式的来源schema检查使用 `jsonschema`；原文PDF未随仓库发布，四项缺失原文检查会明确标为跳过。轻量检查不代表已进行实体设备校准或生产验证。
@@ -51,3 +54,5 @@ T05清单排除完整originals目录、字节码、自清单与生成检查日�
 T06六份光谱CSV为本库原创参考计算结果，按冻结字节发布，非第三方原始光谱。完整originals目录、缓存和两份重复控制台输出排除；最终测试日志、包检查JSON及两张原创图的预览作为冻结审计证据保留。
 
 T07按明确允许列表发布；4份PDF和2份原文提取仅本地留存。读者模式明确跳过原文存在/哈希验证，其余包检查保留；最终测试日志、包检查JSON和四幅原创图预览作为冻结审计证据，重复控制台日志排除。真实材料、设备与指定正式审查状态未被发布流程改写。
+
+T08使用作者明确的发布允许清单；整个sources/originals下6份第三方原文、缓存、ZIP与重复控制台日志排除。B03预算耗尽未收敛/未达教学规格等失败证据随冻结结果保留；原文缺席的读者副本只核查可用公开包，不误称查过未打包全文。T06/T07文件未改。

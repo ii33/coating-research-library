@@ -1,0 +1,509 @@
+{
+  "finite_minimax": {
+    "trace": [
+      {
+        "x": [
+          1.112345623397443,
+          0.9845926438378552
+        ],
+        "thickness_um": [
+          0.3670740557211562,
+          0.3249155724664922
+        ],
+        "t": 0.7398926837459429,
+        "actual_sample_max": 0.7398926837459465,
+        "constraint_violation": 3.6637359812630166e-15,
+        "success": true,
+        "status": 0,
+        "message": "Optimization terminated successfully",
+        "seconds": 0.040405674000794534,
+        "spectrum_calls": 48,
+        "points": 9,
+        "angles_deg": [
+          0,
+          15,
+          30
+        ],
+        "dense_sample_max": 0.7398926837459454,
+        "added_wavelengths_um": [],
+        "holdout": {
+          "cost": 0.04080751630959214,
+          "sample_worst_normalized_target_error": 0.7398926837459454,
+          "points_per_band": 1201,
+          "angles_deg": [
+            0,
+            7.5,
+            15,
+            22.5,
+            30
+          ],
+          "rows": [
+            {
+              "band": "AR",
+              "angle_deg": 0,
+              "polarization": "s",
+              "scenario": 0,
+              "R_mean": 0.006651619336311433,
+              "R_max": 0.022196780512378337,
+              "T_mean": 0.9914720673464332,
+              "T_min": 0.9760740571485437,
+              "T_max": 0.9968986106451191,
+              "A_mean": 0.001876313317255441,
+              "normalized_sample_worst": 0.7398926837459446
+            },
+            {
+              "band": "AR",
+              "angle_deg": 0,
+              "polarization": "p",
+              "scenario": 0,
+              "R_mean": 0.006651619336311431,
+              "R_max": 0.02219678051237836,
+              "T_mean": 0.9914720673464331,
+              "T_min": 0.9760740571485439,
+              "T_max": 0.9968986106451189,
+              "A_mean": 0.0018763133172554434,
+              "normalized_sample_worst": 0.7398926837459454
+            },
+            {
+              "band": "AR",
+              "angle_deg": 7.5,
+              "polarization": "s",
+              "scenario": 0,
+              "R_mean": 0.006521146757423522,
+              "R_max": 0.02179467617236924,
+              "T_mean": 0.9915947297545213,
+              "T_min": 0.9764666865963765,
+              "T_max": 0.9970444847320357,
+              "A_mean": 0.0018841234880550978,
+              "normalized_sample_worst": 0.7264892057456414
+            },
+            {
+              "band": "AR",
+              "angle_deg": 7.5,
+              "polarization": "p",
+              "scenario": 0,
+              "R_mean": 0.006613658123787539,
+              "R_max": 0.02129759207278636,
+              "T_mean": 0.9915091930539748,
+              "T_min": 0.9769686743357291,
+              "T_max": 0.9967884924775311,
+              "A_mean": 0.0018771488222376013,
+              "normalized_sample_worst": 0.7099197357595454
+            },
+            {
+              "band": "AR",
+              "angle_deg": 15,
+              "polarization": "s",
+              "scenario": 0,
+              "R_mean": 0.006228775387312984,
+              "R_max": 0.02062687704351466,
+              "T_mean": 0.9918641353010469,
+              "T_min": 0.9776063440635147,
+              "T_max": 0.9974309567654496,
+              "A_mean": 0.0019070893116400595,
+              "normalized_sample_worst": 0.6875625681171553
+            },
+            {
+              "band": "AR",
+              "angle_deg": 15,
+              "polarization": "p",
+              "scenario": 0,
+              "R_mean": 0.006635998419368936,
+              "R_max": 0.018790112293990264,
+              "T_mean": 0.9914844803310978,
+              "T_min": 0.9794630453633855,
+              "T_max": 0.996411055192151,
+              "A_mean": 0.0018795212495332923,
+              "normalized_sample_worst": 0.6263370764663422
+            },
+            {
+              "band": "AR",
+              "angle_deg": 22.5,
+              "polarization": "s",
+              "scenario": 0,
+              "R_mean": 0.006114697216509887,
+              "R_max": 0.018849170227082695,
+              "T_mean": 0.9919416240692128,
+              "T_min": 0.97933823492987,
+              "T_max": 0.9978724710861856,
+              "A_mean": 0.0019436787142772646,
+              "normalized_sample_worst": 0.6283056742360899
+            },
+            {
+              "band": "AR",
+              "angle_deg": 22.5,
+              "polarization": "p",
+              "scenario": 0,
+              "R_mean": 0.007133392102653374,
+              "R_max": 0.01675462185514898,
+              "T_mean": 0.9909835705847508,
+              "T_min": 0.9813488456322983,
+              "T_max": 0.9956062359488479,
+              "A_mean": 0.0018830373125958866,
+              "normalized_sample_worst": 0.5584873951716327
+            },
+            {
+              "band": "AR",
+              "angle_deg": 30,
+              "polarization": "s",
+              "scenario": 0,
+              "R_mean": 0.006902877420054151,
+              "R_max": 0.022196780512378115,
+              "T_mean": 0.9911062736702294,
+              "T_min": 0.9758275513459312,
+              "T_max": 0.9979330581377897,
+              "A_mean": 0.001990848909716402,
+              "normalized_sample_worst": 0.7398926837459372
+            },
+            {
+              "band": "AR",
+              "angle_deg": 30,
+              "polarization": "p",
+              "scenario": 0,
+              "R_mean": 0.00883724171673114,
+              "R_max": 0.02103017584049905,
+              "T_mean": 0.9892757714348377,
+              "T_min": 0.9770766436415818,
+              "T_max": 0.994025447681628,
+              "A_mean": 0.001886986848431158,
+              "normalized_sample_worst": 0.7010058613499683
+            }
+          ]
+        }
+      }
+    ],
+    "result": {
+      "x": [
+        1.112345623397443,
+        0.9845926438378552
+      ],
+      "thickness_um": [
+        0.3670740557211562,
+        0.3249155724664922
+      ],
+      "t": 0.7398926837459429,
+      "actual_sample_max": 0.7398926837459465,
+      "constraint_violation": 3.6637359812630166e-15,
+      "success": true,
+      "status": 0,
+      "message": "Optimization terminated successfully",
+      "seconds": 0.040405674000794534,
+      "spectrum_calls": 48,
+      "points": 9,
+      "angles_deg": [
+        0,
+        15,
+        30
+      ],
+      "dense_sample_max": 0.7398926837459454,
+      "added_wavelengths_um": [],
+      "holdout": {
+        "cost": 0.04080751630959214,
+        "sample_worst_normalized_target_error": 0.7398926837459454,
+        "points_per_band": 1201,
+        "angles_deg": [
+          0,
+          7.5,
+          15,
+          22.5,
+          30
+        ],
+        "rows": [
+          {
+            "band": "AR",
+            "angle_deg": 0,
+            "polarization": "s",
+            "scenario": 0,
+            "R_mean": 0.006651619336311433,
+            "R_max": 0.022196780512378337,
+            "T_mean": 0.9914720673464332,
+            "T_min": 0.9760740571485437,
+            "T_max": 0.9968986106451191,
+            "A_mean": 0.001876313317255441,
+            "normalized_sample_worst": 0.7398926837459446
+          },
+          {
+            "band": "AR",
+            "angle_deg": 0,
+            "polarization": "p",
+            "scenario": 0,
+            "R_mean": 0.006651619336311431,
+            "R_max": 0.02219678051237836,
+            "T_mean": 0.9914720673464331,
+            "T_min": 0.9760740571485439,
+            "T_max": 0.9968986106451189,
+            "A_mean": 0.0018763133172554434,
+            "normalized_sample_worst": 0.7398926837459454
+          },
+          {
+            "band": "AR",
+            "angle_deg": 7.5,
+            "polarization": "s",
+            "scenario": 0,
+            "R_mean": 0.006521146757423522,
+            "R_max": 0.02179467617236924,
+            "T_mean": 0.9915947297545213,
+            "T_min": 0.9764666865963765,
+            "T_max": 0.9970444847320357,
+            "A_mean": 0.0018841234880550978,
+            "normalized_sample_worst": 0.7264892057456414
+          },
+          {
+            "band": "AR",
+            "angle_deg": 7.5,
+            "polarization": "p",
+            "scenario": 0,
+            "R_mean": 0.006613658123787539,
+            "R_max": 0.02129759207278636,
+            "T_mean": 0.9915091930539748,
+            "T_min": 0.9769686743357291,
+            "T_max": 0.9967884924775311,
+            "A_mean": 0.0018771488222376013,
+            "normalized_sample_worst": 0.7099197357595454
+          },
+          {
+            "band": "AR",
+            "angle_deg": 15,
+            "polarization": "s",
+            "scenario": 0,
+            "R_mean": 0.006228775387312984,
+            "R_max": 0.02062687704351466,
+            "T_mean": 0.9918641353010469,
+            "T_min": 0.9776063440635147,
+            "T_max": 0.9974309567654496,
+            "A_mean": 0.0019070893116400595,
+            "normalized_sample_worst": 0.6875625681171553
+          },
+          {
+            "band": "AR",
+            "angle_deg": 15,
+            "polarization": "p",
+            "scenario": 0,
+            "R_mean": 0.006635998419368936,
+            "R_max": 0.018790112293990264,
+            "T_mean": 0.9914844803310978,
+            "T_min": 0.9794630453633855,
+            "T_max": 0.996411055192151,
+            "A_mean": 0.0018795212495332923,
+            "normalized_sample_worst": 0.6263370764663422
+          },
+          {
+            "band": "AR",
+            "angle_deg": 22.5,
+            "polarization": "s",
+            "scenario": 0,
+            "R_mean": 0.006114697216509887,
+            "R_max": 0.018849170227082695,
+            "T_mean": 0.9919416240692128,
+            "T_min": 0.97933823492987,
+            "T_max": 0.9978724710861856,
+            "A_mean": 0.0019436787142772646,
+            "normalized_sample_worst": 0.6283056742360899
+          },
+          {
+            "band": "AR",
+            "angle_deg": 22.5,
+            "polarization": "p",
+            "scenario": 0,
+            "R_mean": 0.007133392102653374,
+            "R_max": 0.01675462185514898,
+            "T_mean": 0.9909835705847508,
+            "T_min": 0.9813488456322983,
+            "T_max": 0.9956062359488479,
+            "A_mean": 0.0018830373125958866,
+            "normalized_sample_worst": 0.5584873951716327
+          },
+          {
+            "band": "AR",
+            "angle_deg": 30,
+            "polarization": "s",
+            "scenario": 0,
+            "R_mean": 0.006902877420054151,
+            "R_max": 0.022196780512378115,
+            "T_mean": 0.9911062736702294,
+            "T_min": 0.9758275513459312,
+            "T_max": 0.9979330581377897,
+            "A_mean": 0.001990848909716402,
+            "normalized_sample_worst": 0.7398926837459372
+          },
+          {
+            "band": "AR",
+            "angle_deg": 30,
+            "polarization": "p",
+            "scenario": 0,
+            "R_mean": 0.00883724171673114,
+            "R_max": 0.02103017584049905,
+            "T_mean": 0.9892757714348377,
+            "T_min": 0.9770766436415818,
+            "T_max": 0.994025447681628,
+            "A_mean": 0.001886986848431158,
+            "normalized_sample_worst": 0.7010058613499683
+          }
+        ]
+      }
+    },
+    "finite_grid_certified_only": true
+  },
+  "reflection_absorption_tradeoff": [
+    {
+      "x": [
+        1.0299532544685568,
+        1.0226535924101519
+      ],
+      "thickness_um": [
+        0.33988457397462374,
+        0.3374756854953501
+      ],
+      "cost": 0.042598128990435774,
+      "seconds": 0.17865404600161128,
+      "nfev_solver": 23,
+      "status": 2,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 5.452305072014973e-07,
+      "mode": "analytic",
+      "context_fingerprint": "b6d058550b1802c5f922d00accdf3ef1101f7e98694ecd12f3a829dbbee45686",
+      "budget": {
+        "spectrum_calls": 184,
+        "jacobian_spectrum_calls": 184,
+        "point_layer_work": 11408,
+        "cache_hits": 18
+      },
+      "max_nfev_or_maxiter": 60,
+      "bounds_scaled": [
+        [
+          0.4,
+          0.4
+        ],
+        [
+          1.6,
+          1.6
+        ]
+      ],
+      "absorption_weight": 0,
+      "audit_R_mean": 0.006374506350255336,
+      "audit_A_mean": 0.0017304067419402743,
+      "audit_T_mean": 0.9918950869078044
+    },
+    {
+      "x": [
+        1.0142511731156856,
+        1.028883276594428
+      ],
+      "thickness_um": [
+        0.33470288712817625,
+        0.3395314812761613
+      ],
+      "cost": 0.048514427650111096,
+      "seconds": 0.1598142850016302,
+      "nfev_solver": 20,
+      "status": 2,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 1.1281148302609967e-06,
+      "mode": "analytic",
+      "context_fingerprint": "5beabbda726ca42471a7ca6326f1d940bcf70683f4ba38ab21d3078d56c6008c",
+      "budget": {
+        "spectrum_calls": 160,
+        "jacobian_spectrum_calls": 160,
+        "point_layer_work": 9920,
+        "cache_hits": 16
+      },
+      "max_nfev_or_maxiter": 60,
+      "bounds_scaled": [
+        [
+          0.4,
+          0.4
+        ],
+        [
+          1.6,
+          1.6
+        ]
+      ],
+      "absorption_weight": 0.1,
+      "audit_R_mean": 0.006344066906769199,
+      "audit_A_mean": 0.0016985806520911893,
+      "audit_T_mean": 0.9919573524411396
+    },
+    {
+      "x": [
+        0.8884352859109577,
+        1.076210557050971
+      ],
+      "thickness_um": [
+        0.29318364435061606,
+        0.35514948382682043
+      ],
+      "cost": 0.09314627292105274,
+      "seconds": 0.1541128140015644,
+      "nfev_solver": 20,
+      "status": 2,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 3.007301275116707e-06,
+      "mode": "analytic",
+      "context_fingerprint": "47e1897ff9dd04b5777d10a80be67917e91f8491dff81970f9ae1cd40a8ac5d9",
+      "budget": {
+        "spectrum_calls": 160,
+        "jacobian_spectrum_calls": 160,
+        "point_layer_work": 9920,
+        "cache_hits": 18
+      },
+      "max_nfev_or_maxiter": 60,
+      "bounds_scaled": [
+        [
+          0.4,
+          0.4
+        ],
+        [
+          1.6,
+          1.6
+        ]
+      ],
+      "absorption_weight": 1,
+      "audit_R_mean": 0.006866146225250616,
+      "audit_A_mean": 0.0014512368403255926,
+      "audit_T_mean": 0.9916826169344238
+    },
+    {
+      "x": [
+        0.400000001675429,
+        1.2374848278750756
+      ],
+      "thickness_um": [
+        0.13200000055289157,
+        0.408369993198775
+      ],
+      "cost": 0.25204606428647863,
+      "seconds": 0.196475475000625,
+      "nfev_solver": 25,
+      "status": 2,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 6.84829398420446e-06,
+      "mode": "analytic",
+      "context_fingerprint": "529a60e36f625ca0f21515232b226ebef6974f91d350aec783bfd5b202bf74ed",
+      "budget": {
+        "spectrum_calls": 200,
+        "jacobian_spectrum_calls": 200,
+        "point_layer_work": 12400,
+        "cache_hits": 22
+      },
+      "max_nfev_or_maxiter": 60,
+      "bounds_scaled": [
+        [
+          0.4,
+          0.4
+        ],
+        [
+          1.6,
+          1.6
+        ]
+      ],
+      "absorption_weight": 10,
+      "audit_R_mean": 0.014781621259257608,
+      "audit_A_mean": 0.0006051309097066293,
+      "audit_T_mean": 0.9846132478310358
+    }
+  ]
+}

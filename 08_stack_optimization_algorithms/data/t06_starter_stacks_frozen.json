@@ -1,0 +1,422 @@
+{
+  "schema_version": "1.0",
+  "created": "2026-10-02",
+  "two_layer_seed_search": {
+    "objective": "minimum sampled maximum front R",
+    "band_um": [
+      3.5,
+      4.5
+    ],
+    "grid_n": 81,
+    "dL_um": [
+      0.02,
+      0.8,
+      79
+    ],
+    "dH_um": [
+      0.1,
+      0.7,
+      61
+    ],
+    "best_max_R": 0.01678083785178808
+  },
+  "examples": [
+    {
+      "id": "E01",
+      "title": "NIR single-layer AR",
+      "evidence": "synthetic_reference_calculation_not_measured",
+      "incident_medium": "air",
+      "layer_order": "incident_to_substrate",
+      "substrate": "K9_NIR_proxy",
+      "substrate_mm": 3,
+      "bulk_alpha_cm_inv": 0,
+      "bulk_alpha_status": "explicit idealized scenario, not inferred from k or transmission",
+      "rear": "same",
+      "layers": [
+        {
+          "material": "MgF2_NIR_proxy",
+          "thickness_um": 0.2727272727272727,
+          "thickness_nm": 272.7272727272727
+        }
+      ],
+      "wavelength_grid_um": [
+        1.3,
+        1.7,
+        801
+      ],
+      "bands_um": {
+        "NIR": [
+          1.3,
+          1.7
+        ]
+      },
+      "angles_deg": [
+        0,
+        30
+      ],
+      "polarizations": [
+        "s",
+        "p"
+      ],
+      "notes": "Both faces coated. Compare bare versus same rear; index matching is imperfect even at design center.",
+      "production_ready": false
+    },
+    {
+      "id": "E02",
+      "title": "MWIR two-layer AR seed",
+      "evidence": "synthetic_reference_calculation_not_measured",
+      "incident_medium": "air",
+      "layer_order": "incident_to_substrate",
+      "substrate": "Ge_MWIR_bulk_proxy",
+      "substrate_mm": 5,
+      "bulk_alpha_cm_inv": 0,
+      "bulk_alpha_status": "explicit idealized scenario, not inferred from k or transmission",
+      "rear": "same",
+      "layers": [
+        {
+          "material": "YbF3_MWIR_proxy",
+          "thickness_um": 0.33,
+          "thickness_nm": 330.0
+        },
+        {
+          "material": "ZnS_IR_proxy",
+          "thickness_um": 0.33,
+          "thickness_nm": 330.0
+        }
+      ],
+      "wavelength_grid_um": [
+        3,
+        5,
+        1201
+      ],
+      "bands_um": {
+        "design_band": [
+          3.5,
+          4.5
+        ],
+        "full_MWIR": [
+          3,
+          5
+        ]
+      },
+      "angles_deg": [
+        0,
+        30
+      ],
+      "polarizations": [
+        "s",
+        "p"
+      ],
+      "notes": "Finite grid minimum of max front R over3.5-4.5um at0deg with catalog-loss YbF3. 79x61 candidate grid, no robustness or global optimum claim.",
+      "production_ready": false
+    },
+    {
+      "id": "E03",
+      "title": "Dual-minimum AR counterexample",
+      "evidence": "synthetic_reference_calculation_not_measured",
+      "incident_medium": "air",
+      "layer_order": "incident_to_substrate",
+      "substrate": "Ge_dualband_ideal",
+      "substrate_mm": 5,
+      "bulk_alpha_cm_inv": 0,
+      "bulk_alpha_status": "explicit idealized scenario, not inferred from k or transmission",
+      "rear": "same",
+      "layers": [
+        {
+          "material": "ZnS_IR_proxy",
+          "thickness_um": 1.1520737327188941,
+          "thickness_nm": 1152.0737327188942
+        }
+      ],
+      "wavelength_grid_um": [
+        3,
+        12,
+        1801
+      ],
+      "bands_um": {
+        "MWIR": [
+          3,
+          5
+        ],
+        "LWIR": [
+          8,
+          12
+        ]
+      },
+      "angles_deg": [
+        0,
+        30
+      ],
+      "polarizations": [
+        "s",
+        "p"
+      ],
+      "notes": "A low-R minimum near10um and its short-wave odd-order minimum do NOT give broadband dual-band AR. Deliberate finite-band failure example; not optimized.",
+      "production_ready": false
+    },
+    {
+      "id": "E04",
+      "title": "LWIR dielectric HR and notch seed",
+      "evidence": "synthetic_reference_calculation_not_measured",
+      "incident_medium": "air",
+      "layer_order": "incident_to_substrate",
+      "substrate": "ZnSe_LWIR_bulk_proxy",
+      "substrate_mm": 3,
+      "bulk_alpha_cm_inv": 0,
+      "bulk_alpha_status": "explicit idealized scenario, not inferred from k or transmission",
+      "rear": "bare",
+      "layers": [
+        {
+          "material": "Ge_LWIR_film_proxy",
+          "thickness_um": 0.5813953488372093,
+          "thickness_nm": 581.3953488372093
+        },
+        {
+          "material": "ZnS_IR_proxy",
+          "thickness_um": 1.1520737327188941,
+          "thickness_nm": 1152.0737327188942
+        },
+        {
+          "material": "Ge_LWIR_film_proxy",
+          "thickness_um": 0.5813953488372093,
+          "thickness_nm": 581.3953488372093
+        },
+        {
+          "material": "ZnS_IR_proxy",
+          "thickness_um": 1.1520737327188941,
+          "thickness_nm": 1152.0737327188942
+        },
+        {
+          "material": "Ge_LWIR_film_proxy",
+          "thickness_um": 0.5813953488372093,
+          "thickness_nm": 581.3953488372093
+        },
+        {
+          "material": "ZnS_IR_proxy",
+          "thickness_um": 1.1520737327188941,
+          "thickness_nm": 1152.0737327188942
+        },
+        {
+          "material": "Ge_LWIR_film_proxy",
+          "thickness_um": 0.5813953488372093,
+          "thickness_nm": 581.3953488372093
+        },
+        {
+          "material": "ZnS_IR_proxy",
+          "thickness_um": 1.1520737327188941,
+          "thickness_nm": 1152.0737327188942
+        },
+        {
+          "material": "Ge_LWIR_film_proxy",
+          "thickness_um": 0.5813953488372093,
+          "thickness_nm": 581.3953488372093
+        },
+        {
+          "material": "ZnS_IR_proxy",
+          "thickness_um": 1.1520737327188941,
+          "thickness_nm": 1152.0737327188942
+        }
+      ],
+      "wavelength_grid_um": [
+        8,
+        13,
+        1201
+      ],
+      "bands_um": {
+        "HR_band": [
+          9,
+          11
+        ],
+        "long_edge": [
+          12,
+          13
+        ]
+      },
+      "angles_deg": [
+        0,
+        45
+      ],
+      "polarizations": [
+        "s",
+        "p"
+      ],
+      "notes": "Five HL pairs at10um. Same stack can act as reflective notch only if transmission in both external passbands is separately verified.",
+      "production_ready": false
+    },
+    {
+      "id": "E05",
+      "title": "NIR one-cavity bandpass seed",
+      "evidence": "synthetic_reference_calculation_not_measured",
+      "incident_medium": "air",
+      "layer_order": "incident_to_substrate",
+      "substrate": "K9_1064_proxy",
+      "substrate_mm": 3,
+      "bulk_alpha_cm_inv": 0,
+      "bulk_alpha_status": "explicit idealized scenario, not inferred from k or transmission",
+      "rear": "bare",
+      "layers": [
+        {
+          "material": "Ta2O5_1064_proxy",
+          "thickness_um": 0.12788461538461537,
+          "thickness_nm": 127.88461538461537
+        },
+        {
+          "material": "SiO2_1064_proxy",
+          "thickness_um": 0.18046132971506107,
+          "thickness_nm": 180.46132971506108
+        },
+        {
+          "material": "Ta2O5_1064_proxy",
+          "thickness_um": 0.12788461538461537,
+          "thickness_nm": 127.88461538461537
+        },
+        {
+          "material": "SiO2_1064_proxy",
+          "thickness_um": 0.18046132971506107,
+          "thickness_nm": 180.46132971506108
+        },
+        {
+          "material": "Ta2O5_1064_proxy",
+          "thickness_um": 0.12788461538461537,
+          "thickness_nm": 127.88461538461537
+        },
+        {
+          "material": "SiO2_1064_proxy",
+          "thickness_um": 0.18046132971506107,
+          "thickness_nm": 180.46132971506108
+        },
+        {
+          "material": "Ta2O5_1064_proxy",
+          "thickness_um": 0.12788461538461537,
+          "thickness_nm": 127.88461538461537
+        },
+        {
+          "material": "SiO2_1064_proxy",
+          "thickness_um": 0.18046132971506107,
+          "thickness_nm": 180.46132971506108
+        },
+        {
+          "material": "Ta2O5_1064_proxy",
+          "thickness_um": 0.25576923076923075,
+          "thickness_nm": 255.76923076923075
+        },
+        {
+          "material": "SiO2_1064_proxy",
+          "thickness_um": 0.18046132971506107,
+          "thickness_nm": 180.46132971506108
+        },
+        {
+          "material": "Ta2O5_1064_proxy",
+          "thickness_um": 0.12788461538461537,
+          "thickness_nm": 127.88461538461537
+        },
+        {
+          "material": "SiO2_1064_proxy",
+          "thickness_um": 0.18046132971506107,
+          "thickness_nm": 180.46132971506108
+        },
+        {
+          "material": "Ta2O5_1064_proxy",
+          "thickness_um": 0.12788461538461537,
+          "thickness_nm": 127.88461538461537
+        },
+        {
+          "material": "SiO2_1064_proxy",
+          "thickness_um": 0.18046132971506107,
+          "thickness_nm": 180.46132971506108
+        },
+        {
+          "material": "Ta2O5_1064_proxy",
+          "thickness_um": 0.12788461538461537,
+          "thickness_nm": 127.88461538461537
+        },
+        {
+          "material": "SiO2_1064_proxy",
+          "thickness_um": 0.18046132971506107,
+          "thickness_nm": 180.46132971506108
+        },
+        {
+          "material": "Ta2O5_1064_proxy",
+          "thickness_um": 0.12788461538461537,
+          "thickness_nm": 127.88461538461537
+        }
+      ],
+      "wavelength_grid_um": [
+        0.78,
+        1.3,
+        10401
+      ],
+      "bands_um": {
+        "pass_core": [
+          1.059,
+          1.069
+        ],
+        "left_block": [
+          0.97,
+          1.0
+        ],
+        "right_block": [
+          1.13,
+          1.16
+        ]
+      },
+      "angles_deg": [
+        0,
+        10,
+        30,
+        45
+      ],
+      "polarizations": [
+        "s",
+        "p"
+      ],
+      "notes": "(HL)^4 2H (LH)^4, lambda0=1.064um. Single cavity lacks remote blocking; specified pass core stays fixed when evaluating angular shift.",
+      "production_ready": false
+    },
+    {
+      "id": "E06",
+      "title": "Protected Al NIR mirror seed",
+      "evidence": "synthetic_reference_calculation_not_measured",
+      "incident_medium": "air",
+      "layer_order": "incident_to_substrate",
+      "substrate": "K9_NIR_proxy",
+      "substrate_mm": 3,
+      "bulk_alpha_cm_inv": 0,
+      "bulk_alpha_status": "explicit idealized scenario, not inferred from k or transmission",
+      "rear": "bare",
+      "layers": [
+        {
+          "material": "SiO2_1064_proxy",
+          "thickness_um": 0.1,
+          "thickness_nm": 100.0
+        },
+        {
+          "material": "Al_Rakic_sparse",
+          "thickness_um": 0.12,
+          "thickness_nm": 120.0
+        }
+      ],
+      "wavelength_grid_um": [
+        1.3,
+        2.0,
+        1001
+      ],
+      "bands_um": {
+        "NIR": [
+          1.3,
+          2.0
+        ]
+      },
+      "angles_deg": [
+        0,
+        45
+      ],
+      "polarizations": [
+        "s",
+        "p"
+      ],
+      "notes": "Hypothetical 100nm silica-like cap /120nm Al. No oxide, adhesion or durability claim; physical optical stack includes metal absorption.",
+      "production_ready": false
+    }
+  ]
+}

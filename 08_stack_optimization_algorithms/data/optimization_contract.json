@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "units": {
+    "wavelength": "um",
+    "physical_thickness": "um",
+    "angle": "degree",
+    "R_T_A": "fraction"
+  },
+  "status": "research_reference_not_production",
+  "physics": {
+    "finite_coating_front_surface": true,
+    "exit": "semi_infinite_substrate",
+    "coherence": "coherent_finite_layers",
+    "index": "N=n+ik; exp(-iwt)",
+    "incident": "real_index",
+    "supported": "planar isotropic local passive nonmagnetic",
+    "excludes": [
+      "backside plate response",
+      "diffuse scatter",
+      "roughness",
+      "anisotropy",
+      "active media",
+      "production device control"
+    ]
+  },
+  "objective": {
+    "residual": "sqrt(band_weight*normalized_trapezoid_weight/(Na*Np*Ns)) * (response-target)/tolerance",
+    "cost": "0.5 sum residual squared",
+    "angle_polarization_scenario_weights": "discrete equal weights, not a continuous angular integral",
+    "worst": "sampled maximum; no continuum bound"
+  },
+  "design_variables": "physical thickness only; n/k fixed proxies",
+  "material_data": "material_proxies_frozen.json; not measured",
+  "customer_requirements": null,
+  "production_constraints": {
+    "minimum_thickness_um": null,
+    "maximum_total_thickness_um": null,
+    "maximum_layers": null,
+    "allowed_material_adjacency": null,
+    "stress_model": null,
+    "temperature_model": null,
+    "damage_threshold": null
+  },
+  "example_only_constraints": {
+    "d_min_um": 0.03,
+    "needle_total_max_um": 1.0,
+    "needle_layer_max": 30
+  },
+  "uncertainty": {
+    "production_distribution": null,
+    "benchmark_distribution": "illustrative common+independent thickness factors; not yield"
+  },
+  "phase_GD_GDD": "interface discussed, not implemented",
+  "continuous_global_optimum_guarantee": false,
+  "three_validation_levels": {
+    "numerical": "tested",
+    "material_measurement": "not_performed",
+    "production_qualification": "not_performed"
+  }
+}

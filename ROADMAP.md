@@ -100,4 +100,4 @@
 
 ## 当前下一步
 
-T01–T07首轮优先研究已形成冻结基线。T07包括9章、8组算例/CSV、4幅原创图、18来源卡和32公式；28项测试、22项包检查通过，见[验收记录](07_thin_film_design_theory/reviews/ROUND1_ACCEPTANCE.md)。下一步按[T08移交](07_thin_film_design_theory/T08_HANDOFF.md)研究高精度高性能膜系优化、快速近似与可持续迭代算法。真实材料与机台未验证，正式审查pending不改为通过；T09–T10仍排队。
+T01–T08首轮优先研究已形成冻结基线。T08完成9章、16来源、三膜系五路线对照、4图、36测试和28包检查，见[验收记录](08_stack_optimization_algorithms/reviews/ROUND1_ACCEPTANCE.md)。B03耗尽预算未收敛且未达教学规格；needle退化、欠采样和代理误判等失败保留，不把研究完成写成算法普遍成功。下一步按[T09移交](08_stack_optimization_algorithms/T09_HANDOFF.md)研究生产标准、环境与损伤试验；真实材料/设备未验证，完整指定审查保持pending，T10排队。
