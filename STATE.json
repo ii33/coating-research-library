@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T04:43:39.965033+00:00",
+  "updated_at_utc": "2026-10-02T05:05:09.956112+00:00",
   "project_status": "active",
   "setup_status": "complete_integrity_checked",
   "round": 2,
   "active_topic_id": "T02",
-  "active_task_id": "ROUND2.T02_DUAL_COVERAGE_ERROR_BUDGET",
-  "active_scope": "T02第二轮：扩展蒸气源与有限厚板双覆盖接口及时间/源面/空间/模型误差预算",
-  "later_topics_policy": "bounded_T02_round2_interface_and_error_budget_then_T03_handoff",
+  "active_task_id": "ROUND2.T02_INTERSECTION_CORRECTNESS_CLOSURE",
+  "active_scope": "T02第二轮确定性近平行侧壁相交正确性收口；仅新建correctness_closure_v0_2，不扩大求积或修改v0.1",
+  "later_topics_policy": "bounded_T02_intersection_correctness_closure_in_progress_T03_not_started",
   "topic_order": [
     "T01",
     "T02",
@@ -44,7 +44,7 @@
     "T09": "bounded_public_research_complete_paid_text_GJB_and_real_sample_gaps_retained_not_certified",
     "T10": "bounded_public_theory_and_synthetic_handoff_with_limited_independent_numerical_checks_formal_review_and_machine_qualification_pending"
   },
-  "next_action": "按T01第二轮移交接入扩展源与厚板，固定不超过三个几何、算量和容差，完成有限回归与独立留出检查后移交T03",
+  "next_action": "在独立correctness_closure_v0_2中修确定性近平行侧壁漏挡反例；不扩大源/时间求积、不动v0.1、不进入T03",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -54,9 +54,9 @@
   ],
   "notes": [
     "T01–T10第一轮优先公共资料、理论和合成基础已覆盖；这不是完整工程资格、正式审查签署或实机校准完成",
-    "T01第二轮有限理论与合成接口已完成，4章、4组原创图、统一参数合同、13140行逐点数据，24项测试与读者包复核通过",
-    "C/I原始结构图仍unsupported_figure_gate；全部最终网格的额外时间加密、连续极值、真实设备与生产资格未完成",
-    "T02第二轮限定扩展源/厚板双覆盖接口和误差预算；首轮冻结内容不改，尚未冻结的T02扩展不发布"
+    "T02第二轮按frozen_bounded_partial冻结；20项测试通过，独立60000条普通随机射线与六面参考一致，但不代表所有边界或数值精度通过",
+    "极近侧壁浮点漏挡保留；最高源求积差0.203%，独曝时长差14.3ms超过10ms；共同欠采样混叠反例和完整最终网格/连续极值缺口保留",
+    "T01第二轮与全部首轮冻结研究不改；根状态为T02确定性侧壁相交正确性收口进行中，不将T03标为已启动或已验证"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -69,10 +69,11 @@
     "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
   },
   "handoff_evidence": [
-    "01_machine_structures/round2_topology_alignment/T02_ROUND2_HANDOFF.md",
-    "01_machine_structures/round2_topology_alignment/reviews/BOUNDED_ACCEPTANCE.md",
-    "01_machine_structures/round2_topology_alignment/round2_stage.json",
-    "01_machine_structures/round2_topology_alignment/verification/public_allowlist.txt"
+    "02_machine_modeling/round2_dual_coverage_error_budget/README.md",
+    "02_machine_modeling/round2_dual_coverage_error_budget/reviews/BOUNDED_ACCEPTANCE.md",
+    "02_machine_modeling/round2_dual_coverage_error_budget/reviews/INDEPENDENT_NARROW_REVIEW.md",
+    "02_machine_modeling/round2_dual_coverage_error_budget/round2_stage.json",
+    "02_machine_modeling/round2_dual_coverage_error_budget/verification/public_allowlist.txt"
   ],
   "machine_validation": "not_performed",
   "formal_review_signoff": "not_performed",
@@ -81,6 +82,7 @@
   "round2_active_status": "in_progress",
   "round2_stage_status": {
     "T01_TOPOLOGY_ALIGNMENT": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
-    "T02_DUAL_COVERAGE_ERROR_BUDGET": "in_progress"
+    "T02_DUAL_COVERAGE_ERROR_BUDGET": "frozen_bounded_partial",
+    "T02_INTERSECTION_CORRECTNESS_CLOSURE": "in_progress"
   }
 }

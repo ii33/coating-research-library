@@ -1,6 +1,6 @@
 {
-  "snapshot": "coating-research-library-T01-round2-handoff",
-  "created_at_utc": "2026-10-02T04:43:39.965033+00:00",
+  "snapshot": "coating-research-library-T02-round2-bounded-partial",
+  "created_at_utc": "2026-10-02T05:05:09.956112+00:00",
   "repository": "ii33/coating-research-library",
   "visibility": "private",
   "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
@@ -25,8 +25,8 @@
     },
     {
       "path": "00_project/GITHUB_PUBLICATION.md",
-      "size_bytes": 8505,
-      "sha256": "1e1db5bb4c12677683e999906b50ee3857a3783e13a66216590c3c11aa07db51"
+      "size_bytes": 9108,
+      "sha256": "4d427ac94e9e83755f2476ed1d36acdea8934310b28fb809f7f6f356a06954dc"
     },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
@@ -55,8 +55,8 @@
     },
     {
       "path": "00_project/planning_baseline_manifest.json",
-      "size_bytes": 7853,
-      "sha256": "e7a639eb7a6348d69bedf34e2ca2cefbe699921a159f161e12a50090f64ec173"
+      "size_bytes": 7885,
+      "sha256": "45ebc2d44c61e51bcf2d15e22783ebebe76cd6db49ed77edd425e857f669cb1b"
     },
     {
       "path": "00_project/requirements_traceability.json",
@@ -65,8 +65,8 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 37015,
-      "sha256": "95b656692484efcbca80357ec9dc73bd44b7d5336d96e2def109425b2a29d407"
+      "size_bytes": 37127,
+      "sha256": "eb5308d53c942de30631cd0dc528dac02b9782d07a2c02df0dcebd1ca19d280b"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -617,6 +617,281 @@
       "path": "02_machine_modeling/reviews/independent_math_check.md",
       "size_bytes": 7377,
       "sha256": "e6e73047790205a401b3bbf2c815d008717f2ecc5276ee5d007acef53b8ee935"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/.gitignore",
+      "size_bytes": 38,
+      "sha256": "96d662af45ea9ffcaa6af74d4302516a85906348d4929a09cf0dd978d7c0f2b9"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/README.md",
+      "size_bytes": 3964,
+      "sha256": "058f8fac5259fc98fb1de0552604a3f5f68df0a67ff81ea96776b1b58b0a5818"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/T03_ROUND2_HANDOFF.md",
+      "size_bytes": 2507,
+      "sha256": "011dfbdf9e166845bbf44a335dfe58dcd80819673db768115494c8b0b0c318c9"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/B_penumbra.csv",
+      "size_bytes": 8669,
+      "sha256": "00b2d6490e7d6a4f76eee6ca50abb21a6f1226b7f87303e6391e6fd45f885f3a"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/C_axis_comparisons.csv",
+      "size_bytes": 579,
+      "sha256": "2d78df2ba7178ad1d7de25814bd179bb50d9ffd43d9be447bfb7808e87b69249"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/C_cross_comparisons.csv",
+      "size_bytes": 3853,
+      "sha256": "1f44e1e9237fd248cf4c04df7602e2aef450d7c2efc6578f91f566becd6833ec"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/C_cross_runs.csv",
+      "size_bytes": 1294,
+      "sha256": "7ef5cb5cab69ec7f6248ad8ee8f7b96d6c06f383c027f89d09209a08a3f2b950"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/C_diagnostic_comparisons.csv",
+      "size_bytes": 650,
+      "sha256": "273e63f70ac84bfa537537bc7945eebe52d2b775d8206071266ebc8c2ee328b2"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/C_diagnostic_holdout.csv",
+      "size_bytes": 2547,
+      "sha256": "bd91f6877dad04f0c58346508e21ba1a7ce52b0a6ac8ce05ea3fe02882dc3b49"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/C_geometry_scenarios.csv",
+      "size_bytes": 1289,
+      "sha256": "de187276f97642f4f30be9f28602621a7529a78d8fe4fa8ebf948baebe91b463"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/C_main_map.csv",
+      "size_bytes": 44936,
+      "sha256": "10defee9c74791a60e0d183ea5aae20ba2472b17ab32c1ce736790b5b2fd0e0e"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/area_totals.json",
+      "size_bytes": 442,
+      "sha256": "e2d9df3d8b5749565292dfcb629412bd0d875d30a6d68fb0c91a06435755e172"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/error_budget.csv",
+      "size_bytes": 1615,
+      "sha256": "d125bc77cdb5da9392ca489517c629960b782f1fbcf8b3699799edfc451314ab"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/frozen_dependencies.json",
+      "size_bytes": 661,
+      "sha256": "f3a21c0edf3af3c4cf64d0a1e6fe19524088079493f00935068048340f6d3abc"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/results.json",
+      "size_bytes": 31495,
+      "sha256": "8334f2b16f33f6aba8f40c17ac23ce5bcecf725bd646b13bb0a1274422952450"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/synthetic_contract.json",
+      "size_bytes": 4274,
+      "sha256": "30bb8b000e4c88ec620d87d84bb544287c8facec64cdd042bdbb354f3d8b9661"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/data/t01_contract.json",
+      "size_bytes": 4685,
+      "sha256": "4ff0223bedca6529585f3c85754525930de51142cbe260ddc94b8013dcde9606"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/diagrams/01_ray_normal_thick_plate.png",
+      "size_bytes": 130837,
+      "sha256": "4d20a032706696202872303ce046ca905788c70482d262871381074cc954b0d8"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/diagrams/01_ray_normal_thick_plate.svg",
+      "size_bytes": 71124,
+      "sha256": "9eb82290eeca83cbc961954259324584025074931b4d9a76e12d754413a36b37"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/diagrams/02_penumbra_and_errors.png",
+      "size_bytes": 109928,
+      "sha256": "1f4b13ffed33a4892a363087124134e415579c94e0a60c4859aab26687bfbde7"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/diagrams/02_penumbra_and_errors.svg",
+      "size_bytes": 76862,
+      "sha256": "9f705e1541f838dcad58628fa759d9d598a7ce4caf7d97c100811e755f42e3f5"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/diagrams/03_dual_maps.png",
+      "size_bytes": 248645,
+      "sha256": "a37ddea8621617eddfed8f28f0a469bf2e63f8dedc9c3215f1f5b3cf72caae3c"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/diagrams/03_dual_maps.svg",
+      "size_bytes": 182316,
+      "sha256": "c4073059b1d448a5a12cea1affefb204bfc3442b90293ccdf25acd99e2caf769"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/diagrams/draw_figures.py",
+      "size_bytes": 4472,
+      "sha256": "59ea37297f5fab48599a6b077748d93631666449ca29a114afb112f7e270c624"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/models/dual_finite.py",
+      "size_bytes": 6477,
+      "sha256": "2cb99c4d553fe81879a4dd701e2e18e17c2a57956699013530a1829d40c72dc1"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/models/frozen/t01_dual_coverage.py",
+      "size_bytes": 15428,
+      "sha256": "cf3e483cc1b9b2d50d09ca71c1f7bfb05a901f975c5c61d77f85184ed5d9dd5b"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/models/frozen/t02_deposition_reference.py",
+      "size_bytes": 13000,
+      "sha256": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/models/frozen/t05_source_reference.py",
+      "size_bytes": 13018,
+      "sha256": "180fb1e9359c31855c0b9151d48071ec500627714c0ddd7095e91a903a65e842"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/models/frozen/t10_ion_assist_reference.py",
+      "size_bytes": 7703,
+      "sha256": "3d32e7453086c1454e6f3a2edc154f5a983c9285b27aae3fb67e9866bb727e4f"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/models/run_study.py",
+      "size_bytes": 10024,
+      "sha256": "9165da1cf2fa9aace36eaea6e63381bdec817573fc8d38150590cb57361dc812"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/reports/01_engineering_model.md",
+      "size_bytes": 6823,
+      "sha256": "7d8534b14471a4904c72c5969ecd7d30515691eeb1cd560a5615bff7d41b2cac"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/reports/02_numerics_and_evidence.md",
+      "size_bytes": 6192,
+      "sha256": "18c137e25f2d84496b1a92573afe76f6fc52104df2ed77799f7822b7d91727b6"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/reports/03_scientific_error_budget.md",
+      "size_bytes": 4583,
+      "sha256": "6f58b0449a7758d9ad579a57f55b0ec0867b26a85968db2b99893bd6d5ac73ab"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/reviews/BOUNDED_ACCEPTANCE.md",
+      "size_bytes": 2424,
+      "sha256": "82584a151ee3e2fb083d83ce1421dc7bd573cf4805b3769e2481fbdf34265903"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/reviews/INDEPENDENT_NARROW_REVIEW.md",
+      "size_bytes": 8244,
+      "sha256": "4b36c1785d3d03f99509849371db8df55808390bd4cbe512184b2de9dd22e157"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/reviews/independent_narrow_check.py",
+      "size_bytes": 18698,
+      "sha256": "68516f6e51775ee42b0eef46b14105cc16dadababb1f33824e0a67d2910f434d"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/reviews/independent_narrow_results.json",
+      "size_bytes": 12187,
+      "sha256": "4b3e6e4025ee222d6fad59fcc61feeffe1711bddebf0111e8cc019bef7a7ecde"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/round2_stage.json",
+      "size_bytes": 1020,
+      "sha256": "4eaf3cd5023b873aee57b7a227f963464e4bc3204a05ac542b65d69faa2fde57"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/sources/access_status.json",
+      "size_bytes": 761,
+      "sha256": "3ab3d2becf6d72afafc9c95b6a51bd1c4864718155cfa14837aada9601dfdfaa"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/sources/local_originals_excluded.json",
+      "size_bytes": 931,
+      "sha256": "f355c250b4bc21eda0cf7cbfe61389017dbb9306bdc15ae4be9101e834bffff1"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/sources/source_cards.md",
+      "size_bytes": 3288,
+      "sha256": "09947aa684ea8c889ab0b9f53a83996c9f7d98cc7fb92af56d878c3603003d04"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/PRE_REGISTERED_PROTOCOL.md",
+      "size_bytes": 3364,
+      "sha256": "ee7d45fc89d982d26d29ddd5be47c020b8425c0d351bebf1869af850572908d5"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/budget_ledger.json",
+      "size_bytes": 492,
+      "sha256": "a25f6b5642dc9036a01b572a2dd1dbcf8610f5a2294e014034b6a2fba5bad7dd"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/build_reader.py",
+      "size_bytes": 2972,
+      "sha256": "fc6b9d8004918a9dc5b679936b9fa1105b4f582de5d487c9b4b5e6e93769d00e"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/figures_run.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/finalize_records.py",
+      "size_bytes": 5945,
+      "sha256": "03a1c3d1f3e238faa19012c4db8f7a4f7a2699ae78fbb2efc23f47598c20943a"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/first_execution_summary.json",
+      "size_bytes": 306,
+      "sha256": "4ec80ce7cc41e54b28df2ffa5ef869eac7f03de1220437a53b54bf53bcd425c4"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/frozen_origin_check.json",
+      "size_bytes": 238,
+      "sha256": "55f8737043cb59bc47fe188f70767e61644c859f8b1775feb9f3d233bb327bc7"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/public_allowlist.txt",
+      "size_bytes": 1655,
+      "sha256": "82a8ec44507de935c57d1b32862c29b60d5e41fa1fd0df8f77a1ec433880d9cd"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/reader_manifest.json",
+      "size_bytes": 6035,
+      "sha256": "9e0b83b83367ae82a3968be4f35ad450d56811a5e357f768fb20ebb390a40253"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/resource_usage.json",
+      "size_bytes": 194,
+      "sha256": "dfd812afaae23521646328f66933b5036cfb35b81fb55d6957216c1aec17c4b6"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/second_execution_summary.json",
+      "size_bytes": 236,
+      "sha256": "7e3c67891cf8154b3d998b3edd10a63494eef843d68f14a67aa6b718a7d1e001"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/study_run.log",
+      "size_bytes": 977,
+      "sha256": "bb3371b0d077fe88a2915a0d0c33d6dcdc8b15446dfe3ab176f9fb5608af3d9a"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/test_reference.py",
+      "size_bytes": 4593,
+      "sha256": "3227bb27959eb404a77617e3e215b9d482f48007c76a2159658dc0c255381551"
+    },
+    {
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/verification/unit_tests.log",
+      "size_bytes": 1645,
+      "sha256": "6de57c1e264fb921de773e05c6a161fa659dab1a9bec80154449b817f2157ab9"
     },
     {
       "path": "02_machine_modeling/sources/RIGHTS_AND_ACCESS.md",
@@ -3820,28 +4095,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 7916,
-      "sha256": "c26d89603897ccb16f45ea96e2b832807297c12a2114e82bc87a576d52ecfca6"
+      "size_bytes": 8495,
+      "sha256": "38a10008099d5684e57d07ffbc9e1b39974c2114cc5818fac94f8d95d330f06a"
     },
     {
       "path": "README.md",
-      "size_bytes": 5351,
-      "sha256": "579d3439246e6a64364a61fcf514e7b0c6d51026bf1e28449c616a11d41101b1"
+      "size_bytes": 5578,
+      "sha256": "88da5818f5302baaa6f164d341be16c9fa03285becadf1f1d86f2f8161222784"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 5011,
-      "sha256": "b6684044b17bd1f4924befa9954144a5102a7c684a6aa567f47445dd5cc47d13"
+      "size_bytes": 5117,
+      "sha256": "50beaa32d46f1ee8d3cd5dcb7a7c2247fb39db6a1e040034872776e5a61f0014"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 4338,
-      "sha256": "364149b45f5639f98c18cfe2dcf9343a2ac794880c90af47a33343600f4ddae1"
+      "size_bytes": 4601,
+      "sha256": "1e3f750f2fe1d6c6eb2d057b05367d9a49c902b6ab94fbf9305ade2c65e4da3c"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 2017,
-      "sha256": "f767b3d73a998795c7cc0fddd8bb6cb13696945c2f9edf084a76603606069c46"
+      "size_bytes": 2103,
+      "sha256": "40dcd2d3b357338bd199d86efda717e40972d4caf2e135f0d3e25e803178046c"
     }
   ],
   "source_T02_zip_sha256": "684b63f228b31a2ba882b08f60cbc1e7a13173283d0e79b03fa4fc861d3c344b",
@@ -3855,5 +4130,6 @@
   "source_T08_publication_allowlist_sha256": "6d0128b90679ef76e6b3bb9a59a88992ac1f72551647e00cbb556a2e05db6653",
   "source_T09_deliverable_manifest_sha256": "f375623abea029b72bc5ccfa1ac80a07099fde6af28c406794925057483ac441",
   "source_T10_deliverable_manifest_sha256": "fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f",
-  "source_T01_round2_reader_manifest_sha256": "4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23"
+  "source_T01_round2_reader_manifest_sha256": "4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23",
+  "source_T02_round2_manifest_sha256": "9e0b83b83367ae82a3968be4f35ad450d56811a5e357f768fb20ebb390a40253"
 }

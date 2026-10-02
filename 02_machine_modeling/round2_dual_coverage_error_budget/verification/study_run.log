@@ -1,0 +1,17 @@
+S0T0P0 {'time_nodes': 129, 'source_nodes_each': 14, 'point_count': 36, 'source_family': 'gauss'}
+S0T0P1 {'time_nodes': 129, 'source_nodes_each': 14, 'point_count': 102, 'source_family': 'gauss'}
+S0T1P0 {'time_nodes': 511, 'source_nodes_each': 14, 'point_count': 36, 'source_family': 'gauss'}
+S0T1P1 {'time_nodes': 511, 'source_nodes_each': 14, 'point_count': 102, 'source_family': 'gauss'}
+S1T0P0 {'time_nodes': 129, 'source_nodes_each': 39, 'point_count': 36, 'source_family': 'gauss'}
+S1T0P1 {'time_nodes': 129, 'source_nodes_each': 39, 'point_count': 102, 'source_family': 'gauss'}
+S1T1P0 {'time_nodes': 511, 'source_nodes_each': 39, 'point_count': 36, 'source_family': 'gauss'}
+S1T1P1 {'time_nodes': 511, 'source_nodes_each': 39, 'point_count': 102, 'source_family': 'gauss'}
+{
+  "status": "partial_numerical_acceptance",
+  "budget": {
+    "ray_evaluations": 38872542,
+    "ray_limit": 150000000,
+    "wall_seconds": 19.744424030999653,
+    "wall_limit_seconds": 180
+  }
+}

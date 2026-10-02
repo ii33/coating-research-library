@@ -1,0 +1,25 @@
+{
+  "topic": "T02",
+  "round": 2,
+  "version": "0.1",
+  "status": "frozen_bounded_partial",
+  "numerical_status": "partial_numerical_acceptance",
+  "date_utc": "2026-10-02",
+  "scope": "D conditional direct external gear baseline; dual finite sources and finite static rectangular solids",
+  "unit_tests": 20,
+  "independent_review": "one bounded narrow mathematical check, 60000 random rays plus analytic/deterministic checks; caveat retained",
+  "source_figure_C_I": "unsupported_not_revisited",
+  "real_machine_validation": "not_performed",
+  "production_qualification": "not_claimed",
+  "budget_ledger": "verification/budget_ledger.json",
+  "public_allowlist": "verification/public_allowlist.txt",
+  "handoff": "T03_ROUND2_HANDOFF.md",
+  "unmet": [
+    "source quadrature target at S1",
+    "ion-only indicator integral at finest checked levels",
+    "all P2 points at S2T2",
+    "continuous spatial extrema",
+    "fixed-epsilon extreme grazing robustness",
+    "real source calibration and material response"
+  ]
+}

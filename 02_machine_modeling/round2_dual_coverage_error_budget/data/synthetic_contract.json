@@ -1,0 +1,219 @@
+{
+  "schema_version": "T02-R2-dual-finite-1.0",
+  "provenance": "ALL numeric dimensions, tooth counts, speeds, source fields, times, density and beam energy below are SYNTHETIC; not a source-machine reconstruction or production setting",
+  "frames": {
+    "L": "right handed chamber; +z up; angle positive viewed from +z",
+    "C": "carrier; origin at chamber axis, angle phi",
+    "W": "substrate; origin at output spindle; angle psi absolute in L",
+    "normal_W": [
+      0,
+      0,
+      -1
+    ]
+  },
+  "clock": {
+    "time_unit": "s",
+    "epoch": "synthetic t=0 common to all channels",
+    "layer_start_s": 0.0,
+    "layer_end_s": 7.3,
+    "vapor_gate_s": [
+      0.55,
+      6.55
+    ],
+    "ion_gate_s": [
+      0.0,
+      7.3
+    ],
+    "latency_s": 0.0
+  },
+  "geometry": {
+    "orbit_radius_m": 0.312,
+    "height_m": 0.6,
+    "substrate_radius_m": 0.06,
+    "carrier_phase_rad": 0.0,
+    "workpiece_phase_rad": 0.0,
+    "carrier_rps": "1/4"
+  },
+  "topologies": {
+    "D": {
+      "kind": "fixed_sun_direct_external",
+      "sun_teeth": 120,
+      "planet_teeth": 36,
+      "module_m": 0.004,
+      "output_ratio": "13/3",
+      "admission": "inherited_conditional_baseline"
+    }
+  },
+  "vapor": {
+    "kind": "finite_disk_cosine",
+    "position_L_m": [
+      0.2,
+      -0.08,
+      0.0
+    ],
+    "normal_L": [
+      0,
+      0,
+      1
+    ],
+    "reference_distance_m": 0.6,
+    "reference_atom_flux_m2_s": 2e+19,
+    "retention": 1.0,
+    "resputter_yield": 0.0,
+    "net_atomic_density_m3": 8e+28,
+    "radius_m": 0.035,
+    "exponent": 1.0,
+    "total_atoms_s": 2.261946710584651e+19
+  },
+  "ion": {
+    "kind": "finite_disk_ballistic_lobe",
+    "origin_L_m": [
+      -0.62,
+      0.04,
+      0
+    ],
+    "direction_L": [
+      0.8,
+      0,
+      0.6
+    ],
+    "basis_u_L": [
+      0.6,
+      0,
+      -0.8
+    ],
+    "basis_v_L": [
+      0,
+      1,
+      0
+    ],
+    "sigma_m": 0.13,
+    "peak_beam_normal_flux_m2_s": 2e+18,
+    "energy_per_ion_eV": 100.0,
+    "charge_number": 1,
+    "fast_neutral_fraction": 0.0,
+    "radius_m": 0.045,
+    "exponent": 12.0,
+    "total_ions_s": 5e+18
+  },
+  "plates": {
+    "vapor_plate": {
+      "owner_frame": "L",
+      "origin_L_m": [
+        0.21,
+        -0.06,
+        0.2
+      ],
+      "basis_u_L": [
+        1,
+        0,
+        0
+      ],
+      "basis_v_L": [
+        0,
+        1,
+        0
+      ],
+      "normal_L": [
+        0,
+        0,
+        1
+      ],
+      "half_width_m": [
+        0.035,
+        0.04
+      ],
+      "thickness_m": 0.02,
+      "opaque_to": [
+        "vapor",
+        "ion"
+      ]
+    },
+    "ion_plate": {
+      "owner_frame": "L",
+      "origin_L_m": [
+        -0.43,
+        0.05,
+        0.1
+      ],
+      "basis_u_L": [
+        1,
+        0,
+        0
+      ],
+      "basis_v_L": [
+        0,
+        1,
+        0
+      ],
+      "normal_L": [
+        0,
+        0,
+        1
+      ],
+      "half_width_m": [
+        0.06,
+        0.09
+      ],
+      "thickness_m": 0.03,
+      "opaque_to": [
+        "vapor",
+        "ion"
+      ]
+    }
+  },
+  "cases": {
+    "both": [
+      "vapor_plate",
+      "ion_plate"
+    ],
+    "none": []
+  },
+  "diagnostics": [
+    {
+      "id": "QCM_A",
+      "owner_frame": "L",
+      "position_L_m": [
+        0.25,
+        -0.2,
+        0.6
+      ],
+      "normal_L": [
+        0,
+        0,
+        -1
+      ],
+      "reads": "local retained vapor atom flux under synthetic unit-retention assumption; no tooling factor inferred"
+    },
+    {
+      "id": "cup_B",
+      "owner_frame": "L",
+      "position_L_m": [
+        0.18,
+        0.04,
+        0.6
+      ],
+      "normal_L": [
+        -0.8,
+        0,
+        -0.6
+      ],
+      "reads": "ion flux per beam-normal cup area; use this normal exactly once"
+    }
+  ],
+  "excluded_physics": [
+    "C/I topology",
+    "CFD/PIC",
+    "space charge",
+    "beam optics",
+    "collisions and scattering",
+    "multiple charge states",
+    "fast neutrals",
+    "energy spread",
+    "resputtering",
+    "temperature and material response",
+    "real machine calibration",
+    "moving plates and arbitrary CAD"
+  ],
+  "observation_rule": "Disk-area metrics use area weights; edge witnesses have zero area weight. Ratios are integral ratios. Sample PV is not a continuous-domain bound."
+}

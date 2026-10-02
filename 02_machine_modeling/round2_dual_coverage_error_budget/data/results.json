@@ -1,0 +1,927 @@
+{
+  "protocol_sha256": "ee7d45fc89d982d26d29ddd5be47c020b8425c0d351bebf1869af850572908d5",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "status": "partial_numerical_acceptance",
+  "A": {
+    "none": {
+      "instant_vapor_relative": 3.665852177653405e-16,
+      "max_relative_integral_difference": 1.0331377749791986e-06,
+      "ion_only_max_difference_s": 2.220446049250313e-16,
+      "normalization_status": "positive_reference",
+      "time_integral_pass": true
+    },
+    "vapor_only": {
+      "instant_vapor_relative": 4.837638496388437e-16,
+      "max_relative_integral_difference": 0.0012224188643224112,
+      "ion_only_max_difference_s": 0.00367814208741013,
+      "normalization_status": "positive_reference",
+      "time_integral_pass": true
+    },
+    "ion_only": {
+      "instant_vapor_relative": 3.665852177653405e-16,
+      "max_relative_integral_difference": 0.0020756540896265103,
+      "ion_only_max_difference_s": 0.0021290458046711036,
+      "normalization_status": "positive_reference",
+      "time_integral_pass": true
+    }
+  },
+  "B": [
+    {
+      "source_nodes": 16,
+      "flux": 0.8501866059477754,
+      "exact": 0.8501866618156803,
+      "relative_error": 6.571251628270094e-08,
+      "half_fraction": 0.5,
+      "half_error": 0.0
+    },
+    {
+      "source_nodes": 64,
+      "flux": 0.8501866618156795,
+      "exact": 0.8501866618156803,
+      "relative_error": 9.141005759581022e-16,
+      "half_fraction": 0.49999999999999994,
+      "half_error": 5.551115123125783e-17
+    },
+    {
+      "source_nodes": 256,
+      "flux": 0.8501866618156804,
+      "exact": 0.8501866618156803,
+      "relative_error": 1.3058579656544318e-16,
+      "half_fraction": 0.49999999999999994,
+      "half_error": 5.551115123125783e-17
+    }
+  ],
+  "C": {
+    "statistics": {
+      "S0T0P0": {
+        "h_nm": {
+          "mean": 0.666338505414261,
+          "cv": 0.048925186829173524,
+          "sample_pv": 0.17682021102680873,
+          "minimum": 0.6112424538730086,
+          "maximum": 0.7290645690156465,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "net_atoms_m2": {
+          "mean": 5.330708043314088e+19,
+          "cv": 0.04892518682917351,
+          "sample_pv": 0.17682021102680875,
+          "minimum": 4.889939630984068e+19,
+          "maximum": 5.832516552125172e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_fluence_m2": {
+          "mean": 2.028209054206096e+19,
+          "cv": 0.006758736816918141,
+          "sample_pv": 0.0391402721965457,
+          "minimum": 1.9866340120594825e+19,
+          "maximum": 2.0660186665126076e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "incident_energy_J_m2": {
+          "mean": 324.95491555162465,
+          "cv": 0.006758736816918146,
+          "sample_pv": 0.03914027219654572,
+          "minimum": 318.29385944313765,
+          "maximum": 331.01268328943377,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_to_net_atom_ratio": {
+          "mean": 0.38133432146924406,
+          "cv": 0.046392839600719354,
+          "sample_pv": 0.17180223789108656,
+          "minimum": 0.3473159269753331,
+          "maximum": 0.41283001678842823,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "eV_per_net_atom": {
+          "mean": 38.133432146924406,
+          "cv": 0.04639283960071935,
+          "sample_pv": 0.17180223789108653,
+          "minimum": 34.73159269753331,
+          "maximum": 41.28300167884282,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_only_s": {
+          "mean": 1.3476190476190473,
+          "cv": 0.08150220914961699,
+          "sample_pv": 0.29681978798586606,
+          "minimum": 1.3,
+          "maximum": 1.7000000000000004,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        }
+      },
+      "S0T0P1": {
+        "h_nm": {
+          "mean": 0.6666082622923732,
+          "cv": 0.049103052737249166,
+          "sample_pv": 0.1814319946218976,
+          "minimum": 0.6096625101416325,
+          "maximum": 0.7306065768007749,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "net_atoms_m2": {
+          "mean": 5.3328660983389856e+19,
+          "cv": 0.04910305273724917,
+          "sample_pv": 0.18143199462189757,
+          "minimum": 4.87730008113306e+19,
+          "maximum": 5.844852614406199e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_fluence_m2": {
+          "mean": 2.0284950954181693e+19,
+          "cv": 0.006971527953861016,
+          "sample_pv": 0.040479919557105844,
+          "minimum": 1.9811503246499484e+19,
+          "maximum": 2.0632636429344596e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "incident_energy_J_m2": {
+          "mean": 325.0007444062591,
+          "cv": 0.0069715279538610335,
+          "sample_pv": 0.04047991955710556,
+          "minimum": 317.4152758595662,
+          "maximum": 330.571279849131,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_to_net_atom_ratio": {
+          "mean": 0.3812459517757048,
+          "cv": 0.046871043411412204,
+          "sample_pv": 0.17779711110698532,
+          "minimum": 0.34497355709427346,
+          "maximum": 0.4127579859412268,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "eV_per_net_atom": {
+          "mean": 38.12459517757049,
+          "cv": 0.0468710434114122,
+          "sample_pv": 0.17779711110698532,
+          "minimum": 34.497355709427346,
+          "maximum": 41.27579859412268,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_only_s": {
+          "mean": 1.3624034154085303,
+          "cv": 0.08214254475640001,
+          "sample_pv": 0.29359879421621704,
+          "minimum": 1.3,
+          "maximum": 1.7000000000000004,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        }
+      },
+      "S0T1P0": {
+        "h_nm": {
+          "mean": 0.6667476643532723,
+          "cv": 0.04906428664145568,
+          "sample_pv": 0.17792703022865988,
+          "minimum": 0.6099385563096069,
+          "maximum": 0.72857098813988,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "net_atoms_m2": {
+          "mean": 5.333981314826177e+19,
+          "cv": 0.04906428664145569,
+          "sample_pv": 0.17792703022865988,
+          "minimum": 4.879508450476855e+19,
+          "maximum": 5.8285679051190395e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_fluence_m2": {
+          "mean": 2.028567971274066e+19,
+          "cv": 0.0069092133178718755,
+          "sample_pv": 0.03733347772847787,
+          "minimum": 1.984888894796845e+19,
+          "maximum": 2.060622391973109e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "incident_energy_J_m2": {
+          "mean": 325.01242040560913,
+          "cv": 0.006909213317871966,
+          "sample_pv": 0.03733347772847754,
+          "minimum": 318.01426083295905,
+          "maximum": 330.14810479165044,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_to_net_atom_ratio": {
+          "mean": 0.3811754530794791,
+          "cv": 0.04667329436846698,
+          "sample_pv": 0.1707284587446594,
+          "minimum": 0.34728460117334,
+          "maximum": 0.4123620987888967,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "eV_per_net_atom": {
+          "mean": 38.117545307947914,
+          "cv": 0.04667329436846695,
+          "sample_pv": 0.17072845874465944,
+          "minimum": 34.728460117333995,
+          "maximum": 41.23620987888967,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_only_s": {
+          "mean": 1.352505966587112,
+          "cv": 0.0803233222286292,
+          "sample_pv": 0.29645314981471643,
+          "minimum": 1.3,
+          "maximum": 1.700954653937947,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        }
+      },
+      "S0T1P1": {
+        "h_nm": {
+          "mean": 0.666659744717245,
+          "cv": 0.04898331587837392,
+          "sample_pv": 0.1773416325538593,
+          "minimum": 0.6101136241037514,
+          "maximum": 0.7283401515898467,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "net_atoms_m2": {
+          "mean": 5.33327795773796e+19,
+          "cv": 0.048983315878373915,
+          "sample_pv": 0.1773416325538592,
+          "minimum": 4.880908992830011e+19,
+          "maximum": 5.826721212718773e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_fluence_m2": {
+          "mean": 2.028547048995284e+19,
+          "cv": 0.006880512724719187,
+          "sample_pv": 0.03882136470787285,
+          "minimum": 1.984221322523141e+19,
+          "maximum": 2.062972287339266e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "incident_energy_J_m2": {
+          "mean": 325.0090682869897,
+          "cv": 0.0068805127247191945,
+          "sample_pv": 0.03882136470787304,
+          "minimum": 317.9073039631153,
+          "maximum": 330.5245995364505,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_to_net_atom_ratio": {
+          "mean": 0.38121947194001954,
+          "cv": 0.04662839811093321,
+          "sample_pv": 0.1719242038765048,
+          "minimum": 0.34683998351780265,
+          "maximum": 0.4123808377333121,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "eV_per_net_atom": {
+          "mean": 38.12194719400196,
+          "cv": 0.04662839811093318,
+          "sample_pv": 0.17192420387650464,
+          "minimum": 34.68399835178027,
+          "maximum": 41.238083773331205,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_only_s": {
+          "mean": 1.364090526671556,
+          "cv": 0.08268375349090179,
+          "sample_pv": 0.28343781978469035,
+          "minimum": 1.3,
+          "maximum": 1.6866348448687358,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        }
+      },
+      "S1T0P0": {
+        "h_nm": {
+          "mean": 0.6663422149125948,
+          "cv": 0.048461233302373015,
+          "sample_pv": 0.1761004920062029,
+          "minimum": 0.6119153264915935,
+          "maximum": 0.7292585183822045,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "net_atoms_m2": {
+          "mean": 5.330737719300758e+19,
+          "cv": 0.048461233302372994,
+          "sample_pv": 0.17610049200620284,
+          "minimum": 4.895322611932748e+19,
+          "maximum": 5.834068147057635e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_fluence_m2": {
+          "mean": 2.0388514812527526e+19,
+          "cv": 0.005880766308429245,
+          "sample_pv": 0.02455647567198962,
+          "minimum": 2.006441876192245e+19,
+          "maximum": 2.056508882990428e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "incident_energy_J_m2": {
+          "mean": 326.66002034594493,
+          "cv": 0.005880766308429241,
+          "sample_pv": 0.02455647567198943,
+          "minimum": 321.4674291514336,
+          "maximum": 329.48904799407035,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_to_net_atom_ratio": {
+          "mean": 0.3834011966065446,
+          "cv": 0.05034450191396087,
+          "sample_pv": 0.18012013867462004,
+          "minimum": 0.34544098349528146,
+          "maximum": 0.41449926019606753,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "eV_per_net_atom": {
+          "mean": 38.340119660654466,
+          "cv": 0.050344501913960865,
+          "sample_pv": 0.18012013867461985,
+          "minimum": 34.54409834952815,
+          "maximum": 41.44992601960675,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_only_s": {
+          "mean": 1.3349206349206346,
+          "cv": 0.06713719007606718,
+          "sample_pv": 0.25683709869203375,
+          "minimum": 1.3,
+          "maximum": 1.6428571428571435,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        }
+      },
+      "S1T0P1": {
+        "h_nm": {
+          "mean": 0.6666646753607078,
+          "cv": 0.04877032839169846,
+          "sample_pv": 0.17668208763759927,
+          "minimum": 0.61140563827314,
+          "maximum": 0.7291933448701122,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "net_atoms_m2": {
+          "mean": 5.333317402885662e+19,
+          "cv": 0.04877032839169846,
+          "sample_pv": 0.17668208763759927,
+          "minimum": 4.891245106185119e+19,
+          "maximum": 5.833546758960897e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_fluence_m2": {
+          "mean": 2.0402793228034413e+19,
+          "cv": 0.006184958874568087,
+          "sample_pv": 0.02501956192396665,
+          "minimum": 2.008408771534037e+19,
+          "maximum": 2.0594556663931064e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "incident_energy_J_m2": {
+          "mean": 326.88878578290166,
+          "cv": 0.006184958874568074,
+          "sample_pv": 0.025019561923966493,
+          "minimum": 321.7825605272478,
+          "maximum": 329.96117474539335,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_to_net_atom_ratio": {
+          "mean": 0.3834924716512636,
+          "cv": 0.050508348250531264,
+          "sample_pv": 0.1829541716904128,
+          "minimum": 0.34551823050042946,
+          "maximum": 0.4156797780008955,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "eV_per_net_atom": {
+          "mean": 38.349247165126364,
+          "cv": 0.05050834825053125,
+          "sample_pv": 0.18295417169041273,
+          "minimum": 34.55182305004295,
+          "maximum": 41.56797780008955,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_only_s": {
+          "mean": 1.3341980753699785,
+          "cv": 0.06018000850385007,
+          "sample_pv": 0.2569761935551194,
+          "minimum": 1.3,
+          "maximum": 1.6428571428571435,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        }
+      },
+      "S1T1P0": {
+        "h_nm": {
+          "mean": 0.6667481805813328,
+          "cv": 0.048665446568211104,
+          "sample_pv": 0.17783886684642364,
+          "minimum": 0.6107736251380894,
+          "maximum": 0.7293473660445883,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "net_atoms_m2": {
+          "mean": 5.3339854446506615e+19,
+          "cv": 0.048665446568211104,
+          "sample_pv": 0.17783886684642367,
+          "minimum": 4.886189001104715e+19,
+          "maximum": 5.834778928356706e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_fluence_m2": {
+          "mean": 2.0399623905964204e+19,
+          "cv": 0.0057788385609412185,
+          "sample_pv": 0.023868861565842548,
+          "minimum": 2.0086677657606898e+19,
+          "maximum": 2.057359345661361e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "incident_energy_J_m2": {
+          "mean": 326.8380076452366,
+          "cv": 0.005778838560941315,
+          "sample_pv": 0.02386886156584196,
+          "minimum": 321.82405597707634,
+          "maximum": 329.6253071360161,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_to_net_atom_ratio": {
+          "mean": 0.3833792132058844,
+          "cv": 0.05027484872181824,
+          "sample_pv": 0.1828567551174822,
+          "minimum": 0.3456061646480565,
+          "maximum": 0.4157096435543779,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "eV_per_net_atom": {
+          "mean": 38.33792132058844,
+          "cv": 0.05027484872181823,
+          "sample_pv": 0.18285675511748217,
+          "minimum": 34.56061646480565,
+          "maximum": 41.57096435543779,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_only_s": {
+          "mean": 1.331821797931583,
+          "cv": 0.06234080700388155,
+          "sample_pv": 0.24729705513410224,
+          "minimum": 1.3,
+          "maximum": 1.6293556085918859,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        }
+      },
+      "S1T1P1": {
+        "h_nm": {
+          "mean": 0.6667414161055056,
+          "cv": 0.04875526247990944,
+          "sample_pv": 0.17777845767626826,
+          "minimum": 0.6108370996927935,
+          "maximum": 0.7293693603169213,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "net_atoms_m2": {
+          "mean": 5.333931328844046e+19,
+          "cv": 0.048755262479909425,
+          "sample_pv": 0.17777845767626807,
+          "minimum": 4.886696797542348e+19,
+          "maximum": 5.83495488253537e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_fluence_m2": {
+          "mean": 2.0399895383950995e+19,
+          "cv": 0.005908454297162344,
+          "sample_pv": 0.025674097450773547,
+          "minimum": 2.0068701398416814e+19,
+          "maximum": 2.0592450300489957e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "incident_energy_J_m2": {
+          "mean": 326.84235720210745,
+          "cv": 0.005908454297162355,
+          "sample_pv": 0.025674097450773297,
+          "minimum": 321.53604455266543,
+          "maximum": 329.9274270825128,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_to_net_atom_ratio": {
+          "mean": 0.3833921427555147,
+          "cv": 0.050400216086976944,
+          "sample_pv": 0.18301609399470414,
+          "minimum": 0.3457317492489657,
+          "maximum": 0.41589868168434,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "eV_per_net_atom": {
+          "mean": 38.33921427555146,
+          "cv": 0.05040021608697696,
+          "sample_pv": 0.18301609399470423,
+          "minimum": 34.57317492489657,
+          "maximum": 41.589868168434,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_only_s": {
+          "mean": 1.3361108834307258,
+          "cv": 0.06265938184508923,
+          "sample_pv": 0.24650320020311492,
+          "minimum": 1.3,
+          "maximum": 1.629355608591885,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        }
+      },
+      "S1T1P2": {
+        "h_nm": {
+          "mean": 0.6666328230695274,
+          "cv": 0.048808990729537274,
+          "sample_pv": 0.1783708317316232,
+          "minimum": 0.6103559145063322,
+          "maximum": 0.7292637656168438,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "net_atoms_m2": {
+          "mean": 5.3330625845562204e+19,
+          "cv": 0.04880899072953726,
+          "sample_pv": 0.17837083173162302,
+          "minimum": 4.882847316050658e+19,
+          "maximum": 5.83411012493475e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_fluence_m2": {
+          "mean": 2.040006759532591e+19,
+          "cv": 0.005957776876414063,
+          "sample_pv": 0.02615944493094887,
+          "minimum": 2.005819859453628e+19,
+          "maximum": 2.0591853039383843e+19,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "incident_energy_J_m2": {
+          "mean": 326.84511633251725,
+          "cv": 0.005957776876414088,
+          "sample_pv": 0.026159444930948458,
+          "minimum": 321.3677710829767,
+          "maximum": 329.9178579046266,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_to_net_atom_ratio": {
+          "mean": 0.38345938183116746,
+          "cv": 0.0504325789392012,
+          "sample_pv": 0.1847734250607814,
+          "minimum": 0.34563435964957256,
+          "maximum": 0.41648746300220735,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "eV_per_net_atom": {
+          "mean": 38.34593818311674,
+          "cv": 0.05043257893920121,
+          "sample_pv": 0.18477342506078143,
+          "minimum": 34.56343596495726,
+          "maximum": 41.648746300220736,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        },
+        "ion_only_s": {
+          "mean": 1.335108801931994,
+          "cv": 0.06148602172650672,
+          "sample_pv": 0.2574137906691769,
+          "minimum": 1.3,
+          "maximum": 1.643675417661098,
+          "finite_area_fraction": 1.0,
+          "nonfinite_witness_count": 0
+        }
+      }
+    },
+    "diagnostic_axis": [
+      {
+        "max_relative_integral_difference": 0.018128049036806815,
+        "ion_only_max_difference_s": 0.08591885441527491,
+        "normalization_status": "positive_reference",
+        "first": "S0T1",
+        "second": "S1T1",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.005354381866356135,
+        "ion_only_max_difference_s": 0.05727923627684994,
+        "normalization_status": "positive_reference",
+        "first": "S1T1",
+        "second": "S2T1",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.0028864727727014048,
+        "ion_only_max_difference_s": 0.029321513808386435,
+        "normalization_status": "positive_reference",
+        "first": "S1T0",
+        "second": "S1T1",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.0008529628651882121,
+        "ion_only_max_difference_s": 0.01003182811679526,
+        "normalization_status": "positive_reference",
+        "first": "S1T1",
+        "second": "S1T2",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.00525119381131573,
+        "ion_only_max_difference_s": 0.05267278459056701,
+        "normalization_status": "positive_reference",
+        "first": "S1T1",
+        "second": "S2T2",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.0020298900041413994,
+        "ion_only_max_difference_s": 0.014297061159650681,
+        "normalization_status": "positive_reference",
+        "first": "S2T2",
+        "second": "holdout_equal_area",
+        "pass": false
+      }
+    ],
+    "diagnostic_holdout": [
+      {
+        "max_relative_integral_difference": 0.014924140546247164,
+        "ion_only_max_difference_s": 0.11950614288341121,
+        "normalization_status": "positive_reference",
+        "run": "S0T1",
+        "reference": "holdout_equal_area",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.005298779099289508,
+        "ion_only_max_difference_s": 0.06181776920458315,
+        "normalization_status": "positive_reference",
+        "run": "S1T0",
+        "reference": "holdout_equal_area",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.00384030377773067,
+        "ion_only_max_difference_s": 0.043141410484133225,
+        "normalization_status": "positive_reference",
+        "run": "S1T1",
+        "reference": "holdout_equal_area",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.0019522412326693859,
+        "ion_only_max_difference_s": 0.014137825792716718,
+        "normalization_status": "positive_reference",
+        "run": "S2T1",
+        "reference": "holdout_equal_area",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.004054264829152494,
+        "ion_only_max_difference_s": 0.03812549642573515,
+        "normalization_status": "positive_reference",
+        "run": "S1T2",
+        "reference": "holdout_equal_area",
+        "pass": false
+      },
+      {
+        "max_relative_integral_difference": 0.0020298900041413994,
+        "ion_only_max_difference_s": 0.014297061159650681,
+        "normalization_status": "positive_reference",
+        "run": "S2T2",
+        "reference": "holdout_equal_area",
+        "pass": false
+      }
+    ],
+    "space_only": [
+      {
+        "normalization_status": "positive_reference",
+        "mean_relative": 0.00016289782353978797,
+        "cv_absolute": 5.372824962783518e-05,
+        "sample_pv_absolute": 0.0005923740553549217,
+        "first": "S1T1P1",
+        "second": "S1T1P2",
+        "pass": true
+      }
+    ],
+    "cross_all_pass": false,
+    "diagnostic_all_pass": false,
+    "same_h_different_dose": {
+      "max_thickness_relative_change": 0.0,
+      "max_dose_doubling_residual": 0.0,
+      "physical_caveat": "unit retention, zero resputtering and fixed density; does not assert physical decoupling in a real ion-assisted film"
+    },
+    "geometry_scenarios": [
+      {
+        "parameter": "vapor_plate_x_m",
+        "perturbation": -0.001,
+        "max_relative_integral_difference": 0.0036054542488183293,
+        "ion_only_max_difference_s": 0.02863961813842497,
+        "normalization_status": "positive_reference"
+      },
+      {
+        "parameter": "vapor_plate_x_m",
+        "perturbation": 0.001,
+        "max_relative_integral_difference": 0.0028917706193684724,
+        "ion_only_max_difference_s": 0.02863961813842497,
+        "normalization_status": "positive_reference"
+      },
+      {
+        "parameter": "ion_plate_x_m",
+        "perturbation": -0.001,
+        "max_relative_integral_difference": 0.010291629187825642,
+        "ion_only_max_difference_s": 0.0,
+        "normalization_status": "positive_reference"
+      },
+      {
+        "parameter": "ion_plate_x_m",
+        "perturbation": 0.001,
+        "max_relative_integral_difference": 0.008558722245632684,
+        "ion_only_max_difference_s": 0.0,
+        "normalization_status": "positive_reference"
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_0",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.14128272232901626,
+        "ion_only_max_difference_s": 0.0
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_1",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.1317430075620468,
+        "ion_only_max_difference_s": 0.0
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_2",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.13701936893748187,
+        "ion_only_max_difference_s": 0.057279236276849055
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_3",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.13808126338998505,
+        "ion_only_max_difference_s": 0.028639618138424083
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_4",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.13357897706561744,
+        "ion_only_max_difference_s": 0.014319809069212042
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_5",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.13278391444796542,
+        "ion_only_max_difference_s": 0.02863961813842497
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_6",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.1397833057496801,
+        "ion_only_max_difference_s": 0.0
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_7",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.14074744261038702,
+        "ion_only_max_difference_s": 0.0
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_8",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.15084043757460014,
+        "ion_only_max_difference_s": 0.0
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_9",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.14967584277580362,
+        "ion_only_max_difference_s": 0.0
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_10",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.14752937227815272,
+        "ion_only_max_difference_s": 0.0
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_11",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.13514079996733155,
+        "ion_only_max_difference_s": 0.0
+      },
+      {
+        "parameter": "both_plates_zero_thickness_point_12",
+        "perturbation": 0,
+        "max_relative_integral_difference": 0.134663012882118,
+        "ion_only_max_difference_s": 0.0
+      }
+    ]
+  },
+  "D": {
+    "alias": [
+      {
+        "nodes": 127,
+        "estimate": 1.8000000000000012,
+        "exact": 1.0,
+        "error": 0.8000000000000012
+      },
+      {
+        "nodes": 254,
+        "estimate": 1.8000000000000003,
+        "exact": 1.0,
+        "error": 0.8000000000000003
+      },
+      {
+        "nodes": 509,
+        "estimate": 1.0000000000000069,
+        "exact": 1.0,
+        "error": 6.8833827526759706e-15
+      }
+    ],
+    "near_zero_denominator": [
+      {
+        "N_net_m2": 1e+19,
+        "delta_N_m2": 1000000000000000.0,
+        "D_m2": 1e+18,
+        "ratio": 0.1,
+        "condition": "well_conditioned_relative_to_stated_delta",
+        "ratio_error_bound": 2.0002000200020003e-05
+      },
+      {
+        "N_net_m2": 1000000000000.0,
+        "delta_N_m2": 1000000000000.0,
+        "D_m2": 1e+18,
+        "ratio": 1000000.0,
+        "condition": "ill_conditioned",
+        "ratio_error_bound": null
+      },
+      {
+        "N_net_m2": 0.0,
+        "delta_N_m2": 1000000000000.0,
+        "D_m2": 1e+18,
+        "ratio": null,
+        "condition": "undefined",
+        "ratio_error_bound": null
+      }
+    ],
+    "interpretation": "127 and 254 agree on the wrong integral. Third nonresonant grid plus exact integral rejects false convergence. This is an analytic sampling counterexample, not a machine rate measurement."
+  },
+  "budget": {
+    "ray_evaluations": 38872542,
+    "ray_limit": 150000000,
+    "wall_seconds": 19.744424030999653,
+    "wall_limit_seconds": 180
+  }
+}

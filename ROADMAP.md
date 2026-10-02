@@ -100,6 +100,6 @@
 
 ## 当前下一步
 
-T01–T10首轮公共理论/合成基础已覆盖。T01第二轮拓扑与双覆盖有限接口已冻结移交，保留C/I原图unsupported、最终完整网格额外时间加密和连续极值未完成。当前活动为ROUND2.T02_DUAL_COVERAGE_ERROR_BUDGET：限定最多三个预设几何，接入扩展蒸气源与有限厚板，区分时间、源面、空间和模型误差；固定预算，有限回归及一个独立留出检查后交接T03。正式完整审查、实机校准与生产资格仍未完成。
+T01–T10首轮基础和T01第二轮冻结资料保持不变。T02第二轮扩展源/厚板双覆盖以frozen_bounded_partial移交：20项测试、60000普通随机射线对照通过有限检查，极近侧壁漏挡、最高源求积差0.203%、独曝差14.3ms超过10ms及共同混叠反例均保留。当前ROUND2.T02_INTERSECTION_CORRECTNESS_CLOSURE，仅在独立v0.2修正确定性侧壁漏挡，不扩大源/时间求积，尚不进入T03。正式审查、全域数值保证和实机资格未完成。
 
-具体边界见[T01第二轮移交](01_machine_structures/round2_topology_alignment/T02_ROUND2_HANDOFF.md)。
+见[T02有限验收](02_machine_modeling/round2_dual_coverage_error_budget/reviews/BOUNDED_ACCEPTANCE.md)与[数值边界](02_machine_modeling/round2_dual_coverage_error_budget/reports/03_scientific_error_budget.md)。

@@ -1,0 +1,469 @@
+{
+  "scope": "one bounded independent narrow mathematical review; D conditional baseline only; C/I unsupported; all synthetic",
+  "input_sha256": {
+    "models/dual_finite.py": "2cb99c4d553fe81879a4dd701e2e18e17c2a57956699013530a1829d40c72dc1",
+    "models/frozen/t02_deposition_reference.py": "26a022105b0a0147e8c651bbc014d380afe45a403e6c8adf7e812b1a611e91bb",
+    "verification/PRE_REGISTERED_PROTOCOL.md": "ee7d45fc89d982d26d29ddd5be47c020b8425c0d351bebf1869af850572908d5"
+  },
+  "geometry": {
+    "random": [
+      {
+        "set": 0,
+        "rays_each_algorithm": 10000,
+        "blocked": 5149,
+        "mismatches": 0,
+        "first_mismatches": []
+      },
+      {
+        "set": 1,
+        "rays_each_algorithm": 10000,
+        "blocked": 5192,
+        "mismatches": 0,
+        "first_mismatches": []
+      },
+      {
+        "set": 2,
+        "rays_each_algorithm": 10000,
+        "blocked": 5183,
+        "mismatches": 0,
+        "first_mismatches": []
+      },
+      {
+        "set": 3,
+        "rays_each_algorithm": 10000,
+        "blocked": 5201,
+        "mismatches": 0,
+        "first_mismatches": []
+      },
+      {
+        "set": 4,
+        "rays_each_algorithm": 10000,
+        "blocked": 5184,
+        "mismatches": 0,
+        "first_mismatches": []
+      },
+      {
+        "set": 5,
+        "rays_each_algorithm": 10000,
+        "blocked": 5192,
+        "mismatches": 0,
+        "first_mismatches": []
+      }
+    ],
+    "deterministic": [
+      {
+        "case": "through_front_back",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "sidewall_only",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "parallel_outside",
+        "slab": false,
+        "six_faces": false,
+        "expected": false,
+        "pass": true
+      },
+      {
+        "case": "contained",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "source_inside",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "target_inside",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "source_boundary_outward",
+        "slab": false,
+        "six_faces": false,
+        "expected": false,
+        "pass": true
+      },
+      {
+        "case": "target_boundary_only",
+        "slab": false,
+        "six_faces": false,
+        "expected": false,
+        "pass": true
+      },
+      {
+        "case": "source_boundary_inward",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "target_boundary_from_inside",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "coplanar_face_crossing",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "edge_tangent",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "corner_contact_in_open_segment",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "grazing_inside_1e_minus_12",
+        "slab": true,
+        "six_faces": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "grazing_outside_1e_minus_12",
+        "slab": false,
+        "six_faces": false,
+        "expected": false,
+        "pass": true
+      }
+    ],
+    "sub_epsilon_example": {
+      "source": [
+        0.100000000000004,
+        0,
+        -0.1
+      ],
+      "target": [
+        0.09999999999999601,
+        0,
+        0.1
+      ],
+      "delta_x_m": -7.993605777301127e-15,
+      "slab": false,
+      "six_faces": true,
+      "classification": "documented_numeric_scale_caveat"
+    },
+    "thin_mask_conventions": [
+      {
+        "case": "transverse",
+        "actual": true,
+        "expected": true,
+        "pass": true
+      },
+      {
+        "case": "source_endpoint_only",
+        "actual": false,
+        "expected": false,
+        "pass": true
+      },
+      {
+        "case": "target_endpoint_only",
+        "actual": false,
+        "expected": false,
+        "pass": true
+      },
+      {
+        "case": "coplanar_excluded",
+        "actual": false,
+        "expected": false,
+        "pass": true
+      }
+    ],
+    "nondegenerate_pass": true
+  },
+  "normalization": {
+    "hemisphere_normalization": [
+      {
+        "p": 0,
+        "integral": 1.0
+      },
+      {
+        "p": 1,
+        "integral": 1.0
+      },
+      {
+        "p": 12,
+        "integral": 0.9999999999999929
+      }
+    ],
+    "axis": [
+      {
+        "p": 0,
+        "source_fraction_sum": 1.0,
+        "kernel_actual_m_minus_2": 1.4935497251964378,
+        "kernel_exact_m_minus_2": 1.4935497251964378,
+        "relative_error": 0.0,
+        "total_rate_particles_s": 7.3e+18,
+        "flux_particles_m_minus_2_s_minus_1": 1.0902912993933996e+19
+      },
+      {
+        "p": 1,
+        "source_fraction_sum": 1.0,
+        "kernel_actual_m_minus_2": 2.8294212105225838,
+        "kernel_exact_m_minus_2": 2.8294212105225838,
+        "relative_error": 0.0,
+        "total_rate_particles_s": 7.3e+18,
+        "flux_particles_m_minus_2_s_minus_1": 2.065477483681486e+19
+      },
+      {
+        "p": 12,
+        "source_fraction_sum": 1.0,
+        "kernel_actual_m_minus_2": 10.830052182718653,
+        "kernel_exact_m_minus_2": 10.830052182718653,
+        "relative_error": 0.0,
+        "total_rate_particles_s": 7.3e+18,
+        "flux_particles_m_minus_2_s_minus_1": 7.905938093384617e+19
+      }
+    ],
+    "projection_once": [
+      {
+        "tilt_degrees": 0,
+        "ratio": 1.0,
+        "expected_cosine": 1.0,
+        "absolute_error": 0.0
+      },
+      {
+        "tilt_degrees": 35,
+        "ratio": 0.819152044288992,
+        "expected_cosine": 0.8191520442889918,
+        "absolute_error": 2.220446049250313e-16
+      },
+      {
+        "tilt_degrees": 70,
+        "ratio": 0.3420201433256688,
+        "expected_cosine": 0.3420201433256688,
+        "absolute_error": 0.0
+      }
+    ],
+    "pass": true
+  },
+  "source_quadrature": {
+    "scope": "three static unmasked points only; independent source quadrature, not time holdout",
+    "points_m": [
+      [
+        0.0,
+        0.0,
+        0.3
+      ],
+      [
+        0.11,
+        0.06,
+        0.29
+      ],
+      [
+        -0.09,
+        0.14,
+        0.35
+      ]
+    ],
+    "normals": [
+      [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      [
+        0.11885849693535161,
+        -0.06933412321228845,
+        -0.9904874744612635
+      ],
+      [
+        -0.15722585379014045,
+        0.09826615861883778,
+        -0.9826615861883777
+      ]
+    ],
+    "radius_m": 0.15,
+    "p": 1,
+    "cartesian_orders": [
+      31,
+      61
+    ],
+    "cartesian_fraction_sums": [
+      0.9999999999999973,
+      1.000000000000002
+    ],
+    "independent_values": [
+      2.82942121052259,
+      2.2934289604233182,
+      1.4706240437033073
+    ],
+    "reference_values": [
+      2.8294212105225838,
+      2.293428960423312,
+      1.4706240437033045
+    ],
+    "reference_vs_independent_relative": [
+      2.197357153745433e-15,
+      2.710896672706751e-15,
+      1.962826513264707e-15
+    ],
+    "independent_order_change_relative": [
+      5.4933928843635835e-15,
+      6.002699775279235e-15,
+      4.83157295572851e-15
+    ],
+    "observed_agreement_under_1e_minus_8": true,
+    "is_global_convergence_proof": false,
+    "moving_mask_time_nonresonance_check": "NOT_RUN: outside approved input/configuration read scope"
+  },
+  "denominators_and_wording": {
+    "adapter_compare_cases": [
+      {
+        "case": "all_zero",
+        "result": {
+          "max_relative_integral_difference": 0.0,
+          "ion_only_max_difference_s": 0.0,
+          "normalization_status": "zero_channels_exact"
+        },
+        "warnings": [],
+        "gt_0_003_threshold": false
+      },
+      {
+        "case": "one_zero_channel_hides_finite_difference",
+        "result": {
+          "max_relative_integral_difference": 1.0,
+          "ion_only_max_difference_s": 0.0,
+          "normalization_status": "zero_channels_exact"
+        },
+        "warnings": [],
+        "gt_0_003_threshold": true
+      },
+      {
+        "case": "nonzero_difference_zero_reference",
+        "result": {
+          "max_relative_integral_difference": "inf",
+          "ion_only_max_difference_s": 0.0,
+          "normalization_status": "undefined_zero_reference"
+        },
+        "warnings": [],
+        "gt_0_003_threshold": true
+      },
+      {
+        "case": "positive_tiny_reference",
+        "result": {
+          "max_relative_integral_difference": 1.0,
+          "ion_only_max_difference_s": 0.0,
+          "normalization_status": "positive_reference"
+        },
+        "warnings": [],
+        "gt_0_003_threshold": true
+      }
+    ],
+    "selected_t01_functions_sha256": "385bba8a2f1c538e5c701696eff1bdfe279da9aebdd0cada0807d198345e702d",
+    "actual_R_epsilon_implementation": "only output_values and statistics inspected; authorized narrow scope extension",
+    "synthetic_N": [
+      -1.0,
+      0.0,
+      1e-16,
+      1.0
+    ],
+    "actual_ratio": [
+      "nan",
+      "nan",
+      1e+16,
+      1.0
+    ],
+    "actual_eV_per_atom": [
+      "nan",
+      "nan",
+      1e+18,
+      100.0
+    ],
+    "ratio_statistics_over_finite_subset": {
+      "mean": 5000000000000000.0,
+      "cv": 1.0,
+      "sample_pv": 2.0,
+      "minimum": 1.0,
+      "maximum": 1e+16
+    },
+    "adapter_ratio_metrics_with_coverage": {
+      "mean": 5000000000000000.0,
+      "cv": 1.0,
+      "sample_pv": 2.0,
+      "minimum": 1.0,
+      "maximum": 1e+16,
+      "finite_area_fraction": 0.5,
+      "nonfinite_witness_count": 2
+    },
+    "finite_positive_area_fraction_in_this_test": 0.5,
+    "statistics_zero_mean": {
+      "mean": 0.0,
+      "cv": null,
+      "sample_pv": null,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    "stats_compare_zero_mean_case": {
+      "returns": {
+        "mean_relative": "inf",
+        "cv_absolute": "inf",
+        "sample_pv_absolute": "inf",
+        "normalization_status": "undefined_or_nonpositive_reference"
+      }
+    },
+    "protocol_conditioning": "N>0; estimated numerical error/abs(N)>=0.1 => ill_conditioned",
+    "recommended_required_statuses": [
+      "undefined when N<=0",
+      "ill_conditioned when estimate/abs(N)>=0.1",
+      "unassessed when no credible absolute N-error estimate exists"
+    ],
+    "conditioning_note": "near-zero net N can amplify gross deposition/erosion errors; passing h,D,U relative changes alone is not an N-error bound",
+    "error_budget_wording": "protocol distinguishes numerical components, scenarios, unknown calibration, model discrepancy; empirical mesh difference is not a rigorous bound"
+  },
+  "limitations": [
+    "random ray agreement is not exhaustive geometry certification",
+    "three smooth static source checks are not motion/mask/time convergence",
+    "no empirical pair of grids is treated as a rigorous discretization bound",
+    "no T01 inspection beyond two specifically approved functions; no t05, real data, or other library work"
+  ],
+  "budget": {
+    "ray_evaluations": 148722,
+    "ray_limit": 3000000,
+    "prior_review_runs_rays": 297444,
+    "review_cumulative_rays": 446166,
+    "counting": "both reference and independent evaluations counted separately",
+    "breakdown": {
+      "random_geometry_both_algorithms": 120000,
+      "deterministic_geometry_both_algorithms": 30,
+      "sub_epsilon_geometry_both_algorithms": 2,
+      "thin_mask_conventions": 4,
+      "axis_kernel": 6432,
+      "projection_once_kernel": 1776,
+      "independent_cartesian_source_kernel": 14046,
+      "reference_polar_source_kernel": 6432
+    },
+    "wall_seconds": 0.08534782100105076
+  },
+  "approved_inputs_unchanged_during_run": true
+}

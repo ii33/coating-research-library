@@ -1,0 +1,11 @@
+category,comparison,value,unit,tolerance,status,scientific_limit
+time_discretization,S1 T1 to T2 diagnostic set,0.0008529628651882121,relative integral difference,0.003,pass_for_integrals_only,ion-only difference 0.0100318281 s exceeds 0.01 s
+source_quadrature,S1 to S2 at T1 diagnostic set,0.005354381866356135,relative integral difference,0.003,not_met,"empirical difference, not bound"
+source_family_holdout,S2T2 to equal-area 203 nodes,0.0020298900041413994,relative integral difference,0.003,pass_for_integrals_only,ion-only difference 0.0142970612 s exceeds 0.01 s
+substrate_space,P1 to P2 at S1T1,0.00016289782353978797,relative area mean difference,0.003,pass_for_fixed_kernel,not continuous extrema or complete source/time accuracy
+substrate_space,P1 to P2 at S1T1,0.0005923740553549217,absolute normalized sample PV difference,0.008,pass_for_fixed_kernel,sample PV not continuous bound
+geometry_representation,both finite plates to thin plates,0.15084043757460014,max relative diagnostic difference,,model_sensitivity,not uncertainty distribution
+geometry_input,plate x displacement +/-0.001 m,0.010291629187825642,max relative diagnostic difference,,scenario_only,no measured distribution or confidence interval
+intersection_float,fixed 1e-14 m parallel cutoff,,near-sidewall counterexample,,known_limit,nondegenerate random agreement not universal certificate
+calibration,Q_v Q_i density retention cup response,,unknown,,unverified,no real machine calibration data
+model_form,ballistic ion lobe unit retention no resputtering,,unknown,,unverified,not CFD PIC beam optics or material response

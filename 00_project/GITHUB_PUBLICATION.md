@@ -14,7 +14,7 @@
 - T09：81份清单内文件及清单自身；`data/deliverable_manifest.json` SHA-256 `f375623abea029b72bc5ccfa1ac80a07099fde6af28c406794925057483ac441`
 - T10：82份清单内文件及清单自身；`release_manifest.json` SHA-256 `fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f`
 - T01第二轮：46项允许文件及读者哈希清单；reader_manifest.json SHA-256 `4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23`
-- 阶段边界：首轮基础覆盖完成；T01第二轮有限接口带源图与数值覆盖缺口移交，T02第二轮双覆盖误差预算进行中；正式审查与实机资格未完成
+- 阶段边界：首轮及T01第二轮冻结研究不变；T02第二轮frozen_bounded_partial，当前确定性侧壁正确性收口进行中；正式审查与实机资格未完成
 
 ## 不纳入仓库的内容
 
@@ -75,3 +75,9 @@ T10按release_manifest.json精确允许列表及清单自身发布，全部sourc
 只发布 `01_machine_structures/round2_topology_alignment` 47文件，源ZIP SHA-256 `f13687c8692c389bfda95b6e82d372eb0aa6bf6ff281a1fada60f5dea5551aa8`；ZIP本身不上传。C/I原图准入unsupported、完整最终网格额外时间加密/连续极值/实机未完成。仅固定审计日志保留；原文、缓存和未来未冻结增量排除。
 
 复核：`python -B 01_machine_structures/round2_topology_alignment/verification/build_reader.py --check`。此检查含24项单元测试，不会重跑全部研究网格。
+
+## T02第二轮部分数值结果
+
+发布 `02_machine_modeling/round2_dual_coverage_error_budget` 的精确允许文件及独立哈希清单；清单SHA-256 `9e0b83b83367ae82a3968be4f35ad450d56811a5e357f768fb20ebb390a40253`。状态frozen_bounded_partial，保留极近侧壁漏挡、源求积0.203%、独曝14.3ms>10ms和共同混叠反例。仅包检查通过，不能提升为全数值精度验证；尚不进入T03。原文、ZIP、缓存及后续未冻结修正不上传。
+
+读者核验：`python -B 02_machine_modeling/round2_dual_coverage_error_budget/verification/build_reader.py --check --reader`。
