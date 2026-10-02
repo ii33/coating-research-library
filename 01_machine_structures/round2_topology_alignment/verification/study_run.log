@@ -1,0 +1,26 @@
+Numerical controls D
+Spatial grid D 12 48 72
+Spatial grid D 18 73 145
+Numerical controls C
+Spatial grid C 12 48 72
+Spatial grid C 18 73 145
+Numerical controls I
+Spatial grid I 12 48 72
+Spatial grid I 18 73 145
+Single factor short_layer_1p3s
+Single factor carrier_phase_plus_pi_over_3
+Single factor ion_sigma_0p18m
+{
+  "budget_work_units": 150000000,
+  "actual_counted_work_units": 116633267,
+  "definition": "one point-time pose scan plus one flux evaluation per channel; bisection scalar trig evaluations are separately counted as subdivisions, not hidden large arrays",
+  "within_budget": true,
+  "elapsed_s": 24.408633044000453,
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "time_all_pass": true,
+  "space_all_pass": true,
+  "source_figure_gate": "C/I unsupported, see sources/access_status.json"
+}
+Counterexample pass: True

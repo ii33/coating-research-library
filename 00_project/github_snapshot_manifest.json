@@ -1,6 +1,6 @@
 {
-  "snapshot": "coating-research-library-T10-round1-handoff",
-  "created_at_utc": "2026-10-02T04:09:16.842960+00:00",
+  "snapshot": "coating-research-library-T01-round2-handoff",
+  "created_at_utc": "2026-10-02T04:43:39.965033+00:00",
   "repository": "ii33/coating-research-library",
   "visibility": "private",
   "source_topic_zip_sha256": "680e0148cff5bef02b290be16a979b9cc8896677bd3579b2d049b9920d2425b3",
@@ -25,8 +25,8 @@
     },
     {
       "path": "00_project/GITHUB_PUBLICATION.md",
-      "size_bytes": 7812,
-      "sha256": "aed6545cf0292be3fd15890f9e466be634121e8595b3f6cc4a005851a1c9de59"
+      "size_bytes": 8505,
+      "sha256": "1e1db5bb4c12677683e999906b50ee3857a3783e13a66216590c3c11aa07db51"
     },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
@@ -55,8 +55,8 @@
     },
     {
       "path": "00_project/planning_baseline_manifest.json",
-      "size_bytes": 7881,
-      "sha256": "82f8683a42e0c2c4224ff49a7bbe7a8b7f3d9a2aeda50cc43413636c377f1410"
+      "size_bytes": 7853,
+      "sha256": "e7a639eb7a6348d69bedf34e2ca2cefbe699921a159f161e12a50090f64ec173"
     },
     {
       "path": "00_project/requirements_traceability.json",
@@ -65,8 +65,8 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 36736,
-      "sha256": "a7bb15025d6d5cde4ae433a7dab164b86e35eef061439f1aee09dbb07a0a3758"
+      "size_bytes": 37015,
+      "sha256": "95b656692484efcbca80357ec9dc73bd44b7d5336d96e2def109425b2a29d407"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -192,6 +192,241 @@
       "path": "01_machine_structures/reviews/planetary_kinematics_results.json",
       "size_bytes": 2084,
       "sha256": "4fec90c42a05bdffbf97b41e3383858b7b8d61f7257a0b3580de21e3e752bd8b"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/README.md",
+      "size_bytes": 3585,
+      "sha256": "1984208f2cc0a90c4a3d82af43b20114d5e019ee845d498853723b0df353f9d5"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/T02_ROUND2_HANDOFF.md",
+      "size_bytes": 2778,
+      "sha256": "e4112d3b4464555e6cf0d0f687dfad60b1c4b073a486d161913240889b13dfc3"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/chapters/01_topologies_and_constraints.md",
+      "size_bytes": 6409,
+      "sha256": "dfca1e3e576c4d1a9cd80b6a73ab4f0d8f29be76ddc8ad87f4a69d91147fe00c"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/chapters/02_shared_contract_and_physics.md",
+      "size_bytes": 5975,
+      "sha256": "817a334df03e3e8443773bc3b6e6088aa940be4b2228e03daa23eb539a143a51"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/chapters/03_results_and_counterexamples.md",
+      "size_bytes": 4758,
+      "sha256": "ea41fa2e8d149d6fe96ebb9aaa29d4a44af07636c7c0aca5cbe9cc5f8ebd0cf4"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/chapters/04_numerics_errors_and_stop.md",
+      "size_bytes": 7037,
+      "sha256": "99f0da8b39b26c3ea06159f4ea712bb94b818c1fece90c984f3e71236aa5866b"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/area_totals.json",
+      "size_bytes": 3201,
+      "sha256": "d6d4987d9abb9e393438be9960833297908a52aa89d5e1b6e85f27b4c68a0d57"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/closure_periods.json",
+      "size_bytes": 912,
+      "sha256": "587fbf273506937fa16840868f7e0c6540338503c7dc97a85d1125168f323dc9"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/diagnostic_points.json",
+      "size_bytes": 1578,
+      "sha256": "4725fdbb68afc35fbf13f7e9be25dd2ed1f572ead3659b4db645c0ce427a2e27"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/diagnostic_readings.json",
+      "size_bytes": 4233,
+      "sha256": "bf333c1dbd2fa519a2e6be6b1f3230df6bf538322991841a486343cd6e9593b0"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/frozen_inputs.json",
+      "size_bytes": 2052,
+      "sha256": "363259f20f55044071f15df55365026acec9731ade153bb126b31fbeb567d75b"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/main_summary.json",
+      "size_bytes": 14614,
+      "sha256": "6fb0cca308ffd169d1ce7b8932c2fd006481b19be3cbe5d493f0c6584dbf5f83"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/map_C.csv",
+      "size_bytes": 938395,
+      "sha256": "94bd211325d624287af1bfda589ba2761f616ec02607b43ec07e80e1fbe75f59"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/map_D.csv",
+      "size_bytes": 938739,
+      "sha256": "64d695604145b44d1f1b0e21b69fbd2f2762239ccbc1b32497f40cd60fc6591a"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/map_I.csv",
+      "size_bytes": 939026,
+      "sha256": "9a33ee15d43d3c33c9442582c92b03a86369ab879407568c0e65c95d2852f0b4"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/single_factor_comparisons.json",
+      "size_bytes": 16073,
+      "sha256": "b9da55ac09a57954ec542cd10c909cf0a6ad9a4fcb2ebc5b2b8c21ea97f3cb94"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/synthetic_contract.json",
+      "size_bytes": 4685,
+      "sha256": "4ff0223bedca6529585f3c85754525930de51142cbe260ddc94b8013dcde9606"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/data/uniform_thickness_counterexample.json",
+      "size_bytes": 3423,
+      "sha256": "942fe17b8cba667cd5fb80ac770b49f32379542031c38f1ac38efdb89ce48019"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/diagrams/01_topology_schematics.png",
+      "size_bytes": 298980,
+      "sha256": "5f62e9c8b9a0f296a263e28575716c20e35e7edee6f45a815c7953de907af775"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/diagrams/01_topology_schematics.svg",
+      "size_bytes": 54576,
+      "sha256": "7a03c9dbe8fad6d1c783566afd31e64ebc7eec71f47a849ebbdbbd7283fcebe5"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/diagrams/02_frames_and_clock.png",
+      "size_bytes": 167113,
+      "sha256": "f529c8eae87ea8f599792a180884ca2a5d8962bf119ddd64371997658c4516fb"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/diagrams/02_frames_and_clock.svg",
+      "size_bytes": 28034,
+      "sha256": "8c1ca7d96f770a91cb8d152b82e95928862512dc5be01d5aed5c3d9c3d006c6e"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/diagrams/03_dual_coverage_maps.png",
+      "size_bytes": 847784,
+      "sha256": "79d21691eeb188f358bf5bc49e1c12ccc2d1619f2533a42de38472f3beb56ad4"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/diagrams/03_dual_coverage_maps.svg",
+      "size_bytes": 1936958,
+      "sha256": "34a507a02e9114f02fa2fb49b5dc5d28639234afdb4a898576256917e67915c2"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/diagrams/04_non_equivalence.png",
+      "size_bytes": 78286,
+      "sha256": "e72df8b0f5bbac4ebe221ae6c540620b1757cb9ba699ba5c46b24708ac0120c0"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/diagrams/04_non_equivalence.svg",
+      "size_bytes": 16452,
+      "sha256": "074e8dfd8c8626b397f09c8f2d8dbf5f2b0519c5b4627f8b724122dece94b98e"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/diagrams/draw_figures.py",
+      "size_bytes": 7312,
+      "sha256": "65df28fa21b76f63fed2bc8d88c01bde5c9066a650cf01a6dec76a7a28b311f1"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/models/dual_coverage.py",
+      "size_bytes": 15428,
+      "sha256": "cf3e483cc1b9b2d50d09ca71c1f7bfb05a901f975c5c61d77f85184ed5d9dd5b"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/models/run_study.py",
+      "size_bytes": 9977,
+      "sha256": "14d9f47b0c704b760fcefeb27a2f2da87bab627a3df7c3bcbeabb3fc3ee920d8"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/reviews/BOUNDED_ACCEPTANCE.md",
+      "size_bytes": 2395,
+      "sha256": "9b5a1d0491ed5ed854017e984d1e515b9b6caccffd90c520f633bf4f703dc95c"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/reviews/independent_math_check.py",
+      "size_bytes": 9847,
+      "sha256": "39d9a7c3548a155961c3ceac3dfab76ca44f5c97b1b9889b5d97650042228c01"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/reviews/independent_math_check_results.json",
+      "size_bytes": 6562,
+      "sha256": "116aed4a598f769d6beb9b7f5413ec66651b8a6c8cd9542d4e9b9228ff5e49bd"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/reviews/independent_math_check_run.log",
+      "size_bytes": 6562,
+      "sha256": "116aed4a598f769d6beb9b7f5413ec66651b8a6c8cd9542d4e9b9228ff5e49bd"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/reviews/reference_tests_run.log",
+      "size_bytes": 2389,
+      "sha256": "9bc5647d528fedc5f1f5026522e9b0f3427e3ecae62f45503b1b63e7d28c3930"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/reviews/独立窄数学核查.md",
+      "size_bytes": 8224,
+      "sha256": "b7a024806690a40bd13526169aa6b51d18d3de53b5706d7e34ba17684c1714af"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/round2_stage.json",
+      "size_bytes": 815,
+      "sha256": "267bc4ed5edb60d3bcc8efc947fde23e0292791d64981388e13e161ed0d7b9fd"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/sources/access_status.json",
+      "size_bytes": 1190,
+      "sha256": "578e58a7c1c2045c2465f350ab64c73c34d87676ded76e7c3e0ce76cb6238f6f"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/sources/source_cards.md",
+      "size_bytes": 3049,
+      "sha256": "0d5c6cdb27edc3c9848dce9df934c3c4c5ed671f2e3aaf153c6c22b22b0d7e97"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/verification/PREFLIGHT_LOG.md",
+      "size_bytes": 987,
+      "sha256": "ea1dff93ec0b55a5c951ee7c46e6a0658ce3b4a35db41f52452be5d6989f298b"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/verification/PRE_REGISTERED_PROTOCOL.md",
+      "size_bytes": 4197,
+      "sha256": "342b1e2f7796eaf3947bb6826ba672f802ed556510e4d7fae535cc87200e91ad"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/verification/build_reader.py",
+      "size_bytes": 6550,
+      "sha256": "243aba26a7a6ffa8c66fc37db71d34788b53ac9f495cc1e1b41d05faf785a521"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/verification/numerical_checks.json",
+      "size_bytes": 70092,
+      "sha256": "3b6198cd5ffa5cafcb182d0a53ae9bda2b76e6b15d0b0f81c7e3f6aab4f9899b"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/verification/public_allowlist.txt",
+      "size_bytes": 1481,
+      "sha256": "de8b62c2f4fb4931d506ea3b908113694537d2de582a35ba8e8b18688498a0cb"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/verification/reader_manifest.json",
+      "size_bytes": 4767,
+      "sha256": "4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/verification/study_run.log",
+      "size_bytes": 881,
+      "sha256": "10822b07248eb6c79e2ea818266648331e7eeb048661907201e50ea52487366c"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/verification/test_reference.py",
+      "size_bytes": 7795,
+      "sha256": "41079de6d54eae6a4b4d544795f31f136832c0829e6490d459efebad59f031c7"
+    },
+    {
+      "path": "01_machine_structures/round2_topology_alignment/verification/unit_test_run.log",
+      "size_bytes": 2533,
+      "sha256": "953914df91f157901ff8b98983e3e2ba8bf1f926cae1775311e848c1b39e1990"
     },
     {
       "path": "01_machine_structures/sources/RIGHTS_AND_ACCESS.md",
@@ -3585,28 +3820,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 7396,
-      "sha256": "29374aab668add04d76c5c7951d9a580bd1bc7e346988a33efe800714ff7fbe6"
+      "size_bytes": 7916,
+      "sha256": "c26d89603897ccb16f45ea96e2b832807297c12a2114e82bc87a576d52ecfca6"
     },
     {
       "path": "README.md",
-      "size_bytes": 5139,
-      "sha256": "6501b2da83fff497ab868087f13a26ddd13986eede9da6e34583f61d0f3f8e3d"
+      "size_bytes": 5351,
+      "sha256": "579d3439246e6a64364a61fcf514e7b0c6d51026bf1e28449c616a11d41101b1"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 5145,
-      "sha256": "3d82dc428eb5430ae9cb89e7b2a97b1d5b4a425f9834c93c1009eb8069ab7d38"
+      "size_bytes": 5011,
+      "sha256": "b6684044b17bd1f4924befa9954144a5102a7c684a6aa567f47445dd5cc47d13"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 4122,
-      "sha256": "484cf52e4364785f9e63bf4090f9bb6ad0dcffdf023508cf564aa5749259e0c2"
+      "size_bytes": 4338,
+      "sha256": "364149b45f5639f98c18cfe2dcf9343a2ac794880c90af47a33343600f4ddae1"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 2212,
-      "sha256": "3b8c99df31d715d94ffc8946783500259518ff0978763200f0362a617a028a8f"
+      "size_bytes": 2017,
+      "sha256": "f767b3d73a998795c7cc0fddd8bb6cb13696945c2f9edf084a76603606069c46"
     }
   ],
   "source_T02_zip_sha256": "684b63f228b31a2ba882b08f60cbc1e7a13173283d0e79b03fa4fc861d3c344b",
@@ -3619,5 +3854,6 @@
   "source_T07_deliverable_manifest_sha256": "9f382bc2d7d2f5a86570105695f1f9b95d5454caccadd19c0bed1ee85588b238",
   "source_T08_publication_allowlist_sha256": "6d0128b90679ef76e6b3bb9a59a88992ac1f72551647e00cbb556a2e05db6653",
   "source_T09_deliverable_manifest_sha256": "f375623abea029b72bc5ccfa1ac80a07099fde6af28c406794925057483ac441",
-  "source_T10_deliverable_manifest_sha256": "fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f"
+  "source_T10_deliverable_manifest_sha256": "fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f",
+  "source_T01_round2_reader_manifest_sha256": "4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23"
 }

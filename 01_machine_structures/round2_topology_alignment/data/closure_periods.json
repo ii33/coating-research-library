@@ -1,0 +1,33 @@
+{
+  "D": {
+    "rps": {
+      "carrier": "1/4",
+      "sun": "0",
+      "output": "13/12"
+    },
+    "marked_workpiece_pose_period_s": "12",
+    "modeled_geared_axes_period_s": "12",
+    "does_not_claim": "unmodeled support idlers, motor rotors, source modulation or material state closure"
+  },
+  "C": {
+    "rps": {
+      "carrier": "1/4",
+      "ring": "0",
+      "compound": "-1",
+      "input": "9/11",
+      "output": "7/8"
+    },
+    "marked_workpiece_pose_period_s": "8",
+    "modeled_geared_axes_period_s": "88",
+    "does_not_claim": "unmodeled support idlers, motor rotors, source modulation or material state closure"
+  },
+  "I": {
+    "rps": {
+      "carrier": "1/4",
+      "output": "-7/20"
+    },
+    "marked_workpiece_pose_period_s": "20",
+    "modeled_geared_axes_period_s": "20",
+    "does_not_claim": "unmodeled support idlers, motor rotors, source modulation or material state closure"
+  }
+}

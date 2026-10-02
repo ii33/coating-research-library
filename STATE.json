@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T04:09:16.842960+00:00",
+  "updated_at_utc": "2026-10-02T04:43:39.965033+00:00",
   "project_status": "active",
   "setup_status": "complete_integrity_checked",
   "round": 2,
-  "active_topic_id": "T01",
-  "active_task_id": "ROUND2.T01_TOPOLOGY_ALIGNMENT",
-  "active_scope": "T01第二轮：最多两种新传动拓扑与蒸气/离子/修正板/探头共同坐标时钟接口，有限层合成覆盖研究",
-  "later_topics_policy": "bounded_T01_round2_increment_first_other_expansions_pending",
+  "active_topic_id": "T02",
+  "active_task_id": "ROUND2.T02_DUAL_COVERAGE_ERROR_BUDGET",
+  "active_scope": "T02第二轮：扩展蒸气源与有限厚板双覆盖接口及时间/源面/空间/模型误差预算",
+  "later_topics_policy": "bounded_T02_round2_interface_and_error_budget_then_T03_handoff",
   "topic_order": [
     "T01",
     "T02",
@@ -44,7 +44,7 @@
     "T09": "bounded_public_research_complete_paid_text_GJB_and_real_sample_gaps_retained_not_certified",
     "T10": "bounded_public_theory_and_synthetic_handoff_with_limited_independent_numerical_checks_formal_review_and_machine_qualification_pending"
   },
-  "next_action": "执行T01第二轮有界拓扑与双覆盖接口研究；首轮冻结基线保持不变，扩展成果另行复核后发布",
+  "next_action": "按T01第二轮移交接入扩展源与厚板，固定不超过三个几何、算量和容差，完成有限回归与独立留出检查后移交T03",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -54,9 +54,9 @@
   ],
   "notes": [
     "T01–T10第一轮优先公共资料、理论和合成基础已覆盖；这不是完整工程资格、正式审查签署或实机校准完成",
-    "T10包含9章、29来源、16种材料/基片条件卡、16项检验、12类故障矩阵、3组原创图；50项测试及有限关键数值独立复核通过",
-    "独立复核只覆盖多电荷、净原子通量、能流、快中性补能、零/负净沉积及角度等边界，不替代指定完整外模型审查；实际设备与材料证据缺口保留",
-    "已按原研究顺序启动T01第二轮有界扩展，仅在独立round2_topology_alignment目录工作；尚未冻结的扩展文件不纳入本次发布"
+    "T01第二轮有限理论与合成接口已完成，4章、4组原创图、统一参数合同、13140行逐点数据，24项测试与读者包复核通过",
+    "C/I原始结构图仍unsupported_figure_gate；全部最终网格的额外时间加密、连续极值、真实设备与生产资格未完成",
+    "T02第二轮限定扩展源/厚板双覆盖接口和误差预算；首轮冻结内容不改，尚未冻结的T02扩展不发布"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -69,15 +69,18 @@
     "verbatim": "h4是常见的高折射率材料。ybf3是氟化镱"
   },
   "handoff_evidence": [
-    "10_ion_sources/T01_ROUND2_HANDOFF.md",
-    "10_ion_sources/reviews/ROUND1_ACCEPTANCE.md",
-    "10_ion_sources/reviews/SELF_REVIEW.md",
-    "10_ion_sources/release_manifest.json",
-    "00_project/FIRST_SWEEP_REVIEW_DRAFT.md"
+    "01_machine_structures/round2_topology_alignment/T02_ROUND2_HANDOFF.md",
+    "01_machine_structures/round2_topology_alignment/reviews/BOUNDED_ACCEPTANCE.md",
+    "01_machine_structures/round2_topology_alignment/round2_stage.json",
+    "01_machine_structures/round2_topology_alignment/verification/public_allowlist.txt"
   ],
   "machine_validation": "not_performed",
   "formal_review_signoff": "not_performed",
   "round_status": "in_progress",
   "round1_scope_status": "all_ten_topics_public_theory_and_synthetic_foundations_covered",
-  "round2_active_status": "in_progress"
+  "round2_active_status": "in_progress",
+  "round2_stage_status": {
+    "T01_TOPOLOGY_ALIGNMENT": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
+    "T02_DUAL_COVERAGE_ERROR_BUDGET": "in_progress"
+  }
 }

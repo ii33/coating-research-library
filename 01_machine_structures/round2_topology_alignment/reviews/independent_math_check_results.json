@@ -1,0 +1,220 @@
+{
+  "input_sha256": {
+    "models/dual_coverage.py": "cf3e483cc1b9b2d50d09ca71c1f7bfb05a901f975c5c61d77f85184ed5d9dd5b",
+    "data/synthetic_contract.json": "4ff0223bedca6529585f3c85754525930de51142cbe260ddc94b8013dcde9606",
+    "verification/test_reference.py": "41079de6d54eae6a4b4d544795f31f136832c0829e6490d459efebad59f031c7",
+    "verification/PRE_REGISTERED_PROTOCOL.md": "342b1e2f7796eaf3947bb6826ba672f802ed556510e4d7fae535cc87200e91ad"
+  },
+  "checks": {
+    "rates_rps": {
+      "D": {
+        "carrier": "1/4",
+        "sun": "0",
+        "output": "13/12"
+      },
+      "C": {
+        "carrier": "1/4",
+        "ring": "0",
+        "compound": "-1",
+        "input": "9/11",
+        "output": "7/8"
+      },
+      "I": {
+        "carrier": "1/4",
+        "output": "-7/20"
+      }
+    },
+    "periods_s": {
+      "workpiece": {
+        "D": 12,
+        "C": 8,
+        "I": 20
+      },
+      "marked_full_C": 88,
+      "C_input_turns_at_8s": "72/11"
+    },
+    "C_pitch_geometry": {
+      "compound_center_m": [
+        0.3397948717948717,
+        0.3829927481061576
+      ],
+      "central_to_compound_m": 0.512,
+      "compound_to_output_m": 0.384,
+      "output_outer_pitch_radius_m": 0.5680000000000001,
+      "ring_pitch_radius_m": 0.64,
+      "upper_and_lower_axial_planes_required": true
+    },
+    "independent_absolute_output_zero_orbit": "pass",
+    "analytic_center_roots": [
+      {
+        "axis": 0,
+        "level": 0.12499999999999996,
+        "count": 4,
+        "max_error_s": 9.912071163853398e-12,
+        "ambiguous": 0
+      },
+      {
+        "axis": 0,
+        "level": 0.17666666666666675,
+        "count": 3,
+        "max_error_s": 2.5437429940211587e-11,
+        "ambiguous": 0
+      },
+      {
+        "axis": 0,
+        "level": 0.29666666666666675,
+        "count": 3,
+        "max_error_s": 1.971134366840488e-11,
+        "ambiguous": 0
+      },
+      {
+        "axis": 1,
+        "level": -0.14,
+        "count": 3,
+        "max_error_s": 1.3085976746651795e-11,
+        "ambiguous": 0
+      },
+      {
+        "axis": 1,
+        "level": -0.1,
+        "count": 3,
+        "max_error_s": 2.6227908733744698e-11,
+        "ambiguous": 0
+      },
+      {
+        "axis": 1,
+        "level": -0.039999999999999994,
+        "count": 3,
+        "max_error_s": 2.0833113012486137e-11,
+        "ambiguous": 0
+      },
+      {
+        "axis": 1,
+        "level": -0.019999999999999997,
+        "count": 3,
+        "max_error_s": 1.5202061831587343e-11,
+        "ambiguous": 0
+      },
+      {
+        "axis": 1,
+        "level": 0.09999999999999999,
+        "count": 4,
+        "max_error_s": 2.1133983452159555e-11,
+        "ambiguous": 0
+      },
+      {
+        "axis": 1,
+        "level": 0.14,
+        "count": 4,
+        "max_error_s": 2.327382730982208e-11,
+        "ambiguous": 0
+      },
+      {
+        "axis": 1,
+        "level": 0.16000000000000003,
+        "count": 4,
+        "max_error_s": 1.3603063120370962e-11,
+        "ambiguous": 0
+      }
+    ],
+    "independent_midpoint_32771_comparisons": [
+      {
+        "topology": "D",
+        "case": "none",
+        "max_relative_flux_integral_difference": 1.6263670136403907e-06,
+        "max_ion_only_difference_s": 1.525739220653577e-05
+      },
+      {
+        "topology": "D",
+        "case": "vapor_only",
+        "max_relative_flux_integral_difference": 8.034752773077462e-05,
+        "max_ion_only_difference_s": 0.00023085105064768463
+      },
+      {
+        "topology": "D",
+        "case": "ion_only",
+        "max_relative_flux_integral_difference": 8.68386865456489e-05,
+        "max_ion_only_difference_s": 0.00010825888370380454
+      },
+      {
+        "topology": "C",
+        "case": "none",
+        "max_relative_flux_integral_difference": 1.9683846711702566e-06,
+        "max_ion_only_difference_s": 1.525739220653577e-05
+      },
+      {
+        "topology": "C",
+        "case": "vapor_only",
+        "max_relative_flux_integral_difference": 2.7915431221975208e-05,
+        "max_ion_only_difference_s": 7.493431989469279e-05
+      },
+      {
+        "topology": "C",
+        "case": "ion_only",
+        "max_relative_flux_integral_difference": 0.00014151587796478788,
+        "max_ion_only_difference_s": 6.70719260421615e-05
+      },
+      {
+        "topology": "I",
+        "case": "none",
+        "max_relative_flux_integral_difference": 2.5172771116591565e-06,
+        "max_ion_only_difference_s": 1.525739220653577e-05
+      },
+      {
+        "topology": "I",
+        "case": "vapor_only",
+        "max_relative_flux_integral_difference": 2.1843939168375153e-05,
+        "max_ion_only_difference_s": 5.519688067301409e-05
+      },
+      {
+        "topology": "I",
+        "case": "ion_only",
+        "max_relative_flux_integral_difference": 8.68386865456489e-05,
+        "max_ion_only_difference_s": 0.00011962523740538522
+      }
+    ],
+    "projection_energy_zero_denominator": "pass; one cosine factor, fixed 100 eV, exact zero/negative denominator guarded",
+    "uniform_masked_event_integration": "explicitly unsupported, as required by current interface",
+    "stationary_D_C_integrals": "finite and consistent with constant flux times exact open-gate duration",
+    "tangent_root_limit": {
+      "exact_roots_s": [
+        0.0,
+        4.0
+      ],
+      "candidate_count": 18,
+      "ambiguous_tiny_brackets": 2,
+      "sum_candidate_width_s": 9.56060830503702e-10,
+      "max_candidate_distance_from_exact_root_s": 6.724076406783297e-09,
+      "conclusion": "No missed tangent in this example; candidate width is not a floating-point root-error certificate."
+    }
+  },
+  "findings": {
+    "uniform_parallel_vapor_visibility": {
+      "local_point": [
+        -0.029500000000000085,
+        0.05109549882328183,
+        0.0
+      ],
+      "time_s": 2.0,
+      "world_point": [
+        -0.371,
+        3.469446951953614e-17,
+        0.6
+      ],
+      "model_flux": 0.0,
+      "vertical_ray_hit": [
+        -0.371,
+        3.469446951953614e-17,
+        0.1
+      ],
+      "physical_vertical_ray_blocked": true,
+      "status": "not_reproduced"
+    },
+    "stationary_boundary": {
+      "status": "completed",
+      "events": 4
+    },
+    "resolution": "Both original defects were corrected by the owner during this same narrow review and locally rechecked. No core files edited by reviewer."
+  },
+  "scope": "Synthetic fixed geometry only. C/I conditional_text_grounded; source-figure gate unsupported. No source browsing, full-library review, dense spatial convergence rerun, real-machine or manufacturing qualification."
+}

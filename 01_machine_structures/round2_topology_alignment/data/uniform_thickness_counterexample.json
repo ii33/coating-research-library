@@ -1,0 +1,109 @@
+{
+  "change": "point cosine vapor -> uniform parallel vapor only; no plates; identical ion beam, motion, finite layer and gates",
+  "point_cosine": {
+    "h_nm": {
+      "mean": 0.7626791226387047,
+      "cv": 0.0034708737100466094,
+      "sample_pv": 0.013154754279395772,
+      "minimum": 0.7561599970152219,
+      "maximum": 0.7661928534675592
+    },
+    "net_atoms_m2": {
+      "mean": 6.101432981109638e+19,
+      "cv": 0.0034708737100466102,
+      "sample_pv": 0.013154754279395829,
+      "minimum": 6.049279976121775e+19,
+      "maximum": 6.129542827740474e+19
+    },
+    "ion_fluence_m2": {
+      "mean": 1.594005930066079e+18,
+      "cv": 0.04660868638274576,
+      "sample_pv": 0.18058442025571655,
+      "minimum": 1.4566224084524562e+18,
+      "maximum": 1.7444750452176133e+18
+    },
+    "incident_energy_J_m2": {
+      "mean": 25.538790556093097,
+      "cv": 0.046608686382745755,
+      "sample_pv": 0.18058442025571667,
+      "minimum": 23.337663873833286,
+      "maximum": 27.94957156043753
+    },
+    "ion_to_net_atom_ratio": {
+      "mean": 0.02612267910852163,
+      "cv": 0.044472457458075404,
+      "sample_pv": 0.17191043381668855,
+      "minimum": 0.024052545576797115,
+      "maximum": 0.028543306674797216
+    },
+    "eV_per_net_atom": {
+      "mean": 2.612267910852163,
+      "cv": 0.0444724574580754,
+      "sample_pv": 0.1719104338166886,
+      "minimum": 2.4052545576797115,
+      "maximum": 2.8543306674797218
+    },
+    "ion_only_s": {
+      "mean": 1.2999999999999998,
+      "cv": 1.4798311016093189e-16,
+      "sample_pv": 5.124106267500723e-16,
+      "minimum": 1.2999999999999996,
+      "maximum": 1.3000000000000003
+    }
+  },
+  "uniform_vapor": {
+    "h_nm": {
+      "mean": 1.4999999999999993,
+      "cv": 5.559866313445295e-16,
+      "sample_pv": 2.664535259100377e-15,
+      "minimum": 1.4999999999999978,
+      "maximum": 1.5000000000000018
+    },
+    "net_atoms_m2": {
+      "mean": 1.1999999999999997e+20,
+      "cv": 4.509549173419464e-16,
+      "sample_pv": 2.7306666666666675e-15,
+      "minimum": 1.1999999999999982e+20,
+      "maximum": 1.2000000000000015e+20
+    },
+    "ion_fluence_m2": {
+      "mean": 1.594005930066079e+18,
+      "cv": 0.04660868638274576,
+      "sample_pv": 0.18058442025571655,
+      "minimum": 1.4566224084524562e+18,
+      "maximum": 1.7444750452176133e+18
+    },
+    "incident_energy_J_m2": {
+      "mean": 25.538790556093097,
+      "cv": 0.046608686382745755,
+      "sample_pv": 0.18058442025571667,
+      "minimum": 23.337663873833286,
+      "maximum": 27.94957156043753
+    },
+    "ion_to_net_atom_ratio": {
+      "mean": 0.013283382750550661,
+      "cv": 0.04660868638274577,
+      "sample_pv": 0.18058442025571708,
+      "minimum": 0.012138520070437139,
+      "maximum": 0.014537292043480123
+    },
+    "eV_per_net_atom": {
+      "mean": 1.328338275055066,
+      "cv": 0.046608686382745776,
+      "sample_pv": 0.18058442025571725,
+      "minimum": 1.2138520070437138,
+      "maximum": 1.4537292043480123
+    },
+    "ion_only_s": {
+      "mean": 1.2999999999999998,
+      "cv": 1.4798311016093189e-16,
+      "sample_pv": 5.124106267500723e-16,
+      "minimum": 1.2999999999999996,
+      "maximum": 1.3000000000000003
+    }
+  },
+  "exact_uniform_h_nm": 1.5,
+  "max_ion_integral_difference": 0.0,
+  "logical_test_pass": true,
+  "interpretation": "source-field counterexample, not a topology superiority claim or a correction-plate optimization"
+}

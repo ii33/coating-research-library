@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T04:09:16.842960+00:00",
+  "updated_at_utc": "2026-10-02T04:43:39.965033+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
     "major_topics": "serial_original_order",
@@ -796,7 +796,12 @@
     }
   ],
   "round2_status": "in_progress",
-  "round2_active_topic_id": "T01",
-  "round2_active_task_id": "ROUND2.T01_TOPOLOGY_ALIGNMENT",
-  "round2_active_scope": "最多两新拓扑、蒸气/离子/板/探头共同坐标时钟与有限层合成覆盖；独立增量目录，未冻结不发布"
+  "round2_active_topic_id": "T02",
+  "round2_active_task_id": "ROUND2.T02_DUAL_COVERAGE_ERROR_BUDGET",
+  "round2_active_scope": "T02第二轮：扩展蒸气源与有限厚板双覆盖接口及时间/源面/空间/模型误差预算",
+  "round2_stage_status": {
+    "T01_TOPOLOGY_ALIGNMENT": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
+    "T02_DUAL_COVERAGE_ERROR_BUDGET": "in_progress"
+  },
+  "round2_handoff_record": "01_machine_structures/round2_topology_alignment/T02_ROUND2_HANDOFF.md"
 }

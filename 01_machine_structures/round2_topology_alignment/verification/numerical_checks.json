@@ -1,0 +1,1943 @@
+{
+  "time": {
+    "D": {
+      "order8_vs16": {
+        "none": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 4.576205497552256e-07,
+            "mean_error_over_reference_mean": 2.5491564252058067e-09,
+            "worst_point_index": 13,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 1.3307655255667522e-05,
+            "mean_error_over_reference_mean": 7.80909042156747e-08,
+            "worst_point_index": 19,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 1.3307655255428855e-05,
+            "mean_error_over_reference_mean": 7.809090429217131e-08,
+            "worst_point_index": 19,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 4.440892098500626e-16,
+            "worst_point_index": 9,
+            "pass": true
+          }
+        ],
+        "vapor_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 5.200851038085463e-07,
+            "mean_error_over_reference_mean": 2.8972127512013353e-09,
+            "worst_point_index": 13,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 1.3307655255667522e-05,
+            "mean_error_over_reference_mean": 7.80909042156747e-08,
+            "worst_point_index": 19,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 1.3307655255428855e-05,
+            "mean_error_over_reference_mean": 7.809090429217131e-08,
+            "worst_point_index": 19,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 8.881784197001252e-16,
+            "worst_point_index": 11,
+            "pass": true
+          }
+        ],
+        "ion_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 4.576205497552256e-07,
+            "mean_error_over_reference_mean": 2.5491564252058067e-09,
+            "worst_point_index": 13,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 1.6633791807424852e-05,
+            "mean_error_over_reference_mean": 9.761781918477688e-08,
+            "worst_point_index": 19,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 1.6633791806953007e-05,
+            "mean_error_over_reference_mean": 9.761781925380936e-08,
+            "worst_point_index": 19,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 4.440892098500626e-16,
+            "worst_point_index": 9,
+            "pass": true
+          }
+        ]
+      },
+      "scan8192_vs16384": {
+        "none": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 6.719086390021717e-16,
+            "mean_error_over_reference_mean": 3.839477937155266e-17,
+            "worst_point_index": 9,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 4.808239930071562e-16,
+            "mean_error_over_reference_mean": 3.816063436564732e-17,
+            "worst_point_index": 9,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 5.553090053664564e-16,
+            "mean_error_over_reference_mean": 1.3221642984915619e-17,
+            "worst_point_index": 18,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 2.220446049250313e-16,
+            "worst_point_index": 12,
+            "pass": true
+          }
+        ],
+        "vapor_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 7.63623204777934e-16,
+            "mean_error_over_reference_mean": 7.272601950266028e-18,
+            "worst_point_index": 9,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 4.808239930071562e-16,
+            "mean_error_over_reference_mean": 3.816063436564732e-17,
+            "worst_point_index": 9,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 5.553090053664564e-16,
+            "mean_error_over_reference_mean": 1.3221642984915619e-17,
+            "worst_point_index": 18,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 1.9984014443252818e-15,
+            "worst_point_index": 2,
+            "pass": true
+          }
+        ],
+        "ion_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 6.719086390021717e-16,
+            "mean_error_over_reference_mean": 3.839477937155266e-17,
+            "worst_point_index": 9,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 6.010019077019258e-16,
+            "mean_error_over_reference_mean": 9.062727179632215e-17,
+            "worst_point_index": 1,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 8.676297783676013e-16,
+            "mean_error_over_reference_mean": 3.3052562985432427e-17,
+            "worst_point_index": 2,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 2.220446049250313e-16,
+            "worst_point_index": 18,
+            "pass": true
+          }
+        ]
+      },
+      "midpoint": [
+        {
+          "steps": 2048,
+          "comparison": {
+            "none": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.00048433667331378524,
+                "mean_error_over_reference_mean": 0.0004228533747232387,
+                "worst_point_index": 10,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 5.853506524552624e-07,
+                "mean_error_over_reference_mean": 2.295756280278057e-07,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 5.853506516991241e-07,
+                "mean_error_over_reference_mean": 2.2957562820377335e-07,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0025390625000001332,
+                "worst_point_index": 1,
+                "pass": true
+              }
+            ],
+            "vapor_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.0014175356686426785,
+                "mean_error_over_reference_mean": 0.0004404725931256923,
+                "worst_point_index": 3,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 5.853506524552624e-07,
+                "mean_error_over_reference_mean": 2.295756280278057e-07,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 5.853506516991241e-07,
+                "mean_error_over_reference_mean": 2.2957562820377335e-07,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.005415301131870498,
+                "worst_point_index": 3,
+                "pass": false
+              }
+            ],
+            "ion_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.00048433667331378524,
+                "mean_error_over_reference_mean": 0.0004228533747232387,
+                "worst_point_index": 10,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 0.0023461786470632185,
+                "mean_error_over_reference_mean": 0.00019212592564811542,
+                "worst_point_index": 13,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 0.0023461786470644,
+                "mean_error_over_reference_mean": 0.00019212592564824503,
+                "worst_point_index": 13,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0040422545294859225,
+                "worst_point_index": 12,
+                "pass": false
+              }
+            ]
+          },
+          "pass": false
+        },
+        {
+          "steps": 8192,
+          "comparison": {
+            "none": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 1.7164482363244335e-05,
+                "mean_error_over_reference_mean": 8.58129043544136e-06,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 3.6693292231147294e-08,
+                "mean_error_over_reference_mean": 1.4349843733395962e-08,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 3.669329128071442e-08,
+                "mean_error_over_reference_mean": 1.4349843956231744e-08,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0001342773437500444,
+                "worst_point_index": 0,
+                "pass": true
+              }
+            ],
+            "vapor_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.00035292842195253283,
+                "mean_error_over_reference_mean": 6.165673395890176e-05,
+                "worst_point_index": 7,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 3.6693292231147294e-08,
+                "mean_error_over_reference_mean": 1.4349843733395962e-08,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 3.669329128071442e-08,
+                "mean_error_over_reference_mean": 1.4349843956231744e-08,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0012133779979195403,
+                "worst_point_index": 7,
+                "pass": true
+              }
+            ],
+            "ion_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 1.7164482363244335e-05,
+                "mean_error_over_reference_mean": 8.58129043544136e-06,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 0.0006381279864470515,
+                "mean_error_over_reference_mean": 4.257268725523596e-05,
+                "worst_point_index": 0,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 0.0006381279864475117,
+                "mean_error_over_reference_mean": 4.2572687255188094e-05,
+                "worst_point_index": 0,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0006082328683987281,
+                "worst_point_index": 0,
+                "pass": true
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "time_status": "converged"
+    },
+    "C": {
+      "order8_vs16": {
+        "none": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 7.878270578461455e-08,
+            "mean_error_over_reference_mean": 1.1180460950430543e-09,
+            "worst_point_index": 15,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 2.8718656135448388e-06,
+            "mean_error_over_reference_mean": 5.5945757072700006e-08,
+            "worst_point_index": 14,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 2.8718656147171663e-06,
+            "mean_error_over_reference_mean": 5.594575731759541e-08,
+            "worst_point_index": 14,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 2.220446049250313e-16,
+            "worst_point_index": 0,
+            "pass": true
+          }
+        ],
+        "vapor_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 8.968670311409872e-08,
+            "mean_error_over_reference_mean": 1.2727869961896241e-09,
+            "worst_point_index": 15,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 2.8718656135448388e-06,
+            "mean_error_over_reference_mean": 5.5945757072700006e-08,
+            "worst_point_index": 14,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 2.8718656147171663e-06,
+            "mean_error_over_reference_mean": 5.594575731759541e-08,
+            "worst_point_index": 14,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 4.440892098500626e-16,
+            "worst_point_index": 14,
+            "pass": true
+          }
+        ],
+        "ion_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 7.878270578461455e-08,
+            "mean_error_over_reference_mean": 1.1180460950430543e-09,
+            "worst_point_index": 15,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 3.589130901546276e-06,
+            "mean_error_over_reference_mean": 6.991833423939617e-08,
+            "worst_point_index": 14,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 3.589130901312503e-06,
+            "mean_error_over_reference_mean": 6.991833419580921e-08,
+            "worst_point_index": 14,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 2.220446049250313e-16,
+            "worst_point_index": 6,
+            "pass": true
+          }
+        ]
+      },
+      "scan8192_vs16384": {
+        "none": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 5.375269112017365e-16,
+            "mean_error_over_reference_mean": 6.3991298952587685e-18,
+            "worst_point_index": 14,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 4.808239930063131e-16,
+            "mean_error_over_reference_mean": 4.5792761238696476e-17,
+            "worst_point_index": 3,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 6.941362567068532e-16,
+            "mean_error_over_reference_mean": 3.966492895467732e-17,
+            "worst_point_index": 13,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 4.440892098500626e-16,
+            "worst_point_index": 17,
+            "pass": true
+          }
+        ],
+        "vapor_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 6.119238472255163e-16,
+            "mean_error_over_reference_mean": 6.556326934559103e-17,
+            "worst_point_index": 2,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 4.808239930063131e-16,
+            "mean_error_over_reference_mean": 4.5792761238696476e-17,
+            "worst_point_index": 3,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 6.941362567068532e-16,
+            "mean_error_over_reference_mean": 3.966492895467732e-17,
+            "worst_point_index": 13,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 1.7763568394002505e-15,
+            "worst_point_index": 1,
+            "pass": true
+          }
+        ],
+        "ion_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 5.375269112017365e-16,
+            "mean_error_over_reference_mean": 6.3991298952587685e-18,
+            "worst_point_index": 14,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 1.4021294359083417e-15,
+            "mean_error_over_reference_mean": 1.4784357997672993e-16,
+            "worst_point_index": 7,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 1.3880013960077722e-15,
+            "mean_error_over_reference_mean": 4.9571478428849e-17,
+            "worst_point_index": 7,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 4.440892098500626e-16,
+            "worst_point_index": 17,
+            "pass": true
+          }
+        ]
+      },
+      "midpoint": [
+        {
+          "steps": 2048,
+          "comparison": {
+            "none": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.0004983326137251971,
+                "mean_error_over_reference_mean": 0.00042285337472172793,
+                "worst_point_index": 13,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 5.196831843208605e-07,
+                "mean_error_over_reference_mean": 2.295737777479889e-07,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 5.196831830587468e-07,
+                "mean_error_over_reference_mean": 2.2957377783443495e-07,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0025390625000003553,
+                "worst_point_index": 17,
+                "pass": true
+              }
+            ],
+            "vapor_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.0011726665980880254,
+                "mean_error_over_reference_mean": 0.0005322027964567832,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 5.196831843208605e-07,
+                "mean_error_over_reference_mean": 2.295737777479889e-07,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 5.196831830587468e-07,
+                "mean_error_over_reference_mean": 2.2957377783443495e-07,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0048407930778915365,
+                "worst_point_index": 20,
+                "pass": false
+              }
+            ],
+            "ion_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.0004983326137251971,
+                "mean_error_over_reference_mean": 0.00042285337472172793,
+                "worst_point_index": 13,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 0.0025773449268822126,
+                "mean_error_over_reference_mean": 0.0006113864706355837,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 0.002577344926882401,
+                "mean_error_over_reference_mean": 0.0006113864706355597,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.004089792503145895,
+                "worst_point_index": 4,
+                "pass": false
+              }
+            ]
+          },
+          "pass": false
+        },
+        {
+          "steps": 8192,
+          "comparison": {
+            "none": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 1.2725880830141399e-05,
+                "mean_error_over_reference_mean": 8.58129043697714e-06,
+                "worst_point_index": 14,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 3.2471774893541814e-08,
+                "mean_error_over_reference_mean": 1.4347993400531677e-08,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 3.2471774469725114e-08,
+                "mean_error_over_reference_mean": 1.4347993494719342e-08,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0001342773437500444,
+                "worst_point_index": 0,
+                "pass": true
+              }
+            ],
+            "vapor_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.000464440003248385,
+                "mean_error_over_reference_mean": 8.568250360678468e-07,
+                "worst_point_index": 6,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 3.2471774893541814e-08,
+                "mean_error_over_reference_mean": 1.4347993400531677e-08,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 3.2471774469725114e-08,
+                "mean_error_over_reference_mean": 1.4347993494719342e-08,
+                "worst_point_index": 20,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0013285424676721114,
+                "worst_point_index": 6,
+                "pass": true
+              }
+            ],
+            "ion_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 1.2725880830141399e-05,
+                "mean_error_over_reference_mean": 8.58129043697714e-06,
+                "worst_point_index": 14,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 0.0006380331782227551,
+                "mean_error_over_reference_mean": 1.2897056866311509e-05,
+                "worst_point_index": 0,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 0.0006380331782232151,
+                "mean_error_over_reference_mean": 1.2897056866342065e-05,
+                "worst_point_index": 0,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0006687635494015964,
+                "worst_point_index": 6,
+                "pass": true
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "time_status": "converged"
+    },
+    "I": {
+      "order8_vs16": {
+        "none": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 9.66178687211662e-10,
+            "mean_error_over_reference_mean": 9.16400194910328e-11,
+            "worst_point_index": 16,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 2.434969904889417e-08,
+            "mean_error_over_reference_mean": 2.925904995291687e-09,
+            "worst_point_index": 18,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 2.4349699318583484e-08,
+            "mean_error_over_reference_mean": 2.9259051942791192e-09,
+            "worst_point_index": 18,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 4.440892098500626e-16,
+            "worst_point_index": 10,
+            "pass": true
+          }
+        ],
+        "vapor_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 1.0993855059225374e-09,
+            "mean_error_over_reference_mean": 1.0427441390997154e-10,
+            "worst_point_index": 16,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 2.434969904889417e-08,
+            "mean_error_over_reference_mean": 2.925904995291687e-09,
+            "worst_point_index": 18,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 2.4349699318583484e-08,
+            "mean_error_over_reference_mean": 2.9259051942791192e-09,
+            "worst_point_index": 18,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 4.440892098500626e-16,
+            "worst_point_index": 2,
+            "pass": true
+          }
+        ],
+        "ion_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 9.66178687211662e-10,
+            "mean_error_over_reference_mean": 9.16400194910328e-11,
+            "worst_point_index": 16,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 3.0700410860268666e-08,
+            "mean_error_over_reference_mean": 3.6890184435216175e-09,
+            "worst_point_index": 18,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 3.0700410735667294e-08,
+            "mean_error_over_reference_mean": 3.6890185099843778e-09,
+            "worst_point_index": 18,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 4.440892098500626e-16,
+            "worst_point_index": 10,
+            "pass": true
+          }
+        ]
+      },
+      "scan8192_vs16384": {
+        "none": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 5.375269112017398e-16,
+            "mean_error_over_reference_mean": 1.919738968577642e-17,
+            "worst_point_index": 5,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 4.808239930062415e-16,
+            "mean_error_over_reference_mean": 1.5264253746229888e-17,
+            "worst_point_index": 3,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 4.164817540240499e-16,
+            "mean_error_over_reference_mean": 2.6443285969780944e-17,
+            "worst_point_index": 15,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 2.220446049250313e-16,
+            "worst_point_index": 19,
+            "pass": true
+          }
+        ],
+        "vapor_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 6.11635444514611e-16,
+            "mean_error_over_reference_mean": 2.184412301837896e-17,
+            "worst_point_index": 5,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 4.808239930062415e-16,
+            "mean_error_over_reference_mean": 1.5264253746229888e-17,
+            "worst_point_index": 3,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 4.164817540240499e-16,
+            "mean_error_over_reference_mean": 2.6443285969780944e-17,
+            "worst_point_index": 15,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 1.9984014443252818e-15,
+            "worst_point_index": 10,
+            "pass": true
+          }
+        ],
+        "ion_only": [
+          {
+            "quantity": "net_atoms_m2",
+            "max_error_over_reference_mean": 5.375269112017398e-16,
+            "mean_error_over_reference_mean": 1.919738968577642e-17,
+            "worst_point_index": 5,
+            "pass": true
+          },
+          {
+            "quantity": "ion_fluence_m2",
+            "max_error_over_reference_mean": 1.4145343654246181e-15,
+            "mean_error_over_reference_mean": 1.683969482648355e-16,
+            "worst_point_index": 9,
+            "pass": true
+          },
+          {
+            "quantity": "incident_energy_J_m2",
+            "max_error_over_reference_mean": 1.4002813318289727e-15,
+            "mean_error_over_reference_mean": 1.208576149495244e-16,
+            "worst_point_index": 9,
+            "pass": true
+          },
+          {
+            "quantity": "ion_only_s",
+            "max_abs_error_s": 2.220446049250313e-16,
+            "worst_point_index": 7,
+            "pass": true
+          }
+        ]
+      },
+      "midpoint": [
+        {
+          "steps": 2048,
+          "comparison": {
+            "none": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.00044051343062865547,
+                "mean_error_over_reference_mean": 0.0004228533747219032,
+                "worst_point_index": 12,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 8.313198426170168e-07,
+                "mean_error_over_reference_mean": 2.2957384650578573e-07,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 8.313198425370652e-07,
+                "mean_error_over_reference_mean": 2.2957384662660928e-07,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0025390625000003553,
+                "worst_point_index": 19,
+                "pass": true
+              }
+            ],
+            "vapor_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.0012599924205756584,
+                "mean_error_over_reference_mean": 0.00039340356266424735,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 8.313198426170168e-07,
+                "mean_error_over_reference_mean": 2.2957384650578573e-07,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 8.313198425370652e-07,
+                "mean_error_over_reference_mean": 2.2957384662660928e-07,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.004922019103104525,
+                "worst_point_index": 17,
+                "pass": false
+              }
+            ],
+            "ion_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.00044051343062865547,
+                "mean_error_over_reference_mean": 0.0004228533747219032,
+                "worst_point_index": 12,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 0.002491992512697276,
+                "mean_error_over_reference_mean": 9.99580442217318e-05,
+                "worst_point_index": 19,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 0.0024919925126971657,
+                "mean_error_over_reference_mean": 9.995804422170989e-05,
+                "worst_point_index": 19,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.005436976305645658,
+                "worst_point_index": 1,
+                "pass": false
+              }
+            ]
+          },
+          "pass": false
+        },
+        {
+          "steps": 8192,
+          "comparison": {
+            "none": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 2.2465184499108922e-05,
+                "mean_error_over_reference_mean": 8.581290436810813e-06,
+                "worst_point_index": 14,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 5.195650976344181e-08,
+                "mean_error_over_reference_mean": 1.4348061875971846e-08,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 5.195651015964595e-08,
+                "mean_error_over_reference_mean": 1.4348062075379372e-08,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0001342773437500444,
+                "worst_point_index": 0,
+                "pass": true
+              }
+            ],
+            "vapor_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 0.00021894641991573839,
+                "mean_error_over_reference_mean": 4.422457764729944e-05,
+                "worst_point_index": 13,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 5.195650976344181e-08,
+                "mean_error_over_reference_mean": 1.4348061875971846e-08,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 5.195651015964595e-08,
+                "mean_error_over_reference_mean": 1.4348062075379372e-08,
+                "worst_point_index": 17,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0007871354857360569,
+                "worst_point_index": 10,
+                "pass": true
+              }
+            ],
+            "ion_only": [
+              {
+                "quantity": "net_atoms_m2",
+                "max_error_over_reference_mean": 2.2465184499108922e-05,
+                "mean_error_over_reference_mean": 8.581290436810813e-06,
+                "worst_point_index": 14,
+                "pass": true
+              },
+              {
+                "quantity": "ion_fluence_m2",
+                "max_error_over_reference_mean": 0.0006469920541638668,
+                "mean_error_over_reference_mean": 9.029561148625843e-05,
+                "worst_point_index": 8,
+                "pass": true
+              },
+              {
+                "quantity": "incident_energy_J_m2",
+                "max_error_over_reference_mean": 0.000646992054164382,
+                "mean_error_over_reference_mean": 9.029561148634556e-05,
+                "worst_point_index": 8,
+                "pass": true
+              },
+              {
+                "quantity": "ion_only_s",
+                "max_abs_error_s": 0.0008008166631041647,
+                "worst_point_index": 1,
+                "pass": true
+              }
+            ]
+          },
+          "pass": true
+        }
+      ],
+      "time_status": "converged"
+    }
+  },
+  "space": {
+    "D": {
+      "selected_grid": [
+        18,
+        73,
+        145
+      ],
+      "total_points": 1460,
+      "area_points": 1314,
+      "changes": [
+        {
+          "from_grid": [
+            12,
+            48,
+            72
+          ],
+          "to_grid": [
+            18,
+            73,
+            145
+          ],
+          "comparison": [
+            {
+              "case": "none",
+              "quantity": "h_nm",
+              "relative_mean_delta": 1.4556882333215377e-16,
+              "absolute_cv_delta": 9.107298248878237e-18,
+              "absolute_sample_pv_delta": 1.579292959377407e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "net_atoms_m2",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 1.0408340855860843e-17,
+              "absolute_sample_pv_delta": 1.5792929593845192e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "ion_fluence_m2",
+              "relative_mean_delta": 6.584668100679457e-15,
+              "absolute_cv_delta": 3.400058012914542e-15,
+              "absolute_sample_pv_delta": 4.5734216949644413e-07,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "incident_energy_J_m2",
+              "relative_mean_delta": 6.538193049387991e-15,
+              "absolute_cv_delta": 3.406996906818449e-15,
+              "absolute_sample_pv_delta": 4.573421691911328e-07,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "ion_to_net_atom_ratio",
+              "relative_mean_delta": 6.242239016312298e-15,
+              "absolute_cv_delta": 3.226585665316861e-15,
+              "absolute_sample_pv_delta": 7.557229625526629e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "eV_per_net_atom",
+              "relative_mean_delta": 6.4600533139027686e-15,
+              "absolute_cv_delta": 3.226585665316861e-15,
+              "absolute_sample_pv_delta": 7.55722962553218e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "ion_only_s",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 3.5885543631352254e-19,
+              "absolute_sample_pv_delta": 1.7080354225002417e-16,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "h_nm",
+              "relative_mean_delta": 0.0001301792542362166,
+              "absolute_cv_delta": 1.656010668588115e-05,
+              "absolute_sample_pv_delta": 7.155761616883805e-05,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "net_atoms_m2",
+              "relative_mean_delta": 0.0001301792542363099,
+              "absolute_cv_delta": 1.6560106685908904e-05,
+              "absolute_sample_pv_delta": 7.155761616878253e-05,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "ion_fluence_m2",
+              "relative_mean_delta": 6.584668100679457e-15,
+              "absolute_cv_delta": 3.400058012914542e-15,
+              "absolute_sample_pv_delta": 4.5734216949644413e-07,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "incident_energy_J_m2",
+              "relative_mean_delta": 6.538193049387991e-15,
+              "absolute_cv_delta": 3.406996906818449e-15,
+              "absolute_sample_pv_delta": 4.573421691911328e-07,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "ion_to_net_atom_ratio",
+              "relative_mean_delta": 0.00012847599032644953,
+              "absolute_cv_delta": 2.9008771422547874e-05,
+              "absolute_sample_pv_delta": 8.862999069048083e-05,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "eV_per_net_atom",
+              "relative_mean_delta": 0.00012847599032657866,
+              "absolute_cv_delta": 2.9008771422561752e-05,
+              "absolute_sample_pv_delta": 8.862999069042532e-05,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "ion_only_s",
+              "relative_mean_delta": 0.00023215794500118213,
+              "absolute_cv_delta": 7.703139101089551e-06,
+              "absolute_sample_pv_delta": 9.067089674574813e-05,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "h_nm",
+              "relative_mean_delta": 1.4556882333215377e-16,
+              "absolute_cv_delta": 9.107298248878237e-18,
+              "absolute_sample_pv_delta": 1.579292959377407e-05,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "net_atoms_m2",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 1.0408340855860843e-17,
+              "absolute_sample_pv_delta": 1.5792929593845192e-05,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "ion_fluence_m2",
+              "relative_mean_delta": 0.00014323753661994832,
+              "absolute_cv_delta": 6.033521569225042e-05,
+              "absolute_sample_pv_delta": 0.0014444970323566064,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "incident_energy_J_m2",
+              "relative_mean_delta": 0.00014323753661941646,
+              "absolute_cv_delta": 6.03352156922643e-05,
+              "absolute_sample_pv_delta": 0.0014444970323575501,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "ion_to_net_atom_ratio",
+              "relative_mean_delta": 0.0001430262250121191,
+              "absolute_cv_delta": 6.200927639736509e-05,
+              "absolute_sample_pv_delta": 0.0018241311642599456,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "eV_per_net_atom",
+              "relative_mean_delta": 0.0001430262250119869,
+              "absolute_cv_delta": 6.200927639736509e-05,
+              "absolute_sample_pv_delta": 0.001824131164260001,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "ion_only_s",
+              "relative_mean_delta": 6.870291558903947e-05,
+              "absolute_cv_delta": 0.00010625197396504915,
+              "absolute_sample_pv_delta": 0.00048553726376143747,
+              "pass": true
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "status": "converged_on_sampled_metrics",
+      "continuous_extrema": "not certified"
+    },
+    "C": {
+      "selected_grid": [
+        18,
+        73,
+        145
+      ],
+      "total_points": 1460,
+      "area_points": 1314,
+      "changes": [
+        {
+          "from_grid": [
+            12,
+            48,
+            72
+          ],
+          "to_grid": [
+            18,
+            73,
+            145
+          ],
+          "comparison": [
+            {
+              "case": "none",
+              "quantity": "h_nm",
+              "relative_mean_delta": 1.4556882333215377e-16,
+              "absolute_cv_delta": 6.071532165918825e-18,
+              "absolute_sample_pv_delta": 1.2830512694819024e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "net_atoms_m2",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 7.37257477290143e-18,
+              "absolute_sample_pv_delta": 1.2830512694860657e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "ion_fluence_m2",
+              "relative_mean_delta": 1.606016609921799e-16,
+              "absolute_cv_delta": 0.0,
+              "absolute_sample_pv_delta": 7.399402397467725e-07,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "incident_energy_J_m2",
+              "relative_mean_delta": 1.3911049041250872e-16,
+              "absolute_cv_delta": 3.469446951953614e-17,
+              "absolute_sample_pv_delta": 7.399402398022836e-07,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "ion_to_net_atom_ratio",
+              "relative_mean_delta": 1.3281123398063074e-16,
+              "absolute_cv_delta": 2.42861286636753e-17,
+              "absolute_sample_pv_delta": 4.1134575138226936e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "eV_per_net_atom",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 3.122502256758253e-17,
+              "absolute_sample_pv_delta": 4.113457513815755e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "ion_only_s",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 7.723316104333037e-18,
+              "absolute_sample_pv_delta": 1.7080354225002417e-16,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "h_nm",
+              "relative_mean_delta": 4.087494091944782e-05,
+              "absolute_cv_delta": 3.1554470977440685e-05,
+              "absolute_sample_pv_delta": 0.0003136282864860118,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "net_atoms_m2",
+              "relative_mean_delta": 4.087494091962294e-05,
+              "absolute_cv_delta": 3.1554470977440685e-05,
+              "absolute_sample_pv_delta": 0.0003136282864859563,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "ion_fluence_m2",
+              "relative_mean_delta": 1.606016609921799e-16,
+              "absolute_cv_delta": 0.0,
+              "absolute_sample_pv_delta": 7.399402397467725e-07,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "incident_energy_J_m2",
+              "relative_mean_delta": 1.3911049041250872e-16,
+              "absolute_cv_delta": 3.469446951953614e-17,
+              "absolute_sample_pv_delta": 7.399402398022836e-07,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "ion_to_net_atom_ratio",
+              "relative_mean_delta": 3.293221827726492e-05,
+              "absolute_cv_delta": 5.1580242339976934e-05,
+              "absolute_sample_pv_delta": 2.5199709124790193e-05,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "eV_per_net_atom",
+              "relative_mean_delta": 3.293221827743095e-05,
+              "absolute_cv_delta": 5.158024234000469e-05,
+              "absolute_sample_pv_delta": 2.519970912473468e-05,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "ion_only_s",
+              "relative_mean_delta": 7.20784175615392e-05,
+              "absolute_cv_delta": 6.612991917492872e-05,
+              "absolute_sample_pv_delta": 9.31453776786828e-06,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "h_nm",
+              "relative_mean_delta": 1.4556882333215377e-16,
+              "absolute_cv_delta": 6.071532165918825e-18,
+              "absolute_sample_pv_delta": 1.2830512694819024e-05,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "net_atoms_m2",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 7.37257477290143e-18,
+              "absolute_sample_pv_delta": 1.2830512694860657e-05,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "ion_fluence_m2",
+              "relative_mean_delta": 6.584308683951758e-05,
+              "absolute_cv_delta": 1.7262521984515167e-05,
+              "absolute_sample_pv_delta": 0.0001764871241965449,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "incident_energy_J_m2",
+              "relative_mean_delta": 6.584308683927558e-05,
+              "absolute_cv_delta": 1.7262521984529045e-05,
+              "absolute_sample_pv_delta": 0.0001764871241985988,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "ion_to_net_atom_ratio",
+              "relative_mean_delta": 6.564671740565333e-05,
+              "absolute_cv_delta": 1.5436999258960915e-05,
+              "absolute_sample_pv_delta": 4.07235943200579e-05,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "eV_per_net_atom",
+              "relative_mean_delta": 6.56467174057525e-05,
+              "absolute_cv_delta": 1.5436999258960915e-05,
+              "absolute_sample_pv_delta": 4.072359432011341e-05,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "ion_only_s",
+              "relative_mean_delta": 2.019746090489847e-05,
+              "absolute_cv_delta": 5.256208513648719e-05,
+              "absolute_sample_pv_delta": 1.3908588043565207e-05,
+              "pass": true
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "status": "converged_on_sampled_metrics",
+      "continuous_extrema": "not certified"
+    },
+    "I": {
+      "selected_grid": [
+        18,
+        73,
+        145
+      ],
+      "total_points": 1460,
+      "area_points": 1314,
+      "changes": [
+        {
+          "from_grid": [
+            12,
+            48,
+            72
+          ],
+          "to_grid": [
+            18,
+            73,
+            145
+          ],
+          "comparison": [
+            {
+              "case": "none",
+              "quantity": "h_nm",
+              "relative_mean_delta": 1.4556882333215377e-16,
+              "absolute_cv_delta": 3.2959746043559335e-17,
+              "absolute_sample_pv_delta": 3.605287259011991e-07,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "net_atoms_m2",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 2.949029909160572e-17,
+              "absolute_sample_pv_delta": 3.6052872586650464e-07,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "ion_fluence_m2",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 0.0,
+              "absolute_sample_pv_delta": 1.6025709271422217e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "incident_energy_J_m2",
+              "relative_mean_delta": 1.391104904125084e-16,
+              "absolute_cv_delta": 2.7755575615628914e-17,
+              "absolute_sample_pv_delta": 1.6025709271672017e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "ion_to_net_atom_ratio",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 1.3877787807814457e-17,
+              "absolute_sample_pv_delta": 1.2153337420856003e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "eV_per_net_atom",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 1.3877787807814457e-17,
+              "absolute_sample_pv_delta": 1.215333742074498e-05,
+              "pass": true
+            },
+            {
+              "case": "none",
+              "quantity": "ion_only_s",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 9.770679772176684e-18,
+              "absolute_sample_pv_delta": 1.7080354225002417e-16,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "h_nm",
+              "relative_mean_delta": 0.00012096422637511759,
+              "absolute_cv_delta": 5.616315221428775e-05,
+              "absolute_sample_pv_delta": 0.00061534269055738,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "net_atoms_m2",
+              "relative_mean_delta": 0.00012096422637507503,
+              "absolute_cv_delta": 5.6163152214301626e-05,
+              "absolute_sample_pv_delta": 0.0006153426905571024,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "ion_fluence_m2",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 0.0,
+              "absolute_sample_pv_delta": 1.6025709271422217e-05,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "incident_energy_J_m2",
+              "relative_mean_delta": 1.391104904125084e-16,
+              "absolute_cv_delta": 2.7755575615628914e-17,
+              "absolute_sample_pv_delta": 1.6025709271672017e-05,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "ion_to_net_atom_ratio",
+              "relative_mean_delta": 0.00012540927338338209,
+              "absolute_cv_delta": 4.9114431258087676e-05,
+              "absolute_sample_pv_delta": 0.0010970535758253186,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "eV_per_net_atom",
+              "relative_mean_delta": 0.00012540927338334492,
+              "absolute_cv_delta": 4.9114431258094615e-05,
+              "absolute_sample_pv_delta": 0.001097053575825374,
+              "pass": true
+            },
+            {
+              "case": "vapor_only",
+              "quantity": "ion_only_s",
+              "relative_mean_delta": 0.00021804433183148563,
+              "absolute_cv_delta": 0.00015702493501439097,
+              "absolute_sample_pv_delta": 0.0007764698346603705,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "h_nm",
+              "relative_mean_delta": 1.4556882333215377e-16,
+              "absolute_cv_delta": 3.2959746043559335e-17,
+              "absolute_sample_pv_delta": 3.605287259011991e-07,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "net_atoms_m2",
+              "relative_mean_delta": 0.0,
+              "absolute_cv_delta": 2.949029909160572e-17,
+              "absolute_sample_pv_delta": 3.6052872586650464e-07,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "ion_fluence_m2",
+              "relative_mean_delta": 0.0001082279352888925,
+              "absolute_cv_delta": 0.00017713584939262061,
+              "absolute_sample_pv_delta": 0.0042303201353423026,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "incident_energy_J_m2",
+              "relative_mean_delta": 0.00010822793528898663,
+              "absolute_cv_delta": 0.00017713584939257898,
+              "absolute_sample_pv_delta": 0.00423032013534097,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "ion_to_net_atom_ratio",
+              "relative_mean_delta": 0.00011074261271967234,
+              "absolute_cv_delta": 0.00016514253035999904,
+              "absolute_sample_pv_delta": 0.0029411719516528323,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "eV_per_net_atom",
+              "relative_mean_delta": 0.00011074261271926232,
+              "absolute_cv_delta": 0.00016514253035994353,
+              "absolute_sample_pv_delta": 0.0029411719516526658,
+              "pass": true
+            },
+            {
+              "case": "ion_only",
+              "quantity": "ion_only_s",
+              "relative_mean_delta": 6.092185187677901e-05,
+              "absolute_cv_delta": 2.9271920261475515e-05,
+              "absolute_sample_pv_delta": 0.002136143625120712,
+              "pass": true
+            }
+          ],
+          "pass": true
+        }
+      ],
+      "status": "converged_on_sampled_metrics",
+      "continuous_extrema": "not certified"
+    }
+  },
+  "counts": [
+    {
+      "scan_intervals": 8192,
+      "root_count": 759,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1245787629187163e-09,
+      "pose_scan_evaluations": 172053,
+      "channel_flux_evaluations": 39456,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 759,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1245787629187163e-09,
+      "pose_scan_evaluations": 172053,
+      "channel_flux_evaluations": 78912,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 16384,
+      "root_count": 759,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1245787629187163e-09,
+      "pose_scan_evaluations": 344085,
+      "channel_flux_evaluations": 78912,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "midpoint_channel_flux_evaluations": 258048
+    },
+    {
+      "midpoint_channel_flux_evaluations": 1032192
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 23258,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1245835021832526e-09,
+      "pose_scan_evaluations": 5317257,
+      "channel_flux_evaluations": 2419680,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 52294,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1245831448302166e-09,
+      "pose_scan_evaluations": 11961780,
+      "channel_flux_evaluations": 5440704,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 745,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1776925124283864e-09,
+      "pose_scan_evaluations": 172053,
+      "channel_flux_evaluations": 38784,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 745,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1776925124283864e-09,
+      "pose_scan_evaluations": 172053,
+      "channel_flux_evaluations": 77568,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 16384,
+      "root_count": 745,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1776925124283864e-09,
+      "pose_scan_evaluations": 344085,
+      "channel_flux_evaluations": 77568,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "midpoint_channel_flux_evaluations": 258048
+    },
+    {
+      "midpoint_channel_flux_evaluations": 1032192
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 22898,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.2308101615964304e-09,
+      "pose_scan_evaluations": 5317257,
+      "channel_flux_evaluations": 2385120,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 51511,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.230810792168414e-09,
+      "pose_scan_evaluations": 11961780,
+      "channel_flux_evaluations": 5365536,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 720,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 1.965237590717539e-09,
+      "pose_scan_evaluations": 172053,
+      "channel_flux_evaluations": 37584,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 720,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 1.965237590717539e-09,
+      "pose_scan_evaluations": 172053,
+      "channel_flux_evaluations": 75168,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 16384,
+      "root_count": 720,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 1.965237590717539e-09,
+      "pose_scan_evaluations": 344085,
+      "channel_flux_evaluations": 75168,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "midpoint_channel_flux_evaluations": 258048
+    },
+    {
+      "midpoint_channel_flux_evaluations": 1032192
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 22249,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 1.9652395683023016e-09,
+      "pose_scan_evaluations": 5317257,
+      "channel_flux_evaluations": 2322816,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 50054,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 1.9652400323408314e-09,
+      "pose_scan_evaluations": 11961780,
+      "channel_flux_evaluations": 5225664,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 4498,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 8.323697044121392e-10,
+      "pose_scan_evaluations": 5317257,
+      "channel_flux_evaluations": 556416,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 23251,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.0714691663370477e-09,
+      "pose_scan_evaluations": 5317257,
+      "channel_flux_evaluations": 2419008,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 23258,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1245835021832526e-09,
+      "pose_scan_evaluations": 5317257,
+      "channel_flux_evaluations": 2419680,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    },
+    {
+      "scan_intervals": 8192,
+      "root_count": 52294,
+      "ambiguous_tiny_brackets": 0,
+      "root_tol_s": 1e-10,
+      "max_point_root_bracket_total_s": 2.1245831448302166e-09,
+      "pose_scan_evaluations": 11961780,
+      "channel_flux_evaluations": 1813568,
+      "subdivision_count": 0,
+      "bound_status": "analytic exact-arithmetic root bracketing bounds; floating-point implementation not interval-certified"
+    }
+  ],
+  "run": {
+    "budget_work_units": 150000000,
+    "actual_counted_work_units": 116633267,
+    "definition": "one point-time pose scan plus one flux evaluation per channel; bisection scalar trig evaluations are separately counted as subdivisions, not hidden large arrays",
+    "within_budget": true,
+    "elapsed_s": 24.408633044000453,
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "time_all_pass": true,
+    "space_all_pass": true,
+    "source_figure_gate": "C/I unsupported, see sources/access_status.json"
+  }
+}

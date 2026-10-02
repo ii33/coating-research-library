@@ -13,7 +13,8 @@
 - T08：73份精确允许文件；发布控制清单SHA-256 `6d0128b90679ef76e6b3bb9a59a88992ac1f72551647e00cbb556a2e05db6653`（控制清单自身不上传）
 - T09：81份清单内文件及清单自身；`data/deliverable_manifest.json` SHA-256 `f375623abea029b72bc5ccfa1ac80a07099fde6af28c406794925057483ac441`
 - T10：82份清单内文件及清单自身；`release_manifest.json` SHA-256 `fe064466972292515d4fcf8b0449b0ab54339b6c779fb555830739385daff72f`
-- 阶段边界：T01–T10第一轮优先公共资料、理论和合成基础已覆盖，T01第二轮有界拓扑与双覆盖接口研究进行中；正式完整审查、实机校准和生产资格未完成
+- T01第二轮：46项允许文件及读者哈希清单；reader_manifest.json SHA-256 `4336e9cf78e9f71276fe6ef13b4c35e48a57a0955fd235798cbe94e8cee0aa23`
+- 阶段边界：首轮基础覆盖完成；T01第二轮有限接口带源图与数值覆盖缺口移交，T02第二轮双覆盖误差预算进行中；正式审查与实机资格未完成
 
 ## 不纳入仓库的内容
 
@@ -68,3 +69,9 @@ T09按81项原创文件清单及清单自身发布，排除整个originals、qa_
 T10按release_manifest.json精确允许列表及清单自身发布，全部sources/originals、NASA原文/全文提取、缓存和ZIP排除。最终测试/来源检查记录保留为审计证据。有限关键数值独立复核通过，不等同指定完整外模型链、实际设备校准或生产资格。T01第二轮有界拓扑与双覆盖接口研究已启动，尚未冻结的扩展文件不纳入本次快照。
 
 同次发布首轮有限复核与成熟度汇总：FIRST_SWEEP_REVIEW_DRAFT.md，SHA256 de68d0ac6ad78e4099202e863c4929a1681ebb950ffbab3d4de826bfa8a943aa；不补签指定完整外模型审查链。
+
+## T01第二轮冻结增量
+
+只发布 `01_machine_structures/round2_topology_alignment` 47文件，源ZIP SHA-256 `f13687c8692c389bfda95b6e82d372eb0aa6bf6ff281a1fada60f5dea5551aa8`；ZIP本身不上传。C/I原图准入unsupported、完整最终网格额外时间加密/连续极值/实机未完成。仅固定审计日志保留；原文、缓存和未来未冻结增量排除。
+
+复核：`python -B 01_machine_structures/round2_topology_alignment/verification/build_reader.py --check`。此检查含24项单元测试，不会重跑全部研究网格。
