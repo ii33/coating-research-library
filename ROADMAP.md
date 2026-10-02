@@ -100,4 +100,4 @@
 
 ## 当前下一步
 
-T01–T08首轮优先研究已形成冻结基线。T08完成9章、16来源、三膜系五路线对照、4图、36测试和28包检查，见[验收记录](08_stack_optimization_algorithms/reviews/ROUND1_ACCEPTANCE.md)。B03耗尽预算未收敛且未达教学规格；needle退化、欠采样和代理误判等失败保留，不把研究完成写成算法普遍成功。下一步按[T09移交](08_stack_optimization_algorithms/T09_HANDOFF.md)研究生产标准、环境与损伤试验；真实材料/设备未验证，完整指定审查保持pending，T10排队。
+T01–T09首轮优先公开研究已形成冻结基线。T09包括9章、62标准映射、66来源、15试验矩阵、12根因矩阵及28项单元/合成演示测试，见[范围验收记录](09_standards_and_qualification/reviews/acceptance.json)。下一步按[T10移交](09_standards_and_qualification/T10_HANDOFF.md)优先研究考夫曼离子源。付费全文、GJB现行证据、真实样品与实验室能力仍有缺口；没有产品合格、认证、完整标准符合性或实际试验通过的声明。

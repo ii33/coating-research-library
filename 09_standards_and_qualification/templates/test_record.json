@@ -1,0 +1,88 @@
+{
+  "schema_version": "T09-r1-v0.1.0",
+  "record_id": null,
+  "test_id": null,
+  "product_id": null,
+  "lot_id": null,
+  "run_id": null,
+  "substrate_material_grade_batch": null,
+  "coating_recipe_revision": null,
+  "surface_id": null,
+  "position_map": null,
+  "real_or_synthetic": null,
+  "method": {
+    "standard_id": null,
+    "edition": null,
+    "amendment": null,
+    "controlled_copy": null,
+    "clause": null,
+    "procedure": null,
+    "deviations": [],
+    "approved_by": null
+  },
+  "specimen": {
+    "sampling_plan": null,
+    "preparation": null,
+    "cleaning_history": null,
+    "exposure_history": null,
+    "storage_and_packaging": null
+  },
+  "apparatus": {
+    "instrument_id": null,
+    "calibration_id": null,
+    "range": null,
+    "capability_record": null
+  },
+  "conditions": {
+    "setpoints": null,
+    "measured_timeline_file": null,
+    "geometry": null,
+    "wavelength_grid": null,
+    "spectral_bandwidth": null,
+    "aoi": null,
+    "polarization": null,
+    "collection_geometry": null,
+    "spot_definition": null,
+    "environment": null,
+    "recovery": null
+  },
+  "results": {
+    "raw_before": null,
+    "raw_after": null,
+    "images_before": null,
+    "images_after": null,
+    "metric_name": null,
+    "units": null,
+    "unrounded_value": null,
+    "standard_uncertainty": null,
+    "coverage_factor_or_interval_method": null,
+    "expanded_uncertainty": null,
+    "covariance_assumptions": null,
+    "detection_limit": null
+  },
+  "decision": {
+    "specification_source": null,
+    "limits": null,
+    "rule_id": null,
+    "outcome": "not_evaluated",
+    "invalid_test_reason": null,
+    "retest_link": null,
+    "authorized_signer": null
+  },
+  "lidt_if_applicable": {
+    "wavelength": null,
+    "pulse_duration_definition": null,
+    "repetition_rate": null,
+    "energy_trace": null,
+    "spot_area_convention": null,
+    "aoi_reference_plane": null,
+    "site_map": null,
+    "pulses_per_site": null,
+    "conditioning": null,
+    "damage_detection_definition": null,
+    "site_damage_records": null,
+    "statistical_model": null,
+    "confidence_level": null
+  },
+  "real_compliance_statement": false
+}

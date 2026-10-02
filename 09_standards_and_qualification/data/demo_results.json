@@ -1,0 +1,137 @@
+{
+  "version": "T09-r1-v0.1.0",
+  "data_class": "synthetic_demonstration",
+  "real_compliance_statement": false,
+  "numerical_assumptions": "All values/thresholds/example n are synthetic, not normative. iid binomial; closed interval demo; no covariance except stated.",
+  "samples": [
+    {
+      "sample": "SYNTH-A",
+      "before": 0.956,
+      "after": 0.95,
+      "u_before": 0.002,
+      "u_after": 0.002,
+      "k_demo": 2,
+      "correlation_assumed": 0,
+      "delta": -0.006000000000000005,
+      "u_delta": 0.00282842712474619,
+      "U_delta": 0.00565685424949238,
+      "post_rule": "accept_under_demo_rule",
+      "change_rule": "indeterminate_under_demo_rule",
+      "source": "original_synthetic_not_standard_requirement"
+    },
+    {
+      "sample": "SYNTH-B",
+      "before": 0.95,
+      "after": 0.942,
+      "u_before": 0.002,
+      "u_after": 0.002,
+      "k_demo": 2,
+      "correlation_assumed": 0,
+      "delta": -0.008000000000000007,
+      "u_delta": 0.00282842712474619,
+      "U_delta": 0.00565685424949238,
+      "post_rule": "indeterminate_under_demo_rule",
+      "change_rule": "indeterminate_under_demo_rule",
+      "source": "original_synthetic_not_standard_requirement"
+    },
+    {
+      "sample": "SYNTH-C",
+      "before": 0.949,
+      "after": 0.93,
+      "u_before": 0.002,
+      "u_after": 0.002,
+      "k_demo": 2,
+      "correlation_assumed": 0,
+      "delta": -0.018999999999999906,
+      "u_delta": 0.00282842712474619,
+      "U_delta": 0.00565685424949238,
+      "post_rule": "reject_under_demo_rule",
+      "change_rule": "reject_under_demo_rule",
+      "source": "original_synthetic_not_standard_requirement"
+    }
+  ],
+  "correlation_demo": [
+    {
+      "rho": 0,
+      "u_delta": 0.00282842712474619
+    },
+    {
+      "rho": 0.75,
+      "u_delta": 0.0014142135623730948
+    },
+    {
+      "rho": 1,
+      "u_delta": 0.0
+    },
+    {
+      "rho": -1,
+      "u_delta": 0.004
+    }
+  ],
+  "drift_demo": {
+    "sample_delta": -0.008000000000000007,
+    "reference_delta": -0.0020000000000000018,
+    "corrected_delta": -0.006000000000000005,
+    "u_corrected": 0.0031622776601683794,
+    "correlations_between_sample_and_reference_assumed_zero": true
+  },
+  "zero_failure": [
+    {
+      "n": 10,
+      "confidence": 0.95,
+      "upper_probability": 0.2588655508930522
+    },
+    {
+      "n": 30,
+      "confidence": 0.95,
+      "upper_probability": 0.09503385285530411
+    },
+    {
+      "n": 100,
+      "confidence": 0.95,
+      "upper_probability": 0.029513049607039925
+    },
+    {
+      "n": 299,
+      "confidence": 0.95,
+      "upper_probability": 0.009969146792899269
+    }
+  ],
+  "minimum_n_for_p01_at_conf95": 299,
+  "grid_demo": {
+    "lower_limit": 0.94,
+    "coarse_step_nm": 10,
+    "fine_step_nm": 0.1,
+    "coarse_min": 0.9549954138697329,
+    "coarse_at_nm": 1040,
+    "fine_min": 0.9279999999999999,
+    "fine_at_nm": 1045.0,
+    "coarse_nominal_pass": true,
+    "fine_nominal_pass": false,
+    "claim": "illustrates missed narrow feature; no universal step prescription"
+  },
+  "plan_template_gaps": [
+    "plan.product_id",
+    "plan.contract_id",
+    "plan.drawing_revision",
+    "plan.lot_definition",
+    "plan.laboratory_id",
+    "plan.approval_record",
+    "Q01.applicability",
+    "Q02.applicability",
+    "Q03.applicability",
+    "Q04.applicability",
+    "Q05.applicability",
+    "Q06.applicability",
+    "Q07.applicability",
+    "Q08.applicability",
+    "Q09.applicability",
+    "Q10.applicability",
+    "Q11.applicability",
+    "Q12.applicability",
+    "Q13.applicability",
+    "Q14.applicability",
+    "Q15.applicability"
+  ],
+  "execution_authorized": false
+}

@@ -1,48 +1,50 @@
-# T09 · 生产标准、环境与损伤试验
+# T09 光学镀膜标准与检验规划
 
-## 来源与状态
+版本：T09-r1-v0.1.0；目录查询日：2026-10-02；状态：ready_for_review。首轮通用资料研究、原创规划与合成数值自检完成，未作真实产品测试、认证或完整标准符合性评定。原始要求定位：00_project/工程科研.txt第13行；承接T08，保持原项目顺序。
 
-- 原文定位：`00_project/工程科研.txt` 第13行
-- 顺序：第9个大项目；第一轮
-- 当前状态：仅规划，尚未启动研究
-- 前置阶段：T08首轮验收完成
-- 算法/数值验证要求：本规划侧重资料与证据；若后续加入定量模型，追加算法与数值验收
+## 先看结论
 
-## 首轮范围
+“按某标准测试”不足以形成可放行结论：必须把版本/方法、严酷度、产品阈值、抽样和不确定度决策规则分别写清。目录已核验不表示付费全文已读；实验室认可也要匹配具体方法和能力范围。
 
-规划国军标、美军标、国标、美标的适用性检索，环境试验和损伤试验及针对标准的工艺优化。原文“损伤实验”的具体类型待确认，不自动等同某一种损伤试验。
+本轮发现的关键版本变化包括ISO21254-1:2025、ISO11551:2026、ISO2859-1:2026、ASTM B117-26a及GB/T26332.4-2026。GB/T26332.2/.3-2026已发布但2027-01-01才实施；查询日2015版仍现行。MIL-C-675/14806/48497的所获官方证据为Inactive for New Design，不能泛称现行、取消或被ISO正式替代。缓存/来源冲突均保留，具体见第2章和来源摘要。
 
-## 优先顺序
+## 手册导航
 
-原文未明确子优先项。先完成本README界定的核心范围；不得自行把新增分支当作用户指定优先任务。
+1. [范围与合同基线](reports/01_scope_and_contract.md)
+2. [标准目录与版本过渡](reports/02_standards_lifecycle_and_mapping.md)
+3. [光学与薄膜计量](reports/03_optical_metrology_and_uncertainty.md)
+4. [环境鉴定规划](reports/04_environmental_qualification_plan.md)
+5. [附着 耐磨 清洗](reports/05_adhesion_abrasion_cleaning.md)
+6. [激光损伤条件与统计](reports/06_laser_damage_test_contract.md)
+7. [判定 抽样与合成演示](reports/07_decision_rules_sampling_and_demo.md)
+8. [根因与工艺验证](reports/08_root_cause_and_process_validation.md)
+9. [执行门槛与证据闭合](reports/09_execution_gates_and_evidence.md)
 
-## 交付物
+## 数据与复用
 
-- 标准目录、发布机构、版次/日期、替代关系和适用性矩阵
-- 条款到样品、设备、程序、判据、记录的映射
-- 环境/损伤试验方案与工艺改进验证路径
-- 合规缺口、现行状态与采购/授权访问需求
+- [62条标准/指导文件映射](data/standards_map.json)：发布、修改/采用、现行/待实施状态，未知条款与阈值保持null
+- [66条来源索引](reports/00_source_index.md)；[来源登记JSON](data/source_registry.json)
+- [MIL与GB独立目录核对](sources/summaries/official_status_mil_gb.md)；[10项目录冲突](reviews/source_conflicts.json)
+- [15项试验矩阵](templates/test_matrix.csv)；[检验计划模板](templates/qualification_plan.json)
+- [测试记录](templates/test_record.json)；[条款证据表](templates/clause_evidence_map.csv)；[不确定度预算](templates/uncertainty_budget.csv)
+- [12类根因验证矩阵](templates/failure_process_matrix.csv)
+- [合成结果](data/demo_results.json)；[合成测量CSV](data/synthetic_measurements.csv)；[粗网格漏谷示意](figures/synthetic_spectral_sampling.svg)
+- [自查和限制](reviews/SELF_REVIEW.md)；[验收记录](reviews/acceptance.json)；[T10移交](T10_HANDOFF.md)
 
-## 阶段验收标准
+## 离线复现
 
-1. 工程引用前核对发布机构、完整编号、版次/修订/失效状态和适用范围
-2. 只以合法可访问内容判断条款，不能由摘要推断未读条款
-3. 试验、判定与合规结论可追溯到具体条款和产品条件
-4. 标准符合性需要真实验证，不以资料研究替代认证或鉴定
+在本专题目录，使用Python标准库：
 
-共同门槛：关键结论能回溯来源与条件；有可复用结果、未决问题、失效/适用边界及下一阶段接口；审查结论有记录。资料完成、仿真验证、实测验证分开标注。研究范围有限，文献不要求无限穷尽；关键缺口不得隐藏。
+    python models/qualification_demo.py
+    python -m unittest discover -s tests -v
+    python models/check_package.py
 
-## 目录约定
+28项单元/数据检查通过只证明演示与结构按已写规则运行，不能证明标准完整实现。当前模板故意缺少产品和授权方法输入，会阻止结构检查通过；模板不得直接作为执行批准。
 
-- `reports/`：分章节报告与有版本号的阶段成果
-- `sources/summaries/`：逐来源摘要、原文定位、限制与证据等级
-- `sources/originals/`：仅保存已核对合法存档权利的原文
-- `data/`：可复用参数、数据表与来源/单位/不确定度
-- `reviews/`：阶段验收、纠错与未决问题处理
-- 需要模型、实验、benchmark时，在本专题下新增对应目录，并更新共享索引
+需要从已人工核对的来源数据重建目录时，依次运行build_research_assets.py、merge_source_assets.py、enrich_metadata.py；重建空模板运行build_templates.py。这些是离线排版/结构脚本，不会联网更新标准状态，不会操作设备。重新生成后须再次执行演示、自检及哈希生成。
 
-## 首轮之后的扩展候选
+## 边界
 
-- 新增客户、地区、产品或标准体系需求
+本库覆盖一般光学制造质量，未涉及特定武器系统的设计、适配或性能优化。GJB未能获得足够公开官方目录证据，不猜编号，也不据此声称不存在。标准全文、客户合同、真实样品、设备校准和实验室方法能力尚未获得；实际生产和放行需另行闭合。
 
-只有所有十个大项目首轮均验收后才进入此扩展列表。与当前专题无关的后续研究不可并行抢先启动。
+所有数值示例是合成数据或明确数学定义，非标准严酷度/阈值。无第三方全文存档；不购买、外部咨询、设备操作、产品代码改动或push。原创摘要和报告可分享，第三方原文不得随包分发。全局状态与下一阶段由协调者维护。

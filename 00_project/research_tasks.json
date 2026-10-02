@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T03:01:57.279249+00:00",
+  "updated_at_utc": "2026-10-02T03:27:45.658173+00:00",
   "source_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
   "execution_policy": {
     "major_topics": "serial_original_order",
@@ -697,12 +697,12 @@
         13
       ],
       "round": 1,
-      "state": "starting",
+      "state": "round1_public_theory_evidence_and_planning_scope_complete",
       "depends_on": [
         "T08"
       ],
       "algorithmic": false,
-      "review_status": "pending",
+      "review_status": "28_synthetic_unit_tests_passed_limited_catalogue_check_complete_full_review_and_real_qualification_pending",
       "entry_condition": "T08.round1_bounded_algorithm_research_delivery_complete; designated formal review and real-machine qualification remain disclosed",
       "scope": "规划国军标、美军标、国标、美标的适用性检索，环境试验和损伤试验及针对标准的工艺优化。原文“损伤实验”的具体类型待确认，不自动等同某一种损伤试验。",
       "deliverables": [
@@ -723,15 +723,23 @@
           "sequence": 1,
           "label": "首轮核心范围（原文未细分优先项）",
           "is_explicit_priority": false,
-          "state": "starting",
-          "evidence_paths": [],
-          "acceptance_record": null
+          "state": "round1_public_theory_evidence_and_planning_scope_complete",
+          "evidence_paths": [
+            "09_standards_and_qualification/README.md",
+            "09_standards_and_qualification/data/standards_map.json",
+            "09_standards_and_qualification/templates/test_matrix.csv",
+            "09_standards_and_qualification/data/deliverable_manifest.json"
+          ],
+          "acceptance_record": "09_standards_and_qualification/reviews/acceptance.json"
         }
       ],
       "expansion_round": 2,
       "expansion_backlog": [
         "新增客户、地区、产品或标准体系需求"
-      ]
+      ],
+      "handoff_record": "09_standards_and_qualification/T10_HANDOFF.md",
+      "machine_validation": "not_performed",
+      "production_qualification": "not_performed"
     },
     {
       "id": "T10",
@@ -742,13 +750,13 @@
         14
       ],
       "round": 1,
-      "state": "queued",
+      "state": "starting",
       "depends_on": [
         "T09"
       ],
       "algorithmic": true,
       "review_status": "pending",
-      "entry_condition": "T09.round1_accepted",
+      "entry_condition": "T09.round1_public_theory_evidence_and_planning_scope_complete; designated formal review and real-machine qualification remain disclosed",
       "scope": "优先考夫曼离子源，研究材料、膜系与离子源条件的相互作用，建立按镀膜要求优化参数并通过实验验证的流程。禁止把无工况上下文的参数组合直接作为生产配方。",
       "deliverables": [
         "考夫曼离子源特性与参数定义手册",
@@ -768,7 +776,7 @@
           "sequence": 1,
           "label": "考夫曼离子源",
           "is_explicit_priority": true,
-          "state": "queued",
+          "state": "starting",
           "evidence_paths": [],
           "acceptance_record": null
         }

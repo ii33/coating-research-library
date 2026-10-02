@@ -1,0 +1,16 @@
+test_id,characteristic,candidate_method,sample_object,required_raw_record,confounders,clause,severity,sample_count,acceptance_limits,uncertainty_budget,decision_rule,applicability,approval
+Q01,身份与初始疵病,ISO 10110-7:2017; ISO 14997:2017,成品与见证片有效口径,同位显微/可见度图,照明/样板/观察路线,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q02,厚度及均匀性,适配并验证的物理/光学厚度方法,膜层与位置映射,原始厚度/坐标/拟合残差,nd与d混淆/工具系数,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q03,nk模型,已验证椭偏/分光反演协议,单层标定片及成品,模型/参数相关/原始谱,非唯一/背面/粗糙层,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q04,光谱AOI偏振,ISO 15368:2021; ISO 13697:2006,指定表面或整片,R/T λ-AOI-p原始数据,带宽/NA/背面/重定位,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q05,散射,ISO 13696:2022,适用曲率与波段样品,前后向及角积分范围,镜面排除/颗粒/曲率,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q06,吸收,ISO 11551:2026,实际基片和膜,吸收率/背景/温度模型,基片吸收/相减大数,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q07,应力与面形,受控曲率/波前协议,见证片及实际安装态,曲率/面形/温度,薄膜假设/夹持,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q08,附着,ISO 9211-4:2022; GB/T 26332.4-2026,批准破坏性样品,方法条件/剥离图/界面,胶带批/划切/基片破裂,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q09,摩擦耐磨,ISO 9211-4:2022; GB/T 26332.4-2026,独立或合同指定序列样品,载荷/动作/磨头/后测,磨屑/动作定义/脆性,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q10,清洗耐久,批准材料兼容清洗协议,实际被清洗面,介质/机械对照/前后谱,残留/拖曳颗粒,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q11,水阻湿热,ISO 9022-2:2015+Amd1:2023; GB/T 2423.3-2016; ISO 9211-4:2022,裸片或批准封装,实测温湿/恢复/光谱,凝露与湿度不等同,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q12,温度与温变,ISO 9022-2:2015+Amd1:2023; GB/T 2423.22-2012,自由片与安装态依用途,实际样品温度/面形/裂纹,热滞后/速率/夹持,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q13,盐环境,ISO 9022-4:2014+Amd1:2023; GB/T 2423.17-2024; GB/T 2423.18-2021,有盐暴露用途才选,溶液/沉降/边缘/光谱,盐浸不等盐雾/腐蚀寿命,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q14,激光损伤,ISO 21254-1:2025; ISO 21254-2:2011; ISO 21254-3:2011,有激光能力要求才选,每点能量/脉冲/光斑/终点,统计/污染/检测/conditioning,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD
+Q15,包装储存追踪,批准产品储运/老化协议,实际包装及留样,时效/污染/前后谱,包装放气/留样偏差,TBD,TBD,TBD,TBD,TBD,TBD,TBD,TBD

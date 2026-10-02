@@ -1,0 +1,125 @@
+{
+  "as_of": "2026-10-02",
+  "conflicts": [
+    {
+      "id": "CF01",
+      "subject": "ISO committee catalogue cache versus item stage",
+      "evidence": [
+        "https://www.iso.org/committee/53700/x/catalogue/",
+        "https://www.iso.org/standard/80475.html"
+      ],
+      "observation": "9211-7 catalogue cached 90.20; product page 90.60 with dated 2026-09-03 close of review; other search cache showed later draft stage than cached opened catalogue",
+      "resolution": "record product page Published +90.60; do not convert review stage to withdrawal"
+    },
+    {
+      "id": "CF02",
+      "subject": "ASTM B117 search cache versus current explicit page",
+      "evidence": [
+        "https://store.astm.org/standards/b117",
+        "https://store.astm.org/b0117-26a.html"
+      ],
+      "observation": "search result initially showed B117-26; current explicit version and live family page showed B117-26a Active last updated 2026-09-22",
+      "resolution": "use B117-26a current page, retain historical search discrepancy"
+    },
+    {
+      "id": "CF03",
+      "subject": "ISO publication month versus lifecycle publication day",
+      "evidence": [
+        "https://www.iso.org/standard/43004.html",
+        "https://www.iso.org/standard/66490.html"
+      ],
+      "observation": "catalogue publication month can differ from dated stage60.60 event, e.g. TR21254-4 publication month 2011-09 versus lifecycle 2011-08-25",
+      "resolution": "do not conflate; no inferred global mandatory implementation date"
+    },
+    {
+      "id": "CF04",
+      "subject": "MIL-C-675C",
+      "evidence": [
+        "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=2500",
+        "https://quicksearch.dla.mil/WMX/Default.aspx?token=5730239",
+        "https://quicksearch.dla.mil/Transient/D2D54CA414CB46129B7BC2783B9FAD90.pdf"
+      ],
+      "observation": [
+        "目录将Amendment 3日期列为1986-08-20，Notice 3正文却把1996-10-10与Amendment 3关联；1996-10-10在目录中对应Notice 2 Reinstatement。保留此不一致，引用时分开列基础版、amendment及notice，不擅自修正原件。"
+      ],
+      "resolution": "preserved as in official_status_mil_gb.json; no inferred correction"
+    },
+    {
+      "id": "CF05",
+      "subject": "GB/T 26332.1-2024",
+      "evidence": [
+        "https://std.samr.gov.cn/gb/search/gbDetailed?id=234D7936AAA0E194E06397BE0A0AA0A9",
+        "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=2CFD0F55B3A9EF98581E43FEAECCA9BC",
+        "https://std.samr.gov.cn/gb/search/gbDetailed?id=C84EE653070A4B14E05397BE0A0AC1BD"
+      ],
+      "observation": [
+        "早期项目页面列ISO 9211-1:2018，而正式标准条目列ISO 9211-1:2024；本表采用正式标准条目。不得以项目采标目标覆盖正式采标年份。"
+      ],
+      "resolution": "preserved as in official_status_mil_gb.json; no inferred correction"
+    },
+    {
+      "id": "CF06",
+      "subject": "GB/T 26332.5-2022",
+      "evidence": [
+        "https://std.samr.gov.cn/gb/search/gbDetailed?id=EB58F4DA9266B2A2E05397BE0A0A7D33",
+        "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=09E65A762A7B388687ECC5125D26C543",
+        "https://openstd.samr.gov.cn/bzgk/std/nd?no=1841"
+      ],
+      "observation": [
+        "std.samr正式条目发布日期为2022-10-12；openstd题录及其通知均为2022-10-14。实施日期及版本状态一致。此处记录优先值而不宣称差异已由主管部门更正。"
+      ],
+      "resolution": "preserved as in official_status_mil_gb.json; no inferred correction"
+    },
+    {
+      "id": "CF07",
+      "subject": "GB/T 26332.6-2022",
+      "evidence": [
+        "https://std.samr.gov.cn/gb/search/gbDetailed?id=EB58F4DA9152B2A2E05397BE0A0A7D33",
+        "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=A69B2BBD63C4EBC71FE92528B828B9F4",
+        "https://openstd.samr.gov.cn/bzgk/std/nd?no=1841"
+      ],
+      "observation": [
+        "std.samr正式条目发布日期为2022-10-12；openstd题录及其通知均为2022-10-14。实施日期及版本状态一致。此处记录优先值而不宣称差异已由主管部门更正。"
+      ],
+      "resolution": "preserved as in official_status_mil_gb.json; no inferred correction"
+    },
+    {
+      "id": "CF08",
+      "subject": "GB/T 26332.7-2022",
+      "evidence": [
+        "https://std.samr.gov.cn/gb/search/gbDetailed?id=EB58F4DA9158B2A2E05397BE0A0A7D33",
+        "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=E6CE2FB47A8CE06A3306ED3288EFF6B8",
+        "https://openstd.samr.gov.cn/bzgk/std/nd?no=1841"
+      ],
+      "observation": [
+        "std.samr正式条目发布日期为2022-10-12；openstd题录及其通知均为2022-10-14。实施日期及版本状态一致。此处记录优先值而不宣称差异已由主管部门更正。"
+      ],
+      "resolution": "preserved as in official_status_mil_gb.json; no inferred correction"
+    },
+    {
+      "id": "CF09",
+      "subject": "GB/T 26332.8-2022",
+      "evidence": [
+        "https://std.samr.gov.cn/gb/search/gbDetailed?id=SQJXNm6kWeg%3D&mode=p",
+        "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=35CB0D5A36BB384A998F3C6FBC8806D9",
+        "https://openstd.samr.gov.cn/bzgk/std/nd?no=1841"
+      ],
+      "observation": [
+        "std.samr正式条目发布日期为2022-10-12；openstd题录及其通知均为2022-10-14。实施日期及版本状态一致。此处记录优先值而不宣称差异已由主管部门更正。",
+        "早期项目页面曾写等同采用，正式标准页面为修改采用ISO 9211-8:2018；本表以正式标准为准。"
+      ],
+      "resolution": "preserved as in official_status_mil_gb.json; no inferred correction"
+    },
+    {
+      "id": "CF10",
+      "subject": "GB/T 16601.3-2017",
+      "evidence": [
+        "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D82394D3A7E05397BE0A0AB82A"
+      ],
+      "observation": [
+        "正式中文标准题名使用“确信”，同页采标中文名称使用“确认”；本表保留标准题名“确信”。"
+      ],
+      "resolution": "preserved as in official_status_mil_gb.json; no inferred correction"
+    }
+  ]
+}

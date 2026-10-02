@@ -1,0 +1,65 @@
+{
+  "version": "T09-r1-v0.1.0",
+  "date": "2026-10-02",
+  "status": "ready_for_review",
+  "scope": "通用光学镀膜生产标准身份、检验规划、工艺验证路径与合成统计演示",
+  "criteria": [
+    {
+      "criterion": "身份、版本、状态、范围及过渡核验",
+      "result": "pass_with_disclosed_cache_and_GJB_gaps",
+      "evidence": [
+        "data/standards_map.json",
+        "sources/summaries/official_status_mil_gb.md",
+        "reviews/source_conflicts.json"
+      ]
+    },
+    {
+      "criterion": "不从摘要臆造正文或数值",
+      "result": "pass_in_research_scope",
+      "evidence": [
+        "data/standards_map.json",
+        "reports/02_standards_lifecycle_and_mapping.md"
+      ]
+    },
+    {
+      "criterion": "方法、样品、设备、判据、抽样、记录链",
+      "result": "planning_complete_execution_blocked_by_real_inputs",
+      "evidence": [
+        "templates/test_matrix.csv",
+        "templates/qualification_plan.json",
+        "templates/test_record.json"
+      ]
+    },
+    {
+      "criterion": "实测和符合性不被研究替代",
+      "result": "pass_boundary",
+      "evidence": [
+        "reports/09_execution_gates_and_evidence.md"
+      ]
+    },
+    {
+      "criterion": "数值/结构演示复现",
+      "result": "28_unit_tests_pass",
+      "evidence": [
+        "models/qualification_demo.py",
+        "tests/test_qualification_demo.py",
+        "data/demo_results.json"
+      ]
+    }
+  ],
+  "limited_independent_catalogue_check": "completed_by_separate_assistant; two_wording_fixes_applied",
+  "full_independent_technical_review": "pending_parent_coordination",
+  "visual_qa": "SVG rendered with Inkscape and PNG visually inspected; text and axes legible; final re-render checked",
+  "actual_tests_performed": false,
+  "standard_full_text_conformity_review": false,
+  "certification_claim": false,
+  "third_party_full_text_archived": false,
+  "user_decisions_before_real_execution": [
+    "产品/用途与合同版本",
+    "环境严酷度与合格限值",
+    "激光损伤是否适用及测试条件",
+    "抽样与风险规则",
+    "受控授权全文及实验室能力",
+    "设备材料允许窗口与安全评审"
+  ]
+}

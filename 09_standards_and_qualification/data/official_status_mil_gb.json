@@ -1,0 +1,732 @@
+{
+  "schema_version": "1.0",
+  "query_date": "2026-10-02",
+  "purpose": "面向通用工业光学镀膜质量研究的公开标准目录核验，不涉及武器系统用途",
+  "methodology": {
+    "source_priority": [
+      "DLA ASSIST/QuickSearch正式目录及公开通知",
+      "std.samr正式标准条目",
+      "openstd官方题录与公告",
+      "标准项目/计划页面仅作为历史对照"
+    ],
+    "date_rule": "标准发布日期、实施日期、验证/变更通知日期分开保存；未实施新版与仍现行旧版并列。",
+    "status_rule": "MIL Inactive for New Design不等于Canceled；Validation不等于Reactivation。IDT=等同采用，MOD=修改采用。",
+    "copyright": "只保存元数据、短证据摘录及原创摘要；未购买、联系机构或获取权利不明全文。",
+    "retrieval_limit": "网络工具部分页面使用官方URL索引/缓存；有直接打开失败或明显旧缓存者在对应行明示。检索日期不是所有源站记录实时刷新日期。"
+  },
+  "interpretation_sources": [
+    {
+      "url": "https://quicksearch.dla.mil/qsHelp.aspx",
+      "summary": "DLA帮助页把Active、Inactive for New Design、Canceled区分为不同状态；Inactive限于支持/再采购既有项目，未必已取消。Document Date表示最近修订、amendment、change或notice日期，不能直接当作基础修订出版日期。"
+    }
+  ],
+  "standards": [
+    {
+      "id": "MIL-PRF-13830B",
+      "title": "Optical Components for Fire Control Instruments; General Specification Governing the Manufacture, Assembly, and Inspection of",
+      "family": "MIL",
+      "status": "Active",
+      "publication_date": "1997-01-09",
+      "document_date": "2023-02-24",
+      "latest_notice": "Notice 5 — Validation",
+      "notice_history": [
+        [
+          "Notice 2 — Reactivation",
+          "2000-01-07"
+        ],
+        [
+          "Notice 3 — Validation",
+          "2013-03-14"
+        ],
+        [
+          "Notice 4 — Validation",
+          "2018-01-12"
+        ],
+        [
+          "Notice 5 — Validation",
+          "2023-02-24"
+        ]
+      ],
+      "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=10290",
+      "evidence_excerpt": "Status: Active",
+      "evidence_summary": "目录修订史的最近修订字母为B，基础修订日期1997-01-09；2023-02-24是验证通知日期，不是B版重新发布或新修订。目录未显示B以后的字母修订。",
+      "limitation": "仅作公开目录核验。标准标题及范围具有原有军事背景；此处不提供武器系统设计、适配或验收方案。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开目录可查；所列文档在目录中的Distribution Statement为A。仅核验题录及必要的公开通知，未批量下载规范全文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "MIL-C-14806A",
+      "title": "Coating, Reflection Reducing, for Instrument Cover Glasses and Lighting Wedges",
+      "family": "MIL",
+      "status": "Inactive for New Design",
+      "publication_date": "1969-06-12",
+      "document_date": "2013-10-29",
+      "latest_amendment": {
+        "number": 2,
+        "date": "1974-05-01"
+      },
+      "latest_notice": "Notice 3 — Validation",
+      "notice_history": [
+        [
+          "Notice 2 — Inactivation",
+          "1997-03-14"
+        ],
+        [
+          "Notice 3 — Validation",
+          "2013-10-29"
+        ]
+      ],
+      "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=10834",
+      "evidence_excerpt": "Status: Inactive",
+      "evidence_summary": "官方目录保留Inactive状态；2013年验证通知没有使其重新成为Active。验证通知说明仍不用于新设计，但文档可在其允许范围内使用。",
+      "additional_sources": [
+        {
+          "url": "https://quicksearch.dla.mil/Transient/219B7875875E4EF29C25908D3DC4AE5D.pdf",
+          "kind": "DLA官方公开验证通知的索引内容"
+        }
+      ],
+      "supersession": "目录未列出正式替代文件；未核实为Canceled，不可推定ISO 9211正式取代该MIL文件。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开目录可查；所列文档在目录中的Distribution Statement为A。仅核验题录及必要的公开通知，未批量下载规范全文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "MIL-C-675C",
+      "title": "Coating of Glass Optical Elements (Anti-Reflection)",
+      "family": "MIL",
+      "status": "Inactive for New Design",
+      "publication_date": "1980-08-22",
+      "document_date": "2014-05-06",
+      "latest_amendment": {
+        "number": 3,
+        "date": "1986-08-20"
+      },
+      "latest_notice": "Notice 3 — Inactivation",
+      "notice_history": [
+        [
+          "Notice 2 — Reinstatement",
+          "1996-10-10"
+        ],
+        [
+          "Notice 3 — Inactivation",
+          "2014-05-06"
+        ]
+      ],
+      "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=2500",
+      "evidence_excerpt": "Status: Inactive",
+      "evidence_summary": "官方目录索引显示Inactive；2014年Notice 3明确限制新设计用途，仅保留替换用途。未发现正式取消或替代目录项。",
+      "additional_sources": [
+        {
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5730239",
+          "kind": "DLA官方公开Inactivation通知索引"
+        },
+        {
+          "url": "https://quicksearch.dla.mil/Transient/D2D54CA414CB46129B7BC2783B9FAD90.pdf",
+          "kind": "DLA官方公开Inactivation通知索引"
+        }
+      ],
+      "access_limitation": "目录直接打开失败，以上目录证据来自官方URL的搜索索引，页面自报更新2025-06-16，较查询日旧。2014年正式通知可交叉印证，但不能把旧缓存冒充当日在线实时核验。",
+      "conflicts": [
+        "目录将Amendment 3日期列为1986-08-20，Notice 3正文却把1996-10-10与Amendment 3关联；1996-10-10在目录中对应Notice 2 Reinstatement。保留此不一致，引用时分开列基础版、amendment及notice，不擅自修正原件。"
+      ],
+      "verified_on": "2026-10-02",
+      "availability": "官方公开目录可查；所列文档在目录中的Distribution Statement为A。仅核验题录及必要的公开通知，未批量下载规范全文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "MIL-C-48497A",
+      "title": "Coating, Single or Multilayer, Interference: Durability Requirements for",
+      "family": "MIL",
+      "status": "Inactive for New Design",
+      "publication_date": "1980-09-08",
+      "document_date": "2013-10-29",
+      "latest_amendment": {
+        "number": 3,
+        "date": "1995-02-21"
+      },
+      "latest_notice": "Notice 2 — Validation",
+      "notice_history": [
+        [
+          "Notice 1 — Inactivation",
+          "1997-03-14"
+        ],
+        [
+          "Notice 2 — Validation",
+          "2013-10-29"
+        ]
+      ],
+      "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=26444",
+      "evidence_excerpt": "Status: Inactive",
+      "evidence_summary": "官方目录显示Inactive；2013年验证通知保持不用于新设计的状态。目录范围描述单层/多层干涉膜的耐久性，主要置于密封光学系统保护环境内；不能由标题泛化为所有外露光学镀膜的通用验收标准。",
+      "additional_sources": [
+        {
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5726288",
+          "kind": "DLA官方公开验证通知索引"
+        }
+      ],
+      "supersession": "目录未列出正式替代文件；未核实为Canceled。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开目录可查；所列文档在目录中的Distribution Statement为A。仅核验题录及必要的公开通知，未批量下载规范全文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "MIL-STD-810H w/Change 1",
+      "title": "Environmental Engineering Considerations and Laboratory Tests",
+      "family": "MIL",
+      "status": "Active",
+      "publication_date": "2019-01-31",
+      "document_date": "2022-05-18",
+      "latest_change": {
+        "number": 1,
+        "date": "2022-05-18",
+        "incorporated": true
+      },
+      "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=35978",
+      "evidence_excerpt": "Status: Active",
+      "evidence_summary": "目录最近为H版Change 1（修改已并入）；2022-05-18是Change 1日期，H版原日期2019-01-31。",
+      "limitation": "官方范围说明该文档不直接规定设计或试验规格，而指导依具体性能需求作环境裁剪。因此它不是光学镀膜的统一合格阈值，也不能凭通过某一方法声称获得通用MIL-STD-810认证。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开目录可查；所列文档在目录中的Distribution Statement为A。仅核验题录及必要的公开通知，未批量下载规范全文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.1-2024",
+      "title": "光学和光子学 光学薄膜 第1部分：术语",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2024-09-29",
+      "implementation_date": "2025-04-01",
+      "adoption": {
+        "standard": "ISO 9211-1:2024",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=234D7936AAA0E194E06397BE0A0AA0A9",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 9211-1:2024。",
+      "replaces": "GB/T 26332.1-2018",
+      "additional_sources": [
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=2CFD0F55B3A9EF98581E43FEAECCA9BC",
+          "kind": "国家标准全文公开系统题录"
+        },
+        {
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=C84EE653070A4B14E05397BE0A0AC1BD",
+          "kind": "立项页面，非正式标准版本依据"
+        }
+      ],
+      "conflicts": [
+        "早期项目页面列ISO 9211-1:2018，而正式标准条目列ISO 9211-1:2024；本表采用正式标准条目。不得以项目采标目标覆盖正式采标年份。"
+      ],
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.2-2015",
+      "title": "光学和光子学 光学薄膜 第2部分：光学特性",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2015-12-10",
+      "implementation_date": "2016-07-01",
+      "adoption": {
+        "standard": "ISO 9211-2:2010",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D80FF3D3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用ISO 9211-2:2010。",
+      "scheduled_replacement": {
+        "standard": "GB/T 26332.2-2026",
+        "effective_date": "2027-01-01"
+      },
+      "additional_sources": [
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=BC6E165D029D300CDCDE58D5C36440E5",
+          "kind": "国家标准全文公开系统题录"
+        }
+      ],
+      "limitation": "以查询日为准；不能把2026版已发布误写成已实施。旧版条目中“正在批准”计划字段可能更新滞后，新版正式条目已证明发布。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.2-2026",
+      "title": "光学和光子学 光学薄膜 第2部分：光学特性",
+      "family": "GB/T",
+      "status": "即将实施",
+      "publication_date": "2026-09-28",
+      "implementation_date": "2027-01-01",
+      "adoption": {
+        "standard": "ISO 9211-2:2024",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=5CB12E0EFBED2034E06397BE0A0A34FB",
+      "evidence_excerpt": "即将实施",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 9211-2:2024。",
+      "replaces": "GB/T 26332.2-2015",
+      "access_limitation": "正式标准页面搜索索引可读；web直接打开返回缓存未命中。不得称已实施。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.3-2015",
+      "title": "光学和光子学 光学薄膜 第3部分：环境适应性",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2015-12-10",
+      "implementation_date": "2016-07-01",
+      "adoption": {
+        "standard": "ISO 9211-3:2008",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=NFSYBqcNMTs%3D&mode=p",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用ISO 9211-3:2008。",
+      "scheduled_replacement": {
+        "standard": "GB/T 26332.3-2026",
+        "effective_date": "2027-01-01"
+      },
+      "additional_sources": [
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=97F9D8476B7D34BFC79A5D6E2A100716",
+          "kind": "国家标准全文公开系统题录"
+        }
+      ],
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.3-2026",
+      "title": "光学和光子学 光学薄膜 第3部分：环境适应性",
+      "family": "GB/T",
+      "status": "即将实施",
+      "publication_date": "2026-09-28",
+      "implementation_date": "2027-01-01",
+      "adoption": {
+        "standard": "ISO 9211-3:2024",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=5CB12E0EFB382034E06397BE0A0A34FB",
+      "evidence_excerpt": "即将实施",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 9211-3:2024。",
+      "replaces": "GB/T 26332.3-2015",
+      "access_limitation": "正式标准页面搜索索引可读；web直接打开返回缓存未命中。不得称已实施。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.4-2026",
+      "title": "光学和光子学 光学薄膜 第4部分：摩擦、附着力和耐水性的试验方法",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2026-02-27",
+      "implementation_date": "2026-06-01",
+      "adoption": {
+        "standard": "ISO 9211-4:2022",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=4C1BF798CB2F83B0E06397BE0A0A640A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 9211-4:2022。",
+      "replaces": "GB/T 26332.4-2015",
+      "additional_sources": [
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=246748404692E914C88FA400E924F2B0",
+          "kind": "国家标准全文公开系统题录"
+        },
+        {
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailedCNF?id=4C1BF798CB2F83B0E06397BE0A0A640A",
+          "kind": "标准正式条目的CNF视图，载采标关系"
+        }
+      ],
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.4-2015",
+      "title": "光学和光子学 光学薄膜 第4部分：规定的试验方法",
+      "family": "GB/T",
+      "status": "废止",
+      "publication_date": "2015-12-10",
+      "implementation_date": "2016-07-01",
+      "adoption": {
+        "standard": "ISO 9211-4:2012",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D80F97D3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "废止",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用ISO 9211-4:2012。",
+      "withdrawal_date": "2026-06-01",
+      "replaced_by": "GB/T 26332.4-2026",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.5-2022",
+      "title": "光学和光子学 光学薄膜 第5部分：减反射膜基本要求",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2022-10-14",
+      "implementation_date": "2023-05-01",
+      "adoption": {
+        "standard": "ISO 9211-5:2018",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=EB58F4DA9266B2A2E05397BE0A0A7D33",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 9211-5:2018。",
+      "publication_date_basis": "优先采用openstd题录及官方公开通知；std.samr的正式条目显示另一日期，冲突仍保留",
+      "alternative_publication_date": "2022-10-12",
+      "additional_sources": [
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=09E65A762A7B388687ECC5125D26C543",
+          "kind": "国家标准全文公开系统题录"
+        },
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/nd?no=1841",
+          "kind": "国家标准全文公开系统通知"
+        }
+      ],
+      "conflicts": [
+        "std.samr正式条目发布日期为2022-10-12；openstd题录及其通知均为2022-10-14。实施日期及版本状态一致。此处记录优先值而不宣称差异已由主管部门更正。"
+      ],
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.6-2022",
+      "title": "光学和光子学 光学薄膜 第6部分：反射膜基本要求",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2022-10-14",
+      "implementation_date": "2023-05-01",
+      "adoption": {
+        "standard": "ISO 9211-6:2018",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=EB58F4DA9152B2A2E05397BE0A0A7D33",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 9211-6:2018。",
+      "publication_date_basis": "优先采用openstd题录及官方公开通知；std.samr的正式条目显示另一日期，冲突仍保留",
+      "alternative_publication_date": "2022-10-12",
+      "additional_sources": [
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=A69B2BBD63C4EBC71FE92528B828B9F4",
+          "kind": "国家标准全文公开系统题录"
+        },
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/nd?no=1841",
+          "kind": "国家标准全文公开系统通知"
+        }
+      ],
+      "conflicts": [
+        "std.samr正式条目发布日期为2022-10-12；openstd题录及其通知均为2022-10-14。实施日期及版本状态一致。此处记录优先值而不宣称差异已由主管部门更正。"
+      ],
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.7-2022",
+      "title": "光学和光子学 光学薄膜 第7部分：中性分束膜基本要求",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2022-10-14",
+      "implementation_date": "2023-05-01",
+      "adoption": {
+        "standard": "ISO 9211-7:2021",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=EB58F4DA9158B2A2E05397BE0A0A7D33",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 9211-7:2021。",
+      "publication_date_basis": "优先采用openstd题录及官方公开通知；std.samr的正式条目显示另一日期，冲突仍保留",
+      "alternative_publication_date": "2022-10-12",
+      "additional_sources": [
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=E6CE2FB47A8CE06A3306ED3288EFF6B8",
+          "kind": "国家标准全文公开系统题录"
+        },
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/nd?no=1841",
+          "kind": "国家标准全文公开系统通知"
+        }
+      ],
+      "conflicts": [
+        "std.samr正式条目发布日期为2022-10-12；openstd题录及其通知均为2022-10-14。实施日期及版本状态一致。此处记录优先值而不宣称差异已由主管部门更正。"
+      ],
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 26332.8-2022",
+      "title": "光学和光子学 光学薄膜 第8部分：激光光学薄膜基本要求",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2022-10-14",
+      "implementation_date": "2023-05-01",
+      "adoption": {
+        "standard": "ISO 9211-8:2018",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=SQJXNm6kWeg%3D&mode=p",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 9211-8:2018。",
+      "publication_date_basis": "优先采用openstd题录及官方公开通知；std.samr的正式条目显示另一日期，冲突仍保留",
+      "alternative_publication_date": "2022-10-12",
+      "additional_sources": [
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=35CB0D5A36BB384A998F3C6FBC8806D9",
+          "kind": "国家标准全文公开系统题录"
+        },
+        {
+          "url": "https://openstd.samr.gov.cn/bzgk/std/nd?no=1841",
+          "kind": "国家标准全文公开系统通知"
+        }
+      ],
+      "conflicts": [
+        "std.samr正式条目发布日期为2022-10-12；openstd题录及其通知均为2022-10-14。实施日期及版本状态一致。此处记录优先值而不宣称差异已由主管部门更正。",
+        "早期项目页面曾写等同采用，正式标准页面为修改采用ISO 9211-8:2018；本表以正式标准为准。"
+      ],
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 16601.1-2017",
+      "title": "激光器和激光相关设备 激光损伤阈值测试方法 第1部分：定义和总则",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2017-12-29",
+      "implementation_date": "2018-07-01",
+      "adoption": {
+        "standard": "ISO 21254-1:2011",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D828C1D3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 21254-1:2011。",
+      "limitation": "这里只核实正式GB采标年份与一致性；不据此断言其对应ISO版本仍是ISO当前最新版，也不把一次测量结果转成产品寿命或全部批次保证。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 16601.2-2017",
+      "title": "激光器和激光相关设备 激光损伤阈值测试方法 第2部分：阈值确定",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2017-12-29",
+      "implementation_date": "2018-07-01",
+      "adoption": {
+        "standard": "ISO 21254-2:2011",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D82631D3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 21254-2:2011。",
+      "limitation": "这里只核实正式GB采标年份与一致性；不据此断言其对应ISO版本仍是ISO当前最新版，也不把一次测量结果转成产品寿命或全部批次保证。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 16601.3-2017",
+      "title": "激光器和激光相关设备 激光损伤阈值测试方法 第3部分：激光功率（能量）承受能力确信",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2017-12-29",
+      "implementation_date": "2018-07-01",
+      "adoption": {
+        "standard": "ISO 21254-3:2011",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D82394D3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO 21254-3:2011。",
+      "limitation": "这里只核实正式GB采标年份与一致性；不据此断言其对应ISO版本仍是ISO当前最新版，也不把一次测量结果转成产品寿命或全部批次保证。",
+      "conflicts": [
+        "正式中文标准题名使用“确信”，同页采标中文名称使用“确认”；本表保留标准题名“确信”。"
+      ],
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 16601.4-2017",
+      "title": "激光器和激光相关设备 激光损伤阈值测试方法 第4部分：检查、探测和测量",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2017-12-29",
+      "implementation_date": "2018-07-01",
+      "adoption": {
+        "standard": "ISO/TR 21254-4:2011",
+        "degree": "MOD"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D828C0D3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为修改采用ISO/TR 21254-4:2011。",
+      "limitation": "这里只核实正式GB采标年份与一致性；不据此断言其对应ISO版本仍是ISO当前最新版，也不把一次测量结果转成产品寿命或全部批次保证。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 2423.1-2008",
+      "title": "电工电子产品环境试验 第2部分：试验方法 试验A：低温",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2008-12-30",
+      "implementation_date": "2009-10-01",
+      "adoption": {
+        "standard": "IEC 60068-2-1:2007",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7C61BD3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用IEC 60068-2-1:2007。",
+      "limitation": "通用环境试验方法，不单独给出所有光学镀膜产品的合格判据；具体试样、环境严酷度、顺序及光学性能前后检测/判废应由适用产品标准或合同规定。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 2423.2-2008",
+      "title": "电工电子产品环境试验 第2部分：试验方法 试验B：高温",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2008-12-30",
+      "implementation_date": "2009-10-01",
+      "adoption": {
+        "standard": "IEC 60068-2-2:2007",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=ECxi9pU8n8Y%3D&mode=p",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用IEC 60068-2-2:2007。",
+      "limitation": "通用环境试验方法，不单独给出所有光学镀膜产品的合格判据；具体试样、环境严酷度、顺序及光学性能前后检测/判废应由适用产品标准或合同规定。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 2423.3-2016",
+      "title": "环境试验 第2部分：试验方法 试验Cab：恒定湿热试验",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2016-12-13",
+      "implementation_date": "2017-07-01",
+      "adoption": {
+        "standard": "IEC 60068-2-78:2012",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D81601D3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用IEC 60068-2-78:2012。",
+      "limitation": "通用环境试验方法，不单独给出所有光学镀膜产品的合格判据；具体试样、环境严酷度、顺序及光学性能前后检测/判废应由适用产品标准或合同规定。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 2423.4-2008",
+      "title": "电工电子产品环境试验 第2部分：试验方法 试验Db：交变湿热（12h＋12h循环）",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2008-05-19",
+      "implementation_date": "2009-01-01",
+      "adoption": {
+        "standard": "IEC 60068-2-30:2005",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D76D77D3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用IEC 60068-2-30:2005。",
+      "limitation": "通用环境试验方法，不单独给出所有光学镀膜产品的合格判据；具体试样、环境严酷度、顺序及光学性能前后检测/判废应由适用产品标准或合同规定。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 2423.17-2024",
+      "title": "环境试验 第2部分：试验方法 试验Ka：盐雾",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2024-08-23",
+      "implementation_date": "2025-03-01",
+      "adoption": {
+        "standard": "IEC 60068-2-11:2021",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=208E903AB60D79F3E06397BE0A0AB2B9",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用IEC 60068-2-11:2021。",
+      "limitation": "通用环境试验方法，不单独给出所有光学镀膜产品的合格判据；具体试样、环境严酷度、顺序及光学性能前后检测/判废应由适用产品标准或合同规定。",
+      "replaces": "GB/T 2423.17-2008",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 2423.18-2021",
+      "title": "环境试验 第2部分：试验方法 试验Kb：盐雾，交变（氯化钠溶液）",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2021-05-21",
+      "implementation_date": "2021-12-01",
+      "adoption": {
+        "standard": "IEC 60068-2-52:2017",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=4AnpE9dVlt0%3D&mode=p",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用IEC 60068-2-52:2017。",
+      "limitation": "通用环境试验方法，不单独给出所有光学镀膜产品的合格判据；具体试样、环境严酷度、顺序及光学性能前后检测/判废应由适用产品标准或合同规定。",
+      "replaces": "GB/T 2423.18-2012",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    },
+    {
+      "id": "GB/T 2423.22-2012",
+      "title": "环境试验 第2部分：试验方法 试验N：温度变化",
+      "family": "GB/T",
+      "status": "现行",
+      "publication_date": "2012-12-31",
+      "implementation_date": "2013-06-01",
+      "adoption": {
+        "standard": "IEC 60068-2-14:2009",
+        "degree": "IDT"
+      },
+      "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7E67ED3A7E05397BE0A0AB82A",
+      "evidence_excerpt": "现行",
+      "evidence_summary": "官方标准条目列出该编号、题名、发布日期与实施日期，采标关系为等同采用IEC 60068-2-14:2009。",
+      "limitation": "目录仍标现行；20253281-T-469修订计划显示正在批准，不能当成已发布新版本。通用环境试验方法不等于镀膜验收标准。",
+      "verified_on": "2026-10-02",
+      "availability": "官方公开题录可查；采标推荐性标准全文通常受国际版权限制。此次未获取或复制标准正文。",
+      "verification_scope": "目录版本、状态、日期和采标关系；非完整条文符合性审查"
+    }
+  ],
+  "verification_gaps": [
+    {
+      "family": "GJB",
+      "result": "未能核实",
+      "detail": "对gov.cn、mil.cn、std.samr.gov.cn等公开索引进行了光学镀膜相关GJB目录检索，未找到足以确认具体编号、标题、版本和现行状态的公开官方权威条目；不据商业下载站或二手资料猜测编号，也不据此断言不存在相关GJB。",
+      "checked_on": "2026-10-02",
+      "queries": [
+        "site:gov.cn GJB 光学 薄膜 标准 目录",
+        "site:mil.cn GJB 光学 镀膜 标准",
+        "site:std.samr.gov.cn GJB 光学 薄膜"
+      ]
+    }
+  ]
+}
