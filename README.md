@@ -1,6 +1,6 @@
 # 镀膜工程科研长期研究库
 
-本库保存用户原始清单，并把它落实为可延续、可追溯、分阶段验收的工程研究项目。T01–T10首轮公共理论与合成基础已覆盖；第二轮T02v0.3、T03、T04、T05实现增补已冻结，当前开展T06工艺/膜态到光学可观测量接口。T02仍partial，完整设备验证、正式审查与生产资格未完成。
+本库保存用户原始清单，并落实为可延续、可追溯的工程研究项目。T01–T10首轮、第二轮与第三轮有界研究范围均已本地收口。本批统一发布第二轮尾批、第三轮十个完整reader载荷与MXC原创派生；第四轮未启动。正式模型审查、实机校准、完整数值验证和生产资格仍未完成。
 
 ## 从这里开始
 
@@ -31,7 +31,7 @@
 ## 执行原则
 
 1. 按原文大项目顺序推进。每个大项目先完成明确优先项，验收后进入下一个；所有大项目首轮完成后，才回头补充扩展。
-2. 按原顺序推进第二轮；当前为T06工艺/膜态到光学可观测量接口。T02保持partial，T03/T04/T05实现就绪但验证待完成。
+2. 第二轮与第三轮已按原顺序完成有界本地研究。阶段收口不提升证据等级；第四轮未启动。
 3. 每个阶段产出可复用报告、来源摘要、数据/模型接口及未决问题，不以无限穷尽文献作为完成标准。
 4. 工程结论必须注明证据、条件、单位、不确定度和验证状态。概念推导、仿真和实测不是同一层面的证明。
 5. 合法存档公开许可允许保存的原文；受限、付费或权利不明内容仅存元数据、链接及合规摘要，不绕过付费墙。
@@ -61,10 +61,34 @@
 
 ## 计算验证与发布准则
 
-高计算量算法与设备driver完整实现，重型精度、性能和资源验证待用户安排设备；不为当前云端机器缩减方法。当前小测试和合成结果只用于实现核查，不代表生产验收。完整与未运行任务分开记录，真实输入unknown及partial状态不掩盖。
+有界离线算法与批量driver已写出，重型精度、性能和资源验证待用户安排设备；T10实时硬件通信适配因协议和授权缺失未实现。当前小测试和合成结果只用于实现核查，不代表生产验收。完整与未运行任务分开记录，真实输入unknown及partial状态不掩盖。
 
-先在云端积累并冻结成果，攒成有实质进展的批次再统一上传；不逐个小修订提交。当前T06未冻结成果不纳入本次发布。
+先在云端积累并冻结成果，攒成有实质进展的批次再统一上传；不逐个小修订提交。T06–T10已本地冻结，后续发布另行进行。T10公开完整包因私有依赖及全库审计耦合阻塞，原冻结包不回写。
 
-## GitHub发布范围与复核
+## 第二轮本地收口入口
 
-本私有仓库包括原创研究和合规引用，不包含第三方全文或完整原始光谱。发布边界、冻结包校验和复算命令见[发布说明](00_project/GITHUB_PUBLICATION.md)。
+- [综合结论与成熟度](00_project/SECOND_SWEEP_SYNTHESIS.md)
+- [冻结证据、复现范围与设备计划索引](00_project/ROUND2_EVIDENCE_INDEX.json)
+- [37条历史配方交叉引用](00_project/PRIOR_RESEARCH_CROSS_REFERENCE.md)，不重复导入旧配方
+- [第三轮优先级草案](00_project/ROUND3_PRIORITY_DRAFT.md)，未执行
+- [候选发布计划](00_project/ROUND2_PUBLICATION_PLAN.md)，无上传且不等于发布批准
+
+T06–T10入口分别为[工艺光学](06_optical_coating_families/round2_process_optical_observables/README.md)、[可辨识性](07_thin_film_design_theory/round2_measurement_identifiability/README.md)、[稳健反演](08_stack_optimization_algorithms/round2_robust_inversion/README.md)、[证据合同](09_standards_and_qualification/round2_traceable_validation_contracts/README.md)、[离子观测](10_ion_sources/round2_observable_material_response/README.md)。
+
+
+## 第三轮完整入口与本批发布
+
+[第三轮综合](00_project/THIRD_SWEEP_SYNTHESIS.md) · [精确证据索引](00_project/ROUND3_EVIDENCE_INDEX.json) · [批次发布说明](00_project/CONSOLIDATED_PUBLICATION.md)
+
+- [T01R3](01_machine_structures/round3_mechanical_error_observability/README.md)
+- [T02R3](02_machine_modeling/round3_pose_occlusion_sensitivity/README.md)
+- [T03R3](03_correction_plate_optimization/round3_event_aware_trust_region/README.md)
+- [T04R3](04_coating_and_substrate_materials/round3_bounded_material_response/README.md)
+- [T05R3](05_evaporation_sources/round3_source_retention_identifiability/README.md)
+- [T06R3](06_optical_coating_families/round3_bounded_stack_response/README.md)
+- [T07R3](07_thin_film_design_theory/round3_observation_set_exclusion/README.md)
+- [T08R3](08_stack_optimization_algorithms/round3_budgeted_candidate_sets/README.md)
+- [T09R3](09_standards_and_qualification/round3_unresolved_evidence_acceptance/README.md)
+- [T10R3](10_ion_sources/round3_ion_state_evidence_gate/README.md)
+
+[T10R2独立portable派生](publication_packages/t10_round2_portable_v1/README.md)不沿用原冻结包身份。历史文件中的未发布/候选/下一题未启动是当时记录，当前状态以根STATE为准。

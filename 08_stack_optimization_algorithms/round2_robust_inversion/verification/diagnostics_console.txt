@@ -1,0 +1,276 @@
+{
+  "correlated_repeat_information_increment": {
+    "0.0": 1.0,
+    "0.9": 0.05263157894736841,
+    "0.999": 0.0005002501250625389
+  },
+  "uncalibrated_new_bias": {
+    "interest_information_before": [
+      [
+        1.0
+      ]
+    ],
+    "interest_information_after": [
+      [
+        1.0
+      ]
+    ],
+    "interest_increment": [
+      [
+        0.0
+      ]
+    ],
+    "increment_eigenvalues": [
+      0.0
+    ],
+    "interest_rank_before": 1,
+    "interest_rank_after": 1,
+    "nuisance_rank_before": 0,
+    "nuisance_rank_after": 1,
+    "singular_value_threshold": 1.4159846397196105e-06,
+    "half_logdet_precision_ratio_if_nonsingular": 0.0,
+    "confidence_or_global_certificate": false
+  },
+  "precise_biased_candidate": {
+    "baseline_variance": 1.0,
+    "naive_information_increment": 100.0,
+    "reported_variance": 0.009900990099009901,
+    "squared_bias": 3.9211841976276833,
+    "actual_mse": 3.9310851877266932
+  },
+  "robust_location": {
+    "isolated_outlier_gaussian_estimate": 0.9523809523809523,
+    "isolated_outlier_huber_estimate": 0.07499972134949709,
+    "shared_bias_huber_estimate": 2.0,
+    "true_location": 0.0
+  },
+  "optical_exact_alias": {
+    "theta": [
+      1.8,
+      0.0,
+      0.1
+    ],
+    "alias": [
+      1.8,
+      0.0,
+      0.25277777777777777
+    ],
+    "max_observation_difference": 3.3306690738754696e-16,
+    "local_rank_n_d": {
+      "rank": 1,
+      "parameter_count": 2,
+      "row_count": 2,
+      "singular_values": [
+        57.79866626402117,
+        1.642284525501688e-10
+      ],
+      "rank_threshold": 5.779866626402117e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": null,
+      "null_directions_scaled": [
+        [
+          -0.8638827189634454,
+          -0.5036930095567386
+        ]
+      ],
+      "covariance_scaled_local_if_full_rank": null,
+      "full_rank_is_not_global_certificate": true
+    },
+    "note": "lossless R+T=1, hence rank at most 1; global alias persists regardless"
+  },
+  "local_rank2_global_alias": {
+    "period_um": 0.16883001965934374,
+    "local": {
+      "rank": 2,
+      "parameter_count": 2,
+      "row_count": 4,
+      "singular_values": [
+        56.75299580187261,
+        21.905368118592133
+      ],
+      "rank_threshold": 5.675299580187261e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": 2.590825933379482,
+      "null_directions_scaled": [],
+      "covariance_scaled_local_if_full_rank": [
+        [
+          0.001075162234086922,
+          0.0008783238069885345
+        ],
+        [
+          0.0008783238069885345,
+          0.0013193153818239552
+        ]
+      ],
+      "full_rank_is_not_global_certificate": true
+    },
+    "max_alias_residual": 6.938893903907228e-18,
+    "discovery": {
+      "attempts": [
+        {
+          "start": [
+            1.79,
+            0.098
+          ],
+          "fixed": {},
+          "forward_calls": 15,
+          "max_forward_calls": 90,
+          "best_evaluated": {
+            "x": [
+              1.8,
+              0.10000000000000003
+            ],
+            "parts": {
+              "data_loss": 2.2476204304106663e-27,
+              "calibration_loss": 0.0,
+              "prior_loss": 0.0,
+              "candidate_model_penalty": 0.0,
+              "fixed_covariance_logdet_half": -23.025850929940457,
+              "raw_noise_only_chi2": 4.495240860821333e-27,
+              "effective_covariance_chi2": 4.495240860821333e-27,
+              "optimized_objective": 2.2476204304106663e-27,
+              "declared_score": -23.025850929940457
+            }
+          },
+          "converged": true,
+          "status": 1,
+          "message": "`gtol` termination condition is satisfied.",
+          "solver_nfev": 5,
+          "solver_endpoint": [
+            1.8,
+            0.10000000000000003
+          ],
+          "active_mask_free": [
+            0,
+            0
+          ]
+        },
+        {
+          "start": [
+            1.81,
+            0.2708300196593437
+          ],
+          "fixed": {},
+          "forward_calls": 15,
+          "max_forward_calls": 90,
+          "best_evaluated": {
+            "x": [
+              1.8000000000000005,
+              0.2688300196593437
+            ],
+            "parts": {
+              "data_loss": 1.8971011805321894e-27,
+              "calibration_loss": 0.0,
+              "prior_loss": 0.0,
+              "candidate_model_penalty": 0.0,
+              "fixed_covariance_logdet_half": -23.025850929940457,
+              "raw_noise_only_chi2": 3.794202361064379e-27,
+              "effective_covariance_chi2": 3.794202361064379e-27,
+              "optimized_objective": 1.8971011805321894e-27,
+              "declared_score": -23.025850929940457
+            }
+          },
+          "converged": true,
+          "status": 1,
+          "message": "`gtol` termination condition is satisfied.",
+          "solver_nfev": 5,
+          "solver_endpoint": [
+            1.8000000000000005,
+            0.2688300196593437
+          ],
+          "active_mask_free": [
+            0,
+            0
+          ]
+        }
+      ],
+      "clusters": [
+        {
+          "representative": {
+            "x": [
+              1.8000000000000005,
+              0.2688300196593437
+            ],
+            "parts": {
+              "data_loss": 1.8971011805321894e-27,
+              "calibration_loss": 0.0,
+              "prior_loss": 0.0,
+              "candidate_model_penalty": 0.0,
+              "fixed_covariance_logdet_half": -23.025850929940457,
+              "raw_noise_only_chi2": 3.794202361064379e-27,
+              "effective_covariance_chi2": 3.794202361064379e-27,
+              "optimized_objective": 1.8971011805321894e-27,
+              "declared_score": -23.025850929940457
+            },
+            "attempt_index": 1,
+            "converged": true
+          },
+          "members": [
+            1
+          ]
+        },
+        {
+          "representative": {
+            "x": [
+              1.8,
+              0.10000000000000003
+            ],
+            "parts": {
+              "data_loss": 2.2476204304106663e-27,
+              "calibration_loss": 0.0,
+              "prior_loss": 0.0,
+              "candidate_model_penalty": 0.0,
+              "fixed_covariance_logdet_half": -23.025850929940457,
+              "raw_noise_only_chi2": 4.495240860821333e-27,
+              "effective_covariance_chi2": 4.495240860821333e-27,
+              "optimized_objective": 2.2476204304106663e-27,
+              "declared_score": -23.025850929940457
+            },
+            "attempt_index": 0,
+            "converged": true
+          },
+          "members": [
+            0
+          ]
+        }
+      ],
+      "cluster_metric": "Euclidean distance after declared parameter scaling; greedy representative, not basin proof",
+      "cluster_distance_scaled": 0.2,
+      "global_minimum_certified": false,
+      "unconverged_points_retained": true,
+      "search_domain": [
+        [
+          1.1,
+          0.005
+        ],
+        [
+          3.0,
+          1.5
+        ]
+      ]
+    },
+    "ledger": {
+      "cap": 200,
+      "vector_calls": 30,
+      "charged_optical_kernel_calls_upper_bound": 180,
+      "starts": 2,
+      "by_purpose": {
+        "fit": 30
+      }
+    },
+    "starts_informed_by_analytic_alias": true,
+    "global_certificate": false
+  },
+  "optical_model_mismatch": {
+    "training_max_difference_at_pivot": 0.0,
+    "heldout_residual_noise_units": [
+      28.24233108053864,
+      -27.370816773664096
+    ],
+    "all_values_synthetic": true
+  },
+  "design_claim": "more local Gaussian information can coexist with worse bias/MSE under wrong model",
+  "heavy_run": false
+}

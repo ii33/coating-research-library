@@ -1,0 +1,26 @@
+{
+  "result": "passed",
+  "checks": [
+    {
+      "case": "altered_payload",
+      "rejected": true,
+      "last_error": "ValueError: payload_hash_mismatch:README.md"
+    },
+    {
+      "case": "extra_file",
+      "rejected": true,
+      "last_error": "ValueError: payload_file_set_mismatch:['unlisted_extra.txt']"
+    },
+    {
+      "case": "missing_copied_dependency",
+      "rejected": true,
+      "last_error": "ValueError: payload_hash_mismatch:dependencies/t09r3/data/claim_contract.json"
+    },
+    {
+      "case": "duplicate_manifest_path",
+      "rejected": true,
+      "last_error": "ValueError: unsafe_manifest_path"
+    }
+  ],
+  "independent_temp_copy": true
+}

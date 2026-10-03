@@ -1,0 +1,132 @@
+{
+  "status": "passed_narrow_check",
+  "checked_at_utc": "2026-10-02T19:23:07.130241+00:00",
+  "reviewer_identity": "Independent native OpenAI assistant subagent; exact model identifier not exposed to this subagent",
+  "review_scope": "One unit/positive-scale/fixed-target/signed-net check only; not designated external-model review, full algorithm review, literature review, or physical/material certification",
+  "source_sha256": {
+    "models/bounded_response.py": "0f6c220117f3fc7d0e8f71a56d38ecda841a43fb24cf855a30bd684a23dde864",
+    "models/run_examples.py": "dac6bf082879a909bdc261d49335ea0dc11b8b607c5057d2914a29b53bc1ce5e"
+  },
+  "units": {
+    "basis": [
+      "kg",
+      "m",
+      "s"
+    ],
+    "h_exponents": [
+      0,
+      1,
+      0
+    ],
+    "manual_h_m": {
+      "exact": "1/1000000000",
+      "decimal": 1e-09
+    }
+  },
+  "common_positive_scaling": {
+    "scales": [
+      {
+        "exact": "1/2",
+        "decimal": 0.5
+      },
+      {
+        "exact": "2",
+        "decimal": 2.0
+      }
+    ],
+    "objective_A_B": [
+      {
+        "exact": "1/50",
+        "decimal": 0.02
+      },
+      {
+        "exact": "1/200",
+        "decimal": 0.005
+      }
+    ],
+    "preserved": true,
+    "condition": "The complete signed thickness and the positive target must share the same factor; multiplying deposition alone with fixed nonzero erosion does not meet this premise."
+  },
+  "fixed_target_reversal": {
+    "baseline_better": "B",
+    "scaled_better": "A",
+    "scaled_objective_A_B": [
+      {
+        "exact": "9/50",
+        "decimal": 0.18
+      },
+      {
+        "exact": "18/25",
+        "decimal": 0.72
+      }
+    ]
+  },
+  "manual_signed_case": {
+    "net_mass_kg_m2": {
+      "exact": "-1/1000000",
+      "decimal": -1e-06
+    },
+    "signed_h_m": {
+      "exact": "-1/2000000000",
+      "decimal": -5e-10
+    }
+  },
+  "normalization": {
+    "negative": {
+      "status": "negative_net",
+      "value": null
+    },
+    "zero": {
+      "status": "zero_or_crossing",
+      "value": null
+    },
+    "crossing": {
+      "status": "zero_or_crossing",
+      "value": null
+    }
+  },
+  "signed_forward_panels_per_visible_segment": 8,
+  "signed_forward": {
+    "negative": {
+      "status": "negative_net",
+      "net_mass_kg_m2": [
+        -7.842874574879106e-06,
+        -7.747527341582067e-06
+      ],
+      "signed_thickness_change_m": [
+        -3.921437287439553e-09,
+        -3.873763670791034e-09
+      ],
+      "objective_interval": null
+    },
+    "zero": {
+      "status": "zero_or_crossing_net",
+      "net_mass_kg_m2": [
+        0.0,
+        0.0
+      ],
+      "signed_thickness_change_m": [
+        0.0,
+        0.0
+      ],
+      "objective_interval": null
+    },
+    "crossing": {
+      "status": "zero_or_crossing_net",
+      "net_mass_kg_m2": [
+        -8.428745748791044e-07,
+        2.252472658417932e-06
+      ],
+      "signed_thickness_change_m": [
+        -4.214372874395522e-10,
+        1.126236329208966e-09
+      ],
+      "objective_interval": null
+    }
+  },
+  "limitations": [
+    "The general common-factor identity is algebraic; independent interval boxes for a correlated target were not used.",
+    "No material calibration, continuum/source certificate, event/gradient verification, or full examples suite was run.",
+    "run_examples.py was read, but its complete examples() function was not executed."
+  ]
+}

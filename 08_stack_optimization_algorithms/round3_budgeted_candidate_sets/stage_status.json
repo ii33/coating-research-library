@@ -1,0 +1,30 @@
+{
+  "stage_id": "ROUND3.T08_BUDGETED_CANDIDATE_SETS",
+  "version": "0.1.0",
+  "algorithmic": true,
+  "status": "local_freeze",
+  "formal_stage_acceptance": "pending",
+  "physical_certification": false,
+  "production_qualified": false,
+  "point12": "partial_unchanged",
+  "point2": "conditional_non_strict_unchanged",
+  "author_self_check": "passed_in_scope_30_tests",
+  "independent_narrow_check": {
+    "model": "GPT-6 Luna",
+    "status": "completed",
+    "scope": "shared latent/units/4-point independent matrix; exact coverage; budget UNKNOWN; objective and witness bounds; input provenance negative cases",
+    "single_wavelength_interval_calls": 16,
+    "formal_model_chain": false
+  },
+  "specified_model_chain": {
+    "DeepSeek_execution": "not_run",
+    "Seed_Pro_stage_review": "pending_not_run",
+    "Sol_full_algorithm_review": "pending_not_run"
+  },
+  "full_plan": "plan_only_not_run",
+  "devices": 0,
+  "html_layout": "unverified_existing_restriction_not_retried",
+  "publication": "not_requested_not_run",
+  "next_stage_started": false,
+  "stop_condition": "local_freeze_and_receipt"
+}

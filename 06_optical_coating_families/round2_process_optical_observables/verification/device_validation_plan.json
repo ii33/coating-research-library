@@ -1,0 +1,13 @@
+{
+  "status": "not_run",
+  "device_selected": null,
+  "user_device_arrangement": "pending_future_instruction",
+  "tasks": [
+    {"id": "DV-1", "scope": "full multi-band multi-angle batch_plan.json", "status": "not_run"},
+    {"id": "DV-2", "scope": "bandpass/angular discretization and finite-difference step convergence", "status": "not_run"},
+    {"id": "DV-3", "scope": "input covariance Monte Carlo coverage and memory/runtime profile", "status": "not_run"},
+    {"id": "DV-4", "scope": "independent real film density/composition/nk and instrument validation", "status": "not_run"}
+  ],
+  "this_round": "tiny parsing/arithmetic/correctness only; no automatic GPU, sampling, physical experiment or paid work",
+  "production_calibration": false
+}

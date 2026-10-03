@@ -1,0 +1,1939 @@
+{
+  "schema": "prospective-publication-projection-v1",
+  "created_at_utc": "2026-10-02T10:45:15.556630+00:00",
+  "status": "not_published_not_authorization_T10_full_reader_blocked",
+  "allowlist_path": "00_project/round2_prospective_publish_allowlist.txt",
+  "candidate_count": 382,
+  "hash_record_count": 381,
+  "self_hash_excluded": true,
+  "file_content_bytes_only_no_xattrs": true,
+  "group_counts": {
+    "T06": 63,
+    "T07": 56,
+    "T08": 72,
+    "T09": 87,
+    "T10": 83,
+    "MXC_DERIVED": 5,
+    "ROOT_PLANNING": 16
+  },
+  "original_receipts_preserved": [
+    "06_optical_coating_families/round2_process_optical_observables/verification/freeze_receipt.json",
+    "07_thin_film_design_theory/round2_measurement_identifiability/verification/freeze_receipt.json",
+    "08_stack_optimization_algorithms/round2_robust_inversion/verification/freeze_receipt.json",
+    "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/freeze_receipt.json",
+    "10_ion_sources/round2_observable_material_response/verification/freeze_receipt.json"
+  ],
+  "blocked_projection": {
+    "stage": "T10R2",
+    "excluded_payload_path": "10_ion_sources/round2_observable_material_response/dependencies/manual_studies/2026-10-02_morningtech_mxc/evidence/provenance.json",
+    "reason": "private Library identity; immutable source manifest includes this dependency; original ZIP also includes it",
+    "full_reader_status": "blocked_pending_separate_derived_package_not_created_here"
+  },
+  "files": [
+    {
+      "path": "00_project/PRIOR_RESEARCH_CROSS_REFERENCE.md",
+      "bytes": 5351,
+      "sha256": "10bbbe6b1c9ffe6563e4443c4e438182cf84e50b6a066816cecced74037b5314"
+    },
+    {
+      "path": "00_project/ROUND2_EVIDENCE_INDEX.json",
+      "bytes": 15700,
+      "sha256": "03b02cba7657cd747e163d996c2ed292ae95798087293e247988737e0f74e593"
+    },
+    {
+      "path": "00_project/ROUND2_PUBLICATION_PLAN.md",
+      "bytes": 4625,
+      "sha256": "77e4d5cd3e0a82e0d0126463a826d15bb86310cb88e2cadd0a03624c5ec2ba83"
+    },
+    {
+      "path": "00_project/ROUND2_REPRODUCTION_AND_DEVICE_PLAN.md",
+      "bytes": 7849,
+      "sha256": "6f775dfcd3eab0799b3adeef44b779946832a6897fca0a19ee82a32cf1f98ef6"
+    },
+    {
+      "path": "00_project/ROUND3_PRIORITY_DRAFT.md",
+      "bytes": 3487,
+      "sha256": "f77a712a9df3fc777fa20aa0869fbde73fc2b0de3b3210ade904f70d1b613bc1"
+    },
+    {
+      "path": "00_project/SECOND_SWEEP_SYNTHESIS.md",
+      "bytes": 8529,
+      "sha256": "16df68d75abd4341bdfc0b42e8acb3b3cba62ba93cb268906682e1b42724217d"
+    },
+    {
+      "path": "00_project/planning_baseline_manifest.json",
+      "bytes": 9599,
+      "sha256": "6529b843ae25fd62ad179aec59c5449b719112f6c666a2392980be1f9e5eb8db"
+    },
+    {
+      "path": "00_project/research_tasks.json",
+      "bytes": 47935,
+      "sha256": "24f0add9e099f0949c50f126173a8ac1ecce79bd220a455a1ebcf977fa854469"
+    },
+    {
+      "path": "00_project/round2_consolidation_integrity.json",
+      "bytes": 2260,
+      "sha256": "a67ec2737b3085404082881725411489b5d989a5842dd309b0184ddc93b9b835"
+    },
+    {
+      "path": "00_project/round2_prospective_publish_allowlist.txt",
+      "bytes": 35285,
+      "sha256": "cd320a988c0ff1cfdb79c4c3898ac2bacb62779f49a735bb3e0e0eb779086d73"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/README.md",
+      "bytes": 2718,
+      "sha256": "c12c5ea964c5866188248ec6535bdbc0ef42d4ffd670da47433cc06a2db699bb"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/T07_ROUND2_HANDOFF.md",
+      "bytes": 1405,
+      "sha256": "8a0f20e6a4e943b77469d3a4019a15307f618cf5fab206ed552e7217a3332d64"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/data/al_mcpeak_derived.json",
+      "bytes": 7971,
+      "sha256": "6de78c8ca9bdf0522f0c72ab2a4182fec0f345442bcca7089db593d548a6b558"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/data/batch_plan.json",
+      "bytes": 1290,
+      "sha256": "cefb17c76ccfb32caadc4bb443897f11fddb11c5370d71a59a9e860bc2aaa784"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/data/frozen_dependencies.json",
+      "bytes": 878,
+      "sha256": "98ac28a70ec558bd95fe1a4f9da204e06652db750783a0d2f02996d3c39bc486"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/data/process_optics.schema.json",
+      "bytes": 17914,
+      "sha256": "59225f88542ed5938ab64b2821abb71d829de82f4bb47546e78840f122d56127"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/data/reader_allowlist.json",
+      "bytes": 2581,
+      "sha256": "3e140013b426ea5fd689d8e3a9c2011ab64db11ab1ca297681136a3eaf1a6063"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/examples/actual_unmeasured.json",
+      "bytes": 3124,
+      "sha256": "5e945e38ff38049d84b413b5de163d1fac0368c78c323d71e053de089155ab16"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/examples/al_reference_conditional.json",
+      "bytes": 3652,
+      "sha256": "33bf5cd8d63dbf5fc79f25b58f00986288a0ee730b212249ccb6593abeee0c9f"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/examples/bulk_density_misuse.json",
+      "bytes": 3107,
+      "sha256": "28060613790cb1c97d449a8d0ed32b57ca45f2f11fe4d5a175723df7bd407e00"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/examples/bulk_nk_misuse.json",
+      "bytes": 3114,
+      "sha256": "992d1b8b26ac0adf50371edab8ed819fa09de344f4603453e3f1c0806faf2cdb"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/examples/synthetic_dielectric.json",
+      "bytes": 3118,
+      "sha256": "4b7133df975a23e1fccda67d62f354e3749e22175e0a1b80f5b3f051721a5659"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/examples/unknown_density.json",
+      "bytes": 3113,
+      "sha256": "29dc8fed28c70a0917e8961e8c597d642e50510339baaa0e802c6bc19e073227"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/examples/unknown_scatter.json",
+      "bytes": 3096,
+      "sha256": "40e945f4ef6e72703c6f037b04deb3aaa575821c92146244467bf4fee0e211a7"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/examples/unknown_temperature.json",
+      "bytes": 3115,
+      "sha256": "e2180dd40f3b9b991032bd19d5bf507d97ea47ae70d1708a454600a4527eb708"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/figures/01_process_observable_contract.png",
+      "bytes": 102543,
+      "sha256": "6da310aaddd5ecfc7e3cb3221ea2afd212ef7cac0dde564952feddfef4359723"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/figures/01_process_observable_contract.svg",
+      "bytes": 9270,
+      "sha256": "4be707dccf3fd5fc1ce03b9686183d6e515cceb1c7cd8a94069fc5943f20e14a"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/figures/02_nonuniqueness_and_false_fit.png",
+      "bytes": 80646,
+      "sha256": "0c777611b7f4870bc05345547b1986b547b7dcdb54e687cea8e0c6098c199c6f"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/figures/02_nonuniqueness_and_false_fit.svg",
+      "bytes": 17548,
+      "sha256": "8786b9e38f49aeeb5348943066dcf1ef874bc09bf58fcc4052064c21856ca48b"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/figures/03_energy_and_observability.png",
+      "bytes": 82935,
+      "sha256": "4ca6daade4f07d3b69ca6971f7dde0453686b6c4c169991c46a90cf99c1a9f7f"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/figures/03_energy_and_observability.svg",
+      "bytes": 26173,
+      "sha256": "dc781508faa0b6b305e4b8b1c7923152f3b1b4058b56aa0d3c440722240ad5f2"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/freeze_manifest.json",
+      "bytes": 10594,
+      "sha256": "41dc4ab4fa884d1083183d4e540b353e0e61156737dd7dc68529d122dc93aad2"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/index.html",
+      "bytes": 28711,
+      "sha256": "5d281dde5be6337bc9f07c5728a35f6f3ea4944bfa168cf7908672cf2f07cd03"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/batch_driver.py",
+      "bytes": 3229,
+      "sha256": "cfd6a31711db09621f0c1166f1a07ec9a251240fc96ca5784b58898286b84708"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/build_inputs.py",
+      "bytes": 9852,
+      "sha256": "e971b68563f86ab6163a90e2b96a253b76bee2e919a46b3c57b6bcc9fcd65e5e"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/check_integrity_guards.py",
+      "bytes": 1471,
+      "sha256": "7f086056338ad13cd79726591341988c9942ce0b92ea345428b5a915ece751fd"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/data_qa.py",
+      "bytes": 1254,
+      "sha256": "aab42f4ada0e7b8f25ba865c21b355ae8b536b0deb3247eb334dde850244c2f8"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/diagnostics.py",
+      "bytes": 3720,
+      "sha256": "b0703d14ed953afb4a75614057e0ed142e577ca081a70c009094f7cd9d96def7"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/freeze_package.py",
+      "bytes": 5479,
+      "sha256": "c3a2ef170a373e85b5f8352ea26f9012eb84e760e2d87d096610433ccf07fbfa"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/inference.py",
+      "bytes": 5373,
+      "sha256": "489b2f253e05933da5fb09f1da0c67ca8dd5a5675d63c11d3b400cc206d453d8"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/plot_figures.py",
+      "bytes": 3563,
+      "sha256": "5a754ac0ce5a0fc38ac39293ac92e67005335d418404650c895584de25663244"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/process_optics.py",
+      "bytes": 14095,
+      "sha256": "224f2e09917bc2824e9ef19d9d2fa158dd436597f5c0c112fa08c48a357c0a6c"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/reader.py",
+      "bytes": 4337,
+      "sha256": "065d90a4454dc4a8d4a391905a5de7690cd3c2696ac247b278aaf6518a1824f3"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/models/vendor/optics_kernel.py",
+      "bytes": 10007,
+      "sha256": "c57dbf87435a2d52bf04946c77a8935a393f2379fc261f8a870c027652cedd57"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/reports/01_process_to_conditioned_film.md",
+      "bytes": 5096,
+      "sha256": "8124eff397f5a95fed1f63bc77a273beac8d51a03e88be9aaccdebd4c3860b0e"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/reports/02_optics_and_measurement_contract.md",
+      "bytes": 4393,
+      "sha256": "2dab9ce5253331b622014a786b08494d92acd35b7e74bbcd14bff4691eb4988f"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/reports/03_identifiability_and_failure_cases.md",
+      "bytes": 4516,
+      "sha256": "cf95f2756e2b1f2f1d1962d4b394e474c3c6d83a6b55cb8a62c94b4a1a05cf45"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/reports/04_measurement_and_uncertainty_plan.md",
+      "bytes": 5107,
+      "sha256": "21cfb14e5f8be68e0e49867fbe371cb715678c763600df7f7fb53f3483c9209f"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/reports/05_reproduction_and_acceptance.md",
+      "bytes": 4067,
+      "sha256": "24b5ce078f7f77311c0ba1b6d2a2f4087a6e3eae5b293692b1dfa19b3230edaf"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/requirements.txt",
+      "bytes": 57,
+      "sha256": "3338794cb4ac88060b180800d023a697bf4b2f53e7833bb0270c8d55ae7729e1"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/reviews/author_acceptance.md",
+      "bytes": 2802,
+      "sha256": "be28b99c5f3e429f8d833c0262a666dbf085d085bd632b286c2a7e1414efbfb9"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/reviews/independent_optical_check.md",
+      "bytes": 4606,
+      "sha256": "1b36602004fe1224afaa3efd9708723c8b893b3e5837ea5ba9c5589b6b10030c"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/sources/RIGHTS_AND_ACCESS.md",
+      "bytes": 1301,
+      "sha256": "7228d673529467b44f7e0af87a379085f086d1d7d3f055253fe9c22d8cab4d44"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/sources/source_registry.json",
+      "bytes": 10463,
+      "sha256": "a370f756fd0f57421404b7bc471e9abaeac669cd741f2bad9304a7072b078c14"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/sources/summaries/PO-S01_mcpeak_al.md",
+      "bytes": 2202,
+      "sha256": "1a8bf436d9113053d94ea80522c2ccabf02a74f0efdfd42a3741589cea232d98"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/sources/summaries/PO-S02_al_cc0_data.md",
+      "bytes": 1709,
+      "sha256": "b7dd00e68fae45c4d9e672c0cbcd8606da700d9a6acb60e8dba6f7c949a1851b"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/sources/summaries/PO-S03_malitson_fused_silica.md",
+      "bytes": 1412,
+      "sha256": "f6118762770b37ff555c4bd6990df39ab9489d919a1a57898b3d1a664e9986e1"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/sources/summaries/PO-S04_byrnes_tmm.md",
+      "bytes": 1536,
+      "sha256": "0eaa6f8618cc7fb41f5b53d8d982b06aabbf7129c574f35ca6d542d2b46a27a6"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/sources/summaries/PO-S05_hanssen_integrating_sphere.md",
+      "bytes": 1667,
+      "sha256": "bd3714416801b5485e35c61c8caa7a035bde14a0c918e00660059a4248714a79"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/sources/summaries/PO-S06_nist_reference_sphere.md",
+      "bytes": 1391,
+      "sha256": "e00d0ef861e1ba27b351dc383ae8cf285b919afb996677442be179a70e9b9075"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/stage_status.json",
+      "bytes": 1312,
+      "sha256": "cd44c1ae07ddf8fa97db1eb6bbae2c54c79c7c5e98aec93091f73e59a3971248"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/tests/test_independent_optical.py",
+      "bytes": 7818,
+      "sha256": "2053da9777c90043e3b6e937c2df137701a601bd5d415746e866a9d2a76061c4"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/tests/test_process_optics.py",
+      "bytes": 8545,
+      "sha256": "daa9779eca2bf0fbbdc8e9a735454d3bd03a0c1e408b7b6f3c5386411d6d92c5"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/batch_plan_receipt.json",
+      "bytes": 608,
+      "sha256": "a435f5050b9c78667a769c5009221f3911c3e15d38cb88da754c63be5052eac5"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/concurrent_planning_changes.json",
+      "bytes": 2179,
+      "sha256": "accadfe4de1f3fa799e24bfcaec1ff08858842abb65b9c43c0bf70a649ee97eb"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/data_qa.json",
+      "bytes": 648,
+      "sha256": "b2d0c0fad9de4955e827db0f69aafa97a486d477e854d51dd6aef914d7bf2bb7"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/device_validation_plan.json",
+      "bytes": 749,
+      "sha256": "d37c8cd90055e9264eb46881a19b3d2c9e0ba330f33c708583d85b888506459b"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/diagnostics.json",
+      "bytes": 7891,
+      "sha256": "08b3b444a164a94ee1e984e8b66276e4fc48896c5d5bfbe159db2b2798c5c655"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/environment.json",
+      "bytes": 233,
+      "sha256": "b0bb92e4225a2c8d8587ed5abf52d0cdd22399640868515716f95be95fd87426"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/freeze_receipt.json",
+      "bytes": 643,
+      "sha256": "24c67544c73edbd0e0225243c0cb5c267b1a9c6be493484f36f129527925649c"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/integrity_negative_checks.json",
+      "bytes": 894,
+      "sha256": "8cb5cf8073f927af7fe1f0a0dd55d00eb0b8bd5528a0a22537dfe3a9d96184e0"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/isolated_reader_check.json",
+      "bytes": 3288,
+      "sha256": "43e88ca61cbdcf5ccaa838e8af1049c18409a4683b52d1fe03b5d324dd43d4a8"
+    },
+    {
+      "path": "06_optical_coating_families/round2_process_optical_observables/verification/unit_tests.txt",
+      "bytes": 5930,
+      "sha256": "e576b3a4bc26b4a938b521944d3985a03635e8ab1cbfa3b5eb1020f1f70bdb94"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/README.md",
+      "bytes": 1830,
+      "sha256": "3f1b9f637108edbb6c96524b2bcd7074c76599856db13f519ffa94312e0a2116"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/T08_ROUND2_HANDOFF.md",
+      "bytes": 2016,
+      "sha256": "b054c4716f23ad4d3df9f9c85cdb815e98f3338dad6e9c1662721656a91bf723"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/data/frozen_dependencies.json",
+      "bytes": 339,
+      "sha256": "0a6f8752ac460b3e16347dd8c4c2ece1f7171a352d1997e5ceb5efee53e3fb49"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/data/local_source_archive_manifest.json",
+      "bytes": 558,
+      "sha256": "92851ef49779fce51d6de8dfe5f33d6eac2cb94b86001129cd638e46c592f076"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/data/measurement_contract.json",
+      "bytes": 696,
+      "sha256": "20a7f8c58108b84b6c3316bfd20a7a3b924d730c34c9db9f0d9d91dcd9e84164"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/data/read_provenance.json",
+      "bytes": 1918,
+      "sha256": "36aa5694d6cb6297ad4eca466ff09f47f2421c5e7b403a00c1e4d95427549807"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/data/reader_allowlist.json",
+      "bytes": 2177,
+      "sha256": "f38136b8a522ed75194965f8591c189a5c0d046c11ea31e59d3e6b6210c78ec5"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/figures/01_conditional_singular_values.png",
+      "bytes": 83730,
+      "sha256": "42db7b617715da9f2154e10a6026f2cf4db45c9bb82bc97dd12e76c4ae31fbea"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/figures/01_conditional_singular_values.svg",
+      "bytes": 54559,
+      "sha256": "be42beef7a25d30171b5101310c2b0f5a9d81f01fcb21b436b9a77676ba3b264"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/figures/02_local_rank_global_alias.png",
+      "bytes": 80744,
+      "sha256": "d511c362448372444d73101cc5051519112cdf3aca06bfd600a27d951b837adb"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/figures/02_local_rank_global_alias.svg",
+      "bytes": 57374,
+      "sha256": "ba1c120193ff70b1321bf150e24b6cc6dbc8b7a8733f4a83e8e6677b9380057c"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/freeze_manifest.json",
+      "bytes": 9871,
+      "sha256": "3bebbe99f2c28fc7833c5d27239e5ea44be87a0153e19d60e40f80cd3c73c07a"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/index.html",
+      "bytes": 46797,
+      "sha256": "a331b7203ce564f90183ec99ce945d59df2c4384bf56122dfc0cdfb5d0ddd5ff"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/batch_driver.py",
+      "bytes": 5572,
+      "sha256": "b8fec1c6884d2fa34aec66e26ce61acdb5f8854e587e7cc1db5d411e412ac531"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/build_metadata.py",
+      "bytes": 8390,
+      "sha256": "2685213fcbab053eed2c4b85f3330f12bd2b09584f9940053cd01915b70bb04f"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/build_reader.py",
+      "bytes": 4817,
+      "sha256": "b35ad66be59ccddfecbceeacd33c7ed8cc21b04f631cb9404dfacbbc51f35180"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/data_qa.py",
+      "bytes": 1491,
+      "sha256": "d893646484d793b3a5a064dfb263750a0e2e6e453b33cc06b77221b8c236fa8d"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/diagnostics.py",
+      "bytes": 3174,
+      "sha256": "fd16ee08037066749c8abd211728279df58cb3c243e1f1aa5d8120763371061c"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/freeze_package.py",
+      "bytes": 2794,
+      "sha256": "80c595f511c02439a3b63df34b95136f08846cadc67fe7616e83c29be396630c"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/identifiability.py",
+      "bytes": 6125,
+      "sha256": "1b6998d8838104f988e129e2efce79d375da7785178cd0ece0251c46ef8608b3"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/measurement.py",
+      "bytes": 7814,
+      "sha256": "0e3c2a82b55c2946f0ff3a076123e3c82624bcfa10d5478e17066d018a6fd6dd"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/plot_figures.py",
+      "bytes": 2402,
+      "sha256": "2f67d1d2d09b312c533d9be65cb0d85a65ce2da7c668be0170e63de344f71154"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/reader.py",
+      "bytes": 5984,
+      "sha256": "42acfc0d4e28902f4511d2a937845f5d8f5eda0e92f8d173de303254644e7e69"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/scenarios.py",
+      "bytes": 1432,
+      "sha256": "78af5bc36d9b81220bba7b9e57cdf153f3abcbaf33aad6094904cfe4eb324e8b"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/models/vendor/optics_kernel.py",
+      "bytes": 10007,
+      "sha256": "c57dbf87435a2d52bf04946c77a8935a393f2379fc261f8a870c027652cedd57"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/reports/01_conditional_measurement_operator.md",
+      "bytes": 4919,
+      "sha256": "1d72d09204ee14dd431921fa6162ab497934624e794d312f5a9470f24fda989c"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/reports/02_phase_polarization_and_coordinates.md",
+      "bytes": 4178,
+      "sha256": "d46e078279f5f5c455c792a28af8edfd8c98cf5e3e93ebf0dd1595dccde0b026"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/reports/03_jacobian_scaling_and_nuisance.md",
+      "bytes": 5377,
+      "sha256": "e95dc6dcfa44c80bf516eeb2efa9f4c0c751064851ed064b2c37ec6a8b427263"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/reports/04_local_global_ambiguity.md",
+      "bytes": 5347,
+      "sha256": "8b941fbc4f3e1c86b077c940d22da066774d82daacd718c5e528d17bf95daa59"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/reports/05_conditional_comparisons_and_design.md",
+      "bytes": 6149,
+      "sha256": "083e89f8948939bd2949a00a91139ec6032e84386c59a7d3ca992ee31ceac2df"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/reports/06_provenance_uncertainty_and_reproduction.md",
+      "bytes": 6400,
+      "sha256": "75f83f5600ae99665150b68fca16910c2cf22ac7112b597ec8b796329d602abb"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/requirements.txt",
+      "bytes": 46,
+      "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/reviews/author_acceptance.md",
+      "bytes": 2844,
+      "sha256": "8978da23b62df40e05ca4d2e57e014d2b2a3f0ce32a58888b1252851cb8bb74a"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/reviews/independent_phase_dimensional_check.md",
+      "bytes": 3326,
+      "sha256": "be40d7f0185f8accbac7b93ba9e28d68d820ba5db456d2e33e601c92bfa6273e"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/sources/RIGHTS_AND_ACCESS.md",
+      "bytes": 1088,
+      "sha256": "ac0a84323aaf8c310a588ab9ae8af5e477b56114444775a316236918ffd849ea"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/sources/source_registry.json",
+      "bytes": 5570,
+      "sha256": "08d4323a8e6a766fcdc143c4553d7665e97de007a3f72f12017ad803a8781366"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/sources/summaries/MI-S01.md",
+      "bytes": 774,
+      "sha256": "a815c4a871b6bd6b52108bec29faa453d56e87486652f16ae03ce06ace36178f"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/sources/summaries/MI-S02.md",
+      "bytes": 1009,
+      "sha256": "5b2737d5333e924d9fbdd1a56b66a96cb0f5f9eec6bab5d2adf20db37dea5128"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/sources/summaries/MI-S03.md",
+      "bytes": 943,
+      "sha256": "487f40190c6642736ad5c3b13449b771275e9b5159a33d1a5a5276df86930b04"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/sources/summaries/MI-S04.md",
+      "bytes": 977,
+      "sha256": "b5f5ec815b33dae4b32d6448d475147b76b5546eab8b799f63429f1712bb7ec8"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/sources/summaries/MI-S05.md",
+      "bytes": 746,
+      "sha256": "1068e00062e0f858fc3f7f36f12a2d88e6ffcc14c54a927b0ea2b01c77ff7b15"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/sources/summaries/MI-S06.md",
+      "bytes": 949,
+      "sha256": "760ddca748bca850d37a064e9d36700b8fb73d23114d79bb3fe8b113aeab7d62"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/stage_status.json",
+      "bytes": 969,
+      "sha256": "a27ebc5d1011bd3a66528aac2e7366a3127d93c169221728de0c3eaab306f0f8"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/tests/test_integrity.py",
+      "bytes": 2544,
+      "sha256": "c89ddb6818927acb139bda39e5831fbe33db62c47c567d33b3efafdf82eb0cad"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/tests/test_reference.py",
+      "bytes": 4484,
+      "sha256": "585073c2895ee002ad306c51f53a4bd31efabfb627f0a0f5ebe9db1bbd54261d"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/batch_plan_receipt.json",
+      "bytes": 1564,
+      "sha256": "7f8e83b7e4e47cd1a604192f95e93f2b7842ce0001d1a08270ee2603f2579e2d"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/data_qa.json",
+      "bytes": 204,
+      "sha256": "24851b3044ed07b2d4bd8d142bd90791e3eba24bfbaa0819b05fbd3a20247e6c"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/diagnostics.json",
+      "bytes": 20889,
+      "sha256": "ba15177f71a87ba0a520c0b21b5f4459690d3f2439e0d3e6737350103564ab8c"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/environment.json",
+      "bytes": 241,
+      "sha256": "89e09198bad23f34cdfe4581dda930155961db74e93e3f3a6424c518aebb0373"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/freeze_receipt.json",
+      "bytes": 781,
+      "sha256": "8e5d73e76c9d0a00e8ece2a6328b1e9170c92dbe0ab13c2467f4b81616d70b75"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/initial_rank_threshold_failure.txt",
+      "bytes": 1938,
+      "sha256": "9f08448b4ff8b6187611739945a2bde25c78b2c4d432ffadc5587045e47667b3"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/reader_link_check.json",
+      "bytes": 268,
+      "sha256": "4a83a57ea5ec385dea35b3861cf2ddcae6e9486c940ff50cdec14c0a25e541a6"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/tiny_driver/case_000_RT_plus_d.json",
+      "bytes": 6314,
+      "sha256": "8328f45f612e5aabfd794b37cf597dc7ac2239c1d40ce5309407cd2668b8fb88"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/tiny_driver/run_receipt.json",
+      "bytes": 708,
+      "sha256": "0257ef52db94b3e0fc700aa937ce094222982faac42437ee81b33ed61a04c6c3"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/tiny_driver_receipt.json",
+      "bytes": 708,
+      "sha256": "0257ef52db94b3e0fc700aa937ce094222982faac42437ee81b33ed61a04c6c3"
+    },
+    {
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/unit_tests.txt",
+      "bytes": 1726,
+      "sha256": "b84792ec0061ed4801cce08ad2eb4a9e43f024061cce95889fdcd7f7abe95af9"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/README.md",
+      "bytes": 1315,
+      "sha256": "41236112886adb737a25497c6444cbbabb32451ccb26f1054a5d55fbdeeaa088"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/T09_ROUND2_HANDOFF.md",
+      "bytes": 2018,
+      "sha256": "ce03e1a48db88989ddec57612ecf6ab7b5815ea6cba83b65c6645b61573f6b1c"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/data/frozen_dependencies.json",
+      "bytes": 847,
+      "sha256": "e3fcaef12981131432b76d4fd81a16f230f641b19c22413aad6abcbf12dbb75c"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/data/local_originals_manifest.json",
+      "bytes": 1906,
+      "sha256": "cf266d671911a82a5692ee12f76b6a3f4bed91ec09e86f0462ba4c4b0fbf37ec"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/data/observation_contract.json",
+      "bytes": 843,
+      "sha256": "307d43d355d845ebc54b3bae30b626fcab36088f381066bf48339ad289661e5b"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/data/read_provenance.json",
+      "bytes": 1178,
+      "sha256": "82ef77af79ba741e72f4ce43983de5d1d5e1483374d8eb441b780095f90a2871"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/data/reader_allowlist.json",
+      "bytes": 2827,
+      "sha256": "2f97bae75ad77749f40b5811bd18704fc829b39d93417a31a6aa934ba0f9ea2f"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/figures/01_information_and_bias.png",
+      "bytes": 105648,
+      "sha256": "1298084070d9ef3cb90e3cce94a6754ac884d9406f9a9a556526a8e62c4d16f2"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/figures/01_information_and_bias.svg",
+      "bytes": 65361,
+      "sha256": "29a72099dab9db79e53f3df252f2c9795fc3383fe264e51ac38fc898960332a1"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/figures/02_alias_and_mismatch.png",
+      "bytes": 109350,
+      "sha256": "e3c0badbde7f7d373b4e7186f775128e782b19674dd627400ad90822625dfe70"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/figures/02_alias_and_mismatch.svg",
+      "bytes": 70221,
+      "sha256": "a93a171b446c54f9da5612b2c7faf0d25215dbb28e362ebdd4b732ef18249abb"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/freeze_manifest.json",
+      "bytes": 13934,
+      "sha256": "bbdec8b6cc320a091d45e65f450738fecd5476e2a9e2b257770842dfa421e54b"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/index.html",
+      "bytes": 41262,
+      "sha256": "79199839707d1d931565a2be4edc07f3aea87debaaa78d100a27b20ae7b78872"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/batch_driver.py",
+      "bytes": 7162,
+      "sha256": "8dd52d5f30374f98624726f0e8b626eab0efbf80e4d0360cce48423937ba6edc"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/build_reader.py",
+      "bytes": 4951,
+      "sha256": "1afe821790906e58d4a4c8ab9733dbeecf5531d960936efe99e699f10bc4bebe"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/check_reader_visual.py",
+      "bytes": 1493,
+      "sha256": "221da6e23bfd120fb2759f36aa3fe4687403adbe488ec317799e0d5fd330eac6"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/data_qa.py",
+      "bytes": 2592,
+      "sha256": "db930faf063c98e9e3a565418d83beb9fa164c1250f010fce2c3a21a694ca048"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/design.py",
+      "bytes": 4598,
+      "sha256": "e53aea5d2449fc9212bc0cab4398bb4520ef626c276e5ddae9931cea99123a39"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/diagnostics.py",
+      "bytes": 4384,
+      "sha256": "dcd82f0e5453b309a8afe34f09d10182ae048f86a3c5b7a0dcba2947326cfcb4"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/freeze_package.py",
+      "bytes": 2547,
+      "sha256": "2e9e4fe12cf11a3140f27f2a11c388f09280bc96c532faac47c57be5728ca5ab"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/inversion.py",
+      "bytes": 10041,
+      "sha256": "52f0edea7a75271d9e78328361967ffa4e70be0cb77d06afc8ead45407b8abcd"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/plot_figures.py",
+      "bytes": 2722,
+      "sha256": "5ef73d03e40e01d64b9b482538c3cbaab96ded7464b46e2a012478eb5e1a974d"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/reader.py",
+      "bytes": 3388,
+      "sha256": "a6ef61a4b99d7abc0c3f2735f298d7a26ef80cc4a0145a09d3d481d6086c0ee4"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/scenarios.py",
+      "bytes": 4928,
+      "sha256": "9bfab673718d93bc519b8826c95c95c8f33fe9f05478313aa55867b0f2a1b3a6"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/vendor/identifiability.py",
+      "bytes": 6125,
+      "sha256": "1b6998d8838104f988e129e2efce79d375da7785178cd0ece0251c46ef8608b3"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/vendor/measurement.py",
+      "bytes": 7814,
+      "sha256": "0e3c2a82b55c2946f0ff3a076123e3c82624bcfa10d5478e17066d018a6fd6dd"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/models/vendor/optics_kernel.py",
+      "bytes": 10007,
+      "sha256": "c57dbf87435a2d52bf04946c77a8935a393f2379fc261f8a870c027652cedd57"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/reports/01_observation_and_parameter_contract.md",
+      "bytes": 4307,
+      "sha256": "7d608d34f152ca4163b49fca576e54c41e2fcada303fae4c14129e3088fa7a65"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/reports/02_objective_decomposition_and_robustness.md",
+      "bytes": 4344,
+      "sha256": "236f2ca9254029180228bd7a72fa38827016b0d26a438aac6d6cd2742cd7a9bf"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/reports/03_budgeted_discovery_and_profiles.md",
+      "bytes": 4335,
+      "sha256": "6f2a4f0fec03822b104909a462e3c408bc1ac8d38e978675e4ca650d5ed899eb"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/reports/04_heldout_predictions_and_model_stress.md",
+      "bytes": 3604,
+      "sha256": "5d39dcd4edd702f216450053ea8da74f1c45b0efa2c3a5e49f3804f60f36ad36"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/reports/05_conditional_measurement_information.md",
+      "bytes": 4764,
+      "sha256": "fe2fee7ba738ddbebe8dcefc5726eb92a2de4ee82373bc77c233191ec778ffdd"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/reports/06_execution_budget_and_reproduction.md",
+      "bytes": 3966,
+      "sha256": "db2444ef10e046998f81f5ab28416cac33ec59a0b8f340682d25d8647e680bd0"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/reports/07_acceptance_provenance_and_limits.md",
+      "bytes": 3957,
+      "sha256": "d8461d74007ba207677c6fa77bb726e9e7d99770a8d6c851bb7cd6c77b6a450f"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/requirements-visual.txt",
+      "bytes": 178,
+      "sha256": "2463f8e74af45b41a8dad0ca294acab8d181492c841970de49f6de8ccf36a27d"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/requirements.txt",
+      "bytes": 40,
+      "sha256": "fc427f96792059ce540ca8adc5b06cdd1692436654fc3569648ef0d16fc4577b"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/reviews/author_acceptance.md",
+      "bytes": 2786,
+      "sha256": "19c5e6b464786c0590862ec703946430e4b19eabef952dad22855451a4cf1f4c"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/reviews/independent_information_check.md",
+      "bytes": 3306,
+      "sha256": "4932e9dc4e778f6535cb5f11fb33df16f9d00a65f7506a58d334cf7d8494e0b3"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/sources/RIGHTS_AND_ACCESS.md",
+      "bytes": 1054,
+      "sha256": "bd1ca37103cbd5ed62e71a44f8d8f99ef4505ef2acfdab00e3a56c717845d0b8"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/sources/source_registry.json",
+      "bytes": 5220,
+      "sha256": "056a24e9107c9d3251be329aa63f8ac317a6e509f31c245a282dd4710839867e"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/sources/summaries/RI-S01.md",
+      "bytes": 617,
+      "sha256": "5a8b6c2e6428ce8c86440043c5a49e3cf9607dc9de07f78e00fdd57c78c1fe76"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/sources/summaries/RI-S02.md",
+      "bytes": 594,
+      "sha256": "1655eb7d5b9182dc157b866b83f4464ad90a181e4bdb684bb88b3cb6ea21ea27"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/sources/summaries/RI-S03.md",
+      "bytes": 585,
+      "sha256": "15f28b49930a128ccee40509059a72f36b0583be88bab3b55da54c6c9bd101b3"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/sources/summaries/RI-S04.md",
+      "bytes": 517,
+      "sha256": "90656e9d0360e77efcc6a5f93c85c020a4f5c8e1111b41638f9a890b0430714a"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/sources/summaries/RI-S05.md",
+      "bytes": 508,
+      "sha256": "d76c60b55c8f54e948ccce9ecddcf25963b835e7e45d79dfad7d8ab0f69b7f09"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/sources/summaries/RI-S06.md",
+      "bytes": 396,
+      "sha256": "a2310db3d5b468963e5e99c298b9eec9c271b518a75df610e5e5cc58ddc2b7d9"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/stage_status.json",
+      "bytes": 894,
+      "sha256": "199fa6202e7fefc231ea6864743abe54efbe42a3814aa33b3cd657fc6a89b146"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/tests/test_integrity.py",
+      "bytes": 1195,
+      "sha256": "dcdf46ecf968123c12963ef7ceae75e808e9979fda10fdc70b5f3aa0090d1c5b"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/tests/test_reference.py",
+      "bytes": 6376,
+      "sha256": "d47b9eb55c407888d76ed1c09539f2717598402caabbe6a11b19fb2817c9a79e"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/batch_plan_receipt.json",
+      "bytes": 1942,
+      "sha256": "2fa01eb9f8c417b55e756212f1d68dbb7ade2328873951e7f1905e87c31a8713"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/data_qa.json",
+      "bytes": 184,
+      "sha256": "207803d2c7b49df63a73256813d5ef0b5f1b27ecfffb163492db925bc67ef2d9"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/diagnostics.json",
+      "bytes": 7673,
+      "sha256": "e4399b84917c8d71cb109b20e4c24de16ab21b37dace9174702ab2b95679a53d"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/diagnostics_console.txt",
+      "bytes": 7673,
+      "sha256": "e4399b84917c8d71cb109b20e4c24de16ab21b37dace9174702ab2b95679a53d"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/environment.json",
+      "bytes": 221,
+      "sha256": "b0545b814b7b1d09c783d538aa95b688e96e2524ae6cc48dd52aaf1226e4f1c5"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/execution_history.json",
+      "bytes": 561,
+      "sha256": "4efaff4353b25fb20b2c2b4ddf39a2666e61d5a75ed54588e92511227c054b75"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/freeze_receipt.json",
+      "bytes": 332,
+      "sha256": "4aec01df27230599936015d08a04f0dbd7bb8cdb86aa2c206e4602192e603543"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/isolated_reader_receipt.json",
+      "bytes": 5505,
+      "sha256": "f36174607c8eb0e8d9d8e0889466ddab0439aaf3b98280dc828dc925341454fd"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/reader_visual_check.json",
+      "bytes": 547,
+      "sha256": "ff2dc657e3121edc48c407fa87ae2d970a21b563cbe30c0d69eadb8fc996f74d"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_driver/case_000_constant_gaussian.json",
+      "bytes": 40218,
+      "sha256": "d8e94db81b9451528202e143f66eb5ae5b06d98c27bf12b50d07070106828c35"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_driver/case_000_observations.json",
+      "bytes": 3170,
+      "sha256": "aea23955ae31820055b1375d221b35eba2b74e62890d3e3f41a55911b6f267eb"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_driver/execution_plan.json",
+      "bytes": 1357,
+      "sha256": "145eb43eff19dea3653ee91e96af911e0701ce00e328f5d5d88876d9b8130749"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_driver/progress.json",
+      "bytes": 437,
+      "sha256": "96a045ed1096645d79b7c185e1f04827f18d13c00aa16c84ac4b694fa0485dce"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_driver/run_receipt.json",
+      "bytes": 697,
+      "sha256": "29e9286646b6c4ccf1ab8b83aec1d7eee3f9e92596141567adccd24007735fc5"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_driver_receipt.json",
+      "bytes": 697,
+      "sha256": "29e9286646b6c4ccf1ab8b83aec1d7eee3f9e92596141567adccd24007735fc5"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_final/case_000_constant_gaussian.json",
+      "bytes": 40218,
+      "sha256": "d8e94db81b9451528202e143f66eb5ae5b06d98c27bf12b50d07070106828c35"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_final/case_000_observations.json",
+      "bytes": 3170,
+      "sha256": "aea23955ae31820055b1375d221b35eba2b74e62890d3e3f41a55911b6f267eb"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_final/execution_plan.json",
+      "bytes": 1357,
+      "sha256": "145eb43eff19dea3653ee91e96af911e0701ce00e328f5d5d88876d9b8130749"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_final/progress.json",
+      "bytes": 457,
+      "sha256": "ebf731cbc9db01c411d5619fd7a2e01eb16d88b576eb1177b3d7c2ba1d126c26"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_final/run_receipt.json",
+      "bytes": 717,
+      "sha256": "d5ef258887dee80beebb1056f8727de3af3321af7dcbf214a47b7b45fb39f052"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_final_receipt.json",
+      "bytes": 717,
+      "sha256": "d5ef258887dee80beebb1056f8727de3af3321af7dcbf214a47b7b45fb39f052"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/tiny_plan_receipt.json",
+      "bytes": 1357,
+      "sha256": "145eb43eff19dea3653ee91e96af911e0701ce00e328f5d5d88876d9b8130749"
+    },
+    {
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/unit_tests.txt",
+      "bytes": 2361,
+      "sha256": "dd4bb46ba95ee955acf9970b7ca04bc94d996ff5d60a30790ccda2f79fa0d876"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/.gitignore",
+      "bytes": 38,
+      "sha256": "96d662af45ea9ffcaa6af74d4302516a85906348d4929a09cf0dd978d7c0f2b9"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/README.md",
+      "bytes": 2237,
+      "sha256": "2771a10f04f4465cc9cd357a97b40ea480fcadedfe6219f0c65c694e1a946a79"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/T10_ROUND2_HANDOFF.md",
+      "bytes": 1537,
+      "sha256": "854352249fa3e2f6a10b3a506fd51a3ef44930da814406517d1c9e6dee8c8267"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/contracts/README.md",
+      "bytes": 2280,
+      "sha256": "dda3652a9a6ed5c8c57240f5763a2f5ea6705dc51d14a11a24f4b9ba6c123c4a"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/contracts/clause_evidence_map.csv",
+      "bytes": 2682,
+      "sha256": "2db08ecf416dd045f48f7ba029975bb805b8d4a6751526931ebf2064ad099996"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_checklist.csv",
+      "bytes": 2736,
+      "sha256": "e45df58c1484252c652ca072f920d74ce86caa73b7ae9c398ea8fe6a6bb22d34"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_contract_template.json",
+      "bytes": 4632,
+      "sha256": "2f3e43ff2b0c55f16c3f089429a47d12c6277fed9eef895d5dcd5133a4bb7b8e"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_packet.schema.json",
+      "bytes": 10475,
+      "sha256": "123cf8826f235defc43279111b7f33f6addbee4fea5a4b5f5520fffe4833f98c"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/data/access_gaps.json",
+      "bytes": 565,
+      "sha256": "f4570cba726622fbc9b5199c69e36ccd6031faa2a54052948fb3ce62cbc078c0"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/data/current_status_addendum.json",
+      "bytes": 1120,
+      "sha256": "769c3d83658209922bcfaa39f412737e5230cb0aab923324ca82cbd32b9cc336"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/data/manual_evidence_map.json",
+      "bytes": 1954,
+      "sha256": "4c3f6ee00a870f1e88aaf09ca3e57a0a17c7ce159525d9952d14448f8eda60d0"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/data/preexisting_baseline.json",
+      "bytes": 282351,
+      "sha256": "43f34730bf280b43ac4a473742f0eb16fef93714856d3dfe3ba746935afb9d3c"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/data/read_provenance.json",
+      "bytes": 4694,
+      "sha256": "78ca7c5c9044ce7949cff4c80ea9df77db90f41013a9be28ebc3e7fdde5920a0"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/data/reader_allowlist.json",
+      "bytes": 3439,
+      "sha256": "43ad60d1014b0dfb33e54dbd81250b10702c5d76f5da4c759707ffa1bb0c07d1"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/baseline_packet.json",
+      "bytes": 2906,
+      "sha256": "1bce700cc870b602706dd2c0d7fe8a644c706be698c3147c0a3c3c473ec99600"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/baseline_research_only.json",
+      "bytes": 2910,
+      "sha256": "fbc17e6ec0074e1ad7238fffe70f0d0967c9bf7cb169a023dea76b6d23006ad1"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/calibration_domain_unknown.json",
+      "bytes": 2914,
+      "sha256": "9fe5ac80cfe9734905e257e3d574c2f886a74ab9cfed98df986e1a53ce255f1c"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/heldout_used_to_tune.json",
+      "bytes": 2907,
+      "sha256": "4d2a59392e4aba9c14188c7897aeea4c6c57999a78b14ed5319dc5e1f2cd8cbe"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/negative_clip_without_raw.json",
+      "bytes": 2919,
+      "sha256": "10ed323f1a69e4e4a04c046e45734bc22b93fc2c071461e2f0724db529d76152"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/parameter_switch_no_event.json",
+      "bytes": 2912,
+      "sha256": "5de07fd19ff303613a71d31ac82b2d5ceb3554bdf52c2bf3d3199268f3ef1544"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/production_claim_blocked.json",
+      "bytes": 2914,
+      "sha256": "ba2d82af9927d89a8ef7683553344b8513c88707834696af75467ad0cc8c5596"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/profile_budget_exhausted.json",
+      "bytes": 3095,
+      "sha256": "e40d47e26771d3997b9b21839fefa780799742dc33b11a0ac003cb20400cd0a6"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/qcm_lock_unknown.json",
+      "bytes": 2896,
+      "sha256": "c31a578d3203f28af716361bf7550fd950a66f62b9cd04cc110f7409ac7ca751"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/rule_after_measurement.json",
+      "bytes": 2911,
+      "sha256": "95436edaa536278062bd66da52c633029fd12290d3c9995f202d80a7e457d71c"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/run_group_leakage.json",
+      "bytes": 2901,
+      "sha256": "5046999c0e27b9b7c312f6ac52251b8ef503b321fca3d1f41a36fe95afd7b82d"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/shared_calibration_ignored.json",
+      "bytes": 2869,
+      "sha256": "b784f43ec08d37c9645d6bae865ac3e31afeb609c3efc5d50a500c0050cb926f"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/substitution_in_fit.json",
+      "bytes": 2918,
+      "sha256": "384d84848e682a7a1cff67f5d896080ff2801c511c2fc2c246f11d1b7708c7df"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/substitution_retained_as_estimate.json",
+      "bytes": 2945,
+      "sha256": "67906fb0dd802e1b4de5ef23cb4ebcd676f9ad74dccadd9449cf05b95507115b"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/time_power_mislabelled.json",
+      "bytes": 2909,
+      "sha256": "bd27da41bfaa397f29845dc2b3b72941a0696880298cd76c8132ab5bcc42958d"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/tiny_results.json",
+      "bytes": 66260,
+      "sha256": "f9a5f4713a00f7b31aa229cede029bea4dd314ff0263444ffa51636ff60ed605"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/examples/unknown_shutter_claims_zero.json",
+      "bytes": 2914,
+      "sha256": "4c3a425ebe9c961722b4c92d89d69cbe36726b8b5656303f9f30f8f46666de1e"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/freeze_manifest.json",
+      "bytes": 14234,
+      "sha256": "39a890b57207d57a8966731100e1dd087f8310ec125ade356f09e86575282b30"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/index.html",
+      "bytes": 65937,
+      "sha256": "1e63c644fbf0159c8d2f0ba9ccad559c0553d21fd1b53386649f8bfb74f03fae"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/models/build_content.py",
+      "bytes": 62894,
+      "sha256": "c44bf993304f8fd7e0501ae59c1827ade8c240fa675134118ffe430eb6cf642d"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/models/build_contract_schema.py",
+      "bytes": 3257,
+      "sha256": "03fca67e05f78f09cef7e4a160844cefe8f490016f200209afb4c5616a78663f"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/models/build_reader.py",
+      "bytes": 9720,
+      "sha256": "e20006c8b6589c86c8e466fa56d85e36cbca2fe75028957d5ba81df36314beda"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/models/check_package.py",
+      "bytes": 2314,
+      "sha256": "745249c9ca123ee8fafd4e4e835de41d528a0c28b7ff874961041774ed7b0373"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/models/check_reader_visual.py",
+      "bytes": 2079,
+      "sha256": "a5fa7de1767dc7949526a1abef0341d30aa2505bfea8d8389f1956c70923e890"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/models/evidence_contract.py",
+      "bytes": 18486,
+      "sha256": "056e5eb16718a4fa456d2d60600af81c6fe4e5c2c8a5f1a47fdd52c99d2b3baf"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/models/freeze_package.py",
+      "bytes": 5780,
+      "sha256": "f9c30b0712a9576f4c3034c55bcf6c64d49c28c994239c62fb56414d0e6efbd9"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/models/reader.py",
+      "bytes": 2039,
+      "sha256": "3deedbd240520170059db43e4fe67fbf37fa35d1ec06d0ecf02a6da8297d44d6"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reader_manifest.json",
+      "bytes": 13319,
+      "sha256": "55e1bd7c01962d94bac61ba11da5ef74491b52b4668ff3397fc23f067b076cbb"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/01_scope_and_evidence_levels.md",
+      "bytes": 3906,
+      "sha256": "407f1c419f6ffc5c701fefb7195b3e8674c6bf226a62190018cc45daddaa8c8f"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/02_current_sources_and_access.md",
+      "bytes": 3967,
+      "sha256": "2f96c818b577101cf9632656a617e8231c0d094886cabd5ace015e0d73b7453a"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/03_traceability_calibration_domains.md",
+      "bytes": 4074,
+      "sha256": "b70d44f16b5c1bb500c50711119547498d1cae91098a7883b9e9e605cef32c63"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/04_calibration_correlation.md",
+      "bytes": 3697,
+      "sha256": "55ae8b5bf9e5475e9d355fd884e5b3c96afd1aea38eb9cae75d9f97b562a66b3"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/05_fit_selection_heldout.md",
+      "bytes": 3598,
+      "sha256": "1fd7c025af1286cb8ea270845bccb694d6390a8fa4d9601a4eb32e50cfa5ef20"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/06_uncertainty_decision_rules.md",
+      "bytes": 4305,
+      "sha256": "cf5a377e71f2157a270bc4d20ea26e259ed31a35d978153de76dbfa56537023f"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/07_budgets_nonconvergence.md",
+      "bytes": 3391,
+      "sha256": "a98fc99782305adc9ad80bdfd2751d303efcc93342be27ca8a34528c1aa6c35b"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/08_instrument_semantics_manual.md",
+      "bytes": 6326,
+      "sha256": "1aebf8394508a04302efc973a0a22b06403f7ce585566a0f307af4bc8aa5a5bf"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/09_qualification_and_acceptance.md",
+      "bytes": 4076,
+      "sha256": "4a32b18d6061eed162a7ad660b16426a4185b06fe4b9a7cd47eef25a43bc4579"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/10_implementation_and_limits.md",
+      "bytes": 3975,
+      "sha256": "b935aa46efa9d64270155cabb0e7c02bd139a79a4ad83fe7da2512735c0083d9"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/SELF_REVIEW.md",
+      "bytes": 1648,
+      "sha256": "6bb127269401ca7ead8b7419baf4e9011b2d514ef023634f1878d5ae0a32461c"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/acceptance.json",
+      "bytes": 1153,
+      "sha256": "502be94303478cca2d7e1ef4f2bd93837e066153629284e6f94714d71df9045d"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/freeze_receipt.json",
+      "bytes": 778,
+      "sha256": "39cb4f3feeadc73cae83536c6e5f1f586d0caccf67056295e154ab331c9c0871"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/freeze_verify.json",
+      "bytes": 1085,
+      "sha256": "1710e0be0a3f050461c8c3dddb0d8bbfe2c85322146dc25cfe5de9de42c94580"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/independent_narrow_check.md",
+      "bytes": 1906,
+      "sha256": "e0f67e63ca9f8c5ba411fa5022a7bcab994d69ffc21b31b6d2fb84d8e30556d8"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/outside_changes.json",
+      "bytes": 134,
+      "sha256": "44569a117f0153c57422a80d787b0869a96fac2a8ca206013c239e325f86edd2"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/reader_qa.json",
+      "bytes": 868,
+      "sha256": "2e21b907fab347c550246dfdbf0d2c187fe2d9318e7f967a6a762d879d72bb1d"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/reader_static_check.json",
+      "bytes": 368,
+      "sha256": "3341e52c6b6a50aca300c8b7d0898ea8ee9ce5deba40a9b3326d959e775d5667"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/runtime.json",
+      "bytes": 295,
+      "sha256": "d4b1cfbe37341b82c8480325147aced76dc23088348116709bbcead7772e381f"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/tiny_test_output.txt",
+      "bytes": 2503,
+      "sha256": "f348e9bd2dbf32caf005da4f1d18316ca2ed196655a5d37a23ea730de11ae125"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/README.md",
+      "bytes": 1039,
+      "sha256": "6476d47ab190aaefbb1888fcf14887d6bd8a1a84b2021e4e9a115798bd62850c"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/source_registry.json",
+      "bytes": 16153,
+      "sha256": "8a4d4f753fcb8d66d5d674a3dce732b11dd80a3208b99bca475afadf1288a6ec"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-M01.md",
+      "bytes": 643,
+      "sha256": "7058f8456e3b112d56683dd9f4459dfab4da67a6af78f2f64efd996b4ebba685"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S01.md",
+      "bytes": 600,
+      "sha256": "836fa0119af28a6fbc35e4f83e22f34d70aa0844a4d90e904ccc15e8d13398f4"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S02.md",
+      "bytes": 568,
+      "sha256": "9bb45bd903b8208878cf163996aadeddb4327d83e1607a24e0f57bfa3a354ed8"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S03.md",
+      "bytes": 696,
+      "sha256": "4ea5632193a2d62ea1c9d44f1f617d850aa755eb480cec1dbef52867325db434"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S04.md",
+      "bytes": 611,
+      "sha256": "c8e7784745ae3be202d4d2579ec75e18603dc6e204460b7a85591d003d3dcfa6"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S05.md",
+      "bytes": 553,
+      "sha256": "00475b75eab0d0b27183211eb45a250a080335b7b76aefa0ed7245de5e0f7f1e"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S06.md",
+      "bytes": 672,
+      "sha256": "cef27b44e040f906eb60b8ed88e4b5f4c10036d0c76a62dc4c30f2ac31ebb9e9"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S07.md",
+      "bytes": 549,
+      "sha256": "342df5e256f020144b1c837de5aedaeac16a7196eee84ae4a9c8b3fc30f737c9"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S08.md",
+      "bytes": 613,
+      "sha256": "54d34cbcfc6c73844d1e6301f49afdc79548579ab0f3fe4708f80dfe1997c3bf"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S09.md",
+      "bytes": 697,
+      "sha256": "a01e3b254ae3ffe59ffa0ca5924d58c8957ccadd9a8d68d7914a73de0465d191"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S10.md",
+      "bytes": 581,
+      "sha256": "4af5d66e8266b6403f91c8ce52c484f6b75a68b6d8a0b8c331609687e3825bc6"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S11.md",
+      "bytes": 628,
+      "sha256": "01a012adc695bf152d42beef52e5c6dcbf642b9546df72babb7b9857c3a13b08"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S12.md",
+      "bytes": 654,
+      "sha256": "28edf3a6a90a6c3e7d42812543a96eb7416d53e46d1cb3e19f8186f19386520c"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S13.md",
+      "bytes": 553,
+      "sha256": "bd075bc1ddd08a9917fd4b4db4210ec9b3af5733020c66afe9bf936e7115a619"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S14.md",
+      "bytes": 581,
+      "sha256": "0060724980a58773cdfea1f160a9b8b4b94a51145d8a8538ffe5ac2f6978b579"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S15.md",
+      "bytes": 521,
+      "sha256": "04402059c3c7ec63cfaadbe2d747d40eefaff7c804c76a78cdeeaa9a92781e9f"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S16.md",
+      "bytes": 433,
+      "sha256": "26b9ccf7575ae87aa63fd07e77ccd6c0bdf309d10ad73b28d16f2e07677f1673"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S17.md",
+      "bytes": 443,
+      "sha256": "5a783bf37dfc29f49a5648c33b4ef733d68dc1536053ed5170879097f611bee6"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S18.md",
+      "bytes": 461,
+      "sha256": "f5fc29235eff59dc00c53fbdf95e5cd19e264f8db34ba6f4379d1f0447fa6a6d"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S19.md",
+      "bytes": 771,
+      "sha256": "659dca278dd623bb5c0b2420eecfea6ba9b1a5368728f082506ad4cab344ed5c"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S20.md",
+      "bytes": 697,
+      "sha256": "237e3f71c6b5664beae7684388fff1bf9442843782fd15d1f54d1fcf5c4387de"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/sources/summaries/TV-S21.md",
+      "bytes": 532,
+      "sha256": "c8f5e0acc53bcf9b7a61d965699b0743346d97638011766ea11af8d411f7400c"
+    },
+    {
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts/tests/test_evidence_contract.py",
+      "bytes": 6924,
+      "sha256": "8679c3d306908bb15ec50807eb5f6aca9813170b3f2d5599eb772064a90749cd"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/NEXT_CYCLE_HANDOFF.md",
+      "bytes": 1290,
+      "sha256": "63538f935d798344f1c056f87d27a60052d5d444b7e22ca4ea9d934d78efaf89"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/README.md",
+      "bytes": 3426,
+      "sha256": "dba6446faf7184ae2a54b6539c504711d9ab573f9d78699f6a212448de6200a9"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/contracts/README.md",
+      "bytes": 1377,
+      "sha256": "a80c02b431b151a55b94ccf672c82fad72633219a059721a54f2a1d3cd1dbaa4"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/contracts/observable_dictionary.csv",
+      "bytes": 1801,
+      "sha256": "2616beb86c9054e1df06a57515060e5964319fe38b26be78ca53fa6c654717db"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/contracts/observation_packet.schema.json",
+      "bytes": 11619,
+      "sha256": "63e6991b5040d35416ad883e2e5bc8438b202bf69de448ff745118574589d913"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/00_project/工程科研.txt",
+      "bytes": 1632,
+      "sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/04_coating_and_substrate_materials/round2_material_response_contract/data/material_response.schema.json",
+      "bytes": 28309,
+      "sha256": "c767439089ba6229d370d24e3ffcc0548e549d5867e9426c8957931108210ef7"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/04_coating_and_substrate_materials/round2_material_response_contract/reports/01_material_response_contract.md",
+      "bytes": 8483,
+      "sha256": "38a2ca7c30945b314d0922a27ac91008f899fe394d27469ea5a9d8cd24594d3b"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/04_coating_and_substrate_materials/round2_material_response_contract/reports/02_uncertainty_and_validation.md",
+      "bytes": 4855,
+      "sha256": "55c964bde6e9a7ffe11ae60cd2bc1f09826b2c1d73fec38de3aafeb93f264e84"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/05_evaporation_sources/round2_qcm_flux_transfer/data/qcm_flux.schema.json",
+      "bytes": 16090,
+      "sha256": "76331cc39d6ceaa8cb66571453dc13e75bad3152d101272d18c652dfee405973"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/05_evaporation_sources/round2_qcm_flux_transfer/reports/01_qcm_acoustics_and_units.md",
+      "bytes": 5421,
+      "sha256": "193a84f093977867a84a86bbb2aa60416a618b7e52ee622b1cff0dec4cd183b8"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/05_evaporation_sources/round2_qcm_flux_transfer/reports/02_geometry_species_and_contract.md",
+      "bytes": 6183,
+      "sha256": "bfd7bf447c40cf84165e49c1d462683d8b268afb8f89ec994c60fee7951e32a2"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/T10_ROUND2_HANDOFF.md",
+      "bytes": 1537,
+      "sha256": "854352249fa3e2f6a10b3a506fd51a3ef44930da814406517d1c9e6dee8c8267"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_packet.schema.json",
+      "bytes": 10475,
+      "sha256": "123cf8826f235defc43279111b7f33f6addbee4fea5a4b5f5520fffe4833f98c"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/01_scope_and_evidence_levels.md",
+      "bytes": 3906,
+      "sha256": "407f1c419f6ffc5c701fefb7195b3e8674c6bf226a62190018cc45daddaa8c8f"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/05_fit_selection_heldout.md",
+      "bytes": 3598,
+      "sha256": "1fd7c025af1286cb8ea270845bccb694d6390a8fa4d9601a4eb32e50cfa5ef20"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/06_uncertainty_decision_rules.md",
+      "bytes": 4305,
+      "sha256": "cf5a377e71f2157a270bc4d20ea26e259ed31a35d978153de76dbfa56537023f"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/08_instrument_semantics_manual.md",
+      "bytes": 6326,
+      "sha256": "1aebf8394508a04302efc973a0a22b06403f7ce585566a0f307af4bc8aa5a5bf"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/10_ion_sources/data/material_response_matrix.json",
+      "bytes": 18179,
+      "sha256": "b8bf30d8d53ecc469c748d050252046f1857102cdbb6237417a3a2fe534cf1b8"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/10_ion_sources/data/source_registry.json",
+      "bytes": 24430,
+      "sha256": "22d451c4da3f5b0fe5cfcec850fc431a8a0a4b53fe46cee319517af480238f9b"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "bytes": 6285,
+      "sha256": "e560a3c577f1413753e9f0b6fada50cc4596363caef89fbdf82de2cd96caa40d"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/10_ion_sources/reports/02_flux_energy_dose_normalization.md",
+      "bytes": 5909,
+      "sha256": "d43db720e6a8d067a7a2ec64698a3a066c1152db1132b4d63fbcfd1452d65cf9"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/10_ion_sources/reports/03_metrology_calibration_and_mapping.md",
+      "bytes": 5831,
+      "sha256": "ca01385a94f8f3acb98a05acf0177cdc46bcb1c576ea867b701c1b769d4ef47b"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "bytes": 14212,
+      "sha256": "bfc0772e56dcdd3e25496729a49b13e25cd3214a6e9bea1e6412159ff99d27ea"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/manual_studies/2026-10-02_morningtech_mxc/reports/manual_assessment_zh.md",
+      "bytes": 24733,
+      "sha256": "718adae62c8cb2ca4502fa584456be75ec4cbe28f2db186d9b02dc24bad5cd97"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/dependencies/provenance.json",
+      "bytes": 10464,
+      "sha256": "4bd8ac36ca8f43acccfc2493713d514983d522a78b5645c256d66cc56609cd3e"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/examples/actual_unknown.json",
+      "bytes": 1580,
+      "sha256": "4eb1004179522a153c2de9bfa3adbacfe306ce3de5343fadfbb84a7129c2812a"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/examples/synthetic_complete.json",
+      "bytes": 2554,
+      "sha256": "5afd1360c069c66713cc485d516b21e34baccfd685aa5a6fc838b129c15b6673"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/figures/01_planar_rfea_angle.png",
+      "bytes": 62245,
+      "sha256": "3f2e47c1eea7720a79cac515fc4b42c5c5d08f8152b4dbb808e9c934cdda92f6"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/figures/01_planar_rfea_angle.svg",
+      "bytes": 50658,
+      "sha256": "4584ce76256ced47b59d25c28176dc99a79f1b98d44d009fde5e5d45f0cb9a09"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/figures/02_charge_exchange_energy.png",
+      "bytes": 71343,
+      "sha256": "7802b74c7eb6f1f1b1d4f03c40b5be1a55e2958277c5850e48288d8995daf348"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/figures/02_charge_exchange_energy.svg",
+      "bytes": 60016,
+      "sha256": "5527462592d83adac17fb2b2f145789f4e36eda219cd609d575daf3c11883a84"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/figures/03_equal_moments_different_tail.png",
+      "bytes": 63892,
+      "sha256": "576ba5be273ceca43485689c458ac30b5fcde5de637c64c99d56c0008f679178"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/figures/03_equal_moments_different_tail.svg",
+      "bytes": 56658,
+      "sha256": "4d957a76c62fccef249599363990b3e4e82c2f120d2c8dda802577c73183d62a"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/freeze_manifest.json",
+      "bytes": 15369,
+      "sha256": "de60f6e1e24e3a2d69b11e0cf3363e221b759e520e3e479e1e8b974bc5bae74b"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/index.html",
+      "bytes": 67442,
+      "sha256": "698d28c81245d6d3b794762bf95bc3251f7a1be3878d200622c0b0da33660129"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/models/audit_package.py",
+      "bytes": 7949,
+      "sha256": "3937ca3538024af4dfc43bd4871b54079d19ad294bbb7a8e7f0599aed5e817e3"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/models/build_contracts.py",
+      "bytes": 6323,
+      "sha256": "0437fed61a022c3cb37e9d211039aea9f6df72e87c26ed96734f0ebd3398af97"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/models/build_reader.py",
+      "bytes": 5943,
+      "sha256": "1ef7d83d7ac4e3e8ac4badf325216f4ed79374d02ccdf5f03a9cdcfbc181de04"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/models/build_sources.py",
+      "bytes": 6521,
+      "sha256": "4290e848e6c08f1d9998227f8d820908a4b56276018b9cdd51043b30383952aa"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/models/evidence_contract.py",
+      "bytes": 7238,
+      "sha256": "d5637da42420096deeacd3a8df133182cefe5da8996bd8a2853149c65592ee2d"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/models/ion_observables.py",
+      "bytes": 18375,
+      "sha256": "e298a7619a2fbc42d8f2a19b21a5b7ad2a72391a82ed6c671a4fed42c09269a3"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/models/plot_figures.py",
+      "bytes": 2741,
+      "sha256": "a18bcff23ee224077bc04aca1d54e6853e16e160adfa2729a98e3137c29c86f8"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/models/validation_driver.py",
+      "bytes": 8219,
+      "sha256": "34ca9c021eb41df4cabd2a38d598c00073b15c0161f9261c348bab9c6fa2c1b4"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reports/01_scope_observables_and_evidence.md",
+      "bytes": 5167,
+      "sha256": "cec6de6c3b574d6ae44d9b0b2e264ee69c3e63f8cc402fb93ed5cb9c5ad3a8ed"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reports/02_kaufman_energy_charge_and_neutrals.md",
+      "bytes": 6663,
+      "sha256": "6a74863c7043d93eddbec53988ed53a75d469b6fce4236584ba9dbd9532afcaa"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reports/03_diagnostic_forward_models.md",
+      "bytes": 5651,
+      "sha256": "092daa388bde5058040f2784b6a6594638cc3f74eaedf10cdebca403829c3fdf"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reports/04_spatial_temporal_representativeness.md",
+      "bytes": 5443,
+      "sha256": "b5fef424635cab9f2a6462112a34c80a2218778e414cf4be87b110f06d4bc587"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reports/05_material_state_growth_and_erosion.md",
+      "bytes": 6339,
+      "sha256": "7ff342c5c115492d0e38754138c0103664e56fd8d2c0eb87a98e2e617a1b7333"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reports/06_response_identification_and_validation.md",
+      "bytes": 6027,
+      "sha256": "7375412833e7dc0cd5e795b487c332cd2fda62adb36749d19f5cca86775ee78f"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reports/07_reference_cases_and_counterexamples.md",
+      "bytes": 6037,
+      "sha256": "c1769be3d84c15a21cc3073dd935789a2cb255978f1c40e394eac2039a980f8b"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reports/08_implementation_execution_and_limits.md",
+      "bytes": 5712,
+      "sha256": "f7e1ce89d121d9d9c772bdccf87f2889a5b0b94373842ece29d8957dc8cfaeaa"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/requirements.txt",
+      "bytes": 71,
+      "sha256": "d31878d6866056787488e4df79a82e63d0d2d4063bcb309cf5c353016926c88c"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reviews/author_acceptance.md",
+      "bytes": 2304,
+      "sha256": "42634e16118a16cecc476ccd10624b5060b0658fc31dc001034fe2b3dd09d308"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/reviews/independent_narrow_check.md",
+      "bytes": 1751,
+      "sha256": "a80e07844dcabb8edc8a10d993eadbec3cc5e44cc9135ced9582fb9d32011ffe"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/RIGHTS_AND_ACCESS.md",
+      "bytes": 997,
+      "sha256": "6229f82f2dbab590598ce19f1fd4297c1f5f83ca26ede850734c00427d233a94"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/source_registry.json",
+      "bytes": 14919,
+      "sha256": "f3d76cd994841ed0b43fc17bf63da926a7ab043bc8ec5d23556fcc31d2d7d29d"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IR-01.md",
+      "bytes": 1026,
+      "sha256": "101f87543919d648b26e3f5834891a6803e07400058bb37d6b620608878d4149"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IR-02.md",
+      "bytes": 1312,
+      "sha256": "4496a216e26c0dc0d68a926d2663df825254cee8dcd141b88671031e59556a5b"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IR-03.md",
+      "bytes": 884,
+      "sha256": "eb6b4c590161c5cf23a55e0bf5eeef95f4f925cc426705254a313e6938451cd5"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IR-04.md",
+      "bytes": 834,
+      "sha256": "f526fc3de9586875b5fc6b6cd6f6b2af9a18fbcd98a75e5e0e39326766b4047a"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-02.md",
+      "bytes": 820,
+      "sha256": "e29ed899177524912ff4eb8afc92953a5c847a30a89b050185c69dafb20f847f"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-03.md",
+      "bytes": 755,
+      "sha256": "cddf52bb36f44630b5d7e8e37d8c6198551504082b89990b7c2818c06a2fdbc6"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-04.md",
+      "bytes": 766,
+      "sha256": "e7f0acebe10cc354762ee9be83a79244071b74370c005fb93a7dc150b62ecbb3"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-06.md",
+      "bytes": 749,
+      "sha256": "448cbd9c168306454376ddd92bebb3198f12d2d28bc07f777a18e39000247957"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-08.md",
+      "bytes": 851,
+      "sha256": "7d4f4887b5aae93c42dfd4d615cb42558b50a8a02223ccfb45a65dab0a19dcfe"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-11.md",
+      "bytes": 807,
+      "sha256": "ca92518d2f2cb41946a43a645e1eb6ab363c090d91bc458508dfd7a636517a37"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-17.md",
+      "bytes": 740,
+      "sha256": "309d836fd7915bb339874bdc2bf8a0f76af96153bb0b8aed097e54200a5894f3"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-18.md",
+      "bytes": 943,
+      "sha256": "12e931b434ea5f4812a42a93ce3377a08d64432e0c1c52b71aa3ef2ad231cf4b"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-19.md",
+      "bytes": 728,
+      "sha256": "ebff312db0aa960e1327d25c495812bdf4a2acdacbf361a775ff5f8dd4e4d598"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-20.md",
+      "bytes": 829,
+      "sha256": "96d38c2a4ef235d46cc85e89ee30b0aa33b1a479aea9e85001484045e02c2932"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/sources/summaries/IS-22.md",
+      "bytes": 797,
+      "sha256": "fa9c2795a37a9ce8530fe1b57ba28cea5b45aa1c6e1412da2e98b77a133d278c"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/stage_status.json",
+      "bytes": 761,
+      "sha256": "c8b7653690b54e6115ea5be7ff3738e682a073b296ece4ec5b07e68b2151eebd"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/tests/test_reference.py",
+      "bytes": 6938,
+      "sha256": "3fbfccddb6018b56de69b1ae4dd00b2bec19e28036f5ee954d2effc40b565aa2"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/verification/deferred_plan.json",
+      "bytes": 1612,
+      "sha256": "50440bcee54773a2757995398d07664079c3660669597bc890cfe29bb43f1b42"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/verification/dependency_check.json",
+      "bytes": 59,
+      "sha256": "19bda48a300b930a2e4ceeb89166968231cf8349f27c1fb231929eacd6ca91b8"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/verification/environment.json",
+      "bytes": 255,
+      "sha256": "572733ef963aa5ac75b524ee0f4d0684770557e461b296c3d527fba8f80457dc"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/verification/freeze_receipt.json",
+      "bytes": 859,
+      "sha256": "6842472f88860351dea3ec7185cabc51536e9709bc2b4eb19eeaec2fe3d8536b"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/verification/outside_before.json",
+      "bytes": 217011,
+      "sha256": "49772c357c7bca52927dc0434aff793cd332e0e705a11c77d5799348918de4e3"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/verification/outside_scope_check.json",
+      "bytes": 265,
+      "sha256": "b80f35b780783a7a2cf0474b6968997fa1dff954209e914a05f9091968de4871"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/verification/reader_structure_check.json",
+      "bytes": 463,
+      "sha256": "2771169fcd877cb2fe8fab252578a8f864d8d81bc61a8f7cac5fc73ffbfa74ff"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/verification/reference_cases.json",
+      "bytes": 10355,
+      "sha256": "7f1cf730ae7c9045cc6985adcbc6729a198db93665a476bba453293de567478f"
+    },
+    {
+      "path": "10_ion_sources/round2_observable_material_response/verification/unit_tests.txt",
+      "bytes": 2461,
+      "sha256": "730f4a7d41d69bf7193bd97014d3e661c03675efbea5a8ff7b7ed100662c141c"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 10453,
+      "sha256": "c9dc5dcd73e19d9a26fcca59f60ba92182757ab5ae1d60cea5e6e1a1918ff5a3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6591,
+      "sha256": "8b10d915ba7119cee8a7074cd33a75180763806cd2137ddafdad670ee71cf8cb"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 5468,
+      "sha256": "9b3aa07db2a954e8b3e26fa483ba266195a410e0f31e72aceb0ccd408cad296b"
+    },
+    {
+      "path": "STATE.json",
+      "bytes": 15588,
+      "sha256": "a0faffe280e37c54224b60e79c263827a6518521f9628988cb10fa9d85204038"
+    },
+    {
+      "path": "STATE.md",
+      "bytes": 2436,
+      "sha256": "bb66e7cd96754c17abcd3fe4e1873c4ca61573fd88bb4e70806636333bd04f0d"
+    },
+    {
+      "path": "manual_studies/2026-10-02_morningtech_mxc/README.md",
+      "bytes": 542,
+      "sha256": "32e92cd138dec61792db17a5932be1e38289905a370941863402f576ad66fa53"
+    },
+    {
+      "path": "manual_studies/2026-10-02_morningtech_mxc/deliverables/膜林MXC手册工程经验与引入建议.docx",
+      "bytes": 53044,
+      "sha256": "8c3f182708859fa05ca33979882eec95fab4a75e1c17a2fd2e994fef78f5ad0d"
+    },
+    {
+      "path": "manual_studies/2026-10-02_morningtech_mxc/evidence/page_evidence.csv",
+      "bytes": 1171,
+      "sha256": "ac76357e4719039dd6264d5f6290106ed0c2264774c235e532001d255a990dc3"
+    },
+    {
+      "path": "manual_studies/2026-10-02_morningtech_mxc/evidence/validation.json",
+      "bytes": 495,
+      "sha256": "39b978eda1fbc539ee8a8f51686b90274c8d1bafef88b92505b7add1f7d87fdf"
+    },
+    {
+      "path": "manual_studies/2026-10-02_morningtech_mxc/reports/manual_assessment_zh.md",
+      "bytes": 24733,
+      "sha256": "718adae62c8cb2ca4502fa584456be75ec4cbe28f2db186d9b02dc24bad5cd97"
+    }
+  ]
+}

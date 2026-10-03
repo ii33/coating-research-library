@@ -1,0 +1,33 @@
+{
+  "stage_id": "T06_round2_process_optical_observables",
+  "algorithmic": true,
+  "status": "implementation_ready_validation_pending",
+  "scope": "new local directory only; conditional process-film-observable contract",
+  "implementation": "complete_bounded_forward_model_and_synthetic_inference",
+  "representative_material": "public McPeak Al film nk, conditional transfer to hypothetical fused-silica substrate",
+  "actual_process_to_nk_calibration": "not_run",
+  "full_batch_sensitivity_uncertainty": "plan_only_not_run",
+  "device_validation": "not_run",
+  "physical_experiment": "not_run",
+  "production_qualified": false,
+  "small_tests": 55,
+  "narrow_independent_review": {
+    "model": "gpt-6-luna",
+    "scope": "one narrow dimensions-optics review, 7 tiny tests; package import correction only",
+    "status": "passed",
+    "full_model_review": false
+  },
+  "specified_review_chain": {
+    "DeepSeek": "not_run",
+    "Seed_Pro": "not_run",
+    "Sol_full_algorithm_review": "not_run"
+  },
+  "upstream": {
+    "T02_full_oracle": "partial",
+    "T03_nonnegative_optimizer_net_erosion": "unsupported",
+    "point12_ion_reference": "not_run",
+    "tau": "not_strict_conditional_envelope"
+  },
+  "publication": "local_freeze_no_push_no_upload_no_zip",
+  "next_scope": "T07 suggestion only, not started"
+}

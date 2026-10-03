@@ -1,0 +1,59 @@
+{
+  "access_utc": "2026-10-02",
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://people.csail.mit.edu/tzumao/diffrt/diffrt.pdf",
+      "local_path": "sources/originals/Li2018_diffrt.pdf",
+      "bytes": 8646188,
+      "sha256": "1aa2841e773042784d09507883ee2d6bc638364274de9e670a7c88950b3b6b28",
+      "access": "full_bytes_retrieved",
+      "rights": "author hosted paper; local research copy; redistribution not inferred",
+      "included_in_reader": false
+    },
+    {
+      "id": "S02",
+      "url": "https://arxiv.org/pdf/2306.06862",
+      "local_path": "sources/originals/Kong2024_saltation.pdf",
+      "bytes": 5221308,
+      "sha256": "053ebd03a0645ba3bd867c578a8f09c0c2112865fcb59dcd050a83c26d912744",
+      "access": "full_bytes_retrieved",
+      "rights": "author arXiv text shows CC BY 4.0 and IEEE personal-use notice; conservatively exclude full text from reader",
+      "included_in_reader": false
+    },
+    {
+      "id": "S03",
+      "url": "https://www.cs.cmu.edu/~quake/robust.html",
+      "local_path": "sources/originals/Shewchuk_robust_page.html",
+      "bytes": 6595,
+      "sha256": "4827cc14a20b83b658127bd331ee560c3f10bb8b389c3374188d1e7b95d3e9ce",
+      "access": "full_bytes_retrieved",
+      "rights": "author project page; local research copy; reader only original short summary",
+      "included_in_reader": false
+    },
+    {
+      "id": "S04",
+      "url": "https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf",
+      "local_path": "sources/originals/JCGM101_2008.pdf",
+      "bytes": 1489478,
+      "sha256": "6d8548af875df112dfc5cf14eb974f5544341f4a31cbbdfc19fc5ed155d8fa20",
+      "access": "full_bytes_retrieved",
+      "rights": "official freely accessible standard; all rights reserved; local research copy, not redistributed",
+      "included_in_reader": false
+    },
+    {
+      "id": "S05",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3817662/",
+      "local_path": "sources/originals/Zhang_Cai_2013_PMC.html",
+      "bytes": 129038,
+      "sha256": "76d3753a43938ba0e77c0bb50bea80ed18ba3e88947e2e73ab36b1e7b41ac0f6",
+      "access": "prior_lawful_original_copy_and_current_web_read",
+      "rights": "CC BY; conservatively not redistributed",
+      "included_in_reader": false
+    }
+  ],
+  "derived_local_extractions_excluded": [
+    "sources/originals/Li2018_diffrt.txt",
+    "sources/originals/Kong2024_saltation.txt"
+  ]
+}

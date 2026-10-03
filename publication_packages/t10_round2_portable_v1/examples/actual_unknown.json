@@ -1,0 +1,64 @@
+{
+  "schema_version": "t10r2-1",
+  "packet_id": "actual_unknown",
+  "data_origin": "actual",
+  "claim_class": "measurement_result",
+  "reading_origin": "unknown",
+  "observable_kind": "source_settings_only",
+  "normalization": "cell_integrated_per_actual_surface_area",
+  "source_identity": {
+    "family": "unknown",
+    "manufacturer": null,
+    "model": null,
+    "firmware": null,
+    "configuration_id": null
+  },
+  "surface": {
+    "sample_id": "unknown",
+    "trajectory_id": null,
+    "electrical_equivalence": "unverified",
+    "potential_v": null,
+    "temperature_k": null
+  },
+  "neutral_coverage": "unknown",
+  "history_complete": false,
+  "film_state": {
+    "material_id": "unknown",
+    "state_id": null,
+    "density_basis": "unknown",
+    "net_inventory_basis": "unknown"
+  },
+  "requirements": {
+    "instrument_identity": null,
+    "electrical_current_correction": null,
+    "area_normalization": null,
+    "energy_angle_response": null,
+    "species_charge_state": null,
+    "surface_representativeness": null,
+    "time_alignment": null,
+    "neutral_coverage": null,
+    "material_identity": null,
+    "film_state": null,
+    "optical_operator": null,
+    "traceability": null,
+    "raw_data": null
+  },
+  "evidence": [],
+  "raw_records": [],
+  "cells": [],
+  "response_split": [],
+  "numeric_stage": {
+    "status": "not_run",
+    "used_as_interval_endpoint": false
+  },
+  "observation_window": {
+    "t0_s": null,
+    "t1_s": null,
+    "clock_id": null
+  },
+  "coordinate": {
+    "frame_id": null,
+    "position_m": null,
+    "outward_normal": null
+  }
+}

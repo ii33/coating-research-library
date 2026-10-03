@@ -1,0 +1,25 @@
+{
+  "input_sha256": "5afd1360c069c66713cc485d516b21e34baccfd685aa5a6fc838b129c15b6673",
+  "check": {
+    "status": "conditional_research_structure_valid",
+    "errors": [],
+    "component_calculation": {
+      "ion_current_a_m2": 0.1602176634,
+      "charged_flux_m2_s": 1e+18,
+      "charged_kinetic_flux_w_m2": 16.02176634,
+      "observed_kinetic_flux_w_m2": 16.02176634,
+      "total_kinetic_flux_w_m2": 16.02176634,
+      "observed_normal_momentum_flux_pa": 0.0014579487087775518,
+      "nuclei_flux_m2_s": 1e+18,
+      "thermal_power_w_m2": null
+    },
+    "actual_validation": "not_run_awaiting_device",
+    "production_release": false,
+    "note": "Schema/evidence checks do not authenticate evidence or approve device/model validity"
+  },
+  "device_validation": "not_run_awaiting_device",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

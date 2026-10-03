@@ -1,0 +1,18 @@
+gate_id,domain,required_evidence,review_role,blocker,basis
+ID01,material_identity,"material_lot,identity_basis,chain_of_custody",材料/工艺负责人,material_identity_unresolved,project_proposed;TV-S01
+OBJ01,measurand,"quantity_kind,coordinate,unit,sample,state,spatial_domain,time_domain",计量负责人,measurand_mismatch,project_proposed;TV-S01
+OBS01,observation,"raw_ref,hash,timestamp,reading_origin,lock_state",采集负责人,nonmeasured_used_as_measurement,project_proposed;TV-M01 p45/PDF46
+OBS02,timing,"per_field_time,filter,missing_intervals,log_interval",采集负责人,unobserved_transient,project_proposed;TV-M01 p6-7/PDF7-8
+EVT01,events,"parameter_snapshot,effective_time,reset,continue,shutter_events",工艺负责人,event_lineage_missing,project_proposed;TV-M01 p80-81/PDF81-82;p92/PDF93
+CAL01,traceability,"reference,certificate,method,uncertainty,scope,usage_date",计量负责人,calibration_scope_unresolved,TV-S08 §2;project implementation
+CAL02,calibration_domain,"load,temperature,geometry,material,mode,drift,change_assessment",计量/工艺负责人,outside_calibration_domain,project_proposed;TV-S19 §10
+COV01,correlation,"ordered_units,shared_groups,covariance_basis,cross_split_treatment",计量/建模负责人,correlation_unresolved,TV-S02 §5.2;project implementation
+SPLIT01,data_use,"fit,selection,heldout_final,group_ids,plan_hash,freeze_time",研究负责人,heldout_leakage,project_proposed;TV-S04 §11.10
+MODEL01,model,"version,assumptions,candidate_set,domain,aliases,model_discrepancy",建模负责人,model_not_validated_for_use,TV-S04 §12;project implementation
+NUM01,numerics,"stage,status,budget,calls,stop_reason,required_for_claim",计算负责人,numeric_incomplete,project_proposed;TV-S04 §12.9
+UNC01,uncertainty,"budget,distribution,coverage,nonlinear_check,model_uncertainty",计量负责人,uncertainty_incomplete,TV-S02;TV-S03
+RULE01,decision_rule,"specification,edition,limits,equality,rule_id,approval_before_measurement",客户/质量负责人,rule_not_preagreed,"TV-S09 §3.3,3.6-3.7"
+LOT01,production,"lot,sampling_frame,selection,independence,witness_representativeness",质量负责人,production_evidence_absent,project_proposed;inherited T09
+ENV01,environment,"method_fulltext,severity,sequence,recovery,actual_exposure,pre_post",试验负责人,environment_qualification_absent,TV-S16 catalogue_only;project_proposed
+DMG01,damage,"damage_definition,load,spot,pulses,detection,sampling,statistics",试验负责人,damage_qualification_absent,TV-S18 catalogue_only;project_proposed
+AUTH01,release,"authorized_signatory,scope_of_claim,exceptions,decision_record",授权质量人员,release_authority_absent,"TV-S09 §3.2,3.7;project implementation"

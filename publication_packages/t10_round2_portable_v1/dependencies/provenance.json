@@ -1,0 +1,195 @@
+{
+  "schema": "portable-dependency-provenance-v1",
+  "scope": "Recorded source identities and derived hashes only; portable verifier never requires upstream siblings. Historical 21-entry inventory includes one intentionally unbundled personal task instruction.",
+  "dependencies": [
+    {
+      "upstream_path": "00_project/工程科研.txt",
+      "historical_upstream_sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
+      "historical_copy_path": "dependencies/00_project/工程科研.txt",
+      "derived_path": null,
+      "derived_sha256": null,
+      "status": "excluded_personal_scope",
+      "reason": "Personal research instruction is not necessary for the reader or package-local commands; omitted to minimize disclosure."
+    },
+    {
+      "upstream_path": "10_ion_sources/data/source_registry.json",
+      "historical_upstream_sha256": "22d451c4da3f5b0fe5cfcec850fc431a8a0a4b53fe46cee319517af480238f9b",
+      "historical_copy_path": "dependencies/10_ion_sources/data/source_registry.json",
+      "derived_path": "dependencies/10_ion_sources/data/source_registry.json",
+      "derived_sha256": "22d451c4da3f5b0fe5cfcec850fc431a8a0a4b53fe46cee319517af480238f9b",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "10_ion_sources/data/material_response_matrix.json",
+      "historical_upstream_sha256": "b8bf30d8d53ecc469c748d050252046f1857102cdbb6237417a3a2fe534cf1b8",
+      "historical_copy_path": "dependencies/10_ion_sources/data/material_response_matrix.json",
+      "derived_path": "dependencies/10_ion_sources/data/material_response_matrix.json",
+      "derived_sha256": "b8bf30d8d53ecc469c748d050252046f1857102cdbb6237417a3a2fe534cf1b8",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "historical_upstream_sha256": "e560a3c577f1413753e9f0b6fada50cc4596363caef89fbdf82de2cd96caa40d",
+      "historical_copy_path": "dependencies/10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "derived_path": "dependencies/10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "derived_sha256": "47ebf5047b101261f0e981962ea5e3762be77fa7fc727f976a675657d2da9334",
+      "status": "derived_metadata_or_navigation",
+      "reason": "Navigation-only repair: resolve existing source IDs to their unchanged public registry URLs; identify unbundled upstream context as non-clickable citations. All physical/mathematical prose retained."
+    },
+    {
+      "upstream_path": "10_ion_sources/reports/02_flux_energy_dose_normalization.md",
+      "historical_upstream_sha256": "d43db720e6a8d067a7a2ec64698a3a066c1152db1132b4d63fbcfd1452d65cf9",
+      "historical_copy_path": "dependencies/10_ion_sources/reports/02_flux_energy_dose_normalization.md",
+      "derived_path": "dependencies/10_ion_sources/reports/02_flux_energy_dose_normalization.md",
+      "derived_sha256": "d43db720e6a8d067a7a2ec64698a3a066c1152db1132b4d63fbcfd1452d65cf9",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "10_ion_sources/reports/03_metrology_calibration_and_mapping.md",
+      "historical_upstream_sha256": "ca01385a94f8f3acb98a05acf0177cdc46bcb1c576ea867b701c1b769d4ef47b",
+      "historical_copy_path": "dependencies/10_ion_sources/reports/03_metrology_calibration_and_mapping.md",
+      "derived_path": "dependencies/10_ion_sources/reports/03_metrology_calibration_and_mapping.md",
+      "derived_sha256": "ca01385a94f8f3acb98a05acf0177cdc46bcb1c576ea867b701c1b769d4ef47b",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "10_ion_sources/reports/04_conditional_material_matrix.md",
+      "historical_upstream_sha256": "bfc0772e56dcdd3e25496729a49b13e25cd3214a6e9bea1e6412159ff99d27ea",
+      "historical_copy_path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "derived_path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "derived_sha256": "042996386078342da04fcfd2fb87748b59e1a41692445fa6771bb0d5828fce1e",
+      "status": "derived_metadata_or_navigation",
+      "reason": "Navigation-only repair: resolve existing source IDs to their unchanged public registry URLs; identify unbundled upstream context as non-clickable citations. All physical/mathematical prose retained."
+    },
+    {
+      "upstream_path": "04_coating_and_substrate_materials/round2_material_response_contract/reports/01_material_response_contract.md",
+      "historical_upstream_sha256": "38a2ca7c30945b314d0922a27ac91008f899fe394d27469ea5a9d8cd24594d3b",
+      "historical_copy_path": "dependencies/04_coating_and_substrate_materials/round2_material_response_contract/reports/01_material_response_contract.md",
+      "derived_path": "dependencies/04_coating_and_substrate_materials/round2_material_response_contract/reports/01_material_response_contract.md",
+      "derived_sha256": "38a2ca7c30945b314d0922a27ac91008f899fe394d27469ea5a9d8cd24594d3b",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "04_coating_and_substrate_materials/round2_material_response_contract/reports/02_uncertainty_and_validation.md",
+      "historical_upstream_sha256": "55c964bde6e9a7ffe11ae60cd2bc1f09826b2c1d73fec38de3aafeb93f264e84",
+      "historical_copy_path": "dependencies/04_coating_and_substrate_materials/round2_material_response_contract/reports/02_uncertainty_and_validation.md",
+      "derived_path": "dependencies/04_coating_and_substrate_materials/round2_material_response_contract/reports/02_uncertainty_and_validation.md",
+      "derived_sha256": "55c964bde6e9a7ffe11ae60cd2bc1f09826b2c1d73fec38de3aafeb93f264e84",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "04_coating_and_substrate_materials/round2_material_response_contract/data/material_response.schema.json",
+      "historical_upstream_sha256": "c767439089ba6229d370d24e3ffcc0548e549d5867e9426c8957931108210ef7",
+      "historical_copy_path": "dependencies/04_coating_and_substrate_materials/round2_material_response_contract/data/material_response.schema.json",
+      "derived_path": "dependencies/04_coating_and_substrate_materials/round2_material_response_contract/data/material_response.schema.json",
+      "derived_sha256": "c767439089ba6229d370d24e3ffcc0548e549d5867e9426c8957931108210ef7",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "05_evaporation_sources/round2_qcm_flux_transfer/reports/01_qcm_acoustics_and_units.md",
+      "historical_upstream_sha256": "193a84f093977867a84a86bbb2aa60416a618b7e52ee622b1cff0dec4cd183b8",
+      "historical_copy_path": "dependencies/05_evaporation_sources/round2_qcm_flux_transfer/reports/01_qcm_acoustics_and_units.md",
+      "derived_path": "dependencies/05_evaporation_sources/round2_qcm_flux_transfer/reports/01_qcm_acoustics_and_units.md",
+      "derived_sha256": "193a84f093977867a84a86bbb2aa60416a618b7e52ee622b1cff0dec4cd183b8",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "05_evaporation_sources/round2_qcm_flux_transfer/reports/02_geometry_species_and_contract.md",
+      "historical_upstream_sha256": "bfd7bf447c40cf84165e49c1d462683d8b268afb8f89ec994c60fee7951e32a2",
+      "historical_copy_path": "dependencies/05_evaporation_sources/round2_qcm_flux_transfer/reports/02_geometry_species_and_contract.md",
+      "derived_path": "dependencies/05_evaporation_sources/round2_qcm_flux_transfer/reports/02_geometry_species_and_contract.md",
+      "derived_sha256": "bfd7bf447c40cf84165e49c1d462683d8b268afb8f89ec994c60fee7951e32a2",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "05_evaporation_sources/round2_qcm_flux_transfer/data/qcm_flux.schema.json",
+      "historical_upstream_sha256": "76331cc39d6ceaa8cb66571453dc13e75bad3152d101272d18c652dfee405973",
+      "historical_copy_path": "dependencies/05_evaporation_sources/round2_qcm_flux_transfer/data/qcm_flux.schema.json",
+      "derived_path": "dependencies/05_evaporation_sources/round2_qcm_flux_transfer/data/qcm_flux.schema.json",
+      "derived_sha256": "76331cc39d6ceaa8cb66571453dc13e75bad3152d101272d18c652dfee405973",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "09_standards_and_qualification/round2_traceable_validation_contracts/T10_ROUND2_HANDOFF.md",
+      "historical_upstream_sha256": "854352249fa3e2f6a10b3a506fd51a3ef44930da814406517d1c9e6dee8c8267",
+      "historical_copy_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/T10_ROUND2_HANDOFF.md",
+      "derived_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/T10_ROUND2_HANDOFF.md",
+      "derived_sha256": "854352249fa3e2f6a10b3a506fd51a3ef44930da814406517d1c9e6dee8c8267",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/01_scope_and_evidence_levels.md",
+      "historical_upstream_sha256": "407f1c419f6ffc5c701fefb7195b3e8674c6bf226a62190018cc45daddaa8c8f",
+      "historical_copy_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/01_scope_and_evidence_levels.md",
+      "derived_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/01_scope_and_evidence_levels.md",
+      "derived_sha256": "407f1c419f6ffc5c701fefb7195b3e8674c6bf226a62190018cc45daddaa8c8f",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/05_fit_selection_heldout.md",
+      "historical_upstream_sha256": "1fd7c025af1286cb8ea270845bccb694d6390a8fa4d9601a4eb32e50cfa5ef20",
+      "historical_copy_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/05_fit_selection_heldout.md",
+      "derived_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/05_fit_selection_heldout.md",
+      "derived_sha256": "1fd7c025af1286cb8ea270845bccb694d6390a8fa4d9601a4eb32e50cfa5ef20",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/06_uncertainty_decision_rules.md",
+      "historical_upstream_sha256": "cf5a377e71f2157a270bc4d20ea26e259ed31a35d978153de76dbfa56537023f",
+      "historical_copy_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/06_uncertainty_decision_rules.md",
+      "derived_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/06_uncertainty_decision_rules.md",
+      "derived_sha256": "cf5a377e71f2157a270bc4d20ea26e259ed31a35d978153de76dbfa56537023f",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "09_standards_and_qualification/round2_traceable_validation_contracts/reports/08_instrument_semantics_manual.md",
+      "historical_upstream_sha256": "1aebf8394508a04302efc973a0a22b06403f7ce585566a0f307af4bc8aa5a5bf",
+      "historical_copy_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/08_instrument_semantics_manual.md",
+      "derived_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/08_instrument_semantics_manual.md",
+      "derived_sha256": "1aebf8394508a04302efc973a0a22b06403f7ce585566a0f307af4bc8aa5a5bf",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_packet.schema.json",
+      "historical_upstream_sha256": "123cf8826f235defc43279111b7f33f6addbee4fea5a4b5f5520fffe4833f98c",
+      "historical_copy_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_packet.schema.json",
+      "derived_path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_packet.schema.json",
+      "derived_sha256": "123cf8826f235defc43279111b7f33f6addbee4fea5a4b5f5520fffe4833f98c",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "manual_studies/2026-10-02_morningtech_mxc/reports/manual_assessment_zh.md",
+      "historical_upstream_sha256": "718adae62c8cb2ca4502fa584456be75ec4cbe28f2db186d9b02dc24bad5cd97",
+      "historical_copy_path": "dependencies/manual_studies/2026-10-02_morningtech_mxc/reports/manual_assessment_zh.md",
+      "derived_path": "dependencies/manual_studies/2026-10-02_morningtech_mxc/reports/manual_assessment_zh.md",
+      "derived_sha256": "718adae62c8cb2ca4502fa584456be75ec4cbe28f2db186d9b02dc24bad5cd97",
+      "status": "byte_identical",
+      "reason": "Byte-identical original research content."
+    },
+    {
+      "upstream_path": "manual_studies/2026-10-02_morningtech_mxc/evidence/provenance.json",
+      "historical_upstream_sha256": "2bf7342e3b525894e684b4f4dd621fedc28e766f42256ba8190c8bdbac826803",
+      "historical_copy_path": "dependencies/manual_studies/2026-10-02_morningtech_mxc/evidence/provenance.json",
+      "derived_path": "dependencies/manual_studies/2026-10-02_morningtech_mxc/evidence/provenance.json",
+      "derived_sha256": "3e98c9b178c4a27ffbaed3b65ba1856ef42f95494394f8474e6e7bfb720b32a1",
+      "status": "derived_metadata_or_navigation",
+      "reason": "Remove private storage identifier in this derived copy only; retain bibliography, manual content hash and historical review scope; add page-evidence reference."
+    }
+  ]
+}

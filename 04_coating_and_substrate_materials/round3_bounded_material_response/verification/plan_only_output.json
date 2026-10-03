@@ -1,0 +1,33 @@
+{
+  "status": "plan_only_no_execution",
+  "plan": {
+    "schema_version": "T04-r3-response-validation-1",
+    "execution_mode": "plan_only",
+    "execution_authorized": false,
+    "authorization_evidence": "",
+    "host_access_confirmed": false,
+    "device_label": "",
+    "input_sha256": "f0e9e03695e5f8ebf5ba3486e9169815624e993ae8665676233bebbbf8d76f84",
+    "panel_levels": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "max_forward_calls": 16,
+    "max_total_panels": 40000,
+    "max_wall_seconds": 600,
+    "relative_thickness_tolerance": 0.001,
+    "stop_when_resolved": true,
+    "purpose": "bounded material re-evaluation only; no hostquota bypass, no source-clock changes, no historical oracle completion"
+  },
+  "work_estimate": {
+    "forward_calls_upper": 16,
+    "rational_panel_visits_upper": 30720,
+    "upper_includes_upstream_and_response": true,
+    "continuous_source_validation": false,
+    "historical_point2_point12_run": false
+  },
+  "host_permission_state": "unrestored_not_probed",
+  "formal_model_chain": "pending"
+}

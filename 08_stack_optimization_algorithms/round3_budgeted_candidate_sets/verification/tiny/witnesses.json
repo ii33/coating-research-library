@@ -1,0 +1,39 @@
+[
+  {
+    "point_exact": [
+      "1",
+      "1"
+    ],
+    "channels": [
+      "M0",
+      "M1"
+    ],
+    "data_class": "IN",
+    "constraint_class": "SATISFIED",
+    "proxy_feasible": true,
+    "reason": "all_observation_inclusions_contained",
+    "R_exact": {
+      "M0": [
+        "14004161878805429885997/1208925819614629174706176",
+        "14004161878805429886131/1208925819614629174706176"
+      ],
+      "M1": [
+        "5159358147390221954495/302231454903657293676544",
+        "10318716294780443909057/604462909807314587353088"
+      ]
+    },
+    "objective_exact": [
+      "151115727451828646838267/151115727451828646838272",
+      "1208925819614629174706219/1208925819614629174706176"
+    ],
+    "objective": [
+      0.9999999999999999,
+      1.0000000000000002
+    ],
+    "source_realization": false,
+    "meaning": "encoded outer-envelope witness only; not Q/rho/retention reachability",
+    "candidate_contract_sha256": "a7a2327f485ece7d6f7140c687f762879fee974994f74349cf6a59bad8ab8acd",
+    "parent_case_payload_sha256": "77d394ff69ed69e116b86d8bdf574081ad8c05a7bbdae306ac55e275a1ddbce7",
+    "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045"
+  }
+]

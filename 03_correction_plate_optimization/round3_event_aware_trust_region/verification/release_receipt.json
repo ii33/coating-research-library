@@ -1,0 +1,51 @@
+{
+  "package_id": "T03-r3-v0.1.0",
+  "archive": "deliverables/T03_round3_event_aware_trust_region_v0.1.0_reader.zip",
+  "archive_sha256": "df7b179bd74923ceaf292f5d48841644b07bfef7919d0618eb085da7aacf1af4",
+  "archive_bytes": 649001,
+  "archive_member_count": 52,
+  "manifest_sha256": "30621d6aded8566691b506968bf3872664ccf6ab673f849e4d647a50a39ed1cf",
+  "manifest_entry_count": 51,
+  "allowlist_sha256": "6560a225c308021c9bad6071e0d57573bb783399c40ccaa2b1078d2a514aa1a0",
+  "standalone_validation": {
+    "integrity": "pass",
+    "reader_member_count": 52,
+    "manifest_entries": 51,
+    "frozen_dependency_count": 8,
+    "independent_review_hashes": "match",
+    "syntax": "all_python_parse",
+    "standalone_parent_runtime_dependency": false,
+    "private_marker_scan": "pass",
+    "html": "2_embedded_pngs_no_scripts_valid_anchors_browser_layout_unverified",
+    "light_reproduction": [
+      {
+        "check": "15_unit_tests",
+        "exitcode": 0,
+        "wall_seconds": 0.4853087359952042
+      },
+      {
+        "check": "models/run_examples.py",
+        "exitcode": 0,
+        "wall_seconds": 0.27813769299245905
+      },
+      {
+        "check": "models/device_driver.py",
+        "exitcode": 0,
+        "wall_seconds": 0.16616362500644755
+      },
+      {
+        "check": "independent_math_reproduction",
+        "exitcode": 0,
+        "wall_seconds": 0.37084538099588826
+      }
+    ],
+    "default_run_refusal": "pass_exit_2",
+    "post_replay_integrity": "pass"
+  },
+  "publication": "local_only_not_uploaded",
+  "third_party_originals_in_reader": false,
+  "self_reference_policy": "manifest excludes self; receipt external to archive and not self hashed",
+  "formal_chain": "pending",
+  "physical_certification": false,
+  "historical_point2_point12_status": "unchanged"
+}

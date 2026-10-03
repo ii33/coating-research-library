@@ -1,0 +1,917 @@
+{
+  "summary": {
+    "joint_counts": {
+      "OUT": 98,
+      "IN": 0,
+      "UNKNOWN": 32
+    },
+    "slice_counts": {
+      "OUT": 7,
+      "IN": 0,
+      "UNKNOWN": 0
+    },
+    "all_data_retained_v_hull": [
+      "19/20",
+      "11/10"
+    ],
+    "incorrect_if_used_as_all_feasible_optimum_only_v_hull": [
+      "19/20",
+      "11/10"
+    ],
+    "unknown_in_optimization": 32,
+    "objective_pruned_unknown_count": 15,
+    "minimum_bracket": [
+      "0",
+      "1208925819614629174706219/1208925819614629174706176"
+    ],
+    "ledger": {
+      "max_nodes": 286,
+      "max_interval_wavelengths": 1148,
+      "max_float_vectors": 0,
+      "nodes": 268,
+      "interval_wavelengths": 977,
+      "float_vectors": 0,
+      "float_wavelengths": 0,
+      "denominator_fallbacks": 0,
+      "arithmetic_fallbacks": 0
+    },
+    "frozen_replay_matches": {
+      "plane_joint_255": true,
+      "outer10_joint_31": true,
+      "witness": true
+    },
+    "saved_record_is_live_proof": false
+  },
+  "cases": [
+    {
+      "id": "proxy_exists",
+      "claim": {
+        "kind": "proxy_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "conditional_accept",
+      "result": {
+        "status": "conditional_accept",
+        "reason": "interval_verified_outer_envelope_witness_not_source_reachability",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "slice_110_exists",
+      "claim": {
+        "kind": "slice_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "v": "1.1"
+      },
+      "expected": "reject_claim",
+      "result": {
+        "status": "reject_claim",
+        "reason": "entire_shared_z_slice_out",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "proof_leaf_count": 7
+      },
+      "pass": true
+    },
+    {
+      "id": "proxy_to_source_forbidden",
+      "claim": {
+        "kind": "source_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "proxy_IN_does_not_establish_joint_Q_rho_retention_reachability",
+        "required_evidence": [
+          "REQ-SOURCE",
+          "REQ-GUARDS"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "failed_optimizer_not_empty",
+      "claim": {
+        "kind": "optimizer_failure_means_empty",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "reject_claim",
+      "result": {
+        "status": "reject_claim",
+        "reason": "finite_search_failure_has_no_exclusion_force_and_verified_counterexample_exists",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "all_v_outer_envelope",
+      "claim": {
+        "kind": "all_v_in",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "range": [
+          "0.95",
+          "1.1"
+        ]
+      },
+      "expected": "conditional_accept",
+      "result": {
+        "status": "conditional_accept",
+        "reason": "all_retained_outer_boxes_contained_in_criterion",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "outer_hull": [
+          "19/20",
+          "11/10"
+        ],
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "all_v_narrow_lower",
+      "claim": {
+        "kind": "all_v_in",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "range": [
+          "0.99",
+          "1.1"
+        ]
+      },
+      "expected": "retain_unknown",
+      "result": {
+        "status": "retain_unknown",
+        "reason": "retained_outer_boxes_cross_criterion_without_verified_counterexample",
+        "required_evidence": [
+          "REQ-COMPUTE"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "outer_hull": [
+          "19/20",
+          "11/10"
+        ],
+        "claim_crossing_leaf_ids": [
+          "r0110010",
+          "r0110011",
+          "r01101",
+          "r0111"
+        ],
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "all_v_counterexample",
+      "claim": {
+        "kind": "all_v_in",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "range": [
+          "1.01",
+          "1.1"
+        ]
+      },
+      "expected": "reject_claim",
+      "result": {
+        "status": "reject_claim",
+        "reason": "verified_proxy_counterexample",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "witness_interval": [
+          "1",
+          "1"
+        ],
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "minimum_loose",
+      "claim": {
+        "kind": "minimum_J_le",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "threshold": "1.01"
+      },
+      "expected": "conditional_accept",
+      "result": {
+        "status": "conditional_accept",
+        "reason": "existential_optimization_bracket_not_universal_performance",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "minimum_bracket": [
+          "0",
+          "1208925819614629174706219/1208925819614629174706176"
+        ],
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "minimum_tight",
+      "claim": {
+        "kind": "minimum_J_le",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "threshold": "0.25"
+      },
+      "expected": "retain_unknown",
+      "result": {
+        "status": "retain_unknown",
+        "reason": "existential_optimization_bracket_not_universal_performance",
+        "required_evidence": [
+          "REQ-COMPUTE"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "minimum_bracket": [
+          "0",
+          "1208925819614629174706219/1208925819614629174706176"
+        ],
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "minimum_negative",
+      "claim": {
+        "kind": "minimum_J_le",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "threshold": "-0.01"
+      },
+      "expected": "reject_claim",
+      "result": {
+        "status": "reject_claim",
+        "reason": "existential_optimization_bracket_not_universal_performance",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "minimum_bracket": [
+          "0",
+          "1208925819614629174706219/1208925819614629174706176"
+        ],
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "gap_tight",
+      "claim": {
+        "kind": "gap_le",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "threshold": "0.05"
+      },
+      "expected": "retain_unknown",
+      "result": {
+        "status": "retain_unknown",
+        "reason": "certified_upper_gap_sufficient_not_necessary",
+        "required_evidence": [
+          "REQ-COMPUTE"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "gap_upper": "1208925819614629174706219/1208925819614629174706176",
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "gap_loose",
+      "claim": {
+        "kind": "gap_le",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "threshold": "1.01"
+      },
+      "expected": "conditional_accept",
+      "result": {
+        "status": "conditional_accept",
+        "reason": "certified_upper_gap_sufficient_not_necessary",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "gap_upper": "1208925819614629174706219/1208925819614629174706176",
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "all_J_not_optimum",
+      "claim": {
+        "kind": "all_J_in",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "range": [
+          "0",
+          "1.01"
+        ]
+      },
+      "expected": "retain_unknown",
+      "result": {
+        "status": "retain_unknown",
+        "reason": "retained_outer_boxes_cross_criterion_without_verified_counterexample",
+        "required_evidence": [
+          "REQ-COMPUTE"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "outer_hull": [
+          "0",
+          "4835703278458516698824869/1208925819614629174706176"
+        ],
+        "claim_crossing_leaf_ids": [
+          "r00111110101110",
+          "r00111110101111",
+          "r00111110111010",
+          "r00111110111011",
+          "r00111110111101",
+          "r00111110111110",
+          "r00111110111111",
+          "r00111111101000",
+          "r00111111101001",
+          "r00111111101010",
+          "r00111111101011",
+          "r00111111101100",
+          "r00111111101101",
+          "r00111111101110",
+          "r00111111101111",
+          "r00111111110010",
+          "r00111111110011",
+          "r00111111110110",
+          "r00111111110111",
+          "r00111111111000",
+          "r00111111111001",
+          "r00111111111010",
+          "r00111111111011",
+          "r00111111111100",
+          "r00111111111101",
+          "r00111111111110",
+          "r00111111111111",
+          "r0110010",
+          "r0110011",
+          "r01101",
+          "r0111"
+        ],
+        "retained_unknown_count": 32,
+        "objective_pruned_still_data_unknown": 15
+      },
+      "pass": true
+    },
+    {
+      "id": "point_M0_pass",
+      "claim": {
+        "kind": "point_M0_in",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "range": [
+          "0",
+          "0.012"
+        ]
+      },
+      "expected": "conditional_accept",
+      "result": {
+        "status": "conditional_accept",
+        "reason": "conditional_forward_response_at_verified_point_not_measured_result",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "point_exact": [
+          "1",
+          "1"
+        ],
+        "response_interval": [
+          "14004161878805429885997/1208925819614629174706176",
+          "14004161878805429886131/1208925819614629174706176"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "point_M0_fail",
+      "claim": {
+        "kind": "point_M0_in",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "range": [
+          "0",
+          "0.011"
+        ]
+      },
+      "expected": "reject_claim",
+      "result": {
+        "status": "reject_claim",
+        "reason": "conditional_forward_response_at_verified_point_not_measured_result",
+        "required_evidence": [],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending",
+        "point_exact": [
+          "1",
+          "1"
+        ],
+        "response_interval": [
+          "14004161878805429885997/1208925819614629174706176",
+          "14004161878805429886131/1208925819614629174706176"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "real_measurement_block",
+      "claim": {
+        "kind": "point_M0_in",
+        "scope": "actual_measurement",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only",
+        "range": [
+          "0",
+          "0.012"
+        ]
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "actual_measurement_or_production_not_supported",
+        "required_evidence": [
+          "REQ-REAL",
+          "REQ-RULE"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "new_state_block",
+      "claim": {
+        "kind": "proxy_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "annealed_new_state",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "new_operator_or_state_requires_new_contract",
+        "required_evidence": [
+          "REQ-OPERATOR"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "new_operator_block",
+      "claim": {
+        "kind": "proxy_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "changed_operator",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "new_operator_or_state_requires_new_contract",
+        "required_evidence": [
+          "REQ-OPERATOR"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "independent_layers_block",
+      "claim": {
+        "kind": "proxy_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "independent_z_per_layer",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "same_specimen_correlation_contract_broken",
+        "required_evidence": [
+          "REQ-CORRELATION"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "sqrt_n_reduction_block",
+      "claim": {
+        "kind": "proxy_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "independent_gaussian_divide_sqrt_n",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "joint_error_claim_not_supported",
+        "required_evidence": [
+          "REQ-CORRELATION"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "probability_promotion_block",
+      "claim": {
+        "kind": "proxy_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "95_percent",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "arithmetic_bound_is_not_coverage_probability",
+        "required_evidence": [
+          "REQ-UNCERTAINTY"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "unknown_source_guard_block",
+      "claim": {
+        "kind": "proxy_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "unknown_treated_as_zero"
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "negative_cross_zero_near_zero_inventory_or_source_guard_unresolved",
+        "required_evidence": [
+          "REQ-GUARDS"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "guessed_customer_rule_block",
+      "claim": {
+        "kind": "proxy_exists",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "assumed_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "actual_customer_rule_unknown",
+        "required_evidence": [
+          "REQ-RULE"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    },
+    {
+      "id": "whole_spectrum_block",
+      "claim": {
+        "kind": "all_spectrum_or_95pct",
+        "scope": "encoded_synthetic_model",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "sample_state_id": "synthetic_shared_relative_density_v1",
+        "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+        "criterion_origin": "project_illustration_not_customer_spec",
+        "interval_semantics": "hard_bound_not_probability",
+        "same_batch_latent": "one_shared_z",
+        "error_joint_set": "cartesian_outer_no_independence_assertion",
+        "guard_status": "inherited_synthetic_positive_domain_only"
+      },
+      "expected": "blocked_evidence",
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "two_discrete_channels_do_not_certify_continuous_spectrum_or_probability",
+        "required_evidence": [
+          "REQ-OPERATOR",
+          "REQ-UNCERTAINTY"
+        ],
+        "production_release": false,
+        "physical_certification": false,
+        "customer_criteria": "unknown",
+        "formal_stage_acceptance": "pending"
+      },
+      "pass": true
+    }
+  ],
+  "all_expected": true,
+  "elapsed_seconds": 14.208109045997844,
+  "production_release": false
+}

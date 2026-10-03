@@ -1,0 +1,304 @@
+{
+  "truth": [
+    1.8,
+    0.02,
+    0.1
+  ],
+  "mode": "RT_plus_d",
+  "records": [
+    {
+      "kind": "R",
+      "wavelength_um": 0.55,
+      "angle_deg": 60.0,
+      "polarization": "s"
+    },
+    {
+      "kind": "T",
+      "wavelength_um": 0.55,
+      "angle_deg": 60.0,
+      "polarization": "s"
+    },
+    {
+      "kind": "R",
+      "wavelength_um": 0.55,
+      "angle_deg": 60.0,
+      "polarization": "p"
+    },
+    {
+      "kind": "T",
+      "wavelength_um": 0.55,
+      "angle_deg": 60.0,
+      "polarization": "p"
+    },
+    {
+      "kind": "d_geo",
+      "independent": true
+    }
+  ],
+  "covariance": [
+    [
+      4e-06,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      4e-06,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      4e-06,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      4e-06,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4e-06
+    ]
+  ],
+  "fit": {
+    "best": {
+      "start_index": 0,
+      "theta": [
+        1.8,
+        0.02,
+        0.1
+      ],
+      "chi2": 0.0,
+      "converged": true,
+      "status": 1,
+      "nfev": 1,
+      "active_mask": [
+        0,
+        0,
+        0
+      ],
+      "message": "`gtol` termination condition is satisfied."
+    },
+    "attempts": [
+      {
+        "start_index": 0,
+        "theta": [
+          1.8,
+          0.02,
+          0.1
+        ],
+        "chi2": 0.0,
+        "converged": true,
+        "status": 1,
+        "nfev": 1,
+        "active_mask": [
+          0,
+          0,
+          0
+        ],
+        "message": "`gtol` termination condition is satisfied."
+      }
+    ],
+    "global_minimum_certified": false
+  },
+  "profile": {
+    "parameter_index": 2,
+    "rows": [
+      {
+        "fixed_value": 0.005,
+        "best": {
+          "start_index": 0,
+          "theta": [
+            2.9999999999999996,
+            0.29999999999999993
+          ],
+          "chi2": 6014.88427540545,
+          "converged": true,
+          "status": 1,
+          "nfev": 7,
+          "active_mask": [
+            1,
+            1
+          ],
+          "message": "`gtol` termination condition is satisfied.",
+          "theta_full": [
+            2.9999999999999996,
+            0.29999999999999993,
+            0.005
+          ]
+        },
+        "attempts": [
+          {
+            "start_index": 0,
+            "theta": [
+              2.9999999999999996,
+              0.29999999999999993
+            ],
+            "chi2": 6014.88427540545,
+            "converged": true,
+            "status": 1,
+            "nfev": 7,
+            "active_mask": [
+              1,
+              1
+            ],
+            "message": "`gtol` termination condition is satisfied.",
+            "theta_full": [
+              2.9999999999999996,
+              0.29999999999999993,
+              0.005
+            ]
+          }
+        ],
+        "global_minimum_certified": false
+      },
+      {
+        "fixed_value": 1.5,
+        "best": {
+          "start_index": 0,
+          "theta": [
+            1.911309645552599,
+            0.001254199770800624
+          ],
+          "chi2": 490003.0925909053,
+          "converged": true,
+          "status": 2,
+          "nfev": 9,
+          "active_mask": [
+            0,
+            0
+          ],
+          "message": "`ftol` termination condition is satisfied.",
+          "theta_full": [
+            1.911309645552599,
+            0.001254199770800624,
+            1.5
+          ]
+        },
+        "attempts": [
+          {
+            "start_index": 0,
+            "theta": [
+              1.911309645552599,
+              0.001254199770800624
+            ],
+            "chi2": 490003.0925909053,
+            "converged": true,
+            "status": 2,
+            "nfev": 9,
+            "active_mask": [
+              0,
+              0
+            ],
+            "message": "`ftol` termination condition is satisfied.",
+            "theta_full": [
+              1.911309645552599,
+              0.001254199770800624,
+              1.5
+            ]
+          }
+        ],
+        "global_minimum_certified": false
+      }
+    ],
+    "confidence_interval": null,
+    "meaning": "finite-grid best-of-starts upper-bound approximation to profile minimum; no confidence coverage/global proof"
+  },
+  "monte_carlo": [
+    {
+      "draw": 0,
+      "best": {
+        "start_index": 0,
+        "theta": [
+          1.8189843262797616,
+          0.01857818086539563,
+          0.10414214476462244
+        ],
+        "chi2": 0.6480832905359759,
+        "converged": true,
+        "status": 2,
+        "nfev": 6,
+        "active_mask": [
+          0,
+          0,
+          0
+        ],
+        "message": "`ftol` termination condition is satisfied."
+      },
+      "attempts": [
+        {
+          "start_index": 0,
+          "theta": [
+            1.8189843262797616,
+            0.01857818086539563,
+            0.10414214476462244
+          ],
+          "chi2": 0.6480832905359759,
+          "converged": true,
+          "status": 2,
+          "nfev": 6,
+          "active_mask": [
+            0,
+            0,
+            0
+          ],
+          "message": "`ftol` termination condition is satisfied."
+        }
+      ],
+      "global_minimum_certified": false
+    }
+  ],
+  "local_at_truth": {
+    "rank": 3,
+    "parameter_count": 3,
+    "row_count": 5,
+    "singular_values": [
+      73.25675384494627,
+      32.07631737261367,
+      17.42863169672424
+    ],
+    "rank_threshold": 7.325675384494627e-06,
+    "rtol": 1e-07,
+    "atol": 1e-08,
+    "condition_number": 4.203241833305542,
+    "null_directions_scaled": [],
+    "covariance_scaled_local_if_full_rank": [
+      [
+        0.0010358090781358539,
+        -0.0007695735907439833,
+        0.0010771804202043378
+      ],
+      [
+        -0.0007695735907439834,
+        0.0018397353969235428,
+        -0.0008290329232554413
+      ],
+      [
+        0.0010771804202043378,
+        -0.0008290329232554412,
+        0.001574818982981025
+      ]
+    ],
+    "full_rank_is_not_global_certificate": true
+  },
+  "derivative_schemes": [
+    "central_second_order",
+    "central_second_order",
+    "central_second_order"
+  ],
+  "synthetic_only": true,
+  "production_qualified": false,
+  "model_misspecification_or_real_coverage_validated": false
+}

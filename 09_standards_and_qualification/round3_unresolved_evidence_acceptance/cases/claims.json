@@ -1,0 +1,561 @@
+[
+  {
+    "id": "proxy_exists",
+    "claim": {
+      "kind": "proxy_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "conditional_accept"
+  },
+  {
+    "id": "slice_110_exists",
+    "claim": {
+      "kind": "slice_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "v": "1.1"
+    },
+    "expected": "reject_claim"
+  },
+  {
+    "id": "proxy_to_source_forbidden",
+    "claim": {
+      "kind": "source_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "failed_optimizer_not_empty",
+    "claim": {
+      "kind": "optimizer_failure_means_empty",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "reject_claim"
+  },
+  {
+    "id": "all_v_outer_envelope",
+    "claim": {
+      "kind": "all_v_in",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "0.95",
+        "1.1"
+      ]
+    },
+    "expected": "conditional_accept"
+  },
+  {
+    "id": "all_v_narrow_lower",
+    "claim": {
+      "kind": "all_v_in",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "0.99",
+        "1.1"
+      ]
+    },
+    "expected": "retain_unknown"
+  },
+  {
+    "id": "all_v_counterexample",
+    "claim": {
+      "kind": "all_v_in",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "1.01",
+        "1.1"
+      ]
+    },
+    "expected": "reject_claim"
+  },
+  {
+    "id": "minimum_loose",
+    "claim": {
+      "kind": "minimum_J_le",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "threshold": "1.01"
+    },
+    "expected": "conditional_accept"
+  },
+  {
+    "id": "minimum_tight",
+    "claim": {
+      "kind": "minimum_J_le",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "threshold": "0.25"
+    },
+    "expected": "retain_unknown"
+  },
+  {
+    "id": "minimum_negative",
+    "claim": {
+      "kind": "minimum_J_le",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "threshold": "-0.01"
+    },
+    "expected": "reject_claim"
+  },
+  {
+    "id": "gap_tight",
+    "claim": {
+      "kind": "gap_le",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "threshold": "0.05"
+    },
+    "expected": "retain_unknown"
+  },
+  {
+    "id": "gap_loose",
+    "claim": {
+      "kind": "gap_le",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "threshold": "1.01"
+    },
+    "expected": "conditional_accept"
+  },
+  {
+    "id": "all_J_not_optimum",
+    "claim": {
+      "kind": "all_J_in",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "0",
+        "1.01"
+      ]
+    },
+    "expected": "retain_unknown"
+  },
+  {
+    "id": "point_M0_pass",
+    "claim": {
+      "kind": "point_M0_in",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "0",
+        "0.012"
+      ]
+    },
+    "expected": "conditional_accept"
+  },
+  {
+    "id": "point_M0_fail",
+    "claim": {
+      "kind": "point_M0_in",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "0",
+        "0.011"
+      ]
+    },
+    "expected": "reject_claim"
+  },
+  {
+    "id": "real_measurement_block",
+    "claim": {
+      "kind": "point_M0_in",
+      "scope": "actual_measurement",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "0",
+        "0.012"
+      ]
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "new_state_block",
+    "claim": {
+      "kind": "proxy_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "annealed_new_state",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "new_operator_block",
+    "claim": {
+      "kind": "proxy_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "changed_operator",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "independent_layers_block",
+    "claim": {
+      "kind": "proxy_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "independent_z_per_layer",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "sqrt_n_reduction_block",
+    "claim": {
+      "kind": "proxy_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "independent_gaussian_divide_sqrt_n",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "probability_promotion_block",
+    "claim": {
+      "kind": "proxy_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "95_percent",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "unknown_source_guard_block",
+    "claim": {
+      "kind": "proxy_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "unknown_treated_as_zero"
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "guessed_customer_rule_block",
+    "claim": {
+      "kind": "proxy_exists",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "assumed_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "whole_spectrum_block",
+    "claim": {
+      "kind": "all_spectrum_or_95pct",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only"
+    },
+    "expected": "blocked_evidence"
+  },
+  {
+    "id": "readout_loose",
+    "claim": {
+      "kind": "observation_M0_in",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "0",
+        "0.013"
+      ]
+    },
+    "expected": "conditional_accept"
+  },
+  {
+    "id": "readout_tight",
+    "claim": {
+      "kind": "observation_M0_in",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "0",
+        "0.010"
+      ]
+    },
+    "expected": "reject_claim"
+  },
+  {
+    "id": "readout_same_0012_threshold",
+    "claim": {
+      "kind": "observation_M0_in",
+      "scope": "encoded_synthetic_model",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "sample_state_id": "synthetic_shared_relative_density_v1",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+      "criterion_origin": "project_illustration_not_customer_spec",
+      "interval_semantics": "hard_bound_not_probability",
+      "same_batch_latent": "one_shared_z",
+      "error_joint_set": "cartesian_outer_no_independence_assertion",
+      "guard_status": "inherited_synthetic_positive_domain_only",
+      "range": [
+        "0",
+        "0.012"
+      ]
+    },
+    "expected": "retain_unknown"
+  }
+]

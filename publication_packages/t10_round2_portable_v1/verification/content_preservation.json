@@ -1,0 +1,261 @@
+{
+  "status": "byte_identical",
+  "scope": "All 8 main reports, numerical/evidence/driver implementations, all contracts/examples/tests, and all 6 original figure assets; source-to-derived identity is checked by the portable manifest and derivation map.",
+  "files": [
+    {
+      "path": "contracts/README.md",
+      "source_sha256": "a80c02b431b151a55b94ccf672c82fad72633219a059721a54f2a1d3cd1dbaa4",
+      "derived_sha256": "a80c02b431b151a55b94ccf672c82fad72633219a059721a54f2a1d3cd1dbaa4"
+    },
+    {
+      "path": "contracts/observable_dictionary.csv",
+      "source_sha256": "2616beb86c9054e1df06a57515060e5964319fe38b26be78ca53fa6c654717db",
+      "derived_sha256": "2616beb86c9054e1df06a57515060e5964319fe38b26be78ca53fa6c654717db"
+    },
+    {
+      "path": "contracts/observation_packet.schema.json",
+      "source_sha256": "63e6991b5040d35416ad883e2e5bc8438b202bf69de448ff745118574589d913",
+      "derived_sha256": "63e6991b5040d35416ad883e2e5bc8438b202bf69de448ff745118574589d913"
+    },
+    {
+      "path": "examples/actual_unknown.json",
+      "source_sha256": "4eb1004179522a153c2de9bfa3adbacfe306ce3de5343fadfbb84a7129c2812a",
+      "derived_sha256": "4eb1004179522a153c2de9bfa3adbacfe306ce3de5343fadfbb84a7129c2812a"
+    },
+    {
+      "path": "examples/synthetic_complete.json",
+      "source_sha256": "5afd1360c069c66713cc485d516b21e34baccfd685aa5a6fc838b129c15b6673",
+      "derived_sha256": "5afd1360c069c66713cc485d516b21e34baccfd685aa5a6fc838b129c15b6673"
+    },
+    {
+      "path": "figures/01_planar_rfea_angle.png",
+      "source_sha256": "3f2e47c1eea7720a79cac515fc4b42c5c5d08f8152b4dbb808e9c934cdda92f6",
+      "derived_sha256": "3f2e47c1eea7720a79cac515fc4b42c5c5d08f8152b4dbb808e9c934cdda92f6"
+    },
+    {
+      "path": "figures/01_planar_rfea_angle.svg",
+      "source_sha256": "4584ce76256ced47b59d25c28176dc99a79f1b98d44d009fde5e5d45f0cb9a09",
+      "derived_sha256": "4584ce76256ced47b59d25c28176dc99a79f1b98d44d009fde5e5d45f0cb9a09"
+    },
+    {
+      "path": "figures/02_charge_exchange_energy.png",
+      "source_sha256": "7802b74c7eb6f1f1b1d4f03c40b5be1a55e2958277c5850e48288d8995daf348",
+      "derived_sha256": "7802b74c7eb6f1f1b1d4f03c40b5be1a55e2958277c5850e48288d8995daf348"
+    },
+    {
+      "path": "figures/02_charge_exchange_energy.svg",
+      "source_sha256": "5527462592d83adac17fb2b2f145789f4e36eda219cd609d575daf3c11883a84",
+      "derived_sha256": "5527462592d83adac17fb2b2f145789f4e36eda219cd609d575daf3c11883a84"
+    },
+    {
+      "path": "figures/03_equal_moments_different_tail.png",
+      "source_sha256": "576ba5be273ceca43485689c458ac30b5fcde5de637c64c99d56c0008f679178",
+      "derived_sha256": "576ba5be273ceca43485689c458ac30b5fcde5de637c64c99d56c0008f679178"
+    },
+    {
+      "path": "figures/03_equal_moments_different_tail.svg",
+      "source_sha256": "4d957a76c62fccef249599363990b3e4e82c2f120d2c8dda802577c73183d62a",
+      "derived_sha256": "4d957a76c62fccef249599363990b3e4e82c2f120d2c8dda802577c73183d62a"
+    },
+    {
+      "path": "models/evidence_contract.py",
+      "source_sha256": "d5637da42420096deeacd3a8df133182cefe5da8996bd8a2853149c65592ee2d",
+      "derived_sha256": "d5637da42420096deeacd3a8df133182cefe5da8996bd8a2853149c65592ee2d"
+    },
+    {
+      "path": "models/ion_observables.py",
+      "source_sha256": "e298a7619a2fbc42d8f2a19b21a5b7ad2a72391a82ed6c671a4fed42c09269a3",
+      "derived_sha256": "e298a7619a2fbc42d8f2a19b21a5b7ad2a72391a82ed6c671a4fed42c09269a3"
+    },
+    {
+      "path": "models/validation_driver.py",
+      "source_sha256": "34ca9c021eb41df4cabd2a38d598c00073b15c0161f9261c348bab9c6fa2c1b4",
+      "derived_sha256": "34ca9c021eb41df4cabd2a38d598c00073b15c0161f9261c348bab9c6fa2c1b4"
+    },
+    {
+      "path": "reports/01_scope_observables_and_evidence.md",
+      "source_sha256": "cec6de6c3b574d6ae44d9b0b2e264ee69c3e63f8cc402fb93ed5cb9c5ad3a8ed",
+      "derived_sha256": "cec6de6c3b574d6ae44d9b0b2e264ee69c3e63f8cc402fb93ed5cb9c5ad3a8ed"
+    },
+    {
+      "path": "reports/02_kaufman_energy_charge_and_neutrals.md",
+      "source_sha256": "6a74863c7043d93eddbec53988ed53a75d469b6fce4236584ba9dbd9532afcaa",
+      "derived_sha256": "6a74863c7043d93eddbec53988ed53a75d469b6fce4236584ba9dbd9532afcaa"
+    },
+    {
+      "path": "reports/03_diagnostic_forward_models.md",
+      "source_sha256": "092daa388bde5058040f2784b6a6594638cc3f74eaedf10cdebca403829c3fdf",
+      "derived_sha256": "092daa388bde5058040f2784b6a6594638cc3f74eaedf10cdebca403829c3fdf"
+    },
+    {
+      "path": "reports/04_spatial_temporal_representativeness.md",
+      "source_sha256": "b5fef424635cab9f2a6462112a34c80a2218778e414cf4be87b110f06d4bc587",
+      "derived_sha256": "b5fef424635cab9f2a6462112a34c80a2218778e414cf4be87b110f06d4bc587"
+    },
+    {
+      "path": "reports/05_material_state_growth_and_erosion.md",
+      "source_sha256": "7ff342c5c115492d0e38754138c0103664e56fd8d2c0eb87a98e2e617a1b7333",
+      "derived_sha256": "7ff342c5c115492d0e38754138c0103664e56fd8d2c0eb87a98e2e617a1b7333"
+    },
+    {
+      "path": "reports/06_response_identification_and_validation.md",
+      "source_sha256": "7375412833e7dc0cd5e795b487c332cd2fda62adb36749d19f5cca86775ee78f",
+      "derived_sha256": "7375412833e7dc0cd5e795b487c332cd2fda62adb36749d19f5cca86775ee78f"
+    },
+    {
+      "path": "reports/07_reference_cases_and_counterexamples.md",
+      "source_sha256": "c1769be3d84c15a21cc3073dd935789a2cb255978f1c40e394eac2039a980f8b",
+      "derived_sha256": "c1769be3d84c15a21cc3073dd935789a2cb255978f1c40e394eac2039a980f8b"
+    },
+    {
+      "path": "reports/08_implementation_execution_and_limits.md",
+      "source_sha256": "f7e1ce89d121d9d9c772bdccf87f2889a5b0b94373842ece29d8957dc8cfaeaa",
+      "derived_sha256": "f7e1ce89d121d9d9c772bdccf87f2889a5b0b94373842ece29d8957dc8cfaeaa"
+    },
+    {
+      "path": "tests/test_reference.py",
+      "source_sha256": "3fbfccddb6018b56de69b1ae4dd00b2bec19e28036f5ee954d2effc40b565aa2",
+      "derived_sha256": "3fbfccddb6018b56de69b1ae4dd00b2bec19e28036f5ee954d2effc40b565aa2"
+    }
+  ],
+  "navigation_only_modified_dependencies": [
+    {
+      "path": "dependencies/10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "old_target": "../sources/summaries/IS-01.md",
+      "new_target": "https://ionsources.com/products/gridded-kdc-sources/",
+      "kind": "public_bibliographic_target"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "old_target": "../sources/summaries/IS-02.md",
+      "new_target": "https://ionsources.com/wp-content/uploads/2024/01/TN-01_Broad-Beam-Industrial-Ion-Source-Resource.pdf",
+      "kind": "public_bibliographic_target"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "old_target": "../sources/summaries/IS-08.md",
+      "new_target": "https://ntrs.nasa.gov/citations/19810016343",
+      "kind": "public_bibliographic_target"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "old_target": "../sources/summaries/IS-03.md",
+      "new_target": "https://ionsources.com/wp-content/uploads/2024/01/TN-02_Ion-Beam-Neutralization-Resource.pdf",
+      "kind": "public_bibliographic_target"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "old_target": "../sources/summaries/IS-04.md",
+      "new_target": "https://ionsources.com/wp-content/uploads/2024/01/TN-03_Charge-and-Momentum-Exchange-in-an-Ion-Beam-Resource.pdf",
+      "kind": "public_bibliographic_target"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "00_source_index.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../reviews/independent_source_check.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/01_Ta2O5_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/02_ZnS_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/03_TiO2_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/04_YbF3_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/05_SiO2_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/06_MgF2_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/07_Al2O3_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/08_H4_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/09_Ge_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/10_Cu_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/11_Cr_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/12_Al_film.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/13_ZnS_substrate.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/14_Ge_substrate.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/15_K9_substrate.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "old_target": "../../04_coating_and_substrate_materials/cards/16_ZnSe_substrate.md",
+      "new_target": null,
+      "kind": "unbundled_context_citation"
+    }
+  ]
+}

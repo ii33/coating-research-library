@@ -1,0 +1,1222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:coating-research:T04R2:material-response:1.0",
+  "title": "Conditioned material response input contract",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_role": {
+      "enum": [
+        "reference_unmeasured",
+        "synthetic_fixture",
+        "measured_campaign"
+      ]
+    },
+    "production_qualified": {
+      "const": false
+    },
+    "film": {
+      "type": "object",
+      "properties": {
+        "material_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "grade": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lot": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "identity_status": {
+          "enum": [
+            "verified",
+            "synthetic",
+            "unresolved"
+          ]
+        },
+        "physical_state": {
+          "enum": [
+            "thin_film",
+            "bulk_substrate"
+          ]
+        },
+        "phase": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nominal_formula": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "composition_verified": {
+          "type": "boolean"
+        },
+        "stoichiometry": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        },
+        "element_molar_mass_kg_mol": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/quantity"
+          }
+        },
+        "density": {
+          "$ref": "#/$defs/quantity"
+        },
+        "density_basis": {
+          "enum": [
+            "effective_film",
+            "bulk_substrate",
+            "unknown"
+          ]
+        },
+        "density_composition_invariant": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "material_id",
+        "label",
+        "manufacturer",
+        "grade",
+        "lot",
+        "identity_status",
+        "physical_state",
+        "phase",
+        "nominal_formula",
+        "composition_verified",
+        "stoichiometry",
+        "element_molar_mass_kg_mol",
+        "density",
+        "density_basis",
+        "density_composition_invariant"
+      ],
+      "additionalProperties": false
+    },
+    "substrate": {
+      "type": "object",
+      "properties": {
+        "material_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "grade": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lot": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "identity_status": {
+          "enum": [
+            "verified",
+            "synthetic",
+            "unresolved"
+          ]
+        },
+        "physical_state": {
+          "enum": [
+            "thin_film",
+            "bulk_substrate"
+          ]
+        },
+        "phase": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nominal_formula": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "composition_verified": {
+          "type": "boolean"
+        },
+        "stoichiometry": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        },
+        "element_molar_mass_kg_mol": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/quantity"
+          }
+        },
+        "density": {
+          "$ref": "#/$defs/quantity"
+        },
+        "density_basis": {
+          "enum": [
+            "effective_film",
+            "bulk_substrate",
+            "unknown"
+          ]
+        },
+        "density_composition_invariant": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "material_id",
+        "label",
+        "manufacturer",
+        "grade",
+        "lot",
+        "identity_status",
+        "physical_state",
+        "phase",
+        "nominal_formula",
+        "composition_verified",
+        "stoichiometry",
+        "element_molar_mass_kg_mol",
+        "density",
+        "density_basis",
+        "density_composition_invariant"
+      ],
+      "additionalProperties": false
+    },
+    "process_context": {
+      "type": "object",
+      "properties": {
+        "deposition_method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chamber_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_material_identity": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "manufacturer": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "grade": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "lot": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "manufacturer",
+            "grade",
+            "lot"
+          ],
+          "additionalProperties": false
+        },
+        "surface_preparation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "underlayers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "post_treatment_history": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "environment_history": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "gas_species": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "spectrum_resolution_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "deposition_method",
+        "source_type",
+        "source_model",
+        "chamber_id",
+        "source_material_identity",
+        "surface_preparation",
+        "underlayers",
+        "post_treatment_history",
+        "environment_history",
+        "gas_species",
+        "spectrum_resolution_note"
+      ],
+      "additionalProperties": false
+    },
+    "spatial_support": {
+      "type": "object",
+      "properties": {
+        "point_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "area_m2": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "coordinate_frame": {
+          "type": "string",
+          "minLength": 1
+        },
+        "normal_convention": {
+          "const": "outward_surface_normal"
+        },
+        "scope": {
+          "enum": [
+            "local_point",
+            "finite_cell_average"
+          ]
+        }
+      },
+      "required": [
+        "point_id",
+        "area_m2",
+        "coordinate_frame",
+        "normal_convention",
+        "scope"
+      ],
+      "additionalProperties": false
+    },
+    "flux_area_basis": {
+      "const": "actual_substrate_surface_area"
+    },
+    "time_sampling": {
+      "const": "piecewise_constant_bin_averages"
+    },
+    "history_resolution": {
+      "enum": [
+        "resolved_bins",
+        "unresolved"
+      ]
+    },
+    "atom_inventory_coverage": {
+      "enum": [
+        "all_retained_elements",
+        "partial",
+        "unknown"
+      ]
+    },
+    "initial_inventory_atoms_m2": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/quantity"
+      }
+    },
+    "initial_thickness": {
+      "$ref": "#/$defs/quantity"
+    },
+    "bins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "bin_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "t_start_s": {
+            "type": "number"
+          },
+          "dt_s": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "surface_temperature": {
+            "$ref": "#/$defs/quantity"
+          },
+          "net_element_flux": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/quantity"
+            }
+          },
+          "net_flux_method": {
+            "enum": [
+              "measured_inventory_change",
+              "synthetic_balance",
+              "unknown"
+            ]
+          },
+          "net_flux_evidence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "beams": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "species": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "charge_number": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "nuclei_per_particle": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "azimuth_policy": {
+                  "enum": [
+                    "axisymmetric_assumed_for_fixture",
+                    "resolved",
+                    "unknown"
+                  ]
+                },
+                "distribution_basis": {
+                  "enum": [
+                    "joint_energy_angle_bin_integrated_particle_flux"
+                  ]
+                },
+                "cells": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "flux": {
+                        "$ref": "#/$defs/quantity"
+                      },
+                      "energy": {
+                        "$ref": "#/$defs/quantity"
+                      },
+                      "theta": {
+                        "$ref": "#/$defs/quantity"
+                      },
+                      "phi": {
+                        "$ref": "#/$defs/quantity"
+                      }
+                    },
+                    "required": [
+                      "flux",
+                      "energy",
+                      "theta",
+                      "phi"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "species",
+                "charge_number",
+                "nuclei_per_particle",
+                "azimuth_policy",
+                "distribution_basis",
+                "cells"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "neutral_inventory": {
+            "enum": [
+              "included",
+              "measured_negligible",
+              "unknown"
+            ]
+          },
+          "history_class": {
+            "enum": [
+              "codeposition",
+              "ion_only",
+              "deposition_only",
+              "erosion",
+              "mixed",
+              "unknown"
+            ]
+          },
+          "surface_potential": {
+            "$ref": "#/$defs/quantity"
+          },
+          "reactive_gas_partial_pressure": {
+            "$ref": "#/$defs/quantity"
+          }
+        },
+        "required": [
+          "bin_id",
+          "t_start_s",
+          "dt_s",
+          "surface_temperature",
+          "net_element_flux",
+          "net_flux_method",
+          "net_flux_evidence",
+          "beams",
+          "neutral_inventory",
+          "history_class",
+          "surface_potential",
+          "reactive_gas_partial_pressure"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "resputter_yield_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "enum": [
+              "unknown",
+              "calibrated",
+              "literature_reference",
+              "synthetic"
+            ]
+          },
+          "target_composition_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_state": {
+            "type": "string",
+            "minLength": 1
+          },
+          "projectile": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "energy_domain_eV": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            ]
+          },
+          "angle_domain_deg": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            ]
+          },
+          "temperature_domain_K": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            ]
+          },
+          "fluence_domain_m2": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            ]
+          },
+          "yield_basis": {
+            "enum": [
+              "atoms_per_incident_particle"
+            ]
+          },
+          "values_by_element": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/quantity"
+            }
+          },
+          "interpolation": {
+            "enum": [
+              "none",
+              "piecewise_linear_in_domain"
+            ]
+          },
+          "extrapolation": {
+            "const": "forbidden"
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "state",
+          "target_composition_id",
+          "target_state",
+          "projectile",
+          "evidence_source_ids",
+          "energy_domain_eV",
+          "angle_domain_deg",
+          "temperature_domain_K",
+          "fluence_domain_m2",
+          "yield_basis",
+          "values_by_element",
+          "interpolation",
+          "extrapolation",
+          "note"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "response_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "property": {
+            "enum": [
+              "n",
+              "k",
+              "biaxial_stress",
+              "adhesion",
+              "rms_roughness"
+            ]
+          },
+          "value": {
+            "$ref": "#/$defs/quantity"
+          },
+          "sample_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sample_state": {
+            "enum": [
+              "thin_film",
+              "bulk_substrate"
+            ]
+          },
+          "evidence": {
+            "enum": [
+              "measurement",
+              "validated_model",
+              "unavailable"
+            ]
+          },
+          "method": {
+            "type": "string",
+            "minLength": 1
+          },
+          "wavelength": {
+            "$ref": "#/$defs/quantity"
+          },
+          "test_geometry": {
+            "type": "string",
+            "minLength": 1
+          },
+          "failure_mode": {
+            "type": "string",
+            "minLength": 1
+          },
+          "model_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "domain": {
+            "type": "object",
+            "properties": {
+              "temperature_K": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 0
+              },
+              "incident_energy_eV": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 0
+              },
+              "fluence_m2": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 0
+              },
+              "flux_m2_s": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 0
+              },
+              "history_classes": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "sample_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "validation_evidence": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              }
+            },
+            "required": [
+              "temperature_K",
+              "incident_energy_eV",
+              "fluence_m2",
+              "flux_m2_s",
+              "history_classes",
+              "sample_ids",
+              "validation_evidence"
+            ],
+            "additionalProperties": false
+          },
+          "production_ready": {
+            "const": false
+          }
+        },
+        "required": [
+          "property",
+          "value",
+          "sample_id",
+          "sample_state",
+          "evidence",
+          "method",
+          "wavelength",
+          "test_geometry",
+          "failure_mode",
+          "model_id",
+          "domain",
+          "production_ready"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "uncertainty_axes": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "bounded",
+                "unknown",
+                "not_applicable"
+              ]
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bound_reference": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "note",
+            "bound_reference"
+          ],
+          "additionalProperties": false
+        },
+        "time": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "bounded",
+                "unknown",
+                "not_applicable"
+              ]
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bound_reference": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "note",
+            "bound_reference"
+          ],
+          "additionalProperties": false
+        },
+        "space": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "bounded",
+                "unknown",
+                "not_applicable"
+              ]
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bound_reference": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "note",
+            "bound_reference"
+          ],
+          "additionalProperties": false
+        },
+        "geometry": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "bounded",
+                "unknown",
+                "not_applicable"
+              ]
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bound_reference": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "note",
+            "bound_reference"
+          ],
+          "additionalProperties": false
+        },
+        "kernel": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "bounded",
+                "unknown",
+                "not_applicable"
+              ]
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bound_reference": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "note",
+            "bound_reference"
+          ],
+          "additionalProperties": false
+        },
+        "input": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "bounded",
+                "unknown",
+                "not_applicable"
+              ]
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bound_reference": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "note",
+            "bound_reference"
+          ],
+          "additionalProperties": false
+        },
+        "model": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "bounded",
+                "unknown",
+                "not_applicable"
+              ]
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bound_reference": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "note",
+            "bound_reference"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "source",
+        "time",
+        "space",
+        "geometry",
+        "kernel",
+        "input",
+        "model"
+      ],
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "dependency_hashes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "ray_bundle_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "measurement_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "source_ids",
+        "dependency_hashes",
+        "ray_bundle_id",
+        "measurement_ids",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "requested_outputs": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "N_net",
+          "h_increment",
+          "D",
+          "U",
+          "R",
+          "epsilon"
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_id",
+    "record_role",
+    "production_qualified",
+    "film",
+    "substrate",
+    "process_context",
+    "spatial_support",
+    "flux_area_basis",
+    "time_sampling",
+    "history_resolution",
+    "atom_inventory_coverage",
+    "initial_inventory_atoms_m2",
+    "initial_thickness",
+    "bins",
+    "resputter_yield_records",
+    "response_records",
+    "uncertainty_axes",
+    "provenance",
+    "requested_outputs"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "quantity": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "measured",
+            "derived",
+            "synthetic",
+            "literature_reference",
+            "unknown",
+            "calibration_required"
+          ]
+        },
+        "interval": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          ]
+        },
+        "interval_kind": {
+          "enum": [
+            "hard_bound",
+            "expanded_uncertainty",
+            "synthetic_bound",
+            "none"
+          ]
+        },
+        "standard_u": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "uncertainty_note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "condition_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "value",
+        "unit",
+        "status",
+        "interval",
+        "interval_kind",
+        "standard_u",
+        "uncertainty_note",
+        "source_ids",
+        "condition_id"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "attributed_and_current_hashes_verified",
+  "confirmed_utc": "2026-10-02T07:46:08Z",
+  "origin": "concurrent authorized root planning/publication bookkeeping; not T06 implementation",
+  "confirmation": "Main coordinator confirmed separate root-state assignment; its operator supplied exact current local hashes and confirmed changes completed at 07:21 UTC. This record does not authorize any T06 edits outside its new directory.",
+  "files": [
+    {
+      "path": "STATE.json",
+      "before_sha256": "f9122a5c37cbef2a980fbf75909fe826c0dd9a989f55cb6a7e59b771304fda1f",
+      "current_sha256": "8b834741e1f75f88743941d90da40a7788b347c5648630757f87cfdffa2e4d6d"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "before_sha256": "1acc9a3c77c21ec1753a357431fa070a35c9ce5e9970271c46cc1e9402afd30f",
+      "current_sha256": "62f2eb5b6c1734042b44b869b5fac78425b77337e76d63338c5c96afbf7a70d0"
+    },
+    {
+      "path": "ROADMAP.md",
+      "before_sha256": "e78a77d0fb0495da47a79d3ccb7cccd421d83082491a7fe2c44888eda4cb0ab7",
+      "current_sha256": "db45f347466564f48f0d767cb449fa5b8f70d221d7bf499600e95ae29be5c92f"
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "d15b1a455c7577908b7100430847dee562bb216c78c95614ec1158d5b230a4cb",
+      "current_sha256": "3ae037159e3359ac70e3439118ff535945afdb3f872380a9f39df5222efafe97"
+    },
+    {
+      "path": "STATE.md",
+      "before_sha256": "b387ffad60dad655660f68bb0a86ee720fe451bcb36df1a5f3e059579f65b78b",
+      "current_sha256": "dee8a8d7f1426208bdd66ae478da848948cf001e9c165786ad8fb496ecbf83b7"
+    },
+    {
+      "path": "00_project/research_tasks.json",
+      "before_sha256": "adf6fb2103d560c49e5bb4e14d7c8c333e25cf440581ceecdab361fe4515f653",
+      "current_sha256": "416444bcf9930fbf3d1211b84f6185be34880395f67b8fa3d747c15aef848dfb"
+    },
+    {
+      "path": "00_project/planning_baseline_manifest.json",
+      "before_sha256": "715e6c6b3d66f8542f993a958a58580a54176fca238d64398c6263b8179fc618",
+      "current_sha256": "b72ebe85a1120a322d2e4c7d6d4c6791de6b29ab1a6fbe72d3545b0675e87171"
+    }
+  ],
+  "original_before_snapshot_preserved": true,
+  "research_files_not_changed_by_this_attribution": true
+}

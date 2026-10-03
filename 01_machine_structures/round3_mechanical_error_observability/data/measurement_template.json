@@ -1,0 +1,27 @@
+{
+  "schema_version": "t01-r3-observations-1",
+  "dataset_kind": "template",
+  "frame_convention": "L_right_handed_CCW_view_from_plus_z",
+  "reference_clock_id": null,
+  "channels": [],
+  "real_device_facts": {
+    "sun_teeth": 120,
+    "planet_options_teeth": [
+      36,
+      37
+    ],
+    "sun_fixed": true,
+    "topology": "unknown",
+    "module_m": null,
+    "center_distance_m": null
+  },
+  "required_before_fitting": [
+    "topology and sensor attachment",
+    "raw data and SHA256",
+    "clock offset/skew and latency evidence",
+    "parameter datum/gauge",
+    "sensor calibration and full covariance or explicit unknown",
+    "held-out run and sampling transfer function",
+    "actual operating and safety limits"
+  ]
+}

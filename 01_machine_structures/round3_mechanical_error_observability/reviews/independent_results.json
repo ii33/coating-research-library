@@ -1,0 +1,146 @@
+{
+  "review_kind": "one bounded independent mathematical/interface check; not a specified-model review chain",
+  "input_sha256": {
+    "reports/01_scope_and_error_taxonomy.md": "b67358bda234ff84e1e5b466e269910c31fdb1499665d2783878a856064a1f6c",
+    "reports/02_pose_and_contact_model.md": "a87fa2f4b6de61e41bf45ecc0cae947e7a17f48307c1916f0fc6724bf403da73",
+    "reports/03_observation_and_identifiability.md": "bbfa50ba5ef428bc6e56499e3b604b76f543faa1cea4d649360276a7eccc967f",
+    "models/reference.py": "da26875f1c6bd7a6550a759c3984f57df7f6a82f7ac52677047cf421457624df",
+    "models/offline_read.py": "6f2e8a97e7003ccca0e44e1c9a88fd9e8463c9133639591a8e985928f70ceb58",
+    "verification/test_reference.py": "2846bd4acf8318c4e05c6146aa9ca1aabeddcc182c8774ab1a901b4c9d07596e",
+    "verification/PRE_REGISTERED_PROTOCOL.md": "6c3f67359dc9dae5b0f0c311884fe529b9467678519956de709cc640168754fd",
+    "data/measurement_template.json": "31ebe713005fd3bdcd7a1f0c588068229ef52d0bdd76f00b1acc67d517fd5d41",
+    "data/formal_calibration_plan.json": "8fa058698829f3e0a445986b1b9625f357c448506a44b1b2c7af0ef9eaf1d916",
+    "data/synthetic_observations.json": "3f2543cc12f91760aa916298137c3cf357d51686217ccdce7fa2ad56f9af9fc8",
+    "data/synthetic_encoder.csv": "ef79c4f3c33199b8853b2b7cffa7954fb4caddcb46a1d69fd1bea40bb7d1d1e6"
+  },
+  "pose": {
+    "status": "pass",
+    "max_position_jacobian_error": 2.6755486715046572e-11,
+    "max_normal_jacobian_error": 2.025777462444367e-11,
+    "oracle": "Hamilton quaternion composition and central differences",
+    "perturbed_vector_evaluations": 24
+  },
+  "play": {
+    "status": "pass",
+    "half_width": 0.1,
+    "reversal_dead_travel": 0.2,
+    "same_input_history_outputs": [
+      0.1,
+      0.30000000000000004
+    ]
+  },
+  "observability": {
+    "status": "pass",
+    "joint_inverse_covariance_max_error": 4.440892098500626e-16,
+    "height_rank": 0,
+    "height_independent_probe_rank": 1,
+    "clock_constant_rank": 1,
+    "clock_varying_rank": 2,
+    "oblique_collinear_rank": 2,
+    "max_matrix_shape": [
+      6,
+      6
+    ]
+  },
+  "nuisance_cutoff": {
+    "status": "limitation_reproduced",
+    "epsilon": 9.094947017729282e-13,
+    "exact_nuisance_compensation_residual": 0.0,
+    "default_result": {
+      "rank": 1,
+      "parameters": 1,
+      "observations": 4,
+      "nuisance_rank": 1,
+      "singular_values": [
+        2.0
+      ],
+      "rank_absolute_threshold": 2e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": 1.0,
+      "null_scaled": [],
+      "null_physical": [],
+      "noise_conditional_covariance": [
+        [
+          0.25
+        ]
+      ],
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "tighter_tolerance_result": {
+      "rank": 1,
+      "parameters": 1,
+      "observations": 4,
+      "nuisance_rank": 2,
+      "singular_values": [
+        8.631937992850725e-05
+      ],
+      "rank_absolute_threshold": 2e-14,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-14,
+      "condition_number": 1.0,
+      "null_scaled": [],
+      "null_physical": [],
+      "noise_conditional_covariance": [
+        [
+          134209536.37447372
+        ]
+      ],
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "meaning": "Numerical nuisance truncation can manufacture data information unless discarded directions are explicitly excluded or bounded."
+  },
+  "admission": {
+    "wrong_angle_unit": {
+      "status": "pass_rejected",
+      "exception": "ValueError"
+    },
+    "missing_clock_evidence": {
+      "status": "pass_rejected",
+      "exception": "ValueError"
+    },
+    "zero_clock_scale": {
+      "status": "pass_rejected",
+      "exception": "ValueError"
+    },
+    "raw_hash_mismatch": {
+      "status": "pass_rejected",
+      "exception": "ValueError"
+    },
+    "parent_path_escape": {
+      "status": "pass_rejected",
+      "exception": "ValueError"
+    },
+    "nonfinite_raw_value": {
+      "status": "pass_rejected",
+      "exception": "ValueError"
+    },
+    "duplicate_device_time": {
+      "status": "pass_rejected",
+      "exception": "ValueError"
+    },
+    "extra_csv_fields": {
+      "status": "defect_reproduced_accepted",
+      "mapped_time": [
+        0.0,
+        1.0
+      ]
+    },
+    "mapped_time_collapse": {
+      "status": "defect_reproduced_accepted",
+      "mapped_time": [
+        1000000000000.0,
+        1000000000000.0
+      ]
+    },
+    "mapped_time_overflow": {
+      "status": "defect_reproduced_accepted",
+      "mapped_time": [
+        "inf",
+        "inf"
+      ]
+    }
+  },
+  "inputs_unchanged_during_run": true,
+  "wall_seconds": 0.054489879999891855
+}

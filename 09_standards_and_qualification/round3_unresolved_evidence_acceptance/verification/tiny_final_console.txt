@@ -1,0 +1,44 @@
+{
+  "joint_counts": {
+    "OUT": 98,
+    "IN": 0,
+    "UNKNOWN": 32
+  },
+  "slice_counts": {
+    "OUT": 7,
+    "IN": 0,
+    "UNKNOWN": 0
+  },
+  "all_data_retained_v_hull": [
+    "19/20",
+    "11/10"
+  ],
+  "incorrect_if_used_as_all_feasible_optimum_only_v_hull": [
+    "19/20",
+    "11/10"
+  ],
+  "unknown_in_optimization": 32,
+  "objective_pruned_unknown_count": 15,
+  "minimum_bracket": [
+    "0",
+    "1208925819614629174706219/1208925819614629174706176"
+  ],
+  "ledger": {
+    "max_nodes": 286,
+    "max_interval_wavelengths": 1148,
+    "max_float_vectors": 0,
+    "nodes": 268,
+    "interval_wavelengths": 977,
+    "float_vectors": 0,
+    "float_wavelengths": 0,
+    "denominator_fallbacks": 0,
+    "arithmetic_fallbacks": 0
+  },
+  "frozen_replay_matches": {
+    "plane_joint_255": true,
+    "outer10_joint_31": true,
+    "witness": true
+  },
+  "saved_record_is_live_proof": false
+}
+all_expected True

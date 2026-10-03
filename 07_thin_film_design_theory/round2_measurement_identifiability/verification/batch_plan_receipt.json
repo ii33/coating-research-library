@@ -1,0 +1,83 @@
+{
+  "status": "plan_only",
+  "execution_status": "not_run_awaiting_device",
+  "configuration": {
+    "truth_n": [
+      1.5,
+      1.8,
+      2.1
+    ],
+    "truth_k": [
+      0.001,
+      0.02,
+      0.1
+    ],
+    "truth_d_um": [
+      0.05,
+      0.1,
+      0.3
+    ],
+    "wavelengths_um": [
+      0.42,
+      0.44,
+      0.45999999999999996,
+      0.48,
+      0.5,
+      0.52,
+      0.54,
+      0.56,
+      0.58,
+      0.6,
+      0.62,
+      0.64,
+      0.6599999999999999,
+      0.6799999999999999,
+      0.7,
+      0.72,
+      0.74,
+      0.76,
+      0.78,
+      0.8,
+      0.8200000000000001,
+      0.84,
+      0.86,
+      0.88,
+      0.8999999999999999,
+      0.9199999999999999,
+      0.94,
+      0.96,
+      0.98
+    ],
+    "angles_deg": [
+      40.0,
+      55.0,
+      70.0
+    ],
+    "starts": 12,
+    "profile_points": 61,
+    "monte_carlo": 200,
+    "max_nfev": 400,
+    "seed": 271828,
+    "modes": [
+      "RT",
+      "ellipsometry",
+      "joint",
+      "RT_plus_d"
+    ],
+    "data_evidence": "synthetic_only",
+    "actual_hardware": null
+  },
+  "truth_cases": 27,
+  "least_squares_start_jobs": 339552,
+  "estimated_max_nfev_total": 135820800,
+  "estimate_caveat": "nfev is not exact optical-call count; finite-difference Jacobians add evaluations",
+  "algorithms_implemented": [
+    "weighted_multistart_bounded_fit",
+    "conditional_finite_difference_SVD",
+    "thickness_profile_with_nk_refit",
+    "fixed_seed_parametric_Monte_Carlo"
+  ],
+  "global_certificate": false,
+  "actual_device_or_measurements_used": false,
+  "heavy_run": false
+}

@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "copy": {
+    "status": "passed",
+    "payload_files": 69,
+    "payload_bytes": 644802,
+    "manifest_sha256": "bbdec8b6cc320a091d45e65f450738fecd5476e2a9e2b257770842dfa421e54b",
+    "source_originals_in_payload": false,
+    "heavy_run": false
+  },
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_changed_bytes_rejected (test_integrity.IntegrityTests.test_changed_bytes_rejected) ... ok\ntest_exact_payload_no_originals (test_integrity.IntegrityTests.test_exact_payload_no_originals) ... ok\ntest_extra_rejected (test_integrity.IntegrityTests.test_extra_rejected) ... ok\ntest_missing_rejected (test_integrity.IntegrityTests.test_missing_rejected) ... ok\ntest_bad_covariance_rejected (test_reference.ReferenceTests.test_bad_covariance_rejected) ... ok\ntest_conditional_matches_joint_information (test_reference.ReferenceTests.test_conditional_matches_joint_information) ... ok\ntest_correlated_heldout_conditioning (test_reference.ReferenceTests.test_correlated_heldout_conditioning) ... ok\ntest_correlated_repeat (test_reference.ReferenceTests.test_correlated_repeat) ... ok\ntest_covariance_scale_rows (test_reference.ReferenceTests.test_covariance_scale_rows) ... ok\ntest_data_noise_and_discrepancy_separate (test_reference.ReferenceTests.test_data_noise_and_discrepancy_separate) ... ok\ntest_default_plan_only_budget (test_reference.ReferenceTests.test_default_plan_only_budget) ... ok\ntest_forward_refuses_unsupported_contract (test_reference.ReferenceTests.test_forward_refuses_unsupported_contract) ... ok\ntest_frozen_copies (test_reference.ReferenceTests.test_frozen_copies) ... ok\ntest_hard_calls_count_numerical_jacobian (test_reference.ReferenceTests.test_hard_calls_count_numerical_jacobian) ... ok\ntest_k_boundary_jacobian (test_reference.ReferenceTests.test_k_boundary_jacobian) ... ok\ntest_known_candidate_positive_increment (test_reference.ReferenceTests.test_known_candidate_positive_increment) ... ok\ntest_linear_n_applied_at_quadrature_nodes (test_reference.ReferenceTests.test_linear_n_applied_at_quadrature_nodes) ... ok\ntest_penalty_not_robustified (test_reference.ReferenceTests.test_penalty_not_robustified) ... ok\ntest_profile_refits_free_parameter (test_reference.ReferenceTests.test_profile_refits_free_parameter) ... ok\ntest_real_hardware_input_rejected (test_reference.ReferenceTests.test_real_hardware_input_rejected) ... ok\ntest_small_multistart_fit (test_reference.ReferenceTests.test_small_multistart_fit) ... ok\ntest_unknown_new_bias_zero_increment (test_reference.ReferenceTests.test_unknown_new_bias_zero_increment) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.112s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "models/batch_driver.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"plan_only\",\n  \"configuration\": {\n    \"schema\": \"T08-R2-driver-v1\",\n    \"seed\": 20261002,\n    \"tiny_routing_only\": false,\n    \"truths\": [\n      [\n        1.6,\n        0.005,\n        0.06\n      ],\n      [\n        1.8,\n        0.02,\n        0.1\n      ],\n      [\n        2.2,\n        0.08,\n        0.3\n      ],\n      [\n        2.0,\n        0.0,\n        0.8\n      ]\n    ],\n    \"scenarios\": [\n      \"clean\",\n      \"single_outlier\",\n      \"dispersion_mismatch\"\n    ],\n    \"candidates\": [\n      \"constant\",\n      \"linear_n\",\n      \"constant_correlated_discrepancy\"\n    ],\n    \"losses\": [\n      \"gaussian\",\n      \"huber\"\n    ],\n    \"starts\": 16,\n    \"profile_points\": 41,\n    \"replicates\": 100,\n    \"max_calls_per_start\": 1200,\n    \"max_nfev\": 300,\n    \"cluster_distance_scaled\": 0.2,\n    \"retained_clusters\": 8,\n    \"profile_parameter\": \"d_um\",\n    \"jacobian_steps\": [\n      5e-05,\n      0.0001,\n      0.0002\n    ],\n    \"fit_wavelengths_um\": [\n      0.42,\n      0.45,\n      0.48,\n      0.51,\n      0.54,\n      0.5700000000000001,\n      0.6,\n      0.63,\n      0.66,\n      0.69,\n      0.72,\n      0.75,\n      0.78\n    ],\n    \"heldout_wavelengths_um\": [\n      0.455,\n      0.535,\n      0.615,\n      0.695,\n      0.85,\n      0.95\n    ],\n    \"angles_deg\": [\n      10.0,\n      45.0,\n      65.0\n    ],\n    \"actual_hardware\": null,\n    \"data_evidence\": \"synthetic_only\",\n    \"heavy_run\": \"not_run_awaiting_device\"\n  },\n  \"fit_start_jobs\": 163584,\n  \"fit_forward_call_ceiling\": 196300800,\n  \"diagnostic_forward_call_ceiling\": 91032,\n  \"total_forward_call_ceiling\": 196391832,\n  \"budget_unit\": \"one complete observation-vector prediction; optical node count also recorded\",\n  \"coverage\": \"all truth/scenario/model/loss combinations, multistart, d profile, repeat-noise fits, heldout and conditional design\",\n  \"global_minimum_certified\": false,\n  \"formal_coverage_or_hardware_acceptance\": false,\n  \"heavy_execution\": \"not_run_awaiting_device\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "before": {
+    "status": "passed",
+    "payload_files": 69,
+    "payload_bytes": 644802,
+    "manifest_sha256": "bbdec8b6cc320a091d45e65f450738fecd5476e2a9e2b257770842dfa421e54b",
+    "source_originals_in_payload": false,
+    "heavy_run": false
+  },
+  "originals_copied": false,
+  "isolated_tests_only": true
+}

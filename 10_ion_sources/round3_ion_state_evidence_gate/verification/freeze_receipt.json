@@ -1,0 +1,21 @@
+{
+  "stage": "T10R3",
+  "status": "local_freeze",
+  "archive": "deliverables/T10_round3_ion_state_evidence_gate_v0.1.0_reader.zip",
+  "archive_bytes": 1090773,
+  "archive_sha256": "94607028288ff4bc1304f611985438767f4d0d406f47a83852a7b2e282391ba5",
+  "manifest": "verification/reader_manifest.json",
+  "manifest_sha256": "3f59171c3df5419d3793e6b14caa9a2d7fbd9df2275c31741f9a3e403b19a440",
+  "payload_files": 191,
+  "payload_bytes": 2533296,
+  "copied_dependencies": 142,
+  "isolated_check_sha256": "c9297ab1f1300dfa7de8616607eefd05a33415a41c963bc74c2c12dd64fbb7f1",
+  "negative_check_sha256": "187d78c42327fb0c7cb12e23fcb09846e59d3d2e85ed62d67d9352ce03cce185",
+  "outside_scope_check_sha256": "01b59bb47cd33439a6c4edb5ba18dcc5185e2e075aabff861a6eac3953c942c6",
+  "formal_stage_acceptance": "pending",
+  "physical_certification": false,
+  "production_qualified": false,
+  "publication": "not_run",
+  "next_stage_started": false,
+  "control_files_not_self_hashed": "reader_manifest and verification receipts intentionally excluded; receipt binds the manifest and archive; not a signature"
+}

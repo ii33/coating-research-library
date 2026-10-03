@@ -1,0 +1,43 @@
+{
+  "status": "plan_only_no_execution",
+  "plan": {
+    "schema_version": "T03-r3-bounded-device-plan-1",
+    "execution_mode": "plan_only",
+    "execution_authorized": false,
+    "authorization_evidence": null,
+    "device_label": null,
+    "input_contract_sha256": "e9f0fa3a17f83d40b488fe351ef878a8c5e04b58756931c3e334eda961de4af8",
+    "panels": [
+      64,
+      128,
+      256
+    ],
+    "radii": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "scales_m": [
+      0.002,
+      0.002
+    ],
+    "target_s_m2": 1.0,
+    "methods": [
+      "event_aware",
+      "omit_events"
+    ],
+    "max_trials": 18,
+    "max_panels": 11000,
+    "max_wall_seconds": 120.0,
+    "stop_on_unresolved": true,
+    "purpose": "same frozen single-node affine family; full-forward comparison only; not historical point2/12 or continuous-source validation"
+  },
+  "work_estimate": {
+    "trial_calls": 18,
+    "rational_panels_upper": 10752,
+    "closed_primitive_forward_calls_upper": 36,
+    "historical_point2_point12_reexecution": false,
+    "continuous_source_validation": false
+  },
+  "execution": "not_run"
+}

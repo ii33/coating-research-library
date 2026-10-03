@@ -1,0 +1,27 @@
+test_bare_phase (test_reference.ReferenceTests.test_bare_phase) ... ok
+test_boundary_one_sided (test_reference.ReferenceTests.test_boundary_one_sided) ... ok
+test_domain_contract_guards (test_reference.ReferenceTests.test_domain_contract_guards) ... ok
+test_full_rank_fit_and_profile (test_reference.ReferenceTests.test_full_rank_fit_and_profile) ... ok
+test_mixed_rho_rejected (test_reference.ReferenceTests.test_mixed_rho_rejected) ... ok
+test_nuisance_d_offset (test_reference.ReferenceTests.test_nuisance_d_offset) ... ok
+test_phase_wrap (test_reference.ReferenceTests.test_phase_wrap) ... ok
+test_plan_never_executes (test_reference.ReferenceTests.test_plan_never_executes) ... ok
+test_polarization_mean (test_reference.ReferenceTests.test_polarization_mean) ... ok
+test_rank_and_null_dimension (test_reference.ReferenceTests.test_rank_and_null_dimension) ... FAIL
+test_rho_covariance (test_reference.ReferenceTests.test_rho_covariance) ... ok
+test_scaling_unit_invariance (test_reference.ReferenceTests.test_scaling_unit_invariance) ... ok
+test_singular_noise_rejected (test_reference.ReferenceTests.test_singular_noise_rejected) ... ok
+
+======================================================================
+FAIL: test_rank_and_null_dimension (test_reference.ReferenceTests.test_rank_and_null_dimension)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/d35c7d80562e/projects/coating-research-library/07_thin_film_design_theory/round2_measurement_identifiability/tests/test_reference.py", line 42, in test_rank_and_null_dimension
+    self.assertEqual(r['rank'],expected,name);self.assertEqual(len(r['null_directions_scaled']),3-expected)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : normal_incidence_ratio
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.058s
+
+FAILED (failures=1)

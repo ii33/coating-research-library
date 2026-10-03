@@ -1,0 +1,182 @@
+{
+  "source_filename": "coating_stacks.json",
+  "source_sha256": "4765540fb99bcb183bef8a93b0cdb926af06b3a180ddf9f3e20173d25f0ac64a",
+  "original_record_count": 37,
+  "global_conventions": {
+    "order": "substrate_to_incident_medium",
+    "thickness_unit": "nm",
+    "QWOT": "q=4*n(lambda_ref)*d/lambda_ref at normal incidence",
+    "model": "constant real n,lossless,isotropic,coherent coating,semi-infinite substrate,no backside,no stress/scatter",
+    "qualification": "No recipe is manufacturing released. Actual n(lambda),k(lambda),AOI,substrate and process must be supplied.",
+    "evidence": "Published fabricated, published theoretical, nominal application reconstruction, and generated seed are distinct."
+  },
+  "records": [
+    {
+      "id": "S-AR-DUALIR6",
+      "name": "3.5–5 + 8–12 um 双波段AR探索起点",
+      "category": "多波段AR",
+      "evidence_level": "本文数值优化初始膜系",
+      "order": "substrate_to_incident_medium",
+      "incident_medium": "air",
+      "incident_n_for_seed_only": 1.0,
+      "substrate_n_for_seed_only": 4.0,
+      "reference_wavelength_nm": 8000,
+      "aoi_deg": 0.0,
+      "conditions": "Numerical evaluator: normal incidence; no substrate backside; constant real indices; no absorption, scatter or stress.",
+      "formula": "Explicit physical nm table",
+      "layers": [
+        {
+          "layer": 1,
+          "material": "ZnS",
+          "thickness_nm": 640.04,
+          "n_for_seed_only": 2.2,
+          "q_at_reference": 0.704044
+        },
+        {
+          "layer": 2,
+          "material": "YF3",
+          "thickness_nm": 221.93,
+          "n_for_seed_only": 1.5,
+          "q_at_reference": 0.1664475
+        },
+        {
+          "layer": 3,
+          "material": "ZnS",
+          "thickness_nm": 526.2,
+          "n_for_seed_only": 2.2,
+          "q_at_reference": 0.57882
+        },
+        {
+          "layer": 4,
+          "material": "YF3",
+          "thickness_nm": 1289.66,
+          "n_for_seed_only": 1.5,
+          "q_at_reference": 0.9672450000000001
+        },
+        {
+          "layer": 5,
+          "material": "ZnS",
+          "thickness_nm": 661.91,
+          "n_for_seed_only": 2.2,
+          "q_at_reference": 0.728101
+        },
+        {
+          "layer": 6,
+          "material": "YF3",
+          "thickness_nm": 1982.05,
+          "n_for_seed_only": 1.5,
+          "q_at_reference": 1.4865374999999998
+        }
+      ],
+      "layer_count": 6,
+      "notes": "Selected constant-index,lossless seed model; these n values are assumptions, NOT a dispersive material database. 0.01nm reporting is not a manufacturing tolerance. UV three-band constant-index model must be reoptimized with dispersion. IR dual-band initial maximum R is about7%, not an industrial high-performance endpoint.",
+      "optimization_variables": "All layer thicknesses, spectral interval weights, min thickness, angle and polarizations; for broad/dual IR consider adding layers.",
+      "source_ids": [
+        "S07"
+      ],
+      "source_urls": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S0040609020306969"
+      ],
+      "evaluation_windows_nm": [
+        [
+          3500,
+          5000
+        ],
+        [
+          8000,
+          12000
+        ]
+      ],
+      "model_results": {
+        "label": "本文常数n、无损、单面、0deg重算；不等于实测",
+        "reference_R": 0.06975099392271703,
+        "reference_T": 0.9302490060772831,
+        "bands": [
+          {
+            "min_nm": 3500,
+            "max_nm": 5000,
+            "sample_count": 1001,
+            "Rmin": 0.0009495353702027097,
+            "Rmax": 0.063014337969089,
+            "Ravg_arithmetic_samples": 0.018227164523690883,
+            "Tmin": 0.9369856620309114,
+            "Tmax": 0.9990504646297971,
+            "Tavg_arithmetic_samples": 0.9817728354763091,
+            "energy_closure_max_error": 1.2212453270876722e-15
+          },
+          {
+            "min_nm": 8000,
+            "max_nm": 12000,
+            "sample_count": 1001,
+            "Rmin": 0.006932243270111368,
+            "Rmax": 0.06975099392271703,
+            "Ravg_arithmetic_samples": 0.019186449299992064,
+            "Tmin": 0.9302490060772831,
+            "Tmax": 0.9930677567298883,
+            "Tavg_arithmetic_samples": 0.980813550700008,
+            "energy_closure_max_error": 1.2212453270876722e-15
+          }
+        ]
+      },
+      "release_status": "NOT_MANUFACTURING_RELEASE"
+    },
+    {
+      "id": "S-AR-GE-ZNS",
+      "name": "10 um Ge基底单层ZnS起点",
+      "category": "AR",
+      "evidence_level": "解析初始膜系",
+      "order": "substrate_to_incident_medium",
+      "incident_medium": "air",
+      "incident_n_for_seed_only": 1.0,
+      "substrate_n_for_seed_only": 4.0,
+      "reference_wavelength_nm": 10000,
+      "aoi_deg": 0.0,
+      "conditions": "Numerical evaluator: normal incidence; no substrate backside; constant real indices; no absorption, scatter or stress.",
+      "formula": "Ge | ZnS(1136.363636 nm) | A",
+      "layers": [
+        {
+          "layer": 1,
+          "material": "ZnS",
+          "thickness_nm": 1136.3636363636363,
+          "n_for_seed_only": 2.2,
+          "q_at_reference": 1.0
+        }
+      ],
+      "layer_count": 1,
+      "notes": "Constant nZnS2.2,nGe4.0; ignore backside, absorption and dispersion. Simple IR control sample, not BBAR release.",
+      "optimization_variables": "Thickness, added matching layers; process-specific infrared n,k.",
+      "source_ids": [
+        "S07"
+      ],
+      "source_urls": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S0040609020306969"
+      ],
+      "evaluation_windows_nm": [
+        [
+          8000,
+          12000
+        ]
+      ],
+      "model_results": {
+        "label": "本文常数n、无损、单面、0deg重算；不等于实测",
+        "reference_R": 0.009029299154398977,
+        "reference_T": 0.9909707008456008,
+        "bands": [
+          {
+            "min_nm": 8000,
+            "max_nm": 12000,
+            "sample_count": 1001,
+            "Rmin": 0.009029299154398977,
+            "Rmax": 0.08269792767965072,
+            "Ravg_arithmetic_samples": 0.027151248130157096,
+            "Tmin": 0.9173020723203494,
+            "Tmax": 0.9909707008456008,
+            "Tavg_arithmetic_samples": 0.9728487518698429,
+            "energy_closure_max_error": 6.661338147750939e-16
+          }
+        ]
+      },
+      "release_status": "NOT_MANUFACTURING_RELEASE"
+    }
+  ]
+}

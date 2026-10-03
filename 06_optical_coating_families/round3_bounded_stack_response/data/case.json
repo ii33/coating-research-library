@@ -1,0 +1,271 @@
+{
+  "stage": "T06R3",
+  "bridge": {
+    "source_contract": {
+      "Q_total_bounds_kg_s": [
+        1.998e-06,
+        2.002e-06
+      ],
+      "normalization": "pre_rim_hemisphere_total_mass_rate",
+      "n": 1.0,
+      "c": 0.0,
+      "nodes_m": [
+        0.0
+      ],
+      "mass_weights": [
+        1.0
+      ],
+      "source_clock": "scene q0+q1*t_ref; pose offset affects pose only"
+    },
+    "copied_dependency_sha256": {
+      "dependencies/t04/dependencies/context/02_uncertainty_and_validation.md": "55c964bde6e9a7ffe11ae60cd2bc1f09826b2c1d73fec38de3aafeb93f264e84",
+      "dependencies/t04/dependencies/context/01_material_response_contract.md": "38a2ca7c30945b314d0922a27ac91008f899fe394d27469ea5a9d8cd24594d3b",
+      "dependencies/t04/dependencies/context/工程科研.txt": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
+      "dependencies/t04/dependencies/context/material_response.schema.json": "c767439089ba6229d370d24e3ffcc0548e549d5867e9426c8957931108210ef7",
+      "dependencies/t04/dependencies/t03/stage_status.json": "0047f35c3c941bbd9a738324b26dfc6d834a5e9caff5d5e967527a701880ce28",
+      "dependencies/t04/dependencies/t03/T04_ROUND3_HANDOFF.md": "15816b12c3fb23d858b4b8a460e2667066f555279a8f75affad5282e59cbe0ac",
+      "dependencies/t04/dependencies/t03/reports/04_complete_algorithm_and_cache.md": "1124f6d05da84b6a1c8467d2025ce705a81a628f0bfabae9b79665bf78c34cf0",
+      "dependencies/t04/dependencies/t03/reports/02_topology_trust_region.md": "be3104f61b90c92bca1ecd85e4979038f596ab00d9b3118b1e34710288020dae",
+      "dependencies/t04/dependencies/t03/reports/01_scope_physical_objective.md": "72d38d10e6bdddcedd243e5e0e7a1f1f0a950506446286ad68ea7dfed51596fb",
+      "dependencies/t04/dependencies/t03/reports/03_forward_intervals_and_decisions.md": "437f1f27a47e42bb820a4018b106938519df74e0bb64511453b32508e69b7262",
+      "dependencies/t04/dependencies/t03/verification/freeze_record.json": "76059be847aca27a9de51bbc4a43db40a40ae34f4ce9bc9e96cbee99c32d3ed5",
+      "dependencies/t04/dependencies/t03/verification/reader_manifest.json": "30621d6aded8566691b506968bf3872664ccf6ab673f849e4d647a50a39ed1cf",
+      "dependencies/t04/dependencies/t03/data/frozen_t02_contract.json": "e9f0fa3a17f83d40b488fe351ef878a8c5e04b58756931c3e334eda961de4af8",
+      "dependencies/t04/dependencies/t03/data/inherited_point2_point12_reference.json": "ac71b8d13fe35653e4794d46e2dee21a9a0efd544861bbe8a05a31ad465596b0",
+      "dependencies/t04/dependencies/t03/data/frozen_dependencies.json": "e8c23924e54c43b8c4f7bb392d8fd5addd5105bc5222b023af56fa4ddb141fe6",
+      "dependencies/t04/dependencies/t03/models/run_examples.py": "2be4deffb58a530ed6ad06cf10f8dfebaf5a7de4cfcef38dc28af14a0c298582",
+      "dependencies/t04/dependencies/t03/models/trust_region.py": "cde28a258e00fafe578bae7dbdf4443db6d7b8546e8bdb11cf03c9bbe3037373",
+      "dependencies/t04/dependencies/t03/models/event_reference.py": "c82ebcd1ee2820a8cae6c4cb5c921a96eaa2aedc6af5b76b52ed183a41a3b354",
+      "dependencies/t04/dependencies/t03/models/device_driver.py": "75e0e0647d06d347f2eaf98e4bb90c339c5b1609663354bdb8577b89f54a629a",
+      "dependencies/t04/dependencies/t03/models/analytic_oracle.py": "0f33892e4948835c33cb4cc9ebc130c6673c8f96cbff7db0298860298940f366",
+      "dependencies/t04/dependencies/t03/models/frozen/t01_pose_reference.py": "60d161be41a70f1f26103b46b5e27957cd46909186669b1be1f12a4990e925ec",
+      "dependencies/t04/dependencies/t03/models/frozen/intervals_v2.py": "ea71d8357a8c6777da19b6211ca8d78616f69d7d7b86352767b346852f33767f",
+      "dependencies/t04/dependencies/t03/models/frozen/robust_mask_v02.py": "2c6006636c2728d226fafcb854d5ef45a96ddbbcc3e4e57cc90f31f52c17464c",
+      "dependencies/t04/models/bounded_response.py": "0f6c220117f3fc7d0e8f71a56d38ecda841a43fb24cf855a30bd684a23dde864",
+      "dependencies/t04/data/frozen_dependencies.json": "46bcc5cf9617a90ea20ac2d21ec2b7e81b1c923e8b28ef7bc654c8223188392e",
+      "dependencies/t04/reports/01_physical_contract.md": "27cd1af532c83bb7073e2a7052149ebc8e9bd1aebfb9dd84c96fb04f3dd07e27",
+      "dependencies/t04/reports/03_bounded_kernel_and_ranking.md": "d81bade08163476ccdde6c0bb90617c40edf7d00776d1b02c790dced3d2b76ae",
+      "dependencies/t04/T05_ROUND3_HANDOFF.md": "581bd14a9d35d12a24547bc07dad2cafa48bb76992380c10f647dcfde3dca51f",
+      "dependencies/t04/verification/reader_manifest.json": "bf1b993c44a698499100b30952199b59ae27cf23c5e43e71ab571d5cd2790550",
+      "dependencies/t04/verification/freeze_record.json": "9920fe88405c974f4cd2923fdf6ca3a122f92acd04bc6c75b319db83d9f7b818",
+      "dependencies/t04/stage_status.json": "898e2c674db86e2d4b5555c369f12cb323e4bffea8a2b82d6827dd8b8f13de7e",
+      "dependencies/context/03_identifiability_and_uncertainty.md": "5080b2077e2e764ea1f78a0c718052391372548d95d858116075c640d2c41f76",
+      "dependencies/context/manual_assessment_zh.md": "718adae62c8cb2ca4502fa584456be75ec4cbe28f2db186d9b02dc24bad5cd97"
+    },
+    "point12": "partial_unchanged",
+    "point2": "conditional_non_strict_unchanged",
+    "physical_certification": false,
+    "t04_response": {
+      "upstream_full_forward": {
+        "contract_signature": "fc3fb6085276991423951d99092869600cc50956466ecdcc8b9ca74dc56091b1",
+        "objective_definition": {
+          "definition": "0.5*((D-target)/target)^2",
+          "target_s_m2": 1.0,
+          "denominator_floor": 1e-08
+        },
+        "design": {
+          "plate_shift_m": 0.0,
+          "half_width_m": 0.08
+        },
+        "geometry_status": "differentiable_conditional",
+        "objective_status": "bounded_encoded_discrete_source",
+        "value_interval": {
+          "lo": 1.0904668836555365,
+          "hi": 1.1143045905862423
+        },
+        "objective_interval": {
+          "lo": 0.004092128519172184,
+          "hi": 0.006532769714544238
+        },
+        "value_estimate_s_m2": 1.1023811408179522,
+        "objective_estimate": 0.005240948997592683,
+        "total_gradient": [
+          0.287274390379637,
+          1.4462685090286476,
+          0.11490975615185489,
+          1.102381140817952,
+          -1.7335428994082838,
+          -14.764007026627215,
+          -3.0097023255557747
+        ],
+        "smooth_gradient": [
+          -0.4061427693836769,
+          0.4061427693836769,
+          -0.1624571077534706,
+          1.102381140817952,
+          0.0,
+          0.0,
+          -1.8285817634255976
+        ],
+        "event_gradient": [
+          0.6934171597633139,
+          1.0401257396449708,
+          0.2773668639053255,
+          0.0,
+          -1.7335428994082838,
+          -14.764007026627215,
+          -1.181120562130177
+        ],
+        "physical_certification": false,
+        "continuous_source_certification": false,
+        "input_uncertainty_qualified": true,
+        "panel_count": 32,
+        "numerical_evidence": "rational_enclosure_not_quadrature_difference",
+        "event_identities": [
+          "0x0.0p+0:lower:z_near_m",
+          "0x0.0p+0:upper:z_near_m"
+        ],
+        "cache_key": "21186b60fe066bccd78d9843d10869ffeb6d5a512842d0171657d214912273c2"
+      },
+      "response_contract_sha256": "0bc55900ac49fd95f5ee3ce5528a9462267aeb619d58fd0d4f7209736c25c4fd",
+      "response_definition": {
+        "dataset_kind": "synthetic",
+        "material_id": "SYNTHETIC_NO_MATERIAL_FIT",
+        "substrate_id": "SYNTHETIC_NO_SUBSTRATE_FIT",
+        "law": "separable_bounded_retention_v1",
+        "source_scale_kg_s": [
+          6.359831525952139e-07,
+          6.372563921399489e-07
+        ],
+        "density_kg_m3": [
+          1998.0,
+          2002.0
+        ],
+        "density_basis": "synthetic_constant_effective_film",
+        "sticking_s0": [
+          1.0,
+          1.0
+        ],
+        "angular_a": [
+          0.4,
+          0.4
+        ],
+        "energy_b": [
+          0.0,
+          0.0
+        ],
+        "temperature_c": [
+          0.0,
+          0.0
+        ],
+        "energy_history_eV": [
+          20.0,
+          10.0
+        ],
+        "energy_domain_eV": [
+          0.0,
+          100.0
+        ],
+        "temperature_history_K": [
+          300.0,
+          10.0
+        ],
+        "temperature_domain_K": [
+          300.0,
+          400.0
+        ],
+        "erosion_mass_kg_m2": [
+          0.0,
+          0.0
+        ],
+        "initial_inventory_kg_m2": [
+          0.0001,
+          0.0001
+        ],
+        "model_transfer_status": "synthetic_only",
+        "units": "SI_mass_kernel_actual_substrate_area"
+      },
+      "design": {
+        "plate_shift_m": 0.0,
+        "half_width_m": 0.08
+      },
+      "status": "bounded_synthetic_response",
+      "retained_transfer_s_m2": [
+        1.0518433918162324,
+        1.0777034898904523
+      ],
+      "net_mass_kg_m2": [
+        6.689546763637303e-07,
+        6.867734377642215e-07
+      ],
+      "signed_thickness_change_m": [
+        3.341431949868783e-10,
+        3.437304493314422e-10
+      ],
+      "objective_interval": [
+        0.2153448615673554,
+        0.22168264239114122
+      ],
+      "height_estimate_m": null,
+      "material_design_gradient_m_per_m": null,
+      "physical_certification": false,
+      "continuous_source_certification": false,
+      "material_calibration": "not_performed",
+      "point12": "partial_unchanged",
+      "point2": "conditional_non_strict_unchanged",
+      "panel_count": 32,
+      "bound_scope": "exact_encoded_synthetic_Darboux_not_material_or_continuum_certificate",
+      "gradient_scope": "two_plate_parameters_only; smooth_term_zero; weighted_event_term_retained"
+    },
+    "status": "bounded_synthetic_response",
+    "bridge_contract_sha256": "af6c8f107e1842ad8ad03e96eb56b76f0877d5d4444e8fa504c95fb05cb5c7e9",
+    "normalization_note": "Q_intensity=Q_total/pi exactly once in floating encoded input; inherited interval certificate is for those encoded floats, not a transcendental-pi enclosure"
+  },
+  "material": {
+    "dataset_kind": "synthetic",
+    "nk_basis": "legacy_constant_seed_not_measured",
+    "density_basis": "synthetic_effective_film",
+    "composition_basis": "fixed_synthetic_identity",
+    "sample_state_id": "synthetic_shared_relative_density_v1",
+    "nk_sample_state_id": "synthetic_shared_relative_density_v1",
+    "density_sample_state_id": "synthetic_shared_relative_density_v1",
+    "normalization_h_ref_m": 3.3893682215916026e-10,
+    "expected_bridge_payload_sha256": "740bcd26e5b42da661b8ea4285cf8e5d76eadce94653ea31e804483d8cc83d24",
+    "mapping": "legacy thicknesses times one shared positive h/h_ref; layer-specific dose multipliers; NOT duration scaling",
+    "real_film_parameters": "unknown",
+    "density_correlation": "same relative density error across the surrogate layers by explicit synthetic assumption; not equal physical densities",
+    "fixed_identities": [
+      "ZnS surrogate",
+      "YF3 surrogate"
+    ],
+    "fixed_substrate": "Ge surrogate n=4",
+    "temperature_state": "synthetic fixed 300 K optical state; no measured temperature dispersion"
+  },
+  "measurement": {
+    "observable": "power_weighted_R",
+    "wavelength_um": [
+      "4.25",
+      "4.26",
+      "4.27"
+    ],
+    "weights": [
+      "1/4",
+      "1/2",
+      "1/4"
+    ],
+    "valid_band_um": [
+      "4.25",
+      "4.27"
+    ],
+    "aoi_deg": 0,
+    "angular_distribution": "delta",
+    "polarization": "unpolarized",
+    "substrate_mode": "semi_infinite",
+    "transmission_meaning": "flux_entering_substrate",
+    "scatter": "synthetic_exact_zero",
+    "spectral_response": "declared_discrete_nodes",
+    "measurement_error_abs": "0.001",
+    "error_status": "synthetic bounded readout error, not measured uncertainty or 95 percent interval",
+    "instrument_id": "synthetic_3_node_operator",
+    "spot_contract": "spatially_uniform_planar_local_model_no_area_average"
+  },
+  "recipe_id": "S-AR-DUALIR6",
+  "variants": {
+    "A": "1",
+    "B": "1.25",
+    "C": "1.002"
+  },
+  "point12": "partial_unchanged",
+  "point2": "conditional_non_strict_unchanged",
+  "formal_review_chain": "pending"
+}

@@ -1,0 +1,502 @@
+"""Build original Chinese research content and source metadata; no network, no hardware."""
+from pathlib import Path
+import json
+ROOT = Path(__file__).resolve().parents[1]
+
+def write(name, text):
+    p=ROOT/name; p.parent.mkdir(parents=True,exist_ok=True); p.write_text(text.strip()+'\n',encoding='utf-8')
+def dump(name,obj): write(name,json.dumps(obj,ensure_ascii=False,indent=2))
+
+sources=[
+('TV-S01','JCGM 200:2012 VIM3','https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf','BIPM publication listing; §§2.9, 2.39, 2.41–2.45; traceability PDF p45','official_fulltext_selected_sections','BIPM current publication list on 2026-10-02','溯源属于指定测量结果；校准、验证、使用目的验证是不同概念。','不提供具体镀膜产品限值；溯源记录不是材料身份或批放行证明。'),
+('TV-S02','JCGM 100:2008 GUM','https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf','§§5.2,6,7; §5.2 printed pp21–23 / PDF pp33–35','official_fulltext_selected_sections','Listed with Amd.1:2026','相关输入要保留协方差；标准不确定度、扩展不确定度和覆盖概率须区分。','本项目原创例子不构成标准方法实现；显著非线性另读2026修订。'),
+('TV-S03','JCGM 100:2008/Amd.1:2026','https://www.bipm.org/documents/20126/2071204/JCGM_100_Amd1_2026.pdf/18b8a72a-6caf-69e8-8bbd-dd13056a4a84?download=true&t=1785763281319&version=1.6','Complete five-page amendment; operative text printed p1 / PDF p5','official_fulltext_read','Published 2026; listed by BIPM','在显著非线性下，输出估计值和不确定度的高阶效应都需要处理；可使用JCGM101的Monte Carlo路线。','新增注释的简化二阶项带独立正态输入前提，不能推广为任意分布。'),
+('TV-S04','JCGM GUM-6:2020','https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf','§§6,8.5,11.10,12,13.2; printed pp56–61 / PDF pp64–69','official_fulltext_selected_sections','BIPM publication list, 2026-10-02','模型选择、模型差异、实验适用性、数值精度及外推边界都属于模型充分性问题。','拟合/选择/最终留出三账本是本项目工程实现，不声称该指南逐字规定三分割。'),
+('TV-S05','JCGM 101:2008','https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf','§§7.8–7.9,8; printed pp30–34 / PDF pp38–42','official_fulltext_selected_sections','BIPM publication list, 2026-10-02','分布传播与数值稳定性须分别记录；Monte Carlo次数本身不能替代稳定性证据。','没有运行本文件的完整算法或实际覆盖率验证。'),
+('TV-S06','JCGM 106:2012','https://www.bipm.org/documents/20126/2071204/JCGM_106_2012_E.pdf/fe9537d2-e7d7-e146-5abb-2649c3450b25?download=true&t=1659083025736&version=1.7','§§7–9; §8.3 printed pp20–22 / PDF pp29–31','official_fulltext_selected_sections','BIPM publication list, 2026-10-02','规格区间、接受区间与保护带分开；错误接受和错误拒绝风险依赖所采用的信息与规则。','本包三态区间例不是该文件的唯一规则；没有推断实际过程分布。'),
+('TV-S07','ISO/IEC 17025:2017','https://www.iso.org/standard/66912.html','Official catalogue general information and lifecycle','official_catalogue_only','Edition 3, 2017-11; confirmed 2023; stage90.93','实验室能力与运行体系标准；官方目录仍列2017版。','完整授权标准未获；条款7.1.3/7.8.6由TV-S09官方指导引述核对，不冒称本轮全文审核。'),
+('TV-S08','ILAC P10:07/2020','https://ilac.org/?ddownload=123220','§2 pp6–8; Appendix A p10; Global ACI catalogue page2 retains item','official_fulltext_selected_sections','Retained in Global ACI catalogue; July2021 implementation','校准服务需匹配用途、量程与能力范围；无法使用通常认可路线时要有额外能力和溯源证据。','不能仅凭旧ILAC网站仍可读推断现行；本轮同时核对Global ACI目录。'),
+('TV-S09','Global ACI-TECH-1-002(G) v1.0','https://sys.global-aci.org/uploads/documents/TECH-1-002(G)_Guidelines_on_Decision_Rules_and_Statements_of_Conformity_v1_0.pdf','§§1.1,3,5–8; PDF/printed pp4,6–15','official_fulltext_selected_sections','Issued and implemented 2026-06-26','以ILACG8:09/2019为基础；前言声明重排而无实质文字改变。规则应事先明确，并指明结果、要求和使用规则。','未逐字比较两份文件；前言声明由发布者负责；具体产品决定仍需批准合同。'),
+('TV-S10','Global ACI current catalogue page1','https://global-aci.org/en/global_aci-documents/','TECH-1-002,003,009 entries and detailed metadata','official_catalogue_only','Retrieved2026-10-02; entries issued/implemented2026-06-26','决策规则、测试不确定度、校准不确定度已有Global ACI编号。','003和009本轮只核目录，未获其全文条款；不把目录日期混同合同切换日期。'),
+('TV-S11','Global ACI current catalogue page2','https://global-aci.org/en/global_aci-documents/?cat_id=&from_date=&order=&page_no=2&tag_id=&to_date=','P10 entry and cross-reference table dated2026-09-14','official_catalogue_only','Retrieved2026-10-02','P10仍以旧编号列入；交叉表已有2026-09-14条目，不能以6月旧表的in process代表当前全部状态。','最新表下载链接已由dot云浏览器DOM核对，但web工具未能读取全文。'),
+('TV-S12','Global ACI–IAF/ILAC Cross-Reference Table v1.2 10June2026','https://sys.global-aci.org/uploads/documents/Global_ACI_IAF_and_ILAC_Document_Cross-Reference_Table_10_June_20262.pdf','PDF pp14–16, G8/P10 mappings','official_fulltext_selected_sections','Historical snapshot, not latest; later table metadata2026-09-14','旧G8映射到TECH-1-002，P10映射到拟议TECH-1-011。','表中当时in process不能当2026-10-02状态；未确认011正式发布，不编造该文件。'),
+('TV-S13','ILAC official launch notice','https://ilac.org/latest-ilac-news/','Launch of Global Accreditation Cooperation Incorporated, effective2026-01-01','official_notice_read','ILAC site states archival/reference only and no further updates','现行性核验应转到Global ACI官方目录，同时保留旧文件证据链。','网站归档不等于所有旧编号技术文件失效。'),
+('TV-S14','NIST TN2156 / Metrological Traceability FAQ','https://www.nist.gov/metrology/metrological-traceability','§3.2 points3–5; §4; §6 checklist','official_text_selected_sections','Official NIST page retrieved2026-10-02','提供者负责支持结果的溯源声明，使用者评估其有效性；溯源不能保证用途适宜。','NIST校准件的存在不自动使使用者全部测量获得NIST认证。'),
+('TV-S15','ISO15368:2021','https://www.iso.org/standard/72598.html','Abstract, general information; published2021-03, stage90.60','official_catalogue_only','Published; review closed as shown2026-10-02','平面表面反射和无光焦度平行件透射测量入口。','完整方法和数值未读；不外推到曲面、任意散射或全光路总透射。'),
+('TV-S16','ISO9211-3:2024','https://www.iso.org/standard/84707.html','Abstract, general information; edition3,2024-02','official_catalogue_only','Published,60.60','环境耐久选择与条件框架入口。','未授权全文，不填写严酷度/类别/通过阈值。'),
+('TV-S17','ISO9211-4:2022','https://www.iso.org/standard/82042.html','Abstract, general information; edition4,2022-03','official_catalogue_only','Published','附着、耐磨和耐水方法入口。','与环境组合顺序和产品性能阈值分开；未读完整操作方法。'),
+('TV-S18','ISO21254-1:2025','https://www.iso.org/standard/83937.html','Abstract, lifecycle; edition2,2025-08','official_catalogue_only','Published; replaces2011','激光损伤试验术语与原则入口。','不是本包提供LIDT测试程序或资格；其他分册和合同仍需受控阅读。'),
+('TV-S19','INFICON SQM160 Operating Manual074-511-P1-G','https://www.inficon.com/media/4271/download/SQM-160-Multi-Film-Rate---Thickness-Monitor-Operating-Manual-(English).pdf?language=de&v=4','§10 pp92–95 and AppendixA p101; §9 pp87–89; PDF pages match displayed /108 numbering','official_vendor_fulltext_selected_sections','RevisionG at official vendor download; latest firmware applicability unverified','密度、tooling、Z需要分项标定；未知Z的星号表值是默认占位，不能当测得常数。','厂商示例不是用户设备已验证事实，也不是所有材料通用程序。'),
+('TV-S20','INFICON SQC310 Operating Manual074-550-P1-H','https://www.inficon.com/media/11922/download/SQC-310-Operating-Manual-.pdf%3Fv=2&inline=true&language=en','Identity and contents; derived MXC report independently cites§10.5,§11.2','official_vendor_pdf_identity_only','RevisionH verified; detailed calibration/control content not reread in this round','本轮只确认官方文档身份；物理背景细节沿用已注明范围的独立审读，不作新增条款引用。','不把全文可取得等于本轮全文已读。'),
+('TV-S21','NIST/SEMATECH Handbook4.4.4','https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd44.htm','Model validation and graphical residual analysis','official_web_section_read','Official handbook, accessed2026-10-02','残差结构是模型检视工具；拟合优度需结合工程目的。','残差检查不证明材料身份、独立数据或生产资格。'),
+('TV-M01','MXC Ver3.1.0 manual derived engineering assessment','../../../../manual_studies/2026-10-02_morningtech_mxc/reports/manual_assessment_zh.md','Derived report§§1–3,6–10,13,15; page_evidence.csv','local_derived_analysis_only','Original manual history2020-06-26; reviewed2026-10-02','准确页码由独立派生审读提供；本轮不重复读取/分发手册原件。','无用户持有MXC或任何型号/固件的证据；厂家语义不等于通用物理法则。')
+]
+records=[]
+for id,title,url,locator,access,status,summary,limit in sources:
+ records.append(dict(source_id=id,title=title,url=url,locator=locator,access_level=access,status_as_observed=status,accessed_date='2026-10-02',summary=summary,limits=limit,third_party_original_included=False,original_redistribution_authorized=False))
+ write('sources/summaries/'+id+'.md',f'# {id} {title}\n\n来源：[原发布者或本地派生来源]({url})\n\n读取范围：{locator}\n\n状态：{status}\n\n独立摘要：{summary}\n\n不能支持：{limit}\n\n访问级别：{access}。本包不存第三方原文、截图或提取全文。')
+dump('sources/source_registry.json',{'version':'T09R2-1.0','retrieved_date':'2026-10-02','sources':records})
+write('sources/README.md','''# 来源与访问边界
+
+只使用官方计量组织、标准发布者、NIST、厂家一手资料，以及已经完成的MXC独立派生审读。source_registry逐项区分目录、选段、完整短文件和二手派生分析。
+
+本轮没有第三方全文存档或厂家手册原件。可离线读的全部报告均为本项目原创分析。URL便于日后合法获取受控原文，不等于允许重分发。目录已查不等于程序条款已核、全文可得不等于全文已读、按某方法测量不等于产品认证。
+
+当前Global ACI官方文件取代仅凭归档ILAC目录的现行性判断。最新交叉表2026-09-14的链接已从官方页面真实下载控件读取，但web工具不能打开；保留metadata_only，未猜其变更内容。6月旧表只支持历史映射。技术文件的合同适用仍需实验室和客户确认。
+
+MXC页码使用独立审读提供的印刷页/PDF页。其报告和来源hash进入本地基线；无手册全文、截图、材料表或任何设备串口指令进入reader。''')
+write('README.md','''# T09第二轮 可追溯验证与合格判定证据合同
+
+版本 T09R2-1.0。研究日期 2026-10-02。结论：可运行的研究证据检查与原创验证合同已建立；真实计量、设备验证、产品鉴定及生产放行均未完成。数据检查通过不会输出生产合格声明。
+
+本轮承接T08条件反演，把材料身份、读数语义、测量结果、设计预测、生产验收、环境及损伤鉴定分别建账。新增2026年BIPM非线性修订和Global ACI文件现行性核验，并将MXC手册中的失锁替代、参数切换、负厚舍弃、共享挡板旧源残余转为证据门槛。
+
+## 阅读顺序
+
+打开index.html可完全离线阅读全部报告，使用标题目录与全文搜索。报告原文件在reports；来源索引在sources/source_registry.json；结构schema、证据矩阵在contracts；tiny示例在examples。
+
+1. 01范围与证据等级
+2. 02标准版本与访问限制
+3. 03溯源链与校准适用域
+4. 04共享校准与相关性
+5. 05拟合 选择 留出与变更
+6. 06不确定度与决策规则
+7. 07有限预算与不收敛
+8. 08仪器语义与MXC案例
+9. 09生产 环境 损伤资格
+10. 10实现 验收 冻结与限制
+
+## 最小运行
+
+在此目录执行，建议设置PYTHONDONTWRITEBYTECODE=1。
+
+reader已通过静态内容/链接/外部资源检查；视觉与交互浏览器验证未完成：dot云浏览器拒绝localhost，本地Chromium启动被环境socket权限阻止，授权重试仍失败。未声称桌面/手机截图验收通过。
+
+    python models/evidence_contract.py --examples
+    python -m unittest discover -s tests -v
+    python models/freeze_package.py --verify
+
+代码核心仅用Python标准库。独立JSON Schema检查可用现有jsonschema；这不是运行核心依赖。所有输入/结果都是synthetic_demo，程序拒绝输出生产放行。仅小型公式/字段反例执行；T08高算量driver仍not_run_awaiting_device，本轮不调用。
+
+本轮只写此新增目录，不改T06/T07/T08及任何既有研究。完整指定模型审核链未运行；仅作者自查和一次窄单位/证据规则独立核查。无上传、推送、部署、外部分享、用户电脑操作或硬件测试。停止点是本地freeze。''')
+write('reports/01_scope_and_evidence_levels.md','''# 01 从条件反演到可使用的证据
+
+## 本轮回答的问题
+
+T08可以在写清前向算子、噪声、候选模型和预算的前提下报告条件参数解及其局限。T09要回答的是：这些结果还需要什么证据，才能用于某个特定测量结论、设计决定或质量判定？本轮不把反演的“看起来合理”升级成仪器、工艺或产品合格。
+
+原目标要求建立能成为工程手册的镀膜研究库。本文面向研发、计量、工艺和质量人员，提供能被拒绝和复查的证据合同；不是受控试验程序、计量证书或认证文件。所有新增门槛均标为本项目建议，除有明确官方定位者外，不冒称标准原文条款。
+
+## 六类主张分别签名
+
+| 主张 | 必需对象 | 允许的结论 | 不能越级推断 |
+|---|---|---|---|
+| 材料身份 | 牌号/批次/成分证据与样品链 | 此输入的身份如何被确认 | n、k拟合像某物质不证明化学身份 |
+| 测量结果 | measurand、原始观测、方法、校准、条件、不确定度 | 在指定条件下某被测量的估计 | 分辨率/显示位数不是准确度 |
+| 条件设计预测 | 材料状态、几何、算子、模型域与参数集合 | 假设内的功能预测及裕量 | 预测通过不证明实际加工能力 |
+| 生产验收 | 此批/此件、抽样、实际性能、规则与授权 | 指定批或样品按合同作出的决定 | 见证片不能无代表性证据覆盖整炉 |
+| 环境资格 | 同一设计/材料/工艺配置、严酷度、序列和恢复 | 在批准暴露条件下的结果 | 单次湿热不证明寿命或所有环境 |
+| 损伤资格 | 损伤定义、载荷/光束、取样、检出与统计 | 特定条件的耐受/损伤结果 | 光谱拟合、无可见缺陷不证明LIDT |
+
+依据边界：VIM的测量/溯源/验证概念可在[TV-S01](https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf)定位。以上六类划分是本项目的工程组织方案，不是VIM新定义。
+
+## 证据有图结构 不只有一张合格表
+
+一份结果由以下节点指向构成：要求版本 → 样品与状态 → 采集记录 → 语义解释与变换 → 校准/参考 → 测量模型 → 不确定度 → 预先约定规则 → 限定结论。每条边都应能回答“用的哪个版本、为什么适用、谁核过、哪里保存”。文件SHA256只能说明所引用字节没有意外变化，不证明真实样品存在、内容正确或签名可信。
+
+本包将状态分为missing、planned、available、checked、approved、not_applicable_with_reason；unknown绝不自动成为零、正常或不适用。某节点结构齐全与技术有效是两个字段。校准证书编号可以存在，但量程外、过期状态未评估、共享标准相关项遗漏等都会让结果用途仍被阻止。
+
+## 保持上游边界
+
+T08的半无限基底T不是实际有限厚基片外部透射；四种厚度（设计、几何、QCM等效、光学nd）仍不可混用。film与bulk、specular与总能量、相位基矢、背面、带宽、角分布、口径和样品状态继续作为输入合同。
+
+T02完整oracle仍partial；T03非负沉积优化不支持净侵蚀；点12连续/离子参考和设备验证not_run；τ不是严格保证；source、time、space、geometry、kernel、input、model七误差轴都保留。新手册只增加读数语义的证据要求，不修复上述物理缺口。H4不从简称推断具体配方，YbF3保留氟化镱身份。实际用户硬件未知。
+
+## 可以立即使用的方式
+
+先用schema和checklist检查某份研究记录缺什么，再让对应负责人补证据。结果是“研究输入结构可用/有阻断项”，不是“实验室认可”或“产品认证”。真实验收时应从这份研发合同派生受控程序，经对应授权后执行；不可把本包合成fixture改一个用途字符串就交付生产。
+''')
+write('reports/02_current_sources_and_access.md','''# 02 当前标准依据与访问层级
+
+## 日期必须跟着每条事实
+
+本轮核验日为2026-10-02。标准发布、目录确认、组织更名、实施日期、合同生效日期是不同事实。没有全文时保留条款空白，比凭记忆补参数更可靠。首轮文件保持原字节，本章是新增的时点说明。
+
+## 两项需要新增的2026变化
+
+BIPM当前出版目录包含[JCGM100:2008/Amd.1:2026](https://www.bipm.org/documents/20126/2071204/JCGM_100_Amd1_2026.pdf/18b8a72a-6caf-69e8-8bbd-dd13056a4a84?download=true&t=1785763281319&version=1.6)。已读取五页短文件；实质修改在印刷1页/PDF5页，对4.1.4及H.1.7作补充。对显著非线性，不应只把函数作用于输入均值并计算一阶协方差；输出估计值也可能发生偏移。本项目的平方量例子是原创解析演示，不复制标准算例。
+
+[ILAC官网公告](https://ilac.org/latest-ilac-news/)称Global Accreditation Cooperation Incorporated自2026-01-01全面运营，旧ILAC网站转为归档参考且不再更新。因此旧网站页脚写2026或仍能下载，不能单独证明文件是当前版本。
+
+[Global ACI官方目录](https://global-aci.org/en/global_aci-documents/)已列TECH-1-002(G)、TECH-1-003(G)、TECH-1-009(M)，三项均为2026-06-26发布和实施。TECH-1-002 v1.0的官方PDF已读相关章节；§1.1说明以ILACG8:09/2019为基础且无实质文字变更。本轮没有做逐字diff，不把发布者的说明改成“我们逐条证明完全相同”。003与009只核目录。
+
+P10:07/2020仍列于[当前目录第二页](https://global-aci.org/en/global_aci-documents/?cat_id=&from_date=&order=&page_no=2&tag_id=&to_date=)，实施期仍记2021-07。6月10日v1.2交叉表把后继TECH-1-011列为in process；当前目录未找到正式011条目，不能自行编造其发布。目录另列9月14日新交叉表；下载控件URL已用dot云浏览器读到，但web读取失败。因此仅记录最新表的目录身份，不能用旧表状态替代未读的新表内容。
+
+## 来源分级与可用主张
+
+| 来源 | 本轮读取 | 支持的主张 | 未获部分 |
+|---|---|---|---|
+| VIM/GUM/GUM6/101/106 | 官方公开PDF选段；Amd1五页全读 | 概念、相关性、模型与判定框架 | 没有完成所有方法实现 |
+| TECH-1-002 v1.0 | 官方PDF相关章节 | 决策规则和引用的17025条款 | 不证明具体合同合规 |
+| ISO/IEC17025:2017 | 官方目录；2023确认 | 版本和能力标准角色 | 授权全文未读 |
+| ISO15368:2021 | 官方目录/摘要 | 平面光学测量范围入口 | 操作条件、完整条款 |
+| ISO9211-3:2024 / -4:2022 | 官方目录/摘要 | 耐久框架及方法族 | 严酷度、抽样、阈值 |
+| ISO21254-1:2025 | 官方目录/摘要 | 损伤定义/总则当前版本入口 | 具体测试方案、其它分册 |
+| INFICON SQM160 G | 官方手册选段 | 分项校准及默认Z的语义 | 不代替MXC固件证据 |
+| MXC派生审读 | 本地原创评估与页码表 | 设备语义失败案例 | 本轮未读取其原件/协议 |
+
+当前ISO/IEC17025官方目录仍列2017第三版（2023确认）。本章不将GUM、ILAC/Global ACI指南描述为所有行业强制法规。客户合同或法规若已经规定规则，必须核对优先级；换组织编号不自动修改既有合同。
+
+## 从目录走向执行的补证清单
+
+执行前取得合法受控副本、适用语言/修改单、实验室具体认可范围与程序版本、产品标准/图样、试验严酷度和样本计划。条款映射字段区分direct_fulltext、official_guidance_cites_clause、catalogue_only和project_proposed。避免把二手引述标成完整标准已核。
+
+首轮已记录的GB/MIL现行性与GJB公开证据缺口在本轮没有全量复查，保持inherited_not_rechecked，不能把本章日期套给首轮所有62项标准。即将签约时应按具体合同重新核验，尤其标准处于待实施或停止新设计使用状态的情形。
+''')
+write('reports/03_traceability_calibration_domains.md','''# 03 测量溯源链与校准适用域
+
+## 结果而不是品牌获得溯源支持
+
+[VIM2.41](https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf)将溯源落实到测量结果与参考之间的校准链；[NIST政策](https://www.nist.gov/metrology/metrological-traceability)进一步说明，使用NIST校准过的物件不足以自动证明后续所有结果。以下是本项目用于镀膜场景的具体化。
+
+对于厚度结果d，链可以含：长度参考 → 台阶仪/干涉测厚校准 → 标定见证片几何厚度 → 同炉QCM频移/密度/tooling关系 → 指定工位的厚度估计。每一箭头均有适用条件与不确定度，最后一段不是纯几何常数。若只知显示厚度和终点d，得到的是复合经验比例；没有额外观测时，不能唯一分离真实密度、捕集率、空间分布和温漂。
+
+对于R/T结果，链可含波长、光度/参比、角度、偏振、收集几何与仪器线形。某条光度标尺已溯源，不代表AOI、波长漂移或背面处理被覆盖。近陡边情况下，波长误差对最终指标的贡献可能比幅度重复性更大。
+
+## 校准记录必须能被判为不适用
+
+每条记录保存certificate_id、参考身份及值、单位、校准程序/版本、实验室与范围、校准日期、使用时状态、环境、量程、覆盖因子/概率、相关分量、修正公式和不确定度。另保存“本次应用”的频率负载、材料批次、温度范围、几何/挡板/mask版本、速率/功率范围以及算法模式。
+
+[ILAC P10§2](https://ilac.org/?ddownload=123220)提供校准服务认可和溯源证据路线。本项目不限定只有某一家机构可用；关键是此服务在此用途范围的能力证据。通常路线不适用时，应由相应认可/质量体系按替代路线要求评估，不能由脚本把一个“其他实验室”字符串自动批准。
+
+状态不要仅用valid=true：记录within_scope、last_check、drift_evidence、intermediate_checks、change_events、out_of_tolerance_assessment。如果使用后发现校准超差，应追溯受影响结果和批次，保持原记录并追加影响评估；不能以新证书覆盖旧证书让历史看似一直有效。
+
+## 物理被测量与设备坐标
+
+同一个单位nm可以表示QCM声学等效厚度、按密度换算的厚度、tooling修正后工件估计厚度、实际几何厚度或模型的设计参数。单位相同不使坐标相同。必须同时提供quantity_kind、coordinate、sample_id、location、material_state、reference_epoch。nd的单位虽也是长度，其波长依赖和n来源不可省。
+
+[INFICON SQM160§10](https://www.inficon.com/media/4271/download/SQM-160-Multi-Film-Rate---Thickness-Monitor-Operating-Manual-(English).pdf?language=de&v=4)分别讨论密度、tooling与Z的校准，支持分开记录这些环节。其厂家步骤不能未经批准推广至用户设备、材料或负载；本包不列实机操作参数。
+
+## 材料身份另建证据链
+
+供应商批号、纯度/成分声明、到料验收、坩埚/源料追踪、沉积后薄膜组成和时效状态分别记录。体材料表常数不能覆盖实际薄膜；XRF、XPS、密度或光谱等具体方法是否足够，要按目标属性与采样深度判断。某个方法验证了表面成分，不能无限外推到整层或所有工位。
+
+质量分数或组分量值可讨论计量溯源；“材料是某牌号”还依赖命名、供应链和识别准则，不应机械填入SI单位链。本包把这些称为身份/保管链，与计量溯源字段分开。
+
+## 一份未闭合的例子
+
+已知：某见证片的受控台阶测厚结果和对应仪器显示值。未知：晶体是否失锁、显示是否来自时间功率、原料/工位/温度是否同校准域。可得：两数的经验比值及其数学不确定度。不可得：真实源通量、独立薄膜密度、全盘厚度或生产验收。应阻止其进入新的实测校准集，直到读数来源和代表性闭合；不是将未知项补为零后宣布校准完成。
+''')
+write('reports/04_calibration_correlation.md','''# 04 共享校准相关性与独立验证
+
+## 重复点数不能冲淡共同偏差
+
+项目原创模型：y_i = μ + b + ε_i，其中共享校准偏差b的标准不确定度为u_b，独立重复噪声ε_i为u_r。n次均值的不确定度是sqrt(u_b²+u_r²/n)。若把每次的总不确定度都当独立，则错误得到sqrt((u_b²+u_r²)/n)。增加点数只缩小真正独立的部分。
+
+tiny例取u_b=0.003、u_r=0.001、n=25（R/T绝对比例单位1）：正确u_mean=0.0030066593，错误独立算法为0.0006324555，低估约4.754倍。这些数值完全合成，不是仪器规格或推荐预算。公式对应[GUM5.2的相关输入框架](https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf)。
+
+相关性登记至少分开共享参比、共享波长轴、相同校准拟合参数、同一炉工艺、同片空间、同一时间漂移和独立电子噪声。相关项的单位是两个量单位的乘积；混合nm、degree、比例的矩阵必须保存坐标顺序和各单位，不能先抹单位再比较元素大小。
+
+## 环境前后差值的抵消有条件
+
+令后/前测量为a、b，差值Δ=a−b，则u²(Δ)=u_a²+u_b²−2cov(a,b)。公共偏置在两个测量中以相同灵敏度进入时可抵消；若温度、量程、背面或重装改变灵敏度，不保证抵消。
+
+合成例u_a=u_b=0.0031622777、cov=0.003²时，u_Δ=sqrt(2)×0.001=0.0014142136。若独立处理同一总不确定度，得到0.0044721360。后者在本例过大，但不能因此默认所有配对试验ρ=0.9。须由共同参考模型或实测重复研究提供依据。绝对后测量仍保留共享偏置，不得用差值中抵消的理由减掉绝对性能的不确定度。
+
+## 校准集与留出集可以样品独立却误差相关
+
+联合观测协方差写作Σ=[[Σ_FF,Σ_FH],[Σ_HF,Σ_HH]]。在固定模型参数、联合高斯且已知Σ的条件下，留出创新协方差为S=Σ_HH−Σ_HF Σ_FF⁻¹Σ_FH；其条件均值也要加Σ_HF Σ_FF⁻¹e_F。T08已有这一计算，T09只规定证据：共享因素来自哪里、估计不确定性如何处理、矩阵是否适用本批次、条件化是否使用允许信息。
+
+tiny二维例Σ_FF=4、Σ_HH=9、Σ_HF=3（同单位平方）给出S=6.75；如果训练残差e_F=2，条件均值修正1.5。它仅验证代数，不说明实际系统满足高斯或协方差已知。共同基准相关性不必使留出无效，但会使“完全独立实验证明”这一说法失真。
+
+## 避免双重计入与虚假的解除相关
+
+校准参数已作为联合拟合的nuisance并带独立校准似然时，不要再把同一校准不确定度完整叠到观测Σ中；否则双计。反之，把校准值固定后仅用残差估计Σ，会漏掉校准项。记录每一分量归属：观测误差、校准输入、先验、模型差异、数值误差、抽样变异。
+
+“去相关”不等于删除相关项。通过显式公共偏差变量重参数化可以让条件噪声更接近独立，但公共变量的不确定度仍要向最终结果传播。无法可靠估计ρ时，报告可辩护范围下的敏感性，并判断结论是否稳健；不能选择最容易通过的ρ。
+
+## 三个证据检查
+
+1. 同一个calibration_group_id跨数据用途出现时，要求cross_split_correlation_treatment及来源；独立性不得靠文件名推断
+2. 给定Σ不仅要对称、有限、单位顺序正确，还需半正定；求逆/高斯密度要求对应块非奇异。微小正则化会改变模型，应记录λ和理由
+3. 样品、run和时间分组不同只证明某种分组隔离；仍需对共享参比、算法和环境路径审查。本包validator检查显式登记，不证明登记内容真实
+''')
+write('reports/05_fit_selection_heldout.md','''# 05 拟合 模型选择与留出验证分账
+
+## 为什么低残差不足够
+
+T08已有精确厚度别名：局部Jacobian满秩与局部置信椭圆并不排除远处另一组精确解。误设无色散模型也可在训练点拟合良好，却在新波长失败。T09保持这些条件结果，不用更低χ²或更高Fisher秩触发资格状态改变。
+
+[GUM6§11.10与§12](https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf)讨论模型选择、模型充分性和实验依据；[NIST模型检查](https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd44.htm)提供残差检查入口。下面三账本及数据使用规则是本项目工程协议。
+
+## 在看结果之前登记用途
+
+fit记录用于参数估计；selection记录用于选模型、超参数、损失、正则、波段、剔除准则和计算预算；heldout_final记录仅用于冻结后的最终预测检视。calibration单独列出，可供模型输入，但须公开其是否也参与fit以及相应联合建模。角色不能由运行结束后命名决定。
+
+按独立run/炉次、样品、工位和时间分组，保存计划hash、分组方法和冻结时间。随机拆同一条密集光谱的相邻点，不能当独立批次验证；同一片重测25次不能代表25炉。不同工位留出检验空间转移，不自动检验新材料批次或新温度。
+
+校准集允许为多个角色提供共同输入，但这不是统计独立。保存共享校准组及协方差处理；若未知，则保留cross_split_correlation_unresolved。程序检测ID重叠可抓显式重复，不能发现改名、复制、同一实验拆文件或未披露的人工调参。
+
+## 最终留出一旦反馈就消费掉
+
+使用最终留出结果修改任何候选模型、参数范围、偏差修正、滤波或判定规则时，旧heldout降级为selection。保留其原角色、看过结果的时间、影响的模型版本、变更理由，并准备新的未触碰最终验证。可以采用嵌套评估，但必须按整个选择流程重做，不能只重拟合最后赢家。
+
+如果实际数据太少，诚实报告开发验证，保留不确定性和外推风险。没有义务通过机械三等分浪费稀缺数据，但有义务不把重复使用的数据叫独立验证。不同模型由同一测量链产生时，还应防止“用相同系统偏差互相验证”。
+
+## 冻结候选并保留失败
+
+候选清单包括物理假设、色散形式、背面路径、散射/粗糙、各向异性、先验与噪声模型。记录未收敛和无效候选，给每个模型同等或说明过的预算；只展示幸存者最佳值会产生选择偏差。
+
+Huber等稳健损失可以减小异常点支配，却不自动给出已校准的χ²分布。不得从任意稳健目标值套卡方自由度宣称通过；也不能把较宽模型差异项仅视为改善通过率的旋钮。参数不确定度、模型选择不确定度和预测噪声都应对最终量产生各自影响。
+
+## 验证输出应针对功能与范围
+
+逐候选/解簇报告：heldout预测、观测残差及相关性处理、功能指标裕量、校准敏感性、外推标签和失败区域。多簇频次不等于后验概率；未知权重不做概率模型平均。最终声明限定在验证过的波长/AOI/偏振/温度/厚度/工位域。超域需要新的物理和实测证据，而不是仅靠模型能计算。
+
+拟合后plug-in留出密度不包含所有参数和选择不确定性。可以用于诊断，不应直接当最终覆盖证明。见contracts/evidence_checklist.csv中的DATA、SPLIT、MODEL和NUMERIC门槛。
+''')
+write('reports/06_uncertainty_decision_rules.md','''# 06 从不确定度到预先约定的决策规则
+
+## 先决定什么量再算保护带
+
+结果必须绑定被测量及其测量条件，例如“样片A有效口径内、指定AOI/偏振/仪器带宽、含背面路径的规则透射”。某波长T、带内加权T、全波段最低T和环境前后ΔT是四个量。光谱节点的拟合RMSE不是其中任何一个量的验收阈值。
+
+[GUM](https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf)提供不确定度表达框架，[JCGM106](https://www.bipm.org/en/doi/10.59161/jcgm106-2012)与[Global ACI-TECH-1-002](https://sys.global-aci.org/uploads/documents/TECH-1-002(G)_Guidelines_on_Decision_Rules_and_Statements_of_Conformity_v1_0.pdf)提供判定框架。以下数学规则为本项目明确选择的合成例，不规定实际镀膜产品应采用哪一种。
+
+## 两阶段判定不能合并
+
+第一阶段判断证据是否适用：真实观测来源、单位/坐标、校准/方法、样品代表性、计算有效性、预先批准规则。缺项输出blocked_evidence，并列具体原因。
+
+第二阶段才对规定量计算三态区间规则：规格闭区间[L,H]，报告区间[y−U,y+U]。完全包含于规格时accept_under_rule；完全不相交时reject_under_rule；其余indeterminate。单侧规格只用相应边界。包含相等端点的约定已写入rule_id。区间运算使用Decimal字符串并按输入跨度设置足够局部精度，避免二进制与默认Decimal精度舍入翻转边界。为限制资源，输入有效数字和指数绝对值各不超过1000；超出明确拒绝。
+
+重要区别：blocked_evidence是无法进行可靠评定，不等于产品不合格；indeterminate是此有效区间规则的重叠状态，也不等于接受。某个计算规则输出reject_under_rule不等于自动做生产报废、返工或外部通知。
+
+## 合成数值和单位
+
+示例下限L=0.94，U=0.004，均为绝对比例单位1。y=0.950接受，y=0.942待定，y=0.930拒绝。U=0.004是0.4个百分点；不是相对0.4%。若输入95percent，应先得到0.95；2percent的绝对比例是0.02而非2。判定使用未四舍五入的原始估计。
+
+扩展因子k和覆盖概率不是同一个字段。常见k=2并不在任何分布/小样本下恰好95%；参数边界、偏斜、多峰、有限样本和极值都可能改变覆盖。使用输出分布区间时应存上下端点、概率解释和构造法，不强制压成对称±U。
+
+## 非线性同时影响估计值
+
+原创解析例：输入x为零均值、标准不确定度σ=0.2的正态量，输出z=x²。代入均值得z=0，一阶导数也为0，会错误给出u_z=0；但解析上E[z]=σ²=0.04，u_z=sqrt(2)σ²≈0.05656854。这说明只增加计算次数不能修复错误传播模型。2026年[Amd.1](https://www.bipm.org/documents/20126/2071204/JCGM_100_Amd1_2026.pdf/18b8a72a-6caf-69e8-8bbd-dd13056a4a84?download=true&t=1785763281319&version=1.6)是必须纳入的当前依据。此例非具体仪器或实际膜层统计。
+
+在薄膜反演中，nm级d与n、k、AOI、波长偏差的非线性耦合可使参数分布偏斜/多峰。先做模型/数值适用性诊断，再决定线性传播、profile、bootstrap或分布传播；方法名称本身不证明覆盖。
+
+## 保护带没有通用风险保证
+
+简单接受、二态保护带、三态区间和概率风险规则可给同一数据不同结论。必须在测量前按合同选定。把U当保护带不自动给整批、整个波段或整个环境序列一个95%保证。特定物件风险与过程平均风险不同；后者需要过程分布与测量系统联合信息。
+
+多波长、角度、工位和多要求同时判定，要预先定义覆盖家族与风险。例如点态95%区间不等于全谱95%同时带。程序当前只实现标量区间算术，不实现多重比较、同时带、抽样AQL、风险积分或实际放行。
+
+## 重测与边界处理
+
+重测条件和合并规则要预先登记：技术无效的首测如何作废、独立性如何验证、首次有效失败是否触发调查、是否允许一次复测、报告是否保留全部结果。不能无限测到一次通过为止；不允许测试后选有利波段/工位或删除负读数。无法闭合时保留待定并升级方法/调查，不把报告小数位改少来通过。
+''')
+write('reports/07_budgets_nonconvergence.md','''# 07 有限预算 不收敛与证据诚实性
+
+## 数值状态是证据的一部分
+
+T08全计划163584次启动、196391832次观测向量调用上限仍是计划；完整批量not_run_awaiting_device。本轮未启动、未改写或重跑该driver。既有tiny的高端profile耗尽预算不收敛，不能因为主拟合成功就补成有效置信区间端点。
+
+[GUM6§12.9](https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf)提及提前终止迭代可能影响数值准确性；[JCGM101§7.9](https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf)为分布传播的稳定性提供方法背景。本章状态机及门槛是项目建议，不声称标准规定某个优化器容差。
+
+## 每项计算都要独立报告
+
+主拟合、候选搜索、每个profile点、每次bootstrap重拟合、预测积分、灵敏度计算和Monte Carlo区间端点各自记录：计划预算、实际调用、耗时/环境、停止原因、局部状态、数值异常、边界命中和输出是否可用。全局run成功不能覆盖内部失败。
+
+推荐状态：not_run、running、converged_local、budget_exhausted、solver_failure、invalid_model、interrupted、numerical_check_failed。converged_local只说明给定起点和准则，不等于全局最优、全局唯一或预测可信。没有可信下界的多起点最小值只是已发现最佳值，不能冠以严格误差上界。
+
+## 为什么非收敛profile危险
+
+对于固定d，优化器找到的n/k/nuisance目标值通常是该点真实最小值的上界。局部失败可能把profile人为抬高，让阈值交点向内移动，给出虚假的窄区间。若边界profile未收敛，保留censored_by_budget/endpoint_unresolved。图形可画出已计算值但必须区分状态，不用平滑插值填补失败。
+
+同样，bootstrap中难收敛样本被删除会导致幸存者偏差。需保存失败比例、所在参数域、是否与极端结果相关，以及对区间结论的影响。预先约定重试可以保留原运行并追加新run；不允许悄悄提高预算后只呈现最好一次。
+
+## 数值与实验不确定度分开
+
+计算截断、网格、浮点、积分精度和优化误差不是新的实验重复性。若能给可信界，可检查其相对于目标测量不确定度/规格裕量是否足够小；若仅有几种步长结果接近，这是一项稳定性诊断，不是严格界。未建模的物理偏差不能用更紧优化容差替代。
+
+对Monte Carlo，随机种子、样本数和运行终止都应存档，还需关注被报告统计量（均值、标准差、尾部/区间端点）是否稳定。尾部稀有失效不因总样本数很大就被验证。此轮只有解析tiny，不运行重采样或大型设备无关高算量。
+
+## 门槛与资源控制
+
+本包semantic validator对要求用于不确定度端点的stage，若不是converged_local或validated_analytic，产生NUMERIC_INCOMPLETE；所有stage仍在原ledger中。真实放行永远不由本包自动签出。未来在用户选择设备后可运行上游计划，将新结果保存到独立执行包并引用原冻结hash，禁止覆盖冻结研究证据。
+
+T09当前无需再新造一个巨大计算矩阵；关键瓶颈是可信输入与可核查声明。先有预算合同、错误状态与最小反例，重计算待设备安排。对观测缺失/手册语义未知增加CPU无效。
+''')
+write('reports/08_instrument_semantics_manual.md','''# 08 仪器读数来源与MXC工程案例
+
+## 使用手册的边界
+
+来源是已完成的MXC独立派生审读，手册身份为上海膜林科技有限公司MXC用户手册，版本履历最新Ver3.1.0/2020-06-26，104个PDF页。页码以下统一为“印刷页/PDF页”；来源原件SHA256记于本地provenance，本轮未再读原件，不携带原文、截图或材料表。用户认可其与工程经验高度一致，不等于用户拥有某台MXC或所有型号具备同一功能。
+
+独立官方交叉来源[INFICON SQM160§10与附录A](https://www.inficon.com/media/4271/download/SQM-160-Multi-Film-Rate---Thickness-Monitor-Operating-Manual-(English).pdf?language=de&v=4)支持分项校准和未知Z占位的背景；不能用另一厂商文档证明MXC寄存器语义。本章只设计日志/验证证据，不审产品、不改接口、不建议设备自动动作。
+
+## 1 实测量与时间功率估计分开
+
+MXC45/46页：派生审读指出启用时间功率后，晶振失效时显示速率可用设定值并继续累计。一般机制是“一个正常数值可能是替代而非新观测”；具体失效触发、平均功率窗口和恢复规则仍属型号/固件语义。
+
+合同字段：reading_origin=measured/substituted_setpoint/held/derived/unknown；frequency_lock；controller_mode；substitution_start/end；source_record_ref；parameter_snapshot_ref。替代值可进入明确标识的过程估计轨道，必须退出实测速率校准、重复性统计和独立最终验证。把替代值加一个大σ也不能把它变成独立观测；如作模型预测，须写依赖的设定值和源模型。
+
+tiny fixture以measured标注的时间功率替代值会被拒绝；明确substituted_setpoint且仅用于过程估计的记录可以保留，但仍不能支持真实合格声明。
+
+## 2 参数切换与显示反冲
+
+MXC80–81/81–82和92/93页：停止后冷却频移可能在下一层密度参数下转换，显示滤波又影响峰值时间。通用机制是同一原始频率序列经不同参数/滤波能得到不同速率；“停止峰一定全为热漂移”是错误外推。
+
+每条派生读数必须有material_id、density、Z、tooling、坐标、算法版本、参数生效时间与参数事件。多通道轮询保存各自采样时刻/最大时间偏差，不能把不同瞬间拼成一个物理状态。分段边界至少含开关挡板、参数改变、清零、换片、继续和重启。
+
+合成例不以频移推任何真实质量：只令相同等效面质量变化1（归一单位）分别除以ρ=5、ρ=1，得到显示厚度0.2和1；五倍显示变化由转换参数即可造成。它不能证明真实源拖尾为零，也不能诊断用户设备。
+
+## 3 负厚舍弃不恢复沉积真值
+
+MXC91–92/92–93页讨论初始负厚舍弃和停止参数切换；41/42页还涉及未锁定频率的负号状态编码。通用机制是裁剪/累计变换会改变统计分布和积分；MXC特定负号编码必须先按已核固件解释，不能直接取绝对值。
+
+合同要求同时保留raw_value、display_value、accumulation_enabled、negative_clip_mode、filter_spec及变换版本。原始负值可能来自热漂移、真实净侵蚀或失锁状态，未分辨前不可全部视为噪声。合成速率[-1,2,-1,2]nm/s，四段各1s，带符号积分2nm，逐段max(r,0)得到4nm；本例只是明确的数学裁剪，不能冒称MXC固件实际算法逐段如此实现。
+
+T03不支持净侵蚀的冻结限制不变。保留负记录并不意味着现有沉积优化器已经能使用它。
+
+## 4 共享挡板与旧源真实残余
+
+MXC72–73/73–74页：换源预熔可能使尚热的旧源重新可见；厂家空层是等待流程。一般机制是源热历史和几何可见性共同决定残余通量。通道映射、挡板拓扑、冷却时间、脉冲驱动位置可知程度则是设备特定信息（47–48/48–49页）。
+
+记录每个source_id到QCM和workpiece分别的visibility_state与证据，区分commanded_position和observed_position；未知不是closed。还有source_power_command、source_power_measured、thermal_state_basis、wait_event。零功率不等于零温度或零通量；QCM被遮而工件可见时，QCM零速率也不证明工件无残余。
+
+合成例明确已知旧源对工件可见、残余速率0.2nm/s持续5s，则贡献1nm；只给“关闭命令”而缺实际位置时，贡献应是unknown，不能补0。fixture拒绝仅凭未知可见性宣称zero_flux_verified；已关闭也仍需单独零通量依据。源仍热本身既不证明也不否定工件零通量，取决于实际遮挡与其它传输路径。
+
+## 5 校准与反馈坐标联动
+
+MXC39/40页：tooling可能进入显示速率反馈坐标。若显示r_d=c r_q且闭环目标r_d固定，改c会改变r_q目标；c从1.00至1.10时目标降到原来的1/1.10≈0.90909。该代数关系条件于手册定义，不是设备实验。原始速率选项仍是模型换算速率，不是原始频率。
+
+MXC61–62/62–63页的经验tooling更新可能吸收密度等未知因素；62/63、66/67和78/79页强调校准域可能受工位温度、料耗等影响。字段应含feedback_coordinate和display_coordinate，改动作为工艺配置事件而非纯离线显示修正。若参数切换会影响过程，应重新评估旧校准的适用域。
+
+## 6 时间和历史完整性
+
+MXC6–7/7–8页区分100ms取样与1Hz日志；51/52页的串口应答顺序意味着读数不一定同时。36/37、57–58/58–59页涉及晶体旧镀层历史和多层声学误差。69–70/70–71、92/93页区分控制阶段与累计；断电续镀见80/81页。
+
+证据合同保留crystal_id、bare/reference_frequency、load_history_complete、reset/continue/restart、log_sampling_interval及缺样区间。1Hz数据不能验证100ms瞬态；续镀数据存在不能证明真空/界面/膜质已恢复。参数库里的unknown Z=1不得成为已标定事实。
+
+## 何时才可进入实机阶段
+
+先确认实际型号/序列/固件、启用选项、正式协议、状态编码和受控安全程序，再取得获准日志及独立样品测量。本包只是将这些设成未闭合证据；所有硬件/产品验证状态固定not_run。设备命令、PID调参、自动提前截止、重启恢复策略不在本轮授权或实现范围。
+''')
+write('reports/09_qualification_and_acceptance.md','''# 09 设计性能 生产验收 环境与损伤资格
+
+## 设计符合性需要测量算子对齐
+
+把模型R/T算到某个性能指标前，先定义它代表单面膜、有限基片、双面成品还是装配通道。背面、孔径、角度分布、偏振纯度、散射收集和仪器带宽改变测量对象。若模型与实测不是同一量，即使残差极小也只是巧合或补偿。
+
+[ISO15368:2021目录](https://www.iso.org/standard/72598.html)是平面反射/透射方法入口；本轮未读其完整规范程序。曲面、漫射、吸收或系统响应另需适用方法，不能把标题中的“光学”理解为覆盖所有元件。
+
+设计预测通过之后，还应检查可制造性和实测域内功能：n/k的制备状态、允许工艺窗、空间不均匀、材料氧化/吸附、面形应力、附着等。参数可辨识性差不必然令功能预测无用，但必须在所有可支持解簇/模型下检视功能是否仍满足目标；只挑最有利解簇不能形成验收证据。
+
+## 生产验收不可从最佳样片外推
+
+批定义需固定run、设备配置、原料、配方/前处理、工位、返工和异常；抽样方案按客户/质量体系批准。记录抽样框、选样方法、有效口径/位置、样本依赖、漏检/拒收风险和偏离。见证片代表性需要几何/温度/遮挡/批历史支持，不因同炉就与成品等价。
+
+本轮没有复制ISO2859抽样表或给出AQL样本数；首轮目录只作为旧研究索引。任何批放行需要实际批准的计划和真实原始数据。不要把25个波长或25次重复读取当25个独立产品；工位覆盖也不能替代跨炉过程稳定性。
+
+## 环境前后两类性能都要满足
+
+[ISO9211-3:2024](https://www.iso.org/standard/84707.html)与[-4:2022](https://www.iso.org/standard/82042.html)分别作为环境耐久框架和特定耐久试验入口，完整方法/类别/严酷度尚未取得。
+
+计划保存暴露设定及实测时间序列、升降温/湿度稳定性、装配/包装、冷凝、清洗、恢复、测量时刻及序列。资格针对明确配置；更换材料供应商、离子辅助、清洗、退火或底层处理可能改变影响范围，需要风险依据决定重验证。
+
+判定同时考虑后测绝对功能与前后变化。初始就很差但变化很小不能接受；后测仍过线却恶化超出变化限值也不能接受。差值相关性按第04章处理；环境试验同时可能改变基片、膜和装配，不能把所有变化自动归因于镀层。
+
+停电、失锁继续镀、控制阶段异常要进入偏离/不合格处置链。控制器“完成”表示流程终止，不是环境/生产合格状态。一次试验通过更不能直接变成长期寿命分布；加速关系需要机制与外推验证。
+
+## 损伤试验必须限定载荷和检出
+
+[ISO21254-1:2025](https://www.iso.org/standard/83937.html)是当前定义/原则入口，完整细节及其它分册未核。LIDT资格需完整波长、脉宽/脉型、光斑定义、能量/功率量值、AOI、偏振、重复频率、脉冲数、照射区域、检测阈值与前后图像。平均功率相同不保证峰值辐照相同；不同损伤定义不能混并统计。
+
+机械附着/磨耗的未见剥落不是无限结合强度；分清膜基/层间/胶层/基片破坏。损伤数为零也不等于失效概率零；样本数、独立性、删失及选择方式决定能支持的统计范围。本包不执行破坏测试、不提供通用严酷度、激光操作或安全旁路。
+
+## 一份可审查的限定声明
+
+实际未来报告应写清“哪些样品，在什么配置和方法版本、什么暴露/测量条件下，对哪些具体要求，使用哪个事先批准规则得到何种结果”。拒绝“达到军标”“符合全部ISO”“设备精度已验证”等无范围词。
+
+本包的合成示例只能表述为：某些已声明的算术/结构规则对虚构记录产生预期状态。schema合格、代码测试通过、reader完整、freeze hash一致，均不能升级为真实质量结论。
+''')
+write('reports/10_implementation_and_limits.md','''# 10 实现 验收 冻结与剩余门槛
+
+## 本地交付范围
+
+本目录提供十章原创工程报告、逐条来源元数据与短摘要、证据checklist、JSON Schema、可运行语义检查器、合成tiny fixtures与解析算术例、离线reader、精确manifest及冻结收据。各项状态和实际执行结果以reviews的记录为准，不预先把未运行步骤记为通过。
+
+核心检查器不会认证校准证书、验证电子签名、读取设备、推断成分、执行真正光学反演、建立实际统计覆盖、应用AQL、操作数据库或放行产品。它拒绝已显式不符合合同的记录，不能证明伪造但格式完整的记录是真实。
+
+## tiny范围
+
+解析例覆盖公共校准误差不随重复消失、配对差值相关性、已知联合高斯的条件创新、非线性平方量、比例/百分数边界、负值裁剪积分、密度切换显示变化、tooling反馈坐标以及已知/未知挡板条件。fixtures覆盖替代值误标实测、跨角色样品泄漏、相关性未声明、失锁、参数事件缺失、裁剪无原始记录、未知可见性伪零通量及预算耗尽。
+
+所有例子是人为构造。检查通过只表明该版本按这些预期规则运行；不保证任意数据输入、任何光学方法或任何实机。没有大型重采样、全局搜索、上游全批、设备或破坏测试。
+
+## 独立检查的准确口径
+
+本轮只安排一次窄单位/证据规则检查，审查对象是原创解析公式和检查器关键拒绝条件；不要求反复评审。其记录与作者处理结果分开保存。未执行DeepSeek→Seed Pro→Sol完整指定链，完整阶段验收pending/not_run。不把一个小检查包装成全工程审计。
+
+## reader与著作权边界
+
+index.html将原创报告内嵌，离线搜索和导航不需网络；外部来源链接只有用户点击才可能访问网络。reader_allowlist列出可读原创payload，不含preexisting_baseline、原手册、论文PDF、提取缓存、环境秘密或任何设备日志。reader只支持阅读；没有自动发布或共享步骤。
+
+freeze_manifest列出整个本地研究包的精确路径、bytes、SHA256，verify检查缺失/变更/额外文件。reader_manifest另列允许离线复制的原创payload，reader.py可在临时隔离目录核查允许列表与清单完全一致；它不带目录外基线或第三方原件。整个包manifest、freeze_receipt和末次freeze_verify为避免自引用单独排除；reader清单只排除自身hash，其字节受整个包manifest覆盖；收据记录manifest的hash。该机制防止意外修改，并非受信时间戳、PKI签章或抵抗拥有写权限者的认证。
+
+reader的视觉/交互验证仍未完成。dot云浏览器无法打开localhost，本地安装Chromium的启动也被socket权限阻止，授权重试未解除。此限制已写入reader_qa.json；本轮只完成静态结构/链接与自包含检查，不把未生成的截图记为通过。
+
+## 既有内容与平行任务
+
+开工时捕获目录外1363个既有文件的路径、大小、SHA256；冻结时逐一比较。新文件与既有修改分别列出；如果协调者或平行任务改了其它路径，保留旧/新hash并记录归属，不重置基线以抹去差异。T06/T07/T08和首轮T09有严格只读要求。若冻结时发现其变更，要先报告，不谎称byteimmutable。
+
+## 进入真实用途仍缺什么
+
+实际产品/合同及被测量；合法完整方法与条款；实际仪器型号/固件/协议；受控校准与适用域；真实样品/批和完整观测；不确定度与相关项；独立验证；预先批准规则；执行与放行权限。以上不是用合成数据或算力能代替的步骤。
+
+停止点为本地freeze。T10建议只交接、不自动启动；没有push、upload、deploy、对外分享、产品代码改动或用户PC操作。下一次计算和设备研究需保持本冻结包只读并另建有界工作包。
+''')
+write('T10_ROUND2_HANDOFF.md','''# T10下一有界扩展建议
+
+主题建议：离子辅助条件的可追溯观测与材料响应验证接口。只交接，不自动启动。
+
+T09R2已建立六类主张分账、溯源/校准/相关性合同、拟合/选择/最终留出隔离、预定决策规则及有限预算失败门槛，并把MXC派生案例纳入读数来源和事件证据。仅合成tiny；真实硬件、生产和环境/损伤资格全部not_run。
+
+T10可研究：离子源设定电压/电流与工件实际能量/通量/角分布的区分；束流诊断、工位代表性、热/电荷条件；净沉积与净侵蚀的证据分离；材料/基片状态与光学响应的留出验证设计。优先考夫曼源的物理框架，不能从旧源热残余或MXC控制术语推断用户拥有何种离子源。
+
+必须继承：四种厚度、film/bulk、背面/NA/带宽/偏振算子、七误差轴、T02partial、T03净侵蚀不支持、点12not_run、τ非严格、QCM声学/温漂/tooling缺口。T08全driver仍not_run_awaiting_device；非收敛profile端点不是有效置信界。
+
+标准更新：JCGM100:2008/Amd.1:2026已核；Global ACI-TECH-1-002 v1.0已读选段。P10仍以旧号列在当前Global ACI目录，拟议TECH-1-011不可写成已发布；最新9月交叉表仅目录/链接核验。
+
+当前审核仅作者自查和一次窄单位/证据规则检查，非完整指定模型审核链。后续写新目录，既有冻结包保持字节不可改。实际设备授权和真实测量输入未获得。无发布授权；本地freeze后停止。
+''')
+# Project-original evidence checklist, not a substitute for normative text.
+rows=[
+('ID01','material_identity','material_lot,identity_basis,chain_of_custody','材料/工艺负责人','material_identity_unresolved','project_proposed;TV-S01'),
+('OBJ01','measurand','quantity_kind,coordinate,unit,sample,state,spatial_domain,time_domain','计量负责人','measurand_mismatch','project_proposed;TV-S01'),
+('OBS01','observation','raw_ref,hash,timestamp,reading_origin,lock_state','采集负责人','nonmeasured_used_as_measurement','project_proposed;TV-M01 p45/PDF46'),
+('OBS02','timing','per_field_time,filter,missing_intervals,log_interval','采集负责人','unobserved_transient','project_proposed;TV-M01 p6-7/PDF7-8'),
+('EVT01','events','parameter_snapshot,effective_time,reset,continue,shutter_events','工艺负责人','event_lineage_missing','project_proposed;TV-M01 p80-81/PDF81-82;p92/PDF93'),
+('CAL01','traceability','reference,certificate,method,uncertainty,scope,usage_date','计量负责人','calibration_scope_unresolved','TV-S08 §2;project implementation'),
+('CAL02','calibration_domain','load,temperature,geometry,material,mode,drift,change_assessment','计量/工艺负责人','outside_calibration_domain','project_proposed;TV-S19 §10'),
+('COV01','correlation','ordered_units,shared_groups,covariance_basis,cross_split_treatment','计量/建模负责人','correlation_unresolved','TV-S02 §5.2;project implementation'),
+('SPLIT01','data_use','fit,selection,heldout_final,group_ids,plan_hash,freeze_time','研究负责人','heldout_leakage','project_proposed;TV-S04 §11.10'),
+('MODEL01','model','version,assumptions,candidate_set,domain,aliases,model_discrepancy','建模负责人','model_not_validated_for_use','TV-S04 §12;project implementation'),
+('NUM01','numerics','stage,status,budget,calls,stop_reason,required_for_claim','计算负责人','numeric_incomplete','project_proposed;TV-S04 §12.9'),
+('UNC01','uncertainty','budget,distribution,coverage,nonlinear_check,model_uncertainty','计量负责人','uncertainty_incomplete','TV-S02;TV-S03'),
+('RULE01','decision_rule','specification,edition,limits,equality,rule_id,approval_before_measurement','客户/质量负责人','rule_not_preagreed','TV-S09 §3.3,3.6-3.7'),
+('LOT01','production','lot,sampling_frame,selection,independence,witness_representativeness','质量负责人','production_evidence_absent','project_proposed;inherited T09'),
+('ENV01','environment','method_fulltext,severity,sequence,recovery,actual_exposure,pre_post','试验负责人','environment_qualification_absent','TV-S16 catalogue_only;project_proposed'),
+('DMG01','damage','damage_definition,load,spot,pulses,detection,sampling,statistics','试验负责人','damage_qualification_absent','TV-S18 catalogue_only;project_proposed'),
+('AUTH01','release','authorized_signatory,scope_of_claim,exceptions,decision_record','授权质量人员','release_authority_absent','TV-S09 §3.2,3.7;project implementation')]
+import csv
+with (ROOT/'contracts/evidence_checklist.csv').open('w',newline='',encoding='utf-8') as f:
+ w=csv.writer(f);w.writerow(['gate_id','domain','required_evidence','review_role','blocker','basis']);w.writerows(rows)
+dump('data/manual_evidence_map.json',{'source':'TV-M01','source_original_sha256':'9bd91a3721a5bae81b52ba7d2662dcce86a96dcb81ea1f4d280be945bc75d7d7','actual_user_hardware':None,'manual_original_read_this_round':False,'entries':[
+ {'mechanism':'time_power_substitution','printed_pages':'45','pdf_pages':'46','general_requirement':'label reading provenance and do not treat substituted setpoint as independent measurement','device_specific':'MXC failure behaviour, firmware/options'},
+ {'mechanism':'parameter_switch_display_peak','printed_pages':'80–81;92','pdf_pages':'81–82;93','general_requirement':'retain raw frequency, parameter effective timestamps and filter state','device_specific':'MXC stop/next-layer loading sequence'},
+ {'mechanism':'negative_thickness_discard','printed_pages':'91–92','pdf_pages':'92–93','general_requirement':'retain signed raw observations and transformation lineage','device_specific':'MXC discard setting and accumulation semantics'},
+ {'mechanism':'shared_shutter_old_source','printed_pages':'72–73','pdf_pages':'73–74','general_requirement':'separate actual visibility, command and source thermal state','device_specific':'MXC empty-layer waiting workflow and shutter topology'},
+ {'mechanism':'feedback_coordinate','printed_pages':'39','pdf_pages':'40','general_requirement':'record display and feedback coordinates with tooling changes','device_specific':'MXC raw-rate option availability'},
+ {'mechanism':'sampling_and_protocol','printed_pages':'6–7;51','pdf_pages':'7–8;52','general_requirement':'per-field timestamps and bandwidth limits','device_specific':'MXC100ms sampling,1Hz logger and serial response sequencing'}]})
+dump('data/access_gaps.json',{'latest_cross_reference':{'url':'https://sys.global-aci.org/uploads/documents/2026-09-14_Global_ACI_IAF_and_ILAC_Document_Cross-Reference_Table_v14_0.pdf','catalogue_date':'2026-09-14','url_observed_via':'dot cloud browser official downloadable anchor','fulltext_read':False,'web_result':'not accessible via tool'},'iso_fulltexts':'not obtained; catalogue only','mxc_original':'not read or copied in this round; derived analysis used','gjb':'inherited unresolved, not rechecked','hardware':'unknown; not_run'})
+print('Built',len(sources),'source records and 10 reports')

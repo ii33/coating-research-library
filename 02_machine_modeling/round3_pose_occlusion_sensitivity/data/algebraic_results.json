@@ -1,0 +1,272 @@
+{
+  "dataset_kind": "synthetic_analytic_only",
+  "scene": {
+    "t0": 0.0,
+    "t1": 2.0,
+    "x0_m": -0.4,
+    "velocity_m_s": 0.4,
+    "target_shift_m": 0.03,
+    "source_shift_m": 0.0,
+    "clock_offset_s": 0.0,
+    "amplitude": 1.0,
+    "plate_shift_m": 0.0,
+    "half_width_m": 0.08,
+    "height_m": 1.0,
+    "z_near_m": 0.4,
+    "z_far_m": 0.6,
+    "half_y_m": 0.15,
+    "q0": 1.0,
+    "q1_per_s": 0.3,
+    "event_guard_s": 1e-10,
+    "face_guard_m": 1e-12,
+    "transverse_floor_m_s": 1e-10,
+    "shadow_boundary_uncertainty_m": 0.0
+  },
+  "base": {
+    "value_s_m2": 1.1023811408179522,
+    "sensitivity_status": "differentiable_conditional",
+    "parameters": [
+      "target_shift_m",
+      "source_shift_m",
+      "clock_offset_s",
+      "amplitude",
+      "plate_shift_m",
+      "half_width_m",
+      "height_m"
+    ],
+    "gradient": [
+      0.287274390379637,
+      1.4462685090286476,
+      0.11490975615185489,
+      1.102381140817952,
+      -1.7335428994082838,
+      -14.764007026627215,
+      -3.0097023255557747
+    ],
+    "smooth_gradient": [
+      -0.4061427693836769,
+      0.4061427693836769,
+      -0.1624571077534706,
+      1.102381140817952,
+      0.0,
+      0.0,
+      -1.8285817634255976
+    ],
+    "event_gradient": [
+      0.6934171597633139,
+      1.0401257396449708,
+      0.2773668639053255,
+      0.0,
+      -1.7335428994082838,
+      -14.764007026627215,
+      -1.181120562130177
+    ],
+    "events": [
+      {
+        "time_s": 0.4250000000000001,
+        "time_jacobian": [
+          -2.5,
+          -3.75,
+          -1.0,
+          0.0,
+          6.25,
+          -6.25,
+          -0.49999999999999994
+        ],
+        "boundary": "lower",
+        "active_z_m": 0.4,
+        "guard_speed_m_s": 0.4,
+        "jump_V": -1
+      },
+      {
+        "time_s": 1.4249999999999998,
+        "time_jacobian": [
+          -2.5,
+          -3.75,
+          -1.0,
+          0.0,
+          6.25,
+          6.25,
+          0.49999999999999994
+        ],
+        "boundary": "upper",
+        "active_z_m": 0.4,
+        "guard_speed_m_s": 0.4,
+        "jump_V": 1
+      }
+    ],
+    "visible_intervals_s": [
+      [
+        0.0,
+        0.4250000000000001
+      ],
+      [
+        1.4249999999999998,
+        2.0
+      ]
+    ],
+    "certificate": "conditional_float_algebra_not_strict_interval",
+    "source_error": "not_assessed_for_continuous_source",
+    "time_error": "smooth_segment_quadrature_estimate_only"
+  },
+  "closed_primitive_oracle": {
+    "value_s_m2": 1.1023811408179522,
+    "gradient": [
+      0.287274390379636,
+      1.4462685090286467,
+      0.11490975615185478,
+      1.102381140817952,
+      -1.733542899408282,
+      -14.764007026627215,
+      -3.009702325555774
+    ],
+    "max_abs_jacobian_difference": 1.7763568394002505e-15
+  },
+  "naive_finite_difference_counterexample": [
+    {
+      "step": 0.1,
+      "fixed_grid_derivative": -0.9375,
+      "exact_derivative": -1.0
+    },
+    {
+      "step": 0.01,
+      "fixed_grid_derivative": 0.0,
+      "exact_derivative": -1.0
+    },
+    {
+      "step": 0.001,
+      "fixed_grid_derivative": 0.0,
+      "exact_derivative": -1.0
+    },
+    {
+      "step": 1e-05,
+      "fixed_grid_derivative": 0.0,
+      "exact_derivative": -1.0
+    },
+    {
+      "step": 1e-07,
+      "fixed_grid_derivative": 0.0,
+      "exact_derivative": -1.0
+    }
+  ],
+  "grazing_counterexample": [
+    {
+      "parameter": -0.0001,
+      "blocked_duration_s": 0.0,
+      "derivative": 0.0,
+      "status": "branch_conditional"
+    },
+    {
+      "parameter": 0.0,
+      "blocked_duration_s": 0.0,
+      "derivative": null,
+      "status": "grazing_topology_unresolved"
+    },
+    {
+      "parameter": 1e-08,
+      "blocked_duration_s": 0.0002,
+      "derivative": 10000.0,
+      "status": "branch_conditional"
+    },
+    {
+      "parameter": 1e-06,
+      "blocked_duration_s": 0.002,
+      "derivative": 1000.0,
+      "status": "branch_conditional"
+    },
+    {
+      "parameter": 0.0001,
+      "blocked_duration_s": 0.02,
+      "derivative": 100.0,
+      "status": "branch_conditional"
+    }
+  ],
+  "unknown_geometry": {
+    "value_s_m2": 1.1023811408179522,
+    "sensitivity_status": "geometry_unknown",
+    "parameters": [
+      "target_shift_m",
+      "source_shift_m",
+      "clock_offset_s",
+      "amplitude",
+      "plate_shift_m",
+      "half_width_m",
+      "height_m"
+    ],
+    "gradient": null,
+    "smooth_gradient": null,
+    "event_gradient": null,
+    "events": [
+      {
+        "time_s": 0.4250000000000001,
+        "time_jacobian": [
+          -2.5,
+          -3.75,
+          -1.0,
+          0.0,
+          6.25,
+          -6.25,
+          -0.49999999999999994
+        ],
+        "boundary": "lower",
+        "active_z_m": 0.4,
+        "guard_speed_m_s": 0.4,
+        "jump_V": -1
+      },
+      {
+        "time_s": 1.4249999999999998,
+        "time_jacobian": [
+          -2.5,
+          -3.75,
+          -1.0,
+          0.0,
+          6.25,
+          6.25,
+          0.49999999999999994
+        ],
+        "boundary": "upper",
+        "active_z_m": 0.4,
+        "guard_speed_m_s": 0.4,
+        "jump_V": 1
+      }
+    ],
+    "visible_intervals_s": [
+      [
+        0.0,
+        0.4250000000000001
+      ],
+      [
+        1.4249999999999998,
+        2.0
+      ]
+    ],
+    "certificate": "conditional_float_algebra_not_strict_interval",
+    "source_error": "not_assessed_for_continuous_source",
+    "time_error": "smooth_segment_quadrature_estimate_only",
+    "uncertainty_envelope": {
+      "lower": 1.096477812302089,
+      "upper": 1.1082890120993276,
+      "status": "conditional_nonnegative_flux_envelope_not_strict_certificate",
+      "event_radius_s": 0.0025
+    }
+  },
+  "confounding": {
+    "clock_equals_velocity_times_target_column": 9.71445146547012e-17,
+    "joint_translation_null_direction": [
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "joint_translation_residual": 8.881784197001252e-16,
+    "interpretation": "Source/target/plate translation gauge and constant-speed phase/clock ambiguity remain"
+  },
+  "inherited_status": {
+    "point12": "partial_not_rerun",
+    "point2": "conditional_envelope_not_strict_certification",
+    "device_execution": "not_run"
+  }
+}

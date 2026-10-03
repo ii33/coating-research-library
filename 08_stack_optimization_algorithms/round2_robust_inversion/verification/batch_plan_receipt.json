@@ -1,0 +1,97 @@
+{
+  "status": "plan_only",
+  "configuration": {
+    "schema": "T08-R2-driver-v1",
+    "seed": 20261002,
+    "tiny_routing_only": false,
+    "truths": [
+      [
+        1.6,
+        0.005,
+        0.06
+      ],
+      [
+        1.8,
+        0.02,
+        0.1
+      ],
+      [
+        2.2,
+        0.08,
+        0.3
+      ],
+      [
+        2.0,
+        0.0,
+        0.8
+      ]
+    ],
+    "scenarios": [
+      "clean",
+      "single_outlier",
+      "dispersion_mismatch"
+    ],
+    "candidates": [
+      "constant",
+      "linear_n",
+      "constant_correlated_discrepancy"
+    ],
+    "losses": [
+      "gaussian",
+      "huber"
+    ],
+    "starts": 16,
+    "profile_points": 41,
+    "replicates": 100,
+    "max_calls_per_start": 1200,
+    "max_nfev": 300,
+    "cluster_distance_scaled": 0.2,
+    "retained_clusters": 8,
+    "profile_parameter": "d_um",
+    "jacobian_steps": [
+      5e-05,
+      0.0001,
+      0.0002
+    ],
+    "fit_wavelengths_um": [
+      0.42,
+      0.45,
+      0.48,
+      0.51,
+      0.54,
+      0.5700000000000001,
+      0.6,
+      0.63,
+      0.66,
+      0.69,
+      0.72,
+      0.75,
+      0.78
+    ],
+    "heldout_wavelengths_um": [
+      0.455,
+      0.535,
+      0.615,
+      0.695,
+      0.85,
+      0.95
+    ],
+    "angles_deg": [
+      10.0,
+      45.0,
+      65.0
+    ],
+    "actual_hardware": null,
+    "data_evidence": "synthetic_only",
+    "heavy_run": "not_run_awaiting_device"
+  },
+  "fit_start_jobs": 163584,
+  "fit_forward_call_ceiling": 196300800,
+  "diagnostic_forward_call_ceiling": 91032,
+  "total_forward_call_ceiling": 196391832,
+  "budget_unit": "one complete observation-vector prediction; optical node count also recorded",
+  "coverage": "all truth/scenario/model/loss combinations, multistart, d profile, repeat-noise fits, heldout and conditional design",
+  "global_minimum_certified": false,
+  "formal_coverage_or_hardware_acceptance": false,
+  "heavy_execution": "not_run_awaiting_device"
+}

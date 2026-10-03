@@ -1,0 +1,721 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "T05-QCM-2.0"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "record_kind": {
+      "enum": [
+        "synthetic",
+        "actual_unmeasured"
+      ]
+    },
+    "source_material": {
+      "const": "Al"
+    },
+    "substrate": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "f0_hz": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 1
+            },
+            "unit": {
+              "const": "Hz"
+            },
+            "status": {
+              "enum": [
+                "unknown",
+                "assumed_synthetic",
+                "measured",
+                "literature_reference"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "z_ratio": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 1e-12
+            },
+            "unit": {
+              "const": "1"
+            },
+            "status": {
+              "enum": [
+                "unknown",
+                "assumed_synthetic",
+                "measured",
+                "literature_reference"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "capture_qcm": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 1e-12,
+              "maximum": 1
+            },
+            "unit": {
+              "const": "1"
+            },
+            "status": {
+              "enum": [
+                "unknown",
+                "assumed_synthetic",
+                "measured",
+                "literature_reference"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "source_exponent_n": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "unit": {
+              "const": "1"
+            },
+            "status": {
+              "enum": [
+                "unknown",
+                "assumed_synthetic",
+                "measured",
+                "literature_reference"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "source_anisotropy_a": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": -0.95,
+              "maximum": 0.95
+            },
+            "unit": {
+              "const": "1"
+            },
+            "status": {
+              "enum": [
+                "unknown",
+                "assumed_synthetic",
+                "measured",
+                "literature_reference"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "display_density_setting": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 1e-12
+            },
+            "unit": {
+              "const": "kg/m3"
+            },
+            "status": {
+              "enum": [
+                "unknown",
+                "assumed_synthetic",
+                "measured",
+                "literature_reference"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "actual_qcm_film_density": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 1e-12
+            },
+            "unit": {
+              "const": "kg/m3"
+            },
+            "status": {
+              "enum": [
+                "unknown",
+                "assumed_synthetic",
+                "measured",
+                "literature_reference"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "actual_workpiece_film_density": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 1e-12
+            },
+            "unit": {
+              "const": "kg/m3"
+            },
+            "status": {
+              "enum": [
+                "unknown",
+                "assumed_synthetic",
+                "measured",
+                "literature_reference"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "tooling_percent": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 1e-12
+            },
+            "unit": {
+              "const": "%"
+            },
+            "status": {
+              "enum": [
+                "unknown",
+                "assumed_synthetic",
+                "measured",
+                "literature_reference"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "status",
+            "source"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "f0_hz",
+        "z_ratio",
+        "capture_qcm",
+        "source_exponent_n",
+        "source_anisotropy_a",
+        "display_density_setting",
+        "actual_qcm_film_density",
+        "actual_workpiece_film_density",
+        "tooling_percent"
+      ],
+      "additionalProperties": false
+    },
+    "qcm": {
+      "type": "object",
+      "properties": {
+        "controller_model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model": {
+          "enum": [
+            "sauerbrey",
+            "zmatch"
+          ]
+        },
+        "fundamental_mode": {
+          "const": true
+        },
+        "rigid_bonded_validated": {
+          "type": "boolean"
+        },
+        "times_s": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "frequency_hz": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "drift_hz": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "frequency_covariance_hz2": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "drift_evidence": {
+          "type": "string"
+        },
+        "side_terms_status": {
+          "enum": [
+            "unknown",
+            "assumed_synthetic",
+            "measured"
+          ]
+        },
+        "reactive_retained_kg_m2_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "outgoing_kg_m2_s": {
+          "type": "number",
+          "minimum": 0
+        },
+        "sensor_temperature_K": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "quality_notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "controller_model",
+        "model",
+        "fundamental_mode",
+        "rigid_bonded_validated",
+        "times_s",
+        "frequency_hz",
+        "drift_hz",
+        "frequency_covariance_hz2",
+        "drift_evidence",
+        "side_terms_status",
+        "reactive_retained_kg_m2_s",
+        "outgoing_kg_m2_s",
+        "sensor_temperature_K",
+        "quality_notes"
+      ],
+      "additionalProperties": false
+    },
+    "geometry": {
+      "type": "object",
+      "properties": {
+        "source_center_m": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_normal": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "azimuth_axis": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "qcm_position_m": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "qcm_normal": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "workpiece_positions_m": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "workpiece_normals": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "visibility": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "source_center_m",
+        "source_normal",
+        "azimuth_axis",
+        "qcm_position_m",
+        "qcm_normal",
+        "workpiece_positions_m",
+        "workpiece_normals",
+        "visibility"
+      ],
+      "additionalProperties": false
+    },
+    "species": {
+      "type": "object",
+      "properties": {
+        "number_fractions": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stoichiometries": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "evidence": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "number_fractions",
+        "stoichiometries",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "error_budget": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "time": {
+          "type": "string",
+          "minLength": 1
+        },
+        "space": {
+          "type": "string",
+          "minLength": 1
+        },
+        "geometry": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kernel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "input": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "source",
+        "time",
+        "space",
+        "geometry",
+        "kernel",
+        "input",
+        "model"
+      ],
+      "additionalProperties": false
+    },
+    "qualification": {
+      "const": "research_only_not_production"
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_id",
+    "record_kind",
+    "source_material",
+    "substrate",
+    "parameters",
+    "qcm",
+    "geometry",
+    "species",
+    "error_budget",
+    "qualification"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/research/T05-QCM-2.0"
+}

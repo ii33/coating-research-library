@@ -1,0 +1,2165 @@
+{
+  "cases": [
+    {
+      "name": "baseline_research_only",
+      "packet": {
+        "packet_id": "baseline_research_only",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [],
+      "actual_codes": [],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": true,
+        "errors": [],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "production_claim_blocked",
+      "packet": {
+        "packet_id": "production_claim_blocked",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "production_acceptance",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "CLAIM_ESCALATION"
+      ],
+      "actual_codes": [
+        "CLAIM_ESCALATION"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "CLAIM_ESCALATION",
+            "detail": "Production, hardware, environmental and damage qualification are unsupported"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "time_power_mislabelled",
+      "packet": {
+        "packet_id": "time_power_mislabelled",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "time_power",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "TIME_POWER_MISLABELLED"
+      ],
+      "actual_codes": [
+        "TIME_POWER_MISLABELLED"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "TIME_POWER_MISLABELLED",
+            "detail": "O_F"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "substitution_in_fit",
+      "packet": {
+        "packet_id": "substitution_in_fit",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "substituted_setpoint",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "time_power",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "NOT_MEASURED"
+      ],
+      "actual_codes": [
+        "NOT_MEASURED"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "NOT_MEASURED",
+            "detail": "O_F in fit"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "substitution_retained_as_estimate",
+      "packet": {
+        "packet_id": "substitution_retained_as_estimate",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "substituted_setpoint",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "time_power",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "process_estimate",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [],
+      "actual_codes": [],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": true,
+        "errors": [],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "parameter_switch_no_event",
+      "packet": {
+        "packet_id": "parameter_switch_no_event",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": true,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "PARAMETER_EVENT_MISSING"
+      ],
+      "actual_codes": [
+        "PARAMETER_EVENT_MISSING"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "PARAMETER_EVENT_MISSING",
+            "detail": "O_F"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "negative_clip_without_raw",
+      "packet": {
+        "packet_id": "negative_clip_without_raw",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": null,
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "project_max_zero_demo",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "CLIPPED_LINEAGE_MISSING",
+        "RAW_MISSING"
+      ],
+      "actual_codes": [
+        "CLIPPED_LINEAGE_MISSING",
+        "RAW_MISSING"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "RAW_MISSING",
+            "detail": "O_F"
+          },
+          {
+            "code": "CLIPPED_LINEAGE_MISSING",
+            "detail": "O_F"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "unknown_shutter_claims_zero",
+      "packet": {
+        "packet_id": "unknown_shutter_claims_zero",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": true,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "ZERO_FLUX_UNSUPPORTED"
+      ],
+      "actual_codes": [
+        "ZERO_FLUX_UNSUPPORTED"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "ZERO_FLUX_UNSUPPORTED",
+            "detail": "old_source"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "shared_calibration_ignored",
+      "packet": {
+        "packet_id": "shared_calibration_ignored",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "unknown",
+          "basis_ref": null
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "CORRELATION_UNRESOLVED"
+      ],
+      "actual_codes": [
+        "CORRELATION_UNRESOLVED"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "CORRELATION_UNRESOLVED",
+            "detail": "C1"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "run_group_leakage",
+      "packet": {
+        "packet_id": "run_group_leakage",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "HELDOUT_LEAKAGE"
+      ],
+      "actual_codes": [
+        "HELDOUT_LEAKAGE"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "HELDOUT_LEAKAGE",
+            "detail": "Final validation and development share observation or run group"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "heldout_used_to_tune",
+      "packet": {
+        "packet_id": "heldout_used_to_tune",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": true
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "HELDOUT_CONSUMED"
+      ],
+      "actual_codes": [
+        "HELDOUT_CONSUMED"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "HELDOUT_CONSUMED",
+            "detail": "Missing/true used_to_update_model on final heldout"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "profile_budget_exhausted",
+      "packet": {
+        "packet_id": "profile_budget_exhausted",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          },
+          {
+            "id": "profile_high",
+            "status": "budget_exhausted",
+            "required_for_claim": true,
+            "calls": 45,
+            "budget": 45,
+            "stop_reason": "max_calls"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "NUMERIC_INCOMPLETE"
+      ],
+      "actual_codes": [
+        "NUMERIC_INCOMPLETE"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "NUMERIC_INCOMPLETE",
+            "detail": "profile_high:budget_exhausted"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "calibration_domain_unknown",
+      "packet": {
+        "packet_id": "calibration_domain_unknown",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": null,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "CALIBRATION_DOMAIN_UNRESOLVED"
+      ],
+      "actual_codes": [
+        "CALIBRATION_DOMAIN_UNRESOLVED"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "CALIBRATION_DOMAIN_UNRESOLVED",
+            "detail": "O_F"
+          },
+          {
+            "code": "CALIBRATION_DOMAIN_UNRESOLVED",
+            "detail": "O_H"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "qcm_lock_unknown",
+      "packet": {
+        "packet_id": "qcm_lock_unknown",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": true,
+            "lock_state": "unknown",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": true,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "LOCK_UNRESOLVED"
+      ],
+      "actual_codes": [
+        "LOCK_UNRESOLVED"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "LOCK_UNRESOLVED",
+            "detail": "O_F"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    },
+    {
+      "name": "rule_after_measurement",
+      "packet": {
+        "packet_id": "rule_after_measurement",
+        "evidence_mode": "synthetic_demo",
+        "requested_claim": "research_diagnostic",
+        "observations": [
+          {
+            "id": "O_F",
+            "value": 0.95,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_fit",
+            "sample_id": "synthetic_fit_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://F",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          },
+          {
+            "id": "O_H",
+            "value": 0.949,
+            "unit": "1",
+            "quantity_kind": "regular_transmittance",
+            "coordinate": "finite_sample_external",
+            "t_s": 10.0,
+            "run_id": "run_heldout",
+            "sample_id": "synthetic_heldout_sample",
+            "reading_origin": "measured",
+            "raw_ref": "synthetic://H",
+            "requires_lock": false,
+            "lock_state": "not_applicable",
+            "controller_mode": "measurement",
+            "parameter_snapshot_id": "P1",
+            "parameter_switched": false,
+            "parameter_event_id": null,
+            "negative_clip_mode": "none",
+            "transformation_ref": null,
+            "calibration_id": "C1"
+          }
+        ],
+        "datasets": [
+          {
+            "id": "D_F",
+            "role": "fit",
+            "observation_ids": [
+              "O_F"
+            ],
+            "used_to_update_model": true
+          },
+          {
+            "id": "D_H",
+            "role": "heldout_final",
+            "observation_ids": [
+              "O_H"
+            ],
+            "used_to_update_model": false
+          }
+        ],
+        "parameter_snapshots": [
+          {
+            "id": "P1",
+            "material_id": "synthetic_film",
+            "density_kg_m3": 5000.0,
+            "z_factor": 1.0,
+            "tooling_fraction": 1.0,
+            "feedback_coordinate": "qcm_equivalent",
+            "display_coordinate": "sample_estimate"
+          }
+        ],
+        "events": [],
+        "calibrations": [
+          {
+            "id": "C1",
+            "within_scope": true,
+            "basis_ref": "synthetic://calibration_domain"
+          }
+        ],
+        "numerics": [
+          {
+            "id": "analytic",
+            "status": "validated_analytic",
+            "required_for_claim": true,
+            "calls": 1,
+            "budget": 1,
+            "stop_reason": "exact_demo_formula"
+          }
+        ],
+        "cross_split_correlation": {
+          "status": "known_synthetic",
+          "basis_ref": "synthetic://shared_reference_covariance"
+        },
+        "decision_rule": {
+          "rule_id": "project_closed_interval_v1",
+          "preagreed": false,
+          "approval_ref": "synthetic://preregistered_rule"
+        },
+        "source_visibility": [
+          {
+            "source_id": "old_source",
+            "workpiece_visibility": "unknown",
+            "position_evidence_ref": null,
+            "thermal_state": "unknown",
+            "zero_flux_verified": false,
+            "zero_flux_basis_ref": null
+          }
+        ]
+      },
+      "expected_codes": [
+        "RULE_NOT_PREAGREED"
+      ],
+      "actual_codes": [
+        "RULE_NOT_PREAGREED"
+      ],
+      "matches_expectation": true,
+      "result": {
+        "semantic_ready": false,
+        "errors": [
+          {
+            "code": "RULE_NOT_PREAGREED",
+            "detail": "Synthetic rule must be frozen before the constructed data"
+          }
+        ],
+        "meaning": "Selected research evidence gates only; metadata truth and normative compliance unverified",
+        "production_qualified": false,
+        "hardware_validated": false
+      }
+    }
+  ],
+  "mathematics": {
+    "all_synthetic": true,
+    "shared_reference_mean": {
+      "shared_u": 0.003,
+      "repeat_u": 0.001,
+      "n": 25,
+      "correct_u": 0.0030066592756745818,
+      "wrong_independence_u": 0.0006324555320336759,
+      "understatement_factor": 4.753945729601885
+    },
+    "paired_change": {
+      "each_total_u": 0.0031622776601683794,
+      "covariance": 9e-06,
+      "u_delta": 0.0014142135623730955,
+      "wrong_independence_u_delta": 0.00447213595499958
+    },
+    "conditional_innovation": {
+      "mean_shift": 1.5,
+      "innovation_variance": 6.75,
+      "conditions": "fixed parameters; known joint Gaussian covariance"
+    },
+    "nonlinear_square": {
+      "sigma_x": 0.2,
+      "plugin_estimate": 0.0,
+      "first_order_u": 0.0,
+      "analytic_expectation": 0.04000000000000001,
+      "analytic_u": 0.05656854249492382
+    },
+    "negative_clipping": {
+      "signed_nm": 2.0,
+      "max_zero_clipped_nm": 4.0,
+      "device_algorithm_claim": false
+    },
+    "density_switch_normalized": {
+      "equivalent_areal_increment": 1.0,
+      "rho_before": 5.0,
+      "rho_after": 1.0,
+      "display_before": 0.2,
+      "display_after": 1.0,
+      "ratio": 5.0,
+      "physical_mass_inference": false
+    },
+    "tooling_feedback": {
+      "c_before": 1.0,
+      "c_after": 1.1,
+      "constant_display_target": 1.0,
+      "qcm_target_after": 0.9090909090909091,
+      "user_device_measurement": false
+    },
+    "known_old_source_residual": {
+      "synthetic_visible_rate_nm_s": 0.2,
+      "duration_s": 5.0,
+      "thickness_nm": 1.0,
+      "unknown_visibility_thickness_nm": null
+    },
+    "interval_cases": {
+      "0.950": {
+        "decision": "accept_under_rule",
+        "interval": [
+          "0.946",
+          "0.954"
+        ],
+        "rule": "project_closed_interval_v1",
+        "qualification_claim": false
+      },
+      "0.942": {
+        "decision": "indeterminate",
+        "interval": [
+          "0.938",
+          "0.946"
+        ],
+        "rule": "project_closed_interval_v1",
+        "qualification_claim": false
+      },
+      "0.930": {
+        "decision": "reject_under_rule",
+        "interval": [
+          "0.926",
+          "0.934"
+        ],
+        "rule": "project_closed_interval_v1",
+        "qualification_claim": false
+      },
+      "0.944": {
+        "decision": "accept_under_rule",
+        "interval": [
+          "0.940",
+          "0.948"
+        ],
+        "rule": "project_closed_interval_v1",
+        "qualification_claim": false
+      },
+      "0.936": {
+        "decision": "indeterminate",
+        "interval": [
+          "0.932",
+          "0.940"
+        ],
+        "rule": "project_closed_interval_v1",
+        "qualification_claim": false
+      }
+    }
+  },
+  "all_expected": true,
+  "hardware_validated": false,
+  "production_qualified": false
+}

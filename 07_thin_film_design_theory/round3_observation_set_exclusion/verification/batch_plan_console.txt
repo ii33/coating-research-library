@@ -1,0 +1,41 @@
+{
+  "stage": "T07R3",
+  "mode": "plan_only",
+  "executed": false,
+  "case_payload_sha256": "77d394ff69ed69e116b86d8bdf574081ad8c05a7bbdae306ac55e275a1ddbce7",
+  "derived_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+  "tasks": [
+    {
+      "id": "future_continuous_candidate_set",
+      "domain": "joint z and outer-layer multiplier, plus explicitly contracted nuisance variables",
+      "goal": "enclose feasible set with complete coverage and retain unresolved boxes",
+      "requires": [
+        "new parameter domain contract",
+        "error/model-discrepancy evidence",
+        "budget approval"
+      ]
+    },
+    {
+      "id": "future_real_observation",
+      "goal": "test candidate predictions with same-state measured nk and calibrated two-channel operator",
+      "requires": [
+        "actual specimen and state linkage",
+        "actual instrument adapter",
+        "real readout/calibration bounds",
+        "source reachable-set evidence",
+        "device authorization"
+      ]
+    }
+  ],
+  "stopping_rule": "Every domain box classified or retained UNKNOWN at explicit width/node limits; never treat budget exhaustion as exclusion",
+  "unsupported_execution": [
+    "heavy",
+    "devices",
+    "multi_batch_fit",
+    "continuous_band_certificate"
+  ],
+  "quota_bypass": false,
+  "point12": "partial_unchanged",
+  "point2": "conditional_non_strict_unchanged",
+  "formal_review_chain": "pending"
+}

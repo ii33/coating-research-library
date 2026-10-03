@@ -1,0 +1,22 @@
+{
+  "reader": {
+    "result": "passed",
+    "payload_files": 100,
+    "payload_bytes": 1343574,
+    "manifest_sha256": "1f6d668b1fe097e743aa7d5dffef687866e3a008d36e4a1ba8f23a473881f7c0",
+    "copied_dependencies": 53,
+    "sibling_dependencies": false,
+    "network_needed": false,
+    "local_links_and_anchors": 25,
+    "local_image_resources": 3,
+    "external_assets": 0,
+    "scripts": 0,
+    "html_layout": "unverified_existing_browser_socket_restriction_not_retried"
+  },
+  "archive_exact_members": true,
+  "small_tests_returncode": 0,
+  "small_test_output": "test_add_enclosure (test_bounded_optics.ArithmeticTests.test_add_enclosure) ... ok\ntest_complex (test_bounded_optics.ArithmeticTests.test_complex) ... ok\ntest_cos_zero (test_bounded_optics.ArithmeticTests.test_cos_zero) ... ok\ntest_div_zero (test_bounded_optics.ArithmeticTests.test_div_zero) ... ok\ntest_mul_crossing (test_bounded_optics.ArithmeticTests.test_mul_crossing) ... ok\ntest_nan (test_bounded_optics.ArithmeticTests.test_nan) ... ok\ntest_outward_float (test_bounded_optics.ArithmeticTests.test_outward_float) ... ok\ntest_pi (test_bounded_optics.ArithmeticTests.test_pi) ... ok\ntest_reversed (test_bounded_optics.ArithmeticTests.test_reversed) ... ok\ntest_sin_pi (test_bounded_optics.ArithmeticTests.test_sin_pi) ... ok\ntest_square_zero (test_bounded_optics.ArithmeticTests.test_square_zero) ... ok\ntest_wide_trig (test_bounded_optics.ArithmeticTests.test_wide_trig) ... ok\ntest_angle (test_bounded_optics.ContractTests.test_angle) ... ok\ntest_bandwidth_edge (test_bounded_optics.ContractTests.test_bandwidth_edge) ... ok\ntest_bare_interface (test_bounded_optics.ContractTests.test_bare_interface) ... ok\ntest_contract_incomparable (test_bounded_optics.ContractTests.test_contract_incomparable) ... ok\ntest_crossing (test_bounded_optics.ContractTests.test_crossing) ... ok\ntest_density_qcm_bulk (test_bounded_optics.ContractTests.test_density_qcm_bulk) ... ok\ntest_dependency_copies (test_bounded_optics.ContractTests.test_dependency_copies) ... ok\ntest_driver_default_plan_only (test_bounded_optics.ContractTests.test_driver_default_plan_only) ... ok\ntest_finite_backside (test_bounded_optics.ContractTests.test_finite_backside) ... ok\ntest_full_response_not_point (test_bounded_optics.ContractTests.test_full_response_not_point) ... ok\ntest_inventory (test_bounded_optics.ContractTests.test_inventory) ... ok\ntest_near_zero (test_bounded_optics.ContractTests.test_near_zero) ... ok\ntest_negative (test_bounded_optics.ContractTests.test_negative) ... ok\ntest_nk_measured_claim (test_bounded_optics.ContractTests.test_nk_measured_claim) ... ok\ntest_nonlambert (test_bounded_optics.ContractTests.test_nonlambert) ... ok\ntest_order_and_units (test_bounded_optics.ContractTests.test_order_and_units) ... ok\ntest_point_only (test_bounded_optics.ContractTests.test_point_only) ... ok\ntest_positive_gate (test_bounded_optics.ContractTests.test_positive_gate) ... ok\ntest_quarterwave_interior_not_corners (test_bounded_optics.ContractTests.test_quarterwave_interior_not_corners) ... ok\ntest_sample_mismatch (test_bounded_optics.ContractTests.test_sample_mismatch) ... ok\ntest_scatter (test_bounded_optics.ContractTests.test_scatter) ... ok\ntest_shared_ratio_not_independent (test_bounded_optics.ContractTests.test_shared_ratio_not_independent) ... ok\ntest_subdivision_cover (test_bounded_optics.ContractTests.test_subdivision_cover) ... ok\ntest_tamper_full_forward (test_bounded_optics.ContractTests.test_tamper_full_forward) ... ok\ntest_tiny_results (test_bounded_optics.ContractTests.test_tiny_results) ... ok\ntest_unknown (test_bounded_optics.ContractTests.test_unknown) ... ok\ntest_weights (test_bounded_optics.ContractTests.test_weights) ... ok\n\n----------------------------------------------------------------------\nRan 39 tests in 0.107s\n\nOK\n",
+  "copied_full_chain_import_and_unknown_gate": "unknown_source_angular_law",
+  "layout": "unverified",
+  "detached_from_sibling_directories": true
+}

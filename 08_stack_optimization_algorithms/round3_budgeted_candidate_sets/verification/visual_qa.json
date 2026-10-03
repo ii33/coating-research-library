@@ -1,0 +1,41 @@
+{
+  "result": "png_pixels_checked",
+  "reviewer": "author_visual_inspection",
+  "images": [
+    {
+      "path": "figures/01_contract_and_implications.png",
+      "sha256": "89442e5382f07c95b07f2bd500f8ebf7c1c8857e073f0f97256580189a2557d5",
+      "dimensions": [
+        1529,
+        867
+      ],
+      "pixel_inspected": true,
+      "finding": "text readable; no clipping or overlap; axes/legend/caption consistent"
+    },
+    {
+      "path": "figures/02_budgeted_cover.png",
+      "sha256": "bf43037571e55d49eb32795fda68a9adb099afc10b2a8da7846c118a9e7fee29",
+      "dimensions": [
+        2062,
+        931
+      ],
+      "pixel_inspected": true,
+      "finding": "text readable; no clipping or overlap; axes/legend/caption consistent"
+    },
+    {
+      "path": "figures/03_objective_and_semantics.png",
+      "sha256": "3c5ac18a8d454b5d38ef60537cab8b72f94a635fc97be8a3f025335f1e98b57e",
+      "dimensions": [
+        1901,
+        881
+      ],
+      "pixel_inspected": true,
+      "finding": "text readable; no clipping or overlap; axes/legend/caption consistent"
+    }
+  ],
+  "html_static": "checked by reader",
+  "html_layout": "unverified_existing_permission_restriction_not_retried",
+  "headless_attempts": 0,
+  "browser_attempts": 0,
+  "optical_evaluations_for_rendering": 0
+}

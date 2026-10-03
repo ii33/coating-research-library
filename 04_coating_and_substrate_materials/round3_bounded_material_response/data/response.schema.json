@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "T04 bounded response input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "dataset_kind",
+    "material_id",
+    "substrate_id",
+    "law",
+    "source_scale_kg_s",
+    "density_kg_m3",
+    "density_basis",
+    "sticking_s0",
+    "angular_a",
+    "energy_b",
+    "temperature_c",
+    "energy_history_eV",
+    "energy_domain_eV",
+    "temperature_history_K",
+    "temperature_domain_K",
+    "erosion_mass_kg_m2",
+    "initial_inventory_kg_m2",
+    "model_transfer_status",
+    "units"
+  ],
+  "properties": {
+    "dataset_kind": {
+      "type": "string"
+    },
+    "material_id": {
+      "type": "string"
+    },
+    "substrate_id": {
+      "type": "string"
+    },
+    "law": {
+      "type": "string"
+    },
+    "source_scale_kg_s": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "density_kg_m3": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "density_basis": {
+      "type": "string"
+    },
+    "sticking_s0": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "angular_a": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "energy_b": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "temperature_c": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "energy_history_eV": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "energy_domain_eV": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "temperature_history_K": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "temperature_domain_K": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "erosion_mass_kg_m2": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "initial_inventory_kg_m2": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "model_transfer_status": {
+      "type": "string"
+    },
+    "units": {
+      "type": "string"
+    }
+  },
+  "$comment": "Syntax only; Response.validate enforces ordered intervals, positivity, histories, density basis and allowed synthetic/unmeasured states. Physically measured response is not supported."
+}

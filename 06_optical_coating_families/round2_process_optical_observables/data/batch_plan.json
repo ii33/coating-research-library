@@ -1,0 +1,89 @@
+{
+  "mode": "plan_only",
+  "purpose": "bounded multi-band angle/polarization batches plus local derivatives and supplied covariance uncertainty; user arranges device later",
+  "bands_um": [
+    [
+      0.42,
+      0.5,
+      101
+    ],
+    [
+      0.5,
+      0.7,
+      201
+    ],
+    [
+      0.7,
+      0.98,
+      141
+    ]
+  ],
+  "angles_deg": [
+    0,
+    30,
+    45,
+    60,
+    75
+  ],
+  "polarizations": [
+    "s",
+    "p",
+    "unpolarized"
+  ],
+  "parameters": [
+    {
+      "name": "thickness_scale",
+      "nominal": 1.0,
+      "step": 0.001
+    },
+    {
+      "name": "A",
+      "nominal": 1.8,
+      "step": 0.001
+    },
+    {
+      "name": "B_um2",
+      "nominal": 0.01,
+      "step": 0.0001
+    },
+    {
+      "name": "k",
+      "nominal": 0.01,
+      "step": 0.0001
+    }
+  ],
+  "parameter_covariance": [
+    [
+      0.0004,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0.0001,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1e-06,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1e-06
+    ]
+  ],
+  "monte_carlo_samples": 1000,
+  "seed": 31,
+  "channels": [
+    "R_detected",
+    "T_detected"
+  ],
+  "actual_device_validation": "not_run",
+  "uncertainty_meaning": "synthetic supplied input covariance only; source/model discrepancy remains unknown"
+}

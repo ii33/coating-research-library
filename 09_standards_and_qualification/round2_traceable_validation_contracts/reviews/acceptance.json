@@ -1,0 +1,31 @@
+{
+  "version": "T09R2-1.0",
+  "status": "research_contract_ready_real_validation_pending",
+  "reports": 10,
+  "sources": 22,
+  "evidence_checklist_gates": 17,
+  "tiny_fixture_scenarios": 15,
+  "unit_test_methods": 22,
+  "unit_tests": "passed",
+  "semantic_examples": "all_expected",
+  "schema_structure_check": "passed_with_preinstalled_jsonschema",
+  "reader_static": "passed",
+  "reader_visual_and_interaction": "blocked_not_run",
+  "independent_check": {
+    "count": 1,
+    "scope": "units_and_selected_evidence_rules",
+    "findings": "Decimal ambient precision bug and overbroad hot-source prose",
+    "author_fixes": "implemented and regression-tested",
+    "independent_rereview": "not_run"
+  },
+  "full_designated_review_chain": "pending_not_run",
+  "T08_heavy_batch": "not_run_awaiting_device",
+  "actual_measurements": false,
+  "hardware_validated": false,
+  "production_qualified": false,
+  "environment_qualification": false,
+  "damage_qualification": false,
+  "third_party_originals_included": false,
+  "publication_authorized": false,
+  "freeze_verification": "Recorded separately after manifest creation in reviews/freeze_verify.json"
+}

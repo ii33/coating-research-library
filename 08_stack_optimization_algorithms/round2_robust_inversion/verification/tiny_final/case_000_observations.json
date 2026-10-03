@@ -1,0 +1,204 @@
+{
+  "truth": [
+    1.8,
+    0.02,
+    0.1
+  ],
+  "truth_model": "constant",
+  "scenario": "clean",
+  "fit_records": [
+    {
+      "kind": "R",
+      "wavelength_um": 0.5,
+      "angle_deg": 45.0,
+      "polarization": "s"
+    },
+    {
+      "kind": "T",
+      "wavelength_um": 0.5,
+      "angle_deg": 45.0,
+      "polarization": "s"
+    },
+    {
+      "kind": "R",
+      "wavelength_um": 0.5,
+      "angle_deg": 45.0,
+      "polarization": "p"
+    },
+    {
+      "kind": "T",
+      "wavelength_um": 0.5,
+      "angle_deg": 45.0,
+      "polarization": "p"
+    },
+    {
+      "kind": "R",
+      "wavelength_um": 0.65,
+      "angle_deg": 45.0,
+      "polarization": "s"
+    },
+    {
+      "kind": "T",
+      "wavelength_um": 0.65,
+      "angle_deg": 45.0,
+      "polarization": "s"
+    },
+    {
+      "kind": "R",
+      "wavelength_um": 0.65,
+      "angle_deg": 45.0,
+      "polarization": "p"
+    },
+    {
+      "kind": "T",
+      "wavelength_um": 0.65,
+      "angle_deg": 45.0,
+      "polarization": "p"
+    }
+  ],
+  "heldout_records": [
+    {
+      "kind": "R",
+      "wavelength_um": 0.57,
+      "angle_deg": 55.0,
+      "polarization": "s"
+    },
+    {
+      "kind": "T",
+      "wavelength_um": 0.57,
+      "angle_deg": 55.0,
+      "polarization": "s"
+    },
+    {
+      "kind": "R",
+      "wavelength_um": 0.57,
+      "angle_deg": 55.0,
+      "polarization": "p"
+    },
+    {
+      "kind": "T",
+      "wavelength_um": 0.57,
+      "angle_deg": 55.0,
+      "polarization": "p"
+    }
+  ],
+  "fit_mean": [
+    0.201142042299785,
+    0.7573864551670211,
+    0.03925367248837369,
+    0.9102234289818392,
+    0.23157909137529364,
+    0.7365014348299118,
+    0.0490961080094748,
+    0.9116427096509052
+  ],
+  "heldout_mean": [
+    0.29863407785772644,
+    0.667698923470093,
+    0.015635713390754185,
+    0.9369597702400896
+  ],
+  "fit_y": [
+    0.2007038134164397,
+    0.7592446693306164,
+    0.040497583783851175,
+    0.9095230566745599,
+    0.22959902732580154,
+    0.737989869754537,
+    0.04745464405573131,
+    0.9098210566612973
+  ],
+  "heldout_y": [
+    0.29324760224434543,
+    0.6679359522779227,
+    0.013818952737801246,
+    0.9357545766307864
+  ],
+  "noise_covariance": [
+    [
+      4e-06,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      4e-06,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      4e-06,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      4e-06,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4e-06,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4e-06,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4e-06,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      4e-06
+    ]
+  ],
+  "split_declared_before_fit": true,
+  "actual_hardware": null,
+  "conditional_synthetic": true,
+  "outlier_units": "absolute R/T fraction",
+  "sloped_n_unit": "um^-1"
+}

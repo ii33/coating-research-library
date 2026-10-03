@@ -1,0 +1,95 @@
+"""Exact payload/ZIP manifest and outside-scope audit. No network or device I/O."""
+from pathlib import Path
+from html.parser import HTMLParser
+from urllib.parse import urlparse,unquote
+from datetime import datetime,timezone
+import hashlib,json,argparse,zipfile,sys
+R=Path(__file__).resolve().parents[1];LIBRARY=R.parents[1]
+ZIP='T10_round2_observable_material_response_reader.zip'
+EXCLUDE={'freeze_manifest.json','verification/freeze_receipt.json',ZIP}
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def dump(p,v):p.write_text(json.dumps(v,ensure_ascii=False,indent=2,allow_nan=False)+'\n')
+def payload():
+    files=[]
+    for p in sorted(R.rglob('*')):
+        if p.is_symlink():raise ValueError('Symlink disallowed: '+str(p))
+        if p.is_file():
+            rel=p.relative_to(R).as_posix()
+            if '__pycache__' in p.parts or '.mplconfig' in p.parts:raise ValueError('Transient cache in package: '+rel)
+            if rel not in EXCLUDE:files.append(p)
+    return files
+class Scan(HTMLParser):
+    def __init__(self):super().__init__(convert_charrefs=True);self.refs=[];self.ids=[];self.scripts=0;self.imgs=0
+    def handle_starttag(self,tag,attrs):
+        a=dict(attrs)
+        if 'id'in a:self.ids.append(a['id'])
+        if tag=='script':self.scripts+=1
+        if tag=='img':self.imgs+=1
+        for k in ('href','src'):
+            if k in a:self.refs.append((tag,a[k]))
+def reader_check():
+    s=Scan();s.feed((R/'index.html').read_text());missing=[];remote_resources=[]
+    for tag,url in s.refs:
+        u=urlparse(url)
+        if u.scheme:
+            if tag!='a':remote_resources.append(url)
+            continue
+        if url.startswith('#'):
+            if url[1:] not in s.ids:missing.append(url)
+        elif not (R/unquote(u.path)).is_file():missing.append(url)
+    citations=[]
+    registry=json.loads((R/'sources/source_registry.json').read_text());ids={x['source_id'] for x in registry}
+    import re
+    for p in (R/'reports').glob('*.md'):
+        for x in re.findall(r'\b(?:IS|IR)-\d{2}\b',p.read_text()):
+            if x not in ids:citations.append({'file':p.name,'source_id':x})
+    return {'status':'passed' if not missing and not remote_resources and not s.scripts and len(s.ids)==len(set(s.ids)) and not citations else 'failed','missing_links':missing,'remote_runtime_resources':remote_resources,'scripts':s.scripts,'images':s.imgs,'anchors':len(s.ids),'unregistered_citations':citations,'browser_layout':'unverified; prior denied localhost/socket route not retried','figure_png_visual_review':'all 3 inspected; labels/captions legible','scope':'Rendered main HTML and its resources; frozen dependency Markdown keeps original links for provenance and is not reader navigation'}
+def dependency_check():
+    problems=[]
+    for d in json.loads((R/'dependencies/provenance.json').read_text()):
+        a=LIBRARY/d['upstream_path'];b=R/d['copy_path']
+        if not a.is_file() or not b.is_file() or sha(a)!=d['sha256'] or sha(b)!=d['sha256']:problems.append(d['upstream_path'])
+    return {'status':'passed' if not problems else 'failed','copies':21,'problems':problems}
+def outside_check():
+    base=json.loads((R/'verification/outside_before.json').read_text())['files']
+    now={str(p.relative_to(LIBRARY)):sha(p) for p in sorted(LIBRARY.rglob('*')) if p.is_file() and not p.is_relative_to(R)}
+    changed=[x for x in base.keys()&now.keys() if base[x]!=now[x]]
+    return {'status':'unchanged' if not changed and base.keys()==now.keys() else 'changed','baseline_count':len(base),'current_count':len(now),'modified':sorted(changed),'added':sorted(now.keys()-base.keys()),'removed':sorted(base.keys()-now.keys()),'scope':'Every file under coating-research-library outside this new directory','captured_at':datetime.now(timezone.utc).isoformat()}
+def freeze():
+    if (R/'freeze_manifest.json').exists():raise ValueError('Already frozen; do not rewrite evidence')
+    rc=reader_check();dc=dependency_check();oc=outside_check()
+    if rc['status']!='passed' or dc['status']!='passed' or oc['status']!='unchanged':raise ValueError(json.dumps({'reader':rc,'dependencies':dc,'outside':oc}))
+    dump(R/'verification/reader_structure_check.json',rc);dump(R/'verification/dependency_check.json',dc);dump(R/'verification/outside_scope_check.json',oc)
+    status=json.loads((R/'stage_status.json').read_text());status['status']='locally_frozen_research_only';dump(R/'stage_status.json',status)
+    entries=[{'path':p.relative_to(R).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p)} for p in payload()]
+    manifest={'version':'t10r2-exact-manifest-1','created_at':datetime.now(timezone.utc).isoformat(),'algorithm':'sha256','coverage':'Every file in this directory except the explicit recursion exclusions','excluded':sorted(EXCLUDE),'files':entries,'originals_policy':'No third-party originals copied; NASA originals remain upstream local-only; MXC derived report only'}
+    dump(R/'freeze_manifest.json',manifest)
+    with zipfile.ZipFile(R/ZIP,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+        for rel in sorted([d['path'] for d in entries]+['freeze_manifest.json']):
+            info=zipfile.ZipInfo(rel,date_time=(1980,1,1,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
+            z.writestr(info,(R/rel).read_bytes(),compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+    receipt={'status':'locally_frozen_research_only','created_at':datetime.now(timezone.utc).isoformat(),'manifest_sha256':sha(R/'freeze_manifest.json'),'manifest_payload_files':len(entries),'zip_path':ZIP,'zip_sha256':sha(R/ZIP),'zip_bytes':(R/ZIP).stat().st_size,'zip_entries':len(entries)+1,'zip_coverage':'Manifest plus every manifest payload entry exactly; receipt is external to avoid circular hashing','outside_status':oc['status'],'outside_files_checked':oc['baseline_count'],'dependencies_status':dc['status'],'reader_structure':rc['status'],'browser_layout':'unverified','unit_tests_passed':33,'independent_checks':1,'heavy_and_actual_validation':'not_run_awaiting_device','external_publication':'not_performed'}
+    dump(R/'verification/freeze_receipt.json',receipt)
+    print(json.dumps(receipt,ensure_ascii=False,indent=2))
+def verify():
+    m=json.loads((R/'freeze_manifest.json').read_text());rec=json.loads((R/'verification/freeze_receipt.json').read_text());issues=[]
+    actual={p.relative_to(R).as_posix():p for p in payload()};expected={d['path']:d for d in m['files']}
+    if actual.keys()!=expected.keys():issues.append('payload path set mismatch')
+    for rel,d in expected.items():
+        p=actual.get(rel)
+        if p is None or p.stat().st_size!=d['bytes'] or sha(p)!=d['sha256']:issues.append('payload mismatch '+rel)
+    if sha(R/'freeze_manifest.json')!=rec['manifest_sha256']:issues.append('manifest receipt mismatch')
+    if sha(R/ZIP)!=rec['zip_sha256']:issues.append('zip receipt mismatch')
+    with zipfile.ZipFile(R/ZIP) as z:
+        names=z.namelist()
+        if len(names)!=len(set(names)) or set(names)!=set(expected)|{'freeze_manifest.json'}:issues.append('zip exact path set mismatch')
+        for rel in names:
+            if z.read(rel)!=(R/rel).read_bytes():issues.append('zip byte mismatch '+rel)
+    dep=dependency_check();outside=outside_check();reader=reader_check()
+    if dep['status']!='passed' or outside['status']!='unchanged' or reader['status']!='passed':issues.append('supporting checks failed')
+    print(json.dumps({'status':'passed' if not issues else 'failed','issues':issues,'payload_files':len(expected),'zip_entries':len(names),'dependencies':dep,'outside':outside,'reader':reader},ensure_ascii=False,indent=2))
+    return 1 if issues else 0
+if __name__=='__main__':
+    ap=argparse.ArgumentParser();g=ap.add_mutually_exclusive_group(required=True);g.add_argument('--freeze',action='store_true');g.add_argument('--verify',action='store_true');args=ap.parse_args()
+    if args.freeze:freeze()
+    else:sys.exit(verify())

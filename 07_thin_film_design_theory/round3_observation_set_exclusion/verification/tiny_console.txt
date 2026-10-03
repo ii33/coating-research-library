@@ -1,0 +1,179 @@
+{
+  "runs": [
+    {
+      "hypothesis": "H0",
+      "channels": [
+        "M0"
+      ],
+      "status": "feasible_witness_box",
+      "counts": {
+        "OUT": 32,
+        "IN": 8,
+        "UNKNOWN": 16
+      },
+      "evaluated_nodes": 111
+    },
+    {
+      "hypothesis": "H0",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "status": "feasible_witness_box",
+      "counts": {
+        "OUT": 32,
+        "IN": 8,
+        "UNKNOWN": 16
+      },
+      "evaluated_nodes": 111
+    },
+    {
+      "hypothesis": "H_outer10",
+      "channels": [
+        "M0"
+      ],
+      "status": "feasible_witness_box",
+      "counts": {
+        "OUT": 23,
+        "IN": 5,
+        "UNKNOWN": 9
+      },
+      "evaluated_nodes": 73
+    },
+    {
+      "hypothesis": "H_outer10",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "status": "excluded_encoded_model",
+      "counts": {
+        "OUT": 7,
+        "IN": 0,
+        "UNKNOWN": 0
+      },
+      "evaluated_nodes": 13
+    },
+    {
+      "hypothesis": "H_global002",
+      "channels": [
+        "M0"
+      ],
+      "status": "feasible_witness_box",
+      "counts": {
+        "OUT": 32,
+        "IN": 8,
+        "UNKNOWN": 16
+      },
+      "evaluated_nodes": 111
+    },
+    {
+      "hypothesis": "H_global002",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "status": "feasible_witness_box",
+      "counts": {
+        "OUT": 32,
+        "IN": 8,
+        "UNKNOWN": 16
+      },
+      "evaluated_nodes": 111
+    }
+  ],
+  "witnesses": [
+    {
+      "hypothesis": "H0",
+      "z_exact": "1",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "all_point_enclosures_inside_data": true,
+      "R": {
+        "M0": [
+          0.011583971201202034,
+          0.011583971201202036
+        ],
+        "M1": [
+          0.01707088413095479,
+          0.017070884130954794
+        ]
+      },
+      "R_exact": {
+        "M0": [
+          "14004161878805429885997/1208925819614629174706176",
+          "14004161878805429886131/1208925819614629174706176"
+        ],
+        "M1": [
+          "5159358147390221954495/302231454903657293676544",
+          "10318716294780443909057/604462909807314587353088"
+        ]
+      },
+      "meaning": "verified feasible point for declared hard box, not exact equality to central readings"
+    },
+    {
+      "hypothesis": "H_outer10",
+      "z_exact": "503/500",
+      "channels": [
+        "M0"
+      ],
+      "all_point_enclosures_inside_data": true,
+      "R": {
+        "M0": [
+          0.011520737427540163,
+          0.011520737427540164
+        ]
+      },
+      "R_exact": {
+        "M0": [
+          "13927716937153926711097/1208925819614629174706176",
+          "13927716937153926711225/1208925819614629174706176"
+        ]
+      },
+      "meaning": "verified feasible point for declared hard box, not exact equality to central readings"
+    },
+    {
+      "hypothesis": "H_global002",
+      "z_exact": "500/501",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "all_point_enclosures_inside_data": true,
+      "R": {
+        "M0": [
+          0.011583971201202034,
+          0.011583971201202036
+        ],
+        "M1": [
+          0.01707088413095479,
+          0.017070884130954794
+        ]
+      },
+      "R_exact": {
+        "M0": [
+          "14004161878805429885983/1208925819614629174706176",
+          "218815029356334841971/18889465931478580854784"
+        ],
+        "M1": [
+          "20637432589560887817969/1208925819614629174706176",
+          "10318716294780443909063/604462909807314587353088"
+        ]
+      },
+      "meaning": "verified feasible point for declared hard box, not exact equality to central readings"
+    }
+  ],
+  "budget": {
+    "runs": 6,
+    "evaluated_nodes": 530,
+    "scalar_wavelength_enclosures": 1760,
+    "max_total_nodes": 762,
+    "monte_carlo_draws": 0,
+    "optimizer_calls": 0,
+    "devices": 0
+  },
+  "elapsed_seconds": 25.21436687199457
+}
+

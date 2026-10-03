@@ -1,0 +1,57 @@
+{
+  "status": "passed_detached",
+  "archive_sha256": "9ede3945cdb98aa41bed55da01a57483fc0fd2958cafdbb87f71d61ae8ad7290",
+  "manifest_sha256": "bf1b993c44a698499100b30952199b59ae27cf23c5e43e71ab571d5cd2790550",
+  "payload_sha256": "6294ea843efab3737891509c55db57131dc07d94a674b252575dcf86fd516c9e",
+  "archive_entries": 79,
+  "payload_files": 78,
+  "copied_dependencies": 23,
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "verification/reader_check.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "models/device_driver.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "models/run_examples.py",
+        "--output",
+        "<external-temporary-output>"
+      ],
+      "returncode": 0
+    }
+  ],
+  "small_tests": 30,
+  "byte_identical_example_recompute": true,
+  "no_sibling_directory_dependency": true,
+  "originals_excluded": true,
+  "high_cost_driver_run": false,
+  "html_browser_layout": "unverified",
+  "temporary_tree_removed_after_check": true
+}

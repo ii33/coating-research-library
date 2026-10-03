@@ -1,17 +1,84 @@
 {
-  "scope": "current planning and consolidated second-round T02v0.3-to-T05 handoff with device validation pending",
-  "version": "0.15",
+  "scope": "current root planning for third-sweep bounded local completion and consolidated publication; frozen stages immutable",
+  "version": "0.17-round3-consolidated",
   "created_at_utc": "2026-10-01T23:57:07+00:00",
+  "updated_at_utc": "2026-10-02T23:55:00.721648+00:00",
+  "exclusions": [
+    "self",
+    "00_project/CONSOLIDATED_PUBLICATION_MANIFEST.json (avoids cyclic manifests)",
+    "00_project/round2_prospective_publish_manifest.json (historical candidate, not current manifest)",
+    "00_project/LOCAL_ONLY_RECOVERY_PROVENANCE.json (private local provenance)"
+  ],
   "files": [
+    {
+      "path": "00_project/CONSOLIDATED_PUBLICATION.md",
+      "size_bytes": 3614,
+      "sha256": "979d762cf96955623aab7cd93a157e74a7cb23af5eb29701a53e9d266cee0b00"
+    },
+    {
+      "path": "00_project/CONSOLIDATED_PUBLICATION_ALLOWLIST.txt",
+      "size_bytes": 169613,
+      "sha256": "d5fc6ce5eebf4d38d729fdd600baffb85ada3c96443e53651b0da715df7d7ea4"
+    },
+    {
+      "path": "00_project/FIRST_SWEEP_REVIEW_DRAFT.md",
+      "size_bytes": 13851,
+      "sha256": "de68d0ac6ad78e4099202e863c4929a1681ebb950ffbab3d4de826bfa8a943aa"
+    },
+    {
+      "path": "00_project/PRIOR_RESEARCH_CROSS_REFERENCE.md",
+      "size_bytes": 5351,
+      "sha256": "10bbbe6b1c9ffe6563e4443c4e438182cf84e50b6a066816cecced74037b5314"
+    },
+    {
+      "path": "00_project/PUBLICATION_PREFLIGHT.json",
+      "size_bytes": 9375,
+      "sha256": "7aee6f94eaae4c0d0b767c3e15fdf1539ca9daac30adfc1f2ac9225ca5cd6bdb"
+    },
+    {
+      "path": "00_project/ROUND2_EVIDENCE_INDEX.json",
+      "size_bytes": 15700,
+      "sha256": "03b02cba7657cd747e163d996c2ed292ae95798087293e247988737e0f74e593"
+    },
+    {
+      "path": "00_project/ROUND2_PUBLICATION_PLAN.md",
+      "size_bytes": 4625,
+      "sha256": "77e4d5cd3e0a82e0d0126463a826d15bb86310cb88e2cadd0a03624c5ec2ba83"
+    },
+    {
+      "path": "00_project/ROUND2_REPRODUCTION_AND_DEVICE_PLAN.md",
+      "size_bytes": 7849,
+      "sha256": "6f775dfcd3eab0799b3adeef44b779946832a6897fca0a19ee82a32cf1f98ef6"
+    },
+    {
+      "path": "00_project/ROUND3_EVIDENCE_INDEX.json",
+      "size_bytes": 10903,
+      "sha256": "9e505a9dcaff5d10c717bee15a2cab98f0e94a8524d27db6f884f2728b359c6e"
+    },
+    {
+      "path": "00_project/ROUND3_PRIORITY_DRAFT.md",
+      "size_bytes": 3487,
+      "sha256": "f77a712a9df3fc777fa20aa0869fbde73fc2b0de3b3210ade904f70d1b613bc1"
+    },
+    {
+      "path": "00_project/SECOND_SWEEP_SYNTHESIS.md",
+      "size_bytes": 8529,
+      "sha256": "16df68d75abd4341bdfc0b42e8acb3b3cba62ba93cb268906682e1b42724217d"
+    },
     {
       "path": "00_project/T01_STAGE_PLAN.md",
       "size_bytes": 1418,
       "sha256": "62fd92474185829280d37f5abc065dc60efa7b4ed8619870456a8e08194fe934"
     },
     {
+      "path": "00_project/THIRD_SWEEP_SYNTHESIS.md",
+      "size_bytes": 5749,
+      "sha256": "930801e2892ab251ce8412f938664e13fa2089cacffbd16f7802e8d3ac5ace74"
+    },
+    {
       "path": "00_project/clarifications.json",
-      "size_bytes": 3244,
-      "sha256": "63ea2086c35f7f81e8c8596d7151fe323dee64586b22a795d5fd06f0b8f9cac2"
+      "size_bytes": 3378,
+      "sha256": "899a4cb4bef8fc5ce0d8dd84395f55238ffeb2dacc24c090a5b0cc810285fd77"
     },
     {
       "path": "00_project/original_manifest.json",
@@ -25,8 +92,18 @@
     },
     {
       "path": "00_project/research_tasks.json",
-      "size_bytes": 38351,
-      "sha256": "7597f9728bac3fb8be8e364fcbfbfef3e7ef3089b7806b7eceab77c64104b017"
+      "size_bytes": 57457,
+      "sha256": "f2602518c0ffe47b8df328f1e9b98d6aee718c3ad2f6ccd85fcd17e8039dd0bf"
+    },
+    {
+      "path": "00_project/round2_consolidation_integrity.json",
+      "size_bytes": 2260,
+      "sha256": "a67ec2737b3085404082881725411489b5d989a5842dd309b0184ddc93b9b835"
+    },
+    {
+      "path": "00_project/round2_prospective_publish_allowlist.txt",
+      "size_bytes": 35285,
+      "sha256": "cd320a988c0ff1cfdb79c4c3898ac2bacb62779f49a735bb3e0e0eb779086d73"
     },
     {
       "path": "00_project/工程科研.txt",
@@ -140,8 +217,8 @@
     },
     {
       "path": "92_glossary/glossary.json",
-      "size_bytes": 1896,
-      "sha256": "19f54e49cac10ec6a6d3549d7185f9079f45ae946f7cc7327ec6abba3528d195"
+      "size_bytes": 2030,
+      "sha256": "25263dff60578447ee1c03332f85539cce7b23b55fc057221457eebb00d9f6fe"
     },
     {
       "path": "93_parameters/README.md",
@@ -200,33 +277,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 9635,
-      "sha256": "62f2eb5b6c1734042b44b869b5fac78425b77337e76d63338c5c96afbf7a70d0"
+      "size_bytes": 11027,
+      "sha256": "97193588857886039e0d9b3eb68b0798aa9c264c117fc047d64eb2ab76baa53e"
     },
     {
       "path": "README.md",
-      "size_bytes": 5784,
-      "sha256": "e79151527f882403d90ad568b667b2129785402c1961314aedc5e738c04a66c6"
+      "size_bytes": 7844,
+      "sha256": "eaa7b32034fee56804c36c5f669e3d8555dcc2320686292a6b74d45f1e891912"
     },
     {
       "path": "ROADMAP.md",
-      "size_bytes": 4973,
-      "sha256": "db45f347466564f48f0d767cb449fa5b8f70d221d7bf499600e95ae29be5c92f"
+      "size_bytes": 5750,
+      "sha256": "1208e1e91533d79fbc01c5e0bd865d9e3610bb1cb1e4ea43a8e6ccb3f00cc29a"
     },
     {
       "path": "STATE.json",
-      "size_bytes": 6373,
-      "sha256": "2c0a42382c7b50bae96a35a44b16d02842618e5766aecd48ecdf4c433df811b9"
+      "size_bytes": 25939,
+      "sha256": "558ad0c3335961ddcb311802eda4d2cce65fdffb186f084a7cbfe9d8d468777c"
     },
     {
       "path": "STATE.md",
-      "size_bytes": 2058,
-      "sha256": "dee8a8d7f1426208bdd66ae478da848948cf001e9c165786ad8fb496ecbf83b7"
-    },
-    {
-      "path": "00_project/FIRST_SWEEP_REVIEW_DRAFT.md",
-      "size_bytes": 13851,
-      "sha256": "de68d0ac6ad78e4099202e863c4929a1681ebb950ffbab3d4de826bfa8a943aa"
+      "size_bytes": 1542,
+      "sha256": "78f49e2ea17e4376868562f7822b437a07275dcf227ab02c2beb7a4a01c83c81"
     }
   ]
 }

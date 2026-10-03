@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "id": "Al_reference_conditional",
+  "evidence_kind": "literature_conditioned",
+  "exploratory_only": true,
+  "design": {
+    "layer_thickness_um": 0.25,
+    "purpose": "synthetic target, not sample measurement"
+  },
+  "process": {
+    "area_basis": "actual_workpiece_area",
+    "net_evidence": "synthetic_balance",
+    "initial_inventory_atoms_m2": {
+      "Al": 0
+    },
+    "qcm": {
+      "sensor_mass_kg_m2": 0.0009,
+      "display_density_kg_m3": 2700,
+      "meaning": "sensor_equivalent_not_workpiece_thickness"
+    },
+    "bins": [
+      {
+        "start_s": 0,
+        "end_s": 100,
+        "temperature_K": 293.15,
+        "incident_atoms_m2_s": {
+          "Al": 2e+20
+        },
+        "net_atoms_m2_s": null,
+        "balance": {
+          "Al": {
+            "retained_fraction": 0.903939190791511,
+            "reaction_gain_atoms_m2_s": 0,
+            "desorption_atoms_m2_s": 0,
+            "resputter_atoms_m2_s": 0
+          }
+        }
+      }
+    ]
+  },
+  "film_state": {
+    "sample_id": "synthetic_inventory_not_McPeak_sample",
+    "state_id": "assumed_McPeak_reference_metal",
+    "stoichiometry": {
+      "Al": 1
+    },
+    "composition_complete": true,
+    "constant_composition_density": true,
+    "density_kg_m3": 2700,
+    "density_basis": "synthetic_film",
+    "measurement_temperature_K": 293.15,
+    "history": "synthetic endpoint; metal-only proxy assumes the public reference n/k; oxide omitted explicitly; not an as-deposited production film"
+  },
+  "optical_model": {
+    "kind": "al_mcpeak_table",
+    "source_class": "public_film",
+    "source_id": "PO-S01",
+    "binding": "assumed_transfer",
+    "sample_id": "McPeak_2015_Al_150Aps_template_stripped",
+    "valid_state_id": "assumed_McPeak_reference_metal",
+    "wavelength_range_um": [
+      0.4,
+      1.0
+    ],
+    "temperature_range_K": [
+      293.15,
+      293.15
+    ],
+    "parameters": null,
+    "uncertainty": null,
+    "transfer_assumptions": "room-temperature evaluation set to 20 C by scenario; paper says room temperature, not a certified 293.15 K domain; metal-only fitted n/k transferred to hypothetical silica substrate; oxide layer absent; no proof of process equivalence"
+  },
+  "substrate": {
+    "kind": "silica_bulk_malitson",
+    "n": null,
+    "temperature_K": 293.15,
+    "thickness_m": 0.001,
+    "bulk_alpha_per_m": 0.0,
+    "bulk_absorption_basis": "synthetic_bulk",
+    "source_id": "PO-S03"
+  },
+  "measurement": {
+    "id": "synthetic_detector",
+    "wavelength_um": [
+      0.45,
+      0.55,
+      0.65,
+      0.85
+    ],
+    "angle_deg": 45,
+    "polarization": "unpolarized",
+    "bandpass_nodes": [
+      {
+        "offset_um": -0.001,
+        "weight": 0.16666666666666666
+      },
+      {
+        "offset_um": 0,
+        "weight": 0.6666666666666666
+      },
+      {
+        "offset_um": 0.001,
+        "weight": 0.16666666666666666
+      }
+    ],
+    "angle_nodes": [
+      {
+        "offset_deg": 0,
+        "weight": 1
+      }
+    ],
+    "backside": "incoherent_finite_all_orders",
+    "coherence_note": "planar intensity sum; all laterally shifted beams admitted, phase randomized, real substrate interface index",
+    "scatter": {
+      "basis": "synthetic_redistribution",
+      "fraction_of_R": 0.0,
+      "fraction_of_T": 0.0
+    },
+    "detector": {
+      "geometry": "ideal specular ports, scatter not collected; hypothetical aperture",
+      "diffuse_R_collection": 0.0,
+      "diffuse_T_collection": 0.0
+    }
+  },
+  "uncertainty_axes": {
+    "source": null,
+    "time": null,
+    "space": null,
+    "geometry": null,
+    "kernel": null,
+    "input": null,
+    "model": null
+  }
+}

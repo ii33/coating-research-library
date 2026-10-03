@@ -1,0 +1,14 @@
+field,unit,object,required_basis,forbidden_substitution
+source_voltage,V,verified power-supply circuit,manufacturer definition and voltage reference,automatic substrate energy
+source_current,A,verified source circuit,definition and return-current correction,local ion current density
+collector_current_raw,A/m2,declared collector aperture,effective area baseline electron and secondary corrections,source panel current
+ion_current_corrected,A/m2,positive charge arriving at declared surface,verified electrical corrections,total particle flux without charge state
+flux_m2_s,particles/m2/s,energy-angle-cell integrated particle flux,charge/species response and actual surface area,QCM mass rate
+energy_ev_particle,eV/particle,total kinetic energy,reference potential and calibrated joint response,planar normal E/q without angular model
+energy_per_charge,V,total kinetic energy per charge,current-weighted complete corrected spectrum,particle-weighted mean without weights
+charged_dose_m2,charged_particles/m2,time integrated charged flux,complete aligned history,charge dose without charge-state conversion
+observed_energy_j_m2,J/m2,observed components incident kinetic energy,stated charged/neutral coverage,total energy when neutrals unknown
+total_energy_j_m2,J/m2,all declared incident energetic components,complete justified coverage,absorbed heat or temperature
+net_atoms_m2,atoms/m2,signed net film elemental inventory,independent material-state inventory,arrival flux or QCM display
+thickness_increment_m,m,signed geometric increment,constant actual film density and composition,optical nd or bulk-density default
+optical_response,declared response unit,specified film and measurement operator,wavelength polarization NA bandwidth backside and state,production/environment/damage qualification

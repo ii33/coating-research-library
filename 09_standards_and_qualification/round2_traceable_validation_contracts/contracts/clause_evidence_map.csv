@@ -1,0 +1,17 @@
+document,locator,source_id,access_basis,contract_fields,evidence_requirement,limit
+JCGM200:2012,2.41,TV-S01,official_fulltext_selected,traceability_graph,Referenced measurement result and documented calibration chain,not_product_qualification
+JCGM100:2008,5.2,TV-S02,official_fulltext_selected,"shared_calibration_groups,covariance",Significant shared factors retained and units/order documented,matrix_truth_not_validated_by_schema
+JCGM100:2008/Amd1:2026,amendment_to4.1.4,TV-S03,official_fulltext_read,nonlinear_propagation_check,Output estimate as well as uncertainty considered under significant nonlinearity,tiny_square_is_original_example
+JCGM GUM6:2020,"11.10,12",TV-S04,official_fulltext_selected,"candidate_models,data_use_ledger",Model adequacy and selection evidence,three_ledger_split_is_project_proposed
+JCGM GUM6:2020,12.9,TV-S04,official_fulltext_selected,numerics.stages,Numerical accuracy and premature termination considered,specific_solver_tolerance_is_not_normative
+JCGM GUM6:2020,13.2,TV-S04,official_fulltext_selected,validated_domain,Explicit extrapolation boundary,no_claim_all_extrapolation_forbidden
+JCGM101:2008,7.9,TV-S05,official_fulltext_selected,numerical_stability,Reported MC summaries and interval endpoints require stability evidence,full_MC_not_implemented
+JCGM106:2012,"8.3,9",TV-S06,official_fulltext_selected,uncertainty_and_decision,Acceptance and tolerance intervals and risk basis distinguished,three_state_rule_is_project_choice
+ISO/IEC17025:2017,7.1.3,TV-S09 §3.3,official_guidance_cites_clause,"decision_rule,approval",Rule and requirement pre-agreement,ISO_fulltext_not_read
+ISO/IEC17025:2017,7.8.6.1,TV-S09 §3.6,official_guidance_cites_clause,"risk_basis,rule_id",Documented rule and associated risk assumptions,ISO_fulltext_not_read
+ISO/IEC17025:2017,7.8.6.2,TV-S09 §3.7,official_guidance_cites_clause,scope_of_claim,Identify results requirements and applied rule,ISO_fulltext_not_read
+ILACP10:07/2020,"2,AppendixA",TV-S08,official_fulltext_selected,calibration_scope,Appropriate traceability route and capability evidence,current_catalogue_retains_old_number
+ISO15368:2021,,TV-S15,catalogue_only,optical_method,Acquire controlled full method and match measurement object,no_normative_clause_verified
+ISO9211-3:2024,,TV-S16,catalogue_only,environment_qualification,Acquire severity and applicability requirements,no_normative_clause_verified
+ISO9211-4:2022,,TV-S17,catalogue_only,durability_method,Acquire full method and execution criteria,no_normative_clause_verified
+ISO21254-1:2025,,TV-S18,catalogue_only,damage_qualification,Acquire definition principles and required other parts,no_normative_clause_verified

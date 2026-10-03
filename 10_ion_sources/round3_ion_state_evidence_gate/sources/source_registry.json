@@ -1,0 +1,52 @@
+{
+  "sources": [
+    {
+      "source_id": "IG-S01",
+      "title": "Sun et al., Properties of the YbF3 Films Prepared by Ion-Assisted Deposition",
+      "doi": "10.3390/coatings12111693",
+      "url": "https://www.mdpi.com/2079-6412/12/11/1693",
+      "year": 2022,
+      "source_class": "original_experiment",
+      "access_scope": "publisher_search_visible_fulltext_sections_2.1_and_3_rechecked",
+      "locator": "2.1 Sample Preparation; 3 Results and Discussion; Figure 3 and 5–8 discussion",
+      "source_family": "Kaufman gridded explicitly identified",
+      "material": "YbF3 film; Ge is a witness substrate, not deposited Ge",
+      "bounded_finding": "Composition/optical/water uptake tradeoffs; distinct witness substrates for different measurements. Nominal voltage groups are source settings.",
+      "limitations": "No local joint spectrum, particle dose, full neutral accounting, or user-film calibration; no YF3 substitution.",
+      "original_archived": false,
+      "original_archive_reason": "direct publisher rate-limit; no original acquired",
+      "redistribute_original": false,
+      "checked_on": "2026-10-02"
+    },
+    {
+      "source_id": "IG-S02",
+      "title": "Zhang et al., Influences of Oxygen Ion Beam on the Properties of Magnesium Fluoride Thin Film Deposited Using Electron Beam Evaporation Deposition",
+      "doi": "10.3390/coatings9120834",
+      "url": "https://www.mdpi.com/2079-6412/9/12/834",
+      "year": 2019,
+      "source_class": "original_experiment",
+      "access_scope": "publisher_search_abstract_sections_3.3_3.4_rechecked; method scope inherited frozen official reprint excerpts",
+      "locator": "Abstract; 3.3 XRD; 3.4 Adhesion; inherited T10R2 IS-18 methods",
+      "source_family": "Kaufman oxygen assist, inherited official method excerpt",
+      "material": "MgF2 film; BK7 and Si witnesses",
+      "bounded_finding": "Optical and adhesion outcomes differ; delayed assistance changes interface history.",
+      "limitations": "No user settings inferred; source mA not local dose; chemical explanation is authors interpretation; inherited method access not elevated to new PDF full read.",
+      "original_archived": false,
+      "original_archive_reason": "publisher limited; institutional PDF 403; official PDF cache miss",
+      "redistribute_original": false,
+      "checked_on": "2026-10-02"
+    },
+    {
+      "source_id": "IG-C01",
+      "title": "Frozen T09R3 full dependency chain, T10R2 observables and T04R3 material evidence",
+      "source_class": "project_derived_analysis",
+      "url": null,
+      "locator": "data/frozen_dependencies.json",
+      "access_scope": "hash-copied exact bytes; selected reports read",
+      "limitations": "Not primary actual film or source evidence; upstream numerical classifications not replayed this round",
+      "redistribute_original": false
+    }
+  ],
+  "source_access_failures_are_not_evidence_of_absence": true,
+  "no_originals_in_reader": true
+}

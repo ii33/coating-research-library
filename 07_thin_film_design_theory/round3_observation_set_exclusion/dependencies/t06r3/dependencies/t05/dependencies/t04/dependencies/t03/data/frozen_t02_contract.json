@@ -1,0 +1,39 @@
+{
+  "schema_version": "t02-r3-affine-slice-1",
+  "dataset_kind": "synthetic",
+  "scene": {
+    "t0": 0.0,
+    "t1": 2.0,
+    "x0_m": -0.4,
+    "velocity_m_s": 0.4,
+    "target_shift_m": 0.03,
+    "source_shift_m": 0.0,
+    "clock_offset_s": 0.0,
+    "amplitude": 1.0,
+    "plate_shift_m": 0.0,
+    "half_width_m": 0.08,
+    "height_m": 1.0,
+    "z_near_m": 0.4,
+    "z_far_m": 0.6,
+    "half_y_m": 0.15,
+    "q0": 1.0,
+    "q1_per_s": 0.3,
+    "event_guard_s": 1e-10,
+    "face_guard_m": 1e-12,
+    "transverse_floor_m_s": 1e-10,
+    "shadow_boundary_uncertainty_m": 0.0
+  },
+  "source_nodes_m": [
+    0.0
+  ],
+  "source_weights": [
+    1.0
+  ],
+  "units": {
+    "length": "m",
+    "time": "s",
+    "angle": "rad",
+    "output": "s/m^2"
+  },
+  "scope": "fixed_affine_y0_slab_cosine_source"
+}

@@ -1,0 +1,110 @@
+{
+  "schema": "t10-portable-isolated-execution-v1",
+  "status": "passed",
+  "scope": "New author-run lightweight checks on isolated temporary copy; not a full-project audit, new independent review, heavy run or device validation. Final sealed integrity/navigation verification is recorded in derived_receipt.json.",
+  "isolation": "Copied files only; new temporary package root; cleared PYTHONPATH; no original sibling files or original ZIP copied; cwd set to copied package; all generated outputs captured outside the copy. System Python dependencies are explicitly declared.",
+  "commands": [
+    {
+      "name": "unit_tests",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "isolated_package_root",
+      "returncode": 0,
+      "elapsed_s": 0.820631268004945,
+      "tests_run": 33,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "name": "plan",
+      "command": [
+        "python",
+        "-B",
+        "models/validation_driver.py"
+      ],
+      "cwd": "isolated_package_root",
+      "returncode": 0,
+      "elapsed_s": 0.7520558109972626,
+      "output_status": "plan_only"
+    },
+    {
+      "name": "tiny",
+      "command": [
+        "python",
+        "-B",
+        "models/validation_driver.py",
+        "--mode",
+        "tiny_synthetic"
+      ],
+      "cwd": "isolated_package_root",
+      "returncode": 0,
+      "elapsed_s": 0.5973642810058664,
+      "output_status": "synthetic_only"
+    },
+    {
+      "name": "synthetic_packet",
+      "command": [
+        "python",
+        "-B",
+        "models/validation_driver.py",
+        "--mode",
+        "offline_packet",
+        "--input",
+        "examples/synthetic_complete.json"
+      ],
+      "cwd": "isolated_package_root",
+      "returncode": 0,
+      "elapsed_s": 0.8558457340041059,
+      "output_status": "conditional_research_structure_valid"
+    },
+    {
+      "name": "unknown_packet",
+      "command": [
+        "python",
+        "-B",
+        "models/validation_driver.py",
+        "--mode",
+        "offline_packet",
+        "--input",
+        "examples/actual_unknown.json"
+      ],
+      "cwd": "isolated_package_root",
+      "returncode": 0,
+      "elapsed_s": 0.7661761560011655,
+      "output_status": "blocked_evidence"
+    }
+  ],
+  "tiny_matches_original_reference_exactly_except_environment": true,
+  "physics_and_report_source_bytes_unchanged": true,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "jsonschema": "4.26.0"
+    },
+    "installed_software": false
+  },
+  "not_run": [
+    "full_synthetic_43200_solves",
+    "actual_exported_device_data",
+    "live_hardware",
+    "empirical_material_response",
+    "production_qualification",
+    "formal_or_independent_review",
+    "browser_layout",
+    "new_PNG_visual_review"
+  ],
+  "browser_layout": "unverified; previous permission-blocked browser route not attempted",
+  "source_private_ID_in_derived_package": false,
+  "external_publication": "not_performed"
+}

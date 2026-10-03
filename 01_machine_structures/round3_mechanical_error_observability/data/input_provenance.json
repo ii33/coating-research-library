@@ -1,0 +1,48 @@
+{
+  "kind": "read_only_provenance_not_runtime_dependencies",
+  "new_identity": "T01-r3-v0.1.0",
+  "derivation": "new original reference implementation and engineering synthesis; no modification/republication of parent files",
+  "sources": [
+    {
+      "source_identity": "00_project/工程科研.txt",
+      "sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad",
+      "bytes": 1632
+    },
+    {
+      "source_identity": "00_project/ROUND3_PRIORITY_DRAFT.md",
+      "sha256": "f77a712a9df3fc777fa20aa0869fbde73fc2b0de3b3210ade904f70d1b613bc1",
+      "bytes": 3487
+    },
+    {
+      "source_identity": "01_machine_structures/chapters/03_kinematics.md",
+      "sha256": "11544f3f559e567c48ba7edc80c66d7832f9e2f225c34a0cb86c1d01e973f275",
+      "bytes": 7557
+    },
+    {
+      "source_identity": "01_machine_structures/chapters/04_identification_and_validation.md",
+      "sha256": "5dbecddde92c467e993e5f4200521ae2090182fd9a5a3afe21dae06403fd5262",
+      "bytes": 7849
+    },
+    {
+      "source_identity": "01_machine_structures/chapters/05_selection_and_error_control.md",
+      "sha256": "f9bdec6321dfccd86b623dbfbedb89100b2c687dabda668fd5d9fdcc11a6b67b",
+      "bytes": 8047
+    },
+    {
+      "source_identity": "01_machine_structures/round2_topology_alignment/README.md",
+      "sha256": "1984208f2cc0a90c4a3d82af43b20114d5e019ee845d498853723b0df353f9d5",
+      "bytes": 3585
+    },
+    {
+      "source_identity": "02_machine_modeling/round2_dual_coverage_error_budget/reports/03_scientific_error_budget.md",
+      "sha256": "6f58b0449a7758d9ad579a57f55b0ec0867b26a85968db2b99893bd6d5ac73ab",
+      "bytes": 4583
+    },
+    {
+      "source_identity": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/README.md",
+      "sha256": "70861b65994e2e4aac3ca358f3600dfdea65c20f42c8633037089da81f597f91",
+      "bytes": 2772
+    }
+  ],
+  "runtime_dependencies_external_to_reader": []
+}

@@ -1,0 +1,47 @@
+test_bridge_full_forward_present (test_source_retention.ContractTests.test_bridge_full_forward_present) ... ok
+test_bridge_nonlambert_not_smuggled (test_source_retention.ContractTests.test_bridge_nonlambert_not_smuggled) ... ok
+test_bridge_pi_once (test_source_retention.ContractTests.test_bridge_pi_once) ... ok
+test_bridge_rejects_double_scale (test_source_retention.ContractTests.test_bridge_rejects_double_scale) ... ok
+test_bridge_rejects_hidden_normalization (test_source_retention.ContractTests.test_bridge_rejects_hidden_normalization) ... ok
+test_clock_independence (test_source_retention.ContractTests.test_clock_independence) ... ok
+test_driver_bad_hash (test_source_retention.ContractTests.test_driver_bad_hash) ... ok
+test_driver_default_plan_only (test_source_retention.ContractTests.test_driver_default_plan_only) ... ok
+test_driver_not_authorized (test_source_retention.ContractTests.test_driver_not_authorized) ... ok
+test_mxc_substitute_rejected (test_source_retention.ContractTests.test_mxc_substitute_rejected) ... ok
+test_mxc_unknown_clock_rejected (test_source_retention.ContractTests.test_mxc_unknown_clock_rejected) ... ok
+test_negative_net_guard (test_source_retention.ContractTests.test_negative_net_guard) ... ok
+test_unknown_angular_separate (test_source_retention.ContractTests.test_unknown_angular_separate) ... ok
+test_unknown_q_and_retention_preserved (test_source_retention.ContractTests.test_unknown_q_and_retention_preserved) ... ok
+test_valid_qualified_diagnostic_not_calibration (test_source_retention.ContractTests.test_valid_qualified_diagnostic_not_calibration) ... ok
+test_zero_denominator_guards_preserved (test_source_retention.ContractTests.test_zero_denominator_guards_preserved) ... ok
+test_anchored_rank (test_source_retention.IdentificationTests.test_anchored_rank) ... ok
+test_fit_noiseless (test_source_retention.IdentificationTests.test_fit_noiseless) ... ok
+test_fit_refuses_rank_deficiency (test_source_retention.IdentificationTests.test_fit_refuses_rank_deficiency) ... ok
+test_free_capture_not_identified (test_source_retention.IdentificationTests.test_free_capture_not_identified) ... ok
+test_global_not_only_local_ambiguity (test_source_retention.IdentificationTests.test_global_not_only_local_ambiguity) ... ok
+test_jacobian_against_difference (test_source_retention.IdentificationTests.test_jacobian_against_difference) ... ok
+test_noise_scale_guard (test_source_retention.IdentificationTests.test_noise_scale_guard) ... ok
+test_off_axis_qcm_separates (test_source_retention.IdentificationTests.test_off_axis_qcm_separates) ... ok
+test_pair_identical_angles (test_source_retention.IdentificationTests.test_pair_identical_angles) ... ok
+test_pair_no_zero_mass (test_source_retention.IdentificationTests.test_pair_no_zero_mass) ... ok
+test_pair_recovery (test_source_retention.IdentificationTests.test_pair_recovery) ... ok
+test_single_rank (test_source_retention.IdentificationTests.test_single_rank) ... ok
+test_tilt_separates (test_source_retention.IdentificationTests.test_tilt_separates) ... ok
+test_unanchored_rank (test_source_retention.IdentificationTests.test_unanchored_rank) ... ok
+test_zero_measurement_not_floored (test_source_retention.IdentificationTests.test_zero_measurement_not_floored) ... ok
+test_back_emission (test_source_retention.KernelTests.test_back_emission) ... ok
+test_back_receiver (test_source_retention.KernelTests.test_back_receiver) ... ok
+test_blocked_mass_not_renormalized (test_source_retention.KernelTests.test_blocked_mass_not_renormalized) ... ok
+test_hemisphere_normalization (test_source_retention.KernelTests.test_hemisphere_normalization) ... ok
+test_invalid_parameters (test_source_retention.KernelTests.test_invalid_parameters) ... ok
+test_invalid_weights (test_source_retention.KernelTests.test_invalid_weights) ... ok
+test_lambert_pi (test_source_retention.KernelTests.test_lambert_pi) ... ok
+test_no_area_twice (test_source_retention.KernelTests.test_no_area_twice) ... ok
+test_no_duplicate_projection (test_source_retention.KernelTests.test_no_duplicate_projection) ... ok
+test_normal_vectors_rejected (test_source_retention.KernelTests.test_normal_vectors_rejected) ... ok
+test_retention_bounds (test_source_retention.KernelTests.test_retention_bounds) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.215s
+
+OK

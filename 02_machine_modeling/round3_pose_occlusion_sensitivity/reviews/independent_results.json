@@ -1,0 +1,290 @@
+{
+  "run_kind": "single_initial_independent_pass",
+  "authorized_source_sha256": {
+    "models/event_reference.py": "c82ebcd1ee2820a8cae6c4cb5c921a96eaa2aedc6af5b76b52ed183a41a3b354",
+    "models/analytic_oracle.py": "239cd58fe0281577d896ce79d38db5fc1f9a2b3ed4443f740372178dcbb18dc8",
+    "data/synthetic_contract.json": "e9f0fa3a17f83d40b488fe351ef878a8c5e04b58756931c3e334eda961de4af8"
+  },
+  "constraints": {
+    "top_level_checks": 12,
+    "external_research": false,
+    "driver_run": false,
+    "frozen_dependencies": "inert stubs; source not read and behavior not tested",
+    "formal_DeepSeek_Seed_Sol_chain": "pending; this pass does not substitute for it"
+  },
+  "passed": 11,
+  "failed": 1,
+  "results": [
+    {
+      "name": "finite_thickness_projection_three_source_positions",
+      "passed": true,
+      "evidence": [
+        {
+          "source_x_m": "0",
+          "expected_exact": [
+            "-1/5",
+            "1/5"
+          ],
+          "actual": [
+            -0.19999999999999998,
+            0.19999999999999998
+          ],
+          "active_depths_m": [
+            0.4,
+            0.4
+          ]
+        },
+        {
+          "source_x_m": "3/10",
+          "expected_exact": [
+            "-13/20",
+            "-1/15"
+          ],
+          "actual": [
+            -0.6499999999999999,
+            -0.06666666666666665
+          ],
+          "active_depths_m": [
+            0.4,
+            0.6
+          ]
+        },
+        {
+          "source_x_m": "-3/10",
+          "expected_exact": [
+            "1/15",
+            "13/20"
+          ],
+          "actual": [
+            0.06666666666666665,
+            0.6499999999999999
+          ],
+          "active_depths_m": [
+            0.6,
+            0.4
+          ]
+        }
+      ]
+    },
+    {
+      "name": "event_sign_positive_velocity",
+      "passed": true,
+      "evidence": {
+        "velocity_m_s": 0.4,
+        "ordered_events": [
+          {
+            "t": 0.4250000000000001,
+            "jump": -1
+          },
+          {
+            "t": 1.4249999999999998,
+            "jump": 1
+          }
+        ],
+        "expected_event_gradient": [
+          0.6934171597633139,
+          1.0401257396449708,
+          0.2773668639053255,
+          0.0,
+          -1.7335428994082838,
+          -14.764007026627215,
+          -1.181120562130177
+        ],
+        "actual_event_gradient": [
+          0.6934171597633139,
+          1.0401257396449708,
+          0.2773668639053255,
+          0.0,
+          -1.7335428994082838,
+          -14.764007026627215,
+          -1.181120562130177
+        ]
+      }
+    },
+    {
+      "name": "event_sign_negative_velocity",
+      "passed": true,
+      "evidence": {
+        "velocity_m_s": -0.4,
+        "ordered_events": [
+          {
+            "t": 0.5750000000000001,
+            "jump": -1
+          },
+          {
+            "t": 1.575,
+            "jump": 1
+          }
+        ],
+        "expected_event_gradient": [
+          -0.693417159763313,
+          -1.04012573964497,
+          0.2773668639053253,
+          0.0,
+          1.7335428994082829,
+          -15.284069896449703,
+          -1.222725591715976
+        ],
+        "actual_event_gradient": [
+          -0.693417159763313,
+          -1.04012573964497,
+          0.2773668639053253,
+          0.0,
+          1.7335428994082829,
+          -15.284069896449703,
+          -1.222725591715976
+        ]
+      }
+    },
+    {
+      "name": "independent_value_and_parameter_gradients_both_velocities",
+      "passed": true,
+      "evidence": [
+        {
+          "velocity_m_s": 0.4,
+          "value": 1.1023811408179518,
+          "independent_gradient": [
+            0.28727439045546826,
+            1.4462685090088632,
+            0.11490975621031295,
+            1.1023811408050752,
+            -1.7335428993884663,
+            -14.764007026620469,
+            -3.0097023255792883
+          ],
+          "reference_gradient": [
+            0.287274390379637,
+            1.4462685090286476,
+            0.11490975615185489,
+            1.102381140817952,
+            -1.7335428994082838,
+            -14.764007026627215,
+            -3.0097023255557747
+          ],
+          "oracle_gradient": [
+            0.287274390379636,
+            1.4462685090286467,
+            0.11490975615185478,
+            1.102381140817952,
+            -1.733542899408282,
+            -14.764007026627215,
+            -3.009702325555774
+          ]
+        },
+        {
+          "velocity_m_s": -0.4,
+          "value": 1.07322633608208,
+          "independent_gradient": [
+            -0.6864568676120026,
+            -1.0470860317672117,
+            0.2745827470710763,
+            1.0732263361049967,
+            1.7335428993921669,
+            -15.284069896433676,
+            -3.0173380010952338
+          ],
+          "reference_gradient": [
+            -0.6864568676035845,
+            -1.0470860318046984,
+            0.27458274704143387,
+            1.0732263360820795,
+            1.7335428994082829,
+            -15.284069896449703,
+            -3.0173380010984885
+          ],
+          "oracle_gradient": [
+            -0.6864568676035845,
+            -1.047086031804699,
+            0.27458274704143415,
+            1.07322633608208,
+            1.7335428994082847,
+            -15.2840698964497,
+            -3.017338001098489
+          ]
+        }
+      ]
+    },
+    {
+      "name": "stationary_gradient_withheld",
+      "passed": true,
+      "evidence": {
+        "reference": "tangent_or_stationary_unresolved",
+        "oracle_rejection": "ordinary differentiable branch required"
+      }
+    },
+    {
+      "name": "grazing_gradient_withheld",
+      "passed": true,
+      "evidence": {
+        "blocked_duration_s": 0.0,
+        "derivative": null,
+        "status": "grazing_topology_unresolved"
+      }
+    },
+    {
+      "name": "exact_endpoint_gradient_withheld",
+      "passed": true,
+      "evidence": {
+        "changes": {
+          "x0_m": -0.23
+        },
+        "reference": "endpoint_event_unresolved",
+        "oracle_rejection": "endpoint tie",
+        "first_event_s": 6.938893903907228e-17
+      }
+    },
+    {
+      "name": "near_endpoint_gradient_withheld",
+      "passed": true,
+      "evidence": {
+        "changes": {
+          "x0_m": -0.23000000002
+        },
+        "reference": "endpoint_event_unresolved",
+        "oracle_rejection": "endpoint tie",
+        "first_event_s": 5.000007352595759e-11
+      }
+    },
+    {
+      "name": "active_face_tie_gradient_withheld",
+      "passed": true,
+      "evidence": {
+        "reference": "topology_switch_unresolved",
+        "oracle_rejection": "face tie"
+      }
+    },
+    {
+      "name": "unknown_geometry_gradient_withheld",
+      "passed": true,
+      "evidence": {
+        "reference": "geometry_unknown",
+        "oracle_rejection": "ordinary differentiable branch required"
+      }
+    },
+    {
+      "name": "clock_translation_confounded",
+      "passed": true,
+      "evidence": {
+        "clock_offset_s": 0.13,
+        "equivalent_target_shift_m": 0.082,
+        "values": [
+          1.1086178319445938,
+          1.1086178319445938
+        ],
+        "gradient_clock": -0.01775550610902238,
+        "v_times_gradient_translation": -0.017755506109022524,
+        "interpretation": "These two parameter columns are exactly dependent for the stated reference-clock source law."
+      }
+    },
+    {
+      "name": "close_event_order_gradient_withheld_by_oracle",
+      "passed": false,
+      "exception_type": "AssertionError",
+      "evidence": "{\"changes\": {\"half_width_m\": 1e-11}, \"event_times_s\": [0.9249999999374999, 0.9250000000624999], \"oracle_gradient\": [-0.44341920732206297, 0.44341920755643827, -0.17736768292882488, 2.3469959022365128, -2.3437518592572815e-10, -15.968749999999996, -4.254317086974336], \"oracle_value\": 2.3469959022365128, \"reference_gradient\": null, \"reference_status\": \"event_order_unresolved\", \"required_separation_s\": 2e-10, \"separation_s\": 1.2500001034254637e-10}"
+    }
+  ],
+  "not_verified": [
+    "Driver default no-execution behavior: driver not among authorized files",
+    "Historical point 12/point 2 closure wording outside the three authorized source files"
+  ]
+}

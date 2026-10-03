@@ -1,0 +1,47 @@
+{
+  "package_id": "T01-r3-v0.1.0",
+  "archive": "deliverables/T01_round3_mechanical_error_observability_v0.1.0_reader.zip",
+  "archive_sha256": "482e89bc8e9b162ecb961ceb7fed201be84b7bea4c5f13743f74620cdcdedbc9",
+  "archive_bytes": 774949,
+  "archive_members": 46,
+  "manifest_sha256": "d6d10b2b82b4ef7c15cdbe646215832f656bf430426422c1e0284ce0952e02ce",
+  "manifest_entry_count": 45,
+  "self_reference_policy": "manifest excludes itself; receipt is outside reader and excludes itself",
+  "standalone_validation": {
+    "integrity": "pass",
+    "files": 46,
+    "html": "structure_assets_and_anchors_pass_browser_layout_unverified",
+    "reader_has_parent_dependencies": false,
+    "light_reproduction": [
+      {
+        "command": "python -B -m unittest discover -s verification -v",
+        "returncode": 0,
+        "wall_seconds": 0.28931141599605326
+      },
+      {
+        "command": "python -B models/run_examples.py",
+        "returncode": 0,
+        "wall_seconds": 0.2014185520092724
+      },
+      {
+        "command": "python -B models/offline_read.py data/synthetic_observations.json --allow-synthetic",
+        "returncode": 0,
+        "wall_seconds": 0.13769124900863972
+      },
+      {
+        "command": "python -B models/prepare_calibration_plan.py",
+        "returncode": 0,
+        "wall_seconds": 0.05359931000566576
+      },
+      {
+        "command": "python -B reviews/independent_checks.py",
+        "returncode": 0,
+        "wall_seconds": 0.2727490649995161
+      }
+    ],
+    "negative_cli_gates": "pass"
+  },
+  "third_party_originals_in_reader": false,
+  "publication": "local_only_not_uploaded",
+  "scope": "exact packaging and bounded math/interface reproduction; not physical or full-model-chain acceptance"
+}

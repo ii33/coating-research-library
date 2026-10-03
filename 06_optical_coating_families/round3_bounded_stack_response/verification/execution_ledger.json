@@ -1,0 +1,59 @@
+{
+  "scope": "small author tests and one independent narrow check only",
+  "development": {
+    "unique_upstream_configurations": 1,
+    "upstream_build_invocations": 2,
+    "panels_argument": 16,
+    "reason_repeat": "same inputs rebuilt after changing optical demonstration B",
+    "tiny_demo_invocations": 2,
+    "initial_B_scale": "1.10",
+    "initial_B_R_bounds": [
+      0.017963600963743134,
+      0.0525615860061767
+    ],
+    "final_B_scale": "1.25",
+    "nominal_scalar_operator_probes": [
+      {
+        "scale": "1",
+        "R_interval": [
+          0.011583971201202034,
+          0.011583971201202036
+        ]
+      },
+      {
+        "scale": "1.2",
+        "R_interval": [
+          0.013872379507403483,
+          0.013872379507403484
+        ]
+      },
+      {
+        "scale": "1.25",
+        "R_interval": [
+          0.18723076792165047,
+          0.1872307679216505
+        ]
+      },
+      {
+        "scale": "1.3",
+        "R_interval": [
+          0.402873308838856,
+          0.4028733088388561
+        ]
+      }
+    ],
+    "probe_scope": "4 point-valued three-node operators; never used as bounds",
+    "first_test_failure": "zero-reflectance assertion1e-35 exceeded dyadic absolute-resolution expectation",
+    "fix": "assertion1e-20; numerical algorithm unchanged",
+    "independent_checks": 1,
+    "independent_optical_points": 5
+  },
+  "formal_batch_runs": 0,
+  "monte_carlo_draws": 0,
+  "remote_jobs": 0,
+  "devices_contacted": 0,
+  "new_HTML_browser_attempts": 0,
+  "network_installations": 0,
+  "uploads": 0,
+  "pushes": 0
+}

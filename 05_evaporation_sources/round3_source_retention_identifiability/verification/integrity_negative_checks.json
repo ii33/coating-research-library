@@ -1,0 +1,11 @@
+{
+  "tampered_payload_rejected": true,
+  "unexpected_payload_rejected": true,
+  "tamper_errors": [
+    "hash_or_size:README.md"
+  ],
+  "extra_errors": [
+    "unexpected_payload:unexpected.txt"
+  ],
+  "isolation": "temporary detached reader only"
+}

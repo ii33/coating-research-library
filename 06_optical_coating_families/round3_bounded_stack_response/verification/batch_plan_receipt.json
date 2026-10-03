@@ -1,0 +1,77 @@
+{
+  "mode": "plan_only",
+  "algorithm": "shared-latent interval subdivision, not Monte Carlo",
+  "jobs": [
+    {
+      "variant": "A",
+      "scale": "1",
+      "cells": 8
+    },
+    {
+      "variant": "B",
+      "scale": "1.25",
+      "cells": 8
+    },
+    {
+      "variant": "C",
+      "scale": "1.002",
+      "cells": 8
+    },
+    {
+      "variant": "A",
+      "scale": "1",
+      "cells": 32
+    },
+    {
+      "variant": "B",
+      "scale": "1.25",
+      "cells": 32
+    },
+    {
+      "variant": "C",
+      "scale": "1.002",
+      "cells": 32
+    },
+    {
+      "variant": "A",
+      "scale": "1",
+      "cells": 128
+    },
+    {
+      "variant": "B",
+      "scale": "1.25",
+      "cells": 128
+    },
+    {
+      "variant": "C",
+      "scale": "1.002",
+      "cells": 128
+    },
+    {
+      "variant": "A",
+      "scale": "1",
+      "cells": 512
+    },
+    {
+      "variant": "B",
+      "scale": "1.25",
+      "cells": 512
+    },
+    {
+      "variant": "C",
+      "scale": "1.002",
+      "cells": 512
+    }
+  ],
+  "maximum_leaf_optical_calls": 6120,
+  "target": "one synthetic MIR 3-node operator, no spectrum sweep",
+  "prerequisites": [
+    "explicit device/compute authorization",
+    "actual film data needed for any physical claim",
+    "formal DeepSeek / Seed / Sol reviews pending"
+  ],
+  "heavy_run": "not_run",
+  "checkpoint_binding": "14812ab629fd84728f001593901526a867f6b0fe8e62cf710a874b342ee15ad6",
+  "host": "63eacf837d6f",
+  "external_execution": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checks": {
+    "modified_payload": {
+      "status": "rejected_as_expected",
+      "reason": "payload hash mismatch: README.md"
+    },
+    "extra_file": {
+      "status": "rejected_as_expected",
+      "reason": "exact allowlist/payload path-set mismatch"
+    },
+    "missing_file": {
+      "status": "rejected_as_expected",
+      "reason": "exact allowlist/payload path-set mismatch"
+    },
+    "duplicate_manifest_path": {
+      "status": "rejected_as_expected",
+      "reason": "duplicate paths"
+    },
+    "unsafe_manifest_path": {
+      "status": "rejected_as_expected",
+      "reason": "unsafe relative path"
+    },
+    "symlink": {
+      "status": "rejected_as_expected",
+      "reason": "symlink forbidden: <copy>/unexpected_link"
+    }
+  },
+  "scope": "accidental corruption/path defense; attacker able to rewrite all payload+manifest is not authenticated"
+}

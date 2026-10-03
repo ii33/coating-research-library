@@ -1,0 +1,769 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_kind": {
+      "enum": [
+        "synthetic",
+        "literature_conditioned",
+        "unmeasured"
+      ]
+    },
+    "exploratory_only": {
+      "const": true
+    },
+    "design": {
+      "type": "object",
+      "properties": {
+        "layer_thickness_um": {
+          "type": "number",
+          "minimum": 0
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "layer_thickness_um",
+        "purpose"
+      ],
+      "additionalProperties": false
+    },
+    "process": {
+      "type": "object",
+      "properties": {
+        "area_basis": {
+          "const": "actual_workpiece_area"
+        },
+        "net_evidence": {
+          "enum": [
+            "synthetic_balance",
+            "synthetic_direct",
+            "measured_net",
+            "unknown"
+          ]
+        },
+        "initial_inventory_atoms_m2": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": {
+            "enum": [
+              "Al",
+              "Si",
+              "O"
+            ]
+          },
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "qcm": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "sensor_mass_kg_m2": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "display_density_kg_m3": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "meaning": {
+                  "const": "sensor_equivalent_not_workpiece_thickness"
+                }
+              },
+              "required": [
+                "sensor_mass_kg_m2",
+                "display_density_kg_m3",
+                "meaning"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "start_s": {
+                "type": "number",
+                "minimum": 0
+              },
+              "end_s": {
+                "type": "number",
+                "minimum": 0
+              },
+              "temperature_K": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "incident_atoms_m2_s": {
+                "type": "object",
+                "minProperties": 1,
+                "propertyNames": {
+                  "enum": [
+                    "Al",
+                    "Si",
+                    "O"
+                  ]
+                },
+                "additionalProperties": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0
+                }
+              },
+              "net_atoms_m2_s": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "minProperties": 1,
+                    "propertyNames": {
+                      "enum": [
+                        "Al",
+                        "Si",
+                        "O"
+                      ]
+                    },
+                    "additionalProperties": {
+                      "type": [
+                        "number",
+                        "null"
+                      ]
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "balance": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "minProperties": 1,
+                    "propertyNames": {
+                      "enum": [
+                        "Al",
+                        "Si",
+                        "O"
+                      ]
+                    },
+                    "additionalProperties": {
+                      "type": "object",
+                      "properties": {
+                        "retained_fraction": {
+                          "type": [
+                            "number",
+                            "null"
+                          ],
+                          "minimum": 0,
+                          "maximum": 1
+                        },
+                        "reaction_gain_atoms_m2_s": {
+                          "type": [
+                            "number",
+                            "null"
+                          ],
+                          "minimum": 0
+                        },
+                        "desorption_atoms_m2_s": {
+                          "type": [
+                            "number",
+                            "null"
+                          ],
+                          "minimum": 0
+                        },
+                        "resputter_atoms_m2_s": {
+                          "type": [
+                            "number",
+                            "null"
+                          ],
+                          "minimum": 0
+                        }
+                      },
+                      "required": [
+                        "retained_fraction",
+                        "reaction_gain_atoms_m2_s",
+                        "desorption_atoms_m2_s",
+                        "resputter_atoms_m2_s"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "start_s",
+              "end_s",
+              "temperature_K",
+              "incident_atoms_m2_s",
+              "net_atoms_m2_s",
+              "balance"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "area_basis",
+        "net_evidence",
+        "initial_inventory_atoms_m2",
+        "qcm",
+        "bins"
+      ],
+      "additionalProperties": false
+    },
+    "film_state": {
+      "type": "object",
+      "properties": {
+        "sample_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "stoichiometry": {
+          "anyOf": [
+            {
+              "type": "object",
+              "minProperties": 1,
+              "propertyNames": {
+                "enum": [
+                  "Al",
+                  "Si",
+                  "O"
+                ]
+              },
+              "additionalProperties": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "composition_complete": {
+          "type": "boolean"
+        },
+        "constant_composition_density": {
+          "type": "boolean"
+        },
+        "density_kg_m3": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "density_basis": {
+          "enum": [
+            "measured_film",
+            "synthetic_film",
+            "bulk",
+            "qcm_setting",
+            "unknown"
+          ]
+        },
+        "measurement_temperature_K": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "history": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "sample_id",
+        "state_id",
+        "stoichiometry",
+        "composition_complete",
+        "constant_composition_density",
+        "density_kg_m3",
+        "density_basis",
+        "measurement_temperature_K",
+        "history"
+      ],
+      "additionalProperties": false
+    },
+    "optical_model": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "al_mcpeak_table",
+            "synthetic_cauchy"
+          ]
+        },
+        "source_class": {
+          "enum": [
+            "public_film",
+            "public_bulk",
+            "synthetic"
+          ]
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "binding": {
+          "enum": [
+            "same_sample",
+            "assumed_transfer",
+            "unknown"
+          ]
+        },
+        "sample_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "valid_state_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "wavelength_range_um": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "temperature_range_K": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "parameters": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "A": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "B_um2": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "k": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "A",
+                "B_um2",
+                "k"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "uncertainty": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "transfer_assumptions": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "source_class",
+        "source_id",
+        "binding",
+        "sample_id",
+        "valid_state_id",
+        "wavelength_range_um",
+        "temperature_range_K",
+        "parameters",
+        "uncertainty",
+        "transfer_assumptions"
+      ],
+      "additionalProperties": false
+    },
+    "substrate": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "silica_bulk_malitson",
+            "synthetic_constant"
+          ]
+        },
+        "n": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "temperature_K": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "thickness_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "bulk_alpha_per_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "bulk_absorption_basis": {
+          "enum": [
+            "measured_bulk",
+            "synthetic_bulk",
+            "unknown"
+          ]
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "n",
+        "temperature_K",
+        "thickness_m",
+        "bulk_alpha_per_m",
+        "bulk_absorption_basis",
+        "source_id"
+      ],
+      "additionalProperties": false
+    },
+    "measurement": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "wavelength_um": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0
+          },
+          "minItems": 1
+        },
+        "angle_deg": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 89.8
+        },
+        "polarization": {
+          "enum": [
+            "s",
+            "p",
+            "unpolarized"
+          ]
+        },
+        "bandpass_nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "offset_um": {
+                "type": "number"
+              },
+              "weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "offset_um",
+              "weight"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "angle_nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "offset_deg": {
+                "type": "number"
+              },
+              "weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "offset_deg",
+              "weight"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "backside": {
+          "enum": [
+            "semi_infinite",
+            "incoherent_finite_all_orders",
+            "unknown"
+          ]
+        },
+        "coherence_note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scatter": {
+          "type": "object",
+          "properties": {
+            "basis": {
+              "enum": [
+                "synthetic_redistribution",
+                "measured_redistribution",
+                "unknown"
+              ]
+            },
+            "fraction_of_R": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "fraction_of_T": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "basis",
+            "fraction_of_R",
+            "fraction_of_T"
+          ],
+          "additionalProperties": false
+        },
+        "detector": {
+          "type": "object",
+          "properties": {
+            "geometry": {
+              "type": "string",
+              "minLength": 1
+            },
+            "diffuse_R_collection": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "diffuse_T_collection": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "geometry",
+            "diffuse_R_collection",
+            "diffuse_T_collection"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "wavelength_um",
+        "angle_deg",
+        "polarization",
+        "bandpass_nodes",
+        "angle_nodes",
+        "backside",
+        "coherence_note",
+        "scatter",
+        "detector"
+      ],
+      "additionalProperties": false
+    },
+    "uncertainty_axes": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "time": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "space": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "geometry": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "kernel": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "input": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "model": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "source",
+        "time",
+        "space",
+        "geometry",
+        "kernel",
+        "input",
+        "model"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "evidence_kind",
+    "exploratory_only",
+    "design",
+    "process",
+    "film_state",
+    "optical_model",
+    "substrate",
+    "measurement",
+    "uncertainty_axes"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:coating:T06:round2:process-optics:1.0"
+}

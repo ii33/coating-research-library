@@ -1,0 +1,17 @@
+test_01_claim_matrix (__main__.Check.test_01_claim_matrix) ... ok
+test_02_saved_session_not_live (__main__.Check.test_02_saved_session_not_live) ... ok
+test_03_mutation_detected (__main__.Check.test_03_mutation_detected) ... ok
+test_04_unknowns_keep_pruned (__main__.Check.test_04_unknowns_keep_pruned) ... ok
+test_05_boundary_equal_inclusive (__main__.Check.test_05_boundary_equal_inclusive) ... ok
+test_06_float_threshold_refused (__main__.Check.test_06_float_threshold_refused) ... ok
+test_07_nan_refused (__main__.Check.test_07_nan_refused) ... ok
+test_08_reversed_refused (__main__.Check.test_08_reversed_refused) ... ok
+test_09_model_not_readout (__main__.Check.test_09_model_not_readout) ... ok
+test_10_wide_gap_not_reject (__main__.Check.test_10_wide_gap_not_reject) ... ok
+test_11_no_production (__main__.Check.test_11_no_production) ... ok
+test_12_replay_reproduces (__main__.Check.test_12_replay_reproduces) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 13.411s
+
+OK

@@ -1,0 +1,115 @@
+{
+  "scope": "one_narrow_independent_units_check_only",
+  "checked_at_utc": "2026-10-02T19:56:59.160674+00:00",
+  "reviewed_model_sha256": "1a58150031d7ed474184e1f29f7250b0bc52f6ddd2d7467323cbf43fa8bc0ca9",
+  "checks": [
+    {
+      "name": "hemisphere_normalization",
+      "passed": true,
+      "cases": 15,
+      "max_absolute_error": 1.2101430968414206e-14,
+      "tolerance": 1e-10,
+      "analytic": "Integral_phi cos(2phi)=0; (n+1)*Integral_0^1 mu^n dmu=1 for all n>=0"
+    },
+    {
+      "name": "lambert_pdf_and_backface",
+      "passed": true,
+      "note": "The n=0 value at exactly mu=0 has zero solid-angle measure"
+    },
+    {
+      "name": "finite_lambert_mass_weights_and_receiver_projection_once",
+      "passed": true,
+      "expected_kg_m2_s": 4.151906390859576e-08,
+      "actual_kg_m2_s": 4.151906390859575e-08,
+      "hand_formula": "Q/pi * sum(w_k V_k * 0.8 H^2 / (H^2+(1-s_k)^2)^2)"
+    },
+    {
+      "name": "finite_isotropic_no_extra_emission_cosine",
+      "passed": true,
+      "expected_kg_m2_s": 2.228723418185079e-08,
+      "actual_kg_m2_s": 2.228723418185079e-08
+    },
+    {
+      "name": "finite_node_split_and_inverse_square_units",
+      "passed": true,
+      "split_ratio": 1.0,
+      "doubled_length_ratio": 0.25
+    },
+    {
+      "name": "visibility_once_without_mass_renormalization",
+      "passed": true,
+      "visibility_half_ratio": 0.5
+    },
+    {
+      "name": "non_normalized_weights_rejected",
+      "passed": true
+    },
+    {
+      "name": "all_frozen_local_dependency_hashes_match",
+      "passed": true,
+      "files_checked": 33,
+      "mismatches": []
+    },
+    {
+      "name": "bridge_exactly_one_encoded_Q_over_pi",
+      "passed": true,
+      "stored_scale_kg_s": [
+        6.366197723675813e-07,
+        6.366197723675813e-07
+      ],
+      "expected_encoded_scale": 6.366197723675813e-07
+    },
+    {
+      "name": "complete_upstream_forward_preserved",
+      "passed": true,
+      "upstream_keys": [
+        "cache_key",
+        "continuous_source_certification",
+        "contract_signature",
+        "design",
+        "event_gradient",
+        "event_identities",
+        "geometry_status",
+        "input_uncertainty_qualified",
+        "numerical_evidence",
+        "objective_definition",
+        "objective_estimate",
+        "objective_interval",
+        "objective_status",
+        "panel_count",
+        "physical_certification",
+        "smooth_gradient",
+        "total_gradient",
+        "value_estimate_s_m2",
+        "value_interval"
+      ],
+      "event_count": 4,
+      "geometry_status": "differentiable_conditional",
+      "objective_status": "bounded_encoded_discrete_source"
+    },
+    {
+      "name": "inherited_scope_not_upgraded",
+      "passed": true
+    },
+    {
+      "name": "bridge_rejects_duplicate_Q_and_pi",
+      "passed": true
+    },
+    {
+      "name": "bridge_absolute_mass_to_thickness_units",
+      "passed": true,
+      "expected_m": 1.5013755835734997e-10,
+      "actual_m": 1.5013755835735e-10,
+      "hand_formula": "(Q_total/pi)[kg/s] * transfer[s/m^2] / rho[kg/m^3] = thickness[m]"
+    }
+  ],
+  "check_count": 13,
+  "all_passed": true,
+  "formal_deepseek_seed_sol_review": "pending_not_executed",
+  "literature_expansion": false,
+  "heavy_validation": false,
+  "remote_control": false,
+  "network_installation": false,
+  "model_edits": false,
+  "limitation": "Normalized finite encoded source only; not a continuum quadrature or physical-material certificate. pi conversion is a floating input, not an outward pi enclosure."
+}

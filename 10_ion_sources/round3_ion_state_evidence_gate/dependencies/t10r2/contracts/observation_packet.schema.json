@@ -1,0 +1,560 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "t10r2-1"
+    },
+    "packet_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "data_origin": {
+      "enum": [
+        "synthetic",
+        "actual"
+      ]
+    },
+    "claim_class": {
+      "enum": [
+        "material_identity",
+        "measurement_result",
+        "conditional_prediction",
+        "production_acceptance",
+        "environmental_qualification",
+        "damage_qualification"
+      ]
+    },
+    "reading_origin": {
+      "enum": [
+        "measured",
+        "derived_from_measured",
+        "synthetic",
+        "substituted_setpoint",
+        "held",
+        "unknown"
+      ]
+    },
+    "observable_kind": {
+      "enum": [
+        "local_joint_spectrum",
+        "charge_spectrum_only",
+        "source_settings_only"
+      ]
+    },
+    "normalization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_identity": {
+      "type": "object",
+      "properties": {
+        "family": {
+          "enum": [
+            "dc_kaufman_gridded",
+            "other_declared",
+            "unknown"
+          ]
+        },
+        "manufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "firmware": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "configuration_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "family",
+        "manufacturer",
+        "model",
+        "firmware",
+        "configuration_id"
+      ],
+      "additionalProperties": false
+    },
+    "surface": {
+      "type": "object",
+      "properties": {
+        "sample_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trajectory_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "electrical_equivalence": {
+          "enum": [
+            "independently_verified",
+            "synthetic_declared",
+            "unverified"
+          ]
+        },
+        "potential_v": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "temperature_k": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "sample_id",
+        "trajectory_id",
+        "electrical_equivalence",
+        "potential_v",
+        "temperature_k"
+      ],
+      "additionalProperties": false
+    },
+    "neutral_coverage": {
+      "enum": [
+        "complete_conditional",
+        "unknown"
+      ]
+    },
+    "history_complete": {
+      "type": "boolean"
+    },
+    "film_state": {
+      "type": "object",
+      "properties": {
+        "material_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "density_basis": {
+          "enum": [
+            "measured_film",
+            "synthetic_declared",
+            "bulk",
+            "unknown"
+          ]
+        },
+        "net_inventory_basis": {
+          "enum": [
+            "independent_element_inventory",
+            "qcm_display",
+            "arrival_only",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "material_id",
+        "state_id",
+        "density_basis",
+        "net_inventory_basis"
+      ],
+      "additionalProperties": false
+    },
+    "requirements": {
+      "type": "object",
+      "properties": {
+        "instrument_identity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "electrical_current_correction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "area_normalization": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "energy_angle_response": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "species_charge_state": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "surface_representativeness": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "time_alignment": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "neutral_coverage": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "material_identity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "film_state": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "optical_operator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "traceability": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_data": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "instrument_identity",
+        "electrical_current_correction",
+        "area_normalization",
+        "energy_angle_response",
+        "species_charge_state",
+        "surface_representativeness",
+        "time_alignment",
+        "neutral_coverage",
+        "material_identity",
+        "film_state",
+        "optical_operator",
+        "traceability",
+        "raw_data"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "missing",
+              "planned",
+              "available",
+              "checked",
+              "approved"
+            ]
+          },
+          "basis": {
+            "enum": [
+              "synthetic",
+              "independent_measured",
+              "model",
+              "document"
+            ]
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "applicable_domain": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "basis",
+          "locator",
+          "sha256",
+          "applicable_domain"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "raw_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "relative_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "relative_path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "cells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "flux_m2_s": {
+            "type": "number",
+            "minimum": 0
+          },
+          "energy_ev_particle": {
+            "type": "number",
+            "minimum": 0
+          },
+          "charge_z": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "theta_rad": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1.5707963267948966
+          },
+          "phi_rad": {
+            "type": "number"
+          },
+          "mass_kg": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "species": {
+            "type": "string",
+            "minLength": 1
+          },
+          "nuclei_per_particle": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "flux_m2_s",
+          "energy_ev_particle",
+          "charge_z",
+          "theta_rad",
+          "phi_rad",
+          "mass_kg",
+          "species",
+          "nuclei_per_particle"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "response_split": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sample_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "run_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "split": {
+            "enum": [
+              "fit",
+              "selection",
+              "final"
+            ]
+          }
+        },
+        "required": [
+          "sample_id",
+          "run_id",
+          "split"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "numeric_stage": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "not_run",
+            "validated_analytic",
+            "converged_local",
+            "budget_exhausted",
+            "solver_failure",
+            "interrupted"
+          ]
+        },
+        "used_as_interval_endpoint": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "status",
+        "used_as_interval_endpoint"
+      ],
+      "additionalProperties": false
+    },
+    "observation_window": {
+      "type": "object",
+      "properties": {
+        "t0_s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "t1_s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "clock_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "t0_s",
+        "t1_s",
+        "clock_id"
+      ],
+      "additionalProperties": false
+    },
+    "coordinate": {
+      "type": "object",
+      "properties": {
+        "frame_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "position_m": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            }
+          ]
+        },
+        "outward_normal": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            }
+          ]
+        }
+      },
+      "required": [
+        "frame_id",
+        "position_m",
+        "outward_normal"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "packet_id",
+    "data_origin",
+    "claim_class",
+    "reading_origin",
+    "observable_kind",
+    "normalization",
+    "source_identity",
+    "surface",
+    "neutral_coverage",
+    "history_complete",
+    "film_state",
+    "requirements",
+    "evidence",
+    "raw_records",
+    "cells",
+    "response_split",
+    "numeric_stage",
+    "observation_window",
+    "coordinate"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:coating:t10:r2:observation-packet"
+}

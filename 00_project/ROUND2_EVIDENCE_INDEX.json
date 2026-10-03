@@ -1,0 +1,264 @@
+{
+  "schema": "round2-consolidation-evidence-v1",
+  "created_at_utc": "2026-10-02T10:36:00.178846+00:00",
+  "inspection_scope": "existing receipts, outputs, static reproduction contracts and hash-only checks; no test/review/driver reruns",
+  "all_topic_stage_paths": {
+    "T01": "01_machine_structures/round2_topology_alignment",
+    "T02": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3",
+    "T03": "03_correction_plate_optimization/round2_dual_coverage_optimizer",
+    "T04": "04_coating_and_substrate_materials/round2_material_response_contract",
+    "T05": "05_evaporation_sources/round2_qcm_flux_transfer",
+    "T06": "06_optical_coating_families/round2_process_optical_observables",
+    "T07": "07_thin_film_design_theory/round2_measurement_identifiability",
+    "T08": "08_stack_optimization_algorithms/round2_robust_inversion",
+    "T09": "09_standards_and_qualification/round2_traceable_validation_contracts",
+    "T10": "10_ion_sources/round2_observable_material_response"
+  },
+  "all_topic_status": {
+    "T01": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
+    "T02": "frozen_local_partial_with_device_validation_pending",
+    "T03": "implementation_ready_validation_pending",
+    "T04": "implementation_ready_validation_pending",
+    "T05": "implementation_ready_validation_pending",
+    "T06": "implementation_ready_validation_pending",
+    "T07": "implementation_ready_validation_pending",
+    "T08": "implementation_ready_validation_pending",
+    "T09": "research_contract_ready_real_validation_pending",
+    "T10": "locally_frozen_research_only"
+  },
+  "latest_frozen_receipts": {
+    "T06": {
+      "stage_path": "06_optical_coating_families/round2_process_optical_observables",
+      "actual_status": "implementation_ready_validation_pending",
+      "local_scope_complete": true,
+      "manifest_path": "06_optical_coating_families/round2_process_optical_observables/freeze_manifest.json",
+      "manifest_sha256": "41dc4ab4fa884d1083183d4e540b353e0e61156737dd7dc68529d122dc93aad2",
+      "payload_file_count": 61,
+      "receipt_path": "06_optical_coating_families/round2_process_optical_observables/verification/freeze_receipt.json",
+      "receipt_sha256": "24c67544c73edbd0e0225243c0cb5c267b1a9c6be493484f36f129527925649c",
+      "hash_only_payload_check": {
+        "all_payload_hashes_and_sizes_match": true,
+        "receipt_manifest_hash_matches": true,
+        "mismatches": []
+      },
+      "small_test_evidence_recorded_not_rerun": 55,
+      "production_qualified": false,
+      "device_and_actual_validation": "not_run",
+      "publication": "local_unpublished_pending_batch",
+      "receipt_caveat": "Final manifest has61 files; earlier isolated receipt covers59. Final freeze records 23 unchanged tested implementation/input files and tests_reexecuted_during_final_freeze=false. Do not claim fresh61-file test rerun."
+    },
+    "T07": {
+      "stage_path": "07_thin_film_design_theory/round2_measurement_identifiability",
+      "actual_status": "implementation_ready_validation_pending",
+      "local_scope_complete": true,
+      "manifest_path": "07_thin_film_design_theory/round2_measurement_identifiability/freeze_manifest.json",
+      "manifest_sha256": "3bebbe99f2c28fc7833c5d27239e5ea44be87a0153e19d60e40f80cd3c73c07a",
+      "payload_file_count": 54,
+      "receipt_path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/freeze_receipt.json",
+      "receipt_sha256": "8e5d73e76c9d0a00e8ece2a6328b1e9170c92dbe0ab13c2467f4b81616d70b75",
+      "hash_only_payload_check": {
+        "all_payload_hashes_and_sizes_match": true,
+        "receipt_manifest_hash_matches": true,
+        "mismatches": []
+      },
+      "small_test_evidence_recorded_not_rerun": 19,
+      "production_qualified": false,
+      "device_and_actual_validation": "not_run",
+      "publication": "local_unpublished_pending_batch"
+    },
+    "T08": {
+      "stage_path": "08_stack_optimization_algorithms/round2_robust_inversion",
+      "actual_status": "implementation_ready_validation_pending",
+      "local_scope_complete": true,
+      "manifest_path": "08_stack_optimization_algorithms/round2_robust_inversion/freeze_manifest.json",
+      "manifest_sha256": "bbdec8b6cc320a091d45e65f450738fecd5476e2a9e2b257770842dfa421e54b",
+      "payload_file_count": 69,
+      "receipt_path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/freeze_receipt.json",
+      "receipt_sha256": "4aec01df27230599936015d08a04f0dbd7bb8cdb86aa2c206e4602192e603543",
+      "hash_only_payload_check": {
+        "all_payload_hashes_and_sizes_match": true,
+        "receipt_manifest_hash_matches": true,
+        "mismatches": []
+      },
+      "small_test_evidence_recorded_not_rerun": 22,
+      "production_qualified": false,
+      "device_and_actual_validation": "not_run",
+      "publication": "local_unpublished_pending_batch",
+      "receipt_caveat": "tiny_final mainfit converged; low profile endpoint local termination, high endpoint budget exhausted. all_attempts_converged does not establish whole-profile success."
+    },
+    "T09": {
+      "stage_path": "09_standards_and_qualification/round2_traceable_validation_contracts",
+      "actual_status": "research_contract_ready_real_validation_pending",
+      "local_scope_complete": true,
+      "manifest_path": "09_standards_and_qualification/round2_traceable_validation_contracts/freeze_manifest.json",
+      "manifest_sha256": "39a890b57207d57a8966731100e1dd087f8310ec125ade356f09e86575282b30",
+      "payload_file_count": 84,
+      "receipt_path": "09_standards_and_qualification/round2_traceable_validation_contracts/reviews/freeze_receipt.json",
+      "receipt_sha256": "39cb4f3feeadc73cae83536c6e5f1f586d0caccf67056295e154ab331c9c0871",
+      "hash_only_payload_check": {
+        "all_payload_hashes_and_sizes_match": true,
+        "receipt_manifest_hash_matches": true,
+        "mismatches": []
+      },
+      "small_test_evidence_recorded_not_rerun": 22,
+      "production_qualified": false,
+      "device_and_actual_validation": "not_run",
+      "publication": "local_unpublished_pending_batch",
+      "receipt_caveat": "84 freeze payload files vs81 standalone reader payload files; browser visual/interaction check not run; narrow-review corrections not independently rereviewed."
+    },
+    "T10": {
+      "stage_path": "10_ion_sources/round2_observable_material_response",
+      "actual_status": "locally_frozen_research_only",
+      "local_scope_complete": true,
+      "manifest_path": "10_ion_sources/round2_observable_material_response/freeze_manifest.json",
+      "manifest_sha256": "de60f6e1e24e3a2d69b11e0cf3363e221b759e520e3e479e1e8b974bc5bae74b",
+      "payload_file_count": 82,
+      "receipt_path": "10_ion_sources/round2_observable_material_response/verification/freeze_receipt.json",
+      "receipt_sha256": "6842472f88860351dea3ec7185cabc51536e9709bc2b4eb19eeaec2fe3d8536b",
+      "hash_only_payload_check": {
+        "all_payload_hashes_and_sizes_match": true,
+        "receipt_manifest_hash_matches": true,
+        "mismatches": []
+      },
+      "small_test_evidence_recorded_not_rerun": 33,
+      "production_qualified": false,
+      "device_and_actual_validation": "not_run",
+      "publication": "local_unpublished; T10_full_public_reader_blocked",
+      "receipt_caveat": "82 payload+manifest=83 ZIP entries; freeze receipt external. audit_package.py --verify additionally requires original ZIP, receipt,21 upstream sibling files and whole-library baseline; not a standalone extracted-reader verifier. Browser layout unverified.",
+      "private_publication_dependency": {
+        "path": "10_ion_sources/round2_observable_material_response/dependencies/manual_studies/2026-10-02_morningtech_mxc/evidence/provenance.json",
+        "sha256": "2bf7342e3b525894e684b4f4dd621fedc28e766f42256ba8190c8bdbac826803",
+        "bytes": 833,
+        "referenced_by": [
+          "10_ion_sources/round2_observable_material_response/dependencies/provenance.json",
+          "10_ion_sources/round2_observable_material_response/freeze_manifest.json",
+          "10_ion_sources/round2_observable_material_response/T10_round2_observable_material_response_reader.zip"
+        ],
+        "status": "excluded_from_candidate_public_projection; source_bytes_immutable; full_reader_projection_blocked"
+      }
+    }
+  },
+  "device_plans_not_executed": [
+    {
+      "stage": "T01R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "01_machine_structures/round2_topology_alignment",
+      "plan_path": "01_machine_structures/round2_topology_alignment/verification/PRE_REGISTERED_PROTOCOL.md",
+      "unresolved": "C/I source-figure gate; full-grid temporal refinement, continuous extrema and physical geometry"
+    },
+    {
+      "stage": "T02R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3",
+      "plan_path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/device_validation_plan.json",
+      "driver_path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/device_driver.py",
+      "reference_jobs": 8,
+      "fixed_ray_nominal_estimate": 2450612480,
+      "unresolved": "point12 ion base/tight references and point2 vapor tight reference not run; event support only conditional"
+    },
+    {
+      "stage": "T03R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer",
+      "plan_path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/device_validation_plan.json",
+      "driver_path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/device_runner.py",
+      "nominal_rays": 2100409824,
+      "unresolved": "authenticated full source/time input chunks; candidate-local error bounds; user-approved targets and real geometry"
+    },
+    {
+      "stage": "T04R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract",
+      "plan_path": "04_coating_and_substrate_materials/round2_material_response_contract/verification/device_validation_plan.json",
+      "driver_path": "04_coating_and_substrate_materials/round2_material_response_contract/models/calibration_driver.py",
+      "bootstrap_replicates": 100000,
+      "unresolved": "actual film/calibration covariance and resource approval"
+    },
+    {
+      "stage": "T05R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer",
+      "plan_path": "05_evaporation_sources/round2_qcm_flux_transfer/reports/04_results_reproduction_and_limits.md",
+      "driver_path": "05_evaporation_sources/round2_qcm_flux_transfer/models/validation_driver.py",
+      "fit_count": 480000,
+      "frequency_samples": 63360000,
+      "unresolved": "actual QCM/source/workpiece geometry, collection and drift calibration"
+    },
+    {
+      "stage": "T06R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "06_optical_coating_families/round2_process_optical_observables",
+      "plan_path": "06_optical_coating_families/round2_process_optical_observables/data/batch_plan.json",
+      "driver_path": "06_optical_coating_families/round2_process_optical_observables/models/batch_driver.py",
+      "monte_carlo_samples": 1000,
+      "unresolved": "actual process-to-film n/k calibration and supplied covariance validity"
+    },
+    {
+      "stage": "T07R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability",
+      "plan_path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/batch_plan_receipt.json",
+      "driver_path": "07_thin_film_design_theory/round2_measurement_identifiability/models/batch_driver.py",
+      "truth_cases": 27,
+      "least_squares_start_jobs": 339552,
+      "estimated_max_nfev_total": 135820800,
+      "unresolved": "real measurement operator, calibration and global ambiguity; nfev not true optical call count"
+    },
+    {
+      "stage": "T08R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion",
+      "plan_path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/batch_plan_receipt.json",
+      "driver_path": "08_stack_optimization_algorithms/round2_robust_inversion/models/batch_driver.py",
+      "fit_start_jobs": 163584,
+      "total_forward_call_ceiling": 196391832,
+      "unresolved": "full profile endpoints, real bias/model discrepancy and performance/coverage; one complete observation-vector prediction per call"
+    },
+    {
+      "stage": "T09R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts",
+      "plan_path": "09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_contract_template.json",
+      "unresolved": "authorized normative clauses, contract severity/thresholds and real traceable samples; no hardware test performed"
+    },
+    {
+      "stage": "T10R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "10_ion_sources/round2_observable_material_response",
+      "plan_path": "10_ion_sources/round2_observable_material_response/reports/08_implementation_execution_and_limits.md",
+      "driver_path": "10_ion_sources/round2_observable_material_response/models/validation_driver.py",
+      "conditions": 216,
+      "replicates_per_condition": 200,
+      "inverse_solve_cap": 43200,
+      "max_iterations": 100,
+      "wall_budget_s": 1800,
+      "unresolved": "actual instrument/firmware/protocol, charge/energy/neutral corrections, film response; offline driver only, live adapter not implemented"
+    }
+  ],
+  "publication": {
+    "status": "later_batch_publication_pending_no_upload_or_push_in_this_consolidation",
+    "previous_batch_commit": "31744525b4cdde04fad31aaf58e6148f7819ce62",
+    "previous_batch_scope": [
+      "T02v0.3",
+      "T03R2",
+      "T04R2",
+      "T05R2"
+    ],
+    "previous_batch_evidence": "Coordinator-supplied confirmed publication receipt; remote not rechecked in this local-only pass",
+    "new_local_stages": [
+      "T06R2",
+      "T07R2",
+      "T08R2",
+      "T09R2",
+      "T10R2"
+    ],
+    "candidate_allowlist": "00_project/round2_prospective_publish_allowlist.txt",
+    "candidate_manifest": "00_project/round2_prospective_publish_manifest.json",
+    "T10_public_full_reader_status": "blocked_private_provenance_dependency_and_non_standalone_whole_package_audit",
+    "T10_excluded_dependency": "10_ion_sources/round2_observable_material_response/dependencies/manual_studies/2026-10-02_morningtech_mxc/evidence/provenance.json",
+    "original_freeze_receipts": "retained_unchanged; publication projection does not inherit complete package verification",
+    "authorization": "no_publication_authorization_granted_by_this_plan"
+  },
+  "test_counts_not_aggregated": "Counts represent different scopes and inherited dependencies, not a total project pass rate",
+  "qualification": "no actual-machine, formal full-chain, production or standards-compliance qualification"
+}

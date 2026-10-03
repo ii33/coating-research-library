@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-02",
+  "figures": [
+    {
+      "path": "figures/01_observation_geometry.png",
+      "sha256": "1a3f9b5c2b49b6e8ec6106c83bad81bb9007a9c360e63fbe9f6d7d8217cd47ae",
+      "inspected_actual_png": true,
+      "result": "passed",
+      "checks": [
+        "readable labels",
+        "no clipping",
+        "correct legend colors",
+        "clear synthetic/inclusion limits"
+      ]
+    },
+    {
+      "path": "figures/02_bounded_set_classification.png",
+      "sha256": "2dddd551ce26519b34b551aa582b0cb5c51c7708a253c25062c5eb019e1adfb2",
+      "inspected_actual_png": true,
+      "result": "passed",
+      "checks": [
+        "readable labels",
+        "no clipping",
+        "correct legend colors",
+        "clear synthetic/inclusion limits"
+      ]
+    },
+    {
+      "path": "figures/03_contract_and_alias.png",
+      "sha256": "bf85b03ccef4325fcbe137401590d6a764553830d6c95301024b2080a142d088",
+      "inspected_actual_png": true,
+      "result": "passed",
+      "checks": [
+        "readable labels",
+        "no clipping",
+        "correct legend colors",
+        "clear synthetic/inclusion limits"
+      ]
+    }
+  ],
+  "corrected_before_freeze": "Figure 2 empty-bar legend defaulted to blue; replaced with explicit matching Patch colors and re-inspected",
+  "html_layout": "unverified",
+  "html_static_links": "checked_separately",
+  "browser_headless_socket_attempts": 0,
+  "scope": "PNG pixel review is not a browser HTML layout verification"
+}

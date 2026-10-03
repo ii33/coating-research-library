@@ -1,0 +1,1521 @@
+{
+  "case_index": 0,
+  "candidate": "constant",
+  "loss": "gaussian",
+  "problem": {
+    "model": "constant",
+    "names": [
+      "n0",
+      "k",
+      "d_um",
+      "RT_gain",
+      "angle_bias_deg"
+    ],
+    "bounds": [
+      [
+        1.1,
+        0.0,
+        0.005,
+        0.9,
+        -0.5
+      ],
+      [
+        3.0,
+        0.3,
+        1.5,
+        1.1,
+        0.5
+      ]
+    ],
+    "scales": [
+      0.2,
+      0.02,
+      0.05,
+      0.01,
+      0.1
+    ],
+    "records": [
+      {
+        "kind": "R",
+        "wavelength_um": 0.5,
+        "angle_deg": 45.0,
+        "polarization": "s"
+      },
+      {
+        "kind": "T",
+        "wavelength_um": 0.5,
+        "angle_deg": 45.0,
+        "polarization": "s"
+      },
+      {
+        "kind": "R",
+        "wavelength_um": 0.5,
+        "angle_deg": 45.0,
+        "polarization": "p"
+      },
+      {
+        "kind": "T",
+        "wavelength_um": 0.5,
+        "angle_deg": 45.0,
+        "polarization": "p"
+      },
+      {
+        "kind": "R",
+        "wavelength_um": 0.65,
+        "angle_deg": 45.0,
+        "polarization": "s"
+      },
+      {
+        "kind": "T",
+        "wavelength_um": 0.65,
+        "angle_deg": 45.0,
+        "polarization": "s"
+      },
+      {
+        "kind": "R",
+        "wavelength_um": 0.65,
+        "angle_deg": 45.0,
+        "polarization": "p"
+      },
+      {
+        "kind": "T",
+        "wavelength_um": 0.65,
+        "angle_deg": 45.0,
+        "polarization": "p"
+      }
+    ],
+    "noise_covariance": [
+      [
+        4e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        4e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        4e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        4e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4e-06,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4e-06,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4e-06,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4e-06
+      ]
+    ],
+    "discrepancy_covariance": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "calibration": [
+      {
+        "name": "independent_gain_calibration",
+        "index": 3,
+        "mean": 1.0,
+        "sigma": 0.005,
+        "evidence": "synthetic_condition"
+      },
+      {
+        "name": "independent_angle_calibration",
+        "index": 4,
+        "mean": 0.0,
+        "sigma": 0.1,
+        "evidence": "synthetic_condition"
+      }
+    ],
+    "prior": [],
+    "loss": "gaussian",
+    "huber_delta": 1.5,
+    "robust_basis": "ordered Cholesky-whitened coordinates",
+    "candidate_model_penalty": 0.0,
+    "gaussian_score_omits_common_m_log2pi_and_prior_normalizers": true,
+    "score_is_not_Bayes_evidence_or_automatic_model_selection": true
+  },
+  "fit": {
+    "attempts": [
+      {
+        "start": [
+          1.8,
+          0.02,
+          0.1,
+          1.0,
+          0.0
+        ],
+        "fixed": {},
+        "forward_calls": 38,
+        "max_forward_calls": 45,
+        "best_evaluated": {
+          "x": [
+            1.796359440080987,
+            0.02018059984433086,
+            0.10003515801981469,
+            0.9995541240464135,
+            -0.027574220939044124
+          ],
+          "parts": {
+            "data_loss": 1.141909527501459,
+            "calibration_loss": 0.04199299033949387,
+            "prior_loss": 0.0,
+            "candidate_model_penalty": 0.0,
+            "fixed_covariance_logdet_half": -49.71686478737753,
+            "raw_noise_only_chi2": 2.283819055002918,
+            "effective_covariance_chi2": 2.283819055002918,
+            "optimized_objective": 1.1839025178409528,
+            "declared_score": -48.532962269536576
+          }
+        },
+        "converged": true,
+        "status": 4,
+        "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+        "solver_nfev": 8,
+        "solver_endpoint": [
+          1.796359440080987,
+          0.02018059984433086,
+          0.10003515801981469,
+          0.9995541240464135,
+          -0.027574220939044124
+        ],
+        "active_mask_free": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "clusters": [
+      {
+        "representative": {
+          "x": [
+            1.796359440080987,
+            0.02018059984433086,
+            0.10003515801981469,
+            0.9995541240464135,
+            -0.027574220939044124
+          ],
+          "parts": {
+            "data_loss": 1.141909527501459,
+            "calibration_loss": 0.04199299033949387,
+            "prior_loss": 0.0,
+            "candidate_model_penalty": 0.0,
+            "fixed_covariance_logdet_half": -49.71686478737753,
+            "raw_noise_only_chi2": 2.283819055002918,
+            "effective_covariance_chi2": 2.283819055002918,
+            "optimized_objective": 1.1839025178409528,
+            "declared_score": -48.532962269536576
+          },
+          "attempt_index": 0,
+          "converged": true
+        },
+        "members": [
+          0
+        ]
+      }
+    ],
+    "cluster_metric": "Euclidean distance after declared parameter scaling; greedy representative, not basin proof",
+    "cluster_distance_scaled": 0.2,
+    "global_minimum_certified": false,
+    "unconverged_points_retained": true,
+    "search_domain": [
+      [
+        1.1,
+        0.0,
+        0.005,
+        0.9,
+        -0.5
+      ],
+      [
+        3.0,
+        0.3,
+        1.5,
+        1.1,
+        0.5
+      ]
+    ]
+  },
+  "profile": {
+    "parameter_index": 2,
+    "rows": [
+      {
+        "fixed_value": 0.005,
+        "attempts": [
+          {
+            "start": [
+              1.8,
+              0.02,
+              0.1,
+              1.0,
+              0.0
+            ],
+            "fixed": {
+              "2": 0.005
+            },
+            "forward_calls": 45,
+            "max_forward_calls": 45,
+            "best_evaluated": {
+              "x": [
+                2.9999999999999996,
+                0.29999999999999993,
+                0.005,
+                0.9786625284010586,
+                0.49999999999999994
+              ],
+              "parts": {
+                "data_loss": 1822.623382586408,
+                "calibration_loss": 21.605753884712605,
+                "prior_loss": 0.0,
+                "candidate_model_penalty": 0.0,
+                "fixed_covariance_logdet_half": -49.71686478737753,
+                "raw_noise_only_chi2": 3645.246765172816,
+                "effective_covariance_chi2": 3645.246765172816,
+                "optimized_objective": 1844.2291364711207,
+                "declared_score": 1794.5122716837432
+              }
+            },
+            "converged": true,
+            "status": 4,
+            "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+            "solver_nfev": 9,
+            "solver_endpoint": [
+              2.9999999999999996,
+              0.29999999999999993,
+              0.9786625284010586,
+              0.49999999999999994
+            ],
+            "active_mask_free": [
+              1,
+              1,
+              0,
+              1
+            ]
+          }
+        ],
+        "clusters": [
+          {
+            "representative": {
+              "x": [
+                2.9999999999999996,
+                0.29999999999999993,
+                0.005,
+                0.9786625284010586,
+                0.49999999999999994
+              ],
+              "parts": {
+                "data_loss": 1822.623382586408,
+                "calibration_loss": 21.605753884712605,
+                "prior_loss": 0.0,
+                "candidate_model_penalty": 0.0,
+                "fixed_covariance_logdet_half": -49.71686478737753,
+                "raw_noise_only_chi2": 3645.246765172816,
+                "effective_covariance_chi2": 3645.246765172816,
+                "optimized_objective": 1844.2291364711207,
+                "declared_score": 1794.5122716837432
+              },
+              "attempt_index": 0,
+              "converged": true
+            },
+            "members": [
+              0
+            ]
+          }
+        ],
+        "cluster_metric": "Euclidean distance after declared parameter scaling; greedy representative, not basin proof",
+        "cluster_distance_scaled": 0.2,
+        "global_minimum_certified": false,
+        "unconverged_points_retained": true,
+        "search_domain": [
+          [
+            1.1,
+            0.0,
+            0.005,
+            0.9,
+            -0.5
+          ],
+          [
+            3.0,
+            0.3,
+            1.5,
+            1.1,
+            0.5
+          ]
+        ]
+      },
+      {
+        "fixed_value": 1.5,
+        "attempts": [
+          {
+            "start": [
+              1.8,
+              0.02,
+              0.1,
+              1.0,
+              0.0
+            ],
+            "fixed": {
+              "2": 1.5
+            },
+            "forward_calls": 45,
+            "max_forward_calls": 45,
+            "best_evaluated": {
+              "x": [
+                1.9295241895240018,
+                0.0014148920562095247,
+                1.5,
+                1.002495682929155,
+                0.1389912232698785
+              ],
+              "parts": {
+                "data_loss": 3.845956103868165,
+                "calibration_loss": 1.0904966729603662,
+                "prior_loss": 0.0,
+                "candidate_model_penalty": 0.0,
+                "fixed_covariance_logdet_half": -49.71686478737753,
+                "raw_noise_only_chi2": 7.69191220773633,
+                "effective_covariance_chi2": 7.69191220773633,
+                "optimized_objective": 4.936452776828531,
+                "declared_score": -44.780412010549
+              }
+            },
+            "converged": false,
+            "status": "budget_or_evaluation_failure",
+            "message": "per-start forward-vector cap",
+            "solver_nfev": null
+          }
+        ],
+        "clusters": [
+          {
+            "representative": {
+              "x": [
+                1.9295241895240018,
+                0.0014148920562095247,
+                1.5,
+                1.002495682929155,
+                0.1389912232698785
+              ],
+              "parts": {
+                "data_loss": 3.845956103868165,
+                "calibration_loss": 1.0904966729603662,
+                "prior_loss": 0.0,
+                "candidate_model_penalty": 0.0,
+                "fixed_covariance_logdet_half": -49.71686478737753,
+                "raw_noise_only_chi2": 7.69191220773633,
+                "effective_covariance_chi2": 7.69191220773633,
+                "optimized_objective": 4.936452776828531,
+                "declared_score": -44.780412010549
+              },
+              "attempt_index": 0,
+              "converged": false
+            },
+            "members": [
+              0
+            ]
+          }
+        ],
+        "cluster_metric": "Euclidean distance after declared parameter scaling; greedy representative, not basin proof",
+        "cluster_distance_scaled": 0.2,
+        "global_minimum_certified": false,
+        "unconverged_points_retained": true,
+        "search_domain": [
+          [
+            1.1,
+            0.0,
+            0.005,
+            0.9,
+            -0.5
+          ],
+          [
+            3.0,
+            0.3,
+            1.5,
+            1.1,
+            0.5
+          ]
+        ]
+      }
+    ],
+    "confidence_interval": null,
+    "meaning": "finite-grid finite-budget upper estimates of penalized profile minima; all other parameters refit",
+    "data_only_profile_requires_zero_calibration_and_priors": true
+  },
+  "repeat_noise_fits": [],
+  "validation": [
+    {
+      "x": [
+        1.796359440080987,
+        0.02018059984433086,
+        0.10003515801981469,
+        0.9995541240464135,
+        -0.027574220939044124
+      ],
+      "optimizer_converged": true,
+      "heldout": {
+        "raw_prediction": [
+          0.2965371261601586,
+          0.6689480912401624,
+          0.01537250454951389,
+          0.9363300787121087
+        ],
+        "conditional_innovation": [
+          -0.003289523915813164,
+          -0.001012138962239728,
+          -0.0015535518117126435,
+          -0.0005755020813222878
+        ],
+        "conditional_covariance": [
+          [
+            4e-06,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            4e-06,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4e-06,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            4e-06
+          ]
+        ],
+        "chi2_plugin": 3.647529687218102,
+        "negative_log_predictive_density_plugin": -19.35891341726102,
+        "parameter_uncertainty_included": false,
+        "coverage_certified": false,
+        "same_sample_state_assumed": true
+      },
+      "conditional_measurement_design": [
+        {
+          "candidate": {
+            "name": "off_axis_complex_ratio",
+            "records": [
+              {
+                "kind": "rho_reim",
+                "wavelength_um": 0.55,
+                "angle_deg": 60,
+                "convention": "opposed_reflected_p"
+              }
+            ],
+            "new_nuisance": false,
+            "cost_units": 3.0
+          },
+          "step_scaled": 0.0001,
+          "derivative_schemes": {
+            "existing": [
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order"
+            ],
+            "new": [
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order"
+            ]
+          },
+          "conditional": {
+            "conditional_covariance": [
+              [
+                2.5e-05,
+                0.0
+              ],
+              [
+                0.0,
+                2.5e-05
+              ]
+            ],
+            "conditional_derivative": [
+              [
+                -0.09500141317939081,
+                0.004563574182853136,
+                0.05157397739763425,
+                0.0,
+                0.0025683074123677985
+              ],
+              [
+                -0.0456357417987982,
+                -0.009500141316988453,
+                -0.11722375092410725,
+                0.0,
+                2.35562523653865e-05
+              ]
+            ],
+            "full_parameter_information_increment": [
+              [
+                444.31557742431636,
+                -1.303407469911525e-08,
+                17.999683752079044,
+                0.0,
+                -9.802713628189576
+              ],
+              [
+                -1.303407469911525e-08,
+                4.443155774606191,
+                53.960154849814785,
+                0.0,
+                0.4598749469736886
+              ],
+              [
+                17.999683752079044,
+                53.960154849814785,
+                656.051317013153,
+                0.0,
+                5.187859047025914
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                -9.802713628189576,
+                0.4598749469736886,
+                5.187859047025914,
+                0.0,
+                0.26387031445795517
+              ]
+            ]
+          },
+          "information_layers": {
+            "data_only": {
+              "interest_information_before": [
+                [
+                  2652.9571995757947,
+                  93.34718229788109,
+                  -287.25910540187266
+                ],
+                [
+                  93.34718229788109,
+                  37.96379230858737,
+                  -147.173547425137
+                ],
+                [
+                  -287.25910540187266,
+                  -147.173547425137,
+                  3250.642335075908
+                ]
+              ],
+              "interest_information_after": [
+                [
+                  4738.564734628816,
+                  130.750073054356,
+                  -1608.7394821494086
+                ],
+                [
+                  130.750073054356,
+                  41.81133681751978,
+                  -117.77864655505697
+                ],
+                [
+                  -1608.7394821494086,
+                  -117.77864655505697,
+                  4975.331247344373
+                ]
+              ],
+              "interest_increment": [
+                [
+                  2085.6075350530214,
+                  37.4028907564749,
+                  -1321.480376747536
+                ],
+                [
+                  37.4028907564749,
+                  3.8475445089324083,
+                  29.394900870080036
+                ],
+                [
+                  -1321.480376747536,
+                  29.394900870080036,
+                  1724.6889122684652
+                ]
+              ],
+              "increment_eigenvalues": [
+                -9.206997461816305e-14,
+                575.2264553422325,
+                3238.917536488187
+              ],
+              "interest_rank_before": 3,
+              "interest_rank_after": 3,
+              "nuisance_rank_before": 2,
+              "nuisance_rank_after": 2,
+              "singular_value_threshold": 9.531035133739016e-06,
+              "half_logdet_precision_ratio_if_nonsingular": 0.5738572801326711,
+              "confidence_or_global_certificate": false
+            },
+            "with_calibration": {
+              "interest_information_before": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  4519.837834908572
+                ]
+              ],
+              "interest_information_after": [
+                [
+                  5197.354812160293,
+                  227.32349010503515,
+                  -2041.0449307953056
+                ],
+                [
+                  227.32349010503515,
+                  118.55252562418848,
+                  -166.31215880570105
+                ],
+                [
+                  -2041.0449307953056,
+                  -166.31215880570105,
+                  5414.6466289573145
+                ]
+              ],
+              "interest_increment": [
+                [
+                  861.7733679978382,
+                  6.247168026396537,
+                  -305.3563026770764
+                ],
+                [
+                  6.247168026396537,
+                  3.791936100534727,
+                  52.07410073571762
+                ],
+                [
+                  -305.3563026770764,
+                  52.07410073571762,
+                  894.8087940487421
+                ]
+              ],
+              "increment_eigenvalues": [
+                1.6672629174565347e-13,
+                575.3277101286485,
+                1185.0463880184666
+              ],
+              "interest_rank_before": 3,
+              "interest_rank_after": 3,
+              "nuisance_rank_before": 2,
+              "nuisance_rank_after": 2,
+              "singular_value_threshold": 9.531037807723065e-06,
+              "half_logdet_precision_ratio_if_nonsingular": 0.22429351048062074,
+              "confidence_or_global_certificate": false
+            },
+            "with_calibration_and_prior": {
+              "interest_information_before": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  4519.837834908572
+                ]
+              ],
+              "interest_information_after": [
+                [
+                  5197.354812160293,
+                  227.32349010503515,
+                  -2041.0449307953056
+                ],
+                [
+                  227.32349010503515,
+                  118.55252562418848,
+                  -166.31215880570105
+                ],
+                [
+                  -2041.0449307953056,
+                  -166.31215880570105,
+                  5414.6466289573145
+                ]
+              ],
+              "interest_increment": [
+                [
+                  861.7733679978382,
+                  6.247168026396537,
+                  -305.3563026770764
+                ],
+                [
+                  6.247168026396537,
+                  3.791936100534727,
+                  52.07410073571762
+                ],
+                [
+                  -305.3563026770764,
+                  52.07410073571762,
+                  894.8087940487421
+                ]
+              ],
+              "increment_eigenvalues": [
+                1.6672629174565347e-13,
+                575.3277101286485,
+                1185.0463880184666
+              ],
+              "interest_rank_before": 3,
+              "interest_rank_after": 3,
+              "nuisance_rank_before": 2,
+              "nuisance_rank_after": 2,
+              "singular_value_threshold": 9.531037807723065e-06,
+              "half_logdet_precision_ratio_if_nonsingular": 0.22429351048062074,
+              "confidence_or_global_certificate": false
+            }
+          },
+          "interpretation": "fixed-covariance Gaussian first-order surrogate even if the fitted objective is Huber",
+          "cost_is_synthetic": true,
+          "known_model_at_fixed_parameter_only": true
+        },
+        {
+          "candidate": {
+            "name": "independent_geometric_d_calibrated",
+            "records": [
+              {
+                "kind": "d_geo",
+                "independent": true
+              }
+            ],
+            "new_nuisance": false,
+            "cost_units": 2.0
+          },
+          "step_scaled": 0.0001,
+          "derivative_schemes": {
+            "existing": [
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order"
+            ],
+            "new": [
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order"
+            ]
+          },
+          "conditional": {
+            "conditional_covariance": [
+              [
+                4e-06
+              ]
+            ],
+            "conditional_derivative": [
+              [
+                0.0,
+                0.0,
+                0.050000000000050004,
+                0.0,
+                0.0
+              ]
+            ],
+            "full_parameter_information_increment": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                625.0000000012502,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "information_layers": {
+            "data_only": {
+              "interest_information_before": [
+                [
+                  2652.9571995757947,
+                  93.34718229788109,
+                  -287.25910540187266
+                ],
+                [
+                  93.34718229788109,
+                  37.96379230858737,
+                  -147.173547425137
+                ],
+                [
+                  -287.25910540187266,
+                  -147.173547425137,
+                  3250.642335075908
+                ]
+              ],
+              "interest_information_after": [
+                [
+                  2652.9571995757947,
+                  93.34718229788109,
+                  -287.25910540187266
+                ],
+                [
+                  93.34718229788109,
+                  37.96379230858737,
+                  -147.173547425137
+                ],
+                [
+                  -287.25910540187266,
+                  -147.173547425137,
+                  3875.642335077158
+                ]
+              ],
+              "interest_increment": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  625.0000000012501
+                ]
+              ],
+              "increment_eigenvalues": [
+                0.0,
+                0.0,
+                625.0000000012501
+              ],
+              "interest_rank_before": 3,
+              "interest_rank_after": 3,
+              "nuisance_rank_before": 2,
+              "nuisance_rank_after": 2,
+              "singular_value_threshold": 9.410769008240623e-06,
+              "half_logdet_precision_ratio_if_nonsingular": 0.10488752346556574,
+              "confidence_or_global_certificate": false
+            },
+            "with_calibration": {
+              "interest_information_before": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  4519.837834908572
+                ]
+              ],
+              "interest_information_after": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  5144.837834909823
+                ]
+              ],
+              "interest_increment": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  625.0000000012506
+                ]
+              ],
+              "increment_eigenvalues": [
+                0.0,
+                0.0,
+                625.0000000012506
+              ],
+              "interest_rank_before": 3,
+              "interest_rank_after": 3,
+              "nuisance_rank_before": 2,
+              "nuisance_rank_after": 2,
+              "singular_value_threshold": 9.410771812911814e-06,
+              "half_logdet_precision_ratio_if_nonsingular": 0.07878941639174997,
+              "confidence_or_global_certificate": false
+            },
+            "with_calibration_and_prior": {
+              "interest_information_before": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  4519.837834908572
+                ]
+              ],
+              "interest_information_after": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  5144.837834909823
+                ]
+              ],
+              "interest_increment": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  625.0000000012506
+                ]
+              ],
+              "increment_eigenvalues": [
+                0.0,
+                0.0,
+                625.0000000012506
+              ],
+              "interest_rank_before": 3,
+              "interest_rank_after": 3,
+              "nuisance_rank_before": 2,
+              "nuisance_rank_after": 2,
+              "singular_value_threshold": 9.410771812911814e-06,
+              "half_logdet_precision_ratio_if_nonsingular": 0.07878941639174997,
+              "confidence_or_global_certificate": false
+            }
+          },
+          "interpretation": "fixed-covariance Gaussian first-order surrogate even if the fitted objective is Huber",
+          "cost_is_synthetic": true,
+          "known_model_at_fixed_parameter_only": true
+        },
+        {
+          "candidate": {
+            "name": "independent_geometric_d_unknown_bias",
+            "records": [
+              {
+                "kind": "d_geo",
+                "independent": true
+              }
+            ],
+            "new_nuisance": true,
+            "cost_units": 2.0
+          },
+          "step_scaled": 0.0001,
+          "derivative_schemes": {
+            "existing": [
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order"
+            ],
+            "new": [
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order",
+              "central_second_order"
+            ]
+          },
+          "conditional": {
+            "conditional_covariance": [
+              [
+                4e-06
+              ]
+            ],
+            "conditional_derivative": [
+              [
+                0.0,
+                0.0,
+                0.050000000000050004,
+                0.0,
+                0.0,
+                0.05
+              ]
+            ],
+            "full_parameter_information_increment": [
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                625.0000000012502,
+                0.0,
+                0.0,
+                625.000000000625
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                625.000000000625,
+                0.0,
+                0.0,
+                625.0
+              ]
+            ]
+          },
+          "information_layers": {
+            "data_only": {
+              "interest_information_before": [
+                [
+                  2652.957199575795,
+                  93.3471822978811,
+                  -287.2591054018726
+                ],
+                [
+                  93.3471822978811,
+                  37.963792308587365,
+                  -147.173547425137
+                ],
+                [
+                  -287.2591054018726,
+                  -147.173547425137,
+                  3250.6423350759082
+                ]
+              ],
+              "interest_information_after": [
+                [
+                  2652.9571995757947,
+                  93.34718229788109,
+                  -287.25910540187266
+                ],
+                [
+                  93.34718229788109,
+                  37.96379230858737,
+                  -147.173547425137
+                ],
+                [
+                  -287.25910540187266,
+                  -147.173547425137,
+                  3250.642335075908
+                ]
+              ],
+              "interest_increment": [
+                [
+                  -4.547473508864641e-13,
+                  -1.4210854715202004e-14,
+                  -5.684341886080802e-14
+                ],
+                [
+                  -1.4210854715202004e-14,
+                  7.105427357601002e-15,
+                  0.0
+                ],
+                [
+                  -5.684341886080802e-14,
+                  0.0,
+                  -4.547473508864641e-13
+                ]
+              ],
+              "increment_eigenvalues": [
+                -5.117856989459077e-13,
+                -3.98152546253372e-13,
+                7.54897078395233e-15
+              ],
+              "interest_rank_before": 3,
+              "interest_rank_after": 3,
+              "nuisance_rank_before": 2,
+              "nuisance_rank_after": 3,
+              "singular_value_threshold": 9.421585822985037e-06,
+              "half_logdet_precision_ratio_if_nonsingular": 0.0,
+              "confidence_or_global_certificate": false
+            },
+            "with_calibration": {
+              "interest_information_before": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  4519.837834908572
+                ]
+              ],
+              "interest_information_after": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  4519.837834908572
+                ]
+              ],
+              "interest_increment": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "increment_eigenvalues": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "interest_rank_before": 3,
+              "interest_rank_after": 3,
+              "nuisance_rank_before": 2,
+              "nuisance_rank_after": 3,
+              "singular_value_threshold": 9.421588590764039e-06,
+              "half_logdet_precision_ratio_if_nonsingular": 0.0,
+              "confidence_or_global_certificate": false
+            },
+            "with_calibration_and_prior": {
+              "interest_information_before": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  4519.837834908572
+                ]
+              ],
+              "interest_information_after": [
+                [
+                  4335.581444162454,
+                  221.0763220786386,
+                  -1735.6886281182292
+                ],
+                [
+                  221.0763220786386,
+                  114.76058952365375,
+                  -218.38625954141867
+                ],
+                [
+                  -1735.6886281182292,
+                  -218.38625954141867,
+                  4519.837834908572
+                ]
+              ],
+              "interest_increment": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "increment_eigenvalues": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "interest_rank_before": 3,
+              "interest_rank_after": 3,
+              "nuisance_rank_before": 2,
+              "nuisance_rank_after": 3,
+              "singular_value_threshold": 9.421588590764039e-06,
+              "half_logdet_precision_ratio_if_nonsingular": 0.0,
+              "confidence_or_global_certificate": false
+            }
+          },
+          "interpretation": "fixed-covariance Gaussian first-order surrogate even if the fitted objective is Huber",
+          "cost_is_synthetic": true,
+          "known_model_at_fixed_parameter_only": true
+        }
+      ]
+    }
+  ],
+  "validation_not_used_to_select_model": true,
+  "global_certificate": false
+}

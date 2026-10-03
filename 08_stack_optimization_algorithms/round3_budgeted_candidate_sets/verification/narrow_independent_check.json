@@ -1,0 +1,248 @@
+{
+  "stage": "T08R3 narrow independent check",
+  "scope": {
+    "files": [
+      "models/candidate_sets.py",
+      "data/candidate_contract.json",
+      "dependencies/t07r3/data/case.json",
+      "dependencies/t07r3/dependencies/t06r3/models/bounded_optics.py",
+      "dependencies/t07r3/dependencies/t06r3/models/exact_intervals.py"
+    ],
+    "tiny_rerun_by_reviewer": false,
+    "optical_interval_single_wavelength_calls": 16,
+    "additional_optical_calls_after_matrix_check": 0,
+    "browser_headless_heavy_device_quota_bypass": false,
+    "model": "GPT-6 Luna",
+    "formal_DeepSeek_Seed_Sol_chain": "pending"
+  },
+  "mapping": {
+    "dimension": 2,
+    "variables": [
+      "z",
+      "v6"
+    ],
+    "z_definition": "h/h_ref; dimensionless",
+    "h_ref_m": 3.3893682215916026e-10,
+    "z_domain_exact": [
+      "1191827825890425099974357/1208925819614629174706176",
+      "306505953334708322791479/302231454903657293676544"
+    ],
+    "z_domain_approx": [
+      0.9858568710777851,
+      1.014143128922215
+    ],
+    "source_thickness_h_m_approx": [
+      3.341431949868774e-10,
+      3.437304493314431e-10
+    ],
+    "d_i_um": "d_legacy_nm/1000*z*(v6 if original layer=6 else 1)",
+    "layer_order_recipe": "substrate_to_incident_medium",
+    "incident_evaluator_layer_ids": [
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "varied_layer_original_id": 6,
+    "varied_layer_material": "YF3 surrogate",
+    "varied_layer_n_for_seed_only": 1.5,
+    "varied_layer_nominal_um": 1.98205,
+    "shared_z_all_layers_and_channels": true,
+    "same_specimen_two_channels_same_z": true,
+    "candidate_latents": "separate existential z per candidate",
+    "source_domain_meaning": "positive thickness outer envelope only; IN does not establish reachable source realization"
+  },
+  "channels": {
+    "M0": {
+      "wavelength_um": [
+        4.25,
+        4.26,
+        4.27
+      ],
+      "weights": [
+        0.25,
+        0.5,
+        0.25
+      ],
+      "measurement_error_abs_R": 0.001
+    },
+    "M1": {
+      "wavelength_um": [
+        10.0
+      ],
+      "weights": [
+        1.0
+      ],
+      "measurement_error_abs_R": 0.001
+    },
+    "model": "synthetic constant real n, k=0, normal incidence, semi-infinite substrate; no continuous-band or physical claim"
+  },
+  "structural_checks": {
+    "exact_partition": {
+      "hand_built_rational_split_accepted": true,
+      "missing_child_error": "ValueError: coverage_hole"
+    },
+    "node_budget_zero": {
+      "counts": {
+        "OUT": 0,
+        "IN": 0,
+        "UNKNOWN": 1
+      },
+      "reason": "run_node_budget",
+      "interval_calls": 0,
+      "cover_verified": true
+    },
+    "interval_budget_zero": {
+      "counts": {
+        "OUT": 0,
+        "IN": 0,
+        "UNKNOWN": 1
+      },
+      "reason": "interval_budget",
+      "interval_calls": 0,
+      "cover_verified": true
+    },
+    "unknown_lower_bound": {
+      "box_exact": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "9/10",
+          "91/100"
+        ]
+      ],
+      "objective_interval_exact": [
+        "1184747303222336591212021/151115727451828646838272",
+        "10880332376531662572355951/1208925819614629174706176"
+      ],
+      "optimization_lower_exact": "1184747303222336591212021/151115727451828646838272",
+      "optimization_lower_approx": 7.84,
+      "unknown_included": 1,
+      "interval_calls": 0
+    },
+    "full_domain_zero_budget": {
+      "counts": {
+        "OUT": 0,
+        "IN": 0,
+        "UNKNOWN": 1
+      },
+      "optimization_lower_exact": "0",
+      "unknown_included": 1,
+      "status": "bounded_relaxation_with_unresolved_boxes"
+    }
+  },
+  "provenance_checks": {
+    "pre_fix_risks_found_by_code_inspection": [
+      "optimize_bounds trusted caller-supplied proxy_feasible/objective_exact witness fields without re-verifying",
+      "optimize_bounds did not authenticate caller-supplied run cover and leaf J/g"
+    ],
+    "pre_fix_exploit_execution_claimed": false,
+    "current_fix_summary": "screen and validate_point record canonical digests in process-local registries; optimize_bounds requires registered screen/witness fingerprints, triple contract hashes, rechecks cover and exact per-leaf objective/constraint, and recomputes point objective",
+    "fresh_process_saved_run_and_witness": "ValueError:unverified_or_modified_screen_requires_budgeted_replay",
+    "after_zero_budget_rescreen_loaded_witness": "ValueError:unverified_or_modified_witness_requires_budgeted_replay",
+    "after_zero_budget_rescreen_forged_matching_hash_witness": "ValueError:unverified_or_modified_witness_requires_budgeted_replay",
+    "mutated_registered_screen": "ValueError:unverified_or_modified_screen_requires_budgeted_replay",
+    "additional_interval_calls": 0,
+    "artifact_boundary": "persisted JSON is inspectable evidence but does not self-authenticate as optimize_bounds input; re-screen and revalidate/replay in the active process with explicit budget"
+  },
+  "independent_optical_matrix": {
+    "method": "ordinary-double 2x2 characteristic matrix, incident-to-substrate multiplication, independent of inherited Airy recursion",
+    "matrix": "[[cos(delta), i*sin(delta)/n],[i*n*sin(delta), cos(delta)]]",
+    "strict_float_contained_in_interval_for_all_eight_results": false,
+    "max_abs_float_to_nearest_interval_endpoint_approx": 5.8e-17,
+    "interpretation": "about 1e-17-level numerical agreement; ordinary double rounding is not a rigorous inclusion check",
+    "calls": 16,
+    "points": [
+      {
+        "id": "baseline",
+        "z_exact": "1",
+        "z": 1.0,
+        "v_exact": "1",
+        "v": 1.0,
+        "layer6_um": 1.98205,
+        "M0_float_R": 0.011583971201202081,
+        "M0_interval_float": [
+          0.011583971201202034,
+          0.011583971201202036
+        ],
+        "M1_float_R": 0.017070884130954783,
+        "M1_interval_float": [
+          0.01707088413095479,
+          0.017070884130954794
+        ],
+        "constraint_zv_minus_cap": -0.03
+      },
+      {
+        "id": "interior",
+        "z_exact": "503/500",
+        "z": 1.006,
+        "v_exact": "11/10",
+        "v": 1.1,
+        "layer6_um": 2.19333653,
+        "M0_float_R": 0.011520737427540222,
+        "M0_interval_float": [
+          0.011520737427540163,
+          0.011520737427540164
+        ],
+        "M1_float_R": 0.03427642469276478,
+        "M1_interval_float": [
+          0.034276424692764776,
+          0.03427642469276478
+        ],
+        "constraint_zv_minus_cap": 0.07660000000000022,
+        "constraint_status": "violated"
+      },
+      {
+        "id": "inherited_z_lower",
+        "z_exact": "1191827825890425099974357/1208925819614629174706176",
+        "z": 0.9858568710777851,
+        "v_exact": "9/10",
+        "v": 0.9,
+        "layer6_um": 1.7586158501877516,
+        "M0_float_R": 0.07779101303283148,
+        "M0_interval_float": [
+          0.07779101303283151,
+          0.07779101303283152
+        ],
+        "M1_float_R": 0.003331847353616465,
+        "M1_interval_float": [
+          0.003331847353616442,
+          0.0033318473536164423
+        ],
+        "constraint_zv_minus_cap": -0.14272881602999346
+      },
+      {
+        "id": "inherited_z_upper",
+        "z_exact": "306505953334708322791479/302231454903657293676544",
+        "z": 1.014143128922215,
+        "v_exact": "11/10",
+        "v": 1.1,
+        "layer6_um": 2.211090627548304,
+        "M0_float_R": 0.01923423988430198,
+        "M0_interval_float": [
+          0.019234239884301944,
+          0.019234239884301948
+        ],
+        "M1_float_R": 0.03343251734507696,
+        "M1_interval_float": [
+          0.03343251734507694,
+          0.03343251734507695
+        ],
+        "constraint_zv_minus_cap": 0.08555744181443586,
+        "constraint_status": "violated"
+      }
+    ]
+  },
+  "limits": {
+    "global_optimizer_certificate": false,
+    "physical_optimum_certificate": false,
+    "source_realization_from_Z_or_IN": false,
+    "point12": "partial_unchanged",
+    "point2": "conditional_non_strict_unchanged",
+    "formal_model_chain": "pending"
+  }
+}

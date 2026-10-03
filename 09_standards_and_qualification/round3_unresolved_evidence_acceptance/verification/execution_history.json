@@ -1,0 +1,62 @@
+{
+  "runs": [
+    {
+      "run": "tiny",
+      "cases": 24,
+      "elapsed_seconds": 14.208109045997844,
+      "ledger": {
+        "max_nodes": 286,
+        "max_interval_wavelengths": 1148,
+        "max_float_vectors": 0,
+        "nodes": 268,
+        "interval_wavelengths": 977,
+        "float_vectors": 0,
+        "float_wavelengths": 0,
+        "denominator_fallbacks": 0,
+        "arithmetic_fallbacks": 0
+      },
+      "status": "completed"
+    },
+    {
+      "run": "tiny_final",
+      "cases": 27,
+      "elapsed_seconds": 13.107547560008243,
+      "ledger": {
+        "max_nodes": 286,
+        "max_interval_wavelengths": 1148,
+        "max_float_vectors": 0,
+        "nodes": 268,
+        "interval_wavelengths": 977,
+        "float_vectors": 0,
+        "float_wavelengths": 0,
+        "denominator_fallbacks": 0,
+        "arithmetic_fallbacks": 0
+      },
+      "status": "completed"
+    },
+    {
+      "run": "unit_tests",
+      "tests": 12,
+      "case_matrix_size": 27,
+      "ledger": {
+        "max_nodes": 286,
+        "max_interval_wavelengths": 1148,
+        "max_float_vectors": 0,
+        "nodes": 268,
+        "interval_wavelengths": 977,
+        "float_vectors": 0,
+        "float_wavelengths": 0,
+        "denominator_fallbacks": 0,
+        "arithmetic_fallbacks": 0
+      },
+      "status": "passed"
+    }
+  ],
+  "total_nodes": 804,
+  "total_interval_wavelengths": 2931,
+  "total_float_vectors": 0,
+  "full_or_heavy": "plan_only_not_run",
+  "devices": 0,
+  "quota_bypass": false,
+  "independent_check": "one static rule check; no optical replay"
+}

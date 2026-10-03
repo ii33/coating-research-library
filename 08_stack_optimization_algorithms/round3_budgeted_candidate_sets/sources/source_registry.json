@@ -1,0 +1,57 @@
+[
+  {
+    "id": "BS-S01",
+    "authors": "G. L. Soares et al.",
+    "title": "An interval-based target tracking approach for range-only multistatic radar",
+    "url": "https://webperso.ensta.fr/jaulin/paper_soares_IEEE_07.pdf",
+    "source_class": "primary_author_or_official",
+    "accessed_on": "2026-10-02",
+    "read_extent": "Author-hosted original PDF, p2 section III.A–B: inclusion function and SIVIA boxes",
+    "used_for": "Set inclusion and bisection principles; no radar performance claim transferred",
+    "full_original_in_reader": false
+  },
+  {
+    "id": "BS-S02",
+    "authors": "Steven J. Byrnes",
+    "title": "Multilayer optical calculations, v5",
+    "url": "https://arxiv.org/html/1603.02720v5",
+    "source_class": "primary_author_or_official",
+    "accessed_on": "2026-10-02",
+    "read_extent": "Original author full HTML, sections 2–4; inherited local original PDF separately archived",
+    "used_for": "Dimensionless optical phase, layer order, amplitude/power distinction; not measured nk",
+    "full_original_in_reader": false
+  },
+  {
+    "id": "BS-S03",
+    "authors": "IBEX developers",
+    "title": "IbexOpt — official documentation",
+    "url": "https://ibex-lib.readthedocs.io/en/latest/optim.html",
+    "source_class": "primary_author_or_official",
+    "accessed_on": "2026-10-02",
+    "read_extent": "Official full HTML: loup/uplo, all-minima enclosure and generic optimizer sections",
+    "used_for": "Separate lower/upper bounds and feasibility; this package does not execute IBEX",
+    "full_original_in_reader": false
+  },
+  {
+    "id": "BS-S04",
+    "authors": "SciPy developers",
+    "title": "scipy.optimize.least_squares — official manual",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html",
+    "source_class": "primary_author_or_official",
+    "accessed_on": "2026-10-02",
+    "read_extent": "Official full HTML: local minimum, max_nfev/nfev and termination status documentation",
+    "used_for": "Local termination and function-call accounting; this package does not run SciPy optimization",
+    "full_original_in_reader": false
+  },
+  {
+    "id": "BS-S05",
+    "authors": "JCGM / ISO",
+    "title": "JCGM 100:2008 §5.2 Correlated input quantities",
+    "url": "https://www.iso.org/sites/JCGM/GUM/JCGM100/C045315e-html/C045315e_FILES/MAIN_C045315e/05_e.html",
+    "source_class": "primary_author_or_official",
+    "accessed_on": "2026-10-02",
+    "read_extent": "Official ISO full HTML section 5.2",
+    "used_for": "Shared input correlation principle; not statistical coverage certification for hard boxes",
+    "full_original_in_reader": false
+  }
+]

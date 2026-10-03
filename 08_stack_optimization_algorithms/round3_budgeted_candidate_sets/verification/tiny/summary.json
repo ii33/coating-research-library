@@ -1,0 +1,1129 @@
+{
+  "stage": "T08R3",
+  "plan": "tiny",
+  "candidate_contract_sha256": "a7a2327f485ece7d6f7140c687f762879fee974994f74349cf6a59bad8ab8acd",
+  "parent_case_payload_sha256": "77d394ff69ed69e116b86d8bdf574081ad8c05a7bbdae306ac55e275a1ddbce7",
+  "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+  "runs": [
+    {
+      "job_id": "plane_M0_63",
+      "channels": [
+        "M0"
+      ],
+      "counts": {
+        "OUT": 29,
+        "IN": 0,
+        "UNKNOWN": 5
+      },
+      "data_evidence_state": "retained_unknown",
+      "evaluated_nodes": 63,
+      "charged": {
+        "nodes": 63,
+        "interval_wavelengths": 189,
+        "float_vectors": 0,
+        "float_wavelengths": 0,
+        "denominator_fallbacks": 0,
+        "arithmetic_fallbacks": 0
+      },
+      "retained_v_projection_exact": [
+        [
+          "9/10",
+          "11/10"
+        ]
+      ],
+      "optimization": {
+        "eligible_leaf_ids": [
+          "r0011100",
+          "r0011101",
+          "r001111",
+          "r01",
+          "r1"
+        ],
+        "unknown_included": 5,
+        "objective_lower_exact": "0",
+        "verified_proxy_upper_exact": null,
+        "objective_gap_upper": null,
+        "existence": "not_established",
+        "status": "bounded_relaxation_with_unresolved_boxes",
+        "global_optimizer_certificate": false,
+        "physical_optimum_certificate": false,
+        "annotations": [
+          {
+            "id": "r00000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r000010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r000011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r000110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r000111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00101000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00101001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001010100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001010101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001010110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010101110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010101111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00101100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00101101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001011100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010111010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010111011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001011110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010111110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010111111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00110110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00110111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011100",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r0011101",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r001111",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r01",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r1",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "plane_joint_255",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "counts": {
+        "OUT": 98,
+        "IN": 0,
+        "UNKNOWN": 32
+      },
+      "data_evidence_state": "retained_unknown",
+      "evaluated_nodes": 255,
+      "charged": {
+        "nodes": 255,
+        "interval_wavelengths": 922,
+        "float_vectors": 0,
+        "float_wavelengths": 0,
+        "denominator_fallbacks": 0,
+        "arithmetic_fallbacks": 0
+      },
+      "retained_v_projection_exact": [
+        [
+          "19/20",
+          "11/10"
+        ]
+      ],
+      "optimization": {
+        "eligible_leaf_ids": [
+          "r00111110101110",
+          "r00111110101111",
+          "r00111110111010",
+          "r00111110111011",
+          "r00111110111101",
+          "r00111110111110",
+          "r00111110111111",
+          "r00111111101000",
+          "r00111111101001",
+          "r00111111101010",
+          "r00111111101011",
+          "r00111111101100",
+          "r00111111101101",
+          "r00111111101110",
+          "r00111111101111",
+          "r00111111110010",
+          "r00111111110011",
+          "r00111111110110",
+          "r00111111110111",
+          "r00111111111000",
+          "r00111111111001",
+          "r00111111111010",
+          "r00111111111011",
+          "r00111111111100",
+          "r00111111111101",
+          "r00111111111110",
+          "r00111111111111",
+          "r0110010",
+          "r0110011",
+          "r01101",
+          "r0111",
+          "r1"
+        ],
+        "unknown_included": 32,
+        "objective_lower_exact": "0",
+        "verified_proxy_upper_exact": "1208925819614629174706219/1208925819614629174706176",
+        "objective_gap_upper": 1.0,
+        "existence": "verified_proxy_witness",
+        "status": "bounded_relaxation_with_unresolved_boxes",
+        "global_optimizer_certificate": false,
+        "physical_optimum_certificate": false,
+        "annotations": [
+          {
+            "id": "r00000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r000010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r000011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r000110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r000111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00101000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00101001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001010100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001010101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001010110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010101110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010101111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00101100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00101101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001011100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010111010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010111011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001011110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010111110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0010111111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00110110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00110111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011101000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011101001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111010100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111010101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111010110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001110101110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001110101111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011101100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011101101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111011100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001110111010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001110111011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001110111100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001110111101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011101111100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011101111101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011101111110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111011111110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111011111111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001111000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001111001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001111010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011110110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011110111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011111000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001111101000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001111101001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011111010100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110101010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110101011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110101100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110101101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110101110",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111110101111",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r001111101100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011111011010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011111011011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110111000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110111001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110111010",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111110111011",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111110111100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111110111101",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111110111110",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111110111111",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111111000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001111110010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001111110011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001111110110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r001111110111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011111110000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111100010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111100011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0011111110010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111100110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111100111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111101000",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111101001",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111101010",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111111101011",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111111101100",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111101101",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111101110",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111111101111",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111111110000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111110001",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111110010",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111110011",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111110100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111110101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r00111111110110",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111110111",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111111000",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111111001",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111111010",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111111111011",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111111111100",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111111101",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r00111111111110",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r00111111111111",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r01000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r010010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r010011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r010100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r010101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r010110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0101110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0101111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0110000",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r01100010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r01100011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r0110010",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r0110011",
+            "data_class": "UNKNOWN",
+            "disposition": "PRUNED_OBJECTIVE_BOUND"
+          },
+          {
+            "id": "r01101",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r0111",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          },
+          {
+            "id": "r1",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "outer10_joint_31",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "counts": {
+        "OUT": 7,
+        "IN": 0,
+        "UNKNOWN": 0
+      },
+      "data_evidence_state": "excluded_by_covering_evidence",
+      "evaluated_nodes": 13,
+      "charged": {
+        "nodes": 13,
+        "interval_wavelengths": 51,
+        "float_vectors": 0,
+        "float_wavelengths": 0,
+        "denominator_fallbacks": 0,
+        "arithmetic_fallbacks": 0
+      },
+      "retained_v_projection_exact": [],
+      "optimization": {
+        "eligible_leaf_ids": [],
+        "unknown_included": 0,
+        "objective_lower_exact": null,
+        "verified_proxy_upper_exact": null,
+        "objective_gap_upper": null,
+        "existence": "excluded_by_data_or_constraint_cover",
+        "status": "empty_outer_feasible_set",
+        "global_optimizer_certificate": false,
+        "physical_optimum_certificate": false,
+        "annotations": [
+          {
+            "id": "r00",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r010",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r011",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r100",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r101",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r110",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          },
+          {
+            "id": "r111",
+            "data_class": "OUT",
+            "disposition": "DATA_EXCLUDED"
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "zero_budget",
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "counts": {
+        "OUT": 0,
+        "IN": 0,
+        "UNKNOWN": 1
+      },
+      "data_evidence_state": "retained_unknown",
+      "evaluated_nodes": 0,
+      "charged": {
+        "nodes": 0,
+        "interval_wavelengths": 0,
+        "float_vectors": 0,
+        "float_wavelengths": 0,
+        "denominator_fallbacks": 0,
+        "arithmetic_fallbacks": 0
+      },
+      "retained_v_projection_exact": [
+        [
+          "9/10",
+          "11/10"
+        ]
+      ],
+      "optimization": {
+        "eligible_leaf_ids": [
+          "r"
+        ],
+        "unknown_included": 1,
+        "objective_lower_exact": "0",
+        "verified_proxy_upper_exact": "1208925819614629174706219/1208925819614629174706176",
+        "objective_gap_upper": 1.0,
+        "existence": "verified_proxy_witness",
+        "status": "bounded_relaxation_with_unresolved_boxes",
+        "global_optimizer_certificate": false,
+        "physical_optimum_certificate": false,
+        "annotations": [
+          {
+            "id": "r",
+            "data_class": "UNKNOWN",
+            "disposition": "RETAINED_FOR_OPTIMUM"
+          }
+        ]
+      }
+    }
+  ],
+  "search_states": {
+    "nominal_start": "float_feasible_hint_found",
+    "deliberate_miss": "optimizer_not_found_within_budget"
+  },
+  "witnesses": [
+    {
+      "point_exact": [
+        "1",
+        "1"
+      ],
+      "channels": [
+        "M0",
+        "M1"
+      ],
+      "data_class": "IN",
+      "constraint_class": "SATISFIED",
+      "proxy_feasible": true,
+      "reason": "all_observation_inclusions_contained",
+      "R_exact": {
+        "M0": [
+          "14004161878805429885997/1208925819614629174706176",
+          "14004161878805429886131/1208925819614629174706176"
+        ],
+        "M1": [
+          "5159358147390221954495/302231454903657293676544",
+          "10318716294780443909057/604462909807314587353088"
+        ]
+      },
+      "objective_exact": [
+        "151115727451828646838267/151115727451828646838272",
+        "1208925819614629174706219/1208925819614629174706176"
+      ],
+      "objective": [
+        0.9999999999999999,
+        1.0000000000000002
+      ],
+      "source_realization": false,
+      "meaning": "encoded outer-envelope witness only; not Q/rho/retention reachability",
+      "candidate_contract_sha256": "a7a2327f485ece7d6f7140c687f762879fee974994f74349cf6a59bad8ab8acd",
+      "parent_case_payload_sha256": "77d394ff69ed69e116b86d8bdf574081ad8c05a7bbdae306ac55e275a1ddbce7",
+      "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045"
+    }
+  ],
+  "ledger": {
+    "max_nodes": 349,
+    "max_interval_wavelengths": 1337,
+    "max_float_vectors": 10,
+    "nodes": 331,
+    "interval_wavelengths": 1166,
+    "float_vectors": 10,
+    "float_wavelengths": 40,
+    "denominator_fallbacks": 0,
+    "arithmetic_fallbacks": 0
+  },
+  "elapsed_seconds": 17.387283186006243,
+  "complete_job_loop": true,
+  "full_run": false,
+  "physical_certification": false,
+  "point12": "partial_unchanged",
+  "point2": "conditional_non_strict_unchanged",
+  "formal_model_chain": "pending"
+}

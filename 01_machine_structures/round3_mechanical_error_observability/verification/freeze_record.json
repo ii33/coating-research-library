@@ -1,0 +1,22 @@
+{
+  "identity": "T01-r3-v0.1.0-local-freeze",
+  "declared_freeze_date_utc": "2026-10-02",
+  "status": "local_complete_with_scientific_and_review_chain_boundaries",
+  "no_upload_or_push": true,
+  "no_next_topic_started": true,
+  "hashes": {
+    "verification/release_receipt.json": "cae39228d15e14a1c6612cda225705fd4b95e76ac6210df2f070d3a8df7229bd",
+    "verification/reader_manifest.json": "d6d10b2b82b4ef7c15cdbe646215832f656bf430426422c1e0284ce0952e02ce",
+    "verification/execution_ledger.json": "4f6839d6d45e08b2b9ff3b11f4883c0d62357720aa3de8e72c6255e50987f49e",
+    "verification/frozen_source_check.json": "37d9ad1a9de7ad3d865626821ddb9c6b0e15729874ec480289044a4cf2324319",
+    "reviews/independent_results.json": "7c6339f47ff1a674699d815ad7bec7380276b2926adc63dd8b10f5e1aeb26704",
+    "reviews/repair_replay_results.json": "d641efd05213be7e3a9a861954b8271a0b505e5787519ac6ad08e5912c09625f",
+    "deliverables/T01_round3_mechanical_error_observability_v0.1.0_reader.zip": "482e89bc8e9b162ecb961ceb7fed201be84b7bea4c5f13743f74620cdcdedbc9"
+  },
+  "raw_original_excluded_from_reader": {
+    "source": "NASA-CR-176163",
+    "sha256": "ff022b201cba6ff54b2d5ec1cc1cd0e76bd657c8babba9bd2327e1cc0e9512af"
+  },
+  "self_reference": "freeze_record excludes itself; no authenticity signature claimed",
+  "future_changes": "create new version rather than overwrite this freeze"
+}

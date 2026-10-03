@@ -1,0 +1,53 @@
+{
+  "scope": "small_synthetic_only",
+  "runs": [
+    {
+      "kind": "driver_plan_only",
+      "executed_numeric": false,
+      "file": "verification/plan_only.json"
+    },
+    {
+      "kind": "explicit_tiny_pre_review",
+      "gate_cases": 24,
+      "file": "verification/tiny_results.json",
+      "reported_bin_count_note": "older report stated 9; actual code used 8, corrected final output"
+    },
+    {
+      "kind": "unit_pre_review",
+      "tests": 9,
+      "embedded_tiny_calls": 1,
+      "file": "verification/unit_tests.txt"
+    },
+    {
+      "kind": "independent_narrow_unit",
+      "count": 1,
+      "own_tiny_script": 1,
+      "upstream_or_driver_runs": 0,
+      "result": "overflow_edge_found"
+    },
+    {
+      "kind": "explicit_tiny_post_fix",
+      "gate_cases": 24,
+      "file": "verification/tiny_final.json",
+      "model_bins": 8,
+      "joint_cells": 4
+    },
+    {
+      "kind": "unit_post_fix",
+      "tests": 11,
+      "embedded_tiny_calls": 1,
+      "file": "verification/unit_tests_final.txt"
+    },
+    {
+      "kind": "static_figure_build",
+      "figures": 4,
+      "model_solves": 0,
+      "input": "verification/tiny_final.json"
+    }
+  ],
+  "independent_research_model_validation": false,
+  "heavy": false,
+  "hardware_calls": 0,
+  "upstream_optical_calls": 0,
+  "formal_review_chain": "pending"
+}

@@ -1,0 +1,88 @@
+{
+  "recipe": "S-AR-DUALIR6",
+  "source_order": "substrate_to_incident_medium",
+  "target_order": "incident_to_substrate",
+  "source_unit": "nm",
+  "target_unit": "um",
+  "conversion": "exact rational division by1000 of original encoded float",
+  "rows": [
+    {
+      "incident_layer": 1,
+      "legacy_substrate_layer": 6,
+      "material": "YF3",
+      "original_thickness_nm": 1982.05,
+      "thickness_um_exact": "8717148087333683/4398046511104000",
+      "nominal_um": 1.9820499999999999,
+      "A_shared_thickness_bounds_um": [
+        1.9540176113197236,
+        2.0100823886802766
+      ],
+      "note": "marginal bounds only; NOT independent layer boxes"
+    },
+    {
+      "incident_layer": 2,
+      "legacy_substrate_layer": 5,
+      "material": "ZnS",
+      "original_thickness_nm": 661.91,
+      "thickness_um_exact": "5822221932329697/8796093022208000",
+      "nominal_um": 0.66191,
+      "A_shared_thickness_bounds_um": [
+        0.6525485215350966,
+        0.6712714784649033
+      ],
+      "note": "marginal bounds only; NOT independent layer boxes"
+    },
+    {
+      "incident_layer": 3,
+      "legacy_substrate_layer": 4,
+      "material": "YF3",
+      "original_thickness_nm": 1289.66,
+      "thickness_um_exact": "1134396932702077/879609302220800",
+      "nominal_um": 1.28966,
+      "A_shared_thickness_bounds_um": [
+        1.2714201723541763,
+        1.307899827645824
+      ],
+      "note": "marginal bounds only; NOT independent layer boxes"
+    },
+    {
+      "incident_layer": 4,
+      "legacy_substrate_layer": 3,
+      "material": "ZnS",
+      "original_thickness_nm": 526.2,
+      "thickness_um_exact": "92570082965717/175921860444160",
+      "nominal_um": 0.5262,
+      "A_shared_thickness_bounds_um": [
+        0.5187578855611304,
+        0.5336421144388697
+      ],
+      "note": "marginal bounds only; NOT independent layer boxes"
+    },
+    {
+      "incident_layer": 5,
+      "legacy_substrate_layer": 2,
+      "material": "YF3",
+      "original_thickness_nm": 221.93,
+      "thickness_um_exact": "3904233848837243/17592186044416000",
+      "nominal_um": 0.22193000000000002,
+      "A_shared_thickness_bounds_um": [
+        0.21879121539829283,
+        0.2250687846017072
+      ],
+      "note": "marginal bounds only; NOT independent layer boxes"
+    },
+    {
+      "incident_layer": 6,
+      "legacy_substrate_layer": 1,
+      "material": "ZnS",
+      "original_thickness_nm": 640.04,
+      "thickness_um_exact": "703731422241751/1099511627776000",
+      "nominal_um": 0.6400399999999999,
+      "A_shared_thickness_bounds_um": [
+        0.6309878317646255,
+        0.6490921682353745
+      ],
+      "note": "marginal bounds only; NOT independent layer boxes"
+    }
+  ]
+}

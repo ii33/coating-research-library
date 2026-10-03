@@ -1,0 +1,21 @@
+{
+  "stage": "T09R3",
+  "status": "local_freeze",
+  "archive": "deliverables/T09_round3_unresolved_evidence_acceptance_v0.1.0_reader.zip",
+  "archive_bytes": 987076,
+  "archive_sha256": "64bc2e4c752161e1dafa52534217bfa661ab676c68f642538da070f3afc830ec",
+  "manifest": "verification/reader_manifest.json",
+  "manifest_sha256": "648101c78bd58dfc1d22856ae4e9f00255531ad7a06b4988183a8d48a1dcb116",
+  "payload_files": 174,
+  "payload_bytes": 2270015,
+  "copied_dependencies": 114,
+  "isolated_check_sha256": "510cf12087152705455b7117e88c640ce9e74edfbe3cd0bcdc8186b2bb439657",
+  "negative_check_sha256": "11992f257a6067c70b7ddad3cb31754b08918ac2816106da02211eaf4f7dc363",
+  "outside_scope_check_sha256": "83fa00dba37f7705a5a35fd6941bbf2c9133bdef89aaee31c676019d19b80f74",
+  "formal_stage_acceptance": "pending",
+  "physical_certification": false,
+  "production_qualified": false,
+  "publication": "not_run",
+  "next_stage_started": false,
+  "control_files_not_self_hashed": "reader_manifest and verification receipts intentionally excluded; receipt binds the manifest and archive; not a signature"
+}

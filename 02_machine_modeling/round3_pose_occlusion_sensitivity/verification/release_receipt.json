@@ -1,0 +1,49 @@
+{
+  "package_id": "T02-r3-v0.1.0",
+  "archive": "deliverables/T02_round3_pose_occlusion_sensitivity_v0.1.0_reader.zip",
+  "archive_sha256": "d162c61ab0dc02d11a399a480b6b0b098a39115b6aa269f92533637bdd6cc784",
+  "archive_bytes": 772217,
+  "archive_members": 61,
+  "manifest_sha256": "409fa3ab9847a6b7a1b9f650877309c0d0c82c8159041c5bb8ebb7c6dafaf9ed",
+  "manifest_entry_count": 60,
+  "self_reference_policy": "manifest excludes own bytes; receipt is outside reader and excludes itself",
+  "standalone_validation": {
+    "integrity": "pass",
+    "member_count": 61,
+    "manifest_entries": 60,
+    "html": "embedded_assets_and_internal_anchors_pass_browser_layout_unverified",
+    "parent_runtime_dependency": false,
+    "private_marker_scan": "pass",
+    "light_reproduction": [
+      {
+        "command": "python -B -m unittest discover -s verification -p test_small.py -v",
+        "returncode": 0,
+        "wall_seconds": 0.30158680900058243
+      },
+      {
+        "command": "python -B models/run_examples.py",
+        "returncode": 0,
+        "wall_seconds": 0.2979910639987793
+      },
+      {
+        "command": "python -B models/offline_read.py data/synthetic_contract.json --allow-synthetic",
+        "returncode": 0,
+        "wall_seconds": 0.2467811120004626
+      },
+      {
+        "command": "python -B models/device_driver.py",
+        "returncode": 0,
+        "wall_seconds": 0.444810643006349
+      },
+      {
+        "command": "python -B reviews/author_replay.py",
+        "returncode": 0,
+        "wall_seconds": 0.19556429400108755
+      }
+    ],
+    "negative_cli_gates": "pass"
+  },
+  "third_party_originals_in_reader": false,
+  "publication": "local_only_not_uploaded",
+  "acceptance": "bounded theoretical/interface freeze; no heavy/physical/formal-chain certification"
+}

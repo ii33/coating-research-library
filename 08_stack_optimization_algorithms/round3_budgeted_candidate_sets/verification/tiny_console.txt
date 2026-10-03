@@ -1,0 +1,19 @@
+{
+  "plan": "tiny",
+  "ledger": {
+    "max_nodes": 349,
+    "max_interval_wavelengths": 1337,
+    "max_float_vectors": 10,
+    "nodes": 331,
+    "interval_wavelengths": 1166,
+    "float_vectors": 10,
+    "float_wavelengths": 40,
+    "denominator_fallbacks": 0,
+    "arithmetic_fallbacks": 0
+  },
+  "elapsed_seconds": 17.387283186006243,
+  "search_states": {
+    "nominal_start": "float_feasible_hint_found",
+    "deliberate_miss": "optimizer_not_found_within_budget"
+  }
+}

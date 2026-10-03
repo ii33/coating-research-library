@@ -1,0 +1,57 @@
+{
+  "status": "plan_only",
+  "configuration": {
+    "schema": "T08-R2-driver-v1",
+    "seed": 20261002,
+    "tiny_routing_only": true,
+    "truths": [
+      [
+        1.8,
+        0.02,
+        0.1
+      ]
+    ],
+    "scenarios": [
+      "clean"
+    ],
+    "candidates": [
+      "constant"
+    ],
+    "losses": [
+      "gaussian"
+    ],
+    "starts": 1,
+    "profile_points": 2,
+    "replicates": 0,
+    "max_calls_per_start": 45,
+    "max_nfev": 10,
+    "cluster_distance_scaled": 0.2,
+    "retained_clusters": 1,
+    "profile_parameter": "d_um",
+    "jacobian_steps": [
+      0.0001
+    ],
+    "fit_wavelengths_um": [
+      0.5,
+      0.65
+    ],
+    "heldout_wavelengths_um": [
+      0.57
+    ],
+    "angles_deg": [
+      45.0
+    ],
+    "actual_hardware": null,
+    "data_evidence": "synthetic_only",
+    "heavy_run": "not_run_awaiting_device"
+  },
+  "fit_start_jobs": 3,
+  "fit_forward_call_ceiling": 135,
+  "diagnostic_forward_call_ceiling": 56,
+  "total_forward_call_ceiling": 191,
+  "budget_unit": "one complete observation-vector prediction; optical node count also recorded",
+  "coverage": "all truth/scenario/model/loss combinations, multistart, d profile, repeat-noise fits, heldout and conditional design",
+  "global_minimum_certified": false,
+  "formal_coverage_or_hardware_acceptance": false,
+  "heavy_execution": "not_run_awaiting_device"
+}

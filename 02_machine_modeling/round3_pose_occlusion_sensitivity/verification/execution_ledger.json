@@ -1,0 +1,35 @@
+{
+  "date_utc": "2026-10-02",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "allowed_execution": "small_formulas_interfaces_figures_packaging_only",
+  "unit_tests_initial": {
+    "count": 30,
+    "wall_seconds_reported": 0.087,
+    "status": "pass"
+  },
+  "unit_tests_final": {
+    "count": 31,
+    "wall_seconds_reported": 0.084,
+    "status": "pass"
+  },
+  "independent_review": {
+    "passes": 1,
+    "checks": 12,
+    "initial_failures": 1,
+    "reported_wall_seconds_approx": 0.12
+  },
+  "author_replay": {
+    "checks": 3,
+    "first_serialization": "failed_numpy_bool_then_corrected",
+    "final_status": "pass"
+  },
+  "figure_rendering": "initial_font_resolution_corrected_existing_Noto; no downloads or installations",
+  "large_grid_kernel_evaluations": 0,
+  "large_driver_execution_count": 0,
+  "device_control_actions": 0,
+  "production_data_rows": 0,
+  "planning_kernel_evaluations_upper": 59031947520,
+  "planning_estimate_is_execution": false,
+  "note": "This is a scoped event ledger, not an exact total CPU accounting. Standalone light replay timings are in the external release receipt."
+}

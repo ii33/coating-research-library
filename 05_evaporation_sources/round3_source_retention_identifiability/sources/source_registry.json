@@ -1,0 +1,80 @@
+[
+  {
+    "source_id": "SR-S01",
+    "title": "KJLC Evaporation Sources Technical Notes",
+    "url": "https://www.lesker.com/newweb/evaporation_sources/evaporation_technicalnotes_1.cfm?pgid=0",
+    "type": "manufacturer_technical",
+    "locator": "Direct/Indirect Resistive Heating; Knudsen Cells; Evaporation Cells",
+    "read_scope": "relevant_primary_sections_direct_web_recheck",
+    "checked_utc": "2026-10-02",
+    "claim": "直接和间接加热源的热质量/几何不同；小孔Knudsen条件与大口径蒸发单元区分，名称不能保证余弦角律。",
+    "limitation": "定性设备背景，不提供本机n、Q、温度或时常。",
+    "rights": "original summary and link only; primary original excluded from reader",
+    "summary_path": "sources/summaries/SR-S01.md"
+  },
+  {
+    "source_id": "SR-S02",
+    "title": "KJLC Chromium Cr Evaporation Process Notes",
+    "url": "https://www.lesker.com/newweb/deposition_materials/deposition-materials-notes.cfm?pgid=cr1",
+    "type": "manufacturer_process_note",
+    "locator": "Thermal Evaporation of Chromium",
+    "read_scope": "relevant_primary_sections_direct_web_recheck",
+    "checked_utc": "2026-10-02",
+    "claim": "厂商Cr实例存在固态升华、镀Cr钨棒和舟装块料；传热及活跃面不同。",
+    "limitation": "本轮不复制具体设备功率/速率，不按材料名自动填液位和角指数。",
+    "rights": "original summary and link only; primary original excluded from reader",
+    "summary_path": "sources/summaries/SR-S02.md"
+  },
+  {
+    "source_id": "SR-S03",
+    "title": "Temescal 2PT/3PT PopTop Electron Beam Turret Sources Manual Rev B March 2021",
+    "url": "https://e-beam.ferrotec.com/wp-content/uploads/sites/7/Temescal-2PT-3PT-Source-Manual-RevB.pdf",
+    "type": "manufacturer_manual",
+    "locator": "§1.5.3; §4.2–4.3, printed 4-3/4-4 and 4-8",
+    "read_scope": "relevant_primary_sections_direct_web_recheck",
+    "checked_utc": "2026-10-02",
+    "claim": "发射电流、束偏转和束斑形状位置有不同物理角色；束触边会污染并损伤坩埚。",
+    "limitation": "不提供调整SOP、联锁旁路或本机束斑参数；没有把功率权当质量权。",
+    "rights": "original summary and link only; primary original excluded from reader",
+    "summary_path": "sources/summaries/SR-S03.md"
+  },
+  {
+    "source_id": "SR-S04",
+    "title": "Zhang L, Cai X (2013) Uniformity Masks Design Method Based on the Shadow Matrix for Coating Materials with Different Condensation Characteristics",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3817662/",
+    "type": "primary_open_paper",
+    "locator": "§2–3, Eq.1 and Fig.2; DOI 10.1155/2013/160792",
+    "read_scope": "relevant_primary_sections_direct_web_recheck",
+    "checked_utc": "2026-10-02",
+    "claim": "Mo舟、MgF2/LaF3、曲面夹具及透射谱拟合厚度；经验接收指数应按其完整公式理解。",
+    "limitation": "本轮不搬拟合指数到用户机台；m不是额外留存概率；论文实测不是本轮synthetic验证。",
+    "rights": "CC BY original credited in separate local archive; deliberately excluded from reader",
+    "summary_path": "sources/summaries/SR-S04.md"
+  },
+  {
+    "source_id": "SR-S05",
+    "title": "INFICON SQC-310 Operating Manual 074-550-P1-H",
+    "url": "https://www.inficon.com/media/11922/download/SQC-310-Operating-Manual-.pdf?inline=true&language=de&v=2",
+    "type": "manufacturer_manual",
+    "locator": "§10.5–10.6 pp139–144; §11.2 p147",
+    "read_scope": "relevant_primary_sections_direct_web_recheck",
+    "checked_utc": "2026-10-02",
+    "claim": "控制响应受源料位、速率、扫束/束密度和源状态影响；晶体频移含热/应力干扰。",
+    "limitation": "原厂控制参数定义不跨设备移植；不能凭单频把干扰与质量完全分开。",
+    "rights": "original summary and link only; primary original excluded from reader",
+    "summary_path": "sources/summaries/SR-S05.md"
+  },
+  {
+    "source_id": "SR-C01",
+    "title": "项目MXC手册工程派生评估",
+    "url": "dependencies/context/manual_assessment_zh.md",
+    "type": "inherited_local_analysis",
+    "locator": "printed/PDF page pairs 39/40,45/46,66–68/67–69,72–73/73–74,78/79",
+    "read_scope": "inherited_project_analysis_read_local",
+    "checked_utc": "2026-10-02",
+    "claim": "反馈坐标、失锁替代、时序和共享挡板热尾的合同背景。",
+    "limitation": "只继承经核对的派生分析；本轮未重读受限原文，不将机型/固件认作用户实机。",
+    "rights": "original summary and link only; primary original excluded from reader",
+    "summary_path": "sources/summaries/SR-C01.md"
+  }
+]

@@ -1,0 +1,263 @@
+{
+  "method": "same prior lossless scalar n data, reverse substrate-to-incident layer order, nm to um, current coherent solver at 0 deg; no backing substrate, rear surface or new material substitutions",
+  "warning": "cross-code equivalence is not experimental validation",
+  "evaluated_records": 35,
+  "skipped_records": 2,
+  "max_abs_R_difference": 3.2662761384472105e-13,
+  "max_abs_T_difference": 3.269606807521086e-13,
+  "records": [
+    {
+      "id": "P-AR355-4",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 3.165870343657673e-17,
+      "max_abs_T_difference": 1.6653345369377348e-15
+    },
+    {
+      "id": "P-AR355-G14",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 5.117434254131581e-17,
+      "max_abs_T_difference": 1.6653345369377348e-15
+    },
+    {
+      "id": "P-AG-UCO2018",
+      "status": "skipped_missing_nk"
+    },
+    {
+      "id": "P-AG-AL2O3",
+      "status": "skipped_missing_nk"
+    },
+    {
+      "id": "R-HR-LIGO",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 1.3322676295501878e-15,
+      "max_abs_T_difference": 2.659683454378503e-19
+    },
+    {
+      "id": "R-BP1304-32",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 3.143041382713818e-13,
+      "max_abs_T_difference": 3.147482274812319e-13
+    },
+    {
+      "id": "R-HR-GAAS81",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 9.947598300641403e-14,
+      "max_abs_T_difference": 1.0169642905566434e-13
+    },
+    {
+      "id": "S-AR-V532",
+      "sample_count": 1,
+      "status": "matched",
+      "max_abs_R_difference": 2.2155205526620293e-20,
+      "max_abs_T_difference": 3.3306690738754696e-16
+    },
+    {
+      "id": "S-AR-BB-VIS4",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 4.5102810375396984e-17,
+      "max_abs_T_difference": 1.3322676295501878e-15
+    },
+    {
+      "id": "S-AR-BB-VNIR8",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 1.942890293094024e-16,
+      "max_abs_T_difference": 1.7763568394002505e-15
+    },
+    {
+      "id": "S-AR-DUAL5321064",
+      "sample_count": 2003,
+      "status": "matched",
+      "max_abs_R_difference": 1.4013313079375145e-17,
+      "max_abs_T_difference": 1.3322676295501878e-15
+    },
+    {
+      "id": "S-AR-TRIPLE",
+      "sample_count": 3004,
+      "status": "matched",
+      "max_abs_R_difference": 1.3877787807814457e-16,
+      "max_abs_T_difference": 1.6653345369377348e-15
+    },
+    {
+      "id": "S-AR-DUALIR6",
+      "sample_count": 2002,
+      "status": "matched",
+      "max_abs_R_difference": 5.342948306008566e-16,
+      "max_abs_T_difference": 1.6653345369377348e-15
+    },
+    {
+      "id": "S-AR-MGF2",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 5.204170427930421e-17,
+      "max_abs_T_difference": 1.1102230246251565e-15
+    },
+    {
+      "id": "S-AR-GE-ZNS",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 1.5265566588595902e-16,
+      "max_abs_T_difference": 8.881784197001252e-16
+    },
+    {
+      "id": "S-HR-UV355",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 2.1260770921571748e-14,
+      "max_abs_T_difference": 2.1316282072803006e-14
+    },
+    {
+      "id": "S-HR-NIR1064",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 1.5543122344752192e-15,
+      "max_abs_T_difference": 3.5388358909926865e-16
+    },
+    {
+      "id": "S-HR-2UM",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 1.5543122344752192e-15,
+      "max_abs_T_difference": 3.608224830031759e-16
+    },
+    {
+      "id": "S-HR-LWIR10600",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 1.3322676295501878e-15,
+      "max_abs_T_difference": 1.431146867680866e-17
+    },
+    {
+      "id": "S-PR-1064",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 1.1102230246251565e-15,
+      "max_abs_T_difference": 5.551115123125783e-16
+    },
+    {
+      "id": "S-HR-LOWH",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 1.5543122344752192e-15,
+      "max_abs_T_difference": 3.550762114890027e-18
+    },
+    {
+      "id": "S-HR-CHIRP64",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 7.105427357601002e-15,
+      "max_abs_T_difference": 1.5092094240998222e-16
+    },
+    {
+      "id": "S-HR-BB60",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 9.769962616701378e-15,
+      "max_abs_T_difference": 4.961309141293668e-16
+    },
+    {
+      "id": "S-HR-DUAL",
+      "sample_count": 2002,
+      "status": "matched",
+      "max_abs_R_difference": 1.5543122344752192e-15,
+      "max_abs_T_difference": 4.640385298237959e-17
+    },
+    {
+      "id": "S-DICHROIC",
+      "sample_count": 2002,
+      "status": "matched",
+      "max_abs_R_difference": 1.1102230246251565e-15,
+      "max_abs_T_difference": 3.885780586188048e-15
+    },
+    {
+      "id": "S-BP532-M3",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 1.5432100042289676e-14,
+      "max_abs_T_difference": 1.4876988529977098e-14
+    },
+    {
+      "id": "S-BP532-M5",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 4.2577052994374753e-14,
+      "max_abs_T_difference": 4.218847493575595e-14
+    },
+    {
+      "id": "S-BP532-M7",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 1.9012569296705806e-13,
+      "max_abs_T_difference": 1.894040480010517e-13
+    },
+    {
+      "id": "S-BP532-M9",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 3.2662761384472105e-13,
+      "max_abs_T_difference": 3.269606807521086e-13
+    },
+    {
+      "id": "S-BP1550-M7",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 2.674527266322002e-13,
+      "max_abs_T_difference": 2.701172618913006e-13
+    },
+    {
+      "id": "S-BP4260-M2",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 1.1934897514720433e-14,
+      "max_abs_T_difference": 1.2212453270876722e-14
+    },
+    {
+      "id": "S-BP10600-M3",
+      "sample_count": 1001,
+      "status": "matched",
+      "max_abs_R_difference": 2.7977620220553945e-14,
+      "max_abs_T_difference": 2.736699755701011e-14
+    },
+    {
+      "id": "S-BP-COUPLED2",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 4.973799150320701e-14,
+      "max_abs_T_difference": 5.051514762044462e-14
+    },
+    {
+      "id": "S-MULTI2",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 4.1300296516055823e-14,
+      "max_abs_T_difference": 4.4297898682543746e-14
+    },
+    {
+      "id": "S-MULTI3",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 7.971401316808624e-14,
+      "max_abs_T_difference": 8.060219158778636e-14
+    },
+    {
+      "id": "S-EDGE-LP",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 2.6867397195928788e-14,
+      "max_abs_T_difference": 2.3869795029440866e-14
+    },
+    {
+      "id": "S-EDGE-SP",
+      "sample_count": 1002,
+      "status": "matched",
+      "max_abs_R_difference": 1.1324274851176597e-14,
+      "max_abs_T_difference": 1.1379786002407855e-14
+    }
+  ]
+}

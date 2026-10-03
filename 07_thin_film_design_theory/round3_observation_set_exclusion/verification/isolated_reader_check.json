@@ -1,0 +1,25 @@
+{
+  "reader": {
+    "result": "passed",
+    "payload_files": 129,
+    "payload_bytes": 1650982,
+    "manifest_sha256": "46df651215c28a8432a670319a20885203f423b3405a83dc2323c35edfb6e666",
+    "copied_dependencies": 85,
+    "sibling_dependencies": false,
+    "network_needed": false,
+    "original_papers_in_payload": false,
+    "local_links_and_anchors": 35,
+    "public_primary_source_links": 4,
+    "local_image_assets": 3,
+    "external_assets": 0,
+    "scripts": 0,
+    "html_layout": "unverified_existing_restriction_not_retried"
+  },
+  "archive_exact_members": true,
+  "unit_tests_returncode": 0,
+  "unit_test_output": "test_budget_keeps_unknown (test_reference.ReferenceTests.test_budget_keeps_unknown) ... ok\ntest_dependency_chain (test_reference.ReferenceTests.test_dependency_chain) ... ok\ntest_dependent_T_adds_no_constraint (test_reference.ReferenceTests.test_dependent_T_adds_no_constraint) ... ok\ntest_derived_hash_tamper (test_reference.ReferenceTests.test_derived_hash_tamper) ... ok\ntest_feasible_points_are_enclosures (test_reference.ReferenceTests.test_feasible_points_are_enclosures) ... ok\ntest_inherited_payload_tamper (test_reference.ReferenceTests.test_inherited_payload_tamper) ... ok\ntest_operator_unsupported (test_reference.ReferenceTests.test_operator_unsupported) ... ok\ntest_outer_overlap_is_not_intersection_proof (test_reference.ReferenceTests.test_outer_overlap_is_not_intersection_proof) ... ok\ntest_parent_operator_unchanged (test_reference.ReferenceTests.test_parent_operator_unchanged) ... ok\ntest_recompute_decisive_exclusion (test_reference.ReferenceTests.test_recompute_decisive_exclusion) ... ok\ntest_source_failure_guards (test_reference.ReferenceTests.test_source_failure_guards) ... ok\ntest_source_gate_positive_and_qualified_only (test_reference.ReferenceTests.test_source_gate_positive_and_qualified_only) ... ok\ntest_structural_product_alias (test_reference.ReferenceTests.test_structural_product_alias) ... ok\ntest_subdivision_cover_and_leaf_classification (test_reference.ReferenceTests.test_subdivision_cover_and_leaf_classification) ... ok\ntest_unit_and_order (test_reference.ReferenceTests.test_unit_and_order) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.983s\n\nOK\n",
+  "recomputed": "decisive_13_node_exclusion_and_three_witnesses_in_tests",
+  "upstream_chain_import_unknown_gate": "unknown_source_angular_law",
+  "detached_from_siblings": true,
+  "layout": "unverified"
+}

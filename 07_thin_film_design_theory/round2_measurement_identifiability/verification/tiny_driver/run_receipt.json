@@ -1,0 +1,40 @@
+{
+  "status": "synthetic_execution_completed",
+  "configuration": {
+    "truth_n": [
+      1.8
+    ],
+    "truth_k": [
+      0.02
+    ],
+    "truth_d_um": [
+      0.1
+    ],
+    "wavelengths_um": [
+      0.55
+    ],
+    "angles_deg": [
+      60.0
+    ],
+    "starts": 1,
+    "profile_points": 2,
+    "monte_carlo": 1,
+    "max_nfev": 20,
+    "seed": 271828,
+    "modes": [
+      "RT_plus_d"
+    ],
+    "data_evidence": "synthetic_only",
+    "actual_hardware": null
+  },
+  "cases": [
+    {
+      "path": "case_000_RT_plus_d.json",
+      "fit_converged": true,
+      "mc_converged": 1,
+      "mc_total": 1
+    }
+  ],
+  "real_device_validation": "not_run_awaiting_device",
+  "global_minimum_certified": false
+}

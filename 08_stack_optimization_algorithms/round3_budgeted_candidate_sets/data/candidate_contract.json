@@ -1,0 +1,44 @@
+{
+  "stage": "T08R3",
+  "parent_case_file_sha256": "2f5b2db5845a93f8c5fe0ae56bf4765cbe673fb7d1a4e46a3e8256a85180a631",
+  "parent_case_payload_sha256": "77d394ff69ed69e116b86d8bdf574081ad8c05a7bbdae306ac55e275a1ddbce7",
+  "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045",
+  "M0_parent_measurement_sha256": "81fdb15c8e896c26d260749baaca0dc5e8eb5822c2a2b9e4635b44855da6e383",
+  "parameterization": {
+    "dimension": 2,
+    "coordinates": [
+      "z",
+      "outer_multiplier"
+    ],
+    "vary_original_layer": 6,
+    "shared_z_all_layers_and_channels": true,
+    "candidate_latents": "exists z separately for each candidate",
+    "batch_latents": "independent unless explicit shared evidence",
+    "source_domain": "positive_thickness_outer_envelope_not_joint_reachable_set"
+  },
+  "v_domain": [
+    "0.9",
+    "1.1"
+  ],
+  "objective": {
+    "kind": "squared_distance_to_declared_v_target",
+    "target": "1.05",
+    "scale": "0.05",
+    "meaning": "synthetic design preference, not likelihood or measured requirement"
+  },
+  "constraint": {
+    "kind": "synthetic_outer_thickness_ratio_upper_bound",
+    "cap": "1.03",
+    "meaning": "g=z*v-1.03<=0; illustrative cap, not production tolerance"
+  },
+  "supported_channels": [
+    "M0",
+    "M1"
+  ],
+  "real_source_inversion": false,
+  "real_nk_density_Q": "unknown_not_guessed",
+  "physical_certification": false,
+  "point12": "partial_unchanged",
+  "point2": "conditional_non_strict_unchanged",
+  "formal_model_chain": "pending"
+}

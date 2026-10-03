@@ -1,0 +1,75 @@
+{
+  "contract_version": "T09R2-1.0",
+  "state": "research_template_incomplete",
+  "intended_use": null,
+  "actual_user_hardware": null,
+  "production_release_authorized": false,
+  "controlled_requirement": {
+    "customer_contract_id": null,
+    "drawing_revision": null,
+    "applicable_standards": [],
+    "normative_fulltexts_verified": false,
+    "priority_of_documents": null,
+    "decision_rule_id": null,
+    "agreed_before_measurement": null,
+    "authorized_approver": null
+  },
+  "claim_domains": {
+    "material_identity": {"status": "missing", "material_grade": null, "batch": null, "identity_method": null, "evidence_refs": []},
+    "measured_result": {"status": "missing", "measurand_id": null, "sample_id": null, "state_id": null, "raw_refs": [], "uncertainty_ref": null},
+    "design_performance": {"status": "conditional_only", "operator_ref": null, "model_version": null, "assumptions": [], "validated_domain": null, "out_of_domain_claims": false},
+    "production_acceptance": {"status": "not_run", "lot_id": null, "sampling_plan": null, "witness_representativeness": null, "decision_record": null},
+    "environment_qualification": {"status": "not_run", "method_edition_clause": null, "severity": null, "actual_exposure_ref": null, "recovery": null, "pre_post_results": null},
+    "damage_qualification": {"status": "not_run", "method_edition_clause": null, "damage_definition": null, "load_conditions": null, "detection_threshold": null, "sampling_statistics": null}
+  },
+  "measurement_operator": {
+    "quantity_kind": null, "coordinate": null, "unit": null,
+    "wavelength_medium_and_axis": null, "aoi_distribution": null, "polarization_basis": null,
+    "collection_aperture": null, "specular_or_total": null, "instrument_lineshape": null,
+    "substrate_backside_path": null, "sample_position": null, "temperature_and_time": null,
+    "thickness_role": null, "film_not_bulk_evidence": null
+  },
+  "traceability_graph": {
+    "reference_quantity": null, "reference_value_unit_uncertainty": null,
+    "nodes": [], "edges": [], "reference_documents": [],
+    "scope_adequacy": "unknown", "chain_evaluated_by": null,
+    "shared_calibration_groups": [], "cross_group_covariance": null,
+    "drift_intermediate_checks": [], "out_of_tolerance_impact_assessment": null
+  },
+  "device_provenance": {
+    "instrument_model_serial_firmware": null, "enabled_options": null,
+    "protocol_version": null, "reading_origin": null, "raw_frequency_ref": null,
+    "lock_state_ref": null, "parameter_snapshots": [], "display_coordinate": null,
+    "feedback_coordinate": null, "crystal_history": null, "per_field_timestamps": null,
+    "filter_and_sampling": null, "negative_value_transform": null, "events": [],
+    "shutter_commands": [], "shutter_observations": [], "source_thermal_evidence": [],
+    "qcm_vs_workpiece_visibility": null, "unknown_flux_is_zero": false
+  },
+  "data_use_ledger": {
+    "plan_hash": null, "freeze_time": null, "calibration": [], "fit": [], "selection": [],
+    "heldout_final": [], "grouping_unit": null, "shared_factors": [],
+    "heldout_access_and_consumption_history": [], "new_holdout_after_model_change": null
+  },
+  "model_and_numerics": {
+    "candidate_models": [], "aliases_or_multimodality": null,
+    "parameter_prior_calibration_noise_separation": null,
+    "stages": [], "budget_exhaustion_policy": "preserve_and_block_required_claim",
+    "profile_unresolved_endpoint_policy": "censored_by_budget_not_valid_interval",
+    "bootstrap_failures": null, "nonlinear_propagation_check": null,
+    "full_T08_batch_status": "not_run_awaiting_device"
+  },
+  "uncertainty_and_decision": {
+    "budget_ref": null, "calibration_correlation_ref": null, "model_uncertainty_ref": null,
+    "sampling_variation_ref": null, "numerical_error_ref": null,
+    "distribution_and_coverage": null, "interval_construction": null,
+    "multiple_requirement_family": null, "specific_or_global_risk": null,
+    "specification_limits_units": null, "guard_band": null, "boundary_equality": null,
+    "retest_and_invalid_result_policy": null, "result": "blocked_evidence"
+  },
+  "inherited_limits": [
+    "T02 full oracle partial", "T03 optimizer does not support net erosion", "point12 reference and hardware not_run",
+    "tau not strict envelope", "QCM acoustics thermal drift tooling unresolved", "source time space geometry kernel input model axes retained",
+    "synthetic goodness-of-fit or rank cannot qualify hardware or production"
+  ],
+  "note": "Human-reviewed planning template. This larger template is deliberately not claimed to be validated by the tiny evidence_packet schema or code."
+}

@@ -1,0 +1,34 @@
+{
+  "isolated_reader": {
+    "reader_payload_ok": true,
+    "missing": [],
+    "changed": [],
+    "extra_in_strict_mode": [],
+    "allowlist_manifest_equal": true,
+    "payload_files": 81,
+    "strict_isolated": true,
+    "visual_check": "not_run_blocked",
+    "normative_or_hardware_validation": false
+  },
+  "package": {
+    "verified_at_utc": "2026-10-02T09:44:08.046146+00:00",
+    "exact_manifest_ok": true,
+    "receipt_manifest_hash_matches": true,
+    "missing": [],
+    "extra": [],
+    "changed": [],
+    "payload_count": 84,
+    "note": "Read-only verification; receipt and verification output excluded to avoid recursion. Does not prove source truth or signatures."
+  },
+  "static": {
+    "static_ok": true,
+    "errors": [],
+    "chapters": 10,
+    "source_count": 22,
+    "local_links_checked": 9,
+    "no_external_resources": true,
+    "browser_visual_or_interaction_verified": false,
+    "manifest_links": "expected to exist after freeze; exempt only at prefreeze check",
+    "note": "No proof of layout, JavaScript runtime, source truth or normative compliance"
+  }
+}

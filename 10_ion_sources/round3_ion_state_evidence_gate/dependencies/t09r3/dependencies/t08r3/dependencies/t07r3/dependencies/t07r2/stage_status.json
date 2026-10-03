@@ -1,0 +1,27 @@
+{
+  "stage_id": "ROUND2.T07_MEASUREMENT_IDENTIFIABILITY",
+  "version": "T07-r2-v0.1.0",
+  "algorithmic": true,
+  "status": "implementation_ready_validation_pending",
+  "local_freeze_only": true,
+  "production_qualified": false,
+  "actual_hardware": null,
+  "actual_measurements": false,
+  "heavy_run": "not_run_awaiting_device",
+  "author_self_check": "completed_in_scope",
+  "independent_narrow_check": {
+    "model": "GPT-6 Luna",
+    "scope": "phase_basis_and_Jacobian_covariance_units",
+    "status": "completed",
+    "not_full_review_chain": true
+  },
+  "specified_model_chain": {
+    "DeepSeek_execution": "not_run",
+    "Seed_Pro_stage_review": "pending_not_run",
+    "Sol_full_algorithm_review": "pending_not_run"
+  },
+  "tests_meaning": "small correctness only; no production calibration, coverage or performance acceptance",
+  "next_handoff": "T08_ROUND2_HANDOFF.md",
+  "publication": "not_requested_not_run",
+  "stop_condition": "local_freeze_and_receipt"
+}

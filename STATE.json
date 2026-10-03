@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T07:21:16.301375+00:00",
-  "project_status": "active",
+  "updated_at_utc": "2026-10-02T22:26:09.165971+00:00",
+  "project_status": "third_sweep_local_complete_consolidated_publication",
   "setup_status": "complete_integrity_checked",
-  "round": 2,
-  "active_topic_id": "T06",
-  "active_task_id": "ROUND2.T06_PROCESS_OPTICAL_OBSERVABLES",
-  "active_scope": "T06第二轮：工艺与膜态输入到光学可观测量的有条件接口；完整实现与设备验证计划分开",
-  "later_topics_policy": "T06_round2_bounded_method_and_implementation_then_ordered_handoff",
+  "round": 3,
+  "active_topic_id": null,
+  "active_task_id": null,
+  "active_scope": "第三轮T01–T10有界研究本地完成；本提交批量发布第二轮尾批与第三轮完整载荷；第四轮未启动",
+  "later_topics_policy": "fourth_round_not_started_no_automatic_heavy_or_device_execution",
   "topic_order": [
     "T01",
     "T02",
@@ -21,30 +21,30 @@
     "T10"
   ],
   "topic_status": {
-    "T01": "round1_theory_ready_for_handoff",
-    "T02": "round1_theory_and_synthetic_scope_complete",
-    "T03": "round1_theory_and_synthetic_scope_complete",
-    "T04": "round1_priority_public_research_complete",
-    "T05": "round1_priority_theory_and_synthetic_scope_complete",
-    "T06": "round1_priority_theory_and_numerical_scope_complete",
-    "T07": "round1_priority_theory_and_reference_numerical_scope_complete",
-    "T08": "round1_bounded_algorithm_research_delivery_complete",
-    "T09": "round1_public_theory_evidence_and_planning_scope_complete",
-    "T10": "round1_priority_public_theory_and_synthetic_scope_complete"
+    "T01": "local_freeze_bounded_research_complete",
+    "T02": "local_freeze_bounded_research_complete",
+    "T03": "local_freeze_bounded_research_complete",
+    "T04": "local_freeze_bounded_research_complete",
+    "T05": "local_freeze_bounded_research_complete",
+    "T06": "local_freeze_bounded_research_complete",
+    "T07": "local_freeze_bounded_research_complete",
+    "T08": "local_freeze_bounded_research_complete",
+    "T09": "local_freeze_bounded_research_complete",
+    "T10": "local_freeze_bounded_research_complete"
   },
   "research_stage_acceptance": {
-    "T01": "theory_handoff_ready_not_machine_validated_or_formally_signed_off",
-    "T02": "bounded_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
-    "T03": "bounded_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
-    "T04": "bounded_priority_public_research_complete_not_experimentally_or_production_validated",
-    "T05": "bounded_priority_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
-    "T06": "bounded_priority_theory_and_reference_numerical_scope_complete_not_machine_validated_or_formally_signed_off",
-    "T07": "bounded_design_theory_and_reference_numerics_complete_real_material_machine_and_formal_review_unverified",
-    "T08": "bounded_algorithm_research_complete_B03_nonconvergence_and_real_validation_limits_retained",
-    "T09": "bounded_public_research_complete_paid_text_GJB_and_real_sample_gaps_retained_not_certified",
-    "T10": "bounded_public_theory_and_synthetic_handoff_with_limited_independent_numerical_checks_formal_review_and_machine_qualification_pending"
+    "T01": "formal_model_chain_pending_physical_and_production_unqualified",
+    "T02": "formal_model_chain_pending_physical_and_production_unqualified",
+    "T03": "formal_model_chain_pending_physical_and_production_unqualified",
+    "T04": "formal_model_chain_pending_physical_and_production_unqualified",
+    "T05": "formal_model_chain_pending_physical_and_production_unqualified",
+    "T06": "formal_model_chain_pending_physical_and_production_unqualified",
+    "T07": "formal_model_chain_pending_physical_and_production_unqualified",
+    "T08": "formal_model_chain_pending_physical_and_production_unqualified",
+    "T09": "formal_model_chain_pending_physical_and_production_unqualified",
+    "T10": "formal_model_chain_pending_physical_and_production_unqualified"
   },
-  "next_action": "开展T06工艺/膜态到光学可观测量接口；完整算法与设备driver先写，重型精度/性能验证待用户安排设备",
+  "next_action": "依据第三轮综合选择下一步；真实数据、重计算、正式审查与第四轮均未自动启动",
   "blocking_issues": [],
   "nonblocking_clarification_ids": [
     "Q01",
@@ -53,12 +53,13 @@
     "Q06"
   ],
   "notes": [
-    "T01–T10第一轮优先公共资料、理论和合成基础已覆盖；这不是完整工程资格、正式审查签署或实机校准完成",
-    "本批统一发布T02v0.3、T03优化、T04材料响应合同、T05 QCM通量转移四个冻结增补，减少上传频率",
-    "T02v0.3仍partial：点12离子连续参考及tight/device任务未运行；点2支集结果仅条件数值包络，非严格认证",
-    "T03/T04/T05为implementation_ready_validation_pending；小测试、合成校准和有限独立核查不是生产验收",
-    "高计算量算法与设备driver完整实现；重型精度、性能和设备资源验证等待用户安排设备，不为当前云端算力缩减设计",
-    "T06正在独立目录研究，未冻结成果不纳入本次批量发布；全部此前冻结研究保持不变"
+    "第三轮T01–T10均已完成有界本地研究与精确reader冻结；完整指定模型链pending，不等于正式算法或生产验收",
+    "原点12 partial、点2 conditional non-strict与未运行base/tight验证保持；设备0、heavy0",
+    "本批发布第二轮T06–T09、独立T10 portable、第三轮十包及MXC原创派生；原R2T10残缺投影不发布",
+    "全部历史冻结字节与收据保持；历史未发布/下一题未启动描述按当时事件解释",
+    "发布仅转移文件内容，不重跑全套科学测试、不重新独审、不提供生产放行；HTML布局未验证",
+    "旧37配方/864层阶段不改，不重造分类；H4牌号未知与YbF3/YF3区别保留",
+    "第四轮未启动，实机值与光学状态unknown保持"
   ],
   "research_detail_followup_ids": [
     "Q02"
@@ -75,13 +76,19 @@
     "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/reader_manifest.json",
     "04_coating_and_substrate_materials/round2_material_response_contract/freeze_manifest.json",
     "05_evaporation_sources/round2_qcm_flux_transfer/freeze_manifest.json",
-    "05_evaporation_sources/round2_qcm_flux_transfer/T06_ROUND2_HANDOFF.md"
+    "05_evaporation_sources/round2_qcm_flux_transfer/T06_ROUND2_HANDOFF.md",
+    "06_optical_coating_families/round2_process_optical_observables/freeze_manifest.json",
+    "07_thin_film_design_theory/round2_measurement_identifiability/freeze_manifest.json",
+    "08_stack_optimization_algorithms/round2_robust_inversion/freeze_manifest.json",
+    "09_standards_and_qualification/round2_traceable_validation_contracts/freeze_manifest.json",
+    "10_ion_sources/round2_observable_material_response/freeze_manifest.json",
+    "00_project/SECOND_SWEEP_SYNTHESIS.md"
   ],
   "machine_validation": "not_performed",
   "formal_review_signoff": "not_performed",
-  "round_status": "in_progress",
+  "round_status": "third_sweep_local_complete_bounded_research",
   "round1_scope_status": "all_ten_topics_public_theory_and_synthetic_foundations_covered",
-  "round2_active_status": "in_progress",
+  "round2_active_status": "local_complete_bounded_research_scope",
   "round2_stage_status": {
     "T01_TOPOLOGY_ALIGNMENT": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
     "T02_DUAL_COVERAGE_ERROR_BUDGET": "frozen_bounded_partial",
@@ -90,34 +97,335 @@
     "T03_DUAL_COVERAGE_OPTIMIZER": "implementation_ready_validation_pending",
     "T04_MATERIAL_RESPONSE_INPUT_CONTRACT": "implementation_ready_validation_pending",
     "T05_QCM_FLUX_TRANSFER": "implementation_ready_validation_pending",
-    "T06_PROCESS_OPTICAL_OBSERVABLES": "in_progress"
+    "T06_PROCESS_OPTICAL_OBSERVABLES": "implementation_ready_validation_pending",
+    "T07_MEASUREMENT_IDENTIFIABILITY": "implementation_ready_validation_pending",
+    "T08_ROBUST_INVERSION": "implementation_ready_validation_pending",
+    "T09_TRACEABLE_VALIDATION_CONTRACTS": "research_contract_ready_real_validation_pending",
+    "T10_OBSERVABLE_MATERIAL_RESPONSE": "locally_frozen_research_only"
   },
   "execution_policy": {
-    "high_compute": "implement_complete_algorithm_and_device_driver_now_heavy_validation_after_user_device_arrangement",
+    "high_compute": "offline_algorithms_and_bounded_drivers_exist; actual_heavy_execution_requires_scope_and_device; live_hardware_adapter_not_claimed",
     "acceptance": "small_tests_are_implementation_checks_not_production_acceptance",
-    "publication": "accumulate_meaningful_frozen_batches_reduce_upload_frequency_no_per_minor_revision_push",
-    "freeze": "prior_frozen_artifacts_remain_unchanged_new_work_in_independent_directories"
+    "publication": "consolidated_exact_allowlist_in_containing_commit",
+    "freeze": "prior_frozen_artifacts_remain_unchanged_new_work_in_independent_directories",
+    "third_cycle": "local_complete_bounded_research",
+    "fourth_cycle": "not_started"
   },
   "device_validation_backlog": [
     {
-      "stage": "T02v03",
-      "status": "awaiting_user_arranged_device_not_run",
-      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3"
+      "stage": "T01R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "01_machine_structures/round2_topology_alignment",
+      "plan_path": "01_machine_structures/round2_topology_alignment/verification/PRE_REGISTERED_PROTOCOL.md",
+      "unresolved": "C/I source-figure gate; full-grid temporal refinement, continuous extrema and physical geometry"
+    },
+    {
+      "stage": "T02R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3",
+      "plan_path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/device_validation_plan.json",
+      "driver_path": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/models/device_driver.py",
+      "reference_jobs": 8,
+      "fixed_ray_nominal_estimate": 2450612480,
+      "unresolved": "point12 ion base/tight references and point2 vapor tight reference not run; event support only conditional"
     },
     {
       "stage": "T03R2",
-      "status": "awaiting_user_arranged_device_not_run",
-      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer"
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "03_correction_plate_optimization/round2_dual_coverage_optimizer",
+      "plan_path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/verification/device_validation_plan.json",
+      "driver_path": "03_correction_plate_optimization/round2_dual_coverage_optimizer/models/device_runner.py",
+      "nominal_rays": 2100409824,
+      "unresolved": "authenticated full source/time input chunks; candidate-local error bounds; user-approved targets and real geometry"
     },
     {
       "stage": "T04R2",
-      "status": "awaiting_user_arranged_device_not_run",
-      "path": "04_coating_and_substrate_materials/round2_material_response_contract"
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "04_coating_and_substrate_materials/round2_material_response_contract",
+      "plan_path": "04_coating_and_substrate_materials/round2_material_response_contract/verification/device_validation_plan.json",
+      "driver_path": "04_coating_and_substrate_materials/round2_material_response_contract/models/calibration_driver.py",
+      "bootstrap_replicates": 100000,
+      "unresolved": "actual film/calibration covariance and resource approval"
     },
     {
       "stage": "T05R2",
-      "status": "awaiting_user_arranged_device_not_run",
-      "path": "05_evaporation_sources/round2_qcm_flux_transfer"
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "05_evaporation_sources/round2_qcm_flux_transfer",
+      "plan_path": "05_evaporation_sources/round2_qcm_flux_transfer/reports/04_results_reproduction_and_limits.md",
+      "driver_path": "05_evaporation_sources/round2_qcm_flux_transfer/models/validation_driver.py",
+      "fit_count": 480000,
+      "frequency_samples": 63360000,
+      "unresolved": "actual QCM/source/workpiece geometry, collection and drift calibration"
+    },
+    {
+      "stage": "T06R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "06_optical_coating_families/round2_process_optical_observables",
+      "plan_path": "06_optical_coating_families/round2_process_optical_observables/data/batch_plan.json",
+      "driver_path": "06_optical_coating_families/round2_process_optical_observables/models/batch_driver.py",
+      "monte_carlo_samples": 1000,
+      "unresolved": "actual process-to-film n/k calibration and supplied covariance validity"
+    },
+    {
+      "stage": "T07R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "07_thin_film_design_theory/round2_measurement_identifiability",
+      "plan_path": "07_thin_film_design_theory/round2_measurement_identifiability/verification/batch_plan_receipt.json",
+      "driver_path": "07_thin_film_design_theory/round2_measurement_identifiability/models/batch_driver.py",
+      "truth_cases": 27,
+      "least_squares_start_jobs": 339552,
+      "estimated_max_nfev_total": 135820800,
+      "unresolved": "real measurement operator, calibration and global ambiguity; nfev not true optical call count"
+    },
+    {
+      "stage": "T08R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "08_stack_optimization_algorithms/round2_robust_inversion",
+      "plan_path": "08_stack_optimization_algorithms/round2_robust_inversion/verification/batch_plan_receipt.json",
+      "driver_path": "08_stack_optimization_algorithms/round2_robust_inversion/models/batch_driver.py",
+      "fit_start_jobs": 163584,
+      "total_forward_call_ceiling": 196391832,
+      "unresolved": "full profile endpoints, real bias/model discrepancy and performance/coverage; one complete observation-vector prediction per call"
+    },
+    {
+      "stage": "T09R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "09_standards_and_qualification/round2_traceable_validation_contracts",
+      "plan_path": "09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_contract_template.json",
+      "unresolved": "authorized normative clauses, contract severity/thresholds and real traceable samples; no hardware test performed"
+    },
+    {
+      "stage": "T10R2",
+      "status": "not_run_pending_separate_scope_data_and_device_authorization",
+      "path": "10_ion_sources/round2_observable_material_response",
+      "plan_path": "10_ion_sources/round2_observable_material_response/reports/08_implementation_execution_and_limits.md",
+      "driver_path": "10_ion_sources/round2_observable_material_response/models/validation_driver.py",
+      "conditions": 216,
+      "replicates_per_condition": 200,
+      "inverse_solve_cap": 43200,
+      "max_iterations": 100,
+      "wall_budget_s": 1800,
+      "unresolved": "actual instrument/firmware/protocol, charge/energy/neutral corrections, film response; offline driver only, live adapter not implemented"
     }
-  ]
+  ],
+  "round1_topic_status": {
+    "T01": "round1_theory_ready_for_handoff",
+    "T02": "round1_theory_and_synthetic_scope_complete",
+    "T03": "round1_theory_and_synthetic_scope_complete",
+    "T04": "round1_priority_public_research_complete",
+    "T05": "round1_priority_theory_and_synthetic_scope_complete",
+    "T06": "round1_priority_theory_and_numerical_scope_complete",
+    "T07": "round1_priority_theory_and_reference_numerical_scope_complete",
+    "T08": "round1_bounded_algorithm_research_delivery_complete",
+    "T09": "round1_public_theory_evidence_and_planning_scope_complete",
+    "T10": "round1_priority_public_theory_and_synthetic_scope_complete"
+  },
+  "round1_research_stage_acceptance": {
+    "T01": "theory_handoff_ready_not_machine_validated_or_formally_signed_off",
+    "T02": "bounded_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
+    "T03": "bounded_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
+    "T04": "bounded_priority_public_research_complete_not_experimentally_or_production_validated",
+    "T05": "bounded_priority_theory_and_synthetic_scope_complete_not_machine_validated_or_formally_signed_off",
+    "T06": "bounded_priority_theory_and_reference_numerical_scope_complete_not_machine_validated_or_formally_signed_off",
+    "T07": "bounded_design_theory_and_reference_numerics_complete_real_material_machine_and_formal_review_unverified",
+    "T08": "bounded_algorithm_research_complete_B03_nonconvergence_and_real_validation_limits_retained",
+    "T09": "bounded_public_research_complete_paid_text_GJB_and_real_sample_gaps_retained_not_certified",
+    "T10": "bounded_public_theory_and_synthetic_handoff_with_limited_independent_numerical_checks_formal_review_and_machine_qualification_pending"
+  },
+  "publication": {
+    "status": "published_in_containing_commit",
+    "batch_id": "2026-10-02-r2-tail-and-complete-r3",
+    "repository": "https://github.com/ii33/coating-research-library",
+    "branch": "main",
+    "base_commit": "31744525b4cdde04fad31aaf58e6148f7819ce62",
+    "base_remote_blob_count": 1043,
+    "scope": [
+      "T06R2",
+      "T07R2",
+      "T08R2",
+      "T09R2",
+      "T10R2 independent portable derivative",
+      "T01R3–T10R3 complete exact reader payloads and external receipts",
+      "MXC five original derived files",
+      "root synthesis and current planning"
+    ],
+    "publication_manifest": "00_project/CONSOLIDATED_PUBLICATION_MANIFEST.json",
+    "publication_allowlist": "00_project/CONSOLIDATED_PUBLICATION_ALLOWLIST.txt",
+    "publication_notes": "00_project/CONSOLIDATED_PUBLICATION.md",
+    "T10_original_R2_package": "not_published_private_provenance_and_nonstandalone_audit_preserved_locally",
+    "T10_R2_derived_package": "publication_packages/t10_round2_portable_v1",
+    "T10_R2_derived_manifest_sha256": "d5d358e5d430cd1e7836cc49c0abbeddbf981f9fdb81e7c9df16b1576db7e90b",
+    "history_semantics": "frozen publication=false/local-only/next-stage texts describe their original freeze events; current repository availability is recorded here without rewriting frozen bytes",
+    "excluded": "third-party originals, ZIP archives, runtime caches, credentials, private storage/account/message identifiers, filesystem xattrs",
+    "remote_merge_policy": "base remote tree retained, no deletion, non-force fast-forward; containing commit identifies this batch without self-referential commit hash"
+  },
+  "third_cycle": {
+    "status": "T01_T10_local_freeze_complete",
+    "index": "00_project/ROUND3_EVIDENCE_INDEX.json",
+    "synthesis": "00_project/THIRD_SWEEP_SYNTHESIS.md",
+    "prior_draft": "00_project/ROUND3_PRIORITY_DRAFT.md",
+    "fourth_round_started": false,
+    "formal_stage_acceptance": "pending",
+    "heavy_executions": 0,
+    "device_executions": 0,
+    "html_layout": "unverified"
+  },
+  "synthesis": "00_project/THIRD_SWEEP_SYNTHESIS.md",
+  "production_qualification": "not_performed",
+  "round2_topic_status": {
+    "T01": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
+    "T02": "frozen_local_partial_with_device_validation_pending",
+    "T03": "implementation_ready_validation_pending",
+    "T04": "implementation_ready_validation_pending",
+    "T05": "implementation_ready_validation_pending",
+    "T06": "implementation_ready_validation_pending",
+    "T07": "implementation_ready_validation_pending",
+    "T08": "implementation_ready_validation_pending",
+    "T09": "research_contract_ready_real_validation_pending",
+    "T10": "locally_frozen_research_only"
+  },
+  "round2_research_stage_acceptance": {
+    "T01": "bounded_theory_synthetic_complete_with_source_figure_and_numerical_coverage_gaps",
+    "T02": "frozen_local_partial_with_device_validation_pending",
+    "T03": "implementation_ready_validation_pending",
+    "T04": "implementation_ready_validation_pending",
+    "T05": "implementation_ready_validation_pending",
+    "T06": "implementation_ready_validation_pending",
+    "T07": "implementation_ready_validation_pending",
+    "T08": "implementation_ready_validation_pending",
+    "T09": "research_contract_ready_real_validation_pending",
+    "T10": "locally_frozen_research_only"
+  },
+  "round3_stage_status": {
+    "T01": {
+      "id": "T01",
+      "path": "01_machine_structures/round3_mechanical_error_observability",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "01_machine_structures/round3_mechanical_error_observability/verification/reader_manifest.json",
+      "manifest_sha256": "d6d10b2b82b4ef7c15cdbe646215832f656bf430426422c1e0284ce0952e02ce",
+      "payload_files": 45,
+      "receipt": "01_machine_structures/round3_mechanical_error_observability/verification/release_receipt.json",
+      "receipt_sha256": "cae39228d15e14a1c6612cda225705fd4b95e76ac6210df2f070d3a8df7229bd",
+      "archive_sha256": "482e89bc8e9b162ecb961ceb7fed201be84b7bea4c5f13743f74620cdcdedbc9",
+      "historical_stage_status": "01_machine_structures/round3_mechanical_error_observability/stage_status.json"
+    },
+    "T02": {
+      "id": "T02",
+      "path": "02_machine_modeling/round3_pose_occlusion_sensitivity",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "02_machine_modeling/round3_pose_occlusion_sensitivity/verification/reader_manifest.json",
+      "manifest_sha256": "409fa3ab9847a6b7a1b9f650877309c0d0c82c8159041c5bb8ebb7c6dafaf9ed",
+      "payload_files": 60,
+      "receipt": "02_machine_modeling/round3_pose_occlusion_sensitivity/verification/release_receipt.json",
+      "receipt_sha256": "1c91abc01e2399b9c0519329287d93274ee9e3895757d6745d1e4a9e2e9d82da",
+      "archive_sha256": "d162c61ab0dc02d11a399a480b6b0b098a39115b6aa269f92533637bdd6cc784",
+      "historical_stage_status": "02_machine_modeling/round3_pose_occlusion_sensitivity/stage_status.json"
+    },
+    "T03": {
+      "id": "T03",
+      "path": "03_correction_plate_optimization/round3_event_aware_trust_region",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "03_correction_plate_optimization/round3_event_aware_trust_region/verification/reader_manifest.json",
+      "manifest_sha256": "30621d6aded8566691b506968bf3872664ccf6ab673f849e4d647a50a39ed1cf",
+      "payload_files": 51,
+      "receipt": "03_correction_plate_optimization/round3_event_aware_trust_region/verification/release_receipt.json",
+      "receipt_sha256": "69ad2afba5183715627ed879a132c72d328f6dc4f82ac4ff5a88c6d7617228de",
+      "archive_sha256": "df7b179bd74923ceaf292f5d48841644b07bfef7919d0618eb085da7aacf1af4",
+      "historical_stage_status": "03_correction_plate_optimization/round3_event_aware_trust_region/stage_status.json"
+    },
+    "T04": {
+      "id": "T04",
+      "path": "04_coating_and_substrate_materials/round3_bounded_material_response",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "04_coating_and_substrate_materials/round3_bounded_material_response/verification/reader_manifest.json",
+      "manifest_sha256": "bf1b993c44a698499100b30952199b59ae27cf23c5e43e71ab571d5cd2790550",
+      "payload_files": 78,
+      "receipt": "04_coating_and_substrate_materials/round3_bounded_material_response/verification/release_receipt.json",
+      "receipt_sha256": "16d2a05e93138c857ec590cfa451c9ce1703418f8b0da25c3585a391717ce27b",
+      "archive_sha256": "9ede3945cdb98aa41bed55da01a57483fc0fd2958cafdbb87f71d61ae8ad7290",
+      "historical_stage_status": "04_coating_and_substrate_materials/round3_bounded_material_response/stage_status.json"
+    },
+    "T05": {
+      "id": "T05",
+      "path": "05_evaporation_sources/round3_source_retention_identifiability",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "05_evaporation_sources/round3_source_retention_identifiability/verification/reader_manifest.json",
+      "manifest_sha256": "2dfe22dd7502f61f255753f32983f03a25be8277447949b554b612b96c66f219",
+      "payload_files": 85,
+      "receipt": "05_evaporation_sources/round3_source_retention_identifiability/verification/release_receipt.json",
+      "receipt_sha256": "e8e7423b7dec26c64e06d1114a1358c6d33320b374463ca6835719de018d7e81",
+      "archive_sha256": "3e702e11262cbab3a9be20c1a9efe355fd3501424141bcd75126c823cd1fd2de",
+      "historical_stage_status": "05_evaporation_sources/round3_source_retention_identifiability/stage_status.json"
+    },
+    "T06": {
+      "id": "T06",
+      "path": "06_optical_coating_families/round3_bounded_stack_response",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "06_optical_coating_families/round3_bounded_stack_response/verification/reader_manifest.json",
+      "manifest_sha256": "1f6d668b1fe097e743aa7d5dffef687866e3a008d36e4a1ba8f23a473881f7c0",
+      "payload_files": 100,
+      "receipt": "06_optical_coating_families/round3_bounded_stack_response/verification/freeze_receipt.json",
+      "receipt_sha256": "617c5dd7db08d1e131ef27383a4a07bda2d190ca78c22ff3c6bd17a116bcb540",
+      "archive_sha256": "2ae85156b793c8626c1a3443af0d2db956445557c72e73398ba313d848888ac2",
+      "historical_stage_status": "06_optical_coating_families/round3_bounded_stack_response/stage_status.json"
+    },
+    "T07": {
+      "id": "T07",
+      "path": "07_thin_film_design_theory/round3_observation_set_exclusion",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "07_thin_film_design_theory/round3_observation_set_exclusion/verification/reader_manifest.json",
+      "manifest_sha256": "46df651215c28a8432a670319a20885203f423b3405a83dc2323c35edfb6e666",
+      "payload_files": 129,
+      "receipt": "07_thin_film_design_theory/round3_observation_set_exclusion/verification/freeze_receipt.json",
+      "receipt_sha256": "3b4d7587bc092e98839e507be3418aa1b2b2578f6dd8faf48e254d9e376f76cc",
+      "archive_sha256": "ff7c99e101b96a58216a58ec5aeef735e95821aab0bc1094edcabab7aa1ad71d",
+      "historical_stage_status": "07_thin_film_design_theory/round3_observation_set_exclusion/stage_status.json"
+    },
+    "T08": {
+      "id": "T08",
+      "path": "08_stack_optimization_algorithms/round3_budgeted_candidate_sets",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "08_stack_optimization_algorithms/round3_budgeted_candidate_sets/verification/reader_manifest.json",
+      "manifest_sha256": "c5ed7c8e46ae41c2503e4e8a7e1d33c2c36b3d48cba877c4ed284941b771d840",
+      "payload_files": 168,
+      "receipt": "08_stack_optimization_algorithms/round3_budgeted_candidate_sets/verification/freeze_receipt.json",
+      "receipt_sha256": "a0b10d1f0988e8fce140a5b6210b8cfbbbc37d2b7ac87519c11f6b63f261e08f",
+      "archive_sha256": "46489db968159cd6694a14098b931dab80237ac0805b77147f622a697adf7e0f",
+      "historical_stage_status": "08_stack_optimization_algorithms/round3_budgeted_candidate_sets/stage_status.json"
+    },
+    "T09": {
+      "id": "T09",
+      "path": "09_standards_and_qualification/round3_unresolved_evidence_acceptance",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "09_standards_and_qualification/round3_unresolved_evidence_acceptance/verification/reader_manifest.json",
+      "manifest_sha256": "648101c78bd58dfc1d22856ae4e9f00255531ad7a06b4988183a8d48a1dcb116",
+      "payload_files": 174,
+      "receipt": "09_standards_and_qualification/round3_unresolved_evidence_acceptance/verification/freeze_receipt.json",
+      "receipt_sha256": "08b21494cae674a0c8589b47f8b2b77fa2363470139cced1655d4a24fc1f43c4",
+      "archive_sha256": "64bc2e4c752161e1dafa52534217bfa661ab676c68f642538da070f3afc830ec",
+      "historical_stage_status": "09_standards_and_qualification/round3_unresolved_evidence_acceptance/stage_status.json"
+    },
+    "T10": {
+      "id": "T10",
+      "path": "10_ion_sources/round3_ion_state_evidence_gate",
+      "status": "local_freeze_bounded_research_complete",
+      "formal_stage_acceptance": "pending",
+      "manifest": "10_ion_sources/round3_ion_state_evidence_gate/verification/reader_manifest.json",
+      "manifest_sha256": "3f59171c3df5419d3793e6b14caa9a2d7fbd9df2275c31741f9a3e403b19a440",
+      "payload_files": 191,
+      "receipt": "10_ion_sources/round3_ion_state_evidence_gate/verification/freeze_receipt.json",
+      "receipt_sha256": "b6813a489ba67e174f4e3b4e58488fc9fe9e1cf7e8f21d80ff9059b2c114720f",
+      "archive_sha256": "94607028288ff4bc1304f611985438767f4d0d406f47a83852a7b2e282391ba5",
+      "historical_stage_status": "10_ion_sources/round3_ion_state_evidence_gate/stage_status.json"
+    }
+  }
 }

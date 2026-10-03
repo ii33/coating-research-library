@@ -1,0 +1,24 @@
+{
+  "completed": [
+    {
+      "file": "case_000_constant_gaussian.json",
+      "attempts": 1,
+      "discovered_clusters": 1,
+      "all_attempts_converged": true
+    }
+  ],
+  "ledger": {
+    "cap": 191,
+    "vector_calls": 176,
+    "optical_kernel_calls": 2294,
+    "starts": 3,
+    "by_purpose": {
+      "generate": 2,
+      "fit": 38,
+      "profile": 90,
+      "validation": 2,
+      "design": 44
+    }
+  },
+  "status": "running"
+}

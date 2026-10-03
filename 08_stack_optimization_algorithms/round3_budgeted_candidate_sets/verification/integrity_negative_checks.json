@@ -1,0 +1,14 @@
+{
+  "payload_tamper": {
+    "rejected": true,
+    "reason": "payload_hash_mismatch:models/candidate_sets.py"
+  },
+  "dependency_missing": {
+    "rejected": true,
+    "reason": "payload_hash_mismatch:dependencies/t07r3/dependencies/t06r3/dependencies/t05/models/source_retention.py"
+  },
+  "unlisted_payload": {
+    "rejected": true,
+    "reason": "payload_file_set_mismatch:['unexpected.json']"
+  }
+}

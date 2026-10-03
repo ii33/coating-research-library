@@ -1,0 +1,216 @@
+{
+  "nominal_start": {
+    "search_state": "float_feasible_hint_found",
+    "termination": "finite_budget",
+    "calls": 9,
+    "best": {
+      "point_exact": [
+        "1",
+        "1"
+      ],
+      "R_float": {
+        "M0": 0.01158397120120207,
+        "M1": 0.01707088413095477
+      },
+      "violation_float": 0.0,
+      "objective_float": 1.0,
+      "constraint_float": -0.03,
+      "feasible_float_hint": true,
+      "arithmetic_certificate": false
+    },
+    "best_hint": {
+      "point_exact": [
+        "1",
+        "1"
+      ],
+      "R_float": {
+        "M0": 0.01158397120120207,
+        "M1": 0.01707088413095477
+      },
+      "violation_float": 0.0,
+      "objective_float": 1.0,
+      "constraint_float": -0.03,
+      "feasible_float_hint": true,
+      "arithmetic_certificate": false
+    },
+    "trace": [
+      {
+        "point_exact": [
+          "1",
+          "1"
+        ],
+        "R_float": {
+          "M0": 0.01158397120120207,
+          "M1": 0.01707088413095477
+        },
+        "violation_float": 0.0,
+        "objective_float": 1.0,
+        "constraint_float": -0.03,
+        "feasible_float_hint": true,
+        "arithmetic_certificate": false
+      },
+      {
+        "point_exact": [
+          "4801507291010108507633145/4835703278458516698824704",
+          "1"
+        ],
+        "R_float": {
+          "M0": 0.015675945317260388,
+          "M1": 0.01626149703835053
+        },
+        "violation_float": 9.560305178597847,
+        "objective_float": 1.0,
+        "constraint_float": -0.03707156446110749,
+        "feasible_float_hint": false,
+        "arithmetic_certificate": false
+      },
+      {
+        "point_exact": [
+          "4869899265906924890016263/4835703278458516698824704",
+          "1"
+        ],
+        "R_float": {
+          "M0": 0.007849581295053466,
+          "M1": 0.017788717525042044
+        },
+        "violation_float": 7.476887058517592,
+        "objective_float": 1.0,
+        "constraint_float": -0.022928435538892518,
+        "feasible_float_hint": false,
+        "arithmetic_certificate": false
+      },
+      {
+        "point_exact": [
+          "1",
+          "19/20"
+        ],
+        "R_float": {
+          "M0": 0.03724797224506729,
+          "M1": 0.01044078001235984
+        },
+        "violation_float": 640.0110283283224,
+        "objective_float": 4.0,
+        "constraint_float": -0.08,
+        "feasible_float_hint": false,
+        "arithmetic_certificate": false
+      },
+      {
+        "point_exact": [
+          "1",
+          "21/20"
+        ],
+        "R_float": {
+          "M0": 0.0004852972016748878,
+          "M1": 0.025266489728877368
+        },
+        "violation_float": 153.76035429043094,
+        "objective_float": 0.0,
+        "constraint_float": 0.02,
+        "feasible_float_hint": false,
+        "arithmetic_certificate": false
+      },
+      {
+        "point_exact": [
+          "9637210569468625206457849/9671406556917033397649408",
+          "1"
+        ],
+        "R_float": {
+          "M0": 0.013605426588849393,
+          "M1": 0.01667596193069506
+        },
+        "violation_float": 1.043371519991662,
+        "objective_float": 1.0,
+        "constraint_float": -0.03353578223055374,
+        "feasible_float_hint": false,
+        "arithmetic_certificate": false
+      },
+      {
+        "point_exact": [
+          "9705602544365441588840967/9671406556917033397649408",
+          "1"
+        ],
+        "R_float": {
+          "M0": 0.009652308400115713,
+          "M1": 0.01744286283872173
+        },
+        "violation_float": 0.8679952000231475,
+        "objective_float": 1.0,
+        "constraint_float": -0.02646421776944626,
+        "feasible_float_hint": false,
+        "arithmetic_certificate": false
+      },
+      {
+        "point_exact": [
+          "1",
+          "39/40"
+        ],
+        "R_float": {
+          "M0": 0.02295609662562469,
+          "M1": 0.013539754312697043
+        },
+        "violation_float": 113.98760748768674,
+        "objective_float": 2.25,
+        "constraint_float": -0.055,
+        "feasible_float_hint": false,
+        "arithmetic_certificate": false
+      },
+      {
+        "point_exact": [
+          "1",
+          "41/40"
+        ],
+        "R_float": {
+          "M0": 0.003910112525259809,
+          "M1": 0.02099427569000761
+        },
+        "violation_float": 53.086605914067015,
+        "objective_float": 0.25,
+        "constraint_float": -0.005,
+        "feasible_float_hint": false,
+        "arithmetic_certificate": false
+      }
+    ],
+    "finite_search_is_global_certificate": false,
+    "evidence_effect": "none; failed search cannot set OUT"
+  },
+  "deliberate_miss": {
+    "search_state": "optimizer_not_found_within_budget",
+    "termination": "finite_budget",
+    "calls": 1,
+    "best": {
+      "point_exact": [
+        "1191827825890425099974357/1208925819614629174706176",
+        "9/10"
+      ],
+      "R_float": {
+        "M0": 0.07779101303283144,
+        "M1": 0.0033318473536164553
+      },
+      "violation_float": 4414.241385349349,
+      "objective_float": 9.0,
+      "constraint_float": -0.14272881602999346,
+      "feasible_float_hint": false,
+      "arithmetic_certificate": false
+    },
+    "best_hint": null,
+    "trace": [
+      {
+        "point_exact": [
+          "1191827825890425099974357/1208925819614629174706176",
+          "9/10"
+        ],
+        "R_float": {
+          "M0": 0.07779101303283144,
+          "M1": 0.0033318473536164553
+        },
+        "violation_float": 4414.241385349349,
+        "objective_float": 9.0,
+        "constraint_float": -0.14272881602999346,
+        "feasible_float_hint": false,
+        "arithmetic_certificate": false
+      }
+    ],
+    "finite_search_is_global_certificate": false,
+    "evidence_effect": "none; failed search cannot set OUT"
+  }
+}

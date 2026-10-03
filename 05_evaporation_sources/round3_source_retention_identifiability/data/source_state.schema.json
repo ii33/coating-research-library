@@ -1,0 +1,332 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "T05 R3 source state capture template",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_kind",
+    "source_type",
+    "machine_model",
+    "firmware",
+    "material_identity",
+    "batch",
+    "phase",
+    "phase_evidence",
+    "source_surface_geometry",
+    "liquid_level_m",
+    "solid_recession_m",
+    "mass_rate_basis",
+    "Q_total_kg_s",
+    "angular_n",
+    "angular_c",
+    "spatial_mass_weights",
+    "thermal_history",
+    "electrical_command_history",
+    "measured_electrical_history",
+    "beam_sweep_phase_history",
+    "mass_emission_footprint",
+    "source_clock_offset_s",
+    "pose_clock_offset_s",
+    "QCM_capture_eta",
+    "workpiece_retention_s0",
+    "workpiece_retention_a",
+    "actual_film_density_kg_m3",
+    "feedback_coordinate",
+    "measurement_provenance",
+    "actual_visibility_history",
+    "real_calibration_status",
+    "production_qualified"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "T05-r3-unmeasured-source-state-1"
+    },
+    "dataset_kind": {
+      "const": "unmeasured_template"
+    },
+    "source_type": {
+      "const": "electron_beam_or_resistance_unknown"
+    },
+    "machine_model": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "firmware": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "material_identity": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "batch": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "phase": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "phase_evidence": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "source_surface_geometry": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "liquid_level_m": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "solid_recession_m": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "mass_rate_basis": {
+      "const": "pre_rim_hemisphere_same_species"
+    },
+    "Q_total_kg_s": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "angular_n": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "angular_c": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "spatial_mass_weights": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "thermal_history": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "electrical_command_history": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "measured_electrical_history": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "beam_sweep_phase_history": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "mass_emission_footprint": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "source_clock_offset_s": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "pose_clock_offset_s": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "QCM_capture_eta": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "workpiece_retention_s0": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "workpiece_retention_a": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "actual_film_density_kg_m3": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "feedback_coordinate": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "measurement_provenance": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "actual_visibility_history": {
+      "type": [
+        "null",
+        "number",
+        "string",
+        "array",
+        "object",
+        "boolean"
+      ]
+    },
+    "real_calibration_status": {
+      "const": "unknown"
+    },
+    "production_qualified": {
+      "const": false
+    }
+  },
+  "$comment": "Capture template only; unknowns null. This is not a calibrated-model acceptance schema. Model functions separately reject invalid numbers, normalization, angles and unsupported physical transfer."
+}

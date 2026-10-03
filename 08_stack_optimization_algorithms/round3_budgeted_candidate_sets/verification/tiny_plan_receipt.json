@@ -1,0 +1,73 @@
+{
+  "mode": "plan_only",
+  "executed": false,
+  "contract_sha256": "a7a2327f485ece7d6f7140c687f762879fee974994f74349cf6a59bad8ab8acd",
+  "plan": {
+    "stage": "T08R3",
+    "plan": "tiny",
+    "jobs": [
+      {
+        "id": "plane_M0_63",
+        "channels": [
+          "M0"
+        ],
+        "max_nodes": 63,
+        "v": null
+      },
+      {
+        "id": "plane_joint_255",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "max_nodes": 255,
+        "v": null
+      },
+      {
+        "id": "outer10_joint_31",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "max_nodes": 31,
+        "v": "1.1"
+      },
+      {
+        "id": "zero_budget",
+        "channels": [
+          "M0",
+          "M1"
+        ],
+        "max_nodes": 0,
+        "v": null
+      }
+    ],
+    "min_width": [
+      "0.0004",
+      "0.002"
+    ],
+    "required_caps": {
+      "max_nodes": 349,
+      "max_interval_wavelengths": 1337,
+      "max_float_vectors": 10
+    },
+    "searches": [
+      {
+        "id": "nominal_start",
+        "calls": 9
+      },
+      {
+        "id": "deliberate_miss",
+        "calls": 1
+      }
+    ],
+    "point_validation_count": 1,
+    "default_mode": "plan_only",
+    "devices": 0,
+    "monte_carlo_draws": 0,
+    "infinite_dimensional_extension": false,
+    "quota_bypass": false,
+    "resume": "not_implemented; fresh output only",
+    "full_execution_status": "not_run"
+  }
+}

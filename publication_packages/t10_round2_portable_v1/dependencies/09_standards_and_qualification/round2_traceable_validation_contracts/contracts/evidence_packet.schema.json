@@ -1,0 +1,463 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:coating-research:T09R2:evidence-packet:1",
+  "title": "Research-only evidence packet, not a release authorization",
+  "description": "Strict shape only. Semantic gates are separately implemented. Real measurement and production qualification unsupported.",
+  "type": "object",
+  "properties": {
+    "packet_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_mode": {
+      "const": "synthetic_demo"
+    },
+    "requested_claim": {
+      "const": "research_diagnostic"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {
+            "type": "number"
+          },
+          "unit": {
+            "enum": [
+              "nm",
+              "nm/s",
+              "Hz",
+              "1",
+              "percent"
+            ]
+          },
+          "quantity_kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "coordinate": {
+            "type": "string",
+            "minLength": 1
+          },
+          "t_s": {
+            "type": "number"
+          },
+          "run_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sample_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reading_origin": {
+            "enum": [
+              "measured",
+              "derived_from_measurement",
+              "substituted_setpoint",
+              "held",
+              "unknown"
+            ]
+          },
+          "raw_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "requires_lock": {
+            "type": "boolean"
+          },
+          "lock_state": {
+            "enum": [
+              "locked",
+              "unlocked",
+              "unknown",
+              "not_applicable"
+            ]
+          },
+          "controller_mode": {
+            "enum": [
+              "measurement",
+              "qcm_control",
+              "time_power",
+              "manual",
+              "unknown"
+            ]
+          },
+          "parameter_snapshot_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "parameter_switched": {
+            "type": "boolean"
+          },
+          "parameter_event_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "negative_clip_mode": {
+            "enum": [
+              "none",
+              "project_max_zero_demo",
+              "device_specific_unknown"
+            ]
+          },
+          "transformation_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "calibration_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "value",
+          "unit",
+          "quantity_kind",
+          "coordinate",
+          "t_s",
+          "run_id",
+          "sample_id",
+          "reading_origin",
+          "raw_ref",
+          "requires_lock",
+          "lock_state",
+          "controller_mode",
+          "parameter_snapshot_id",
+          "parameter_switched",
+          "parameter_event_id",
+          "negative_clip_mode",
+          "transformation_ref",
+          "calibration_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "datasets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "enum": [
+              "fit",
+              "selection",
+              "heldout_final",
+              "calibration",
+              "process_estimate"
+            ]
+          },
+          "observation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "used_to_update_model": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "role",
+          "observation_ids",
+          "used_to_update_model"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "parameter_snapshots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "material_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "density_kg_m3": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "z_factor": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "tooling_fraction": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "feedback_coordinate": {
+            "type": "string",
+            "minLength": 1
+          },
+          "display_coordinate": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "material_id",
+          "density_kg_m3",
+          "z_factor",
+          "tooling_fraction",
+          "feedback_coordinate",
+          "display_coordinate"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "parameter_change",
+              "reset",
+              "continue",
+              "restart",
+              "shutter_command",
+              "shutter_observation"
+            ]
+          },
+          "t_s": {
+            "type": "number"
+          },
+          "snapshot_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "t_s",
+          "snapshot_id"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "calibrations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "within_scope": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "basis_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "within_scope",
+          "basis_ref"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "numerics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "not_run",
+              "running",
+              "converged_local",
+              "validated_analytic",
+              "budget_exhausted",
+              "solver_failure",
+              "invalid_model",
+              "interrupted",
+              "numerical_check_failed"
+            ]
+          },
+          "required_for_claim": {
+            "type": "boolean"
+          },
+          "calls": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "budget": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "stop_reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "required_for_claim",
+          "calls",
+          "budget",
+          "stop_reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "cross_split_correlation": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "known_synthetic",
+            "modelled_with_evidence",
+            "unknown"
+          ]
+        },
+        "basis_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "basis_ref"
+      ],
+      "additionalProperties": false
+    },
+    "decision_rule": {
+      "type": "object",
+      "properties": {
+        "rule_id": {
+          "enum": [
+            "project_closed_interval_v1"
+          ]
+        },
+        "preagreed": {
+          "type": "boolean"
+        },
+        "approval_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "rule_id",
+        "preagreed",
+        "approval_ref"
+      ],
+      "additionalProperties": false
+    },
+    "source_visibility": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "workpiece_visibility": {
+            "enum": [
+              "unknown",
+              "open_verified",
+              "closed_verified"
+            ]
+          },
+          "position_evidence_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "thermal_state": {
+            "enum": [
+              "unknown",
+              "hot",
+              "cooled_with_evidence"
+            ]
+          },
+          "zero_flux_verified": {
+            "type": "boolean"
+          },
+          "zero_flux_basis_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "source_id",
+          "workpiece_visibility",
+          "position_evidence_ref",
+          "thermal_state",
+          "zero_flux_verified",
+          "zero_flux_basis_ref"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "packet_id",
+    "evidence_mode",
+    "requested_claim",
+    "observations",
+    "datasets",
+    "parameter_snapshots",
+    "events",
+    "calibrations",
+    "numerics",
+    "cross_split_correlation",
+    "decision_rule",
+    "source_visibility"
+  ],
+  "additionalProperties": false
+}

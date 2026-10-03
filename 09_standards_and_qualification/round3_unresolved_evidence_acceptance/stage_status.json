@@ -1,0 +1,30 @@
+{
+  "stage_id": "ROUND3.T09_UNRESOLVED_EVIDENCE_ACCEPTANCE",
+  "version": "0.1.0",
+  "algorithmic": true,
+  "status": "local_freeze",
+  "formal_stage_acceptance": "pending",
+  "specified_model_chain": {
+    "DeepSeek_execution": "not_run",
+    "Seed_Pro_stage_review": "pending_not_run",
+    "Sol_full_algorithm_review": "pending_not_run"
+  },
+  "independent_narrow_check": {
+    "requested_model": "gpt-6-luna",
+    "model_identity_independently_verified": false,
+    "status": "one_completed_static_rule_check",
+    "formal_model_chain": false
+  },
+  "physical_certification": false,
+  "production_qualified": false,
+  "actual_customer_criteria": "unknown",
+  "point12": "partial_unchanged",
+  "point2": "conditional_non_strict_unchanged",
+  "full_plan": "plan_only_not_run",
+  "devices": 0,
+  "html_layout": "unverified_existing_restriction_not_retried",
+  "next_stage_started": false,
+  "publication": "not_run",
+  "stop_condition": "local_freeze_and_exact_receipt",
+  "author_self_check": "27_cases_12_tests_passed"
+}

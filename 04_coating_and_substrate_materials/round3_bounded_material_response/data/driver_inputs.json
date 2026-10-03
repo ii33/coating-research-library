@@ -1,0 +1,172 @@
+{
+  "dataset_kind": "synthetic",
+  "candidates": [
+    {
+      "t0": 0.0,
+      "t1": 2.0,
+      "x0_m": -0.4,
+      "velocity_m_s": 0.4,
+      "target_shift_m": 0.03,
+      "source_shift_m": 0.0,
+      "clock_offset_s": 0.0,
+      "amplitude": 1.0,
+      "plate_shift_m": 0.0,
+      "half_width_m": 0.08,
+      "height_m": 1.0,
+      "z_near_m": 0.4,
+      "z_far_m": 0.6,
+      "half_y_m": 0.15,
+      "q0": 1.0,
+      "q1_per_s": 0.3,
+      "event_guard_s": 1e-10,
+      "face_guard_m": 1e-12,
+      "transverse_floor_m_s": 1e-10,
+      "shadow_boundary_uncertainty_m": 0.0
+    },
+    {
+      "t0": 0.0,
+      "t1": 2.0,
+      "x0_m": -0.4,
+      "velocity_m_s": 0.4,
+      "target_shift_m": 0.03,
+      "source_shift_m": 0.0,
+      "clock_offset_s": 0.0,
+      "amplitude": 1.0,
+      "plate_shift_m": 0.0,
+      "half_width_m": 0.09,
+      "height_m": 1.0,
+      "z_near_m": 0.4,
+      "z_far_m": 0.6,
+      "half_y_m": 0.15,
+      "q0": 1.0,
+      "q1_per_s": 0.3,
+      "event_guard_s": 1e-10,
+      "face_guard_m": 1e-12,
+      "transverse_floor_m_s": 1e-10,
+      "shadow_boundary_uncertainty_m": 0.0
+    }
+  ],
+  "source_nodes_m": [
+    0.0
+  ],
+  "source_weights": [
+    1.0
+  ],
+  "target_m": 1e-09,
+  "responses": {
+    "angular_exact": {
+      "dataset_kind": "synthetic",
+      "material_id": "SYNTHETIC_NO_MATERIAL_FIT",
+      "substrate_id": "SYNTHETIC_NO_SUBSTRATE_FIT",
+      "law": "separable_bounded_retention_v1",
+      "source_scale_kg_s": [
+        2e-06,
+        2e-06
+      ],
+      "density_kg_m3": [
+        2000.0,
+        2000.0
+      ],
+      "density_basis": "synthetic_constant_effective_film",
+      "sticking_s0": [
+        1.0,
+        1.0
+      ],
+      "angular_a": [
+        1.0,
+        1.0
+      ],
+      "energy_b": [
+        0.0,
+        0.0
+      ],
+      "temperature_c": [
+        0.0,
+        0.0
+      ],
+      "energy_history_eV": [
+        20.0,
+        10.0
+      ],
+      "energy_domain_eV": [
+        0.0,
+        100.0
+      ],
+      "temperature_history_K": [
+        300.0,
+        10.0
+      ],
+      "temperature_domain_K": [
+        300.0,
+        400.0
+      ],
+      "erosion_mass_kg_m2": [
+        0.0,
+        0.0
+      ],
+      "initial_inventory_kg_m2": [
+        0.0001,
+        0.0001
+      ],
+      "model_transfer_status": "synthetic_only",
+      "units": "SI_mass_kernel_actual_substrate_area"
+    },
+    "angular_uncertain": {
+      "dataset_kind": "synthetic",
+      "material_id": "SYNTHETIC_NO_MATERIAL_FIT",
+      "substrate_id": "SYNTHETIC_NO_SUBSTRATE_FIT",
+      "law": "separable_bounded_retention_v1",
+      "source_scale_kg_s": [
+        2e-06,
+        2e-06
+      ],
+      "density_kg_m3": [
+        2000.0,
+        2000.0
+      ],
+      "density_basis": "synthetic_constant_effective_film",
+      "sticking_s0": [
+        1.0,
+        1.0
+      ],
+      "angular_a": [
+        0.0,
+        1.0
+      ],
+      "energy_b": [
+        0.0,
+        0.0
+      ],
+      "temperature_c": [
+        0.0,
+        0.0
+      ],
+      "energy_history_eV": [
+        20.0,
+        10.0
+      ],
+      "energy_domain_eV": [
+        0.0,
+        100.0
+      ],
+      "temperature_history_K": [
+        300.0,
+        10.0
+      ],
+      "temperature_domain_K": [
+        300.0,
+        400.0
+      ],
+      "erosion_mass_kg_m2": [
+        0.0,
+        0.0
+      ],
+      "initial_inventory_kg_m2": [
+        0.0001,
+        0.0001
+      ],
+      "model_transfer_status": "synthetic_only",
+      "units": "SI_mass_kernel_actual_substrate_area"
+    }
+  }
+}

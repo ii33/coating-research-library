@@ -1,0 +1,50 @@
+{
+  "source": "TV-M01",
+  "source_original_sha256": "9bd91a3721a5bae81b52ba7d2662dcce86a96dcb81ea1f4d280be945bc75d7d7",
+  "actual_user_hardware": null,
+  "manual_original_read_this_round": false,
+  "entries": [
+    {
+      "mechanism": "time_power_substitution",
+      "printed_pages": "45",
+      "pdf_pages": "46",
+      "general_requirement": "label reading provenance and do not treat substituted setpoint as independent measurement",
+      "device_specific": "MXC failure behaviour, firmware/options"
+    },
+    {
+      "mechanism": "parameter_switch_display_peak",
+      "printed_pages": "80–81;92",
+      "pdf_pages": "81–82;93",
+      "general_requirement": "retain raw frequency, parameter effective timestamps and filter state",
+      "device_specific": "MXC stop/next-layer loading sequence"
+    },
+    {
+      "mechanism": "negative_thickness_discard",
+      "printed_pages": "91–92",
+      "pdf_pages": "92–93",
+      "general_requirement": "retain signed raw observations and transformation lineage",
+      "device_specific": "MXC discard setting and accumulation semantics"
+    },
+    {
+      "mechanism": "shared_shutter_old_source",
+      "printed_pages": "72–73",
+      "pdf_pages": "73–74",
+      "general_requirement": "separate actual visibility, command and source thermal state",
+      "device_specific": "MXC empty-layer waiting workflow and shutter topology"
+    },
+    {
+      "mechanism": "feedback_coordinate",
+      "printed_pages": "39",
+      "pdf_pages": "40",
+      "general_requirement": "record display and feedback coordinates with tooling changes",
+      "device_specific": "MXC raw-rate option availability"
+    },
+    {
+      "mechanism": "sampling_and_protocol",
+      "printed_pages": "6–7;51",
+      "pdf_pages": "7–8;52",
+      "general_requirement": "per-field timestamps and bandwidth limits",
+      "device_specific": "MXC100ms sampling,1Hz logger and serial response sequencing"
+    }
+  ]
+}

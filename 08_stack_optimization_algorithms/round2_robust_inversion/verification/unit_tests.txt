@@ -1,0 +1,27 @@
+test_changed_bytes_rejected (test_integrity.IntegrityTests.test_changed_bytes_rejected) ... ok
+test_exact_payload_no_originals (test_integrity.IntegrityTests.test_exact_payload_no_originals) ... ok
+test_extra_rejected (test_integrity.IntegrityTests.test_extra_rejected) ... ok
+test_missing_rejected (test_integrity.IntegrityTests.test_missing_rejected) ... ok
+test_bad_covariance_rejected (test_reference.ReferenceTests.test_bad_covariance_rejected) ... ok
+test_conditional_matches_joint_information (test_reference.ReferenceTests.test_conditional_matches_joint_information) ... ok
+test_correlated_heldout_conditioning (test_reference.ReferenceTests.test_correlated_heldout_conditioning) ... ok
+test_correlated_repeat (test_reference.ReferenceTests.test_correlated_repeat) ... ok
+test_covariance_scale_rows (test_reference.ReferenceTests.test_covariance_scale_rows) ... ok
+test_data_noise_and_discrepancy_separate (test_reference.ReferenceTests.test_data_noise_and_discrepancy_separate) ... ok
+test_default_plan_only_budget (test_reference.ReferenceTests.test_default_plan_only_budget) ... ok
+test_forward_refuses_unsupported_contract (test_reference.ReferenceTests.test_forward_refuses_unsupported_contract) ... ok
+test_frozen_copies (test_reference.ReferenceTests.test_frozen_copies) ... ok
+test_hard_calls_count_numerical_jacobian (test_reference.ReferenceTests.test_hard_calls_count_numerical_jacobian) ... ok
+test_k_boundary_jacobian (test_reference.ReferenceTests.test_k_boundary_jacobian) ... ok
+test_known_candidate_positive_increment (test_reference.ReferenceTests.test_known_candidate_positive_increment) ... ok
+test_linear_n_applied_at_quadrature_nodes (test_reference.ReferenceTests.test_linear_n_applied_at_quadrature_nodes) ... ok
+test_penalty_not_robustified (test_reference.ReferenceTests.test_penalty_not_robustified) ... ok
+test_profile_refits_free_parameter (test_reference.ReferenceTests.test_profile_refits_free_parameter) ... ok
+test_real_hardware_input_rejected (test_reference.ReferenceTests.test_real_hardware_input_rejected) ... ok
+test_small_multistart_fit (test_reference.ReferenceTests.test_small_multistart_fit) ... ok
+test_unknown_new_bias_zero_increment (test_reference.ReferenceTests.test_unknown_new_bias_zero_increment) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.105s
+
+OK

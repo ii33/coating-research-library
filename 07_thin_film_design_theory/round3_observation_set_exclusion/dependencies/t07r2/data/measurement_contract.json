@@ -1,0 +1,28 @@
+{
+  "evidence": "synthetic",
+  "actual_user_hardware": null,
+  "n_k_d_units": [
+    "1",
+    "1",
+    "um"
+  ],
+  "time": "exp(-i omega t)",
+  "passive_index": "n+ik",
+  "kernel_amplitude": "tangential_E",
+  "ratio_conventions": [
+    "opposed_reflected_p",
+    "same_tangential_p"
+  ],
+  "executed_substrate_mode": "semi_infinite_real_n",
+  "executed_scatter": "explicit_zero_synthetic",
+  "rejected": [
+    "unknown scattering",
+    "finite/backside substrate",
+    "mixed-ray rho average",
+    "material transfer as measurement",
+    "unverified instrument adapter"
+  ],
+  "noise_known_for_real_user": false,
+  "device_validation": "not_run_awaiting_device",
+  "production_qualified": false
+}

@@ -1,0 +1,32 @@
+{
+  "channels": [
+    "M0",
+    "M1"
+  ],
+  "sample_state_id": "synthetic_shared_relative_density_v1",
+  "actual_customer_criteria": "unknown",
+  "claim_kinds": [
+    "all_J_in",
+    "all_spectrum_or_95pct",
+    "all_v_in",
+    "gap_le",
+    "minimum_J_le",
+    "observation_M0_in",
+    "optimizer_failure_means_empty",
+    "point_M0_in",
+    "proxy_exists",
+    "slice_exists",
+    "source_exists"
+  ],
+  "endpoint_convention": "closed_intervals",
+  "status_vocabulary": [
+    "conditional_accept",
+    "reject_claim",
+    "retain_unknown",
+    "blocked_evidence"
+  ],
+  "production_release": false,
+  "saved_JSON": "audit_only_not_live_proof",
+  "live_proof": "fixed_budget_screen_and_validate_point_replay",
+  "source_existence": "not_established"
+}

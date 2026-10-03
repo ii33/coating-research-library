@@ -1,0 +1,14 @@
+{
+  "status": "plan_only",
+  "spectral_points_per_condition": 441,
+  "conditions": 15,
+  "nominal_channel_points": 6615,
+  "approximate_forward_wavelength_evaluations": 6674535,
+  "estimate_excludes": "unpolarized split, bandpass/angle nodes, reverse/rear solves; not exact operation count",
+  "monte_carlo_samples": 1000,
+  "device_validation": "not_run",
+  "physical_experiment": "not_run",
+  "automatic_GPU": false,
+  "command_to_opt_in": "python models/batch_driver.py --execute --output <local-json>",
+  "meaning": "execution requires a later user-arranged device run; no timing or performance claim"
+}

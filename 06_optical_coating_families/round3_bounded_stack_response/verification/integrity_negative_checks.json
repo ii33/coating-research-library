@@ -1,0 +1,14 @@
+{
+  "payload_tamper": {
+    "rejected": true,
+    "reason": "payload_hash_mismatch:models/exact_intervals.py"
+  },
+  "dependency_missing": {
+    "rejected": true,
+    "reason": "payload_hash_mismatch:dependencies/t05/models/source_retention.py"
+  },
+  "unlisted_file": {
+    "rejected": true,
+    "reason": "payload_file_set_mismatch:['unexpected.json']"
+  }
+}

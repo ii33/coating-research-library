@@ -1,0 +1,103 @@
+{
+  "schema_version": "t10r2-1",
+  "packet_id": "synthetic_complete",
+  "data_origin": "synthetic",
+  "claim_class": "measurement_result",
+  "reading_origin": "synthetic",
+  "observable_kind": "local_joint_spectrum",
+  "normalization": "cell_integrated_per_actual_surface_area",
+  "source_identity": {
+    "family": "dc_kaufman_gridded",
+    "manufacturer": "SYNTHETIC",
+    "model": "SYNTHETIC",
+    "firmware": "not_applicable",
+    "configuration_id": "synthetic_001"
+  },
+  "surface": {
+    "sample_id": "synthetic_sample",
+    "trajectory_id": null,
+    "electrical_equivalence": "synthetic_declared",
+    "potential_v": 0,
+    "temperature_k": 300
+  },
+  "neutral_coverage": "complete_conditional",
+  "history_complete": true,
+  "film_state": {
+    "material_id": "synthetic_SiO2",
+    "state_id": "synthetic_fixed_state",
+    "density_basis": "synthetic_declared",
+    "net_inventory_basis": "independent_element_inventory"
+  },
+  "requirements": {
+    "instrument_identity": "SYN-001",
+    "electrical_current_correction": "SYN-001",
+    "area_normalization": "SYN-001",
+    "energy_angle_response": "SYN-001",
+    "species_charge_state": "SYN-001",
+    "surface_representativeness": "SYN-001",
+    "time_alignment": "SYN-001",
+    "neutral_coverage": "SYN-001",
+    "material_identity": "SYN-001",
+    "film_state": "SYN-001",
+    "optical_operator": "SYN-001",
+    "traceability": "SYN-001",
+    "raw_data": "SYN-001"
+  },
+  "evidence": [
+    {
+      "id": "SYN-001",
+      "status": "checked",
+      "basis": "synthetic",
+      "locator": "models/validation_driver.py deterministic fixture",
+      "sha256": null,
+      "applicable_domain": "Pure mathematical synthetic fixture only"
+    }
+  ],
+  "raw_records": [],
+  "cells": [
+    {
+      "flux_m2_s": 1e+18,
+      "energy_ev_particle": 100,
+      "charge_z": 1,
+      "theta_rad": 0,
+      "phi_rad": 0,
+      "mass_kg": 6.6335209e-26,
+      "species": "synthetic_Ar",
+      "nuclei_per_particle": 1
+    }
+  ],
+  "response_split": [
+    {
+      "sample_id": "s_fit",
+      "run_id": "r_fit",
+      "split": "fit"
+    },
+    {
+      "sample_id": "s_final",
+      "run_id": "r_final",
+      "split": "final"
+    }
+  ],
+  "numeric_stage": {
+    "status": "validated_analytic",
+    "used_as_interval_endpoint": false
+  },
+  "observation_window": {
+    "t0_s": 0,
+    "t1_s": 1,
+    "clock_id": "synthetic_clock"
+  },
+  "coordinate": {
+    "frame_id": "synthetic_chamber_frame",
+    "position_m": [
+      0,
+      0,
+      1
+    ],
+    "outward_normal": [
+      0,
+      0,
+      -1
+    ]
+  }
+}

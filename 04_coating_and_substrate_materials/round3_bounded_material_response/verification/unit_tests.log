@@ -1,0 +1,35 @@
+test_budget (test_driver.DriverTests.test_budget) ... ok
+test_default_plan (test_driver.DriverTests.test_default_plan) ... ok
+test_run_refuses_before_creating_output (test_driver.DriverTests.test_run_refuses_before_creating_output) ... ok
+test_schema_and_semantic (test_driver.DriverTests.test_schema_and_semantic) ... ok
+test_schema_rejects_extra (test_driver.DriverTests.test_schema_rejects_extra) ... ok
+test_contract_mismatch_rejected (test_response.Tests.test_contract_mismatch_rejected) ... ok
+test_cross_zero_no_reward (test_response.Tests.test_cross_zero_no_reward) ... ok
+test_density_basis (test_response.Tests.test_density_basis) ... ok
+test_density_uncertainty (test_response.Tests.test_density_uncertainty) ... ok
+test_finite_source_multiple_nodes (test_response.Tests.test_finite_source_multiple_nodes) ... ok
+test_invalid_bounds (test_response.Tests.test_invalid_bounds) ... ok
+test_inventory (test_response.Tests.test_inventory) ... ok
+test_irrelevant_temperature_allowed (test_response.Tests.test_irrelevant_temperature_allowed) ... ok
+test_negative_not_zero (test_response.Tests.test_negative_not_zero) ... ok
+test_normalization_states (test_response.Tests.test_normalization_states) ... ok
+test_ranking_reverses_with_angle (test_response.Tests.test_ranking_reverses_with_angle) ... ok
+test_real_stays_unknown (test_response.Tests.test_real_stays_unknown) ... ok
+test_refinement_enclosure (test_response.Tests.test_refinement_enclosure) ... ok
+test_response_outside_domain (test_response.Tests.test_response_outside_domain) ... ok
+test_reverse_motion (test_response.Tests.test_reverse_motion) ... ok
+test_same_scale_target_preserves (test_response.Tests.test_same_scale_target_preserves) ... ok
+test_scalar_fixed_target_can_reverse (test_response.Tests.test_scalar_fixed_target_can_reverse) ... ok
+test_target_floor (test_response.Tests.test_target_floor) ... ok
+test_uncertainty_overlap (test_response.Tests.test_uncertainty_overlap) ... ok
+test_unit_response_equivalence (test_response.Tests.test_unit_response_equivalence) ... ok
+test_unknown (test_response.Tests.test_unknown) ... ok
+test_unknown_temperature_dependency (test_response.Tests.test_unknown_temperature_dependency) ... ok
+test_upstream_full_and_events_retained (test_response.Tests.test_upstream_full_and_events_retained) ... ok
+test_upstream_unknown_not_zero (test_response.Tests.test_upstream_unknown_not_zero) ... ok
+test_weighted_event_finite_difference (test_response.Tests.test_weighted_event_finite_difference) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 1.724s
+
+OK

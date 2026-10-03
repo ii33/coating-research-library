@@ -1,0 +1,23 @@
+{
+  "mode": "plan_only",
+  "executed": false,
+  "tiny_replay": {
+    "joint_nodes": 255,
+    "slice_nodes_cap": 31,
+    "witnesses": 1,
+    "max_nodes": 286,
+    "max_interval_wavelengths": 1148,
+    "max_float_vectors": 0
+  },
+  "heavy_plan_only": {
+    "purpose": "future bounded refinement of claim-crossing retained boxes under unchanged contracts",
+    "max_nodes": 8191,
+    "max_interval_wavelengths": 32768,
+    "max_float_vectors": 0,
+    "execution_implemented": false
+  },
+  "devices": 0,
+  "new_channels": 0,
+  "new_recipes": 0,
+  "quota_bypass": false
+}

@@ -1,0 +1,70 @@
+{
+  "execution_mode": "plan_only",
+  "state": "not_run_no_actual_data_or_authorized_compute",
+  "problem": "joint mechanical pose and nuisance conditional calibration",
+  "inputs_required": [
+    "topology and sensor attachment",
+    "raw data and SHA256",
+    "clock offset/skew and latency evidence",
+    "parameter datum/gauge",
+    "sensor calibration and full covariance or explicit unknown",
+    "held-out run and sampling transfer function",
+    "actual operating and safety limits"
+  ],
+  "parameter_blocks": [
+    "bounded topology-specific rigid pose",
+    "contact-state-conditioned backlash only if reversals/load evidence exist",
+    "indexed periodic transmission error in declared angle coordinate",
+    "clock mapping and encoder calibration nuisance",
+    "source drift, source geometry, mask events and sensor transfer nuisance"
+  ],
+  "algorithm_steps": [
+    "Admit raw signals with verified transformations, coordinate frames and clock mappings; unresolved data are rejected, not imputed",
+    "Construct exact SO(3) nominal and error motion, compose sensor transfer functions and optical forward operator at original requested fidelity",
+    "Enumerate topology/contact hypotheses only when supported; fix gauge or impose independent datum, never silently pin a real error to zero",
+    "Whiten joint residuals with measured correlated covariance; retain explicit nuisance calibrations; inspect local scaled SVD and global alternative hypotheses",
+    "Solve constrained likelihood or robust documented error model with analytic/AD pose derivatives and validated event derivatives; separate sensor saturation and outliers via predeclared rules",
+    "Evaluate profile likelihood or bounded feasible sets along weak and null directions; state when priors rather than data bound a parameter",
+    "Cross-check independent starts, alternate admissible harmonic truncations and covariance models; reserve other runs, phase windows, speeds and remounts as holdouts",
+    "For deposition residuals: perform independent time, source, event geometry and substrate refinement using T02 statuses; mechanical fit is not evidence these axes converged",
+    "Propagate joint correlated uncertainty with declared distributions or bounds; no independent Gaussian substitution for unknown systematic errors",
+    "Freeze raw identity, transforms, model, residuals, null vectors, uncertainty evidence and held-out prediction checks; stop on predeclared budget and report unresolved"
+  ],
+  "formal_accuracy": {
+    "targets": null,
+    "reason": "physical tolerances and data not supplied; no reduced precision is selected",
+    "independent_axes": [
+      "pose/angle/time",
+      "sensor transfer/exposure",
+      "visibility events",
+      "source quadrature",
+      "substrate integration",
+      "solver optimality",
+      "profile endpoints",
+      "statistical Monte Carlo error when applicable"
+    ]
+  },
+  "execution_budget": {
+    "device": null,
+    "wall_seconds": null,
+    "memory_bytes": null,
+    "max_forward_calls": null,
+    "max_profile_points": null,
+    "max_restarts": null,
+    "must_be_declared_before_execute": true
+  },
+  "stop_states": [
+    "fit_conditionally_valid_on_holdout",
+    "structurally_unidentifiable",
+    "practically_weak",
+    "model_discrepancy",
+    "budget_exhausted_unresolved",
+    "missing_input_or_authorization"
+  ],
+  "prohibited_shortcuts": [
+    "replace unknown values by zero",
+    "reduce formal fidelity to suit current small environment",
+    "call pseudoinverse uncertainty in null direction zero",
+    "claim synthetic thickness CV explains measured defect"
+  ]
+}

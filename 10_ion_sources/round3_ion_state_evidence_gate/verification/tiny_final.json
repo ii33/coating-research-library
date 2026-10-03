@@ -1,0 +1,965 @@
+{
+  "mode": "tiny",
+  "executed": true,
+  "origin": "synthetic_only",
+  "copied_dependencies": 142,
+  "cases": [
+    {
+      "case": "legacy_unchanged",
+      "passed": true,
+      "result": {
+        "status": "conditional_accept",
+        "reason": "unchanged_legacy_synthetic_replay_eligible_only",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "optical_evaluation_performed": false,
+        "source_realization": "not_established"
+      }
+    },
+    {
+      "case": "ion_changed_legacy",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "changed_or_unknown_ion_state_requires_new_contract",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "derived_state": {
+          "state_contract_sha256": "16ceef338e0dd530ffa2cd5eb9ad24b5a13d2078a8c800020d221c85a485a2ae",
+          "state_id": "derived_16ceef338e0dd530ffa2",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "operator_hash_changed",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "source_forward_response_operator_binding_changed",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged"
+      }
+    },
+    {
+      "case": "actual_legacy_constants",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "legacy_constants_are_synthetic_not_actual",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged"
+      }
+    },
+    {
+      "case": "actual_unknown",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "net_unknown",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [
+          "source_identity",
+          "species_charge",
+          "joint_energy_angle",
+          "neutral_bound",
+          "temperature_history",
+          "surface_potential",
+          "time_area_support",
+          "initial_state",
+          "net_inventory",
+          "film_composition",
+          "film_density",
+          "film_nk",
+          "response_domain",
+          "independent_validation",
+          "correlation",
+          "optical_operator"
+        ],
+        "derived_state": {
+          "state_contract_sha256": "65e88ee435ec9399dc86426f27bd02ea85237b842ba2a37998f700f21fcdb916",
+          "state_id": "derived_65e88ee435ec9399dc86",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "actual",
+          "material_identity": "actual equipment and film unknown",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+          "net_inventory_record_sha256": "7be473a32c2206cc12db296728523ff0a331950bfe3fe482fd5f2d5f0f457552",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "history_state_complete_synthetic",
+      "passed": true,
+      "result": {
+        "status": "conditional_accept",
+        "reason": "conditional_dossier_ready_for_new_model_review_not_old_operator_reuse",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "derived_state": {
+          "state_contract_sha256": "4e4ba2247e5372653c6b1e7c5e204ca9ec4a020d497d143de1bbc0bf969d4d2a",
+          "state_id": "derived_4e4ba2247e5372653c6b",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "c0ce55ba7230863d8376af22295d5b40e0992961c136ae347a1fcc3dabe99fea",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        },
+        "old_operator_callable": false,
+        "actual_model_evaluation": false,
+        "required_next_step": "build_and_independently_validate_new_state_response_optical_operator",
+        "basis": "advisory_on_declared_evidence_truth_not_authentication"
+      }
+    },
+    {
+      "case": "process_response_complete_synthetic",
+      "passed": true,
+      "result": {
+        "status": "conditional_accept",
+        "reason": "conditional_dossier_ready_for_new_model_review_not_old_operator_reuse",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "derived_state": {
+          "state_contract_sha256": "7a010822e281db4a88559741ee9bb44e594c7c8b3c264f89c13fcdb72f0a5e35",
+          "state_id": "derived_7a010822e281db4a8855",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "32ad0371f7cbb02e38459553f9cf7aab6259c04e527412f48572f1a8d3ce9754",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        },
+        "old_operator_callable": false,
+        "actual_model_evaluation": false,
+        "required_next_step": "build_and_independently_validate_new_state_response_optical_operator",
+        "basis": "advisory_on_declared_evidence_truth_not_authentication"
+      }
+    },
+    {
+      "case": "new_optical_state_complete_synthetic",
+      "passed": true,
+      "result": {
+        "status": "conditional_accept",
+        "reason": "conditional_dossier_ready_for_new_model_review_not_old_operator_reuse",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "derived_state": {
+          "state_contract_sha256": "d0bc1ed49b73c4fa37faa006033589ba21b27522fef0445b90a59d866b052f46",
+          "state_id": "derived_d0bc1ed49b73c4fa37fa",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "53029edbe857a8a066018af456e31c3f7da0c9adc5023857bebf4ec180653c18",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        },
+        "old_operator_callable": false,
+        "actual_model_evaluation": false,
+        "required_next_step": "build_and_independently_validate_new_state_response_optical_operator",
+        "basis": "advisory_on_declared_evidence_truth_not_authentication"
+      }
+    },
+    {
+      "case": "missing_species_charge",
+      "passed": true,
+      "result": {
+        "status": "retain_unknown",
+        "reason": "output_specific_evidence_incomplete",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [
+          "species_charge"
+        ],
+        "derived_state": {
+          "state_contract_sha256": "a22c901d9507e196b7459680e37ad6587590404bb36cd114e4e9ff2555805e80",
+          "state_id": "derived_a22c901d9507e196b745",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "451302f81ec6e872cc3287238c1aed70ae5abd8b887484f9e7d59b6a7f98d67c",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "missing_joint_energy_angle",
+      "passed": true,
+      "result": {
+        "status": "retain_unknown",
+        "reason": "output_specific_evidence_incomplete",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [
+          "joint_energy_angle"
+        ],
+        "derived_state": {
+          "state_contract_sha256": "87e6e285e476b0893b70dbd2dabdda613097b5d5818b15d11a6d9bc64efc00ff",
+          "state_id": "derived_87e6e285e476b0893b70",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "8179ce1c22bab342bc07966726b9c1628fb985086238665b987b704d18ad00bc",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "missing_neutral_bound",
+      "passed": true,
+      "result": {
+        "status": "retain_unknown",
+        "reason": "output_specific_evidence_incomplete",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [
+          "neutral_bound"
+        ],
+        "derived_state": {
+          "state_contract_sha256": "4e45aa1fcd622ee4d3bad885d78913622ec6b62d2c5c9249e2acf0656bc70c68",
+          "state_id": "derived_4e45aa1fcd622ee4d3ba",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "2f3535dcd0d45d0a377df9719090d55be326ff651ed7e48e38f58551f44ad699",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "missing_temperature_history",
+      "passed": true,
+      "result": {
+        "status": "retain_unknown",
+        "reason": "output_specific_evidence_incomplete",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [
+          "temperature_history"
+        ],
+        "derived_state": {
+          "state_contract_sha256": "e91f4ebe55dc107e7e6b963753be6b98609e8688c6a27404e5aaafef354bd2f7",
+          "state_id": "derived_e91f4ebe55dc107e7e6b",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "03bb8dfc2c5ddd1a1caf3fc585e68fee155c9887b76dd95fc4ba308e589e55cf",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "missing_surface_potential",
+      "passed": true,
+      "result": {
+        "status": "retain_unknown",
+        "reason": "output_specific_evidence_incomplete",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [
+          "surface_potential"
+        ],
+        "derived_state": {
+          "state_contract_sha256": "9756f1abbdc3ade4fa0044928c205326316e714c0bbe81f952b1bcfc66ac1d19",
+          "state_id": "derived_9756f1abbdc3ade4fa00",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "217caff6289d5e0ef9377c58b3becfd8f73811d5d963bdb15548dd057fad7b2e",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "missing_time_area_support",
+      "passed": true,
+      "result": {
+        "status": "retain_unknown",
+        "reason": "output_specific_evidence_incomplete",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [
+          "time_area_support"
+        ],
+        "derived_state": {
+          "state_contract_sha256": "b03866a18a6963be85467ea753f3373b6cd915078f71b8865a514330846386f5",
+          "state_id": "derived_b03866a18a6963be8546",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "592b48421778f9256fc4093c7544fcc973ddc376680eeda9a58ef5a2ee974321",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "guard_net_erosion-2",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "net_erosion",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [],
+        "derived_state": {
+          "state_contract_sha256": "cfaa63e3888d374438fa6c79bdf777b57a1b1defb23ca073846c975628eb43f6",
+          "state_id": "derived_cfaa63e3888d374438fa",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "32ad0371f7cbb02e38459553f9cf7aab6259c04e527412f48572f1a8d3ce9754",
+          "net_inventory_record_sha256": "b1fcb6ab09d27f097562e54dd4292e246e5c637ef4ee7617e554014bd9456b27",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "guard_zero_or_crossing-1",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "zero_or_crossing",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [],
+        "derived_state": {
+          "state_contract_sha256": "767019425cb0b4c2087ab6d462f28b81d90c7b68cfe6a8983a5d66f237400019",
+          "state_id": "derived_767019425cb0b4c2087a",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "32ad0371f7cbb02e38459553f9cf7aab6259c04e527412f48572f1a8d3ce9754",
+          "net_inventory_record_sha256": "72b8cec22c6695c0c9e1c8ea119110f87fe210fb09c0844720b201e0c4c66233",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "guard_zero_or_crossing0",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "zero_or_crossing",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [],
+        "derived_state": {
+          "state_contract_sha256": "f7d4534268e17a0966aa0302ff53a90a324fb5f4ba912f45b1123c00b024e83c",
+          "state_id": "derived_f7d4534268e17a0966aa",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "32ad0371f7cbb02e38459553f9cf7aab6259c04e527412f48572f1a8d3ce9754",
+          "net_inventory_record_sha256": "ebf9a825960ea8a335375c686b39370af95b50131c4cb4679f34e46cca5ad7b9",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "guard_near_zero_or_wide_positive1",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "near_zero_or_wide_positive",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [],
+        "derived_state": {
+          "state_contract_sha256": "28c36820f996a1248c90ac14fa5b81a08ebb9a9f96e645f52ec6ecc117302a26",
+          "state_id": "derived_28c36820f996a1248c90",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "32ad0371f7cbb02e38459553f9cf7aab6259c04e527412f48572f1a8d3ce9754",
+          "net_inventory_record_sha256": "0fd30dd020c562fe832c74d281147da42c7308552f3b679f46949fe088eab1b9",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "inventory_depleted",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "inventory_depletion_possible",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [],
+        "derived_state": {
+          "state_contract_sha256": "63132cb1be66365e5f936747a4fa7c6692374e4c8fb3b23a5addef53b862c2c1",
+          "state_id": "derived_63132cb1be66365e5f93",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "c0ce55ba7230863d8376af22295d5b40e0992961c136ae347a1fcc3dabe99fea",
+          "net_inventory_record_sha256": "a96dde560103225e95ba77a4ecec3ea3b6499d9475606b75078875987d873b83",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "sparse_inventory",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "inventory_support_unverified",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [],
+        "derived_state": {
+          "state_contract_sha256": "1375662b4bd14fc47f6442bd6abd2303fe808e323ce0c089663f3ee87b5872c1",
+          "state_id": "derived_1375662b4bd14fc47f64",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "c0ce55ba7230863d8376af22295d5b40e0992961c136ae347a1fcc3dabe99fea",
+          "net_inventory_record_sha256": "02d41c52cef4ef670442bc79e8a4322a3a1994bc72d11ffe7f7ba029f1f8b80b",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "charge_energy_only",
+      "passed": true,
+      "result": {
+        "status": "conditional_accept",
+        "reason": "only_corrected_surface_charge_energy_integral",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "particle_dose": null,
+        "total_energy": null,
+        "material_state": null
+      }
+    },
+    {
+      "case": "observation_without_process_history",
+      "passed": true,
+      "result": {
+        "status": "conditional_accept",
+        "reason": "descriptive_sample_observation_only",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "process_causality": "unknown",
+        "process_transfer": false,
+        "derived_state": {
+          "state_contract_sha256": "a8a9c48b0d5395e10b9509947b505e4cabd2aa269c719ca3ea98b6bece5a78ef",
+          "state_id": "derived_a8a9c48b0d5395e10b95",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "148c2f8c8a68a7665dfbc28c84306b9f5877fcedafcc0afab2ffcd4bac148a63",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "new_optical_missing_density",
+      "passed": true,
+      "result": {
+        "status": "retain_unknown",
+        "reason": "output_specific_evidence_incomplete",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "missing_evidence": [
+          "film_density"
+        ],
+        "derived_state": {
+          "state_contract_sha256": "c5c8d7e46220ff5be6ea4e3017d488f0c6bffc09bc755749e96927f4a534e6d1",
+          "state_id": "derived_c5c8d7e46220ff5be6ea",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "synthetic",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "8d057ee42fbf782b9c4095ae76284721276a2247aa5dacd6965e28d2ecbe87dd",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    },
+    {
+      "case": "synthetic_evidence_as_actual",
+      "passed": true,
+      "result": {
+        "status": "blocked_evidence",
+        "reason": "invalid_or_mixed_evidence_origin",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "invalid_evidence": [
+          "sample_identity:synthetic_or_unspecified_as_actual",
+          "film_composition:synthetic_or_unspecified_as_actual",
+          "film_density:synthetic_or_unspecified_as_actual",
+          "film_nk:synthetic_or_unspecified_as_actual",
+          "geometric_thickness:synthetic_or_unspecified_as_actual",
+          "correlation:synthetic_or_unspecified_as_actual",
+          "optical_operator:synthetic_or_unspecified_as_actual",
+          "optical_domain:synthetic_or_unspecified_as_actual",
+          "independent_validation:synthetic_or_unspecified_as_actual"
+        ],
+        "derived_state": {
+          "state_contract_sha256": "4e2d325aa07c8078039a9ac6370b72e7e09455c2d9f9283cc48e5998009b2f21",
+          "state_id": "derived_4e2d325aa07c8078039a",
+          "parent_binding_sha256": "b6c5d3876f88d801534770f763dba1d7908be6ad5faf067c3f9703ed48bddb59",
+          "parent_state": "synthetic_shared_relative_density_v1",
+          "data_origin": "actual",
+          "material_identity": "synthetic generic active-surface material",
+          "exposure_record_sha256": "367482b6ae6db72c2e61618a379591c00ca8ff51b29e09a76f9731f8938e6bae",
+          "evidence_sha256": "53029edbe857a8a066018af456e31c3f7da0c9adc5023857bebf4ec180653c18",
+          "net_inventory_record_sha256": "5ce45b066fa7abc42e015bcebe79376e7ed77f81050eb0223a8e1795ffda9107",
+          "lineage": "candidate_derived_state_no_physical_identity_certification",
+          "nk": null,
+          "film_density_kg_m3": null,
+          "response_model": null,
+          "optical_operator": null,
+          "old_nk_reuse": false,
+          "old_density_reuse": false,
+          "source_realization": "not_established",
+          "formal_review_chain": "pending"
+        }
+      }
+    }
+  ],
+  "physics": {
+    "history": {
+      "pulse_then_repair": {
+        "final_occupancy": 0.23254415793482963,
+        "buried_defects_m2": 0.0,
+        "history": [
+          {
+            "time_s": 1,
+            "x": 0.6321205588285577,
+            "buried_defects_m2": 0.0
+          },
+          {
+            "time_s": 2,
+            "x": 0.23254415793482963,
+            "buried_defects_m2": 0.0
+          }
+        ],
+        "scope": "synthetic_const_bin_float_reference_not_physical_or_interval_certificate"
+      },
+      "repair_then_pulse": {
+        "final_occupancy": 0.6321205588285577,
+        "buried_defects_m2": 0.0,
+        "history": [
+          {
+            "time_s": 1,
+            "x": 0.0,
+            "buried_defects_m2": 0.0
+          },
+          {
+            "time_s": 2,
+            "x": 0.6321205588285577,
+            "buried_defects_m2": 0.0
+          }
+        ],
+        "scope": "synthetic_const_bin_float_reference_not_physical_or_interval_certificate"
+      },
+      "concurrent_equal_integrals": {
+        "final_occupancy": 0.43233235838169365,
+        "buried_defects_m2": 0.0,
+        "history": [
+          {
+            "time_s": 2,
+            "x": 0.43233235838169365,
+            "buried_defects_m2": 0.0
+          }
+        ],
+        "scope": "synthetic_const_bin_float_reference_not_physical_or_interval_certificate"
+      },
+      "positive_burial": {
+        "final_occupancy": 0.43233235838169365,
+        "buried_defects_m2": 2.8383382080915323e+18,
+        "history": [
+          {
+            "time_s": 1,
+            "x": 0.43233235838169365,
+            "buried_defects_m2": 2.8383382080915323e+18
+          }
+        ],
+        "scope": "synthetic_const_bin_float_reference_not_physical_or_interval_certificate"
+      }
+    },
+    "same_marginals": {
+      "A": {
+        "dose_m2": 1.0,
+        "mean_energy_ev": 100.0,
+        "mean_response_ev": 43.75000000000001
+      },
+      "B": {
+        "dose_m2": 1.0,
+        "mean_energy_ev": 100.0,
+        "mean_response_ev": 81.25
+      }
+    },
+    "neutral_bounds": {
+      "finite_neutral_bound": {
+        "x_bounds": [
+          0.43233235838169365,
+          0.48501645907509056
+        ],
+        "bins": [
+          {
+            "x_bounds": [
+              0.43233235838169365,
+              0.48501645907509056
+            ],
+            "status": "conditional_rate_box_outer"
+          }
+        ],
+        "numeric_status": "float_reference_not_rigorous_interval",
+        "nk": null,
+        "density": null
+      },
+      "unknown_neutral_bound": {
+        "x_bounds": [
+          0.0,
+          1.0
+        ],
+        "bins": [
+          {
+            "x_bounds": [
+              0.0,
+              1.0
+            ],
+            "status": "unknown_creation_support_only"
+          }
+        ],
+        "numeric_status": "float_reference_not_rigorous_interval",
+        "nk": null,
+        "density": null
+      }
+    },
+    "mass_closed_constitutive": {
+      "n_ratio": 1.040252663473992,
+      "h_ratio": 0.9090909090909091,
+      "optical_thickness_ratio": 0.9456842395218108,
+      "d_log_nh_d_log_rho_at_baseline": -0.6064814814814814,
+      "scope": "synthetic_hypothesis_not_material_calibration"
+    },
+    "equivalence": {
+      "inside": {
+        "status": "conditional_accept",
+        "reason": "specified_response_subspace_only",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "crossing": [],
+        "latent_state_identity": false,
+        "old_nk_reuse": false
+      },
+      "crossing": {
+        "status": "retain_unknown",
+        "reason": "equivalence_crossing",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "crossing": [
+          "delta_n"
+        ],
+        "latent_state_identity": false,
+        "old_nk_reuse": false
+      },
+      "outside": {
+        "status": "reject_claim",
+        "reason": "specified_response_not_equivalent",
+        "physical_certification": false,
+        "production_release": false,
+        "formal_stage_acceptance": "pending",
+        "point12": "partial_unchanged",
+        "point2": "conditional_non_strict_unchanged",
+        "quantity": "delta_n"
+      }
+    }
+  },
+  "resources": {
+    "gate_cases": 24,
+    "model_bins": 8,
+    "joint_cells": 4,
+    "upstream_optical_calls": 0,
+    "hardware_calls": 0,
+    "elapsed_s": 0.023788560996763408
+  },
+  "actual_nk": null,
+  "actual_density": null,
+  "new_optical_operator_executed": false,
+  "formal_review_chain": "pending",
+  "python": "3.12.14"
+}

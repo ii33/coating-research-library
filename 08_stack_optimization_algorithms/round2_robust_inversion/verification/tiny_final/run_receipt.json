@@ -1,0 +1,32 @@
+{
+  "status": "conditional_synthetic_execution_completed",
+  "tiny_routing_only": true,
+  "jobs_planned": 3,
+  "jobs_attempted": 3,
+  "ledger": {
+    "cap": 191,
+    "vector_calls": 176,
+    "charged_optical_kernel_calls_upper_bound": 2294,
+    "starts": 3,
+    "by_purpose": {
+      "generate": 2,
+      "fit": 38,
+      "profile": 90,
+      "validation": 2,
+      "design": 44
+    }
+  },
+  "outputs": [
+    {
+      "file": "case_000_constant_gaussian.json",
+      "attempts": 1,
+      "discovered_clusters": 1,
+      "all_attempts_converged": true
+    }
+  ],
+  "real_hardware": "not_run_awaiting_device",
+  "heavy_run": false,
+  "production_qualified": false,
+  "global_certificate": false,
+  "python": "3.12.14"
+}

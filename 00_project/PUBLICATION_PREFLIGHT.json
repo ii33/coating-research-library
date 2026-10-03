@@ -1,0 +1,156 @@
+{
+  "schema": "consolidated-publication-preflight-v1",
+  "created_at_utc": "2026-10-02T23:55:00.721648+00:00",
+  "scope": "publication_readiness_not_scientific_acceptance",
+  "base_commit": "31744525b4cdde04fad31aaf58e6148f7819ce62",
+  "base_remote_files": 1043,
+  "frozen_sources_changed": 0,
+  "preexisting_local_files_checked": 2836,
+  "authorized_root_planning_changes": [
+    "00_project/planning_baseline_manifest.json",
+    "00_project/research_tasks.json",
+    "CHANGELOG.md",
+    "README.md",
+    "ROADMAP.md",
+    "STATE.json",
+    "STATE.md"
+  ],
+  "selected_file_count": 1527,
+  "groups": {
+    "R2_T06_T09": 278,
+    "MXC_DERIVED": 5,
+    "ROOT_PLANNING": 22,
+    "R2_T10_PORTABLE": 94,
+    "R3_01": 49,
+    "R3_02": 63,
+    "R3_03": 54,
+    "R3_04": 83,
+    "R3_05": 92,
+    "R3_06": 105,
+    "R3_07": 134,
+    "R3_08": 173,
+    "R3_09": 179,
+    "R3_10": 196
+  },
+  "private_identifier_or_secret_scan": "no_matches_in_selected_content_or_Office_XML",
+  "excluded_original_R2T10": "source_freeze_and_zip_remain_local; independent_portable_94_files_used",
+  "reader_checks": [
+    {
+      "stage": "T06R2",
+      "check": "full_frozen_payload_identity_and_selection",
+      "payload_files": 61,
+      "errors": []
+    },
+    {
+      "stage": "T07R2",
+      "check": "full_frozen_payload_identity_and_selection",
+      "payload_files": 54,
+      "errors": []
+    },
+    {
+      "stage": "T08R2",
+      "check": "full_frozen_payload_identity_and_selection",
+      "payload_files": 69,
+      "errors": []
+    },
+    {
+      "stage": "T09R2",
+      "check": "full_frozen_payload_identity_and_selection",
+      "payload_files": 84,
+      "errors": []
+    },
+    {
+      "stage": "T01R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B verification/reader_check.py --check --strict-tree",
+      "returncode": 0,
+      "output": "{\n  \"integrity\": \"pass\",\n  \"files\": 46,\n  \"html\": \"structure_assets_and_anchors_pass_browser_layout_unverified\",\n  \"reader_has_parent_dependencies\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T02R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B verification/reader_check.py --check --strict-tree",
+      "returncode": 0,
+      "output": "{\n  \"integrity\": \"pass\",\n  \"member_count\": 61,\n  \"manifest_entries\": 60,\n  \"html\": \"embedded_assets_and_internal_anchors_pass_browser_layout_unverified\",\n  \"parent_runtime_dependency\": false,\n  \"private_marker_scan\": \"pass\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T03R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B verification/reader_check.py --check --strict-tree",
+      "returncode": 0,
+      "output": "{\n  \"integrity\": \"pass\",\n  \"reader_member_count\": 52,\n  \"manifest_entries\": 51,\n  \"frozen_dependency_count\": 8,\n  \"independent_review_hashes\": \"match\",\n  \"syntax\": \"all_python_parse\",\n  \"standalone_parent_runtime_dependency\": false,\n  \"private_marker_scan\": \"pass\",\n  \"html\": \"2_embedded_pngs_no_scripts_valid_anchors_browser_layout_unverified\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T04R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B verification/reader_check.py",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"integrity_passed\",\n  \"payload_files\": 78,\n  \"copied_dependencies\": 23,\n  \"html_local_references_checked\": true,\n  \"browser_layout\": \"unverified_known_socket_permission_boundary\",\n  \"errors\": [],\n  \"scientific_certification\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T05R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B verification/reader_check.py",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"integrity_passed\",\n  \"payload_files\": 85,\n  \"copied_dependencies\": 33,\n  \"html_local_references_checked\": true,\n  \"browser_layout\": \"unverified_known_socket_permission_boundary\",\n  \"errors\": [],\n  \"scientific_certification\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T06R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B models/reader.py",
+      "returncode": 0,
+      "output": "{\n  \"result\": \"passed\",\n  \"payload_files\": 100,\n  \"payload_bytes\": 1343574,\n  \"manifest_sha256\": \"1f6d668b1fe097e743aa7d5dffef687866e3a008d36e4a1ba8f23a473881f7c0\",\n  \"copied_dependencies\": 53,\n  \"sibling_dependencies\": false,\n  \"network_needed\": false,\n  \"local_links_and_anchors\": 25,\n  \"local_image_resources\": 3,\n  \"external_assets\": 0,\n  \"scripts\": 0,\n  \"html_layout\": \"unverified_existing_browser_socket_restriction_not_retried\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T07R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B models/reader.py",
+      "returncode": 0,
+      "output": "{\n  \"result\": \"passed\",\n  \"payload_files\": 129,\n  \"payload_bytes\": 1650982,\n  \"manifest_sha256\": \"46df651215c28a8432a670319a20885203f423b3405a83dc2323c35edfb6e666\",\n  \"copied_dependencies\": 85,\n  \"sibling_dependencies\": false,\n  \"network_needed\": false,\n  \"original_papers_in_payload\": false,\n  \"local_links_and_anchors\": 35,\n  \"public_primary_source_links\": 4,\n  \"local_image_assets\": 3,\n  \"external_assets\": 0,\n  \"scripts\": 0,\n  \"html_layout\": \"unverified_existing_restriction_not_retried\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T08R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B models/reader.py",
+      "returncode": 0,
+      "output": "{\n  \"result\": \"passed\",\n  \"payload_files\": 168,\n  \"payload_bytes\": 2393136,\n  \"manifest_sha256\": \"c5ed7c8e46ae41c2503e4e8a7e1d33c2c36b3d48cba877c4ed284941b771d840\",\n  \"copied_dependencies\": 96,\n  \"sibling_dependencies\": false,\n  \"network_needed\": false,\n  \"original_papers_in_payload\": false,\n  \"local_links_and_anchors\": 36,\n  \"public_primary_source_links\": 5,\n  \"local_image_assets\": 3,\n  \"external_assets\": 0,\n  \"scripts\": 0,\n  \"html_layout\": \"unverified_existing_restriction_not_retried\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T09R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B models/reader.py",
+      "returncode": 0,
+      "output": "{\n  \"result\": \"passed\",\n  \"payload_files\": 174,\n  \"payload_bytes\": 2270015,\n  \"manifest_sha256\": \"648101c78bd58dfc1d22856ae4e9f00255531ad7a06b4988183a8d48a1dcb116\",\n  \"copied_dependencies\": 114,\n  \"sibling_dependency\": false,\n  \"network_needed\": false,\n  \"numeric_replay_performed\": false,\n  \"local_links\": 34,\n  \"primary_links\": 12,\n  \"images\": 4,\n  \"external_assets\": 0,\n  \"active_content\": 0,\n  \"html_layout\": \"unverified_existing_restriction_not_retried\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T10R3",
+      "check": "isolated_manifest_payload_static_reader_only",
+      "command": "python -B models/reader.py",
+      "returncode": 0,
+      "output": "{\n  \"result\": \"passed\",\n  \"payload_files\": 191,\n  \"payload_bytes\": 2533296,\n  \"manifest_sha256\": \"3f59171c3df5419d3793e6b14caa9a2d7fbd9df2275c31741f9a3e403b19a440\",\n  \"copied_dependencies\": 142,\n  \"sibling_dependency\": false,\n  \"network_needed\": false,\n  \"numeric_replay_performed\": false,\n  \"local_links\": 35,\n  \"primary_links\": 4,\n  \"images\": 4,\n  \"external_assets\": 0,\n  \"active_content\": 0,\n  \"html_layout\": \"unverified_existing_restriction_not_retried\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "stage": "T10R2 portable v1",
+      "check": "isolated_manifest_allowlist_static_reader_only",
+      "command": "python -B models/verify_portable.py --verify",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"passed\",\n  \"package_id\": \"t10-round2-portable-v1\",\n  \"derived_manifest_sha256\": \"d5d358e5d430cd1e7836cc49c0abbeddbf981f9fdb81e7c9df16b1576db7e90b\",\n  \"payload_files\": 92,\n  \"allowlisted_files\": 94,\n  \"historical_source_manifest_sha256\": \"de60f6e1e24e3a2d69b11e0cf3363e221b759e520e3e479e1e8b974bc5bae74b\",\n  \"issues\": [],\n  \"content\": {\n    \"status\": \"passed\",\n    \"issues\": [],\n    \"html_and_markdown_files\": 45,\n    \"link_references_checked\": 116,\n    \"local_link_references_checked\": 68,\n    \"external_bibliographic_link_occurrences\": 48,\n    \"main_reader_images\": 3,\n    \"html_anchors\": 25,\n    \"external_bibliographic_urls_not_fetched\": 28,\n    \"browser_layout\": \"unverified; previously denied route not retried\"\n  },\n  \"scope\": \"Current package only. No original archive, receipt, sibling, snapshot, network or browser required.\",\n  \"authenticity\": \"Unsigned integrity ledger; not proof of origin or scientific correctness.\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "full_scientific_tests_rerun": false,
+  "heavy_or_device_executions": 0,
+  "html_layout_verified": false,
+  "fourth_round_started": false,
+  "remote_commit_verification": "performed_after_push_and_reported_separately; this preflight does not claim a remote result"
+}

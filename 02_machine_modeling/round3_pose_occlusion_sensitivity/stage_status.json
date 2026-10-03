@@ -1,0 +1,37 @@
+{
+  "stage_id": "T02-round3",
+  "package_id": "T02-r3-v0.1.0",
+  "algorithmic": true,
+  "local_release": "local_frozen_bounded_theory_and_interface",
+  "final_status": "awaiting_seed",
+  "formal_chain_progress": "not_started_designated_models_unavailable",
+  "deepseek_self_review": {
+    "result": "pending",
+    "actual_call": false
+  },
+  "seed_review": {
+    "result": "pending",
+    "actual_call": false
+  },
+  "sol_algorithm_review": {
+    "result": "pending",
+    "actual_call": false
+  },
+  "available_executor_validation": {
+    "small_unit_tests": 31,
+    "unit_tests_passed": 31,
+    "independent_narrow_passes": 1,
+    "initial_independent_checks": 12,
+    "initial_passed": 11,
+    "initial_failed": 1,
+    "author_fix_and_targeted_replay": "pass"
+  },
+  "heavy_execution": "not_run",
+  "physical_certification": false,
+  "strict_numerical_certificate": false,
+  "historical_point12": "partial_not_rerun",
+  "historical_point2": "conditional_envelope_not_strict_certification_tight_incomplete",
+  "browser_layout": "unverified_no_socket_retry",
+  "publication": "local_only",
+  "next_topic": "T03_candidate_only_not_started"
+}

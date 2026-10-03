@@ -1,0 +1,37 @@
+[
+  {
+    "id": "S01",
+    "url": "https://arxiv.org/pdf/2212.08430",
+    "checked": "2026-10-02",
+    "locations": "PDF pages 17–18, Tables 5–6; page 5, optical constants; parsed primary PDF text",
+    "verdict": "The four-layer values and fourteen effective-stage values match the prior JSON. Table 6 sums to 149.5 nm but prints 149.1 nm. Table 5 n=1.93/1.45 differs from main text 355 nm n=2.01/1.47. Measured double-sided 6/45-degree samples cannot be equated to old constant-n single-face 0-degree reconstruction."
+  },
+  {
+    "id": "S02",
+    "url": "https://arxiv.org/pdf/2104.08233",
+    "checked": "2026-10-02",
+    "locations": "PDF pages 3–4, section 2",
+    "verdict": "UCO 6-layer and Al2O3/Ag 3-layer nominal thicknesses match. Thicknesses are QCM; fabricated by e-beam, reflectivity measured at 7 degrees. Al2O3/Ag is a comparison specimen. No metal n,k supplied by prior recipe. The old Al2O3 recipe conditions field uses generic evaluator boilerplate and must not be read as source experimental geometry."
+  },
+  {
+    "id": "S03",
+    "url": "https://arxiv.org/pdf/1102.3790",
+    "checked": "2026-10-02",
+    "locations": "PDF page 5, Table I and adjacent text",
+    "verdict": "42-layer standard theoretical LIGO reference is 41 quarter-wave layers plus half-wave silica cap, nH=2.06,nL=1.45 at1064nm. Table T=1.08ppm consistent with reconstructed1.0857ppm. This is theoretical/reference evidence, not local fabrication qualification."
+  },
+  {
+    "id": "S04",
+    "url": "https://arxiv.org/pdf/1509.02974",
+    "checked": "2026-10-02",
+    "locations": "PDF page 2, Fig.1 caption; page 1 abstract/introduction and page 2 theoretical comparison",
+    "verdict": "32-layer comparator uses nH=2.1,nL=1.4,nC=nS=1.51;155/233nm quarter-wave layers,466nm low-index layers16/32 counted from top. Prior substrate-first reversal matches. The approximately72%/0.48nm measured result belongs to the patterned Si grating, not this multilayer."
+  },
+  {
+    "id": "S05",
+    "url": "https://arxiv.org/pdf/1302.6489",
+    "checked": "2026-10-02",
+    "locations": "PDF page10 Fig.1; page14 Methods Summary; page19 supplementary transmission discussion",
+    "verdict": "81-layer40.5-periodGaAs/Al0.92Ga0.08As family and quoted n=3.480/2.977 confirmed. Source total6.83um differs from nominal strict-QW reconstructed6.708um. Measured post-bond transmission3.8ppm differs from nominal reconstruction.270nm etch stop is removed before bonding. Preserve nominal-family-reconstruction classification."
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "PNG": [
+    {
+      "path": "figures/01_claim_quantifiers.png",
+      "sha256": "e1715bc14d1ee95b1ae13f4fc3ae2a41d2da28555029cc676159ec8ab5a47d7c",
+      "check": "actual_pixels_inspected",
+      "result": "legible_no_clipping",
+      "notes": "Labels, scopes and units legible"
+    },
+    {
+      "path": "figures/02_claim_crossing_cover.png",
+      "sha256": "abe89cf8aa1bee65864c7aa1719c348c22b471dca35b0c7a3accbd6b64bc0821",
+      "check": "actual_pixels_inspected",
+      "result": "legible_no_clipping",
+      "notes": "Figure 02 legend moved outside axes; all four outlined boxes visible"
+    },
+    {
+      "path": "figures/03_model_vs_readout.png",
+      "sha256": "5de840d81734b6196a9fe4c05fa01faa952812a96ae61bcd60f18b92ac4ecfb9",
+      "check": "actual_pixels_inspected",
+      "result": "legible_no_clipping",
+      "notes": "Labels, scopes and units legible"
+    },
+    {
+      "path": "figures/04_bounded_requests.png",
+      "sha256": "cbb0ad98c42da6855c3eb349876730712cc8158dcaf9a323fc8117ba3cec18e5",
+      "check": "actual_pixels_inspected",
+      "result": "legible_no_clipping",
+      "notes": "Labels, scopes and units legible"
+    }
+  ],
+  "html_layout": "unverified_existing_restriction_not_retried",
+  "headless_or_socket_retries": 0
+}

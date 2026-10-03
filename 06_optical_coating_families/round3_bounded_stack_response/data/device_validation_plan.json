@@ -1,0 +1,26 @@
+{
+  "status": "plan_only_not_run",
+  "scope": "bounded MIR stack response only",
+  "hardware": "not_selected_or_contacted",
+  "jobs": "models/validation_driver.py default12 jobs",
+  "before_execute": [
+    "user arranges permitted device and finite compute budget",
+    "freeze/review exact inputs and residual unknowns",
+    "do not bypass host quotas or permissions"
+  ],
+  "before_physical_claim": [
+    "same-state measured n/k, density and composition",
+    "qualified per-layer retained mass and independent thickness",
+    "actual backside/AOI/polarization/bandwidth/aperture",
+    "joint material and instrument uncertainty model",
+    "designated formal review chain"
+  ],
+  "forbidden_in_this_stage": [
+    "old point12/point2 re-computation",
+    "ion-source validation",
+    "automatic T07 start",
+    "upload",
+    "push",
+    "product modification"
+  ]
+}

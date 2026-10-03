@@ -1,0 +1,131 @@
+{
+  "dataset_kind": "synthetic_only",
+  "target": "R of declared 3-node MIR operator <=0.05",
+  "outcomes": {
+    "A": {
+      "status": "conditional_synthetic_enclosure",
+      "R_bounds": [
+        0.0015697083295809842,
+        0.03359507665286143
+      ],
+      "R_bounds_exact": [
+        "237207616111825234669/151115727451828646838272",
+        "20306977788788396324745/604462909807314587353088"
+      ],
+      "T_into_substrate_bounds": [
+        0.9664049233471386,
+        0.9984302916704191
+      ],
+      "scale_bounds": [
+        0.985856871077785,
+        1.0141431289222151
+      ],
+      "cells": 8,
+      "unresolved_cells": 0,
+      "optical_contract_sha256": "d8ea2194fdd8fd1c7b69d334cfe3972eff4bfa0c3dd29f8fdf70ae2dfeb318d7",
+      "response_contract_sha256": "0bc55900ac49fd95f5ee3ce5528a9462267aeb619d58fd0d4f7209736c25c4fd",
+      "bridge_contract_sha256": "af6c8f107e1842ad8ad03e96eb56b76f0877d5d4444e8fa504c95fb05cb5c7e9",
+      "measurement_contract_sha256": "81fdb15c8e896c26d260749baaca0dc5e8eb5822c2a2b9e4635b44855da6e383",
+      "material_contract_sha256": "ba9271ae21a6e6606254c4b500dd80b4d3339bc1fac14e49fb026ffe7d263b29",
+      "physical_certification": false,
+      "scope": "finite_discrete_normal_lossless_synthetic_model_only"
+    },
+    "B": {
+      "status": "conditional_synthetic_enclosure",
+      "R_bounds": [
+        0.05880661877609477,
+        0.44299209605140133
+      ],
+      "R_bounds_exact": [
+        "71092839802655413030443/1208925819614629174706176",
+        "16735768212554464193647/37778931862957161709568"
+      ],
+      "T_into_substrate_bounds": [
+        0.5570079039485987,
+        0.9411933812239053
+      ],
+      "scale_bounds": [
+        0.985856871077785,
+        1.0141431289222151
+      ],
+      "cells": 8,
+      "unresolved_cells": 0,
+      "optical_contract_sha256": "dd850bcd249e962a3cf3d4962868960c398621154401c84d037562ff9ba0f90c",
+      "response_contract_sha256": "0bc55900ac49fd95f5ee3ce5528a9462267aeb619d58fd0d4f7209736c25c4fd",
+      "bridge_contract_sha256": "af6c8f107e1842ad8ad03e96eb56b76f0877d5d4444e8fa504c95fb05cb5c7e9",
+      "measurement_contract_sha256": "81fdb15c8e896c26d260749baaca0dc5e8eb5822c2a2b9e4635b44855da6e383",
+      "material_contract_sha256": "ba9271ae21a6e6606254c4b500dd80b4d3339bc1fac14e49fb026ffe7d263b29",
+      "physical_certification": false,
+      "scope": "finite_discrete_normal_lossless_synthetic_model_only"
+    },
+    "C": {
+      "status": "conditional_synthetic_enclosure",
+      "R_bounds": [
+        0.0010926597733523472,
+        0.031871745599067684
+      ],
+      "R_bounds_exact": [
+        "165118076507490161159/151115727451828646838272",
+        "2408161010681365474783/75557863725914323419136"
+      ],
+      "T_into_substrate_bounds": [
+        0.9681282544009323,
+        0.9989073402266477
+      ],
+      "scale_bounds": [
+        0.985856871077785,
+        1.0141431289222151
+      ],
+      "cells": 8,
+      "unresolved_cells": 0,
+      "optical_contract_sha256": "e5584a0e604f2e17c04a693972626ae10e878bdf3661f4c7a01ceffc20847198",
+      "response_contract_sha256": "0bc55900ac49fd95f5ee3ce5528a9462267aeb619d58fd0d4f7209736c25c4fd",
+      "bridge_contract_sha256": "af6c8f107e1842ad8ad03e96eb56b76f0877d5d4444e8fa504c95fb05cb5c7e9",
+      "measurement_contract_sha256": "81fdb15c8e896c26d260749baaca0dc5e8eb5822c2a2b9e4635b44855da6e383",
+      "material_contract_sha256": "ba9271ae21a6e6606254c4b500dd80b4d3339bc1fac14e49fb026ffe7d263b29",
+      "physical_certification": false,
+      "scope": "finite_discrete_normal_lossless_synthetic_model_only"
+    }
+  },
+  "A_vs_B": {
+    "status": "distinguishable_under_declared_error",
+    "A_observed_bounds": [
+      0.0005697083295809842,
+      0.03459507665286143
+    ],
+    "B_observed_bounds": [
+      0.05780661877609477,
+      0.44399209605140133
+    ],
+    "minimum_gap": 0.023211542123233345
+  },
+  "A_vs_C": {
+    "status": "unresolved_overlap_not_proof_of_equivalence",
+    "A_observed_bounds": [
+      0.0005697083295809842,
+      0.03459507665286143
+    ],
+    "B_observed_bounds": [
+      9.265977335234719e-05,
+      0.032871745599067685
+    ]
+  },
+  "paired_A_vs_C": {
+    "status": "conditional_paired_difference",
+    "B_minus_A_R_bounds": [
+      -0.02519201262463875,
+      0.022887265512664196
+    ],
+    "cells": 8,
+    "requires_same_latent_realization": true
+  },
+  "budget": {
+    "latent_cells_per_variant": 8,
+    "variants": 3,
+    "spectral_nodes": 3,
+    "layers": 6,
+    "monte_carlo_draws": 0,
+    "devices": 0
+  },
+  "production_qualified": false
+}

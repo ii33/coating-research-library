@@ -1,0 +1,46 @@
+{
+  "PNG_pixel_review": "passed_after_one_label_layout_fix",
+  "images": [
+    {
+      "path": "figures/01_bounded_mir_response.png",
+      "size": [
+        1920,
+        768
+      ],
+      "sha256": "cfbd280d9398336b6a8042034c5836beeb4c0ae6401039f427b5d6ffb402e41f",
+      "actual_pixels_viewed": true,
+      "findings": "readable labels, no detected clipping; third figure narrow-layer overlap fixed and reviewed again"
+    },
+    {
+      "path": "figures/02_shared_error_counterexample.png",
+      "size": [
+        1824,
+        736
+      ],
+      "sha256": "5156acd323fa70216c49248134be69e817f3efd67f5111d24f925a0c5ce2e6b9",
+      "actual_pixels_viewed": true,
+      "findings": "readable labels, no detected clipping; third figure narrow-layer overlap fixed and reviewed again"
+    },
+    {
+      "path": "figures/03_order_units_provenance.png",
+      "size": [
+        1760,
+        768
+      ],
+      "sha256": "fc102ccc7909cb7e221d3d6012fa67ad84178210f5de108d6ad62b2def38ad2a",
+      "actual_pixels_viewed": true,
+      "findings": "readable labels, no detected clipping; third figure narrow-layer overlap fixed and reviewed again"
+    }
+  ],
+  "HTML_static": {
+    "local_links_and_anchors": 25,
+    "local_image_resources": 3,
+    "external_assets": 0,
+    "scripts": 0,
+    "html_layout": "unverified_existing_browser_socket_restriction_not_retried"
+  },
+  "HTML_layout": "unverified",
+  "blocker": "parent confirmed previous localhost browser denial and headless Chromium socket denial after one escalation; no new attempts or alternate renderer",
+  "browser_layout_attempts_this_stage": 0,
+  "static_is_not_layout": true
+}

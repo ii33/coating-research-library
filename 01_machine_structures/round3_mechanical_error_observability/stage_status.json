@@ -1,0 +1,66 @@
+{
+  "stage_id": "T01-r3-v0.1.0",
+  "scope": "mechanical error pose and observable calibration interfaces",
+  "local_completion": "completed_with_boundaries",
+  "publication": "local_only_not_uploaded",
+  "physical_validation": "not_run_no_actual_logs",
+  "formal_model_chain": {
+    "deepseek": "not_run",
+    "seed": "pending_not_available",
+    "sol_stage_signature": "pending_chain_not_run"
+  },
+  "author_tests": {
+    "count": 31,
+    "status": "pass"
+  },
+  "independent_review": {
+    "count": 1,
+    "scope": "bounded mathematical and interface check",
+    "initial_findings_preserved": true,
+    "author_targeted_replay": "pass_with_conservative_nuisance_unresolved"
+  },
+  "heavy_execution": "not_run_plan_only",
+  "next_topic": "T02_candidate_only_not_started",
+  "frozen_inputs": "data/input_provenance.json",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "acceptance": [
+    {
+      "id": "A1",
+      "criterion": "single new T01 scope and retained unknown topology",
+      "evidence": "reports/01_scope_and_error_taxonomy.md",
+      "result": "pass_in_scope"
+    },
+    {
+      "id": "A2",
+      "criterion": "pose/contact/observation theory and counterexamples",
+      "evidence": "reports/02_pose_and_contact_model.md; reports/03_observation_and_identifiability.md",
+      "result": "pass_conditional"
+    },
+    {
+      "id": "A3",
+      "criterion": "calibration design and offline rejection interface",
+      "evidence": "reports/04_measurement_design.md; verification/test_reference.py",
+      "result": "pass_in_scope"
+    },
+    {
+      "id": "A4",
+      "criterion": "one independent narrow check with failure retention and corrections",
+      "evidence": "reviews/INDEPENDENT_REVIEW.md; reviews/repair_replay_results.json",
+      "result": "pass_in_scope_not_full_review_chain"
+    },
+    {
+      "id": "A5",
+      "criterion": "standalone exact manifest and reader reproduction",
+      "evidence": "verification/release_receipt.json (outside reader); verification/reader_manifest.json",
+      "result": "see_external_receipt"
+    },
+    {
+      "id": "A6",
+      "criterion": "actual machine or production certification",
+      "result": "not_run"
+    }
+  ]
+}

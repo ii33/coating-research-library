@@ -1,0 +1,31 @@
+{
+  "successful_study_runs": [
+    {
+      "path": "verification/tiny",
+      "purpose": "initial complete tiny before record-provenance hardening",
+      "nodes": 331,
+      "interval_wavelengths": 1166,
+      "float_vectors": 10
+    },
+    {
+      "path": "verification/tiny_final",
+      "purpose": "same-budget final implementation regression, authoritative baseline",
+      "nodes": 331,
+      "interval_wavelengths": 1166,
+      "float_vectors": 10
+    }
+  ],
+  "initial_failure": {
+    "path": "verification/initial_failure_fraction_float",
+    "reason": "Fraction string passed to inherited floating helper; adapter corrected",
+    "interval_calls": 0,
+    "complete_counter_receipt": false,
+    "not_counted_as_success": true
+  },
+  "metadata_only_update": "verification/metadata_binding_addition.json",
+  "test_runs": "small focused tests repeated after code repairs; final and isolated output separately preserved, not included in tiny ledger",
+  "independent_review_interval_wavelengths": 16,
+  "full_plan_executed": false,
+  "hardware_jobs": 0,
+  "additional_scope": false
+}

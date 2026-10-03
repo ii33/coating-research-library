@@ -1,0 +1,318 @@
+{
+  "kind": "synthetic_algebra_only",
+  "interpretation": "proof/interface examples, no device measurements or fitted physical error amplitudes",
+  "example_units": {
+    "height_source": "z=1m illustrative nominal; J height per m, normalized log-thickness variance=1",
+    "axial_layout": "coordinates 1m deliberately simple algebraic basis, not a sensor layout recommendation",
+    "clock": "omega 1..2rad/s or 2rad/s illustrative",
+    "covariance": "unit normalized observations, synthetic rho=.8, not calibrated noise"
+  },
+  "results": {
+    "height_source_only": {
+      "rank": 0,
+      "rank_under_truncated_nuisance": 0,
+      "rank_status": "conditional_local_numerical",
+      "nuisance_singular_values": [
+        1.0
+      ],
+      "nuisance_relative_stability_floor": 1.4901161193847656e-08,
+      "parameters": 1,
+      "observations": 4,
+      "nuisance_rank": 1,
+      "singular_values": [
+        0.0
+      ],
+      "rank_absolute_threshold": 4e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": null,
+      "null_vectors_status": "conditional_local",
+      "null_scaled": [
+        [
+          1.0
+        ]
+      ],
+      "null_physical": [
+        [
+          1.0
+        ]
+      ],
+      "noise_conditional_covariance": null,
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "height_plus_probe": {
+      "rank": 1,
+      "rank_under_truncated_nuisance": 1,
+      "rank_status": "conditional_local_numerical",
+      "nuisance_singular_values": [
+        1.0
+      ],
+      "nuisance_relative_stability_floor": 1.4901161193847656e-08,
+      "parameters": 1,
+      "observations": 2,
+      "nuisance_rank": 1,
+      "singular_values": [
+        1.0
+      ],
+      "rank_absolute_threshold": 2.23606797749979e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": 1.0,
+      "null_vectors_status": "conditional_local",
+      "null_scaled": [],
+      "null_physical": [],
+      "noise_conditional_covariance": [
+        [
+          1.0
+        ]
+      ],
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "clock_constant": {
+      "rank": 1,
+      "rank_under_truncated_nuisance": 1,
+      "rank_status": "conditional_local_numerical",
+      "nuisance_singular_values": [],
+      "nuisance_relative_stability_floor": 1.4901161193847656e-08,
+      "parameters": 2,
+      "observations": 8,
+      "nuisance_rank": 0,
+      "singular_values": [
+        6.324555320336759,
+        3.358229742968073e-16
+      ],
+      "rank_absolute_threshold": 6.324555320336758e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": null,
+      "null_vectors_status": "conditional_local",
+      "null_scaled": [
+        [
+          0.894427190999916,
+          -0.447213595499958
+        ]
+      ],
+      "null_physical": [
+        [
+          0.894427190999916,
+          -0.447213595499958
+        ]
+      ],
+      "noise_conditional_covariance": null,
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "clock_varying": {
+      "rank": 2,
+      "rank_under_truncated_nuisance": 2,
+      "rank_status": "conditional_local_numerical",
+      "nuisance_singular_values": [],
+      "nuisance_relative_stability_floor": 1.4901161193847656e-08,
+      "parameters": 2,
+      "observations": 8,
+      "nuisance_rank": 0,
+      "singular_values": [
+        5.157455692946292,
+        0.5077338204598277
+      ],
+      "rank_absolute_threshold": 5.157455692946292e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": 10.157794271564294,
+      "null_vectors_status": "conditional_local",
+      "null_scaled": [],
+      "null_physical": [],
+      "noise_conditional_covariance": [
+        [
+          2.749999999999998,
+          -1.749999999999999
+        ],
+        [
+          -1.749999999999999,
+          1.166666666666666
+        ]
+      ],
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "axial_noncollinear": {
+      "rank": 3,
+      "rank_under_truncated_nuisance": 3,
+      "rank_status": "conditional_local_numerical",
+      "nuisance_singular_values": [],
+      "nuisance_relative_stability_floor": 1.4901161193847656e-08,
+      "parameters": 3,
+      "observations": 3,
+      "nuisance_rank": 0,
+      "singular_values": [
+        1.9318516525781366,
+        1.0,
+        0.5176380902050414
+      ],
+      "rank_absolute_threshold": 1.9318516525781366e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": 3.7320508075688785,
+      "null_vectors_status": "conditional_local",
+      "null_scaled": [],
+      "null_physical": [],
+      "noise_conditional_covariance": [
+        [
+          1.0000000000000007,
+          -1.0000000000000007,
+          1.0000000000000007
+        ],
+        [
+          -1.0000000000000007,
+          2.000000000000001,
+          -1.0000000000000009
+        ],
+        [
+          1.0000000000000007,
+          -1.0000000000000009,
+          2.000000000000001
+        ]
+      ],
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "axial_collinear": {
+      "rank": 2,
+      "rank_under_truncated_nuisance": 2,
+      "rank_status": "conditional_local_numerical",
+      "nuisance_singular_values": [],
+      "nuisance_relative_stability_floor": 1.4901161193847656e-08,
+      "parameters": 3,
+      "observations": 3,
+      "nuisance_rank": 0,
+      "singular_values": [
+        1.7320508075688772,
+        1.414213562373095,
+        0.0
+      ],
+      "rank_absolute_threshold": 1.7320508075688773e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": null,
+      "null_vectors_status": "conditional_local",
+      "null_scaled": [
+        [
+          -0.0,
+          -1.0000000000000002,
+          -0.0
+        ]
+      ],
+      "null_physical": [
+        [
+          -0.0,
+          -1.0000000000000002,
+          -0.0
+        ]
+      ],
+      "noise_conditional_covariance": null,
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "harmonic_motion_source": {
+      "rank": 0,
+      "rank_under_truncated_nuisance": 0,
+      "rank_status": "conditional_local_numerical",
+      "nuisance_singular_values": [
+        1.0
+      ],
+      "nuisance_relative_stability_floor": 1.4901161193847656e-08,
+      "parameters": 1,
+      "observations": 8,
+      "nuisance_rank": 1,
+      "singular_values": [
+        0.0
+      ],
+      "rank_absolute_threshold": 2e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": null,
+      "null_vectors_status": "conditional_local",
+      "null_scaled": [
+        [
+          1.0
+        ]
+      ],
+      "null_physical": [
+        [
+          1.0
+        ]
+      ],
+      "noise_conditional_covariance": null,
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "common_noise_mean": {
+      "rank": 1,
+      "rank_under_truncated_nuisance": 1,
+      "rank_status": "conditional_local_numerical",
+      "nuisance_singular_values": [],
+      "nuisance_relative_stability_floor": 1.4901161193847656e-08,
+      "parameters": 1,
+      "observations": 4,
+      "nuisance_rank": 0,
+      "singular_values": [
+        1.0846522890932808
+      ],
+      "rank_absolute_threshold": 1.0846522890932809e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": 1.0,
+      "null_vectors_status": "conditional_local",
+      "null_scaled": [],
+      "null_physical": [],
+      "noise_conditional_covariance": [
+        [
+          0.8500000000000001
+        ]
+      ],
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "independent_noise_mean": {
+      "rank": 1,
+      "rank_under_truncated_nuisance": 1,
+      "rank_status": "conditional_local_numerical",
+      "nuisance_singular_values": [],
+      "nuisance_relative_stability_floor": 1.4901161193847656e-08,
+      "parameters": 1,
+      "observations": 4,
+      "nuisance_rank": 0,
+      "singular_values": [
+        2.0
+      ],
+      "rank_absolute_threshold": 2e-10,
+      "rank_reference": "spectral_norm_of_whitened_scaled_unprojected_J",
+      "relative_rank_tolerance": 1e-10,
+      "condition_number": 1.0,
+      "null_vectors_status": "conditional_local",
+      "null_scaled": [],
+      "null_physical": [],
+      "noise_conditional_covariance": [
+        [
+          0.25
+        ]
+      ],
+      "interpretation": "conditional local linear diagnostic only"
+    },
+    "backlash": {
+      "input_rad": [
+        0,
+        0.2,
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "half_width_rad": 0.1,
+      "initial_output_rad": 0.0,
+      "output_rad": [
+        0.0,
+        0.1,
+        0.30000000000000004,
+        0.30000000000000004,
+        0.30000000000000004,
+        0.2
+      ]
+    }
+  },
+  "all_expected_assertions_pass": true
+}

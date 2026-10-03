@@ -1,0 +1,22 @@
+{
+  "mode": "plan_only",
+  "executed": false,
+  "tiny_limits": {
+    "max_gate_cases": 32,
+    "max_model_bins": 16,
+    "max_joint_cells": 8,
+    "max_wall_s": 20
+  },
+  "deferred": {
+    "experimental_state_identification": "not_run_awaiting_device_and_authorization",
+    "full_state_response_optical_rebuild": "plan_only",
+    "large_sweep": "plan_only"
+  },
+  "hardware_calls": 0,
+  "upstream_optical_calls": 0,
+  "quota_bypass": false,
+  "point12": "partial_unchanged",
+  "point2": "conditional_non_strict_unchanged",
+  "formal_review_chain": "pending",
+  "python": "3.12.14"
+}

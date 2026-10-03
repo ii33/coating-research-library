@@ -1,0 +1,355 @@
+{
+  "data_origin": "synthetic_only",
+  "mixed_charge": {
+    "moments": {
+      "ion_current_a_m2": 0.19226119608,
+      "charged_flux_m2_s": 1e+18,
+      "charged_kinetic_flux_w_m2": 19.226119607999998,
+      "observed_kinetic_flux_w_m2": 19.226119607999998,
+      "total_kinetic_flux_w_m2": 19.226119607999998,
+      "observed_normal_momentum_flux_pa": 0.0015787291344615524,
+      "nuclei_flux_m2_s": 1e+18,
+      "thermal_power_w_m2": null
+    },
+    "charge_spectrum_power_w_m2": 19.226119608,
+    "naive_j_over_e": 1.2e+18
+  },
+  "charge_exchange": {
+    "ion_current_a_m2": 0.12817413072,
+    "charged_flux_m2_s": 8e+17,
+    "charged_kinetic_flux_w_m2": 12.817413071999999,
+    "observed_kinetic_flux_w_m2": 16.02176634,
+    "total_kinetic_flux_w_m2": 16.02176634,
+    "observed_normal_momentum_flux_pa": 0.0014579487087775518,
+    "nuclei_flux_m2_s": 1e+18,
+    "thermal_power_w_m2": null
+  },
+  "angle_60deg": {
+    "total_energy_ev": 100,
+    "normal_energy_ev": 25,
+    "rfea_currents_a_m2": [
+      0.1602176634,
+      0.1602176634,
+      0.0,
+      0.0
+    ]
+  },
+  "identifiable_two_bins": {
+    "status": "converged_conditional",
+    "flux_m2_s": [
+      2e+18,
+      9.999999999999997e+17
+    ],
+    "covariance": [
+      [
+        1.9478217763288024e+33,
+        -9.739108881644012e+32
+      ],
+      [
+        -9.739108881644012e+32,
+        9.739108881644012e+32
+      ]
+    ],
+    "rank": {
+      "rows": 2,
+      "columns": 2,
+      "rank": 2,
+      "full_column_rank": true,
+      "scaled_singular_values": [
+        1.3065629648763766,
+        0.5411961001461969
+      ],
+      "scaled_condition_number": 2.4142135623730954
+    },
+    "iterations": 0,
+    "weighted_residual_norm": 7.105427357601002e-15,
+    "covariance_scope": "known observational covariance only, fixed response matrix; no model/calibration errors"
+  },
+  "same_energy_per_charge_ambiguity": {
+    "rows": 3,
+    "columns": 2,
+    "rank": 1,
+    "full_column_rank": false,
+    "scaled_singular_values": [
+      1.4142135623730954,
+      6.986052055924436e-17
+    ],
+    "scaled_condition_number": null
+  },
+  "timeline": {
+    "dose_m2": 3e+18,
+    "net_atoms_m2": 4e+18,
+    "integral_ratio": 0.75,
+    "ion_only_duration_s": 1
+  },
+  "normalization_cases": {
+    "positive": {
+      "charged_dose_m2": 3e+18,
+      "observed_energy_j_m2": 40.0,
+      "total_energy_j_m2": 40.0,
+      "R": 0.75,
+      "epsilon_ev_net_atom": 62.41509074460763,
+      "denominator_only_bounds": {
+        "R": [
+          0.7317073170731707,
+          0.7692307692307693
+        ],
+        "epsilon_ev_net_atom": [
+          60.89277145815378,
+          64.01547768677706
+        ]
+      },
+      "status": "positive_conditional"
+    },
+    "zero": {
+      "charged_dose_m2": 3e+18,
+      "observed_energy_j_m2": 40.0,
+      "total_energy_j_m2": 40.0,
+      "R": null,
+      "epsilon_ev_net_atom": null,
+      "denominator_only_bounds": null,
+      "status": "zero_or_crossing"
+    },
+    "crossing": {
+      "charged_dose_m2": 3e+18,
+      "observed_energy_j_m2": 40.0,
+      "total_energy_j_m2": 40.0,
+      "R": null,
+      "epsilon_ev_net_atom": null,
+      "denominator_only_bounds": null,
+      "status": "zero_or_crossing"
+    },
+    "erosion": {
+      "charged_dose_m2": 3e+18,
+      "observed_energy_j_m2": 40.0,
+      "total_energy_j_m2": 40.0,
+      "R": null,
+      "epsilon_ev_net_atom": null,
+      "denominator_only_bounds": null,
+      "status": "net_erosion"
+    },
+    "ill_conditioned": {
+      "charged_dose_m2": 3e+18,
+      "observed_energy_j_m2": 40.0,
+      "total_energy_j_m2": 40.0,
+      "R": null,
+      "epsilon_ev_net_atom": null,
+      "denominator_only_bounds": {
+        "R": [
+          10.0,
+          30.0
+        ],
+        "epsilon_ev_net_atom": [
+          832.2012099281018,
+          2496.603629784305
+        ]
+      },
+      "status": "ill_conditioned"
+    }
+  },
+  "transient_inventory_depletion": {
+    "charged_dose_m2": 3e+18,
+    "observed_energy_j_m2": 40.0,
+    "total_energy_j_m2": 40.0,
+    "R": null,
+    "epsilon_ev_net_atom": null,
+    "denominator_only_bounds": null,
+    "status": "inventory_depletion_possible"
+  },
+  "synthetic_response_fit": {
+    "status": "conditional_linear_fit",
+    "coefficients": [
+      1.4999999999999996,
+      0.010000000000000776,
+      -0.001999999999999227,
+      0.004000000000000774
+    ],
+    "covariance": [
+      [
+        9.999999999999997e-07,
+        -1e-06,
+        -9.999999999999995e-07,
+        -9.999999999999997e-07
+      ],
+      [
+        -1e-06,
+        2.0000000000000003e-06,
+        9.999999999999997e-07,
+        1e-06
+      ],
+      [
+        -9.999999999999997e-07,
+        9.999999999999997e-07,
+        1.9999999999999995e-06,
+        9.999999999999997e-07
+      ],
+      [
+        -1e-06,
+        1e-06,
+        9.999999999999997e-07,
+        2e-06
+      ]
+    ],
+    "rank": {
+      "rows": 4,
+      "columns": 4,
+      "rank": 4,
+      "full_column_rank": true,
+      "scaled_singular_values": [
+        1.3660254037844388,
+        0.9999999999999999,
+        0.9999999999999998,
+        0.3660254037844387
+      ],
+      "scaled_condition_number": 3.732050807568877
+    },
+    "final_scores": [
+      {
+        "sample_id": "s5",
+        "run_id": "r5",
+        "prediction": 1.5034000000000005,
+        "measured": 1.5033999999999998,
+        "residual": -6.661338147750939e-16,
+        "u_prediction_conditional": 0.0008831760866327847,
+        "u_comparison_independent_conditional": 0.0013341664064126333
+      }
+    ],
+    "qualification": "not_evaluated",
+    "scope": "known independent response noise, fixed features; no errors-in-variables or shared calibration uncertainty"
+  },
+  "correlated_log_ratio_variance": 0.04,
+  "fixture_checks": {
+    "actual_unknown": {
+      "status": "blocked_evidence",
+      "errors": [
+        {
+          "code": "MISSING_INSTRUMENT_IDENTITY",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_ELECTRICAL_CURRENT_CORRECTION",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_AREA_NORMALIZATION",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_ENERGY_ANGLE_RESPONSE",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_SPECIES_CHARGE_STATE",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_SURFACE_REPRESENTATIVENESS",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_TIME_ALIGNMENT",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_NEUTRAL_COVERAGE",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_MATERIAL_IDENTITY",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_FILM_STATE",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_OPTICAL_OPERATOR",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_TRACEABILITY",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "MISSING_RAW_DATA",
+          "detail": "Required evidence reference is missing"
+        },
+        {
+          "code": "NOT_INDEPENDENT_OBSERVATION",
+          "detail": "Substituted, held, unknown or synthetic values cannot validate actual response"
+        },
+        {
+          "code": "WRONG_OBSERVABLE",
+          "detail": "Source setpoints or charge-only spectra cannot populate a species/angle-resolved flux packet"
+        },
+        {
+          "code": "NEUTRALS_UNKNOWN",
+          "detail": "Total kinetic energy and epsilon cannot be claimed; observed components remain reportable"
+        },
+        {
+          "code": "SOURCE_IDENTITY_INCOMPLETE",
+          "detail": "Actual configuration identity missing"
+        },
+        {
+          "code": "SOURCE_FAMILY_UNKNOWN",
+          "detail": "No default Kaufman inference"
+        },
+        {
+          "code": "NET_NOT_OBSERVED",
+          "detail": "QCM/source arrival alone is not local net film inventory"
+        },
+        {
+          "code": "SURFACE_CHARGING_UNVERIFIED",
+          "detail": "Conductive probe is not equivalent to actual floating dielectric"
+        },
+        {
+          "code": "HISTORY_INCOMPLETE",
+          "detail": "Missing time intervals or state events"
+        },
+        {
+          "code": "RAW_MISSING",
+          "detail": "Actual packet needs traceable raw records"
+        },
+        {
+          "code": "TIME_WINDOW_UNKNOWN",
+          "detail": "Positive, clock-referenced observation window required"
+        },
+        {
+          "code": "COORDINATE_UNKNOWN",
+          "detail": "Position and unit surface normal in declared frame required"
+        },
+        {
+          "code": "SPECTRUM_MISSING",
+          "detail": "This joint-spectrum packet requires nonempty measured or synthetic cells"
+        }
+      ],
+      "component_calculation": null,
+      "actual_validation": "not_run_awaiting_device",
+      "production_release": false,
+      "note": "Schema/evidence checks do not authenticate evidence or approve device/model validity"
+    },
+    "synthetic_complete": {
+      "status": "conditional_research_structure_valid",
+      "errors": [],
+      "component_calculation": {
+        "ion_current_a_m2": 0.1602176634,
+        "charged_flux_m2_s": 1e+18,
+        "charged_kinetic_flux_w_m2": 16.02176634,
+        "observed_kinetic_flux_w_m2": 16.02176634,
+        "total_kinetic_flux_w_m2": 16.02176634,
+        "observed_normal_momentum_flux_pa": 0.0014579487087775518,
+        "nuclei_flux_m2_s": 1e+18,
+        "thermal_power_w_m2": null
+      },
+      "actual_validation": "not_run_awaiting_device",
+      "production_release": false,
+      "note": "Schema/evidence checks do not authenticate evidence or approve device/model validity"
+    }
+  },
+  "actual_hardware": "not_run_awaiting_device",
+  "heavy_sweep": "not_run_awaiting_device",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

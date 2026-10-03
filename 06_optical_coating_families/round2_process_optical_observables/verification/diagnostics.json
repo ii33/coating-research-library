@@ -1,0 +1,299 @@
+{
+  "representative": {
+    "status": "conditional_calculation",
+    "evidence_kind": "literature_conditioned",
+    "production_qualified": false,
+    "thickness": {
+      "arrival_atoms_m2": {
+        "Al": 2e+22
+      },
+      "net_change_atoms_m2": {
+        "Al": 1.807878381583022e+22
+      },
+      "final_inventory_atoms_m2": {
+        "Al": 1.807878381583022e+22
+      },
+      "areal_mass_kg_m2": 0.00081,
+      "geometric_thickness_um": 0.3,
+      "qcm_equivalent_thickness_um": 0.3333333333333333,
+      "design_thickness_um": 0.25,
+      "net_mode": "synthetic_balance",
+      "production_qualified": false
+    },
+    "optical_thickness_n_d_um": [
+      0.14676603659999998,
+      0.2368216059,
+      0.3739093215,
+      0.6614695659
+    ],
+    "extinction_path_k_d_um": [
+      1.4334958212,
+      1.7555809503,
+      2.0556989517,
+      2.1564257433
+    ],
+    "wavelength_um": [
+      0.45,
+      0.55,
+      0.65,
+      0.85
+    ],
+    "observables": {
+      "R_total": [
+        0.9185503208070437,
+        0.9118182130367616,
+        0.8996510012279172,
+        0.8514554823196916
+      ],
+      "T_total": [
+        2.319883284785944e-18,
+        1.703638243952908e-18,
+        1.942866296697401e-18,
+        4.347461877076748e-15
+      ],
+      "R_specular": [
+        0.9185503208070437,
+        0.9118182130367616,
+        0.8996510012279172,
+        0.8514554823196916
+      ],
+      "T_specular": [
+        2.319883284785944e-18,
+        1.703638243952908e-18,
+        1.942866296697401e-18,
+        4.347461877076748e-15
+      ],
+      "R_detected": [
+        0.9185503208070437,
+        0.9118182130367616,
+        0.8996510012279172,
+        0.8514554823196916
+      ],
+      "T_detected": [
+        2.319883284785944e-18,
+        1.703638243952908e-18,
+        1.942866296697401e-18,
+        4.347461877076748e-15
+      ],
+      "A_absorption": [
+        0.08144967919295626,
+        0.08818178696323835,
+        0.10034899877208271,
+        0.1485445176803041
+      ],
+      "A_film": [
+        0.08144967919295626,
+        0.08818178696323835,
+        0.10034899877208271,
+        0.1485445176803041
+      ],
+      "A_bulk": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "S_out_of_specular": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "L_specular": [
+        0.08144967919295626,
+        0.08818178696323835,
+        0.10034899877208271,
+        0.1485445176803041
+      ]
+    },
+    "transmission_meaning": "T is external transmitted flux; all incoherent internal round trips collected",
+    "measurement_id": "synthetic_detector",
+    "warnings": [
+      "conditional material binding; not a process calibration",
+      "A=1-Rtotal-Ttotal; specular deficit includes scatter",
+      "bulk alpha and film k are distinct evidence quantities"
+    ]
+  },
+  "n_d_nonuniqueness": {
+    "n": [
+      1.2,
+      1.2666666666666668
+    ],
+    "d_um": [
+      0.11458333333333331,
+      0.10855263157894733
+    ],
+    "n_d_um": [
+      0.1375,
+      0.1375
+    ],
+    "R_normal": [
+      0.0007304601899196524,
+      0.0007304601899196555
+    ],
+    "R_45_s": [
+      0.009398336452786746,
+      0.01250772435034075
+    ],
+    "counterexample_scope": "one wavelength, lossless quarter-wave pair with n2=ns/n1; not a universal nd-invariance claim"
+  },
+  "one_angle_one_wavelength": {
+    "R_only": {
+      "nominal": [
+        0.10986382064761618
+      ],
+      "jacobian": [
+        [
+          0.20081477036554274,
+          -0.13643014578068602,
+          -0.1417815061780653
+        ]
+      ],
+      "column_scales": [
+        1.8,
+        0.02,
+        1.0
+      ],
+      "scaled_singular_values": [
+        0.3882879524762011
+      ],
+      "rank": 1,
+      "parameter_count": 3,
+      "nullity_at_least": 2,
+      "condition_number": null,
+      "scope": "local derivative rank only; neither global uniqueness nor practical noise identifiability"
+    },
+    "R_and_T": {
+      "nominal": [
+        0.10986382064761618,
+        0.8512699895046189
+      ],
+      "jacobian": [
+        [
+          0.20081477036554274,
+          -0.13643014578068602,
+          -0.1417815061780653
+        ],
+        [
+          -0.1904418584408596,
+          -1.7637117342206297,
+          0.09934614733919656
+        ]
+      ],
+      "column_scales": [
+        1.8,
+        0.02,
+        1.0
+      ],
+      "scaled_singular_values": [
+        0.5272922639960776,
+        0.036782872075557076
+      ],
+      "rank": 2,
+      "parameter_count": 3,
+      "nullity_at_least": 1,
+      "condition_number": null,
+      "scope": "local derivative rank only; neither global uniqueness nor practical noise identifiability"
+    },
+    "scope": "dimension/rank at this sampling; a broadband or constrained one-angle model can have more rank"
+  },
+  "absorption_omitted_R_only": {
+    "fit": {
+      "success": true,
+      "parameters": {
+        "A": 1.785940337690558
+      },
+      "weighted_residual_norm": 4.163336342344337e-13,
+      "unweighted_rms": 4.163336342344337e-17,
+      "jacobian_rank": 1,
+      "nullity_at_least": 0,
+      "singular_values": [
+        2136.352373364955
+      ],
+      "evaluations": 6,
+      "source_domain_id": "synthetic_isotropic_state",
+      "wavelength_domain_um": [
+        0.4,
+        1.0
+      ],
+      "validated_on_independent_measurements": false,
+      "meaning": "fit is conditional description, not proof of process response, uniqueness or model correctness"
+    },
+    "true_k": 0.02,
+    "wrong_k": 0,
+    "true_T": 0.8512699895046189,
+    "predicted_T_wrong": 0.8901361793523843,
+    "holdout_T_error": 0.038866189847765464
+  },
+  "scatter_misread_as_absorption": {
+    "fit": {
+      "success": true,
+      "parameters": {
+        "k": 0.04001148324652039,
+        "thickness_scale": 0.9932160787207237
+      },
+      "weighted_residual_norm": 1.1102230246251565e-12,
+      "unweighted_rms": 7.850462293418876e-17,
+      "jacobian_rank": 2,
+      "nullity_at_least": 0,
+      "singular_values": [
+        16920.93368857874,
+        1435.5243346857908
+      ],
+      "evaluations": 6,
+      "source_domain_id": "synthetic_isotropic_state",
+      "wavelength_domain_um": [
+        0.4,
+        1.0
+      ],
+      "validated_on_independent_measurements": false,
+      "meaning": "fit is conditional description, not proof of process response, uniqueness or model correctness"
+    },
+    "truth_A": -3.3306690738754696e-16,
+    "truth_S_out": 0.0754874693921382,
+    "fitted_A_wrong": 0.07548746939213802,
+    "holdout_60deg_R_T_error": [
+      0.005158194048407561,
+      -0.0029965428345950507
+    ]
+  },
+  "bulk_alpha_cannot_be_film": {
+    "status": "blocked_as_expected",
+    "reason": "bulk absorption is not film extinction evidence",
+    "bulk_k_dimension_only": [
+      2.188380467513561e-08
+    ]
+  },
+  "unknown_cases": {
+    "unknown_density": {
+      "status": "blocked_unknown_or_inapplicable",
+      "reason": "film density_kg_m3 unknown",
+      "production_qualified": false
+    },
+    "actual_unmeasured": {
+      "status": "blocked_unknown_or_inapplicable",
+      "reason": "net retention evidence unknown",
+      "production_qualified": false
+    },
+    "unknown_temperature": {
+      "status": "blocked_unknown_or_inapplicable",
+      "reason": "measurement temperature_K unknown",
+      "production_qualified": false
+    },
+    "bulk_nk_misuse": {
+      "status": "blocked_unknown_or_inapplicable",
+      "reason": "public bulk n/k cannot silently become film response",
+      "production_qualified": false
+    },
+    "unknown_scatter": {
+      "status": "blocked_unknown_or_inapplicable",
+      "reason": "scatter model unknown",
+      "production_qualified": false
+    },
+    "bulk_density_misuse": {
+      "status": "blocked_unknown_or_inapplicable",
+      "reason": "bulk/source/QCM density cannot replace film density",
+      "production_qualified": false
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "evidence": "synthetic_only",
+  "actual_user_hardware": null,
+  "actual_measurements": false,
+  "length_unit": "um",
+  "angle_unit": "degree",
+  "time": "exp(-i omega t)",
+  "index": "n+ik",
+  "sample": "single isotropic planar film",
+  "substrate": "real n=1.52 semi-infinite",
+  "scatter": "explicit_zero_synthetic",
+  "phase": "opposed_reflected_p rho=-rp_tangential/rs",
+  "covariance": "ordered real observation coordinates; known synthetic positive-definite",
+  "noise_is_real_specification": false,
+  "thickness_roles": [
+    "design",
+    "geometric",
+    "QCM_equivalent",
+    "optical_nd"
+  ],
+  "unsupported": [
+    "finite/backside substrate",
+    "unknown scatter",
+    "depolarization",
+    "mixed-ray rho average",
+    "material transfer as measurement",
+    "real instrument adapter"
+  ],
+  "production_qualified": false
+}

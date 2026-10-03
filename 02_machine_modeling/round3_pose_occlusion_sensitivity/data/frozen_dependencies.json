@@ -1,0 +1,33 @@
+{
+  "dependencies": [
+    {
+      "copied_path": "models/frozen/t01_pose_reference.py",
+      "origin_project_relative": "01_machine_structures/round3_mechanical_error_observability/models/reference.py",
+      "sha256": "60d161be41a70f1f26103b46b5e27957cd46909186669b1be1f12a4990e925ec",
+      "bytes": 13136,
+      "copied_byte_for_byte": true
+    },
+    {
+      "copied_path": "models/frozen/robust_mask_v02.py",
+      "origin_project_relative": "02_machine_modeling/round2_dual_coverage_error_budget/correctness_closure_v0_2/models/robust_mask.py",
+      "sha256": "2c6006636c2728d226fafcb854d5ef45a96ddbbcc3e4e57cc90f31f52c17464c",
+      "bytes": 8335,
+      "copied_byte_for_byte": true
+    },
+    {
+      "copied_path": "data/inherited_point2_point12_reference.json",
+      "origin_project_relative": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/data/partial_reference.json",
+      "sha256": "ac71b8d13fe35653e4794d46e2dee21a9a0efd544861bbe8a05a31ad465596b0",
+      "bytes": 703,
+      "copied_byte_for_byte": true
+    },
+    {
+      "copied_path": "data/inherited_reexecution_plan.json",
+      "origin_project_relative": "02_machine_modeling/round2_dual_coverage_error_budget/quadrature_control_v0_3/verification/device_validation_plan.json",
+      "sha256": "5f3b6afdb87b9c826641c25ebc82ef51d7759a59c22d1bf90b19222ed5a2ab45",
+      "bytes": 1664,
+      "copied_byte_for_byte": true
+    }
+  ],
+  "runtime_parent_dependencies": false
+}

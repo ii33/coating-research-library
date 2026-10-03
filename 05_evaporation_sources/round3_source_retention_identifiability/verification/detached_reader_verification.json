@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "archive_sha256": "3e702e11262cbab3a9be20c1a9efe355fd3501424141bcd75126c823cd1fd2de",
+  "exact_archive_members_verified": true,
+  "archive_entries": 86,
+  "no_sibling_dependency": true,
+  "temporary_directory_removed": true,
+  "runs": [
+    {
+      "command": [
+        "verification/reader_check.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "models/diagnostics.py",
+        "--output",
+        "EXTERNAL_TEMP/replay.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "models/validation_driver.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "unit_tests": 42,
+  "deterministic_results_equal": true,
+  "default_driver": "plan_only_no_execution",
+  "source_originals_present": false,
+  "independent_unit_script_rerun": false,
+  "heavy_run": false,
+  "browser_layout": "unverified_known_socket_boundary"
+}

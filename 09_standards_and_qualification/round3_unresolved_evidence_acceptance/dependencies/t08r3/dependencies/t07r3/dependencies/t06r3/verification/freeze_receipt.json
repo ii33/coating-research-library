@@ -1,0 +1,32 @@
+{
+  "stage": "T06-round3",
+  "version": "0.1.0",
+  "status": "local_freeze",
+  "manifest_path": "verification/reader_manifest.json",
+  "manifest_sha256": "1f6d668b1fe097e743aa7d5dffef687866e3a008d36e4a1ba8f23a473881f7c0",
+  "payload_files": 100,
+  "payload_bytes": 1343574,
+  "archive": {
+    "path": "deliverables/T06_round3_bounded_stack_response_v0.1.0_reader.zip",
+    "bytes": 657158,
+    "sha256": "2ae85156b793c8626c1a3443af0d2db956445557c72e73398ba313d848888ac2",
+    "members": 101
+  },
+  "evidence_sha256": {
+    "verification/outside_scope_check.json": "a1ee33f7b28206b73390a9dafa4cb64200e5ce70265ac365b54ec550ce6afbaf",
+    "verification/unit_tests.txt": "52ed11b6dcc8db2b08e729ff8de27722f0a44da4d5bb51f946aea4d2277ee748",
+    "verification/isolated_reader_check.json": "aaf348f335912db0786a52e3df7b893133e5aba41b9bfb0398ef2142900cf498",
+    "verification/integrity_negative_checks.json": "67d3f3b5871d44ce6a1bb101330689142aba677d5fa3b5d472d037eb85bf2b8c",
+    "verification/visual_qa.json": "e374f4a5a1847d7b728bc8785c1c7adbf4fe51069be32d00b4305baa69cf1847",
+    "reviews/narrow_optical_check.md": "d01740836fe3b726e0ba0167ff47cf47e18cd4d01f7de6e17602271ca9af12f4"
+  },
+  "receipt_excludes_itself": true,
+  "html_layout": "unverified_existing_restriction",
+  "point12": "partial_unchanged",
+  "point2": "conditional_non_strict_unchanged",
+  "formal_review": "pending",
+  "heavy_validation": "plan_only_not_run",
+  "uploads": 0,
+  "pushes": 0,
+  "next_stage_started": false
+}

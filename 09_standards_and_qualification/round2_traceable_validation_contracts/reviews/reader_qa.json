@@ -1,0 +1,26 @@
+{
+  "status": "visual_and_interaction_checks_blocked",
+  "visually_inspected": false,
+  "desktop_screenshot_created": false,
+  "mobile_screenshot_created": false,
+  "attempts": [
+    {
+      "route": "dot cloud browser localhost",
+      "result": "net::ERR_BLOCKED_BY_CLIENT"
+    },
+    {
+      "route": "installed Python Playwright bundled Chromium",
+      "result": "bundled executable absent; no install attempted"
+    },
+    {
+      "route": "installed /usr/bin/chromium local artifact renderer",
+      "result": "socket Operation not permitted; read-only crash settings also reported"
+    },
+    {
+      "route": "same local artifact renderer with approved sandbox escalation",
+      "result": "socket Operation not permitted persists"
+    }
+  ],
+  "static_checks": "recorded separately in reader_static_check.json",
+  "no_website_or_hardware_validation": true
+}

@@ -1,0 +1,960 @@
+{
+  "evidence": "synthetic_only",
+  "theta_n_k_d_um": [
+    1.8,
+    0.02,
+    0.1
+  ],
+  "parameter_scales": [
+    0.2,
+    0.02,
+    0.05
+  ],
+  "cases": {
+    "single_R": {
+      "observations": [
+        0.10986382064761614
+      ],
+      "scenarios_are_conditional": true,
+      "jacobian_scaled": [
+        [
+          0.0401629546987331,
+          -0.0027286029139622636,
+          -0.07089075438608539
+        ]
+      ],
+      "covariance": [
+        [
+          4e-06
+        ]
+      ],
+      "rank": 1,
+      "parameter_count": 3,
+      "row_count": 1,
+      "singular_values": [
+        40.761523712389774,
+        0.0,
+        0.0
+      ],
+      "rank_threshold": 4.076152371238977e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": null,
+      "null_directions_scaled": [
+        [
+          0.033470325265746684,
+          0.9992494845302036,
+          -0.019498845933224776
+        ],
+        [
+          0.8695792984369916,
+          -0.019498845933224776,
+          0.4934081867349811
+        ]
+      ],
+      "covariance_scaled_local_if_full_rank": null,
+      "full_rank_is_not_global_certificate": true,
+      "difference_schemes": [
+        "central_second_order",
+        "central_second_order",
+        "central_second_order"
+      ],
+      "halved_step_max_abs_change": 3.2480962364189736e-10,
+      "doubled_step_max_abs_change": 1.2969486595793e-09
+    },
+    "single_RT": {
+      "observations": [
+        0.10986382064761614,
+        0.8512699895046189
+      ],
+      "scenarios_are_conditional": true,
+      "jacobian_scaled": [
+        [
+          0.0401629546987331,
+          -0.0027286029139622636,
+          -0.07089075438608539
+        ],
+        [
+          -0.038088372270039805,
+          -0.0352742346854118,
+          0.04967307497549811
+        ]
+      ],
+      "covariance": [
+        [
+          4e-06,
+          0.0
+        ],
+        [
+          0.0,
+          4e-06
+        ]
+      ],
+      "rank": 2,
+      "parameter_count": 3,
+      "row_count": 2,
+      "singular_values": [
+        52.23572248797942,
+        14.951041421939157,
+        0.0
+      ],
+      "rank_threshold": 5.223572248797942e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": null,
+      "null_directions_scaled": [
+        [
+          0.8438629779933048,
+          -0.22570916745887107,
+          0.4867757657251378
+        ]
+      ],
+      "covariance_scaled_local_if_full_rank": null,
+      "full_rank_is_not_global_certificate": true,
+      "difference_schemes": [
+        "central_second_order",
+        "central_second_order",
+        "central_second_order"
+      ],
+      "halved_step_max_abs_change": 3.297362383136715e-10,
+      "doubled_step_max_abs_change": 1.3058998327153404e-09
+    },
+    "RT_plus_independent_d": {
+      "observations": [
+        0.10986382064761614,
+        0.8512699895046189,
+        0.1
+      ],
+      "scenarios_are_conditional": true,
+      "jacobian_scaled": [
+        [
+          0.0401629546987331,
+          -0.0027286029139622636,
+          -0.07089075438608539
+        ],
+        [
+          -0.038088372270039805,
+          -0.0352742346854118,
+          0.04967307497549811
+        ],
+        [
+          0.0,
+          0.0,
+          0.050000000000050004
+        ]
+      ],
+      "covariance": [
+        [
+          4e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4e-06
+        ]
+      ],
+      "rank": 3,
+      "parameter_count": 3,
+      "row_count": 3,
+      "singular_values": [
+        56.41360580933596,
+        17.320575605410056,
+        9.726617280900967
+      ],
+      "rank_threshold": 5.641360580933596e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": 5.799920381375427,
+      "null_directions_scaled": [],
+      "covariance_scaled_local_if_full_rank": [
+        [
+          0.006973719772897279,
+          -0.0034206507271599194,
+          0.0027737222348677548
+        ],
+        [
+          -0.00342065072715992,
+          0.005643839482865089,
+          -0.0007418912225334368
+        ],
+        [
+          0.002773722234867755,
+          -0.0007418912225334368,
+          0.0015999999999968038
+        ]
+      ],
+      "full_rank_is_not_global_certificate": true,
+      "difference_schemes": [
+        "central_second_order",
+        "central_second_order",
+        "central_second_order"
+      ],
+      "halved_step_max_abs_change": 3.297362383136715e-10,
+      "doubled_step_max_abs_change": 1.3058998327153404e-09
+    },
+    "angle_resolved_RT": {
+      "observations": [
+        0.10986382064761614,
+        0.8512699895046189,
+        0.10986382064761621,
+        0.8512699895046189,
+        0.21850520994518463,
+        0.744236432744733,
+        0.04480172098443759,
+        0.9092724106693203,
+        0.40928660565237096,
+        0.5604563326443394,
+        0.0011796125938614399,
+        0.9474970388075831
+      ],
+      "scenarios_are_conditional": true,
+      "jacobian_scaled": [
+        [
+          0.0401629546987331,
+          -0.0027286029139622636,
+          -0.07089075438608539
+        ],
+        [
+          -0.038088372270039805,
+          -0.0352742346854118,
+          0.04967307497549811
+        ],
+        [
+          0.04016295469796982,
+          -0.0027286029139622636,
+          -0.07089075438629355
+        ],
+        [
+          -0.03808837227170514,
+          -0.0352742346854118,
+          0.04967307497272255
+        ],
+        [
+          0.07050249503551265,
+          -0.004150892203291789,
+          -0.07097203597331014
+        ],
+        [
+          -0.06610102242565752,
+          -0.03220666194680977,
+          0.05151331851027674
+        ],
+        [
+          0.028079658512362993,
+          -0.001394916690732051,
+          -0.023041358343210694
+        ],
+        [
+          -0.025544736081961616,
+          -0.04336105204505447,
+          0.0006344592368145996
+        ],
+        [
+          0.0916078190363323,
+          -0.004945562743774445,
+          -0.055906974181507696
+        ],
+        [
+          -0.08562175376203296,
+          -0.024552972783253857,
+          0.04087711131028904
+        ],
+        [
+          -0.0009143342957274644,
+          0.0004537056356795303,
+          0.005380847060103408
+        ],
+        [
+          0.0029405752011157915,
+          -0.05032034523066997,
+          -0.02927760299309412
+        ]
+      ],
+      "covariance": [
+        [
+          4e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          4e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4e-06,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4e-06,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4e-06
+        ]
+      ],
+      "rank": 3,
+      "parameter_count": 3,
+      "row_count": 12,
+      "singular_values": [
+        121.68205866259905,
+        45.42118910897123,
+        25.752695151329632
+      ],
+      "rank_threshold": 1.2168205866259904e-05,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": 4.725022291747064,
+      "null_directions_scaled": [],
+      "covariance_scaled_local_if_full_rank": [
+        [
+          0.00072358840980228,
+          -0.0002990033785189672,
+          0.0006442306903331212
+        ],
+        [
+          -0.00029900337851896725,
+          0.0006162603002614377,
+          -0.0002026189841322036
+        ],
+        [
+          0.0006442306903331212,
+          -0.00020261898413220363,
+          0.000720238027460493
+        ]
+      ],
+      "full_rank_is_not_global_certificate": true,
+      "difference_schemes": [
+        "central_second_order",
+        "central_second_order",
+        "central_second_order"
+      ],
+      "halved_step_max_abs_change": 3.325117958752344e-10,
+      "doubled_step_max_abs_change": 1.3058998327153404e-09
+    },
+    "single_ellipsometric_ratio": {
+      "observations": [
+        -0.09811214915766137,
+        -0.04297365105762765
+      ],
+      "scenarios_are_conditional": true,
+      "jacobian_scaled": [
+        [
+          -0.094191402346816,
+          0.004606538645951508,
+          0.05272103866686695
+        ],
+        [
+          -0.04606538640511415,
+          -0.009419140233127288,
+          -0.11838524075505341
+        ]
+      ],
+      "covariance": [
+        [
+          2.5e-05,
+          0.0
+        ],
+        [
+          0.0,
+          2.5e-05
+        ]
+      ],
+      "rank": 2,
+      "parameter_count": 3,
+      "row_count": 2,
+      "singular_values": [
+        26.03387891303248,
+        20.932732613803203,
+        0.0
+      ],
+      "rank_threshold": 2.603387891303248e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": null,
+      "null_directions_scaled": [
+        [
+          -0.003578927625619582,
+          -0.9967323271846548,
+          0.08069609174001599
+        ]
+      ],
+      "covariance_scaled_local_if_full_rank": null,
+      "full_rank_is_not_global_certificate": true,
+      "difference_schemes": [
+        "central_second_order",
+        "central_second_order",
+        "central_second_order"
+      ],
+      "halved_step_max_abs_change": 2.3973878437999474e-10,
+      "doubled_step_max_abs_change": 9.59857193727487e-10
+    },
+    "ellipsometry_plus_independent_d": {
+      "observations": [
+        -0.09811214915766137,
+        -0.04297365105762765,
+        0.1
+      ],
+      "scenarios_are_conditional": true,
+      "jacobian_scaled": [
+        [
+          -0.094191402346816,
+          0.004606538645951508,
+          0.05272103866686695
+        ],
+        [
+          -0.04606538640511415,
+          -0.009419140233127288,
+          -0.11838524075505341
+        ],
+        [
+          0.0,
+          0.0,
+          0.050000000000050004
+        ]
+      ],
+      "covariance": [
+        [
+          2.5e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.5e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4e-06
+        ]
+      ],
+      "rank": 3,
+      "parameter_count": 3,
+      "row_count": 3,
+      "singular_values": [
+        36.048627218549015,
+        20.95999657318978,
+        1.455048195293527
+      ],
+      "rank_threshold": 3.6048627218549012e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": 24.774868169419584,
+      "null_directions_scaled": [],
+      "covariance_scaled_local_if_full_rank": [
+        [
+          0.0022771064988264603,
+          0.0008764889506580332,
+          -7.096110948506129e-05
+        ],
+        [
+          0.0008764889506580332,
+          0.4714983426419177,
+          -0.019762688490915253
+        ],
+        [
+          -7.096110948506129e-05,
+          -0.019762688490915253,
+          0.0015999999999967984
+        ]
+      ],
+      "full_rank_is_not_global_certificate": true,
+      "difference_schemes": [
+        "central_second_order",
+        "central_second_order",
+        "central_second_order"
+      ],
+      "halved_step_max_abs_change": 2.3973878437999474e-10,
+      "doubled_step_max_abs_change": 9.59857193727487e-10
+    },
+    "RT_plus_ellipsometry": {
+      "observations": [
+        0.10986382064761614,
+        0.8512699895046189,
+        -0.09811214915766137,
+        -0.04297365105762765
+      ],
+      "scenarios_are_conditional": true,
+      "jacobian_scaled": [
+        [
+          0.0401629546987331,
+          -0.0027286029139622636,
+          -0.07089075438608539
+        ],
+        [
+          -0.038088372270039805,
+          -0.0352742346854118,
+          0.04967307497549811
+        ],
+        [
+          -0.094191402346816,
+          0.004606538645951508,
+          0.05272103866686695
+        ],
+        [
+          -0.04606538640511415,
+          -0.009419140233127288,
+          -0.11838524075505341
+        ]
+      ],
+      "covariance": [
+        [
+          4e-06,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.5e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          2.5e-05
+        ]
+      ],
+      "rank": 3,
+      "parameter_count": 3,
+      "row_count": 4,
+      "singular_values": [
+        57.32426319887393,
+        23.70835957499529,
+        14.828655513906677
+      ],
+      "rank_threshold": 5.732426319887393e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": 3.8657761753999766,
+      "null_directions_scaled": [],
+      "covariance_scaled_local_if_full_rank": [
+        [
+          0.001711517559626165,
+          -0.0009708402186359282,
+          0.0006557195165462088
+        ],
+        [
+          -0.0009708402186359283,
+          0.004211910417421505,
+          0.00011050611037266148
+        ],
+        [
+          0.0006557195165462088,
+          0.00011050611037266147,
+          0.0007077215779260798
+        ]
+      ],
+      "full_rank_is_not_global_certificate": true,
+      "difference_schemes": [
+        "central_second_order",
+        "central_second_order",
+        "central_second_order"
+      ],
+      "halved_step_max_abs_change": 3.297362383136715e-10,
+      "doubled_step_max_abs_change": 1.3058998327153404e-09
+    },
+    "three_wavelength_R": {
+      "observations": [
+        0.07316018918401931,
+        0.10986382064761614,
+        0.12887005542822097
+      ],
+      "scenarios_are_conditional": true,
+      "jacobian_scaled": [
+        [
+          0.0047356262545400485,
+          -0.0015944329512240785,
+          -0.10136753414928534
+        ],
+        [
+          0.0401629546987331,
+          -0.0027286029139622636,
+          -0.07089075438608539
+        ],
+        [
+          0.06908290845292209,
+          -0.001206790746499653,
+          0.004029855838472152
+        ]
+      ],
+      "covariance": [
+        [
+          4e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4e-06
+        ]
+      ],
+      "rank": 3,
+      "parameter_count": 3,
+      "row_count": 3,
+      "singular_values": [
+        63.77713978189019,
+        36.965913552631406,
+        0.3491566732902654
+      ],
+      "rank_threshold": 6.377713978189019e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": 182.6605207939708,
+      "null_directions_scaled": [],
+      "covariance_scaled_local_if_full_rank": [
+        [
+          0.004856403153981921,
+          0.18479971483634758,
+          -0.0032583995578800164
+        ],
+        [
+          0.18479971483634758,
+          8.195812427415312,
+          -0.1505959748340398
+        ],
+        [
+          -0.0032583995578800164,
+          -0.1505959748340398,
+          0.003055627492442545
+        ]
+      ],
+      "full_rank_is_not_global_certificate": true,
+      "difference_schemes": [
+        "central_second_order",
+        "central_second_order",
+        "central_second_order"
+      ],
+      "halved_step_max_abs_change": 8.684025720739896e-10,
+      "doubled_step_max_abs_change": 3.4719796482285403e-09
+    },
+    "normal_incidence_ratio": {
+      "observations": [
+        -1.0000000000000002,
+        4.0996140656810846e-17
+      ],
+      "scenarios_are_conditional": true,
+      "jacobian_scaled": [
+        [
+          2.220446049250313e-12,
+          -5.551115123125783e-13,
+          1.1102230246251565e-12
+        ],
+        [
+          0.0,
+          -2.0498052646252363e-13,
+          -4.099508462617639e-13
+        ]
+      ],
+      "covariance": [
+        [
+          2.5e-05,
+          0.0
+        ],
+        [
+          0.0,
+          2.5e-05
+        ]
+      ],
+      "rank": 0,
+      "parameter_count": 3,
+      "row_count": 2,
+      "singular_values": [
+        5.09497002062984e-10,
+        8.752632699742172e-11,
+        0.0
+      ],
+      "rank_threshold": 1e-08,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": null,
+      "null_directions_scaled": [
+        [
+          -0.870337903345008,
+          0.21321702773652954,
+          -0.4439036304021583
+        ],
+        [
+          0.2753964280488698,
+          -0.5365446220907437,
+          -0.7976695280148444
+        ],
+        [
+          -0.40825083149816066,
+          -0.8164914987853216,
+          0.4082559136036605
+        ]
+      ],
+      "covariance_scaled_local_if_full_rank": null,
+      "full_rank_is_not_global_certificate": true,
+      "difference_schemes": [
+        "central_second_order",
+        "central_second_order",
+        "central_second_order"
+      ],
+      "halved_step_max_abs_change": 2.220446049250313e-12,
+      "doubled_step_max_abs_change": 1.6653345369377348e-12
+    }
+  },
+  "global_alias": {
+    "theta_n_d_um": [
+      1.8,
+      0.1
+    ],
+    "other_theta_n_d_um": [
+      1.8,
+      0.2688300196593437
+    ],
+    "period_um": 0.16883001965934374,
+    "same_condition_max_abs_difference": 6.938893903907228e-18,
+    "local": {
+      "rank": 2,
+      "parameter_count": 2,
+      "row_count": 4,
+      "singular_values": [
+        56.75299580187261,
+        21.905368118592133
+      ],
+      "rank_threshold": 5.675299580187261e-06,
+      "rtol": 1e-07,
+      "atol": 1e-08,
+      "condition_number": 2.590825933379482,
+      "null_directions_scaled": [],
+      "covariance_scaled_local_if_full_rank": [
+        [
+          0.001075162234086922,
+          0.0008783238069885345
+        ],
+        [
+          0.0008783238069885345,
+          0.0013193153818239552
+        ]
+      ],
+      "full_rank_is_not_global_certificate": true
+    },
+    "heldout_65deg_Rs_difference": 0.005344740742608489
+  },
+  "lossless_RT_rank": {
+    "rank": 1,
+    "parameter_count": 2,
+    "row_count": 2,
+    "singular_values": [
+      57.79866626402117,
+      1.642284525501688e-10
+    ],
+    "rank_threshold": 5.779866626402117e-06,
+    "rtol": 1e-07,
+    "atol": 1e-08,
+    "condition_number": null,
+    "null_directions_scaled": [
+      [
+        -0.8638827189634454,
+        -0.5036930095567386
+      ]
+    ],
+    "covariance_scaled_local_if_full_rank": null,
+    "full_rank_is_not_global_certificate": true
+  },
+  "unknown_thickness_offset": {
+    "effective_norm": 0.0,
+    "nuisance_rank": 1,
+    "interest_information": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "incoherent_ray_mixture": {
+    "normalized_stokes": [
+      -0.9774332894192037,
+      -0.18964480028461808,
+      -0.08524213350653624
+    ],
+    "degree_of_polarization": 0.9993033607791899,
+    "rho_average_not_used": true
+  },
+  "device_validation": "not_run_awaiting_device",
+  "production_qualified": false
+}

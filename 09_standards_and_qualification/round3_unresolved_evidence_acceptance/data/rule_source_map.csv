@@ -1,0 +1,8 @@
+rule,origin,source,implementation
+claim_scope_gate,project_rule,UA-S02;UA-S04,models/acceptance.py:evaluate
+exact_cover_and_proxy_witness,inherited_model_contract,T08R3 copied code,dependencies/t08r3/models/candidate_sets.py
+universal_quantifier_keep_unknown,project_rule,original set argument,reports/03_quantifiers_and_executable_rules.md
+min_gap_direction,project_rule,original interval argument,models/acceptance.py:evaluate
+measurement_interval_rule,project_rule,UA-S01 framework only,kind observation_M0_in
+same_batch_correlation,inherited_model_contract,UA-S05 framework only,reports/02_fixed_chain_and_qualifiers.md
+operator_scope_gate,inherited_model_contract,UA-S06 catalogue boundary only,models/acceptance.py:evaluate

@@ -1,0 +1,117 @@
+{
+  "input_sha256": "4eb1004179522a153c2de9bfa3adbacfe306ce3de5343fadfbb84a7129c2812a",
+  "check": {
+    "status": "blocked_evidence",
+    "errors": [
+      {
+        "code": "MISSING_INSTRUMENT_IDENTITY",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_ELECTRICAL_CURRENT_CORRECTION",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_AREA_NORMALIZATION",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_ENERGY_ANGLE_RESPONSE",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_SPECIES_CHARGE_STATE",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_SURFACE_REPRESENTATIVENESS",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_TIME_ALIGNMENT",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_NEUTRAL_COVERAGE",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_MATERIAL_IDENTITY",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_FILM_STATE",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_OPTICAL_OPERATOR",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_TRACEABILITY",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "MISSING_RAW_DATA",
+        "detail": "Required evidence reference is missing"
+      },
+      {
+        "code": "NOT_INDEPENDENT_OBSERVATION",
+        "detail": "Substituted, held, unknown or synthetic values cannot validate actual response"
+      },
+      {
+        "code": "WRONG_OBSERVABLE",
+        "detail": "Source setpoints or charge-only spectra cannot populate a species/angle-resolved flux packet"
+      },
+      {
+        "code": "NEUTRALS_UNKNOWN",
+        "detail": "Total kinetic energy and epsilon cannot be claimed; observed components remain reportable"
+      },
+      {
+        "code": "SOURCE_IDENTITY_INCOMPLETE",
+        "detail": "Actual configuration identity missing"
+      },
+      {
+        "code": "SOURCE_FAMILY_UNKNOWN",
+        "detail": "No default Kaufman inference"
+      },
+      {
+        "code": "NET_NOT_OBSERVED",
+        "detail": "QCM/source arrival alone is not local net film inventory"
+      },
+      {
+        "code": "SURFACE_CHARGING_UNVERIFIED",
+        "detail": "Conductive probe is not equivalent to actual floating dielectric"
+      },
+      {
+        "code": "HISTORY_INCOMPLETE",
+        "detail": "Missing time intervals or state events"
+      },
+      {
+        "code": "RAW_MISSING",
+        "detail": "Actual packet needs traceable raw records"
+      },
+      {
+        "code": "TIME_WINDOW_UNKNOWN",
+        "detail": "Positive, clock-referenced observation window required"
+      },
+      {
+        "code": "COORDINATE_UNKNOWN",
+        "detail": "Position and unit surface normal in declared frame required"
+      },
+      {
+        "code": "SPECTRUM_MISSING",
+        "detail": "This joint-spectrum packet requires nonempty measured or synthetic cells"
+      }
+    ],
+    "component_calculation": null,
+    "actual_validation": "not_run_awaiting_device",
+    "production_release": false,
+    "note": "Schema/evidence checks do not authenticate evidence or approve device/model validity"
+  },
+  "device_validation": "not_run_awaiting_device",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

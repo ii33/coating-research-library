@@ -1,0 +1,85 @@
+COMMAND ['python', '-B', 'verification/reader_check.py']
+{
+  "status": "integrity_passed",
+  "payload_files": 78,
+  "copied_dependencies": 23,
+  "html_local_references_checked": true,
+  "browser_layout": "unverified_known_socket_permission_boundary",
+  "errors": [],
+  "scientific_certification": false
+}
+
+COMMAND ['python', '-B', '-m', 'unittest', 'discover', '-s', 'tests', '-v']
+test_budget (test_driver.DriverTests.test_budget) ... ok
+test_default_plan (test_driver.DriverTests.test_default_plan) ... ok
+test_run_refuses_before_creating_output (test_driver.DriverTests.test_run_refuses_before_creating_output) ... ok
+test_schema_and_semantic (test_driver.DriverTests.test_schema_and_semantic) ... ok
+test_schema_rejects_extra (test_driver.DriverTests.test_schema_rejects_extra) ... ok
+test_contract_mismatch_rejected (test_response.Tests.test_contract_mismatch_rejected) ... ok
+test_cross_zero_no_reward (test_response.Tests.test_cross_zero_no_reward) ... ok
+test_density_basis (test_response.Tests.test_density_basis) ... ok
+test_density_uncertainty (test_response.Tests.test_density_uncertainty) ... ok
+test_finite_source_multiple_nodes (test_response.Tests.test_finite_source_multiple_nodes) ... ok
+test_invalid_bounds (test_response.Tests.test_invalid_bounds) ... ok
+test_inventory (test_response.Tests.test_inventory) ... ok
+test_irrelevant_temperature_allowed (test_response.Tests.test_irrelevant_temperature_allowed) ... ok
+test_negative_not_zero (test_response.Tests.test_negative_not_zero) ... ok
+test_normalization_states (test_response.Tests.test_normalization_states) ... ok
+test_ranking_reverses_with_angle (test_response.Tests.test_ranking_reverses_with_angle) ... ok
+test_real_stays_unknown (test_response.Tests.test_real_stays_unknown) ... ok
+test_refinement_enclosure (test_response.Tests.test_refinement_enclosure) ... ok
+test_response_outside_domain (test_response.Tests.test_response_outside_domain) ... ok
+test_reverse_motion (test_response.Tests.test_reverse_motion) ... ok
+test_same_scale_target_preserves (test_response.Tests.test_same_scale_target_preserves) ... ok
+test_scalar_fixed_target_can_reverse (test_response.Tests.test_scalar_fixed_target_can_reverse) ... ok
+test_target_floor (test_response.Tests.test_target_floor) ... ok
+test_uncertainty_overlap (test_response.Tests.test_uncertainty_overlap) ... ok
+test_unit_response_equivalence (test_response.Tests.test_unit_response_equivalence) ... ok
+test_unknown (test_response.Tests.test_unknown) ... ok
+test_unknown_temperature_dependency (test_response.Tests.test_unknown_temperature_dependency) ... ok
+test_upstream_full_and_events_retained (test_response.Tests.test_upstream_full_and_events_retained) ... ok
+test_upstream_unknown_not_zero (test_response.Tests.test_upstream_unknown_not_zero) ... ok
+test_weighted_event_finite_difference (test_response.Tests.test_weighted_event_finite_difference) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 2.000s
+
+OK
+
+COMMAND ['python', '-B', 'models/device_driver.py']
+{
+  "status": "plan_only_no_execution",
+  "plan": {
+    "schema_version": "T04-r3-response-validation-1",
+    "execution_mode": "plan_only",
+    "execution_authorized": false,
+    "authorization_evidence": "",
+    "host_access_confirmed": false,
+    "device_label": "",
+    "input_sha256": "f0e9e03695e5f8ebf5ba3486e9169815624e993ae8665676233bebbbf8d76f84",
+    "panel_levels": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "max_forward_calls": 16,
+    "max_total_panels": 40000,
+    "max_wall_seconds": 600,
+    "relative_thickness_tolerance": 0.001,
+    "stop_when_resolved": true,
+    "purpose": "bounded material re-evaluation only; no hostquota bypass, no source-clock changes, no historical oracle completion"
+  },
+  "work_estimate": {
+    "forward_calls_upper": 16,
+    "rational_panel_visits_upper": 30720,
+    "upper_includes_upstream_and_response": true,
+    "continuous_source_validation": false,
+    "historical_point2_point12_run": false
+  },
+  "host_permission_state": "unrestored_not_probed",
+  "formal_model_chain": "pending"
+}
+
+COMMAND ['python', '-B', 'models/run_examples.py', '--output', '/tmp/T04-r3-detached-xl0ld1ci/recomputed.json']
+/tmp/T04-r3-detached-xl0ld1ci/recomputed.json

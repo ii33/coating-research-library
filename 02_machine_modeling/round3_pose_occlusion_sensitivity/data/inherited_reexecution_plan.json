@@ -1,0 +1,20 @@
+{
+  "status": "not_run_awaiting_device",
+  "point_set": "selected",
+  "point_set_options": ["selected", "diagnostic_13", "area_236"],
+  "event_leaf_width_s": 1e-8,
+  "per_point_work_limit": 100000000000,
+  "per_point_wall_seconds": 86400,
+  "rates": {"vapor": {"kind":"constant","value":1}, "ion":{"kind":"constant","value":1}},
+  "reference_levels": {
+    "device_base": {"source_epsabs_m2":2e-9,"source_epsrel":2e-8,"time_epsabs_s_m2":2e-8,"time_epsrel":2e-7,"source_limit":1000,"time_limit":1000,"max_time_panel_s":0.125},
+    "device_tight": {"source_epsabs_m2":2e-11,"source_epsrel":2e-10,"time_epsabs_s_m2":2e-10,"time_epsrel":2e-9,"source_limit":4000,"time_limit":4000,"max_time_panel_s":0.0625}
+  },
+  "fixed_comparisons": {
+    "gauss_16x128_T4096": {"radial_order":16,"azimuth_nodes":128,"time_panels":4096,"family":"gauss","phase":0.5,"time_chunk":16},
+    "equalarea_32x257_T8191": {"radial_order":32,"azimuth_nodes":257,"time_panels":8191,"family":"equal_area","phase":0.271828,"time_chunk":16},
+    "gauss_64x512_T16381": {"radial_order":64,"azimuth_nodes":512,"time_panels":16381,"family":"gauss","phase":0.5,"time_chunk":16}
+  },
+  "acceptance": {"historical_integral_relative":0.003,"duration_absolute_ms":10,"reference_disagreement_relative":0.00005,"reference_disagreement_absolute_s_m2":0.000002,"event_width_ms":0.1,"require_no_quad_warnings":true,"strict_error_certificate":false,"physical_certification":false},
+  "stop_rule":"Fixed configured cases/levels once. Any budget, QUADPACK warning, invalid geometry, unknown rate, unresolved support or overlapping objective interval => report unresolved, never automatic unlimited refinement."
+}

@@ -1,0 +1,77 @@
+{
+  "bounded_scope": "same two channels and sample state; templates only; no hardware or new measurement executed",
+  "requests": [
+    {
+      "id": "REQ-COMPUTE",
+      "purpose": "同合同有界计算",
+      "entry_condition": "确切主张和当前跨界叶盒",
+      "deliverable": "保留exact坐标、data/constraint/optimum三状态；预算screen/validate_point重放；原结果只读",
+      "stopping_condition": "达到所问充分判据或预算耗尽即停；未决输出UNKNOWN",
+      "status": "planned_not_run_heavy"
+    },
+    {
+      "id": "REQ-SAME-CHANNEL",
+      "purpose": "有限同通道数据会话",
+      "entry_condition": "先获得真实样品与合法测量方法、规定用途和预先规则",
+      "deliverable": "同M0/M1、同状态、原始未舍入读数、暗/参考、顺序、共享校准/漂移、不确定度构造；具体重复数unknown待方法确定",
+      "stopping_condition": "一次预先限定会话；保留首测与失败，不测到通过",
+      "status": "template_only_no_measurement"
+    },
+    {
+      "id": "REQ-CORRELATION",
+      "purpose": "共同误差与样品证据",
+      "entry_condition": "同批、跨通道或重复合并",
+      "deliverable": "同一样品/批标识、共同z或z_b、公共校准项、配对顺序、误差联合域；不得默认独立",
+      "stopping_condition": "能合法构造联合外域才用；否则保守域或blocked",
+      "status": "not_acquired"
+    },
+    {
+      "id": "REQ-SOURCE",
+      "purpose": "联合来源实现",
+      "entry_condition": "声明真实Q/ρ/留存可实现",
+      "deliverable": "联合可达域、共同输入见证、映射、库存及状态guard；保持完整forward/response",
+      "stopping_condition": "缺一关键共同输入即不签source_exists",
+      "status": "not_acquired"
+    },
+    {
+      "id": "REQ-GUARDS",
+      "purpose": "净量/状态资格",
+      "entry_condition": "有负净、跨零、近零或未知来源/库存",
+      "deliverable": "signed净量、初始库存、材料状态与guard解释；1e-15m不是成核阈值",
+      "stopping_condition": "guard仍unknown则blocked；不填零",
+      "status": "not_acquired"
+    },
+    {
+      "id": "REQ-OPERATOR",
+      "purpose": "新算子/状态合同",
+      "entry_condition": "改变谱/角/带宽/背面/温度/状态",
+      "deliverable": "新版本/hash、父合同引用、单位与响应、材料域和验证计划",
+      "stopping_condition": "新合同审定前不复用旧结果",
+      "status": "outside_current_execution"
+    },
+    {
+      "id": "REQ-UNCERTAINTY",
+      "purpose": "覆盖/风险解释",
+      "entry_condition": "需要概率或实际计量声明",
+      "deliverable": "真实校准和模型误差、分布/相关/覆盖家族、方法验证",
+      "stopping_condition": "无真实覆盖依据不出95%或风险值",
+      "status": "not_acquired"
+    },
+    {
+      "id": "REQ-RULE",
+      "purpose": "客户用途和事先规则",
+      "entry_condition": "真实符合性判断",
+      "deliverable": "明确被测量、客户限值、版本、风险、授权及原始规则日期",
+      "stopping_condition": "客户要求仍unknown则blocked",
+      "status": "unknown_customer_criteria"
+    },
+    {
+      "id": "REQ-REAL",
+      "purpose": "真实测量证据",
+      "entry_condition": "实际样品测量或生产范围",
+      "deliverable": "受控样品/批链、方法、仪器校准适用域、原始数据及独立验证",
+      "stopping_condition": "合成包不可改用途字符串升级实际结论",
+      "status": "not_acquired"
+    }
+  ]
+}

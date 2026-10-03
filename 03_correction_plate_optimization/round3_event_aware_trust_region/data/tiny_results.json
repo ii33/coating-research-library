@@ -1,0 +1,567 @@
+{
+  "dataset": "inherited_T02_finite_thickness_affine_slice",
+  "new_physical_dataset": false,
+  "baseline_derivative_decomposition": {
+    "target_shift_total": 0.287274390379637,
+    "target_shift_smooth_only": -0.4061427693836769,
+    "half_width_total": -14.764007026627215,
+    "half_width_smooth_only": 0.0
+  },
+  "event_aware_local_trial": {
+    "status": "single_trial_complete",
+    "method": "event_aware",
+    "baseline": {
+      "contract_signature": "c5421e188ce08dc8c5a848cb464844c0353968c475b9f401d7549b386226eee3",
+      "objective_definition": {
+        "definition": "0.5*((D-target)/target)^2",
+        "target_s_m2": 1.0,
+        "denominator_floor": 1e-08
+      },
+      "design": {
+        "plate_shift_m": 0.0,
+        "half_width_m": 0.08
+      },
+      "geometry_status": "differentiable_conditional",
+      "objective_status": "bounded_encoded_discrete_source",
+      "value_interval": {
+        "lo": 1.0994016796411163,
+        "hi": 1.1053611765829772
+      },
+      "objective_interval": {
+        "lo": 0.004940346957737562,
+        "hi": 0.005550488765474648
+      },
+      "value_estimate_s_m2": 1.1023811408179522,
+      "objective_estimate": 0.005240948997592683,
+      "total_gradient": [
+        0.287274390379637,
+        1.4462685090286476,
+        0.11490975615185489,
+        1.102381140817952,
+        -1.7335428994082838,
+        -14.764007026627215,
+        -3.0097023255557747
+      ],
+      "smooth_gradient": [
+        -0.4061427693836769,
+        0.4061427693836769,
+        -0.1624571077534706,
+        1.102381140817952,
+        0.0,
+        0.0,
+        -1.8285817634255976
+      ],
+      "event_gradient": [
+        0.6934171597633139,
+        1.0401257396449708,
+        0.2773668639053255,
+        0.0,
+        -1.7335428994082838,
+        -14.764007026627215,
+        -1.181120562130177
+      ],
+      "physical_certification": false,
+      "continuous_source_certification": false,
+      "input_uncertainty_qualified": true,
+      "panel_count": 128,
+      "numerical_evidence": "rational_enclosure_not_quadrature_difference",
+      "event_identities": [
+        "0x0.0p+0:lower:z_near_m",
+        "0x0.0p+0:upper:z_near_m"
+      ],
+      "cache_key": "458da1cb8d0014312c9699562a90be25a46b6c518f256437eefd93461d20c4cf"
+    },
+    "trial": {
+      "contract_signature": "c5421e188ce08dc8c5a848cb464844c0353968c475b9f401d7549b386226eee3",
+      "objective_definition": {
+        "definition": "0.5*((D-target)/target)^2",
+        "target_s_m2": 1.0,
+        "denominator_floor": 1e-08
+      },
+      "design": {
+        "plate_shift_m": 0.00023323141583624784,
+        "half_width_m": 0.08198635422487205
+      },
+      "geometry_status": "differentiable_conditional",
+      "objective_status": "bounded_encoded_discrete_source",
+      "value_interval": {
+        "lo": 1.0698560042428282,
+        "hi": 1.075542595808519
+      },
+      "objective_interval": {
+        "lo": 0.0024399306643870175,
+        "hi": 0.0028533418907446336
+      },
+      "value_estimate_s_m2": 1.0726989895868932,
+      "objective_estimate": 0.0026425715434776065,
+      "total_gradient": [
+        0.30445798745113606,
+        1.4585266504477823,
+        0.12178319498045445,
+        1.0726989895868937,
+        -1.7629846378989198,
+        -14.711290137728653,
+        -2.980432931877322
+      ],
+      "smooth_gradient": [
+        -0.4007358677084315,
+        0.4007358677084315,
+        -0.16029434708337262,
+        1.0726989895868937,
+        0.0,
+        0.0,
+        -1.7738967041374392
+      ],
+      "event_gradient": [
+        0.7051938551595676,
+        1.057790782739351,
+        0.28207754206382707,
+        0.0,
+        -1.7629846378989198,
+        -14.711290137728653,
+        -1.2065362277398828
+      ],
+      "physical_certification": false,
+      "continuous_source_certification": false,
+      "input_uncertainty_qualified": true,
+      "panel_count": 128,
+      "numerical_evidence": "rational_enclosure_not_quadrature_difference",
+      "event_identities": [
+        "0x0.0p+0:lower:z_near_m",
+        "0x0.0p+0:upper:z_near_m"
+      ],
+      "cache_key": "e0fbc9d4c10a5c1f2b1172fb4f2d28e21d2c57107e7962bd4ab55226db76872c"
+    },
+    "step": {
+      "alpha": 1.0,
+      "unclipped_increment_m": [
+        0.00023323141583624784,
+        0.0019863542248720442
+      ],
+      "actual_encoded_increment_m": [
+        0.00023323141583624784,
+        0.0019863542248720473
+      ],
+      "certificate": {
+        "status": "encoded_affine_segment_certified",
+        "scope": "all beta in [0,1] between encoded endpoints; no input uncertainty",
+        "zero_remainder_reason": "only b,a vary; H,z,v,poses,source clock fixed",
+        "angular_cutoff": "invariant_strict_positive_cosines_H_positive",
+        "transversality": "fixed_nonzero_velocity_above_floor",
+        "event_identities": [
+          "0x0.0p+0:lower:z_near_m",
+          "0x0.0p+0:upper:z_near_m"
+        ],
+        "guards": [
+          {
+            "id": "face:0x0.0p+0:lower",
+            "minimum_margin_exact": "1285550435387908705213817487642231163272288871035473016869/19283256531107883663315468284583881880756671155598501347328",
+            "minimum_margin_float_lower": 0.06666666666566665,
+            "positive": true
+          },
+          {
+            "id": "face:0x0.0p+0:upper",
+            "minimum_margin_exact": "1285550435387908705213817487642231163272288871035473016869/19283256531107883663315468284583881880756671155598501347328",
+            "minimum_margin_float_lower": 0.06666666666566665,
+            "positive": true
+          },
+          {
+            "id": "endpoint:0x0.0p+0:lower:z_near_m:t0",
+            "minimum_margin_exact": "415838387678916174719874676345923699308878046558986070285/1004336277661869033717452300366345429105066447806740299776",
+            "minimum_margin_float_lower": 0.41404298234352627,
+            "positive": true
+          },
+          {
+            "id": "endpoint:0x0.0p+0:lower:z_near_m:t1",
+            "minimum_margin_exact": "1581829637217010048071428906990081154659220086164904896781/1004336277661869033717452300366345429105066447806740299776",
+            "minimum_margin_float_lower": 1.5749999999,
+            "positive": true
+          },
+          {
+            "id": "endpoint:0x0.0p+0:upper:z_near_m:t0",
+            "minimum_margin_exact": "1431179195567729706951776811016769577465808592761791605005/1004336277661869033717452300366345429105066447806740299776",
+            "minimum_margin_float_lower": 1.4249999998999998,
+            "positive": true
+          },
+          {
+            "id": "endpoint:0x0.0p+0:upper:z_near_m:t1",
+            "minimum_margin_exact": "43350830359847054460684222208276383987959488822866398465/77256636743220694901342484643565033008082034446672330752",
+            "minimum_margin_float_lower": 0.5611275896455732,
+            "positive": true
+          },
+          {
+            "id": "order:0x0.0p+0:lower:z_near_m:0x0.0p+0:upper:z_near_m",
+            "minimum_margin_exact": "502168138730500843794150558637079936957447891656607951117/502168138830934516858726150183172714552533223903370149888",
+            "minimum_margin_float_lower": 0.9999999997999999,
+            "positive": true
+          },
+          {
+            "id": "positive_half_width",
+            "minimum_margin_exact": "5764607523034235/72057594037927936",
+            "minimum_margin_float_lower": 0.08,
+            "positive": true
+          }
+        ]
+      }
+    },
+    "predicted_reduction": {
+      "lo": 0.0026019176656611807,
+      "hi": 0.002601917665661181
+    },
+    "prediction_qualification": "exact_value_of_encoded_local_model_not_true_Taylor_bound",
+    "comparison": {
+      "relation": "b_better",
+      "reason": "disjoint_qualified_objective_intervals"
+    },
+    "decision": {
+      "decision": "accept",
+      "reason": "bounded_actual_reduction_over_encoded_positive_model_reduction",
+      "rho": {
+        "lo": 0.8021026547212412,
+        "hi": 1.195486752766713
+      },
+      "actual_reduction": {
+        "lo": 0.0020870050669929284,
+        "hi": 0.0031105581010876307
+      }
+    },
+    "next_radius_proposal": 2.0,
+    "next_iteration_requires_fresh_forward_jacobian_topology": true,
+    "global_optimality_claim": false
+  },
+  "omitted_event_local_trial": {
+    "status": "zero_model_gradient_not_stationarity_proof",
+    "method": "omit_events",
+    "baseline": {
+      "contract_signature": "c5421e188ce08dc8c5a848cb464844c0353968c475b9f401d7549b386226eee3",
+      "objective_definition": {
+        "definition": "0.5*((D-target)/target)^2",
+        "target_s_m2": 1.0,
+        "denominator_floor": 1e-08
+      },
+      "design": {
+        "plate_shift_m": 0.0,
+        "half_width_m": 0.08
+      },
+      "geometry_status": "differentiable_conditional",
+      "objective_status": "bounded_encoded_discrete_source",
+      "value_interval": {
+        "lo": 1.0994016796411163,
+        "hi": 1.1053611765829772
+      },
+      "objective_interval": {
+        "lo": 0.004940346957737562,
+        "hi": 0.005550488765474648
+      },
+      "value_estimate_s_m2": 1.1023811408179522,
+      "objective_estimate": 0.005240948997592683,
+      "total_gradient": [
+        0.287274390379637,
+        1.4462685090286476,
+        0.11490975615185489,
+        1.102381140817952,
+        -1.7335428994082838,
+        -14.764007026627215,
+        -3.0097023255557747
+      ],
+      "smooth_gradient": [
+        -0.4061427693836769,
+        0.4061427693836769,
+        -0.1624571077534706,
+        1.102381140817952,
+        0.0,
+        0.0,
+        -1.8285817634255976
+      ],
+      "event_gradient": [
+        0.6934171597633139,
+        1.0401257396449708,
+        0.2773668639053255,
+        0.0,
+        -1.7335428994082838,
+        -14.764007026627215,
+        -1.181120562130177
+      ],
+      "physical_certification": false,
+      "continuous_source_certification": false,
+      "input_uncertainty_qualified": true,
+      "panel_count": 128,
+      "numerical_evidence": "rational_enclosure_not_quadrature_difference",
+      "event_identities": [
+        "0x0.0p+0:lower:z_near_m",
+        "0x0.0p+0:upper:z_near_m"
+      ],
+      "cache_key": "458da1cb8d0014312c9699562a90be25a46b6c518f256437eefd93461d20c4cf"
+    },
+    "trial": {
+      "contract_signature": "c5421e188ce08dc8c5a848cb464844c0353968c475b9f401d7549b386226eee3",
+      "objective_definition": {
+        "definition": "0.5*((D-target)/target)^2",
+        "target_s_m2": 1.0,
+        "denominator_floor": 1e-08
+      },
+      "design": {
+        "plate_shift_m": 0.0,
+        "half_width_m": 0.08
+      },
+      "geometry_status": "differentiable_conditional",
+      "objective_status": "bounded_encoded_discrete_source",
+      "value_interval": {
+        "lo": 1.0994016796411163,
+        "hi": 1.1053611765829772
+      },
+      "objective_interval": {
+        "lo": 0.004940346957737562,
+        "hi": 0.005550488765474648
+      },
+      "value_estimate_s_m2": 1.1023811408179522,
+      "objective_estimate": 0.005240948997592683,
+      "total_gradient": [
+        0.287274390379637,
+        1.4462685090286476,
+        0.11490975615185489,
+        1.102381140817952,
+        -1.7335428994082838,
+        -14.764007026627215,
+        -3.0097023255557747
+      ],
+      "smooth_gradient": [
+        -0.4061427693836769,
+        0.4061427693836769,
+        -0.1624571077534706,
+        1.102381140817952,
+        0.0,
+        0.0,
+        -1.8285817634255976
+      ],
+      "event_gradient": [
+        0.6934171597633139,
+        1.0401257396449708,
+        0.2773668639053255,
+        0.0,
+        -1.7335428994082838,
+        -14.764007026627215,
+        -1.181120562130177
+      ],
+      "physical_certification": false,
+      "continuous_source_certification": false,
+      "input_uncertainty_qualified": true,
+      "panel_count": 128,
+      "numerical_evidence": "rational_enclosure_not_quadrature_difference",
+      "event_identities": [
+        "0x0.0p+0:lower:z_near_m",
+        "0x0.0p+0:upper:z_near_m"
+      ],
+      "cache_key": "458da1cb8d0014312c9699562a90be25a46b6c518f256437eefd93461d20c4cf"
+    },
+    "encoded_increment_m": [
+      0.0,
+      0.0
+    ],
+    "predicted_reduction": {
+      "lo": 0.0,
+      "hi": 0.0
+    },
+    "decision": {
+      "decision": "reject",
+      "reason": "pathological_predicted_reduction_denominator",
+      "rho": null
+    }
+  },
+  "target_shift_sign_counterexample": [
+    {
+      "method": "event_aware",
+      "target_shift_increment_m": -0.0001,
+      "forward_value_s_m2": 1.1023523806861817,
+      "same_objective_value": 0.005238004916064529,
+      "ranking": "diagnostic_float_only_not_interval_resolved"
+    },
+    {
+      "method": "omit_events",
+      "target_shift_increment_m": 0.0001,
+      "forward_value_s_m2": 1.1024098355659588,
+      "same_objective_value": 0.005243887210323364,
+      "ranking": "diagnostic_float_only_not_interval_resolved"
+    }
+  ],
+  "half_width_pure_event": {
+    "smooth_derivative": 0.0,
+    "event_derivative": -14.764007026627215
+  },
+  "unsafe_unclipped_step": {
+    "status": "reject_topology_crossing_or_guard",
+    "scope": "all beta in [0,1] between encoded endpoints; no input uncertainty",
+    "zero_remainder_reason": "only b,a vary; H,z,v,poses,source clock fixed",
+    "angular_cutoff": "invariant_strict_positive_cosines_H_positive",
+    "transversality": "fixed_nonzero_velocity_above_floor",
+    "event_identities": [
+      "0x0.0p+0:lower:z_near_m",
+      "0x0.0p+0:upper:z_near_m"
+    ],
+    "guards": [
+      {
+        "id": "face:0x0.0p+0:lower",
+        "minimum_margin_exact": "-9641628265650356553261109661525495154168107204003198691143/96416282655539418316577341422919409403783355777992506736640",
+        "minimum_margin_float_lower": -0.100000000001,
+        "positive": false
+      },
+      {
+        "id": "face:0x0.0p+0:upper",
+        "minimum_margin_exact": "1285550435387908705213817487642231163272288871035473016869/19283256531107883663315468284583881880756671155598501347328",
+        "minimum_margin_float_lower": 0.06666666666566665,
+        "positive": true
+      },
+      {
+        "id": "endpoint:0x0.0p+0:lower:z_near_m:t0",
+        "minimum_margin_exact": "426842917905860763831101879681083755699695841039707171085/1004336277661869033717452300366345429105066447806740299776",
+        "minimum_margin_float_lower": 0.42499999990000004,
+        "positive": true
+      },
+      {
+        "id": "endpoint:0x0.0p+0:lower:z_near_m:t1",
+        "minimum_margin_exact": "326409290139673825614442276940350554139629395245968288013/1004336277661869033717452300366345429105066447806740299776",
+        "minimum_margin_float_lower": 0.3249999999,
+        "positive": true
+      },
+      {
+        "id": "endpoint:0x0.0p+0:upper:z_near_m:t0",
+        "minimum_margin_exact": "1431179195567729706951776811016769577465808592761791605005/1004336277661869033717452300366345429105066447806740299776",
+        "minimum_margin_float_lower": 1.4249999998999998,
+        "positive": true
+      },
+      {
+        "id": "endpoint:0x0.0p+0:upper:z_near_m:t1",
+        "minimum_margin_exact": "-677926987522195117506232654395335267626483356476116145907/1004336277661869033717452300366345429105066447806740299776",
+        "minimum_margin_float_lower": -0.6750000000999999,
+        "positive": false
+      },
+      {
+        "id": "order:0x0.0p+0:lower:z_near_m:0x0.0p+0:upper:z_near_m",
+        "minimum_margin_exact": "502168138730500843794150558637079936957447891656607951117/502168138830934516858726150183172714552533223903370149888",
+        "minimum_margin_float_lower": 0.9999999997999999,
+        "positive": true
+      },
+      {
+        "id": "positive_half_width",
+        "minimum_margin_exact": "5764607523034235/72057594037927936",
+        "minimum_margin_float_lower": 0.08,
+        "positive": true
+      }
+    ]
+  },
+  "clipped_step": {
+    "alpha": 0.31999999999519996,
+    "unclipped_increment_m": [
+      0.2,
+      0.0
+    ],
+    "actual_encoded_increment_m": [
+      0.06399999999903999,
+      0.0
+    ],
+    "certificate": {
+      "status": "encoded_affine_segment_certified",
+      "scope": "all beta in [0,1] between encoded endpoints; no input uncertainty",
+      "zero_remainder_reason": "only b,a vary; H,z,v,poses,source clock fixed",
+      "angular_cutoff": "invariant_strict_positive_cosines_H_positive",
+      "transversality": "fixed_nonzero_velocity_above_floor",
+      "event_identities": [
+        "0x0.0p+0:lower:z_near_m",
+        "0x0.0p+0:upper:z_near_m"
+      ],
+      "guards": [
+        {
+          "id": "face:0x0.0p+0:lower",
+          "minimum_margin_exact": "1285550435387909496582063656735168734836819878750201551033/96416282655539418316577341422919409403783355777992506736640",
+          "minimum_margin_float_lower": 0.013333333333133338,
+          "positive": true
+        },
+        {
+          "id": "face:0x0.0p+0:upper",
+          "minimum_margin_exact": "1285550435387908705213817487642231163272288871035473016869/19283256531107883663315468284583881880756671155598501347328",
+          "minimum_margin_float_lower": 0.06666666666566665,
+          "positive": true
+        },
+        {
+          "id": "endpoint:0x0.0p+0:lower:z_near_m:t0",
+          "minimum_margin_exact": "426842917905860763831101879681083755699695841039707171085/1004336277661869033717452300366345429105066447806740299776",
+          "minimum_margin_float_lower": 0.42499999990000004,
+          "positive": true
+        },
+        {
+          "id": "endpoint:0x0.0p+0:lower:z_near_m:t1",
+          "minimum_margin_exact": "1180095126158288550314774381277833680824762184911765268749/1004336277661869033717452300366345429105066447806740299776",
+          "minimum_margin_float_lower": 1.174999999906,
+          "positive": true
+        },
+        {
+          "id": "endpoint:0x0.0p+0:upper:z_near_m:t0",
+          "minimum_margin_exact": "1431179195567729706951776811016769577465808592761791605005/1004336277661869033717452300366345429105066447806740299776",
+          "minimum_margin_float_lower": 1.4249999998999998,
+          "positive": true
+        },
+        {
+          "id": "endpoint:0x0.0p+0:upper:z_near_m:t1",
+          "minimum_margin_exact": "175758848496419607194099449942147859058649433189680834829/1004336277661869033717452300366345429105066447806740299776",
+          "minimum_margin_float_lower": 0.17499999990600013,
+          "positive": true
+        },
+        {
+          "id": "order:0x0.0p+0:lower:z_near_m:0x0.0p+0:upper:z_near_m",
+          "minimum_margin_exact": "502168138730500843794150558637079936957447891656607951117/502168138830934516858726150183172714552533223903370149888",
+          "minimum_margin_float_lower": 0.9999999997999999,
+          "positive": true
+        },
+        {
+          "id": "positive_half_width",
+          "minimum_margin_exact": "5764607523034235/72057594037927936",
+          "minimum_margin_float_lower": 0.08,
+          "positive": true
+        }
+      ]
+    }
+  },
+  "clipped_plate_shift_m": 0.06399999999903999,
+  "heuristic_only": {
+    "alpha": 0.3199999999952,
+    "claim": "first_order_screen_only_no_remainder_evidence"
+  },
+  "nonlinear_guard_counterexample": {
+    "guard": "1-alpha-4*alpha^2",
+    "first_order_limit_with_0.8_margin": 0.8,
+    "actual_guard": -2.3600000000000003,
+    "positive_root": 0.3903882032022076,
+    "conclusion": "first_order_screen_is_not_general_safety_certificate"
+  },
+  "overlap_decision": {
+    "relation": "unresolved",
+    "reason": "overlap_or_equal_objective_intervals"
+  },
+  "unknown_geometry_decision": {
+    "relation": "unresolved",
+    "reason": "unknown_geometry_input_or_error"
+  },
+  "pathological_predicted_denominators": [
+    {
+      "decision": "reject",
+      "reason": "pathological_predicted_reduction_denominator",
+      "rho": null
+    },
+    {
+      "decision": "reject",
+      "reason": "pathological_predicted_reduction_denominator",
+      "rho": null
+    },
+    {
+      "decision": "reject",
+      "reason": "pathological_predicted_reduction_denominator",
+      "rho": null
+    }
+  ],
+  "inherited_status": {
+    "point12": "partial_unchanged",
+    "point2": "conditional_envelope_not_strict",
+    "continuous_source_validation": "not_run",
+    "formal_model_chain": "pending"
+  }
+}

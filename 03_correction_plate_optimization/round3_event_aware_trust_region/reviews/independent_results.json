@@ -1,0 +1,224 @@
+{
+  "findings": {
+    "endpoint_crossing_minimal_counterexample": {
+      "assessment": "same active face, but event crosses t0; endpoint guard rejects",
+      "candidate_event_time_s": -0.012499999999999942,
+      "candidate_lower_near_projected_edge_m": -0.375,
+      "certificate_status": "reject_topology_crossing_or_guard",
+      "design_change": {
+        "half_width_m": 0.08,
+        "plate_shift_m": [
+          0.0,
+          -0.07
+        ]
+      },
+      "negative_guard_ids": [
+        "endpoint:0x0.0p+0:lower:z_near_m:t0"
+      ],
+      "one_source_node": 0.0,
+      "target_x_at_t0_m": -0.37
+    },
+    "face_switch_minimal_counterexample": {
+      "assessment": "required active-face branch flip is detected; segment is rejected",
+      "certificate_status": "reject_topology_crossing_or_guard",
+      "design_change": {
+        "half_width_m": 0.08,
+        "plate_shift_m": [
+          0.0,
+          0.09
+        ]
+      },
+      "exact_tie_at_plate_shift_m": 0.08,
+      "negative_guard_ids": [
+        "face:0x0.0p+0:lower"
+      ],
+      "one_source_node": 0.0,
+      "projected_lower_edge_at_base_m": {
+        "far": -0.13333333333333333,
+        "near": -0.19999999999999998
+      },
+      "projected_lower_edge_at_candidate_m": {
+        "far": 0.01666666666666666,
+        "near": 0.024999999999999988
+      }
+    },
+    "rational_darboux_checks": {
+      "default_one_node": {
+        "exact_bound_numerator_denominator_bit_lengths": {
+          "lower": [
+            13679,
+            13679
+          ],
+          "upper": [
+            13326,
+            13326
+          ]
+        },
+        "frozen_reference_estimate_s_m2": 1.1023811408179522,
+        "independent_exact_lower_as_float": 1.0904668836555367,
+        "independent_exact_upper_as_float": 1.114304590586242,
+        "objective_enclosed": true,
+        "outward_float_interval": {
+          "hi": 1.1143045905862423,
+          "lo": 1.0904668836555365
+        },
+        "panel_count": 32,
+        "panels_per_visible_segment": 16,
+        "reference_objective_estimate": 0.005240948997592683,
+        "target_1_objective_interval": {
+          "hi": 0.006532769714544238,
+          "lo": 0.004092128519172184
+        },
+        "value_enclosed": true
+      },
+      "default_one_node_refined": {
+        "exact_bound_numerator_denominator_bit_lengths": {
+          "lower": [
+            55996,
+            55995
+          ],
+          "upper": [
+            55668,
+            55668
+          ]
+        },
+        "frozen_reference_estimate_s_m2": 1.1023811408179522,
+        "independent_exact_lower_as_float": 1.0994016796411163,
+        "independent_exact_upper_as_float": 1.1053611765829772,
+        "objective_enclosed": true,
+        "outward_float_interval": {
+          "hi": 1.1053611765829772,
+          "lo": 1.0994016796411163
+        },
+        "panel_count": 128,
+        "panels_per_visible_segment": 64,
+        "reference_objective_estimate": 0.005240948997592683,
+        "target_1_objective_interval": {
+          "hi": 0.005550488765474648,
+          "lo": 0.004940346957737562
+        },
+        "value_enclosed": true
+      },
+      "reverse_velocity": {
+        "exact_bound_numerator_denominator_bit_lengths": {
+          "lower": [
+            27752,
+            27752
+          ],
+          "upper": [
+            27407,
+            27406
+          ]
+        },
+        "frozen_reference_estimate_s_m2": 1.07322633608208,
+        "independent_exact_lower_as_float": 1.067620336926776,
+        "independent_exact_upper_as_float": 1.0788314760349664,
+        "objective_enclosed": true,
+        "outward_float_interval": {
+          "hi": 1.0788314760349664,
+          "lo": 1.067620336926776
+        },
+        "panel_count": 64,
+        "panels_per_visible_segment": 32,
+        "reference_objective_estimate": 0.0026810481480028627,
+        "target_1_objective_interval": {
+          "hi": 0.0031072008069257433,
+          "lo": 0.0022862549830453558
+        },
+        "value_enclosed": true
+      },
+      "two_node_weighted_source": {
+        "exact_bound_numerator_denominator_bit_lengths": {
+          "lower": [
+            54840,
+            54840
+          ],
+          "upper": [
+            54504,
+            54504
+          ]
+        },
+        "frozen_reference_estimate_s_m2": 1.235571887412276,
+        "independent_exact_lower_as_float": 1.228279394710935,
+        "independent_exact_upper_as_float": 1.2428237635363184,
+        "objective_enclosed": true,
+        "outward_float_interval": {
+          "hi": 1.2428237635363184,
+          "lo": 1.2282793947109347
+        },
+        "panel_count": 128,
+        "panels_per_visible_segment": 32,
+        "reference_objective_estimate": 0.02774705706949104,
+        "target_1_objective_interval": {
+          "hi": 0.029481690068970938,
+          "lo": 0.026055741024795364
+        },
+        "value_enclosed": true
+      }
+    },
+    "refusal_checks": {
+      "assessment": "unknown/overlapping outcomes are unresolved; nonpositive, unknown, or <=1e-12 predictions reject",
+      "different_contract_comparison_refused": "incompatible_objective_source_or_code_contract",
+      "pathological_predicted_denominators": {
+        "below_floor": {
+          "decision": "reject",
+          "reason": "pathological_predicted_reduction_denominator",
+          "rho": null
+        },
+        "negative_or_crossing_zero": {
+          "decision": "reject",
+          "reason": "pathological_predicted_reduction_denominator",
+          "rho": null
+        },
+        "unknown": {
+          "decision": "reject",
+          "reason": "pathological_predicted_reduction_denominator",
+          "rho": null
+        },
+        "zero": {
+          "decision": "reject",
+          "reason": "pathological_predicted_reduction_denominator",
+          "rho": null
+        }
+      },
+      "positive_denominator_but_overlapping_actuals": {
+        "decision": "unresolved",
+        "reason": "overlap_or_equal_objective_intervals",
+        "rho": null
+      },
+      "same_contract_input_uncertainty_comparison": {
+        "reason": "unknown_geometry_input_or_error",
+        "relation": "unresolved"
+      },
+      "same_objective_interval_comparison": {
+        "reason": "overlap_or_equal_objective_intervals",
+        "relation": "unresolved"
+      }
+    },
+    "safe_clipped_segment": {
+      "all_exact_guard_minima_positive": true,
+      "alpha": 0.31999999999519996,
+      "encoded_plate_shift_m": 0.06399999999903999,
+      "status": "encoded_affine_segment_certified"
+    }
+  },
+  "limitations": [
+    "This checks only the encoded finite discrete-source slab model and the requested three files.",
+    "It does not certify input uncertainty, a continuous source, CAD/device behavior, or global optimization.",
+    "The reference estimates are float closed-primitive evaluations; enclosure validity rests on the exact positive-kernel Darboux argument recorded in the review note."
+  ],
+  "model_version": "T03-r3-affine-trust-1",
+  "project": "T03 round 3 event-aware trust region",
+  "result": "no_blocking_defect_observed_in_scoped_checks",
+  "review_kind": "one narrow independent math/code check; not Seed/Sol sign-off",
+  "scope": [
+    "models/trust_region.py",
+    "models/event_reference.py",
+    "verification/test_small.py"
+  ],
+  "sha256": {
+    "models/event_reference.py": "c82ebcd1ee2820a8cae6c4cb5c921a96eaa2aedc6af5b76b52ed183a41a3b354",
+    "models/trust_region.py": "cde28a258e00fafe578bae7dbdf4443db6d7b8546e8bdb11cf03c9bbe3037373",
+    "verification/test_small.py": "9a8fdde3edbf21f3a0bc3ef6d690a118336dbee3f9f831b3dc4d7dea3fcb999b"
+  }
+}

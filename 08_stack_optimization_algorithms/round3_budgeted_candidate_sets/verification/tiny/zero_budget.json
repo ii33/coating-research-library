@@ -1,0 +1,116 @@
+{
+  "channels": [
+    "M0",
+    "M1"
+  ],
+  "domain_exact": [
+    [
+      "1191827825890425099974357/1208925819614629174706176",
+      "306505953334708322791479/302231454903657293676544"
+    ],
+    [
+      "9/10",
+      "11/10"
+    ]
+  ],
+  "counts": {
+    "OUT": 0,
+    "IN": 0,
+    "UNKNOWN": 1
+  },
+  "data_evidence_state": "retained_unknown",
+  "leaves": [
+    {
+      "id": "r",
+      "box_exact": [
+        [
+          "1191827825890425099974357/1208925819614629174706176",
+          "306505953334708322791479/302231454903657293676544"
+        ],
+        [
+          "9/10",
+          "11/10"
+        ]
+      ],
+      "box": [
+        [
+          0.9858568710777851,
+          1.014143128922215
+        ],
+        [
+          0.9,
+          1.1
+        ]
+      ],
+      "data_class": "UNKNOWN",
+      "reason": "run_node_budget",
+      "R_exact": {},
+      "R": {},
+      "objective_exact": [
+        "0",
+        "10880332376531662572355951/1208925819614629174706176"
+      ],
+      "objective": [
+        0.0,
+        9.000000000000002
+      ],
+      "constraint_exact": [
+        "-86274275450842729985221/604462909807314587353088",
+        "25858150117412142583787/302231454903657293676544"
+      ],
+      "constraint": [
+        -0.14272881602999346,
+        0.08555744181443649
+      ],
+      "constraint_class": "UNKNOWN",
+      "source_realization": "not_established"
+    }
+  ],
+  "splits": [],
+  "evaluated_nodes": 0,
+  "charged": {
+    "nodes": 0,
+    "interval_wavelengths": 0,
+    "float_vectors": 0,
+    "float_wavelengths": 0,
+    "denominator_fallbacks": 0,
+    "arithmetic_fallbacks": 0
+  },
+  "min_width": [
+    "0.0004",
+    "0.002"
+  ],
+  "proof_scope": "arithmetic_inclusion_for_encoded_synthetic_model; implementation_not_formally_verified",
+  "physical_certification": false,
+  "reachable_source_witness": false,
+  "job_id": "zero_budget",
+  "retained_v_projection_exact": [
+    [
+      "9/10",
+      "11/10"
+    ]
+  ],
+  "optimization": {
+    "eligible_leaf_ids": [
+      "r"
+    ],
+    "unknown_included": 1,
+    "objective_lower_exact": "0",
+    "verified_proxy_upper_exact": "1208925819614629174706219/1208925819614629174706176",
+    "objective_gap_upper": 1.0,
+    "existence": "verified_proxy_witness",
+    "status": "bounded_relaxation_with_unresolved_boxes",
+    "global_optimizer_certificate": false,
+    "physical_optimum_certificate": false,
+    "annotations": [
+      {
+        "id": "r",
+        "data_class": "UNKNOWN",
+        "disposition": "RETAINED_FOR_OPTIMUM"
+      }
+    ]
+  },
+  "candidate_contract_sha256": "a7a2327f485ece7d6f7140c687f762879fee974994f74349cf6a59bad8ab8acd",
+  "parent_case_payload_sha256": "77d394ff69ed69e116b86d8bdf574081ad8c05a7bbdae306ac55e275a1ddbce7",
+  "derived_observation_contract_sha256": "ebfe3541426b19dca35ba6e835682cfa5d7d48fb26e66411ec7ffb92c790b045"
+}

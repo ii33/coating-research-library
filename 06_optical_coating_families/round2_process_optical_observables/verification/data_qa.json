@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "fixtures": {
+    "actual_unmeasured": "blocked_unknown_or_inapplicable",
+    "al_reference_conditional": "conditional_calculation",
+    "bulk_density_misuse": "blocked_unknown_or_inapplicable",
+    "bulk_nk_misuse": "blocked_unknown_or_inapplicable",
+    "synthetic_dielectric": "conditional_calculation",
+    "unknown_density": "blocked_unknown_or_inapplicable",
+    "unknown_scatter": "blocked_unknown_or_inapplicable",
+    "unknown_temperature": "blocked_unknown_or_inapplicable"
+  },
+  "al_data_rows": 121,
+  "vendored_T07_kernel": "byte_identical",
+  "default_batch": "plan_only",
+  "device_validation": "not_run"
+}

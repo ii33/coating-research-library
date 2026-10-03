@@ -1,0 +1,44 @@
+test_add_enclosure (test_bounded_optics.ArithmeticTests.test_add_enclosure) ... ok
+test_complex (test_bounded_optics.ArithmeticTests.test_complex) ... ok
+test_cos_zero (test_bounded_optics.ArithmeticTests.test_cos_zero) ... ok
+test_div_zero (test_bounded_optics.ArithmeticTests.test_div_zero) ... ok
+test_mul_crossing (test_bounded_optics.ArithmeticTests.test_mul_crossing) ... ok
+test_nan (test_bounded_optics.ArithmeticTests.test_nan) ... ok
+test_outward_float (test_bounded_optics.ArithmeticTests.test_outward_float) ... ok
+test_pi (test_bounded_optics.ArithmeticTests.test_pi) ... ok
+test_reversed (test_bounded_optics.ArithmeticTests.test_reversed) ... ok
+test_sin_pi (test_bounded_optics.ArithmeticTests.test_sin_pi) ... ok
+test_square_zero (test_bounded_optics.ArithmeticTests.test_square_zero) ... ok
+test_wide_trig (test_bounded_optics.ArithmeticTests.test_wide_trig) ... ok
+test_angle (test_bounded_optics.ContractTests.test_angle) ... ok
+test_bandwidth_edge (test_bounded_optics.ContractTests.test_bandwidth_edge) ... ok
+test_bare_interface (test_bounded_optics.ContractTests.test_bare_interface) ... ok
+test_contract_incomparable (test_bounded_optics.ContractTests.test_contract_incomparable) ... ok
+test_crossing (test_bounded_optics.ContractTests.test_crossing) ... ok
+test_density_qcm_bulk (test_bounded_optics.ContractTests.test_density_qcm_bulk) ... ok
+test_dependency_copies (test_bounded_optics.ContractTests.test_dependency_copies) ... ok
+test_driver_default_plan_only (test_bounded_optics.ContractTests.test_driver_default_plan_only) ... ok
+test_finite_backside (test_bounded_optics.ContractTests.test_finite_backside) ... ok
+test_full_response_not_point (test_bounded_optics.ContractTests.test_full_response_not_point) ... ok
+test_inventory (test_bounded_optics.ContractTests.test_inventory) ... ok
+test_near_zero (test_bounded_optics.ContractTests.test_near_zero) ... ok
+test_negative (test_bounded_optics.ContractTests.test_negative) ... ok
+test_nk_measured_claim (test_bounded_optics.ContractTests.test_nk_measured_claim) ... ok
+test_nonlambert (test_bounded_optics.ContractTests.test_nonlambert) ... ok
+test_order_and_units (test_bounded_optics.ContractTests.test_order_and_units) ... ok
+test_point_only (test_bounded_optics.ContractTests.test_point_only) ... ok
+test_positive_gate (test_bounded_optics.ContractTests.test_positive_gate) ... ok
+test_quarterwave_interior_not_corners (test_bounded_optics.ContractTests.test_quarterwave_interior_not_corners) ... ok
+test_sample_mismatch (test_bounded_optics.ContractTests.test_sample_mismatch) ... ok
+test_scatter (test_bounded_optics.ContractTests.test_scatter) ... ok
+test_shared_ratio_not_independent (test_bounded_optics.ContractTests.test_shared_ratio_not_independent) ... ok
+test_subdivision_cover (test_bounded_optics.ContractTests.test_subdivision_cover) ... ok
+test_tamper_full_forward (test_bounded_optics.ContractTests.test_tamper_full_forward) ... ok
+test_tiny_results (test_bounded_optics.ContractTests.test_tiny_results) ... ok
+test_unknown (test_bounded_optics.ContractTests.test_unknown) ... ok
+test_weights (test_bounded_optics.ContractTests.test_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.159s
+
+OK

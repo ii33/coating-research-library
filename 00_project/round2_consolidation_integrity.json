@@ -1,0 +1,55 @@
+{
+  "schema": "round2-local-consolidation-integrity-v1",
+  "created_at_utc": "2026-10-02T10:45:15.556630+00:00",
+  "inspection": "hash-only and static metadata; no tests/reviews/driver execution",
+  "preexisting_file_count": 1535,
+  "permitted_existing_planning_changes": [
+    "README.md",
+    "ROADMAP.md",
+    "STATE.md",
+    "STATE.json",
+    "CHANGELOG.md",
+    "00_project/research_tasks.json",
+    "00_project/planning_baseline_manifest.json"
+  ],
+  "protected_preexisting_file_count": 1528,
+  "protected_preexisting_sha256_map_digest": "63f516e40eb1adf4ce30fc12ac9d3b7052a73ba01c50230bcb23800b01e51f8d",
+  "protected_changed": [],
+  "protected_missing": [],
+  "all_protected_preexisting_bytes_unchanged": true,
+  "protected_topic_file_count": 1490,
+  "protected_topic_file_counts": {
+    "T01": 89,
+    "T02": 165,
+    "T03": 96,
+    "T04": 201,
+    "T05": 141,
+    "T06": 145,
+    "T07": 137,
+    "T08": 169,
+    "T09": 173,
+    "T10": 174
+  },
+  "T06_to_T10_payload_files_hash_checked": 350,
+  "T06_to_T10_payload_hash_result": "all350 matched existing freeze manifests; all5 receipt manifest hashes matched",
+  "original_freeze_manifest_and_receipt_bytes_unchanged": true,
+  "research_tests_rerun": false,
+  "independent_review_rerun": false,
+  "heavy_jobs_run": false,
+  "external_upload_push_or_credentials": false,
+  "user_computer_or_product_edits": false,
+  "third_cycle_started": false,
+  "candidate_publication_count": 382,
+  "candidate_publication_status": "prospective_only; T10full_reader_blocked; content_bytes_only_no_xattrs",
+  "candidate_secret_identity_scan": {
+    "status": "no_matching_private_identity_or_private_download_url_in_allowlisted_content",
+    "files_scanned": 381,
+    "docx_xml_and_relationships_scanned": true,
+    "detected_private_payload_excluded": [
+      "10_ion_sources/round2_observable_material_response/dependencies/manual_studies/2026-10-02_morningtech_mxc/evidence/provenance.json"
+    ],
+    "original_receipts_unchanged": true,
+    "scope_limit": "pattern/static check, not a universal secret-detection guarantee; no filesystem xattrs exported"
+  },
+  "note": "No claim of all historical manifests revalidated; preservation is measured against pre-edit hashes of every pre-existing nonplanning file."
+}

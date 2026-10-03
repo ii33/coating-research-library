@@ -1,0 +1,70 @@
+{
+  "mode": "plan_only",
+  "status": "not_run_awaiting_device",
+  "factors": {
+    "theta_deg": [
+      0,
+      20,
+      40
+    ],
+    "charge_z": [
+      1,
+      2
+    ],
+    "neutral_fraction": [
+      0,
+      0.2,
+      0.5
+    ],
+    "current_noise_relative": [
+      0.002,
+      0.01,
+      0.03
+    ],
+    "seed": [
+      2301,
+      2302,
+      2303,
+      2304
+    ]
+  },
+  "case_count": 216,
+  "replicates_per_case": 200,
+  "inverse_solve_upper_bound": 43200,
+  "max_iterations_per_inverse": 100,
+  "random_engine": "numpy PCG64 explicit case seed",
+  "wall_budget_s": 1800,
+  "failure_policy": "Preserve each failed solve; never count failed or nonidentifiable cases as valid coverage",
+  "planned_outputs": [
+    "per-case conditions and seed",
+    "per-replicate solver status",
+    "conditional flux bias",
+    "declared-noise covariance check",
+    "failure count; no production confidence guarantee"
+  ],
+  "actual_device_validation": "not_run_awaiting_device",
+  "live_hardware_adapter": "not_implemented_missing_verified_protocol_and_authorization",
+  "heavy_execution_authorized_in_this_round": false,
+  "stages": [
+    {
+      "name": "ideal_response_sweep",
+      "status": "not_run_awaiting_device"
+    },
+    {
+      "name": "empirical_response_fit",
+      "status": "not_run_awaiting_device"
+    },
+    {
+      "name": "actual_exported_packet_check",
+      "status": "not_run_awaiting_device"
+    },
+    {
+      "name": "real_device_or_production_validation",
+      "status": "not_run_awaiting_device"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}

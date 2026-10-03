@@ -1,0 +1,55 @@
+{
+  "stage": "T07R3",
+  "execution_class": "bounded_tiny_reference_only",
+  "screening": {
+    "ordinary_float_only": true,
+    "outer_layer_multipliers": [
+      0.95,
+      0.97,
+      1.03,
+      1.05,
+      1.1
+    ],
+    "z_nodes_per_multiplier": 9,
+    "additional_wavelengths_um": [
+      3.5,
+      5,
+      8,
+      10,
+      12
+    ],
+    "purpose": "illustrative candidate selection before frozen problem, not optimal design or proof",
+    "not_preregistered": true
+  },
+  "initial_launch": "An initial short tool invocation yielded no retained receipt; not used as evidence. A bounded complete invocation produced tiny_results.json. No alternate compute or quota route used.",
+  "accepted_tiny": {
+    "runs": 6,
+    "evaluated_nodes": 530,
+    "single_wavelength_enclosures": 1760,
+    "max_nodes_per_run": 127,
+    "width_stop_z": 0.0004
+  },
+  "illustration": {
+    "scalar_z_nodes_per_hypothesis": 33,
+    "hypotheses": 3,
+    "channels": 2,
+    "purpose": "draw curves only, excluded from proof",
+    "figure_builds": 2,
+    "reason_for_rebuild": "correct figure-2 legend color keys"
+  },
+  "small_tests": {
+    "count": 15,
+    "decisive_branch_replay": true,
+    "point_witness_replay": true
+  },
+  "independent_optical_unit_checks": 1,
+  "independent_scalar_points": 4,
+  "devices": 0,
+  "monte_carlo_draws": 0,
+  "optimizer_calls": 0,
+  "heavy": "plan_only_not_run",
+  "formal_model_review_chain": "pending",
+  "html_browser_attempts": 0,
+  "uploads": 0,
+  "pushes": 0
+}

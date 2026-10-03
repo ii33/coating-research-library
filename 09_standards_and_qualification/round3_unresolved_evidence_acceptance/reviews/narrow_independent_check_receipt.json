@@ -1,0 +1,36 @@
+{
+  "task": "T09R3 narrow independent acceptance-quantifier check",
+  "date_utc": "2026-10-02",
+  "actual_model": "not exposed to this worker's runtime; no model ID claimed",
+  "scope": [
+    "models/acceptance.py",
+    "cases/claims.json",
+    "verification/tiny/results.json",
+    "dependencies/t08r3/models/candidate_sets.py"
+  ],
+  "method": "read-only source/result inspection and exact deterministic Fraction arithmetic; no replay",
+  "findings": {
+    "universal_unknown_and_objective_pruned_leaves_retained": true,
+    "outer_bound_crossing_alone_rejects_universal_claim": false,
+    "universal_rejection_requires_verified_counterexample": true,
+    "min_j_and_gap_use_exact_fraction_comparisons": true,
+    "stored_json_alone_is_live_proof": false,
+    "source_reachability_and_production_release_conclusions_blocked": true,
+    "concrete_counterexample_found": false
+  },
+  "observed_snapshot": {
+    "claims_count": 27,
+    "results_cases_count": 24,
+    "retained_unknown_count": 32,
+    "objective_pruned_unknown_count": 15,
+    "minimum_j_bracket": ["0", "1208925819614629174706219/1208925819614629174706176"],
+    "minimum_j_upper_as_power_of_two": "1 + 43/2^80",
+    "formal_stage_acceptance": "pending",
+    "production_release": false,
+    "physical_certification": false
+  },
+  "formal_deepseek_seed_sol_chain_performed": false,
+  "formal_verification_performed": false,
+  "optical_replay_or_heavy_execution_performed": false,
+  "snapshot_caveat": "The three newly added observation_M0_in claims were present in claims.json but not yet represented in the 24-case results snapshot; that branch was inspected statically only."
+}

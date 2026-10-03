@@ -1,0 +1,424 @@
+{
+  "version": "t10r2-exact-manifest-1",
+  "created_at": "2026-10-02T10:24:50.727812+00:00",
+  "algorithm": "sha256",
+  "coverage": "Every file in this directory except the explicit recursion exclusions",
+  "excluded": [
+    "T10_round2_observable_material_response_reader.zip",
+    "freeze_manifest.json",
+    "verification/freeze_receipt.json"
+  ],
+  "files": [
+    {
+      "path": "NEXT_CYCLE_HANDOFF.md",
+      "bytes": 1290,
+      "sha256": "63538f935d798344f1c056f87d27a60052d5d444b7e22ca4ea9d934d78efaf89"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3426,
+      "sha256": "dba6446faf7184ae2a54b6539c504711d9ab573f9d78699f6a212448de6200a9"
+    },
+    {
+      "path": "contracts/README.md",
+      "bytes": 1377,
+      "sha256": "a80c02b431b151a55b94ccf672c82fad72633219a059721a54f2a1d3cd1dbaa4"
+    },
+    {
+      "path": "contracts/observable_dictionary.csv",
+      "bytes": 1801,
+      "sha256": "2616beb86c9054e1df06a57515060e5964319fe38b26be78ca53fa6c654717db"
+    },
+    {
+      "path": "contracts/observation_packet.schema.json",
+      "bytes": 11619,
+      "sha256": "63e6991b5040d35416ad883e2e5bc8438b202bf69de448ff745118574589d913"
+    },
+    {
+      "path": "dependencies/00_project/工程科研.txt",
+      "bytes": 1632,
+      "sha256": "6b2d069083f2a9e855797203e611ecb979e8ce50c999cb4b55ee565af823d4ad"
+    },
+    {
+      "path": "dependencies/04_coating_and_substrate_materials/round2_material_response_contract/data/material_response.schema.json",
+      "bytes": 28309,
+      "sha256": "c767439089ba6229d370d24e3ffcc0548e549d5867e9426c8957931108210ef7"
+    },
+    {
+      "path": "dependencies/04_coating_and_substrate_materials/round2_material_response_contract/reports/01_material_response_contract.md",
+      "bytes": 8483,
+      "sha256": "38a2ca7c30945b314d0922a27ac91008f899fe394d27469ea5a9d8cd24594d3b"
+    },
+    {
+      "path": "dependencies/04_coating_and_substrate_materials/round2_material_response_contract/reports/02_uncertainty_and_validation.md",
+      "bytes": 4855,
+      "sha256": "55c964bde6e9a7ffe11ae60cd2bc1f09826b2c1d73fec38de3aafeb93f264e84"
+    },
+    {
+      "path": "dependencies/05_evaporation_sources/round2_qcm_flux_transfer/data/qcm_flux.schema.json",
+      "bytes": 16090,
+      "sha256": "76331cc39d6ceaa8cb66571453dc13e75bad3152d101272d18c652dfee405973"
+    },
+    {
+      "path": "dependencies/05_evaporation_sources/round2_qcm_flux_transfer/reports/01_qcm_acoustics_and_units.md",
+      "bytes": 5421,
+      "sha256": "193a84f093977867a84a86bbb2aa60416a618b7e52ee622b1cff0dec4cd183b8"
+    },
+    {
+      "path": "dependencies/05_evaporation_sources/round2_qcm_flux_transfer/reports/02_geometry_species_and_contract.md",
+      "bytes": 6183,
+      "sha256": "bfd7bf447c40cf84165e49c1d462683d8b268afb8f89ec994c60fee7951e32a2"
+    },
+    {
+      "path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/T10_ROUND2_HANDOFF.md",
+      "bytes": 1537,
+      "sha256": "854352249fa3e2f6a10b3a506fd51a3ef44930da814406517d1c9e6dee8c8267"
+    },
+    {
+      "path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/contracts/evidence_packet.schema.json",
+      "bytes": 10475,
+      "sha256": "123cf8826f235defc43279111b7f33f6addbee4fea5a4b5f5520fffe4833f98c"
+    },
+    {
+      "path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/01_scope_and_evidence_levels.md",
+      "bytes": 3906,
+      "sha256": "407f1c419f6ffc5c701fefb7195b3e8674c6bf226a62190018cc45daddaa8c8f"
+    },
+    {
+      "path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/05_fit_selection_heldout.md",
+      "bytes": 3598,
+      "sha256": "1fd7c025af1286cb8ea270845bccb694d6390a8fa4d9601a4eb32e50cfa5ef20"
+    },
+    {
+      "path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/06_uncertainty_decision_rules.md",
+      "bytes": 4305,
+      "sha256": "cf5a377e71f2157a270bc4d20ea26e259ed31a35d978153de76dbfa56537023f"
+    },
+    {
+      "path": "dependencies/09_standards_and_qualification/round2_traceable_validation_contracts/reports/08_instrument_semantics_manual.md",
+      "bytes": 6326,
+      "sha256": "1aebf8394508a04302efc973a0a22b06403f7ce585566a0f307af4bc8aa5a5bf"
+    },
+    {
+      "path": "dependencies/10_ion_sources/data/material_response_matrix.json",
+      "bytes": 18179,
+      "sha256": "b8bf30d8d53ecc469c748d050252046f1857102cdbb6237417a3a2fe534cf1b8"
+    },
+    {
+      "path": "dependencies/10_ion_sources/data/source_registry.json",
+      "bytes": 24430,
+      "sha256": "22d451c4da3f5b0fe5cfcec850fc431a8a0a4b53fe46cee319517af480238f9b"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/01_kaufman_source_and_beam_physics.md",
+      "bytes": 6285,
+      "sha256": "e560a3c577f1413753e9f0b6fada50cc4596363caef89fbdf82de2cd96caa40d"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/02_flux_energy_dose_normalization.md",
+      "bytes": 5909,
+      "sha256": "d43db720e6a8d067a7a2ec64698a3a066c1152db1132b4d63fbcfd1452d65cf9"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/03_metrology_calibration_and_mapping.md",
+      "bytes": 5831,
+      "sha256": "ca01385a94f8f3acb98a05acf0177cdc46bcb1c576ea867b701c1b769d4ef47b"
+    },
+    {
+      "path": "dependencies/10_ion_sources/reports/04_conditional_material_matrix.md",
+      "bytes": 14212,
+      "sha256": "bfc0772e56dcdd3e25496729a49b13e25cd3214a6e9bea1e6412159ff99d27ea"
+    },
+    {
+      "path": "dependencies/manual_studies/2026-10-02_morningtech_mxc/evidence/provenance.json",
+      "bytes": 833,
+      "sha256": "2bf7342e3b525894e684b4f4dd621fedc28e766f42256ba8190c8bdbac826803"
+    },
+    {
+      "path": "dependencies/manual_studies/2026-10-02_morningtech_mxc/reports/manual_assessment_zh.md",
+      "bytes": 24733,
+      "sha256": "718adae62c8cb2ca4502fa584456be75ec4cbe28f2db186d9b02dc24bad5cd97"
+    },
+    {
+      "path": "dependencies/provenance.json",
+      "bytes": 10464,
+      "sha256": "4bd8ac36ca8f43acccfc2493713d514983d522a78b5645c256d66cc56609cd3e"
+    },
+    {
+      "path": "examples/actual_unknown.json",
+      "bytes": 1580,
+      "sha256": "4eb1004179522a153c2de9bfa3adbacfe306ce3de5343fadfbb84a7129c2812a"
+    },
+    {
+      "path": "examples/synthetic_complete.json",
+      "bytes": 2554,
+      "sha256": "5afd1360c069c66713cc485d516b21e34baccfd685aa5a6fc838b129c15b6673"
+    },
+    {
+      "path": "figures/01_planar_rfea_angle.png",
+      "bytes": 62245,
+      "sha256": "3f2e47c1eea7720a79cac515fc4b42c5c5d08f8152b4dbb808e9c934cdda92f6"
+    },
+    {
+      "path": "figures/01_planar_rfea_angle.svg",
+      "bytes": 50658,
+      "sha256": "4584ce76256ced47b59d25c28176dc99a79f1b98d44d009fde5e5d45f0cb9a09"
+    },
+    {
+      "path": "figures/02_charge_exchange_energy.png",
+      "bytes": 71343,
+      "sha256": "7802b74c7eb6f1f1b1d4f03c40b5be1a55e2958277c5850e48288d8995daf348"
+    },
+    {
+      "path": "figures/02_charge_exchange_energy.svg",
+      "bytes": 60016,
+      "sha256": "5527462592d83adac17fb2b2f145789f4e36eda219cd609d575daf3c11883a84"
+    },
+    {
+      "path": "figures/03_equal_moments_different_tail.png",
+      "bytes": 63892,
+      "sha256": "576ba5be273ceca43485689c458ac30b5fcde5de637c64c99d56c0008f679178"
+    },
+    {
+      "path": "figures/03_equal_moments_different_tail.svg",
+      "bytes": 56658,
+      "sha256": "4d957a76c62fccef249599363990b3e4e82c2f120d2c8dda802577c73183d62a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 67442,
+      "sha256": "698d28c81245d6d3b794762bf95bc3251f7a1be3878d200622c0b0da33660129"
+    },
+    {
+      "path": "models/audit_package.py",
+      "bytes": 7949,
+      "sha256": "3937ca3538024af4dfc43bd4871b54079d19ad294bbb7a8e7f0599aed5e817e3"
+    },
+    {
+      "path": "models/build_contracts.py",
+      "bytes": 6323,
+      "sha256": "0437fed61a022c3cb37e9d211039aea9f6df72e87c26ed96734f0ebd3398af97"
+    },
+    {
+      "path": "models/build_reader.py",
+      "bytes": 5943,
+      "sha256": "1ef7d83d7ac4e3e8ac4badf325216f4ed79374d02ccdf5f03a9cdcfbc181de04"
+    },
+    {
+      "path": "models/build_sources.py",
+      "bytes": 6521,
+      "sha256": "4290e848e6c08f1d9998227f8d820908a4b56276018b9cdd51043b30383952aa"
+    },
+    {
+      "path": "models/evidence_contract.py",
+      "bytes": 7238,
+      "sha256": "d5637da42420096deeacd3a8df133182cefe5da8996bd8a2853149c65592ee2d"
+    },
+    {
+      "path": "models/ion_observables.py",
+      "bytes": 18375,
+      "sha256": "e298a7619a2fbc42d8f2a19b21a5b7ad2a72391a82ed6c671a4fed42c09269a3"
+    },
+    {
+      "path": "models/plot_figures.py",
+      "bytes": 2741,
+      "sha256": "a18bcff23ee224077bc04aca1d54e6853e16e160adfa2729a98e3137c29c86f8"
+    },
+    {
+      "path": "models/validation_driver.py",
+      "bytes": 8219,
+      "sha256": "34ca9c021eb41df4cabd2a38d598c00073b15c0161f9261c348bab9c6fa2c1b4"
+    },
+    {
+      "path": "reports/01_scope_observables_and_evidence.md",
+      "bytes": 5167,
+      "sha256": "cec6de6c3b574d6ae44d9b0b2e264ee69c3e63f8cc402fb93ed5cb9c5ad3a8ed"
+    },
+    {
+      "path": "reports/02_kaufman_energy_charge_and_neutrals.md",
+      "bytes": 6663,
+      "sha256": "6a74863c7043d93eddbec53988ed53a75d469b6fce4236584ba9dbd9532afcaa"
+    },
+    {
+      "path": "reports/03_diagnostic_forward_models.md",
+      "bytes": 5651,
+      "sha256": "092daa388bde5058040f2784b6a6594638cc3f74eaedf10cdebca403829c3fdf"
+    },
+    {
+      "path": "reports/04_spatial_temporal_representativeness.md",
+      "bytes": 5443,
+      "sha256": "b5fef424635cab9f2a6462112a34c80a2218778e414cf4be87b110f06d4bc587"
+    },
+    {
+      "path": "reports/05_material_state_growth_and_erosion.md",
+      "bytes": 6339,
+      "sha256": "7ff342c5c115492d0e38754138c0103664e56fd8d2c0eb87a98e2e617a1b7333"
+    },
+    {
+      "path": "reports/06_response_identification_and_validation.md",
+      "bytes": 6027,
+      "sha256": "7375412833e7dc0cd5e795b487c332cd2fda62adb36749d19f5cca86775ee78f"
+    },
+    {
+      "path": "reports/07_reference_cases_and_counterexamples.md",
+      "bytes": 6037,
+      "sha256": "c1769be3d84c15a21cc3073dd935789a2cb255978f1c40e394eac2039a980f8b"
+    },
+    {
+      "path": "reports/08_implementation_execution_and_limits.md",
+      "bytes": 5712,
+      "sha256": "f7e1ce89d121d9d9c772bdccf87f2889a5b0b94373842ece29d8957dc8cfaeaa"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 71,
+      "sha256": "d31878d6866056787488e4df79a82e63d0d2d4063bcb309cf5c353016926c88c"
+    },
+    {
+      "path": "reviews/author_acceptance.md",
+      "bytes": 2304,
+      "sha256": "42634e16118a16cecc476ccd10624b5060b0658fc31dc001034fe2b3dd09d308"
+    },
+    {
+      "path": "reviews/independent_narrow_check.md",
+      "bytes": 1751,
+      "sha256": "a80e07844dcabb8edc8a10d993eadbec3cc5e44cc9135ced9582fb9d32011ffe"
+    },
+    {
+      "path": "sources/RIGHTS_AND_ACCESS.md",
+      "bytes": 997,
+      "sha256": "6229f82f2dbab590598ce19f1fd4297c1f5f83ca26ede850734c00427d233a94"
+    },
+    {
+      "path": "sources/source_registry.json",
+      "bytes": 14919,
+      "sha256": "f3d76cd994841ed0b43fc17bf63da926a7ab043bc8ec5d23556fcc31d2d7d29d"
+    },
+    {
+      "path": "sources/summaries/IR-01.md",
+      "bytes": 1026,
+      "sha256": "101f87543919d648b26e3f5834891a6803e07400058bb37d6b620608878d4149"
+    },
+    {
+      "path": "sources/summaries/IR-02.md",
+      "bytes": 1312,
+      "sha256": "4496a216e26c0dc0d68a926d2663df825254cee8dcd141b88671031e59556a5b"
+    },
+    {
+      "path": "sources/summaries/IR-03.md",
+      "bytes": 884,
+      "sha256": "eb6b4c590161c5cf23a55e0bf5eeef95f4f925cc426705254a313e6938451cd5"
+    },
+    {
+      "path": "sources/summaries/IR-04.md",
+      "bytes": 834,
+      "sha256": "f526fc3de9586875b5fc6b6cd6f6b2af9a18fbcd98a75e5e0e39326766b4047a"
+    },
+    {
+      "path": "sources/summaries/IS-02.md",
+      "bytes": 820,
+      "sha256": "e29ed899177524912ff4eb8afc92953a5c847a30a89b050185c69dafb20f847f"
+    },
+    {
+      "path": "sources/summaries/IS-03.md",
+      "bytes": 755,
+      "sha256": "cddf52bb36f44630b5d7e8e37d8c6198551504082b89990b7c2818c06a2fdbc6"
+    },
+    {
+      "path": "sources/summaries/IS-04.md",
+      "bytes": 766,
+      "sha256": "e7f0acebe10cc354762ee9be83a79244071b74370c005fb93a7dc150b62ecbb3"
+    },
+    {
+      "path": "sources/summaries/IS-06.md",
+      "bytes": 749,
+      "sha256": "448cbd9c168306454376ddd92bebb3198f12d2d28bc07f777a18e39000247957"
+    },
+    {
+      "path": "sources/summaries/IS-08.md",
+      "bytes": 851,
+      "sha256": "7d4f4887b5aae93c42dfd4d615cb42558b50a8a02223ccfb45a65dab0a19dcfe"
+    },
+    {
+      "path": "sources/summaries/IS-11.md",
+      "bytes": 807,
+      "sha256": "ca92518d2f2cb41946a43a645e1eb6ab363c090d91bc458508dfd7a636517a37"
+    },
+    {
+      "path": "sources/summaries/IS-17.md",
+      "bytes": 740,
+      "sha256": "309d836fd7915bb339874bdc2bf8a0f76af96153bb0b8aed097e54200a5894f3"
+    },
+    {
+      "path": "sources/summaries/IS-18.md",
+      "bytes": 943,
+      "sha256": "12e931b434ea5f4812a42a93ce3377a08d64432e0c1c52b71aa3ef2ad231cf4b"
+    },
+    {
+      "path": "sources/summaries/IS-19.md",
+      "bytes": 728,
+      "sha256": "ebff312db0aa960e1327d25c495812bdf4a2acdacbf361a775ff5f8dd4e4d598"
+    },
+    {
+      "path": "sources/summaries/IS-20.md",
+      "bytes": 829,
+      "sha256": "96d38c2a4ef235d46cc85e89ee30b0aa33b1a479aea9e85001484045e02c2932"
+    },
+    {
+      "path": "sources/summaries/IS-22.md",
+      "bytes": 797,
+      "sha256": "fa9c2795a37a9ce8530fe1b57ba28cea5b45aa1c6e1412da2e98b77a133d278c"
+    },
+    {
+      "path": "stage_status.json",
+      "bytes": 761,
+      "sha256": "c8b7653690b54e6115ea5be7ff3738e682a073b296ece4ec5b07e68b2151eebd"
+    },
+    {
+      "path": "tests/test_reference.py",
+      "bytes": 6938,
+      "sha256": "3fbfccddb6018b56de69b1ae4dd00b2bec19e28036f5ee954d2effc40b565aa2"
+    },
+    {
+      "path": "verification/deferred_plan.json",
+      "bytes": 1612,
+      "sha256": "50440bcee54773a2757995398d07664079c3660669597bc890cfe29bb43f1b42"
+    },
+    {
+      "path": "verification/dependency_check.json",
+      "bytes": 59,
+      "sha256": "19bda48a300b930a2e4ceeb89166968231cf8349f27c1fb231929eacd6ca91b8"
+    },
+    {
+      "path": "verification/environment.json",
+      "bytes": 255,
+      "sha256": "572733ef963aa5ac75b524ee0f4d0684770557e461b296c3d527fba8f80457dc"
+    },
+    {
+      "path": "verification/outside_before.json",
+      "bytes": 217011,
+      "sha256": "49772c357c7bca52927dc0434aff793cd332e0e705a11c77d5799348918de4e3"
+    },
+    {
+      "path": "verification/outside_scope_check.json",
+      "bytes": 265,
+      "sha256": "b80f35b780783a7a2cf0474b6968997fa1dff954209e914a05f9091968de4871"
+    },
+    {
+      "path": "verification/reader_structure_check.json",
+      "bytes": 463,
+      "sha256": "2771169fcd877cb2fe8fab252578a8f864d8d81bc61a8f7cac5fc73ffbfa74ff"
+    },
+    {
+      "path": "verification/reference_cases.json",
+      "bytes": 10355,
+      "sha256": "7f1cf730ae7c9045cc6985adcbc6729a198db93665a476bba453293de567478f"
+    },
+    {
+      "path": "verification/unit_tests.txt",
+      "bytes": 2461,
+      "sha256": "730f4a7d41d69bf7193bd97014d3e661c03675efbea5a8ff7b7ed100662c141c"
+    }
+  ],
+  "originals_policy": "No third-party originals copied; NASA originals remain upstream local-only; MXC derived report only"
+}
