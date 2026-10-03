@@ -1,0 +1,50 @@
+[
+  {
+    "id": "INT-C01",
+    "claim": "源氧化物质量比不能直接当膜Sn阳离子原子比",
+    "status": "derived",
+    "sources": [
+      "INT-S03"
+    ],
+    "method": "mole balance in reference_state.py",
+    "limits": "Only ideal source mixture arithmetic"
+  },
+  {
+    "id": "INT-C02",
+    "claim": "In2O3平衡逸出气相必须考虑In2O等物种",
+    "status": "reported",
+    "sources": [
+      "INT-S01",
+      "INT-S02"
+    ],
+    "access": "fulltext_author_manuscript_and_official_page",
+    "limits": "Does not identify actual ITO Sn species"
+  },
+  {
+    "id": "INT-C03",
+    "claim": "几何到达量与净库存分离",
+    "status": "derived",
+    "sources": [
+      "LOCAL-T05",
+      "LOCAL-T04"
+    ],
+    "method": "elemental conservation",
+    "limits": "Retention and losses uncalibrated"
+  },
+  {
+    "id": "INT-C04",
+    "claim": "单个Rs不足以唯一辨识N和μ",
+    "status": "derived",
+    "sources": [],
+    "method": "q N mu h product degeneracy",
+    "limits": "Even ideal homogeneous sample"
+  },
+  {
+    "id": "INT-C05",
+    "claim": "实验矩阵与模块接口是拟议研究设计",
+    "status": "unverified",
+    "sources": [],
+    "method": "original proposal",
+    "limits": "No actual device measurements or performance claim"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "stage": "ITO_STAGE1",
+  "version": "0.1.0",
+  "date": "2026-10-03",
+  "status": "research_reference_ready_physical_validation_pending",
+  "scope": "evaporation process to material-state and electro-optical reference models",
+  "real_device_calibration": false,
+  "production_qualified": false,
+  "runtime_integrated": false,
+  "heavy_compute_run": false,
+  "reference_tests": {
+    "integration": 17,
+    "electro_optics": 19
+  },
+  "review": "bounded independent numerical and narrative check; not complete physical validation",
+  "open_requirements": [
+    "application and spectral/Rsheet targets",
+    "actual substrate and thermal budget",
+    "equipment geometry and source/gas/ion calibration",
+    "same-batch thickness, composition, Hall, Rs and spectral measurements",
+    "priority missing fulltexts"
+  ],
+  "upstream_status_preserved": true
+}

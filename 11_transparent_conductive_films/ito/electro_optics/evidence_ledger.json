@@ -1,0 +1,404 @@
+{
+  "schema_version": "1.0",
+  "report_version": "EO-ITO-0.1",
+  "access_date": "2026-10-03",
+  "measurement_status": "NO_PROJECT_MEASUREMENTS",
+  "undermind_workspace_id": "d0f9e45d-bca9-4767-b952-428881be8b05",
+  "third_party_originals_in_bundle": false,
+  "sources": [
+    {
+      "source_id": "EO-S01",
+      "undermind_cite_key": "Fur19",
+      "doi": "10.1021/acsaelm.9b00317",
+      "stable_url": "https://doi.org/10.1021/acsaelm.9b00317",
+      "access_date": "2026-10-03",
+      "access_level": "fulltext",
+      "evidence_grade": "A",
+      "locator": "PDF pp.2-5, Methods/Results/Discussion/Fig.2",
+      "limit": "RPD plus oxygen-ion post-treatment; not evaporation calibration",
+      "original_saved": false,
+      "original_sha256": null,
+      "redistribution_allowed": false,
+      "metadata_and_access_notes": "See source_ledger.md for full authors/title/version/rights and source-specific limitations",
+      "authors": [
+        "Yutaka Furubayashi",
+        "Makoto Maehara",
+        "Tetsuya Yamamoto"
+      ],
+      "title": "Tailoring of Point Defects in Polycrystalline Indium Tin Oxide Films with Postirradiation of Electronegative Oxygen Ions",
+      "year": 2019,
+      "publication": "ACS Applied Electronic Materials",
+      "peer_reviewed": true
+    },
+    {
+      "source_id": "EO-S02",
+      "undermind_cite_key": "Kle24",
+      "doi": "10.1103/PhysRevMaterials.8.044601",
+      "stable_url": "https://doi.org/10.1103/PhysRevMaterials.8.044601",
+      "access_date": "2026-10-03",
+      "access_level": "abstract_only",
+      "evidence_grade": "A",
+      "locator": "Abstract",
+      "limit": "operando electrochemical/photoelectron experiment; full methods unread",
+      "original_saved": false,
+      "original_sha256": null,
+      "redistribution_allowed": false,
+      "metadata_and_access_notes": "See source_ledger.md for full authors/title/version/rights and source-specific limitations",
+      "authors": [
+        "Andreas Klein",
+        "Alexander Frebel",
+        "Kim Alexander Creutz",
+        "Binxiang Huang"
+      ],
+      "title": "Origin and quantification of the ultimate carrier concentration limits in In2O3 and Sn-doped In2O3",
+      "year": 2024,
+      "publication": "Physical Review Materials 8, 044601",
+      "peer_reviewed": true
+    },
+    {
+      "source_id": "EO-S03",
+      "undermind_cite_key": "Fuj05",
+      "doi": "10.1103/PhysRevB.71.075109",
+      "stable_url": "https://doi.org/10.1103/PhysRevB.71.075109",
+      "access_date": "2026-10-03",
+      "access_level": "abstract_only",
+      "evidence_grade": "A",
+      "locator": "Abstract",
+      "limit": "ITO and ZnO:Ga; no coefficients transferred",
+      "original_saved": false,
+      "original_sha256": null,
+      "redistribution_allowed": false,
+      "metadata_and_access_notes": "See source_ledger.md for full authors/title/version/rights and source-specific limitations",
+      "authors": [
+        "Hiroyuki Fujiwara",
+        "Michio Kondo"
+      ],
+      "title": "Effects of carrier concentration on the dielectric function of ZnO:Ga and In2O3:Sn studied by spectroscopic ellipsometry: Analysis of free-carrier and band-edge absorption",
+      "year": 2005,
+      "publication": "Physical Review B 71, 075109",
+      "peer_reviewed": true
+    },
+    {
+      "source_id": "EO-S04",
+      "undermind_cite_key": "Liu14",
+      "doi": "10.1063/1.4900936",
+      "stable_url": "https://doi.org/10.1063/1.4900936",
+      "access_date": "2026-10-03",
+      "access_level": "abstract_via_scholarly_connector",
+      "evidence_grade": "A",
+      "locator": "Abstract",
+      "limit": "publisher fetch failed; no fulltext read",
+      "original_saved": false,
+      "original_sha256": null,
+      "redistribution_allowed": false,
+      "metadata_and_access_notes": "See source_ledger.md for full authors/title/version/rights and source-specific limitations",
+      "authors": [
+        "Xiaoge Liu",
+        "Junghyun Park",
+        "Ju-Hyung Kang",
+        "Hongtao Yuan",
+        "Yi Cui",
+        "Harold Y. Hwang",
+        "Mark L. Brongersma"
+      ],
+      "title": "Quantification and impact of nonparabolicity of the conduction band of indium tin oxide on its plasmonic properties",
+      "year": 2014,
+      "publication": "Applied Physics Letters 105, 181117",
+      "peer_reviewed": true
+    },
+    {
+      "source_id": "EO-S05",
+      "undermind_cite_key": "Gon11",
+      "doi": "10.1103/PhysRevB.83.212201",
+      "stable_url": "https://doi.org/10.1103/PhysRevB.83.212201",
+      "access_date": "2026-10-03",
+      "access_level": "abstract_only",
+      "evidence_grade": "A",
+      "locator": "Abstract",
+      "limit": "nanoporous films, not dense evaporated films",
+      "original_saved": false,
+      "original_sha256": null,
+      "redistribution_allowed": false,
+      "metadata_and_access_notes": "See source_ledger.md for full authors/title/version/rights and source-specific limitations",
+      "authors": [
+        "A. Gondorf",
+        "M. Geller",
+        "J. Weißbon",
+        "A. Lorke",
+        "M. Inhester",
+        "A. Prodi-Schwab",
+        "D. Adam"
+      ],
+      "title": "Mobility and carrier density in nanoporous indium tin oxide films",
+      "year": 2011,
+      "publication": "Physical Review B 83, 212201",
+      "peer_reviewed": true
+    },
+    {
+      "source_id": "EO-S06",
+      "undermind_cite_key": "Byr16",
+      "doi": "10.48550/arXiv.1603.02720",
+      "stable_url": "https://arxiv.org/abs/1603.02720",
+      "access_date": "2026-10-03",
+      "access_level": "fulltext",
+      "evidence_grade": "B",
+      "locator": "v5 Sections 2-4,6; Eqs.6,8-15,21-30",
+      "limit": "author technical preprint; normal incidence implementation is narrower",
+      "original_saved": false,
+      "original_sha256": null,
+      "redistribution_allowed": false,
+      "metadata_and_access_notes": "See source_ledger.md for full authors/title/version/rights and source-specific limitations",
+      "authors": [
+        "Steven J. Byrnes"
+      ],
+      "title": "Multilayer optical calculations",
+      "year": 2020,
+      "publication": "arXiv:1603.02720v5; original version 2016",
+      "peer_reviewed": false,
+      "doi_verification": "arXiv original metadata page; Undermind returned no DOI"
+    },
+    {
+      "source_id": "EO-S07",
+      "undermind_cite_key": null,
+      "doi": null,
+      "stable_url": "https://www.nist.gov/pml/nanoscale-device-characterization-division/popular-links/hall-effect/hall-effect",
+      "access_date": "2026-10-03",
+      "access_level": "full_webpage",
+      "evidence_grade": "A",
+      "locator": "The Hall Effect Eqs.1-5; van der Pauw Technique",
+      "limit": "official archived tutorial, not verified current standard",
+      "original_saved": false,
+      "original_sha256": null,
+      "redistribution_allowed": false,
+      "metadata_and_access_notes": "See source_ledger.md for full authors/title/version/rights and source-specific limitations",
+      "authors": [
+        "National Institute of Standards and Technology (NIST), Physical Measurement Laboratory"
+      ],
+      "title": "The Hall Effect",
+      "year": 2023,
+      "publication": "Official archived technical webpage; created 2010, updated 2023",
+      "peer_reviewed": false
+    },
+    {
+      "source_id": "EO-S08",
+      "undermind_cite_key": "Gui18",
+      "doi": "10.1038/s41598-019-47631-5",
+      "stable_url": "https://doi.org/10.1038/s41598-019-47631-5",
+      "access_date": "2026-10-03",
+      "access_level": "fulltext",
+      "evidence_grade": "A",
+      "locator": "pp.2,4-5,8; Figs.3-4",
+      "limit": "RF sputtering; publication 2019 despite cite key Gui18; not evaporation",
+      "original_saved": false,
+      "original_sha256": null,
+      "redistribution_allowed": true,
+      "metadata_and_access_notes": "See source_ledger.md for full authors/title/version/rights and source-specific limitations",
+      "authors": [
+        "Yaliang Gui",
+        "Mario Miscuglio",
+        "Zhizhen Ma",
+        "Mohammad H. Tahersima",
+        "Shuai Sun",
+        "Rubab Amin",
+        "Hamed Dalir",
+        "Volker J. Sorger"
+      ],
+      "title": "Towards integrated metatronics: a holistic approach on precise optical and electrical properties of Indium Tin Oxide",
+      "year": 2019,
+      "publication": "Scientific Reports 9, 11279",
+      "peer_reviewed": true,
+      "redistribution_conditions": "CC BY 4.0 attribution, license link, indicate changes; check separately credited third-party material. No original is included in this bundle.",
+      "license": "CC BY 4.0"
+    },
+    {
+      "source_id": "EO-S09",
+      "undermind_cite_key": "Men12",
+      "doi": "10.1063/1.3695996",
+      "stable_url": "https://doi.org/10.1063/1.3695996",
+      "access_date": "2026-10-03",
+      "access_level": "abstract_via_scholarly_connector",
+      "evidence_grade": "A",
+      "locator": "Abstract",
+      "limit": "publisher fetch failed; full scattering-model details unread",
+      "original_saved": false,
+      "original_sha256": null,
+      "redistribution_allowed": false,
+      "metadata_and_access_notes": "See source_ledger.md for full authors/title/version/rights and source-specific limitations",
+      "authors": [
+        "Rueben J. Mendelsberg",
+        "Guillermo Garcia",
+        "Delia J. Milliron"
+      ],
+      "title": "Extracting reliable electronic properties from transmission spectra of indium tin oxide thin films and nanocrystal films by careful application of the Drude theory",
+      "year": 2012,
+      "publication": "Journal of Applied Physics 111, 063515",
+      "peer_reviewed": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "EO-C01",
+      "claim": "Total Sn and oxygen-defect counts are not universal one-to-one free-carrier inputs",
+      "status": "reported",
+      "sources": [
+        "EO-S01",
+        "EO-S02"
+      ],
+      "locator": "S01 Results/Discussion; S02 Abstract",
+      "conditions": "Source-specific RPD/post-oxidation and electrochemical experiments",
+      "inference": "Using these mechanisms to require calibration for evaporation is an engineering inference; no evaporation calibration supplied",
+      "limitations": "Defect charge states and activation depend on sample conditions"
+    },
+    {
+      "claim_id": "EO-C02",
+      "claim": "In-plane sheet conductance is integral sigma_parallel dz; scalar Rs is reciprocal",
+      "status": "derived",
+      "sources": [
+        "EO-S07"
+      ],
+      "locator": "report.md section 3.2; model.py sheet_resistance",
+      "conditions": "Continuous connected layers, shared in-plane electric field, ohmic scalar conductivity; SI units",
+      "inference": "Independent extension of current integration to layers",
+      "limitations": "Not cross-plane transport, tensor coupling, contact resistance or percolation"
+    },
+    {
+      "claim_id": "EO-C03",
+      "claim": "Low-field same-sign layered Hall sheet concentration is S1^2/S2 and Hall mobility is S2/S1",
+      "status": "derived",
+      "sources": [],
+      "locator": "report.md section 3.3",
+      "conditions": "Hall factor 1 in every layer; independent parallel single-carrier channels; low field",
+      "inference": "First-order conductivity-tensor expansion",
+      "limitations": "No code implementation/experimental verification; invalid for arbitrary multi-carrier or high-field case"
+    },
+    {
+      "claim_id": "EO-C04",
+      "claim": "Scaling N,mass by c and optical mobility by 1/c leaves the Drude spectrum identical",
+      "status": "derived",
+      "sources": [],
+      "locator": "report.md section 7.1; test_exact_parameter_nonidentifiability",
+      "conditions": "Fixed epsilon_inf and Lorentz oscillators, single Drude term",
+      "inference": "Algebra from invariant omega_p squared and gamma",
+      "limitations": "Shows structural ambiguity of this parameterization; does not assert all measurement modalities are ambiguous"
+    },
+    {
+      "claim_id": "EO-C05",
+      "claim": "Intensity-series coated lossless incoherent substrate matches coherent phase average",
+      "status": "validated_in_scope",
+      "sources": [
+        "EO-S06"
+      ],
+      "locator": "model.py incoherent_substrate_rt; test_incoherent_matches_uniform_phase_average",
+      "conditions": "Normal incidence, real substrate/index boundaries, front coherent film and bare rear interface; 500 uniformly spaced phases",
+      "inference": "Geometric-series derivation and numerical cross-check",
+      "limitations": "NUMERICAL ONLY; no absorbing substrate, partial coherence, roughness or experiment"
+    },
+    {
+      "claim_id": "EO-C06",
+      "claim": "Uncollected specular scattering cannot all be assigned to material absorption k",
+      "status": "derived",
+      "sources": [],
+      "locator": "report.md section 4.4",
+      "conditions": "Finite angular acceptance vs integrating-sphere total measurements",
+      "inference": "Energy accounting and detector collection definition",
+      "limitations": "No scattering/haze solver or measured haze supplied"
+    },
+    {
+      "claim_id": "EO-C07",
+      "claim": "Effective mass may depend on carrier filling and optical mobility need not equal Hall mobility",
+      "status": "reported",
+      "sources": [
+        "EO-S03",
+        "EO-S04",
+        "EO-S05"
+      ],
+      "locator": "Abstracts",
+      "conditions": "Different film microstructures and treatment domains",
+      "inference": "Requires separate optical/transport/Hall fields in model interface",
+      "limitations": "No universal m(N) or mobility ratio fitted"
+    },
+    {
+      "claim_id": "EO-C08",
+      "claim": "RF-sputtered ITO can require depth-aware broadband optical fitting and electrical cross-checks",
+      "status": "reported",
+      "sources": [
+        "EO-S08"
+      ],
+      "locator": "pp.2,4-5,8; Figs.3-4",
+      "conditions": "RF sputtering on Si/SiO2; 200-1680nm spectroscopy",
+      "inference": "A candidate model structure for evaporation, not a transferred process law",
+      "limitations": "Fitted depth profile is not an independently measured defect profile"
+    },
+    {
+      "claim_id": "EO-C09",
+      "claim": "Three demonstration cases give Rs/T/R/A tradeoffs",
+      "status": "simulated",
+      "sources": [],
+      "locator": "demo.py; results/synthetic_summary.json; results/synthetic_spectra.csv",
+      "conditions": "All inputs synthetic; d=100/200nm; N=3e20/6e20 cm^-3; normal incidence; lossless incoherent glass",
+      "inference": "Forward model only",
+      "limitations": "NOT measured, not process-calibrated; fixed mass simplification"
+    },
+    {
+      "claim_id": "EO-C10",
+      "claim": "19 numerical unit tests pass for stated reference implementation",
+      "status": "validated_in_scope",
+      "sources": [],
+      "locator": "results/verification.txt; test_model.py",
+      "conditions": "Python standard library; deterministic tests at EO-ITO-0.1",
+      "inference": "Actual test execution",
+      "limitations": "NUMERICAL verification only; not ITO experiment validation or a production integration test"
+    },
+    {
+      "claim_id": "EO-C11",
+      "claim": "Joint T/R fitting and multiple starts can help assess parameter uncertainty",
+      "status": "reported",
+      "sources": [
+        "EO-S09"
+      ],
+      "locator": "Abstract only",
+      "conditions": "Paper-specific Drude fitting models",
+      "inference": "Suggested calibration procedure; does not remove structural non-identifiability",
+      "limitations": "Fulltext unread, no precision/algorithm coefficients claimed"
+    }
+  ],
+  "missing_fulltext_priorities": [
+    {
+      "priority": "P1",
+      "source_id": "EO-S03",
+      "trigger": "If inverse N/mobility extraction begins",
+      "unverified_quantities": [
+        "sample method/thickness",
+        "spectral fit domain",
+        "Drude/Tauc-Lorentz definitions",
+        "effective mass concentration relation and uncertainty",
+        "Hall factor handling"
+      ],
+      "blocking_current_forward_model": false
+    },
+    {
+      "priority": "P2_conditional",
+      "source_id": "EO-S04",
+      "trigger": "High-carrier-density ENZ or mid-IR design",
+      "unverified_quantities": [
+        "ATR geometry",
+        "annealing domain",
+        "mass extraction method",
+        "nonparabolic coefficients and uncertainty"
+      ],
+      "blocking_current_forward_model": false
+    },
+    {
+      "priority": "P3_method",
+      "source_id": "EO-S09",
+      "trigger": "Reproduce this specific inverse algorithm",
+      "unverified_quantities": [
+        "empirical scattering function",
+        "parameter bounds",
+        "multistart and uncertainty procedure"
+      ],
+      "blocking_current_forward_model": false
+    }
+  ],
+  "main_physical_validation_blocker": "No same-batch project measurement set or process calibration is available; more papers alone cannot establish predictive process accuracy."
+}

@@ -1,0 +1,11 @@
+﻿claim_id,claim_zh,source_ids,locators,status,verification_method,limitations,version
+ITO-C01,同一Denton/End-Hall设备120nm膜的O2流量响应非单调：12sccm在四点扫描中最低ρ且最高平均T。,"[""ITO-P06""]","[""p.578 Table1；p.579 §3""]",reported,原文读取，单位和上下文核对,仅8/10/12/14sccm离散点；不证明连续全局最优；无Hall验证缺陷解释,ito-process-v0.1
+ITO-C02,空气退火不是普遍降低电阻：Rao薄膜高温退火增Rs；Pokaipisit500nm样品在300°C改善、350°C恶化。,"[""ITO-P01"", ""ITO-P05""]","[""Rao p.203 Table1"", ""Pokaipisit p.364 Table1""]",cross_checked,原文读取，单位和上下文核对,不同起始膜、厚度、时长；不是同一配方相反复现,ito-process-v0.1
+ITO-C03,无外加预热不等于基片保持室温；HDPE厚膜生长中等离子体/辐射加热触发结晶。,"[""ITO-P02""]","[""p.175 §3.2；p.176 §3.4""]",reported,原文读取，单位和上下文核对,实际Ts(t)缺失，不能从厚度唯一识别结晶动力学,ito-process-v0.1
+ITO-C04,ITO源料氧化物wt%不能当膜中Sn阳离子at%，更不能当载流子浓度。,"[""ITO-P03"", ""ITO-P13"", ""ITO-P09""]","[""Kor Methods"", ""Yam publisher conclusion"", ""Jan institutional abstract""]",derived,物质的量换算+原论文对源料、XPS膜组分分开记录,无源到膜组成随时间完整量测，本版只提供计量换算，不给分馏常数,ito-process-v0.1
+ITO-C05,放电电压/电流、体等离子体密度不是基片处离子能量分布/通量；当前跨设备能量剂量模型不可标定。,"[""ITO-P01"", ""ITO-P02"", ""ITO-P03"", ""ITO-P06""]","[""各Methods及ITO-P02 §3.1/3.4""]",derived,原文读取，单位和上下文核对,Bae900V摘要不能补缺；需Faraday/RFEA等到片测量,ito-process-v0.1
+ITO-C06,Korneluk的Methods压力数值与“增加”叙述矛盾。,"[""ITO-P03""]","[""pp.10–11 Methods""]",contradicted,出版社HTML/PDF、Undermind二次提问三者一致,不能擅改指数，也不能认定2e-5 Torr为氧分压,ito-process-v0.1
+ITO-C07,Far文章的ρ与Rs*d不一致且源料描述冲突，隔离出定量基准。,"[""ITO-P07""]","[""p.4 Table1；pp.1,8摘要结论""]",contradicted,600Ω/□×140nm=8.4e-3Ωcm，与表1.65e-2和正文1.75e-2均不同,需原始测量/作者勘误；不能选择最漂亮一个值,ito-process-v0.1
+ITO-C08,最小Rs、最小ρ和最大T往往不是同一片最佳膜，不可跨样本拼接。,"[""ITO-P02"", ""ITO-P03"", ""ITO-P04""]","[""Koj Tables1–2"", ""Kor Figs3–6"", ""Pok07 Table1""]",derived,原文读取，单位和上下文核对,以原始样本ID保留成套数据,ito-process-v0.1
+ITO-C09,表面氧化及源料耗尽可引起热蒸发速率/成分漂移；Berkeley直接报告增氧时速率下降，分馏方向援引Jan。,"[""ITO-P08"", ""ITO-P09""]","[""Berkeley p.3 Discussion"", ""Jan institutional abstract""]",reported,原文读取，单位和上下文核对,源氧化原因属作者推测；Jan分馏原全文未读；不能提升成定量规律,ito-process-v0.1
+ITO-C10,高透明百分数需光谱/基底归一化定义；Berkeley>95%是相对裸玻璃透射。,"[""ITO-P08""]","[""p.1 Results definition""]",reported,原文读取，单位和上下文核对,不能与未扣基底的84%、或550nm单点直接排序,ito-process-v0.1

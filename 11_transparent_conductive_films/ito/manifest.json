@@ -1,0 +1,252 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-03",
+  "scope": "original ITO research payload; originals and upload receipts excluded",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 80,
+      "sha256": "94126d19962e2fd36ea11fdaba4dcbc4ad60def4dc519bc59ba9ea194fcc71b5"
+    },
+    {
+      "path": "ITO研究报告.html",
+      "bytes": 363269,
+      "sha256": "f46a56793e3ae5bef17957076dbc50e43bc3d618a7586179fc442aedab05194e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4212,
+      "sha256": "7d798a4e36b0e6ea765c0dfd0d1c13184d22b44c288ef57a87bd33dbe215539e"
+    },
+    {
+      "path": "build_reader.py",
+      "bytes": 1559,
+      "sha256": "a0e0e48f4427298325813989739c4d31b7295c65a1488871c08cb8344f39efa2"
+    },
+    {
+      "path": "electro_optics/SHA256SUMS",
+      "bytes": 759,
+      "sha256": "a6de7b83b848b6df489e36687825d946375bfe416d1e2623aa4f68a0e488cb82"
+    },
+    {
+      "path": "electro_optics/demo.py",
+      "bytes": 3278,
+      "sha256": "70fc0ef73183d049404621ae909c3651a12530d029f6f7619d31d761365d1669"
+    },
+    {
+      "path": "electro_optics/evidence_ledger.json",
+      "bytes": 16935,
+      "sha256": "ab5823e56b3ff95aa8d79733c92884e2c245c6f1bde5d523e6b30d39e937379b"
+    },
+    {
+      "path": "electro_optics/model.py",
+      "bytes": 11104,
+      "sha256": "7234f9682c30274337309e68c6c28c7d0b10e31a186589a1edd2ec0ec5647b32"
+    },
+    {
+      "path": "electro_optics/report.md",
+      "bytes": 21318,
+      "sha256": "f7b9eb49125a9b183ac16e9539bad01a3748ab8df8cf5b89c4df3cdafff60e43"
+    },
+    {
+      "path": "electro_optics/results/synthetic_spectra.csv",
+      "bytes": 83401,
+      "sha256": "49b2a4d16acaf174f98b007db0c1391a0e5fe994058c91713a02c8ce9be9728f"
+    },
+    {
+      "path": "electro_optics/results/synthetic_summary.json",
+      "bytes": 2406,
+      "sha256": "a201371b35a80acb92c4bff61f4db56add8e1580163c1029b9639026a8095a48"
+    },
+    {
+      "path": "electro_optics/results/verification.txt",
+      "bytes": 2011,
+      "sha256": "ac0a8d2bc0e5acff6ff61b7b519e9bb03a24c0075c0291ca45e153bd9faee1d3"
+    },
+    {
+      "path": "electro_optics/source_ledger.md",
+      "bytes": 13505,
+      "sha256": "0f15efa53984c97e63beff07f0db75886f1579384864a81d26ddaf131ba59391"
+    },
+    {
+      "path": "electro_optics/test_model.py",
+      "bytes": 8154,
+      "sha256": "dd0d8fa7ae1298994996fafdd56c76771a14f588061ea4b5f52ae9a15a60d222"
+    },
+    {
+      "path": "integration/01_flux_material_state.md",
+      "bytes": 7943,
+      "sha256": "a8641e3bf2e908ff0d08b87f445f60ff1717623728baeb6b614b7dd2e0dddfaa"
+    },
+    {
+      "path": "integration/02_calibration_validation.md",
+      "bytes": 7510,
+      "sha256": "dc5eef0f4322c2b655348a3c6f36ed2419d1a5da0baeb61c4186824d1c06e7e9"
+    },
+    {
+      "path": "integration/03_engineering_foundations.md",
+      "bytes": 3405,
+      "sha256": "114c8cf03013b588a8d081d30f7f8c352cfadf56a61a9a4c9cac12f25a8f72f6"
+    },
+    {
+      "path": "integration/04_synthetic_visual.md",
+      "bytes": 752,
+      "sha256": "b04dd63834633af28bc03ba671c217d52030427801297d965c1a2d8856a2cc6c"
+    },
+    {
+      "path": "integration/chain_example.py",
+      "bytes": 1297,
+      "sha256": "bd561df68e74ff3def4e9507e00216075ba23d19f296c0b8e5f2fe25f9d916be"
+    },
+    {
+      "path": "integration/chain_example_result.json",
+      "bytes": 729,
+      "sha256": "94efbcb9f94a3b0e503f96433d7357f06986b301df5a2c1a6c18a445d9c85b0f"
+    },
+    {
+      "path": "integration/engineering_sources.json",
+      "bytes": 2130,
+      "sha256": "1524c6fead16c1b73ffc7356a9d3975658348ccf357594a40915fe470e9fcca5"
+    },
+    {
+      "path": "integration/evidence_ledger.json",
+      "bytes": 1291,
+      "sha256": "57fa1b2011dafa4868ba2922a327bed181b0d9eb4410bce91944524c5dc3a1ec"
+    },
+    {
+      "path": "integration/local_dependencies.json",
+      "bytes": 1487,
+      "sha256": "39875d63ae91ecbfd6d3eabacd95713242d9f96e0036ccbe225118fce72fbd54"
+    },
+    {
+      "path": "integration/material_state_contract.json",
+      "bytes": 1846,
+      "sha256": "a11daaae0d4f293a9f034d483043122a338b9812efd0c2039639a11115a0fba9"
+    },
+    {
+      "path": "integration/pipeline.svg",
+      "bytes": 1859,
+      "sha256": "e974979a2fa4dc0636c8e19c6c1044aba3e1944dfea93eed7d9a944aff368d3b"
+    },
+    {
+      "path": "integration/plot_synthetic.py",
+      "bytes": 1455,
+      "sha256": "a3cfdeb6545034d53ed11526e0e9d49cc36fe8a903add9719759b18dcee39b99"
+    },
+    {
+      "path": "integration/reference_state.py",
+      "bytes": 3244,
+      "sha256": "77a5af86a339e7cb7a0fc3eb141aee207cb57cf27cf1a85177a2ed317ee639b0"
+    },
+    {
+      "path": "integration/sources.json",
+      "bytes": 4554,
+      "sha256": "acd66caa4161b96e129ed5897411cab1eef575e27f0b978f7fd44e700b6297d7"
+    },
+    {
+      "path": "integration/synthetic_example.json",
+      "bytes": 690,
+      "sha256": "5cec61fb80f6f8fe3d70d1e09c8ec618eafa265bf10c95eadb74b3582972111c"
+    },
+    {
+      "path": "integration/synthetic_tradeoff.png",
+      "bytes": 143959,
+      "sha256": "7f14e69d25d612ca5927bf7e6eec56510d511c3e481954f2cdfdf9e141d8e386"
+    },
+    {
+      "path": "integration/test_reference_state.py",
+      "bytes": 2461,
+      "sha256": "89c6d1470c25707c095f01610b05761c4a5a1de5dc02202d9fc2e3e309fe57db"
+    },
+    {
+      "path": "process/apparatus_conditions.json",
+      "bytes": 8756,
+      "sha256": "a0da1d59e0bfc011e4e3b3230ff9fdc82012c53d1890c0142ddb16ad07505555"
+    },
+    {
+      "path": "process/claims.csv",
+      "bytes": 3343,
+      "sha256": "38849c0b657545362617be7ebdd6c08908fa74d8c7a44be42b544de5d6635e5e"
+    },
+    {
+      "path": "process/evidence_ledger.csv",
+      "bytes": 8678,
+      "sha256": "87ffeb46c6db30ee37a1009adabf8809fc8db73e3904611fdad3a421a777b896"
+    },
+    {
+      "path": "process/evidence_ledger.json",
+      "bytes": 25965,
+      "sha256": "3a7adaaad4b2a9148600a578734426c913e31e75dc301099fc22dae726f433de"
+    },
+    {
+      "path": "process/fulltext_gaps.md",
+      "bytes": 6106,
+      "sha256": "9e8a2d5fe4fd51cd8e0520170f96c4712d4ec21db7adba6f6986d0fecb9928e0"
+    },
+    {
+      "path": "process/report.md",
+      "bytes": 24034,
+      "sha256": "d62540a6061179b54345f0f68c2a7df9124e5ca61eb97ce14aae997dab05223f"
+    },
+    {
+      "path": "process/sources.json",
+      "bytes": 15805,
+      "sha256": "5cb48dc7d6a5025b9e60cb09cc6e22f6722cde40f5c40230af22dbcae3b19165"
+    },
+    {
+      "path": "report_style.css",
+      "bytes": 1361,
+      "sha256": "c3b20827213d8203840f4c46c833ccc1eaada1ab7ee76f81b0a1998c3d8a020d"
+    },
+    {
+      "path": "sources/README.md",
+      "bytes": 1479,
+      "sha256": "017e325676ae2357941db9b6af211f2d3f967f032ae02668f419b2c93a3276f9"
+    },
+    {
+      "path": "sources/local_originals_index.json",
+      "bytes": 265,
+      "sha256": "92df5429516192d342f1e042921a0e7a0eda5275034736d4c782b760fafe288b"
+    },
+    {
+      "path": "sources/source_index.json",
+      "bytes": 13204,
+      "sha256": "86970c91462246e6d9130939fbf8ff3e6b79d42db9019b083b1492af99e6d7e5"
+    },
+    {
+      "path": "stage_status.json",
+      "bytes": 859,
+      "sha256": "c534063105a607e25f01f458f39c2d883e43e6b01405d30fb7b1a7f1e0948457"
+    },
+    {
+      "path": "verification/environment.json",
+      "bytes": 363,
+      "sha256": "fc968d7e785391db26beb1ba43df7f15b5133fdc548b422a6223a7a82b1ed33d"
+    },
+    {
+      "path": "verification/frozen_topics_unchanged.json",
+      "bytes": 203,
+      "sha256": "fb6de9df9fd20cc7e4612fd3d4051f8bdb33bfbaa9260affeadecbd49952dc2b"
+    },
+    {
+      "path": "verification/independent_review.md",
+      "bytes": 18189,
+      "sha256": "a58932c8f3a4be302a3498fb3ef32a39ba6ddb3d65a2dba70fe15ee9b2f714ba"
+    },
+    {
+      "path": "verification/integration_tests.txt",
+      "bytes": 1480,
+      "sha256": "a3970f8feba4ed79855d14840195bd72ad73ae0d77e825c0a6f989c8d04aede4"
+    },
+    {
+      "path": "verification/reader_qa.json",
+      "bytes": 631,
+      "sha256": "2475fc7f1bf898ae3ab9f3e2dd6d1c3670c686b9d363d5edf0e4ffbf3420c095"
+    },
+    {
+      "path": "verify_manifest.py",
+      "bytes": 1246,
+      "sha256": "68807b071b6c758a5357e37bfa3b3fdc12ef0fad02a74e943cca491812d4db24"
+    }
+  ]
+}

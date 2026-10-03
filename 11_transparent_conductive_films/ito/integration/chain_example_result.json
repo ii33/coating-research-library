@@ -1,0 +1,27 @@
+{
+  "status": "SYNTHETIC_NOT_CALIBRATED",
+  "inventory_atoms_m2": {
+    "In": 2.8e+21,
+    "Sn": 2e+20,
+    "O": 4.6e+21
+  },
+  "effective_density_kg_m3": 7100,
+  "thickness_m": 9.795491891809499e-08,
+  "independent_assumed_electrical_state": {
+    "N_m3": 3e+26,
+    "mu_dc_m2_Vs": 0.0025,
+    "mu_opt_m2_Vs": 0.0035
+  },
+  "Rs_ohm_square": 84.95757223013445,
+  "550nm": {
+    "R": 0.1692157652746881,
+    "T": 0.8258370050509708,
+    "A": 0.004947229674341136
+  },
+  "limitations": [
+    "No process parameters were inverted",
+    "N and mobilities supplied separately, not derived from composition",
+    "Pure Drude finite-domain example, no fitted interband response",
+    "Normal incidence, lossless incoherent glass"
+  ]
+}

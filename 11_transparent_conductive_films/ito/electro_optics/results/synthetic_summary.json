@@ -1,0 +1,64 @@
+{
+  "status": "SIMULATED_SYNTHETIC_NOT_MEASURED_NOT_PROCESS_CALIBRATED",
+  "spectral_domain_nm": [
+    400,
+    2500
+  ],
+  "geometry": "normal air/coherent isotropic ITO/lossless incoherent glass/air",
+  "glass_index": 1.5,
+  "shared_assumptions": {
+    "effective_mass_me": 0.35,
+    "epsilon_inf": 3.9,
+    "lorentz_strength": 0.3,
+    "resonance_eV": 4.0,
+    "damping_eV": 0.4
+  },
+  "averaging": "uniform wavelength weighting; NOT luminous or solar transmittance",
+  "cases": [
+    {
+      "name": "synthetic_baseline",
+      "N_cm3": 3e+20,
+      "mu_opt_cm2_Vs": 35,
+      "mu_transport_cm2_Vs": 25,
+      "thickness_nm": 100,
+      "R_sheet_ohm_square": 83.22012099281017,
+      "rho_parallel_ohm_m": 8.322012099281018e-06,
+      "mean_R_400_700_nm_flat_wavelength": 0.15704014293844615,
+      "mean_T_400_700_nm_flat_wavelength": 0.8106888173665568,
+      "mean_A_400_700_nm_flat_wavelength": 0.03227103969499686,
+      "mean_R_700_2500_nm_flat_wavelength": 0.11780408437483622,
+      "mean_T_700_2500_nm_flat_wavelength": 0.8188729621003986,
+      "mean_A_700_2500_nm_flat_wavelength": 0.06332295352476552
+    },
+    {
+      "name": "synthetic_higher_N",
+      "N_cm3": 6e+20,
+      "mu_opt_cm2_Vs": 25,
+      "mu_transport_cm2_Vs": 18,
+      "thickness_nm": 100,
+      "R_sheet_ohm_square": 57.79175068945149,
+      "rho_parallel_ohm_m": 5.77917506894515e-06,
+      "mean_R_400_700_nm_flat_wavelength": 0.14860801413278119,
+      "mean_T_400_700_nm_flat_wavelength": 0.8093855268913618,
+      "mean_A_400_700_nm_flat_wavelength": 0.04200645897585695,
+      "mean_R_700_2500_nm_flat_wavelength": 0.1652998916136568,
+      "mean_T_700_2500_nm_flat_wavelength": 0.6941655269851139,
+      "mean_A_700_2500_nm_flat_wavelength": 0.14053458140122907
+    },
+    {
+      "name": "synthetic_thicker",
+      "N_cm3": 3e+20,
+      "mu_opt_cm2_Vs": 35,
+      "mu_transport_cm2_Vs": 25,
+      "thickness_nm": 200,
+      "R_sheet_ohm_square": 41.61006049640508,
+      "rho_parallel_ohm_m": 8.322012099281018e-06,
+      "mean_R_400_700_nm_flat_wavelength": 0.16643380763127003,
+      "mean_T_400_700_nm_flat_wavelength": 0.7704063896685528,
+      "mean_A_400_700_nm_flat_wavelength": 0.06315980270017736,
+      "mean_R_700_2500_nm_flat_wavelength": 0.10964907283710652,
+      "mean_T_700_2500_nm_flat_wavelength": 0.7697660059720468,
+      "mean_A_700_2500_nm_flat_wavelength": 0.12058492119084753
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "ito-material-state-v0.1",
+  "scope": "proposed offline research contract, not production API",
+  "upstream": {
+    "arrival_element_flux": {
+      "unit": "atoms m^-2 s^-1",
+      "area_basis": "actual substrate surface",
+      "semantics": "incident not retained",
+      "elements": [
+        "In",
+        "Sn",
+        "O"
+      ],
+      "value": null
+    },
+    "source_composition": {
+      "basis": "oxide_mass_fraction",
+      "value": null
+    },
+    "substrate_temperature_history": {
+      "unit": "K",
+      "value": null
+    },
+    "oxygen_partial_pressure_history": {
+      "unit": "Pa",
+      "measurement_location": null,
+      "value": null
+    },
+    "ion_distribution": {
+      "unit": "particles m^-2 s^-1 per integrated energy-angle bin",
+      "value": null,
+      "charge_states": null,
+      "fast_neutral_coverage": "unknown"
+    }
+  },
+  "state": {
+    "net_element_inventory": {
+      "unit": "atoms m^-2",
+      "value": null
+    },
+    "density": {
+      "unit": "kg m^-3",
+      "basis": "actual effective film",
+      "value": null
+    },
+    "thickness": {
+      "unit": "m",
+      "value": null
+    },
+    "N": {
+      "unit": "m^-3",
+      "value": null
+    },
+    "mobility_dc": {
+      "unit": "m^2 V^-1 s^-1",
+      "value": null
+    },
+    "mobility_optical": {
+      "unit": "m^2 V^-1 s^-1",
+      "value": null
+    },
+    "optical_domain": {
+      "wavelength_m": null,
+      "temperature_K": null,
+      "state_age": null
+    }
+  },
+  "provenance_required": [
+    "sample_id",
+    "source_id",
+    "measurement_method",
+    "uncertainty_or_unknown",
+    "time",
+    "validity_domain"
+  ],
+  "failure_states": [
+    "unknown",
+    "partial",
+    "blocked_missing_measurements",
+    "out_of_domain",
+    "inventory_depleted",
+    "unidentifiable"
+  ],
+  "production_qualified": false
+}

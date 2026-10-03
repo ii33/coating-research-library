@@ -15,7 +15,7 @@
 - 可复现、实验与算法评测：[90_methods/REPRODUCIBILITY.md](90_methods/REPRODUCIBILITY.md)
 - 未决问题：[00_project/clarifications.json](00_project/clarifications.json)
 
-## 十个专题
+## 原始十个专题与新增专题
 
 1. [主流镀膜机结构](01_machine_structures/README.md)；首轮重点：行星盘机器
 2. [高精度镀膜机建模与仿真](02_machine_modeling/README.md)；原文未指定子优先项，先完成本专题首轮核心范围
@@ -27,6 +27,7 @@
 8. [膜系设计优化算法](08_stack_optimization_algorithms/README.md)；首轮重点：高精度的高性能优化算法、快速求解的近似算法、方便不停迭代的算法
 9. [生产标准、环境与损伤试验](09_standards_and_qualification/README.md)；原文未指定子优先项，先完成本专题首轮核心范围
 10. [离子源特性与生产参数优化](10_ion_sources/README.md)；首轮重点：考夫曼离子源
+11. [透明导电膜：ITO](11_transparent_conductive_films/ito/README.md)；同一镀膜科研项目的新增专题，阶段一有界研究已交付；未完成实机校准或产品集成
 
 ## 执行原则
 
@@ -96,3 +97,9 @@ T06–T10入口分别为[工艺光学](06_optical_coating_families/round2_proces
 ## 2026-10-03 文献增量与当前同步范围
 
 [当前证据索引](00_project/CURRENT_EVIDENCE_2026-10-03.md)：Oliver全文已核验，新增Shakoury辅助证据，Lehan正文仍待补；CPU/GPU主机复现包待取得当前文件读取授权后另批同步。
+
+## ITO专题与本地索引校对（2026-10-03）
+
+ITO并入本库专题11，不另建研究项目。[研究入口](11_transparent_conductive_films/ito/README.md) · [阶段状态](11_transparent_conductive_films/ito/stage_status.json) · [冻结清单](11_transparent_conductive_films/ito/manifest.json)。范围为蒸镀工艺、材料状态接口、电光参考模型及小规模离线验证；实机校准、材料参数辨识、产品运行时集成和生产资格均未完成。
+
+本地README与当前证据索引以GitHub提交[9682a1e](https://github.com/ii33/coating-research-library/tree/9682a1ea8de13fb3c1478f5283f1305a09fab3c3)恢复已有导航，再补入ITO入口；本次未推送GitHub。原有第三轮与文献补充引用予以保留，不表示当前云快照已具备其全部文件。本地STATE/ROADMAP保持原字节，可能早于已发布状态；已发布基线请查看[该提交的STATE](https://github.com/ii33/coating-research-library/blob/9682a1ea8de13fb3c1478f5283f1305a09fab3c3/STATE.md)，ITO的本地状态以上述阶段文件为准。

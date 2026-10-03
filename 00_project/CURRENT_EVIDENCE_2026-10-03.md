@@ -17,3 +17,9 @@ CPU exact-sum阶段包、GPU-stage复现包与CPU报告本次未能在当前授�
 ## 本次检查
 
 原始补充manifest的5项载荷字节数和SHA256均匹配；发布投影重新计算对应身份。仅执行文件、JSON、链接与发布范围检查，没有重跑科学测试或设备实验。远端提交与CI状态由同步结果另行报告；没有CI记录不称CI通过。
+
+## 同一项目新增专题11：ITO（本地索引补充）
+
+[ITO研究入口](../11_transparent_conductive_films/ito/README.md) · [阶段状态](../11_transparent_conductive_films/ito/stage_status.json) · [冻结清单](../11_transparent_conductive_films/ito/manifest.json)。ITO属于本镀膜科研项目，阶段一有界研究已交付：蒸镀工艺到材料状态与电光参考模型，包含小规模离线实现验证。状态为research_reference_ready_physical_validation_pending；没有完成实机校准、产品集成或生产资格验证。
+
+本节只增加本地项目导航与范围说明，未修改ITO或既有专题的冻结文件，未执行新研究或GitHub推送。上文保留自已发布提交9682a1ea8de13fb3c1478f5283f1305a09fab3c3，不能把其历史同步范围解释为本次新增推送；当前云快照可能缺少上文引用的部分文件。

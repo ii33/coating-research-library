@@ -1,0 +1,27 @@
+test_empirical_model_interpolation (__main__.OpticalMaterial.test_empirical_model_interpolation) ... ok
+test_exact_parameter_nonidentifiability (__main__.OpticalMaterial.test_exact_parameter_nonidentifiability) ... ok
+test_invalid_and_outside_domain (__main__.OpticalMaterial.test_invalid_and_outside_domain) ... ok
+test_passive_drude_lorentz (__main__.OpticalMaterial.test_passive_drude_lorentz) ... ok
+test_bare_incoherent_glass (__main__.ThinFilmOptics.test_bare_incoherent_glass) ... ok
+test_energy_conservation_and_passivity (__main__.ThinFilmOptics.test_energy_conservation_and_passivity) ... ok
+test_incoherent_matches_uniform_phase_average (__main__.ThinFilmOptics.test_incoherent_matches_uniform_phase_average) ... ok
+test_matches_independent_matrix (__main__.ThinFilmOptics.test_matches_independent_matrix) ... ok
+test_no_film (__main__.ThinFilmOptics.test_no_film) ... ok
+test_opaque_layer_stability (__main__.ThinFilmOptics.test_opaque_layer_stability) ... ok
+test_quarter_wave_antireflection (__main__.ThinFilmOptics.test_quarter_wave_antireflection) ... ok
+test_reciprocity_transmittance (__main__.ThinFilmOptics.test_reciprocity_transmittance) ... ok
+test_reject_unimplemented_absorbing_boundaries (__main__.ThinFilmOptics.test_reject_unimplemented_absorbing_boundaries) ... ok
+test_weighted_mean (__main__.ThinFilmOptics.test_weighted_mean) ... ok
+test_zero_thickness_film (__main__.ThinFilmOptics.test_zero_thickness_film) ... ok
+test_drude_dc_limit (__main__.UnitsAndDC.test_drude_dc_limit) ... ok
+test_layered_parallel_conductance (__main__.UnitsAndDC.test_layered_parallel_conductance) ... ok
+test_uniform_rho_identity_and_dc_opt_separation (__main__.UnitsAndDC.test_uniform_rho_identity_and_dc_opt_separation) ... ok
+test_unit_conversions (__main__.UnitsAndDC.test_unit_conversions) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.006s
+
+OK
+Python 3.12.14
+
+Verified on 2026-10-03 UTC. Numerical verification only; no experimental validation.
