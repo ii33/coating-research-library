@@ -92,3 +92,7 @@ T06–T10入口分别为[工艺光学](06_optical_coating_families/round2_proces
 - [T10R3](10_ion_sources/round3_ion_state_evidence_gate/README.md)
 
 [T10R2独立portable派生](publication_packages/t10_round2_portable_v1/README.md)不沿用原冻结包身份。历史文件中的未发布/候选/下一题未启动是当时记录，当前状态以根STATE为准。
+
+## 2026-10-03 文献增量与当前同步范围
+
+[当前证据索引](00_project/CURRENT_EVIDENCE_2026-10-03.md)：Oliver全文已核验，新增Shakoury辅助证据，Lehan正文仍待补；CPU/GPU主机复现包待取得当前文件读取授权后另批同步。
