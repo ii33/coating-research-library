@@ -1,0 +1,120 @@
+{
+  "material": "ZnS",
+  "version": "research-2026-10-04",
+  "scope": "Preserved preliminary extraction, not a new independent material database; see reuse audit. No model code or product integration.",
+  "constants": {
+    "R_J_mol_K": 8.314462618,
+    "pressure_standard_Pa": 101325,
+    "M_Zn_kg_mol": 0.06538,
+    "M_S2_kg_mol": 0.06412,
+    "M_ZnS_kg_mol": 0.09744,
+    "mass_note": "conventional rounded elemental masses for model arithmetic; no single ZnS molecular mass applied to dissociated vapor"
+  },
+  "gibbs_formation": [
+    {
+      "source": "ZNS01",
+      "reaction": "Zn(l)+0.5S2(g)->ZnS(sphalerite)",
+      "T_K": [
+        948,
+        1180
+      ],
+      "a_kcal_mol": -64.223,
+      "b_kcal_mol_K": 0.02402,
+      "uncertainty_kcal_mol": 0.65,
+      "status": "measured_emf_plus_reference_thermochemistry",
+      "usable_as_gas_dissociation": false
+    },
+    {
+      "source": "ZNS01",
+      "reaction": "Zn(g)+0.5S2(g)->ZnS(sphalerite)",
+      "T_K": [
+        1180,
+        1210
+      ],
+      "a_kcal_mol": -92.72,
+      "b_kcal_mol_K": 0.04817,
+      "uncertainty_kcal_mol": 0.65,
+      "status": "measured_emf_plus_reference_thermochemistry",
+      "usable_as_gas_dissociation": true
+    }
+  ],
+  "pressure_screening": {
+    "source": "ZNS03",
+    "points": [
+      {
+        "T_K": 1223.15,
+        "P_Pa": 1
+      },
+      {
+        "T_K": 1343.15,
+        "P_Pa": 10
+      }
+    ],
+    "interpolation": "log10(P_Pa)=A-B/T_K",
+    "A": 11.192916666666672,
+    "B_K": 13690.616020833342,
+    "allowed_T_K": [
+      1223.15,
+      1343.15
+    ],
+    "pressure_definition": "vendor vapor pressure; total/species and method not specified",
+    "status": "engineering_interpolation_of_two_vendor_anchors",
+    "allowed_for_species_HK": false,
+    "uncertainty": null,
+    "novelty": "anchors_preexisting_T04_card_not_structured; interpolation_new_engineering_derivation_not_implemented"
+  },
+  "thermal_screening": [
+    {
+      "source": "ZNS15",
+      "property": "k",
+      "value": 16.7,
+      "unit": "W/(m K)",
+      "T_K": 296,
+      "state": "CVD FLIR bulk window",
+      "allowed_for_hot_powder_bed": false
+    },
+    {
+      "source": "ZNS15",
+      "property": "cp",
+      "value": 469,
+      "unit": "J/(kg K)",
+      "T_K": null,
+      "state": "CVD FLIR bulk window; temperature unspecified in table",
+      "allowed_for_hot_powder_bed": false
+    }
+  ],
+  "quarantined": [
+    {
+      "source": "ZNS02",
+      "property": "evaporation_temperature",
+      "value_C": [
+        2000,
+        2200
+      ],
+      "reason": "Not reconciled with vendor sublimation and thermodynamic sources; may not be charge-surface temperature. Do not silently correct or adopt."
+    },
+    {
+      "source": "ZNS03",
+      "property": "k_optical_550_nm",
+      "value": 3.85,
+      "reason": "Conflicts with transparent dielectric use; irrelevant to thermal conductivity, do not import."
+    }
+  ],
+  "unfilled_not_zero": [
+    "alpha_Zn(T,surface)",
+    "alpha_S2(T,surface)",
+    "ZnS_powder_k_eff(T,packing)",
+    "ZnS_powder_bulk_density",
+    "ZnS_Mo_contact_conductance",
+    "species_wall_sticking_and_residence_time",
+    "electron_energy_absorption_eta(V,T,composition)",
+    "gas_collision_cross_sections",
+    "deposit_sticking_and_reaction_rates"
+  ],
+  "defaults_prohibited": [
+    "material_specific_cosine_exponent_n",
+    "single_mass_ZnS_for_all_vapor",
+    "bulk_window_k_as_powder_k",
+    "vendor_temperature_as_machine_setpoint"
+  ]
+}

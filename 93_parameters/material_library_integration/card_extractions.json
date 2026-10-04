@@ -1,0 +1,491 @@
+{
+  "basis": "New structuring of already-researched T04 card facts; no new lookup or source-temperature fitting",
+  "records": [
+    [
+      "Ta2O5_film",
+      "source_density",
+      8.2,
+      "g/cm3",
+      "OX-01",
+      "source_bulk",
+      "vendor phase/measurement temperature incomplete"
+    ],
+    [
+      "Ta2O5_film",
+      "source_melting_temperature",
+      1872,
+      "degC",
+      "OX-01",
+      "source_bulk",
+      "not evaporation working temperature"
+    ],
+    [
+      "Ta2O5_film",
+      "vendor_source_temperature",
+      2000,
+      "degC",
+      "OX-01",
+      "source_operation",
+      "approximate vendor example; measurement position unspecified"
+    ],
+    [
+      "Ta2O5_film",
+      "vendor_deposition_rate",
+      [
+        0.2,
+        0.5
+      ],
+      "nm/s",
+      "OX-01",
+      "deposition_process",
+      "electron beam vendor experience; not intrinsic mass flux"
+    ],
+    [
+      "Ta2O5_film",
+      "vendor_oxygen_partial_pressure",
+      0.0001,
+      "Torr",
+      "OX-01",
+      "chamber_process",
+      "not material vapor pressure"
+    ],
+    [
+      "TiO2_film",
+      "source_density",
+      4.23,
+      "g/cm3",
+      "OX-02",
+      "source_bulk",
+      "phase not fully specified"
+    ],
+    [
+      "TiO2_film",
+      "source_melting_temperature",
+      1830,
+      "degC",
+      "OX-02",
+      "source_bulk",
+      "vendor nominal value"
+    ],
+    [
+      "TiO2_film",
+      "vendor_deposition_rate",
+      [
+        0.3,
+        0.5
+      ],
+      "nm/s",
+      "OX-02",
+      "deposition_process",
+      "resistance route vendor example"
+    ],
+    [
+      "TiO2_film",
+      "vendor_oxygen_partial_pressure",
+      [
+        0.0001,
+        0.0002
+      ],
+      "Torr",
+      "OX-02",
+      "chamber_process",
+      "not material vapor pressure"
+    ],
+    [
+      "YbF3_film",
+      "nominal_molar_mass",
+      230.04,
+      "g/mol",
+      "IR05",
+      "source_identity",
+      "nominal condensed formula, not verified vapor species mass"
+    ],
+    [
+      "YbF3_film",
+      "source_density",
+      8.2,
+      "g/cm3",
+      "IR06",
+      "source_bulk",
+      "approximately; not powder packing density"
+    ],
+    [
+      "YbF3_film",
+      "source_melting_temperature",
+      1157,
+      "degC",
+      "IR06",
+      "source_bulk",
+      "approximately"
+    ],
+    [
+      "YbF3_film",
+      "QCM_z_ratio",
+      1.0,
+      "1",
+      "IR05",
+      "instrument_setting",
+      "tooling and density separately calibrated"
+    ],
+    [
+      "YbF3_film",
+      "vendor_source_temperature",
+      [
+        1400,
+        1600
+      ],
+      "degC",
+      "IR05",
+      "source_operation",
+      "vendor grade and measurement context required"
+    ],
+    [
+      "YbF3_film",
+      "vendor_deposition_rate",
+      [
+        0.8,
+        1.5
+      ],
+      "nm/s",
+      "IR05",
+      "deposition_process",
+      "Merck conditional range"
+    ],
+    [
+      "SiO2_film",
+      "vendor_source_temperature",
+      1200,
+      "degC",
+      "OX-03",
+      "source_operation",
+      "approximate material-temperature statement; not baffle-box temperature"
+    ],
+    [
+      "SiO2_film",
+      "vendor_baffle_box_temperature",
+      [
+        1500,
+        1800
+      ],
+      "degC",
+      "OX-03",
+      "source_container",
+      "do not combine with material-temperature point in vapor fit"
+    ],
+    [
+      "SiO2_film",
+      "vendor_deposition_rate",
+      0.2,
+      "nm/s",
+      "OX-03",
+      "deposition_process",
+      "vendor example"
+    ],
+    [
+      "SiO2_film",
+      "vendor_oxygen_partial_pressure",
+      1e-05,
+      "Torr",
+      "OX-03",
+      "chamber_process",
+      "not material vapor pressure"
+    ],
+    [
+      "SiO2_film",
+      "vendor_substrate_temperature",
+      350,
+      "degC",
+      "OX-03",
+      "substrate_during_deposition",
+      "not safe for all substrates"
+    ],
+    [
+      "MgF2_film",
+      "QCM_density",
+      3.18,
+      "g/cm3",
+      "IR10",
+      "instrument_setting",
+      "not independently measured deposited film density"
+    ],
+    [
+      "MgF2_film",
+      "QCM_z_ratio",
+      0.637,
+      "1",
+      "IR10",
+      "instrument_setting",
+      "tooling separately calibrated"
+    ],
+    [
+      "MgF2_film",
+      "vendor_source_temperature",
+      [
+        1300,
+        1600
+      ],
+      "degC",
+      "IR10",
+      "source_operation",
+      "Merck conditional range; do not average with KJLC 950C"
+    ],
+    [
+      "MgF2_film",
+      "vendor_source_temperature_KJLC",
+      950,
+      "degC",
+      "IR11",
+      "source_operation",
+      "source temperature definition/grade not reconciled; do not use as universal setpoint"
+    ],
+    [
+      "MgF2_film",
+      "vendor_deposition_rate",
+      [
+        0.5,
+        5
+      ],
+      "nm/s",
+      "IR10",
+      "deposition_process",
+      "Merck grade/geometry-dependent range"
+    ],
+    [
+      "MgF2_film",
+      "vendor_substrate_temperature",
+      [
+        200,
+        300
+      ],
+      "degC",
+      "IR10",
+      "substrate_during_deposition",
+      "not permission to heat any substrate"
+    ],
+    [
+      "Al2O3_film",
+      "source_density",
+      3.97,
+      "g/cm3",
+      "OX-04",
+      "source_bulk",
+      "not amorphous film density"
+    ],
+    [
+      "Al2O3_film",
+      "source_melting_temperature",
+      2072,
+      "degC",
+      "OX-04",
+      "source_bulk",
+      "vendor nominal"
+    ],
+    [
+      "Al2O3_film",
+      "vapor_pressure_anchor",
+      0.0001,
+      "Torr",
+      "OX-04",
+      "source_equilibrium",
+      "temperature_degC=1550; species not specified; single anchor cannot identify two-parameter fit"
+    ],
+    [
+      "Al2O3_film",
+      "vendor_source_temperature",
+      2100,
+      "degC",
+      "OX-04",
+      "source_operation",
+      "approximate process experience; not a second vapor-pressure anchor"
+    ],
+    [
+      "Al2O3_film",
+      "vendor_deposition_rate",
+      [
+        0.2,
+        0.5
+      ],
+      "nm/s",
+      "OX-04",
+      "deposition_process",
+      "vendor example"
+    ],
+    [
+      "Al2O3_film",
+      "vendor_oxygen_partial_pressure",
+      1e-05,
+      "Torr",
+      "OX-04",
+      "chamber_process",
+      "not material vapor pressure"
+    ],
+    [
+      "H4_film",
+      "QCM_z_ratio",
+      1,
+      "1",
+      "OX-17",
+      "instrument_setting",
+      "2021 Patinal H4/H4 HD document; no independent uncertainty"
+    ],
+    [
+      "H4_film",
+      "vendor_source_temperature",
+      [
+        2200,
+        2300
+      ],
+      "degC",
+      "OX-17",
+      "source_operation",
+      "2021 Patinal family only; vendor grade required"
+    ],
+    [
+      "H4_film",
+      "vendor_deposition_rate",
+      [
+        0.2,
+        0.8
+      ],
+      "nm/s",
+      "OX-17",
+      "deposition_process",
+      "grade-specific vendor range"
+    ],
+    [
+      "H4_film",
+      "vendor_oxygen_partial_pressure",
+      [
+        8e-05,
+        0.0002
+      ],
+      "mbar",
+      "OX-17",
+      "chamber_process",
+      "not material vapor pressure"
+    ],
+    [
+      "H4_film",
+      "vendor_substrate_temperature",
+      [
+        30,
+        300
+      ],
+      "degC",
+      "OX-17",
+      "substrate_during_deposition",
+      "grade-specific; not machine operating authorization"
+    ],
+    [
+      "Ge_film",
+      "vapor_pressure_anchor",
+      0.0001,
+      "Torr",
+      "M01",
+      "source_equilibrium",
+      "temperature_degC=1167; single anchor; not base pressure"
+    ],
+    [
+      "Ge_film",
+      "vendor_source_temperature",
+      1400,
+      "degC",
+      "M01",
+      "source_operation",
+      "vendor example"
+    ],
+    [
+      "Ge_film",
+      "vendor_deposition_rate",
+      [
+        0.1,
+        0.5
+      ],
+      "nm/s",
+      "M01",
+      "deposition_process",
+      "converted from 1–5 angstrom/s; vendor example"
+    ],
+    [
+      "Cu_film",
+      "QCM_z_ratio",
+      0.437,
+      "1",
+      "M02",
+      "instrument_setting",
+      "not calibrated machine parameter"
+    ],
+    [
+      "Cu_film",
+      "vapor_pressure_anchor",
+      0.0001,
+      "Torr",
+      "M02",
+      "source_equilibrium",
+      "temperature_degC=1017; single anchor; not melt working point"
+    ],
+    [
+      "Cr_film",
+      "QCM_z_ratio",
+      0.305,
+      "1",
+      "M03",
+      "instrument_setting",
+      "not calibrated machine parameter"
+    ],
+    [
+      "Cr_film",
+      "vendor_source_temperature",
+      1400,
+      "degC",
+      "M03",
+      "source_operation",
+      "approximate sublimation condition; phase differs from a liquid-level source model"
+    ],
+    [
+      "Al_film",
+      "QCM_z_ratio",
+      1.08,
+      "1",
+      "M04",
+      "instrument_setting",
+      "not calibrated machine parameter"
+    ],
+    [
+      "Al_film",
+      "vapor_pressure_anchor",
+      0.0001,
+      "Torr",
+      "M04",
+      "source_equilibrium",
+      "temperature_degC=1010; single anchor; not substrate temperature"
+    ],
+    [
+      "ZnS_film",
+      "QCM_z_ratio",
+      0.775,
+      "1",
+      "IR01",
+      "instrument_setting",
+      "not calibrated machine parameter"
+    ],
+    [
+      "ZnS_film",
+      "vapor_pressure_anchor_950C",
+      1,
+      "Pa",
+      "IR02",
+      "source_equilibrium",
+      "temperature_degC=950; original 0.01mbar; vapor species and pressure method unspecified"
+    ],
+    [
+      "ZnS_film",
+      "vapor_pressure_anchor_1070C",
+      10,
+      "Pa",
+      "IR02",
+      "source_equilibrium",
+      "temperature_degC=1070; original 0.1mbar; no direct species-Hertz-Knudsen use"
+    ]
+  ]
+}
