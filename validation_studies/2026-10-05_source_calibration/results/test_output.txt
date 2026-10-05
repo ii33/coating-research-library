@@ -1,0 +1,25 @@
+test_convex_hull_not_just_bounding_rectangle (test_calibration.ConditionGPTests.test_convex_hull_not_just_bounding_rectangle) ... ok
+test_degenerate_and_duplicate_conditions_rejected (test_calibration.ConditionGPTests.test_degenerate_and_duplicate_conditions_rejected) ... ok
+test_outside_hull_and_changed_configuration_rejected (test_calibration.ConditionGPTests.test_outside_hull_and_changed_configuration_rejected) ... ok
+test_training_reproduction_and_finite_uncertainty (test_calibration.ConditionGPTests.test_training_reproduction_and_finite_uncertainty) ... ok
+test_actual_unknown_and_wrong_reading_type_rejected (test_calibration.SourceCalibrationTests.test_actual_unknown_and_wrong_reading_type_rejected) ... ok
+test_analytic_derivative_point_and_finite_source (test_calibration.SourceCalibrationTests.test_analytic_derivative_point_and_finite_source) ... ok
+test_baseline_subtraction_negative_data_not_positive_source (test_calibration.SourceCalibrationTests.test_baseline_subtraction_negative_data_not_positive_source) ... ok
+test_configuration_id_checked_on_both_fit_and_receiving_geometry (test_calibration.SourceCalibrationTests.test_configuration_id_checked_on_both_fit_and_receiving_geometry) ... ok
+test_cosine_normalization_n0_n1_n4 (test_calibration.SourceCalibrationTests.test_cosine_normalization_n0_n1_n4) ... ok
+test_declared_n_cap_is_diagnostic_not_truth (test_calibration.SourceCalibrationTests.test_declared_n_cap_is_diagnostic_not_truth) ... ok
+test_invalid_normal_geometry_and_capture_fraction_rejected (test_calibration.SourceCalibrationTests.test_invalid_normal_geometry_and_capture_fraction_rejected) ... ok
+test_mass_rate_conversion_area_is_not_applied_twice (test_calibration.SourceCalibrationTests.test_mass_rate_conversion_area_is_not_applied_twice) ... ok
+test_more_same_angle_distances_do_not_identify_n (test_calibration.SourceCalibrationTests.test_more_same_angle_distances_do_not_identify_n) ... ok
+test_near_axis_uncertainty_worse_than_distinct_angles (test_calibration.SourceCalibrationTests.test_near_axis_uncertainty_worse_than_distinct_angles) ... ok
+test_noise_floor_nonfinite_inputs_shapes_rejected (test_calibration.SourceCalibrationTests.test_noise_floor_nonfinite_inputs_shapes_rejected) ... ok
+test_noiseless_recovery_and_boundaries (test_calibration.SourceCalibrationTests.test_noiseless_recovery_and_boundaries) ... ok
+test_point_kernel_matches_independent_paper_formula (test_calibration.SourceCalibrationTests.test_point_kernel_matches_independent_paper_formula) ... ok
+test_production_geometry_adapter_reuses_actual_source_samples (test_calibration.SourceCalibrationTests.test_production_geometry_adapter_reuses_actual_source_samples) ... ok
+test_same_ring_rank_one_and_map_rejected (test_calibration.SourceCalibrationTests.test_same_ring_rank_one_and_map_rejected) ... ok
+test_zero_source_has_no_shape_information (test_calibration.SourceCalibrationTests.test_zero_source_has_no_shape_information) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.110s
+
+OK

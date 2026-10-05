@@ -1,0 +1,71 @@
+{
+  "stage_id": "source_calibration_2026_10_05",
+  "algorithmic": true,
+  "implementation": "complete_synthetic_study",
+  "physical_validation": "pending_actual_data",
+  "code_tests": {
+    "count": 20,
+    "result": "pass"
+  },
+  "synthetic_trials": 180,
+  "designated_model_reviews": {
+    "deepseek_execution": "not available / not run",
+    "seed_independent_review": "pending",
+    "sol_algorithm_review": "pending"
+  },
+  "bounded_readonly_method_review": "reviewed; no algorithm change required; research prediction gate limitation clarified",
+  "final_status": "awaiting_seed",
+  "production_edits": false,
+  "push_or_upload": false,
+  "status_note": "bounded synthetic implementation complete; designated model review and physical validation remain pending",
+  "acceptance": [
+    {
+      "id": "AC1",
+      "requirement": "independent-only edits and unchanged runtime source hashes",
+      "evidence": "results/runtime_source_check.json",
+      "result": "pass"
+    },
+    {
+      "id": "AC2",
+      "requirement": "SI units and existing physical interface / installed geometry reuse",
+      "evidence": "tests/test_calibration.py",
+      "result": "pass"
+    },
+    {
+      "id": "AC3",
+      "requirement": "A,n constraints / noise floor / boundary safeguards",
+      "evidence": "results/test_output.txt",
+      "result": "pass"
+    },
+    {
+      "id": "AC4",
+      "requirement": "distinct-angle and degenerate-angle identifiability diagnostics",
+      "evidence": "results/study_results.json:identifiability",
+      "result": "pass"
+    },
+    {
+      "id": "AC5",
+      "requirement": "180 synthetic recovery trials and whole-condition / spatial holdouts",
+      "evidence": "results/recovery_trials.csv, results/study_results.json",
+      "result": "pass"
+    },
+    {
+      "id": "AC6",
+      "requirement": "actual unknowns rejected and physical validation distinct from code checks",
+      "evidence": "data/actual_unknown.json, README.md",
+      "result": "pass"
+    },
+    {
+      "id": "AC7",
+      "requirement": "designated DeepSeek / Seed / Sol model chain",
+      "evidence": "not executed",
+      "result": "pending"
+    },
+    {
+      "id": "AC8",
+      "requirement": "real QCM / independent sample physical validation",
+      "evidence": "not executed",
+      "result": "pending"
+    }
+  ]
+}

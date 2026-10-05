@@ -1,0 +1,78 @@
+{
+  "configuration_id": "synthetic_point_v1",
+  "source_nodes_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "source_normals": [
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_fractions": [
+    1.0
+  ],
+  "qcm_coords_m": [
+    [
+      0.08432450082143488,
+      0.0,
+      0.6
+    ],
+    [
+      -0.17320508075688762,
+      0.3,
+      0.6
+    ],
+    [
+      -0.4284444020226347,
+      -0.7420874725216682,
+      0.6
+    ]
+  ],
+  "qcm_normals": [
+    [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0
+    ]
+  ],
+  "qcm_area_m2": [
+    0.0001,
+    0.0001,
+    0.0001
+  ],
+  "capture_fraction": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "receiver_model": "point at QCM centre, not finite-area integration",
+  "reading_type": "areal_mass_flux",
+  "mass_flux_kg_m2_s": [
+    4.128450281764257e-06,
+    1.6152213733060323e-06,
+    9.029355253277194e-08
+  ],
+  "sd_kg_m2_s": [
+    4.1284502817642574e-08,
+    1.6152213733060323e-08,
+    9.029355253277193e-10
+  ],
+  "noise_floor_kg_m2_s": 1e-12,
+  "data_origin": "synthetic"
+}

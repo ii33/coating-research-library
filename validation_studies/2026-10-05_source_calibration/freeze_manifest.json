@@ -1,0 +1,93 @@
+{
+  "study": "2026-10-05_source_calibration",
+  "algorithmic": true,
+  "files": {
+    "README.md": {
+      "sha256": "ed06d01fd076467cfeaab6f9e4a9ce4840ea7da5edc6857662ed154da12d487a",
+      "bytes": 8819
+    },
+    "calibration.py": {
+      "sha256": "ec21711cb57c2c908f89964ab0ab46463ca96f9ebaea26a2980e17a506a120c2",
+      "bytes": 14944
+    },
+    "condition_surrogate.py": {
+      "sha256": "8a759bc789876575bb20f75ad76aebdd06e06758ce037bb22e6e879c1048aabf",
+      "bytes": 4166
+    },
+    "data/actual_unknown.json": {
+      "sha256": "c05820529f4f4c29b166f45fc3169c3e14a186a508780a4c2e73b2bcab802846",
+      "bytes": 568
+    },
+    "docs/algorithms.html": {
+      "sha256": "8acb7406e0189418a30adc899b4c1ee83c597f7370ae39f6d97f6977fb6aa4d3",
+      "bytes": 8583
+    },
+    "results/RESULTS.md": {
+      "sha256": "43af0eca159569e8b808ab494a8192043705fe16017a36bf20eccddbd064d5db",
+      "bytes": 4693
+    },
+    "results/recovery_trials.csv": {
+      "sha256": "6845af345945ae2fc966beff8d89f93da66be31e8f15fd0e067488b034b9c5b0",
+      "bytes": 29301
+    },
+    "results/representative_profiles.json": {
+      "sha256": "fc6f554fc8e274943450a98cb4a9cdaf2a46cbae1eeac127e8a7f5a81cf62f65",
+      "bytes": 271913
+    },
+    "results/run_notes.json": {
+      "sha256": "a7614aa040644970e0e6ce7b44c9b01588da9fc4984aa3469e5e2d478b97a0b1",
+      "bytes": 252
+    },
+    "results/runtime_source_check.json": {
+      "sha256": "1314c58812d6a9645a25c79e236977c5c7d8be82c25d06d411d92d2b7b8552ed",
+      "bytes": 100
+    },
+    "results/runtime_sources_before.json": {
+      "sha256": "343c4208e598e2d65c4c6f73a186903718dee779587919c5fe5c11291d3dda5c",
+      "bytes": 23974
+    },
+    "results/study_console.txt": {
+      "sha256": "64ca01587b2e8c01444ad0d74c698adc57a797c054ef932760baabd61429c121",
+      "bytes": 403
+    },
+    "results/study_results.json": {
+      "sha256": "2ed40aad381d80299f98a2d7da730e0bf1b2ef5ce710a37ee0a710184790f3ff",
+      "bytes": 20441
+    },
+    "results/synthetic_input_contract.json": {
+      "sha256": "4d76dca9b8de670dad1be3a6d96f2344d1767d4b1fc16c3c0da1d450fa5de74e",
+      "bytes": 1112
+    },
+    "results/test_output.txt": {
+      "sha256": "64c0487cfefeb456d0f04362deabdab0aaf1619304bdd88ba90fb35f50486787",
+      "bytes": 3061
+    },
+    "run_study.py": {
+      "sha256": "2b8a9c33b697a5d705b08be0b620c86f8109f78248f565c4fa76285582b98865",
+      "bytes": 18680
+    },
+    "stage_status.json": {
+      "sha256": "6ad9fe543cd2166112a3e88516aa3ab1341011f7fc847e5d5cbafbc036ae73fa",
+      "bytes": 2324
+    },
+    "tests/test_calibration.py": {
+      "sha256": "aef140a98b6fe7d95dc4374fb11d1495fd5fc2ab406a3b5a0dc7c79b5ad83cbd",
+      "bytes": 10704
+    },
+    "verify_study.py": {
+      "sha256": "e38361e79e7bfb9b0364fd6b77923aafc23c1016f41a7337f26abaa06b39c18d",
+      "bytes": 3197
+    }
+  },
+  "excluded_receipts": [
+    "freeze_manifest.json",
+    "freeze_receipt.json",
+    "results/verification_output.txt",
+    "results/verification_receipt.json"
+  ],
+  "external_readonly_dependencies": [
+    "../../05_evaporation_sources/models/source_reference.py",
+    "../../../deposition_sim/coat_sim/core/source_profiles.py"
+  ],
+  "verification": "python verify_study.py --rerun"
+}

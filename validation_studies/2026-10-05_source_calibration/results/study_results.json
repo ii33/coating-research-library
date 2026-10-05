@@ -1,0 +1,754 @@
+{
+  "evidence_type": "synthetic numerical study",
+  "physical_validation": "not performed: no real QCM/geometry/density/sticking observations supplied",
+  "study_configuration": {
+    "A_truth_kg_s": 2e-06,
+    "n_truth": [
+      0,
+      1,
+      4
+    ],
+    "noise_percent": [
+      0,
+      1,
+      5
+    ],
+    "repetitions_per_cell": 20,
+    "seed_formula": "20261005 + 10000*n_true + 100*noise_percent + repeat",
+    "noise_model": "independent Gaussian absolute flux sd = noise_fraction * noiseless QCM flux",
+    "absolute_noise_floor_kg_m2_s": 1e-12,
+    "train_geometry": {
+      "configuration_id": "synthetic_point_v1",
+      "source_nodes_m": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "source_normals": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_fractions": [
+        1.0
+      ],
+      "qcm_coords_m": [
+        [
+          0.08432450082143488,
+          0.0,
+          0.6
+        ],
+        [
+          -0.17320508075688762,
+          0.3,
+          0.6
+        ],
+        [
+          -0.4284444020226347,
+          -0.7420874725216682,
+          0.6
+        ]
+      ],
+      "qcm_normals": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "qcm_area_m2": [
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "capture_fraction": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "receiver_model": "point at QCM centre, not finite-area integration"
+    },
+    "withheld_spatial_geometry": {
+      "configuration_id": "synthetic_point_v1",
+      "source_nodes_m": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "source_normals": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_fractions": [
+        1.0
+      ],
+      "qcm_coords_m": [
+        [
+          0.0,
+          0.0,
+          0.6
+        ],
+        [
+          0.1378517523284167,
+          0.13785175232841668,
+          0.6
+        ],
+        [
+          -0.4863048027502599,
+          0.13030497917230868,
+          0.6
+        ],
+        [
+          0.22343383124436283,
+          -1.2671562250236892,
+          0.6
+        ]
+      ],
+      "qcm_normals": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "qcm_area_m2": [
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "capture_fraction": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "receiver_model": "point at QCM centre, not finite-area integration"
+    }
+  },
+  "recovery_summary": [
+    {
+      "truth_n": 0.0,
+      "noise_percent": 0.0,
+      "repetitions": 20,
+      "mean_A_error_percent": 0.0,
+      "mean_n_error": 0.0,
+      "withheld_spatial_rms_error_percent_median": 0.0,
+      "withheld_spatial_rms_error_percent_max": 0.0,
+      "full_rank_count": 20,
+      "boundary_count": 20
+    },
+    {
+      "truth_n": 0.0,
+      "noise_percent": 1.0,
+      "repetitions": 20,
+      "mean_A_error_percent": -0.8264487741346127,
+      "mean_n_error": 0.01172515039364314,
+      "withheld_spatial_rms_error_percent_median": 0.5287570442394964,
+      "withheld_spatial_rms_error_percent_max": 1.7115388330710677,
+      "full_rank_count": 20,
+      "boundary_count": 10
+    },
+    {
+      "truth_n": 0.0,
+      "noise_percent": 5.0,
+      "repetitions": 20,
+      "mean_A_error_percent": -3.7884707986554114,
+      "mean_n_error": 0.06134831397132586,
+      "withheld_spatial_rms_error_percent_median": 3.904441033918924,
+      "withheld_spatial_rms_error_percent_max": 7.555294937986997,
+      "full_rank_count": 20,
+      "boundary_count": 11
+    },
+    {
+      "truth_n": 1.0,
+      "noise_percent": 0.0,
+      "repetitions": 20,
+      "mean_A_error_percent": 2.220446049250313e-14,
+      "mean_n_error": -4.440892098500626e-16,
+      "withheld_spatial_rms_error_percent_median": 2.1785178131351334e-14,
+      "withheld_spatial_rms_error_percent_max": 2.1785178131351334e-14,
+      "full_rank_count": 20,
+      "boundary_count": 0
+    },
+    {
+      "truth_n": 1.0,
+      "noise_percent": 1.0,
+      "repetitions": 20,
+      "mean_A_error_percent": 0.2181375981453165,
+      "mean_n_error": -0.010523280278658764,
+      "withheld_spatial_rms_error_percent_median": 0.9108328013454596,
+      "withheld_spatial_rms_error_percent_max": 2.5049518776909463,
+      "full_rank_count": 20,
+      "boundary_count": 0
+    },
+    {
+      "truth_n": 1.0,
+      "noise_percent": 5.0,
+      "repetitions": 20,
+      "mean_A_error_percent": -0.783024115718301,
+      "mean_n_error": 0.02791052571223663,
+      "withheld_spatial_rms_error_percent_median": 4.466599763744711,
+      "withheld_spatial_rms_error_percent_max": 9.352728153352032,
+      "full_rank_count": 20,
+      "boundary_count": 0
+    },
+    {
+      "truth_n": 4.0,
+      "noise_percent": 0.0,
+      "repetitions": 20,
+      "mean_A_error_percent": 0.0,
+      "mean_n_error": 0.0,
+      "withheld_spatial_rms_error_percent_median": 0.0,
+      "withheld_spatial_rms_error_percent_max": 0.0,
+      "full_rank_count": 20,
+      "boundary_count": 0
+    },
+    {
+      "truth_n": 4.0,
+      "noise_percent": 1.0,
+      "repetitions": 20,
+      "mean_A_error_percent": 0.029931248350037465,
+      "mean_n_error": -0.004744027337681334,
+      "withheld_spatial_rms_error_percent_median": 0.8243043804343698,
+      "withheld_spatial_rms_error_percent_max": 1.3619041158409477,
+      "full_rank_count": 20,
+      "boundary_count": 0
+    },
+    {
+      "truth_n": 4.0,
+      "noise_percent": 5.0,
+      "repetitions": 20,
+      "mean_A_error_percent": 0.445667609393497,
+      "mean_n_error": 0.033320930614795505,
+      "withheld_spatial_rms_error_percent_median": 4.099850804002148,
+      "withheld_spatial_rms_error_percent_max": 7.777208484954307,
+      "full_rank_count": 20,
+      "boundary_count": 0
+    }
+  ],
+  "identifiability": {
+    "same_ring": {
+      "configuration_id": "synthetic_point_v1",
+      "A_kg_s": 2e-06,
+      "n": 4.0,
+      "n_search_cap": 20.0,
+      "optimizer_success": true,
+      "chi2": 0.0,
+      "dof": 4,
+      "effective_sigma_kg_m2_s": [
+        1.6152213733060313e-08,
+        1.6152213733060323e-08,
+        1.6152213733060323e-08,
+        1.6152213733060313e-08,
+        1.6152213733060313e-08,
+        1.6152213733060323e-08
+      ],
+      "predicted_qcm_mass_flux_kg_m2_s": [
+        1.6152213733060312e-06,
+        1.6152213733060323e-06,
+        1.6152213733060323e-06,
+        1.6152213733060312e-06,
+        1.6152213733060312e-06,
+        1.6152213733060323e-06
+      ],
+      "jacobian_parameterization": "[ln A, n], whitened by independent absolute sigma",
+      "jacobian_rank": 1,
+      "jacobian_singular_values": [
+        245.33493382054436,
+        1.775875202557269e-14
+      ],
+      "jacobian_condition": null,
+      "correlation_lnA_n": null,
+      "covariance_lnA_n": null,
+      "boundary_solution": false,
+      "signal_informative": true,
+      "identifiable": false,
+      "profile_reference_region": [
+        0.0,
+        20.0
+      ],
+      "profile_open_at_n0": true,
+      "profile_open_at_cap": true,
+      "profile_note": "grid diagnostic using asymptotic interior chi2(1) 95% reference cutoff; not exact coverage, especially at boundary",
+      "warnings": [
+        "A and n are not separately identifiable; no usable fitted source map",
+        "profile reaches declared n search cap; upper uncertainty is unresolved"
+      ],
+      "physical_validation": "not performed; all reported studies are synthetic"
+    },
+    "same_ring_map_blocked": true,
+    "same_ring_alternative_solutions": [
+      {
+        "n": 0.0,
+        "A_kg_s": 5.624999999999999e-06,
+        "same_ring_max_relative_residual": 5.551115123125783e-16,
+        "withheld_spatial_rms_error_percent": 832.6935547208326
+      },
+      {
+        "n": 1.0,
+        "A_kg_s": 3.2475952641916452e-06,
+        "same_ring_max_relative_residual": 2.220446049250313e-16,
+        "withheld_spatial_rms_error_percent": 381.4958887284424
+      },
+      {
+        "n": 4.0,
+        "A_kg_s": 2e-06,
+        "same_ring_max_relative_residual": 0.0,
+        "withheld_spatial_rms_error_percent": 0.0
+      },
+      {
+        "n": 10.0,
+        "A_kg_s": 2.154882154882155e-06,
+        "same_ring_max_relative_residual": 5.551115123125783e-16,
+        "withheld_spatial_rms_error_percent": 96.06232566272548
+      },
+      {
+        "n": 20.0,
+        "A_kg_s": 4.75653391977123e-06,
+        "same_ring_max_relative_residual": 1.2212453270876722e-15,
+        "withheld_spatial_rms_error_percent": 486.34556832613976
+      }
+    ],
+    "near_axis": {
+      "configuration_id": "synthetic_point_v1",
+      "A_kg_s": 2e-06,
+      "n": 4.0,
+      "n_search_cap": 20.0,
+      "optimizer_success": true,
+      "chi2": 0.0,
+      "dof": 1,
+      "effective_sigma_kg_m2_s": [
+        4.416259447796535e-08,
+        4.402153107732516e-08,
+        4.378733107885952e-08
+      ],
+      "predicted_qcm_mass_flux_kg_m2_s": [
+        4.416259447796535e-06,
+        4.402153107732516e-06,
+        4.378733107885952e-06
+      ],
+      "jacobian_parameterization": "[ln A, n], whitened by independent absolute sigma",
+      "jacobian_rank": 2,
+      "jacobian_singular_values": [
+        176.6111070561461,
+        0.08541755135480136
+      ],
+      "jacobian_condition": 2067.6208139302826,
+      "correlation_lnA_n": -0.9999968166151701,
+      "covariance_lnA_n": [
+        [
+          5.235525732995878,
+          -26.2708584131346
+        ],
+        [
+          -26.2708584131346,
+          131.8229402467377
+        ]
+      ],
+      "boundary_solution": false,
+      "signal_informative": true,
+      "identifiable": true,
+      "profile_reference_region": [
+        0.0,
+        20.0
+      ],
+      "profile_open_at_n0": true,
+      "profile_open_at_cap": true,
+      "profile_note": "grid diagnostic using asymptotic interior chi2(1) 95% reference cutoff; not exact coverage, especially at boundary",
+      "warnings": [
+        "ill-conditioned local Jacobian (project diagnostic threshold 100)",
+        "profile reaches declared n search cap; upper uncertainty is unresolved"
+      ],
+      "physical_validation": "not performed; all reported studies are synthetic"
+    }
+  },
+  "finite_source_mismatch": {
+    "truth_radius_m": 0.18,
+    "truth_height_m": 0.4,
+    "truth_n": 4,
+    "model": "misspecified point source",
+    "fitted": {
+      "configuration_id": "synthetic_point_v1",
+      "A_kg_s": 3.2349020671347567e-06,
+      "n": 1.2552170152264241,
+      "n_search_cap": 20.0,
+      "optimizer_success": true,
+      "chi2": 0.00022291103536572064,
+      "dof": 1,
+      "effective_sigma_kg_m2_s": [
+        7.25153036345304e-08,
+        7.140928521726079e-08,
+        6.799021128614812e-08
+      ],
+      "predicted_qcm_mass_flux_kg_m2_s": [
+        7.252172782299721e-06,
+        7.140094312742729e-06,
+        6.799212913451858e-06
+      ],
+      "jacobian_parameterization": "[ln A, n], whitened by independent absolute sigma",
+      "jacobian_rank": 2,
+      "jacobian_singular_values": [
+        189.02130485723947,
+        1.02490810762008
+      ],
+      "jacobian_condition": 184.42756326336644,
+      "correlation_lnA_n": -0.9998908305054459,
+      "covariance_lnA_n": [
+        [
+          0.1526761358935266,
+          -0.349303635552892
+        ],
+        [
+          -0.349303635552892,
+          0.799336934098487
+        ]
+      ],
+      "boundary_solution": false,
+      "signal_informative": true,
+      "identifiable": true,
+      "profile_reference_region": [
+        0.0,
+        3.0
+      ],
+      "profile_open_at_n0": true,
+      "profile_open_at_cap": false,
+      "profile_note": "grid diagnostic using asymptotic interior chi2(1) 95% reference cutoff; not exact coverage, especially at boundary",
+      "warnings": [
+        "ill-conditioned local Jacobian (project diagnostic threshold 100)"
+      ],
+      "physical_validation": "not performed; all reported studies are synthetic"
+    },
+    "train_QCM_rms_error_percent": 0.008619958146954092,
+    "withheld_spatial_rms_error_percent": 582.4179860705894,
+    "withheld_spatial_truth_kg_m2_s": [
+      5.498245951725634e-06,
+      1.7825038855980856e-06,
+      9.558540079167229e-08,
+      6.160741352028035e-09
+    ],
+    "withheld_spatial_prediction_kg_m2_s": [
+      5.569271786683484e-06,
+      2.3346680231293445e-06,
+      3.80015811021245e-07,
+      7.551590410057759e-08
+    ],
+    "withheld_absolute_rmse_kg_m2_s": 3.144998811090154e-07,
+    "withheld_rmse_over_mean_truth_percent": 17.04030084045931,
+    "withheld_rmse_over_peak_truth_percent": 5.720003867966457,
+    "withheld_coords_m": [
+      [
+        0.14558809370648093,
+        0.0,
+        0.4
+      ],
+      [
+        0.335639852470912,
+        0.0,
+        0.4
+      ],
+      [
+        0.6928203230275507,
+        0.0,
+        0.4
+      ],
+      [
+        1.0989909677818488,
+        0.0,
+        0.4
+      ]
+    ],
+    "withheld_angles_deg": [
+      20,
+      40,
+      60,
+      70
+    ],
+    "pointwise_absolute_error_percent": [
+      1.2917907925810157,
+      30.976882686905927,
+      297.56679144913227,
+      1125.7600146728892
+    ],
+    "error_percentiles_50_90_100": [
+      164.2718370680191,
+      877.3020477057622,
+      1125.7600146728892
+    ],
+    "low_signal_threshold_fraction_of_peak": 0.05,
+    "low_signal_threshold_kg_m2_s": 2.7491229758628173e-07,
+    "retained_above_threshold_count": 2,
+    "above_threshold_relative_rms_error_percent": 21.923001441980173,
+    "low_signal_note": "5% of peak is a disclosed exploratory reporting diagnostic, not preregistered physical acceptance or a production threshold",
+    "metric_note": "pointwise relative RMS is sensitive to small high-angle truth values; absolute and mean-normalized errors also reported",
+    "status": "counterexample, not finite-source validation"
+  },
+  "production_geometry_adapter": {
+    "source_interface": "coat_sim.core.source_profiles.source_samples",
+    "source_nodes_count": 69,
+    "A_recovered_kg_s": 2e-06,
+    "n_recovered": 4.0,
+    "geometry_units": "installed mm coordinates converted to SI m",
+    "kernel_interface": "projects/coating-research-library/05_evaporation_sources/models/source_reference.py",
+    "production_normalization_used": false,
+    "status": "geometry adapter integration check only"
+  },
+  "condition_surrogate": {
+    "model": "fixed RBF GP, independent QCM outputs, no acquisition or hyperparameter optimization",
+    "training_count": 20,
+    "withheld_condition_count": 5,
+    "training_conditions_W_mTorr": [
+      [
+        40.0,
+        5.0
+      ],
+      [
+        40.0,
+        10.0
+      ],
+      [
+        40.0,
+        15.0
+      ],
+      [
+        40.0,
+        20.0
+      ],
+      [
+        40.0,
+        25.0
+      ],
+      [
+        55.0,
+        5.0
+      ],
+      [
+        55.0,
+        15.0
+      ],
+      [
+        55.0,
+        25.0
+      ],
+      [
+        70.0,
+        5.0
+      ],
+      [
+        70.0,
+        10.0
+      ],
+      [
+        70.0,
+        20.0
+      ],
+      [
+        70.0,
+        25.0
+      ],
+      [
+        85.0,
+        5.0
+      ],
+      [
+        85.0,
+        15.0
+      ],
+      [
+        85.0,
+        25.0
+      ],
+      [
+        100.0,
+        5.0
+      ],
+      [
+        100.0,
+        10.0
+      ],
+      [
+        100.0,
+        15.0
+      ],
+      [
+        100.0,
+        20.0
+      ],
+      [
+        100.0,
+        25.0
+      ]
+    ],
+    "withheld_results": [
+      {
+        "condition_W_mTorr": [
+          55.0,
+          10.0
+        ],
+        "true_A_kg_s": 1.0999999999999998e-06,
+        "true_n": 1.4,
+        "fit_A_kg_s": 1.0991625372422738e-06,
+        "fit_n": 1.4710317620227047,
+        "QCM_prediction_rms_error_percent": 2.041048372111557,
+        "withheld_spatial_rms_error_percent": 2.546057292675434,
+        "GP_latent_sd_kg_m2_s": [
+          2.0720963743013942e-08,
+          1.1110663475773673e-08,
+          1.606927401568478e-09
+        ],
+        "jacobian_rank": 2
+      },
+      {
+        "condition_W_mTorr": [
+          55.0,
+          20.0
+        ],
+        "true_A_kg_s": 1.232e-06,
+        "true_n": 1.8,
+        "fit_A_kg_s": 1.2334301407242684e-06,
+        "fit_n": 1.8401606388087306,
+        "QCM_prediction_rms_error_percent": 1.2051838952662308,
+        "withheld_spatial_rms_error_percent": 1.4193969153234847,
+        "GP_latent_sd_kg_m2_s": [
+          2.3042494413016455e-08,
+          1.2111967107045814e-08,
+          1.6398966144606729e-09
+        ],
+        "jacobian_rank": 2
+      },
+      {
+        "condition_W_mTorr": [
+          70.0,
+          15.0
+        ],
+        "true_A_kg_s": 1.4840000000000001e-06,
+        "true_n": 1.6,
+        "fit_A_kg_s": 1.481360212548035e-06,
+        "fit_n": 1.6041906360340246,
+        "QCM_prediction_rms_error_percent": 0.8657509530580791,
+        "withheld_spatial_rms_error_percent": 0.20035036701390704,
+        "GP_latent_sd_kg_m2_s": [
+          2.1649731880196533e-08,
+          1.1476957558573217e-08,
+          1.5964836558619018e-09
+        ],
+        "jacobian_rank": 2
+      },
+      {
+        "condition_W_mTorr": [
+          85.0,
+          10.0
+        ],
+        "true_A_kg_s": 1.6999999999999998e-06,
+        "true_n": 1.4,
+        "fit_A_kg_s": 1.7091373106634632e-06,
+        "fit_n": 1.3726445749346505,
+        "QCM_prediction_rms_error_percent": 0.9910715529840936,
+        "withheld_spatial_rms_error_percent": 0.9628768640586538,
+        "GP_latent_sd_kg_m2_s": [
+          2.5248859080771376e-08,
+          1.3672066326187682e-08,
+          2.0442649440504216e-09
+        ],
+        "jacobian_rank": 2
+      },
+      {
+        "condition_W_mTorr": [
+          85.0,
+          20.0
+        ],
+        "true_A_kg_s": 1.904e-06,
+        "true_n": 1.8,
+        "fit_A_kg_s": 1.903579922577833e-06,
+        "fit_n": 1.7631097595164353,
+        "QCM_prediction_rms_error_percent": 1.017050261238087,
+        "withheld_spatial_rms_error_percent": 1.2914071745706468,
+        "GP_latent_sd_kg_m2_s": [
+          2.984239846210184e-08,
+          1.5642539917325775e-08,
+          2.1066301342099342e-09
+        ],
+        "jacobian_rank": 2
+      }
+    ],
+    "rejection_checks": {
+      "outside_power": "held-out condition outside training convex hull: extrapolation blocked",
+      "outside_pressure": "held-out condition outside training convex hull: extrapolation blocked",
+      "changed_geometry": "GP source/material/geometry configuration changed"
+    },
+    "uncertainty_scope": "conditional latent GP std only; no model discrepancy, cross-QCM covariance, geometry or batch uncertainty"
+  },
+  "density_sticking_confound": [
+    {
+      "A_kg_s": 2e-06,
+      "capture_fraction": 1.0,
+      "density_kg_m3": 4000.0,
+      "observable_thickness_scale_A_capture_over_density": 4.999999999999999e-10
+    },
+    {
+      "A_kg_s": 4e-06,
+      "capture_fraction": 0.5,
+      "density_kg_m3": 4000.0,
+      "observable_thickness_scale_A_capture_over_density": 4.999999999999999e-10
+    },
+    {
+      "A_kg_s": 4e-06,
+      "capture_fraction": 1.0,
+      "density_kg_m3": 8000.0,
+      "observable_thickness_scale_A_capture_over_density": 4.999999999999999e-10
+    }
+  ],
+  "actual_input_blocker": "actual calibration blocked: explicit measurements required for configuration_id, source_nodes_m, source_normals, source_fractions, qcm_coords_m, qcm_normals, qcm_area_m2, mass_flux_kg_m2_s, sd_kg_m2_s, noise_floor_kg_m2_s, capture_fraction",
+  "unrun": [
+    "real QCM experiment",
+    "finite-area QCM convergence",
+    "geometry calibration",
+    "finite-source planetary dual-mask physical validation",
+    "GP active learning and hyperparameter calibration",
+    "requested DeepSeek/Seed/Sol model-specific review chain"
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "hostname": "b6f270d1e4f8",
+    "CPU_threads_requested": 1,
+    "GPU_used": false,
+    "elapsed_seconds": 15.21894130200235
+  }
+}
