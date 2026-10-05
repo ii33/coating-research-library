@@ -1,0 +1,69 @@
+{
+  "recovered_file_sha256": "b27807d48dbde3adea364c37a75a797478bdec4ab3d53360dab171e7640ea29c",
+  "process_canonical_sha256": "e2f242baabfe608a446d658cf35303344c744661ea208196be76953eb3d84bf8",
+  "layer_durations_s": [
+    7000.0,
+    3888.8888888888887
+  ],
+  "total_duration_s": 10888.888888888889,
+  "sampling_plans": {
+    "0.05": {
+      "total_duration_s": 10888.888888888889,
+      "time_steps": 217778,
+      "time_step_s": 0.049999948979643896,
+      "step_durations_s": [
+        7000.0,
+        3888.8888888888887
+      ],
+      "step_time_steps": [
+        140000,
+        77778
+      ],
+      "step_time_step_s": [
+        0.05,
+        0.049999857143265304
+      ]
+    },
+    "0.025": {
+      "total_duration_s": 10888.888888888889,
+      "time_steps": 435556,
+      "time_step_s": 0.024999974489821948,
+      "step_durations_s": [
+        7000.0,
+        3888.8888888888887
+      ],
+      "step_time_steps": [
+        280000,
+        155556
+      ],
+      "step_time_step_s": [
+        0.025,
+        0.024999928571632652
+      ]
+    },
+    "0.0125": {
+      "total_duration_s": 10888.888888888889,
+      "time_steps": 871113,
+      "time_step_s": 0.012499972895466935,
+      "step_durations_s": [
+        7000.0,
+        3888.8888888888887
+      ],
+      "step_time_steps": [
+        560001,
+        311112
+      ],
+      "step_time_step_s": [
+        0.012499977678611288,
+        0.012499964285816326
+      ]
+    }
+  },
+  "pre_pilot_estimate_s": {
+    "grid21_direct_dt.05": [
+      40,
+      80
+    ],
+    "native_grid300_direct_dt.05": "hours, to be refined from measured complete pilot"
+  }
+}

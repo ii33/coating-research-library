@@ -1,0 +1,48 @@
+{"completed": "direct_000625_g21", "complete_duration_s": 10888.888888888889, "actual_layer_dt_s": [0.00624999441964784, 0.006249992187509765], "actual_core_calls": 2, "wall_s": 259.5389841219949, "difference_from.0125": {"normalized_field_rms_pp": 0.000840901710421012, "interior135_field_rms_pp": 0.0008847740896846971, "cv_change_pp": 3.9351209526694575e-05, "interior135_cv_change_pp": 1.5991894086742064e-05, "common_grid": 21, "common_represented_area_fraction": 0.9751756337239269, "common_interior135_coverage": 1.0000000090478416}}
+{"completed": "direct_000625_g21_probe", "complete_duration_s": 10888.888888888889, "actual_layer_dt_s": [0.00624999441964784, 0.006249992187509765], "actual_core_calls": 2, "wall_s": 259.0822224239964, "difference_from.0125": {"normalized_field_rms_pp": 0.0008419566843629632, "interior135_field_rms_pp": 0.0008860113103691412, "cv_change_pp": 4.031931145953571e-05, "interior135_cv_change_pp": 1.6968873770506487e-05, "common_grid": 21, "common_represented_area_fraction": 0.9751756337239269, "common_interior135_coverage": 1.0000000090478416}}
+{
+  "stage_calls": 12,
+  "wall_s": 520.2048970120013,
+  "checks": {
+    "time_00125_to_000625": {
+      "normalized_field_rms_pp": 0.000840901710421012,
+      "interior135_field_rms_pp": 0.0008847740896846971,
+      "cv_change_pp": 3.9351209526694575e-05,
+      "interior135_cv_change_pp": 1.5991894086742064e-05,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "time_00125_to_000625_probe": {
+      "normalized_field_rms_pp": 0.0008419566843629632,
+      "interior135_field_rms_pp": 0.0008860113103691412,
+      "cv_change_pp": 4.031931145953571e-05,
+      "interior135_cv_change_pp": 1.6968873770506487e-05,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "periodic_vs_direct_000625": {
+      "normalized_field_rms_pp": 0.004460568592878389,
+      "interior135_field_rms_pp": 0.004702326949940389,
+      "cv_change_pp": 7.261717882955931e-05,
+      "interior135_cv_change_pp": 5.751125515879307e-05,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "periodic_vs_direct_000625_probe": {
+      "normalized_field_rms_pp": 0.0041488551453971265,
+      "interior135_field_rms_pp": 0.004222400334839355,
+      "cv_change_pp": 0.00022335703364606552,
+      "interior135_cv_change_pp": 0.00023837157478445725,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "retained_shape_tolerance_pp": 0.0034207351493726642,
+    "additional_cv_sensitivity_tolerance_pp": 0.00028687305089674097,
+    "shape_screen_pass": false,
+    "production_tolerance": "unknown_not_inferred"
+  }
+}

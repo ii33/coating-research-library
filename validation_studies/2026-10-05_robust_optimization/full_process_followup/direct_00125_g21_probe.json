@@ -1,0 +1,242 @@
+{
+  "mode": "direct",
+  "grid": 21,
+  "requested_dt_s": 0.0125,
+  "probe": true,
+  "source_order": null,
+  "timing": {
+    "total_duration_s": 10888.888888888889,
+    "time_steps": 871113,
+    "time_step_s": 0.012499972895466935,
+    "step_durations_s": [
+      7000.0,
+      3888.8888888888887
+    ],
+    "step_time_steps": [
+      560001,
+      311112
+    ],
+    "step_time_step_s": [
+      0.012499977678611288,
+      0.012499964285816326
+    ]
+  },
+  "wall_s": 126.80964827399293,
+  "core_calls": 2,
+  "core_audits": [
+    {
+      "duration_s": 7000.0,
+      "requested_time_steps": 560001,
+      "actual_dt_s": 0.012499977678611288,
+      "grid_size": 21,
+      "source_samples": 12,
+      "mask_layers": 1,
+      "carrier_phase_deg": 0.0,
+      "planet_phase_deg": 0.0,
+      "source_xyz_mm": [
+        210.0,
+        -90.0,
+        0.0
+      ],
+      "status": "completed",
+      "actual_time_steps": 560001,
+      "time_batch_steps": 32,
+      "all_steps_observed": true,
+      "wall_s": 71.81224303299678
+    },
+    {
+      "duration_s": 3888.8888888888887,
+      "requested_time_steps": 311112,
+      "actual_dt_s": 0.012499964285816326,
+      "grid_size": 21,
+      "source_samples": 16,
+      "mask_layers": 1,
+      "carrier_phase_deg": 0.0,
+      "planet_phase_deg": 120.00000000046566,
+      "source_xyz_mm": [
+        -200.0,
+        -90.0,
+        0.0
+      ],
+      "status": "completed",
+      "actual_time_steps": 311112,
+      "time_batch_steps": 32,
+      "all_steps_observed": true,
+      "wall_s": 54.99325337499613
+    }
+  ],
+  "metrics": {
+    "cv_percent": 0.529838839293633,
+    "area_mean_nm": 7002.051705247719,
+    "represented_area_fraction": 0.9751756337239269,
+    "interior135_cv_percent": 0.46064774187364443,
+    "interior135_area_mean_nm": 7011.640089093672,
+    "interior135_coverage": 1.0000000090478416
+  },
+  "total_duration_s": 10888.888888888889,
+  "total_target_nm": 7000.0,
+  "computed_time_steps": 871113,
+  "step_results": [
+    {
+      "step_index": 1,
+      "source_slot": 1,
+      "mask_slots": [
+        0
+      ],
+      "effective_settings": {
+        "carrier_rpm": 15.0,
+        "sun_teeth": 120,
+        "planet_teeth": 36,
+        "duration_s": 7000.0,
+        "time_steps": 560001,
+        "grid_size": 21,
+        "substrate_radius_mm": 150.0,
+        "planet_offset_mm": 312.0,
+        "substrate_z_mm": 1000.0,
+        "carrier_x_mm": 0.0,
+        "carrier_y_mm": 0.0,
+        "source_x_mm": 210.0,
+        "source_y_mm": -90.0,
+        "source_z_mm": 0.0,
+        "source_exponent": 0.0,
+        "carrier_phase_deg": 0.0,
+        "planet_phase_deg": 0.0,
+        "planet_tilt_deg": 0.0,
+        "gear_module_mm": 4.0,
+        "substrate_surface": null,
+        "substrate_profile": {
+          "schema_version": 1,
+          "name": "\u770b\u677f\u5a18\u6f14\u793a\u5e73\u9762\u5706\u7247",
+          "outline": {
+            "kind": "circle",
+            "radius_mm": 150.0
+          },
+          "surface": {
+            "kind": "flat"
+          },
+          "description": "\u534a\u5f84150 mm\u5e73\u9762\u5706\u5f62\u57fa\u7247",
+          "notes": "\u9ed8\u8ba4\u6f14\u793a\u65b9\u6848\u3002"
+        },
+        "source_rate_nm_s": 0.5,
+        "beam_attenuation_m_inv": null
+      },
+      "mean_raw": 0.005659064285084114,
+      "source_name": "\u6e90 1",
+      "target_mode": "mean",
+      "target_nm": 3500.0,
+      "rate_nm_s": 0.5,
+      "duration_s": 7000.0,
+      "time_steps": 560001,
+      "time_step_s": 0.012499977678611288,
+      "simulated_duration_s": 7000.0,
+      "algorithm": "time",
+      "return_carrier_revolutions": 3,
+      "return_cycle_s": 12.0,
+      "residual_s": 4.0,
+      "residual_fraction": 0.0005714285714285715,
+      "fast_cycle_eligible": true,
+      "sampling_capped": false,
+      "samples_per_carrier_revolution": 320.00057142857145,
+      "samples_per_planet_revolution": 73.84628571428571,
+      "planet_phase_step_deg": 4.874991294658402,
+      "estimated_motion_grid_cells_per_step": 1.2592528066481825,
+      "below_fast_angular_heuristic": false,
+      "reused_cycle_field": false,
+      "finite_periodic_integration": false,
+      "reference_relative": 1.0,
+      "scale_nm": 3500.0,
+      "device": "CPU",
+      "time_batch_steps": 32,
+      "batch_elements_limit": 220000,
+      "mean_nm": 3499.999999999999,
+      "min_nm": 3445.156341921876,
+      "max_nm": 3550.1008558832978,
+      "pv_nm": 104.94451396142176,
+      "cv_percent": 0.5844027136490336,
+      "pv_percent": 2.998414684612051,
+      "min_percent": 98.43303834062506,
+      "max_percent": 101.4314530252371
+    },
+    {
+      "step_index": 2,
+      "source_slot": 2,
+      "mask_slots": [
+        1
+      ],
+      "effective_settings": {
+        "carrier_rpm": 15.0,
+        "sun_teeth": 120,
+        "planet_teeth": 36,
+        "duration_s": 3888.8888888888887,
+        "time_steps": 311112,
+        "grid_size": 21,
+        "substrate_radius_mm": 150.0,
+        "planet_offset_mm": 312.0,
+        "substrate_z_mm": 1000.0,
+        "carrier_x_mm": 0.0,
+        "carrier_y_mm": 0.0,
+        "source_x_mm": -200.0,
+        "source_y_mm": -90.0,
+        "source_z_mm": 0.0,
+        "source_exponent": 1.0,
+        "carrier_phase_deg": 0.0,
+        "planet_phase_deg": 120.00000000046566,
+        "planet_tilt_deg": 0.0,
+        "gear_module_mm": 4.0,
+        "substrate_surface": null,
+        "substrate_profile": {
+          "schema_version": 1,
+          "name": "\u770b\u677f\u5a18\u6f14\u793a\u5e73\u9762\u5706\u7247",
+          "outline": {
+            "kind": "circle",
+            "radius_mm": 150.0
+          },
+          "surface": {
+            "kind": "flat"
+          },
+          "description": "\u534a\u5f84150 mm\u5e73\u9762\u5706\u5f62\u57fa\u7247",
+          "notes": "\u9ed8\u8ba4\u6f14\u793a\u65b9\u6848\u3002"
+        },
+        "source_rate_nm_s": 0.9,
+        "beam_attenuation_m_inv": null
+      },
+      "mean_raw": 0.0029628219274528806,
+      "source_name": "\u6e90 2",
+      "target_mode": "mean",
+      "target_nm": 3500.0,
+      "rate_nm_s": 0.9,
+      "duration_s": 3888.8888888888887,
+      "time_steps": 311112,
+      "time_step_s": 0.012499964285816326,
+      "simulated_duration_s": 3888.8888888888887,
+      "algorithm": "time",
+      "return_carrier_revolutions": 3,
+      "return_cycle_s": 12.0,
+      "residual_s": 0.8888888888886868,
+      "residual_fraction": 0.0002285714285713766,
+      "fast_cycle_eligible": true,
+      "sampling_capped": false,
+      "samples_per_carrier_revolution": 320.0009142857143,
+      "samples_per_planet_revolution": 73.84636483516483,
+      "planet_phase_step_deg": 4.874986071468367,
+      "estimated_motion_grid_cells_per_step": 1.2592514574526017,
+      "below_fast_angular_heuristic": false,
+      "reused_cycle_field": false,
+      "finite_periodic_integration": false,
+      "reference_relative": 1.0,
+      "scale_nm": 3500.0,
+      "device": "CPU",
+      "time_batch_steps": 32,
+      "batch_elements_limit": 220000,
+      "mean_nm": 3500.0,
+      "min_nm": 3449.8221167927886,
+      "max_nm": 3557.4497965173064,
+      "pv_nm": 107.62767972451775,
+      "cv_percent": 0.6830294830015275,
+      "pv_percent": 3.07507656355765,
+      "min_percent": 98.56634619407969,
+      "max_percent": 101.64142275763733
+    }
+  ],
+  "status": "completed"
+}

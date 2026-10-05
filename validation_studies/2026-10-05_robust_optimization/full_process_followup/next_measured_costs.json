@@ -1,0 +1,27 @@
+{
+  "costs": [
+    {
+      "setting": "grid21,direct,dt=.00625s",
+      "per_case_estimated_s": 254.67597992200172,
+      "two_case_estimated_s": 509.35195984400343,
+      "actual_dt_s": 0.00625,
+      "status": "not_run"
+    },
+    {
+      "setting": "grid61,direct,dt=.0125s,unchanged source sampling",
+      "per_case_estimated_s": 1074.4323370632294,
+      "two_case_estimated_s": 2148.864674126459,
+      "actual_dt_s": 0.0125,
+      "status": "not_run"
+    },
+    {
+      "setting": "native grid300,direct,dt=.0125s,unchanged source sampling",
+      "per_case_estimated_s": 25987.344890000175,
+      "two_case_estimated_s": 51974.68978000035,
+      "actual_dt_s": 0.0125,
+      "status": "not_run"
+    }
+  ],
+  "remaining_stage_allowance_s": 212.77547825900547,
+  "basis": "Complete-process measured .0125 grid21; linear-time/square-grid planning extrapolation only, not benchmark or permission to execute"
+}

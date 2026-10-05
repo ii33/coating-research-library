@@ -1,0 +1,166 @@
+{"name": "grid41_probe", "wall_s": 8.51240452399361, "calls": 4, "full_duration_s": 10888.888888888889, "cv_percent": 0.5343934247709424}
+{"name": "grid61_1", "wall_s": 23.339684690996364, "calls": 4, "full_duration_s": 10888.888888888889, "cv_percent": 0.5352457162804364}
+{"name": "source_q5_0", "wall_s": 13.288454150002508, "calls": 4, "full_duration_s": 10888.888888888889, "cv_percent": 0.5362562485886146}
+{"name": "source_q7_0", "wall_s": 26.52314251200005, "calls": 4, "full_duration_s": 10888.888888888889, "cv_percent": 0.5363136652843395}
+{"name": "source_q9_0", "wall_s": 46.32270588999381, "calls": 4, "full_duration_s": 10888.888888888889, "cv_percent": 0.5360353261155687}
+{"name": "source_q5_1", "wall_s": 14.037911956002063, "calls": 4, "full_duration_s": 10888.888888888889, "cv_percent": 0.5342387723189053}
+{"name": "source_q7_1", "wall_s": 26.294056736005587, "calls": 4, "full_duration_s": 10888.888888888889, "cv_percent": 0.5343537338926602}
+{"name": "source_q9_1", "wall_s": 45.55316182500246, "calls": 4, "full_duration_s": 10888.888888888889, "cv_percent": 0.5340411096877952}
+{
+  "calls": 36,
+  "wall_s": 227.853658643995,
+  "checks": [
+    {
+      "axis": "grid",
+      "probe": false,
+      "levels": [
+        21,
+        41
+      ],
+      "normalized_field_rms_pp": 0.009593644260182938,
+      "interior135_field_rms_pp": 0.009606487463472906,
+      "common_roi_normalized_field_rms_pp": 5.4935485137324736e-06,
+      "inset_original_rms_includes_full_domain_normalization": true,
+      "cv_change_pp": 0.004207579101815462,
+      "interior135_cv_change_pp": 0.0047018349901659096,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416,
+      "map_screen_pass": false,
+      "cv_screen_pass": false
+    },
+    {
+      "axis": "grid",
+      "probe": false,
+      "levels": [
+        41,
+        61
+      ],
+      "normalized_field_rms_pp": 0.0023824168414947745,
+      "interior135_field_rms_pp": 0.0023856294608437284,
+      "common_roi_normalized_field_rms_pp": 1.0122142656380528e-06,
+      "inset_original_rms_includes_full_domain_normalization": true,
+      "cv_change_pp": 0.0007686940040952939,
+      "interior135_cv_change_pp": 0.0007059816197362845,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416,
+      "map_screen_pass": true,
+      "cv_screen_pass": false
+    },
+    {
+      "axis": "grid",
+      "probe": true,
+      "levels": [
+        21,
+        41
+      ],
+      "normalized_field_rms_pp": 0.00858011689004492,
+      "interior135_field_rms_pp": 0.008591656821398024,
+      "common_roi_normalized_field_rms_pp": 2.66577731791768e-06,
+      "inset_original_rms_includes_full_domain_normalization": true,
+      "cv_change_pp": 0.0043638212676114785,
+      "interior135_cv_change_pp": 0.004185613473662697,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416,
+      "map_screen_pass": false,
+      "cv_screen_pass": false
+    },
+    {
+      "axis": "grid",
+      "probe": true,
+      "levels": [
+        41,
+        61
+      ],
+      "normalized_field_rms_pp": 0.0025618382787454463,
+      "interior135_field_rms_pp": 0.0025652190706017064,
+      "common_roi_normalized_field_rms_pp": 1.74137447771448e-06,
+      "inset_original_rms_includes_full_domain_normalization": true,
+      "cv_change_pp": 0.000852291509493952,
+      "interior135_cv_change_pp": 0.0005768067779358677,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416,
+      "map_screen_pass": true,
+      "cv_screen_pass": false
+    },
+    {
+      "axis": "source",
+      "probe": false,
+      "levels": [
+        5,
+        7
+      ],
+      "normalized_field_rms_pp": 0.0019244274478086242,
+      "interior135_field_rms_pp": 0.001942779592353182,
+      "common_roi_normalized_field_rms_pp": 0.0019398493528211163,
+      "inset_original_rms_includes_full_domain_normalization": true,
+      "cv_change_pp": 5.7416695724898936e-05,
+      "interior135_cv_change_pp": 7.535248253603966e-05,
+      "common_grid": 41,
+      "common_represented_area_fraction": 0.9866702727223517,
+      "common_interior135_coverage": 1.000000003198891,
+      "map_screen_pass": true,
+      "cv_screen_pass": true
+    },
+    {
+      "axis": "source",
+      "probe": false,
+      "levels": [
+        7,
+        9
+      ],
+      "normalized_field_rms_pp": 0.0015747657967119292,
+      "interior135_field_rms_pp": 0.0015830793787378272,
+      "common_roi_normalized_field_rms_pp": 0.0015805169573468775,
+      "inset_original_rms_includes_full_domain_normalization": true,
+      "cv_change_pp": 0.00027833916877084697,
+      "interior135_cv_change_pp": 0.0003202863771734066,
+      "common_grid": 41,
+      "common_represented_area_fraction": 0.9866702727223517,
+      "common_interior135_coverage": 1.000000003198891,
+      "map_screen_pass": true,
+      "cv_screen_pass": false
+    },
+    {
+      "axis": "source",
+      "probe": true,
+      "levels": [
+        5,
+        7
+      ],
+      "normalized_field_rms_pp": 0.0020801893092885085,
+      "interior135_field_rms_pp": 0.002094626061422432,
+      "common_roi_normalized_field_rms_pp": 0.002091500674850893,
+      "inset_original_rms_includes_full_domain_normalization": true,
+      "cv_change_pp": 0.00011496157375490146,
+      "interior135_cv_change_pp": 0.00014416799360628119,
+      "common_grid": 41,
+      "common_represented_area_fraction": 0.9866702727223517,
+      "common_interior135_coverage": 1.000000003198891,
+      "map_screen_pass": true,
+      "cv_screen_pass": true
+    },
+    {
+      "axis": "source",
+      "probe": true,
+      "levels": [
+        7,
+        9
+      ],
+      "normalized_field_rms_pp": 0.0017117404767779277,
+      "interior135_field_rms_pp": 0.0017340249218840155,
+      "common_roi_normalized_field_rms_pp": 0.0017313920956665192,
+      "inset_original_rms_includes_full_domain_normalization": true,
+      "cv_change_pp": 0.0003126242048649974,
+      "interior135_cv_change_pp": 0.0003851450931646183,
+      "common_grid": 41,
+      "common_represented_area_fraction": 0.9866702727223517,
+      "common_interior135_coverage": 1.000000003198891,
+      "map_screen_pass": true,
+      "cv_screen_pass": false
+    }
+  ]
+}

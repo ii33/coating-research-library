@@ -1,0 +1,118 @@
+{"completed": "direct_0025_g21", "full_duration_s": 10888.888888888889, "wall_s": 66.80852510299883, "actual_core_calls": 2, "cv_percent": 0.5330656714970018, "actual_layer_dt_s": [0.025, 0.024999928571632652]}
+{"completed": "direct_0025_g21_probe", "full_duration_s": 10888.888888888889, "wall_s": 64.97817414999736, "actual_core_calls": 2, "cv_percent": 0.5301969409880344, "actual_layer_dt_s": [0.025, 0.024999928571632652]}
+{"completed": "periodic_005_g21", "full_duration_s": 10888.888888888889, "wall_s": 0.08683015099813929, "actual_core_calls": 4, "cv_percent": 0.5394310437834451, "actual_layer_dt_s": [0.05, 0.049999857143265304]}
+{"completed": "periodic_0025_g21", "full_duration_s": 10888.888888888889, "wall_s": 0.1706267330009723, "actual_core_calls": 4, "cv_percent": 0.5337304871513174, "actual_layer_dt_s": [0.025, 0.024999928571632652]}
+{"completed": "periodic_0025_g21_probe", "full_duration_s": 10888.888888888889, "wall_s": 0.1704929510015063, "actual_core_calls": 4, "cv_percent": 0.5308898261837987, "actual_layer_dt_s": [0.025, 0.024999928571632652]}
+{"completed": "direct_00125_g21", "full_duration_s": 10888.888888888889, "wall_s": 127.33798996100086, "actual_core_calls": 2, "cv_percent": 0.5322501249539243, "actual_layer_dt_s": [0.012499977678611288, 0.012499964285816326]}
+{"completed": "direct_00125_g21_probe", "full_duration_s": 10888.888888888889, "wall_s": 126.80964827399293, "actual_core_calls": 2, "cv_percent": 0.529838839293633, "actual_layer_dt_s": [0.012499977678611288, 0.012499964285816326]}
+{"completed": "periodic_00125_g21", "full_duration_s": 10888.888888888889, "wall_s": 0.3456694599954062, "actual_core_calls": 4, "cv_percent": 0.5320179709716287, "actual_layer_dt_s": [0.012499977678611288, 0.012499964285816326]}
+{"completed": "periodic_00125_g21_probe", "full_duration_s": 10888.888888888889, "wall_s": 0.3810991490026936, "actual_core_calls": 4, "cv_percent": 0.5298545390489966, "actual_layer_dt_s": [0.012499977678611288, 0.012499964285816326]}
+{
+  "status": "complete_process_convergence_unresolved",
+  "gates": {
+    "time_convergence_screen": false,
+    "finite_periodic_direct_agreement_screen": false,
+    "grid_convergence_screen": false,
+    "source_convergence_screen": false,
+    "fresh_optimization_allowed": false,
+    "engineering_ranking_allowed": false,
+    "fresh_optimization_planning_ready": false
+  },
+  "checks": {
+    "effect_probe": {
+      "normalized_field_rms_pp": 0.03420735149372664,
+      "interior135_field_rms_pp": 0.035880323804884,
+      "cv_change_pp": 0.0028687305089674098,
+      "interior135_cv_change_pp": 0.0015939385829927821,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "tolerance_pp": 0.0034207351493726642,
+    "time_direct_005_to_0025": {
+      "normalized_field_rms_pp": 0.10619528718773946,
+      "interior135_field_rms_pp": 0.1135063060831444,
+      "cv_change_pp": 0.007168360797415896,
+      "interior135_cv_change_pp": 0.010617833447437941,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "periodic_vs_direct_005": {
+      "normalized_field_rms_pp": 0.06910855768201377,
+      "interior135_field_rms_pp": 0.07333032828445722,
+      "cv_change_pp": 0.000802988510972602,
+      "interior135_cv_change_pp": 0.002083295850264011,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "periodic_vs_direct_0025": {
+      "normalized_field_rms_pp": 0.013042102009271793,
+      "interior135_field_rms_pp": 0.012903597055871515,
+      "cv_change_pp": 0.0006648156543156425,
+      "interior135_cv_change_pp": 0.0009762412523169894,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "periodic_vs_direct_0025_probe": {
+      "normalized_field_rms_pp": 0.013042132639298924,
+      "interior135_field_rms_pp": 0.012903627355268567,
+      "cv_change_pp": 0.0006928851957642701,
+      "interior135_cv_change_pp": 0.001006289524213111,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "time_direct_0025_to_00125": {
+      "normalized_field_rms_pp": 0.02774552577671685,
+      "interior135_field_rms_pp": 0.028574480182314142,
+      "cv_change_pp": 0.0008155465430774722,
+      "interior135_cv_change_pp": 0.0010693610935986197,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "time_direct_0025_to_00125_probe": {
+      "normalized_field_rms_pp": 0.02734416687070599,
+      "interior135_field_rms_pp": 0.027959688452374554,
+      "cv_change_pp": 0.0003581016944014248,
+      "interior135_cv_change_pp": 0.0007481211316708869,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "periodic_vs_direct_00125": {
+      "normalized_field_rms_pp": 0.007643770782592759,
+      "interior135_field_rms_pp": 0.007665344779783652,
+      "cv_change_pp": 0.00023215398229559092,
+      "interior135_cv_change_pp": 0.0002711217388873255,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    },
+    "periodic_vs_direct_00125_probe": {
+      "normalized_field_rms_pp": 0.007908714695602231,
+      "interior135_field_rms_pp": 0.00804742641325473,
+      "cv_change_pp": 1.5699755363640655e-05,
+      "interior135_cv_change_pp": 0.00047989847689933196,
+      "common_grid": 21,
+      "common_represented_area_fraction": 0.9751756337239269,
+      "common_interior135_coverage": 1.0000000090478416
+    }
+  },
+  "decisions": [
+    {
+      "action": "Refine complete direct time to.0125s",
+      "reason": "Time or periodic agreement exceeds effect-relative tolerance",
+      "not_an_optimizer": true
+    },
+    {
+      "action": "Do not use periodic acceleration for spatial/source certification",
+      "reason": "Whole direct agreement not established at bounded finest step"
+    }
+  ],
+  "calls": 28,
+  "wall_s": 387.22452174099453
+}

@@ -1,0 +1,14 @@
+{"name": "grid61_0", "wall_s": 23.482896428999084, "calls": 4, "full_duration_s": 10888.888888888889, "cv_percent": 0.5372929073100459}
+Traceback (most recent call last):
+  File "validation_studies/2026-10-05_robust_optimization/full_process_followup/spatial_source_diagnostics/run_diagnostics.py", line 90, in <module>
+    cfg=json.loads((HERE/'config.json').read_text());pilot(cfg) if args.pilot else main(cfg)
+                                                                                   ^^^^^^^^^
+  File "validation_studies/2026-10-05_robust_optimization/full_process_followup/spatial_source_diagnostics/run_diagnostics.py", line 74, in main
+    for a,b in zip(chain[:-1],chain[1:]):checks.append({'axis':'grid','probe':probe,'levels':[a['grid'],b['grid']],**compare(a,b)})
+                                                                                                                     ^^^^^^^^^^^^
+  File "validation_studies/2026-10-05_robust_optimization/full_process_followup/run_convergence.py", line 32, in compare
+    x,y=subset(a),subset(b);valid=np.isfinite(x)&np.isfinite(y)
+                  ^^^^^^^^^
+  File "validation_studies/2026-10-05_robust_optimization/full_process_followup/run_convergence.py", line 30, in subset
+    raise ValueError('Non-nested comparison grids')
+ValueError: Non-nested comparison grids

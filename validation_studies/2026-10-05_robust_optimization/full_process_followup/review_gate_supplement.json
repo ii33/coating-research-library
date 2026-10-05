@@ -1,0 +1,21 @@
+{
+  "shape_tolerance_pp": 0.0034207351493726642,
+  "cv_effect_pp": 0.0028687305089674098,
+  "additional_cv_sensitivity_tolerance_pp": 0.00028687305089674097,
+  "shape_tolerance_does_not_resolve_cv_objective_gap": true,
+  "combined_resolution_direct_agreement_screen": "not_run_and_unresolved",
+  "grid_source_agreement_cannot_transfer_from_grid21": "Not authorized for certification without explicit combined-resolution verification",
+  "fresh_optimization_allowed": false,
+  "engineering_ranking_allowed": false,
+  "direct_time_cv_secondary_checks": {
+    "time_direct_0025_to_00125": {
+      "change_pp": 0.0008155465430774722,
+      "additional_cv_sensitivity_pass": false
+    },
+    "time_direct_0025_to_00125_probe": {
+      "change_pp": 0.0003581016944014248,
+      "additional_cv_sensitivity_pass": false
+    }
+  },
+  "status": "bounded_complete_process_numeric_blocker"
+}

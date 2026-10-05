@@ -1,0 +1,10 @@
+{
+  "purpose": "Cheap finer existing cycle/tail quadrature against the stable complete .00625-second direct references",
+  "periodic_dt_ladder_s": [0.003125, 0.0015625],
+  "second_level_only_if_needed": true,
+  "max_actual_core_calls": 16,
+  "planning_wall_allowance_s": 60,
+  "preserve_complete_recipe": true,
+  "combined_screen": "Observed direct .0125→.00625 change plus periodic-vs-direct mismatch must remain below the retained strict research screen, separately for full/interior maps and CV. These are empirical change indicators, not additive rigorous error bounds or production tolerances.",
+  "engineering_ranking_allowed": false
+}

@@ -1,0 +1,12 @@
+{
+  "purpose": "Authorized next complete-process refinement and quadrature-mechanism diagnosis; prior checkpoint is preserved",
+  "requested_dt_s": 0.00625,
+  "complete_duration_s": 10888.888888888889,
+  "cases": ["original baseline", "same fixed10-mm source1-X probe"],
+  "estimated_direct_wall_s_per_case": 254.7,
+  "planning_wall_allowance_s": 650,
+  "max_actual_core_calls": 12,
+  "criterion": "Retain prior0.003420735pp shape screen, separately show0.000286873pp CV-sensitivity diagnostic. Neither is an approved production tolerance.",
+  "next_refinement_policy": "Only if measured trend is promising and purpose/cost are documented. No automatic endless halving, no new optimizer or high-grid run before time mechanism is understood.",
+  "engineering_ranking_allowed": false
+}

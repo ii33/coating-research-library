@@ -1,0 +1,132 @@
+{
+  "status": "bounded_checkpoint_frozen_no_further_precision_escalation",
+  "complete_original_recipe_duration_s": 10888.888888888889,
+  "layer_durations_s": [
+    7000.0,
+    3888.8888888888887
+  ],
+  "total_target_nm": 7000,
+  "fixed_cases": [
+    "original baseline",
+    "source1 X+10 mm synthetic diagnostic probe"
+  ],
+  "retained_shape_screen_pp": 0.0034207351493726642,
+  "retained_shape_screen_equivalent_nm_at_7000": 0.2394514604560865,
+  "supplemental_cv_sensitivity_screen_pp": 0.00028687305089674097,
+  "production_tolerance": "not specified; no production pass/fail inference",
+  "time_stability_at_grid21_legacy_source": {
+    "direct_refinement_s": [
+      0.0125,
+      0.00625
+    ],
+    "shape_pass": true,
+    "cv_observed_change_pass": true,
+    "checks": {
+      "time_00125_to_000625": {
+        "normalized_field_rms_pp": 0.000840901710421012,
+        "interior135_field_rms_pp": 0.0008847740896846971,
+        "cv_change_pp": 3.9351209526694575e-05,
+        "interior135_cv_change_pp": 1.5991894086742064e-05,
+        "common_grid": 21,
+        "common_represented_area_fraction": 0.9751756337239269,
+        "common_interior135_coverage": 1.0000000090478416
+      },
+      "time_00125_to_000625_probe": {
+        "normalized_field_rms_pp": 0.0008419566843629632,
+        "interior135_field_rms_pp": 0.0008860113103691412,
+        "cv_change_pp": 4.031931145953571e-05,
+        "interior135_cv_change_pp": 1.6968873770506487e-05,
+        "common_grid": 21,
+        "common_represented_area_fraction": 0.9751756337239269,
+        "common_interior135_coverage": 1.0000000090478416
+      }
+    }
+  },
+  "same_step_finite_periodic_direct_agreement": {
+    "requested_dt_s": 0.00625,
+    "shape_pass": false,
+    "cv_observed_change_pass": true,
+    "checks": {
+      "periodic_vs_direct_000625": {
+        "normalized_field_rms_pp": 0.004460568592878389,
+        "interior135_field_rms_pp": 0.004702326949940389,
+        "cv_change_pp": 7.261717882955931e-05,
+        "interior135_cv_change_pp": 5.751125515879307e-05,
+        "common_grid": 21,
+        "common_represented_area_fraction": 0.9751756337239269,
+        "common_interior135_coverage": 1.0000000090478416
+      },
+      "periodic_vs_direct_000625_probe": {
+        "normalized_field_rms_pp": 0.0041488551453971265,
+        "interior135_field_rms_pp": 0.004222400334839355,
+        "cv_change_pp": 0.00022335703364606552,
+        "interior135_cv_change_pp": 0.00023837157478445725,
+        "common_grid": 21,
+        "common_represented_area_fraction": 0.9751756337239269,
+        "common_interior135_coverage": 1.0000000090478416
+      }
+    }
+  },
+  "finer_periodic_reference": {
+    "accepted_requested_dt_s": 0.0015625,
+    "screen_pass": true,
+    "scope": "grid21, unchanged legacy12/16 source nodes, these two fixed cases only; mismatch plus observed direct-refinement change is an empirical screen, not a rigorous error bound"
+  },
+  "grid_aggregate_cv_screen_pass": false,
+  "source_aggregate_cv_screen_pass": false,
+  "joint_final_resolution_direct_agreement": "not run",
+  "fresh_fine_trained_optimization": "not run",
+  "engineering_ranking_allowed": false,
+  "resource_accounting": {
+    "stages": [
+      {
+        "stage": "initial complete-process pilots, including repeated pilot",
+        "actual_core_calls": 4,
+        "wall_s": 71.77243377999548
+      },
+      {
+        "stage": "initial convergence stage",
+        "actual_core_calls": 28,
+        "wall_s": 387.22452174099453
+      },
+      {
+        "stage": "complete direct .00625 and same-step finite-periodic",
+        "actual_core_calls": 12,
+        "wall_s": 520.1943652340051
+      },
+      {
+        "stage": "separate synthetic period/tail mechanism fixtures",
+        "actual_core_calls": 26,
+        "wall_s": 1.6016796019976027
+      },
+      {
+        "stage": "finer finite-periodic checks",
+        "actual_core_calls": 16,
+        "wall_s": 8.241251084000396
+      },
+      {
+        "stage": "native fast-cycle-mean branch check",
+        "actual_core_calls": 4,
+        "wall_s": 0.8784943240025314
+      },
+      {
+        "stage": "spatial/source complete-process pilot",
+        "actual_core_calls": 4,
+        "wall_s": 8.467163541004993
+      },
+      {
+        "stage": "spatial/source diagnostics including saved-field resume",
+        "actual_core_calls": 36,
+        "wall_s": 227.84040490899497
+      }
+    ],
+    "actual_core_calls": 130,
+    "stage_wall_s_sum": 1226.2203142149956,
+    "unit_tests_and_postprocessing_core_calls": 0
+  },
+  "failures": [
+    "one spatial postprocessing error: grid41 and61 were incorrectly assumed nested; corrected to exact common gcd grid21 and reused saved fields without repeating forward calls",
+    "historical follow-up test import shadowing is preserved; isolated7-test loader passed"
+  ],
+  "stop_reason": "Requested checkpoint and handoff; engineering resolution target pending. No multi-hour joint run or additional quadrature ladder."
+}

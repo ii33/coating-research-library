@@ -1,0 +1,443 @@
+{
+  "recovered_file": "native-repro-inputs-20261005/recovered-native-repro.json",
+  "recovered_file_sha256": "b27807d48dbde3adea364c37a75a797478bdec4ab3d53360dab171e7640ea29c",
+  "process_canonical_sha256": "e2f242baabfe608a446d658cf35303344c744661ea208196be76953eb3d84bf8",
+  "all_dependency_canonical_hashes_verified": true,
+  "snapshot_files": [
+    {
+      "kind": "process",
+      "path": "designs/process.json",
+      "sha256": "e2f242baabfe608a446d658cf35303344c744661ea208196be76953eb3d84bf8"
+    },
+    {
+      "kind": "machine",
+      "path": "designs/machine.json",
+      "sha256": "63c31a95c85cc1a2fe4bbb24f8e99465f674a4879cc97310c60cc2890f8deec3"
+    },
+    {
+      "kind": "substrate",
+      "path": "designs/substrate.json",
+      "sha256": "431fa2d0e223015fce85a6d6eb3d6b81a2fb00aa81b386bb78279a2d95db5c8c"
+    },
+    {
+      "kind": "source",
+      "path": "designs/source-01.json",
+      "sha256": "ba1d9a504aadd61c14fc21bb1caa0e25b3b7f1c5535ba099f7e56125dfc8296f"
+    },
+    {
+      "kind": "source",
+      "path": "designs/source-02.json",
+      "sha256": "fcc77114854381f25dbabb530d772e395e2a268fe6f2ec8e5fb2b0a8e0be6362"
+    },
+    {
+      "kind": "mask",
+      "path": "designs/mask-01.json",
+      "sha256": "13334d589500a11450677a609fdb43ebb3d484aca5ae6332a2a2a764fa408eb7"
+    },
+    {
+      "kind": "mask",
+      "path": "designs/mask-02.json",
+      "sha256": "4eb0c70edfa0ba1401acb20fdf9f065728fd544a16018421baed75732010825d"
+    }
+  ],
+  "layer_durations_s": [
+    7000.0,
+    3888.8888888888887
+  ],
+  "total_duration_s": 10888.888888888889,
+  "native_settings": {
+    "carrier_rpm": 15.0,
+    "sun_teeth": 120,
+    "planet_teeth": 36,
+    "duration_s": 1.0,
+    "time_steps": 435558,
+    "grid_size": 300,
+    "substrate_radius_mm": 150.0,
+    "planet_offset_mm": 312.0,
+    "substrate_z_mm": 1000.0,
+    "carrier_x_mm": 0.0,
+    "carrier_y_mm": 0.0,
+    "source_x_mm": 100.0,
+    "source_y_mm": 0.0,
+    "source_z_mm": 0.0,
+    "source_exponent": 1.0,
+    "carrier_phase_deg": 0.0,
+    "planet_phase_deg": 0.0,
+    "planet_tilt_deg": 0.0,
+    "gear_module_mm": null,
+    "substrate_surface": null,
+    "substrate_profile": null,
+    "source_rate_nm_s": null,
+    "beam_attenuation_m_inv": null
+  },
+  "machine_geometry": {
+    "schema_version": 5,
+    "carrier_x_mm": 0.0,
+    "carrier_y_mm": 0.0,
+    "planet_offset_mm": 312.0,
+    "substrate_z_mm": 1000.0,
+    "sun_teeth": 120,
+    "planet_teeth": 36,
+    "planet_tilt_deg": 0.0,
+    "gear_module_mm": 4.0,
+    "sources": [
+      {
+        "file": "source-01.json",
+        "x_mm": 200.0,
+        "y_mm": -90.0,
+        "z_mm": 0.0,
+        "profile": {
+          "schema_version": 2,
+          "kind": "disk",
+          "device_type": "electron_beam",
+          "source_exponent": 0.0,
+          "radius_mm": 20.0,
+          "emission_model": {
+            "reference_rate_nm_s": 1.0,
+            "rate_exponent_per_decade": 0.0,
+            "valid_rate_min_nm_s": null,
+            "valid_rate_max_nm_s": null,
+            "quadrature_order": 9,
+            "kind": "uniform",
+            "provenance": {
+              "status": "unvalidated",
+              "reference": "",
+              "notes": ""
+            }
+          },
+          "description": "\u770b\u677f\u5a18\u6f14\u793a\u7528\u70b9\u6e90",
+          "notes": "\u9ed8\u8ba4\u6f14\u793a\u65b9\u6848\uff1b\u89d2\u5206\u5e03\u6307\u6570\u9700\u5b9e\u6d4b\u6821\u51c6\u3002"
+        }
+      },
+      {
+        "file": "source-02.json",
+        "x_mm": -200.0,
+        "y_mm": -90.0,
+        "z_mm": 0.0,
+        "profile": {
+          "schema_version": 2,
+          "kind": "rectangle",
+          "device_type": "resistance_boat",
+          "source_exponent": 1.0,
+          "length_mm": 50.0,
+          "width_mm": 70.0,
+          "angle_deg": 0.0,
+          "description": "\u770b\u677f\u5a18\u6f14\u793a\u7528\u70b9\u6e90",
+          "notes": "\u9ed8\u8ba4\u6f14\u793a\u65b9\u6848\uff1b\u89d2\u5206\u5e03\u6307\u6570\u9700\u5b9e\u6d4b\u6821\u51c6\u3002"
+        }
+      }
+    ],
+    "masks": [
+      {
+        "file": "mask-01.json",
+        "profile": {
+          "z_mm": 800.0,
+          "outer": [
+            [
+              252.86199999999997,
+              0.7990000000000004
+            ],
+            [
+              285.2180000000001,
+              29.559999999999995
+            ],
+            [
+              325.165,
+              3.595
+            ],
+            [
+              291.61,
+              -16.778
+            ],
+            [
+              288.814,
+              -16.778
+            ]
+          ],
+          "description": "",
+          "notes": "",
+          "holes": []
+        }
+      },
+      {
+        "file": "mask-02.json",
+        "profile": {
+          "z_mm": 800.0,
+          "outer": [
+            [
+              -322.13800000000003,
+              0.7990000000000004
+            ],
+            [
+              -289.7819999999999,
+              29.559999999999995
+            ],
+            [
+              -249.83499999999998,
+              3.595
+            ],
+            [
+              -283.39,
+              -16.778
+            ],
+            [
+              -286.186,
+              -16.778
+            ]
+          ],
+          "description": "",
+          "notes": "",
+          "holes": []
+        }
+      }
+    ],
+    "monitors": [
+      {
+        "name": "\u56fa\u5b9a\u6676\u63a7\u6f14\u793a\u70b9",
+        "kind": "crystal",
+        "x_mm": 0.0,
+        "y_mm": 0.0,
+        "z_mm": 1000.0
+      }
+    ],
+    "description": "\u770b\u677f\u5a18\u6f14\u793a\u884c\u661f\u76d8\uff1a48/48\u9f7f\u3001\u6a21\u65705\u3001\u76d8\u5fc3\u8ddd240 mm",
+    "notes": "\u65e0\u4fee\u6b63\u677f\uff1b\u6e90\u5728\u673a\u67b6(100,0,0)\uff0c\u57fa\u7247\u5e73\u9762z=800 mm\u3002\u51e0\u4f55\u4e0e\u901f\u7387\u5747\u4e3a\u6f14\u793a\u9ed8\u8ba4\u503c\uff0c\u9700\u6309\u5b9e\u6d4b\u8bbe\u5907\u6821\u51c6\u3002",
+    "substrate_profile": {
+      "schema_version": 1,
+      "name": "\u770b\u677f\u5a18\u6f14\u793a\u5e73\u9762\u5706\u7247",
+      "outline": {
+        "kind": "circle",
+        "radius_mm": 150.0
+      },
+      "surface": {
+        "kind": "flat"
+      },
+      "description": "\u534a\u5f84150 mm\u5e73\u9762\u5706\u5f62\u57fa\u7247",
+      "notes": "\u9ed8\u8ba4\u6f14\u793a\u65b9\u6848\u3002"
+    },
+    "substrate_radius_mm": 150.0
+  },
+  "sampling_plans": {
+    "0.05": {
+      "total_duration_s": 10888.888888888889,
+      "time_steps": 217778,
+      "time_step_s": 0.049999948979643896,
+      "step_durations_s": [
+        7000.0,
+        3888.8888888888887
+      ],
+      "step_time_steps": [
+        140000,
+        77778
+      ],
+      "step_time_step_s": [
+        0.05,
+        0.049999857143265304
+      ]
+    },
+    "0.025": {
+      "total_duration_s": 10888.888888888889,
+      "time_steps": 435556,
+      "time_step_s": 0.024999974489821948,
+      "step_durations_s": [
+        7000.0,
+        3888.8888888888887
+      ],
+      "step_time_steps": [
+        280000,
+        155556
+      ],
+      "step_time_step_s": [
+        0.025,
+        0.024999928571632652
+      ]
+    },
+    "0.0125": {
+      "total_duration_s": 10888.888888888889,
+      "time_steps": 871113,
+      "time_step_s": 0.012499972895466935,
+      "step_durations_s": [
+        7000.0,
+        3888.8888888888887
+      ],
+      "step_time_steps": [
+        560001,
+        311112
+      ],
+      "step_time_step_s": [
+        0.012499977678611288,
+        0.012499964285816326
+      ]
+    }
+  },
+  "pre_pilot_estimate_s": {
+    "grid21_direct_dt.05": [
+      40,
+      80
+    ],
+    "native_grid300_direct_dt.05": "hours, to be refined from measured complete pilot"
+  },
+  "historical_identity": {
+    "first/README.md": "8345455545b8d8508f30b1ea7cb0caf8f15bb57b7499ea6350081c489f14e518",
+    "first/RESULTS.md": "5b65977ce2f7ccf4d7dbed9d6625533c4cb0d08722b3ea193edff04fb896ab16",
+    "first/build_report.py": "522681f08fcd0f674fb02ace8d356b65bf11dd0a19a8414516818a62cd7a82bf",
+    "first/docs/algorithms.html": "207b292b91475a5d11af9cf60c2ff3876f635a33e3751f07bc1b28295581eaf2",
+    "first/evaluator.py": "988071657c95438ae628e93cd6b65605ae64c88a4f31355b2f3c262d89a0a6bf",
+    "first/results/baseline_manifest.json": "27ab4116716699229981044ee1076ec73f17159445c2a267f26e20dc577fa3a3",
+    "first/results/baseline_resolution_diagnostic.json": "64486580c347b4e55c1d5a273e3db6fb106b7981e9a5c9ed92a9709506abaa45",
+    "first/results/checkpoint.json": "3b748b18150bb18ca847a4deb2ed7a7aae2a27605a4c39a0019a8cc405a69bb2",
+    "first/results/designs.json": "ed88316273317e876d30882e0051bec8b104efc7b423fe10f69da2a8b53aee7c",
+    "first/results/matched_resolution_holdout.json": "1927a5c81ba1bca422969df535200016120ae0ec2570d6264f86c078e0595320",
+    "first/results/paired_refined_mean_cv.svg": "fce3bf6b7f9ac0fa75a08444d6028a01a50397c330d388419ba34aae6be9a122",
+    "first/results/study_results.json": "8288d5d02ef584afd95d2db60f81397447c5299d7beaf404284208dfc94ac206",
+    "first/results/summary.csv": "6f60165ebf77749549076e454736cb1c2e1d75c194ed96686050fc7b7617222d",
+    "first/results/timings_and_failures.json": "8030ccfce7d8b859b59601e5207156974479eb32ad9bb46d3b4f17bd08a4eb1a",
+    "first/run_output.txt": "7b33dbc9482b55aa0580f5637dc7184262a6d43f03111e9d6fd27b95a5381e7c",
+    "first/run_study.py": "6dd7bd45f81ac2e3e85538350347e99f7eb363a6adfc8109ada3c33e5d19779d",
+    "first/study_config.json": "076b2a18d7c7dec3fe2a98b28bfe4742e6fb8b3db8c01721bcff6e02787a912d",
+    "first/test_evaluator.py": "26538a599b55da701d745515fb311894d7fa2f092b73f1c22faaccb257f971b1",
+    "first/tests_output.txt": "612f36b2ead88609a791481b4a8647bb8e562ea1db4ba4d940e5cb3b5bbe7fac",
+    "first/verify_artifacts.py": "8a8e488c29c08b2008079989da3dfdf25e98e9ce7d6b55a8ed0296a9451af6fc",
+    "first/manifest": "95826e0a1aed9accbf43a622bf233ea6002b1dc25f8a2af6b19b53a4362c9f1b",
+    "followup/README.md": "74e235a26a19ed83fbff161ec509758374d88b04bc1320c894294ef68d54717b",
+    "followup/RESULTS.md": "d02a6f3bb2f8bbdfdbb0b1e25b9163b3f211897ad3868708654250ed48bce3d9",
+    "followup/acceptance_results.json": "39d851778a59d832f72807dd3ac3cd5dcde67c893bc8fa197b62a09b68a2721a",
+    "followup/algorithms.html": "035acf9ef8215d96c2c9fd4fddf76ab6bd0e127040fcc3472f2c1a0abe16a728",
+    "followup/build_report.py": "b0c432fb0af0efdc9c2cdf6b5d94417aaef2e6ebcf3211e6945496812378212a",
+    "followup/config.json": "f554f1606c6d5a53f732235430ba30592c97db851f7b215f706df326e3f2f457",
+    "followup/execution_plan.json": "20dcf7f2e98a13745d0a55d8ec5b0cea0826aa7a93e0c58c1e94934a7126b1d1",
+    "followup/followup_results.json": "c39364f53a33d1194c328472c5c0d0447919e9b1ae98bbc1108a62c5949e1320",
+    "followup/next_level_costs.json": "e11fe96699fcba515414b4805952a61ea8281b59848a4f178a1e97c68da878fb",
+    "followup/pilot_output.txt": "ac5a0a8ebce7626c9287febf6a28973df4c31dde0c6a654e6a8e6a39a0ffb888",
+    "followup/pilot_results.json": "87b9506540164f38bffbc5dc04af83d26e2af1cf39721960ab290ed6ed63f8b8",
+    "followup/run_followup.py": "cc508493b0f9b5fd322c672abfec17d1bc221204a01b718a90d66e65e3efea7f",
+    "followup/run_output.txt": "a66cd76ffb949ccbab6a1098843754b4f0a37199736885e9252250a4ad83df6a",
+    "followup/summary.csv": "855725fc64bb358c2a710af79259c623ec861fb4177138d601d55c0ac9e7eab4",
+    "followup/test_followup.py": "6964832e6ba938279c29ddd88cf63a94fdbeb9b30a8a52218141e60c43d4c69a",
+    "followup/tests_output.txt": "d7348fa52c940c4ed974c8dccf333cc31e8e2d5af043c1309f94671f6163351e",
+    "followup/verify_artifacts.py": "e2222d539d4aee8002e1a07a6c9c4ba0b72ee4bf1a3778d0ea5ec885f942a4d2",
+    "followup/manifest": "faeb0a839555dd463241de47f61f87a1dd91fcad6ab2e10dd892245d452a95fc",
+    "gate/README.md": "52d3105513edd7e46534265243487d5267c31050e8bc6296e5ab27ea61447466",
+    "gate/RESULTS.md": "26a1c96bed60b3a7a4ba8f45b9986d370a8cd7634df5eeb83d2b674fa5017afd",
+    "gate/build_gate_report.py": "a2967fad2097909ddc85f6ce2d3273a4ccea0ee7d798d9e5e02bbc4800402743",
+    "gate/check_historical_math.py": "ef8bbbfdc9f0b504c905d001a02697d937e3078601d936e50e1dad2165463889",
+    "gate/config.json": "2d90e6a0fd3d56c7e9bdb7ed90a367dcceaa4e504e8d05c03f243ec18ec9ceb5",
+    "gate/gate_results.json": "adc819040b3cb2d4b982d4def4e957fded7772029cb0959be88ecae1bfd8ac58",
+    "gate/gate_status.json": "5d3cf97f4ac7e9a1c05cc26c008286e6140860651dcc1a0c881fccc2299dd894",
+    "gate/historical_math_output.txt": "9906b3e75d6c8c6b1de0b4f8d32560aa0765d106e8a89d02bcf1d7f203a0e2af",
+    "gate/pilot_output.txt": "b4aab1e541c9a655518fc05f7b44009cbb7dc79c4e826226687866e21cba2bd6",
+    "gate/pilot_results.json": "61d629c65ef25f705c1a6872e1cfa5d28e2b27849b0dd5c45c2e430c0995d111",
+    "gate/run_gate.py": "c1bfe98792ecc80251707a3942b508dd25fe16f3709da21af4c65635eb319bc2",
+    "gate/run_output.txt": "66549bbeb1581bd99badf1b43f6415898b4f59079ec07d32b4f36bccdf37ece8",
+    "gate/summary.csv": "b718a13677137d2d1bbd93107931782b7a81ec2eeff152aed15b77d8b4c8ee8d",
+    "gate/test_gate.py": "9a70b7fdd73dcddef3d7dd767d97e03af23ae449105923add294cdfdd324b06c",
+    "gate/tests_output.txt": "3c1170b19c0c7bc6810bfe81118cf4cfd3f2d3e7bca6c76e631686767fc63d11",
+    "gate/verify_gate.py": "4c0f036db7b5ea29294af99cfd863083afe09cf962142b83a872e0dae3d758ee",
+    "gate/manifest": "f1d4d15e0604aa2a0a309dd0fe960b17ef2222961d6ddf77189549d75739f2b9"
+  },
+  "product_python_identity": {
+    "coat_sim/__init__.py": "0b4f49da026e69074a75c82255ffdb299a9ab758bd1f7b13eceb2404b9d10523",
+    "coat_sim/agent/__init__.py": "a4176608c296c635ce95452d57cdcd0e0a3f56bc0dabd2cb08c82b2194621936",
+    "coat_sim/agent/development.py": "edf0daf0f5682e4556154a5be319095dc4553f5c59f495f38a6e8e8171346659",
+    "coat_sim/agent/environment_issues.py": "29778fc8355849d9282e01324501d009932aadd9edee107ce8157ed6743dc4f8",
+    "coat_sim/agent/external_mcp.py": "8476587a9127c981f36322cd0e86b36e8310094c390726335a44f5c2025809a1",
+    "coat_sim/agent/locale_policy.py": "fffec14eeb28d085c9fe9f9e07e7be348d479d3a8eeffe5a44af9f9bb023111a",
+    "coat_sim/agent/media.py": "33b218c5d66b0b1db70af37500e0f6ec8faec5a48b9e3265c08144524bd7e568",
+    "coat_sim/agent/model_compat.py": "8a636f0f9ee57b7662e6abafa3eaf0f9759b5e19c6f1f8be7d602ea0ea331e6c",
+    "coat_sim/agent/modelclient.py": "ce7dde6e31b0aa45271ec48246f5d1e9bba13e67fc285c8ab7560b0387620de8",
+    "coat_sim/agent/processes.py": "240dff397f8e3c23e7d238bb4dc6bd4fe9396b3bdbe3c0b8bbb421a8c36f72d8",
+    "coat_sim/agent/runtime.py": "7ee72ebea188253d870f0770daa30f3ceaee108a03cafbd06a0ac856764a21b1",
+    "coat_sim/agent/sandbox.py": "2bb0946c3c438d7e0ec4092e2bf49314c5878449df03d413c7385889a8e80a7a",
+    "coat_sim/agent/sandbox_helpers.py": "e0aeaa3b40a464a6dca679ed7900f4fbb6291a5346426689c1ca1b21782b8ad1",
+    "coat_sim/agent/software_manual.py": "bbf7d743ecda131d9ee7eb517e908b230b91fc868a363f96f24b484014fec2ab",
+    "coat_sim/agent/storage.py": "2a3780d753d490a6f6d7920900fccef19abd375c20f9746ebc5121494d8406b2",
+    "coat_sim/agent/tone_policy.py": "d8af841dfd60e4f1a4466110d4ea6770edf14af15183597bb643ad3e4cdc2cbd",
+    "coat_sim/agent/tool_dispatch.py": "5d9891daa4b205117ad1977b966b8fc39a219dca5d8e5de13077e6d2ae286513",
+    "coat_sim/agent/tool_results.py": "13dff0a31acbaf6ce91c831390bb44c0ab03822e61c160e83d40bb75f5c9bd53",
+    "coat_sim/agent/windows_lpac.py": "5293a53f88d3a21da3ae69d513974b83ee74d0097c58ddf13910dcea8b0f874d",
+    "coat_sim/agent/worker.py": "cde40ac0c41be3ae6a2b20d97988d053731f4c2d53da417a664fd74cd76748b9",
+    "coat_sim/algorithm_cli.py": "b1bd81faec18eb3a8f8a532b50592b6b3968c0f0fd8528f77913e22ea6aa3697",
+    "coat_sim/core/__init__.py": "7b56d2b42c39d8aa2e3be4cff9e605dca6161c046d9d415670542a9b1315a5f3",
+    "coat_sim/core/algorithm_paths.py": "b439c904849c71329d1dcb0f24b6bf100ced17f0a34ee28bec06141263eca9d3",
+    "coat_sim/core/api.py": "6068e9eded40b956a30808ce34ec6d2a325fbaa14fad0d0b4016eb4e36610bcf",
+    "coat_sim/core/backend_memory.py": "7ddf06f66a0dc67fbf07f494ae6526991918a31249a6636cb1b6bf33d1e445ae",
+    "coat_sim/core/calculation_history.py": "eafca6c0f93dccffb097f9561eab4567a97b144bc11c81f54096de3191ec2b99",
+    "coat_sim/core/compute_estimation.py": "6edb3e1fcd7869b202af2668c5e56d27103424fc97925832c7652049984b44f4",
+    "coat_sim/core/compute_resources.py": "152fecb34fa00970a40bf0145855e922140d01c564df885f50ffe72d42fd8ac3",
+    "coat_sim/core/compute_tasks.py": "f7b49c6224f1bde6829fa70bb109ac442a533d38a46a1560af62c3a789b0e1d3",
+    "coat_sim/core/data_files.py": "c1b203497d033e69f9d51eeb7cf6f18da4f4de3b9d7c57de00cd9e4e2ae42678",
+    "coat_sim/core/demo_workflow.py": "c01bf909ba9c96a865c13f1d2944ebddaefa7bd6ccefbf82374e41802560d7d3",
+    "coat_sim/core/design_files.py": "c54501fd642f1e1786efcfc9599597f0f34b40d380aa51a6315035517d6e563e",
+    "coat_sim/core/design_patch.py": "cbe5902a5044871eabf44624162e6735b13731d3573a009650e62b9ac988afd3",
+    "coat_sim/core/design_visualization.py": "c76f8e6a8e04fb374f2a476485490add96567c5b506c38bf053909efa4695f58",
+    "coat_sim/core/design_visualization_workflow.py": "dbe1b666a9981fbc1c21cef734f23acb3022872c52b0f673746f09968df8b33f",
+    "coat_sim/core/design_workflow.py": "3bf00c5b96e085e74261934dbe9c08519445dca1a59ec5355e828e67e0263292",
+    "coat_sim/core/desktop_compute.py": "79f815604df61c0ec49c71ea037070ea1c057cb3405fdb652e22971cb786ffba",
+    "coat_sim/core/errors.py": "f9e7c0d8b66e9eb87cf0de301f81e1321f52052526c6d1eaff515ee4bc6ce0ff",
+    "coat_sim/core/film_stack.py": "d28d4982276eacc3b1abfa2cdf59e1e3f3866e855166c3fedebf21c9f4b51b11",
+    "coat_sim/core/film_stack_schema.py": "7fa5dbc374a7c56bf95377463d3f68ed4a2901ed340f02ad34a4d374ce7e0710",
+    "coat_sim/core/gear_geometry.py": "0534a032b94493f29d4819ea2ca6f64132ed6105720d2276ac418542b60abc24",
+    "coat_sim/core/input_snapshot.py": "c8f944054403edfb4ca88a85da423685aef774da03343080cebe5305e7ef5504",
+    "coat_sim/core/isolated_compute.py": "f0ada011eb5bc671b06948374f7a82a08b71fba821cd6fd79e69bd08f2cfb4dc",
+    "coat_sim/core/machine_profiles.py": "b20bd6a77ba1822dd10fdfd5e2e472fcb9a616529e20997803750b1f2a159b44",
+    "coat_sim/core/mask_analysis.py": "534f6acd7b49f8aa88de7884b609f36eab1a77f80b876d0abc4263ad5e9fd07f",
+    "coat_sim/core/mask_cad.py": "0691982a5c8eacc0174fb0fed46847acfe27d7eb641238cd406540cfd71f9dc0",
+    "coat_sim/core/mask_optimization.py": "339797b1e58e48cf83c430db2c2613720521b5406d8cbf2ad50dd1e58d2b9168",
+    "coat_sim/core/mask_optimization_workflow.py": "6e0c0ba72f4c75844af12882f66b171bb94bdc786c3283382515e036ea897945",
+    "coat_sim/core/material_business.py": "655d3c401914e1d7334932bc0a0d15c26af321291d9e6654adda5a7bd6376b56",
+    "coat_sim/core/material_physics.py": "4889976d2581ca8126057f684549d1ce8b514438c366e2929b5ffdb86c7e0b79",
+    "coat_sim/core/material_research.py": "78f7505a53b0033de8c204edee9ca6818fd0add544a3ca623dce175747eaa57a",
+    "coat_sim/core/materials.py": "1c568c208dbf13ca4e3787b7f2c0d2b73893b681a55aba92cc770484c2580232",
+    "coat_sim/core/optical_constants.py": "b4748b954d6009f8e2d7f46ed0f930045b2a2006abca746a567b65d8b254bc8b",
+    "coat_sim/core/periodic_integration.py": "9c22f102e294152e3f3163ed13407b8a4ad7d97a53d01ded25cd4c611cb694a8",
+    "coat_sim/core/plugins.py": "849b2f1cf12137f424df58ac149ffb072bbb7171420e70ae0f7d980babe4d517",
+    "coat_sim/core/process_environment.py": "22cb89c838edd578bb77e3b29d79b9826fd3bce3972e5b37e9179e42147e3e44",
+    "coat_sim/core/process_identity.py": "3d9bc4c071e1f810902e8e2b8a8ba2c25e404b6383b0c6a1896e338e52318b55",
+    "coat_sim/core/process_profiles.py": "3ef2f2da59e49ceec533fd5651728bbf8c8912ea8704966efb462a19c761964b",
+    "coat_sim/core/process_simulator.py": "69645466f42a0ec41e1bc665cc2c39d7f450155dbee357ca20087b6747ee052b",
+    "coat_sim/core/result_pdf.py": "2893fc87363196e284b65d01ba70fa6a18c220d9abc3f5b11f59d71282e9a054",
+    "coat_sim/core/result_summary.py": "852b431bd4ab6a14c077c4a168046e38e282104608b4d822d048af8ac63510e6",
+    "coat_sim/core/result_visualization.py": "a8676ace136ebdf794846199cdc1000ab68f4c6e121e29bf79887b4089064217",
+    "coat_sim/core/schemas.py": "f0587c8077e8e71ff8252cf7bc32537d11f2c1b788f269834c2b202fed72e7a6",
+    "coat_sim/core/simulation_assets.py": "0b961d90f4904aaf7f1dbd4631295a883bee61826ed631eff6a60cb406d55e2f",
+    "coat_sim/core/simulator.py": "26087194913012b5572aaafa19994eb7f30bdf105fb40ce8c8ad8784dd8edcf6",
+    "coat_sim/core/source_profiles.py": "dd212c34b09277380e2694c9b76f1db313a28b664563fc4e5100c4310ea5c0f8",
+    "coat_sim/core/substrate_profiles.py": "ebbea8d9480ade3144452b55d8841f8fcaf577776369803e85713905df3a3ffd",
+    "coat_sim/core/substrate_surface.py": "f263df5b670dec16313047afef2cec46e4ed77ed1133cadecc81c5a0f7eafac8",
+    "coat_sim/mcp/__init__.py": "bae4afc8250de097c9bfcf2bd3fc1d72c3db81345fef98fe1756f27453691c0f",
+    "coat_sim/mcp/desktop_endpoint.py": "667333a40424d822c730c9e556b47d1f1efa98549b1225f888ef65f771d454ac",
+    "coat_sim/mcp/server.py": "2cf6a6ce954e9735f7309f16d86fab694f83e81dc1d52fb2ca7b205d1169644d",
+    "coat_sim/ui/__init__.py": "11cf13845c3b7e832981a532ab998d86085282a35e74c29df37472dde45241f2",
+    "coat_sim/ui/about.py": "def63d7603bf4efdc073636803a987455a968476b2440a3f4a183bdc3ad07192",
+    "coat_sim/ui/asset_browser.py": "1c80a019a170cf649e510c538c970fdeb6140482b5d9a261ab250cba973718a4",
+    "coat_sim/ui/assistant.py": "ac219a09495c417c3e9ad0d1dd902b983647b66863b17faacab898d876c0c126",
+    "coat_sim/ui/assistant_artifacts.py": "4c67ac4ceabb294c68228a3475f108c8418032ed699b6504dc9f99ecad509e18",
+    "coat_sim/ui/assistant_credentials.py": "1603ea543a36498147a1c1131599216c4361d38a9804963f96b9ab787a248749",
+    "coat_sim/ui/assistant_debug.py": "0c6352a1bbe5e23f3f5bab6f563dccf7bae707913d4811549efa64afd8a5ea80",
+    "coat_sim/ui/assistant_desktop.py": "b92b558e9e4ac6d2fab5716185d432a343380fe0165d074fc04d0be29e4fbaaf",
+    "coat_sim/ui/assistant_render.py": "578832365c0ed250df4e21a072b102261a0037d42182c6f75335f192824ee8a3",
+    "coat_sim/ui/assistant_rich.py": "6a53018819773a8efd846c9ca30c6ae78558691e358e18eb3192f3a7e660ceb4",
+    "coat_sim/ui/assistant_stream_render.py": "829e6951502668186b7e72dd875993f4c85f497a59cc11efaa054b6f7ca4cc07",
+    "coat_sim/ui/compute_queue.py": "dbff93a4adaa43a9b01c5992d375df3ea7c2461bcf8d58f6470caa4a82754330",
+    "coat_sim/ui/control.py": "eddf89ba78f21e67e619bf117c801c3285733a64dc71e8fd6cfe124519fbb77e",
+    "coat_sim/ui/desktop_identity.py": "907b9aec75fd8b5aa2cacc3c346ef1087638ec30f150feaa62556ce857e87813",
+    "coat_sim/ui/film_stack.py": "0f6f799d03e4178012c9a1c9a6e13da1f9943da738801599b27451c14ce7d31f",
+    "coat_sim/ui/fonts.py": "2d5b3f8c956ec5209786187cb168a029c4ed681634249207fb5360d6740ec0e2",
+    "coat_sim/ui/icons.py": "a0189ebca3ecf34a6c23f542c2ecb3a5a8f2ed1b97ac485ec09de0ec025a03f5",
+    "coat_sim/ui/launcher.py": "0a95855ebaf1695f23b1d5f1f8ad13c31099f0f7466a44748bbeb80be285d501",
+    "coat_sim/ui/machine_mask.py": "1c736eb1c58b8cf5d2fa799ab84c0eed8426a09575bff74a2a82a57a3abf18ad",
+    "coat_sim/ui/main.py": "7fed7d49e3363618e8bb34d6ceb22d021dcbd411696e5b8530ce56a6939a9814",
+    "coat_sim/ui/material_research.py": "d62b145296973679e8a089b08e96ea7761807bb71e1d9c03c864941990228907",
+    "coat_sim/ui/mcp_endpoint_process.py": "8068688b65f0229349302f99b51e24a3d83d46b590e06020eaa7384474742ea2",
+    "coat_sim/ui/model_probe.py": "77b1b8bbb13d67259289a4e072f53648c1804efe3323b1782afa0869b53c7d84",
+    "coat_sim/ui/preview_cursor.py": "889e1ecf2661d1f67d7899641f4dd04bcb61948666c40d75e6b6973bcc03abaf",
+    "coat_sim/ui/process.py": "10d8898cb9e5a5e70a42340ed4ad8aff5e2050756bea9a11313ccdbb7ce6e5c1",
+    "coat_sim/ui/settings.py": "b7d1f0008c8ff7bcf31b4c6a1cae8525861ff974ee7c29058e9594e19d2bf5ec",
+    "coat_sim/ui/source_materials.py": "7c0884ca71950a1594981bfacf6b7cbb1aaf96fd6dcbc8f3eccf922c1f1d04a4",
+    "coat_sim/ui/source_reference.py": "0926b5b7e05d2fbeda0a9c258ea4b202b21820cdd95ecfda3d1be1415d1f34af",
+    "coat_sim/ui/source_substrate.py": "41525a11c6402028c5f8d137563ba5acf6072246ca496b624a53fa4125d1f01d",
+    "coat_sim/ui/taskbar.py": "18f2d34af7256316a9a9055653413cfe7481c4137263b2d5e6b16a8ac823644f",
+    "coat_sim/ui/token_format.py": "ec14d123f1ee43f37f44b63e6c8f683c8313f7e0ed20c40c7294e190bbf20933",
+    "coat_sim/workflow.py": "c76325cd598b174b00c7d48cb827f281cb39ad325f01f9fa1f1d5cc2330e48cf"
+  }
+}

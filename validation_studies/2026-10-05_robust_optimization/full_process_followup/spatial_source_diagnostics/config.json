@@ -1,0 +1,17 @@
+{
+  "purpose": "Bounded separate grid/source diagnostics after fixed grid21 time and finer periodic screens passed",
+  "requested_periodic_dt_s": 0.0015625,
+  "grid_ladder": [21, 41, 61],
+  "source_ladder": [5, 7, 9],
+  "source_axis_grid": 41,
+  "pilot": {"grid": 41, "probe": false, "source_sampling": "unchanged legacy12/16 nodes"},
+  "pilot_call_cap": 4,
+  "main_call_cap": 44,
+  "main_soft_wall_allowance_s": 420,
+  "qualification": "Periodic/direct agreement is verified only at grid21 legacy sampling for the two fixed cases. Grid/source evaluations are provisional diagnostics; final joint direct comparison remains required.",
+  "metric_screens": {"normalized_map_rms_pp": 0.0034207351493726642, "cv_sensitivity_pp": 0.00028687305089674097},
+  "sampling_policy": "Complete original10888.888889-second recipe and fixed10-mm source1-X probe; no shortening or search. Nested spatial nodes, full represented disk plus a fully covered135-mm interior ROI. Source geometry/exponents/models remain fixed; only existing odd sampling_order changes.",
+  "plateau_policy": "Report nonmonotone changes and aggregate/map distinctions. Do not blindly extend grid/source ladders or claim physical accuracy.",
+  "fresh_optimizer_allowed": false,
+  "engineering_ranking_allowed": false
+}

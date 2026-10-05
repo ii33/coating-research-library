@@ -1,0 +1,19 @@
+{
+  "source_recovered_snapshot_relative": "native-repro-inputs-20261005/recovered-native-repro.json",
+  "source_recovered_snapshot_sha256": "b27807d48dbde3adea364c37a75a797478bdec4ab3d53360dab171e7640ea29c",
+  "complete_process_canonical_sha256": "e2f242baabfe608a446d658cf35303344c744661ea208196be76953eb3d84bf8",
+  "source_classification": "Actual recovered queued user input; source defaults remain uncalibrated, not certified production measurements",
+  "duration_policy": "Keep both complete original layers, targets, rates, phases, source/mask geometry; no truncation or duration substitution",
+  "pilot": {"mode": "direct", "grid_size": 21, "requested_dt_s": 0.05, "wall_cancel_s": 180},
+  "main_soft_wall_allowance_s": 600,
+  "main_actual_core_call_cap": 80,
+  "time_steps_s": [0.05, 0.025],
+  "adaptive_extra_dt_s": 0.0125,
+  "grid_sizes": [21, 41, 61],
+  "source_sampling_orders": [5, 7, 9],
+  "sensitivity_probe": {"source_slot": 1, "rigid_x_shift_mm": 10.0, "status": "Synthetic fixed sensitivity probe, not an optimized candidate or empirical uncertainty"},
+  "convergence": {"effect_fraction": 0.1, "definition": "Tolerance is10% of the normalized area-weighted RMS field difference between the complete-process baseline and the fixed10-mm sensitivity probe at direct .025s, grid21. Check CV changes and normalized field differences against this scale; no arbitrary absolute percent target and no rigorous error-bound claim.", "requirements": "Direct-vs-finite-periodic agreement must pass before using periodic for full-process grid/source convergence. Time, grid and source must pass separately; use a fully covered inset ROI alongside changing full-disk cell coverage. No fresh optimizer or ranking until these gates pass."},
+  "periodic_policy": "Use existing finite_periodic decomposition including all whole cycles and real-phase residuals; do not use fast_cycle approximation that omits layer tails",
+  "fresh_optimization_allowed_before_convergence": false,
+  "engineering_ranking_allowed": false
+}

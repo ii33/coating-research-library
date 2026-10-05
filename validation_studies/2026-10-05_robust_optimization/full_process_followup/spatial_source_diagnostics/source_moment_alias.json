@@ -1,0 +1,55 @@
+{
+  "status": "pure_source_quadrature_moment_diagnostic_no_core_calls",
+  "source": "uniform20-mm radius disk",
+  "rows": [
+    {
+      "order": null,
+      "nodes": 12,
+      "x2_mm2": 99.99999999999989,
+      "r2_mm2": 199.99999999999983,
+      "uniform_disk_exact_x2_mm2": 100.0,
+      "x2_relative_error_percent": -1.1102230246251565e-13
+    },
+    {
+      "order": 5,
+      "nodes": 21,
+      "x2_mm2": 103.61904761904762,
+      "r2_mm2": 207.23809523809524,
+      "uniform_disk_exact_x2_mm2": 100.0,
+      "x2_relative_error_percent": 3.6190476190476106
+    },
+    {
+      "order": 7,
+      "nodes": 37,
+      "x2_mm2": 95.31163816878099,
+      "r2_mm2": 190.623276337562,
+      "uniform_disk_exact_x2_mm2": 100.0,
+      "x2_relative_error_percent": -4.688361831219012
+    },
+    {
+      "order": 9,
+      "nodes": 69,
+      "x2_mm2": 107.64000715691539,
+      "r2_mm2": 215.28001431383072,
+      "uniform_disk_exact_x2_mm2": 100.0,
+      "x2_relative_error_percent": 7.640007156915396
+    },
+    {
+      "order": 11,
+      "nodes": 97,
+      "x2_mm2": 101.695492885746,
+      "r2_mm2": 203.39098577149196,
+      "uniform_disk_exact_x2_mm2": 100.0,
+      "x2_relative_error_percent": 1.6954928857459972
+    },
+    {
+      "order": 13,
+      "nodes": 137,
+      "x2_mm2": 102.96721807109232,
+      "r2_mm2": 205.93443614218467,
+      "uniform_disk_exact_x2_mm2": 100.0,
+      "x2_relative_error_percent": 2.9672180710923257
+    }
+  ],
+  "interpretation": "Odd Cartesian centre inclusion at a circular boundary has nonmonotone moments. More nodes alone do not imply monotone source-CV convergence; rectangular midpoint moments converge monotonically."
+}

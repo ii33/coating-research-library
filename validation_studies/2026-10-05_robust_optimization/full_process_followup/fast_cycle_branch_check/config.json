@@ -1,0 +1,12 @@
+{
+  "purpose": "Separate the user's reported fast_cycle mean branch from direct and finite_periodic=true paths",
+  "user_pdf_reported_branch": {"fast_cycle": true, "finite_periodic_integration": false, "residual_threshold_percent": 100, "grid_size": 300, "requested_time_steps": 435556, "simulated_duration_per_layer_s": 12, "cycle_samples_per_layer": 481},
+  "pdf_geometry_identity": "Report does not contain full source/mask coordinates or canonical graph hashes; matching numerical branch metadata is not full input identity verification",
+  "cloud_check_grid": 21,
+  "requested_dt_s": [0.025, 0.00625],
+  "matched_tail_isolation_dt_s": 0.00625,
+  "case": "unchanged complete recovered native recipe, baseline only",
+  "max_actual_core_calls": 4,
+  "engineering_ranking_allowed": false,
+  "production_tolerance": "unknown_not_inferred"
+}

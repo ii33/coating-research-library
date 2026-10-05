@@ -1,0 +1,318 @@
+{
+  "fixtures": [
+    {
+      "fixture": "under_period",
+      "classification": "Separate synthetic time-window fixture using unchanged source2/board2 geometry, not the user full-process benchmark",
+      "duration_s": 4.383,
+      "actual_direct_dt_s": 0.02490340909090909,
+      "periodic_used": false,
+      "direct_periodic_map_difference": {
+        "normalized_field_rms_pp": 0.0,
+        "interior135_field_rms_pp": 0.0,
+        "cv_change_pp": 0.0,
+        "interior135_cv_change_pp": 0.0,
+        "common_grid": 21,
+        "common_represented_area_fraction": 0.9751756337239269,
+        "common_interior135_coverage": 1.0000000090478416
+      },
+      "raw_mean_relative_difference_percent": 0.0,
+      "core_calls": 2,
+      "core_audits": [
+        {
+          "duration_s": 4.383,
+          "requested_time_steps": 176,
+          "actual_dt_s": 0.02490340909090909,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 120.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 176,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.03437085199402645
+        },
+        {
+          "duration_s": 4.383,
+          "requested_time_steps": 176,
+          "actual_dt_s": 0.02490340909090909,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 120.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 176,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.032805591996293515
+        }
+      ]
+    },
+    {
+      "fixture": "aligned_whole_periods",
+      "classification": "Separate synthetic time-window fixture using unchanged source2/board2 geometry, not the user full-process benchmark",
+      "duration_s": 24.0,
+      "actual_direct_dt_s": 0.025,
+      "periodic_used": true,
+      "direct_periodic_map_difference": {
+        "normalized_field_rms_pp": 6.924815668754034e-14,
+        "interior135_field_rms_pp": 6.876744451763761e-14,
+        "cv_change_pp": 2.7755575615628914e-15,
+        "interior135_cv_change_pp": 1.3322676295501878e-15,
+        "common_grid": 21,
+        "common_represented_area_fraction": 0.9751756337239269,
+        "common_interior135_coverage": 1.0000000090478416
+      },
+      "raw_mean_relative_difference_percent": 0.0,
+      "core_calls": 2,
+      "core_audits": [
+        {
+          "duration_s": 24.0,
+          "requested_time_steps": 960,
+          "actual_dt_s": 0.025,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 120.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 960,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.17620210599852726
+        },
+        {
+          "duration_s": 12.0,
+          "requested_time_steps": 480,
+          "actual_dt_s": 0.025,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 0.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 480,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.09000251399993431
+        }
+      ]
+    },
+    {
+      "fixture": "aligned_periods_plus_tail",
+      "classification": "Separate synthetic time-window fixture using unchanged source2/board2 geometry, not the user full-process benchmark",
+      "duration_s": 24.375,
+      "actual_direct_dt_s": 0.025,
+      "periodic_used": true,
+      "direct_periodic_map_difference": {
+        "normalized_field_rms_pp": 7.169550304099688e-14,
+        "interior135_field_rms_pp": 7.16149013500012e-14,
+        "cv_change_pp": 3.3306690738754696e-16,
+        "interior135_cv_change_pp": 9.992007221626409e-16,
+        "common_grid": 21,
+        "common_represented_area_fraction": 0.9751756337239269,
+        "common_interior135_coverage": 1.0000000090478416
+      },
+      "raw_mean_relative_difference_percent": 0.0,
+      "core_calls": 3,
+      "core_audits": [
+        {
+          "duration_s": 24.375,
+          "requested_time_steps": 975,
+          "actual_dt_s": 0.025,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 120.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 975,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.19310378899535863
+        },
+        {
+          "duration_s": 12.0,
+          "requested_time_steps": 480,
+          "actual_dt_s": 0.025,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 0.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 480,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.09871914100222057
+        },
+        {
+          "duration_s": 0.375,
+          "requested_time_steps": 15,
+          "actual_dt_s": 0.025,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 120.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 15,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.00440375800098991
+        }
+      ]
+    },
+    {
+      "fixture": "unaligned_periods_plus_tail",
+      "classification": "Separate synthetic time-window fixture using unchanged source2/board2 geometry, not the user full-process benchmark",
+      "duration_s": 24.383,
+      "actual_direct_dt_s": 0.024982581967213115,
+      "periodic_used": true,
+      "direct_periodic_map_difference": {
+        "normalized_field_rms_pp": 0.028927594177272153,
+        "interior135_field_rms_pp": 0.02927352767375687,
+        "cv_change_pp": 0.0011169930060580535,
+        "interior135_cv_change_pp": 0.0014569118112076618,
+        "common_grid": 21,
+        "common_represented_area_fraction": 0.9751756337239269,
+        "common_interior135_coverage": 1.0000000090478416
+      },
+      "raw_mean_relative_difference_percent": 0.0013743187837200743,
+      "core_calls": 3,
+      "core_audits": [
+        {
+          "duration_s": 24.383,
+          "requested_time_steps": 976,
+          "actual_dt_s": 0.024982581967213115,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 120.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 976,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.18100817499362165
+        },
+        {
+          "duration_s": 12.0,
+          "requested_time_steps": 481,
+          "actual_dt_s": 0.02494802494802495,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 0.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 481,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.08918665500095813
+        },
+        {
+          "duration_s": 0.3829999999999991,
+          "requested_time_steps": 16,
+          "actual_dt_s": 0.023937499999999945,
+          "grid_size": 21,
+          "source_samples": 16,
+          "mask_layers": 1,
+          "carrier_phase_deg": 0.0,
+          "planet_phase_deg": 120.0,
+          "source_xyz_mm": [
+            -200.0,
+            -90.0,
+            0.0
+          ],
+          "status": "completed",
+          "actual_time_steps": 16,
+          "time_batch_steps": 32,
+          "all_steps_observed": true,
+          "wall_s": 0.007978244000696577
+        }
+      ]
+    },
+    {
+      "fixture": "eight_subperiod_layers",
+      "classification": "Eight synthetic4.383-second layers; main original recipe is untouched",
+      "complete_fixture_duration_s": 35.064,
+      "all_layers_under_return_period": true,
+      "all_layers_fallback_to_full": true,
+      "direct_periodic_map_difference": {
+        "normalized_field_rms_pp": 0.0,
+        "interior135_field_rms_pp": 0.0,
+        "cv_change_pp": 0.0,
+        "interior135_cv_change_pp": 0.0,
+        "common_grid": 21,
+        "common_represented_area_fraction": 0.9751756337239269,
+        "common_interior135_coverage": 1.0000000090478416
+      },
+      "core_calls": 16,
+      "per_layer_actual_dt_s": [
+        0.02490340909090909,
+        0.02490340909090909,
+        0.02490340909090909,
+        0.02490340909090909,
+        0.02490340909090909,
+        0.02490340909090909,
+        0.02490340909090909,
+        0.02490340909090909
+      ]
+    }
+  ],
+  "actual_core_calls": 26,
+  "wall_s": 1.6016796019976027,
+  "main_input_snapshot_untouched": true,
+  "historical_unchanged": true,
+  "product_python_unchanged": true,
+  "production_tolerance": "unknown_not_inferred",
+  "interpretation": "Correct full periods plus actual tails are a physical decomposition; sampled grids may differ. Under-period fallback uses identical full integration, so many short layers alone do not create periodic replacement error."
+}
