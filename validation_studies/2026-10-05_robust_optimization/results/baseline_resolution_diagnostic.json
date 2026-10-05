@@ -1,0 +1,10 @@
+{
+  "purpose": "Separate post-run initial-design resolution diagnostic; not used to select a method or design",
+  "design": [100.0, 5.0, 5.0],
+  "actual_forward_calls": 6,
+  "rows": [
+    {"grid_size": 21, "time_steps": 96, "source_samples": 9, "cv_percent": 0.7708674895061871, "unmasked_cv_percent": 0.7715665201896936, "throughput": 0.9773399288629252, "represented_area_fraction": 0.9751756337239269, "kernel_s": 0.01597019800101407},
+    {"grid_size": 41, "time_steps": 192, "source_samples": 25, "cv_percent": 0.45944957147490306, "unmasked_cv_percent": 0.7774191461311754, "throughput": 0.977253937702708, "represented_area_fraction": 0.986670272722352, "kernel_s": 0.3581187659947318},
+    {"grid_size": 61, "time_steps": 384, "source_samples": 49, "cv_percent": 0.39779623043045015, "unmasked_cv_percent": 0.7795751932254034, "throughput": 0.9773225310999542, "represented_area_fraction": 0.9900199528319201, "kernel_s": 3.7910938409986557}
+  ]
+}

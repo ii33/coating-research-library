@@ -1,0 +1,31 @@
+{
+  "study_id": "2026-10-05_robust_optimization",
+  "status": "synthetic_same_core_proof_study",
+  "baseline_commit": "415635cf3ec3ba6e65cfabbb90bef1e9940245fb",
+  "seeds": [11, 29, 47],
+  "uncertainty_levels": [0.01, 0.05],
+  "training_actual_forward_budget_per_method": 240,
+  "random_training_scenarios": 3,
+  "holdout_scenarios": 64,
+  "refined_holdout_scenarios": 16,
+  "lambda_sd": 1.0,
+  "constraints": {"cv_max_percent": 2.0, "throughput_min": 0.85},
+  "bounds": [[80.0, 240.0], [3.0, 30.0], [3.0, 30.0]],
+  "initial_design": [100.0, 5.0, 5.0],
+  "resolution": {"grid_size": 21, "time_steps": 96, "source_order": 3},
+  "refined_resolution": {"grid_size": 41, "time_steps": 192, "source_order": 5},
+  "convergence_resolution": {"grid_size": 61, "time_steps": 384, "source_order": 7},
+  "uncertainty": {
+    "distribution": "Independent standard normals; deterministic seeded draws, no clipping",
+    "parameters": ["source_x", "source_y", "source_z", "mask1_x", "mask1_y", "mask1_z", "mask2_x", "mask2_y", "mask2_z", "source_A", "source_n", "carrier_rpm"],
+    "position_scale_mm": 100.0,
+    "position_sd_mm": "uncertainty_level * 100 mm, including zero nominal coordinates",
+    "A_n_rpm_relative_sd": "uncertainty_level * nominal value",
+    "correlation": "Identity between the 12 latent variables; all vertices of one mask and all finite source nodes share their rigid position perturbation",
+    "evidence": "Synthetic sensitivity assumptions, not empirical tolerances or calibrated uncertainty"
+  },
+  "selection": "Within each fixed forward-call budget, minimize maximum training constraint violation first, then nominal CV or E[CV]+lambda*population SD[CV]. Fixed random scenarios reused across every robust candidate. Nominal scenario included in robust training.",
+  "holdout_policy": "Training RNG seed 10000+repeat; holdout RNG seed 90000+repeat, generated after both selected designs are frozen. Common random numbers between methods and levels. No holdout-based selection.",
+  "bootstrap": {"resamples": 2000, "interval": "percentile 95% conditional Monte Carlo intervals, paired within each repeat"},
+  "claims": "Implementation and synthetic sensitivity only. No manufacturing release, Mo thresholds, Bayesian optimizer reproduction, global optimality, or empirical reliability claim."
+}

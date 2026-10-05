@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470">
+<rect width="900" height="470" fill="#f5f8f7"/>
+<text x="40" y="38" font-family="sans-serif" font-size="22" fill="#173d46">Paired refined holdout: robust minus nominal CV</text>
+<text x="40" y="63" font-family="sans-serif" font-size="14" fill="#425d65">16 scenarios per repeat; 95% paired Monte Carlo bootstrap, numerical error excluded</text>
+<line x1="502.9" y1="85" x2="502.9" y2="380" stroke="#8eabad" stroke-dasharray="4 4"/>
+<text x="45" y="113" font-family="sans-serif" font-size="16">1%, seed 11</text>
+<line x1="396.9" y1="108" x2="433.1" y2="108" stroke="#18796c" stroke-width="4"/>
+<circle cx="415.1" cy="108" r="6" fill="#18796c"/>
+<text x="810" y="113" font-family="sans-serif" font-size="14">-0.0384</text>
+<text x="45" y="160" font-family="sans-serif" font-size="16">1%, seed 29</text>
+<line x1="402.4" y1="155" x2="443.3" y2="155" stroke="#18796c" stroke-width="4"/>
+<circle cx="422.6" cy="155" r="6" fill="#18796c"/>
+<text x="810" y="160" font-family="sans-serif" font-size="14">-0.0351</text>
+<text x="45" y="207" font-family="sans-serif" font-size="16">1%, seed 47</text>
+<line x1="391.1" y1="202" x2="434.9" y2="202" stroke="#18796c" stroke-width="4"/>
+<circle cx="414.1" cy="202" r="6" fill="#18796c"/>
+<text x="810" y="207" font-family="sans-serif" font-size="14">-0.0388</text>
+<text x="45" y="254" font-family="sans-serif" font-size="16">5%, seed 11</text>
+<line x1="490.5" y1="249" x2="853.5" y2="249" stroke="#aa5834" stroke-width="4"/>
+<circle cx="674.4" cy="249" r="6" fill="#aa5834"/>
+<text x="810" y="254" font-family="sans-serif" font-size="14">+0.0750</text>
+<text x="45" y="301" font-family="sans-serif" font-size="16">5%, seed 29</text>
+<line x1="423.3" y1="296" x2="512.2" y2="296" stroke="#18796c" stroke-width="4"/>
+<circle cx="468.2" cy="296" r="6" fill="#18796c"/>
+<text x="810" y="301" font-family="sans-serif" font-size="14">-0.0152</text>
+<text x="45" y="348" font-family="sans-serif" font-size="16">5%, seed 47</text>
+<line x1="362.4" y1="343" x2="516.1" y2="343" stroke="#18796c" stroke-width="4"/>
+<circle cx="437.9" cy="343" r="6" fill="#18796c"/>
+<text x="810" y="348" font-family="sans-serif" font-size="14">-0.0284</text>
+<text x="325" y="411" font-family="sans-serif" font-size="14">← favors robust</text>
+<text x="650" y="411" font-family="sans-serif" font-size="14">favors nominal →</text>
+<text x="40" y="448" font-family="sans-serif" font-size="14" fill="#aa5834">Engineering comparison unresolved: resolution shifts exceed the small 1% method differences</text>
+</svg>
