@@ -1,0 +1,1372 @@
+{
+  "baseline": "TFCalc for Windows 3.5, supplied01.pdf copyright1985–2002",
+  "page_convention": "pdf_physical_pages are1-based; printed_section_pages explicitly include section",
+  "scope": "Original paraphrase of documented behavior; independent recreation proposals are not claims about proprietary internals",
+  "features": [
+    {
+      "feature_id": "F01",
+      "feature_en": "Physical stack and layer order",
+      "feature_zh": "物理膜系模型与层序",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        13,
+        21,
+        23
+      ],
+      "printed_section_pages": "S2 pp3,11,13",
+      "inputs": "Incident medium; front layers; bulk substrate; back layers; exit medium; first surface; angle",
+      "outputs": "Observable results for chosen illumination direction",
+      "documented_claim": "Layer 1 is adjacent to substrate; illumination can encounter Front or Back first; total front+back layers <=5000",
+      "implementation_unknown": "Exact internal layer storage layout",
+      "independent_recreation_notes": "Persist substrate-outward layer order explicitly; solver adapter reverses front layers for incident-to-exit order",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F02",
+      "feature_en": "Nonabsorbing incident medium",
+      "feature_zh": "入射介质吸收限制",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        21,
+        40
+      ],
+      "printed_section_pages": "S2 pp11,30",
+      "inputs": "Incident-medium n,k",
+      "outputs": "Incident optical admittance",
+      "documented_claim": "Absorbing incident medium triggers warning and TFCalc assumes k=0",
+      "implementation_unknown": "Warning and error details",
+      "independent_recreation_notes": "Use explicit legacy compatibility switch; general absorbing incidence is an extension",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F03",
+      "feature_en": "Bulk substrate and backside",
+      "feature_zh": "非相干厚基底与背面反射",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        21,
+        68
+      ],
+      "printed_section_pages": "S2 pp11,58",
+      "inputs": "Substrate material/thickness(mm); exit medium; backside coatings",
+      "outputs": "R,T through whole assembly or into substrate",
+      "documented_claim": "Bulk substrate has no interference; includes attenuation and multiple backside reflections; same substrate/exit with no back layers means no backside reflection",
+      "implementation_unknown": "Detailed absorbing-substrate flux implementation",
+      "independent_recreation_notes": "Separate coherent coating blocks and incoherent bulk propagator",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F04",
+      "feature_en": "Observable-specific coherence",
+      "feature_zh": "按观测量区分背面模型",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        68,
+        69
+      ],
+      "printed_section_pages": "S2 pp58–59",
+      "inputs": "Finite substrate and backside coatings",
+      "outputs": "Phase,psi,EFI",
+      "documented_claim": "Phase-change/psi and EFI always use infinite substrate and ignore backside",
+      "implementation_unknown": "Explicit GD/GDD/TOD handling when finite substrate selected",
+      "independent_recreation_notes": "Label result assumptions per observable; do not assign coherent phase to intensity average",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F05",
+      "feature_en": "Units and thickness priority",
+      "feature_zh": "单位与光学/物理厚度优先",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        10,
+        21,
+        23,
+        44
+      ],
+      "printed_section_pages": "S1 p6; S2 pp11,13,34",
+      "inputs": "Wavelength unit; reference wavelength; physical d or QWOT; optical/physical priority",
+      "outputs": "Recomputed d or QWOT",
+      "documented_claim": "Optical priority preserves optical thickness when n or reference wavelength changes; physical priority preserves d",
+      "implementation_unknown": "Data-file coefficient unit conventions for each dispersion formula",
+      "independent_recreation_notes": "Canonical SI units plus explicit persisted UI units; QWOT=4 n_real d/λ0 in absorbing display approximation",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F06",
+      "feature_en": "Reflection phase convention",
+      "feature_zh": "反射相位约定",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        10,
+        60
+      ],
+      "printed_section_pages": "S1 p6; S2 p50",
+      "inputs": "Muller or Abelès option",
+      "outputs": "Reflected p phase",
+      "documented_claim": "At normal incidence Muller p/s phases differ180deg; Abelès p/s phases match; choice applies to p-reflected phase",
+      "implementation_unknown": "Exact ellipsometric delta wrapping range",
+      "independent_recreation_notes": "Test sign-convention adapters independently from power calculations",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F07",
+      "feature_en": "Material tables",
+      "feature_zh": "材料复折射率表",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        13,
+        42,
+        77
+      ],
+      "printed_section_pages": "S2 pp3,32,67",
+      "inputs": "Up to1001 λ,n,k rows; optional missing-data marker −1; sorted/unsorted input",
+      "outputs": "Interpolated complex optical constants",
+      "documented_claim": "Uses n−ik convention; linear interpolation; optional endpoint hold/warn; n>0, positive k absorption, negative k gain when enabled",
+      "implementation_unknown": "Behavior for duplicate λ; insufficient data; gain −1 versus missing marker conflict",
+      "independent_recreation_notes": "Explicit metadata and validity range; missing values use nullable fields in new format",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F08",
+      "feature_en": "Table range policy",
+      "feature_zh": "表格范围外策略",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        10,
+        42,
+        45,
+        47,
+        49
+      ],
+      "printed_section_pages": "S1 p6; S2 pp32,35,37,39",
+      "inputs": "Design extrapolation setting; material/light/detector/distribution tables",
+      "outputs": "Endpoint values or warnings",
+      "documented_claim": "Configuration names endpoint holding extrapolation; disabled setting warns out-of-range",
+      "implementation_unknown": "Whether computation is refused after warning",
+      "independent_recreation_notes": "Explicit clamp/warn/error modes; default ERROR preserves existing material-domain rejection; only explicit legacy opt-in permits endpoint holding with warnings and provenance",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F09",
+      "feature_en": "Dispersion formula families",
+      "feature_zh": "色散模型族",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "printed_section_pages": "S2 pp31–34",
+      "inputs": "n model coefficients: Sellmeier1/2/2prime/3,Cauchy,Hartmann1/2,Schott,Drude; k:Zero,Sellmeier,Exponential,Drude",
+      "outputs": "n(λ),k(λ) or table conversion",
+      "documented_claim": "Formula validity interval checked; Drude n/k paired and determined implicitly",
+      "implementation_unknown": "Parameter units/normalization for imported coefficient sets must be verified",
+      "independent_recreation_notes": "Reject poles and nonphysical roots; preserve wavelength-unit metadata",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F10",
+      "feature_en": "Variable-index materials",
+      "feature_zh": "可变折射率材料",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        38
+      ],
+      "printed_section_pages": "S2 p28",
+      "inputs": "Per-design name,n,k,bounds,optimize flags",
+      "outputs": "Refined n,k and coating results",
+      "documented_claim": "Up to150 variable materials; bounds apply during optimization; Simplex does not vary index",
+      "implementation_unknown": "Gradient generation and bound projection",
+      "independent_recreation_notes": "Shared material variables update every referring layer; support independent n/k flags",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F11",
+      "feature_en": "Graded-index approximation",
+      "feature_zh": "渐变折射率离散近似",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        38
+      ],
+      "printed_section_pages": "S2 p28",
+      "inputs": "Sequence of variable-index materials and thin layers",
+      "outputs": "Approximate rugate/graded coating",
+      "documented_claim": "Graded profile can be approximated by many thin slices with different indices",
+      "implementation_unknown": "No continuous-profile propagator documented",
+      "independent_recreation_notes": "Convergence test by doubling slice density; continuous solver is optional extension",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F12",
+      "feature_en": "Linear dielectric mixtures",
+      "feature_zh": "线性介电常数混合",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        39
+      ],
+      "printed_section_pages": "S2 p29",
+      "inputs": "Two material names; percentage A; optional desired n or k",
+      "outputs": "Mixture n,k; inferred percentage where obtainable",
+      "documented_claim": "ε_mix=f ε_A+(1−f)ε_B; ε is square of complex index; percentage can vary interactively",
+      "implementation_unknown": "No Bruggeman/Maxwell–Garnett model documented; optimized mixture-fraction variable not explicitly stated",
+      "independent_recreation_notes": "Name mixture model; passive branch of square root; avoid pretending linear ε is universally physical",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F13",
+      "feature_en": "Multiple environments",
+      "feature_zh": "多环境共同设计",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        20,
+        40
+      ],
+      "printed_section_pages": "S2 pp10,30",
+      "inputs": "<=10 environments; incident/substrate/exit/light/detector; <=4 active materials; first surface",
+      "outputs": "Joint objective across environments",
+      "documented_claim": "Active materials substituted per environment while preserving physical thickness",
+      "implementation_unknown": "No full anisotropic tensor propagation disclosed despite birefringent-substrate use case",
+      "independent_recreation_notes": "Environment snapshots share geometry and map material identities explicitly",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F14",
+      "feature_en": "Stack-formula parser",
+      "feature_zh": "膜堆公式解析",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        22
+      ],
+      "printed_section_pages": "S2 p12",
+      "inputs": "<=32000-character expression; <=26 symbols; repetitions; multipliers; G-group tags; qw/nm suffix",
+      "outputs": "Front layer list",
+      "documented_claim": "Formula creates front layers; parentheses must have caret/integer; symbols carry material,d,optimize,group",
+      "implementation_unknown": "Grammar edge cases and nested semantics",
+      "independent_recreation_notes": "Write formal grammar and AST; unit-aware expansion and layer-count limits",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F15",
+      "feature_en": "Layer constraints and flags",
+      "feature_zh": "膜层变量与约束",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        23
+      ],
+      "printed_section_pages": "S2 p13",
+      "inputs": "Material,d/QWOT,optimize,group,constrain,min,max,needle insertion flag",
+      "outputs": "Bounded layer parameter vector",
+      "documented_claim": "Can constrain thickness in nm or QWOT; mark eligibility for optimization and needle insertion",
+      "implementation_unknown": "Interaction between group constraints and per-layer bounds",
+      "independent_recreation_notes": "Separate immutable layer IDs from displayed index; reconcile constraints before run",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F16",
+      "feature_en": "Layer editing and consolidation",
+      "feature_zh": "膜层编辑与合并",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        24,
+        26,
+        75
+      ],
+      "printed_section_pages": "S2 pp14,16,65",
+      "inputs": "Reverse; front/back swap; substitute matching values; set zero thickness",
+      "outputs": "Edited stack and summaries",
+      "documented_claim": "Consolidation removes zero layers and merges adjacent same-material same-group layers",
+      "implementation_unknown": "Whether flags/constraints affect merge eligibility beyond group equality",
+      "independent_recreation_notes": "Preview destructive structural edits; preserve IDs and provenance",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F17",
+      "feature_en": "Angle matching",
+      "feature_zh": "角度匹配",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        24
+      ],
+      "printed_section_pages": "S2 p14",
+      "inputs": "Old/new angle; nonabsorbing layers",
+      "outputs": "Adjusted d",
+      "documented_claim": "Changes nonabsorbing thickness to preserve effective phase thickness at new angle",
+      "implementation_unknown": "Exact angle-dependent dispersion handling",
+      "independent_recreation_notes": "For real isotropic indices use d_new=d_old cosθ_old/cosθ_new; verify sample",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F18",
+      "feature_en": "Thickness totals and run sheet",
+      "feature_zh": "厚度统计与生产表",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        25,
+        26
+      ],
+      "printed_section_pages": "S2 pp15–16",
+      "inputs": "Stack and material labels",
+      "outputs": "Per-material total; total d; thinnest layer; text material/d rows",
+      "documented_claim": "Layer data can import/export material name and physical nm thickness",
+      "implementation_unknown": "Group-factor inclusion in exported base versus true thickness not fully specified",
+      "independent_recreation_notes": "Export both base and true d with explicit units",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F19",
+      "feature_en": "Group factors",
+      "feature_zh": "组因子与归一化",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        20,
+        27,
+        53
+      ],
+      "printed_section_pages": "S2 pp10,17,43",
+      "inputs": "<=5000 groups; factor,optimize,min/max; layer group references",
+      "outputs": "True d=base d × group factor; bounded refined factors",
+      "documented_claim": "Normalize multiplies base d by group factor then resets factor1; can optimize groups",
+      "implementation_unknown": "Mixed per-layer and group refinement in same run not documented",
+      "independent_recreation_notes": "Chain rule for group gradient; prohibit unintended double scaling",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F20",
+      "feature_en": "Spectral and angular analysis",
+      "feature_zh": "光谱/角度分析",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        51,
+        59
+      ],
+      "printed_section_pages": "S2 pp41,49",
+      "inputs": "λ range,angle range and increments; one angle or λ; polarization",
+      "outputs": "R,T,A,psi,density,loss,phase,GD/GDD/TOD",
+      "documented_claim": "Up to32000 analysis λ or angles; product for joint grid <=32000",
+      "implementation_unknown": "Loss and density precise definitions not given in this excerpt",
+      "independent_recreation_notes": "Validate range endpoints and expose computational budget",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F21",
+      "feature_en": "Polarization observables",
+      "feature_zh": "偏振与偏振差",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        28,
+        33
+      ],
+      "printed_section_pages": "S2 pp18,23",
+      "inputs": "P,S,Average,Difference; quantity",
+      "outputs": "Mean intensity or absolute polarization difference",
+      "documented_claim": "For R Average=.5(Rp+Rs), Difference=|Rp−Rs|",
+      "implementation_unknown": "Phase/ultrafast average/difference definition beyond specific notes",
+      "independent_recreation_notes": "Keep intensity mean separate from phase composition",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F22",
+      "feature_en": "Weighted illuminant/detector results",
+      "feature_zh": "光源与探测器加权结果",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        45,
+        47,
+        53,
+        66
+      ],
+      "printed_section_pages": "S2 pp35,37,43,56",
+      "inputs": "I(λ),D(λ),phase of illuminant",
+      "outputs": "Modified observed quantity; weighted objective",
+      "documented_claim": "Tables/plots show I D C; WHITE+IDEAL yields intrinsic power; illuminant phase affects phase-related results",
+      "implementation_unknown": "Exact weighting for derived loss/density/psi quantities",
+      "independent_recreation_notes": "Expose intrinsic and measured channels separately; fractions versus percentages converted once",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F23",
+      "feature_en": "Discrete targets",
+      "feature_zh": "离散目标",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        20,
+        28,
+        29,
+        30
+      ],
+      "printed_section_pages": "S2 pp10,18–20",
+      "inputs": "<=5000 rows:quantity,type,pol,λ,angle,value,tolerance,environment",
+      "outputs": "Residual vector and objective",
+      "documented_claim": "Intensity/phase/color/derivative/ultrafast codes; imported/generator targets; intensity in%, phase degrees,ultrafast ps powers",
+      "implementation_unknown": "Unlisted residual normalizations; special target code schema",
+      "independent_recreation_notes": "Typed target objects rather than overloaded text fields",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F24",
+      "feature_en": "Inequality targets",
+      "feature_zh": "不等式目标",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        28,
+        33,
+        35,
+        58,
+        79
+      ],
+      "printed_section_pages": "S2 pp18,23,25,48,69",
+      "inputs": "Less-than or greater-than threshold; tolerance",
+      "outputs": "Pass/fail and violated residual",
+      "documented_claim": "Any result satisfying inequality acceptable; used for yield and needle/tunnel stopping",
+      "implementation_unknown": "Boundary convention (< versus <=) and hinge implementation not published",
+      "independent_recreation_notes": "Independent proposal: hinge residual max(0,C−upper) or max(0,lower−C); test exact boundary",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F25",
+      "feature_en": "Target generation and sampling",
+      "feature_zh": "目标生成与采样",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        29,
+        30,
+        36
+      ],
+      "printed_section_pages": "S2 pp19–20,26",
+      "inputs": "Ranges,n/increment; linear λ,wavenumber,logλ; file stride,scale,replace/append",
+      "outputs": "Target rows",
+      "documented_claim": "Broadband grids support uniform wavenumber/logλ; imports can stride and scale",
+      "implementation_unknown": "Floating endpoint rounding",
+      "independent_recreation_notes": "Immutable target templates plus generated row count; always analyze fine holdout grid",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F26",
+      "feature_en": "Power-product targets",
+      "feature_zh": "反射透射乘积目标",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        28,
+        33
+      ],
+      "printed_section_pages": "S2 pp18,23",
+      "inputs": "R*T,Rp*Ts,Rs*Tp; selected pol",
+      "outputs": "Product residual",
+      "documented_claim": "Allows product targets scaled0–100",
+      "implementation_unknown": "Whether product formed in% or fractions internally",
+      "independent_recreation_notes": "Use100 R_fraction T_fraction at display boundary; verify scaling from reference output",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F27",
+      "feature_en": "Continuous band targets",
+      "feature_zh": "连续波段目标",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        20,
+        33,
+        34,
+        53,
+        54
+      ],
+      "printed_section_pages": "S2 pp10,23–24,43–44",
+      "inputs": "<=100 bands; start/end λ and target value; angle,pol,tolerance,environment",
+      "outputs": "Integrated/discretized band residual",
+      "documented_claim": "Internally converted to discrete points; same tolerance gives one continuous band same weight as one discrete target",
+      "implementation_unknown": "Quadrature,adaptive criteria,normalization of band measure and target interpolation unspecified",
+      "independent_recreation_notes": "Independent normalized integral and adaptive peak search; retain quadrature weights",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F28",
+      "feature_en": "Cone-angle average",
+      "feature_zh": "锥角加权平均",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        35,
+        49,
+        51,
+        59,
+        60
+      ],
+      "printed_section_pages": "S2 pp25,39,41,49–50",
+      "inputs": "Axis angle,half-angle or f/#; odd angle count; equal,Lambertian,user distribution",
+      "outputs": "Weighted averaged powers",
+      "documented_claim": "<=400 cone targets; equally spaced angles weighted by geometric proportion and intensity; average pol recommended; doubling samples claimed error/4",
+      "implementation_unknown": "Exact 3D azimuth weighting and f/# convention not disclosed",
+      "independent_recreation_notes": "Derive solid-angle integral and independently validate convergent quadrature",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F29",
+      "feature_en": "Derivative targets",
+      "feature_zh": "导数目标",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        14,
+        31
+      ],
+      "printed_section_pages": "S2 pp4,21",
+      "inputs": "First/second/third derivative; λ or wavenumber; quantity,λ,angle,pol",
+      "outputs": "Derivative residuals",
+      "documented_claim": "These derivative target orders and variables documented",
+      "implementation_unknown": "Difference stencils,step sizes,derivative normalization",
+      "independent_recreation_notes": "Differentiate with actual λ↔wavenumber chain rules; sampling convergence tests",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F30",
+      "feature_en": "Ultrafast phase derivatives",
+      "feature_zh": "超快相位导数 GD/GDD/TOD",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        14,
+        28,
+        31,
+        32,
+        51,
+        66
+      ],
+      "printed_section_pages": "S2 pp4,18,21–22,41,56",
+      "inputs": "Reflection/transmission phase; pol; wavelength; targets",
+      "outputs": "GD(ps),GDD(ps²),TOD(ps³)",
+      "documented_claim": "Analysis and optimization supported; P/S recommended, difference permitted",
+      "implementation_unknown": "Exact spectral differentiation/unwrapping/reference plane/normalization not disclosed",
+      "independent_recreation_notes": "Use fixed reference plane and time convention; amplitude-zero masks; analytic chain rule",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F31",
+      "feature_en": "Color and luminance targets",
+      "feature_zh": "颜色与亮度目标",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        30,
+        31,
+        70,
+        73,
+        75
+      ],
+      "printed_section_pages": "S2 pp20–21,60,63,65",
+      "inputs": "CIE1931/1976 or LAB; 2deg/10deg observer; illuminant/reference white; 5/10nm sampling",
+      "outputs": "Chromaticity,LAB,luminance,purity,dominant/complementary λ",
+      "documented_claim": "Analyze380–780nm or wider at5nm; optimizing10nm then analyzing5nm can alter color; ref white used for color descriptors",
+      "implementation_unknown": "Exact CMF tables/interpolation/white adaptation/display RGB transform",
+      "independent_recreation_notes": "Use officially licensed/public primary CIE datasets; sampling and gamut labels",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F32",
+      "feature_en": "Merit function",
+      "feature_zh": "评价函数与权重",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        53
+      ],
+      "printed_section_pages": "S2 p43",
+      "inputs": "C,T,I,D,N,tolerance; k∈1,2,4,8,16,Max",
+      "outputs": "Generalized mean of absolute normalized residuals",
+      "documented_claim": "F=(mean |(IDC−T)/(N Tol)|^k)^(1/k); Max=max absolute weighted residual; Max only Simplex",
+      "implementation_unknown": "Normalization for psi/GD/GDD/TOD/derivative targets not stated",
+      "independent_recreation_notes": "Typed units; stable scaled p-norm; show normalized and physical residuals",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F33",
+      "feature_en": "Local optimizer methods",
+      "feature_zh": "三类局部优化方法",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        15,
+        60,
+        61
+      ],
+      "printed_section_pages": "S2 pp5,50–51",
+      "inputs": "Gradient/VariableMetric/Simplex; variables; bounds; power; iterations; accuracy",
+      "outputs": "Local minimum candidate and status",
+      "documented_claim": "Gradient/VariableMetric derivative-based; Simplex derivative-free; only local minima promised; VariableMetric faster usually with more memory",
+      "implementation_unknown": "Exact gradient algorithm,quasi-Newton update,line search,Simplex variant and bound strategy",
+      "independent_recreation_notes": "Choose independent projected gradient/L-BFGS-B/Nelder–Mead; label choices without claiming TFCalc internal match",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F34",
+      "feature_en": "Local optimizer practice",
+      "feature_zh": "局部优化使用技巧",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        60,
+        61
+      ],
+      "printed_section_pages": "S2 pp50–51",
+      "inputs": "N refined layers/groups; Max.Change; starting point",
+      "outputs": "Refined candidate",
+      "documented_claim": "Manual suggests5N iterations derivative-based,10N² Simplex; near minimum Simplex initial change around1%; k1 derivatives only at extreme targets",
+      "implementation_unknown": "These heuristics do not guarantee convergence",
+      "independent_recreation_notes": "Stop on projected gradient and objective/change checks; report termination reason",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F35",
+      "feature_en": "Optimizer progress and resume",
+      "feature_zh": "优化进度/暂停/继续",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        54,
+        55
+      ],
+      "printed_section_pages": "S2 pp44–45",
+      "inputs": "Iterations,quit,continue,analyze; delayed needle quit",
+      "outputs": "Best design,deviation/change/profile/bar charts",
+      "documented_claim": "Stop at iteration limit,solution or quit; Ctrl+Quit waits for current local needle refinement",
+      "implementation_unknown": "Definition of change and solution/error criterion",
+      "independent_recreation_notes": "Persist best feasible point and RNG state; separate stop from convergence",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F36",
+      "feature_en": "Sensitivity-minimizing optimization",
+      "feature_zh": "稳健/敏感度优化",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        61,
+        64
+      ],
+      "printed_section_pages": "S2 pp51,54",
+      "inputs": "Sensitivity settings and random trials",
+      "outputs": "Design minimizing variation-aware objective",
+      "documented_claim": "Uses merit function allowing random thickness variation; large trial count advised but slower",
+      "implementation_unknown": "Sample aggregation,resampling schedule and variance reduction unspecified",
+      "independent_recreation_notes": "Independent sample-average objective with common random numbers and separate validation batch",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F37",
+      "feature_en": "Zero-thickness layer handling",
+      "feature_zh": "零厚度层优化行为",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        24,
+        61,
+        78
+      ],
+      "printed_section_pages": "S2 pp14,51,68",
+      "inputs": "Stop refining zero layers checkbox; layer d≥0",
+      "outputs": "Reduced parameter count or regrown layers",
+      "documented_claim": "Without stop option zero layers may regrow/oscillate; needle recommended with stop enabled",
+      "implementation_unknown": "Tolerance for numerical zero",
+      "independent_recreation_notes": "Structural zero threshold explicit; consolidate only after validated snapshot",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F38",
+      "feature_en": "Needle insertion",
+      "feature_zh": "针插入综合",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        61,
+        78
+      ],
+      "printed_section_pages": "S2 pp51,68",
+      "inputs": "2–8 allowed insertion materials; eligible layers; zero-thickness inserts; local solver",
+      "outputs": "Expanded optimized stack",
+      "documented_claim": "Adds zero-d layers that may grow during Gradient/VariableMetric refinement; no Simplex,group or sensitivity optimization",
+      "implementation_unknown": "Insertion scoring,spatial grid,ranking,batching details",
+      "independent_recreation_notes": "Independent topological derivative or tiny-insertion finite-difference scoring with one-sided bounds",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F39",
+      "feature_en": "Repeated/batched needle controls",
+      "feature_zh": "针法重复/批量插入控制",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        61,
+        78
+      ],
+      "printed_section_pages": "S2 pp51,68",
+      "inputs": "Repeat until no insertion; add many simultaneously; local optimization first",
+      "outputs": "Insertion-local-refinement sequence",
+      "documented_claim": "No improving insertion may be added; called optimal when no further needle addition found",
+      "implementation_unknown": "Optimal is relative to current insertion search, not mathematical global guarantee",
+      "independent_recreation_notes": "Stop after all tested material/position insertion scores non-improving within tolerance; record coverage",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F40",
+      "feature_en": "Needle practical cleanup",
+      "feature_zh": "针法初值与可制造清理",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        78
+      ],
+      "printed_section_pages": "S2 p68",
+      "inputs": "High-index single layer; multiple initial d; enough targets; thin-layer threshold",
+      "outputs": "Manufacturable refined candidate",
+      "documented_claim": "Try single high-contrast start; thicker starts often more layers; zero thin layers,consolidate,reoptimize without needle",
+      "implementation_unknown": "No universal minimum manufacturable d",
+      "independent_recreation_notes": "Candidate list with total thickness and minimum layer; holdout spectra after cleanup",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F41",
+      "feature_en": "Tunneling",
+      "feature_zh": "隧道式逃逸与增厚",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        62,
+        79
+      ],
+      "printed_section_pages": "S2 pp52,69",
+      "inputs": "Grow checkbox; total-thickness cap; objective threshold; save optimal designs",
+      "outputs": "Sequence of locally/needle-optimal designs",
+      "documented_claim": "Runs after needle optimum if thickness below cap and deviation above threshold; grows a selected layer then refines and re-needles; stops when inequalities met",
+      "implementation_unknown": "Tunnel scoring and chosen layer have no disclosed general rule; not quantum tunneling",
+      "independent_recreation_notes": "Independent layer-growth exploration with budgets and saved candidates; no global-optimal guarantee",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F42",
+      "feature_en": "Global multistart/search",
+      "feature_zh": "全局采样与多起点搜索",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        55,
+        56,
+        62,
+        63
+      ],
+      "printed_section_pages": "S2 pp45–46,52–53",
+      "inputs": "<=32767 designs; systematic/random; ±max%; optimize flags; bounds; nearest neighbors; exclusions",
+      "outputs": "Possible local minima; candidates; best deviations; optional refinement",
+      "documented_claim": "Uniform systematic grid or uniform random parameters; finds candidates whose nearest neighbors have larger objective; local refinement Gradient/VariableMetric",
+      "implementation_unknown": "Distance metric,index scaling,ties,deduplication,data structures and guarantee unspecified",
+      "independent_recreation_notes": "Explicit normalized distance and seeded RNG; robust multistart independently specified",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F43",
+      "feature_en": "Global search result saving",
+      "feature_zh": "全局搜索结果保存",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        55,
+        56
+      ],
+      "printed_section_pages": "S2 pp45–46",
+      "inputs": "Save Best Designs prefix; Optimize Designs; Done",
+      "outputs": "Named candidate designs",
+      "documented_claim": "Done does not save results; Save Best Designs stores prefix001 etc",
+      "implementation_unknown": "Transactional save behavior",
+      "independent_recreation_notes": "Autosave candidate archive and distinguish save/export/close",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F44",
+      "feature_en": "Electric field intensity",
+      "feature_zh": "电场强度分布",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        56,
+        63,
+        69
+      ],
+      "printed_section_pages": "S2 pp46,53,59",
+      "inputs": "λ; layer range; incident/substrate include; 100/200/400 samples; pol",
+      "outputs": "Squared EFI versus depth(nm)",
+      "documented_claim": "EFI computed in coating and optional media; ignores backside",
+      "implementation_unknown": "Field normalization and p-vector components not defined in excerpt",
+      "independent_recreation_notes": "Solve internal amplitudes; distinguish |E|² from flux/local absorption; interface continuity tests",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F45",
+      "feature_en": "Monte Carlo tolerancing",
+      "feature_zh": "蒙特卡洛公差分析",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        56,
+        57,
+        64
+      ],
+      "printed_section_pages": "S2 pp46–47,54",
+      "inputs": "Thickness/index errors; relative/absolute nm/QWOT; normal/uniform; trial count; all/selected layers",
+      "outputs": "Nominal,pointwise min/max and quartile envelopes",
+      "documented_claim": "Normal samples limited to±2σ; error box value isσ; min/max are observed Monte Carlo extrema",
+      "implementation_unknown": "Whether normal generated by rejection or clipping; error correlations",
+      "independent_recreation_notes": "Explicit distribution policy,seed,covariance; do not call sampled extremes strict worst case",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F46",
+      "feature_en": "Worst-possible sensitivity",
+      "feature_zh": "最差可行性能搜索",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        64
+      ],
+      "printed_section_pages": "S2 p54",
+      "inputs": "Manufacturing error set; objective observable",
+      "outputs": "Worst-possible performance candidate",
+      "documented_claim": "Uses optimization rather than Monte Carlo; trial count only for MC modes",
+      "implementation_unknown": "Exact maximizing objective; local/global search and certification",
+      "independent_recreation_notes": "Report optimized worst-found value unless certified adversarial bounds",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F47",
+      "feature_en": "Layer sensitivity",
+      "feature_zh": "一阶/二阶层敏感度",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        58
+      ],
+      "printed_section_pages": "S2 p48",
+      "inputs": "Optimized stack,merit function,thickness variations",
+      "outputs": "Per-layer bar chart and text",
+      "documented_claim": "Near local optimum first derivative near0,second indicates curvature; manual regards second-order value undefined when unoptimized",
+      "implementation_unknown": "Units,step,numerical Hessian definition",
+      "independent_recreation_notes": "Keep mathematical Hessian distinction; show bound-active cases and dimensionless scaled sensitivities",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F48",
+      "feature_en": "Manufacturing yield",
+      "feature_zh": "制造良率估计",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        58,
+        64
+      ],
+      "printed_section_pages": "S2 pp48,54",
+      "inputs": "Inequality specs,error distribution,random trials",
+      "outputs": "Pass percentage and failure-versus-wavelength",
+      "documented_claim": "Yield is fraction of trial designs satisfying performance tolerances",
+      "implementation_unknown": "Sampling confidence and inter-wavelength/failure correlations not stated",
+      "independent_recreation_notes": "Trial passes only if all specs met; report binomial interval and holdout sampling",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F49",
+      "feature_en": "Optical monitor simulation",
+      "feature_zh": "光学监控曲线",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        57,
+        64,
+        65
+      ],
+      "printed_section_pages": "S2 pp47,54–55",
+      "inputs": "R/T/delta/psi; P/S/average for powers; <=3 λ; deposition layer range; resolution; monitor chip/backside/angle",
+      "outputs": "Signal versus deposited thickness",
+      "documented_claim": "Simulates successive deposition on chip; monitor ratio per material proportional to square of rack-distance/monitor-distance ratio",
+      "implementation_unknown": "Exact ratio direction and geometrical proportionality constant",
+      "independent_recreation_notes": "Define d_chip=ratio×d_workpiece only after reference check; incremental propagation",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F50",
+      "feature_en": "Interactive analysis",
+      "feature_zh": "交互式参数扫描",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        52
+      ],
+      "printed_section_pages": "S2 p42",
+      "inputs": "d,QWOT,group,n/k,angle,λ,EFIλ,monitorλ,mixture%,variable-material factor",
+      "outputs": "Immediate spectra/table/EFI/color/monitor updates; GIF frames",
+      "documented_claim": "Up to5 simultaneous vary dialogs; prototype factor multiplies n>1 and divides n<1",
+      "implementation_unknown": "Caching and animation timeline",
+      "independent_recreation_notes": "Debounce UI and cancel obsolete computations; do not accidentally commit exploratory edit",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F51",
+      "feature_en": "Illuminant and detector databases",
+      "feature_zh": "光源/探测器数据库",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "printed_section_pages": "S2 pp35–38",
+      "inputs": "<=1001 wavelength-percent points; illuminant phase; normalization; blackbody temperature",
+      "outputs": "Interpolated source and response; normalized blackbody",
+      "documented_claim": "Blackbody maximum normalized100%; data closure refreshes design",
+      "implementation_unknown": "Planck units and sample spacing details",
+      "independent_recreation_notes": "Use dimensionless normalized Planck spectrum with validity handling",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F52",
+      "feature_en": "Cascaded response as illuminant",
+      "feature_zh": "响应另存为光源",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        74
+      ],
+      "printed_section_pages": "S2 p64",
+      "inputs": "R or T; pol; name; saved sensitivity curve; phase optionally",
+      "outputs": "New source spectrum",
+      "documented_claim": "Can reuse filter response as illuminant; at normal incidence choose P or S; average phase is P/S difference0 or180deg",
+      "implementation_unknown": "Physical validity of cascaded intensity model for coherent near-field coupled filters",
+      "independent_recreation_notes": "Explicitly mark cascade as spectral weighting, not arbitrary coherent assembly",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F53",
+      "feature_en": "Radiation distribution database",
+      "feature_zh": "角度辐射分布数据库",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        49,
+        50
+      ],
+      "printed_section_pages": "S2 pp39–40",
+      "inputs": "<=1001 angle/relative intensity rows; normalization",
+      "outputs": "Cone weighting function",
+      "documented_claim": "Interpolates linearly; intensity% endpoint hold; max normalized100%",
+      "implementation_unknown": "Exact mapping from radial cone angle to coating incidence angle",
+      "independent_recreation_notes": "Normalize against solid angle; test constant and Lambertian functions",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F54",
+      "feature_en": "Herpin equivalent index",
+      "feature_zh": "Herpin 等效折射率",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        24
+      ],
+      "printed_section_pages": "S2 p14",
+      "inputs": "Symmetric layer range; λ; angle",
+      "outputs": "Equivalent index and phase thickness",
+      "documented_claim": "Stack must be symmetric; undefined inside stop band",
+      "implementation_unknown": "Branch selection and complex absorbing equivalent interpretation",
+      "independent_recreation_notes": "For symmetric matrix use equal diagonal and extract equivalent admittance with explicit branch policy",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F55",
+      "feature_en": "Equivalent HLH/LHL substitution",
+      "feature_zh": "HLH/LHL 等效膜堆替换",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        25
+      ],
+      "printed_section_pages": "S2 p15",
+      "inputs": "Desired layer; H,L; λ,angle,pol; HLH/LHL",
+      "outputs": "Solutions,sorted thickness,dispersion(1/nm),replacement",
+      "documented_claim": "At oblique incidence matches selected pol only; displays solutions with each phase<360deg; alternate dispersion signs may help",
+      "implementation_unknown": "Root enumeration and equivalent dispersion derivative details",
+      "independent_recreation_notes": "Solve matrix-matching equations,validate off-design mismatch and manufacturability",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F56",
+      "feature_en": "Bandpass prototype generation",
+      "feature_zh": "带通原型生成",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        84,
+        85
+      ],
+      "printed_section_pages": "S2 pp74–75",
+      "inputs": "Odd3–25 cavities; center λ; width≤20% λ; width transmission level; ripple .0001–50%",
+      "outputs": "Air-to-air unrealizable-index prototype",
+      "documented_claim": "Indices alternate above/below1; prototype an intermediate design aid; real bandwidth usually~≤10%",
+      "implementation_unknown": "Exact prototype optimization,Chebyshev transformation and ripple handling",
+      "independent_recreation_notes": "Implement from public synthesis literature; do not reuse proprietary internal prototype code",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F57",
+      "feature_en": "Bandpass intermediate conversion",
+      "feature_zh": "带通中间膜系转换",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        85,
+        86
+      ],
+      "printed_section_pages": "S2 pp75–76",
+      "inputs": "H>L; media; cavity order; cavity material; mixed cavities; terminal material",
+      "outputs": "Real H/L plus variable-index reflector-layer intermediate",
+      "documented_claim": "Variable indices bounded H–L; cavity d=2×order QWOT; mixed cavities often needed wide bands; may fail convergence",
+      "implementation_unknown": "Conversion algorithm and cavity selection scoring",
+      "independent_recreation_notes": "Treat failure as returned diagnostic; expose material and bandwidth limitations",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F58",
+      "feature_en": "Bandpass real-layer conversion",
+      "feature_zh": "带通真实膜层转换",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        87,
+        88
+      ],
+      "printed_section_pages": "S2 pp77–78",
+      "inputs": "3-QWOT or equivalent layers; replacement strategy; consolidate",
+      "outputs": "Manufacturable H/L stack",
+      "documented_claim": "For bandwidth>5% only equivalent layers available;7 replacement strategies noted; near-endpoint variable indices yield very thin replacements",
+      "implementation_unknown": "All7 strategy definitions and choice heuristics absent; patent remark is historical",
+      "independent_recreation_notes": "Assess equivalent performance after conversion; require modern IP review rather than relying on2002 patent remark",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F59",
+      "feature_en": "Index recovery from measurements",
+      "feature_zh": "测量反演 n/k/厚度",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        80
+      ],
+      "printed_section_pages": "S2 p70",
+      "inputs": "Spectrophotometric/ellipsometric targets; estimated n/k,d; bounds; angle,pol",
+      "outputs": "Fitted n,k,d with residuals/candidates",
+      "documented_claim": "Variable-material refinement possible; multistart for multiple solutions; small residual relative to measurement error required",
+      "implementation_unknown": "Identifiability,regularization,uncertainty not provided",
+      "independent_recreation_notes": "Fit instrument-aware synthetic and real data with independent validation; report ambiguity",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F60",
+      "feature_en": "Dispersion-model fitting",
+      "feature_zh": "色散参数反演",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        81,
+        82,
+        83
+      ],
+      "printed_section_pages": "S2 pp71–73",
+      "inputs": "1–3 files T,R,backside R; shared λ; angle,pol; backside flag; substrate; estimated d; stride; coeff flags/bounds",
+      "outputs": "Dispersion coefficients; fitted d; residual bars",
+      "documented_claim": "<=1001 points/file; d fixed by default; natural constraints avoid division zero; Accept/Reject; listed nonconvergence causes",
+      "implementation_unknown": "Optimizer identity and natural-constraint derivation",
+      "independent_recreation_notes": "Parameter-unit schema; poles excluded over whole fitted interval; held-out angles and profile likelihood",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F61",
+      "feature_en": "Results comparison and export",
+      "feature_zh": "结果比较与导出",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        73
+      ],
+      "printed_section_pages": "S2 pp56–60,63",
+      "inputs": "Quantity,pol,axis units,overlays,saved results,selection",
+      "outputs": "Plots,tables,min/max/average,txt,clipboard,animation",
+      "documented_claim": "Current plus5 saved results; dual-axis overlay; λ/wavenumber/relative wavenumber/eV/frequency; statistics",
+      "implementation_unknown": "Mean definition across nonuniform spectral grids",
+      "independent_recreation_notes": "Export provenance,units,assumptions and intrinsic/weighted flag; preserve numeric precision",
+      "priority": "P1",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F62",
+      "feature_en": "Per-design configuration",
+      "feature_zh": "每个设计保存配置",
+      "source_file": "01.pdf",
+      "pdf_physical_pages": [
+        10,
+        75
+      ],
+      "printed_section_pages": "S1 p6; S2 p65",
+      "inputs": "Units,precision,thickness priority,phase convention,color observer,gain,range policy",
+      "outputs": "Persisted configuration",
+      "documented_claim": "Starting3.5 configuration saved per design; settings with no open coating are defaults",
+      "implementation_unknown": "Native TFD format undocumented",
+      "independent_recreation_notes": "Use documented independent versioned JSON; importer only for authorized documented formats",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F63",
+      "feature_en": "Distributor summary caveats",
+      "feature_zh": "中文代理资料翻译注意",
+      "source_file": "02.pdf",
+      "pdf_physical_pages": [
+        2,
+        3,
+        4,
+        10
+      ],
+      "printed_section_pages": "02.pdf pp2–4,10",
+      "inputs": "Chinese feature labels",
+      "outputs": "Cross-source terminology reconciliation",
+      "documented_claim": "Distributor summary corroborates many3.5 features but has mistranslations such as dispersion/scattering and cavities/channels",
+      "implementation_unknown": "16-bit-floating assertion not validated; actual numerical precision unknown",
+      "independent_recreation_notes": "Use corrected bilingual glossary; never implement mistranslated precision requirement",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F64",
+      "feature_en": "Separate products",
+      "feature_zh": "独立产品与主程序范围",
+      "source_file": "02.pdf",
+      "pdf_physical_pages": [
+        15,
+        16,
+        17
+      ],
+      "printed_section_pages": "02.pdf pp15–17",
+      "inputs": "DLL API; WDM design search; Reoptimize DDE",
+      "outputs": "Related product capabilities",
+      "documented_claim": "DLL,WDM and Reoptimize described separately from base TFCalc",
+      "implementation_unknown": "Current availability and licensing; precise external APIs",
+      "independent_recreation_notes": "Keep these outside core parity unless separately scoped",
+      "priority": "P2",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F65",
+      "feature_en": "Optimization guide source coverage",
+      "feature_zh": "优化指南来源与覆盖",
+      "source_file": "01.pdf;04.pdf",
+      "pdf_physical_pages": [
+        3,
+        78
+      ],
+      "printed_section_pages": "01 Master TOC and S2 p68;04 physical pp32–38 / printed pp31–37",
+      "inputs": "92-page English main manual and56-page Chinese guide",
+      "outputs": "Evidence coverage map",
+      "documented_claim": "Section3 is absent from01 but present in04 from physical p32 to first part p38; Chinese guide is a secondary translation with errors",
+      "implementation_unknown": "Original English Section3 guide not included in01;04 version correspondence uncertain",
+      "independent_recreation_notes": "Use04 guide tips with caveats; prefer01 when overlapping claims conflict",
+      "priority": "P0",
+      "evidence_level": "documented behavior; proprietary internals not inferred"
+    },
+    {
+      "feature_id": "F66",
+      "feature_en": "Broadband sampling guide",
+      "feature_zh": "宽带目标布点建议",
+      "source_file": "04.pdf",
+      "pdf_physical_pages": [
+        33,
+        34
+      ],
+      "printed_section_pages": "printed pp32–33",
+      "inputs": "Band widths and number of layers; target spacing",
+      "outputs": "Target-grid planning",
+      "documented_claim": "Optimization only controls specified λ/angle/polarization; more complex/thicker stacks need more targets; wavenumber view helps inspect spectral extrema",
+      "implementation_unknown": "Chinese broadband spacing sentence incomplete",
+      "independent_recreation_notes": "Adaptive peak/edge search and fine holdout grid are mandatory independent safeguards",
+      "priority": "P1",
+      "evidence_level": "secondary Chinese guide; cross-checked where English overlap available"
+    },
+    {
+      "feature_id": "F67",
+      "feature_en": "Endpoint priority tuning",
+      "feature_zh": "波段端点权重调节",
+      "source_file": "04.pdf",
+      "pdf_physical_pages": [
+        34
+      ],
+      "printed_section_pages": "printed p33",
+      "inputs": "Endpoint tolerance versus interior tolerance",
+      "outputs": "Improved endpoint response with tradeoff",
+      "documented_claim": "Illustrates tolerance1 to.5 at endpoints to increase their priority; other spectral regions may worsen",
+      "implementation_unknown": "No universal tolerance value or guarantee",
+      "independent_recreation_notes": "Show explicit tradeoff and physically justified endpoint constraints",
+      "priority": "P1",
+      "evidence_level": "secondary Chinese guide; cross-checked where English overlap available"
+    },
+    {
+      "feature_id": "F68",
+      "feature_en": "Multi-band target balance",
+      "feature_zh": "多波段目标权重平衡",
+      "source_file": "04.pdf",
+      "pdf_physical_pages": [
+        34
+      ],
+      "printed_section_pages": "printed p33",
+      "inputs": "Target counts and wavenumber bandwidth per band",
+      "outputs": "Balanced band contributions",
+      "documented_claim": "Warns100 versus10 equal-tolerance targets biases objective; band width matters",
+      "implementation_unknown": "DisplayedΣW_i/N_j rule namesW tolerance and lacks clear equality,conflicting inverse-weight merit interpretation",
+      "independent_recreation_notes": "Do not implement formula literally; normalize quadrature per band and separately set intended importance",
+      "priority": "P1",
+      "evidence_level": "secondary Chinese guide; cross-checked where English overlap available"
+    },
+    {
+      "feature_id": "F69",
+      "feature_en": "Material-table derivative warning",
+      "feature_zh": "表格插值导数不连续警告",
+      "source_file": "04.pdf",
+      "pdf_physical_pages": [
+        35
+      ],
+      "printed_section_pages": "printed p34",
+      "inputs": "Piecewise-linear n,k/source/detector data; derivative targets",
+      "outputs": "Derivative-safe data choice",
+      "documented_claim": "Warns derivative targets at table knots can be discontinuous; dispersion formulas or constant-index materials are smoother",
+      "implementation_unknown": "Higher derivative computation not specified",
+      "independent_recreation_notes": "Analytic dispersion or differentiable interpolation with explicit extrapolation; no silent smoothing of measured data",
+      "priority": "P0",
+      "evidence_level": "secondary Chinese guide; cross-checked where English overlap available"
+    },
+    {
+      "feature_id": "F70",
+      "feature_en": "Local optimizer suggested defaults",
+      "feature_zh": "局部优化指南默认建议",
+      "source_file": "04.pdf",
+      "pdf_physical_pages": [
+        37
+      ],
+      "printed_section_pages": "printed p36",
+      "inputs": "VariableMetric;1000 iterations; tolerance1e-6 or1e-8; Simplex max-change10%; power2 or16",
+      "outputs": "Starting settings",
+      "documented_claim": "Guide recommends VariableMetric,1000 iterations,tolerance1e-6; tighter1e-8 near optimum; power2 usually,power16 equal ripple; stop zero layers and display profile",
+      "implementation_unknown": "Legacy tolerance meaning differs from modern solver tolerances",
+      "independent_recreation_notes": "Preserve as historical recipe,not universal numerical accuracy specification",
+      "priority": "P1",
+      "evidence_level": "secondary Chinese guide; cross-checked where English overlap available"
+    },
+    {
+      "feature_id": "F71",
+      "feature_en": "Needle start and manufacturability guide",
+      "feature_zh": "针法初值与可制造性建议",
+      "source_file": "04.pdf",
+      "pdf_physical_pages": [
+        36,
+        53
+      ],
+      "printed_section_pages": "printed pp35,52",
+      "inputs": "Start thickness/material;2+ materials; optional intermediate-index third material",
+      "outputs": "Candidate complexity and layer thickness",
+      "documented_claim": "Guide discusses initial-thickness-dependent optima,third-material replacement for too-thin layers,stopping needle before very-thin layers proliferate",
+      "implementation_unknown": "Example numeric start selection partly unclear; substitution performance not universally exact",
+      "independent_recreation_notes": "Compare multiple starts and assess minimum manufacturable d,then verify re-refined spectra",
+      "priority": "P1",
+      "evidence_level": "secondary Chinese guide; cross-checked where English overlap available"
+    },
+    {
+      "feature_id": "F72",
+      "feature_en": "Tunneling workflow guide",
+      "feature_zh": "隧道优化实际流程",
+      "source_file": "04.pdf",
+      "pdf_physical_pages": [
+        36,
+        37
+      ],
+      "printed_section_pages": "printed pp35–36",
+      "inputs": "Dense targets; inequality targets; threshold0; thickness cap; candidate archive",
+      "outputs": "Candidate sequence meeting specs",
+      "documented_claim": "Guide suggests more targets as thickness grows; inequality targets with deviation threshold0; raise max thickness when search hits cap; compare saved complexity/manufacturability",
+      "implementation_unknown": "No guarantee finite termination or better candidate for arbitrary raised cap",
+      "independent_recreation_notes": "Record stop reason,run budgets,cap and all best candidates; obtain user process limits",
+      "priority": "P1",
+      "evidence_level": "secondary Chinese guide; cross-checked where English overlap available"
+    },
+    {
+      "feature_id": "F73",
+      "feature_en": "Global-search practice guide",
+      "feature_zh": "全局搜索使用技巧",
+      "source_file": "04.pdf",
+      "pdf_physical_pages": [
+        35
+      ],
+      "printed_section_pages": "printed p34",
+      "inputs": "Simple starting stack; deviation exclusion threshold; max-change near10%",
+      "outputs": "Diverse starting/local candidates",
+      "documented_claim": "Starting(HL)^5 can yield candidates; too-tight exclusion prevents accepted designs; around10% local search finds nearby minima",
+      "implementation_unknown": "Examples do not imply global guarantee",
+      "independent_recreation_notes": "Describe best-found over stated materials/layer-count/bounds,budget and seeds",
+      "priority": "P1",
+      "evidence_level": "secondary Chinese guide; cross-checked where English overlap available"
+    },
+    {
+      "feature_id": "F74",
+      "feature_en": "Secondary translation corrections",
+      "feature_zh": "中文译文纠错",
+      "source_file": "04.pdf",
+      "pdf_physical_pages": [
+        8,
+        9,
+        11,
+        24,
+        35,
+        53
+      ],
+      "printed_section_pages": "printed pp7–8,10,23,34,52",
+      "inputs": "English01 authority and Chinese04 wording",
+      "outputs": "Corrected terms and conflicting recommendations",
+      "documented_claim": "04 needle start sentence reverses best/worst; derivatives mistranslated as deviation; VariableMetric/Simplex literal mistranslations; group count error; angle wording omits normal; color-final-grid statement conflicts with01",
+      "implementation_unknown": "Cannot treat all Chinese numeric examples as authoritative; CIE x,y example outside physical range",
+      "independent_recreation_notes": "Annotate conflicts rather than silently rewrite documented evidence",
+      "priority": "P0",
+      "evidence_level": "secondary Chinese guide; cross-checked where English overlap available"
+    }
+  ]
+}
