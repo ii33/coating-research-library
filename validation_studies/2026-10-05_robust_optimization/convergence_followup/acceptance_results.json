@@ -1,0 +1,468 @@
+[
+  {
+    "seed": 11,
+    "level": 0.01,
+    "axes": {
+      "time": {
+        "full_disk": {
+          "passed": false,
+          "threshold_pp": 0.007387845551087769,
+          "gaps_pp": [
+            -0.07057586196390775,
+            -0.042333876743741394,
+            -0.03702306374338904,
+            -0.03983943170196763,
+            -0.03693922775543884
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.01294958639335514,
+              0.0043876793183118545
+            ],
+            "robust": [
+              0.01576595435193373,
+              0.0014874753717830647
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.0028163679585785917,
+            0.00290020394652879
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        },
+        "interior90": {
+          "passed": false,
+          "threshold_pp": 0.007675206573406073,
+          "gaps_pp": [
+            -0.09389642216999072,
+            -0.06947091455072762,
+            -0.06890513317596991,
+            -0.07198876738221355,
+            -0.07012153184637543
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.014018305042419299,
+              0.0060446759795073635
+            ],
+            "robust": [
+              0.017101939248662934,
+              0.004177440443669245
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.003083634206243635,
+            0.0018672355358381187
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        }
+      },
+      "grid": {
+        "full_disk": {
+          "passed": true,
+          "threshold_pp": 0.0075568225193348385,
+          "gaps_pp": [
+            -0.04120826817848666,
+            -0.03983943170196763,
+            -0.03778411259667419
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.0002903672395812573,
+              0.0014579471961604917
+            ],
+            "robust": [
+              0.0016592037161002882,
+              0.0035132663014539323
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.0013688364765190308,
+            0.0020553191052934405
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Passed observed-change screen"
+        },
+        "interior90": {
+          "passed": true,
+          "threshold_pp": 0.007675206573406073,
+          "gaps_pp": [
+            -0.06846623928192902,
+            -0.07198876738221355,
+            -0.0704465060573265
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.00023440364848231754,
+              0.0004773881019565218
+            ],
+            "robust": [
+              0.00328812445180221,
+              0.0020196494268435727
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.0035225281002845277,
+            0.001542261324887051
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Passed observed-change screen"
+        }
+      },
+      "source": {
+        "full_disk": {
+          "passed": false,
+          "threshold_pp": 0.007675206573406073,
+          "gaps_pp": [
+            -0.03624139566947182,
+            -0.03983943170196763,
+            -0.040292703536553176
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.013726509573797896,
+              0.005196995458961684
+            ],
+            "robust": [
+              0.017324545606293706,
+              0.005650267293547229
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.0035980360324958105,
+            0.00045327183458554465
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        },
+        "interior90": {
+          "passed": false,
+          "threshold_pp": 0.007675206573406073,
+          "gaps_pp": [
+            -0.06746078929841048,
+            -0.07198876738221355,
+            -0.07507945153530027
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.014868978343944628,
+              0.006438657971044148
+            ],
+            "robust": [
+              0.01939695642774769,
+              0.009529342124130868
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.004527978083803064,
+            0.00309068415308672
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        }
+      }
+    },
+    "phase": {
+      "768": {
+        "full_disk": {
+          "passed": true,
+          "threshold_pp": 0.007675206573406073,
+          "method_mean_phase_spread_pp": {
+            "nominal": 0.0005261512063159945,
+            "robust": 0.004316589323845654
+          },
+          "gaps_pp": [
+            -0.03598476900163056,
+            -0.03983943170196763,
+            -0.03555056078699376
+          ],
+          "gap_phase_spread_pp": 0.004288870914973875,
+          "phase_rank_stable": true
+        },
+        "interior90": {
+          "passed": true,
+          "threshold_pp": 0.007675206573406073,
+          "method_mean_phase_spread_pp": {
+            "nominal": 0.0008549964116322251,
+            "robust": 0.003047459701841504
+          },
+          "gaps_pp": [
+            -0.06808631126873982,
+            -0.07198876738221355,
+            -0.06834313731118358
+          ],
+          "gap_phase_spread_pp": 0.003902456113473729,
+          "phase_rank_stable": true
+        }
+      },
+      "1536": {
+        "full_disk": {
+          "passed": true,
+          "threshold_pp": 0.007387845551087769,
+          "method_mean_phase_spread_pp": {
+            "nominal": 0.0007756083289634508,
+            "robust": 0.002357728230202638
+          },
+          "gaps_pp": [
+            -0.038819295909985674,
+            -0.03693922775543884,
+            -0.04007256431460493
+          ],
+          "gap_phase_spread_pp": 0.003133336559166089,
+          "phase_rank_stable": true
+        },
+        "interior90": {
+          "passed": true,
+          "threshold_pp": 0.007675206573406073,
+          "method_mean_phase_spread_pp": {
+            "nominal": 0.0012365754707395205,
+            "robust": 0.0014726692266466834
+          },
+          "gaps_pp": [
+            -0.07165659556399745,
+            -0.07012153184637543,
+            -0.07283077654376163
+          ],
+          "gap_phase_spread_pp": 0.002709244697386204,
+          "phase_rank_stable": true
+        }
+      }
+    },
+    "all_axes_and_phase_pass": false
+  },
+  {
+    "seed": 29,
+    "level": 0.05,
+    "axes": {
+      "time": {
+        "full_disk": {
+          "passed": false,
+          "threshold_pp": 0.0030325946731881836,
+          "gaps_pp": [
+            -0.009811987341501238,
+            0.02103123876798485,
+            0.034516042444244555,
+            0.03549857842105408,
+            0.037463308236250104
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.009398728157793523,
+              0.003537257317214215
+            ],
+            "robust": [
+              0.008416192180983995,
+              0.001572527502018195
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.0009825359768095288,
+            0.00196472981519602
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        },
+        "interior90": {
+          "passed": false,
+          "threshold_pp": 0.002555865456584694,
+          "gaps_pp": [
+            -0.034129583412367714,
+            -0.0035756289176749334,
+            0.011107117191154037,
+            0.010912345269608936,
+            0.01277932728292347
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.008986592385231085,
+              0.004123543749095737
+            ],
+            "robust": [
+              0.009181364306776185,
+              0.002256561735781204
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.00019477192154510048,
+            0.0018669820133145332
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        }
+      },
+      "grid": {
+        "full_disk": {
+          "passed": false,
+          "threshold_pp": 0.0030325946731881836,
+          "gaps_pp": [
+            0.03855135456910619,
+            0.03549857842105408,
+            0.034636962062768895
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.00429778354503485,
+              0.001922632920189904
+            ],
+            "robust": [
+              0.0012450073969827447,
+              0.0010610165619047152
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.0030527761480521054,
+            0.0008616163582851888
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        },
+        "interior90": {
+          "passed": false,
+          "threshold_pp": 0.0015812000724985344,
+          "gaps_pp": [
+            0.016774092510986605,
+            0.010912345269608936,
+            0.007906000362492671
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.0015773452983239844,
+              0.0014210094134634033
+            ],
+            "robust": [
+              0.004284401943053684,
+              0.0015853354936528619
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.005861747241377668,
+            0.003006344907116265
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        }
+      },
+      "source": {
+        "full_disk": {
+          "passed": false,
+          "threshold_pp": 0.0030325946731881836,
+          "gaps_pp": [
+            0.03980877804132088,
+            0.03549857842105408,
+            0.03693200024656784
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.007781687504574641,
+              0.004447861703812506
+            ],
+            "robust": [
+              0.012091887124841438,
+              0.003014439878298747
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.004310199620266797,
+            0.0014334218255137587
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        },
+        "interior90": {
+          "passed": false,
+          "threshold_pp": 0.0022344489131324477,
+          "gaps_pp": [
+            0.015103699345271893,
+            0.010912345269608936,
+            0.011172244565662237
+          ],
+          "last_two_method_mean_changes_pp": {
+            "nominal": [
+              0.010165900998809208,
+              0.003933005958300706
+            ],
+            "robust": [
+              0.014357255074472164,
+              0.003673106662247405
+            ]
+          },
+          "last_two_gap_changes_pp": [
+            0.004191354075662956,
+            0.00025989929605330087
+          ],
+          "last_three_gap_signs_stable": true,
+          "reason": "Observed changes too large relative to method gap, or rank unstable"
+        }
+      }
+    },
+    "phase": {
+      "768": {
+        "full_disk": {
+          "passed": true,
+          "threshold_pp": 0.0030325946731881836,
+          "method_mean_phase_spread_pp": {
+            "nominal": 0.002057673881784239,
+            "robust": 0.0016968662735312723
+          },
+          "gaps_pp": [
+            0.03400172355928921,
+            0.03549857842105408,
+            0.03775626371460472
+          ],
+          "gap_phase_spread_pp": 0.003754540155315511,
+          "phase_rank_stable": true
+        },
+        "interior90": {
+          "passed": true,
+          "threshold_pp": 0.0021824690539217874,
+          "method_mean_phase_spread_pp": {
+            "nominal": 0.0019091097896486997,
+            "robust": 0.0016519516987482663
+          },
+          "gaps_pp": [
+            0.009135183322512008,
+            0.010912345269608936,
+            0.012696244810908974
+          ],
+          "gap_phase_spread_pp": 0.003561061488396966,
+          "phase_rank_stable": true
+        }
+      },
+      "1536": {
+        "full_disk": {
+          "passed": true,
+          "threshold_pp": 0.0030325946731881836,
+          "method_mean_phase_spread_pp": {
+            "nominal": 0.0015128036891621788,
+            "robust": 0.0009773658765835913
+          },
+          "gaps_pp": [
+            0.03900778182906639,
+            0.037463308236250104,
+            0.03651761226332062
+          ],
+          "gap_phase_spread_pp": 0.00249016956574577,
+          "phase_rank_stable": true
+        },
+        "interior90": {
+          "passed": true,
+          "threshold_pp": 0.002555865456584694,
+          "method_mean_phase_spread_pp": {
+            "nominal": 0.0007603348480691441,
+            "robust": 0.00030047701649144054
+          },
+          "gaps_pp": [
+            0.013816024451170306,
+            0.01277932728292347,
+            0.012938184518483442
+          ],
+          "gap_phase_spread_pp": 0.0010366971682468362,
+          "phase_rank_stable": true
+        }
+      }
+    },
+    "all_axes_and_phase_pass": false
+  }
+]

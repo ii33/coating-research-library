@@ -1,0 +1,19 @@
+test_followup (unittest.loader._FailedTest.test_followup) ... ERROR
+
+======================================================================
+ERROR: test_followup (unittest.loader._FailedTest.test_followup)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_followup
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "validation_studies/2026-10-05_robust_optimization/convergence_followup/test_followup.py", line 10, in <module>
+    from build_report import axis_assessment, phase_assessment
+ImportError: cannot import name 'axis_assessment' from 'build_report' (validation_studies/2026-10-05_robust_optimization/build_report.py)
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

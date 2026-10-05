@@ -1,0 +1,41 @@
+{
+  "pilot_actual_calls": 8,
+  "rows": [
+    {
+      "resolution": {
+        "grid_size": 41,
+        "time_steps": 384,
+        "source_order": 5
+      },
+      "wall_s": 0.5369603270009975,
+      "kernel_s": 0.5126223090119311
+    },
+    {
+      "resolution": {
+        "grid_size": 61,
+        "time_steps": 768,
+        "source_order": 5
+      },
+      "wall_s": 2.7122969229967566,
+      "kernel_s": 2.6650849310026388
+    },
+    {
+      "resolution": {
+        "grid_size": 41,
+        "time_steps": 1536,
+        "source_order": 5
+      },
+      "wall_s": 2.06605838300311,
+      "kernel_s": 2.0433802059924346
+    },
+    {
+      "resolution": {
+        "grid_size": 41,
+        "time_steps": 768,
+        "source_order": 7
+      },
+      "wall_s": 1.977406976002385,
+      "kernel_s": 1.955523907992756
+    }
+  ]
+}

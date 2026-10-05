@@ -1,0 +1,18 @@
+{
+  "purpose": "Enforce latest user time-step ceiling and run a fixed-design short-window diagnostic; no engineering ranking",
+  "max_engineering_reference_time_step_s": 0.05,
+  "requested_time_steps_s": [0.05, 0.025, 0.0125],
+  "duration_s": 12.0,
+  "duration_scope": "A synthetic 12-second window, not a representative complete multilayer process or long production layer",
+  "cases": [{"level": 0.01, "seed": 11}, {"level": 0.05, "seed": 29}],
+  "holdout_count": 4,
+  "grid_size": 41,
+  "source_order": 5,
+  "pilot_requested_dt_s": 0.0125,
+  "main_actual_forward_call_cap": 140,
+  "main_soft_wall_allowance_s": 120,
+  "selection": "Same frozen coarse-trained designs and original first four holdout draws, without search",
+  "numerical_screen": "Each method's last two mean-CV changes and paired-gap changes <20% of current diagnostic gap, same sign over all three time rungs; a heuristic, not an error bound",
+  "engineering_ranking_allowed": false,
+  "engineering_blockers": ["12-second window is not a representative full process", "Designs were optimized at now-ineligible 0.125-second coarse training steps", "Grid/source convergence remains unresolved", "No calibrated real-machine uncertainty"]
+}

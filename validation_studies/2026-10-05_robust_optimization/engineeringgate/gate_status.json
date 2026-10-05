@@ -1,0 +1,185 @@
+{
+  "user_time_step_ceiling_s": 0.05,
+  "historical_time_steps": [
+    {
+      "stage": "first-round training",
+      "duration_s": 12.0,
+      "time_steps": 96,
+      "actual_dt_s": 0.125,
+      "time_step_eligible": false,
+      "engineering_ranking_allowed": false
+    },
+    {
+      "stage": "first-round refined holdout",
+      "duration_s": 12.0,
+      "time_steps": 192,
+      "actual_dt_s": 0.0625,
+      "time_step_eligible": false,
+      "engineering_ranking_allowed": false
+    },
+    {
+      "stage": "first-round nominal refinement",
+      "duration_s": 12.0,
+      "time_steps": 384,
+      "actual_dt_s": 0.03125,
+      "time_step_eligible": true,
+      "engineering_ranking_allowed": false
+    },
+    {
+      "stage": "historical follow-up time ladder",
+      "duration_s": 12.0,
+      "time_steps": 96,
+      "actual_dt_s": 0.125,
+      "time_step_eligible": false,
+      "engineering_ranking_allowed": false
+    },
+    {
+      "stage": "historical follow-up time ladder",
+      "duration_s": 12.0,
+      "time_steps": 192,
+      "actual_dt_s": 0.0625,
+      "time_step_eligible": false,
+      "engineering_ranking_allowed": false
+    },
+    {
+      "stage": "historical follow-up time ladder",
+      "duration_s": 12.0,
+      "time_steps": 384,
+      "actual_dt_s": 0.03125,
+      "time_step_eligible": true,
+      "engineering_ranking_allowed": false
+    },
+    {
+      "stage": "historical follow-up time ladder",
+      "duration_s": 12.0,
+      "time_steps": 768,
+      "actual_dt_s": 0.015625,
+      "time_step_eligible": true,
+      "engineering_ranking_allowed": false
+    },
+    {
+      "stage": "historical follow-up time ladder",
+      "duration_s": 12.0,
+      "time_steps": 1536,
+      "actual_dt_s": 0.0078125,
+      "time_step_eligible": true,
+      "engineering_ranking_allowed": false
+    }
+  ],
+  "new_time_step_gate_pass": true,
+  "representative_full_process_gate_pass": false,
+  "fair_fine_trained_optimization_comparison_pass": false,
+  "joint_grid_source_convergence_pass": false,
+  "calibrated_machine_validation_pass": false,
+  "engineering_ranking_allowed": false,
+  "short_window_screens": [
+    {
+      "level": 0.01,
+      "seed": 11,
+      "full_disk": {
+        "passed": false,
+        "threshold_pp": 0.007939505343361042,
+        "last_two_method_changes_pp": [
+          [
+            0.022825927303511517,
+            0.006494355311282174
+          ],
+          [
+            0.027937031574253035,
+            0.008482686873817702
+          ]
+        ],
+        "last_two_gap_changes_pp": [
+          0.005111104270741518,
+          0.001988331562535528
+        ],
+        "stable_sign": true,
+        "gaps_pp": [
+          -0.032598090883528164,
+          -0.03770919515426968,
+          -0.03969752671680521
+        ],
+        "interpretation": "Fixed-design short-window observed-change screen, not an error bound or engineering rank"
+      },
+      "interior90": {
+        "passed": false,
+        "threshold_pp": 0.014110155593513607,
+        "last_two_method_changes_pp": [
+          [
+            0.023863028845758527,
+            0.00697021675277576
+          ],
+          [
+            0.03088510132485145,
+            0.009696832770703046
+          ]
+        ],
+        "last_two_gap_changes_pp": [
+          0.007022072479092922,
+          0.002726616017927286
+        ],
+        "stable_sign": true,
+        "gaps_pp": [
+          -0.06080208947054783,
+          -0.06782416194964075,
+          -0.07055077796756803
+        ],
+        "interpretation": "Fixed-design short-window observed-change screen, not an error bound or engineering rank"
+      }
+    },
+    {
+      "level": 0.05,
+      "seed": 29,
+      "full_disk": {
+        "passed": false,
+        "threshold_pp": 0.007069362125842593,
+        "last_two_method_changes_pp": [
+          [
+            0.018356741607090776,
+            0.0051495298592252325
+          ],
+          [
+            0.013897816186260847,
+            0.004743169117614077
+          ]
+        ],
+        "last_two_gap_changes_pp": [
+          0.004458925420829929,
+          0.0004063607416111559
+        ],
+        "stable_sign": true,
+        "gaps_pp": [
+          0.03048152446677188,
+          0.03494044988760181,
+          0.035346810629212966
+        ],
+        "interpretation": "Fixed-design short-window observed-change screen, not an error bound or engineering rank"
+      },
+      "interior90": {
+        "passed": false,
+        "threshold_pp": 0.0020951627535740315,
+        "last_two_method_changes_pp": [
+          [
+            0.020820616463012698,
+            0.00424385244761788
+          ],
+          [
+            0.014347825835847039,
+            0.005858930547331664
+          ]
+        ],
+        "last_two_gap_changes_pp": [
+          0.006472790627165659,
+          0.0016150780997137848
+        ],
+        "stable_sign": true,
+        "gaps_pp": [
+          0.005618101240418283,
+          0.012090891867583942,
+          0.010475813767870157
+        ],
+        "interpretation": "Fixed-design short-window observed-change screen, not an error bound or engineering rank"
+      }
+    }
+  ]
+}

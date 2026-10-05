@@ -1,0 +1,32 @@
+{
+  "purpose": "Separate numerical axes for fixed first-round designs; no search or new physical calibration",
+  "cases": [{"level": 0.01, "seed": 11}, {"level": 0.05, "seed": 29}],
+  "holdout_count": 4,
+  "holdout_rule": "The identical first four original holdout latent draws, plus a separate zero-perturbation row. No new draw selection.",
+  "reference_full16_gap_pp": {"0.01_11": 0.03837603286703036, "0.05_29": 0.015162973365940916},
+  "acceptance": {
+    "relative_fraction": 0.2,
+    "threshold": "0.2 * min(abs(current paired mean CV gap), abs(original refined16 mean CV gap))",
+    "requirements": "Each method mean and paired gap must change less than threshold for the last two refinements, with the same nonzero gap sign across the last three levels. Phase-offset spread must also be below threshold for both methods. Require full-disk and fixed interior90 diagnostics; a pass is conditional numerical stability, not a rigorous physical error bound.",
+    "scope": "Only fixed designs and the four specified held-out scenarios; cannot establish machine robustness or global optimality."
+  },
+  "pilot": [
+    {"grid_size": 41, "time_steps": 384, "source_order": 5},
+    {"grid_size": 61, "time_steps": 768, "source_order": 5},
+    {"grid_size": 41, "time_steps": 1536, "source_order": 5},
+    {"grid_size": 41, "time_steps": 768, "source_order": 7}
+  ],
+  "resource_limits": {"main_wall_cap_s": 600, "main_actual_forward_call_cap": 600, "pilot_actual_forward_calls": 8},
+  "planned_time_steps": [96, 192, 384, 768, 1536],
+  "planned_grid_sizes": [21, 41, 61],
+  "grid_axis_fixed_time_steps": 768,
+  "planned_source_orders": [3, 5, 7],
+  "source_axis_fixed_time_steps": 768,
+  "phase_offsets": [0.25, 0.5, 0.75],
+  "phase_test_time_steps": [768, 1536],
+  "fixed_grid_for_time_source_phase": 41,
+  "fixed_source_order_for_time_grid_phase": 5,
+  "interior_roi_radius_mm": 90.0,
+  "phase_interpretation": "Quadrature nodes at (k+alpha)*dt in the original integration window, implemented by equivalent carrier/planet phase shifts (alpha-0.5)*dt. This probes numerical node-origin sensitivity, not physical startup-phase uncertainty.",
+  "status": "Predefined before pilot; execute only levels justified by measured pilot cost. All skips reported."
+}
