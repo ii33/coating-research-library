@@ -1,0 +1,45 @@
+{
+  "tracer_count": 5000,
+  "tracer_ids_unique": true,
+  "tracer_ids_conserved": true,
+  "collision_tracer_ids_subset_initial": true,
+  "collision_tally_matches_global_count": true,
+  "collision_tally_frames": 401,
+  "collisions_total": 1010,
+  "uncollided_count": 4134,
+  "uncollided_fraction": 0.8268,
+  "confidence_interval_95": [
+    0.8160210072245409,
+    0.8371959974403107
+  ],
+  "expected_fraction": 0.8311854565147588,
+  "relative_speed_mean_ms": 462.25584081184354,
+  "relative_speed_factor": 1.8490233632473743,
+  "z_error": -0.8278390602107327,
+  "bath_particles_initial": 39999,
+  "bath_particles_final": 39999,
+  "bath_density_initial": 9.99975e+19,
+  "bath_density_final": 9.99975e+19,
+  "bath_thermal_temperature_initial": 300230040.86693543,
+  "bath_thermal_temperature_final": 300230020.2857546,
+  "bath_mean_velocity_initial": [
+    0.5103807548115115,
+    -1.701709129710251,
+    -0.825152094273639
+  ],
+  "bath_mean_velocity_final": [
+    0.5103866051326214,
+    -1.701708772550612,
+    -0.8251517149160413
+  ],
+  "tracer_collision_count_histogram": {
+    "0": 4134,
+    "1": 738,
+    "2": 116,
+    "3": 8,
+    "4": 4
+  },
+  "tracer_final_mean_speed_ms": 332.55726135319554,
+  "tracer_final_mean_vx_ms": 203.19860204116563,
+  "survival_pass": true
+}

@@ -1,0 +1,764 @@
+{
+  "bath_static_tau01": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 101,
+    "collisions_total": 462,
+    "uncollided_count": 4554,
+    "uncollided_fraction": 0.9108,
+    "confidence_interval_95": [
+      0.902557604259667,
+      0.918559010731181
+    ],
+    "expected_fraction": 0.9048374180359595,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": 1.4368154189464895,
+    "bath_particles_initial": 40000,
+    "bath_particles_final": 40000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 1.0046994940657216e-10,
+    "bath_thermal_temperature_final": 3.600819375589602e-05,
+    "bath_mean_velocity_initial": [
+      -5.7047330625637796e-12,
+      -1.1177112018358192e-09,
+      -2.4642039509433536e-10
+    ],
+    "bath_mean_velocity_final": [
+      1.0724581118768522e-05,
+      5.9526888658182927e-08,
+      1.677431991631801e-07
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4554,
+      "1": 430,
+      "2": 16
+    },
+    "tracer_final_mean_speed_ms": 999.9999088348702,
+    "tracer_final_mean_vx_ms": 914.2033046881586,
+    "survival_pass": true
+  },
+  "bath_static_tau001": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 101,
+    "collisions_total": 42,
+    "uncollided_count": 4958,
+    "uncollided_fraction": 0.9916,
+    "confidence_interval_95": [
+      0.9886624298805428,
+      0.9939395040019371
+    ],
+    "expected_fraction": 0.9900498337491681,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": 1.1043826711006686,
+    "bath_particles_initial": 40000,
+    "bath_particles_final": 40000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 1.0046994940657216e-10,
+    "bath_thermal_temperature_final": 3.5016660538088558e-06,
+    "bath_mean_velocity_initial": [
+      -5.7047330625637796e-12,
+      -1.1177112018358192e-09,
+      -2.4642039509433536e-10
+    ],
+    "bath_mean_velocity_final": [
+      1.094422092501173e-06,
+      8.113904763042314e-08,
+      -1.2266914536142567e-07
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4958,
+      "1": 42
+    },
+    "tracer_final_mean_speed_ms": 999.9999905212034,
+    "tracer_final_mean_vx_ms": 991.2445768982967,
+    "survival_pass": true
+  },
+  "bath_static_tau1": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 101,
+    "collisions_total": 4996,
+    "uncollided_count": 1830,
+    "uncollided_fraction": 0.366,
+    "confidence_interval_95": [
+      0.35262940870079673,
+      0.37952721682299345
+    ],
+    "expected_fraction": 0.36787944117144233,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": -0.27558845609745813,
+    "bath_particles_initial": 40000,
+    "bath_particles_final": 40000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 1.0046994940657216e-10,
+    "bath_thermal_temperature_final": 0.00039724931840672375,
+    "bath_mean_velocity_initial": [
+      -5.7047330625637796e-12,
+      -1.1177112018358192e-09,
+      -2.4642039509433536e-10
+    ],
+    "bath_mean_velocity_final": [
+      7.916503213441535e-05,
+      -4.9731527886215536e-08,
+      1.7060260616932383e-07
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 1830,
+      "1": 1871,
+      "2": 898,
+      "3": 303,
+      "4": 76,
+      "5": 17,
+      "6": 4,
+      "7": 1
+    },
+    "tracer_final_mean_speed_ms": 999.9989815155022,
+    "tracer_final_mean_vx_ms": 366.67969656298163,
+    "survival_pass": true
+  },
+  "bath_static_tau3": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 101,
+    "collisions_total": 14983,
+    "uncollided_count": 277,
+    "uncollided_fraction": 0.0554,
+    "confidence_interval_95": [
+      0.04922034081729338,
+      0.062104906551567474
+    ],
+    "expected_fraction": 0.049787068367863944,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": 1.8247610789341122,
+    "bath_particles_initial": 40000,
+    "bath_particles_final": 40000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 1.0046994940657216e-10,
+    "bath_thermal_temperature_final": 0.001202769531779939,
+    "bath_mean_velocity_initial": [
+      -5.7047330625637796e-12,
+      -1.1177112018358192e-09,
+      -2.4642039509433536e-10
+    ],
+    "bath_mean_velocity_final": [
+      0.00011855056805580566,
+      -1.7511084312534058e-06,
+      9.621182879663935e-07
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 277,
+      "1": 737,
+      "2": 1061,
+      "3": 1157,
+      "4": 855,
+      "5": 494,
+      "6": 246,
+      "7": 116,
+      "8": 41,
+      "9": 13,
+      "10": 3
+    },
+    "tracer_final_mean_speed_ms": 999.9969374209602,
+    "tracer_final_mean_vx_ms": 51.5954091918618,
+    "survival_pass": true
+  },
+  "bath_static_dt_half": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 201,
+    "collisions_total": 483,
+    "uncollided_count": 4536,
+    "uncollided_fraction": 0.9072,
+    "confidence_interval_95": [
+      0.8988179898273363,
+      0.9151029988717604
+    ],
+    "expected_fraction": 0.9048374180359595,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": 0.5693161477578939,
+    "bath_particles_initial": 40000,
+    "bath_particles_final": 40000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 1.0046994940657216e-10,
+    "bath_thermal_temperature_final": 3.638953935105708e-05,
+    "bath_mean_velocity_initial": [
+      -5.7047330625637796e-12,
+      -1.1177112018358192e-09,
+      -2.4642039509433536e-10
+    ],
+    "bath_mean_velocity_final": [
+      1.1129599270193854e-05,
+      5.255929983746824e-08,
+      -1.9145387094668473e-07
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4536,
+      "1": 446,
+      "2": 17,
+      "3": 1
+    },
+    "tracer_final_mean_speed_ms": 999.999907846485,
+    "tracer_final_mean_vx_ms": 910.9631594767559,
+    "survival_pass": true
+  },
+  "bath_static_dt_quarter": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 401,
+    "collisions_total": 514,
+    "uncollided_count": 4512,
+    "uncollided_fraction": 0.9024,
+    "confidence_interval_95": [
+      0.8938375111532112,
+      0.9104892930166208
+    ],
+    "expected_fraction": 0.9048374180359595,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": -0.5873495471602247,
+    "bath_particles_initial": 40000,
+    "bath_particles_final": 40000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 1.0046994940657216e-10,
+    "bath_thermal_temperature_final": 3.870380743743925e-05,
+    "bath_mean_velocity_initial": [
+      -5.7047330625637796e-12,
+      -1.1177112018358192e-09,
+      -2.4642039509433536e-10
+    ],
+    "bath_mean_velocity_final": [
+      1.1628018676803386e-05,
+      6.227627448706538e-07,
+      8.978141724525735e-07
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4512,
+      "1": 464,
+      "2": 22,
+      "3": 2
+    },
+    "tracer_final_mean_speed_ms": 999.9999020133372,
+    "tracer_final_mean_vx_ms": 906.9758042238798,
+    "survival_pass": true
+  },
+  "bath_static_mesh20": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 101,
+    "collisions_total": 476,
+    "uncollided_count": 4546,
+    "uncollided_fraction": 0.9092,
+    "confidence_interval_95": [
+      0.9008950881381343,
+      0.9170234720825879
+    ],
+    "expected_fraction": 0.9048374180359595,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": 1.0512601873071077,
+    "bath_particles_initial": 39999,
+    "bath_particles_final": 39999,
+    "bath_density_initial": 9.99975e+19,
+    "bath_density_final": 9.99975e+19,
+    "bath_thermal_temperature_initial": 9.975271656000323e-11,
+    "bath_thermal_temperature_final": 3.6901946136864985e-05,
+    "bath_mean_velocity_initial": [
+      3.1699074420766765e-10,
+      -1.0219196256232806e-09,
+      1.2186026825174879e-09
+    ],
+    "bath_mean_velocity_final": [
+      1.0992392756618636e-05,
+      2.2717776074755412e-07,
+      1.2418947481390382e-07
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4546,
+      "1": 432,
+      "2": 22
+    },
+    "tracer_final_mean_speed_ms": 999.9999068837,
+    "tracer_final_mean_vx_ms": 912.0655918676578,
+    "survival_pass": true
+  },
+  "bath_static_mesh40": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 101,
+    "collisions_total": 505,
+    "uncollided_count": 4524,
+    "uncollided_fraction": 0.9048,
+    "confidence_interval_95": [
+      0.8963269629992023,
+      0.9127969356218247
+    ],
+    "expected_fraction": 0.9048374180359595,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": -0.009016699701152087,
+    "bath_particles_initial": 39999,
+    "bath_particles_final": 39999,
+    "bath_density_initial": 9.99975e+19,
+    "bath_density_final": 9.99975e+19,
+    "bath_thermal_temperature_initial": 1.0007668028897851e-10,
+    "bath_thermal_temperature_final": 3.785027641833876e-05,
+    "bath_mean_velocity_initial": [
+      2.9466846617962895e-10,
+      -9.824822241206832e-10,
+      -4.764017837512747e-10
+    ],
+    "bath_mean_velocity_final": [
+      1.1452586358012078e-05,
+      5.558312393935502e-07,
+      9.476316266773762e-07
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4524,
+      "1": 449,
+      "2": 25,
+      "3": 2
+    },
+    "tracer_final_mean_speed_ms": 999.9999057503582,
+    "tracer_final_mean_vx_ms": 908.3839578037384,
+    "survival_pass": true
+  },
+  "bath_static_weight_half": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 101,
+    "collisions_total": 459,
+    "uncollided_count": 4557,
+    "uncollided_fraction": 0.9114,
+    "confidence_interval_95": [
+      0.9031812437715392,
+      0.9191346411756817
+    ],
+    "expected_fraction": 0.9048374180359595,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": 1.5813986308112375,
+    "bath_particles_initial": 80000,
+    "bath_particles_final": 80000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 1.001855661174671e-10,
+    "bath_thermal_temperature_final": 1.886350718347563e-05,
+    "bath_mean_velocity_initial": [
+      -6.133477864780911e-10,
+      -4.6492944669160377e-10,
+      1.0635135156389563e-09
+    ],
+    "bath_mean_velocity_final": [
+      5.753108650134588e-06,
+      1.30959483843435e-07,
+      -8.596073130956032e-08
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4557,
+      "1": 428,
+      "2": 14,
+      "3": 1
+    },
+    "tracer_final_mean_speed_ms": 999.9999047351457,
+    "tracer_final_mean_vx_ms": 907.9404473094337,
+    "survival_pass": true
+  },
+  "bath_static_weight_quarter": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 101,
+    "collisions_total": 485,
+    "uncollided_count": 4533,
+    "uncollided_fraction": 0.9066,
+    "confidence_interval_95": [
+      0.8981950825223773,
+      0.9145266340823385
+    ],
+    "expected_fraction": 0.9048374180359595,
+    "relative_speed_mean_ms": 1000.0,
+    "relative_speed_factor": 1.0,
+    "z_error": 0.42473293589311895,
+    "bath_particles_initial": 160000,
+    "bath_particles_final": 160000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 1.0017939832631624e-10,
+    "bath_thermal_temperature_final": 9.68853192998357e-06,
+    "bath_mean_velocity_initial": [
+      -9.824466654278624e-11,
+      5.60033087824072e-11,
+      -2.377353112930333e-10
+    ],
+    "bath_mean_velocity_final": [
+      2.9186039058117997e-06,
+      -9.028760709629609e-08,
+      3.687259589878314e-08
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4533,
+      "1": 449,
+      "2": 18
+    },
+    "tracer_final_mean_speed_ms": 999.9999022975198,
+    "tracer_final_mean_vx_ms": 906.6015304608636,
+    "survival_pass": true
+  },
+  "bath_thermal": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 401,
+    "collisions_total": 979,
+    "uncollided_count": 4156,
+    "uncollided_fraction": 0.8312,
+    "confidence_interval_95": [
+      0.8205249138494153,
+      0.8414868849770824
+    ],
+    "expected_fraction": 0.8311854565147588,
+    "relative_speed_mean_ms": 462.25584081184354,
+    "relative_speed_factor": 1.8490233632473743,
+    "z_error": 0.002745361882795307,
+    "bath_particles_initial": 40000,
+    "bath_particles_final": 40000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 301409848.21971637,
+    "bath_thermal_temperature_final": 301409828.60546684,
+    "bath_mean_velocity_initial": [
+      -0.009880887507975635,
+      -1.935932589768522,
+      -0.4268126443245962
+    ],
+    "bath_mean_velocity_final": [
+      -0.009874365546841282,
+      -1.9359324341830473,
+      -0.4268127765435014
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4156,
+      "1": 723,
+      "2": 107,
+      "3": 14
+    },
+    "tracer_final_mean_speed_ms": 328.8736917252338,
+    "tracer_final_mean_vx_ms": 197.82431019982693,
+    "survival_pass": true
+  },
+  "bath_thermal_dt_half": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 801,
+    "collisions_total": 1020,
+    "uncollided_count": 4129,
+    "uncollided_fraction": 0.8258,
+    "confidence_interval_95": [
+      0.8149977395525124,
+      0.8362204477833088
+    ],
+    "expected_fraction": 0.8311854565147588,
+    "relative_speed_mean_ms": 462.25584081184354,
+    "relative_speed_factor": 1.8490233632473743,
+    "z_error": -1.016608247050168,
+    "bath_particles_initial": 40000,
+    "bath_particles_final": 40000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 301409848.21971637,
+    "bath_thermal_temperature_final": 301409827.3242587,
+    "bath_mean_velocity_initial": [
+      -0.009880887507975635,
+      -1.935932589768522,
+      -0.4268126443245962
+    ],
+    "bath_mean_velocity_final": [
+      -0.0098749302120019,
+      -1.9359322067757838,
+      -0.42681278311316145
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4129,
+      "1": 747,
+      "2": 101,
+      "3": 21,
+      "4": 2
+    },
+    "tracer_final_mean_speed_ms": 332.2354031862023,
+    "tracer_final_mean_vx_ms": 202.34163149418043,
+    "survival_pass": true
+  },
+  "bath_thermal_dt_quarter": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 1601,
+    "collisions_total": 957,
+    "uncollided_count": 4179,
+    "uncollided_fraction": 0.8358,
+    "confidence_interval_95": [
+      0.8252362704979909,
+      0.8459700820404567
+    ],
+    "expected_fraction": 0.8311854565147588,
+    "relative_speed_mean_ms": 462.25584081184354,
+    "relative_speed_factor": 1.8490233632473743,
+    "z_error": 0.8710836213441853,
+    "bath_particles_initial": 40000,
+    "bath_particles_final": 40000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 301409848.21971637,
+    "bath_thermal_temperature_final": 301409829.24969226,
+    "bath_mean_velocity_initial": [
+      -0.009880887507975635,
+      -1.935932589768522,
+      -0.4268126443245962
+    ],
+    "bath_mean_velocity_final": [
+      -0.009874573175601618,
+      -1.9359318082076258,
+      -0.42681276987039357
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4179,
+      "1": 706,
+      "2": 94,
+      "3": 21
+    },
+    "tracer_final_mean_speed_ms": 326.045074752203,
+    "tracer_final_mean_vx_ms": 199.4853403001662,
+    "survival_pass": true
+  },
+  "bath_thermal_mesh20": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 401,
+    "collisions_total": 1007,
+    "uncollided_count": 4130,
+    "uncollided_fraction": 0.826,
+    "confidence_interval_95": [
+      0.8152023829133546,
+      0.8364155679015728
+    ],
+    "expected_fraction": 0.8311854565147588,
+    "relative_speed_mean_ms": 462.25584081184354,
+    "relative_speed_factor": 1.8490233632473743,
+    "z_error": -0.9788544096822852,
+    "bath_particles_initial": 39999,
+    "bath_particles_final": 39999,
+    "bath_density_initial": 9.99975e+19,
+    "bath_density_final": 9.99975e+19,
+    "bath_thermal_temperature_initial": 299258149.6800096,
+    "bath_thermal_temperature_final": 299258129.0233051,
+    "bath_mean_velocity_initial": [
+      0.5490440744967537,
+      -1.7700167128312647,
+      2.110681760360034
+    ],
+    "bath_mean_velocity_final": [
+      0.5490509613277551,
+      -1.7700162159347057,
+      2.1106823308010756
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4130,
+      "1": 762,
+      "2": 86,
+      "3": 18,
+      "4": 3,
+      "7": 1
+    },
+    "tracer_final_mean_speed_ms": 331.87398799637293,
+    "tracer_final_mean_vx_ms": 194.90672894804203,
+    "survival_pass": true
+  },
+  "bath_thermal_mesh40": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 401,
+    "collisions_total": 1010,
+    "uncollided_count": 4134,
+    "uncollided_fraction": 0.8268,
+    "confidence_interval_95": [
+      0.8160210072245409,
+      0.8371959974403107
+    ],
+    "expected_fraction": 0.8311854565147588,
+    "relative_speed_mean_ms": 462.25584081184354,
+    "relative_speed_factor": 1.8490233632473743,
+    "z_error": -0.8278390602107327,
+    "bath_particles_initial": 39999,
+    "bath_particles_final": 39999,
+    "bath_density_initial": 9.99975e+19,
+    "bath_density_final": 9.99975e+19,
+    "bath_thermal_temperature_initial": 300230040.86693543,
+    "bath_thermal_temperature_final": 300230020.2857546,
+    "bath_mean_velocity_initial": [
+      0.5103807548115115,
+      -1.701709129710251,
+      -0.825152094273639
+    ],
+    "bath_mean_velocity_final": [
+      0.5103866051326214,
+      -1.701708772550612,
+      -0.8251517149160413
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4134,
+      "1": 738,
+      "2": 116,
+      "3": 8,
+      "4": 4
+    },
+    "tracer_final_mean_speed_ms": 332.55726135319554,
+    "tracer_final_mean_vx_ms": 203.19860204116563,
+    "survival_pass": true
+  },
+  "bath_thermal_weight_half": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 401,
+    "collisions_total": 985,
+    "uncollided_count": 4168,
+    "uncollided_fraction": 0.8336,
+    "confidence_interval_95": [
+      0.8229826595519264,
+      0.8438262982369679
+    ],
+    "expected_fraction": 0.8311854565147588,
+    "relative_speed_mean_ms": 462.25584081184354,
+    "relative_speed_factor": 1.8490233632473743,
+    "z_error": 0.4557914102974317,
+    "bath_particles_initial": 80000,
+    "bath_particles_final": 80000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 300556698.3524012,
+    "bath_thermal_temperature_final": 300556687.97309965,
+    "bath_mean_velocity_initial": [
+      -1.0623495288899643,
+      -0.8052814236047346,
+      1.8420594436228463
+    ],
+    "bath_mean_velocity_final": [
+      -1.0623464896085646,
+      -0.8052812911042214,
+      1.8420594215984478
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4168,
+      "1": 706,
+      "2": 108,
+      "3": 12,
+      "4": 4,
+      "5": 1,
+      "6": 1
+    },
+    "tracer_final_mean_speed_ms": 331.2401384378069,
+    "tracer_final_mean_vx_ms": 201.3714968676774,
+    "survival_pass": true
+  },
+  "bath_thermal_weight_quarter": {
+    "tracer_count": 5000,
+    "tracer_ids_unique": true,
+    "tracer_ids_conserved": true,
+    "collision_tracer_ids_subset_initial": true,
+    "collision_tally_matches_global_count": true,
+    "collision_tally_frames": 401,
+    "collisions_total": 948,
+    "uncollided_count": 4193,
+    "uncollided_fraction": 0.8386,
+    "confidence_interval_95": [
+      0.8281054566787283,
+      0.8486975787010319
+    ],
+    "expected_fraction": 0.8311854565147588,
+    "relative_speed_mean_ms": 462.25584081184354,
+    "relative_speed_factor": 1.8490233632473743,
+    "z_error": 1.3996373444946084,
+    "bath_particles_initial": 160000,
+    "bath_particles_final": 160000,
+    "bath_density_initial": 1e+20,
+    "bath_density_final": 1e+20,
+    "bath_thermal_temperature_initial": 300538194.9789486,
+    "bath_thermal_temperature_final": 300538190.37013364,
+    "bath_mean_velocity_initial": [
+      -0.1701647540247395,
+      0.09700057620309734,
+      -0.4117696379127312
+    ],
+    "bath_mean_velocity_final": [
+      -0.17016332232914053,
+      0.09700060834738727,
+      -0.41176957022361965
+    ],
+    "tracer_collision_count_histogram": {
+      "0": 4193,
+      "1": 683,
+      "2": 108,
+      "3": 15,
+      "4": 1
+    },
+    "tracer_final_mean_speed_ms": 323.1308649229255,
+    "tracer_final_mean_vx_ms": 204.1857401052335,
+    "survival_pass": true
+  }
+}

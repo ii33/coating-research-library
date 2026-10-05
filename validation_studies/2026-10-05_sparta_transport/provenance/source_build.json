@@ -1,0 +1,42 @@
+{
+  "acquired_on_UTC": "2026-10-05",
+  "upstream_home": "https://sparta.github.io/",
+  "upstream_repository": "https://github.com/sparta/sparta",
+  "pinned_commit": "e071055fca6ccd250d4b894dadb7ff64d6e6fcac",
+  "pinned_commit_URL": "https://github.com/sparta/sparta/commit/e071055fca6ccd250d4b894dadb7ff64d6e6fcac",
+  "version_header": "#define SPARTA_VERSION \"27 Aug 2026\"",
+  "upstream_license": "GNU General Public License version 2 (read upstream LICENSE and per-file notices)",
+  "vendor_source_worktree_clean": true,
+  "source_command": "git clone --depth 1 https://github.com/sparta/sparta.git vendor/sparta",
+  "build_command": "make -C vendor/sparta/src -j2 serial",
+  "binary_sha256": "4ca46b826024efa9da94484774c1914d318f2be4bea6f8ac9d6c0558a5287d9f",
+  "license_sha256": "c5186abe32a9221088c8a87e9a762e7cd6f1f38a888943325e43b9d666035b29",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "make": "GNU Make 4.4.1",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "CPU_serial_no_MPI_GPU": true,
+  "CMake_required": false,
+  "global_installation_or_security_changes": false,
+  "source_mutations": false,
+  "scientific_data": "synthetic only",
+  "mutation_scope": "this study directory only; cub/local product kept read-only",
+  "source_checks": [
+    "official homepage links to github.com/sparta/sparta",
+    "git source commit pinned and readback clean",
+    "GNU GPLv2 LICENSE present",
+    "version and serial help read back after build"
+  ],
+  "documentation_URLs": [
+    "https://sparta.github.io/doc/collide.html",
+    "https://sparta.github.io/doc/fix_emit_surf.html",
+    "https://sparta.github.io/doc/mixture.html",
+    "https://sparta.github.io/doc/read_surf.html",
+    "https://sparta.github.io/doc/surf_react.html",
+    "https://sparta.github.io/doc/compute_surf_reaction_tally.html",
+    "https://sparta.github.io/doc/compute_gas_collision_tally.html",
+    "https://sparta.github.io/doc/collide_modify.html",
+    "https://sparta.github.io/doc/Section_howto.html#19"
+  ]
+}

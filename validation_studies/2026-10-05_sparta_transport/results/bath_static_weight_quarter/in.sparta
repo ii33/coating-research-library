@@ -1,0 +1,27 @@
+# SYNTHETIC periodic maintained bath; survival at elapsed time L/v.
+seed 97343
+dimension 3
+units si
+boundary pp pp pp
+create_box 0 .01 0 .002 0 .002
+create_grid 10 2 2
+global fnum 25000000 nrho 1e+20
+species ../../inputs/bath_static_weight_quarter.species A B
+mixture collision A B group species temp 4800 vstream 1000 0 0
+mixture background B nrho 1e+20 temp 1e-10 vstream 0 0 0
+mixture beam A temp 1e-10 vstream 1000 0 0
+collide vss collision ../../inputs/bath_static_weight_quarter.vss
+collide_modify remain no vremax 0 no
+create_particles background n 0
+create_particles beam n 5000
+compute counts count A B
+compute history gas/collision/tally all all id1 id2 type1 type2 vx1/pre vy1/pre vz1/pre vx2/pre vy2/pre vz2/pre
+dump collisions tally all 1 gas.tally c_history[*]
+dump_modify collisions format float %.17g
+dump pulse particle all 100 pulse.dump id type x y z vx vy vz
+dump_modify pulse format float %.17g first yes
+timestep 9.9999999999999995e-08
+stats 1
+stats_style step np ncoll nexit c_counts[1] c_counts[2]
+stats_modify format float %.17g
+run 100

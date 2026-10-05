@@ -1,0 +1,27 @@
+{
+  "kind": "free_molecular_geometry",
+  "data_origin": "synthetic",
+  "seed": 18457,
+  "grid": [
+    10,
+    10,
+    5
+  ],
+  "dt": 1e-05,
+  "fnum": 10000000000.0,
+  "surface_refine": 1,
+  "ntri": 36,
+  "emit_steps": 500,
+  "drain_steps": 1500,
+  "thermal_temperature_K": 300,
+  "mass_kg": 6.63e-26,
+  "emission_count_target_per_step": 200.0,
+  "streaming_velocity": [
+    0,
+    0,
+    0
+  ],
+  "source_square_halfwidth_m": 0.01,
+  "receiver_square_halfwidth_m": 0.05,
+  "separation_m": 0.1
+}

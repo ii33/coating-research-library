@@ -1,0 +1,31 @@
+# SYNTHETIC method validation, genuine SPARTA collisionnone.
+seed 18457
+dimension 3
+units si
+boundary oo oo oo
+create_box -.2 .2 -.2 .2 0 .1
+create_grid 10 10 5
+global fnum 10000000000 nrho 1e18 gridcut 0
+species ../../inputs/synthetic.species A
+mixture source A temp 300 vstream 0 0 0 nrho 5e+18
+read_surf ../../inputs/surfaces_1.dat type
+group source surf type 1
+group receiver surf type 2
+group arrival surf subtract all source
+surf_collide absorber specular
+surf_react capture global 1 0
+surf_modify all collide absorber react capture
+collide none
+fix inlet emit/surf source source n 100 perspecies no normal no
+compute hits surf/reaction/tally arrival source id/surf xc yc zc vx/pre vy/pre vz/pre
+dump events tally all 1 surface.tally c_hits[*]
+dump_modify events format float %.17g
+timestep 5.0000000000000004e-06
+stats 1
+stats_style step np nexit nscoll ncoll f_inlet[1] f_inlet[2]
+stats_modify format float %.17g
+run 1000
+unfix inlet
+variable zero equal 0
+stats_style step np nexit nscoll ncoll v_zero v_zero
+run 3000

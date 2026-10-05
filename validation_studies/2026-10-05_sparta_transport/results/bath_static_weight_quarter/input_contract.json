@@ -1,0 +1,27 @@
+{
+  "kind": "uniform_bath_uncollided",
+  "data_origin": "synthetic",
+  "seed": 97343,
+  "tau_static": 0.1,
+  "background_density_m3": 1e+20,
+  "background_temperature_K": 1e-10,
+  "background_mass_kg": 6.63e-20,
+  "tracer_mass_kg": 6.63e-26,
+  "tracer_speed_ms": 1000.0,
+  "path_length_m": 0.01,
+  "sigma_m2": 1.0000000000000001e-19,
+  "collision_diameter_m": 1.784124116152771e-10,
+  "omega": 0.5,
+  "alpha": 1,
+  "grid": [
+    10,
+    2,
+    2
+  ],
+  "dt": 1e-07,
+  "steps": 100,
+  "fnum": 25000000.0,
+  "bath_boundary": "periodic in all directions",
+  "bath_maintained": "fixed particle number in constant volume; heavy bath limit suppresses feedback",
+  "observation": "collision-free fraction over elapsed L/v, not deposited fraction"
+}

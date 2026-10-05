@@ -1,0 +1,40 @@
+{
+  "kind": "free_molecular_geometry",
+  "data_origin": "synthetic",
+  "seed": 18457,
+  "grid": [
+    10,
+    10,
+    5
+  ],
+  "dt": 5e-06,
+  "fnum": 10000000000.0,
+  "surface_refine": 1,
+  "ntri": 36,
+  "emit_steps": 1000,
+  "drain_steps": 3000,
+  "thermal_temperature_K": 300,
+  "mass_kg": 6.63e-26,
+  "emission_mode": "prescribed_count_debug_n",
+  "source_mixture_nrho": 5e+18,
+  "emission_count_target_per_step": 100.0,
+  "streaming_velocity": [
+    0,
+    0,
+    0
+  ],
+  "source_square_halfwidth_m": 0.01,
+  "receiver_square_halfwidth_m": 0.05,
+  "separation_m": 0.1,
+  "command": [
+    "validation_studies/2026-10-05_sparta_transport/vendor/sparta/src/spa_serial",
+    "-in",
+    "in.sparta",
+    "-log",
+    "log.sparta"
+  ],
+  "elapsed_seconds": 0.41555439199873945,
+  "returncode": 0,
+  "working_directory": "validation_studies/2026-10-05_sparta_transport/results/geometry_dt_half",
+  "replay_from_study_root": "(cd results/geometry_dt_half && ../../vendor/sparta/src/spa_serial -in in.sparta -log log.sparta)"
+}

@@ -1,0 +1,42 @@
+SPARTA (27 Aug 2026)
+Running on 1 MPI task(s)
+
+SPARTA (27 Aug 2026)
+Git info:     (unknown) / (unknown)
+Compiled:     Oct  5 2026 05:17:50
+Compiler:     GNU C++ 14.2.0 (C++11)
+OS / arch:    Linux / x86_64 (64-bit integers)
+
+Configuration:
+  Parallelism:  serial (MPI STUBS)
+  Accelerator:  none
+  PNG images:   no
+  JPEG images:  no
+  FFmpeg movie: no
+  gzip files:   yes
+
+Usage: sparta [command-line switches] < input_script
+       sparta [command-line switches] -in input_script
+
+Command-line switches:
+  -e  or -echo none/screen/log/both : how to echo the input script
+  -h  or -help                      : print this help message and exit
+  -i  or -in <file>                 : read input from <file> (default: stdin)
+  -k  or -kokkos on/off ...         : enable/configure the KOKKOS package
+  -l  or -log <file>/none           : write log to <file> (default: log.sparta)
+  -p  or -partition <n1> <n2> ...   : split procs into multiple partitions
+  -pk or -package <style> ...       : invoke a package command at startup
+  -pl or -plog <file>/none          : per-partition log file base name
+  -ps or -pscreen <file>/none       : per-partition screen file base name
+  -sc or -screen <file>/none        : write screen output to <file>
+  -sf or -suffix <style>            : append a style suffix (e.g. kk)
+  -v  or -var <name> <value> ...    : set an index-style variable
+
+List of style options included in this executable:
+
+Collide styles: vss
+React styles: qk tce tce/qk
+Compute styles: boundary count distsurf/grid dt/grid eflux/grid gas/collision/grid gas/collision/tally gas/reaction/grid gas/reaction/tally grid isurf/grid ke/particle lambda/grid pflux/grid property/grid property/surf react/boundary react/isurf/grid react/surf reduce sonine/grid surf surf/collision/tally surf/reaction/tally temp thermal/grid tvib/grid
+Dump styles: grid image movie particle surf tally
+Fix styles: ablate adapt ambipolar ave/grid ave/histo ave/histo/weight ave/surf ave/time balance controller custom dt/reset emit/face emit/face/file emit/surf field/grid field/particle grid/check halt move/surf print surf/temp temp/global/rescale temp/rescale vibmode
+Command styles (add-on input script commands): adapt_grid balance_grid create_box create_grid create_isurf create_particles custom move_surf read_grid read_isurf read_particles read_restart read_surf remove_surf run scale_particles write_grid write_isurf write_restart write_surf

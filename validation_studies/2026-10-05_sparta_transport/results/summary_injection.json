@@ -1,0 +1,39 @@
+{
+  "injection": {
+    "emitted": 50000,
+    "capture": 0,
+    "other_surface_loss": 0,
+    "open_boundary_escape": 0,
+    "inventory_final": 50000,
+    "flux_balance_residual_particles": 0,
+    "gas_collisions": 0,
+    "surface_tally_events": 0,
+    "particle_weight_real_molecules": 10000000000.0,
+    "injection_count": 50000,
+    "mu_mean": 0.6664039541462868,
+    "mu_expected": 0.6666666666666666,
+    "mu_ks_D": 0.00391738470700409,
+    "mu_ks_p": 0.42569439779400664,
+    "energy_over_kT_mean": 2.0004233324751395,
+    "energy_expected": 2,
+    "energy_ks_D": 0.0024314862942261817,
+    "energy_ks_p": 0.9282910257018919,
+    "azimuth_ks_p": 0.549194693289917,
+    "energy_mu_correlation": 0.0006197546440840105,
+    "vz2_over_thermal_variance": 1.997747163554556,
+    "vt2_over_thermal_variance": 2.003099501395722,
+    "source_position_bounds": [
+      [
+        -0.009999979030822554,
+        -0.009999439536032106,
+        8.670095023189733e-16
+      ],
+      [
+        0.009999433523434739,
+        0.00999985887038316,
+        9.045116561100906e-10
+      ]
+    ],
+    "emission_distribution_pass": true
+  }
+}

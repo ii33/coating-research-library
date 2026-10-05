@@ -1,0 +1,21 @@
+{
+  "status": "bounded_synthetic_method_validation_completed",
+  "checks_passed": true,
+  "case_groups": {
+    "thermal_surface_injection": 1,
+    "collisionnone_finite_source_geometry": 12,
+    "periodic_bath_and_two_refinement_levels": 17,
+    "additional_independent_seed_bath_replicates": 8
+  },
+  "total_real_SPARTA_cases": 38,
+  "upstream_source_unmodified": true,
+  "physical_equipment_prediction": false,
+  "zero_collision_fraction": "measured from complete every-step collision histories",
+  "finite_receiver_scattered_flux": "NEVER RUN",
+  "double_masks_and_planetary_motion": "NEVER RUN",
+  "real_material_background_cross_sections": "UNAVAILABLE",
+  "browser_preview": "BLOCKED; offline structure and chart pixels checked",
+  "report": "docs/transport_validation.html",
+  "checker": "scripts/check_results.py",
+  "summary": "results/validation_summary.json"
+}
