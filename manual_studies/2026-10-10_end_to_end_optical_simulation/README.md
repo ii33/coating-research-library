@@ -21,12 +21,12 @@
 目标研究库：`https://github.com/ii33/coating-research-library`  
 基线：`main` commit `2f62e74ee8f90039148b71b6b0f9f4f41849d156`，tree `c9f1234fcdcf3d9551f2a8f2c43c8c2e300b3159`。  
 目标路径：`manual_studies/2026-10-10_end_to_end_optical_simulation/`。  
-本地包状态：待合并、未提交、未推送、未发布；这不是研究库工作副本，未改研究库 root `STATE`、README 或索引。
+发布状态：本目录已写入研究库 `main`；首次目录提交为 `8651324e5490432642e37484116e489d277d3e10`。研究库根 README 已追加本目录入口，root `STATE` 未修改。
 
-按已提供的权威 main 快照，`manual_studies/` 当前可见 `2026-10-02_morningtech_mxc`；此目录未显示先前 TFCalc 历史，不能据此判断 TFCalc 研究遗失。上游 README 中已有 ITO 与第三轮入口须保留。本包只建议新增一条导航，不直接编辑上游 README。
+按首次写入前核验的权威 main 快照（历史基线），`manual_studies/` 当时可见 `2026-10-02_morningtech_mxc`；该快照未显示先前 TFCalc 历史，不能据此判断 TFCalc 研究遗失。上游 README 中已有 ITO 与第三轮入口已保留；本次只追加本目录导航。
 
 ## 版本与核验说明
 
 资料依据是三份研究代理稿件，原稿全文在 `incoming/`。来源索引从原稿的 Markdown 链接提取 104 个唯一 URL；本包未重新读取链接目标，未安装或运行候选软件，未做光学数值仿真，也未在目标机器上跑性能测试。每条来源登记当前标为 `evidence_level=U`、`read_status=metadata_only`；这不覆盖原稿中的来源等级、作者自述核验状态和命题状态。
 
-只有在父任务审阅通过后，才将本包作为独立文件写回指定研究库路径；仍需另行决定是否通过已连接 GitHub 写回。本包不执行该动作。
+本目录及 README 导航已发布到指定研究库。研究核验状态仍按上文记录：外部来源链接未重新访问，数值仿真和生产验证尚未完成；这些状态不改变本次落库事实。
