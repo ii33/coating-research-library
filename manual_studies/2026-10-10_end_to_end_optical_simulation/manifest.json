@@ -1,7 +1,7 @@
 {
   "manifest_version": 1,
   "study_id": "2026-10-10_end_to_end_optical_simulation",
-  "status": "pending_merge",
+  "status": "published",
   "upstream": {
     "repository": "https://github.com/ii33/coating-research-library",
     "branch": "main",
@@ -33,9 +33,9 @@
     }
   ],
   "source_record_count": 104,
-  "navigation": "suggested-navigation.md; no upstream index changed",
+  "navigation": "README.md appended one navigation entry; no other index changed",
   "root_state_or_index_modified": false,
-  "commit_push_publish": false,
+  "commit_push_publish": true,
   "files": [
     {
       "path": "interface_acceptance_matrix.md",
@@ -117,5 +117,6 @@
   "gitignore_status": "ignored by product .gitignore rule /artifacts/; not staged",
   "package_git_staging": "not staged",
   "author_source_read_claims_preserved": true,
-  "package_source_review": "U/metadata_only is integrator status; per-source author access scope is traced in sources/index.md and source_register.json"
+  "package_source_review": "U/metadata_only is integrator status; per-source author access scope is traced in sources/index.md and source_register.json",
+  "publication_commit": "8651324e5490432642e37484116e489d277d3e10"
 }
