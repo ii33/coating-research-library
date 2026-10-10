@@ -103,3 +103,7 @@ T06–T10入口分别为[工艺光学](06_optical_coating_families/round2_proces
 ITO并入本库专题11，不另建研究项目。[研究入口](11_transparent_conductive_films/ito/README.md) · [阶段状态](11_transparent_conductive_films/ito/stage_status.json) · [冻结清单](11_transparent_conductive_films/ito/manifest.json)。范围为蒸镀工艺、材料状态接口、电光参考模型及小规模离线验证；实机校准、材料参数辨识、产品运行时集成和生产资格均未完成。
 
 本地README与当前证据索引以GitHub提交[9682a1e](https://github.com/ii33/coating-research-library/tree/9682a1ea8de13fb3c1478f5283f1305a09fab3c3)恢复已有导航，再补入ITO入口；本次未推送GitHub。原有第三轮与文献补充引用予以保留，不表示当前云快照已具备其全部文件。本地STATE/ROADMAP保持原字节，可能早于已发布状态；已发布基线请查看[该提交的STATE](https://github.com/ii33/coating-research-library/blob/9682a1ea8de13fb3c1478f5283f1305a09fab3c3/STATE.md)，ITO的本地状态以上述阶段文件为准。
+
+## 手工研究增量
+
+- [2026-10-10 端到端光学仿真成熟化](manual_studies/2026-10-10_end_to_end_optical_simulation/README.md) — 膜系/沉积/光源/成像资料基线；原文、引用范围与证据边界见报告，数值复现和生产验证尚未完成。

@@ -1,0 +1,121 @@
+{
+  "manifest_version": 1,
+  "study_id": "2026-10-10_end_to_end_optical_simulation",
+  "status": "pending_merge",
+  "upstream": {
+    "repository": "https://github.com/ii33/coating-research-library",
+    "branch": "main",
+    "base_commit": "2f62e74ee8f90039148b71b6b0f9f4f41849d156",
+    "base_tree": "c9f1234fcdcf3d9551f2a8f2c43c8c2e300b3159",
+    "target_path": "manual_studies/2026-10-10_end_to_end_optical_simulation/"
+  },
+  "manuscripts": [
+    {
+      "id": "01",
+      "path": "incoming/01_polarized_thickness_mapping.original.md",
+      "received": "2026-10-10",
+      "preserved_verbatim": true,
+      "independently_rechecked": false
+    },
+    {
+      "id": "02",
+      "path": "incoming/02_wave_imaging_bridge.original.md",
+      "received": "2026-10-10",
+      "preserved_verbatim": true,
+      "independently_rechecked": false
+    },
+    {
+      "id": "03",
+      "path": "incoming/03_spectral_straylight.original.md",
+      "received": "2026-10-10",
+      "preserved_verbatim": true,
+      "independently_rechecked": false
+    }
+  ],
+  "source_record_count": 104,
+  "navigation": "suggested-navigation.md; no upstream index changed",
+  "root_state_or_index_modified": false,
+  "commit_push_publish": false,
+  "files": [
+    {
+      "path": "interface_acceptance_matrix.md",
+      "size_bytes": 6539,
+      "sha256": "1efd830f02c0504a4c03adf4eab33e242e1659cae826c7182146cd045b63775c"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 2923,
+      "sha256": "64a5c8b07a5b526d027b618c82d65b72707ca12f29187dadf9c603a3b07d370c"
+    },
+    {
+      "path": "report.md",
+      "size_bytes": 21153,
+      "sha256": "7224e427e755b29455a6ed420396cfe659547936c0efa9cb47f970602bf8a337"
+    },
+    {
+      "path": "suggested-navigation.md",
+      "size_bytes": 840,
+      "sha256": "74e164fa33c293e1b327627d62db1237c57abd4cb555c0ce62cf370dab8efa6f"
+    },
+    {
+      "path": "incoming/01_polarized_thickness_mapping.original.md",
+      "size_bytes": 28673,
+      "sha256": "7d04f893bd999a2dc58cbf9cef8e711b09dd7a2ebee9292307b7f67e409bf1ce"
+    },
+    {
+      "path": "incoming/02_wave_imaging_bridge.original.md",
+      "size_bytes": 38854,
+      "sha256": "a5049dc2f11a6be8271f6350a9515350d1b822505c65281efb476fca8cd81a33"
+    },
+    {
+      "path": "incoming/03_spectral_straylight.original.md",
+      "size_bytes": 34201,
+      "sha256": "522a657a2c657ed843bdc6a53589f78b6280600c8398cf05c8ce18b5ea586fa8"
+    },
+    {
+      "path": "sources/claim_map.md",
+      "size_bytes": 5401,
+      "sha256": "19454eee7afa71102a01e3c1ef86b9ececb1a4aa4d26b94608d4061d93d696d5"
+    },
+    {
+      "path": "sources/index.md",
+      "size_bytes": 51532,
+      "sha256": "3de9990a0c4646dac9521e06d2dc8cf29c661c4786a942f9083460d309a6982d"
+    },
+    {
+      "path": "sources/README.md",
+      "size_bytes": 1040,
+      "sha256": "953716641fdbb7b69a9dd0e74761ccc50d268c1423e564ea4747361722c976f3"
+    },
+    {
+      "path": "sources/source_register.json",
+      "size_bytes": 288496,
+      "sha256": "69a5383375bb8061f838f48d5500b387a60d653c510033fc5b968efb5a789065"
+    },
+    {
+      "path": "sources/originals/README.md",
+      "size_bytes": 366,
+      "sha256": "80d883fef775ba2a2f8385ef65a83487e4840f43e2e1d96351e00adb390d01e3"
+    },
+    {
+      "path": "topics/01_polarized_thickness_mapping.md",
+      "size_bytes": 4795,
+      "sha256": "ad74a998b0ad64824e59dcfec6df8c14803a368fc1c737494fca36a0a6347346"
+    },
+    {
+      "path": "topics/02_wavefront_imaging_bridge.md",
+      "size_bytes": 5068,
+      "sha256": "c5e5cee9e6c003b73fbea5c63803374b0d810b73abd1c01f81471c934e0ea2e2"
+    },
+    {
+      "path": "topics/03_nonsequential_spectral_straylight.md",
+      "size_bytes": 5365,
+      "sha256": "f5fa04e837f6b792845ab63aea88291da4ab6ceeba02b5a7c6ecd6d6f306cf65"
+    }
+  ],
+  "manifest_self_sha256": null,
+  "gitignore_status": "ignored by product .gitignore rule /artifacts/; not staged",
+  "package_git_staging": "not staged",
+  "author_source_read_claims_preserved": true,
+  "package_source_review": "U/metadata_only is integrator status; per-source author access scope is traced in sources/index.md and source_register.json"
+}
