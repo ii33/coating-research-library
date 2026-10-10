@@ -10,6 +10,7 @@
 - [专题一：位置相关膜厚与偏振输运](topics/01_polarized_thickness_mapping.md)
 - [专题二：波前、偏振光瞳与衍射成像](topics/02_wavefront_imaging_bridge.md)
 - [专题三：非顺序光谱、偏振与杂散光](topics/03_nonsequential_spectral_straylight.md)
+- [专题四：Blender 光学接入评估](topics/04_blender_optics_integration.md) — 独立进程插件与版本化场景交换；架构研究，未实现或运行验证。
 - [接口与验收矩阵](interface_acceptance_matrix.md)
 - [来源目录](sources/README.md) / [来源索引](sources/index.md) / [结论—来源证据链](sources/claim_map.md) / [来源登记 JSON](sources/source_register.json)
 - [建议新增导航段](suggested-navigation.md)

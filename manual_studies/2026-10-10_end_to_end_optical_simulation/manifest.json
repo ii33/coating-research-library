@@ -44,8 +44,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 2997,
-      "sha256": "83d41a57badc56b39eee46c48aed2b2889a192ea830cdefbff9cc25384d7dab4"
+      "size_bytes": 3173,
+      "sha256": "b942a613a49a45bc4c610de7d287e4312cfb10217d70449eb3e7ef0e6d985f2a"
     },
     {
       "path": "report.md",
@@ -111,6 +111,11 @@
       "path": "topics/03_nonsequential_spectral_straylight.md",
       "size_bytes": 5365,
       "sha256": "f5fa04e837f6b792845ab63aea88291da4ab6ceeba02b5a7c6ecd6d6f306cf65"
+    },
+    {
+      "path": "topics/04_blender_optics_integration.md",
+      "size_bytes": 16883,
+      "sha256": "0f257aec4acc31d1fc0da7fc17c0dc0a23a8f0b70c87ba42e1697a6e74a69701"
     }
   ],
   "manifest_self_sha256": null,
@@ -119,5 +124,17 @@
   "author_source_read_claims_preserved": true,
   "package_source_review": "U/metadata_only is integrator status; per-source author access scope is traced in sources/index.md and source_register.json",
   "status_maintenance": "Stale staging and approval wording was removed; source URLs remain metadata-only pending independent review.",
-  "publication_commit": "8651324e5490432642e37484116e489d277d3e10"
+  "publication_commit": "8651324e5490432642e37484116e489d277d3e10",
+  "supplemental_topics": [
+    {
+      "id": "blender_optics_integration",
+      "path": "topics/04_blender_optics_integration.md",
+      "summary": "Blender作为独立三维场景编辑与预览前端；项目求解器继续负责定量光学与沉积计算。",
+      "source_reference_count": 21,
+      "source_reference_scope": "独立于SRC-000001至SRC-000104的专题内参考编号；未并入source_register.json",
+      "implementation_status": "research_only_not_implemented",
+      "validation_status": "官方文档与源码已阅读；未安装、运行或在项目环境验证"
+    }
+  ],
+  "directory_navigation": "README.md indexes topics 01–04; this Blender supplement does not modify the repository-root README."
 }
