@@ -1,0 +1,26 @@
+{
+  "retrieval_date_utc": "2026-10-11",
+  "source": "https://www.hulinks.co.jp/en/tfcalc/examples/list-of-coating-design/growing-antireflection/",
+  "source_model": "lossless constant indices air=1, H=4.2, L=2.2, bulk Ge=4.0; normal incidence",
+  "layer_order_in_source": "substrate_to_air",
+  "number_of_layers": 13,
+  "total_physical_thickness_nm": 10263.39,
+  "source_tunneling_trigger_thickness_nm": 10000.0,
+  "excess_over_source_tunneling_trigger_thickness_nm": 263.3899999999994,
+  "wavelength_nm": [
+    7700,
+    12300
+  ],
+  "dense_points": 20001,
+  "max_sampled_R": 0.008979306130762038,
+  "max_sampled_R_percent": 0.8979306130762038,
+  "wavelength_at_max_nm": 11369.19,
+  "mean_integral_R": 0.008010237207390424,
+  "R_at_endpoints": [
+    0.008867685166631853,
+    0.008803768297704946
+  ],
+  "bare_Ge_control_R": 0.36,
+  "claim": "reproduction of final public layer table, not of TFCalc's proprietary synthesis path or runtime",
+  "limitations": "dense-sample check only; rounded thickness table; constant lossless index assumptions; no measured process qualification"
+}
