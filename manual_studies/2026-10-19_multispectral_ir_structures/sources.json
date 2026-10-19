@@ -1,0 +1,1042 @@
+{
+  "schema_version": "1.0",
+  "verified_at_utc": "2026-10-19",
+  "language": "zh-CN",
+  "scope": "Multispectral infrared planar-coating structure research; literature and data-readiness review only.",
+  "copyright_handling": "Self-written summaries, small necessary factual data and links. No third-party full text, figures, screenshots, or PDFs are included.",
+  "evidence_legend": {
+    "primary_full_text": "Original paper or accepted manuscript actually read at author/institution/publisher.",
+    "author_or_publisher_mirror": "Original paper read in a mirror, identifying origin where available; mirror is not an institutional archive.",
+    "partial_tables": "Actual table content returned by publisher, without claiming full-text access.",
+    "publisher_abstract": "Only directly readable publisher abstract supports the claim.",
+    "indexed_abstract": "Search-indexed publisher abstract or snippet, not full text.",
+    "official_documentation": "Manufacturer/university/software-author documentation, with limited reuse scope.",
+    "metadata_record": "Bibliographic/archive record; no experimental-detail evidence."
+  },
+  "source_count": 29,
+  "all_numeric_reproduction_status": "not_performed",
+  "prior_repository_context": [
+    {
+      "path": "06_optical_coating_families/README.md",
+      "sha": "1ea6904df9d42b914c1d7e083b9c80db91a105bd",
+      "url": "https://github.com/ii33/coating-research-library/blob/main/06_optical_coating_families/README.md",
+      "role": "Existing T06 teaching atlas and measured-case navigation; preserved."
+    },
+    {
+      "path": "06_optical_coating_families/sources/summaries/verified_literature_cases.md",
+      "sha": "008251f7061249c059bedab51434db46574e8bb0",
+      "url": "https://github.com/ii33/coating-research-library/blob/main/06_optical_coating_families/sources/summaries/verified_literature_cases.md",
+      "role": "Prior Yu, dual-window AR, dichroic, protected Ag and PBS summaries; this package adds data availability and corrections."
+    },
+    {
+      "path": "07_thin_film_design_theory/README.md",
+      "sha": "d6c696272c64002c6d167deeae9c3d7bdedc8f56",
+      "url": "https://github.com/ii33/coating-research-library/blob/main/07_thin_film_design_theory/README.md",
+      "role": "Existing theoretical scope, not rederived here."
+    },
+    {
+      "path": "07_thin_film_design_theory/reports/07_gradients_rugates_and_needle_variations.md",
+      "sha": "c20b5feebf98b6bd76f4c10ea81f1676fe3089ec",
+      "url": "https://github.com/ii33/coating-research-library/blob/main/07_thin_film_design_theory/reports/07_gradients_rugates_and_needle_variations.md",
+      "role": "Existing distinction between gradients, discretization, rugate and needle; preserved."
+    },
+    {
+      "path": "manual_studies/2026-10-10_end_to_end_optical_simulation/README.md",
+      "sha": "25741d95a831be782406166173b6a2f7cebd2e81",
+      "url": "https://github.com/ii33/coating-research-library/blob/main/manual_studies/2026-10-10_end_to_end_optical_simulation/README.md",
+      "role": "Existing manual-study entry concerns simulation/appearance integration; this package does not reopen or implement it."
+    }
+  ],
+  "sources": [
+    {
+      "id": "buffer-ar-1992",
+      "title": "Antireflection coatings for both visible and far-infrared spectral regions",
+      "doi": "10.1364/AO.31.006150",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-31-28-6150",
+      "authors": [
+        "Li Li",
+        "J. A. Dobrowolski",
+        "J. D. Sankey",
+        "J. R. Wimperis"
+      ],
+      "year": 1992,
+      "source_type": "publisher_primary",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "publisher_abstract_and_partial_tables",
+      "locator": "Abstract; Table 1 Construction Parameters",
+      "verified_claims": [
+        "广隔可见/近红外与约10 μm AR；有一实验系统。"
+      ],
+      "data_available": [
+        "出版社返回HTML含Table 1，五组初始/最终构造的材料与物理厚度。"
+      ],
+      "data_gaps": [
+        "正文未取得，材料完整色散/吸收与实验细节不能由摘要重建；历史ThF4需另审。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "partial_publisher_parameters_read; whole_model_not_verified"
+    },
+    {
+      "id": "buffer-functions-1993",
+      "title": "Design of optical coatings for two widely separated spectral regions",
+      "doi": "10.1364/AO.32.002969",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-32-16-2969",
+      "authors": [
+        "Li Li",
+        "J. A. Dobrowolski"
+      ],
+      "year": 1993,
+      "source_type": "publisher_primary",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "publisher_abstract_and_partial_tables",
+      "locator": "Abstract; Tables 1–3",
+      "verified_claims": [
+        "buffer扩展到广隔两谱区多功能组合。"
+      ],
+      "data_available": [
+        "基本子膜系与匹配系统表；H/L为λ0/4光学厚度单位，非nm。"
+      ],
+      "data_gaps": [
+        "正文未取得；不能声称已重建25例完整组合与全部性能。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "partial_publisher_parameters_read; whole_model_not_verified"
+    },
+    {
+      "id": "buffer-multiple-1995",
+      "title": "Design of optical coatings for three or more separated spectral regions",
+      "doi": "10.1364/AO.34.002934",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-34-16-2934",
+      "authors": [
+        "J. A. Dobrowolski",
+        "L. Li"
+      ],
+      "year": 1995,
+      "source_type": "publisher_primary",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "publisher_abstract_only",
+      "locator": "Abstract",
+      "verified_claims": [
+        "展示三、四谱区buffer扩展并讨论限制。"
+      ],
+      "data_available": [],
+      "data_gaps": [
+        "无本轮可用完整方法正文、逐层数据或可直接导入样例。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "digital-equivalent-1985",
+      "title": "Coating design using very thin high- and low-index layers",
+      "doi": "10.1364/AO.24.000457",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-24-4-457",
+      "authors": [
+        "William H. Southwell"
+      ],
+      "year": 1985,
+      "source_type": "publisher_primary",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "publisher_abstract_only",
+      "locator": "Abstract",
+      "verified_claims": [
+        "高低n薄层的数字等效与flip-flop综合；并非rugate首创引文。"
+      ],
+      "data_available": [],
+      "data_gaps": [
+        "正文未取得；不据摘要承诺有限厚度、色散、斜入射任意精度的可制造替换。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "rugate-matching-1989",
+      "title": "Rugate filter sidelobe suppression using quintic and rugated quintic matching layers",
+      "doi": "10.1364/AO.28.002949",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-28-14-2949",
+      "authors": [
+        "W. H. Southwell",
+        "Randolph L. Hall"
+      ],
+      "year": 1989,
+      "source_type": "publisher_primary",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "publisher_abstract_only",
+      "locator": "Abstract",
+      "verified_claims": [
+        "正弦rugate与缓变平均n结合以控制旁瓣。"
+      ],
+      "data_available": [],
+      "data_gaps": [
+        "正文/精确剖面未取得，不能直接作制造输入。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "rugate-apodization-1989",
+      "title": "Using apodization functions to reduce sidelobes in rugate filters",
+      "doi": "10.1364/AO.28.005091",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-28-23-5091",
+      "authors": [
+        "William H. Southwell"
+      ],
+      "year": 1989,
+      "source_type": "publisher_primary",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "publisher_indexed_abstract; direct_fetch_timeout",
+      "locator": "Publisher indexed abstract; volume issue record",
+      "verified_claims": [
+        "渐消与渐变匹配用于抑制rugate旁瓣。"
+      ],
+      "data_available": [],
+      "data_gaps": [
+        "直接页面超时；未取得全文、具体剖面或实测数据。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "metal-dielectric-cube-2009",
+      "title": "Design and analysis of metal–dielectric nonpolarizing beam splitters in a glass cube",
+      "doi": "10.1364/AO.48.003385",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-48-18-3385",
+      "authors": [
+        "Jin Hui Shi",
+        "Chun Ying Guan",
+        "Zheng Ping Wang"
+      ],
+      "year": 2009,
+      "source_type": "publisher_primary",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "publisher_abstract_and_partial_tables",
+      "locator": "Abstract; Tables 1–3",
+      "verified_claims": [
+        "可见立方体理论设计，非IR实测。"
+      ],
+      "data_available": [
+        "Table 2为25层材料/物理nm厚度；Table 1为有限波长材料输入。"
+      ],
+      "data_gaps": [
+        "全文与完整材料模型未取得；方向/入射定义需正文复核后才精确复算。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "partial_publisher_parameters_read; whole_model_not_verified"
+    },
+    {
+      "id": "gemini-protected-silver-2006",
+      "title": "Protected-silver coatings for the 8-m Gemini telescope mirrors",
+      "doi": "10.1016/j.tsf.2005.07.295",
+      "url": "https://www.sciencedirect.com/science/article/pii/S004060900501165X",
+      "authors": [
+        "M. Boccas",
+        "T. Vucina",
+        "C. Araya",
+        "E. Vera",
+        "C. Ahhee"
+      ],
+      "year": 2006,
+      "source_type": "publisher_primary",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "publisher_article_preview_with_sections",
+      "locator": "Abstract; Introduction; disclosed recipe paragraph",
+      "verified_claims": [
+        "明确四层保护Ag处方、IR性能与耐久研究。"
+      ],
+      "data_available": [
+        "处方已在既有T06详细登记，本轮去重引用。"
+      ],
+      "data_gaps": [
+        "本轮不重复扩展其完整制造/寿命结论。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "openfilters-official",
+      "title": "OpenFilters — LaRFIS official software page",
+      "doi": null,
+      "url": "https://www.polymtl.ca/larfis/liens",
+      "authors": [],
+      "year": null,
+      "source_type": "university_official_software_documentation",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "official_documentation_read",
+      "locator": "OpenFilters section; Getting started; FAQ",
+      "verified_claims": [
+        "公开实现均匀/渐变、多带rugate及多种综合方法。"
+      ],
+      "data_available": [
+        "官方源代码下载入口、功能与旧运行环境说明。"
+      ],
+      "data_gaps": [
+        "未安装运行；官方旧环境不等于现项目兼容性或性能。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "tmm-author-code",
+      "title": "tmm: transfer-matrix method for optics of thin and thick multilayer films",
+      "doi": null,
+      "url": "https://github.com/sbyrnes321/tmm",
+      "authors": [],
+      "year": null,
+      "source_type": "author_public_scientific_software",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "author_readme_read",
+      "locator": "README; manual and method links",
+      "verified_claims": [
+        "平面薄厚层、吸收与相干/非相干前向计算。"
+      ],
+      "data_available": [
+        "源码、示例、测试、manual；MIT代码许可。"
+      ],
+      "data_gaps": [
+        "不是结构生成器；本轮未执行、未验证现项目结果。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "byrnes-multilayer-v5",
+      "title": "Multilayer optical calculations (arXiv:1603.02720v5)",
+      "doi": null,
+      "url": "https://arxiv.org/html/1603.02720v5",
+      "authors": [
+        "Steven J. Byrnes"
+      ],
+      "year": 2020,
+      "source_type": "author_methods_manuscript",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "fulltext_read_relevant_sections",
+      "locator": "§§1–6; Appendix A/D",
+      "verified_claims": [
+        "非磁、各向同性平面层的反射透射吸收及厚层相干边界。"
+      ],
+      "data_available": [
+        "推导及作者软件；版本号明确。"
+      ],
+      "data_gaps": [
+        "页面渲染日期与v5日期不同，以版本号定位；非本项目材料/样片验证。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "optilayer-evolution-official",
+      "title": "Gradual Evolution",
+      "doi": null,
+      "url": "https://optilayer.com/automatic-design-options/gradual-evolution/",
+      "authors": [],
+      "year": null,
+      "source_type": "manufacturer_official_method_documentation",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "official_documentation_read",
+      "locator": "Method description and termination criteria",
+      "verified_claims": [
+        "允许无用户初始膜系的综合；自动加厚再针插入。"
+      ],
+      "data_available": [
+        "流程说明、终止条件、方法论文入口。"
+      ],
+      "data_gaps": [
+        "商业功能介绍不证明现项目实现或全局最优。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "merck-zns-film",
+      "title": "Zinc Sulfide Patinal — Product Information (08/2019)",
+      "doi": null,
+      "url": "https://www.emdgroup.com/Products/PM/us/ZnS_tcm2080-us.pdf",
+      "authors": [],
+      "year": 2019,
+      "source_type": "manufacturer_thin_film_technical_data",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "full_official_pdf_read",
+      "locator": "pp1–2; optical table and evaporation notes",
+      "verified_claims": [
+        "ZnS为工艺相关薄膜；相对Ge/氟化物可切换H/L角色。"
+      ],
+      "data_available": [
+        "离散n表、应力类型、沉积条件。"
+      ],
+      "data_gaps": [
+        "无完整k谱和不确定度；不是任意设备/批次的损耗保证。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "merck-yf3-film",
+      "title": "Yttrium Fluoride Patinal — Product Information (08/2019)",
+      "doi": null,
+      "url": "https://www.emdgroup.com/Products/PM/us/108707_YF3_tcm2080_127463-us.pdf",
+      "authors": [],
+      "year": 2019,
+      "source_type": "manufacturer_thin_film_technical_data",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "full_official_pdf_read",
+      "locator": "pp1–2; n/k table, stress, deposition and water-band notes",
+      "verified_claims": [
+        "YF3表给非零k；水吸收和散射/硬度依赖工艺。"
+      ],
+      "data_available": [
+        "离散n/k表与工艺说明。"
+      ],
+      "data_gaps": [
+        "1 μm处k文本提取出现8.5E-E歧义，未使用该单元格；稀疏表不能解析水带。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "merck-ybf3-film",
+      "title": "Ytterbium Fluoride Patinal — Product Information (08/2019)",
+      "doi": null,
+      "url": "https://www.emdgroup.com/Products/PM/us/101601_YbF3_tcm2080_127462-us.pdf",
+      "authors": [],
+      "year": 2019,
+      "source_type": "manufacturer_thin_film_technical_data",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "full_official_pdf_read",
+      "locator": "pp1–2; optical table, thick-layer and water-band notes",
+      "verified_claims": [
+        "YbF3具有非零k、较低应力与工艺相关水吸收。"
+      ],
+      "data_available": [
+        "离散n/k表；厚层/黏附与保护建议。"
+      ],
+      "data_gaps": [
+        "典型工艺数据不等于论文样片常数或全谱无损保证。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "crystran-caf2",
+      "title": "Calcium Fluoride CaF2 — optical material data",
+      "doi": null,
+      "url": "https://www.crystran.com/optical-materials/calcium-fluoride-caf2/",
+      "authors": [],
+      "year": null,
+      "source_type": "manufacturer_bulk_material_data",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "official_page_read",
+      "locator": "Product Data; absorption coefficient",
+      "verified_claims": [
+        "10.6 μm吸收系数3.5 cm−1，基片厚度不可忽略。"
+      ],
+      "data_available": [
+        "n与吸收系数的离散点。"
+      ],
+      "data_gaps": [
+        "不是所有等级/温度/批次全谱复折射率。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "crystran-si",
+      "title": "Silicon Si — optical material data",
+      "doi": null,
+      "url": "https://www.crystran.com/optical-materials/silicon-si/",
+      "authors": [],
+      "year": null,
+      "source_type": "manufacturer_bulk_material_data",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "official_page_read",
+      "locator": "Product Data; References & Notes",
+      "verified_claims": [
+        "CZ含氧约9 μm带、FZ与掺杂/电阻率条件重要。"
+      ],
+      "data_available": [
+        "n离散表、材料工艺说明。"
+      ],
+      "data_gaps": [
+        "块材不是蒸发Si膜；无所有批次完整LWIR k。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "crystran-zns-ms",
+      "title": "Zinc Sulphide (Zinc Sulfide) Multispectral (ZnS) — optical material data",
+      "doi": null,
+      "url": "https://www.crystran.com/optical-materials/zinc-sulphide-zinc-sulfide-multispectral-zns/",
+      "authors": [],
+      "year": null,
+      "source_type": "manufacturer_bulk_material_data",
+      "accessed_utc": "2026-10-19T17:21:00Z",
+      "evidence_level": "official_page_read",
+      "locator": "Product Data; absorption coefficients",
+      "verified_claims": [
+        "多光谱级ZnS仍有波长相关体吸收。"
+      ],
+      "data_available": [
+        "n与吸收系数离散点；厂家标注的透射数据入口。"
+      ],
+      "data_gaps": [
+        "不替代具体样片厚度、散射或批次数据。"
+      ],
+      "redistribution": "Self-written summary and source links only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "ar-zhang-2019",
+      "title": "Six-spectral antireflection coating on zinc sulfide simultaneously effective for the visible, near-IR, and long wavelength IR regions",
+      "doi": "10.1016/j.surfcoat.2018.12.049",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0257897218313628",
+      "source_type": "publisher_indexed_abstract_and_preview",
+      "accessed_utc": "2026-10-19T17:22:06Z",
+      "evidence_level": "C: indexed abstract/section snippets only; direct page and API retrieval failed",
+      "authors": [
+        "Yinhua Zhang",
+        "Shengming Xiong",
+        "Wei Huang",
+        "Kepeng Zhang",
+        "Xiaoxi Tian"
+      ],
+      "year": 2019,
+      "journal": "Surface and Coatings Technology",
+      "volume": "359",
+      "pages": "1-5",
+      "metadata_source": "https://api.crossref.org/works/10.1016/j.surfcoat.2018.12.049",
+      "verified_claims": [
+        "六谱线候选，证据仅出版商索引摘要/预览；见research.md §5.1。"
+      ],
+      "data_available": {
+        "layer_count": 29,
+        "materials": [
+          "ZnS",
+          "YbF3"
+        ],
+        "substrate": "CVD/multispectral ZnS",
+        "max_layer_thickness_um_approx": 0.6,
+        "spectral_points_um": [
+          0.532,
+          1.064,
+          2.1,
+          3.9,
+          4.8,
+          9.5
+        ],
+        "transmission_percent": [
+          94,
+          97,
+          98,
+          98,
+          98,
+          98
+        ],
+        "transmission_relation": [
+          "reported",
+          "reported",
+          "greater_than",
+          "greater_than",
+          "greater_than",
+          "greater_than"
+        ],
+        "layer_thickness_table": "not_obtained",
+        "numeric_nk": "not_obtained",
+        "supplementary_data": "not_obtained"
+      },
+      "data_gaps": [
+        "未直接取得全文；出版商搜索索引不能作全文证据",
+        "最终透射数字单/双面、入射角及偏振条件未核",
+        "29层厚度和明确端点顺序未取得",
+        "n/k系数、原始谱线、补充数据未取得",
+        "环境稳定性标准编号/条件未核"
+      ],
+      "reproduction_status": "candidate_only_not_exactly_reproducible",
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "ar-duris-2021",
+      "title": "Fabrication of Ge-ZnS multilayered optical filters for mid-infrared applications",
+      "doi": "10.1016/j.tsf.2020.138488",
+      "url": "https://hal.science/hal-03493352/document",
+      "source_type": "institutional_repository_accepted_manuscript",
+      "accessed_utc": "2026-10-19T17:22:06Z",
+      "evidence_level": "A: 26-page accepted manuscript read; Tables 1/2 and figures inspected",
+      "authors": [
+        "Maxime Duris",
+        "Damien Deubel",
+        "Loïc Bodiou",
+        "Claude Vaudry",
+        "Jean-Claude Keromnes",
+        "Joël Charrier"
+      ],
+      "year": 2021,
+      "published_online": "2020-12-17",
+      "published_issue": "2021-02-01",
+      "journal": "Thin Solid Films",
+      "volume": "719",
+      "article_number": "138488",
+      "repository_id": "hal-03493352",
+      "verified_claims": [
+        "工艺n/k可复用但最终膜系层表不完整；见research.md §5.2。"
+      ],
+      "data_available": {
+        "substrate": {
+          "material": "Si",
+          "thickness_um": 625,
+          "resistivity_ohm_cm": "1-10",
+          "polish": "double-side"
+        },
+        "ar": {
+          "main_layers_per_side": 3,
+          "coating_sides": 2,
+          "central_wavelength_um": 8,
+          "transmission_target_percent": ">90",
+          "bandwidth_target_um": ">2",
+          "alternating_materials": [
+            "Ge",
+            "ZnS"
+          ],
+          "exact_end_materials": "not_numerically_tabulated"
+        },
+        "nk_model": {
+          "lambda_input_unit": "µm",
+          "n_formula": "n=A+B/lambda^2+C/lambda^4",
+          "k_formula": "k=D*exp(E/lambda)",
+          "Ge": {
+            "A": 4.1682,
+            "B": 0.4882,
+            "C": 0.9,
+            "D": 0.00017,
+            "E": 6.5
+          },
+          "ZnS": {
+            "A": 2.1741,
+            "B": 0.3501,
+            "C": 0.0001,
+            "D": 0.00014,
+            "E": 4.2
+          },
+          "fit_basis": "2.5 µm ion-assisted e-beam films; spectra about 1.5-9 µm",
+          "longwave_scope": "extrapolated beyond about 8-9 µm",
+          "table_unit_caution": "Table prints B/C as µm^-2/µm^-4; dimensional coefficients in the stated denominator formula correspond to µm^2/µm^4."
+        },
+        "layer_thickness_table": "absent_in_read_accepted_manuscript; thicknesses derived by authors from SEM",
+        "layer_thickness_range_nm": [
+          90,
+          1700
+        ],
+        "mirror_quarter_wave_design_nm": {
+          "Ge": 635,
+          "ZnS": 1256
+        },
+        "supplementary_data": "no_independent_link_found",
+        "raw_spectral_csv": "not_found"
+      },
+      "data_gaps": [
+        "3/9/29层逐层物理厚度数字表未给出，不能从SEM图自动视为精确数值",
+        "Si n/k完整采样及独立原始谱线CSV未取得",
+        ">8–9 µm工艺薄膜nk是外推",
+        "正文近似称>3 µm时k<1e-3，但其Ge拟合在3 µm约1.48e-3；边界不严格一致"
+      ],
+      "reproduction_status": "nk_model_reusable_exact_stack_recipe_incomplete",
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "numeric_film_model_available_with_fit_domain_and_extrapolation_caution; stack_incomplete"
+    },
+    {
+      "id": "ar-lemarquis-1998",
+      "title": "Design and manufacture of low-absorption ZnS–YF3 antireflection coatings in the 3.5–16-µm spectral range",
+      "doi": "10.1364/AO.37.004239",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-37-19-4239",
+      "source_type": "publisher_abstract",
+      "accessed_utc": "2026-10-19T17:22:06Z",
+      "evidence_level": "B: publisher page directly opened; full text, figures and equations subscription restricted",
+      "authors": [
+        "Frederic Lemarquis",
+        "Gerard Marchand",
+        "Claude Amra"
+      ],
+      "year": 1998,
+      "published": "1998-07-01",
+      "journal": "Applied Optics",
+      "volume": "37",
+      "issue": "19",
+      "pages": "4239-4244",
+      "verified_claims": [
+        "ZnSe基片上ZnS/YF3宽带AR，当前摘要级；见research.md §5.3。"
+      ],
+      "data_available": {
+        "materials": [
+          "ZnS",
+          "YF3"
+        ],
+        "substrate": "ZnSe",
+        "spectral_range_um": [
+          3.5,
+          16
+        ],
+        "deposition": "electron-beam deposition",
+        "performance_numbers": "none_in_accessible_abstract",
+        "coating_sides": "not_verified",
+        "layer_thickness_table": "not_obtained",
+        "numeric_nk": "not_obtained",
+        "supplementary_data": "not_obtained"
+      },
+      "data_gaps": [
+        "未取得全文、层数和层厚表",
+        "单/双面、尺寸和工艺条件未核",
+        "数值R/T、平均值、n/k公式或表格未核",
+        "无法依据摘要判断论文是否有这些数据；不能写成原文没有"
+      ],
+      "reproduction_status": "candidate_only_requires_lawful_full_text",
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "ar-yu-2024",
+      "title": "Ultrathin Ge-YF3 antireflective coating with 0.5 % reflectivity on high-index substrate for long-wavelength infrared cameras",
+      "doi": "10.1515/nanoph-2024-0360",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1515/nanoph-2024-0360",
+      "source_type": "publisher_open_full_text_and_original_figures",
+      "accessed_utc": "2026-10-19T17:22:06Z",
+      "evidence_level": "A: full article, Fig.3/5 originals and supplementary PDF read",
+      "authors": [
+        "Jae-Seon Yu",
+        "Serang Jung",
+        "Jin-Woo Cho",
+        "Geon-Tae Park",
+        "Mikhail Kats",
+        "Sun-Kyung Kim",
+        "Eungkyu Lee"
+      ],
+      "year": 2024,
+      "published_online": "2024-08-27",
+      "journal": "Nanophotonics",
+      "volume": "13",
+      "issue": "21",
+      "pages": "4067-4078",
+      "license": "CC BY 4.0",
+      "pmcid": "PMC11501071",
+      "alternative_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11501071/",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11501071/fullTextXML"
+      ],
+      "verified_claims": [
+        "设计、双面实物及图示主层须分开；见research.md §5.5。"
+      ],
+      "data_available": {
+        "layer_direction": "air_to_Si_for_each_face",
+        "main_material_order": [
+          "Ge",
+          "YF3",
+          "Ge",
+          "YF3",
+          "Ge"
+        ],
+        "design_without_adhesive_main_nm": [
+          80,
+          1080,
+          348,
+          205,
+          680
+        ],
+        "design_without_adhesive_main_total_nm": 2393,
+        "reoptimized_with_adhesive_main_nm": [
+          83,
+          980,
+          320,
+          140,
+          879
+        ],
+        "reoptimized_with_adhesive_main_total_nm": 2402,
+        "tem_top_main_nm_air_to_Si": [
+          103,
+          865,
+          362,
+          125,
+          1095
+        ],
+        "tem_bottom_main_nm_air_to_Si": [
+          91,
+          921,
+          323,
+          107,
+          977
+        ],
+        "Y2O3": {
+          "nominal_thickness_nm": 10,
+          "figure_interpretation": "cyan layers visible at four Ge/YF3 internal interfaces and near Si contact",
+          "count_and_cap_status": "no formal indexed layer table; five-interlayer implementation is a figure-based hypothesis requiring confirmation; outside-edge line ambiguous",
+          "tem_individual_thicknesses": "not_tabulated"
+        },
+        "performance": {
+          "band_um": [
+            8,
+            13
+          ],
+          "design_without_adhesive_avg_R_percent": 0.54,
+          "reoptimized_with_adhesive_avg_R_percent": 0.62,
+          "double_sided_theory_avg_R_percent": 1.09,
+          "double_sided_experiment_avg_R_percent": 3.31,
+          "experiment_incidence_deg": 0,
+          "low_reflection_angle_approx_deg": 50
+        },
+        "substrate": {
+          "material": "Si",
+          "thickness_um": 500,
+          "thickness_tolerance_um": 30,
+          "model_adjustment_k_approx": 0.0001
+        },
+        "numeric_nk": "curves_only; measured_by_ellipsometry_5_to_24_um",
+        "supplementary_pdf": "available_read_method_and_figures_S1_to_S5",
+        "raw_csv": "not_publicly_provided",
+        "code": "not_provided",
+        "dataset_availability": "corresponding_author_upon_reasonable_request"
+      },
+      "data_gaps": [
+        "未有Ge/YF3/Y2O3/Si数值nk表、原始CSV和响应采样",
+        "Y2O3夹层精确位置、计数及每层实测厚度没有正式文字表",
+        "正文80 nm空气侧Ge与相量段85 nm存在不一致；原设计80、含黏附83不能互换",
+        "FoM正文0.0046、结论0.0045轻微不一致",
+        "TEM读数无逐层不确定度，不能据整数显示声称高精度"
+      ],
+      "reproduction_status": "main_layer_recipes_available_exact_nk_and_adhesion_recipe_still_incomplete",
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "main_layer_figure_labels_available; adhesion_and_numeric_nk_incomplete"
+    },
+    {
+      "id": "ar-yu-2024-supplement",
+      "title": "Supporting Information: Ultrathin Ge-YF3 Antireflective Coating with 0.5% Reflectivity on High-Index Substrate for Long-wavelength Infrared Cameras",
+      "doi": "10.1515/nanoph-2024-0360",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11501071/supplementaryFiles",
+      "source_type": "official_open_repository_supplementary_media_package",
+      "accessed_utc": "2026-10-19T17:22:06Z",
+      "evidence_level": "A: supplementary PDF read, 4 pages; original figures inspected",
+      "verified_claims": [
+        "补充方法和曲线可读，无机器可读n/k数据。"
+      ],
+      "data_available": {
+        "pdf_filename": "j_nanoph-2024-0360_suppl_001.pdf",
+        "pdf_size_bytes": 635567,
+        "pdf_pages": 4,
+        "numeric_nk_table": false,
+        "raw_spectral_csv": false,
+        "complete_additional_layer_table": false,
+        "optimization_method_details": true,
+        "original_figures_in_package": true
+      },
+      "data_gaps": [
+        "资源包没有原始CSV/代码/nk数值表",
+        "S1为曲线而非可直接导入的数值数据"
+      ],
+      "authors": [],
+      "year": null,
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "slstr-2013",
+      "title": "Cooled infrared filters and dichroics for the sea and land surface temperature radiometer",
+      "doi": "10.1364/AO.52.002125",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-52-10-2125",
+      "source_type": "出版社公开表格；作者上传原论文全文",
+      "accessed_utc": "2026-10-19T17:18:43Z",
+      "evidence_level": "A1（表）；A2（作者原文镜像）",
+      "verified_claims": [
+        "D7为17层Ge/ZnS长波通和背面9层双带AR；D8另为三腔带通和独立阻断。",
+        "80 K与角度、锥角条件必须同时保留；元件峰值T和系统带内平均T不同。"
+      ],
+      "data_available": [
+        "原文§4有组件拓扑、材料、层数；Tables 1–5有规格、元件测量和系统性能。"
+      ],
+      "data_gaps": [
+        "无全部精确逐层厚度、80 K完整n/k或原始光谱数组；深阻断部分为计算。"
+      ],
+      "authors": [
+        "Gary Hawkins",
+        "Richard Sherwood",
+        "Karim Djotni",
+        "Peter Coppo",
+        "Holger Höhnemann",
+        "Fabio Belli"
+      ],
+      "year": 2013,
+      "fulltext_url": "https://www.researchgate.net/publication/236097150_Cooled_infrared_filters_and_dichroics_for_the_sea_and_land_surface_temperature_radiometer",
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "slstr-centaur-record",
+      "title": "Cooled infrared filters and dichroics for the sea and land surface temperature radiometer (SLSTR) — CentAUR record",
+      "doi": "10.1364/AO.52.002125",
+      "url": "https://centaur.reading.ac.uk/31707/",
+      "source_type": "大学机构书目记录",
+      "accessed_utc": "2026-10-19T17:18:43Z",
+      "evidence_level": "B",
+      "verified_claims": [
+        "页面检索索引明确显示未存档全文；不能作为已获取的开放全文证据。"
+      ],
+      "data_available": [
+        "书目信息、摘要、DOI。"
+      ],
+      "data_gaps": [
+        "本记录没有论文全文。"
+      ],
+      "authors": [],
+      "year": null,
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "lwir-dispersive-2017",
+      "title": "Dispersive mirror for the mid-infrared spectral range of 9–11.5 μm",
+      "doi": "10.1364/AO.56.000C71",
+      "url": "https://attoworld.de/fileadmin/user_upload/tx_attoworld/publications/paper_ApplOpt_Y2016_M11_D18_V56_RC71.pdf",
+      "source_type": "作者机构公开原论文",
+      "accessed_utc": "2026-10-19T17:18:43Z",
+      "evidence_level": "A1",
+      "verified_claims": [
+        "Ge/ZnS色散镜有制造实测，存在谱移与损耗；性能和限制详见核查稿§2。"
+      ],
+      "data_available": [
+        "Table 1薄膜Sellmeier；Fig.1层厚图；Figs.2、4的R/T/GD/GDD曲线。"
+      ],
+      "data_gaps": [
+        "无36层精确厚度表和原始测量数组；无完整k(λ)，无已验证的低温/全角偏振性能。"
+      ],
+      "authors": [
+        "Florian Habel",
+        "Vladimir Pervak"
+      ],
+      "year": 2017,
+      "online_publication": "2016-11-18",
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "thelen-cwdm-2001",
+      "title": "Design of a coarse WDM bandpass filter using the Thelen bandpass design method",
+      "doi": "10.1364/OE.9.000652",
+      "url": "https://www.researchgate.net/publication/24410204_Design_of_a_coarse_WDM_bandpass_filter_using_the_Thelen_bandpass_design_method",
+      "source_type": "平台标注来自Optics Express的原论文全文镜像（检索索引可读）",
+      "accessed_utc": "2026-10-19T17:18:43Z",
+      "evidence_level": "A2；摘要可与PubMed交叉验证",
+      "verified_claims": [
+        "全文§6给出可重建的21腔482层理想结构；不是LWIR制造实测。"
+      ],
+      "data_available": [
+        "§6完整归一化层序列、参考波长和折射率；§5讨论反射相位与带宽。"
+      ],
+      "data_gaps": [
+        "无IR吸收、温度和宽角验证；出版社直连本次返回等待页；相邻同材料层合并约定需说明。"
+      ],
+      "authors": [
+        "Philip Baumeister"
+      ],
+      "year": 2001,
+      "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/19424303/",
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "complete_idealized_prescription_in_source; original_expression_not_transcribed_here"
+    },
+    {
+      "id": "chirped-original-1994",
+      "title": "Chirped multilayer coatings for broadband dispersion control in femtosecond lasers",
+      "doi": "10.1364/OL.19.000201",
+      "url": "https://szipocs.com/publications/Chirped_multilayer_coatings_for_broadband_dispersion_control_in_femtosecond_lasers.pdf",
+      "source_type": "作者网站公开原论文",
+      "accessed_utc": "2026-10-19T17:18:43Z",
+      "evidence_level": "A1（作者原文）",
+      "verified_claims": [
+        "优化层厚以同时控制复反射系数幅度和相位；Ref.20明确进一步设计/制造细节需向作者索取。"
+      ],
+      "data_available": [
+        "42层TiO2/SiO2的剖面、GD曲线、标称GDD与波纹；测量为相对GD。"
+      ],
+      "data_gaps": [
+        "没有精确逐层表；不能由相对GD确定绝对延迟；没有LWIR实现验证。"
+      ],
+      "authors": [
+        "Robert Szipöcs",
+        "Kárpát Ferencz",
+        "Christian Spielmann",
+        "Ferenc Krausz"
+      ],
+      "year": 1994,
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+    },
+    {
+      "id": "double-chirped-original-1997",
+      "title": "Design and fabrication of double-chirped mirrors",
+      "doi": "10.1364/OL.22.000831",
+      "url": "https://ethz.ch/content/dam/ethz/special-interest/phys/quantum-electronics/ultrafast-laser-physics-dam/research/Overview2005/69.pdf",
+      "source_type": "ETH机构公开原论文",
+      "accessed_utc": "2026-10-19T17:18:43Z",
+      "evidence_level": "A1",
+      "verified_claims": [
+        "双啁啾独立调Bragg波长与高折射率层厚/耦合；入口匹配仍重要。"
+      ],
+      "data_available": [
+        "公式(1)–(4)、Fig.2解析构造和参数、最终镜设计/测量曲线。"
+      ],
+      "data_gaps": [
+        "最终梯度优化和AR优化后的精确逐层表未给；近红外整机脉冲结果不等于LWIR单镜保证。"
+      ],
+      "authors": [
+        "F. X. Kärtner",
+        "N. Matuschek",
+        "T. Schibli",
+        "U. Keller",
+        "H. A. Haus",
+        "C. Heine",
+        "R. Morf",
+        "V. Scheuer",
+        "M. Tilsch",
+        "T. Tschudi"
+      ],
+      "year": 1997,
+      "locator": "",
+      "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
+      "reproduction_performed_in_this_package": false,
+      "reproduction_readiness": "analytic_example_reconstructable; final_optimized_mirror_incomplete"
+    }
+  ]
+}

@@ -1,0 +1,2606 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41"
+  },
+  "configuration": {
+    "materials": "SYNTHETIC constant n,k; not measured IR data",
+    "incident_n": 1.0,
+    "substrate_n": 3.42,
+    "layer_n_from_air": [
+      1.45,
+      2.35,
+      1.45,
+      2.35,
+      1.45,
+      2.35
+    ],
+    "all_k": 0,
+    "incidence_degrees": 0,
+    "substrate": "semi-infinite; back surface excluded",
+    "thickness_bounds_um": [
+      0.005,
+      2.5
+    ],
+    "target_max_R": 0.01,
+    "windows_um": {
+      "single_ar_3_5": [
+        [
+          3.0,
+          5.0
+        ]
+      ],
+      "dual_window_ar_3_5_8_12": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ]
+    },
+    "train_points_per_window": 81,
+    "independent_validation_points_per_window": 4097,
+    "audit_points_per_window": 16385,
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "max_actual_stack_evaluations_per_run": 6000,
+    "de_population": 48,
+    "hybrid_de_budget": 4800,
+    "objective": "equal-window mean(max(R/0.01-1,0)^4) + 1e-4*equal-window mean((R/0.01)^2)",
+    "budget_note": "Actual calls include finite-difference Jacobian calls. All methods share a 6000-call ceiling; local convergence can stop sooner. DE+local uses 4800 DE plus at most 1200 local calls. All validation excluded from the objective-call budget. Final validation and plots excluded from timing; the hybrid pre-local 4097-point diagnostic is included in recorded timing.",
+    "validation_grid_note": "Validation grids are fixed independently of optimization, not disjoint holdouts: each 81/4097 grid pair shares 17 wavelengths per window, and the 4097-point grid is nested in the 16385-point grid. See independent_review_audit.json for a disjoint-interior midpoint cross-check."
+  },
+  "physics_validation": {
+    "bare_fresnel_R": 0.29976863700579426,
+    "fresnel_max_abs_error": 0.0,
+    "ideal_single_quarterwave_R_at_4um": 3.7957271254274415e-32,
+    "ideal_single_quarterwave_T_at_4um": 1.0000000000000002,
+    "random_lossless_energy_max_abs_error_100_stacks": 1.5543122344752192e-15,
+    "matrix_vs_independent_recursion_R_max_abs_error": 1.887379141862766e-15,
+    "zero_thickness_reduces_to_fresnel_error": 0.0,
+    "matched_media_max_R": 3.9451575331392524e-32,
+    "matched_media_max_T_error": 8.881784197001252e-16,
+    "random_passive_absorption_min": 0.0022503978039607464,
+    "random_passive_absorption_max": 0.9989611831443065,
+    "scope": "normal incidence only; semi-infinite real exterior media; random tests are sanity checks, not full software certification",
+    "all_checks_passed": true
+  },
+  "classical_baselines": [
+    {
+      "case": "single_ar_3_5",
+      "template": "pair_short_qw",
+      "thickness_um": [
+        0.6677557493461064,
+        0.4120195049156826,
+        0.005,
+        0.005,
+        0.005,
+        0.005
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.018358191681431827,
+          "min_T": 0.9816418083185675,
+          "mean_R_sampled": 0.010865661547315518,
+          "worst_R_wavelength_um": 3.98193359375,
+          "worst_violation_absolute": 0.008358191681431827,
+          "fraction_grid_points_meeting_target": 0.43686298443698507,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ]
+    },
+    {
+      "case": "single_ar_3_5",
+      "template": "pair_long_qw",
+      "thickness_um": [
+        0.6677557493461064,
+        0.4120195049156826,
+        0.005,
+        0.005,
+        0.005,
+        0.005
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.018358191681431827,
+          "min_T": 0.9816418083185675,
+          "mean_R_sampled": 0.010865661547315518,
+          "worst_R_wavelength_um": 3.98193359375,
+          "worst_violation_absolute": 0.008358191681431827,
+          "fraction_grid_points_meeting_target": 0.43686298443698507,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ]
+    },
+    {
+      "case": "single_ar_3_5",
+      "template": "pair_geomean_qw",
+      "thickness_um": [
+        0.6677557493461064,
+        0.4120195049156826,
+        0.005,
+        0.005,
+        0.005,
+        0.005
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.018358191681431827,
+          "min_T": 0.9816418083185675,
+          "mean_R_sampled": 0.010865661547315518,
+          "worst_R_wavelength_um": 3.98193359375,
+          "worst_violation_absolute": 0.008358191681431827,
+          "fraction_grid_points_meeting_target": 0.43686298443698507,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ]
+    },
+    {
+      "case": "single_ar_3_5",
+      "template": "alternating_qw",
+      "thickness_um": [
+        0.6677557493461064,
+        0.4120195049156826,
+        0.6677557493461064,
+        0.4120195049156826,
+        0.6677557493461064,
+        0.4120195049156826
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.5311139599374466,
+          "min_T": 0.46888604006255374,
+          "mean_R_sampled": 0.502698138343779,
+          "worst_R_wavelength_um": 3.23046875,
+          "worst_violation_absolute": 0.5211139599374466,
+          "fraction_grid_points_meeting_target": 0.0,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ]
+    },
+    {
+      "case": "single_ar_3_5",
+      "template": "chirped_qw",
+      "thickness_um": [
+        0.6677557493461064,
+        0.4120195049156827,
+        0.6677557493461065,
+        0.4120195049156827,
+        0.6677557493461065,
+        0.4120195049156826
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.5311139599374459,
+          "min_T": 0.46888604006255385,
+          "mean_R_sampled": 0.5026981383437791,
+          "worst_R_wavelength_um": 3.23046875,
+          "worst_violation_absolute": 0.5211139599374459,
+          "fraction_grid_points_meeting_target": 0.0,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ]
+    },
+    {
+      "case": "single_ar_3_5",
+      "template": "pair_plus_halfwave",
+      "thickness_um": [
+        0.6677557493461064,
+        0.4120195049156826,
+        1.3355114986922128,
+        0.8240390098313652,
+        0.005,
+        0.005
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.3428879346965356,
+          "min_T": 0.6571120653034643,
+          "mean_R_sampled": 0.1474046467219271,
+          "worst_R_wavelength_um": 3.0,
+          "worst_violation_absolute": 0.3328879346965356,
+          "fraction_grid_points_meeting_target": 0.0,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ]
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "template": "pair_short_qw",
+      "thickness_um": [
+        0.6677557493461064,
+        0.4120195049156826,
+        0.005,
+        0.005,
+        0.005,
+        0.005
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.018358191681431827,
+          "min_T": 0.9816418083185675,
+          "mean_R_sampled": 0.010865661547315518,
+          "worst_R_wavelength_um": 3.98193359375,
+          "worst_violation_absolute": 0.008358191681431827,
+          "fraction_grid_points_meeting_target": 0.43686298443698507,
+          "max_energy_error": 1.5543122344752192e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.17355503948245618,
+          "min_T": 0.826444960517544,
+          "mean_R_sampled": 0.12493367410906746,
+          "worst_R_wavelength_um": 12.0,
+          "worst_violation_absolute": 0.16355503948245617,
+          "fraction_grid_points_meeting_target": 0.0,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ]
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "template": "pair_long_qw",
+      "thickness_um": [
+        1.6893032708849502,
+        1.042336060758799,
+        0.005,
+        0.005,
+        0.005,
+        0.005
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.3000949300706593,
+          "min_T": 0.6999050699293405,
+          "mean_R_sampled": 0.12150699843738427,
+          "worst_R_wavelength_um": 4.958740234375,
+          "worst_violation_absolute": 0.2900949300706593,
+          "fraction_grid_points_meeting_target": 0.2244736039060116,
+          "max_energy_error": 1.4432899320127035e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.017400735351546938,
+          "min_T": 0.9825992646484529,
+          "mean_R_sampled": 0.011867915257205177,
+          "worst_R_wavelength_um": 9.9130859375,
+          "worst_violation_absolute": 0.007400735351546938,
+          "fraction_grid_points_meeting_target": 0.34147085749160816,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ]
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "template": "pair_geomean_qw",
+      "thickness_um": [
+        1.0620932028417323,
+        0.6553341038810687,
+        0.005,
+        0.005,
+        0.005,
+        0.005
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.30057920187042236,
+          "min_T": 0.6994207981295778,
+          "mean_R_sampled": 0.1313803854950742,
+          "worst_R_wavelength_um": 3.1395263671875,
+          "worst_violation_absolute": 0.29057920187042235,
+          "fraction_grid_points_meeting_target": 0.19975587427525177,
+          "max_energy_error": 1.3322676295501878e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.05111347564827001,
+          "min_T": 0.9488865243517298,
+          "mean_R_sampled": 0.016498490626419202,
+          "worst_R_wavelength_um": 12.0,
+          "worst_violation_absolute": 0.04111347564827001,
+          "fraction_grid_points_meeting_target": 0.47726579188281965,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ]
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "template": "alternating_qw",
+      "thickness_um": [
+        1.0620932028417323,
+        0.6553341038810687,
+        1.0620932028417323,
+        0.6553341038810687,
+        1.0620932028417323,
+        0.6553341038810687
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.5246918775273889,
+          "min_T": 0.4753081224726109,
+          "mean_R_sampled": 0.23346394523554495,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.5146918775273889,
+          "fraction_grid_points_meeting_target": 0.07647238327738785,
+          "max_energy_error": 1.5543122344752192e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.5254968412731973,
+          "min_T": 0.47450315872680265,
+          "mean_R_sampled": 0.23876793462002294,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.5154968412731973,
+          "fraction_grid_points_meeting_target": 0.1719255416539518,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ]
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "template": "chirped_qw",
+      "thickness_um": [
+        0.6677557493461064,
+        0.4960617868822704,
+        0.9679515748598371,
+        0.7190709901197772,
+        1.4031032337664169,
+        1.042336060758799
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.2796023057127936,
+          "min_T": 0.7203976942872061,
+          "mean_R_sampled": 0.1356775838405557,
+          "worst_R_wavelength_um": 4.2154541015625,
+          "worst_violation_absolute": 0.2696023057127936,
+          "fraction_grid_points_meeting_target": 0.055538602380225816,
+          "max_energy_error": 1.4432899320127035e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.43304067981158223,
+          "min_T": 0.5669593201884179,
+          "mean_R_sampled": 0.13082513700655765,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.4230406798115822,
+          "fraction_grid_points_meeting_target": 0.22783033262129998,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ]
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "template": "pair_plus_halfwave",
+      "thickness_um": [
+        1.0620932028417323,
+        0.6553341038810687,
+        2.1241864056834645,
+        1.3106682077621374,
+        0.005,
+        0.005
+      ],
+      "dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.34896023579178553,
+          "min_T": 0.6510397642082144,
+          "mean_R_sampled": 0.2517288656359122,
+          "worst_R_wavelength_um": 4.7254638671875,
+          "worst_violation_absolute": 0.3389602357917855,
+          "fraction_grid_points_meeting_target": 0.028501678364357644,
+          "max_energy_error": 1.3322676295501878e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.36296344125705543,
+          "min_T": 0.6370365587429445,
+          "mean_R_sampled": 0.3104217159832813,
+          "worst_R_wavelength_um": 8.9306640625,
+          "worst_violation_absolute": 0.3529634412570554,
+          "fraction_grid_points_meeting_target": 0.0,
+          "max_energy_error": 1.1102230246251565e-15
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "case": "single_ar_3_5",
+      "method": "classic_local",
+      "seed": 11,
+      "actual_stack_evaluations_including_fd": 5355,
+      "training_spectral_points_per_evaluation": 81,
+      "actual_wavelength_layer_updates": 2602530,
+      "optimization_wall_seconds": 1.072235586005263,
+      "thickness_um_from_air_to_substrate": [
+        0.8176232419346814,
+        0.1447832505170419,
+        1.466761164006785,
+        0.9045546847716638,
+        0.23604948431244252,
+        0.5041633506265693
+      ],
+      "total_thickness_um": 4.073935176169185,
+      "training_objective": 1.5421793456222174e-05,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.007974522640347873,
+          "min_T": 0.9920254773596517,
+          "mean_R_sampled": 0.003155150678768673,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 7.771561172376096e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.007974522640347873,
+          "min_T": 0.9920254773596517,
+          "mean_R_sampled": 0.003088010166197073,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.007974522640347873,
+          "min_T": 0.9920254773596517,
+          "mean_R_sampled": 0.00308715391575387,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.6653345369377348e-15
+        }
+      ],
+      "solver_details": {
+        "local_stages": [
+          {
+            "template": "pair_short_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_long_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_geomean_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "alternating_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "chirped_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_plus_halfwave",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 61,
+            "actual_calls": 355
+          }
+        ]
+      },
+      "all_windows_pass_dense": true
+    },
+    {
+      "case": "single_ar_3_5",
+      "method": "classic_de",
+      "seed": 11,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 81,
+      "actual_wavelength_layer_updates": 2916000,
+      "optimization_wall_seconds": 1.0172086800157558,
+      "thickness_um_from_air_to_substrate": [
+        0.7081602179646587,
+        0.4120195049156826,
+        0.0050000000000001155,
+        0.0050000000000001155,
+        0.0050000000000001155,
+        0.0050000000000001155
+      ],
+      "total_thickness_um": 1.1401797228803416,
+      "training_objective": 0.06643421784505668,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.01752913192635275,
+          "min_T": 0.9824708680736469,
+          "mean_R_sampled": 0.010341927920803531,
+          "worst_R_wavelength_um": 4.1,
+          "worst_violation_absolute": 0.007529131926352751,
+          "fraction_grid_points_meeting_target": 0.4444444444444444,
+          "max_energy_error": 1.2212453270876722e-15
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.017530678875344544,
+          "min_T": 0.9824693211246552,
+          "mean_R_sampled": 0.010368307942142531,
+          "worst_R_wavelength_um": 4.107421875,
+          "worst_violation_absolute": 0.007530678875344544,
+          "fraction_grid_points_meeting_target": 0.44813278008298757,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.01753068034259744,
+          "min_T": 0.9824693196574025,
+          "mean_R_sampled": 0.010368741150731959,
+          "worst_R_wavelength_um": 4.107177734375,
+          "worst_violation_absolute": 0.00753068034259744,
+          "fraction_grid_points_meeting_target": 0.44821483063777845,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 6000,
+          "generations": 124
+        }
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "single_ar_3_5",
+      "method": "de_local",
+      "seed": 11,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 81,
+      "actual_wavelength_layer_updates": 2916000,
+      "optimization_wall_seconds": 1.001276486000279,
+      "thickness_um_from_air_to_substrate": [
+        0.6349070272860171,
+        0.36576045451257755,
+        0.005000000000016182,
+        0.00500000000376846,
+        0.005000000000054819,
+        0.005000000000238129
+      ],
+      "total_thickness_um": 1.0206674818026722,
+      "training_objective": 0.06221049571290882,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.017608537417831943,
+          "min_T": 0.9823914625821689,
+          "mean_R_sampled": 0.00936442996202093,
+          "worst_R_wavelength_um": 3.675,
+          "worst_violation_absolute": 0.007608537417831943,
+          "fraction_grid_points_meeting_target": 0.5061728395061729,
+          "max_energy_error": 1.1102230246251565e-15
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.017608690478421594,
+          "min_T": 0.9823913095215784,
+          "mean_R_sampled": 0.009470549840403162,
+          "worst_R_wavelength_um": 3.67724609375,
+          "worst_violation_absolute": 0.0076086904784215936,
+          "fraction_grid_points_meeting_target": 0.5067122284598486,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.01760869207021316,
+          "min_T": 0.982391307929787,
+          "mean_R_sampled": 0.009472144833371556,
+          "worst_R_wavelength_um": 3.677001953125,
+          "worst_violation_absolute": 0.00760869207021316,
+          "fraction_grid_points_meeting_target": 0.5068050045773573,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 4800,
+          "generations": 99
+        },
+        "de_best_loss_before_local": 0.06643421784505668,
+        "de_actual_calls": 4800,
+        "de_before_local_dense_metrics": [
+          {
+            "window_um": [
+              3.0,
+              5.0
+            ],
+            "points": 4097,
+            "max_R": 0.017530678875344544,
+            "min_T": 0.9824693211246552,
+            "mean_R_sampled": 0.010368307942142531,
+            "worst_R_wavelength_um": 4.107421875,
+            "worst_violation_absolute": 0.007530678875344544,
+            "fraction_grid_points_meeting_target": 0.44813278008298757,
+            "max_energy_error": 1.3322676295501878e-15
+          }
+        ],
+        "local": {
+          "status": "actual spectral evaluation budget exhausted",
+          "solver_reported_nfev_excludes_some_fd_calls": null
+        },
+        "local_actual_calls": 1200
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "single_ar_3_5",
+      "method": "classic_local",
+      "seed": 29,
+      "actual_stack_evaluations_including_fd": 5245,
+      "training_spectral_points_per_evaluation": 81,
+      "actual_wavelength_layer_updates": 2549070,
+      "optimization_wall_seconds": 0.9992496159975417,
+      "thickness_um_from_air_to_substrate": [
+        0.6718207875641499,
+        0.9596658089704853,
+        0.2686941745557452,
+        0.16440325380469994,
+        1.5589439301147199,
+        0.41467230316209586
+      ],
+      "total_thickness_um": 4.038200258171896,
+      "training_objective": 4.655863674473021e-06,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.005672582225136619,
+          "min_T": 0.9943274177748632,
+          "mean_R_sampled": 0.0017128153380620852,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 9.992007221626409e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.005672582225136619,
+          "min_T": 0.9943274177748632,
+          "mean_R_sampled": 0.00165901540358415,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.005672582225136619,
+          "min_T": 0.9943274177748632,
+          "mean_R_sampled": 0.001658305134335673,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.7763568394002505e-15
+        }
+      ],
+      "solver_details": {
+        "local_stages": [
+          {
+            "template": "pair_short_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_long_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_geomean_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "alternating_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 148,
+            "actual_calls": 982
+          },
+          {
+            "template": "chirped_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 83,
+            "actual_calls": 533
+          },
+          {
+            "template": "pair_plus_halfwave",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 124,
+            "actual_calls": 730
+          }
+        ]
+      },
+      "all_windows_pass_dense": true
+    },
+    {
+      "case": "single_ar_3_5",
+      "method": "classic_de",
+      "seed": 29,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 81,
+      "actual_wavelength_layer_updates": 2916000,
+      "optimization_wall_seconds": 1.0263835520017892,
+      "thickness_um_from_air_to_substrate": [
+        0.6413806679144151,
+        0.3524149749443388,
+        0.10543513729025378,
+        0.22137075009240292,
+        1.1839540191653706,
+        0.36610991874124266
+      ],
+      "total_thickness_um": 2.870665468148024,
+      "training_objective": 6.164958432614782e-06,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.00714061946456923,
+          "min_T": 0.9928593805354308,
+          "mean_R_sampled": 0.0019664458494300366,
+          "worst_R_wavelength_um": 3.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.2212453270876722e-15
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.00714061946456923,
+          "min_T": 0.9928593805354308,
+          "mean_R_sampled": 0.0019062417371354412,
+          "worst_R_wavelength_um": 3.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.6653345369377348e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.00714061946456923,
+          "min_T": 0.9928593805354308,
+          "mean_R_sampled": 0.0019053879365684273,
+          "worst_R_wavelength_um": 3.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.6653345369377348e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 6000,
+          "generations": 124
+        }
+      },
+      "all_windows_pass_dense": true
+    },
+    {
+      "case": "single_ar_3_5",
+      "method": "de_local",
+      "seed": 29,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 81,
+      "actual_wavelength_layer_updates": 2916000,
+      "optimization_wall_seconds": 0.9828440480050631,
+      "thickness_um_from_air_to_substrate": [
+        0.6424862135920529,
+        0.34899735372789714,
+        0.10769001480107483,
+        0.22071201507831603,
+        1.1848885212157227,
+        0.3663530784823318
+      ],
+      "total_thickness_um": 2.8711271968973957,
+      "training_objective": 6.165067751895891e-06,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.007146511058353083,
+          "min_T": 0.9928534889416467,
+          "mean_R_sampled": 0.001966425041512044,
+          "worst_R_wavelength_um": 3.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.1102230246251565e-15
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.007146511058353083,
+          "min_T": 0.9928534889416467,
+          "mean_R_sampled": 0.0019063886051637233,
+          "worst_R_wavelength_um": 3.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.007146511058353083,
+          "min_T": 0.9928534889416467,
+          "mean_R_sampled": 0.001905537407943757,
+          "worst_R_wavelength_um": 3.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 4800,
+          "generations": 99
+        },
+        "de_best_loss_before_local": 6.166501368785404e-06,
+        "de_actual_calls": 4800,
+        "de_before_local_dense_metrics": [
+          {
+            "window_um": [
+              3.0,
+              5.0
+            ],
+            "points": 4097,
+            "max_R": 0.007097611618173657,
+            "min_T": 0.9929023883818267,
+            "mean_R_sampled": 0.0019081518069627892,
+            "worst_R_wavelength_um": 3.0,
+            "worst_violation_absolute": 0.0,
+            "fraction_grid_points_meeting_target": 1.0,
+            "max_energy_error": 1.3322676295501878e-15
+          }
+        ],
+        "local": {
+          "status": "actual spectral evaluation budget exhausted",
+          "solver_reported_nfev_excludes_some_fd_calls": null
+        },
+        "local_actual_calls": 1200
+      },
+      "all_windows_pass_dense": true
+    },
+    {
+      "case": "single_ar_3_5",
+      "method": "classic_local",
+      "seed": 47,
+      "actual_stack_evaluations_including_fd": 5367,
+      "training_spectral_points_per_evaluation": 81,
+      "actual_wavelength_layer_updates": 2608362,
+      "optimization_wall_seconds": 1.1168534149765037,
+      "thickness_um_from_air_to_substrate": [
+        0.8176232527257065,
+        0.14478322274181826,
+        1.4667612008741573,
+        0.9045546213687864,
+        0.23604954203427253,
+        0.5041633120454775
+      ],
+      "total_thickness_um": 4.073935151790218,
+      "training_objective": 1.5421793456276875e-05,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.0079745346817772,
+          "min_T": 0.9920254653182231,
+          "mean_R_sampled": 0.0031551506016561266,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 8.881784197001252e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.0079745346817772,
+          "min_T": 0.9920254653182231,
+          "mean_R_sampled": 0.003088010121140586,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.6653345369377348e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.0079745346817772,
+          "min_T": 0.9920254653182231,
+          "mean_R_sampled": 0.003087153871052643,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.0,
+          "fraction_grid_points_meeting_target": 1.0,
+          "max_energy_error": 1.6653345369377348e-15
+        }
+      ],
+      "solver_details": {
+        "local_stages": [
+          {
+            "template": "pair_short_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_long_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_geomean_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "alternating_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "chirped_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_plus_halfwave",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 61,
+            "actual_calls": 367
+          }
+        ]
+      },
+      "all_windows_pass_dense": true
+    },
+    {
+      "case": "single_ar_3_5",
+      "method": "classic_de",
+      "seed": 47,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 81,
+      "actual_wavelength_layer_updates": 2916000,
+      "optimization_wall_seconds": 1.2284251709934324,
+      "thickness_um_from_air_to_substrate": [
+        0.5237253773371715,
+        0.2892376901346694,
+        0.00541164293534635,
+        0.006917679440671787,
+        0.006344240223541631,
+        0.0068793184949969
+      ],
+      "total_thickness_um": 0.8385159485663976,
+      "training_objective": 0.05027163996269842,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.018082296564999035,
+          "min_T": 0.9819177034350014,
+          "mean_R_sampled": 0.007614088148545099,
+          "worst_R_wavelength_um": 3.025,
+          "worst_violation_absolute": 0.008082296564999035,
+          "fraction_grid_points_meeting_target": 0.6419753086419753,
+          "max_energy_error": 8.881784197001252e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.018082572289445795,
+          "min_T": 0.9819174277105545,
+          "mean_R_sampled": 0.0074901971428073255,
+          "worst_R_wavelength_um": 3.02294921875,
+          "worst_violation_absolute": 0.008082572289445795,
+          "fraction_grid_points_meeting_target": 0.6426653649011472,
+          "max_energy_error": 1.2212453270876722e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.01808257384994985,
+          "min_T": 0.98191742615005,
+          "mean_R_sampled": 0.007488335962958975,
+          "worst_R_wavelength_um": 3.0228271484375,
+          "worst_violation_absolute": 0.008082573849949851,
+          "fraction_grid_points_meeting_target": 0.64278303326213,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 6000,
+          "generations": 124
+        }
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "single_ar_3_5",
+      "method": "de_local",
+      "seed": 47,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 81,
+      "actual_wavelength_layer_updates": 2916000,
+      "optimization_wall_seconds": 1.0556685059855226,
+      "thickness_um_from_air_to_substrate": [
+        0.5937636799719963,
+        0.34104183842506386,
+        0.005001741234675469,
+        0.005000000008184863,
+        0.005000000000449059,
+        0.005113266906956914
+      ],
+      "total_thickness_um": 0.9549205265473265,
+      "training_objective": 0.06020950597016413,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.01766434882498947,
+          "min_T": 0.9823356511750104,
+          "mean_R_sampled": 0.0084728562586381,
+          "worst_R_wavelength_um": 3.45,
+          "worst_violation_absolute": 0.007664348824989469,
+          "fraction_grid_points_meeting_target": 0.5432098765432098,
+          "max_energy_error": 7.771561172376096e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.01766723495716537,
+          "min_T": 0.9823327650428346,
+          "mean_R_sampled": 0.008515329815999579,
+          "worst_R_wavelength_um": 3.44189453125,
+          "worst_violation_absolute": 0.0076672349571653715,
+          "fraction_grid_points_meeting_target": 0.5369782767878936,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.01766723583067789,
+          "min_T": 0.982332764169322,
+          "mean_R_sampled": 0.008515961957785137,
+          "worst_R_wavelength_um": 3.4417724609375,
+          "worst_violation_absolute": 0.007667235830677891,
+          "fraction_grid_points_meeting_target": 0.5368935001525785,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 4800,
+          "generations": 99
+        },
+        "de_best_loss_before_local": 0.07494575625688192,
+        "de_actual_calls": 4800,
+        "de_before_local_dense_metrics": [
+          {
+            "window_um": [
+              3.0,
+              5.0
+            ],
+            "points": 4097,
+            "max_R": 0.017957182948374898,
+            "min_T": 0.982042817051625,
+            "mean_R_sampled": 0.00957738716176974,
+            "worst_R_wavelength_um": 3.64306640625,
+            "worst_violation_absolute": 0.007957182948374898,
+            "fraction_grid_points_meeting_target": 0.5020746887966805,
+            "max_energy_error": 1.4432899320127035e-15
+          }
+        ],
+        "local": {
+          "status": "actual spectral evaluation budget exhausted",
+          "solver_reported_nfev_excludes_some_fd_calls": null
+        },
+        "local_actual_calls": 1200
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "method": "classic_local",
+      "seed": 11,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 162,
+      "actual_wavelength_layer_updates": 5832000,
+      "optimization_wall_seconds": 1.480054078012472,
+      "thickness_um_from_air_to_substrate": [
+        0.8681003877780465,
+        0.17153636034863068,
+        0.2790529650143582,
+        0.5215780237183639,
+        0.005165749713298769,
+        0.006360500092641581
+      ],
+      "total_thickness_um": 1.8517939866653401,
+      "training_objective": 1.223591761566353,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.030752401371273892,
+          "min_T": 0.9692475986287256,
+          "mean_R_sampled": 0.01180517461347751,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02075240137127389,
+          "fraction_grid_points_meeting_target": 0.48148148148148145,
+          "max_energy_error": 1.2212453270876722e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 81,
+          "max_R": 0.032269899019562724,
+          "min_T": 0.9677301009804374,
+          "mean_R_sampled": 0.00930872655157883,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022269899019562722,
+          "fraction_grid_points_meeting_target": 0.5925925925925926,
+          "max_energy_error": 9.992007221626409e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.030752401371273892,
+          "min_T": 0.9692475986287256,
+          "mean_R_sampled": 0.011715764061133824,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02075240137127389,
+          "fraction_grid_points_meeting_target": 0.48474493531852575,
+          "max_energy_error": 1.3322676295501878e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 4097,
+          "max_R": 0.032269899019562724,
+          "min_T": 0.9677301009804374,
+          "mean_R_sampled": 0.009097430576947087,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022269899019562722,
+          "fraction_grid_points_meeting_target": 0.6104466682938736,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.030752401371273892,
+          "min_T": 0.9692475986287256,
+          "mean_R_sampled": 0.011714495786654629,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02075240137127389,
+          "fraction_grid_points_meeting_target": 0.484589563625267,
+          "max_energy_error": 1.4432899320127035e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.032269899019562724,
+          "min_T": 0.9677301009804374,
+          "mean_R_sampled": 0.009094270799436109,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022269899019562722,
+          "fraction_grid_points_meeting_target": 0.6104974061641746,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ],
+      "solver_details": {
+        "local_stages": [
+          {
+            "template": "pair_short_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_long_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 144,
+            "actual_calls": 870
+          },
+          {
+            "template": "pair_geomean_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 25,
+            "actual_calls": 169
+          },
+          {
+            "template": "alternating_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 38,
+            "actual_calls": 224
+          },
+          {
+            "template": "chirped_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1868
+          },
+          {
+            "template": "pair_plus_halfwave",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1869
+          }
+        ]
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "method": "classic_de",
+      "seed": 11,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 162,
+      "actual_wavelength_layer_updates": 5832000,
+      "optimization_wall_seconds": 1.2984162160137203,
+      "thickness_um_from_air_to_substrate": [
+        0.8681005444400367,
+        0.1668751257050045,
+        0.0050197867302370636,
+        0.005351471451183087,
+        0.27296383466473206,
+        0.5358377079628667
+      ],
+      "total_thickness_um": 1.85414847095406,
+      "training_objective": 1.2044076830521477,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.030699080580191187,
+          "min_T": 0.9693009194198089,
+          "mean_R_sampled": 0.011765986104965891,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02069908058019119,
+          "fraction_grid_points_meeting_target": 0.48148148148148145,
+          "max_energy_error": 1.1102230246251565e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 81,
+          "max_R": 0.032207884404043735,
+          "min_T": 0.9677921155959566,
+          "mean_R_sampled": 0.009299425019821317,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022207884404043733,
+          "fraction_grid_points_meeting_target": 0.5925925925925926,
+          "max_energy_error": 9.992007221626409e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.030699080580191187,
+          "min_T": 0.9693009194198089,
+          "mean_R_sampled": 0.011676501242352347,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02069908058019119,
+          "fraction_grid_points_meeting_target": 0.4852330973883329,
+          "max_energy_error": 1.5543122344752192e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 4097,
+          "max_R": 0.032207884404043735,
+          "min_T": 0.9677921155959566,
+          "mean_R_sampled": 0.009088284328126705,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022207884404043733,
+          "fraction_grid_points_meeting_target": 0.6106907493287772,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.030699080580191187,
+          "min_T": 0.9693009194198089,
+          "mean_R_sampled": 0.011675231665042283,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02069908058019119,
+          "fraction_grid_points_meeting_target": 0.4854440036618859,
+          "max_energy_error": 1.6653345369377348e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.032207884404043735,
+          "min_T": 0.9677921155959566,
+          "mean_R_sampled": 0.009085126872955207,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022207884404043733,
+          "fraction_grid_points_meeting_target": 0.6106805004577357,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 6000,
+          "generations": 124
+        }
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "method": "de_local",
+      "seed": 11,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 162,
+      "actual_wavelength_layer_updates": 5832000,
+      "optimization_wall_seconds": 1.3568541849963367,
+      "thickness_um_from_air_to_substrate": [
+        0.8678792255714016,
+        0.16440309475100773,
+        0.0054918417846726705,
+        0.0072861655604971026,
+        0.2733481201430494,
+        0.5359604090696753
+      ],
+      "total_thickness_um": 1.854368856880304,
+      "training_objective": 1.2051066021163064,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.030676108554351506,
+          "min_T": 0.9693238914456482,
+          "mean_R_sampled": 0.011776788334139133,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020676108554351508,
+          "fraction_grid_points_meeting_target": 0.48148148148148145,
+          "max_energy_error": 8.881784197001252e-16
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 81,
+          "max_R": 0.03219315522337049,
+          "min_T": 0.9678068447766293,
+          "mean_R_sampled": 0.00929872286056492,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022193155223370488,
+          "fraction_grid_points_meeting_target": 0.5925925925925926,
+          "max_energy_error": 9.992007221626409e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.030676108554351506,
+          "min_T": 0.9693238914456482,
+          "mean_R_sampled": 0.011687857524344869,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020676108554351508,
+          "fraction_grid_points_meeting_target": 0.4852330973883329,
+          "max_energy_error": 1.3322676295501878e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 4097,
+          "max_R": 0.03219315522337049,
+          "min_T": 0.9678068447766293,
+          "mean_R_sampled": 0.009087611692416514,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022193155223370488,
+          "fraction_grid_points_meeting_target": 0.6104466682938736,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.030676108554351506,
+          "min_T": 0.9693238914456482,
+          "mean_R_sampled": 0.011686596087269808,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020676108554351508,
+          "fraction_grid_points_meeting_target": 0.48519987793713765,
+          "max_energy_error": 1.5543122344752192e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.03219315522337049,
+          "min_T": 0.9678068447766293,
+          "mean_R_sampled": 0.009084454679058634,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022193155223370488,
+          "fraction_grid_points_meeting_target": 0.6106194690265486,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 4800,
+          "generations": 99
+        },
+        "de_best_loss_before_local": 1.2076499945434316,
+        "de_actual_calls": 4800,
+        "de_before_local_dense_metrics": [
+          {
+            "window_um": [
+              3.0,
+              5.0
+            ],
+            "points": 4097,
+            "max_R": 0.030893587399547423,
+            "min_T": 0.9691064126004519,
+            "mean_R_sampled": 0.011780273701461544,
+            "worst_R_wavelength_um": 5.0,
+            "worst_violation_absolute": 0.02089358739954742,
+            "fraction_grid_points_meeting_target": 0.4823041249694899,
+            "max_energy_error": 1.3322676295501878e-15
+          },
+          {
+            "window_um": [
+              8.0,
+              12.0
+            ],
+            "points": 4097,
+            "max_R": 0.03191563159998083,
+            "min_T": 0.9680843684000187,
+            "mean_R_sampled": 0.009070350424116821,
+            "worst_R_wavelength_um": 8.0,
+            "worst_violation_absolute": 0.021915631599980827,
+            "fraction_grid_points_meeting_target": 0.6099585062240664,
+            "max_energy_error": 1.3322676295501878e-15
+          }
+        ],
+        "local": {
+          "status": "actual spectral evaluation budget exhausted",
+          "solver_reported_nfev_excludes_some_fd_calls": null
+        },
+        "local_actual_calls": 1200
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "method": "classic_local",
+      "seed": 29,
+      "actual_stack_evaluations_including_fd": 4649,
+      "training_spectral_points_per_evaluation": 162,
+      "actual_wavelength_layer_updates": 4518828,
+      "optimization_wall_seconds": 1.1070527439878788,
+      "thickness_um_from_air_to_substrate": [
+        0.8681003877780465,
+        0.17153636034863068,
+        0.2790529650143582,
+        0.5215780237183639,
+        0.005165749713298769,
+        0.006360500092641581
+      ],
+      "total_thickness_um": 1.8517939866653401,
+      "training_objective": 1.223591761566353,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.030752401371273892,
+          "min_T": 0.9692475986287256,
+          "mean_R_sampled": 0.01180517461347751,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02075240137127389,
+          "fraction_grid_points_meeting_target": 0.48148148148148145,
+          "max_energy_error": 1.2212453270876722e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 81,
+          "max_R": 0.032269899019562724,
+          "min_T": 0.9677301009804374,
+          "mean_R_sampled": 0.00930872655157883,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022269899019562722,
+          "fraction_grid_points_meeting_target": 0.5925925925925926,
+          "max_energy_error": 9.992007221626409e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.030752401371273892,
+          "min_T": 0.9692475986287256,
+          "mean_R_sampled": 0.011715764061133824,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02075240137127389,
+          "fraction_grid_points_meeting_target": 0.48474493531852575,
+          "max_energy_error": 1.3322676295501878e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 4097,
+          "max_R": 0.032269899019562724,
+          "min_T": 0.9677301009804374,
+          "mean_R_sampled": 0.009097430576947087,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022269899019562722,
+          "fraction_grid_points_meeting_target": 0.6104466682938736,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.030752401371273892,
+          "min_T": 0.9692475986287256,
+          "mean_R_sampled": 0.011714495786654629,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02075240137127389,
+          "fraction_grid_points_meeting_target": 0.484589563625267,
+          "max_energy_error": 1.4432899320127035e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.032269899019562724,
+          "min_T": 0.9677301009804374,
+          "mean_R_sampled": 0.009094270799436109,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022269899019562722,
+          "fraction_grid_points_meeting_target": 0.6104974061641746,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ],
+      "solver_details": {
+        "local_stages": [
+          {
+            "template": "pair_short_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_long_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_geomean_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 13,
+            "actual_calls": 91
+          },
+          {
+            "template": "alternating_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 63,
+            "actual_calls": 393
+          },
+          {
+            "template": "chirped_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 280,
+            "actual_calls": 1720
+          },
+          {
+            "template": "pair_plus_halfwave",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 67,
+            "actual_calls": 445
+          }
+        ]
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "method": "classic_de",
+      "seed": 29,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 162,
+      "actual_wavelength_layer_updates": 5832000,
+      "optimization_wall_seconds": 1.1505836129945237,
+      "thickness_um_from_air_to_substrate": [
+        0.8680228409873416,
+        0.1711600489490923,
+        0.2742652830652753,
+        0.005135680220229588,
+        0.0051014128692394856,
+        0.5308799969012041
+      ],
+      "total_thickness_um": 1.8545652629923823,
+      "training_objective": 1.2053447851523587,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.030705855911152425,
+          "min_T": 0.9692941440888481,
+          "mean_R_sampled": 0.011773715016133002,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020705855911152427,
+          "fraction_grid_points_meeting_target": 0.48148148148148145,
+          "max_energy_error": 1.2212453270876722e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 81,
+          "max_R": 0.032192962493115394,
+          "min_T": 0.9678070375068845,
+          "mean_R_sampled": 0.00930026401267054,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022192962493115392,
+          "fraction_grid_points_meeting_target": 0.5925925925925926,
+          "max_energy_error": 8.881784197001252e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.030705855911152425,
+          "min_T": 0.9692941440888481,
+          "mean_R_sampled": 0.011684544336759166,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020705855911152427,
+          "fraction_grid_points_meeting_target": 0.48498901635342934,
+          "max_energy_error": 1.3322676295501878e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 4097,
+          "max_R": 0.032192962493115394,
+          "min_T": 0.9678070375068845,
+          "mean_R_sampled": 0.009089134071442038,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022192962493115392,
+          "fraction_grid_points_meeting_target": 0.6104466682938736,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.030705855911152425,
+          "min_T": 0.9692941440888481,
+          "mean_R_sampled": 0.011683279271207166,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020705855911152427,
+          "fraction_grid_points_meeting_target": 0.48513884650595057,
+          "max_energy_error": 1.7763568394002505e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.032192962493115394,
+          "min_T": 0.9678070375068845,
+          "mean_R_sampled": 0.009085976778574943,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022192962493115392,
+          "fraction_grid_points_meeting_target": 0.6105584375953617,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 6000,
+          "generations": 124
+        }
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "method": "de_local",
+      "seed": 29,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 162,
+      "actual_wavelength_layer_updates": 5832000,
+      "optimization_wall_seconds": 1.1976744109997526,
+      "thickness_um_from_air_to_substrate": [
+        0.8679567928093626,
+        0.17150440828558478,
+        0.2735493261114478,
+        0.0050835791683535555,
+        0.0052068445229643085,
+        0.5310567996278905
+      ],
+      "total_thickness_um": 1.8543577505256035,
+      "training_objective": 1.2052836803737303,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.030676919751274317,
+          "min_T": 0.9693230802487256,
+          "mean_R_sampled": 0.011777742299482311,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020676919751274316,
+          "fraction_grid_points_meeting_target": 0.48148148148148145,
+          "max_energy_error": 9.992007221626409e-16
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 81,
+          "max_R": 0.03219220276286824,
+          "min_T": 0.9678077972371314,
+          "mean_R_sampled": 0.009298686822991798,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022192202762868235,
+          "fraction_grid_points_meeting_target": 0.5925925925925926,
+          "max_energy_error": 7.771561172376096e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.030676919751274317,
+          "min_T": 0.9693230802487256,
+          "mean_R_sampled": 0.011688824351200213,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020676919751274316,
+          "fraction_grid_points_meeting_target": 0.4852330973883329,
+          "max_energy_error": 1.6653345369377348e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 4097,
+          "max_R": 0.03219220276286824,
+          "min_T": 0.9678077972371314,
+          "mean_R_sampled": 0.009087574993402545,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022192202762868235,
+          "fraction_grid_points_meeting_target": 0.6104466682938736,
+          "max_energy_error": 1.2212453270876722e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.030676919751274317,
+          "min_T": 0.9693230802487256,
+          "mean_R_sampled": 0.011687563107183357,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020676919751274316,
+          "fraction_grid_points_meeting_target": 0.48513884650595057,
+          "max_energy_error": 1.6653345369377348e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.03219220276286824,
+          "min_T": 0.9678077972371314,
+          "mean_R_sampled": 0.009084417970281542,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022192202762868235,
+          "fraction_grid_points_meeting_target": 0.6105584375953617,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 4800,
+          "generations": 99
+        },
+        "de_best_loss_before_local": 1.207080174419668,
+        "de_actual_calls": 4800,
+        "de_before_local_dense_metrics": [
+          {
+            "window_um": [
+              3.0,
+              5.0
+            ],
+            "points": 4097,
+            "max_R": 0.030763223448431853,
+            "min_T": 0.9692367765515681,
+            "mean_R_sampled": 0.01174274642567116,
+            "worst_R_wavelength_um": 5.0,
+            "worst_violation_absolute": 0.02076322344843185,
+            "fraction_grid_points_meeting_target": 0.4835245301440078,
+            "max_energy_error": 1.3322676295501878e-15
+          },
+          {
+            "window_um": [
+              8.0,
+              12.0
+            ],
+            "points": 4097,
+            "max_R": 0.03204652897765492,
+            "min_T": 0.9679534710223447,
+            "mean_R_sampled": 0.009079978681274352,
+            "worst_R_wavelength_um": 8.0,
+            "worst_violation_absolute": 0.022046528977654918,
+            "fraction_grid_points_meeting_target": 0.61020258725897,
+            "max_energy_error": 1.2212453270876722e-15
+          }
+        ],
+        "local": {
+          "status": "actual spectral evaluation budget exhausted",
+          "solver_reported_nfev_excludes_some_fd_calls": null
+        },
+        "local_actual_calls": 1200
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "method": "classic_local",
+      "seed": 47,
+      "actual_stack_evaluations_including_fd": 4005,
+      "training_spectral_points_per_evaluation": 162,
+      "actual_wavelength_layer_updates": 3892860,
+      "optimization_wall_seconds": 0.9325760540086776,
+      "thickness_um_from_air_to_substrate": [
+        0.8681003877780465,
+        0.17153636034863068,
+        0.2790529650143582,
+        0.5215780237183639,
+        0.005165749713298769,
+        0.006360500092641581
+      ],
+      "total_thickness_um": 1.8517939866653401,
+      "training_objective": 1.223591761566353,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.030752401371273892,
+          "min_T": 0.9692475986287256,
+          "mean_R_sampled": 0.01180517461347751,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02075240137127389,
+          "fraction_grid_points_meeting_target": 0.48148148148148145,
+          "max_energy_error": 1.2212453270876722e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 81,
+          "max_R": 0.032269899019562724,
+          "min_T": 0.9677301009804374,
+          "mean_R_sampled": 0.00930872655157883,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022269899019562722,
+          "fraction_grid_points_meeting_target": 0.5925925925925926,
+          "max_energy_error": 9.992007221626409e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.030752401371273892,
+          "min_T": 0.9692475986287256,
+          "mean_R_sampled": 0.011715764061133824,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02075240137127389,
+          "fraction_grid_points_meeting_target": 0.48474493531852575,
+          "max_energy_error": 1.3322676295501878e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 4097,
+          "max_R": 0.032269899019562724,
+          "min_T": 0.9677301009804374,
+          "mean_R_sampled": 0.009097430576947087,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022269899019562722,
+          "fraction_grid_points_meeting_target": 0.6104466682938736,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.030752401371273892,
+          "min_T": 0.9692475986287256,
+          "mean_R_sampled": 0.011714495786654629,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02075240137127389,
+          "fraction_grid_points_meeting_target": 0.484589563625267,
+          "max_energy_error": 1.4432899320127035e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.032269899019562724,
+          "min_T": 0.9677301009804374,
+          "mean_R_sampled": 0.009094270799436109,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022269899019562722,
+          "fraction_grid_points_meeting_target": 0.6104974061641746,
+          "max_energy_error": 1.4432899320127035e-15
+        }
+      ],
+      "solver_details": {
+        "local_stages": [
+          {
+            "template": "pair_short_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_long_qw",
+            "status": "actual spectral evaluation budget exhausted",
+            "solver_reported_nfev_excludes_some_fd_calls": null,
+            "actual_calls": 1000
+          },
+          {
+            "template": "pair_geomean_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 23,
+            "actual_calls": 161
+          },
+          {
+            "template": "alternating_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 36,
+            "actual_calls": 222
+          },
+          {
+            "template": "chirped_qw",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 233,
+            "actual_calls": 1409
+          },
+          {
+            "template": "pair_plus_halfwave",
+            "status": "`ftol` termination condition is satisfied.",
+            "solver_reported_nfev_excludes_some_fd_calls": 33,
+            "actual_calls": 213
+          }
+        ]
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "method": "classic_de",
+      "seed": 47,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 162,
+      "actual_wavelength_layer_updates": 5832000,
+      "optimization_wall_seconds": 1.090829410997685,
+      "thickness_um_from_air_to_substrate": [
+        0.8687914311440501,
+        0.16595496505818463,
+        0.0053528155003879085,
+        0.0051792662818528346,
+        0.2742767404282964,
+        0.5352681554140437
+      ],
+      "total_thickness_um": 1.8548233738268156,
+      "training_objective": 1.2044378930048971,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.030734732050864758,
+          "min_T": 0.9692652679491355,
+          "mean_R_sampled": 0.011775720216425438,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020734732050864756,
+          "fraction_grid_points_meeting_target": 0.48148148148148145,
+          "max_energy_error": 1.2212453270876722e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 81,
+          "max_R": 0.03216774437688029,
+          "min_T": 0.9678322556231197,
+          "mean_R_sampled": 0.009300383620491856,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022167744376880287,
+          "fraction_grid_points_meeting_target": 0.5925925925925926,
+          "max_energy_error": 8.881784197001252e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.030734732050864758,
+          "min_T": 0.9692652679491355,
+          "mean_R_sampled": 0.011686673516171938,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020734732050864756,
+          "fraction_grid_points_meeting_target": 0.48498901635342934,
+          "max_energy_error": 1.3322676295501878e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 4097,
+          "max_R": 0.03216774437688029,
+          "min_T": 0.9678322556231197,
+          "mean_R_sampled": 0.00908926407119193,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022167744376880287,
+          "fraction_grid_points_meeting_target": 0.61020258725897,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.030734732050864758,
+          "min_T": 0.9692652679491355,
+          "mean_R_sampled": 0.011685410129252328,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.020734732050864756,
+          "fraction_grid_points_meeting_target": 0.48513884650595057,
+          "max_energy_error": 1.4432899320127035e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.03216774437688029,
+          "min_T": 0.9678322556231197,
+          "mean_R_sampled": 0.009086106936617612,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022167744376880287,
+          "fraction_grid_points_meeting_target": 0.6104363747329875,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 6000,
+          "generations": 124
+        }
+      },
+      "all_windows_pass_dense": false
+    },
+    {
+      "case": "dual_window_ar_3_5_8_12",
+      "method": "de_local",
+      "seed": 47,
+      "actual_stack_evaluations_including_fd": 6000,
+      "training_spectral_points_per_evaluation": 162,
+      "actual_wavelength_layer_updates": 5832000,
+      "optimization_wall_seconds": 1.0700076479988638,
+      "thickness_um_from_air_to_substrate": [
+        0.8679191488829734,
+        0.1666197761158029,
+        0.006043686941748786,
+        0.005042695481359031,
+        0.27275387207828794,
+        0.5359831027582141
+      ],
+      "total_thickness_um": 1.854362282258386,
+      "training_objective": 1.204413875606466,
+      "train_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 81,
+          "max_R": 0.03067305756845706,
+          "min_T": 0.9693269424315428,
+          "mean_R_sampled": 0.011776085719914947,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02067305756845706,
+          "fraction_grid_points_meeting_target": 0.48148148148148145,
+          "max_energy_error": 8.881784197001252e-16
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 81,
+          "max_R": 0.03218938946897468,
+          "min_T": 0.9678106105310251,
+          "mean_R_sampled": 0.009298369389634641,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022189389468974675,
+          "fraction_grid_points_meeting_target": 0.5925925925925926,
+          "max_energy_error": 9.992007221626409e-16
+        }
+      ],
+      "independent_dense_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 4097,
+          "max_R": 0.03067305756845706,
+          "min_T": 0.9693269424315428,
+          "mean_R_sampled": 0.011687128741659003,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02067305756845706,
+          "fraction_grid_points_meeting_target": 0.4852330973883329,
+          "max_energy_error": 1.4432899320127035e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 4097,
+          "max_R": 0.03218938946897468,
+          "min_T": 0.9678106105310251,
+          "mean_R_sampled": 0.00908726422068493,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022189389468974675,
+          "fraction_grid_points_meeting_target": 0.6104466682938736,
+          "max_energy_error": 1.3322676295501878e-15
+        }
+      ],
+      "higher_density_audit_metrics": [
+        {
+          "window_um": [
+            3.0,
+            5.0
+          ],
+          "points": 16385,
+          "max_R": 0.03067305756845706,
+          "min_T": 0.9693269424315428,
+          "mean_R_sampled": 0.011685866938708728,
+          "worst_R_wavelength_um": 5.0,
+          "worst_violation_absolute": 0.02067305756845706,
+          "fraction_grid_points_meeting_target": 0.48519987793713765,
+          "max_energy_error": 1.4432899320127035e-15
+        },
+        {
+          "window_um": [
+            8.0,
+            12.0
+          ],
+          "points": 16385,
+          "max_R": 0.03218938946897468,
+          "min_T": 0.9678106105310251,
+          "mean_R_sampled": 0.00908410729717386,
+          "worst_R_wavelength_um": 8.0,
+          "worst_violation_absolute": 0.022189389468974675,
+          "fraction_grid_points_meeting_target": 0.6106194690265486,
+          "max_energy_error": 1.5543122344752192e-15
+        }
+      ],
+      "solver_details": {
+        "de": {
+          "status": "Maximum number of iterations has been exceeded.",
+          "solver_nfev": 4800,
+          "generations": 99
+        },
+        "de_best_loss_before_local": 1.207379914200515,
+        "de_actual_calls": 4800,
+        "de_before_local_dense_metrics": [
+          {
+            "window_um": [
+              3.0,
+              5.0
+            ],
+            "points": 4097,
+            "max_R": 0.030456453915725597,
+            "min_T": 0.9695435460842741,
+            "mean_R_sampled": 0.011591943621689752,
+            "worst_R_wavelength_um": 5.0,
+            "worst_violation_absolute": 0.0204564539157256,
+            "fraction_grid_points_meeting_target": 0.48816206980717597,
+            "max_energy_error": 1.4432899320127035e-15
+          },
+          {
+            "window_um": [
+              8.0,
+              12.0
+            ],
+            "points": 4097,
+            "max_R": 0.03251087817482539,
+            "min_T": 0.9674891218251745,
+            "mean_R_sampled": 0.009107361489780079,
+            "worst_R_wavelength_um": 8.0,
+            "worst_violation_absolute": 0.02251087817482539,
+            "fraction_grid_points_meeting_target": 0.6111789113985844,
+            "max_energy_error": 1.2212453270876722e-15
+          }
+        ],
+        "local": {
+          "status": "actual spectral evaluation budget exhausted",
+          "solver_reported_nfev_excludes_some_fd_calls": null
+        },
+        "local_actual_calls": 1200
+      },
+      "all_windows_pass_dense": false
+    }
+  ]
+}

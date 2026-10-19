@@ -107,3 +107,6 @@ ITO并入本库专题11，不另建研究项目。[研究入口](11_transparent_
 ## 手工研究增量
 
 - [2026-10-10 端到端光学仿真成熟化](manual_studies/2026-10-10_end_to_end_optical_simulation/README.md) — 膜系/沉积/光源/成像资料基线；原文、引用范围与证据边界见报告，数值复现和生产验证尚未完成。
+
+
+- [2026-10-19 多光谱红外结构与云端算法研究](manual_studies/2026-10-19_multispectral_ir_structures/README.md) — 29 条来源跨 16 站点的证据核验、结构候选地图与 18 次合成 AR 搜索；合成常数 n/k 试验不构成实际 IR 性能或制造验收。

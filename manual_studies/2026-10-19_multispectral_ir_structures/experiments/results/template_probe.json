@@ -1,0 +1,770 @@
+[
+  {
+    "case": "single_ar_3_5",
+    "template": "pair_short_qw",
+    "actual_calls": 1200,
+    "wall_seconds": 0.22184017600375228,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.018358191681431827,
+        "min_T": 0.9816418083185675,
+        "mean_R_sampled": 0.010865661547315518,
+        "worst_R_wavelength_um": 3.98193359375,
+        "worst_violation_absolute": 0.008358191681431827,
+        "fraction_grid_points_meeting_target": 0.43686298443698507,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.017605816893981073,
+        "min_T": 0.9823941831060188,
+        "mean_R_sampled": 0.009513710258073758,
+        "worst_R_wavelength_um": 3.691162109375,
+        "worst_violation_absolute": 0.007605816893981073,
+        "fraction_grid_points_meeting_target": 0.5049740616417455,
+        "max_energy_error": 1.3322676295501878e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.6367111522061143,
+      0.3676159605534395,
+      0.005000000000165753,
+      0.005038189714412412,
+      0.005000000000427592,
+      0.005000000001205833
+    ],
+    "solver": {
+      "status": "actual spectral evaluation budget exhausted",
+      "solver_reported_nfev_excludes_some_fd_calls": null
+    }
+  },
+  {
+    "case": "single_ar_3_5",
+    "template": "pair_long_qw",
+    "actual_calls": 1200,
+    "wall_seconds": 0.2212789980112575,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.018358191681431827,
+        "min_T": 0.9816418083185675,
+        "mean_R_sampled": 0.010865661547315518,
+        "worst_R_wavelength_um": 3.98193359375,
+        "worst_violation_absolute": 0.008358191681431827,
+        "fraction_grid_points_meeting_target": 0.43686298443698507,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.017605816893981073,
+        "min_T": 0.9823941831060188,
+        "mean_R_sampled": 0.009513710258073758,
+        "worst_R_wavelength_um": 3.691162109375,
+        "worst_violation_absolute": 0.007605816893981073,
+        "fraction_grid_points_meeting_target": 0.5049740616417455,
+        "max_energy_error": 1.3322676295501878e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.6367111522061143,
+      0.3676159605534395,
+      0.005000000000165753,
+      0.005038189714412412,
+      0.005000000000427592,
+      0.005000000001205833
+    ],
+    "solver": {
+      "status": "actual spectral evaluation budget exhausted",
+      "solver_reported_nfev_excludes_some_fd_calls": null
+    }
+  },
+  {
+    "case": "single_ar_3_5",
+    "template": "pair_geomean_qw",
+    "actual_calls": 1200,
+    "wall_seconds": 0.24875500801135786,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.018358191681431827,
+        "min_T": 0.9816418083185675,
+        "mean_R_sampled": 0.010865661547315518,
+        "worst_R_wavelength_um": 3.98193359375,
+        "worst_violation_absolute": 0.008358191681431827,
+        "fraction_grid_points_meeting_target": 0.43686298443698507,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.017605816893981073,
+        "min_T": 0.9823941831060188,
+        "mean_R_sampled": 0.009513710258073758,
+        "worst_R_wavelength_um": 3.691162109375,
+        "worst_violation_absolute": 0.007605816893981073,
+        "fraction_grid_points_meeting_target": 0.5049740616417455,
+        "max_energy_error": 1.3322676295501878e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.6367111522061143,
+      0.3676159605534395,
+      0.005000000000165753,
+      0.005038189714412412,
+      0.005000000000427592,
+      0.005000000001205833
+    ],
+    "solver": {
+      "status": "actual spectral evaluation budget exhausted",
+      "solver_reported_nfev_excludes_some_fd_calls": null
+    }
+  },
+  {
+    "case": "single_ar_3_5",
+    "template": "alternating_qw",
+    "actual_calls": 331,
+    "wall_seconds": 0.06687444899580441,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.5311139599374466,
+        "min_T": 0.46888604006255374,
+        "mean_R_sampled": 0.502698138343779,
+        "worst_R_wavelength_um": 3.23046875,
+        "worst_violation_absolute": 0.5211139599374466,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.3322676295501878e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.007977644385559831,
+        "min_T": 0.9920223556144399,
+        "mean_R_sampled": 0.0033207568706655156,
+        "worst_R_wavelength_um": 3.269287109375,
+        "worst_violation_absolute": 0.0,
+        "fraction_grid_points_meeting_target": 1.0,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.5758239802901322,
+      0.7017247647148934,
+      1.2144392760639264,
+      0.8762027096411867,
+      0.23143510048276236,
+      0.49135267756388246
+    ],
+    "solver": {
+      "status": "`ftol` termination condition is satisfied.",
+      "solver_reported_nfev_excludes_some_fd_calls": 55
+    }
+  },
+  {
+    "case": "single_ar_3_5",
+    "template": "chirped_qw",
+    "actual_calls": 332,
+    "wall_seconds": 0.06586114497622475,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.5311139599374459,
+        "min_T": 0.46888604006255385,
+        "mean_R_sampled": 0.5026981383437791,
+        "worst_R_wavelength_um": 3.23046875,
+        "worst_violation_absolute": 0.5211139599374459,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.3322676295501878e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.007977645679809051,
+        "min_T": 0.9920223543201908,
+        "mean_R_sampled": 0.0033207565652970746,
+        "worst_R_wavelength_um": 3.269287109375,
+        "worst_violation_absolute": 0.0,
+        "fraction_grid_points_meeting_target": 1.0,
+        "max_energy_error": 1.6653345369377348e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.5758239381512413,
+      0.70172473421537,
+      1.2144392329875664,
+      0.8762027237087655,
+      0.23143509819715075,
+      0.4913526996290005
+    ],
+    "solver": {
+      "status": "`ftol` termination condition is satisfied.",
+      "solver_reported_nfev_excludes_some_fd_calls": 56
+    }
+  },
+  {
+    "case": "single_ar_3_5",
+    "template": "pair_plus_halfwave",
+    "actual_calls": 1087,
+    "wall_seconds": 0.20539662599912845,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.3428879346965356,
+        "min_T": 0.6571120653034643,
+        "mean_R_sampled": 0.1474046467219271,
+        "worst_R_wavelength_um": 3.0,
+        "worst_violation_absolute": 0.3328879346965356,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.3322676295501878e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.05741538394807327,
+        "min_T": 0.9425846160519264,
+        "mean_R_sampled": 0.022833172685808336,
+        "worst_R_wavelength_um": 3.0,
+        "worst_violation_absolute": 0.04741538394807327,
+        "fraction_grid_points_meeting_target": 0.14995422642660972,
+        "max_energy_error": 1.3322676295501878e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.4976050096496617,
+      0.7247788626850558,
+      1.2277107860423384,
+      1.1759209797498025,
+      0.005000000000453937,
+      0.005000000211431723
+    ],
+    "solver": {
+      "status": "`ftol` termination condition is satisfied.",
+      "solver_reported_nfev_excludes_some_fd_calls": 169
+    }
+  },
+  {
+    "case": "dual_window_ar_3_5_8_12",
+    "template": "pair_short_qw",
+    "actual_calls": 1200,
+    "wall_seconds": 0.2484529460198246,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.018358191681431827,
+        "min_T": 0.9816418083185675,
+        "mean_R_sampled": 0.010865661547315518,
+        "worst_R_wavelength_um": 3.98193359375,
+        "worst_violation_absolute": 0.008358191681431827,
+        "fraction_grid_points_meeting_target": 0.43686298443698507,
+        "max_energy_error": 1.5543122344752192e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.17355503948245618,
+        "min_T": 0.826444960517544,
+        "mean_R_sampled": 0.12493367410906746,
+        "worst_R_wavelength_um": 12.0,
+        "worst_violation_absolute": 0.16355503948245617,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.030743971203329994,
+        "min_T": 0.9692560287966705,
+        "mean_R_sampled": 0.011711661705317643,
+        "worst_R_wavelength_um": 5.0,
+        "worst_violation_absolute": 0.02074397120332999,
+        "fraction_grid_points_meeting_target": 0.4846505950564541,
+        "max_energy_error": 1.4432899320127035e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.03226608869651805,
+        "min_T": 0.9677339113034821,
+        "mean_R_sampled": 0.009093742323583794,
+        "worst_R_wavelength_um": 8.0,
+        "worst_violation_absolute": 0.022266088696518048,
+        "fraction_grid_points_meeting_target": 0.6104974061641746,
+        "max_energy_error": 1.3322676295501878e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.8683332716498768,
+      0.1716029660504149,
+      0.2789290807577581,
+      0.5220538550826326,
+      0.005084116950529316,
+      0.005880764817894049
+    ],
+    "solver": {
+      "status": "actual spectral evaluation budget exhausted",
+      "solver_reported_nfev_excludes_some_fd_calls": null
+    }
+  },
+  {
+    "case": "dual_window_ar_3_5_8_12",
+    "template": "pair_long_qw",
+    "actual_calls": 1113,
+    "wall_seconds": 0.239092748000985,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.3000949300706593,
+        "min_T": 0.6999050699293405,
+        "mean_R_sampled": 0.12150699843738427,
+        "worst_R_wavelength_um": 4.958740234375,
+        "worst_violation_absolute": 0.2900949300706593,
+        "fraction_grid_points_meeting_target": 0.2244736039060116,
+        "max_energy_error": 1.4432899320127035e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.017400735351546938,
+        "min_T": 0.9825992646484529,
+        "mean_R_sampled": 0.011867915257205177,
+        "worst_R_wavelength_um": 9.9130859375,
+        "worst_violation_absolute": 0.007400735351546938,
+        "fraction_grid_points_meeting_target": 0.34147085749160816,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.10164231596065222,
+        "min_T": 0.8983576840393482,
+        "mean_R_sampled": 0.04704507351312018,
+        "worst_R_wavelength_um": 5.0,
+        "worst_violation_absolute": 0.09164231596065223,
+        "fraction_grid_points_meeting_target": 0.009520903265181568,
+        "max_energy_error": 1.5543122344752192e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.10689474349850626,
+        "min_T": 0.8931052565014932,
+        "mean_R_sampled": 0.04499136907968638,
+        "worst_R_wavelength_um": 8.0,
+        "worst_violation_absolute": 0.09689474349850627,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "best_thickness_um": [
+      1.8709218309561044,
+      0.9084471286406008,
+      0.11364333852836543,
+      0.5083420232988025,
+      0.005000000007555308,
+      0.005000001391828723
+    ],
+    "solver": {
+      "status": "`ftol` termination condition is satisfied.",
+      "solver_reported_nfev_excludes_some_fd_calls": 183
+    }
+  },
+  {
+    "case": "dual_window_ar_3_5_8_12",
+    "template": "pair_geomean_qw",
+    "actual_calls": 140,
+    "wall_seconds": 0.029238018003525212,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.30057920187042236,
+        "min_T": 0.6994207981295778,
+        "mean_R_sampled": 0.1313803854950742,
+        "worst_R_wavelength_um": 3.1395263671875,
+        "worst_violation_absolute": 0.29057920187042235,
+        "fraction_grid_points_meeting_target": 0.19975587427525177,
+        "max_energy_error": 1.3322676295501878e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.05111347564827001,
+        "min_T": 0.9488865243517298,
+        "mean_R_sampled": 0.016498490626419202,
+        "worst_R_wavelength_um": 12.0,
+        "worst_violation_absolute": 0.04111347564827001,
+        "fraction_grid_points_meeting_target": 0.47726579188281965,
+        "max_energy_error": 1.4432899320127035e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.12406832929993936,
+        "min_T": 0.8759316707000606,
+        "mean_R_sampled": 0.06715022183936281,
+        "worst_R_wavelength_um": 3.0,
+        "worst_violation_absolute": 0.11406832929993936,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.5543122344752192e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.10711009228442399,
+        "min_T": 0.8928899077155754,
+        "mean_R_sampled": 0.058298878207933766,
+        "worst_R_wavelength_um": 12.0,
+        "worst_violation_absolute": 0.097110092284424,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.6556980154151162,
+      0.656501106799544,
+      0.005000000000000001,
+      0.005000000000000001,
+      0.005000000000000001,
+      0.005000000000000001
+    ],
+    "solver": {
+      "status": "`ftol` termination condition is satisfied.",
+      "solver_reported_nfev_excludes_some_fd_calls": 20
+    }
+  },
+  {
+    "case": "dual_window_ar_3_5_8_12",
+    "template": "alternating_qw",
+    "actual_calls": 263,
+    "wall_seconds": 0.05521826399490237,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.5246918775273889,
+        "min_T": 0.4753081224726109,
+        "mean_R_sampled": 0.23346394523554495,
+        "worst_R_wavelength_um": 5.0,
+        "worst_violation_absolute": 0.5146918775273889,
+        "fraction_grid_points_meeting_target": 0.07647238327738785,
+        "max_energy_error": 1.5543122344752192e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.5254968412731973,
+        "min_T": 0.47450315872680265,
+        "mean_R_sampled": 0.23876793462002294,
+        "worst_R_wavelength_um": 8.0,
+        "worst_violation_absolute": 0.5154968412731973,
+        "fraction_grid_points_meeting_target": 0.1719255416539518,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.10834007835736449,
+        "min_T": 0.8916599216426354,
+        "mean_R_sampled": 0.02918915068499538,
+        "worst_R_wavelength_um": 5.0,
+        "worst_violation_absolute": 0.0983400783573645,
+        "fraction_grid_points_meeting_target": 0.23356728715288375,
+        "max_energy_error": 1.5543122344752192e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.1492829992121163,
+        "min_T": 0.8507170007878835,
+        "mean_R_sampled": 0.0490951877878221,
+        "worst_R_wavelength_um": 8.0,
+        "worst_violation_absolute": 0.1392829992121163,
+        "fraction_grid_points_meeting_target": 0.09136405248703082,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "best_thickness_um": [
+      1.9128518440442481,
+      0.7508455136123618,
+      1.4483939160530626,
+      0.1186342740029493,
+      1.3723242857244697,
+      0.4369980761248492
+    ],
+    "solver": {
+      "status": "`ftol` termination condition is satisfied.",
+      "solver_reported_nfev_excludes_some_fd_calls": 41
+    }
+  },
+  {
+    "case": "dual_window_ar_3_5_8_12",
+    "template": "chirped_qw",
+    "actual_calls": 1200,
+    "wall_seconds": 0.24190800901851617,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.2796023057127936,
+        "min_T": 0.7203976942872061,
+        "mean_R_sampled": 0.1356775838405557,
+        "worst_R_wavelength_um": 4.2154541015625,
+        "worst_violation_absolute": 0.2696023057127936,
+        "fraction_grid_points_meeting_target": 0.055538602380225816,
+        "max_energy_error": 1.4432899320127035e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.43304067981158223,
+        "min_T": 0.5669593201884179,
+        "mean_R_sampled": 0.13082513700655765,
+        "worst_R_wavelength_um": 8.0,
+        "worst_violation_absolute": 0.4230406798115822,
+        "fraction_grid_points_meeting_target": 0.22783033262129998,
+        "max_energy_error": 1.4432899320127035e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.15803403471330094,
+        "min_T": 0.8419659652866988,
+        "mean_R_sampled": 0.04730610741204889,
+        "worst_R_wavelength_um": 5.0,
+        "worst_violation_absolute": 0.14803403471330093,
+        "fraction_grid_points_meeting_target": 0.19713152273420811,
+        "max_energy_error": 1.3322676295501878e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.1783568128069965,
+        "min_T": 0.8216431871930039,
+        "mean_R_sampled": 0.06255496064071904,
+        "worst_R_wavelength_um": 8.0,
+        "worst_violation_absolute": 0.1683568128069965,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.5543122344752192e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.8169944650466913,
+      0.07748176808809183,
+      0.9859332070523831,
+      0.7358376705156682,
+      1.2526541318966964,
+      1.1689599295839428
+    ],
+    "solver": {
+      "status": "actual spectral evaluation budget exhausted",
+      "solver_reported_nfev_excludes_some_fd_calls": null
+    }
+  },
+  {
+    "case": "dual_window_ar_3_5_8_12",
+    "template": "pair_plus_halfwave",
+    "actual_calls": 446,
+    "wall_seconds": 0.08940509299281985,
+    "before": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.34896023579178553,
+        "min_T": 0.6510397642082144,
+        "mean_R_sampled": 0.2517288656359122,
+        "worst_R_wavelength_um": 4.7254638671875,
+        "worst_violation_absolute": 0.3389602357917855,
+        "fraction_grid_points_meeting_target": 0.028501678364357644,
+        "max_energy_error": 1.3322676295501878e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.36296344125705543,
+        "min_T": 0.6370365587429445,
+        "mean_R_sampled": 0.3104217159832813,
+        "worst_R_wavelength_um": 8.9306640625,
+        "worst_violation_absolute": 0.3529634412570554,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.1102230246251565e-15
+      }
+    ],
+    "after": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "points": 16385,
+        "max_R": 0.3350830304995791,
+        "min_T": 0.6649169695004209,
+        "mean_R_sampled": 0.14618779771415805,
+        "worst_R_wavelength_um": 3.0,
+        "worst_violation_absolute": 0.3250830304995791,
+        "fraction_grid_points_meeting_target": 0.01916386939273726,
+        "max_energy_error": 1.3322676295501878e-15
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "points": 16385,
+        "max_R": 0.2548338606648732,
+        "min_T": 0.7451661393351265,
+        "mean_R_sampled": 0.1374168209299351,
+        "worst_R_wavelength_um": 12.0,
+        "worst_violation_absolute": 0.24483386066487317,
+        "fraction_grid_points_meeting_target": 0.0,
+        "max_energy_error": 1.3322676295501878e-15
+      }
+    ],
+    "best_thickness_um": [
+      0.8696067945068298,
+      1.4593610918649684,
+      2.4999999999760676,
+      1.2812027760579088,
+      0.005000000000286214,
+      0.00500000000484354
+    ],
+    "solver": {
+      "status": "`ftol` termination condition is satisfied.",
+      "solver_reported_nfev_excludes_some_fd_calls": 68
+    }
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "case": "single_ar_3_5",
+    "method": "classic_local",
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "best_worst_R_percent": 0.5672582225136619,
+    "median_worst_R_percent": 0.7974522640347873,
+    "worst_worst_R_percent": 0.7974534681777201,
+    "dense_success_count": 3,
+    "run_count": 3,
+    "median_actual_stack_evaluations": 5355.0,
+    "median_wall_seconds": 1.072235586005263
+  },
+  {
+    "case": "single_ar_3_5",
+    "method": "classic_de",
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "best_worst_R_percent": 0.714061946456923,
+    "median_worst_R_percent": 1.753068034259744,
+    "worst_worst_R_percent": 1.808257384994985,
+    "dense_success_count": 1,
+    "run_count": 3,
+    "median_actual_stack_evaluations": 6000.0,
+    "median_wall_seconds": 1.0263835520017892
+  },
+  {
+    "case": "single_ar_3_5",
+    "method": "de_local",
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "best_worst_R_percent": 0.7146511058353083,
+    "median_worst_R_percent": 1.760869207021316,
+    "worst_worst_R_percent": 1.766723583067789,
+    "dense_success_count": 1,
+    "run_count": 3,
+    "median_actual_stack_evaluations": 6000.0,
+    "median_wall_seconds": 1.001276486000279
+  },
+  {
+    "case": "dual_window_ar_3_5_8_12",
+    "method": "classic_local",
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "best_worst_R_percent": 3.2269899019562724,
+    "median_worst_R_percent": 3.2269899019562724,
+    "worst_worst_R_percent": 3.2269899019562724,
+    "dense_success_count": 0,
+    "run_count": 3,
+    "median_actual_stack_evaluations": 4649.0,
+    "median_wall_seconds": 1.1070527439878788
+  },
+  {
+    "case": "dual_window_ar_3_5_8_12",
+    "method": "classic_de",
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "best_worst_R_percent": 3.216774437688029,
+    "median_worst_R_percent": 3.2192962493115393,
+    "worst_worst_R_percent": 3.2207884404043736,
+    "dense_success_count": 0,
+    "run_count": 3,
+    "median_actual_stack_evaluations": 6000.0,
+    "median_wall_seconds": 1.1505836129945237
+  },
+  {
+    "case": "dual_window_ar_3_5_8_12",
+    "method": "de_local",
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "best_worst_R_percent": 3.2189389468974676,
+    "median_worst_R_percent": 3.2192202762868236,
+    "worst_worst_R_percent": 3.219315522337049,
+    "dense_success_count": 0,
+    "run_count": 3,
+    "median_actual_stack_evaluations": 6000.0,
+    "median_wall_seconds": 1.1976744109997526
+  }
+]

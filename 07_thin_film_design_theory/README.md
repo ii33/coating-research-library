@@ -43,3 +43,8 @@ PYTHONDONTWRITEBYTECODE=1 python 07_thin_film_design_theory/models/check_package
 ```
 
 reader模式明确跳过本地原文存在/哈希检查，仍验证公式、来源登记、本地链接、冻结数值、T06依赖和最终测试证据；不表示原件已随包发布。
+
+
+## 2026-10-19 手工研究增量
+
+[多光谱红外结构与云端算法研究](../manual_studies/2026-10-19_multispectral_ir_structures/README.md)：补充结构族与自由结构搜索的比较边界、理想前向模型与实际 IR 验收的区别，以及受限合成算法试验。本增量不改变本专题既有冻结结论和验收状态；实验使用合成常数折射率，未验证真实红外材料或器件。
