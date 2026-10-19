@@ -1,0 +1,84 @@
+[
+  {
+    "experiment": "adaptive",
+    "exit_code": 0,
+    "wall_seconds": 1.0673838419897947,
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "<relocated experiment>",
+      "-p",
+      "test_adaptive.py",
+      "-v"
+    ],
+    "relocated": true,
+    "unrelated_working_directory": true,
+    "source_python_sha256": {
+      "adaptive/test_adaptive.py": "0af1fb7d60d92ee0e348e94b2750e47c1290b4520d8e0329852c69d37fa1cbb4",
+      "adaptive/run_adaptive.py": "d6a8c5f239a07f8a77625f9d416e0af81c7f45ab03288f827b62e2cd63225e8f",
+      "adaptive/diagnose_reference_precision.py": "3e4f2fea208c51342154070529f109d71b2021af329915f42e3cf438083d9732",
+      "adaptive/kernel/run_experiment.py": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    "tested_python_matches_frozen_source": true,
+    "source_mismatches": []
+  },
+  {
+    "experiment": "projection",
+    "exit_code": 0,
+    "wall_seconds": 1.5696914860163815,
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "<relocated experiment>",
+      "-p",
+      "test_projection_experiment.py",
+      "-v"
+    ],
+    "relocated": true,
+    "unrelated_working_directory": true,
+    "source_python_sha256": {
+      "projection/run_projection_experiment.py": "806cb667bcce54b17ec8b6cdf38249cd88c65906b08cf0bf048291956f6ded8a",
+      "projection/test_projection_experiment.py": "6b74ac9b6d77f89291f3f070a596c495a00c65a6ba05989535cda2f6c830877f",
+      "projection/verified_power_kernel.py": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    "tested_python_matches_frozen_source": true,
+    "source_mismatches": []
+  },
+  {
+    "experiment": "layer-packs",
+    "exit_code": 0,
+    "wall_seconds": 1.227954784000758,
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "<relocated experiment>",
+      "-p",
+      "test_layer_packs.py",
+      "-v"
+    ],
+    "relocated": true,
+    "unrelated_working_directory": true,
+    "source_python_sha256": {
+      "layer-packs/plot_results.py": "50521db9e2d017f6943650aefd8c8253623133cf4dc0ff03b5e3b9fbd6dbb164",
+      "layer-packs/test_layer_packs.py": "a6589fff06cad001137a8dcd7c12cf33eb54862f5c17de574ecf0ec7e03f8477",
+      "layer-packs/analyze_results.py": "bc70b3696ae98382c8da9741a19f31f93e717110f1b4c9643a6c955ba676374f",
+      "layer-packs/run_layer_packs.py": "d75cb46136fa10bcc53d3f279242aacfb4f7781bcaa896209855642f907f48f7",
+      "layer-packs/mechanism_check.py": "1df3f73f8ed26c8f17629b2226f449dbd9ec06ef82d70ab9a4d46a627a6f121c",
+      "layer-packs/verified_kernel/run_experiment.py": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    "tested_python_matches_frozen_source": true,
+    "source_mismatches": []
+  }
+]

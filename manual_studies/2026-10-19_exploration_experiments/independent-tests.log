@@ -1,0 +1,60 @@
+=== adaptive ===
+test_adaptive_exact_work_and_hidden_peak (test_adaptive.AdaptiveTests.test_adaptive_exact_work_and_hidden_peak) ... ok
+test_baseline_grids_distinct_unique (test_adaptive.AdaptiveTests.test_baseline_grids_distinct_unique) ... ok
+test_completed_records_exact_design_work (test_adaptive.AdaptiveTests.test_completed_records_exact_design_work) ... ok
+test_history_reset_for_independent_candidates (test_adaptive.AdaptiveTests.test_history_reset_for_independent_candidates) ... ok
+test_lossless_kernel (test_adaptive.AdaptiveTests.test_lossless_kernel) ... ok
+test_response_repeatability (test_adaptive.AdaptiveTests.test_response_repeatability) ... ok
+test_ultranarrow_failure_is_retained (test_adaptive.AdaptiveTests.test_ultranarrow_failure_is_retained) ... ok
+test_vendor_kernel_unchanged (test_adaptive.AdaptiveTests.test_vendor_kernel_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.392s
+
+OK
+
+=== projection ===
+test_all_candidates_and_repairs_legal_and_budgeted (test_projection_experiment.ProjectionTests.test_all_candidates_and_repairs_legal_and_budgeted) ... ok
+test_boundary_frozen_projection_and_invalid_full_projection (test_projection_experiment.ProjectionTests.test_boundary_frozen_projection_and_invalid_full_projection) ... ok
+test_common_reference_and_length_unit_invariance (test_projection_experiment.ProjectionTests.test_common_reference_and_length_unit_invariance) ... ok
+test_interior_analytic_stationarity_and_all_finite_scores (test_projection_experiment.ProjectionTests.test_interior_analytic_stationarity_and_all_finite_scores) ... ok
+test_no_tiny_numerical_gain_misreported_as_advantage (test_projection_experiment.ProjectionTests.test_no_tiny_numerical_gain_misreported_as_advantage) ... ok
+test_redundant_same_material_split (test_projection_experiment.ProjectionTests.test_redundant_same_material_split) ... ok
+test_reproducibility (test_projection_experiment.ProjectionTests.test_reproducibility) ... ok
+test_scalar_amplitudes_match_verified_power_kernel (test_projection_experiment.ProjectionTests.test_scalar_amplitudes_match_verified_power_kernel) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.635s
+
+OK
+
+=== layer-packs ===
+test_canonical_merge_does_not_bypass_thickness_cap (test_layer_packs.PhysicsTests.test_canonical_merge_does_not_bypass_thickness_cap) ... ok
+test_frozen_targets_not_replaced_by_identity_anchors (test_layer_packs.PhysicsTests.test_frozen_targets_not_replaced_by_identity_anchors) ... ok
+test_halfwave_at_all_positions_and_failure_off_center (test_layer_packs.PhysicsTests.test_halfwave_at_all_positions_and_failure_off_center) ... ok
+test_pool_legal_fixed_total_and_order_determinism (test_layer_packs.PhysicsTests.test_pool_legal_fixed_total_and_order_determinism) ... ok
+test_two_three_layer_identity_matrix (test_layer_packs.PhysicsTests.test_two_three_layer_identity_matrix) ... ok
+test_all_independent_audits_and_bounds (test_layer_packs.ResultsTests.test_all_independent_audits_and_bounds) ... ok
+test_all_methods_and_seeds_reported (test_layer_packs.ResultsTests.test_all_methods_and_seeds_reported) ... ok
+test_exact_paired_training_costs (test_layer_packs.ResultsTests.test_exact_paired_training_costs) ... ok
+test_kernel_provenance_and_replay_one_refinement (test_layer_packs.ResultsTests.test_kernel_provenance_and_replay_one_refinement) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.303s
+
+OK
+
+=== Final adaptive provenance-text refresh ===
+test_adaptive_exact_work_and_hidden_peak (test_adaptive.AdaptiveTests.test_adaptive_exact_work_and_hidden_peak) ... ok
+test_baseline_grids_distinct_unique (test_adaptive.AdaptiveTests.test_baseline_grids_distinct_unique) ... ok
+test_completed_records_exact_design_work (test_adaptive.AdaptiveTests.test_completed_records_exact_design_work) ... ok
+test_history_reset_for_independent_candidates (test_adaptive.AdaptiveTests.test_history_reset_for_independent_candidates) ... ok
+test_lossless_kernel (test_adaptive.AdaptiveTests.test_lossless_kernel) ... ok
+test_response_repeatability (test_adaptive.AdaptiveTests.test_response_repeatability) ... ok
+test_ultranarrow_failure_is_retained (test_adaptive.AdaptiveTests.test_ultranarrow_failure_is_retained) ... ok
+test_vendor_kernel_unchanged (test_adaptive.AdaptiveTests.test_vendor_kernel_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.343s
+
+OK

@@ -1,0 +1,193 @@
+{
+  "kernel_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6",
+  "anchor_um": 4,
+  "base_thickness_um": [
+    0.6718207875641499,
+    0.9596658089704853,
+    0.2686941745557452,
+    0.16440325380469994,
+    1.5589439301147199,
+    0.41467230316209586
+  ],
+  "base_indices": [
+    1.45,
+    2.35,
+    1.45,
+    2.35,
+    1.45,
+    2.35
+  ],
+  "base_window_max_R": 0.005672582225136619,
+  "base_center_R": 0.0001447696792297926,
+  "checks": [
+    {
+      "n": 1.45,
+      "d_um": 1.3793103448275863,
+      "position": 0,
+      "center_abs_R_change": 3.496552006265752e-18,
+      "center_abs_T_change": 3.3306690738754696e-16,
+      "window_max_abs_R_change": 0.1254703683112126,
+      "window_max_R": 0.13084649786636912,
+      "independent_recursion_max_error": 3.0531133177191805e-16,
+      "absorption_center_abs_R_change": 4.1831598094592285e-05,
+      "absorption_center_T_loss": 0.022859086816548913
+    },
+    {
+      "n": 1.45,
+      "d_um": 1.3793103448275863,
+      "position": 1,
+      "center_abs_R_change": 3.496552006265752e-18,
+      "center_abs_T_change": 3.3306690738754696e-16,
+      "window_max_abs_R_change": 0.12547036831121253,
+      "window_max_R": 0.13084649786636904,
+      "independent_recursion_max_error": 2.3592239273284576e-16,
+      "absorption_center_abs_R_change": 4.3526365611350144e-05,
+      "absorption_center_T_loss": 0.022860710104362525
+    },
+    {
+      "n": 1.45,
+      "d_um": 1.3793103448275863,
+      "position": 2,
+      "center_abs_R_change": 3.496552006265752e-18,
+      "center_abs_T_change": 3.3306690738754696e-16,
+      "window_max_abs_R_change": 0.4166135191422571,
+      "window_max_R": 0.4219896486974136,
+      "independent_recursion_max_error": 7.216449660063518e-16,
+      "absorption_center_abs_R_change": 4.840600237603285e-05,
+      "absorption_center_T_loss": 0.02355311585269937
+    },
+    {
+      "n": 1.45,
+      "d_um": 1.3793103448275863,
+      "position": 3,
+      "center_abs_R_change": 3.496552006265752e-18,
+      "center_abs_T_change": 3.3306690738754696e-16,
+      "window_max_abs_R_change": 0.4166135191422568,
+      "window_max_R": 0.42198964869741334,
+      "independent_recursion_max_error": 9.992007221626409e-16,
+      "absorption_center_abs_R_change": 4.889253029844e-05,
+      "absorption_center_T_loss": 0.023552270735987646
+    },
+    {
+      "n": 1.45,
+      "d_um": 1.3793103448275863,
+      "position": 4,
+      "center_abs_R_change": 2.439454888092385e-19,
+      "center_abs_T_change": 4.440892098500626e-16,
+      "window_max_abs_R_change": 0.15326719147919887,
+      "window_max_R": 0.15864332103435538,
+      "independent_recursion_max_error": 3.3306690738754696e-16,
+      "absorption_center_abs_R_change": 2.335370013362186e-05,
+      "absorption_center_T_loss": 0.02158592116005631
+    },
+    {
+      "n": 1.45,
+      "d_um": 1.3793103448275863,
+      "position": 5,
+      "center_abs_R_change": 0.0,
+      "center_abs_T_change": 0.0,
+      "window_max_abs_R_change": 0.1532671914791988,
+      "window_max_R": 0.1586433210343553,
+      "independent_recursion_max_error": 3.885780586188048e-16,
+      "absorption_center_abs_R_change": 2.3554585716420364e-05,
+      "absorption_center_T_loss": 0.021586056462233216
+    },
+    {
+      "n": 1.45,
+      "d_um": 1.3793103448275863,
+      "position": 6,
+      "center_abs_R_change": 2.0599841277224584e-18,
+      "center_abs_T_change": 3.3306690738754696e-16,
+      "window_max_abs_R_change": 0.4517501446091705,
+      "window_max_R": 0.45712627416432705,
+      "independent_recursion_max_error": 1.1102230246251565e-15,
+      "absorption_center_abs_R_change": 1.8607652102483767e-05,
+      "absorption_center_T_loss": 0.02946275612063387
+    },
+    {
+      "n": 2.35,
+      "d_um": 0.851063829787234,
+      "position": 0,
+      "center_abs_R_change": 3.2526065174565133e-18,
+      "center_abs_T_change": 4.440892098500626e-16,
+      "window_max_abs_R_change": 0.44806150987097826,
+      "window_max_R": 0.4534376394261348,
+      "independent_recursion_max_error": 6.661338147750939e-16,
+      "absorption_center_abs_R_change": 8.630775859334226e-05,
+      "absorption_center_T_loss": 0.018286440867999465
+    },
+    {
+      "n": 2.35,
+      "d_um": 0.851063829787234,
+      "position": 1,
+      "center_abs_R_change": 2.1412992906588713e-18,
+      "center_abs_T_change": 0.0,
+      "window_max_abs_R_change": 0.15298642136064503,
+      "window_max_R": 0.15836255091580154,
+      "independent_recursion_max_error": 3.0531133177191805e-16,
+      "absorption_center_abs_R_change": 1.4883354441280267e-05,
+      "absorption_center_T_loss": 0.013379265293149811
+    },
+    {
+      "n": 2.35,
+      "d_um": 0.851063829787234,
+      "position": 2,
+      "center_abs_R_change": 6.2341624917916505e-19,
+      "center_abs_T_change": 3.3306690738754696e-16,
+      "window_max_abs_R_change": 0.15298642136064503,
+      "window_max_R": 0.15836255091580154,
+      "independent_recursion_max_error": 3.3306690738754696e-16,
+      "absorption_center_abs_R_change": 1.4887940411195471e-05,
+      "absorption_center_T_loss": 0.013379271965904382
+    },
+    {
+      "n": 2.35,
+      "d_um": 0.851063829787234,
+      "position": 3,
+      "center_abs_R_change": 1.7889335846010823e-18,
+      "center_abs_T_change": 0.0,
+      "window_max_abs_R_change": 0.41818563032632006,
+      "window_max_R": 0.4235617598814766,
+      "independent_recursion_max_error": 7.216449660063518e-16,
+      "absorption_center_abs_R_change": 4.060353462912301e-05,
+      "absorption_center_T_loss": 0.014615195097346434
+    },
+    {
+      "n": 2.35,
+      "d_um": 0.851063829787234,
+      "position": 4,
+      "center_abs_R_change": 2.3852447794681098e-18,
+      "center_abs_T_change": 4.440892098500626e-16,
+      "window_max_abs_R_change": 0.41818563032632006,
+      "window_max_R": 0.4235617598814766,
+      "independent_recursion_max_error": 6.661338147750939e-16,
+      "absorption_center_abs_R_change": 4.0214227194033475e-05,
+      "absorption_center_T_loss": 0.014614906573552355
+    },
+    {
+      "n": 2.35,
+      "d_um": 0.851063829787234,
+      "position": 5,
+      "center_abs_R_change": 1.4094628242311558e-18,
+      "center_abs_T_change": 0.0,
+      "window_max_abs_R_change": 0.12857513841764706,
+      "window_max_R": 0.13395126797280357,
+      "independent_recursion_max_error": 3.608224830031759e-16,
+      "absorption_center_abs_R_change": 2.4975905321014035e-05,
+      "absorption_center_T_loss": 0.01417905576095635
+    },
+    {
+      "n": 2.35,
+      "d_um": 0.851063829787234,
+      "position": 6,
+      "center_abs_R_change": 6.776263578034403e-19,
+      "center_abs_T_change": 0.0,
+      "window_max_abs_R_change": 0.12857513841764687,
+      "window_max_R": 0.13395126797280338,
+      "independent_recursion_max_error": 3.885780586188048e-16,
+      "absorption_center_abs_R_change": 2.4358370707752052e-05,
+      "absorption_center_T_loss": 0.014179636289781472
+    }
+  ],
+  "scope": "Normal incidence, two synthetic constant-index lossless materials; complex-index perturbation is a deliberate counterexample, not a measured material."
+}

@@ -1,0 +1,67 @@
+{
+  "model": "SYNTHETIC n=1.45,2.35; k=0; n0=1, semi-infinite ns=3.42; normal incidence; no backside",
+  "windows_um": [
+    [
+      3.0,
+      5.0
+    ],
+    [
+      8.0,
+      12.0
+    ]
+  ],
+  "target_max_R": 0.01,
+  "thickness_bounds_um": [
+    0.005,
+    2.5
+  ],
+  "max_canonical_layers": 9,
+  "total_thickness_max_um": 12.0,
+  "pack_total_by_length_um": {
+    "1": 1.3793103448275863,
+    "2": 2.2303741746148202,
+    "3": 3.6096845194424065
+  },
+  "seeds": [
+    11,
+    29,
+    47,
+    83
+  ],
+  "methods": [
+    "anchor_identity",
+    "multipoint_identity",
+    "random_pack",
+    "phase_covered",
+    "best_V"
+  ],
+  "training_points_per_window": 81,
+  "audit_dense_points_per_window": 4097,
+  "audit_offset_points_per_window": 4097,
+  "refinement_calls_per_selected_pack": 240,
+  "selected_packs_per_length": 2,
+  "base_stacks": {
+    "protected_short_window": [
+      0.6718207875641499,
+      0.9596658089704853,
+      0.2686941745557452,
+      0.16440325380469994,
+      1.5589439301147199,
+      0.41467230316209586
+    ],
+    "existing_best_dual_window": [
+      0.8687914311440501,
+      0.16595496505818463,
+      0.0053528155003879085,
+      0.0051792662818528346,
+      0.2742767404282964,
+      0.5352681554140437
+    ]
+  },
+  "kernel_source": "verified_kernel/run_experiment.py; unchanged copy of original coating-research-experiments kernel",
+  "kernel_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6",
+  "fixed_protected_mask": "all original training constraints with initial R <= 0.008, no target relaxation",
+  "local_rule": "lexicographic protected-constraint violation, global maximum standardized violation, mean squared positive violation; fixed pack total, pack +/-0.25 um and immediate old neighbors +/-0.18 um",
+  "archive_rule": "keep original 6-layer base; separately archive full-target best V and fully protected shortlist result",
+  "scope": "one finite editing round, not end-to-end layer synthesis; all screening evaluations including rejected candidates are charged identically to every method"
+}

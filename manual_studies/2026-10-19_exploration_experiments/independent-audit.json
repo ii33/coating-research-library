@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-19T19:18:53Z",
+  "verdict": "pass_with_scope_limits",
+  "blocking_findings": [],
+  "frozen_input_hashes_match": true,
+  "kernel_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6",
+  "independent_replay_issues": [],
+  "counts": {
+    "detection_candidates": 35,
+    "ar_designs": 12,
+    "projection_edits": 55,
+    "layer_pack_runs": 40,
+    "layer_pack_final_archives": 80,
+    "relocated_tests_passed": 25
+  },
+  "checks": {
+    "physics_units_phase": "pass",
+    "literal_point_layer_ledgers": "pass_for_adaptive_and_packs",
+    "projection_cost_label": "equal_per_candidate_cap_only_explicitly_disclosed",
+    "false_pass_definitions": "pass",
+    "sampling_leakage_scope": "constructed_family_only_no_population_claim",
+    "portable_relative_paths": "pass",
+    "report_claims_vs_results": "pass",
+    "canonicalized_stacks": "independently_recomputed_equivalent"
+  },
+  "numerical_replay": {
+    "random_R_max_abs_error": 1.3322676295501878e-15,
+    "um_nm_R_T_max_abs_error": 2.3592239273284576e-14,
+    "detection_reference_max_abs_difference": 2.4108373075648615e-09,
+    "ar_reference_max_abs_difference": 2.220446049250313e-16,
+    "projection_audit_max_abs_difference": 2.1762367463651344e-08,
+    "layer_pack_audit_max_abs_difference": 4.440892098500626e-16,
+    "canonicalization_max_abs_R_difference": 6.38378239159465e-16,
+    "ultranarrow_recursion_RT_closure_abs_error": 2.7918856115860535e-09
+  },
+  "required_scope_limits": [
+    "finite_grids_and_local_extrema_are_not_continuous_certificates",
+    "synthetic_normal_incidence_not_real_material_or_manufacturing_validation",
+    "equal_points_not_equal_walltime",
+    "projection_caps_not_equal_actual_end_to_end_cost",
+    "constructed_cases_and_small_seed_sets_not_generalization_rates",
+    "boundary_freeze_not_full_inequality_tangent_cone",
+    "pack_repair_not_complete_hard_constrained_optimizer",
+    "failed_search_not_physical_infeasibility",
+    "no_main_software_change_or_publication_performed_by_auditor"
+  ],
+  "input_results_sha256": {
+    "adaptive/results.json": "e1262af68767c9698203dafdb0ffaa38deb3db9fef9dbd5de58deb39aa67ea90",
+    "projection/results.json": "a85246d7fcb31a428317e2dab583a841805a43aa90bf48f9bf2dfd40ea59bee4",
+    "layer-packs/results/results.json": "bf46673f3eba6f40dce5bf6932705b4491d17920d84924dc77ca8a7c3a624c8e"
+  },
+  "evidence": [
+    "independent-audit.md",
+    "independent_replay.py",
+    "independent-replay.json",
+    "independent-replay.log",
+    "independent-tests.json",
+    "independent-tests.log"
+  ]
+}

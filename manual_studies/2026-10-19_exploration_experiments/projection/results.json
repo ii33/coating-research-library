@@ -1,0 +1,2761 @@
+{
+  "date_utc": "2026-10-19",
+  "scope": "synthetic lossless normal-incidence AR, no claims for real materials",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "python": "3.12.14",
+  "cost_work_note": "wavelength_layer_products is an interface-equivalent work proxy, with max(1,N); not literal layer updates, FLOPs, or matched runtime",
+  "source_power_kernel": "verified_power_kernel.py",
+  "source_power_kernel_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6",
+  "source_power_kernel_provenance": "Exact unchanged copy of run_experiment.py from the earlier verified synthetic coating-search experiment, 2026-10-19; bundled for portable offline reproduction",
+  "config": {
+    "n0": 1.0,
+    "ns": 3.42,
+    "training_wavelength_um": [
+      3.0,
+      3.066666666666667,
+      3.1333333333333333,
+      3.2,
+      3.2666666666666666,
+      3.3333333333333335,
+      3.4,
+      3.466666666666667,
+      3.533333333333333,
+      3.6,
+      3.6666666666666665,
+      3.7333333333333334,
+      3.8,
+      3.8666666666666667,
+      3.9333333333333336,
+      4.0,
+      4.066666666666666,
+      4.133333333333333,
+      4.2,
+      4.266666666666667,
+      4.333333333333333,
+      4.4,
+      4.466666666666667,
+      4.533333333333333,
+      4.6,
+      4.666666666666667,
+      4.733333333333333,
+      4.8,
+      4.866666666666667,
+      4.933333333333334,
+      5.0
+    ],
+    "independent_audit_points": 2049,
+    "midpoint_audit_points": 2050,
+    "midpoint_audit": "2048 disjoint interior midpoints plus mandatory endpoints; union maximum used for all labels",
+    "thickness_unit": "um",
+    "d_min_um": 0.05,
+    "d_max_um": 1.2,
+    "d_scale_um": 0.2,
+    "reference_input_z_um": -10.0,
+    "reference_output_z_um": 0.0,
+    "response": "Re/Im r at common reference; no imposed phase target",
+    "W": "identity positive definite",
+    "svd_relative_cutoff": 1e-10,
+    "central_difference_h_in_x": 1e-05,
+    "x_definition": "d / 0.2 um",
+    "target_R": 0.01,
+    "constraints": "every wavelength R <= .01; same-material neighbors canonicalized; positive layers >= .05 um; all candidate and repair layers obey case upper bound, 1.2 or .4 um",
+    "repair": "SLSQP epigraph min t, all R_q <= t; best actual legal iterate retained",
+    "repair_call_cap": 160,
+    "birth_material_n": [
+      1.2,
+      1.45,
+      2.35,
+      3.1
+    ],
+    "birth_thickness_um": [
+      0.05,
+      0.15,
+      0.35,
+      0.7
+    ],
+    "compensation_trust_um": 0.05,
+    "compensation_lambda": 1e-06,
+    "random_seeds": [
+      11,
+      29,
+      47
+    ],
+    "unitcheck_seed": 20261019
+  },
+  "checks": {
+    "amplitude_R_vs_verified_kernel_max_error": 7.771561172376096e-16,
+    "amplitude_T_vs_verified_kernel_max_error": 2.3314683517128287e-15,
+    "lossless_energy_max_error": 1.7763568394002505e-15,
+    "common_reference_ambient_insertion_error": 2.3551386880256627e-15,
+    "um_vs_nm_identical_physics_error": 3.9146186763847585e-15,
+    "same_material_split_error": 3.1401849173675503e-16
+  },
+  "results": [
+    {
+      "case": "interior",
+      "base_d_um": [
+        0.6465517241379303
+      ],
+      "base_n": [
+        1.45
+      ],
+      "base_max_R": 0.10249979766681848,
+      "base_optimization": {
+        "d": [
+          0.6465517241379303
+        ],
+        "max_R": 0.10249979766681848,
+        "calls": 18,
+        "status": "Optimization terminated successfully"
+      },
+      "bound_upper_um": 1.2,
+      "free_coordinates": [
+        true
+      ],
+      "active_wavelength_um": [
+        3.0,
+        5.0
+      ],
+      "active_mu": [
+        0.37500000001228995,
+        0.6249999999877099
+      ],
+      "active_derivative_dg_dx": [
+        12.722205537251757,
+        -7.633323322751325
+      ],
+      "tangent_stationarity_norm": 4.929879749917384e-17,
+      "full_stationarity_norm": 4.929879749917384e-17,
+      "singular_values": [
+        1.440722551512729
+      ],
+      "max_raw_projected_inner_error": 1.4210854715202004e-14,
+      "max_incorrect_full_projected_score_error": 1.4210854715202004e-14,
+      "candidate_count": 32,
+      "oracle_audited_max_R": 0.01721545649095649,
+      "oracle_dense_max_R": 0.017215455036969318,
+      "methods": {
+        "raw_inner": {
+          "spearman_lower_is_better": -0.03995601173020528,
+          "order_labels": [
+            "insert_0_n2.35_d0.7",
+            "insert_0_n3.1_d0.35",
+            "insert_1_n2.35_d0.7",
+            "insert_0_n3.1_d0.7",
+            "insert_0_n2.35_d0.35",
+            "insert_0_n3.1_d0.15",
+            "replace_0_n2.35",
+            "replace_0_n3.1",
+            "insert_1_n3.1_d0.7",
+            "insert_1_n2.35_d0.35",
+            "insert_0_n2.35_d0.15",
+            "insert_1_n3.1_d0.35",
+            "insert_0_n3.1_d0.05",
+            "insert_0_n1.45_d0.35",
+            "insert_1_n1.2_d0.7",
+            "insert_0_n1.2_d0.7",
+            "insert_1_n3.1_d0.15",
+            "insert_1_n2.35_d0.15",
+            "insert_0_n2.35_d0.05",
+            "insert_1_n1.2_d0.35",
+            "delete_0",
+            "insert_0_n1.45_d0.15",
+            "insert_0_n1.2_d0.35",
+            "insert_1_n3.1_d0.05",
+            "insert_1_n2.35_d0.05",
+            "insert_1_n1.2_d0.15",
+            "insert_0_n1.45_d0.05",
+            "insert_0_n1.2_d0.15",
+            "insert_1_n1.2_d0.05",
+            "insert_0_n1.2_d0.05",
+            "redundant_same_material_split",
+            "replace_0_n1.2"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.28206589584510866,
+            "archive_best_audited_max_R": 0.10249979766681848,
+            "best_dense_max_R": 0.28206589584510866,
+            "regret": 0.26485043935415215,
+            "feasible": false,
+            "allocated_power_calls": 195,
+            "allocated_amplitude_calls": 35,
+            "reconstructed_actual_online_power_calls": 102,
+            "reconstructed_actual_online_amplitude_calls": 35,
+            "actual_repair_power_calls": 67,
+            "actual_selected_repair_point_layer_equivalent_work": 4154,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.01721545858621878,
+            "archive_best_audited_max_R": 0.01721545858621878,
+            "best_dense_max_R": 0.01721545858621878,
+            "regret": 2.0952622900582973e-09,
+            "feasible": false,
+            "allocated_power_calls": 515,
+            "allocated_amplitude_calls": 35,
+            "reconstructed_actual_online_power_calls": 220,
+            "reconstructed_actual_online_amplitude_calls": 35,
+            "actual_repair_power_calls": 185,
+            "actual_selected_repair_point_layer_equivalent_work": 11470,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        },
+        "projected_inner": {
+          "spearman_lower_is_better": -0.03995601173020528,
+          "order_labels": [
+            "insert_0_n2.35_d0.7",
+            "insert_0_n3.1_d0.35",
+            "insert_1_n2.35_d0.7",
+            "insert_0_n3.1_d0.7",
+            "insert_0_n2.35_d0.35",
+            "insert_0_n3.1_d0.15",
+            "replace_0_n2.35",
+            "replace_0_n3.1",
+            "insert_1_n3.1_d0.7",
+            "insert_1_n2.35_d0.35",
+            "insert_0_n2.35_d0.15",
+            "insert_1_n3.1_d0.35",
+            "insert_0_n3.1_d0.05",
+            "insert_0_n1.45_d0.35",
+            "insert_1_n1.2_d0.7",
+            "insert_0_n1.2_d0.7",
+            "insert_1_n3.1_d0.15",
+            "insert_1_n2.35_d0.15",
+            "insert_0_n2.35_d0.05",
+            "insert_1_n1.2_d0.35",
+            "delete_0",
+            "insert_0_n1.45_d0.15",
+            "insert_0_n1.2_d0.35",
+            "insert_1_n3.1_d0.05",
+            "insert_1_n2.35_d0.05",
+            "insert_1_n1.2_d0.15",
+            "insert_0_n1.45_d0.05",
+            "insert_0_n1.2_d0.15",
+            "insert_1_n1.2_d0.05",
+            "insert_0_n1.2_d0.05",
+            "redundant_same_material_split",
+            "replace_0_n1.2"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.28206589584510866,
+            "archive_best_audited_max_R": 0.10249979766681848,
+            "best_dense_max_R": 0.28206589584510866,
+            "regret": 0.26485043935415215,
+            "feasible": false,
+            "allocated_power_calls": 195,
+            "allocated_amplitude_calls": 35,
+            "reconstructed_actual_online_power_calls": 102,
+            "reconstructed_actual_online_amplitude_calls": 35,
+            "actual_repair_power_calls": 67,
+            "actual_selected_repair_point_layer_equivalent_work": 4154,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.01721545858621878,
+            "archive_best_audited_max_R": 0.01721545858621878,
+            "best_dense_max_R": 0.01721545858621878,
+            "regret": 2.0952622900582973e-09,
+            "feasible": false,
+            "allocated_power_calls": 515,
+            "allocated_amplitude_calls": 35,
+            "reconstructed_actual_online_power_calls": 220,
+            "reconstructed_actual_online_amplitude_calls": 35,
+            "actual_repair_power_calls": 185,
+            "actual_selected_repair_point_layer_equivalent_work": 11470,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        },
+        "projected_cosine": {
+          "spearman_lower_is_better": 0.38892961876832843,
+          "order_labels": [
+            "insert_0_n2.35_d0.7",
+            "insert_1_n2.35_d0.7",
+            "insert_1_n2.35_d0.35",
+            "insert_1_n3.1_d0.7",
+            "insert_1_n3.1_d0.35",
+            "insert_0_n2.35_d0.35",
+            "insert_1_n2.35_d0.15",
+            "insert_0_n3.1_d0.7",
+            "insert_0_n3.1_d0.35",
+            "insert_0_n2.35_d0.15",
+            "insert_0_n2.35_d0.05",
+            "insert_0_n3.1_d0.15",
+            "insert_1_n3.1_d0.15",
+            "insert_0_n3.1_d0.05",
+            "insert_0_n1.45_d0.05",
+            "insert_0_n1.45_d0.35",
+            "insert_0_n1.45_d0.15",
+            "replace_0_n2.35",
+            "replace_0_n3.1",
+            "insert_1_n2.35_d0.05",
+            "insert_0_n1.2_d0.7",
+            "insert_1_n3.1_d0.05",
+            "insert_1_n1.2_d0.15",
+            "insert_1_n1.2_d0.05",
+            "insert_0_n1.2_d0.35",
+            "insert_1_n1.2_d0.7",
+            "insert_1_n1.2_d0.35",
+            "delete_0",
+            "insert_0_n1.2_d0.15",
+            "insert_0_n1.2_d0.05",
+            "replace_0_n1.2",
+            "redundant_same_material_split"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.28206589584510866,
+            "archive_best_audited_max_R": 0.10249979766681848,
+            "best_dense_max_R": 0.28206589584510866,
+            "regret": 0.26485043935415215,
+            "feasible": false,
+            "allocated_power_calls": 195,
+            "allocated_amplitude_calls": 35,
+            "reconstructed_actual_online_power_calls": 102,
+            "reconstructed_actual_online_amplitude_calls": 35,
+            "actual_repair_power_calls": 67,
+            "actual_selected_repair_point_layer_equivalent_work": 4154,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.017215457758809855,
+            "archive_best_audited_max_R": 0.017215457758809855,
+            "best_dense_max_R": 0.017215457758809855,
+            "regret": 1.2678533639620682e-09,
+            "feasible": false,
+            "allocated_power_calls": 515,
+            "allocated_amplitude_calls": 35,
+            "reconstructed_actual_online_power_calls": 171,
+            "reconstructed_actual_online_amplitude_calls": 35,
+            "actual_repair_power_calls": 136,
+            "actual_selected_repair_point_layer_equivalent_work": 8432,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        },
+        "finite_max_R": {
+          "spearman_lower_is_better": 0.564516129032258,
+          "order_labels": [
+            "insert_1_n2.35_d0.35",
+            "insert_1_n3.1_d0.35",
+            "insert_1_n3.1_d0.15",
+            "redundant_same_material_split",
+            "insert_1_n3.1_d0.7",
+            "insert_1_n3.1_d0.05",
+            "insert_1_n2.35_d0.15",
+            "insert_0_n1.2_d0.05",
+            "insert_1_n2.35_d0.05",
+            "insert_1_n2.35_d0.7",
+            "insert_0_n1.45_d0.05",
+            "insert_1_n1.2_d0.05",
+            "insert_0_n1.2_d0.15",
+            "insert_0_n1.2_d0.7",
+            "insert_0_n1.2_d0.35",
+            "insert_0_n1.45_d0.15",
+            "replace_0_n1.2",
+            "insert_1_n1.2_d0.15",
+            "insert_0_n2.35_d0.05",
+            "insert_0_n1.45_d0.35",
+            "replace_0_n2.35",
+            "replace_0_n3.1",
+            "delete_0",
+            "insert_1_n1.2_d0.35",
+            "insert_0_n3.1_d0.05",
+            "insert_1_n1.2_d0.7",
+            "insert_0_n2.35_d0.15",
+            "insert_0_n2.35_d0.7",
+            "insert_0_n2.35_d0.35",
+            "insert_0_n3.1_d0.15",
+            "insert_0_n3.1_d0.7",
+            "insert_0_n3.1_d0.35"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.017215457758809855,
+            "archive_best_audited_max_R": 0.017215457758809855,
+            "best_dense_max_R": 0.017215457758809855,
+            "regret": 1.2678533639620682e-09,
+            "feasible": false,
+            "allocated_power_calls": 193,
+            "allocated_amplitude_calls": 0,
+            "reconstructed_actual_online_power_calls": 63,
+            "reconstructed_actual_online_amplitude_calls": 0,
+            "actual_repair_power_calls": 30,
+            "actual_selected_repair_point_layer_equivalent_work": 1860,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.017215457758809855,
+            "archive_best_audited_max_R": 0.017215457758809855,
+            "best_dense_max_R": 0.017215457758809855,
+            "regret": 1.2678533639620682e-09,
+            "feasible": false,
+            "allocated_power_calls": 513,
+            "allocated_amplitude_calls": 0,
+            "reconstructed_actual_online_power_calls": 120,
+            "reconstructed_actual_online_amplitude_calls": 0,
+            "actual_repair_power_calls": 87,
+            "actual_selected_repair_point_layer_equivalent_work": 5394,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        },
+        "bounded_predicted_max_R": {
+          "spearman_lower_is_better": 0.5736803519061583,
+          "order_labels": [
+            "insert_1_n2.35_d0.35",
+            "insert_1_n3.1_d0.35",
+            "insert_1_n2.35_d0.15",
+            "insert_1_n3.1_d0.7",
+            "insert_1_n2.35_d0.7",
+            "insert_1_n3.1_d0.15",
+            "insert_0_n1.45_d0.05",
+            "insert_0_n1.2_d0.05",
+            "redundant_same_material_split",
+            "insert_1_n2.35_d0.05",
+            "insert_1_n1.2_d0.05",
+            "insert_0_n1.2_d0.15",
+            "insert_1_n3.1_d0.05",
+            "insert_0_n1.2_d0.7",
+            "insert_0_n1.2_d0.35",
+            "insert_0_n1.45_d0.15",
+            "insert_1_n1.2_d0.15",
+            "insert_0_n2.35_d0.05",
+            "replace_0_n1.2",
+            "insert_0_n1.45_d0.35",
+            "replace_0_n2.35",
+            "replace_0_n3.1",
+            "delete_0",
+            "insert_0_n3.1_d0.05",
+            "insert_1_n1.2_d0.35",
+            "insert_1_n1.2_d0.7",
+            "insert_0_n2.35_d0.15",
+            "insert_0_n2.35_d0.35",
+            "insert_0_n2.35_d0.7",
+            "insert_0_n3.1_d0.15",
+            "insert_0_n3.1_d0.35",
+            "insert_0_n3.1_d0.7"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.017215457758809855,
+            "archive_best_audited_max_R": 0.017215457758809855,
+            "best_dense_max_R": 0.017215457758809855,
+            "regret": 1.2678533639620682e-09,
+            "feasible": false,
+            "allocated_power_calls": 195,
+            "allocated_amplitude_calls": 35,
+            "reconstructed_actual_online_power_calls": 65,
+            "reconstructed_actual_online_amplitude_calls": 35,
+            "actual_repair_power_calls": 30,
+            "actual_selected_repair_point_layer_equivalent_work": 1860,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.017215457745907662,
+            "archive_best_audited_max_R": 0.017215457745907662,
+            "best_dense_max_R": 0.017215455036969318,
+            "regret": 1.2549511707593553e-09,
+            "feasible": false,
+            "allocated_power_calls": 515,
+            "allocated_amplitude_calls": 35,
+            "reconstructed_actual_online_power_calls": 132,
+            "reconstructed_actual_online_amplitude_calls": 35,
+            "actual_repair_power_calls": 97,
+            "actual_selected_repair_point_layer_equivalent_work": 6014,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        }
+      },
+      "random_seeds": [
+        {
+          "seed": 11,
+          "top1_audited_max_R": 0.10249979766682865,
+          "top3_audited_max_R": 0.01721545858621878,
+          "labels": [
+            "insert_0_n1.45_d0.05",
+            "insert_1_n2.35_d0.7",
+            "insert_0_n1.45_d0.15"
+          ]
+        },
+        {
+          "seed": 29,
+          "top1_audited_max_R": 0.3158974426281829,
+          "top3_audited_max_R": 0.07045928869184354,
+          "labels": [
+            "insert_0_n3.1_d0.35",
+            "insert_0_n2.35_d0.15",
+            "insert_1_n1.2_d0.15"
+          ]
+        },
+        {
+          "seed": 47,
+          "top1_audited_max_R": 0.10249979766681884,
+          "top3_audited_max_R": 0.07045928869184354,
+          "labels": [
+            "insert_0_n1.45_d0.35",
+            "insert_0_n2.35_d0.15",
+            "insert_0_n1.45_d0.15"
+          ]
+        }
+      ],
+      "exact_expected_random_best_audited_R": {
+        "1": 0.13080724127581403,
+        "3": 0.058560124016520734
+      },
+      "candidates": [
+        {
+          "label": "insert_0_n1.2_d0.05",
+          "d": [
+            0.05,
+            0.6465517241379303
+          ],
+          "n": [
+            1.2,
+            1.45
+          ],
+          "raw_inner": 0.00437821775335512,
+          "projected_inner": 0.004378217753355328,
+          "projected_cosine": 0.015470746086385797,
+          "incorrect_full_projection_inner": 0.004378217753355328,
+          "finite_max_R": 0.11585888051217848,
+          "bounded_predicted_max_R": 0.10249102880994469,
+          "orthogonal_norm": 0.006063803622035652,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.019804612416438893
+          ],
+          "repaired_midpoint_max_R": 0.10264315940231679,
+          "repaired_audited_max_R": 0.10264315940231679,
+          "repaired_max_R": 0.10264315940231679,
+          "repaired_dense_max_R": 0.10264315940231679,
+          "repaired_dense_min_T": 0.8973568405976832,
+          "repair_calls": 12,
+          "repair_point_layer_equivalent_work": 744,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.05,
+            0.6264444408563494
+          ]
+        },
+        {
+          "label": "insert_0_n1.2_d0.15",
+          "d": [
+            0.15,
+            0.6465517241379303
+          ],
+          "n": [
+            1.2,
+            1.45
+          ],
+          "raw_inner": 0.06472818966140467,
+          "projected_inner": 0.06472818966140552,
+          "projected_cosine": 0.025514043199512188,
+          "incorrect_full_projection_inner": 0.06472818966140552,
+          "finite_max_R": 0.1437222484295375,
+          "bounded_predicted_max_R": 0.10688167571373185,
+          "orthogonal_norm": 0.05435921831259975,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.10264315940230818,
+          "repaired_audited_max_R": 0.10264315940230818,
+          "repaired_max_R": 0.10264315940230818,
+          "repaired_dense_max_R": 0.10264315940230818,
+          "repaired_dense_min_T": 0.8973568405976918,
+          "repair_calls": 30,
+          "repair_point_layer_equivalent_work": 1860,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.05,
+            0.6264444408563357
+          ]
+        },
+        {
+          "label": "insert_0_n1.2_d0.35",
+          "d": [
+            0.35,
+            0.6465517241379303
+          ],
+          "n": [
+            1.2,
+            1.45
+          ],
+          "raw_inner": 0.6062495641963888,
+          "projected_inner": 0.6062495641963895,
+          "projected_cosine": 0.0476757181719633,
+          "incorrect_full_projection_inner": 0.6062495641963895,
+          "finite_max_R": 0.18217283056220646,
+          "bounded_predicted_max_R": 0.14054132036331038,
+          "orthogonal_norm": 0.27246656984823564,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.10264315940230875,
+          "repaired_audited_max_R": 0.10264315940230875,
+          "repaired_max_R": 0.10264315940230875,
+          "repaired_dense_max_R": 0.10264315940230875,
+          "repaired_dense_min_T": 0.8973568405976913,
+          "repair_calls": 33,
+          "repair_point_layer_equivalent_work": 2046,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.05000000000000231,
+            0.6264444408563359
+          ]
+        },
+        {
+          "label": "insert_0_n1.2_d0.7",
+          "d": [
+            0.7,
+            0.6465517241379303
+          ],
+          "n": [
+            1.2,
+            1.45
+          ],
+          "raw_inner": 3.3579307576687714,
+          "projected_inner": 3.357930757668774,
+          "projected_cosine": 0.09577287518709938,
+          "incorrect_full_projection_inner": 3.357930757668774,
+          "finite_max_R": 0.16269480019464003,
+          "bounded_predicted_max_R": 0.13518163272541492,
+          "orthogonal_norm": 0.7512564950311622,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.16129812883632363,
+          "repaired_audited_max_R": 0.16129814118568725,
+          "repaired_max_R": 0.16122540385563486,
+          "repaired_dense_max_R": 0.16129814118568725,
+          "repaired_dense_min_T": 0.8387018588143127,
+          "repair_calls": 30,
+          "repair_point_layer_equivalent_work": 1860,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.7429906837718174,
+            0.6148887729046716
+          ]
+        },
+        {
+          "label": "insert_0_n1.45_d0.05",
+          "d": [
+            0.6965517241379303
+          ],
+          "n": [
+            1.45
+          ],
+          "raw_inner": 0.10800588421752622,
+          "projected_inner": 0.10800588421752708,
+          "projected_cosine": 0.19573070567107634,
+          "incorrect_full_projection_inner": 0.10800588421752708,
+          "finite_max_R": 0.13721438309517572,
+          "bounded_predicted_max_R": 0.10167787738823655,
+          "orthogonal_norm": 0.01182353887415443,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04949458978900381
+          ],
+          "repaired_midpoint_max_R": 0.10249979766682865,
+          "repaired_audited_max_R": 0.10249979766682865,
+          "repaired_max_R": 0.10249979766682865,
+          "repaired_dense_max_R": 0.10249979766682865,
+          "repaired_dense_min_T": 0.8975002023331713,
+          "repair_calls": 10,
+          "repair_point_layer_equivalent_work": 310,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6465517241379477
+          ]
+        },
+        {
+          "label": "insert_0_n1.45_d0.15",
+          "d": [
+            0.7965517241379303
+          ],
+          "n": [
+            1.45
+          ],
+          "raw_inner": 0.9434338386643094,
+          "projected_inner": 0.9434338386643105,
+          "projected_cosine": 0.18901446518374604,
+          "incorrect_full_projection_inner": 0.9434338386643105,
+          "finite_max_R": 0.21090244516808732,
+          "bounded_predicted_max_R": 0.15925847656764916,
+          "orthogonal_norm": 0.10694868185258732,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.10249979766682353,
+          "repaired_audited_max_R": 0.10249979766682353,
+          "repaired_max_R": 0.10249979766682353,
+          "repaired_dense_max_R": 0.10249979766682353,
+          "repaired_dense_min_T": 0.8975002023331765,
+          "repair_calls": 12,
+          "repair_point_layer_equivalent_work": 372,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6465517241379395
+          ]
+        },
+        {
+          "label": "insert_0_n1.45_d0.35",
+          "d": [
+            0.9965517241379303
+          ],
+          "n": [
+            1.45
+          ],
+          "raw_inner": 4.57995574921815,
+          "projected_inner": 4.579955749218154,
+          "projected_cosine": 0.1919270394974381,
+          "incorrect_full_projection_inner": 4.579955749218154,
+          "finite_max_R": 0.29737842968263506,
+          "bounded_predicted_max_R": 0.23552127965450737,
+          "orthogonal_norm": 0.5113098349743447,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999999999
+          ],
+          "repaired_midpoint_max_R": 0.10249979766681884,
+          "repaired_audited_max_R": 0.10249979766681884,
+          "repaired_max_R": 0.10249979766681884,
+          "repaired_dense_max_R": 0.10249979766681884,
+          "repaired_dense_min_T": 0.8975002023331812,
+          "repair_calls": 16,
+          "repair_point_layer_equivalent_work": 496,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6465517241379293
+          ]
+        },
+        {
+          "label": "insert_0_n2.35_d0.05",
+          "d": [
+            0.05,
+            0.6465517241379303
+          ],
+          "n": [
+            2.35,
+            1.45
+          ],
+          "raw_inner": 2.4008049069428323,
+          "projected_inner": 2.400804906942834,
+          "projected_cosine": 0.20745328508175906,
+          "incorrect_full_projection_inner": 2.400804906942834,
+          "finite_max_R": 0.26106045658810095,
+          "bounded_predicted_max_R": 0.1967131774252759,
+          "orthogonal_norm": 0.2479679675751419,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.07045928869185585,
+          "repaired_audited_max_R": 0.07045928869185585,
+          "repaired_max_R": 0.07045928869185585,
+          "repaired_dense_max_R": 0.07045928869185585,
+          "repaired_dense_min_T": 0.9295407113081442,
+          "repair_calls": 34,
+          "repair_point_layer_equivalent_work": 2108,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.15421319267431388,
+            0.246272397243169
+          ]
+        },
+        {
+          "label": "insert_0_n2.35_d0.15",
+          "d": [
+            0.15,
+            0.6465517241379303
+          ],
+          "n": [
+            2.35,
+            1.45
+          ],
+          "raw_inner": 14.997807930216526,
+          "projected_inner": 14.997807930216531,
+          "projected_cosine": 0.22003135062999168,
+          "incorrect_full_projection_inner": 14.997807930216531,
+          "finite_max_R": 0.5191568870489467,
+          "bounded_predicted_max_R": 0.4188210557044551,
+          "orthogonal_norm": 1.460502321516224,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.07045928869184354,
+          "repaired_audited_max_R": 0.07045928869184354,
+          "repaired_max_R": 0.07045928869184354,
+          "repaired_dense_max_R": 0.07045928869184354,
+          "repaired_dense_min_T": 0.9295407113081564,
+          "repair_calls": 41,
+          "repair_point_layer_equivalent_work": 2542,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.15421319084874288,
+            0.2462724001838312
+          ]
+        },
+        {
+          "label": "insert_0_n2.35_d0.35",
+          "d": [
+            0.35,
+            0.6465517241379303
+          ],
+          "n": [
+            2.35,
+            1.45
+          ],
+          "raw_inner": 32.59466639225945,
+          "projected_inner": 32.594666392259455,
+          "projected_cosine": 0.24823472154688053,
+          "incorrect_full_projection_inner": 32.594666392259455,
+          "finite_max_R": 0.6373027888819268,
+          "bounded_predicted_max_R": 0.5270927774668701,
+          "orthogonal_norm": 2.813474875827213,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999999429
+          ],
+          "repaired_midpoint_max_R": 0.07045928869183507,
+          "repaired_audited_max_R": 0.07045928869183507,
+          "repaired_max_R": 0.07045928869183507,
+          "repaired_dense_max_R": 0.07045928869183507,
+          "repaired_dense_min_T": 0.929540711308165,
+          "repair_calls": 71,
+          "repair_point_layer_equivalent_work": 4402,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.15421319041499004,
+            0.2462724008825361
+          ]
+        },
+        {
+          "label": "insert_0_n2.35_d0.7",
+          "d": [
+            0.7,
+            0.6465517241379303
+          ],
+          "n": [
+            2.35,
+            1.45
+          ],
+          "raw_inner": 57.93212566719848,
+          "projected_inner": 57.932125667198484,
+          "projected_cosine": 0.28903715837712124,
+          "incorrect_full_projection_inner": 57.932125667198484,
+          "finite_max_R": 0.5965563388487631,
+          "bounded_predicted_max_R": 0.5412138559368459,
+          "orthogonal_norm": 4.294620708883128,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999999958
+          ],
+          "repaired_midpoint_max_R": 0.28206589584510866,
+          "repaired_audited_max_R": 0.28206589584510866,
+          "repaired_max_R": 0.28206589584510866,
+          "repaired_dense_max_R": 0.28206589584510866,
+          "repaired_dense_min_T": 0.7179341041548913,
+          "repair_calls": 67,
+          "repair_point_layer_equivalent_work": 4154,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.05,
+            0.05
+          ]
+        },
+        {
+          "label": "insert_0_n3.1_d0.05",
+          "d": [
+            0.05,
+            0.6465517241379303
+          ],
+          "n": [
+            3.1,
+            1.45
+          ],
+          "raw_inner": 8.159097571161936,
+          "projected_inner": 8.15909757116194,
+          "projected_cosine": 0.19875951300509623,
+          "incorrect_full_projection_inner": 8.15909757116194,
+          "finite_max_R": 0.40877483789926755,
+          "bounded_predicted_max_R": 0.3206468521483471,
+          "orthogonal_norm": 0.8795757179502043,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.07289028536846497,
+          "repaired_audited_max_R": 0.07289028536846497,
+          "repaired_max_R": 0.07289028536846497,
+          "repaired_dense_max_R": 0.07289028536846497,
+          "repaired_dense_min_T": 0.927109714631535,
+          "repair_calls": 30,
+          "repair_point_layer_equivalent_work": 1860,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.06872699588249319,
+            0.3030828292894689
+          ]
+        },
+        {
+          "label": "insert_0_n3.1_d0.15",
+          "d": [
+            0.15,
+            0.6465517241379303
+          ],
+          "n": [
+            3.1,
+            1.45
+          ],
+          "raw_inner": 32.03759355874903,
+          "projected_inner": 32.037593558749045,
+          "projected_cosine": 0.2068079843071858,
+          "incorrect_full_projection_inner": 32.037593558749045,
+          "finite_max_R": 0.7147807194312792,
+          "bounded_predicted_max_R": 0.5956631028264909,
+          "orthogonal_norm": 3.319339044927815,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999999097
+          ],
+          "repaired_midpoint_max_R": 0.0728902853683255,
+          "repaired_audited_max_R": 0.0728902853683255,
+          "repaired_max_R": 0.0728902853683255,
+          "repaired_dense_max_R": 0.0728902853683255,
+          "repaired_dense_min_T": 0.9271097146316745,
+          "repair_calls": 42,
+          "repair_point_layer_equivalent_work": 2604,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.06872699595078484,
+            0.30308282907615813
+          ]
+        },
+        {
+          "label": "insert_0_n3.1_d0.35",
+          "d": [
+            0.35,
+            0.6465517241379303
+          ],
+          "n": [
+            3.1,
+            1.45
+          ],
+          "raw_inner": 45.21556651998354,
+          "projected_inner": 45.21556651998355,
+          "projected_cosine": 0.22472922974242512,
+          "incorrect_full_projection_inner": 45.21556651998355,
+          "finite_max_R": 0.771411325728061,
+          "bounded_predicted_max_R": 0.7015710263367393,
+          "orthogonal_norm": 4.311093500923894,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999998639
+          ],
+          "repaired_midpoint_max_R": 0.3158974426281829,
+          "repaired_audited_max_R": 0.3158974426281829,
+          "repaired_max_R": 0.3158974426281829,
+          "repaired_dense_max_R": 0.3158974426281829,
+          "repaired_dense_min_T": 0.6841025573718171,
+          "repair_calls": 79,
+          "repair_point_layer_equivalent_work": 4898,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.7638599248114153,
+            0.05000000000000002
+          ]
+        },
+        {
+          "label": "insert_0_n3.1_d0.7",
+          "d": [
+            0.7,
+            0.6465517241379303
+          ],
+          "n": [
+            3.1,
+            1.45
+          ],
+          "raw_inner": 36.660416290320086,
+          "projected_inner": 36.660416290320086,
+          "projected_cosine": 0.22575016340394308,
+          "incorrect_full_projection_inner": 36.660416290320086,
+          "finite_max_R": 0.754352410351816,
+          "bounded_predicted_max_R": 0.7233947807859255,
+          "orthogonal_norm": 3.479592191837117,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.3287971902707795,
+          "repaired_audited_max_R": 0.32879730446899796,
+          "repaired_max_R": 0.3286494434165162,
+          "repaired_dense_max_R": 0.32879730446899796,
+          "repaired_dense_min_T": 0.671202695531002,
+          "repair_calls": 36,
+          "repair_point_layer_equivalent_work": 2232,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6242387578153923,
+            1.2
+          ]
+        },
+        {
+          "label": "insert_1_n1.2_d0.05",
+          "d": [
+            0.6465517241379303,
+            0.05
+          ],
+          "n": [
+            1.45,
+            1.2
+          ],
+          "raw_inner": 0.034800373001724096,
+          "projected_inner": 0.03480037300172418,
+          "projected_cosine": 0.05121644536196334,
+          "incorrect_full_projection_inner": 0.03480037300172418,
+          "finite_max_R": 0.14188406491242578,
+          "bounded_predicted_max_R": 0.10406723285242284,
+          "orthogonal_norm": 0.014559065313707459,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999999762
+          ],
+          "repaired_midpoint_max_R": 0.10370153174982126,
+          "repaired_audited_max_R": 0.10370153174982126,
+          "repaired_max_R": 0.10370153174982126,
+          "repaired_dense_max_R": 0.10370153174982126,
+          "repaired_dense_min_T": 0.8962984682501788,
+          "repair_calls": 15,
+          "repair_point_layer_equivalent_work": 930,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.5919799973102685,
+            0.05
+          ]
+        },
+        {
+          "label": "insert_1_n1.2_d0.15",
+          "d": [
+            0.6465517241379303,
+            0.15
+          ],
+          "n": [
+            1.45,
+            1.2
+          ],
+          "raw_inner": 0.3086329576922547,
+          "projected_inner": 0.30863295769225607,
+          "projected_cosine": 0.05262349242252354,
+          "incorrect_full_projection_inner": 0.30863295769225607,
+          "finite_max_R": 0.23664452936599917,
+          "bounded_predicted_max_R": 0.18130231820699208,
+          "orthogonal_norm": 0.12566712005528263,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.10370153174979622,
+          "repaired_audited_max_R": 0.10370153174979622,
+          "repaired_max_R": 0.10370153174979622,
+          "repaired_dense_max_R": 0.10370153174979622,
+          "repaired_dense_min_T": 0.8962984682502038,
+          "repair_calls": 24,
+          "repair_point_layer_equivalent_work": 1488,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.591979997310229,
+            0.05
+          ]
+        },
+        {
+          "label": "insert_1_n1.2_d0.35",
+          "d": [
+            0.6465517241379303,
+            0.35
+          ],
+          "n": [
+            1.45,
+            1.2
+          ],
+          "raw_inner": 1.4340178971931015,
+          "projected_inner": 1.4340178971931046,
+          "projected_cosine": 0.045174154182574366,
+          "incorrect_full_projection_inner": 1.4340178971931046,
+          "finite_max_R": 0.38773710643935866,
+          "bounded_predicted_max_R": 0.32166211377095566,
+          "orthogonal_norm": 0.6801795500608372,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999998367
+          ],
+          "repaired_midpoint_max_R": 0.10370153174979659,
+          "repaired_audited_max_R": 0.10370153174979659,
+          "repaired_max_R": 0.10370153174979659,
+          "repaired_dense_max_R": 0.10370153174979659,
+          "repaired_dense_min_T": 0.8962984682502034,
+          "repair_calls": 31,
+          "repair_point_layer_equivalent_work": 1922,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.5919799973102298,
+            0.05
+          ]
+        },
+        {
+          "label": "insert_1_n1.2_d0.7",
+          "d": [
+            0.6465517241379303,
+            0.7
+          ],
+          "n": [
+            1.45,
+            1.2
+          ],
+          "raw_inner": 4.352238098243114,
+          "projected_inner": 4.35223809824312,
+          "projected_cosine": 0.047129840045471806,
+          "incorrect_full_projection_inner": 4.35223809824312,
+          "finite_max_R": 0.4430647067969217,
+          "bounded_predicted_max_R": 0.3968915314956952,
+          "orthogonal_norm": 1.9786806616484562,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999999266
+          ],
+          "repaired_midpoint_max_R": 0.3017851470742742,
+          "repaired_audited_max_R": 0.3017851470742742,
+          "repaired_max_R": 0.30165708773016014,
+          "repaired_dense_max_R": 0.30178513204853125,
+          "repaired_dense_min_T": 0.6982148679514688,
+          "repair_calls": 63,
+          "repair_point_layer_equivalent_work": 3906,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            1.2,
+            0.05000000000000019
+          ]
+        },
+        {
+          "label": "insert_1_n2.35_d0.05",
+          "d": [
+            0.6465517241379303,
+            0.05
+          ],
+          "n": [
+            1.45,
+            2.35
+          ],
+          "raw_inner": 0.362392494957913,
+          "projected_inner": 0.3623924949579132,
+          "projected_cosine": 0.16034970011323021,
+          "incorrect_full_projection_inner": 0.3623924949579132,
+          "finite_max_R": 0.11755875939121613,
+          "bounded_predicted_max_R": 0.10368435962783663,
+          "orthogonal_norm": 0.04842504931863369,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.021038444187714434
+          ],
+          "repaired_midpoint_max_R": 0.017215456065933214,
+          "repaired_audited_max_R": 0.01721545649095649,
+          "repaired_max_R": 0.01715559332394909,
+          "repaired_dense_max_R": 0.01721545649095649,
+          "repaired_dense_min_T": 0.9827845435090435,
+          "repair_calls": 36,
+          "repair_point_layer_equivalent_work": 2232,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.5229253582890678,
+            0.32265606245231415
+          ]
+        },
+        {
+          "label": "insert_1_n2.35_d0.15",
+          "d": [
+            0.6465517241379303,
+            0.15
+          ],
+          "n": [
+            1.45,
+            2.35
+          ],
+          "raw_inner": 3.2394413398405635,
+          "projected_inner": 3.2394413398405635,
+          "projected_cosine": 0.24657582162435743,
+          "incorrect_full_projection_inner": 3.2394413398405635,
+          "finite_max_R": 0.11073770954482237,
+          "bounded_predicted_max_R": 0.07989315795797479,
+          "orthogonal_norm": 0.2815001690091737,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.017215457745907662,
+          "repaired_audited_max_R": 0.017215457745907662,
+          "repaired_max_R": 0.01716052436505575,
+          "repaired_dense_max_R": 0.017215455036969318,
+          "repaired_dense_min_T": 0.9827845449630307,
+          "repair_calls": 40,
+          "repair_point_layer_equivalent_work": 2480,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.5459165232171929,
+            0.3368421003704005
+          ]
+        },
+        {
+          "label": "insert_1_n2.35_d0.35",
+          "d": [
+            0.6465517241379303,
+            0.35
+          ],
+          "n": [
+            1.45,
+            2.35
+          ],
+          "raw_inner": 16.673107260570912,
+          "projected_inner": 16.673107260570912,
+          "projected_cosine": 0.2693038143411448,
+          "incorrect_full_projection_inner": 16.673107260570912,
+          "finite_max_R": 0.021002384951444627,
+          "bounded_predicted_max_R": 0.0052867855494761595,
+          "orthogonal_norm": 1.3265788475523508,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.017215456690419333,
+          "repaired_audited_max_R": 0.017215457758809855,
+          "repaired_max_R": 0.017173721371545294,
+          "repaired_dense_max_R": 0.017215457758809855,
+          "repaired_dense_min_T": 0.9827845422411902,
+          "repair_calls": 30,
+          "repair_point_layer_equivalent_work": 1860,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6263840635375818,
+            0.3864922847383918
+          ]
+        },
+        {
+          "label": "insert_1_n2.35_d0.7",
+          "d": [
+            0.6465517241379303,
+            0.7
+          ],
+          "n": [
+            1.45,
+            2.35
+          ],
+          "raw_inner": 38.50734326569873,
+          "projected_inner": 38.507343265698736,
+          "projected_cosine": 0.27780940985328495,
+          "incorrect_full_projection_inner": 38.507343265698736,
+          "finite_max_R": 0.11937735150368078,
+          "bounded_predicted_max_R": 0.0946016650050458,
+          "orthogonal_norm": 2.96999441926439,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.027225129700838943
+          ],
+          "repaired_midpoint_max_R": 0.017215454011789092,
+          "repaired_audited_max_R": 0.01721545858621878,
+          "repaired_max_R": 0.01716487048915795,
+          "repaired_dense_max_R": 0.01721545858621878,
+          "repaired_dense_min_T": 0.9827845414137812,
+          "repair_calls": 39,
+          "repair_point_layer_equivalent_work": 2418,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.5689074731354496,
+            0.35102800578159143
+          ]
+        },
+        {
+          "label": "insert_1_n3.1_d0.05",
+          "d": [
+            0.6465517241379303,
+            0.05
+          ],
+          "n": [
+            1.45,
+            3.1
+          ],
+          "raw_inner": 0.38176447213448667,
+          "projected_inner": 0.3817644721344864,
+          "projected_cosine": 0.08803688988835971,
+          "incorrect_full_projection_inner": 0.3817644721344864,
+          "finite_max_R": 0.10455620245813324,
+          "bounded_predicted_max_R": 0.11206226372519915,
+          "orthogonal_norm": 0.09291585907053543,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.012961348993338229
+          ],
+          "repaired_midpoint_max_R": 0.05592195153406299,
+          "repaired_audited_max_R": 0.05592195153406299,
+          "repaired_max_R": 0.05592195153406299,
+          "repaired_dense_max_R": 0.05592195153406299,
+          "repaired_dense_min_T": 0.944078048465937,
+          "repair_calls": 31,
+          "repair_point_layer_equivalent_work": 1922,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6465517423701215,
+            0.3024192733038175
+          ]
+        },
+        {
+          "label": "insert_1_n3.1_d0.15",
+          "d": [
+            0.6465517241379303,
+            0.15
+          ],
+          "n": [
+            1.45,
+            3.1
+          ],
+          "raw_inner": 3.3530518438724246,
+          "projected_inner": 3.3530518438724237,
+          "projected_cosine": 0.19927982009097364,
+          "incorrect_full_projection_inner": 3.3530518438724237,
+          "finite_max_R": 0.08251993798871086,
+          "bounded_predicted_max_R": 0.09808336334750571,
+          "orthogonal_norm": 0.3605254891181535,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.04262333846824111
+          ],
+          "repaired_midpoint_max_R": 0.05592195153432429,
+          "repaired_audited_max_R": 0.05592195153432429,
+          "repaired_max_R": 0.05592195153432429,
+          "repaired_dense_max_R": 0.05592195153432429,
+          "repaired_dense_min_T": 0.9440780484656757,
+          "repair_calls": 30,
+          "repair_point_layer_equivalent_work": 1860,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6465517337833123,
+            0.30241931170681025
+          ]
+        },
+        {
+          "label": "insert_1_n3.1_d0.35",
+          "d": [
+            0.6465517241379303,
+            0.35
+          ],
+          "n": [
+            1.45,
+            3.1
+          ],
+          "raw_inner": 14.93970913741891,
+          "projected_inner": 14.939709137418909,
+          "projected_cosine": 0.24824627209832603,
+          "incorrect_full_projection_inner": 14.939709137418909,
+          "finite_max_R": 0.0654079739645121,
+          "bounded_predicted_max_R": 0.043254477841041944,
+          "orthogonal_norm": 1.289491356999329,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.05592195153411303,
+          "repaired_audited_max_R": 0.05592195153411303,
+          "repaired_max_R": 0.05592195153411303,
+          "repaired_dense_max_R": 0.05592195153411303,
+          "repaired_dense_min_T": 0.9440780484658869,
+          "repair_calls": 27,
+          "repair_point_layer_equivalent_work": 1674,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.646551742312098,
+            0.3024192735637545
+          ]
+        },
+        {
+          "label": "insert_1_n3.1_d0.7",
+          "d": [
+            0.6465517241379303,
+            0.7
+          ],
+          "n": [
+            1.45,
+            3.1
+          ],
+          "raw_inner": 29.813728021474066,
+          "projected_inner": 29.813728021474063,
+          "projected_cosine": 0.2664010373394344,
+          "incorrect_full_projection_inner": 29.813728021474063,
+          "finite_max_R": 0.10336719673224024,
+          "bounded_predicted_max_R": 0.09070058100785924,
+          "orthogonal_norm": 2.397946019519756,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.08518067596280049,
+          "repaired_audited_max_R": 0.08518067596280049,
+          "repaired_max_R": 0.08518067596280049,
+          "repaired_dense_max_R": 0.08518067596280049,
+          "repaired_dense_min_T": 0.9148193240371996,
+          "repair_calls": 34,
+          "repair_point_layer_equivalent_work": 2108,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.7009643270881237,
+            0.7693507939570943
+          ]
+        },
+        {
+          "label": "replace_0_n1.2",
+          "d": [
+            0.6465517241379303
+          ],
+          "n": [
+            1.2
+          ],
+          "raw_inner": -1.8646696111156398,
+          "projected_inner": -1.8646696111156404,
+          "projected_cosine": -0.07498357593521203,
+          "incorrect_full_projection_inner": -1.8646696111156404,
+          "finite_max_R": 0.21331666349190034,
+          "bounded_predicted_max_R": 0.2133166634919004,
+          "orthogonal_norm": 0.5328374901513183,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.0
+          ],
+          "repaired_midpoint_max_R": 0.1886818282169301,
+          "repaired_audited_max_R": 0.1886818282169301,
+          "repaired_max_R": 0.1886818282169301,
+          "repaired_dense_max_R": 0.1886818282169301,
+          "repaired_dense_min_T": 0.8113181717830699,
+          "repair_calls": 14,
+          "repair_point_layer_equivalent_work": 434,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.7812500000000049
+          ]
+        },
+        {
+          "label": "replace_0_n2.35",
+          "d": [
+            0.6465517241379303
+          ],
+          "n": [
+            2.35
+          ],
+          "raw_inner": 31.870028260772266,
+          "projected_inner": 31.870028260772262,
+          "projected_cosine": 0.18443647687423506,
+          "incorrect_full_projection_inner": 31.870028260772262,
+          "finite_max_R": 0.2996208879786505,
+          "bounded_predicted_max_R": 0.2996208879786508,
+          "orthogonal_norm": 3.702496525629925,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.0
+          ],
+          "repaired_midpoint_max_R": 0.2997686246380904,
+          "repaired_audited_max_R": 0.29976862617004674,
+          "repaired_max_R": 0.2995526747763865,
+          "repaired_dense_max_R": 0.29976862617004674,
+          "repaired_dense_min_T": 0.7002313738299533,
+          "repair_calls": 8,
+          "repair_point_layer_equivalent_work": 248,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6453121346738488
+          ]
+        },
+        {
+          "label": "replace_0_n3.1",
+          "d": [
+            0.6465517241379303
+          ],
+          "n": [
+            3.1
+          ],
+          "raw_inner": 31.866533256629808,
+          "projected_inner": 31.86653325662981,
+          "projected_cosine": 0.1633846368437282,
+          "incorrect_full_projection_inner": 31.86653325662981,
+          "finite_max_R": 0.2997655656267932,
+          "bounded_predicted_max_R": 0.2997655656267934,
+          "orthogonal_norm": 4.179098726578788,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.0
+          ],
+          "repaired_midpoint_max_R": 0.29976863222184813,
+          "repaired_audited_max_R": 0.2997686361478713,
+          "repaired_max_R": 0.2997234791013745,
+          "repaired_dense_max_R": 0.2997686361478713,
+          "repaired_dense_min_T": 0.7002313638521287,
+          "repair_calls": 12,
+          "repair_point_layer_equivalent_work": 372,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6504932018133726
+          ]
+        },
+        {
+          "label": "delete_0",
+          "d": [],
+          "n": [],
+          "raw_inner": 1.086780298160736,
+          "projected_inner": 1.0867802981607324,
+          "projected_cosine": 0.042770251693588085,
+          "incorrect_full_projection_inner": 1.0867802981607324,
+          "finite_max_R": 0.29976863700579426,
+          "bounded_predicted_max_R": 0.29976863700579437,
+          "orthogonal_norm": 0.544451225156034,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.0
+          ],
+          "repaired_midpoint_max_R": 0.29976863700579426,
+          "repaired_audited_max_R": 0.29976863700579426,
+          "repaired_max_R": 0.29976863700579426,
+          "repaired_dense_max_R": 0.29976863700579426,
+          "repaired_dense_min_T": 0.7002313629942057,
+          "repair_calls": 1,
+          "repair_point_layer_equivalent_work": 31,
+          "repair_status": "no thickness degrees of freedom",
+          "repaired_d": []
+        },
+        {
+          "label": "redundant_same_material_split",
+          "d": [
+            0.6465517241379303
+          ],
+          "n": [
+            1.45
+          ],
+          "raw_inner": -0.0,
+          "projected_inner": -0.0,
+          "projected_cosine": -1.0,
+          "incorrect_full_projection_inner": -0.0,
+          "finite_max_R": 0.10249979766681848,
+          "bounded_predicted_max_R": 0.10249979766681841,
+          "orthogonal_norm": 0.0,
+          "projected_cosine_informative": false,
+          "compensation_um": [
+            -0.0
+          ],
+          "repaired_midpoint_max_R": 0.10249979766681848,
+          "repaired_audited_max_R": 0.10249979766681848,
+          "repaired_max_R": 0.10249979766681848,
+          "repaired_dense_max_R": 0.10249979766681848,
+          "repaired_dense_min_T": 0.8975002023331815,
+          "repair_calls": 2,
+          "repair_point_layer_equivalent_work": 62,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.6465517241379303
+          ]
+        }
+      ],
+      "wall_seconds": 0.25390932001755573
+    },
+    {
+      "case": "upper_boundary",
+      "base_d_um": [
+        0.4
+      ],
+      "base_n": [
+        1.45
+      ],
+      "base_max_R": 0.2094713288964062,
+      "base_optimization": {
+        "d": [
+          0.4
+        ],
+        "max_R": 0.2094713288964062,
+        "calls": 2,
+        "status": "Optimization terminated successfully"
+      },
+      "bound_upper_um": 0.4,
+      "free_coordinates": [
+        false
+      ],
+      "active_wavelength_um": [
+        5.0
+      ],
+      "active_mu": [
+        1.0
+      ],
+      "active_derivative_dg_dx": [
+        -8.3216859770712
+      ],
+      "tangent_stationarity_norm": 0.0,
+      "full_stationarity_norm": 8.3216859770712,
+      "singular_values": [],
+      "max_raw_projected_inner_error": 0.0,
+      "max_incorrect_full_projected_score_error": 35.52956214713978,
+      "candidate_count": 23,
+      "oracle_audited_max_R": 0.03540323578104346,
+      "oracle_dense_max_R": 0.03540323578104346,
+      "methods": {
+        "raw_inner": {
+          "spearman_lower_is_better": 0.37805783214934663,
+          "order_labels": [
+            "insert_0_n3.1_d0.35",
+            "insert_0_n2.35_d0.35",
+            "insert_0_n3.1_d0.15",
+            "insert_0_n2.35_d0.15",
+            "insert_1_n2.35_d0.35",
+            "insert_1_n3.1_d0.35",
+            "insert_0_n3.1_d0.05",
+            "insert_1_n1.2_d0.35",
+            "replace_0_n2.35",
+            "replace_0_n3.1",
+            "insert_0_n2.35_d0.05",
+            "insert_0_n1.2_d0.35",
+            "insert_1_n2.35_d0.15",
+            "insert_1_n1.2_d0.15",
+            "insert_1_n3.1_d0.15",
+            "insert_0_n1.2_d0.15",
+            "insert_1_n1.2_d0.05",
+            "insert_1_n2.35_d0.05",
+            "insert_0_n1.2_d0.05",
+            "insert_1_n3.1_d0.05",
+            "redundant_same_material_split",
+            "replace_0_n1.2",
+            "delete_0"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.3687944774754456,
+            "archive_best_audited_max_R": 0.2094713288964062,
+            "best_dense_max_R": 0.3687944774754456,
+            "regret": 0.33339124169440215,
+            "feasible": false,
+            "allocated_power_calls": 186,
+            "allocated_amplitude_calls": 26,
+            "reconstructed_actual_online_power_calls": 47,
+            "reconstructed_actual_online_amplitude_calls": 26,
+            "actual_repair_power_calls": 21,
+            "actual_selected_repair_point_layer_equivalent_work": 1302,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.07045928869183664,
+            "archive_best_audited_max_R": 0.07045928869183664,
+            "best_dense_max_R": 0.07045928869183664,
+            "regret": 0.03505605291079318,
+            "feasible": false,
+            "allocated_power_calls": 506,
+            "allocated_amplitude_calls": 26,
+            "reconstructed_actual_online_power_calls": 122,
+            "reconstructed_actual_online_amplitude_calls": 26,
+            "actual_repair_power_calls": 96,
+            "actual_selected_repair_point_layer_equivalent_work": 5952,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        },
+        "projected_inner": {
+          "spearman_lower_is_better": 0.37805783214934663,
+          "order_labels": [
+            "insert_0_n3.1_d0.35",
+            "insert_0_n2.35_d0.35",
+            "insert_0_n3.1_d0.15",
+            "insert_0_n2.35_d0.15",
+            "insert_1_n2.35_d0.35",
+            "insert_1_n3.1_d0.35",
+            "insert_0_n3.1_d0.05",
+            "insert_1_n1.2_d0.35",
+            "replace_0_n2.35",
+            "replace_0_n3.1",
+            "insert_0_n2.35_d0.05",
+            "insert_0_n1.2_d0.35",
+            "insert_1_n2.35_d0.15",
+            "insert_1_n1.2_d0.15",
+            "insert_1_n3.1_d0.15",
+            "insert_0_n1.2_d0.15",
+            "insert_1_n1.2_d0.05",
+            "insert_1_n2.35_d0.05",
+            "insert_0_n1.2_d0.05",
+            "insert_1_n3.1_d0.05",
+            "redundant_same_material_split",
+            "replace_0_n1.2",
+            "delete_0"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.3687944774754456,
+            "archive_best_audited_max_R": 0.2094713288964062,
+            "best_dense_max_R": 0.3687944774754456,
+            "regret": 0.33339124169440215,
+            "feasible": false,
+            "allocated_power_calls": 186,
+            "allocated_amplitude_calls": 26,
+            "reconstructed_actual_online_power_calls": 47,
+            "reconstructed_actual_online_amplitude_calls": 26,
+            "actual_repair_power_calls": 21,
+            "actual_selected_repair_point_layer_equivalent_work": 1302,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.07045928869183664,
+            "archive_best_audited_max_R": 0.07045928869183664,
+            "best_dense_max_R": 0.07045928869183664,
+            "regret": 0.03505605291079318,
+            "feasible": false,
+            "allocated_power_calls": 506,
+            "allocated_amplitude_calls": 26,
+            "reconstructed_actual_online_power_calls": 122,
+            "reconstructed_actual_online_amplitude_calls": 26,
+            "actual_repair_power_calls": 96,
+            "actual_selected_repair_point_layer_equivalent_work": 5952,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        },
+        "projected_cosine": {
+          "spearman_lower_is_better": 0.6483815369672455,
+          "order_labels": [
+            "insert_0_n2.35_d0.35",
+            "insert_0_n3.1_d0.35",
+            "insert_0_n3.1_d0.15",
+            "insert_1_n2.35_d0.35",
+            "insert_1_n2.35_d0.15",
+            "insert_0_n2.35_d0.15",
+            "insert_1_n2.35_d0.05",
+            "insert_0_n3.1_d0.05",
+            "insert_1_n3.1_d0.35",
+            "insert_0_n2.35_d0.05",
+            "insert_0_n1.2_d0.05",
+            "replace_0_n2.35",
+            "insert_0_n1.2_d0.15",
+            "insert_1_n1.2_d0.35",
+            "insert_0_n1.2_d0.35",
+            "insert_1_n1.2_d0.05",
+            "insert_1_n1.2_d0.15",
+            "insert_1_n3.1_d0.15",
+            "replace_0_n3.1",
+            "insert_1_n3.1_d0.05",
+            "replace_0_n1.2",
+            "delete_0",
+            "redundant_same_material_split"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.07045928869183664,
+            "archive_best_audited_max_R": 0.07045928869183664,
+            "best_dense_max_R": 0.07045928869183664,
+            "regret": 0.03505605291079318,
+            "feasible": false,
+            "allocated_power_calls": 186,
+            "allocated_amplitude_calls": 26,
+            "reconstructed_actual_online_power_calls": 73,
+            "reconstructed_actual_online_amplitude_calls": 26,
+            "actual_repair_power_calls": 47,
+            "actual_selected_repair_point_layer_equivalent_work": 2914,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.07045928869183664,
+            "archive_best_audited_max_R": 0.07045928869183664,
+            "best_dense_max_R": 0.07045928869183664,
+            "regret": 0.03505605291079318,
+            "feasible": false,
+            "allocated_power_calls": 506,
+            "allocated_amplitude_calls": 26,
+            "reconstructed_actual_online_power_calls": 122,
+            "reconstructed_actual_online_amplitude_calls": 26,
+            "actual_repair_power_calls": 96,
+            "actual_selected_repair_point_layer_equivalent_work": 5952,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        },
+        "finite_max_R": {
+          "spearman_lower_is_better": 0.38695331055286075,
+          "order_labels": [
+            "insert_1_n2.35_d0.35",
+            "replace_0_n2.35",
+            "insert_0_n3.1_d0.05",
+            "insert_0_n2.35_d0.05",
+            "insert_1_n2.35_d0.15",
+            "insert_1_n3.1_d0.35",
+            "insert_0_n1.2_d0.35",
+            "insert_1_n1.2_d0.15",
+            "insert_1_n3.1_d0.15",
+            "insert_0_n1.2_d0.15",
+            "insert_1_n1.2_d0.05",
+            "insert_1_n2.35_d0.05",
+            "insert_0_n1.2_d0.05",
+            "insert_1_n3.1_d0.05",
+            "redundant_same_material_split",
+            "insert_1_n1.2_d0.35",
+            "replace_0_n1.2",
+            "replace_0_n3.1",
+            "delete_0",
+            "insert_0_n2.35_d0.15",
+            "insert_0_n2.35_d0.35",
+            "insert_0_n3.1_d0.15",
+            "insert_0_n3.1_d0.35"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.035403235781043464,
+            "archive_best_audited_max_R": 0.035403235781043464,
+            "best_dense_max_R": 0.035403235781043464,
+            "regret": 6.938893903907228e-18,
+            "feasible": false,
+            "allocated_power_calls": 184,
+            "allocated_amplitude_calls": 0,
+            "reconstructed_actual_online_power_calls": 36,
+            "reconstructed_actual_online_amplitude_calls": 0,
+            "actual_repair_power_calls": 12,
+            "actual_selected_repair_point_layer_equivalent_work": 744,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.035403235781043464,
+            "archive_best_audited_max_R": 0.035403235781043464,
+            "best_dense_max_R": 0.035403235781043464,
+            "regret": 6.938893903907228e-18,
+            "feasible": false,
+            "allocated_power_calls": 504,
+            "allocated_amplitude_calls": 0,
+            "reconstructed_actual_online_power_calls": 68,
+            "reconstructed_actual_online_amplitude_calls": 0,
+            "actual_repair_power_calls": 44,
+            "actual_selected_repair_point_layer_equivalent_work": 2480,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        },
+        "bounded_predicted_max_R": {
+          "spearman_lower_is_better": 0.4047442673598888,
+          "order_labels": [
+            "insert_1_n2.35_d0.35",
+            "insert_0_n3.1_d0.05",
+            "replace_0_n2.35",
+            "insert_0_n2.35_d0.05",
+            "insert_1_n3.1_d0.35",
+            "insert_1_n2.35_d0.15",
+            "insert_0_n1.2_d0.35",
+            "insert_1_n1.2_d0.15",
+            "insert_1_n3.1_d0.15",
+            "insert_1_n1.2_d0.35",
+            "insert_0_n1.2_d0.15",
+            "insert_1_n3.1_d0.05",
+            "insert_1_n2.35_d0.05",
+            "insert_1_n1.2_d0.05",
+            "redundant_same_material_split",
+            "insert_0_n1.2_d0.05",
+            "insert_0_n2.35_d0.15",
+            "replace_0_n1.2",
+            "replace_0_n3.1",
+            "delete_0",
+            "insert_0_n2.35_d0.35",
+            "insert_0_n3.1_d0.15",
+            "insert_0_n3.1_d0.35"
+          ],
+          "top1": {
+            "best_audited_max_R": 0.035403235781043464,
+            "archive_best_audited_max_R": 0.035403235781043464,
+            "best_dense_max_R": 0.035403235781043464,
+            "regret": 6.938893903907228e-18,
+            "feasible": false,
+            "allocated_power_calls": 186,
+            "allocated_amplitude_calls": 26,
+            "reconstructed_actual_online_power_calls": 38,
+            "reconstructed_actual_online_amplitude_calls": 26,
+            "actual_repair_power_calls": 12,
+            "actual_selected_repair_point_layer_equivalent_work": 744,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          },
+          "top3": {
+            "best_audited_max_R": 0.035403235781043464,
+            "archive_best_audited_max_R": 0.035403235781043464,
+            "best_dense_max_R": 0.035403235781043464,
+            "regret": 6.938893903907228e-18,
+            "feasible": false,
+            "allocated_power_calls": 506,
+            "allocated_amplitude_calls": 26,
+            "reconstructed_actual_online_power_calls": 70,
+            "reconstructed_actual_online_amplitude_calls": 26,
+            "actual_repair_power_calls": 44,
+            "actual_selected_repair_point_layer_equivalent_work": 2480,
+            "calls_note": "equal per-candidate refinement cap, not equal end-to-end actual cost; finite-power baseline needs no amplitudes/J; projected methods and KKT-dual reconstruction charged for J; dense audit excluded but separately counted"
+          }
+        }
+      },
+      "random_seeds": [
+        {
+          "seed": 11,
+          "top1_audited_max_R": 0.2094713288964062,
+          "top3_audited_max_R": 0.07045928869183507,
+          "labels": [
+            "redundant_same_material_split",
+            "replace_0_n2.35",
+            "insert_0_n2.35_d0.15"
+          ]
+        },
+        {
+          "seed": 29,
+          "top1_audited_max_R": 0.13828420030541044,
+          "top3_audited_max_R": 0.03540323578104346,
+          "labels": [
+            "insert_0_n1.2_d0.05",
+            "replace_0_n2.35",
+            "insert_1_n2.35_d0.15"
+          ]
+        },
+        {
+          "seed": 47,
+          "top1_audited_max_R": 0.07045928869183664,
+          "top3_audited_max_R": 0.07045928869183664,
+          "labels": [
+            "insert_0_n2.35_d0.35",
+            "insert_0_n3.1_d0.05",
+            "replace_0_n1.2"
+          ]
+        }
+      ],
+      "exact_expected_random_best_audited_R": {
+        "1": 0.13723768456126748,
+        "3": 0.07267925962909788
+      },
+      "candidates": [
+        {
+          "label": "insert_0_n1.2_d0.05",
+          "d": [
+            0.05,
+            0.4
+          ],
+          "n": [
+            1.2,
+            1.45
+          ],
+          "raw_inner": 0.8716409212290179,
+          "projected_inner": 0.8716409212290179,
+          "projected_cosine": 0.08634859619366664,
+          "incorrect_full_projection_inner": -0.010165676957808885,
+          "finite_max_R": 0.20086277805915853,
+          "bounded_predicted_max_R": 0.20957336055218048,
+          "orthogonal_norm": 0.11027829425198961,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.021192959802138093
+          ],
+          "repaired_midpoint_max_R": 0.13828420030541044,
+          "repaired_audited_max_R": 0.13828420030541044,
+          "repaired_max_R": 0.13828420030541044,
+          "repaired_dense_max_R": 0.13828420030541044,
+          "repaired_dense_min_T": 0.8617157996945896,
+          "repair_calls": 18,
+          "repair_point_layer_equivalent_work": 1116,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.39999999999999974,
+            0.4
+          ]
+        },
+        {
+          "label": "insert_0_n1.2_d0.15",
+          "d": [
+            0.15,
+            0.4
+          ],
+          "n": [
+            1.2,
+            1.45
+          ],
+          "raw_inner": 2.8407788818578106,
+          "projected_inner": 2.8407788818578106,
+          "projected_cosine": 0.08460563228960302,
+          "incorrect_full_projection_inner": -0.06761161736241607,
+          "finite_max_R": 0.18233662761676805,
+          "bounded_predicted_max_R": 0.20202254135637787,
+          "orthogonal_norm": 0.3668139686723316,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.13828420030541044,
+          "repaired_audited_max_R": 0.13828420030541044,
+          "repaired_max_R": 0.13828420030541044,
+          "repaired_dense_max_R": 0.13828420030541044,
+          "repaired_dense_min_T": 0.8617157996945896,
+          "repair_calls": 18,
+          "repair_point_layer_equivalent_work": 1116,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.39999999999999974,
+            0.4
+          ]
+        },
+        {
+          "label": "insert_0_n1.2_d0.35",
+          "d": [
+            0.35,
+            0.4
+          ],
+          "n": [
+            1.2,
+            1.45
+          ],
+          "raw_inner": 7.456217229779026,
+          "projected_inner": 7.456217229779026,
+          "projected_cosine": 0.08399625794488927,
+          "incorrect_full_projection_inner": 0.013455405570369824,
+          "finite_max_R": 0.14590153392496355,
+          "bounded_predicted_max_R": 0.1624877883548738,
+          "orthogonal_norm": 0.9697645941898309,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999979527
+          ],
+          "repaired_midpoint_max_R": 0.13828420030541047,
+          "repaired_audited_max_R": 0.13828420030541047,
+          "repaired_max_R": 0.13828420030541047,
+          "repaired_dense_max_R": 0.13828420030541047,
+          "repaired_dense_min_T": 0.8617157996945896,
+          "repair_calls": 12,
+          "repair_point_layer_equivalent_work": 744,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4,
+            0.4
+          ]
+        },
+        {
+          "label": "insert_0_n2.35_d0.05",
+          "d": [
+            0.05,
+            0.4
+          ],
+          "n": [
+            2.35,
+            1.45
+          ],
+          "raw_inner": 9.724220294204976,
+          "projected_inner": 9.724220294204976,
+          "projected_cosine": 0.090459425321666,
+          "incorrect_full_projection_inner": 0.43299281556510233,
+          "finite_max_R": 0.12464379181364468,
+          "bounded_predicted_max_R": 0.14064454860188275,
+          "orthogonal_norm": 1.1743800767149155,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999999824
+          ],
+          "repaired_midpoint_max_R": 0.07045928869183793,
+          "repaired_audited_max_R": 0.07045928869183793,
+          "repaired_max_R": 0.07045928869183793,
+          "repaired_dense_max_R": 0.07045928869183793,
+          "repaired_dense_min_T": 0.9295407113081621,
+          "repair_calls": 34,
+          "repair_point_layer_equivalent_work": 2108,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.15421319038671355,
+            0.24627240092808
+          ]
+        },
+        {
+          "label": "insert_0_n2.35_d0.15",
+          "d": [
+            0.15,
+            0.4
+          ],
+          "n": [
+            2.35,
+            1.45
+          ],
+          "raw_inner": 35.62395546251551,
+          "projected_inner": 35.62395546251551,
+          "projected_cosine": 0.11052380644894977,
+          "incorrect_full_projection_inner": 10.344694086080588,
+          "finite_max_R": 0.3167845642217721,
+          "bounded_predicted_max_R": 0.2422504737446025,
+          "orthogonal_norm": 3.5212269402950223,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.07045928869183507,
+          "repaired_audited_max_R": 0.07045928869183507,
+          "repaired_max_R": 0.07045928869183507,
+          "repaired_dense_max_R": 0.07045928869183507,
+          "repaired_dense_min_T": 0.929540711308165,
+          "repair_calls": 34,
+          "repair_point_layer_equivalent_work": 2108,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.1542131905100526,
+            0.24627240072940856
+          ]
+        },
+        {
+          "label": "insert_0_n2.35_d0.35",
+          "d": [
+            0.35,
+            0.4
+          ],
+          "n": [
+            2.35,
+            1.45
+          ],
+          "raw_inner": 81.97724345491638,
+          "projected_inner": 81.97724345491638,
+          "projected_cosine": 0.15336517661280252,
+          "incorrect_full_projection_inner": 46.4476813077766,
+          "finite_max_R": 0.6187200000648948,
+          "bounded_predicted_max_R": 0.5241065398129958,
+          "orthogonal_norm": 5.839481166100564,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.07045928869183664,
+          "repaired_audited_max_R": 0.07045928869183664,
+          "repaired_max_R": 0.07045928869183664,
+          "repaired_dense_max_R": 0.07045928869183664,
+          "repaired_dense_min_T": 0.9295407113081634,
+          "repair_calls": 47,
+          "repair_point_layer_equivalent_work": 2914,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.15421319047718007,
+            0.24627240078236148
+          ]
+        },
+        {
+          "label": "insert_0_n3.1_d0.05",
+          "d": [
+            0.05,
+            0.4
+          ],
+          "n": [
+            3.1,
+            1.45
+          ],
+          "raw_inner": 19.684820857109496,
+          "projected_inner": 19.684820857109496,
+          "projected_cosine": 0.09650484372990203,
+          "incorrect_full_projection_inner": 2.9555256239445753,
+          "finite_max_R": 0.12174286510116239,
+          "bounded_predicted_max_R": 0.07435698340605482,
+          "orthogonal_norm": 2.2283841737742542,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.07289028536835167,
+          "repaired_audited_max_R": 0.07289028536835167,
+          "repaired_max_R": 0.07289028536835167,
+          "repaired_dense_max_R": 0.07289028536835167,
+          "repaired_dense_min_T": 0.9271097146316484,
+          "repair_calls": 24,
+          "repair_point_layer_equivalent_work": 1488,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.06872699584770271,
+            0.30308282939795217
+          ]
+        },
+        {
+          "label": "insert_0_n3.1_d0.15",
+          "d": [
+            0.15,
+            0.4
+          ],
+          "n": [
+            3.1,
+            1.45
+          ],
+          "raw_inner": 63.383753602120045,
+          "projected_inner": 63.383753602120045,
+          "projected_cosine": 0.13190142531168622,
+          "incorrect_full_projection_inner": 35.352825753525956,
+          "finite_max_R": 0.630584751855355,
+          "bounded_predicted_max_R": 0.5616152957179477,
+          "orthogonal_norm": 5.249720436457347,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.07289028536832669,
+          "repaired_audited_max_R": 0.07289028536832669,
+          "repaired_max_R": 0.07289028536832669,
+          "repaired_dense_max_R": 0.07289028536832669,
+          "repaired_dense_min_T": 0.9271097146316734,
+          "repair_calls": 28,
+          "repair_point_layer_equivalent_work": 1736,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.06872699587699796,
+            0.30308282930652725
+          ]
+        },
+        {
+          "label": "insert_0_n3.1_d0.35",
+          "d": [
+            0.35,
+            0.4
+          ],
+          "n": [
+            3.1,
+            1.45
+          ],
+          "raw_inner": 84.35232477141923,
+          "projected_inner": 84.35232477141923,
+          "projected_cosine": 0.14203666764694878,
+          "incorrect_full_projection_inner": 56.84572944385947,
+          "finite_max_R": 0.72914538648337,
+          "bounded_predicted_max_R": 0.693443550588953,
+          "orthogonal_norm": 6.487902162087801,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.36879446071903643,
+          "repaired_audited_max_R": 0.3687944774754456,
+          "repaired_max_R": 0.36879279167501294,
+          "repaired_dense_max_R": 0.3687944774754456,
+          "repaired_dense_min_T": 0.6312055225245544,
+          "repair_calls": 21,
+          "repair_point_layer_equivalent_work": 1302,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4,
+            0.05000000000000009
+          ]
+        },
+        {
+          "label": "insert_1_n1.2_d0.05",
+          "d": [
+            0.4,
+            0.05
+          ],
+          "n": [
+            1.45,
+            1.2
+          ],
+          "raw_inner": 2.289580021300603,
+          "projected_inner": 2.289580021300603,
+          "projected_cosine": 0.08111799752070589,
+          "incorrect_full_projection_inner": -0.16506997950390892,
+          "finite_max_R": 0.18742547165916348,
+          "bounded_predicted_max_R": 0.20742896713437614,
+          "orthogonal_norm": 0.3083516779585316,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999571304
+          ],
+          "repaired_midpoint_max_R": 0.12276882513072755,
+          "repaired_audited_max_R": 0.12276882513072755,
+          "repaired_max_R": 0.12276882513072755,
+          "repaired_dense_max_R": 0.12276882513072755,
+          "repaired_dense_min_T": 0.8772311748692725,
+          "repair_calls": 21,
+          "repair_point_layer_equivalent_work": 1302,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4,
+            0.2223642941429946
+          ]
+        },
+        {
+          "label": "insert_1_n1.2_d0.15",
+          "d": [
+            0.4,
+            0.15
+          ],
+          "n": [
+            1.45,
+            1.2
+          ],
+          "raw_inner": 7.227844769479181,
+          "projected_inner": 7.227844769479181,
+          "projected_cosine": 0.07927536000921108,
+          "incorrect_full_projection_inner": -0.6364725646486955,
+          "finite_max_R": 0.14666253081315128,
+          "bounded_predicted_max_R": 0.16351461730779118,
+          "orthogonal_norm": 0.9960434965868619,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999986496
+          ],
+          "repaired_midpoint_max_R": 0.12276882513072059,
+          "repaired_audited_max_R": 0.12276882513072059,
+          "repaired_max_R": 0.12276882513072059,
+          "repaired_dense_max_R": 0.12276882513072059,
+          "repaired_dense_min_T": 0.8772311748692794,
+          "repair_calls": 18,
+          "repair_point_layer_equivalent_work": 1116,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4,
+            0.22236429414298609
+          ]
+        },
+        {
+          "label": "insert_1_n1.2_d0.35",
+          "d": [
+            0.4,
+            0.35
+          ],
+          "n": [
+            1.45,
+            1.2
+          ],
+          "raw_inner": 18.04755579367607,
+          "projected_inner": 18.04755579367607,
+          "projected_cosine": 0.08431338725885472,
+          "incorrect_full_projection_inner": 0.055442128226009524,
+          "finite_max_R": 0.242998025822149,
+          "bounded_predicted_max_R": 0.19607034351468186,
+          "orthogonal_norm": 2.338457957296973,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999996
+          ],
+          "repaired_midpoint_max_R": 0.12276882513085872,
+          "repaired_audited_max_R": 0.12276882513085872,
+          "repaired_max_R": 0.12276882513085872,
+          "repaired_dense_max_R": 0.12276882513085872,
+          "repaired_dense_min_T": 0.8772311748691413,
+          "repair_calls": 24,
+          "repair_point_layer_equivalent_work": 1488,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4,
+            0.2223642941431553
+          ]
+        },
+        {
+          "label": "insert_1_n2.35_d0.05",
+          "d": [
+            0.4,
+            0.05
+          ],
+          "n": [
+            1.45,
+            2.35
+          ],
+          "raw_inner": 1.7144019285458287,
+          "projected_inner": 1.7144019285458287,
+          "projected_cosine": 0.10656324400273973,
+          "incorrect_full_projection_inner": 0.7041783176215785,
+          "finite_max_R": 0.19289814388937118,
+          "bounded_predicted_max_R": 0.202845375741191,
+          "orthogonal_norm": 0.1757571186276755,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.024279278950181348
+          ],
+          "repaired_midpoint_max_R": 0.03540323578104348,
+          "repaired_audited_max_R": 0.03540323578104348,
+          "repaired_max_R": 0.03540323578104348,
+          "repaired_dense_max_R": 0.03540323578104348,
+          "repaired_dense_min_T": 0.9645967642189566,
+          "repair_calls": 28,
+          "repair_point_layer_equivalent_work": 1736,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.39999999999999997,
+            0.3465502814533163
+          ]
+        },
+        {
+          "label": "insert_1_n2.35_d0.15",
+          "d": [
+            0.4,
+            0.15
+          ],
+          "n": [
+            1.45,
+            2.35
+          ],
+          "raw_inner": 7.437327583593123,
+          "projected_inner": 7.437327583593123,
+          "projected_cosine": 0.11180809283856422,
+          "incorrect_full_projection_inner": 3.1615148187120132,
+          "finite_max_R": 0.14348313983458902,
+          "bounded_predicted_max_R": 0.16188491724286785,
+          "orthogonal_norm": 0.7266936773421406,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.049999999999999586
+          ],
+          "repaired_midpoint_max_R": 0.03540323578104346,
+          "repaired_audited_max_R": 0.03540323578104346,
+          "repaired_max_R": 0.03540323578104346,
+          "repaired_dense_max_R": 0.03540323578104346,
+          "repaired_dense_min_T": 0.9645967642189566,
+          "repair_calls": 21,
+          "repair_point_layer_equivalent_work": 1302,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.3999999999999999,
+            0.34655028145331634
+          ]
+        },
+        {
+          "label": "insert_1_n2.35_d0.35",
+          "d": [
+            0.4,
+            0.35
+          ],
+          "n": [
+            1.45,
+            2.35
+          ],
+          "raw_inner": 27.53913930092164,
+          "projected_inner": 27.53913930092164,
+          "projected_cosine": 0.127024990756853,
+          "incorrect_full_projection_inner": 14.812152658166916,
+          "finite_max_R": 0.03721428356911055,
+          "bounded_predicted_max_R": 0.04350854032494814,
+          "orthogonal_norm": 2.36847552501589,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999999995
+          ],
+          "repaired_midpoint_max_R": 0.035403235781043464,
+          "repaired_audited_max_R": 0.035403235781043464,
+          "repaired_max_R": 0.035403235781043464,
+          "repaired_dense_max_R": 0.035403235781043464,
+          "repaired_dense_min_T": 0.9645967642189566,
+          "repair_calls": 12,
+          "repair_point_layer_equivalent_work": 744,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4,
+            0.34655028145331623
+          ]
+        },
+        {
+          "label": "insert_1_n3.1_d0.05",
+          "d": [
+            0.4,
+            0.05
+          ],
+          "n": [
+            1.45,
+            3.1
+          ],
+          "raw_inner": 0.8626030136370003,
+          "projected_inner": 0.8626030136370003,
+          "projected_cosine": 0.036256965987631506,
+          "incorrect_full_projection_inner": 1.4107361913823266,
+          "finite_max_R": 0.2028182675255469,
+          "bounded_predicted_max_R": 0.20281826752554674,
+          "orthogonal_norm": 0.2599125333542042,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -1.134750268165585e-16
+          ],
+          "repaired_midpoint_max_R": 0.143840180436102,
+          "repaired_audited_max_R": 0.143840180436102,
+          "repaired_max_R": 0.143840180436102,
+          "repaired_dense_max_R": 0.143840180436102,
+          "repaired_dense_min_T": 0.856159819563898,
+          "repair_calls": 28,
+          "repair_point_layer_equivalent_work": 1736,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4,
+            0.3546183930316202
+          ]
+        },
+        {
+          "label": "insert_1_n3.1_d0.15",
+          "d": [
+            0.4,
+            0.15
+          ],
+          "n": [
+            1.45,
+            3.1
+          ],
+          "raw_inner": 4.952313517995996,
+          "projected_inner": 4.952313517995996,
+          "projected_cosine": 0.061514859905035496,
+          "incorrect_full_projection_inner": 5.418417155131587,
+          "finite_max_R": 0.17995749035093567,
+          "bounded_predicted_max_R": 0.17995749035093764,
+          "orthogonal_norm": 0.879499915440352,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -4.868839586763321e-15
+          ],
+          "repaired_midpoint_max_R": 0.14384018043609342,
+          "repaired_audited_max_R": 0.14384018043609342,
+          "repaired_max_R": 0.14384018043609342,
+          "repaired_dense_max_R": 0.14384018043609342,
+          "repaired_dense_min_T": 0.8561598195639066,
+          "repair_calls": 27,
+          "repair_point_layer_equivalent_work": 1674,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4,
+            0.3546183411136435
+          ]
+        },
+        {
+          "label": "insert_1_n3.1_d0.35",
+          "d": [
+            0.4,
+            0.35
+          ],
+          "n": [
+            1.45,
+            3.1
+          ],
+          "raw_inner": 20.505462147569695,
+          "projected_inner": 20.505462147569695,
+          "projected_cosine": 0.09463691519078722,
+          "incorrect_full_projection_inner": 17.84224202949968,
+          "finite_max_R": 0.14386402887652588,
+          "bounded_predicted_max_R": 0.16005705419237262,
+          "orthogonal_norm": 2.3671004973370633,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            -0.04999999999999998
+          ],
+          "repaired_midpoint_max_R": 0.1438401804361,
+          "repaired_audited_max_R": 0.1438401804361,
+          "repaired_max_R": 0.1438401804361,
+          "repaired_dense_max_R": 0.1438401804361,
+          "repaired_dense_min_T": 0.8561598195639,
+          "repair_calls": 15,
+          "repair_point_layer_equivalent_work": 930,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4,
+            0.35461838336495094
+          ]
+        },
+        {
+          "label": "replace_0_n1.2",
+          "d": [
+            0.4
+          ],
+          "n": [
+            1.2
+          ],
+          "raw_inner": -4.916250863713938,
+          "projected_inner": -4.916250863713938,
+          "projected_cosine": -0.09782949874888751,
+          "incorrect_full_projection_inner": -0.9800829391016126,
+          "finite_max_R": 0.2616552253679658,
+          "bounded_predicted_max_R": 0.2616552253679657,
+          "orthogonal_norm": 0.5489994606312564,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.0
+          ],
+          "repaired_midpoint_max_R": 0.2616552253679658,
+          "repaired_audited_max_R": 0.2616552253679658,
+          "repaired_max_R": 0.2616552253679658,
+          "repaired_dense_max_R": 0.2616552253679658,
+          "repaired_dense_min_T": 0.7383447746320342,
+          "repair_calls": 2,
+          "repair_point_layer_equivalent_work": 62,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4
+          ]
+        },
+        {
+          "label": "replace_0_n2.35",
+          "d": [
+            0.4
+          ],
+          "n": [
+            2.35
+          ],
+          "raw_inner": 17.716444195939335,
+          "projected_inner": 17.716444195939335,
+          "projected_cosine": 0.08578273326641396,
+          "incorrect_full_projection_inner": 11.38734150475299,
+          "finite_max_R": 0.10234434688966536,
+          "bounded_predicted_max_R": 0.10234434688966529,
+          "orthogonal_norm": 2.2562353071664654,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.0
+          ],
+          "repaired_midpoint_max_R": 0.10123461980546355,
+          "repaired_audited_max_R": 0.10123461980546355,
+          "repaired_max_R": 0.10123461980546355,
+          "repaired_dense_max_R": 0.10123461980546355,
+          "repaired_dense_min_T": 0.8987653801945364,
+          "repair_calls": 8,
+          "repair_point_layer_equivalent_work": 248,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.39893617021276606
+          ]
+        },
+        {
+          "label": "replace_0_n3.1",
+          "d": [
+            0.4
+          ],
+          "n": [
+            3.1
+          ],
+          "raw_inner": 17.57090491574689,
+          "projected_inner": 17.57090491574689,
+          "projected_cosine": 0.06020882295451357,
+          "incorrect_full_projection_inner": 17.68109868655734,
+          "finite_max_R": 0.28131525232291155,
+          "bounded_predicted_max_R": 0.28131525232291155,
+          "orthogonal_norm": 3.188171695963355,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.0
+          ],
+          "repaired_midpoint_max_R": 0.23749469458592481,
+          "repaired_audited_max_R": 0.23749469458592481,
+          "repaired_max_R": 0.23749469458592481,
+          "repaired_dense_max_R": 0.23749469458592481,
+          "repaired_dense_min_T": 0.7625053054140751,
+          "repair_calls": 12,
+          "repair_point_layer_equivalent_work": 372,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.3024193548387579
+          ]
+        },
+        {
+          "label": "delete_0",
+          "d": [],
+          "n": [],
+          "raw_inner": -8.205724849564385,
+          "projected_inner": -8.205724849564385,
+          "projected_cosine": -0.09946485701406305,
+          "incorrect_full_projection_inner": -1.4924588204741016,
+          "finite_max_R": 0.29976863700579426,
+          "bounded_predicted_max_R": 0.29976863700579437,
+          "orthogonal_norm": 0.9012701719024195,
+          "projected_cosine_informative": true,
+          "compensation_um": [
+            0.0
+          ],
+          "repaired_midpoint_max_R": 0.29976863700579426,
+          "repaired_audited_max_R": 0.29976863700579426,
+          "repaired_max_R": 0.29976863700579426,
+          "repaired_dense_max_R": 0.29976863700579426,
+          "repaired_dense_min_T": 0.7002313629942057,
+          "repair_calls": 1,
+          "repair_point_layer_equivalent_work": 31,
+          "repair_status": "no thickness degrees of freedom",
+          "repaired_d": []
+        },
+        {
+          "label": "redundant_same_material_split",
+          "d": [
+            0.4
+          ],
+          "n": [
+            1.45
+          ],
+          "raw_inner": -0.0,
+          "projected_inner": -0.0,
+          "projected_cosine": -1.0,
+          "incorrect_full_projection_inner": -0.0,
+          "finite_max_R": 0.2094713288964062,
+          "bounded_predicted_max_R": 0.20947132889640627,
+          "orthogonal_norm": 0.0,
+          "projected_cosine_informative": false,
+          "compensation_um": [
+            -0.0
+          ],
+          "repaired_midpoint_max_R": 0.2094713288964062,
+          "repaired_audited_max_R": 0.2094713288964062,
+          "repaired_max_R": 0.2094713288964062,
+          "repaired_dense_max_R": 0.2094713288964062,
+          "repaired_dense_min_T": 0.7905286711035938,
+          "repair_calls": 2,
+          "repair_point_layer_equivalent_work": 62,
+          "repair_status": "Optimization terminated successfully",
+          "repaired_d": [
+            0.4
+          ]
+        }
+      ],
+      "wall_seconds": 0.16756612702738494
+    }
+  ],
+  "costs": {
+    "interior_base_repair": {
+      "power_kernel_calls": 18,
+      "amplitude_recursion_calls": 0,
+      "wavelength_layer_products": 558,
+      "wall_seconds": 0.0007157039945013821
+    },
+    "interior_screen": {
+      "power_kernel_calls": 33,
+      "amplitude_recursion_calls": 33,
+      "wavelength_layer_products": 3534,
+      "wall_seconds": 0.0045092449290677905
+    },
+    "interior_jacobian": {
+      "power_kernel_calls": 2,
+      "amplitude_recursion_calls": 2,
+      "wavelength_layer_products": 124,
+      "wall_seconds": 0.00013243002467788756
+    },
+    "interior_all_candidate_repairs": {
+      "power_kernel_calls": 980,
+      "amplitude_recursion_calls": 0,
+      "wavelength_layer_products": 58435,
+      "wall_seconds": 0.06160814972827211
+    },
+    "interior_dense_audit": {
+      "power_kernel_calls": 32,
+      "amplitude_recursion_calls": 0,
+      "wavelength_layer_products": 114744,
+      "wall_seconds": 0.011325654020765796
+    },
+    "interior_midpoint_audit": {
+      "power_kernel_calls": 32,
+      "amplitude_recursion_calls": 0,
+      "wavelength_layer_products": 114800,
+      "wall_seconds": 0.010041144007118419
+    },
+    "upper_boundary_base_repair": {
+      "power_kernel_calls": 2,
+      "amplitude_recursion_calls": 0,
+      "wavelength_layer_products": 62,
+      "wall_seconds": 0.0001029559934977442
+    },
+    "upper_boundary_screen": {
+      "power_kernel_calls": 24,
+      "amplitude_recursion_calls": 24,
+      "wavelength_layer_products": 2604,
+      "wall_seconds": 0.003975317988079041
+    },
+    "upper_boundary_jacobian": {
+      "power_kernel_calls": 2,
+      "amplitude_recursion_calls": 2,
+      "wavelength_layer_products": 124,
+      "wall_seconds": 0.00013095798203721642
+    },
+    "upper_boundary_all_candidate_repairs": {
+      "power_kernel_calls": 455,
+      "amplitude_recursion_calls": 0,
+      "wavelength_layer_products": 27435,
+      "wall_seconds": 0.03537446091650054
+    },
+    "upper_boundary_dense_audit": {
+      "power_kernel_calls": 23,
+      "amplitude_recursion_calls": 0,
+      "wavelength_layer_products": 84009,
+      "wall_seconds": 0.0101031739031896
+    },
+    "upper_boundary_midpoint_audit": {
+      "power_kernel_calls": 23,
+      "amplitude_recursion_calls": 0,
+      "wavelength_layer_products": 84050,
+      "wall_seconds": 0.009225240966770798
+    }
+  },
+  "total_wall_seconds": 0.4248382659861818,
+  "stopping": "Stop after this two-case finite catalog. Inner-product novelty is falsified algebraically. Ranking gains, if any, require independent broader tests; no main feature or publication."
+}

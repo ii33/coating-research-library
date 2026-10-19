@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "date_utc": "2026-10-19",
+  "scope": "Publication packaging review, not an experimental rerun or a new scientific result.",
+  "publication_wording_edits": [
+    {
+      "path": "adaptive/README.md",
+      "old": "独立云端研究试验，未修改主软件，也未发布代码或数据。",
+      "new": "独立云端研究试验，未修改主软件；本包仅作研究脚本和合成结果的同步。",
+      "kind": "publication wording / bundled-file inventory only"
+    },
+    {
+      "path": "layer-packs/研究报告.md",
+      "old": "本轮未修改主软件，未发布任何仓库。",
+      "new": "本轮未修改主软件；本包仅同步研究脚本和合成结果。",
+      "kind": "publication wording / bundled-file inventory only"
+    },
+    {
+      "path": "layer-packs/README.md",
+      "old": "- run.log: raw complete benchmark progress and measured elapsed time\n",
+      "new": "- MANIFEST.json: publication inventory after excluding transient logs and caches\n",
+      "kind": "publication wording / bundled-file inventory only"
+    },
+    {
+      "path": "layer-packs/README.md",
+      "old": "No main software files were changed. No repository was published by this task.",
+      "new": "No main software files were changed. This package publishes research scripts and synthetic results only.",
+      "kind": "publication wording / bundled-file inventory only"
+    },
+    {
+      "path": "projection/研究报告.md",
+      "old": "results.json、candidates.csv、test_report.txt 与 run.log 保留完整可追溯数据。",
+      "new": "results.json、candidates.csv 与 test_report.txt 保留可追溯数值和测试记录；本研究发布排除临时运行日志，实际文件以 MANIFEST.json 为准。",
+      "kind": "publication wording / bundled-file inventory only"
+    }
+  ],
+  "excluded_categories": [
+    "Transient run/analysis/test logs",
+    "Python bytecode and caches",
+    "Invalid superseded draft payloads"
+  ],
+  "source_manifest_handling": "Worker working-directory manifests are replaced by publication inventories listing the actually bundled files.",
+  "retained_small_audit_evidence_logs": [
+    "independent-replay.log",
+    "independent-tests.log"
+  ],
+  "staging_portability_tests": {
+    "adaptive": 8,
+    "layer_packs": 9,
+    "projection": 8,
+    "total_passed": 25,
+    "run_from_unrelated_working_directory": true,
+    "scope": "Unit/regression replay checks only, not a rerun of the full experiment."
+  },
+  "numerical_scripts_test_records_and_figures_preserved_byte_for_byte": true,
+  "preserved_non_prose_files": [
+    {
+      "path": "independent-replay.json",
+      "sha256": "e8a17c6de349e27629d26e14f8de0d73b6808b8e141694e2a4ef2ce27c0273e2"
+    },
+    {
+      "path": "independent-audit.json",
+      "sha256": "2c247bd82764f4d9fa4201332ea0a6581fa7418aad840f5c8fc435434bc89aae"
+    },
+    {
+      "path": "independent-tests.json",
+      "sha256": "a3be75ce61772d31174cfd92996fc35726d44d6f4882899f1e64060d69d07daf"
+    },
+    {
+      "path": "independent-replay.log",
+      "sha256": "161b11ebdf76f7f05856086caf2c26103810ad28160c8dad7f589934ee228980"
+    },
+    {
+      "path": "independent_replay.py",
+      "sha256": "fc214fec6138f0315dc8d3bf1a877688d4a95abc3c16ebfca89465cde918e0c4"
+    },
+    {
+      "path": "independent-tests.log",
+      "sha256": "78591073ec47349cc09f7fe46d74d4f1582350d57558bd91f6f30b5d946fc071"
+    },
+    {
+      "path": "adaptive/results.json",
+      "sha256": "e1262af68767c9698203dafdb0ffaa38deb3db9fef9dbd5de58deb39aa67ea90"
+    },
+    {
+      "path": "adaptive/optimization.csv",
+      "sha256": "5d91fdf873bdcee54d704c9f42585fdd0c5ad11dbd58b9d149989f7deb8d8e17"
+    },
+    {
+      "path": "adaptive/requirements.txt",
+      "sha256": "1668a3152e33680d94637b13421c15e68bd97cd8701f7f555c691f5bc5c0b9f3"
+    },
+    {
+      "path": "adaptive/wall_summary.csv",
+      "sha256": "37739c8138168b2622500530c69ff051596454023868eb956dae3bf7f5cb7194"
+    },
+    {
+      "path": "adaptive/wall_limit.csv",
+      "sha256": "25dfdd7d16fb8ab7184801cc51ac87c66c30c6d436be7e3cc8cbcff4dfbbfdb9"
+    },
+    {
+      "path": "adaptive/detection.csv",
+      "sha256": "979aff7de921719ca77eef6f3b8398532d98fdbddf0ea247220062a49a596a00"
+    },
+    {
+      "path": "adaptive/test_adaptive.py",
+      "sha256": "0af1fb7d60d92ee0e348e94b2750e47c1290b4520d8e0329852c69d37fa1cbb4"
+    },
+    {
+      "path": "adaptive/run_adaptive.py",
+      "sha256": "d6a8c5f239a07f8a77625f9d416e0af81c7f45ab03288f827b62e2cd63225e8f"
+    },
+    {
+      "path": "adaptive/diagnose_reference_precision.py",
+      "sha256": "3e4f2fea208c51342154070529f109d71b2021af329915f42e3cf438083d9732"
+    },
+    {
+      "path": "adaptive/test_report.txt",
+      "sha256": "faddb3b73d43c90e3713739b8953539f12fad1a7532ac877f6cf9c7f17054aea"
+    },
+    {
+      "path": "adaptive/summary.json",
+      "sha256": "e79cd04d312b12437b7e65102e34b8576852e7a637e6de1ba478dfca0707e1a0"
+    },
+    {
+      "path": "adaptive/reference_precision_diagnostic.json",
+      "sha256": "13d1b988ff8eb477dce3b5dc756124e5467f3de0ea425bd5af66a90c2920cb9e"
+    },
+    {
+      "path": "layer-packs/requirements.txt",
+      "sha256": "2d1226c1c119e37e3a51b8681a5dee1ee86950beaed359cd181f799df75f4385"
+    },
+    {
+      "path": "layer-packs/plot_results.py",
+      "sha256": "50521db9e2d017f6943650aefd8c8253623133cf4dc0ff03b5e3b9fbd6dbb164"
+    },
+    {
+      "path": "layer-packs/test_layer_packs.py",
+      "sha256": "a6589fff06cad001137a8dcd7c12cf33eb54862f5c17de574ecf0ec7e03f8477"
+    },
+    {
+      "path": "layer-packs/analyze_results.py",
+      "sha256": "bc70b3696ae98382c8da9741a19f31f93e717110f1b4c9643a6c955ba676374f"
+    },
+    {
+      "path": "layer-packs/test_report.txt",
+      "sha256": "78ce3521543098c91850d931df4ebc23eacdef2ba3209e7554a5de59671280a8"
+    },
+    {
+      "path": "layer-packs/mechanism_checks.json",
+      "sha256": "a75bb26be32170fd601d05691113c57a57990613bb2e8c018c24b7033f187d0b"
+    },
+    {
+      "path": "layer-packs/run_layer_packs.py",
+      "sha256": "d75cb46136fa10bcc53d3f279242aacfb4f7781bcaa896209855642f907f48f7"
+    },
+    {
+      "path": "layer-packs/mechanism_check.py",
+      "sha256": "1df3f73f8ed26c8f17629b2226f449dbd9ec06ef82d70ab9a4d46a627a6f121c"
+    },
+    {
+      "path": "projection/results.json",
+      "sha256": "a85246d7fcb31a428317e2dab583a841805a43aa90bf48f9bf2dfd40ea59bee4"
+    },
+    {
+      "path": "projection/candidates.csv",
+      "sha256": "7e2d550f3e59dabcf0cf184f6048dd929d60a47e499ca2dd353e25d953f046f1"
+    },
+    {
+      "path": "projection/run_projection_experiment.py",
+      "sha256": "806cb667bcce54b17ec8b6cdf38249cd88c65906b08cf0bf048291956f6ded8a"
+    },
+    {
+      "path": "projection/test_projection_experiment.py",
+      "sha256": "6b74ac9b6d77f89291f3f070a596c495a00c65a6ba05989535cda2f6c830877f"
+    },
+    {
+      "path": "projection/test_report.txt",
+      "sha256": "b3ea33b4e63c456ead5ca9209cb1ce2f33792c8cbed48981294ebd5c15c799de"
+    },
+    {
+      "path": "projection/verified_power_kernel.py",
+      "sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    {
+      "path": "adaptive/kernel/run_experiment.py",
+      "sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    {
+      "path": "adaptive/kernel/provenance.json",
+      "sha256": "21a39d1da8f5ac7a4c8e13e5ffbf09fb49a5756f48a043b24ad2191b3a984bb4"
+    },
+    {
+      "path": "layer-packs/figures/paired_seed_results.png",
+      "sha256": "ced9e6d1c951e79ca6e44d9f6e7a6354db797330d6ef983153952c29120b1f71"
+    },
+    {
+      "path": "layer-packs/figures/center_protection_failure.png",
+      "sha256": "e27984d11db656cb5238d24df3b595625f3e427c8cb7080dbb940f21b60a20d5"
+    },
+    {
+      "path": "layer-packs/results/results.json",
+      "sha256": "bf46673f3eba6f40dce5bf6932705b4491d17920d84924dc77ca8a7c3a624c8e"
+    },
+    {
+      "path": "layer-packs/results/results.csv",
+      "sha256": "8cd260d44f28ded2a6194fb070386f57337e0928a7da66ae0e3dd08225431240"
+    },
+    {
+      "path": "layer-packs/results/diagnostics.json",
+      "sha256": "999384e4ecdf749abdbca711f9bbfdb1ebb4f4379c517f4d91cb7011d0b349e1"
+    },
+    {
+      "path": "layer-packs/results/refinements.csv",
+      "sha256": "812ad9d79491b57435ff21c01f44a53abcc0d0add5ea0dc89577f5d1d555f873"
+    },
+    {
+      "path": "layer-packs/results/config.json",
+      "sha256": "e3edbac43d688950d1ca0da3dfbb97a57428af57d9dc46f1428fa98480e63e3b"
+    },
+    {
+      "path": "layer-packs/results/summary.json",
+      "sha256": "bf9443c52c61c4e94eb65d7babeaf75ea2818e1cbfc352f902cabbe7bee8c50c"
+    },
+    {
+      "path": "layer-packs/results/summary.csv",
+      "sha256": "b5be7a7a982fda3152132483b6a53c51626c0f96803dd54df7bbb55bab863bcb"
+    },
+    {
+      "path": "layer-packs/verified_kernel/run_experiment.py",
+      "sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    }
+  ],
+  "no_absolute_workspace_paths_in_published_text": true,
+  "software_repository_changed": false
+}

@@ -117,3 +117,5 @@ ITO并入本库专题11，不另建研究项目。[研究入口](11_transparent_
 - [2026-10-19 两篇新增全文补核](manual_studies/2026-10-19_fulltext_followup/README.md) — 六谱线双面减反器件与GNA/OMT mixer全文及核心代码审查；原处方、SI、权重和复现链的剩余缺口分别保留，未独立复现作者性能。
 
 - [2026-10-19 膜系自动设计原创算法探索](manual_studies/2026-10-19_original_algorithm_exploration/README.md) — 七个可证伪的结构与多谱段搜索假设及共同评价约定；尚未实现或开展性能实验，不宣称首次提出或优于已有算法。
+
+- [2026-10-19 三项算法探索的合成数值实验](manual_studies/2026-10-19_exploration_experiments/README.md) — 自适应谱审计、有限保护层包与正交评分的有界小试验及独立复核；完整保留失败和混合结果，不构成真实IR材料或制造验收。

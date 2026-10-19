@@ -1,0 +1,29 @@
+{
+  "complete_runs": 40,
+  "selected_refinements": 240,
+  "charged_search_calls": 69190,
+  "charged_search_wavelength_layer_updates": 90519120,
+  "actual_shared_screen_calls": 2318,
+  "actual_shared_screen_wavelength_layer_updates": 3173904,
+  "actual_refinement_calls": 57600,
+  "actual_refinement_wavelength_layer_updates": 74649600,
+  "actual_search_calls": 59918,
+  "actual_search_wavelength_layer_updates": 77823504,
+  "base_training_setup_calls": 2,
+  "base_training_setup_wavelength_layer_updates": 1944,
+  "auxiliary_identity_matrix_calls": 4732,
+  "auxiliary_identity_wavelength_layer_updates": 34392,
+  "independent_final_audit_cost": {
+    "matrix_stack_calls": 1579,
+    "matrix_wavelength_samples": 5310721,
+    "matrix_wavelength_layer_updates": 33831656,
+    "independent_recursion_stack_calls": 82,
+    "independent_recursion_wavelength_samples": 671908,
+    "independent_recursion_wavelength_layer_updates": 4359208
+  },
+  "global_training_false_passes": 0,
+  "frozen_P_training_false_passes": 0,
+  "maximum_matrix_recursion_audit_error": 9.992007221626409e-16,
+  "protected_short_initial_pool_feasible_count": 0,
+  "protected_short_local_terminal_P_feasible_count": 0
+}

@@ -1,0 +1,329 @@
+[
+  {
+    "center": 0.98713,
+    "old_absolute_lambda_reference_max_T": 0.981294379676952,
+    "old_reference_meter": {
+      "sampled_max": 0.981294379676952,
+      "argmax_um": 1.0071577830602907,
+      "physical_points": 32895,
+      "layer_point_work": 2138175,
+      "forward_calls": 127,
+      "kernel_wall_s": 0.19067307090153918,
+      "kernel_cpu_s": 0.1907639480000003,
+      "max_energy_error": 3.254285729781259e-12,
+      "numerical_failures": []
+    },
+    "old_local_refinements": [
+      {
+        "success": true,
+        "max_T": 0.14258329384511437,
+        "lambda_um": 0.9410630555948726,
+        "nfev": 10
+      },
+      {
+        "success": true,
+        "max_T": 0.10688914735930184,
+        "lambda_um": 0.9499593127962082,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.023417876292464355,
+        "lambda_um": 0.9590304783650547,
+        "nfev": 12
+      },
+      {
+        "success": true,
+        "max_T": 0.25921790828644253,
+        "lambda_um": 0.9682805077271911,
+        "nfev": 10
+      },
+      {
+        "success": true,
+        "max_T": 0.007808029777962321,
+        "lambda_um": 0.9777136375446202,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.004968332229278679,
+        "lambda_um": 0.9873343705332857,
+        "nfev": 12
+      },
+      {
+        "success": true,
+        "max_T": 0.005220256988562378,
+        "lambda_um": 0.997147442974532,
+        "nfev": 10
+      },
+      {
+        "success": true,
+        "max_T": 0.981294379676952,
+        "lambda_um": 1.0071577830602907,
+        "nfev": 10
+      },
+      {
+        "success": true,
+        "max_T": 0.3533288371348773,
+        "lambda_um": 1.0173705139767775,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.115076361904811,
+        "lambda_um": 1.0277908835401215,
+        "nfev": 9
+      },
+      {
+        "success": true,
+        "max_T": 0.030588059550896586,
+        "lambda_um": 1.0384242505163392,
+        "nfev": 9
+      },
+      {
+        "success": true,
+        "max_T": 0.03944768217177562,
+        "lambda_um": 1.0492760600293167,
+        "nfev": 11
+      }
+    ],
+    "scaled_coordinate_reference_max_T": 1.0000000000271738,
+    "scaled_coordinate_reference_meter": {
+      "sampled_max": 1.0000000000271738,
+      "argmax_um": 0.9590304838468712,
+      "physical_points": 33037,
+      "layer_point_work": 2147405,
+      "forward_calls": 270,
+      "kernel_wall_s": 0.26021481200587004,
+      "kernel_cpu_s": 0.2603444339999985,
+      "max_energy_error": 3.5248914898033945e-11,
+      "numerical_failures": [],
+      "total_wall_s": 0.2720016519888304,
+      "crosscheck_points_excluded_from_reference_meter": {
+        "matrix_forward_points": 513,
+        "independent_recursion_points": 513,
+        "extra_layer_point_work": 66690
+      },
+      "matrix_recursion_R_max_abs_error": 2.605122379741164e-15
+    },
+    "diagnosis": "optimizer convergence flag is not a continuous peak certificate; dimensionless rescaling repairs this observed stopping-tolerance failure, not all possible missed peaks"
+  },
+  {
+    "center": 1.0037,
+    "old_absolute_lambda_reference_max_T": 0.33505962987722737,
+    "old_reference_meter": {
+      "sampled_max": 0.33505962987722737,
+      "argmax_um": 1.0555590297264534,
+      "physical_points": 32900,
+      "layer_point_work": 2138500,
+      "forward_calls": 132,
+      "kernel_wall_s": 0.20607831588131376,
+      "kernel_cpu_s": 0.20612545199999666,
+      "max_energy_error": 2.71282996067157e-12,
+      "numerical_failures": []
+    },
+    "old_local_refinements": [
+      {
+        "success": true,
+        "max_T": 0.03360326667090585,
+        "lambda_um": 0.9477049983985099,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.08578614031539614,
+        "lambda_um": 0.9565839072007624,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.03400890076986741,
+        "lambda_um": 0.9656347956725777,
+        "nfev": 10
+      },
+      {
+        "success": true,
+        "max_T": 0.0071396227114518375,
+        "lambda_um": 0.9748616394799547,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.001758419132576943,
+        "lambda_um": 0.9842686788172477,
+        "nfev": 12
+      },
+      {
+        "success": true,
+        "max_T": 0.004896822557122484,
+        "lambda_um": 0.9938603400096633,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.03118830273564697,
+        "lambda_um": 1.0036413242671973,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.13974518797808722,
+        "lambda_um": 1.013616429699901,
+        "nfev": 9
+      },
+      {
+        "success": true,
+        "max_T": 0.016079961945422674,
+        "lambda_um": 1.0237906272393824,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.0886885613905033,
+        "lambda_um": 1.0341689976648036,
+        "nfev": 12
+      },
+      {
+        "success": true,
+        "max_T": 0.2726008814575293,
+        "lambda_um": 1.0447567332733034,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.33505962987722737,
+        "lambda_um": 1.0555590297264534,
+        "nfev": 11
+      }
+    ],
+    "scaled_coordinate_reference_max_T": 1.000000000036541,
+    "scaled_coordinate_reference_meter": {
+      "sampled_max": 1.000000000036541,
+      "argmax_um": 0.9477050048409306,
+      "physical_points": 33048,
+      "layer_point_work": 2148120,
+      "forward_calls": 281,
+      "kernel_wall_s": 0.260368518269388,
+      "kernel_cpu_s": 0.2604336110000003,
+      "max_energy_error": 3.6561420557745805e-11,
+      "numerical_failures": [],
+      "total_wall_s": 0.2717868530016858,
+      "crosscheck_points_excluded_from_reference_meter": {
+        "matrix_forward_points": 513,
+        "independent_recursion_points": 513,
+        "extra_layer_point_work": 66690
+      },
+      "matrix_recursion_R_max_abs_error": 1.1102230246251565e-15
+    },
+    "diagnosis": "optimizer convergence flag is not a continuous peak certificate; dimensionless rescaling repairs this observed stopping-tolerance failure, not all possible missed peaks"
+  },
+  {
+    "center": 1.01273,
+    "old_absolute_lambda_reference_max_T": 0.8178594468081809,
+    "old_reference_meter": {
+      "sampled_max": 0.8178594468081809,
+      "argmax_um": 1.0225903222252732,
+      "physical_points": 32900,
+      "layer_point_work": 2138500,
+      "forward_calls": 132,
+      "kernel_wall_s": 0.20086878599249758,
+      "kernel_cpu_s": 0.20091757799999632,
+      "max_energy_error": 8.639977622237893e-12,
+      "numerical_failures": []
+    },
+    "old_local_refinements": [
+      {
+        "success": true,
+        "max_T": 0.05828168048524193,
+        "lambda_um": 0.9472939917739542,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.33544375653635167,
+        "lambda_um": 0.9560864361332042,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.4847303673671138,
+        "lambda_um": 0.9650476167637695,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.008497554271470776,
+        "lambda_um": 0.9741813904272054,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.010242247657387413,
+        "lambda_um": 0.9834918957614686,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.026111991515680347,
+        "lambda_um": 0.9929834305689526,
+        "nfev": 10
+      },
+      {
+        "success": true,
+        "max_T": 0.01880996726472791,
+        "lambda_um": 1.0026605242010271,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.008550069666584849,
+        "lambda_um": 1.0125278750176567,
+        "nfev": 12
+      },
+      {
+        "success": true,
+        "max_T": 0.8178594468081809,
+        "lambda_um": 1.0225903222252732,
+        "nfev": 10
+      },
+      {
+        "success": true,
+        "max_T": 0.1575175706494128,
+        "lambda_um": 1.0328528079011916,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.03421220006410004,
+        "lambda_um": 1.0433203792146346,
+        "nfev": 11
+      },
+      {
+        "success": true,
+        "max_T": 0.37051114242156274,
+        "lambda_um": 1.0539981016516515,
+        "nfev": 11
+      }
+    ],
+    "scaled_coordinate_reference_max_T": 1.0000000000140488,
+    "scaled_coordinate_reference_meter": {
+      "sampled_max": 1.0000000000140488,
+      "argmax_um": 1.0328528061770934,
+      "physical_points": 33042,
+      "layer_point_work": 2147730,
+      "forward_calls": 275,
+      "kernel_wall_s": 0.2674853630014695,
+      "kernel_cpu_s": 0.26727556300000144,
+      "max_energy_error": 3.9031555765234316e-11,
+      "numerical_failures": [],
+      "total_wall_s": 0.27848964201984927,
+      "crosscheck_points_excluded_from_reference_meter": {
+        "matrix_forward_points": 513,
+        "independent_recursion_points": 513,
+        "extra_layer_point_work": 66690
+      },
+      "matrix_recursion_R_max_abs_error": 1.6080432434119664e-15
+    },
+    "diagnosis": "optimizer convergence flag is not a continuous peak certificate; dimensionless rescaling repairs this observed stopping-tolerance failure, not all possible missed peaks"
+  }
+]
