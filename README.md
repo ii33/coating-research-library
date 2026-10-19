@@ -115,3 +115,5 @@ ITO并入本库专题11，不另建研究项目。[研究入口](11_transparent_
 - [2026-10-19 近期薄膜前沿与红外材料研究](manual_studies/2026-10-19_recent_frontiers/README.md) — 生成式/可微/制造稳健设计、相变与ENZ材料、多光谱实物及确缺资料；58条去重来源记录，非论文计数，未独立复现作者性能。
 
 - [2026-10-19 两篇新增全文补核](manual_studies/2026-10-19_fulltext_followup/README.md) — 六谱线双面减反器件与GNA/OMT mixer全文及核心代码审查；原处方、SI、权重和复现链的剩余缺口分别保留，未独立复现作者性能。
+
+- [2026-10-19 膜系自动设计原创算法探索](manual_studies/2026-10-19_original_algorithm_exploration/README.md) — 七个可证伪的结构与多谱段搜索假设及共同评价约定；尚未实现或开展性能实验，不宣称首次提出或优于已有算法。

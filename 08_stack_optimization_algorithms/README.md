@@ -56,3 +56,7 @@ python models/check_package.py
 ## 2026-10-19 近期前沿补充
 
 [近期逆设计方法与公平成本核查](../manual_studies/2026-10-19_recent_frontiers/README.md)：OptoGPT/OptoLlama/IrisFlow、可微求解、主动学习与制造稳健性；版本、开放状态、训练/推理/求解成本和基线范围均单独列明。未运行作者代码或独立复现其性能。
+
+## 2026-10-19 原创算法探索
+
+[七个可证伪的膜系搜索假设](../manual_studies/2026-10-19_original_algorithm_exploration/README.md)：结构前瞻、有限层组、窗口协调、漏峰对抗和复反射路径的探索方案，并列出失败条件与公平对照。尚未实现或开展性能实验，已知组件不宣称原创；不修改软件或既有冻结基准。
