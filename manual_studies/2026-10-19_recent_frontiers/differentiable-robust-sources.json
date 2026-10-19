@@ -1,0 +1,246 @@
+{
+  "scope": "Differentiable/robust one-dimensional optical thin-film inverse design",
+  "checked_at": "2026-10-19",
+  "report_file": "differentiable-robust.md",
+  "research_status": "Read-only source verification; no author-code execution",
+  "sources": [
+    {
+      "id": "glonet_paper",
+      "category": "paper",
+      "title": "Multiobjective and categorical global optimization of photonic structures based on ResNet generative neural networks",
+      "authors": [
+        "Jiaqi Jiang",
+        "Jonathan A. Fan"
+      ],
+      "year": 2021,
+      "first_online": "2020-09-22",
+      "doi": "10.1515/nanoph-2020-0407",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1515/nanoph-2020-0407",
+      "evidence": "Read full publisher text including methods and benchmarking.",
+      "limitations": [
+        "Simulation design; no universal global optimality proof.",
+        "Comparison to certified branch-and-bound has different guarantee and hardware.",
+        "Batch-size and reported evaluation-count discrepancy in lamp-filter example."
+      ]
+    },
+    {
+      "id": "glonet_code",
+      "category": "official_code",
+      "title": "GLOnet_for_thin_film official repository",
+      "url": "https://github.com/jiaqi-jiang/GLOnet_for_thin_film",
+      "commit": "01ff041f2d731bfc22cd48e2af44461bbca4654d",
+      "commit_date": "2022-06-30",
+      "inspected_files": [
+        "GLOnet_thinfilm.py",
+        "README.md"
+      ],
+      "file_url": "https://github.com/jiaqi-jiang/GLOnet_for_thin_film/blob/01ff041f2d731bfc22cd48e2af44461bbca4654d/GLOnet_thinfilm.py",
+      "evidence": "Read code and recursive repository tree via GitHub connector.",
+      "limitations": [
+        "evaluate defaults to grayscale=True; hard categorical evaluation requires grayscale=False.",
+        "Robust loss exists but train invokes ordinary loss; robust_coeff not initialized in class.",
+        "Not executed."
+      ]
+    },
+    {
+      "id": "tmm_fast_paper",
+      "category": "paper",
+      "title": "TMM-Fast, a transfer matrix computation package for multilayer thin-film optimization: tutorial",
+      "authors": [
+        "Alexander Luce",
+        "Ali Mahdavi",
+        "Florian Marquardt",
+        "Heribert Wankerl"
+      ],
+      "year": 2022,
+      "first_online": "2022-05-11",
+      "doi": "10.1364/JOSAA.450928",
+      "url": "https://doi.org/10.1364/JOSAA.450928",
+      "open_fulltext": "https://pure.mpg.de/rest/items/item_3401594_4/component/file_3401970/content",
+      "preprint": "https://arxiv.org/abs/2111.13667",
+      "evidence": "Read original preprint HTML and publisher-version institutional metadata.",
+      "limitations": [
+        "Speedup refers to forward-solver implementation relative to scalar reference, not optimizer quality."
+      ]
+    },
+    {
+      "id": "tmm_fast_code",
+      "category": "official_code",
+      "title": "tmm_fast official repository",
+      "url": "https://github.com/MLResearchAtOSRAM/tmm_fast",
+      "commit": "7e3895b39a29919374a68231776b2817bc5862e4",
+      "commit_date": "2026-08-21",
+      "license": "MIT",
+      "evidence": "Verified current main commit; read official repository metadata and package usage.",
+      "limitations": [
+        "Latest code includes changes after paper; not a paper-version reproduction."
+      ]
+    },
+    {
+      "id": "tmmax_paper",
+      "category": "paper",
+      "title": "TMMax: High-performance modeling of multilayer thin-film structures using transfer matrix method with JAX",
+      "authors": [
+        "Bahrem Serhat Danis",
+        "Esra Zayim"
+      ],
+      "year": 2025,
+      "first_online": "2025-10-27",
+      "doi": "10.21105/joss.09088",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.09088",
+      "open_fulltext": "https://arxiv.org/html/2507.11341v2",
+      "software_archive_doi": "10.5281/zenodo.17361547",
+      "evidence": "Read full paper HTML and JOSS publication/review/archive entry.",
+      "limitations": [
+        "Published headline speedup is chiefly against Byrnes tmm.",
+        "Archive linked but archive payload not fetched in this research."
+      ]
+    },
+    {
+      "id": "tmmax_code",
+      "category": "official_code",
+      "title": "TMMax official code and benchmark",
+      "url": "https://github.com/bahremsd/tmmax",
+      "commit": "dc4b90438dffeafd420a7b90c63539813881bedb",
+      "commit_date": "2026-10-16",
+      "default_branch": "master",
+      "inspected_files": [
+        "benchmarks/layer_size_benchmark.py",
+        "docs/source/user_guide/benchmarks.rst",
+        "tests/test_benchmark.py",
+        "benchmarks/tmmax_benchmark_figures.ipynb"
+      ],
+      "file_url": "https://github.com/bahremsd/tmmax/blob/dc4b90438dffeafd420a7b90c63539813881bedb/benchmarks/layer_size_benchmark.py",
+      "evidence": "Read repository tree and exact benchmark/test source via GitHub connector.",
+      "limitations": [
+        "timeit(number=50) totals are not divided by 50 before recording, despite prose describing averages.",
+        "block_until_ready present; no explicit cold-JIT versus warm separate timing.",
+        "Not executed.",
+        "Plotting notebook also directly loads timing arrays without visible normalization; observation scoped to inspected current commit."
+      ]
+    },
+    {
+      "id": "sagd_paper",
+      "category": "paper",
+      "title": "Sharpness-Aware Minimization for Robust Inverse Design of Nonlocal Thin Films",
+      "authors": [
+        "Yuchen Ma",
+        "Guangwei Hu",
+        "Liangcai Cao"
+      ],
+      "year": 2026,
+      "first_online": "2026-06-23",
+      "doi": "10.1002/lpor.71366",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/lpor.71366",
+      "evidence": "Publisher metadata, abstract, and data availability statement verified. Abstract reports fabricated dual-channel spatial-frequency filter and bright-/dark-field imaging.",
+      "limitations": [
+        "Full article redirected to abstract; supporting PDF retrieval failed.",
+        "Do not infer exact baseline settings, Monte Carlo sample counts, fabrication-error ranges or numerical superiority factors from abstract."
+      ]
+    },
+    {
+      "id": "sagd_code",
+      "category": "official_code",
+      "title": "THUHoloLab/SAGD official core algorithm example",
+      "url": "https://github.com/THUHoloLab/SAGD",
+      "commit": "1c4ebd2debf9c277025e86a71da93a3f2aa8d1d0",
+      "commit_date": "2026-07-11",
+      "license": "MIT",
+      "inspected_files": [
+        "SAGD_main.py",
+        "src/tmm_layer.py",
+        "src/utils.py",
+        "requirements.txt",
+        "data/TiO2_Thinfilm.csv"
+      ],
+      "file_url": "https://github.com/THUHoloLab/SAGD/blob/1c4ebd2debf9c277025e86a71da93a3f2aa8d1d0/SAGD_main.py",
+      "evidence": "Read all main source files and full recursive file tree; no code execution.",
+      "limitations": [
+        "Fixed alternating material order; only thickness optimized.",
+        "No baseline-comparison or Monte Carlo robustness scripts or experimental raw data seen in inspected tree.",
+        "No fixed seed or locked dependencies.",
+        "L2 rho 0.05 um is vector-radius, not per-layer independent error bound.",
+        "n-ik interpolation and passive-wave convention require independent validation before absorbing-stack reuse."
+      ]
+    },
+    {
+      "id": "fabrication_conscious_2023",
+      "category": "paper",
+      "title": "Fabrication-conscious neural network based inverse design of single-material variable-index multilayer films",
+      "authors": [
+        "O. Yesilyurt",
+        "S. Peana",
+        "V. Mkhitaryan et al."
+      ],
+      "year": 2023,
+      "first_online": "2023-01-30",
+      "doi": "10.1515/nanoph-2022-0537",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1515/nanoph-2022-0537",
+      "evidence": "Read full original text, specifically sections 4.3, 4.4 and conclusion.",
+      "limitations": [
+        "Fabrication and ellipsometry are simulated, real experimental-data second stage is future work.",
+        "Strongly compensates systematic or nonzero-mean bias; limited improvement for zero-mean random imperfections.",
+        "No complete official code/data entry verified."
+      ]
+    },
+    {
+      "id": "classic_1d_topopt",
+      "category": "historical_primary",
+      "title": "Design of one-dimensional optical pulse-shaping filters by time-domain topology optimization",
+      "authors": [
+        "Lirong Yang",
+        "Andrei V. Lavrinenko",
+        "Jørn M. Hvam",
+        "Ole Sigmund"
+      ],
+      "year": 2009,
+      "doi": "10.1063/1.3278595",
+      "url": "https://orbit.dtu.dk/en/publications/design-of-one-dimensional-optical-pulse-shaping-filters-by-time-d/",
+      "evidence": "Author institutional record and original PDF abstract verified."
+    },
+    {
+      "id": "classic_needle",
+      "category": "historical_primary",
+      "title": "Application of the needle optimization technique to the design of optical coatings",
+      "authors": [
+        "Alexander V. Tikhonravov",
+        "Michael K. Trubetskov",
+        "Gary W. DeBell"
+      ],
+      "year": 1996,
+      "doi": "10.1364/AO.35.005493",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-35-28-5493",
+      "evidence": "Publisher abstract and metadata verified; full text gated."
+    },
+    {
+      "id": "needle_time_domain",
+      "category": "historical_primary",
+      "title": "Time-domain approach for designing dispersive mirrors based on the needle optimization technique. Theory.",
+      "year": 2008,
+      "doi": "10.1364/OE.16.020637",
+      "url": "https://doi.org/10.1364/OE.16.020637",
+      "evidence": "Original-paper passage on analytic gradient/derivative requirements retrieved via indexed original-paper text; Optica HTML endpoint did not render."
+    },
+    {
+      "id": "certified_global_2019",
+      "category": "paper",
+      "title": "Guaranteed global optimization of thin-film optical systems",
+      "authors": [
+        "Paul Azunre",
+        "Joel Jean",
+        "Carmel Rotschild",
+        "Vladimir Bulovic",
+        "Steven G. Johnson",
+        "Marc A. Baldo"
+      ],
+      "year": 2019,
+      "doi": "10.1088/1367-2630/ab2e19",
+      "url": "https://dspace.mit.edu/entities/publication/97c01ec7-771f-458c-aee6-2866851a0b68",
+      "open_fulltext": "https://www.joeljean.com/documents/Azunre2019_NJP.pdf",
+      "evidence": "Author institutional metadata and original-paper indexed text verified.",
+      "limitations": [
+        "Certification cost differs from simply finding same merit value; small-scale cases."
+      ]
+    }
+  ]
+}

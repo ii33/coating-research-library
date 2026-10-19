@@ -45,3 +45,8 @@ python models/check_package.py
 ## 2026-10-19 手工研究增量
 
 [多光谱红外结构与云端算法研究](../manual_studies/2026-10-19_multispectral_ir_structures/README.md)：补充多窗口 AR、周期／截止、耦合腔、buffer、rugate、相位镜与金属介质的适用边界，以及原文公开数据缺口。本增量不改变本专题既有冻结结论和验收状态；实验使用合成常数折射率，未验证真实红外材料或器件。
+
+
+## 2026-10-19 近期前沿补充
+
+[红外结构、材料与实物证据](../manual_studies/2026-10-19_recent_frontiers/README.md)：补充相变、ENZ/EMNZ、IST、高温失效和多维集成。峰值/带均值、模拟/实测、单次功能/寿命分开记录；不改变既有验收状态。

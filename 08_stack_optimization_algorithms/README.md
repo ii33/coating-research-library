@@ -51,3 +51,8 @@ python models/check_package.py
 - [首轮验收](reviews/ROUND1_ACCEPTANCE.md)、[未决问题](reviews/OPEN_ISSUES.md)、[T09移交](T09_HANDOFF.md)
 
 指定完整模型审查链缺席仅在阶段schema中保持pending，不影响阅读工程方法；不得将本轮窄核查冒称完整独审通过。第三方原文仅本地排除存档，公开包只保留摘要和来源链接。
+
+
+## 2026-10-19 近期前沿补充
+
+[近期逆设计方法与公平成本核查](../manual_studies/2026-10-19_recent_frontiers/README.md)：OptoGPT/OptoLlama/IrisFlow、可微求解、主动学习与制造稳健性；版本、开放状态、训练/推理/求解成本和基线范围均单独列明。未运行作者代码或独立复现其性能。

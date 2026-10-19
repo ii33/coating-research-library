@@ -1,0 +1,71 @@
+{
+  "checked_at_utc": "2026-10-19",
+  "scope": "Independent publication-time checks of version-sensitive claims, counting, local links and preserved repository scope. Not an independent reproduction of paper performance.",
+  "key_checks": [
+    {
+      "subject": "IrisFlow v2 vs v1 and cost",
+      "primary_urls": [
+        "https://arxiv.org/pdf/2607.08392v2",
+        "https://arxiv.org/html/2607.08392v1",
+        "https://github.com/z-one-l/IrisFlow"
+      ],
+      "locators": [
+        "v2 Note S9 pp.46–47; Table S11 p.51; Table S5 p.33; section 3.6",
+        "v1 measured-coupon text and Appendix 18 include fabricated samples; not present as such in v2 section 3.6",
+        "Official repository listing and README checked 2026-10-19: .gitignore, LICENSE, README.md only"
+      ],
+      "result": "500x excludes inference, training-data generation and training. Final vs needle p=.52. Training stage hours sum16+7.6+18=41.6. Full code/data release pending."
+    },
+    {
+      "subject": "OptoLlama preprint and physical reference",
+      "primary_urls": [
+        "https://arxiv.org/abs/2604.01106",
+        "https://arxiv.org/pdf/2604.01106"
+      ],
+      "locators": [
+        "Submitted2026-04-01; section2.2; SI FigureS3"
+      ],
+      "result": "MorphoColor reference is an existing experimental sample; no new generated-candidate fabrication demonstrated."
+    },
+    {
+      "subject": "IST peak vs band average and date",
+      "primary_urls": [
+        "https://onlinelibrary.wiley.com/doi/10.1002/nap2.70084"
+      ],
+      "locators": [
+        "First published2026-04-16; section2.4/Figure3f"
+      ],
+      "result": "Measured peaks.86/.99 at4.17/9.36um; band averages.24/.53; no cycle-life claim added."
+    },
+    {
+      "subject": "Ge/SiO2 high-temperature failure",
+      "primary_urls": [
+        "https://onlinelibrary.wiley.com/doi/10.1515/nanoph-2024-0193"
+      ],
+      "locators": [
+        "Figures4–5 and accompanying text"
+      ],
+      "result": "Structure1 damage starts242C/full fracture295C; structure2 damage around250–300C;500C signal reduction is not long-term thermal stability."
+    },
+    {
+      "subject": "TMMax journal date",
+      "primary_urls": [
+        "https://joss.theoj.org/papers/10.21105/joss.09088"
+      ],
+      "result": "Published2025-10-27 verified independently of later repository changes."
+    }
+  ],
+  "source_registry": {
+    "raw_records": 62,
+    "unique_doi_or_url_records": 58,
+    "duplicate_groups": 4,
+    "all_original_ids_retained": true
+  },
+  "excluded": [
+    "third-party PDFs/screenshots",
+    "downloaded author source code or datasets",
+    "application source edits",
+    "software repository publication",
+    "credentials"
+  ]
+}

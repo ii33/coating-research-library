@@ -1,0 +1,1587 @@
+{
+  "schema_version": "1.1",
+  "topic": "2019–2026 optical thin-film design methods and IR structure/material frontiers, with historical anchors",
+  "checked_at": "2026-10-19",
+  "main_report": "frontier-review-2019-2026-zh.md",
+  "priority_missing_materials": "priority-missing-materials-zh.md",
+  "source_files": [
+    "method-sources.json",
+    "differentiable-robust-sources.json",
+    "ir-sources.json",
+    "ir-material-sources.json"
+  ],
+  "source_record_count_before_deduplication": 62,
+  "unique_source_record_count": 58,
+  "count_note": "Source records include journal papers, preprints, historical primary sources, official code, and datasets. Not a paper count. Specialist registries are overlapping evidence views, not additive new sources.",
+  "deduplication_rule": "Case-insensitive DOI; otherwise source URL/primary URL, trailing slash removed. Evidence variants and original IDs retained.",
+  "id_aliases": {
+    "certified_global_2019": "method2019_global_certificate",
+    "IR-M02": "ir2023_whole_infrared",
+    "IR-M06": "ir2025_space",
+    "IR-S01": "ir2023_bayesian"
+  },
+  "verification_scope": "Primary-source review and repository inspection; no external author code run, retraining, fabrication, or independent performance reproduction.",
+  "sources": [
+    {
+      "id": "history1982_optimality",
+      "title": "On the method of synthesis of optical films using the necessary conditions of optimum",
+      "year": 1982,
+      "url": "https://vmu.phys.msu.ru/abstract/1982/6/82-6-91/",
+      "checked_at": "2026-10-19",
+      "authors_short": "A. V. Tikhonravov",
+      "category": "historical_primary",
+      "evidence_level": "institution_published_record",
+      "claims_supported": [
+        "1982年已有光学涂层最优性条件合成研究"
+      ],
+      "source_manifest": "method-sources.json",
+      "canonical_key": "https://vmu.phys.msu.ru/abstract/1982/6/82-6-91",
+      "source_record_ids": [
+        "history1982_optimality"
+      ]
+    },
+    {
+      "id": "history1996_needle",
+      "title": "Implementation of a numerical needle method for thin-film design",
+      "year": 1996,
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-35-28-5484",
+      "checked_at": "2026-10-19",
+      "authors_short": "B. T. Sullivan and J. A. Dobrowolski",
+      "category": "historical_primary",
+      "evidence_level": "publisher_abstract",
+      "claims_supported": [
+        "多种材料needle插入、自定义复杂光谱目标并非近期首次出现"
+      ],
+      "doi": "10.1364/AO.35.005484",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1364/ao.35.005484",
+      "source_record_ids": [
+        "history1996_needle"
+      ]
+    },
+    {
+      "id": "method2019_global_certificate",
+      "title": "Guaranteed global optimization of thin-film optical systems",
+      "year": 2019,
+      "url": "https://dspace.mit.edu/entities/publication/97c01ec7-771f-458c-aee6-2866851a0b68",
+      "checked_at": "2026-10-19",
+      "publication_date": "2019-07-24",
+      "authors_short": "Azunre et al.",
+      "category": "deterministic_optimization",
+      "evidence_level": "institution_published_version_and_abstract",
+      "claims_supported": [
+        "Taylor界branch-and-bound给出指定容差的全局保证",
+        "三层减反射实物验证"
+      ],
+      "limitations": [
+        "高计算成本、小规模可行；不能当高维任意材料的免费全局解"
+      ],
+      "doi": "10.1088/1367-2630/ab2e19",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1088/1367-2630/ab2e19",
+      "source_record_ids": [
+        "method2019_global_certificate",
+        "certified_global_2019"
+      ],
+      "additional_evidence_records": [
+        {
+          "id": "certified_global_2019",
+          "category": "paper",
+          "title": "Guaranteed global optimization of thin-film optical systems",
+          "authors": [
+            "Paul Azunre",
+            "Joel Jean",
+            "Carmel Rotschild",
+            "Vladimir Bulovic",
+            "Steven G. Johnson",
+            "Marc A. Baldo"
+          ],
+          "year": 2019,
+          "doi": "10.1088/1367-2630/ab2e19",
+          "url": "https://dspace.mit.edu/entities/publication/97c01ec7-771f-458c-aee6-2866851a0b68",
+          "open_fulltext": "https://www.joeljean.com/documents/Azunre2019_NJP.pdf",
+          "evidence": "Author institutional metadata and original-paper indexed text verified.",
+          "limitations": [
+            "Certification cost differs from simply finding same merit value; small-scale cases."
+          ],
+          "source_manifest": "differentiable-robust-sources.json"
+        }
+      ]
+    },
+    {
+      "id": "method2021_omlppo",
+      "title": "Automated multi-layer optical design via deep reinforcement learning",
+      "year": 2021,
+      "url": "https://doi.org/10.1088/2632-2153/abc327",
+      "checked_at": "2026-10-19",
+      "publication_date": "2021-02-03",
+      "authors_short": "Wang et al.",
+      "category": "reinforcement_learning",
+      "evidence_level": "publisher_full_text_search",
+      "claims_supported": [
+        "序列决策联合层数、材料、厚度；模拟基准有收益"
+      ],
+      "limitations": [
+        "任务特定基线；不能普遍宣称胜过needle或DE"
+      ],
+      "code_url": "https://github.com/hammer-wang/oml-ppo",
+      "reproducibility_status": "official_code_exists_old_dependencies",
+      "doi": "10.1088/2632-2153/abc327",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1088/2632-2153/abc327",
+      "source_record_ids": [
+        "method2021_omlppo"
+      ]
+    },
+    {
+      "id": "code2021_omlppo",
+      "title": "OML-PPO official implementation",
+      "year": 2021,
+      "url": "https://github.com/hammer-wang/oml-ppo",
+      "checked_at": "2026-10-19",
+      "category": "official_code",
+      "evidence_level": "repository_readme_and_file_listing",
+      "claims_supported": [
+        "存在实验配置与代码",
+        "README列Python3.7.4和PyTorch1.3.1等旧环境"
+      ],
+      "limitations": [
+        "本轮未安装或运行；不能据此称已复现"
+      ],
+      "source_manifest": "method-sources.json",
+      "canonical_key": "https://github.com/hammer-wang/oml-ppo",
+      "source_record_ids": [
+        "code2021_omlppo"
+      ]
+    },
+    {
+      "id": "method2023_cinn",
+      "title": "Investigation of inverse design of multilayer thin-films with conditional invertible neural networks",
+      "year": 2023,
+      "url": "https://pure.mpg.de/pubman/item/item_3432570_4/component/file_3522093/Investigation_of_inverse_design_of_multilayer_thin.pdf",
+      "checked_at": "2026-10-19",
+      "publication_date": "2023-02-07",
+      "authors_short": "Luce et al.",
+      "category": "generative_initialization_plus_local_refinement",
+      "evidence_level": "institution_published_pdf",
+      "claims_supported": [
+        "百万九层固定交替材料样本",
+        "cINN候选接局部精修优于随机初始化"
+      ],
+      "limitations": [
+        "不等于自由材料选择",
+        "原始预测需要后处理",
+        "未构成全部经典算法比较"
+      ],
+      "related_code_url": "https://github.com/MLResearchAtOSRAM/OsCINN",
+      "doi": "10.1088/2632-2153/acb48d",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1088/2632-2153/acb48d",
+      "source_record_ids": [
+        "method2023_cinn"
+      ]
+    },
+    {
+      "id": "method2024_optogpt",
+      "title": "OptoGPT: A foundation model for inverse design in optical multilayer thin film structures",
+      "year": 2024,
+      "url": "https://doi.org/10.29026/oea.2024.240062",
+      "checked_at": "2026-10-19",
+      "publication_date": "2024-07-15",
+      "authors_short": "Ma, Wang and Guo",
+      "category": "autoregressive_generative_model",
+      "evidence_level": "publisher_full_text_search_and_pdf",
+      "claims_supported": [
+        "材料厚度token与可变层数",
+        "千万模拟样本、单3090约两周训练"
+      ],
+      "limitations": [
+        "固定材料词表与离散厚度",
+        "不能直接推断中长波IR外推有效"
+      ],
+      "code_url": "https://github.com/taigaoma1997/optogpt",
+      "data_url": "https://huggingface.co/datasets/mataigao/optogpt_data",
+      "model_url": "https://huggingface.co/mataigao/optogpt",
+      "release_note": "Publisher page explicitly records public code/model/dataset update on 2025-06-03",
+      "doi": "10.29026/oea.2024.240062",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.29026/oea.2024.240062",
+      "source_record_ids": [
+        "method2024_optogpt"
+      ]
+    },
+    {
+      "id": "data2024_optogpt",
+      "title": "OptoGPT data official dataset card",
+      "year": 2024,
+      "url": "https://huggingface.co/datasets/mataigao/optogpt_data",
+      "checked_at": "2026-10-19",
+      "category": "official_dataset",
+      "evidence_level": "dataset_card",
+      "claims_supported": [
+        "400–1100nm、10nm波长间隔；约11M train/test样本",
+        "包含层序及模拟反射透射"
+      ],
+      "limitations": [
+        "不是3–14μm数据",
+        "没有下载全部19.5GB数据或复跑"
+      ],
+      "source_manifest": "method-sources.json",
+      "canonical_key": "https://huggingface.co/datasets/mataigao/optogpt_data",
+      "source_record_ids": [
+        "data2024_optogpt"
+      ]
+    },
+    {
+      "id": "code2024_optogpt",
+      "title": "OptoGPT official repository",
+      "year": 2024,
+      "url": "https://github.com/taigaoma1997/optogpt",
+      "checked_at": "2026-10-19",
+      "category": "official_code",
+      "evidence_level": "repository_readme_and_listing",
+      "claims_supported": [
+        "optogpt与self_improving目录真实存在",
+        "包含2024 OOD自改进数据增强工作说明"
+      ],
+      "limitations": [
+        "公开存在不等于本轮端到端运行验证"
+      ],
+      "source_manifest": "method-sources.json",
+      "canonical_key": "https://github.com/taigaoma1997/optogpt",
+      "source_record_ids": [
+        "code2024_optogpt"
+      ]
+    },
+    {
+      "id": "method2024_nested_transfer",
+      "title": "Nested deep transfer learning for modeling of multilayer thin films",
+      "year": 2024,
+      "url": "https://www.spiedigitallibrary.org/journals/advanced-photonics/volume-6/issue-5/056006/Nested-deep-transfer-learning-for-modeling-of-multilayer-thin-films/10.1117/1.AP.6.5.056006.pdf",
+      "checked_at": "2026-10-19",
+      "publication_date": "2024-10-08",
+      "authors_short": "Unni, Yao and Zheng",
+      "category": "transfer_learning",
+      "evidence_level": "publisher_pdf_and_author_institution",
+      "claims_supported": [
+        "逐步复杂化训练；30层前向与10层逆向示例"
+      ],
+      "limitations": [
+        "数据与代码为合理索取",
+        "没有据摘要认定新候选实验制备"
+      ],
+      "data_availability": "upon_reasonable_request",
+      "doi": "10.1117/1.AP.6.5.056006",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1117/1.ap.6.5.056006",
+      "source_record_ids": [
+        "method2024_nested_transfer"
+      ]
+    },
+    {
+      "id": "method2025_active_continuous_discrete",
+      "title": "Adaptive continuous-discrete variables optimization for active learning with extremely sparse data in optical material design",
+      "year": 2025,
+      "url": "https://doi.org/10.1088/2632-2153/adf68d",
+      "checked_at": "2026-10-19",
+      "authors_short": "Serang Jung and Eungkyu Lee",
+      "category": "active_learning_mixed_variables",
+      "evidence_level": "publisher_abstract_method_snippets_and_author_institution",
+      "institution_url": "https://khu.elsevierpure.com/en/publications/adaptive-continuous-discrete-variables-optimization-for-active-le/",
+      "claims_supported": [
+        "Ge/YF3五层减反射报告0.47%平均反射、约固定方案10%训练数据"
+      ],
+      "limitations": [
+        "全文/SI预算与独立统计仍缺",
+        "相对固定采样方案，不是所有优化器",
+        "开源代码数据未核到"
+      ],
+      "doi": "10.1088/2632-2153/adf68d",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1088/2632-2153/adf68d",
+      "source_record_ids": [
+        "method2025_active_continuous_discrete"
+      ]
+    },
+    {
+      "id": "method2026_optollama",
+      "title": "Inverse Design of Optical Multilayer Thin Films using Robust Masked Diffusion Models",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2604.01106",
+      "checked_at": "2026-10-19",
+      "publication_date": "2026-04-01",
+      "publication_status": "preprint_v1_no_journal_reference_verified",
+      "authors_short": "Schaible et al.",
+      "category": "masked_diffusion",
+      "evidence_level": "current_arxiv_full_pdf",
+      "claims_supported": [
+        "3000目标、best-of-10相对重训OptoGPT报告3.45倍MAE改善",
+        "千万样本、正常入射、离散厚度；无制造容差训练"
+      ],
+      "limitations": [
+        "实测参考MorphoColor，不是新候选完整制备",
+        "未与充分调参needle/DE同预算比较",
+        "300–2000nm非中长波IR",
+        "本文能源表主文估算与SI测量措辞不完全一致，未作精确能耗断言"
+      ],
+      "code_url": "https://github.com/jnitzz/OptoLlama",
+      "data_url": "https://huggingface.co/datasets/HZBSolarOptics/MultiLayerThinFilms",
+      "model_url": "https://huggingface.co/HZBSolarOptics/OptoLlama",
+      "evidence_locators": [
+        "Section2.1",
+        "Section2.2",
+        "Section3",
+        "SI1.6–1.9"
+      ],
+      "doi": "10.48550/arXiv.2604.01106",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.48550/arxiv.2604.01106",
+      "source_record_ids": [
+        "method2026_optollama"
+      ]
+    },
+    {
+      "id": "code2026_optollama",
+      "title": "OptoLlama official repository",
+      "year": 2026,
+      "url": "https://github.com/jnitzz/OptoLlama",
+      "checked_at": "2026-10-19",
+      "category": "official_code",
+      "evidence_level": "repository_readme_and_listing",
+      "claims_supported": [
+        "optollama、configs、jobscripts、scripts目录可见",
+        "README链接数据和模型"
+      ],
+      "limitations": [
+        "未安装或运行"
+      ],
+      "source_manifest": "method-sources.json",
+      "canonical_key": "https://github.com/jnitzz/optollama",
+      "source_record_ids": [
+        "code2026_optollama"
+      ]
+    },
+    {
+      "id": "data2026_optollama",
+      "title": "MultiLayerThinFilms official OptoLlama dataset",
+      "year": 2026,
+      "url": "https://huggingface.co/datasets/HZBSolarOptics/MultiLayerThinFilms",
+      "checked_at": "2026-10-19",
+      "category": "official_dataset",
+      "evidence_level": "dataset_card",
+      "claims_supported": [
+        "300–2000nm，train10M/test1M，RAT模拟谱与材料n,k文件"
+      ],
+      "license": "CC-BY-4.0",
+      "limitations": [
+        "模拟数据不是实验测量集合",
+        "未下载全部数据"
+      ],
+      "doi": "10.57967/hf/9307",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.57967/hf/9307",
+      "source_record_ids": [
+        "data2026_optollama"
+      ]
+    },
+    {
+      "id": "method2026_irisflow",
+      "title": "Flexible Inverse Design of Optical Multilayer Coatings Using Discrete-Continuous Flow Matching",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2607.08392v2",
+      "checked_at": "2026-10-19",
+      "publication_date": "2026-07-09",
+      "last_revised": "2026-10-09",
+      "publication_status": "preprint_v2",
+      "authors_short": "Li et al.",
+      "category": "discrete_continuous_flow_matching",
+      "evidence_level": "current_arxiv_html_full_pdf_and_supplement",
+      "claims_supported": [
+        "n,k与波长条件输入、联合材料连续厚度",
+        "46目标的调用预算改善、最终对needle精度p=0.52",
+        "1.1亿短样本；三卡三阶段约41.6h"
+      ],
+      "limitations": [
+        "约500倍不计推理和预训练/数据生成",
+        "未见中长波IR泛化实证",
+        "v2没有新生成涂层实物验证；v1搜索缓存不可混用",
+        "论文称开放与官方repo待发布冲突"
+      ],
+      "evidence_locators": [
+        "Section2.3–2.4",
+        "Section3.2",
+        "Section3.6",
+        "SI TableS3/S5/S11",
+        "SI NoteS9"
+      ],
+      "code_url": "https://github.com/z-one-l/IrisFlow",
+      "reproducibility_status": "placeholder_repository_full_release_pending",
+      "doi": "10.48550/arXiv.2607.08392",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.48550/arxiv.2607.08392",
+      "source_record_ids": [
+        "method2026_irisflow"
+      ]
+    },
+    {
+      "id": "code2026_irisflow_placeholder",
+      "title": "IrisFlow official repository release status",
+      "year": 2026,
+      "url": "https://github.com/z-one-l/IrisFlow",
+      "checked_at": "2026-10-19",
+      "category": "official_code_status",
+      "evidence_level": "repository_file_listing_and_readme",
+      "claims_supported": [
+        "仅README/LICENSE/gitignore等",
+        "README说发表后公开代码并在HF释放数据权重"
+      ],
+      "limitations": [
+        "不能列为现成完整开源复现",
+        "需要作者发布；补找PDF不能解决"
+      ],
+      "source_manifest": "method-sources.json",
+      "canonical_key": "https://github.com/z-one-l/irisflow",
+      "source_record_ids": [
+        "code2026_irisflow_placeholder"
+      ]
+    },
+    {
+      "id": "method2026_gna",
+      "title": "Interpretable inverse design of optical multilayer thin films based on global neural adjoint",
+      "year": 2026,
+      "url": "https://www.nature.com/articles/s41598-026-75220-w",
+      "checked_at": "2026-10-19",
+      "publication_date": "2026-10-12",
+      "publication_status": "peer_reviewed_accepted_early_access",
+      "authors_short": "Sungjun Kim and Jungho Kim",
+      "category": "surrogate_neural_adjoint",
+      "evidence_level": "publisher_full_abstract_only",
+      "claims_supported": [
+        "每epoch较部分transformer报告37–42%训练时间下降",
+        "约束任务可有更佳峰值准确率和多样性但成本更高"
+      ],
+      "limitations": [
+        "正文与SI本轮工具路径未可读",
+        "不能据摘要断言通用算法优势或实验验证",
+        "代码/数据/权重开放状态未确认"
+      ],
+      "missing_priority": 1,
+      "doi": "10.1038/s41598-026-75220-w",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1038/s41598-026-75220-w",
+      "source_record_ids": [
+        "method2026_gna"
+      ]
+    },
+    {
+      "id": "method2026_phase_disorder",
+      "title": "Phase disorder engineering in aperiodic distributed Bragg reflectors for sidelobe suppression",
+      "year": 2026,
+      "url": "https://doi.org/10.1364/OE.601767",
+      "checked_at": "2026-10-19",
+      "publication_date": "2026-07-13",
+      "authors_short": "Choi et al.",
+      "category": "structure_mechanism_separated_from_optimizer",
+      "evidence_level": "publisher_full_text_search_and_issue_record",
+      "claims_supported": [
+        "30独立厚度、跨优化器检验相位机制",
+        "容差良率来自Monte Carlo而非实物批产",
+        "PPO每结构约6h为工作流成本"
+      ],
+      "limitations": [
+        "数值研究",
+        "不能把PPO或非周期类别本身称新物理"
+      ],
+      "doi": "10.1364/OE.601767",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1364/oe.601767",
+      "source_record_ids": [
+        "method2026_phase_disorder"
+      ]
+    },
+    {
+      "id": "review2025_inverse_thinfilm",
+      "title": "Optical multilayer thin film structure inverse design: From optimization to deep learning",
+      "year": 2025,
+      "url": "https://doi.org/10.1016/j.isci.2025.112222",
+      "checked_at": "2026-10-19",
+      "publication_date": "2025-04-18",
+      "authors_short": "Ma, Ma and Guo",
+      "category": "review_index_only",
+      "evidence_level": "publisher_review_and_arxiv",
+      "alternative_url": "https://arxiv.org/abs/2409.17199",
+      "limitations": [
+        "仅作索引，不替代原论文对新颖性与公平基线的证据"
+      ],
+      "doi": "10.1016/j.isci.2025.112222",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1016/j.isci.2025.112222",
+      "source_record_ids": [
+        "review2025_inverse_thinfilm"
+      ]
+    },
+    {
+      "id": "method2025_2026_autoencoder",
+      "title": "Efficient optical coating design using an autoencoder-based neural network model",
+      "year": 2026,
+      "url": "https://repository.gsi.de/record/362988/files/Chattopadhyay_2026_J._Phys._Photonics_8_015007.pdf",
+      "checked_at": "2026-10-19",
+      "publication_date": "2025-11-12",
+      "authors_short": "Chattopadhyay et al.",
+      "category": "physics_informed_autoencoder",
+      "evidence_level": "institution_published_pdf",
+      "claims_supported": [
+        "物理TMM替代decoder、约500合成目标、固定双材料层数",
+        "相同约束下达到与商业软件相近反射/GDD"
+      ],
+      "limitations": [
+        "2026卷期实际2025在线",
+        "仅设计验证，没有新膜制备测量",
+        "明确未纳入制造容差",
+        "商业敏感数据不公开、合理索取"
+      ],
+      "doi": "10.1088/2515-7647/ae1b53",
+      "source_manifest": "method-sources.json",
+      "canonical_key": "10.1088/2515-7647/ae1b53",
+      "source_record_ids": [
+        "method2025_2026_autoencoder"
+      ]
+    },
+    {
+      "id": "ir2021_multispectral_baseline",
+      "title": "Multispectral camouflage for infrared, visible, lasers and microwave with radiative cooling",
+      "authors_short": "Zhu et al.",
+      "journal": "Nature Communications",
+      "year": 2021,
+      "volume_article": "12, 1805",
+      "doi": "10.1038/s41467-021-22051-0",
+      "url": "https://www.nature.com/articles/s41467-021-22051-0",
+      "secondary_primary_record": "https://pubmed.ncbi.nlm.nih.gov/33753740/",
+      "category": "structure_and_integration",
+      "evidence_level": "experimental",
+      "claims_supported": [
+        "Ge/ZnS选择性发射膜与Cu-ITO-Cu微波吸收结构集成",
+        "ε3–5/8–14=0.11/0.12，ε5–8=0.61；X-band吸收>0.9",
+        "2500 W/m²较Cr内部/表面真实温降8.4/5.9°C"
+      ],
+      "limitations": [
+        "层级集成而非单一均匀薄膜",
+        "实验含环境反射辐射，不能泛化为任意背景不可探测"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1038/s41467-021-22051-0",
+      "source_record_ids": [
+        "ir2021_multispectral_baseline"
+      ]
+    },
+    {
+      "id": "ir2023_whole_infrared",
+      "title": "Whole-infrared-band camouflage with dual-band radiative heat dissipation",
+      "authors_short": "Qin et al.",
+      "journal": "Light: Science & Applications",
+      "year": 2023,
+      "publication_date": "2023-10-04",
+      "volume_article": "12, 246",
+      "doi": "10.1038/s41377-023-01287-z",
+      "url": "https://www.nature.com/articles/s41377-023-01287-z",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10550919/",
+      "category": "structure_and_multiband_extension",
+      "evidence_level": "experimental",
+      "claims_supported": [
+        "4英寸Si上免光刻7层薄膜",
+        "实测εSWIR/MWIR/LWIR=0.270/0.042/0.218，ε2.5–3/5–8=0.742/0.473",
+        "2000 W/m²较Cr真实表面温度低14.4°C",
+        "室外太阳照射下SWIR成像"
+      ],
+      "limitations": [
+        "同温200°C时LWIR表观温度高于Cr约24°C",
+        "没有同时验证微波吸收",
+        "低反射暗色不等于任意背景光谱匹配"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1038/s41377-023-01287-z",
+      "source_record_ids": [
+        "ir2023_whole_infrared",
+        "IR-M02"
+      ],
+      "additional_evidence_records": [
+        {
+          "id": "IR-M02",
+          "role": "primary_case",
+          "year": 2023,
+          "title": "Whole-infrared-band camouflage with dual-band radiative heat dissipation",
+          "authors_short": "Bing Qin et al.",
+          "venue": "Light: Science & Applications 12, 246",
+          "doi": "10.1038/s41377-023-01287-z",
+          "primary_url": "https://www.nature.com/articles/s41377-023-01287-z",
+          "inspected_url": "https://www.nature.com/articles/s41377-023-01287-z.pdf",
+          "source_type": "peer_reviewed_publisher_full_text",
+          "evidence_locations": [
+            "Structure design and measurements, Figure 2",
+            "Methods: fabrication and optical characterization",
+            "Supplementary 3 referenced for n,k"
+          ],
+          "nk_access": "Supplementary source identified; machine-readable tables not obtained",
+          "temperature_process_access": "Fabrication and heated optical characterization described",
+          "solver_class": "resolved_isotropic_local_planar_TMM",
+          "key_limit": "Crystalline GST is used as static lossy material, not demonstrated dynamic switching",
+          "license": "CC BY 4.0 per publisher PDF",
+          "source_manifest": "ir-material-sources.json"
+        }
+      ]
+    },
+    {
+      "id": "ir2025_high_temperature",
+      "title": "High-Temperature Stealth Across Multi-Infrared and Microwave Bands with Efficient Radiative Thermal Management",
+      "authors_short": "Zhao et al.",
+      "journal": "Nano-Micro Letters",
+      "year": 2025,
+      "publication_date": "2025-03-24",
+      "volume_article": "17, 199",
+      "doi": "10.1007/s40820-025-01712-5",
+      "url": "https://link.springer.com/article/10.1007/s40820-025-01712-5",
+      "full_text_url": "https://www.nmlett.org/index.php/nml/article/view/1983",
+      "category": "high_temperature_structure",
+      "evidence_level": "experimental",
+      "claims_supported": [
+        "Mo/Si红外膜+TiB2-Al2O3-TiB2微波超表面",
+        "700°C时εMWIR/LWIR/SWIR=0.38/0.44/0.60，ε5–8=0.82",
+        "9.6–12 GHz反射损失<-3dB",
+        "约17 kW/m²电加热较Mo真实温降72.4°C"
+      ],
+      "limitations": [
+        "Mach2.2是等效热输入，不是飞行或风洞实验",
+        "750°C退化",
+        "-3dB指标弱于常用-10dB吸收标准",
+        "文中输入热功率17.3/17.4 kW/m²写法不一致"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1007/s40820-025-01712-5",
+      "source_record_ids": [
+        "ir2025_high_temperature"
+      ]
+    },
+    {
+      "id": "ir2026_pa66",
+      "title": "Hierarchical design and scalable production of radiative cooling film featuring multispectral camouflage",
+      "authors_short": "Jiang et al.",
+      "journal": "Nature Communications",
+      "year": 2026,
+      "publication_date": "2026-02-02",
+      "volume_article": "17, 2253",
+      "doi": "10.1038/s41467-026-69045-4",
+      "url": "https://www.nature.com/articles/s41467-026-69045-4",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12966451/",
+      "institution_pdf_url": "https://light.nju.edu.cn/upload/file/20260309/s41467-026-69045-4_202603091107234969.pdf",
+      "category": "scalable_material_structure",
+      "evidence_level": "experimental",
+      "claims_supported": [
+        "米级卷对卷电纺PA66/Al柔性膜",
+        "5–8和14–20 μm散热；实物室内/室外温度和多角度成像",
+        "室内相对裸Al温降5–10°C，±60°成像",
+        "10.6μm量子级联激光和光功率计测量实物背向信号"
+      ],
+      "limitations": [
+        "indoor simulated experiment指实物室内模拟场景，并非纯数值仿真",
+        "增加PA66厚度增强散热但削弱IR窗口反射",
+        "没有微波实验或实地探测距离验证"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1038/s41467-026-69045-4",
+      "source_record_ids": [
+        "ir2026_pa66"
+      ]
+    },
+    {
+      "id": "ir2025_nsga2",
+      "title": "Inverse design of visible-infrared multispectral camouflage with radiative cooling and microwave transmission",
+      "authors_short": "Shi, Zhu, Li and Fan",
+      "journal": "Materials Today Physics",
+      "year": 2025,
+      "volume_article": "55, 101759",
+      "doi": "10.1016/j.mtphys.2025.101759",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2542529325001154",
+      "accessible_publisher_sections_url": "https://www.sciencedirect.com/science/article/abs/pii/S2542529325001154",
+      "category": "multiobjective_optimization",
+      "evidence_level": "experimental_and_numerical",
+      "access_note": "出版商摘要及方法/样品制备片段可检索；本次未取得完整图表",
+      "claims_supported": [
+        "NSGA-II+TMM，报告400次迭代",
+        "Ge/ZnS电子束蒸镀于Si及柔性PI",
+        "100°C下相对Si红外表观性能改善及约5°C额外实际温降",
+        "2–18GHz为微波透射功能"
+      ],
+      "limitations": [
+        "微波透射不等于自身微波吸收",
+        "摘要38.5%/33%写为温度降低百分比，未有完整图表不可改称确定辐射信号降低百分比",
+        "400迭代不是可直接比较的全部前向计算次数",
+        "代码需向作者合理索取"
+      ],
+      "source_manifest": "ir-sources.json",
+      "missing_priority": 3,
+      "canonical_key": "10.1016/j.mtphys.2025.101759",
+      "source_record_ids": [
+        "ir2025_nsga2"
+      ]
+    },
+    {
+      "id": "ir2023_bayesian",
+      "title": "Ultrahigh-efficient material informatics inverse design of thermal metamaterials for visible-infrared-compatible camouflage",
+      "authors_short": "Xi et al.",
+      "journal": "Nature Communications",
+      "year": 2023,
+      "publication_date": "2023-08-04",
+      "volume_article": "14, 4694",
+      "doi": "10.1038/s41467-023-40350-6",
+      "url": "https://www.nature.com/articles/s41467-023-40350-6",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10403604/",
+      "category": "bayesian_optimization",
+      "evidence_level": "experimental_and_numerical",
+      "claims_supported": [
+        "BO+TMM在60416候选离散配置中约1%采样得到较好解",
+        "颜色、热平衡信号比与±2%膜厚敏感性联合目标",
+        "8种颜色样品制造验证"
+      ],
+      "limitations": [
+        "不证明任意材料连续空间的全局最优",
+        "不含同时MWIR/激光/雷达全功能实验证据"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1038/s41467-023-40350-6",
+      "source_record_ids": [
+        "ir2023_bayesian",
+        "IR-S01"
+      ],
+      "additional_evidence_records": [
+        {
+          "id": "IR-S01",
+          "role": "aperiodic_comparator",
+          "year": 2023,
+          "title": "Ultrahigh-efficient material informatics inverse design of thermal metamaterials for visible-infrared-compatible camouflage",
+          "authors_short": "Wei Xi et al.",
+          "venue": "Nature Communications 14, 4694",
+          "doi": "10.1038/s41467-023-40350-6",
+          "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10403604/",
+          "source_type": "peer_reviewed_full_text_in_PMC",
+          "evidence_locations": [
+            "Roadmap/structure discussion",
+            "Figures 3–5",
+            "Methods and Data availability"
+          ],
+          "data_access": "Supplementary Dataset 1 XLSX contains measured device spectra; material dielectric functions from handbooks",
+          "key_limit": "Quartz substrate in narrative conflicts with Si substrate in fabrication methods; resolve before reproduction",
+          "source_manifest": "ir-material-sources.json"
+        }
+      ]
+    },
+    {
+      "id": "ir2025_space",
+      "title": "Space-to-ground infrared camouflage with radiative heat dissipation",
+      "authors_short": "Qin et al.",
+      "journal": "Light: Science & Applications",
+      "year": 2025,
+      "publication_date": "2025-03-26",
+      "volume_article": "14, 137",
+      "doi": "10.1038/s41377-025-01824-y",
+      "url": "https://www.nature.com/articles/s41377-025-01824-y",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11947227/",
+      "category": "application_boundary_conditions",
+      "evidence_level": "experimental_and_numerical",
+      "claims_supported": [
+        "6层约4.25μm；εMWIR/LWIR=0.132/0.142、ε13–25=0.798",
+        "模拟太空真空冷环境中1200W/m²较金属温降39.8°C",
+        "H/K吸收0.839/0.633"
+      ],
+      "limitations": [
+        "卫星模型及模拟空间热实验不是在轨试验",
+        "轨道周期温度与探测信号为计算",
+        "不可把13–25μm散热优势泛化到所有地面工况"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1038/s41377-025-01824-y",
+      "source_record_ids": [
+        "ir2025_space",
+        "IR-M06"
+      ],
+      "additional_evidence_records": [
+        {
+          "id": "IR-M06",
+          "role": "primary_case",
+          "year": 2025,
+          "first_published": "2025-03-26",
+          "title": "Space-to-ground infrared camouflage with radiative heat dissipation",
+          "authors_short": "Bing Qin et al.",
+          "venue": "Light: Science & Applications 14, 137",
+          "doi": "10.1038/s41377-025-01824-y",
+          "primary_url": "https://www.nature.com/articles/s41377-025-01824-y",
+          "source_type": "peer_reviewed_publisher_full_text",
+          "evidence_locations": [
+            "Structure design and measurements, Figure 2",
+            "Radiative heat dissipation, Figure 3",
+            "Materials and methods",
+            "Data availability"
+          ],
+          "nk_access": "Supplement 2 identified; raw datasets on reasonable request",
+          "temperature_process_access": "Ground vacuum cold-background experiment; orbital results numerical",
+          "solver_class": "resolved_isotropic_local_planar_TMM_plus_radiative_heat_balance",
+          "key_limit": "No flight or space-environment lifetime qualification established",
+          "license": "CC BY 4.0 per publisher",
+          "source_manifest": "ir-material-sources.json"
+        }
+      ]
+    },
+    {
+      "id": "ir2025_digital_hyperspectral",
+      "title": "Digital camouflage encompassing optical hyperspectra and thermal infrared-terahertz-microwave tri-bands",
+      "authors_short": "Zhu et al.",
+      "journal": "Nature Communications",
+      "year": 2025,
+      "publication_date": "2025-08-30",
+      "volume_article": "16, 8112",
+      "doi": "10.1038/s41467-025-63563-3",
+      "url": "https://www.nature.com/articles/s41467-025-63563-3",
+      "category": "spectral_spatial_matching",
+      "evidence_level": "experimental_and_numerical",
+      "claims_supported": [
+        "柔性多层像素+激光子像素+商用微波吸收底层",
+        "VIS–SWIR、MWIR/LWIR、THz/MW谱和成像实测",
+        "100°C目标10m IR成像"
+      ],
+      "limitations": [
+        "THz/X-band 0.1m成像实测，0.4m图像为仿真",
+        "热IR/THz/MW图案未完全独立优化",
+        "未证明5–8μm净散热优势"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1038/s41467-025-63563-3",
+      "source_record_ids": [
+        "ir2025_digital_hyperspectral"
+      ]
+    },
+    {
+      "id": "ir2026_minimalist",
+      "title": "Scalable and minimalist multilayer films for visible-laser-infrared camouflage with thermal management",
+      "authors_short": "Li et al.",
+      "journal": "Applied Thermal Engineering",
+      "year": 2026,
+      "volume_article": "300, 131455",
+      "doi": "10.1016/j.applthermaleng.2026.131455",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1359431126017631",
+      "category": "minimalist_planar_structure",
+      "evidence_level": "experimental_candidate_with_unresolved_numbers",
+      "claims_supported": [
+        "PSO优化六层Cr/ZnS/Ge/Pt/Ge/ZnS，且有电子束蒸镀",
+        "公开摘要报告1.064/1.55μm吸收约0.97及颜色可调"
+      ],
+      "limitations": [
+        "摘要ε3–5/8–14=0.15/0.30，与Results片段0.23/0.25不一致",
+        "未获得对应完整图表，不作为精确数值验收基准",
+        "PSO本身不是新优化算法"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1016/j.applthermaleng.2026.131455",
+      "source_record_ids": [
+        "ir2026_minimalist"
+      ]
+    },
+    {
+      "id": "ir2026_polarization",
+      "title": "Multi-dimensional camouflage against VIS-NIR hyperspectral, MIR intensity, and MIR polarization imaging",
+      "authors_short": "Qin et al.",
+      "journal": "Light: Science & Applications",
+      "year": 2026,
+      "publication_date": "2026-01-12",
+      "volume_article": "15, 63",
+      "doi": "10.1038/s41377-025-02145-w",
+      "url": "https://www.nature.com/articles/s41377-025-02145-w",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12791140/",
+      "category": "new_polarization_dimension",
+      "evidence_level": "experimental",
+      "claims_supported": [
+        "粗糙PE/Ag纳米线/Cr2O3复合层",
+        "LWIR半球发射率约0.7，0–85°线偏振度<1.5%，VIS–NIR相似度>96.9%",
+        "有实际超光谱、MIR强度及偏振成像"
+      ],
+      "limitations": [
+        "不是双窗口极低发射或5–8散热纪录",
+        "MgCl2潮解及WPU热稳定性限制",
+        "DOI年份2025并不等于出版年份"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1038/s41377-025-02145-w",
+      "source_record_ids": [
+        "ir2026_polarization"
+      ]
+    },
+    {
+      "id": "ir2026_vo2_dynamic",
+      "title": "Broadband opto-thermal camouflage and infrared encrypted communication via inverse design",
+      "authors_short": "Chen et al.",
+      "journal": "Light: Science & Applications",
+      "year": 2026,
+      "publication_date": "2026-06-22",
+      "volume_article": "15, 275",
+      "doi": "10.1038/s41377-026-02370-x",
+      "url": "https://www.nature.com/articles/s41377-026-02370-x",
+      "secondary_primary_record": "https://pubmed.ncbi.nlm.nih.gov/42331791/",
+      "category": "dynamic_structure_and_bayesian_inverse_design",
+      "evidence_level": "experimental_and_numerical",
+      "claims_supported": [
+        "BO/TMM设计TiO2/Si/Ge/VO2/ITO/Si/Mo七层，4英寸及柔性样品实物",
+        "15个样品MWIR/LWIR平均发射率从0.41±0.04/0.90±0.01互换到0.93±0.03/0.45±0.01",
+        "发射率是不同温度状态的Planck加权带平均值",
+        "有VIS/NIR/1.55μm激光/SWIR/MWIR/LWIR成像及温控通信实验"
+      ],
+      "limitations": [
+        "两窗口互换，不是同时低ε",
+        "没有建立5–8μm散热新纪录",
+        "主动加热通信增加热暴露，与热伪装有物理权衡",
+        "无雷达覆盖，军用高分辨/超光谱鲁棒性待验证",
+        "BO为现成优化方法，主要创新是结构及功能整合"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1038/s41377-026-02370-x",
+      "source_record_ids": [
+        "ir2026_vo2_dynamic"
+      ]
+    },
+    {
+      "id": "ir2025_dual_dielectric_simulation_only",
+      "title": "Dual-dielectric Fabry-Perot film for visible-infrared compatible stealth and radiative heat dissipation",
+      "journal": "Optics Communications",
+      "year": 2025,
+      "volume_article": "574, 131173",
+      "doi": "10.1016/j.optcom.2024.131173",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0030401824009106",
+      "category": "exclude_from_experimental_claims",
+      "evidence_level": "numerical_only_in_accessed_abstract",
+      "claims_supported": [
+        "出版商摘要明确simulation results；W/Ge/SiO2/W/SiO2"
+      ],
+      "limitations": [
+        "ε=0.038/0.200/0.487不能标为实测"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1016/j.optcom.2024.131173",
+      "source_record_ids": [
+        "ir2025_dual_dielectric_simulation_only"
+      ]
+    },
+    {
+      "id": "ir2024_gst_ga_simulation_only",
+      "title": "Metamaterial structure design based on genetic algorithm and phase change material GST for multispectral camouflage",
+      "year": 2024,
+      "doi": "10.1016/j.micrna.2024.207985",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2773012324002346",
+      "category": "exclude_from_experimental_claims",
+      "evidence_level": "numerical_only_in_accessed_abstract",
+      "claims_supported": [
+        "摘要明确numerical analysis，GA+GST多层设计"
+      ],
+      "limitations": [
+        "不能称已制作动态相变样品"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.1016/j.micrna.2024.207985",
+      "source_record_ids": [
+        "ir2024_gst_ga_simulation_only"
+      ]
+    },
+    {
+      "id": "ir2026_photonic_lidar_simulation_only",
+      "title": "Multispectral Camouflage Photonic Structure for Visible–IR–LiDAR Bands with Radiative Cooling",
+      "journal": "Photonics",
+      "year": 2026,
+      "volume_article": "13(1), 31",
+      "doi": "10.3390/photonics13010031",
+      "url": "https://www.mdpi.com/2304-6732/13/1/31",
+      "category": "exclude_from_full_experimental_claims",
+      "evidence_level": "composite_performance_confirmed_by_simulations_in_abstract",
+      "claims_supported": [
+        "21层Ge/YbF3+二维a-Si，摘要强调FDTD确认"
+      ],
+      "limitations": [
+        "不能从小节measurement字样推定整个复合结构和全波段已制备实测"
+      ],
+      "source_manifest": "ir-sources.json",
+      "canonical_key": "10.3390/photonics13010031",
+      "source_record_ids": [
+        "ir2026_photonic_lidar_simulation_only"
+      ]
+    },
+    {
+      "id": "glonet_paper",
+      "category": "paper",
+      "title": "Multiobjective and categorical global optimization of photonic structures based on ResNet generative neural networks",
+      "authors": [
+        "Jiaqi Jiang",
+        "Jonathan A. Fan"
+      ],
+      "year": 2021,
+      "first_online": "2020-09-22",
+      "doi": "10.1515/nanoph-2020-0407",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1515/nanoph-2020-0407",
+      "evidence": "Read full publisher text including methods and benchmarking.",
+      "limitations": [
+        "Simulation design; no universal global optimality proof.",
+        "Comparison to certified branch-and-bound has different guarantee and hardware.",
+        "Batch-size and reported evaluation-count discrepancy in lamp-filter example."
+      ],
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "10.1515/nanoph-2020-0407",
+      "source_record_ids": [
+        "glonet_paper"
+      ]
+    },
+    {
+      "id": "glonet_code",
+      "category": "official_code",
+      "title": "GLOnet_for_thin_film official repository",
+      "url": "https://github.com/jiaqi-jiang/GLOnet_for_thin_film",
+      "commit": "01ff041f2d731bfc22cd48e2af44461bbca4654d",
+      "commit_date": "2022-06-30",
+      "inspected_files": [
+        "GLOnet_thinfilm.py",
+        "README.md"
+      ],
+      "file_url": "https://github.com/jiaqi-jiang/GLOnet_for_thin_film/blob/01ff041f2d731bfc22cd48e2af44461bbca4654d/GLOnet_thinfilm.py",
+      "evidence": "Read code and recursive repository tree via GitHub connector.",
+      "limitations": [
+        "evaluate defaults to grayscale=True; hard categorical evaluation requires grayscale=False.",
+        "Robust loss exists but train invokes ordinary loss; robust_coeff not initialized in class.",
+        "Not executed."
+      ],
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "https://github.com/jiaqi-jiang/glonet_for_thin_film",
+      "source_record_ids": [
+        "glonet_code"
+      ]
+    },
+    {
+      "id": "tmm_fast_paper",
+      "category": "paper",
+      "title": "TMM-Fast, a transfer matrix computation package for multilayer thin-film optimization: tutorial",
+      "authors": [
+        "Alexander Luce",
+        "Ali Mahdavi",
+        "Florian Marquardt",
+        "Heribert Wankerl"
+      ],
+      "year": 2022,
+      "first_online": "2022-05-11",
+      "doi": "10.1364/JOSAA.450928",
+      "url": "https://doi.org/10.1364/JOSAA.450928",
+      "open_fulltext": "https://pure.mpg.de/rest/items/item_3401594_4/component/file_3401970/content",
+      "preprint": "https://arxiv.org/abs/2111.13667",
+      "evidence": "Read original preprint HTML and publisher-version institutional metadata.",
+      "limitations": [
+        "Speedup refers to forward-solver implementation relative to scalar reference, not optimizer quality."
+      ],
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "10.1364/josaa.450928",
+      "source_record_ids": [
+        "tmm_fast_paper"
+      ]
+    },
+    {
+      "id": "tmm_fast_code",
+      "category": "official_code",
+      "title": "tmm_fast official repository",
+      "url": "https://github.com/MLResearchAtOSRAM/tmm_fast",
+      "commit": "7e3895b39a29919374a68231776b2817bc5862e4",
+      "commit_date": "2026-08-21",
+      "license": "MIT",
+      "evidence": "Verified current main commit; read official repository metadata and package usage.",
+      "limitations": [
+        "Latest code includes changes after paper; not a paper-version reproduction."
+      ],
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "https://github.com/mlresearchatosram/tmm_fast",
+      "source_record_ids": [
+        "tmm_fast_code"
+      ]
+    },
+    {
+      "id": "tmmax_paper",
+      "category": "paper",
+      "title": "TMMax: High-performance modeling of multilayer thin-film structures using transfer matrix method with JAX",
+      "authors": [
+        "Bahrem Serhat Danis",
+        "Esra Zayim"
+      ],
+      "year": 2025,
+      "first_online": "2025-10-27",
+      "doi": "10.21105/joss.09088",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.09088",
+      "open_fulltext": "https://arxiv.org/html/2507.11341v2",
+      "software_archive_doi": "10.5281/zenodo.17361547",
+      "evidence": "Read full paper HTML and JOSS publication/review/archive entry.",
+      "limitations": [
+        "Published headline speedup is chiefly against Byrnes tmm.",
+        "Archive linked but archive payload not fetched in this research."
+      ],
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "10.21105/joss.09088",
+      "source_record_ids": [
+        "tmmax_paper"
+      ]
+    },
+    {
+      "id": "tmmax_code",
+      "category": "official_code",
+      "title": "TMMax official code and benchmark",
+      "url": "https://github.com/bahremsd/tmmax",
+      "commit": "dc4b90438dffeafd420a7b90c63539813881bedb",
+      "commit_date": "2026-10-16",
+      "default_branch": "master",
+      "inspected_files": [
+        "benchmarks/layer_size_benchmark.py",
+        "docs/source/user_guide/benchmarks.rst",
+        "tests/test_benchmark.py",
+        "benchmarks/tmmax_benchmark_figures.ipynb"
+      ],
+      "file_url": "https://github.com/bahremsd/tmmax/blob/dc4b90438dffeafd420a7b90c63539813881bedb/benchmarks/layer_size_benchmark.py",
+      "evidence": "Read repository tree and exact benchmark/test source via GitHub connector.",
+      "limitations": [
+        "timeit(number=50) totals are not divided by 50 before recording, despite prose describing averages.",
+        "block_until_ready present; no explicit cold-JIT versus warm separate timing.",
+        "Not executed.",
+        "Plotting notebook also directly loads timing arrays without visible normalization; observation scoped to inspected current commit."
+      ],
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "https://github.com/bahremsd/tmmax",
+      "source_record_ids": [
+        "tmmax_code"
+      ]
+    },
+    {
+      "id": "sagd_paper",
+      "category": "paper",
+      "title": "Sharpness-Aware Minimization for Robust Inverse Design of Nonlocal Thin Films",
+      "authors": [
+        "Yuchen Ma",
+        "Guangwei Hu",
+        "Liangcai Cao"
+      ],
+      "year": 2026,
+      "first_online": "2026-06-23",
+      "doi": "10.1002/lpor.71366",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/lpor.71366",
+      "evidence": "Publisher metadata, abstract, and data availability statement verified. Abstract reports fabricated dual-channel spatial-frequency filter and bright-/dark-field imaging.",
+      "limitations": [
+        "Full article redirected to abstract; supporting PDF retrieval failed.",
+        "Do not infer exact baseline settings, Monte Carlo sample counts, fabrication-error ranges or numerical superiority factors from abstract."
+      ],
+      "source_manifest": "differentiable-robust-sources.json",
+      "missing_priority": 2,
+      "canonical_key": "10.1002/lpor.71366",
+      "source_record_ids": [
+        "sagd_paper"
+      ]
+    },
+    {
+      "id": "sagd_code",
+      "category": "official_code",
+      "title": "THUHoloLab/SAGD official core algorithm example",
+      "url": "https://github.com/THUHoloLab/SAGD",
+      "commit": "1c4ebd2debf9c277025e86a71da93a3f2aa8d1d0",
+      "commit_date": "2026-07-11",
+      "license": "MIT",
+      "inspected_files": [
+        "SAGD_main.py",
+        "src/tmm_layer.py",
+        "src/utils.py",
+        "requirements.txt",
+        "data/TiO2_Thinfilm.csv"
+      ],
+      "file_url": "https://github.com/THUHoloLab/SAGD/blob/1c4ebd2debf9c277025e86a71da93a3f2aa8d1d0/SAGD_main.py",
+      "evidence": "Read all main source files and full recursive file tree; no code execution.",
+      "limitations": [
+        "Fixed alternating material order; only thickness optimized.",
+        "No baseline-comparison or Monte Carlo robustness scripts or experimental raw data seen in inspected tree.",
+        "No fixed seed or locked dependencies.",
+        "L2 rho 0.05 um is vector-radius, not per-layer independent error bound.",
+        "n-ik interpolation and passive-wave convention require independent validation before absorbing-stack reuse."
+      ],
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "https://github.com/thuhololab/sagd",
+      "source_record_ids": [
+        "sagd_code"
+      ]
+    },
+    {
+      "id": "fabrication_conscious_2023",
+      "category": "paper",
+      "title": "Fabrication-conscious neural network based inverse design of single-material variable-index multilayer films",
+      "authors": [
+        "O. Yesilyurt",
+        "S. Peana",
+        "V. Mkhitaryan et al."
+      ],
+      "year": 2023,
+      "first_online": "2023-01-30",
+      "doi": "10.1515/nanoph-2022-0537",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1515/nanoph-2022-0537",
+      "evidence": "Read full original text, specifically sections 4.3, 4.4 and conclusion.",
+      "limitations": [
+        "Fabrication and ellipsometry are simulated, real experimental-data second stage is future work.",
+        "Strongly compensates systematic or nonzero-mean bias; limited improvement for zero-mean random imperfections.",
+        "No complete official code/data entry verified."
+      ],
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "10.1515/nanoph-2022-0537",
+      "source_record_ids": [
+        "fabrication_conscious_2023"
+      ]
+    },
+    {
+      "id": "classic_1d_topopt",
+      "category": "historical_primary",
+      "title": "Design of one-dimensional optical pulse-shaping filters by time-domain topology optimization",
+      "authors": [
+        "Lirong Yang",
+        "Andrei V. Lavrinenko",
+        "Jørn M. Hvam",
+        "Ole Sigmund"
+      ],
+      "year": 2009,
+      "doi": "10.1063/1.3278595",
+      "url": "https://orbit.dtu.dk/en/publications/design-of-one-dimensional-optical-pulse-shaping-filters-by-time-d/",
+      "evidence": "Author institutional record and original PDF abstract verified.",
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "10.1063/1.3278595",
+      "source_record_ids": [
+        "classic_1d_topopt"
+      ]
+    },
+    {
+      "id": "classic_needle",
+      "category": "historical_primary",
+      "title": "Application of the needle optimization technique to the design of optical coatings",
+      "authors": [
+        "Alexander V. Tikhonravov",
+        "Michael K. Trubetskov",
+        "Gary W. DeBell"
+      ],
+      "year": 1996,
+      "doi": "10.1364/AO.35.005493",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-35-28-5493",
+      "evidence": "Publisher abstract and metadata verified; full text gated.",
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "10.1364/ao.35.005493",
+      "source_record_ids": [
+        "classic_needle"
+      ]
+    },
+    {
+      "id": "needle_time_domain",
+      "category": "historical_primary",
+      "title": "Time-domain approach for designing dispersive mirrors based on the needle optimization technique. Theory.",
+      "year": 2008,
+      "doi": "10.1364/OE.16.020637",
+      "url": "https://doi.org/10.1364/OE.16.020637",
+      "evidence": "Original-paper passage on analytic gradient/derivative requirements retrieved via indexed original-paper text; Optica HTML endpoint did not render.",
+      "source_manifest": "differentiable-robust-sources.json",
+      "canonical_key": "10.1364/oe.16.020637",
+      "source_record_ids": [
+        "needle_time_domain"
+      ]
+    },
+    {
+      "id": "IR-M01",
+      "role": "primary_case",
+      "year": 2020,
+      "title": "Tunable mid-wave infrared Fabry-Perot bandpass filters using phase-change GeSbTe",
+      "authors_short": "Calum Williams et al.",
+      "venue": "Optics Express 28(7), 10583–10594",
+      "doi": "10.1364/OE.390538",
+      "primary_url": "https://doi.org/10.1364/OE.390538",
+      "inspected_url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/76914957-3da9-478e-942b-85cb6725d249/content",
+      "source_type": "peer_reviewed_author_repository_manuscript",
+      "evidence_locations": [
+        "Sections 3.1–3.2: measured optical constants and TMM",
+        "Table 1: sputtered material constants",
+        "Figure 3: fabricated filter transmission",
+        "Section 5: imaging and CO2 demonstrations"
+      ],
+      "nk_access": "Measured curves and selected values in paper; full machine-readable spectrum not verified",
+      "temperature_process_access": "Deposition and crystallization process described; repeated reset/cycle dataset not verified",
+      "solver_class": "resolved_isotropic_local_planar_TMM",
+      "key_limit": "Imaging demonstrations use separately prepared phase-state filters",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1364/oe.390538",
+      "source_record_ids": [
+        "IR-M01"
+      ]
+    },
+    {
+      "id": "IR-M03",
+      "role": "primary_case",
+      "year": 2023,
+      "first_published": "2023-07-19",
+      "title": "Simultaneous Control of Spectral And Directional Emissivity with Gradient Epsilon-Near-Zero InAs Photonic Structures",
+      "authors_short": "Jae S. Hwang, Jin Xu, Aaswath P. Raman",
+      "venue": "Advanced Materials 35(39), 2302956",
+      "doi": "10.1002/adma.202302956",
+      "primary_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202302956",
+      "source_type": "peer_reviewed_publisher_full_text",
+      "evidence_locations": [
+        "Figures 1–3: layer structure and measured angular spectra",
+        "Drude model discussion near Figure 1",
+        "Data Availability Statement"
+      ],
+      "nk_access": "Drude parameter interpolation and epitaxial reference-film check; SI available; full data on reasonable request",
+      "temperature_process_access": "MBE structure described; complete temperature-dependent constants not identified",
+      "solver_class": "resolved_depth_graded_local_planar_TMM",
+      "key_limit": "Deliberately directional, predominantly TM; growth-profile tuning is not in-operation dynamic tuning",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1002/adma.202302956",
+      "source_record_ids": [
+        "IR-M03"
+      ]
+    },
+    {
+      "id": "IR-M04",
+      "role": "primary_case",
+      "year": 2024,
+      "first_published": "2024-09-02",
+      "title": "Epsilon-near-zero thin films in a dual-functional system for thermal infrared camouflage and thermal management within the atmospheric window",
+      "authors_short": "Pei-Chi Hsieh et al.",
+      "venue": "Materials Horizons 11, 5578–5588",
+      "doi": "10.1039/D4MH00711E",
+      "primary_url": "https://pubs.rsc.org/et/content/articlelanding/2024/mh/d4mh00711e",
+      "source_type": "peer_reviewed_publisher_abstract_and_supplement_link",
+      "evidence_locations": [
+        "Publisher abstract",
+        "Supplementary information entry"
+      ],
+      "nk_access": "Not verified; linked SI returned 404 in this retrieval",
+      "temperature_process_access": "Full process not verified in accessible source",
+      "solver_class": "planar_TMM_if_constituents_local_isotropic_otherwise_tensor",
+      "key_limit": "Not reproduction-ready; alloy composition and complete thickness/data still need full text/SI",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1039/d4mh00711e",
+      "source_record_ids": [
+        "IR-M04"
+      ]
+    },
+    {
+      "id": "IR-M05",
+      "role": "primary_case",
+      "year": 2024,
+      "first_published": "2024-07-11",
+      "title": "Simultaneous thermal camouflage and radiative cooling for ultrahigh-temperature objects using inversely designed hierarchical metamaterial",
+      "authors_short": "Saichao Dang et al.",
+      "venue": "Nanophotonics 13(20), 3835–3846",
+      "doi": "10.1515/nanoph-2024-0193",
+      "primary_url": "https://onlinelibrary.wiley.com/doi/10.1515/nanoph-2024-0193",
+      "source_type": "peer_reviewed_publisher_full_text",
+      "evidence_locations": [
+        "Sections 2.2–2.3: measured spectra and angular scope",
+        "Section 3, Figures 4–5: structural damage and high-temperature measurements",
+        "Table 1: comparison",
+        "Section 4.1: methods"
+      ],
+      "nk_access": "Material parameters used; complete matched-temperature machine-readable n,k not verified",
+      "temperature_process_access": "Direct heated emission and failure observations available; no durability qualification established",
+      "solver_class": "resolved_isotropic_local_planar_TMM_plus_thermal_and_damage_models",
+      "key_limit": "High-temperature signal attenuation must not be reworded as intact long-life operation",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1515/nanoph-2024-0193",
+      "source_record_ids": [
+        "IR-M05"
+      ]
+    },
+    {
+      "id": "IR-M07",
+      "role": "primary_case",
+      "year": 2025,
+      "first_published": "2025-05-06",
+      "title": "Directional Thermal Emission Across Both Polarizations in Planar Photonic Architectures",
+      "authors_short": "David E. Abraham et al.",
+      "venue": "arXiv:2505.03905v1",
+      "doi": "10.48550/arXiv.2505.03905",
+      "primary_url": "https://arxiv.org/abs/2505.03905",
+      "inspected_url": "https://arxiv.org/html/2505.03905v1",
+      "source_type": "experimental_preprint_not_verified_peer_reviewed",
+      "evidence_locations": [
+        "Figure 4 and Table 1: spectral-angular measurements",
+        "Table 2: calibration-film Drude and Hall values",
+        "Methods: MBE and FTIR"
+      ],
+      "nk_access": "Calibration Drude parameters explicitly tabulated; full temperature model not provided",
+      "temperature_process_access": "Growth and reflectance methods described",
+      "solver_class": "physical_layers_local_planar_TMM_or_effective_anisotropic_EMNZ_with_validation",
+      "key_limit": "Long-wavelength experimental band; emissivity inferred from reflectance; journal version not verified",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.48550/arxiv.2505.03905",
+      "source_record_ids": [
+        "IR-M07"
+      ]
+    },
+    {
+      "id": "IR-M08",
+      "role": "primary_case",
+      "year": 2026,
+      "first_published": "2026-04-16",
+      "title": "Non-Volatile In3SbTe2 Multispectral Responsive Emitter With Visible Color and Infrared Display-Erasure Function",
+      "authors_short": "Jinlong Huang et al.",
+      "venue": "Nanophotonics 15(8), e70084",
+      "doi": "10.1002/nap2.70084",
+      "primary_url": "https://onlinelibrary.wiley.com/doi/10.1002/nap2.70084",
+      "source_type": "peer_reviewed_publisher_full_text",
+      "evidence_locations": [
+        "Sections 2.2–2.4: structure, characterization and measured spectra",
+        "Figure 4: angle measurements",
+        "Experimental Section",
+        "Supporting Information and data statement"
+      ],
+      "nk_access": "Prior literature/SI curves cited; no same-batch ellipsometry or raw optical-constant table verified",
+      "temperature_process_access": "Anneal and deposition described; reset/cycling measurement not found in main text",
+      "solver_class": "uniform_regions_local_planar_TMM_pattern_edges_require_separate_check",
+      "key_limit": "Measured and simulated band means differ; high narrow peaks are not high whole-band emissivity",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1002/nap2.70084",
+      "source_record_ids": [
+        "IR-M08"
+      ]
+    },
+    {
+      "id": "IR-S02",
+      "role": "lateral_pattern_boundary",
+      "year": 2021,
+      "title": "Temperature-adaptive radiative coating for all-season household thermal regulation",
+      "authors_short": "Kechao Tang et al.",
+      "venue": "Science 374, 1504–1509",
+      "doi": "10.1126/science.abf7136",
+      "primary_url": "https://nano.eecs.berkeley.edu/publications/Science_2021_TARC.pdf",
+      "source_type": "author_institution_full_text_with_SI",
+      "evidence_locations": [
+        "Main text and Figure 2: patterned WVO2 blocks",
+        "Figures 3–4: vacuum/outdoor experiments",
+        "SI included in PDF"
+      ],
+      "solver_class": "laterally_patterned_RCWA_FDTD_FEM_or_validated_effective_medium",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1126/science.abf7136",
+      "source_record_ids": [
+        "IR-S02"
+      ]
+    },
+    {
+      "id": "IR-S03",
+      "role": "lateral_pattern_and_tradeoff_counterexample",
+      "year": 2025,
+      "first_published": "2025-01-17",
+      "title": "Semimetal–dielectric–metal metasurface for infrared camouflage with high-performance energy dissipation in non-atmospheric transparency window",
+      "authors_short": "Dongjie Zhou et al.",
+      "venue": "Nanophotonics 14(8), 1101–1111",
+      "doi": "10.1515/nanoph-2024-0538",
+      "primary_url": "https://onlinelibrary.wiley.com/doi/10.1515/nanoph-2024-0538",
+      "source_type": "peer_reviewed_publisher_full_text",
+      "evidence_locations": [
+        "Figure 1: physical array",
+        "Section 2: band tradeoffs",
+        "Section 4.1: measured Bi optical constants"
+      ],
+      "nk_access": "Deposited Bi measured by IR ellipsometry; other materials literature-based",
+      "solver_class": "laterally_patterned_full_wave",
+      "key_limit": "Enhanced heat-dissipation band does not mean lower emissivity in both atmospheric windows",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1515/nanoph-2024-0538",
+      "source_record_ids": [
+        "IR-S03"
+      ]
+    },
+    {
+      "id": "IR-S04",
+      "role": "latest_numerical_only_candidate",
+      "year": 2026,
+      "first_published": "2026-10-14",
+      "title": "Genetic Algorithm Optimized Lithography-Free Ultrathin Metasurface for Multispectral Camouflage with Tunable Structural Color, Dual-Laser Stealth and Radiative Cooling",
+      "authors_short": "Lin Ma et al.",
+      "venue": "Journal of Quantitative Spectroscopy and Radiative Transfer, 110168, journal pre-proof",
+      "doi": "10.1016/j.jqsrt.2026.110168",
+      "primary_url": "https://www.sciencedirect.com/science/article/pii/S0022407326003626",
+      "source_type": "publisher_preproof_numerical_results",
+      "evidence_locations": [
+        "Abstract and structural design excerpt"
+      ],
+      "key_limit": "Fabrication, measurements and commercial scalability not demonstrated by retrieved evidence",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1016/j.jqsrt.2026.110168",
+      "source_record_ids": [
+        "IR-S04"
+      ]
+    },
+    {
+      "id": "IR-D01",
+      "role": "process_specific_optical_data",
+      "year": 2020,
+      "first_published": "2019-12-02",
+      "title": "Characterization of e-beam evaporated Ge, YbF3, ZnS, and LaF3 thin films for laser-oriented coatings",
+      "authors_short": "Tatiana Amotchkina et al.",
+      "venue": "Applied Optics 59(5), A40–A47",
+      "doi": "10.1364/AO.59.000A40",
+      "primary_url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-5-A40",
+      "source_type": "peer_reviewed_publisher_abstract",
+      "evidence_locations": [
+        "Abstract, figures/tables listing and publication history"
+      ],
+      "nk_access": "Film-specific measured model/data described over 0.4–12 micrometers; full raw export not verified here",
+      "key_limit": "Do not silently extrapolate to 25 micrometers or treat measured thin-film data as arbitrary bulk data",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1364/ao.59.000a40",
+      "source_record_ids": [
+        "IR-D01"
+      ]
+    },
+    {
+      "id": "IR-S05",
+      "role": "phase_transition_combination_lineage",
+      "year": 2021,
+      "title": "Combining Switchable Phase-Change Materials and Phase-Transition Materials for Thermally Regulated Smart Mid-Infrared Modulators",
+      "authors_short": "Xinrui Lyu et al.",
+      "venue": "Advanced Optical Materials 9(16), 2100417",
+      "doi": "10.1002/adom.202100417",
+      "primary_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adom.202100417",
+      "source_type": "peer_reviewed_publisher_full_text",
+      "evidence_locations": [
+        "Figures 2–3: sputtered GST/VO2 and IST/VO2 experiments",
+        "Discussion: switching speed and reset limitations",
+        "Data availability: research data not shared"
+      ],
+      "solver_class": "resolved_isotropic_local_planar_TMM",
+      "key_limit": "Hotplate proof of principle; fast switching and cycling are not demonstrated in this device",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1002/adom.202100417",
+      "source_record_ids": [
+        "IR-S05"
+      ]
+    },
+    {
+      "id": "IR-S06",
+      "role": "IST_material_lineage",
+      "year": 2022,
+      "first_published": "2022-09-20",
+      "issue_year": 2023,
+      "title": "Nonvolatile High-Contrast Whole Long-Wave Infrared Emissivity Switching Based on In3SbTe2",
+      "authors_short": "Weiyi Zha et al.",
+      "venue": "ACS Photonics 10(7), 2165–2172; online 2022, issue 2023",
+      "doi": "10.1021/acsphotonics.2c00714",
+      "primary_url": "https://pubs.acs.org/doi/abs/10.1021/acsphotonics.2c00714",
+      "source_type": "peer_reviewed_publisher_abstract_and_SI_description",
+      "evidence_locations": [
+        "Publisher article history",
+        "Abstract",
+        "SI description includes IST optical constants"
+      ],
+      "key_limit": "Keep online year separate from volume year; do not claim IST itself originated in 2026",
+      "source_manifest": "ir-material-sources.json",
+      "canonical_key": "10.1021/acsphotonics.2c00714",
+      "source_record_ids": [
+        "IR-S06"
+      ]
+    }
+  ]
+}
