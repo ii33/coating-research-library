@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "python": "3.12.14",
+    "train_points_per_window": 41,
+    "archive_points_per_window": 257,
+    "final_points_per_window": 2049,
+    "target_R": 0.01,
+    "bounds_um": [
+      0.005,
+      2.5
+    ],
+    "theta_max": 1.0471975511965976,
+    "phase_bound": 0.7853981633974483,
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "total_wall_seconds": 6.616829918988515,
+    "notes": [
+      "All synthetic and fixed topology; no real-material performance claim.",
+      "Archive compares original positive-part minimax V then equal-window mean R.",
+      "Every branch runs exact original power epigraph with t>=0 at tau=1; no residual auxiliary term.",
+      "Selected archive may come from earlier tau but is separately audited on actual R/T.",
+      "Cost counts all forward finite differences and both archive/final audit; QP uses no hidden forward calls.",
+      "No confidence interval/general success rate inference from three paired seeds."
+    ]
+  },
+  "checks": {
+    "matrix_R_max_error": 5.551115123125783e-16,
+    "matrix_T_max_error": 9.992007221626409e-16,
+    "independent_recursion_R_max_error": 1.5543122344752192e-15,
+    "energy_max_error": 1.1102230246251565e-15,
+    "fixed_plane_covariance_error": 4.3777327111883504e-14,
+    "guide_loss_fixed_plane_shift_difference": 4.163336342344337e-17,
+    "zero_thickness": {
+      "exact_dR_dd": 0.0,
+      "exact_surface_dr_dd_real": 0.0,
+      "exact_surface_dr_dd_imag": -1.3309042320064373,
+      "auxiliary_dF_dd_sign_branches": [
+        -16.578797391589525,
+        16.57879739158952
+      ],
+      "forward_derivative_h": -1.771305324638206e-05,
+      "forward_derivative_h_half": -8.856537725421276e-06,
+      "surface_dr_dd_real": 3.235194334649804e-05,
+      "surface_dr_dd_imag": -1.33090423159438,
+      "quarterwave_thickness_um": 0.5407380704358751,
+      "quarterwave_R": 3.7957271254274415e-32,
+      "quarterwave_T": 1.0000000000000007
+    },
+    "scope": "synthetic normal incidence coherent planar layers, real semi-infinite exteriors; no oblique/incidence, backside, uncertainty or continuous certificate",
+    "optimization_fixed_plane_shift_V_difference": 5.256947796183908e-06,
+    "optimization_fixed_plane_shift_thickness_max_difference": 2.853669762714617e-07,
+    "moving_surface_reference_V": 7.2822637038409965
+  },
+  "summary": [
+    {
+      "case": "simple_ar",
+      "method": "direct_local",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 0.7217514201772479,
+      "min_V": 0.7217341523462852,
+      "max_V": 20.944601039353024,
+      "total_wall_seconds": 0.22311255100066774,
+      "total_point_layers": 216162
+    },
+    {
+      "case": "simple_ar",
+      "method": "direct_multistart",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 0.7215616107955227,
+      "min_V": 0.7215491186052096,
+      "max_V": 0.7215682352207953,
+      "total_wall_seconds": 0.2283837230061181,
+      "total_point_layers": 221526
+    },
+    {
+      "case": "simple_ar",
+      "method": "direct_multistart_cap",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 0.721568317657145,
+      "min_V": 0.7215682352207953,
+      "max_V": 0.7216313548182065,
+      "total_wall_seconds": 0.21887431998038664,
+      "total_point_layers": 221526
+    },
+    {
+      "case": "simple_ar",
+      "method": "amplitude_homotopy",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 0.7215753043745485,
+      "min_V": 0.7215481690074821,
+      "max_V": 0.7217360272743398,
+      "total_wall_seconds": 0.2517853669996839,
+      "total_point_layers": 221526
+    },
+    {
+      "case": "simple_ar",
+      "method": "phase_homotopy",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 0.7215953279814944,
+      "min_V": 0.7215728259083691,
+      "max_V": 0.7216667747618253,
+      "total_wall_seconds": 0.26335648400709033,
+      "total_point_layers": 221526
+    },
+    {
+      "case": "simple_ar",
+      "method": "phase_no_step",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 0.7215806214779807,
+      "min_V": 0.7215671002029038,
+      "max_V": 0.7216666715301747,
+      "total_wall_seconds": 0.2655176100379322,
+      "total_point_layers": 221526
+    },
+    {
+      "case": "dual_ar",
+      "method": "direct_local",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 14.356000596985986,
+      "min_V": 7.504848639775128,
+      "max_V": 14.638343511250602,
+      "total_wall_seconds": 0.501829671964515,
+      "total_point_layers": 1769292
+    },
+    {
+      "case": "dual_ar",
+      "method": "direct_multistart",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 9.955458074376043,
+      "min_V": 7.504848639775128,
+      "max_V": 11.07921724445209,
+      "total_wall_seconds": 0.5435349799809046,
+      "total_point_layers": 1801476
+    },
+    {
+      "case": "dual_ar",
+      "method": "direct_multistart_cap",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 7.009225704613266,
+      "min_V": 6.202265821337045,
+      "max_V": 12.966617001117113,
+      "total_wall_seconds": 0.5944708140159491,
+      "total_point_layers": 1801476
+    },
+    {
+      "case": "dual_ar",
+      "method": "amplitude_homotopy",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 11.040679139734486,
+      "min_V": 8.82120487616475,
+      "max_V": 11.244113372403355,
+      "total_wall_seconds": 0.7406753310060594,
+      "total_point_layers": 1801476
+    },
+    {
+      "case": "dual_ar",
+      "method": "phase_homotopy",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 8.096764645395087,
+      "min_V": 7.343127339137302,
+      "max_V": 10.177423531226884,
+      "total_wall_seconds": 0.6938637059938628,
+      "total_point_layers": 1801476
+    },
+    {
+      "case": "dual_ar",
+      "method": "phase_no_step",
+      "seeds": 3,
+      "passes": 0,
+      "median_V": 11.449721304758086,
+      "min_V": 10.176284227139764,
+      "max_V": 11.521699671599595,
+      "total_wall_seconds": 0.7218788540340029,
+      "total_point_layers": 1801476
+    }
+  ]
+}

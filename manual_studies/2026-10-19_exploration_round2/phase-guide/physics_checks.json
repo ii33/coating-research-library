@@ -1,0 +1,25 @@
+{
+  "matrix_R_max_error": 5.551115123125783e-16,
+  "matrix_T_max_error": 9.992007221626409e-16,
+  "independent_recursion_R_max_error": 1.5543122344752192e-15,
+  "energy_max_error": 1.1102230246251565e-15,
+  "fixed_plane_covariance_error": 4.3777327111883504e-14,
+  "guide_loss_fixed_plane_shift_difference": 4.163336342344337e-17,
+  "zero_thickness": {
+    "exact_dR_dd": 0.0,
+    "exact_surface_dr_dd_real": 0.0,
+    "exact_surface_dr_dd_imag": -1.3309042320064373,
+    "auxiliary_dF_dd_sign_branches": [
+      -16.578797391589525,
+      16.57879739158952
+    ],
+    "forward_derivative_h": -1.771305324638206e-05,
+    "forward_derivative_h_half": -8.856537725421276e-06,
+    "surface_dr_dd_real": 3.235194334649804e-05,
+    "surface_dr_dd_imag": -1.33090423159438,
+    "quarterwave_thickness_um": 0.5407380704358751,
+    "quarterwave_R": 3.7957271254274415e-32,
+    "quarterwave_T": 1.0000000000000007
+  },
+  "scope": "synthetic normal incidence coherent planar layers, real semi-infinite exteriors; no oblique/incidence, backside, uncertainty or continuous certificate"
+}

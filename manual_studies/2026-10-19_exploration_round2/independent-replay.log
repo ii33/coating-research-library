@@ -1,0 +1,63 @@
+batched replay prior_hidden 0
+batched replay prior_hidden 1
+batched replay prior_hidden 2
+batched replay prior_hidden 3
+batched replay prior_hidden 4
+batched replay prior_hidden 5
+batched replay prior_hidden 6
+batched replay prior_hidden 7
+batched replay prior_hidden 8
+batched replay prior_hidden 9
+batched replay prior_hidden 10
+batched replay prior_hidden 11
+batched replay prior_changing 0
+batched replay prior_changing 1
+batched replay prior_changing 2
+batched replay prior_changing 3
+batched replay prior_changing 4
+batched replay prior_changing 5
+batched replay prior_changing 6
+batched replay prior_changing 7
+batched replay prior_changing 8
+batched replay prior_changing 9
+batched replay prior_changing 10
+batched replay prior_changing 11
+batched replay prior_changing 12
+batched replay prior_changing 13
+batched replay prior_changing 14
+batched replay prior_changing 15
+batched replay prior_changing 16
+batched replay prior_ultranarrow 0
+batched replay prior_ultranarrow 1
+batched replay prior_ultranarrow 2
+batched replay prior_clean 0
+batched replay prior_clean 1
+batched replay prior_clean 2
+batched replay heldout_low_spacer 0
+batched replay heldout_low_spacer 1
+batched replay heldout_low_spacer 2
+batched replay heldout_low_spacer 3
+batched replay heldout_low_spacer 4
+batched replay heldout_low_spacer 5
+batched replay heldout_double_defect 0
+batched replay heldout_double_defect 1
+batched replay heldout_double_defect 2
+batched replay heldout_smooth 0
+batched replay heldout_smooth 1
+batched replay heldout_smooth 2
+{
+  "issues": [],
+  "physics": {
+    "random_stacks": 32,
+    "matrix_vs_independent_power_max_error": 3.3306690738754696e-15,
+    "um_nm_common_reference_amplitude_error": 9.414568508152651e-14,
+    "ambient_front_insertion_common_reference_error": 6.94187088345553e-14,
+    "random_lossless_RT_closure_max_error": 3.552713678800501e-15
+  },
+  "replay_cost": {
+    "calls": 12026,
+    "wavelength_points": 6282862,
+    "literal_layer_point_updates": 114108469
+  },
+  "wall_seconds": 11.451302645000396
+}

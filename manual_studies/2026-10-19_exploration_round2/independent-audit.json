@@ -1,0 +1,96 @@
+{
+  "audit_utc": "2026-10-19T19:45:07Z",
+  "verdict": "pass_with_explicit_scope_limits",
+  "blocking_issues": [],
+  "frozen_artifacts_unchanged_after_replay": true,
+  "frozen_artifact_count": 59,
+  "artifact_sha256": {
+    "independent-replay.json": "2d9915b04d81a8ea6ec9ca11cb98a64103c16c9beb8cdc3d5899d3e06faeb507",
+    "independent-tests.json": "ad29f3d41a3ac68e57e0832d3828871e45e13116e440be2582a6b9d84847d567",
+    "independent-audit.md": "9d24605b48a8db704b6bf3b40a49b0bf252b15aa2599f975622b471b2c080e5e",
+    "README.md": "2dc56aa333d680c22bc5f1b347352f627a073c41293e301b9ce8cae7b56e3df8",
+    "independent_replay.py": "2401af8f888242ce6b326b60bed5df9cc64c33ada238772063e5a4443d6e15fe",
+    "run_relocated_tests.py": "58af11d27eb47e7cb69b39a2a6297e174304f8a68df4e9a748d54c5c76aa25db"
+  },
+  "test_counts": {
+    "batched-audit": 10,
+    "lookahead": 7,
+    "phase-guide": 11
+  },
+  "tests_passed": true,
+  "relocated_report_generator": {
+    "returncode": 0,
+    "output": "Report and manifest written: 19 files\n",
+    "generated_report_matches_frozen": true,
+    "cwd": "unrelated sibling directory"
+  },
+  "batched": {
+    "physical_candidates": 47,
+    "classification_mismatches": 0,
+    "budget_mismatches": 0,
+    "scaled_scalar_diagnostic_rows": 90,
+    "scaled_scalar_mismatches": 0,
+    "max_reference_difference": 2.8793372131019623e-09
+  },
+  "phase": {
+    "main_runs": 36,
+    "total_replayed_final_and_diagnostic_candidates": 84,
+    "budget_mismatches": 0,
+    "pass_mismatches": 0,
+    "max_abs_V_refinement_difference": 0.00012553497942668912,
+    "complex_reference_max_error": 1.5433697402820017e-15,
+    "retained_original_after_dense_audit_count": 1
+  },
+  "lookahead": {
+    "catalog_size_including_empty": 2332,
+    "search_runs": 224,
+    "unique_audited_case_stacks": 33,
+    "oracle_mismatches": 0,
+    "budget_mismatches": 0,
+    "pass_mismatches": 0,
+    "max_abs_V_refinement_difference": 1.8132649856283933e-05
+  },
+  "physics": {
+    "random_stacks": 32,
+    "matrix_vs_independent_power_max_error": 3.3306690738754696e-15,
+    "um_nm_common_reference_amplitude_error": 9.414568508152651e-14,
+    "ambient_front_insertion_common_reference_error": 6.94187088345553e-14,
+    "random_lossless_RT_closure_max_error": 3.552713678800501e-15
+  },
+  "nonblocking_numerical_warning": {
+    "ultranarrow_recursion_max_RT_closure_error": 2.9368734111301364e-09,
+    "interpretation": "Raw T exceeds1 by about3e-9 at a high-Q resonance; numerical precision warning, no physical gain. Threshold0.5 classifications unaffected."
+  },
+  "scope_limits": [
+    "Synthetic constant-index normal-incidence coherent planar stacks; no process or real-material qualification.",
+    "Finite shifted grids and heuristic local extrema are not continuous certificates.",
+    "Equal point×layer work differs from equal wallclock; batched time caps are soft and include overshoot.",
+    "Corrected scalar coordinates remove a confounded detection-superiority claim.",
+    "Same-cap ordinary multistart removes phase-homotopy benefit attribution in this small sample.",
+    "Four ordering seeds repeat each planted target family, not independent physical tasks.",
+    "Phase final grid is nested densification and post-run validation selection, not untouched statistical holdout.",
+    "Finite catalog optimum is not a continuous-thickness/global physical infeasibility claim."
+  ],
+  "reproducible_commands": [
+    "python -B independent_replay.py",
+    "python -B run_relocated_tests.py"
+  ],
+  "replay_cost": {
+    "calls": 12026,
+    "wavelength_points": 6282862,
+    "literal_layer_point_updates": 114108469
+  },
+  "replay_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "test_environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pytest": "9.1.1"
+  },
+  "no_experiment_files_edited_by_auditor": true,
+  "no_main_software_or_publication_action": true
+}

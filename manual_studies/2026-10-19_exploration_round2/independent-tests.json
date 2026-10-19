@@ -1,0 +1,96 @@
+{
+  "audit_utc": "2026-10-19T19:44:17Z",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pytest": "9.1.1"
+  },
+  "all_passed": true,
+  "suites": [
+    {
+      "package": "batched-audit",
+      "source_equal_after_copy": true,
+      "source_sha256": {
+        "diagnose_scaled_scalar.py": "22f8603cd1c288117855c805b60d8d95336dba5940d39782c263479314d3d541",
+        "kernel/run_experiment.py": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6",
+        "prior_adaptive.py": "d6a8c5f239a07f8a77625f9d416e0af81c7f45ab03288f827b62e2cd63225e8f",
+        "run_batched.py": "45c8eda84aa5aedb9d1e7afece832b7d3eb04b65c89cfdb6cbeeb5b0307aa691",
+        "test_batched.py": "43c17a56a2b921acaf7629c3a6e191bfb25f2afa1f49a50830986a0c94f3da8a"
+      },
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "test_batched.py"
+      ],
+      "cwd": "unrelated sibling directory",
+      "returncode": 0,
+      "elapsed_seconds": 1.4651463469781447,
+      "output": "..........                                                               [100%]\n10 passed in 1.05s\n",
+      "relocated_report_generator": null
+    },
+    {
+      "package": "lookahead",
+      "source_equal_after_copy": true,
+      "source_sha256": {
+        "analyze_results.py": "d31f340605325c03f55eb18403d1e3d6e4f677359180dd9355871bceb763f706",
+        "run_lookahead.py": "164171f0a42fed1c45b0f1a377285ca3634a0067609eed074881b35e4ea4c22d",
+        "test_lookahead.py": "889819a48de3ca0ffee86d97dc1ac62524fc048640270b2401efff45c5ec1a7b",
+        "verified_kernel/run_experiment.py": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+      },
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "test_lookahead.py"
+      ],
+      "cwd": "unrelated sibling directory",
+      "returncode": 0,
+      "elapsed_seconds": 2.3867208720184863,
+      "output": ".......                                                                  [100%]\n7 passed in 1.94s\n",
+      "relocated_report_generator": null
+    },
+    {
+      "package": "phase-guide",
+      "source_equal_after_copy": true,
+      "source_sha256": {
+        "run_phase.py": "c4edc2e4446ff84d2987c5d7f077e81649ed2d4c5cb6b2f8bf9aae307b43b192",
+        "test_phase.py": "d513f92c0b93d739428ceb64570dd30a79eacbfeebefe02066d3d8d749c943f0",
+        "verified_kernel.py": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6",
+        "withdrawal_and_counterexamples.py": "ffa6b5fca76f8599ed9a014345e9846993c0bac78b519e33b0af30414bf3687f",
+        "write_report.py": "0dd0cc594e5ba005ae703e4eced793a8b70ec9fa0e574d88aa9ee0ef338d3619"
+      },
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "test_phase.py"
+      ],
+      "cwd": "unrelated sibling directory",
+      "returncode": 0,
+      "elapsed_seconds": 1.4507318870164454,
+      "output": "...........                                                              [100%]\n11 passed in 0.79s\n",
+      "relocated_report_generator": {
+        "returncode": 0,
+        "output": "Report and manifest written: 19 files\n",
+        "generated_report_matches_frozen": true,
+        "cwd": "unrelated sibling directory"
+      }
+    }
+  ],
+  "wall_seconds": 5.312401395989582,
+  "scope": "Relocated copies of experiment tests; no main-software certification."
+}

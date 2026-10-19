@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "date_utc": "2026-10-19",
+  "scope": "Research publication packaging inventory, not an experiment rerun.",
+  "packaging_edits": [
+    {
+      "path": "batched-audit/kernel/provenance.json",
+      "kind": "Provenance-only publication portability edit",
+      "description": "Replace three cloud-local source paths with verified immutable links to prior published research at da2a786f. Source-content SHA-256 values remain unchanged.",
+      "source_json_sha256": "0356a7aeb88141cc8c0a4b4aa65320d56ccf204fca8babeb02f20272001d42a1",
+      "published_json_sha256": "05cce51b29ec5e3ee2ceeaee170e73a3feac46925f496515b274571973cc23e8",
+      "verified_prior_urls": [
+        "https://github.com/ii33/coating-research-library/blob/da2a786fef2c06dac9a2ab781d1c385ab95773f5/manual_studies/2026-10-19_multispectral_ir_structures/experiments/run_experiment.py",
+        "https://github.com/ii33/coating-research-library/blob/da2a786fef2c06dac9a2ab781d1c385ab95773f5/manual_studies/2026-10-19_exploration_experiments/adaptive/kernel/run_experiment.py",
+        "https://github.com/ii33/coating-research-library/blob/da2a786fef2c06dac9a2ab781d1c385ab95773f5/manual_studies/2026-10-19_exploration_experiments/adaptive/run_adaptive.py"
+      ]
+    },
+    {
+      "path": "lookahead/README.md",
+      "kind": "Publication status / bundled-file listing wording only",
+      "old": "仅云端研究，不修改主软件，不发布软件或研究库。",
+      "new": "仅云端研究，不修改或发布主软件；本包仅同步研究脚本与合成结果。"
+    },
+    {
+      "path": "lookahead/研究报告.md",
+      "kind": "Publication status / bundled-file listing wording only",
+      "old": "未修改主软件，未发布代码或研究库。",
+      "new": "未修改主软件；本包仅同步研究脚本与合成结果。"
+    },
+    {
+      "path": "lookahead/README.md",
+      "kind": "Publication status / bundled-file listing wording only",
+      "old": "- `run.log`、`analysis.log`：最终运行日志",
+      "new": "- `MANIFEST.json`：排除临时日志与缓存后的实际发布文件清单"
+    },
+    {
+      "path": "phase-guide/README.md",
+      "kind": "Publication status / bundled-file listing wording only",
+      "old": "This standalone directory does not modify the production software or publish anything.",
+      "new": "This standalone research package does not modify or publish the production software."
+    }
+  ],
+  "worker_scientific_scripts_results_and_figures_unchanged": true,
+  "preserved_nonprose_files": [
+    {
+      "path": "independent-replay.json",
+      "sha256": "2d9915b04d81a8ea6ec9ca11cb98a64103c16c9beb8cdc3d5899d3e06faeb507"
+    },
+    {
+      "path": "run_relocated_tests.py",
+      "sha256": "58af11d27eb47e7cb69b39a2a6297e174304f8a68df4e9a748d54c5c76aa25db"
+    },
+    {
+      "path": "independent-audit.json",
+      "sha256": "2aa7f6c80958d0f5604ef723326695493161fff2d349a9cfec91bd201204c8b4"
+    },
+    {
+      "path": "independent-tests.json",
+      "sha256": "ad29f3d41a3ac68e57e0832d3828871e45e13116e440be2582a6b9d84847d567"
+    },
+    {
+      "path": "independent-replay.log",
+      "sha256": "17a511fc252fbaa5be88c288a945f0e9ada0fdbea228b078963f6c4e9d74ac66"
+    },
+    {
+      "path": "independent_replay.py",
+      "sha256": "2401af8f888242ce6b326b60bed5df9cc64c33ada238772063e5a4443d6e15fe"
+    },
+    {
+      "path": "independent-tests.log",
+      "sha256": "62722179ecfd14ea0216f0c1e3c296bf74d4d747205f1c81a9728aa065c33c7f"
+    },
+    {
+      "path": "lookahead/requirements.txt",
+      "sha256": "526a7852e5b3afe57c6aefa1091183e84b68a8ed19f6736e3df559c889f3c738"
+    },
+    {
+      "path": "lookahead/portable_test_report.txt",
+      "sha256": "4759b625836632a66f8f128ab15cf6534520d45c8de1ebd1e8aa69cb5d07796a"
+    },
+    {
+      "path": "lookahead/test_lookahead.py",
+      "sha256": "889819a48de3ca0ffee86d97dc1ac62524fc048640270b2401efff45c5ec1a7b"
+    },
+    {
+      "path": "lookahead/run_lookahead.py",
+      "sha256": "164171f0a42fed1c45b0f1a377285ca3634a0067609eed074881b35e4ea4c22d"
+    },
+    {
+      "path": "lookahead/analyze_results.py",
+      "sha256": "d31f340605325c03f55eb18403d1e3d6e4f677359180dd9355871bceb763f706"
+    },
+    {
+      "path": "lookahead/test_report.txt",
+      "sha256": "a7377ffb7287f8b425697efc9c3f9849729392549758388d864e62414c7f3534"
+    },
+    {
+      "path": "batched-audit/results.json",
+      "sha256": "481eb465b8a91554e5f71b2d95fed1daafaea240549224a876bd436c7aef6421"
+    },
+    {
+      "path": "batched-audit/fixed_budget.csv",
+      "sha256": "daa88511283b659bc5247103c4baf94fb9000983c00b5cea8854beb663db95e7"
+    },
+    {
+      "path": "batched-audit/requirements.txt",
+      "sha256": "1668a3152e33680d94637b13421c15e68bd97cd8701f7f555c691f5bc5c0b9f3"
+    },
+    {
+      "path": "batched-audit/diagnose_scaled_scalar.py",
+      "sha256": "22f8603cd1c288117855c805b60d8d95336dba5940d39782c263479314d3d541"
+    },
+    {
+      "path": "batched-audit/wall_budget.csv",
+      "sha256": "9ada95e415f41b95353a16437122f390975d77b6ffdeb547924a34704bb52f33"
+    },
+    {
+      "path": "batched-audit/test_batched.py",
+      "sha256": "43c17a56a2b921acaf7629c3a6e191bfb25f2afa1f49a50830986a0c94f3da8a"
+    },
+    {
+      "path": "batched-audit/scaled_scalar_diagnostic.csv",
+      "sha256": "c7d3f715e5c26f28e86ea697c9ea8a82f0d384cee67a1be95842b868fa850acf"
+    },
+    {
+      "path": "batched-audit/test_report.txt",
+      "sha256": "d0029cb7f5f974e950e9cd5f117c4ee1f0709d31df9a32c562e5faaabcdcc2ad"
+    },
+    {
+      "path": "batched-audit/run_batched.py",
+      "sha256": "45c8eda84aa5aedb9d1e7afece832b7d3eb04b65c89cfdb6cbeeb5b0307aa691"
+    },
+    {
+      "path": "batched-audit/summary.json",
+      "sha256": "78f1290c41b068bf505a2469889d8cce15e7593b295a99aeec2386ae14b1eb7e"
+    },
+    {
+      "path": "batched-audit/scaled_scalar_diagnostic.json",
+      "sha256": "9173a5130e17832574f19bf1cfdcccb940a28bc3b47ab8b0722e8485bce9d3d5"
+    },
+    {
+      "path": "batched-audit/prior_adaptive.py",
+      "sha256": "d6a8c5f239a07f8a77625f9d416e0af81c7f45ab03288f827b62e2cd63225e8f"
+    },
+    {
+      "path": "batched-audit/warmed_task_timing.csv",
+      "sha256": "22d851f9b5016738ee39ac74add4449627ac3cec8c61b30288ee716586b39163"
+    },
+    {
+      "path": "phase-guide/results.json",
+      "sha256": "b9a0f19d845161a0f78bc260a53977728a2c94c5ad5e93428e0a9d7c60af7d02"
+    },
+    {
+      "path": "phase-guide/withdrawal_and_counterexamples.py",
+      "sha256": "ffa6b5fca76f8599ed9a014345e9846993c0bac78b519e33b0af30414bf3687f"
+    },
+    {
+      "path": "phase-guide/requirements.txt",
+      "sha256": "1668a3152e33680d94637b13421c15e68bd97cd8701f7f555c691f5bc5c0b9f3"
+    },
+    {
+      "path": "phase-guide/physics_checks.json",
+      "sha256": "ccf40c1018ad1623464c68104a2de9dd57f840600da52c314102d508ca943114"
+    },
+    {
+      "path": "phase-guide/results.csv",
+      "sha256": "eee1abcc9d4c251f03b9481da7e46796f99d4649e4f25661acf6dfe922aab90f"
+    },
+    {
+      "path": "phase-guide/withdrawal.csv",
+      "sha256": "be6404893212d6226f5464e624ee989464b17b82bd37b76fb16760102c9b9add"
+    },
+    {
+      "path": "phase-guide/write_report.py",
+      "sha256": "0dd0cc594e5ba005ae703e4eced793a8b70ec9fa0e574d88aa9ee0ef338d3619"
+    },
+    {
+      "path": "phase-guide/verified_kernel.py",
+      "sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    {
+      "path": "phase-guide/run_phase.py",
+      "sha256": "c4edc2e4446ff84d2987c5d7f077e81649ed2d4c5cb6b2f8bf9aae307b43b192"
+    },
+    {
+      "path": "phase-guide/test_phase.py",
+      "sha256": "d513f92c0b93d739428ceb64570dd30a79eacbfeebefe02066d3d8d749c943f0"
+    },
+    {
+      "path": "phase-guide/test_report.txt",
+      "sha256": "86e6e9b9421d34cacdc9a887d1ffa4aa9066d686a99e9e3d3ce3403fa6efaae6"
+    },
+    {
+      "path": "phase-guide/withdrawal_and_counterexamples.json",
+      "sha256": "be95ab01a0a71df5240d3a11e2876e6821a2df843349f8322193674891178108"
+    },
+    {
+      "path": "phase-guide/summary.json",
+      "sha256": "fad6027e86170a181a0ec8594d0e2c7813b8e4ab319087178d2ddeca2759bda3"
+    },
+    {
+      "path": "phase-guide/summary.csv",
+      "sha256": "b22efce0f0b0a28f06b5c4933637e8750134d3568565b293fdaa411f1b1d6060"
+    },
+    {
+      "path": "lookahead/results/results.json",
+      "sha256": "ec4aa38794558df28da7d65b06e6f74ff38275d44824552c948112450e7b3235"
+    },
+    {
+      "path": "lookahead/results/paired_comparisons.csv",
+      "sha256": "62ac34b4f0a5917f640075b842a8903d5d9980a1374ec8b2c70ec4210b1c6f6b"
+    },
+    {
+      "path": "lookahead/results/diagnostics.json",
+      "sha256": "3286382554b90d7a48b6ff6cdc7b597939b4cc36d07b343ffc17bec94e85c543"
+    },
+    {
+      "path": "lookahead/results/summary.json",
+      "sha256": "87457ee456e2e92d9ac249e4941cca401c09eb652a8a855d2d7c4f9f9855a0dd"
+    },
+    {
+      "path": "lookahead/results/summary.csv",
+      "sha256": "d969ac4bf23b6ee8575b74a1af0a3e5c245ae164d2585da836d4427e0f2821f9"
+    },
+    {
+      "path": "lookahead/results/runs.csv",
+      "sha256": "8adae586724f70422036952139d590852ad800db38b06df99cf3c0809ee4e259"
+    },
+    {
+      "path": "lookahead/verified_kernel/run_experiment.py",
+      "sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    {
+      "path": "batched-audit/kernel/run_experiment.py",
+      "sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    }
+  ],
+  "excluded_categories": [
+    "Python/pytest caches",
+    "Transient worker logs",
+    "Working-directory manifests replaced by actual publication inventories"
+  ],
+  "retained_small_audit_evidence_logs": [
+    "independent-replay.log",
+    "independent-tests.log"
+  ],
+  "absolute_workspace_references_remaining": [],
+  "software_repository_changed": false,
+  "independent_source_result_and_relocated_test_hashes_match": true,
+  "independent_tests_passed": 28,
+  "independent_audit_verdict": "pass_with_explicit_scope_limits",
+  "report_generator_relocation": {
+    "returncode": 0,
+    "output": "Report and manifest written: 19 files\n",
+    "generated_report_matches_frozen": true,
+    "cwd": "unrelated sibling directory"
+  }
+}
