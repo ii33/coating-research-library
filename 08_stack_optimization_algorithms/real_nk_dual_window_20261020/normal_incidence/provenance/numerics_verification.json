@@ -1,0 +1,108 @@
+{
+  "analytic_jacobian_vs_central_difference": [
+    {
+      "metric": "R",
+      "incidence_order_column": 0,
+      "max_absolute_error_per_nm": 2.6956627034724345e-14
+    },
+    {
+      "metric": "T",
+      "incidence_order_column": 0,
+      "max_absolute_error_per_nm": 4.738053550304606e-13
+    },
+    {
+      "metric": "R",
+      "incidence_order_column": 1,
+      "max_absolute_error_per_nm": 1.3472431720576439e-14
+    },
+    {
+      "metric": "T",
+      "incidence_order_column": 1,
+      "max_absolute_error_per_nm": 5.213965178119291e-13
+    },
+    {
+      "metric": "R",
+      "incidence_order_column": 2,
+      "max_absolute_error_per_nm": 1.3102772989867506e-14
+    },
+    {
+      "metric": "T",
+      "incidence_order_column": 2,
+      "max_absolute_error_per_nm": 4.628643659760484e-13
+    },
+    {
+      "metric": "R",
+      "incidence_order_column": 3,
+      "max_absolute_error_per_nm": 1.6297239165824484e-14
+    },
+    {
+      "metric": "T",
+      "incidence_order_column": 3,
+      "max_absolute_error_per_nm": 9.207363062084528e-13
+    },
+    {
+      "metric": "R",
+      "incidence_order_column": 4,
+      "max_absolute_error_per_nm": 1.19448721747073e-14
+    },
+    {
+      "metric": "T",
+      "incidence_order_column": 4,
+      "max_absolute_error_per_nm": 6.003057927171581e-13
+    },
+    {
+      "metric": "R",
+      "incidence_order_column": 5,
+      "max_absolute_error_per_nm": 1.2789411456964883e-14
+    },
+    {
+      "metric": "T",
+      "incidence_order_column": 5,
+      "max_absolute_error_per_nm": 7.619144640831806e-13
+    },
+    {
+      "metric": "R",
+      "incidence_order_column": 6,
+      "max_absolute_error_per_nm": 1.3908118363589739e-14
+    },
+    {
+      "metric": "T",
+      "incidence_order_column": 6,
+      "max_absolute_error_per_nm": 4.486036237731102e-13
+    }
+  ],
+  "independent_matrix_vs_frozen_recurrence": [
+    {
+      "N": 0,
+      "max_RT_difference": 2.220446049250313e-16,
+      "A_min": -2.220446049250313e-16
+    },
+    {
+      "N": 1,
+      "max_RT_difference": 7.771561172376096e-16,
+      "A_min": 0.005509543149682661
+    },
+    {
+      "N": 7,
+      "max_RT_difference": 1.3322676295501878e-15,
+      "A_min": 0.0129201273256771
+    },
+    {
+      "N": 12,
+      "max_RT_difference": 1.1102230246251565e-15,
+      "A_min": 0.0016689613052478028
+    },
+    {
+      "N": 24,
+      "max_RT_difference": 1.3322676295501878e-15,
+      "A_min": 0.011957507174963168
+    },
+    {
+      "N": 32,
+      "max_RT_difference": 3.885780586188048e-15,
+      "A_min": 0.04183853652624728
+    }
+  ],
+  "central_step_nm": 0.001,
+  "passed": true
+}

@@ -1,0 +1,479 @@
+{
+  "route": "A",
+  "source_origin": "N0 growth N10 branch28",
+  "initial_origin": "N0 bare substrate",
+  "initial_layer_count": 0,
+  "initial_total_nm": 0.0,
+  "initial_checkpoint_exact": false,
+  "initial_recipe_substrate_outward": [],
+  "archived_layer_count": 10,
+  "equivalent_layer_count": 10,
+  "delivered_layer_count": 10,
+  "total_nm": 4248.806764000001,
+  "min_thickness_nm": 81.215347,
+  "max_thickness_nm": 966.21002,
+  "unrounded_total_nm": 4248.806763229265,
+  "rounding_max_layer_change_nm": 4.00749172513315e-07,
+  "final_recipe_substrate_outward": [
+    {
+      "id": "final-A-1",
+      "material_id": "NaCl",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 81.215347,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    },
+    {
+      "id": "final-A-2",
+      "material_id": "ZnS",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 309.220543,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    },
+    {
+      "id": "final-A-3",
+      "material_id": "MgF2",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 231.637746,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    },
+    {
+      "id": "final-A-4",
+      "material_id": "ZnS",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 235.058527,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    },
+    {
+      "id": "final-A-5",
+      "material_id": "BaF2",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 391.570236,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    },
+    {
+      "id": "final-A-6",
+      "material_id": "ZnS",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 149.328589,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    },
+    {
+      "id": "final-A-7",
+      "material_id": "NaCl",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 963.81585,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    },
+    {
+      "id": "final-A-8",
+      "material_id": "MgF2",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 608.222779,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    },
+    {
+      "id": "final-A-9",
+      "material_id": "NaCl",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 312.527127,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    },
+    {
+      "id": "final-A-10",
+      "material_id": "MgF2",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 966.21002,
+        "unit": "nm"
+      },
+      "note": "external metric research; substrate outward"
+    }
+  ],
+  "training_unrounded": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "points": 81,
+      "Rmax": 0.009681362850792326,
+      "Rmax_nm": 3000.0,
+      "Tmin": 0.9836091590596626,
+      "Tmin_nm": 3500.0
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "points": 81,
+      "Rmax": 0.009681362850782752,
+      "Rmax_nm": 10550.0,
+      "Tmin": 0.9821974915898093,
+      "Tmin_nm": 11350.0
+    }
+  ],
+  "training_delivered": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "points": 81,
+      "Rmax": 0.009681362900418093,
+      "Rmax_nm": 4125.0,
+      "Tmin": 0.9836091591490388,
+      "Tmin_nm": 3500.0
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "points": 81,
+      "Rmax": 0.009681362869793212,
+      "Rmax_nm": 8000.0,
+      "Tmin": 0.9821974915621852,
+      "Tmin_nm": 11350.0
+    }
+  ],
+  "progress": {
+    "rows": 338,
+    "first": {
+      "utc": "2026-10-19T22:18:24.624355+00:00",
+      "kind": "heartbeat",
+      "route": "A",
+      "stage": "audit N0 bare substrate",
+      "elapsed_s": 5.022699299966916,
+      "physical_spectral_evaluations": 1,
+      "wavelength_evaluations": 162,
+      "local_solves": 0,
+      "best_audited": null,
+      "activity_age_s": 5.0188876000465825,
+      "cancel_requested": false
+    },
+    "last": {
+      "utc": "2026-10-19T22:21:23.234974+00:00",
+      "kind": "terminal",
+      "route": "A",
+      "stage": "audit N0 growth N10 branch28",
+      "elapsed_s": 183.63331120007206,
+      "physical_spectral_evaluations": 204870,
+      "wavelength_evaluations": 3517939,
+      "local_solves": 269,
+      "state": "targets_met"
+    },
+    "improvement_N": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3,
+      4,
+      4,
+      5,
+      6,
+      6,
+      6,
+      7,
+      7,
+      6,
+      7,
+      8,
+      8,
+      8,
+      9,
+      9,
+      10
+    ],
+    "stages": [
+      "N0 beam growth N=1",
+      "N0 beam growth N=2",
+      "N0 beam growth N=3",
+      "N0 beam growth N=4",
+      "N0 beam growth N=5",
+      "N0 beam growth N=6",
+      "N0 beam growth N=7",
+      "N0 beam growth N=8",
+      "N0 beam growth N=9",
+      "N0 beam growth N=10"
+    ]
+  },
+  "original_final_audit": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "unique_grid_points": 20229,
+      "extremum_brackets": 57,
+      "Rmax": 0.009689032329900225,
+      "Rmax_nm": 3597.1,
+      "Tmin": 0.9834272034773769,
+      "Tmin_nm": 3502.68,
+      "Amax": 0.007000304840241722,
+      "Amax_nm": 3502.68
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "unique_grid_points": 20163,
+      "extremum_brackets": 51,
+      "Rmax": 0.009682594998395827,
+      "Rmax_nm": 10568.875836707237,
+      "Tmin": 0.9821899858304997,
+      "Tmin_nm": 11353.6,
+      "Amax": 0.012587045231928329,
+      "Amax_nm": 12000.0
+    }
+  ],
+  "windows": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "grid_unique_counts": [
+        36408,
+        72444
+      ],
+      "Rmax": 0.009689032329900203,
+      "Rmax_nm": 3597.1000000000004,
+      "Rmax_brackets": 12,
+      "Tmin": 0.9834272034773786,
+      "Tmin_nm": 3502.680000000207,
+      "Tmin_brackets": 14,
+      "Amax": 0.007000304840239169,
+      "Amax_nm": 3502.6800000001735,
+      "Amax_brackets": 21,
+      "Amin": 1.1068923555512811e-13,
+      "Amin_nm": 3246.7999999999997,
+      "Amin_brackets": 25,
+      "coarse_extrema": {
+        "Rmax": 0.009689032329900203,
+        "Rmax_nm": 3597.1000000000004,
+        "Rmax_brackets": 12,
+        "Tmin": 0.9834272034773791,
+        "Tmin_nm": 3502.6800000007165,
+        "Tmin_brackets": 14,
+        "Amax": 0.007000304840239169,
+        "Amax_nm": 3502.6800000001735,
+        "Amax_brackets": 21,
+        "Amin": 1.1068923555512811e-13,
+        "Amin_nm": 3246.7999999999997,
+        "Amin_brackets": 25
+      },
+      "refinement_extrema": {
+        "Rmax": 0.009689032329900203,
+        "Rmax_nm": 3597.1000000000004,
+        "Rmax_brackets": 12,
+        "Tmin": 0.9834272034773786,
+        "Tmin_nm": 3502.680000000207,
+        "Tmin_brackets": 14,
+        "Amax": 0.007000304840239058,
+        "Amax_nm": 3502.68,
+        "Amax_brackets": 102,
+        "Amin": 1.1068923555512811e-13,
+        "Amin_nm": 3246.7999999999997,
+        "Amin_brackets": 113
+      },
+      "refinement_minus_coarse": {
+        "Rmax": 0.0,
+        "Tmin": -5.551115123125783e-16,
+        "Amax": -1.1102230246251565e-16,
+        "Amin": 0.0
+      },
+      "R_audit_minus_training": 7.669429482109677e-06,
+      "T_audit_minus_training": -0.00018195567166023885,
+      "R_margin": 0.00021096767009979797,
+      "T_margin": 0.08332720347737854,
+      "strict_pass": true,
+      "boundary_checks": 45,
+      "boundary_max_abs_RTA_difference": 3.219646771412954e-15,
+      "film_loss_closure_abs": 2.3314683517128287e-15,
+      "minimum_individual_film_absorption": -4.440892098500626e-16,
+      "max_boundary_condition": 25.97487208423225,
+      "max_boundary_residual": 7.905182654250226e-16,
+      "high_precision_max_abs_RTA_difference": 1.5803330866148713e-15,
+      "high_precision_checks": [
+        {
+          "metric": "Rmax",
+          "wavelength_nm": 3597.1000000000004,
+          "rta_70_digits": [
+            "0.009689032329900240556366582373363883571416602660900316303940307203805313",
+            "0.9872010721278170994222827216655940555525792895459757554984868331282084",
+            "0.003109895542282660021350695961042060876004107793123928197572859667986321"
+          ]
+        },
+        {
+          "metric": "Tmin",
+          "wavelength_nm": 3502.680000000207,
+          "rta_70_digits": [
+            "0.009572491682382398372953565558005799464150823358215516263025207656032045",
+            "0.983427203477377093776323400098157899209856021011136971538661439923571",
+            "0.007000304840240507850723034343836301325993155630647512198313352420396917"
+          ]
+        },
+        {
+          "metric": "Amax",
+          "wavelength_nm": 3502.6800000001735,
+          "rta_70_digits": [
+            "0.009572491682382235017422772454654995895780336222497562307470240212940969",
+            "0.9834272034773770160018122622656074323898106428333354658424303576663526",
+            "0.007000304840240748980764965279737571714409020944166971850099402120706397"
+          ]
+        },
+        {
+          "metric": "Amin",
+          "wavelength_nm": 3246.7999999999997,
+          "rta_70_digits": [
+            "0.009685225538091713235547037781652332853607699034737773816827292737267391",
+            "0.9903147744617973113374686664084077818445105635444967799393287639483427",
+            "0.000000000000110975426984295809939885301881737420765446243843943314389857432998007"
+          ]
+        }
+      ]
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "grid_unique_counts": [
+        36418,
+        72454
+      ],
+      "Rmax": 0.00968259499839587,
+      "Rmax_nm": 10568.875836871606,
+      "Rmax_brackets": 1,
+      "Tmin": 0.9821899858304978,
+      "Tmin_nm": 11353.600000000366,
+      "Tmin_brackets": 3,
+      "Amax": 0.012587045231930216,
+      "Amax_nm": 12000.0,
+      "Amax_brackets": 2,
+      "Amin": 0.004750935217228913,
+      "Amin_nm": 8000.0,
+      "Amin_brackets": 2,
+      "coarse_extrema": {
+        "Rmax": 0.00968259499839587,
+        "Rmax_nm": 10568.875836871606,
+        "Rmax_brackets": 1,
+        "Tmin": 0.9821899858304995,
+        "Tmin_nm": 11353.600000000402,
+        "Tmin_brackets": 3,
+        "Amax": 0.012587045231930216,
+        "Amax_nm": 12000.0,
+        "Amax_brackets": 2,
+        "Amin": 0.004750935217228913,
+        "Amin_nm": 8000.0,
+        "Amin_brackets": 2
+      },
+      "refinement_extrema": {
+        "Rmax": 0.009682594998395857,
+        "Rmax_nm": 10568.875835116241,
+        "Rmax_brackets": 1,
+        "Tmin": 0.9821899858304978,
+        "Tmin_nm": 11353.600000000366,
+        "Tmin_brackets": 3,
+        "Amax": 0.012587045231930216,
+        "Amax_nm": 12000.0,
+        "Amax_brackets": 2,
+        "Amin": 0.004750935217228913,
+        "Amin_nm": 8000.0,
+        "Amin_brackets": 2
+      },
+      "refinement_minus_coarse": {
+        "Rmax": -1.3877787807814457e-17,
+        "Tmin": -1.7763568394002505e-15,
+        "Amax": 0.0,
+        "Amin": 0.0
+      },
+      "R_audit_minus_training": 1.2321286026583528e-06,
+      "T_audit_minus_training": -7.5057316873961e-06,
+      "R_margin": 0.0002174050016041304,
+      "T_margin": 0.08208998583049776,
+      "strict_pass": true,
+      "boundary_checks": 43,
+      "boundary_max_abs_RTA_difference": 3.1086244689504383e-15,
+      "film_loss_closure_abs": 3.3306690738754696e-15,
+      "minimum_individual_film_absorption": -3.3306690738754696e-16,
+      "max_boundary_condition": 27.532478617769122,
+      "max_boundary_residual": 8.782567635532833e-16,
+      "high_precision_max_abs_RTA_difference": 2.517083763642347e-15,
+      "high_precision_checks": [
+        {
+          "metric": "Rmax",
+          "wavelength_nm": 10568.875836871606,
+          "rta_70_digits": [
+            "0.009682594998395808777540953892720712564352726313586663762234134018763903",
+            "0.9831358520343496249126638579780233838686254755193445328801888744352127",
+            "0.007181552967254566309795188129255903567021798167068803357576991546023403"
+          ]
+        },
+        {
+          "metric": "Tmin",
+          "wavelength_nm": 11353.600000000366,
+          "rta_70_digits": [
+            "0.007827543432712121237124190777979160046352094430833008991666269996380862",
+            "0.9821899858305002458723584460407017071489585965805947066366204690382763",
+            "0.009982470736787632890517363181319132804689308988572284371713260965342888"
+          ]
+        },
+        {
+          "metric": "Amax",
+          "wavelength_nm": 12000.0,
+          "rta_70_digits": [
+            "0.004836318522559403540593186896533677620457113183047568009237527082086887",
+            "0.9825766362455127680916269575218543138679791213627775518793994406487649",
+            "0.01258704523192782836777985558161200851156376545417488011136303226914822"
+          ]
+        },
+        {
+          "metric": "Amin",
+          "wavelength_nm": 8000.0,
+          "rta_70_digits": [
+            "0.009681362869793259005606185316363494137709162279423723439998424516679807",
+            "0.9855677019129759544509966970284646234325951489196452228059070595669171",
+            "0.004750935217230786543397117655171882429695688800931053754094515916403078"
+          ]
+        }
+      ]
+    }
+  ],
+  "merge_max_abs_RTA_difference": 0.0,
+  "rounding_max_abs_RTA_difference": 9.335848066838182e-11,
+  "max_single_pass_phase_step_radians": 3.560009670788844e-05,
+  "strict_pass": true,
+  "extrema_solver_failures": 0
+}

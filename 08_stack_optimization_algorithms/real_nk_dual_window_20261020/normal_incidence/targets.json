@@ -1,0 +1,45 @@
+{
+  "schema": "dual_window_research_targets_v1",
+  "windows_nm": [
+    [
+      3000.0,
+      5000.0
+    ],
+    [
+      8000.0,
+      12000.0
+    ]
+  ],
+  "gap": "unconstrained",
+  "user_physical_goal": {
+    "R_upper": 0.01,
+    "T_lower": 0.9
+  },
+  "research_guard": {
+    "R_upper": 0.0099,
+    "T_lower": 0.9001
+  },
+  "acceptable_normalized_error": 1e-06,
+  "objective_normalization_scale": 1.0,
+  "angles_deg": [
+    0.0
+  ],
+  "polarization": "unpolarized",
+  "incident_medium": {
+    "n": 1.0,
+    "k": 0.0
+  },
+  "substrate": {
+    "material": "ZnS",
+    "source": "Querry1987",
+    "model": "semi_infinite",
+    "finite_plate_thickness_active": false,
+    "inactive_original_design_thickness_mm": 1.0
+  },
+  "front_coating": "coherent planar passive isotropic layers",
+  "back_surface": "not part of accepted original target",
+  "T_definition": "flux entering substrate half-space",
+  "A_definition": "finite coating layers only",
+  "continuous_certificate": false,
+  "original_request_sha256": "ad954b80b3ce9ddc4e094dfb21d16f85b92d7a45067ac7cfa97115812cb504dc"
+}

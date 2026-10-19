@@ -1,0 +1,148 @@
+{
+  "A": {
+    "route": "A",
+    "original_layer_rows": 10,
+    "merged_layers": 10,
+    "adjacent_same_material_merged": true,
+    "rounded_nm_decimals": 6,
+    "total_nm": 4248.806764,
+    "sequence_substrate_outward": [
+      "NaCl",
+      "ZnS",
+      "MgF2",
+      "ZnS",
+      "BaF2",
+      "ZnS",
+      "NaCl",
+      "MgF2",
+      "NaCl",
+      "MgF2"
+    ],
+    "thickness_nm": [
+      81.215347,
+      309.220543,
+      231.637746,
+      235.058527,
+      391.570236,
+      149.328589,
+      963.81585,
+      608.222779,
+      312.527127,
+      966.21002
+    ],
+    "windows": [
+      {
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "unique_grid_points": 20229,
+        "extremum_brackets": 57,
+        "Rmax": 0.009689032329900225,
+        "Rmax_nm": 3597.1,
+        "Tmin": 0.9834272034773769,
+        "Tmin_nm": 3502.68,
+        "Amax": 0.007000304840241722,
+        "Amax_nm": 3502.68
+      },
+      {
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "unique_grid_points": 20163,
+        "extremum_brackets": 51,
+        "Rmax": 0.009682594998395827,
+        "Rmax_nm": 10568.875836707237,
+        "Tmin": 0.9821899858304997,
+        "Tmin_nm": 11353.6,
+        "Amax": 0.012587045231928329,
+        "Amax_nm": 12000.0
+      }
+    ],
+    "core_audit_max_violation": 0.0,
+    "all_targets_met": true,
+    "independent_RT_max_difference": 5.773159728050814e-15,
+    "independent_spectral_calls": 4237,
+    "independent_wavelength_evaluations": 85017,
+    "production_audit_calls": 886,
+    "production_audit_wavelength_evaluations": 11125,
+    "independent_interpolation": "numpy.interp on raw frozen tabulated n/k; error outside domain",
+    "continuous_certificate": false,
+    "transmission_definition": "flux entering ZnS half-space, not transmission through1mm substrate",
+    "origin": "N=0 beam growth; no seeded designs or inherited layer prescription"
+  },
+  "B": {
+    "route": "B",
+    "original_layer_rows": 11,
+    "merged_layers": 10,
+    "adjacent_same_material_merged": true,
+    "rounded_nm_decimals": 6,
+    "total_nm": 3268.5585119999996,
+    "sequence_substrate_outward": [
+      "MgF2",
+      "ZnS",
+      "MgF2",
+      "Ge",
+      "MgF2",
+      "ZnS",
+      "MgF2",
+      "Ge",
+      "NaCl",
+      "MgF2"
+    ],
+    "thickness_nm": [
+      89.83685,
+      430.414312,
+      287.028096,
+      60.63779,
+      447.595956,
+      218.260068,
+      595.545225,
+      23.273396,
+      29.799145,
+      1086.167674
+    ],
+    "windows": [
+      {
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "unique_grid_points": 20229,
+        "extremum_brackets": 45,
+        "Rmax": 0.009244764891000708,
+        "Rmax_nm": 4012.492208134414,
+        "Tmin": 0.9815546521601806,
+        "Tmin_nm": 3422.94,
+        "Amax": 0.012537778036753267,
+        "Amax_nm": 3422.94
+      },
+      {
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "unique_grid_points": 20163,
+        "extremum_brackets": 52,
+        "Rmax": 0.009235688874862327,
+        "Rmax_nm": 8363.729999972253,
+        "Tmin": 0.974599888481774,
+        "Tmin_nm": 12000.0,
+        "Amax": 0.016164538946635276,
+        "Amax_nm": 12000.0
+      }
+    ],
+    "core_audit_max_violation": 0.0,
+    "all_targets_met": true,
+    "independent_RT_max_difference": 6.994405055138486e-15,
+    "independent_spectral_calls": 3902,
+    "independent_wavelength_evaluations": 84682,
+    "production_audit_calls": 582,
+    "production_audit_wavelength_evaluations": 10821,
+    "independent_interpolation": "numpy.interp on raw frozen tabulated n/k; error outside domain",
+    "continuous_certificate": false,
+    "transmission_definition": "flux entering ZnS half-space, not transmission through1mm substrate",
+    "origin": "one explicit prior seven-layer prescription, followed by grouped insertions/order changes and local minimax"
+  }
+}

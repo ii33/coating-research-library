@@ -1,0 +1,110 @@
+{
+  "case": "plate_A_front_B_back_1mm",
+  "model": "incoherent_finite_ZnS_plate",
+  "front": "A",
+  "back": "B",
+  "thickness_mm": 1.0,
+  "angle_deg": 0.0,
+  "polarization": "normal incidence s=p",
+  "transmission_definition": "flux exiting rear coating into air",
+  "orientation": "air -> reverse(front substrate_outward list) -> bulk ZnS -> back substrate_outward list -> air",
+  "coherence_assumption": "substrate phase averaged, coatings coherent; scenario, physical measurement coherence not verified",
+  "windows": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "grid_points": 4271,
+      "Rmax": 0.018775901952669115,
+      "Rmax_nm": 3246.7999999999997,
+      "Tmin": 0.016228449713946262,
+      "Tmin_nm": 3067.5,
+      "Amax": 0.9749828475207087,
+      "Amax_nm": 3067.5,
+      "local_extremum_brackets": 24,
+      "diagnostic_guard_pass": false,
+      "physical_goal_pass": false,
+      "R_guard_failure_intervals_nm": [
+        [
+          3000.0,
+          3047.9188131564147
+        ],
+        [
+          3086.5783373766935,
+          3107.5578214539073
+        ],
+        [
+          3196.9099614243155,
+          3214.0819769910245
+        ],
+        [
+          3237.063310606751,
+          3256.9146141902766
+        ],
+        [
+          3893.524691155934,
+          4356.580734221067
+        ],
+        [
+          4849.473142133428,
+          4971.634484421949
+        ]
+      ],
+      "T_guard_failure_intervals_nm": [
+        [
+          3049.199555819574,
+          3085.98882644488
+        ],
+        [
+          3106.0207877062417,
+          3204.6732296802015
+        ],
+        [
+          3205.532989952975,
+          3246.3606329243303
+        ],
+        [
+          3247.2436097998466,
+          3905.51440644633
+        ],
+        [
+          4348.972348088509,
+          4852.773214217748
+        ],
+        [
+          4952.178899713854,
+          5000.0
+        ]
+      ]
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "grid_points": 4193,
+      "Rmax": 0.009721825250405464,
+      "Rmax_nm": 10569.162385544269,
+      "Tmin": 0.0021080814251403825,
+      "Tmin_nm": 8196.7,
+      "Amax": 0.9933363252035189,
+      "Amax_nm": 8474.6,
+      "local_extremum_brackets": 12,
+      "diagnostic_guard_pass": false,
+      "physical_goal_pass": false,
+      "R_guard_failure_intervals_nm": [],
+      "T_guard_failure_intervals_nm": [
+        [
+          8000.0,
+          12000.0
+        ]
+      ]
+    }
+  ],
+  "diagnostic_guard_pass": false,
+  "physical_goal_pass": false,
+  "minimum_finite_total_absorption": 0.0,
+  "continuous_certificate": false,
+  "original_target_not_modified": true
+}

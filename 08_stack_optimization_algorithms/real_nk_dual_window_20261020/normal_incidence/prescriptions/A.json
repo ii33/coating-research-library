@@ -1,0 +1,69 @@
+{
+  "schema": "dual_window_research_prescription_v1",
+  "route": "A",
+  "origin": "N=0 beam growth; no seeded designs or inherited layer prescription",
+  "layer_order": "substrate_outward",
+  "thickness_unit": "nm",
+  "incident_medium": {
+    "n": 1.0,
+    "k": 0.0
+  },
+  "substrate": {
+    "material": "ZnS",
+    "model": "semi_infinite_half_space"
+  },
+  "angle_deg": 0.0,
+  "polarization": "unpolarized",
+  "layers": [
+    {
+      "layer": 1,
+      "material": "NaCl",
+      "thickness_nm": 81.215347
+    },
+    {
+      "layer": 2,
+      "material": "ZnS",
+      "thickness_nm": 309.220543
+    },
+    {
+      "layer": 3,
+      "material": "MgF2",
+      "thickness_nm": 231.637746
+    },
+    {
+      "layer": 4,
+      "material": "ZnS",
+      "thickness_nm": 235.058527
+    },
+    {
+      "layer": 5,
+      "material": "BaF2",
+      "thickness_nm": 391.570236
+    },
+    {
+      "layer": 6,
+      "material": "ZnS",
+      "thickness_nm": 149.328589
+    },
+    {
+      "layer": 7,
+      "material": "NaCl",
+      "thickness_nm": 963.81585
+    },
+    {
+      "layer": 8,
+      "material": "MgF2",
+      "thickness_nm": 608.222779
+    },
+    {
+      "layer": 9,
+      "material": "NaCl",
+      "thickness_nm": 312.527127
+    },
+    {
+      "layer": 10,
+      "material": "MgF2",
+      "thickness_nm": 966.21002
+    }
+  ]
+}

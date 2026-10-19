@@ -1,0 +1,25 @@
+{
+  "coat_sim_python_count": 350,
+  "before_after_changed": [],
+  "frozen_full_source_count": 951,
+  "frozen_full_source_mismatches": [
+    "tests/test_static_analysis_runner.py",
+    "tools/run_static_analysis.py"
+  ],
+  "frozen_manifest_entries_mismatched": [],
+  "source_stable": true,
+  "source_stable_scope": "all coat_sim Python before/after, and62 named frozen source/test/document/evidence entries; full951 frozen snapshot comparison separately disclosed",
+  "full951_frozen_snapshot_matches": false,
+  "full951_difference_note": "Two static-analysis files differ from historical full snapshot; not modified or executed by this research. Their exact modification time relative to research was not established by an initial full951 snapshot. They are outside the runtime research import chain.",
+  "full951_differences": {
+    "tests/test_static_analysis_runner.py": {
+      "expected": "8d3c2627341ae36c7cd26c41c7e7d98d7496e3c480140dbce4ce0070d2ac6842",
+      "current": "b80a1b976328ffb9ae30aa749f91c607e52c2d7f728decba60043b037ba11c85"
+    },
+    "tools/run_static_analysis.py": {
+      "expected": "7113be991b1859e9c7a58c227922dadbe6f3c4b7067d78bffc166caa6f7fb265",
+      "current": "d61fabcb713826eeb098f8cbeeddd90bd89907860c3d75078cffa211be72afb8"
+    }
+  },
+  "freeze_manifest_sha256": "24635ad4ae35de298880d471f122c3013e818e88a30ce9e16da665cdd5dcd621"
+}

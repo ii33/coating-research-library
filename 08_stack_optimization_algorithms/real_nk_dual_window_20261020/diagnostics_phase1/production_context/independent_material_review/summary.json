@@ -1,0 +1,78 @@
+{
+  "material_review_incorporated": true,
+  "original_1mm_calculation_independently_reproduced": true,
+  "reference_scenario_not_production_material_claim": true,
+  "production_feasibility_not_rejected": true,
+  "actual_batch_broadband_k_still_unknown": true,
+  "supplier_points": [
+    {
+      "source": "Coherent CVD",
+      "wavelength_um": 10.6,
+      "alpha_cm_inverse": 0.24,
+      "relation": "upper_bound",
+      "equivalent_k": 2.0244508761289087e-05,
+      "one_pass_survival_1mm": 0.9762857097579093,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    },
+    {
+      "source": "Coherent MS",
+      "wavelength_um": 10.6,
+      "alpha_cm_inverse": 0.2,
+      "relation": "upper_bound",
+      "equivalent_k": 1.6870423967740905e-05,
+      "one_pass_survival_1mm": 0.9801986733067553,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    },
+    {
+      "source": "Crystran MS",
+      "wavelength_um": 10.6,
+      "alpha_cm_inverse": 0.2,
+      "relation": "nominal_point",
+      "equivalent_k": 1.6870423967740905e-05,
+      "one_pass_survival_1mm": 0.9801986733067553,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    },
+    {
+      "source": "Crystran MS",
+      "wavelength_um": 9.27,
+      "alpha_cm_inverse": 0.006,
+      "relation": "nominal_point",
+      "equivalent_k": 4.4260989673856097e-07,
+      "one_pass_survival_1mm": 0.9994001799640054,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    },
+    {
+      "source": "Crystran MS",
+      "wavelength_um": 3.8,
+      "alpha_cm_inverse": 0.0006,
+      "relation": "nominal_point",
+      "equivalent_k": 1.8143663512476068e-08,
+      "one_pass_survival_1mm": 0.999940001799964,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    }
+  ],
+  "source_identity": {
+    "fixed_source_plate_math": "verified",
+    "universal_ZnS_conclusion": false,
+    "production_feasibility_rejected": false,
+    "querry_sample": "Raytheon high purity isotropic CVD; approx 1 inch diameter x 0.5 inch",
+    "querry_method": "reflectance KK with extended tails; not current lot low-loss direct absorption",
+    "source_k_precision": "three decimal printed k; original/ARIA DN DK not transported to RII; confidence definition unresolved",
+    "manufacturer_raw_data": "Crystran workbook read-only; reference T, not directly usable intrinsic k",
+    "replacement_k_created": false,
+    "actual_batch_broadband_k_available": false
+  },
+  "user_production_experience": {
+    "verbatim": "实际生产时吸收数据总是更低的",
+    "evidence_type": "user-reported production experience",
+    "scope": "Valid motivation to prioritize matched low-loss production data; no numerical spectral k or uncertainty supplied; not identified with the old Querry sample."
+  },
+  "AA_1mm_bulk_only_k_times_0_01_Tmin": [
+    0.9326495426341381,
+    0.9169824153324292
+  ],
+  "sensitivity_measured": false,
+  "original_source_numeric_data_unchanged": true,
+  "original_PDF_XLSX_and_extracted_raw_workbook_not_bundled": true,
+  "DN_DK": "ARIA documentation identifies uncertainty columns, original confidence level/correlation/derivation not established; RII did not preserve them. Not an established1sigma bound."
+}

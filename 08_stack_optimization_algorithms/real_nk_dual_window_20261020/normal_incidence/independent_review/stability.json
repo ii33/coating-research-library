@@ -1,0 +1,31 @@
+{
+  "input_count": 111,
+  "input_changed": [],
+  "code_count": 350,
+  "code_changed": [],
+  "named62_pass": true,
+  "full951_differences_before": [
+    {
+      "path": "tests/test_static_analysis_runner.py",
+      "expected": "8d3c2627341ae36c7cd26c41c7e7d98d7496e3c480140dbce4ce0070d2ac6842",
+      "actual": "b80a1b976328ffb9ae30aa749f91c607e52c2d7f728decba60043b037ba11c85"
+    },
+    {
+      "path": "tools/run_static_analysis.py",
+      "expected": "7113be991b1859e9c7a58c227922dadbe6f3c4b7067d78bffc166caa6f7fb265",
+      "actual": "d61fabcb713826eeb098f8cbeeddd90bd89907860c3d75078cffa211be72afb8"
+    }
+  ],
+  "full951_differences_after": [
+    {
+      "path": "tests/test_static_analysis_runner.py",
+      "expected": "8d3c2627341ae36c7cd26c41c7e7d98d7496e3c480140dbce4ce0070d2ac6842",
+      "actual": "b80a1b976328ffb9ae30aa749f91c607e52c2d7f728decba60043b037ba11c85"
+    },
+    {
+      "path": "tools/run_static_analysis.py",
+      "expected": "7113be991b1859e9c7a58c227922dadbe6f3c4b7067d78bffc166caa6f7fb265",
+      "actual": "d61fabcb713826eeb098f8cbeeddd90bd89907860c3d75078cffa211be72afb8"
+    }
+  ]
+}

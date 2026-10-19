@@ -1,0 +1,75 @@
+{
+  "case": "plate_B_front_bare_back_0.01mm",
+  "model": "incoherent_finite_ZnS_plate",
+  "front": "B",
+  "back": "bare",
+  "thickness_mm": 0.01,
+  "angle_deg": 0.0,
+  "polarization": "normal incidence s=p",
+  "transmission_definition": "flux exiting rear coating into air",
+  "orientation": "air -> reverse(front substrate_outward list) -> bulk ZnS -> back substrate_outward list -> air",
+  "coherence_assumption": "substrate phase averaged, coatings coherent; scenario, physical measurement coherence not verified",
+  "windows": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "grid_points": 4271,
+      "Rmax": 0.15434676318575502,
+      "Rmax_nm": 4018.3673559824965,
+      "Tmin": 0.8047460332017362,
+      "Tmin_nm": 3225.8,
+      "Amax": 0.057544352735218185,
+      "Amax_nm": 3067.5,
+      "local_extremum_brackets": 33,
+      "diagnostic_guard_pass": false,
+      "physical_goal_pass": false,
+      "R_guard_failure_intervals_nm": [
+        [
+          3000.0,
+          5000.0
+        ]
+      ],
+      "T_guard_failure_intervals_nm": [
+        [
+          3000.0,
+          5000.0
+        ]
+      ]
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "grid_points": 4193,
+      "Rmax": 0.13693635345991897,
+      "Rmax_nm": 9803.9,
+      "Tmin": 0.793040399513503,
+      "Tmin_nm": 8196.7,
+      "Amax": 0.07481105787680653,
+      "Amax_nm": 8196.7,
+      "local_extremum_brackets": 9,
+      "diagnostic_guard_pass": false,
+      "physical_goal_pass": false,
+      "R_guard_failure_intervals_nm": [
+        [
+          8000.0,
+          12000.0
+        ]
+      ],
+      "T_guard_failure_intervals_nm": [
+        [
+          8000.0,
+          12000.0
+        ]
+      ]
+    }
+  ],
+  "diagnostic_guard_pass": false,
+  "physical_goal_pass": false,
+  "minimum_finite_total_absorption": 0.0,
+  "continuous_certificate": false,
+  "original_target_not_modified": true
+}

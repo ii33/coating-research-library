@@ -1,0 +1,38 @@
+{
+  "checked_date": "2026-10-20",
+  "items": [
+    {
+      "url": "https://refractiveindex.info/?shelf=main&book=ZnS&page=Querry",
+      "role": "database labels n+ik, dimensionless extinction coefficient k, source range and Querry report citation"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/ZnS/nk/Querry.yml",
+      "role": "exact pinned source: tabulated nk, no sample-condition/uncertainty columns in database YAML"
+    },
+    {
+      "url": "https://archive.org/stream/DTIC_ADA192210/DTIC_ADA192210_djvu.txt",
+      "role": "mirror of original1987 report, section4.6 printedp71: high-purity optically isotropic Raytheon CVD sample; n+ik derived by Kramers-Kronig analysis of reflectance with extended spectral tails",
+      "original_report_locator": "CRDEC-CR-88009 / ADA192210, section4.6 and table6",
+      "caution": "OCR is readable; direct DTIC pages/PDF were unavailable. DN/DK column headings appear but their definition was not established from accessible text, so they are not used as a statistical error bound."
+    },
+    {
+      "url": "https://www.coherent.com/optics/crystals/bulk-optical-materials/zinc-sulfide",
+      "role": "primary manufacturer comparison only: current ZnS bulk absorption coefficient at10.6um<0.24cm^-1; no replacement n/k dataset was constructed from this single-point specification"
+    },
+    {
+      "url": "https://doi.org/10.48550/arXiv.1603.02720",
+      "role": "Byrnes derivation of oblique complex-index flux, phase-incoherent stacks and absorbing incident-port cautions"
+    }
+  ],
+  "interpretation": {
+    "k_meaning": "dimensionless imaginary part of n+ik; alpha=4*pi*k/lambda at normal incidence; not alpha itself",
+    "source_sample": "Raytheon high-purity optically isotropic CVD ZnS in original report, not an unidentified natural mineral",
+    "source_method": "reflectance-derived Kramers-Kronig n/k; not direct low-loss transmission metrology of the present substrate",
+    "known_numeric_values_retained": true,
+    "unknown_k_zero_default_used": false,
+    "source_zeros": "explicit rounded numeric source zeros, not proof of a lossless real plate",
+    "grade_process_thickness_and_measurement_match": "not established for the intended real substrate",
+    "low_loss_quantitative_uncertainty": "not established; tabulated K uses three decimal places and no uncertainty field was transported into RII data",
+    "manufacturer_point": "provides evidence that source-specific bulk absorption cannot be assumed universal for all optical-grade ZnS; it does not invalidate the archived fixed-source half-space calculation"
+  }
+}

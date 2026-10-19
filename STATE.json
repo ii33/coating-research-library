@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-02T22:26:09.165971+00:00",
+  "updated_at_utc": "2026-10-19T23:43:24.795701+00:00",
   "project_status": "third_sweep_local_complete_consolidated_publication",
   "setup_status": "complete_integrity_checked",
   "round": 3,
@@ -427,5 +427,16 @@
       "archive_sha256": "94607028288ff4bc1304f611985438767f4d0d406f47a83852a7b2e282391ba5",
       "historical_stage_status": "10_ion_sources/round3_ion_state_evidence_gate/stage_status.json"
     }
-  }
+  },
+  "standalone_incremental_studies": [
+    {
+      "id": "BMARK-REAL-NK-DUAL-20261020-v1",
+      "date": "2026-10-20",
+      "path": "08_stack_optimization_algorithms/real_nk_dual_window_20261020/README.md",
+      "scope": "fixed-source normal-incidence dual-window independent verification plus54 applicability diagnostic cases",
+      "status": "accepted_within_explicit_numerical_scope",
+      "device_or_manufacturing_status": "unverified",
+      "prior_topic_round_states_unchanged": true
+    }
+  ]
 }

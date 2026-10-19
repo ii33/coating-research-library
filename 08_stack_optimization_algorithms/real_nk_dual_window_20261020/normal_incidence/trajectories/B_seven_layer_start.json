@@ -1,0 +1,54 @@
+{
+  "schema": "dual_window_research_prescription_v1",
+  "route": "B",
+  "origin": "actual seven-layer starting prescription used by the external routeB driver",
+  "layer_order": "substrate_outward",
+  "thickness_unit": "nm",
+  "incident_medium": {
+    "n": 1.0,
+    "k": 0.0
+  },
+  "substrate": {
+    "material": "ZnS",
+    "model": "semi_infinite_half_space"
+  },
+  "angle_deg": 0.0,
+  "polarization": "unpolarized",
+  "layers": [
+    {
+      "layer": 1,
+      "material": "MgF2",
+      "thickness_nm": 51.41931541980275
+    },
+    {
+      "layer": 2,
+      "material": "ZnS",
+      "thickness_nm": 337.48860032655546
+    },
+    {
+      "layer": 3,
+      "material": "BaF2",
+      "thickness_nm": 233.9418891383475
+    },
+    {
+      "layer": 4,
+      "material": "ZnS",
+      "thickness_nm": 147.50903228260302
+    },
+    {
+      "layer": 5,
+      "material": "NaCl",
+      "thickness_nm": 1022.5347784179879
+    },
+    {
+      "layer": 6,
+      "material": "BaF2",
+      "thickness_nm": 921.1525328022906
+    },
+    {
+      "layer": 7,
+      "material": "MgF2",
+      "thickness_nm": 2156.847329069561
+    }
+  ]
+}

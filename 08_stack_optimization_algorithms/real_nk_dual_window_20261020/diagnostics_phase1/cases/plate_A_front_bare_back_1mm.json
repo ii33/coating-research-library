@@ -1,0 +1,95 @@
+{
+  "case": "plate_A_front_bare_back_1mm",
+  "model": "incoherent_finite_ZnS_plate",
+  "front": "A",
+  "back": "bare",
+  "thickness_mm": 1.0,
+  "angle_deg": 0.0,
+  "polarization": "normal incidence s=p",
+  "transmission_definition": "flux exiting rear coating into air",
+  "orientation": "air -> reverse(front substrate_outward list) -> bulk ZnS -> back substrate_outward list -> air",
+  "coherence_assumption": "substrate phase averaged, coatings coherent; scenario, physical measurement coherence not verified",
+  "windows": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "grid_points": 4271,
+      "Rmax": 0.15668581146409746,
+      "Rmax_nm": 3000.0,
+      "Tmin": 0.013962568811951468,
+      "Tmin_nm": 3067.5,
+      "Amax": 0.9772085992492124,
+      "Amax_nm": 3067.5,
+      "local_extremum_brackets": 29,
+      "diagnostic_guard_pass": false,
+      "physical_goal_pass": false,
+      "R_guard_failure_intervals_nm": [
+        [
+          3000.0,
+          3059.900357319445
+        ],
+        [
+          3075.1041603811855,
+          3117.9911506745557
+        ],
+        [
+          3189.5443405221886,
+          3221.742852960207
+        ],
+        [
+          3229.7564524006393,
+          3264.3886146176555
+        ],
+        [
+          3879.8633012877417,
+          4379.042087545888
+        ],
+        [
+          4821.291683746394,
+          5000.0
+        ]
+      ],
+      "T_guard_failure_intervals_nm": [
+        [
+          3000.0,
+          5000.0
+        ]
+      ]
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "grid_points": 4193,
+      "Rmax": 0.01085754876777054,
+      "Rmax_nm": 10646.436173568667,
+      "Tmin": 0.001835978156109293,
+      "Tmin_nm": 8196.7,
+      "Amax": 0.9936671413973656,
+      "Amax_nm": 8474.6,
+      "local_extremum_brackets": 11,
+      "diagnostic_guard_pass": false,
+      "physical_goal_pass": false,
+      "R_guard_failure_intervals_nm": [
+        [
+          10125.764707042688,
+          11128.19140180123
+        ]
+      ],
+      "T_guard_failure_intervals_nm": [
+        [
+          8000.0,
+          12000.0
+        ]
+      ]
+    }
+  ],
+  "diagnostic_guard_pass": false,
+  "physical_goal_pass": false,
+  "minimum_finite_total_absorption": 0.0,
+  "continuous_certificate": false,
+  "original_target_not_modified": true
+}

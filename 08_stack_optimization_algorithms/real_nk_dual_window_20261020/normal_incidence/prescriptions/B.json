@@ -1,0 +1,69 @@
+{
+  "schema": "dual_window_research_prescription_v1",
+  "route": "B",
+  "origin": "one explicit prior seven-layer prescription, followed by grouped insertions/order changes and local minimax",
+  "layer_order": "substrate_outward",
+  "thickness_unit": "nm",
+  "incident_medium": {
+    "n": 1.0,
+    "k": 0.0
+  },
+  "substrate": {
+    "material": "ZnS",
+    "model": "semi_infinite_half_space"
+  },
+  "angle_deg": 0.0,
+  "polarization": "unpolarized",
+  "layers": [
+    {
+      "layer": 1,
+      "material": "MgF2",
+      "thickness_nm": 89.83685
+    },
+    {
+      "layer": 2,
+      "material": "ZnS",
+      "thickness_nm": 430.414312
+    },
+    {
+      "layer": 3,
+      "material": "MgF2",
+      "thickness_nm": 287.028096
+    },
+    {
+      "layer": 4,
+      "material": "Ge",
+      "thickness_nm": 60.63779
+    },
+    {
+      "layer": 5,
+      "material": "MgF2",
+      "thickness_nm": 447.595956
+    },
+    {
+      "layer": 6,
+      "material": "ZnS",
+      "thickness_nm": 218.260068
+    },
+    {
+      "layer": 7,
+      "material": "MgF2",
+      "thickness_nm": 595.545225
+    },
+    {
+      "layer": 8,
+      "material": "Ge",
+      "thickness_nm": 23.273396
+    },
+    {
+      "layer": 9,
+      "material": "NaCl",
+      "thickness_nm": 29.799145
+    },
+    {
+      "layer": 10,
+      "material": "MgF2",
+      "thickness_nm": 1086.167674
+    }
+  ]
+}

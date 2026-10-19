@@ -1,0 +1,540 @@
+{
+  "created_utc": "2026-10-19T23:49:27.901820+00:00",
+  "ZnS_yaml_sha256": "5c0c69fc26e63a73bf68c3725e06e55919a1ea986931097e88c33dafc0937a2b",
+  "ZnS_csv_exact_numeric_match": true,
+  "substrate_mm": 1.0,
+  "phase_average_crosschecks": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "phase_samples": 64,
+      "wavelengths_nm": [
+        3000.0,
+        3067.5,
+        3125.0,
+        3246.7999999999997,
+        3250.0,
+        3375.0,
+        3500.0,
+        3625.0,
+        3750.0,
+        3875.0,
+        4000.0,
+        4125.0,
+        4250.0,
+        4375.0,
+        4500.0,
+        4625.0,
+        4750.0,
+        4875.0,
+        5000.0
+      ],
+      "max_abs_RT_difference": 1.7763568394002505e-15
+    },
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "phase_samples": 256,
+      "wavelengths_nm": [
+        3000.0,
+        3067.5,
+        3125.0,
+        3246.7999999999997,
+        3250.0,
+        3375.0,
+        3500.0,
+        3625.0,
+        3750.0,
+        3875.0,
+        4000.0,
+        4125.0,
+        4250.0,
+        4375.0,
+        4500.0,
+        4625.0,
+        4750.0,
+        4875.0,
+        5000.0
+      ],
+      "max_abs_RT_difference": 1.5543122344752192e-15
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "phase_samples": 64,
+      "wavelengths_nm": [
+        8000.0,
+        8196.7,
+        8250.0,
+        8474.6,
+        8500.0,
+        8750.0,
+        9000.0,
+        9250.0,
+        9500.0,
+        9750.0,
+        10000.0,
+        10250.0,
+        10500.0,
+        10573.51179146591,
+        10750.0,
+        11000.0,
+        11250.0,
+        11500.0,
+        11750.0,
+        12000.0
+      ],
+      "max_abs_RT_difference": 1.6653345369377348e-16
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "phase_samples": 256,
+      "wavelengths_nm": [
+        8000.0,
+        8196.7,
+        8250.0,
+        8474.6,
+        8500.0,
+        8750.0,
+        9000.0,
+        9250.0,
+        9500.0,
+        9750.0,
+        10000.0,
+        10250.0,
+        10500.0,
+        10573.51179146591,
+        10750.0,
+        11000.0,
+        11250.0,
+        11500.0,
+        11750.0,
+        12000.0
+      ],
+      "max_abs_RT_difference": 1.8041124150158794e-16
+    }
+  ],
+  "windows": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "audit_points": 24401,
+      "Rmax": 0.019184643477240762,
+      "Rmax_nm": 3246.7999999999997,
+      "Rmax_brackets": 11,
+      "Tmin": 0.016208779056229614,
+      "Tmin_nm": 3067.5,
+      "Tmin_brackets": 7,
+      "Amax": 0.9750003353474298,
+      "Amax_nm": 3067.5,
+      "Amax_brackets": 7,
+      "bulk": {
+        "alpha_max_per_cm": 40.96616337199404,
+        "max_alpha_nm": 3067.5,
+        "k_at_max_alpha": 0.001,
+        "survival_at_1mm": 0.01662884672584148,
+        "scope": "Extrema of k/lambda for a piecewise linear k in wavelength occur at source nodes or domain endpoints; exact for this interpolant, not a physical certificate."
+      },
+      "difference_from_diagnostic": {
+        "Rmax": 2.0816681711721685e-17,
+        "Tmin": -6.938893903907228e-18,
+        "Amax": 0.0
+      },
+      "max_abs_RTA_difference_on_original_grid": 7.438494264988549e-15
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "audit_points": 24411,
+      "Rmax": 0.009757209400661652,
+      "Rmax_nm": 10573.51179146591,
+      "Rmax_brackets": 1,
+      "Tmin": 0.002116421032215351,
+      "Tmin_nm": 8196.7,
+      "Tmin_brackets": 3,
+      "Amax": 0.9933193518180798,
+      "Amax_nm": 8474.6,
+      "Amax_brackets": 3,
+      "bulk": {
+        "alpha_max_per_cm": 61.32404804059767,
+        "max_alpha_nm": 8196.7,
+        "k_at_max_alpha": 0.004,
+        "survival_at_1mm": 0.002171352998616103,
+        "scope": "Extrema of k/lambda for a piecewise linear k in wavelength occur at source nodes or domain endpoints; exact for this interpolant, not a physical certificate."
+      },
+      "difference_from_diagnostic": {
+        "Rmax": 3.2959746043559335e-17,
+        "Tmin": -4.336808689942018e-19,
+        "Amax": 0.0
+      },
+      "max_abs_RTA_difference_on_original_grid": 7.771561172376096e-16
+    }
+  ],
+  "point_absorption": [
+    {
+      "wavelength_nm": 3067.5,
+      "n": 2.261,
+      "k": 0.001,
+      "alpha_cm_inverse": 40.96616337199404,
+      "optical_depth_at_1mm": 4.096616337199404,
+      "survival_at_1mm": 0.01662884672584148,
+      "R_difference_from_setting_k_zero": 7.997556514260928e-08
+    },
+    {
+      "wavelength_nm": 3800.0,
+      "n": 2.256,
+      "k": 0.001,
+      "alpha_cm_inverse": 33.06939635357677,
+      "optical_depth_at_1mm": 3.3069396353576774,
+      "survival_at_1mm": 0.03662809773751546,
+      "R_difference_from_setting_k_zero": 8.029000053699775e-08
+    },
+    {
+      "wavelength_nm": 4000.0,
+      "n": 2.255,
+      "k": 0.0,
+      "alpha_cm_inverse": 0.0,
+      "optical_depth_at_1mm": 0.0,
+      "survival_at_1mm": 1.0,
+      "R_difference_from_setting_k_zero": 0.0
+    },
+    {
+      "wavelength_nm": 8196.7,
+      "n": 2.22,
+      "k": 0.004,
+      "alpha_cm_inverse": 61.32404804059767,
+      "optical_depth_at_1mm": 6.132404804059767,
+      "survival_at_1mm": 0.002171352998616103,
+      "R_difference_from_setting_k_zero": 1.3216266623594652e-06
+    },
+    {
+      "wavelength_nm": 9270.0,
+      "n": 2.2088775042930737,
+      "k": 0.003,
+      "alpha_cm_inverse": 40.66786606588729,
+      "optical_depth_at_1mm": 4.066786606588729,
+      "survival_at_1mm": 0.017132353139392893,
+      "R_difference_from_setting_k_zero": 7.499998884996639e-07
+    },
+    {
+      "wavelength_nm": 10000.0,
+      "n": 2.199,
+      "k": 0.002,
+      "alpha_cm_inverse": 25.132741228718345,
+      "optical_depth_at_1mm": 2.5132741228718345,
+      "survival_at_1mm": 0.08100259215794314,
+      "R_difference_from_setting_k_zero": 3.359603940045197e-07
+    },
+    {
+      "wavelength_nm": 10600.0,
+      "n": 2.189518501805054,
+      "k": 0.002,
+      "alpha_cm_inverse": 23.710133234639947,
+      "optical_depth_at_1mm": 2.3710133234639947,
+      "survival_at_1mm": 0.09338604804262989,
+      "R_difference_from_setting_k_zero": 3.3850721384287574e-07
+    },
+    {
+      "wavelength_nm": 12000.0,
+      "n": 2.1650323802962452,
+      "k": 0.004,
+      "alpha_cm_inverse": 41.88790204786391,
+      "optical_depth_at_1mm": 4.188790204786391,
+      "survival_at_1mm": 0.015164619864546564,
+      "R_difference_from_setting_k_zero": 1.3808008522964155e-06
+    }
+  ],
+  "supplier_points": [
+    {
+      "source": "Coherent CVD",
+      "wavelength_um": 10.6,
+      "alpha_cm_inverse": 0.24,
+      "relation": "upper_bound",
+      "equivalent_k": 2.0244508761289087e-05,
+      "one_pass_survival_1mm": 0.9762857097579093,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    },
+    {
+      "source": "Coherent MS",
+      "wavelength_um": 10.6,
+      "alpha_cm_inverse": 0.2,
+      "relation": "upper_bound",
+      "equivalent_k": 1.6870423967740905e-05,
+      "one_pass_survival_1mm": 0.9801986733067553,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    },
+    {
+      "source": "Crystran MS",
+      "wavelength_um": 10.6,
+      "alpha_cm_inverse": 0.2,
+      "relation": "nominal_point",
+      "equivalent_k": 1.6870423967740905e-05,
+      "one_pass_survival_1mm": 0.9801986733067553,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    },
+    {
+      "source": "Crystran MS",
+      "wavelength_um": 9.27,
+      "alpha_cm_inverse": 0.006,
+      "relation": "nominal_point",
+      "equivalent_k": 4.4260989673856097e-07,
+      "one_pass_survival_1mm": 0.9994001799640054,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    },
+    {
+      "source": "Crystran MS",
+      "wavelength_um": 3.8,
+      "alpha_cm_inverse": 0.0006,
+      "relation": "nominal_point",
+      "equivalent_k": 1.8143663512476068e-08,
+      "one_pass_survival_1mm": 0.999940001799964,
+      "scope": "Only at this wavelength for this specified grade; not a broadband replacement k or coated plate prediction."
+    }
+  ],
+  "ARIA_columns": {
+    "format": "WAVN N K DN DK",
+    "rows": 312,
+    "selected_rows": [
+      {
+        "wavelength_nm_printed": 3067.5,
+        "WN_cm_inverse": 3260.0,
+        "n": 2.261,
+        "k": 0.001,
+        "DN": 0.007,
+        "DK": 0.001
+      },
+      {
+        "wavelength_nm_printed": 8196.7,
+        "WN_cm_inverse": 1220.0,
+        "n": 2.22,
+        "k": 0.004,
+        "DN": 0.007,
+        "DK": 0.004
+      },
+      {
+        "wavelength_nm_printed": 10000.0,
+        "WN_cm_inverse": 1000.0,
+        "n": 2.199,
+        "k": 0.002,
+        "DN": 0.007,
+        "DK": 0.002
+      }
+    ],
+    "DN_DK_scope": "Oxford documentation defines uncertainty columns; original confidence level, correlation and derivation not established; not a justified 1-sigma bound."
+  },
+  "rounding_sensitivity": [
+    {
+      "wavelength_nm": 3067.5,
+      "hypothetical_delta_k": 0.0005,
+      "delta_optical_depth_1mm": 2.048308168599702,
+      "multiplicative_survival_factor": 7.75477023804037,
+      "scope": "rounding sensitivity example only, not source measurement uncertainty"
+    },
+    {
+      "wavelength_nm": 8196.7,
+      "hypothetical_delta_k": 0.0005,
+      "delta_optical_depth_1mm": 0.7665506005074708,
+      "multiplicative_survival_factor": 2.1523291912390805,
+      "scope": "rounding sensitivity example only, not source measurement uncertainty"
+    },
+    {
+      "wavelength_nm": 10600.0,
+      "hypothetical_delta_k": 0.0005,
+      "delta_optical_depth_1mm": 0.5927533308659988,
+      "multiplicative_survival_factor": 1.8089622365293567,
+      "scope": "rounding sensitivity example only, not source measurement uncertainty"
+    }
+  ],
+  "user_production_experience": {
+    "verbatim": "实际生产时吸收数据总是更低的",
+    "evidence_type": "user-reported production experience",
+    "scope": "Valid motivation to prioritize matched low-loss production data; no numerical spectral k or uncertainty supplied; not identified with the old Querry sample."
+  },
+  "production_pending_calibration": {
+    "substrate_grade_batch": "not supplied",
+    "actual_broadband_k": "unknown",
+    "scope": "Separate from the reproducible Querry reference scenario. No production feasibility rejection; reflection optimization and absorption applicability must be reported separately."
+  },
+  "explicit_substrate_k_sensitivity": [
+    {
+      "substrate_k_multiplier": 0.01,
+      "n_policy": "unchanged Querry n; not asserted production n",
+      "film_policy": "all coating n/k unchanged, including finite ZnS films",
+      "source_zero_policy": "rounded original zeros retained in this mathematical sensitivity only; not assigned to production unknowns",
+      "measured": false,
+      "scope": "uniform scaling of substrate k only; arbitrary hypothetical sensitivity, not actual material data or a fitted correction; fixed A/A layers, no optimization",
+      "alpha_at_10_6_cm_inverse": 0.2371013323463995,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "points": 8389,
+          "Rmax": 0.019184643477240762,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.9326495426341381,
+          "Tmin_nm": 3422.94,
+          "Amax": 0.049318708358263796,
+          "Amax_nm": 3422.94
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "points": 8399,
+          "Rmax": 0.018151517801926934,
+          "Rmax_nm": 8000.0,
+          "Tmin": 0.9169824153324292,
+          "Tmin_nm": 8196.7,
+          "Amax": 0.0708725194753177,
+          "Amax_nm": 8196.7
+        }
+      ]
+    },
+    {
+      "substrate_k_multiplier": 0.001,
+      "n_policy": "unchanged Querry n; not asserted production n",
+      "film_policy": "all coating n/k unchanged, including finite ZnS films",
+      "source_zero_policy": "rounded original zeros retained in this mathematical sensitivity only; not assigned to production unknowns",
+      "measured": false,
+      "scope": "uniform scaling of substrate k only; arbitrary hypothetical sensitivity, not actual material data or a fitted correction; fixed A/A layers, no optimization",
+      "alpha_at_10_6_cm_inverse": 0.023710133234639944,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "points": 8389,
+          "Rmax": 0.019184643477240762,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.9638026836198763,
+          "Tmin_nm": 3502.68,
+          "Amax": 0.01739599201253328,
+          "Amax_nm": 3422.94
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "points": 8399,
+          "Rmax": 0.0189125161511455,
+          "Rmax_nm": 8000.0,
+          "Tmin": 0.9611801994686502,
+          "Tmin_nm": 11904.8,
+          "Amax": 0.029862191170075603,
+          "Amax_nm": 12000.0
+        }
+      ]
+    },
+    {
+      "substrate_k_multiplier": 0.0001,
+      "n_policy": "unchanged Querry n; not asserted production n",
+      "film_policy": "all coating n/k unchanged, including finite ZnS films",
+      "source_zero_policy": "rounded original zeros retained in this mathematical sensitivity only; not assigned to production unknowns",
+      "measured": false,
+      "scope": "uniform scaling of substrate k only; arbitrary hypothetical sensitivity, not actual material data or a fitted correction; fixed A/A layers, no optimization",
+      "alpha_at_10_6_cm_inverse": 0.0023710133234639947,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "points": 8389,
+          "Rmax": 0.019184643477240762,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.9669203384835082,
+          "Tmin_nm": 3502.6800000004646,
+          "Amax": 0.014213076944002978,
+          "Amax_nm": 3502.68
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "points": 8399,
+          "Rmax": 0.018992238115094633,
+          "Rmax_nm": 8000.0,
+          "Tmin": 0.9644195161474927,
+          "Tmin_nm": 11353.59999999958,
+          "Amax": 0.02620130604521176,
+          "Amax_nm": 12000.0
+        }
+      ]
+    },
+    {
+      "substrate_k_multiplier": 1e-05,
+      "n_policy": "unchanged Querry n; not asserted production n",
+      "film_policy": "all coating n/k unchanged, including finite ZnS films",
+      "source_zero_policy": "rounded original zeros retained in this mathematical sensitivity only; not assigned to production unknowns",
+      "measured": false,
+      "scope": "uniform scaling of substrate k only; arbitrary hypothetical sensitivity, not actual material data or a fitted correction; fixed A/A layers, no optimization",
+      "alpha_at_10_6_cm_inverse": 0.00023710133234639946,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "points": 8389,
+          "Rmax": 0.019184643477240762,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.9672326583032883,
+          "Tmin_nm": 3502.68,
+          "Amax": 0.013894736588398127,
+          "Amax_nm": 3502.68
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "points": 8399,
+          "Rmax": 0.01900024768152581,
+          "Rmax_nm": 8000.0,
+          "Tmin": 0.9647077943826662,
+          "Tmin_nm": 11353.600000000015,
+          "Amax": 0.025834451758221744,
+          "Amax_nm": 12000.0
+        }
+      ]
+    }
+  ],
+  "stability": {
+    "changes": {
+      "diagnostics": [],
+      "original_research": [],
+      "candidate_package": [],
+      "product_python": [],
+      "named_freeze_current": [],
+      "named_freeze_expected": []
+    },
+    "counts": {
+      "diagnostics": 126,
+      "original_research": 111,
+      "candidate_package": 40,
+      "product_python": 350,
+      "named_freeze_current": 62,
+      "named_freeze_expected": 62
+    },
+    "named62_matches_freeze": true
+  }
+}

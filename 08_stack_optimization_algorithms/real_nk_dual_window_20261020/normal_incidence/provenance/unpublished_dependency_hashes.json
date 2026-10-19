@@ -1,0 +1,29 @@
+{
+  "search_driver_sha256": "a5678f5d53f083a2d65d199ceb69bceea9bc3e3ec291fc1cdebe970d65579db4",
+  "core_source_sha256": {
+    "coat_sim/core/film_auto_synthesis.py": "95db8246d5d19d8f82ac855d9174a35a7acc2ed1d3fec0af315aec7f345b00ab",
+    "coat_sim/core/film_synthesis_audit.py": "93d47ef02830f49e87f178cf9ed806cdbef7b18dd208eb1a495a3eb21ef6cc59",
+    "coat_sim/core/film_physical_structures.py": "e9ce902b700bfb942f8c74f7a55b328e2fd2f59749f9da96579f04d4caf36a84",
+    "coat_sim/core/film_synthesis_io.py": "169fb063d464bccac01916890e3be57432a92347bf959e854373221119a47bb4",
+    "coat_sim/core/film_synthesis_jobs.py": "4ced06106d63ee812050c15e9016ad91c98ae464cf52cfed3629323ca14abbfa",
+    "coat_sim/film_synthesis_cli.py": "9c90ad5a13b68b93eab7e994f14bf7e6cb8650f044b99d1f1c2122a81d0c26a8",
+    "coat_sim/core/compute_estimation.py": "eb74cc6cb6e981980d02e722203f220a83a2cd539fe9d0ec1d2a0e0003fb2637",
+    "coat_sim/core/compute_tasks.py": "d70d0f8fecabf8f6ff72a37277b21040e0c7bdf576ef89febcd084c56b76d9be",
+    "coat_sim/core/mcp_contracts.py": "39dff07b49d66b29b4ff6f96e48f296b45ac3d24ac624b364d5f972d8f059103",
+    "coat_sim/mcp/server.py": "0704420556e01badc27ba3419bb313bf71f8a60a3f4ca89b7272bbc5730e03e8",
+    "coat_sim/agent/runtime.py": "cee4dd1ae0180b05f33fe1cdb927983b6aaac22f4487d58ace091037b4feceb3",
+    "coat_sim/agent/tool_dispatch.py": "b145b0bb40980b29b9549aed34b8fc96bfe96e8707d85b095c505a4747a6b5a9",
+    "coat_sim/scheduler/daemon.py": "376c77e39b41886c2996f341be302d9c909324c1416fcb2be2adb2d26fb26f53",
+    "coat_sim/scheduler/jobs.py": "ccf827d11d8f5b5bedf163f555800bd3d83ac6f58e24e575775df3d38b296c27",
+    "coat_sim/scheduler/remote_contract.py": "dc2f73b1fd1d011037c24424f96bfb4856a3904f5a65299f202aebd96b38057e",
+    "coat_sim/scheduler/remote_server.py": "3d9bddb99bcb983a97509d7dade4802099dc32d6106a98bfea6d21121b510e95",
+    "coat_sim/scheduler/result_capability.py": "81e8d9a612f9813f5f9e1c3db2e05a7d4e517f4a1c7765dca89a3a9e876c1e1f",
+    "coat_sim/scheduler/store.py": "0f3ba54f9593daaed0518d4f67cdd8d4e61b9d255216fb180189a2bec771450c",
+    "coat_sim/scheduler/submission.py": "8ac83565d3a6622bfcd767c786a057e92bf0b0be3e64f6109d2cfeea8bb7f6cc",
+    "coat_sim/scheduler/worker.py": "d0150679c17017d4dc5ac076e8704eb397800fd967ab5a8b72d0b44381a13b13",
+    "tools/run_film_synthesis_acceptance.py": "ee7169b32832b215095a72e9dea1b8ad604aa2b908b8ed61aeba812ba1f60a8d"
+  },
+  "code_included": false,
+  "history_reference": "v3 frozen functional core;514 tests/105 subtests reported in original stage evidence",
+  "search_reproduction_limit": "The complete structure search calls unpublished v3 optical/Jacobian/audit interfaces. This minimal archive contains no production core and no standalone replacement for the full search. Standalone verification of the final prescriptions requires only this archive and Python standard library."
+}

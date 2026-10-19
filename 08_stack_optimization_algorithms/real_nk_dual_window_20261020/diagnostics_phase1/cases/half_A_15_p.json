@@ -1,0 +1,56 @@
+{
+  "case": "half_A_15_p",
+  "model": "coating_on_ZnS_halfspace",
+  "route": "A",
+  "angle_deg": 15,
+  "polarization": "p",
+  "transmission_definition": "flux entering semi-infinite ZnS",
+  "windows": [
+    {
+      "window_nm": [
+        3000.0,
+        5000.0
+      ],
+      "grid_points": 4271,
+      "Rmax": 0.011110929129215762,
+      "Rmax_nm": 5000.0,
+      "Tmin": 0.983986971925332,
+      "Tmin_nm": 3502.68,
+      "Amax": 0.0070736005081485365,
+      "Amax_nm": 3502.68,
+      "local_extremum_brackets": 27,
+      "diagnostic_guard_pass": false,
+      "physical_goal_pass": false,
+      "R_guard_failure_intervals_nm": [
+        [
+          4962.197211567081,
+          5000.0
+        ]
+      ],
+      "T_guard_failure_intervals_nm": []
+    },
+    {
+      "window_nm": [
+        8000.0,
+        12000.0
+      ],
+      "grid_points": 4193,
+      "Rmax": 0.008931623596945774,
+      "Rmax_nm": 10416.7,
+      "Tmin": 0.9831172087922891,
+      "Tmin_nm": 11353.6,
+      "Amax": 0.013220192477178538,
+      "Amax_nm": 12000.0,
+      "local_extremum_brackets": 14,
+      "diagnostic_guard_pass": true,
+      "physical_goal_pass": true,
+      "R_guard_failure_intervals_nm": [],
+      "T_guard_failure_intervals_nm": []
+    }
+  ],
+  "diagnostic_guard_pass": false,
+  "physical_goal_pass": false,
+  "minimum_finite_total_absorption": 0.0,
+  "continuous_certificate": false,
+  "original_target_not_modified": true
+}

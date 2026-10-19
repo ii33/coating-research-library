@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-20",
+  "original_Querry_experiment_unchanged": true,
+  "user_reported_production_experience": {
+    "verbatim": "实际生产时吸收数据总是更低的",
+    "evidence_type": "user production experience, not a numerical measurement dataset",
+    "sample_identity_thickness_spectrum_and_uncertainty": null
+  },
+  "original_source_reference_scenario": "Querry1987 source-specific CVD sample; not a compulsory property of the user production material",
+  "production_material_scenario": "pending calibrated bulk optical loss and actual thickness; real dual-window product feasibility is not negated by the old reference source",
+  "sensitivity_protocol": {
+    "bulk_k_scales": [
+      1.0,
+      0.1,
+      0.01,
+      0.001
+    ],
+    "substrate_thickness_mm": 1.0,
+    "front_and_back": [
+      "A/A",
+      "B/B"
+    ],
+    "bulk_n": "held at original Querry real n",
+    "bulk_k": "explicit factor times original Querry k",
+    "coating_n_k": "unchanged original sources, including finite ZnS films",
+    "measurement_status": "all scaled scenarios are assumed, not measured or fitted",
+    "causality": "n held fixed while k changes; no Kramers-Kronig-consistent material reconstruction claimed",
+    "unchanged_original_goal": true
+  },
+  "traceable_low_loss_context": [
+    {
+      "source": "Coherent ZnS material properties,20C",
+      "url": "https://www.coherent.com/optics/crystals/bulk-optical-materials/zinc-sulfide",
+      "quantity": "bulk absorption coefficient",
+      "wavelength_um": 10.6,
+      "reported_upper_bound_per_cm": 0.24,
+      "completeness": "one wavelength bound only, not a full3–12um n/k dataset; not substituted into original experiment"
+    },
+    {
+      "source": "Edmund Optics multispectral ZnS windows",
+      "url": "https://www.edmundoptics.com/f/zinc-sulfide-multispectral-windows/14004/",
+      "role": "manufacturer availability/context for visible-to-LWIR multispectral ZnS and3–12um BBAR option; no calibrated full k table inferred"
+    }
+  ]
+}

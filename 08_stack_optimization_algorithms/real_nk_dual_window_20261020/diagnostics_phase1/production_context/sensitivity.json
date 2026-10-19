@@ -1,0 +1,265 @@
+{
+  "protocol": "protocol.json",
+  "scenarios": [
+    {
+      "route_both_sides": "A",
+      "bulk_k_scale": 1.0,
+      "thickness_mm": 1.0,
+      "assumed_not_measured": false,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "Rmax": 0.01918464347724074,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.01620877905622962,
+          "Tmin_nm": 3067.5,
+          "Amax": 0.9750003353474298,
+          "Amax_nm": 3067.5
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "Rmax": 0.00975720940066162,
+          "Rmax_nm": 10573.51179132184,
+          "Tmin": 0.0021164210322153513,
+          "Tmin_nm": 8196.7,
+          "Amax": 0.9933193518180798,
+          "Amax_nm": 8474.6
+        }
+      ]
+    },
+    {
+      "route_both_sides": "A",
+      "bulk_k_scale": 0.1,
+      "thickness_mm": 1.0,
+      "assumed_not_measured": true,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "Rmax": 0.01918464347724074,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.6471401837413192,
+          "Tmin_nm": 3067.5,
+          "Amax": 0.3403204640728199,
+          "Amax_nm": 3067.5
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "Rmax": 0.015087536825319747,
+          "Rmax_nm": 10569.26479288266,
+          "Tmin": 0.5280146360292327,
+          "Tmin_nm": 8196.7,
+          "Amax": 0.46362634165696603,
+          "Amax_nm": 8196.7
+        }
+      ]
+    },
+    {
+      "route_both_sides": "A",
+      "bulk_k_scale": 0.01,
+      "thickness_mm": 1.0,
+      "assumed_not_measured": true,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "Rmax": 0.01918464347724074,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.9326495426341394,
+          "Tmin_nm": 3422.94,
+          "Amax": 0.049318708358262575,
+          "Amax_nm": 3422.94
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "Rmax": 0.018151517801926913,
+          "Rmax_nm": 8000.0,
+          "Tmin": 0.9169824153324313,
+          "Tmin_nm": 8196.7,
+          "Amax": 0.07087251947531548,
+          "Amax_nm": 8196.7
+        }
+      ]
+    },
+    {
+      "route_both_sides": "A",
+      "bulk_k_scale": 0.001,
+      "thickness_mm": 1.0,
+      "assumed_not_measured": true,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "Rmax": 0.01918464347724074,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.9638026836198714,
+          "Tmin_nm": 3502.68,
+          "Amax": 0.017395992012531503,
+          "Amax_nm": 3422.94
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "Rmax": 0.01891251615114549,
+          "Rmax_nm": 8000.0,
+          "Tmin": 0.9611801994686532,
+          "Tmin_nm": 11904.8,
+          "Amax": 0.029862191170074603,
+          "Amax_nm": 12000.0
+        }
+      ]
+    },
+    {
+      "route_both_sides": "B",
+      "bulk_k_scale": 1.0,
+      "thickness_mm": 1.0,
+      "assumed_not_measured": false,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "Rmax": 0.01787919243867618,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.016248144538264,
+          "Tmin_nm": 3067.5,
+          "Amax": 0.9829278065521942,
+          "Amax_nm": 3067.5
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "Rmax": 0.00923733426629914,
+          "Rmax_nm": 12000.0,
+          "Tmin": 0.002099774679768445,
+          "Tmin_nm": 8196.7,
+          "Amax": 0.9886919798934408,
+          "Amax_nm": 8196.7
+        }
+      ]
+    },
+    {
+      "route_both_sides": "B",
+      "bulk_k_scale": 0.1,
+      "thickness_mm": 1.0,
+      "assumed_not_measured": true,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "Rmax": 0.01787919243867618,
+          "Rmax_nm": 3246.7999999999997,
+          "Tmin": 0.6486821522498378,
+          "Tmin_nm": 3067.5,
+          "Amax": 0.3502179566484579,
+          "Amax_nm": 3067.5
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "Rmax": 0.012965447665053646,
+          "Rmax_nm": 8620.699999999999,
+          "Tmin": 0.5235931602743787,
+          "Tmin_nm": 8196.7,
+          "Amax": 0.46449303122775554,
+          "Amax_nm": 8196.7
+        }
+      ]
+    },
+    {
+      "route_both_sides": "B",
+      "bulk_k_scale": 0.01,
+      "thickness_mm": 1.0,
+      "assumed_not_measured": true,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "Rmax": 0.01793086071979593,
+          "Rmax_nm": 5000.0,
+          "Tmin": 0.9281360728387392,
+          "Tmin_nm": 3268.0,
+          "Amax": 0.06069807909408431,
+          "Amax_nm": 3067.5
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "Rmax": 0.017341554062293804,
+          "Rmax_nm": 8000.0,
+          "Tmin": 0.9092762749990344,
+          "Tmin_nm": 8196.7,
+          "Amax": 0.07365753188993929,
+          "Amax_nm": 8196.7
+        }
+      ]
+    },
+    {
+      "route_both_sides": "B",
+      "bulk_k_scale": 0.001,
+      "thickness_mm": 1.0,
+      "assumed_not_measured": true,
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "Rmax": 0.018332477289954668,
+          "Rmax_nm": 5000.0,
+          "Tmin": 0.9599154735642019,
+          "Tmin_nm": 3422.94,
+          "Amax": 0.028517519839992844,
+          "Amax_nm": 3422.94
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "Rmax": 0.018047994744716384,
+          "Rmax_nm": 8000.0,
+          "Tmin": 0.9459927307570916,
+          "Tmin_nm": 12000.0,
+          "Amax": 0.03718173321729579,
+          "Amax_nm": 12000.0
+        }
+      ]
+    }
+  ],
+  "unscaled_reference_reproduction_max_RTA_difference": 2.220446049250313e-16,
+  "no_production_feasibility_denial_from_reference_k": true,
+  "continuous_certificate": false,
+  "interpretation": "Lower assumed bulk k can materially improve full-plate T; the exact production n/k must be calibrated. This does not convert sensitivity assumptions into measurements, and whole-plate R still includes both coatings."
+}

@@ -1,0 +1,89 @@
+{
+  "kernel": "standalone characteristic matrix and raw-table linear interpolation",
+  "dependencies": "Python standard library only",
+  "normal_incidence_only": true,
+  "transmission_definition": "power flux entering ZnS half-space",
+  "dense_points_per_window": 10001,
+  "shifted_points_per_window": 10000,
+  "source_knots_included": true,
+  "dimensionless_extremum_tolerance": 1e-12,
+  "routes": {
+    "A": {
+      "route": "A",
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "grid_points": 20229,
+          "Rmax": 0.009689032329900215,
+          "Rmax_nm": 3597.100000000021,
+          "Tmin": 0.9834272034773764,
+          "Tmin_nm": 3502.6800000000235,
+          "Amax": 0.007000304840242055,
+          "Amax_nm": 3502.6800000000235,
+          "local_extremum_brackets": 60
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "grid_points": 20163,
+          "Rmax": 0.009682594998395843,
+          "Rmax_nm": 10568.875716496983,
+          "Tmin": 0.9821899858304999,
+          "Tmin_nm": 11353.6000000004,
+          "Amax": 0.012587045231928329,
+          "Amax_nm": 12000.0,
+          "local_extremum_brackets": 55
+        }
+      ],
+      "targets_met": true,
+      "max_metric_difference_from_original_audit": 4.440892098500626e-16,
+      "original_metrics_match": true,
+      "scalar_physical_evaluations": 47522,
+      "continuous_certificate": false
+    },
+    "B": {
+      "route": "B",
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "grid_points": 20229,
+          "Rmax": 0.009244764891000684,
+          "Rmax_nm": 4012.492206104597,
+          "Tmin": 0.9815546521601801,
+          "Tmin_nm": 3422.939999999968,
+          "Amax": 0.012537778036754044,
+          "Amax_nm": 3422.9400000000014,
+          "local_extremum_brackets": 44
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "grid_points": 20163,
+          "Rmax": 0.009235688874862312,
+          "Rmax_nm": 8363.730000002728,
+          "Tmin": 0.9745998884817734,
+          "Tmin_nm": 12000.0,
+          "Amax": 0.016164538946635942,
+          "Amax_nm": 12000.0,
+          "local_extremum_brackets": 60
+        }
+      ],
+      "targets_met": true,
+      "max_metric_difference_from_original_audit": 7.771561172376096e-16,
+      "original_metrics_match": true,
+      "scalar_physical_evaluations": 46840,
+      "continuous_certificate": false
+    }
+  },
+  "verification_passed": true
+}

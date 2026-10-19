@@ -1,0 +1,167 @@
+{
+  "materials": [
+    {
+      "id": "ZnS",
+      "source_path": "main/ZnS/nk/Querry.yml",
+      "source_sha256": "5c0c69fc26e63a73bf68c3725e06e55919a1ea986931097e88c33dafc0937a2b",
+      "local_store_read_verifies_sha256": true,
+      "frozen_snapshot_matches_current_source_numeric_fields": true,
+      "n_and_k_domain_nm": [
+        220.0,
+        166666.69999999998
+      ],
+      "explicit_k": true,
+      "source": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/ZnS/nk/Querry.yml\nM. R. Querry. Optical constants of minerals and other materials from the millimeter to the ultraviolet, <a href=\"https://apps.dtic.mil/sti/citations/ADA192210\"><i>Contractor Report</i> CRDEC-CR-88009 (1987)</a>\n",
+      "notes": "RII snapshot=c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1; source_sha256=5c0c69fc26e63a73bf68c3725e06e55919a1ea986931097e88c33dafc0937a2b; blocks=[0]; excluded_blocks=[]. Conditions are source-specific; production validation not established.\n\nCONDITIONS: {}",
+      "provenance": {
+        "snapshot_id": "c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1",
+        "entry_id": "rii_6eff45ec4cc8a6b2f69723fd",
+        "source_sha256": "5c0c69fc26e63a73bf68c3725e06e55919a1ea986931097e88c33dafc0937a2b",
+        "source_path": "main/ZnS/nk/Querry.yml",
+        "upstream_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+        "source_url": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/ZnS/nk/Querry.yml",
+        "license": "CC0-1.0",
+        "block_selection": [
+          0
+        ],
+        "excluded_blocks": []
+      },
+      "data_file": "materials/ZnS_nk.csv",
+      "packaged_data_sha256": "a28a896e35512145b1b58d21fdccc3d5cba4f4e1ae78a4aa8d36408df9602201",
+      "data_rows": 312,
+      "interpolation": "piecewise linear n and k separately in wavelength; no extrapolation",
+      "data_identity": "bulk/crystal/mineral optical-constant proxy; not a deposition measurement"
+    },
+    {
+      "id": "MgF2",
+      "source_path": "main/MgF2/nk/Franta.yml",
+      "source_sha256": "c51389d0430c21d8959388605266bc160abe14a04242cfa7ba8d1812bde2e58e",
+      "local_store_read_verifies_sha256": true,
+      "frozen_snapshot_matches_current_source_numeric_fields": true,
+      "n_and_k_domain_nm": [
+        27.5043,
+        125141.0
+      ],
+      "explicit_k": true,
+      "source": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/MgF2/nk/Franta.yml\nD. Franta, D. Nečas, A. Giglia, P. Franta, I. Ohlídal.\nUniversal dispersion model for characterization of optical thin films over wide spectral range: Application to magnesium fluoride.\n<a href=\"https://doi.org/10.1016/j.apsusc.2016.09.149\"><i>Appl. Surf. Sci.</i> <b>421</b>, 424–429 (2017)</a>\n(Numerical data kindly provided by Daniel Franta)\n",
+      "notes": "RII snapshot=c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1; source_sha256=c51389d0430c21d8959388605266bc160abe14a04242cfa7ba8d1812bde2e58e; blocks=[0]; excluded_blocks=[]. Conditions are source-specific; production validation not established.\nFilm MgF<sub>2</sub>; Deposited by e-beam evaporation on c-Si; 134.2 nm thick film with an polycrystalline structure; Heterogenous data processing combining ellipsometric and spectrophotometric measurements; Room temperature.\n\nCONDITIONS: {\"film_thickness\":1.342e-07,\"substrate\":\"c-Si\"}",
+      "provenance": {
+        "snapshot_id": "c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1",
+        "entry_id": "rii_c88a4cf405950dcd78f3aa6e",
+        "source_sha256": "c51389d0430c21d8959388605266bc160abe14a04242cfa7ba8d1812bde2e58e",
+        "source_path": "main/MgF2/nk/Franta.yml",
+        "upstream_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+        "source_url": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/MgF2/nk/Franta.yml",
+        "license": "CC0-1.0",
+        "block_selection": [
+          0
+        ],
+        "excluded_blocks": []
+      },
+      "data_file": "materials/MgF2_nk.csv",
+      "packaged_data_sha256": "f49ca0fc56489e7628b84d348dcca38f63df66b344a416d04f6bb0d4593f7186",
+      "data_rows": 3659,
+      "interpolation": "piecewise linear n and k separately in wavelength; no extrapolation",
+      "data_identity": "source-specific thin film; not project-process matched"
+    },
+    {
+      "id": "BaF2",
+      "source_path": "main/BaF2/nk/Querry.yml",
+      "source_sha256": "4ab92593b88b6449509592c43c4aa81771b624e3d42198d4d3069d65319b8d50",
+      "local_store_read_verifies_sha256": true,
+      "frozen_snapshot_matches_current_source_numeric_fields": true,
+      "n_and_k_domain_nm": [
+        220.0,
+        166666.69999999998
+      ],
+      "explicit_k": true,
+      "source": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/BaF2/nk/Querry.yml\nM. R. Querry. Optical constants of minerals and other materials from the millimeter to the ultraviolet, <a href=\"https://apps.dtic.mil/sti/citations/ADA192210\"><i>Contractor Report</i> CRDEC-CR-88009 (1987)</a>\n",
+      "notes": "RII snapshot=c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1; source_sha256=4ab92593b88b6449509592c43c4aa81771b624e3d42198d4d3069d65319b8d50; blocks=[0]; excluded_blocks=[]. Conditions are source-specific; production validation not established.\n\nCONDITIONS: {}",
+      "provenance": {
+        "snapshot_id": "c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1",
+        "entry_id": "rii_e7ab207e500e7dec5be24ef5",
+        "source_sha256": "4ab92593b88b6449509592c43c4aa81771b624e3d42198d4d3069d65319b8d50",
+        "source_path": "main/BaF2/nk/Querry.yml",
+        "upstream_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+        "source_url": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/BaF2/nk/Querry.yml",
+        "license": "CC0-1.0",
+        "block_selection": [
+          0
+        ],
+        "excluded_blocks": []
+      },
+      "data_file": "materials/BaF2_nk.csv",
+      "packaged_data_sha256": "3f03c03734a75682314cdcd26f498114aadd485232d71f9db5e935ac863484f5",
+      "data_rows": 312,
+      "interpolation": "piecewise linear n and k separately in wavelength; no extrapolation",
+      "data_identity": "bulk/crystal/mineral optical-constant proxy; not a deposition measurement"
+    },
+    {
+      "id": "NaCl",
+      "source_path": "main/NaCl/nk/Querry.yml",
+      "source_sha256": "4d062a1523a2086d5d66fcdf37e6f8f6beeca4aef731621989cd388bcbdeb623",
+      "local_store_read_verifies_sha256": true,
+      "frozen_snapshot_matches_current_source_numeric_fields": true,
+      "n_and_k_domain_nm": [
+        220.0,
+        166666.69999999998
+      ],
+      "explicit_k": true,
+      "source": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/NaCl/nk/Querry.yml\nM. R. Querry. Optical constants of minerals and other materials from the millimeter to the ultraviolet, <a href=\"https://apps.dtic.mil/sti/citations/ADA192210\"><i>Contractor Report</i> CRDEC-CR-88009 (1987)</a>\n",
+      "notes": "RII snapshot=c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1; source_sha256=4d062a1523a2086d5d66fcdf37e6f8f6beeca4aef731621989cd388bcbdeb623; blocks=[0]; excluded_blocks=[]. Conditions are source-specific; production validation not established.\n\nCONDITIONS: {}",
+      "provenance": {
+        "snapshot_id": "c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1",
+        "entry_id": "rii_baf99c185bc693dde737cf21",
+        "source_sha256": "4d062a1523a2086d5d66fcdf37e6f8f6beeca4aef731621989cd388bcbdeb623",
+        "source_path": "main/NaCl/nk/Querry.yml",
+        "upstream_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+        "source_url": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/NaCl/nk/Querry.yml",
+        "license": "CC0-1.0",
+        "block_selection": [
+          0
+        ],
+        "excluded_blocks": []
+      },
+      "data_file": "materials/NaCl_nk.csv",
+      "packaged_data_sha256": "0598e18a2990f1ea70f20b65e0dd9f8a7c3e1541b6e7cbf9fee5cc873f5a37f1",
+      "data_rows": 312,
+      "interpolation": "piecewise linear n and k separately in wavelength; no extrapolation",
+      "data_identity": "bulk/crystal/mineral optical-constant proxy; not a deposition measurement"
+    },
+    {
+      "id": "Ge",
+      "source_path": "main/Ge/nk/Amotchkina-film.yml",
+      "source_sha256": "298823b05a619d67b9d704352505e8fe7ef75ad129f6dbce98403467b09dc848",
+      "local_store_read_verifies_sha256": true,
+      "frozen_snapshot_matches_current_source_numeric_fields": true,
+      "n_and_k_domain_nm": [
+        400.0,
+        15000.0
+      ],
+      "explicit_k": true,
+      "source": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/Ge/nk/Amotchkina-film.yml\nT. Amotchkina, M. Trubetskov, D. Hahner, V. Pervak.\nCharacterization of e-beam evaporated Ge, YbF<sub>3</sub>, ZnS, and LaF<sub>3</sub> thin films for laser-oriented coatings.\n<a href=\"https://doi.org/10.1364/AO.59.000A40\"><i>Appl. Opt.</i> <b>59</b>, A40-A47 (2020)</a>\n(Data kindly provided by Tatiana Amotchkina\n[<a href=\"https://refractiveindex.info/download/data/2020/Amotchkina/Ge_film_nk.xlsx\">data</a>]\n[<a href=\"https://refractiveindex.info/download/data/2020/Amotchkina/Summary_for_RefractiveIndexINFO.pdf\">description</a>])\n",
+      "notes": "RII snapshot=c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1; source_sha256=298823b05a619d67b9d704352505e8fe7ef75ad129f6dbce98403467b09dc848; blocks=[0]; excluded_blocks=[]. Conditions are source-specific; production validation not established.\n0.42 µm Ge<sub>3</sub> film deposited on 1 mm thick ZnSe substratee by e-beam evaporation at 120 °C substrate temperature.\n\nCONDITIONS: {\"film_thickness\":4.2e-07,\"substrate\":\"ZnSe\"}",
+      "provenance": {
+        "snapshot_id": "c5c2f188e848453def5970e347399d653df2ffc2-98afca5804b7e692-v1",
+        "entry_id": "rii_1063485ce956a8c6253c5644",
+        "source_sha256": "298823b05a619d67b9d704352505e8fe7ef75ad129f6dbce98403467b09dc848",
+        "source_path": "main/Ge/nk/Amotchkina-film.yml",
+        "upstream_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+        "source_url": "https://github.com/polyanskiy/refractiveindex.info-database/blob/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/Ge/nk/Amotchkina-film.yml",
+        "license": "CC0-1.0",
+        "block_selection": [
+          0
+        ],
+        "excluded_blocks": []
+      },
+      "data_file": "materials/Ge_nk.csv",
+      "packaged_data_sha256": "f181a05343345ec8371a410c878209893da4d0a71f7c219645dcade03833d403",
+      "data_rows": 1721,
+      "interpolation": "piecewise linear n and k separately in wavelength; no extrapolation",
+      "data_identity": "source-specific thin film; not project-process matched"
+    }
+  ],
+  "upstream_numeric_data_license": "CC0-1.0, as recorded by RII source conversion metadata",
+  "source_files_and_papers_not_bundled": true,
+  "packaged_data": "Full explicit n/k numerical tables exported from the already frozen research material snapshot, retaining source ranges. Packaged CSV hash differs from original YAML source hash by design."
+}

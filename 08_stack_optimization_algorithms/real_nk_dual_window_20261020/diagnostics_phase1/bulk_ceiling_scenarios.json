@@ -1,0 +1,158 @@
+{
+  "scenarios": [
+    {
+      "thickness_mm": 0.01,
+      "assumption": "hypothetical source-specific ZnS plate, ideal reflection-free lossless boundaries, full unit forward intensity into bulk",
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "alpha_max_per_cm": 40.96616337199404,
+          "worst_wavelength_nm": 3067.5,
+          "worst_k": 0.001,
+          "ideal_single_pass_transmission_ceiling_min": 0.959861607878487,
+          "ceiling_max": 1.0,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 25.691790994284272
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "alpha_max_per_cm": 61.32404804059767,
+          "worst_wavelength_nm": 8196.7,
+          "worst_k": 0.004,
+          "ideal_single_pass_transmission_ceiling_min": 0.9405184172398517,
+          "ceiling_max": 0.9776344129463446,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 17.162828300150764
+        }
+      ]
+    },
+    {
+      "thickness_mm": 0.1,
+      "assumption": "hypothetical source-specific ZnS plate, ideal reflection-free lossless boundaries, full unit forward intensity into bulk",
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "alpha_max_per_cm": 40.96616337199404,
+          "worst_wavelength_nm": 3067.5,
+          "worst_k": 0.001,
+          "ideal_single_pass_transmission_ceiling_min": 0.6638748449982397,
+          "ceiling_max": 1.0,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 25.691790994284272
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "alpha_max_per_cm": 61.32404804059767,
+          "worst_wavelength_nm": 8196.7,
+          "worst_k": 0.004,
+          "ideal_single_pass_transmission_ceiling_min": 0.5415930009365609,
+          "ceiling_max": 0.7975626437483548,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 17.162828300150764
+        }
+      ]
+    },
+    {
+      "thickness_mm": 0.5,
+      "assumption": "hypothetical source-specific ZnS plate, ideal reflection-free lossless boundaries, full unit forward intensity into bulk",
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "alpha_max_per_cm": 40.96616337199404,
+          "worst_wavelength_nm": 3067.5,
+          "worst_k": 0.001,
+          "ideal_single_pass_transmission_ceiling_min": 0.12895288568249055,
+          "ceiling_max": 1.0,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 25.691790994284272
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "alpha_max_per_cm": 61.32404804059767,
+          "worst_wavelength_nm": 8196.7,
+          "worst_k": 0.004,
+          "ideal_single_pass_transmission_ceiling_min": 0.046597778902176284,
+          "ceiling_max": 0.32271861828031906,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 17.162828300150764
+        }
+      ]
+    },
+    {
+      "thickness_mm": 1.0,
+      "assumption": "hypothetical source-specific ZnS plate, ideal reflection-free lossless boundaries, full unit forward intensity into bulk",
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "alpha_max_per_cm": 40.96616337199404,
+          "worst_wavelength_nm": 3067.5,
+          "worst_k": 0.001,
+          "ideal_single_pass_transmission_ceiling_min": 0.01662884672584148,
+          "ceiling_max": 1.0,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 25.691790994284272
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "alpha_max_per_cm": 61.32404804059767,
+          "worst_wavelength_nm": 8196.7,
+          "worst_k": 0.004,
+          "ideal_single_pass_transmission_ceiling_min": 0.002171352998616105,
+          "ceiling_max": 0.10414730658475829,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 17.162828300150764
+        }
+      ]
+    },
+    {
+      "thickness_mm": 2.0,
+      "assumption": "hypothetical source-specific ZnS plate, ideal reflection-free lossless boundaries, full unit forward intensity into bulk",
+      "windows": [
+        {
+          "window_nm": [
+            3000.0,
+            5000.0
+          ],
+          "alpha_max_per_cm": 40.96616337199404,
+          "worst_wavelength_nm": 3067.5,
+          "worst_k": 0.001,
+          "ideal_single_pass_transmission_ceiling_min": 0.0002765185434315289,
+          "ceiling_max": 1.0,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 25.691790994284272
+        },
+        {
+          "window_nm": [
+            8000.0,
+            12000.0
+          ],
+          "alpha_max_per_cm": 61.32404804059767,
+          "worst_wavelength_nm": 8196.7,
+          "worst_k": 0.004,
+          "ideal_single_pass_transmission_ceiling_min": 4.714773844599151e-06,
+          "ceiling_max": 0.010846661468859639,
+          "maximum_thickness_um_for_guard_T_in_ideal_model": 17.162828300150764
+        }
+      ]
+    }
+  ],
+  "alpha_formula": "4*pi*k/lambda, lengths in nm; alpha_cm^-1=alpha_nm^-1*1e7",
+  "upper_bound_scope": "Propagation-only optimistic upper bound in the one-pass incoherent traveling-ray model. Not a universal arbitrary coherent-structure Maxwell optimization bound.",
+  "k_zero_meaning": "explicit reported numeric source zeros; measurement uncertainty/detection threshold not provided; not an assertion of exactly zero absorption in a real plate",
+  "physical_substrate_grade_or_thickness_confirmed": false
+}
