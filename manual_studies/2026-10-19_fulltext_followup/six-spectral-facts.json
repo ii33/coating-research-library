@@ -1,0 +1,458 @@
+{
+  "schema_version": "1.0",
+  "review_date_utc": "2026-10-19",
+  "scope": "Factual extraction and explicitly labeled analysis from the user-supplied five-page paper. No numerical reproduction.",
+  "citation": {
+    "id": "ar-zhang-2019",
+    "title": "Six-spectral antireflection coating on zinc sulfide simultaneously effective for the visible, near-IR, and long wavelength IR regions",
+    "authors": [
+      "Yinhua Zhang",
+      "Shengming Xiong",
+      "Wei Huang",
+      "Kepeng Zhang",
+      "Xiaoxi Tian"
+    ],
+    "journal": "Surface & Coatings Technology",
+    "volume": 359,
+    "year": 2019,
+    "pages": "1-5",
+    "online_date": "2018-12-11",
+    "doi": "10.1016/j.surfcoat.2018.12.049",
+    "url": "https://doi.org/10.1016/j.surfcoat.2018.12.049"
+  },
+  "evidence": {
+    "level": "user_supplied_publisher_full_text",
+    "pdf_page_count": 5,
+    "page_locator": "printed_pages_equal_pdf_pages_one_based",
+    "all_pages_reviewed": true,
+    "figures_and_table_visually_inspected": true,
+    "input_pdf_sha256": "b2110a1aff7c4b1634f4a1d500cea1a972658e1c49ef6e621361af6fe1f72f99",
+    "original_text_images_or_pdf_redistributed": false
+  },
+  "design": {
+    "substrate": "multispectral CVD ZnS",
+    "high_index_film": "ZnS",
+    "low_index_film": "YbF3",
+    "layer_count": 29,
+    "layer_count_limit": {
+      "relation": "le",
+      "value": 30
+    },
+    "alternating": true,
+    "quarterwave": false,
+    "optimized_incidence_deg": 0,
+    "optimizer": "OptiLayer",
+    "individual_physical_thickness_bounds_nm": [
+      20,
+      600
+    ],
+    "total_thickness_um": {
+      "relation": "lt",
+      "value": 5,
+      "meaning": "design bound, not reported actual sum"
+    },
+    "outermost_film": "YbF3",
+    "outermost_thickness_bounds_nm": [
+      100,
+      300
+    ],
+    "pages": [
+      1,
+      2
+    ],
+    "complete_physical_thickness_list_available": false,
+    "actual_total_thickness_available": false,
+    "sequence_inference": {
+      "label": "logical_inference_not_published_layer_table",
+      "condition": "strict alternating 29-layer stack and outermost YbF3",
+      "substrate_to_air_pattern": "L H L ... H L",
+      "L_material": "YbF3",
+      "H_material": "ZnS",
+      "L_count": 15,
+      "H_count": 14
+    },
+    "per_side_prescription_and_total_double_side_layer_count_explicitly_tabulated": false
+  },
+  "optical_constants": {
+    "complete_film_n_lambda_available": false,
+    "complete_film_k_lambda_available": false,
+    "complete_substrate_nk_lambda_available": false,
+    "background_substrate_index_approx": 2.2,
+    "background_index_locator": "p.1 Introduction; not a full simulation input",
+    "substrate_visible_absorption_ignored_in_theory": true,
+    "absorption_locator": "p.4 Results and discussions, explanation of Fig.6",
+    "missing": [
+      "film process-specific complex dispersion",
+      "substrate absorption and scattering",
+      "model formula and coefficients",
+      "material-specific validity domains"
+    ]
+  },
+  "spectral_classification": {
+    "function": "six_discrete_wavelength_antireflection",
+    "continuous_0p5_to_10_um_high_transmission_supported": false,
+    "bandwidths_of_six_high_T_regions_reported_numerically": false,
+    "blocking_specification_reported": false,
+    "visual_evidence": "Fig.1 p.2 and Fig.6 p.4 show substantial transmission valleys between target peaks; no curve digitization performed",
+    "display_gap_um": [
+      1.2,
+      2.0
+    ]
+  },
+  "spectral_metrics": [
+    {
+      "wavelength_um": 0.532,
+      "theory_transmission_percent": {
+        "relation": "gt",
+        "value": 98,
+        "locator": "p.2 section 2 text explaining Fig.1"
+      },
+      "final_double_side_transmission_percent": {
+        "relation": "gt",
+        "value": 94,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      },
+      "reported_final_reflectance_percent": {
+        "relation": "lt",
+        "value": 2,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      }
+    },
+    {
+      "wavelength_um": 1.064,
+      "theory_transmission_percent": {
+        "relation": "gt",
+        "value": 99,
+        "locator": "p.2 section 2 text explaining Fig.1"
+      },
+      "final_double_side_transmission_percent": {
+        "relation": "gt",
+        "value": 97,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      },
+      "reported_final_reflectance_percent": {
+        "relation": "lt",
+        "value": 1.5,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      }
+    },
+    {
+      "wavelength_um": 2.1,
+      "theory_transmission_percent": {
+        "relation": "gt",
+        "value": 99,
+        "locator": "p.2 section 2 text explaining Fig.1"
+      },
+      "final_double_side_transmission_percent": {
+        "relation": "gt",
+        "value": 98,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      },
+      "reported_final_reflectance_percent": {
+        "relation": "lt",
+        "value": 1.5,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      }
+    },
+    {
+      "wavelength_um": 3.9,
+      "theory_transmission_percent": {
+        "relation": "gt",
+        "value": 99,
+        "locator": "p.2 section 2 text explaining Fig.1"
+      },
+      "final_double_side_transmission_percent": {
+        "relation": "gt",
+        "value": 98,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      },
+      "reported_final_reflectance_percent": {
+        "relation": "lt",
+        "value": 1.5,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      }
+    },
+    {
+      "wavelength_um": 4.8,
+      "theory_transmission_percent": {
+        "relation": "gt",
+        "value": 99,
+        "locator": "p.2 section 2 text explaining Fig.1"
+      },
+      "final_double_side_transmission_percent": {
+        "relation": "gt",
+        "value": 98,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      },
+      "reported_final_reflectance_percent": {
+        "relation": "lt",
+        "value": 1.5,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      }
+    },
+    {
+      "wavelength_um": 9.5,
+      "theory_transmission_percent": {
+        "relation": "gt",
+        "value": 99,
+        "locator": "p.2 section 2 text explaining Fig.1"
+      },
+      "final_double_side_transmission_percent": {
+        "relation": "gt",
+        "value": 98,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      },
+      "reported_final_reflectance_percent": {
+        "relation": "lt",
+        "value": 1.5,
+        "locator": "p.4 section 4 text explaining Fig.6"
+      }
+    }
+  ],
+  "metric_cautions": [
+    "Abstract rounds first two T values to 94% and 97%; body gives thresholds greater than 94% and greater than 97%.",
+    "Final six-line T values are for both coated sides, not the one-side process iterations in Fig.5.",
+    "Fig.1 caption alone does not specify every backside/coherence model detail.",
+    "No uncertainty or raw sampled numerical spectra provided."
+  ],
+  "fabrication": {
+    "locator": "p.2 section 3",
+    "method": "conventional thermal evaporation",
+    "coater": "Leybold ARES 1510",
+    "reported_working_pressure_mbar": 8e-06,
+    "source_purity_percent": {
+      "ZnS": 99.99,
+      "YbF3": 99.99
+    },
+    "substrate_geometry": {
+      "type": "polished polycrystalline ZnS flat",
+      "diameter_mm": 30,
+      "thickness_mm": 3
+    },
+    "substrate_rotation": true,
+    "preheat_temperature_C": 100,
+    "preheat_duration_h": 2,
+    "deposition_temperature_C": 100,
+    "pre_deposition_clean": {
+      "duration_min": 10,
+      "equipment": "Leybold advanced plasma source (APS)",
+      "type": "ionic cleaning"
+    },
+    "continuous_ion_assistance_during_deposition_explicitly_reported": false,
+    "monitor": "quartz crystal monitor for layer thickness and deposition rate",
+    "rate_nm_per_s": {
+      "YbF3": 0.5,
+      "ZnS": 0.6
+    },
+    "rate_tolerance_nm_per_s": 0.1,
+    "stress_value_measured_in_paper": false,
+    "missing": [
+      "QCM tooling factors and calibration",
+      "density settings",
+      "rotation speed",
+      "uniformity map",
+      "per-layer attained thicknesses"
+    ]
+  },
+  "measurement": {
+    "locator": "p.2 section 3",
+    "instruments": [
+      {
+        "name": "Spectrum GX FTIR spectrophotometer",
+        "reported_range_um": [
+          2,
+          10
+        ]
+      },
+      {
+        "name": "Perkin-Elmer Lambda 1050 double-beam spectrophotometer",
+        "reported_range": "below 2 um"
+      }
+    ],
+    "quantities": [
+      "transmittance",
+      "reflectance"
+    ],
+    "missing": [
+      "actual measurement incidence angle",
+      "polarization",
+      "spot size",
+      "spectral resolution",
+      "reference and calibration details",
+      "uncertainty",
+      "raw spectra",
+      "repeatability"
+    ]
+  },
+  "thickness_error_simulations": {
+    "locators": [
+      "p.2 section 2",
+      "Fig.2 p.2",
+      "Fig.3 p.3",
+      "Fig.4 p.3"
+    ],
+    "runs_reported_per_error_type": 10,
+    "systematic_error_bounds_percent": [
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "random_error_bounds_nm": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "combined_case_systematic_error_bound_percent": 1,
+    "combined_case_random_error_bounds_nm": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "reported_shortwave_threshold": {
+      "wavelength_um": 0.532,
+      "random_error_bound_nm": 3,
+      "transmission_percent": {
+        "relation": "gt",
+        "value": 95
+      },
+      "evidence_type": "simulation_not_final_sample_measurement"
+    },
+    "missing": [
+      "sampling distribution",
+      "per-layer independence or correlation",
+      "material-specific systematic error model",
+      "random seeds",
+      "confidence or yield statistics"
+    ],
+    "yield_or_worst_case_guarantee_established": false
+  },
+  "manufacturing_feedback": {
+    "locators": [
+      "p.3-4 section 4",
+      "Fig.5 p.4"
+    ],
+    "one_side_trials": [
+      "Exp.1",
+      "Exp.2",
+      "Exp.3"
+    ],
+    "fitting_software": "OptiRE",
+    "fitted_spectral_range_um": [
+      0.5,
+      1.2
+    ],
+    "systematic_error_only_fit_insufficient": true,
+    "individual_layer_error_adjustments_used": true,
+    "inverse_solution_nonunique_explicitly_acknowledged": true,
+    "experience_used_to_select_candidate": true,
+    "reported_inverted_deviation_bounds": {
+      "relative_percent": {
+        "relation": "lt",
+        "value": 10
+      },
+      "absolute_nm": {
+        "relation": "lt",
+        "value": 10
+      }
+    },
+    "skip_small_correction_rule": {
+      "logical_operator": "OR",
+      "relative_percent_lt": 1,
+      "absolute_nm_lt": 3
+    },
+    "fitted_per_layer_values_available": false
+  },
+  "durability": {
+    "locator": "p.4 Table 1",
+    "tests": [
+      {
+        "name": "adhesion",
+        "condition": "one Scotch-tape pull",
+        "result": "pass"
+      },
+      {
+        "name": "abrasion",
+        "condition": "50 cheese-cloth rubs",
+        "result": "pass"
+      },
+      {
+        "name": "humidity",
+        "duration_h": 24,
+        "RH_percent": [
+          95,
+          100
+        ],
+        "temperature_C": 49,
+        "temperature_tolerance_C": 1,
+        "result": "pass"
+      },
+      {
+        "name": "temperature cycle",
+        "temperatures_C": [
+          70,
+          -40
+        ],
+        "dwell_each_h": 2,
+        "changeover_min": 30,
+        "result": "pass",
+        "cycle_count": null
+      }
+    ],
+    "missing": [
+      "standard ID and version",
+      "sample count",
+      "number of temperature cycles",
+      "quantitative acceptance criteria",
+      "pre/post spectra",
+      "long-term life tests"
+    ],
+    "specific_MIL_or_ISO_certification_supported": false
+  },
+  "reproduction_readiness": {
+    "classification": "full_text_verified_experimental_case_with_incomplete_prescription",
+    "exact_reproduction_ready": false,
+    "numeric_reproduction_performed": false,
+    "reusable_without_claiming_exact_reproduction": [
+      "six-line target definitions",
+      "manufacturing-inspired thickness bounds",
+      "normal-incidence design framing",
+      "single-side versus double-side distinction",
+      "spectral feedback iteration concept",
+      "bounded qualitative thickness error evidence"
+    ],
+    "critical_inputs_still_required": [
+      "29 physical thicknesses per relevant side",
+      "process-matched complex refractive indices",
+      "substrate loss data",
+      "backside and coherence model",
+      "raw spectra and measurement conditions",
+      "error-generation model"
+    ]
+  },
+  "prior_research_corrections": [
+    {
+      "old": "abstract-only candidate",
+      "new": "user-supplied full text reviewed"
+    },
+    {
+      "old": "single-side or double-side final T unresolved",
+      "new": "final metrics explicitly double-side p.4 Fig.6"
+    },
+    {
+      "old": "only approximate 600 nm upper bound known",
+      "new": "full design bounds now extracted p.1-2"
+    },
+    {
+      "old": "environment test conditions unverified",
+      "new": "conditions verified in Table 1; standard ID and statistics still absent"
+    },
+    {
+      "old": "layer thickness and n/k not obtained",
+      "new": "still unavailable from the supplied full text"
+    }
+  ],
+  "copyright_handling": "Original analysis, limited factual extraction and source link only. No paper text, figures, screenshots or PDF included in the deliverable."
+}

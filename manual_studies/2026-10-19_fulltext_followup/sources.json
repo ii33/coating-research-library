@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "checked_at_utc": "2026-10-19",
+  "scope": "Two user-supplied full-text follow-up reviews, original analysis only; not numerical reproduction or software publication.",
+  "paper_record_count": 2,
+  "count_note": "Two paper records. The official GNA repository is a linked secondary audit source, not another paper.",
+  "sources": [
+    {
+      "id": "ar-zhang-2019",
+      "title": "Six-spectral antireflection coating on zinc sulfide simultaneously effective for the visible, near-IR, and long wavelength IR regions",
+      "authors": [
+        "Yinhua Zhang",
+        "Shengming Xiong",
+        "Wei Huang",
+        "Kepeng Zhang",
+        "Xiaoxi Tian"
+      ],
+      "doi": "10.1016/j.surfcoat.2018.12.049",
+      "url": "https://doi.org/10.1016/j.surfcoat.2018.12.049",
+      "publication": {
+        "journal": "Surface & Coatings Technology",
+        "volume": 359,
+        "year": 2019,
+        "pages": "1–5",
+        "online_date": "2018-12-11"
+      },
+      "evidence_level": "user_supplied_publisher_full_text_all_5_pages_reviewed",
+      "review": "six-spectral-review.md",
+      "facts": "six-spectral-facts.json",
+      "locators": [
+        "pp.1–2 design bounds",
+        "p.2 fabrication/measurement",
+        "pp.3–4 feedback",
+        "p.4 Fig.6 final double-side metrics; Table1 durability"
+      ],
+      "resolved": [
+        "Full text and figures/table reviewed",
+        "Final six-line T is double-side device metric",
+        "Design thickness bounds and limited environmental test conditions verified"
+      ],
+      "remaining": [
+        "29-layer physical thicknesses and relevant per-side prescriptions",
+        "Process-specific complex film/substrate optical constants",
+        "Raw spectra, measurement geometry and uncertainties",
+        "Backside/coherence and error-generation definitions",
+        "Durability standard ID, statistics and pre/post spectra"
+      ],
+      "exact_reproduction_ready": false,
+      "numeric_reproduction_performed": false
+    },
+    {
+      "id": "method2026_gna",
+      "title": "Interpretable inverse design of optical multilayer thin films based on global neural adjoint",
+      "authors": [
+        "Sungjun Kim",
+        "Jungho Kim"
+      ],
+      "doi": "10.1038/s41598-026-75220-w",
+      "url": "https://www.nature.com/articles/s41598-026-75220-w",
+      "publication": {
+        "journal": "Scientific Reports",
+        "accepted_date": "2026-10-05",
+        "online_date": "2026-10-12",
+        "status": "peer_reviewed_article_in_press"
+      },
+      "evidence_level": "user_supplied_26_page_accepted_manuscript_and_official_code_static_audit",
+      "review": "gna-review.md",
+      "locators": [
+        "PDF pp.4–8 method and Algorithm1",
+        "pp.9–13 data and training",
+        "pp.15–18 Tables3–4 comparison",
+        "pp.21–23 Tables5–7 discretization and sensitivity",
+        "p.24 data availability"
+      ],
+      "official_repository": {
+        "url": "https://github.com/Sungjunkim721/GNA_OMT",
+        "audited_commit": "e7d1cab28725136e4db58ed36f0a7c454f71b96a",
+        "audited_tree": "8f5c12fac200d47186ad60d84fc18c63c8196c8f",
+        "available": [
+          "Core model and inverse-design source",
+          "paper.yaml configuration",
+          "11 material CSVs, 301 samples, k=0",
+          "Six example structures and spectra"
+        ],
+        "not_found_at_snapshot": [
+          "Actual pretrained checkpoint files",
+          "Full TMM data-generation/final-evaluation and GA/OptoGPT comparison reproduction scripts",
+          "Independent LICENSE file"
+        ],
+        "code_was_run": false,
+        "example_final_score_backend": "forward surrogate, not independent TMM"
+      },
+      "resolved": [
+        "Full methods, main figures/tables and data availability read",
+        "Official core code/configuration/material/examples inspected",
+        "Fixed per-candidate layer count and continuous-material projection clarified"
+      ],
+      "remaining": [
+        "Readable formal Supplementary Information",
+        "Actual pretrained OMT_Mixer.pth artifact and hash",
+        "Full training data and split indices",
+        "Complete physical-generation, TMM final-evaluation and baseline scripts",
+        "Boundary conditions and exact hard-constraint tolerance"
+      ],
+      "numeric_reproduction_performed": false,
+      "physical_fabrication_in_paper": false,
+      "training_performed_in_this_review": false
+    }
+  ],
+  "copyright_handling": "Only original notes, factual metadata and public links. User-supplied PDFs, full extracted texts, figures/screenshots, and author source/data/weights are not redistributed."
+}

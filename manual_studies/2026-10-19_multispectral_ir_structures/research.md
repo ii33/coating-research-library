@@ -106,9 +106,13 @@
 
 以下只列与本轮增量最有关的事实。数值、设计／实测区分、可获得的处方与缺口详见本节和 sources.json；不把论文摘要指标登记为已完成复现。
 
-### 5.1 六谱线 ZnS/YbF3：摘要级候选
+### 5.1 六谱线 ZnS/YbF3：全文核验的双面实测案例
 
-Zhang 等 2019 的准确题名是“Six-spectral antireflection coating on zinc sulfide simultaneously effective for the visible, near-IR, and long wavelength IR regions”。出版社索引摘要／预览给出 29 层 ZnS/YbF3、单层约 0.6 μm 上限；报告六线 T：0.532 μm 94%、1.064 μm 97%，2.1／3.9／4.8／9.5 μm 均超过 98%。直接页面读取失败，最终指标属于单面还是双面尚未核齐；完整层厚和 n/k 未取得。只作六线约束候选，不作连续宽带或精确复现标杆。[出版商](https://www.sciencedirect.com/science/article/abs/pii/S0257897218313628)、[DOI](https://doi.org/10.1016/j.surfcoat.2018.12.049)
+Zhang 等 2019 的准确题名是“Six-spectral antireflection coating on zinc sulfide simultaneously effective for the visible, near-IR, and long wavelength IR regions”。本轮后续已读取用户提供的五页出版社排版全文并目视核图，更新此前摘要级证据。[全文核查笔记](../2026-10-19_fulltext_followup/six-spectral-review.md)与[结构化事实](../2026-10-19_fulltext_followup/six-spectral-facts.json)给出逐页定位。
+
+正文确认法向优化的29层非四分之一波ZnS/YbF3交替结构，单层20–600 nm、总厚<5 μm，空气侧YbF3厚度约束100–300 nm。最终六线透过率属于双面均镀膜的ZnS器件：0.532 μm >94%、1.064 μm >97%，2.1／3.9／4.8／9.5 μm均>98%（p.4，Fig.6）；这些是正文阈值，不是精确测量读数。不能把29层记为整片双面合计，也不能把六线结果扩大为连续0.5–10 μm高透。
+
+全文仍未给出29层逐层厚度或完整工艺薄膜/基片n(λ)、k(λ)，理论还忽略了可见区基片吸收；因此可复用约束与制造反馈经验，不能精确复刻原处方。热蒸发、晶振监控、三轮单面工艺反馈及四项有限环境试验现已核实；测量角度/偏振、标准编号、统计及前后谱漂移等仍缺，不构成量产容差或特定MIL/ISO认证。[出版商](https://www.sciencedirect.com/science/article/abs/pii/S0257897218313628)、[DOI](https://doi.org/10.1016/j.surfcoat.2018.12.049)
 
 ### 5.2 Ge/ZnS：全文可读，但不是全部处方已开放
 

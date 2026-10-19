@@ -507,9 +507,9 @@
       "title": "Six-spectral antireflection coating on zinc sulfide simultaneously effective for the visible, near-IR, and long wavelength IR regions",
       "doi": "10.1016/j.surfcoat.2018.12.049",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0257897218313628",
-      "source_type": "publisher_indexed_abstract_and_preview",
-      "accessed_utc": "2026-10-19T17:22:06Z",
-      "evidence_level": "C: indexed abstract/section snippets only; direct page and API retrieval failed",
+      "source_type": "user_supplied_publisher_full_text",
+      "accessed_utc": "2026-10-19",
+      "evidence_level": "A: user-supplied publisher full text, all 5 pages and figures/table reviewed; exact prescription remains incomplete",
       "authors": [
         "Yinhua Zhang",
         "Shengming Xiong",
@@ -523,7 +523,10 @@
       "pages": "1-5",
       "metadata_source": "https://api.crossref.org/works/10.1016/j.surfcoat.2018.12.049",
       "verified_claims": [
-        "六谱线候选，证据仅出版商索引摘要/预览；见research.md §5.1。"
+        "五页正文、图表已核；29层ZnS/YbF3六离散谱线AR案例，法向设计，见research.md §5.1及全文补核笔记。",
+        "最终T属于双面均镀膜ZnS器件：0.532 μm >94%、1.064 μm >97%，其余四个目标点>98%；p.4 Fig.6。",
+        "单层20–600 nm、总厚<5 μm、空气侧YbF3为100–300 nm是设计边界，不是已公开逐层处方。",
+        "热蒸发、QCM监控、OptiRE非唯一反演与工艺反馈、四项有限环境试验有正文证据；不能扩为连续宽带或指定标准认证。"
       ],
       "data_available": {
         "layer_count": 29,
@@ -550,29 +553,51 @@
           98
         ],
         "transmission_relation": [
-          "reported",
-          "reported",
+          "greater_than",
+          "greater_than",
           "greater_than",
           "greater_than",
           "greater_than",
           "greater_than"
         ],
-        "layer_thickness_table": "not_obtained",
-        "numeric_nk": "not_obtained",
-        "supplementary_data": "not_obtained"
+        "layer_thickness_table": "not_provided_in_supplied_main_text",
+        "numeric_nk": "not_provided_in_supplied_main_text",
+        "supplementary_data": "not_received_or_verified",
+        "transmission_metric_scope": "final ZnS optic coated on both sides; not the single-side process trials",
+        "single_layer_thickness_bounds_nm": [
+          20,
+          600
+        ],
+        "total_thickness_design_bound_um": {
+          "relation": "less_than",
+          "value": 5
+        },
+        "outermost_layer": {
+          "material": "YbF3",
+          "thickness_bounds_nm": [
+            100,
+            300
+          ]
+        },
+        "design_incidence_deg": 0
       },
       "data_gaps": [
-        "未直接取得全文；出版商搜索索引不能作全文证据",
-        "最终透射数字单/双面、入射角及偏振条件未核",
-        "29层厚度和明确端点顺序未取得",
-        "n/k系数、原始谱线、补充数据未取得",
-        "环境稳定性标准编号/条件未核"
+        "完整29层逐层物理厚度、各面处方与沉积方向没有在所提供正文中列出；不能推成整片双面共29层。",
+        "完整工艺薄膜及基片复色散缺失；理论忽略可见区ZnS基片吸收。",
+        "实测角度、偏振、光谱分辨率、不确定度、原始光谱及背面/相干处理仍缺。",
+        "厚度误差随机分布、层间相关性、种子和良率统计未给；10次试算不是量产保证。",
+        "环境试验条件现已核实，但标准编号/版本、样本与循环数、定量判据及前后谱漂移仍缺。"
       ],
-      "reproduction_status": "candidate_only_not_exactly_reproducible",
-      "locator": "",
+      "reproduction_status": "full_text_verified_experimental_case_with_incomplete_prescription",
+      "locator": "pp.1–2 design bounds; p.2 fabrication/measurement and error simulations; pp.3–4 feedback; p.4 Fig.6 double-side metrics and Table1 durability",
       "redistribution": "Self-written summary and factual metadata only; no original publication redistributed.",
       "reproduction_performed_in_this_package": false,
-      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction"
+      "reproduction_readiness": "see_data_available_and_data_gaps; not_a_claim_of_exact_reproduction",
+      "fulltext_followup": {
+        "review": "../2026-10-19_fulltext_followup/six-spectral-review.md",
+        "structured_facts": "../2026-10-19_fulltext_followup/six-spectral-facts.json",
+        "original_pdf_redistributed": false
+      }
     },
     {
       "id": "ar-duris-2021",

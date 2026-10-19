@@ -455,15 +455,19 @@
       "publication_status": "peer_reviewed_accepted_early_access",
       "authors_short": "Sungjun Kim and Jungho Kim",
       "category": "surrogate_neural_adjoint",
-      "evidence_level": "publisher_full_abstract_only",
+      "evidence_level": "user_supplied_full_text_and_official_core_code_static_audit",
       "claims_supported": [
-        "每epoch较部分transformer报告37–42%训练时间下降",
-        "约束任务可有更佳峰值准确率和多样性但成本更高"
+        "26页接收稿与全部主图主表已读；GNA为代理多起点联合厚度/材料搜索，层数在初始化覆盖、优化中固定。",
+        "400–1000 nm、11种k=0材料、20–100 nm、4/8/12/16/20/24层；不是中长波IR现成模型。",
+        "每epoch较部分transformer报告37–42%训练时间下降；不等于端到端逆设计提速。",
+        "对GA和top-k的最好解及有效候选数有所收益，平均精度优势未显著；无约束12目标上单次逆设计均更慢。",
+        "官方核心代码、配置、材料CSV和六个测试例已核；当前示例最终分数由代理计算，并非独立TMM。"
       ],
       "limitations": [
-        "正文与SI本轮工具路径未可读",
-        "不能据摘要断言通用算法优势或实验验证",
-        "代码/数据/权重开放状态未确认"
+        "正式Supplementary Information仍未取得；正文已取得，不再是全文缺件。",
+        "审查提交无实际预训练权重；完整训练集未公开，完整TMM造数/终评与比较重现链仍缺。",
+        "未运行作者代码、训练或独立复现；正文无实物沉积或制造误差良率验证。",
+        "连续材料编号不是物理混合材料；离散化、过滤率和精确约束容差需单独评价。"
       ],
       "missing_priority": 1,
       "doi": "10.1038/s41598-026-75220-w",
@@ -471,6 +475,15 @@
       "canonical_key": "10.1038/s41598-026-75220-w",
       "source_record_ids": [
         "method2026_gna"
+      ],
+      "official_repository": "https://github.com/Sungjunkim721/GNA_OMT",
+      "audited_code_commit": "e7d1cab28725136e4db58ed36f0a7c454f71b96a",
+      "fulltext_followup": "../2026-10-19_fulltext_followup/gna-review.md",
+      "remaining_materials": [
+        "formal Supplementary Information",
+        "actual pretrained weights",
+        "full training data/splits",
+        "complete TMM final-evaluation and baseline scripts"
       ]
     },
     {

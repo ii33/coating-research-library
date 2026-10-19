@@ -8,8 +8,10 @@
 2. [可微、离散材料与稳健设计](differentiable-robust.md)：算法、求解后端、代码与公平成本
 3. [红外集成实验主稿](ir-experiments.md)：多光谱、热平衡、高温与规模制造
 4. [材料与结构增量](ir-materials-addendum.md)：GST、ENZ/EMNZ、IST与高温失效，不重列主稿两项共享案例
-5. [具体缺件清单](priority-missing-materials-zh.md)：六项准确题名/DOI、已得内容和真正缺口
+5. [具体缺件清单](priority-missing-materials-zh.md)：六项准确题名/DOI、资料取得状态和剩余缺口
 6. [统一来源登记](sources.json)与[发布前重点核查](publication-review.json)
+
+2026-10-19新增：[GNA全文与核心代码补核](../2026-10-19_fulltext_followup/gna-review.md)已完成，正文不再缺失；SI、实际权重与完整训练/复现链仍缺。正文补核只更新既有来源记录，不增加58条去重来源计数。
 
 ## 来源与证据边界
 

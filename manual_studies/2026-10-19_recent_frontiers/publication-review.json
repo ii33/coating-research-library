@@ -53,6 +53,19 @@
         "https://joss.theoj.org/papers/10.21105/joss.09088"
       ],
       "result": "Published2025-10-27 verified independently of later repository changes."
+    },
+    {
+      "subject": "GNA full-text and official-core-code follow-up",
+      "primary_urls": [
+        "https://doi.org/10.1038/s41598-026-75220-w",
+        "https://github.com/Sungjunkim721/GNA_OMT/commit/e7d1cab28725136e4db58ed36f0a7c454f71b96a"
+      ],
+      "locators": [
+        "User-supplied accepted manuscript PDF pp.4–24; Tables3–7",
+        "Official tree e7d1cab: source/config/material data/six examples; no actual checkpoint artifact"
+      ],
+      "result": "Main text and core code now reviewed; average-vs-best and training-vs-search costs separated. SI/actual weights/full training/reproduction chain still missing. Current example final scores use surrogate, not independent TMM. No code execution or numerical reproduction.",
+      "review": "../2026-10-19_fulltext_followup/gna-review.md"
     }
   ],
   "source_registry": {
