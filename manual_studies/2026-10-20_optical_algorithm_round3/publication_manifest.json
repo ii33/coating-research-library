@@ -1,0 +1,1205 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "repository": "ii33/coating-research-library",
+  "package_path": "manual_studies/2026-10-20_optical_algorithm_round3/",
+  "description": "Compact plaintext publication of four independent optical coating algorithm studies.",
+  "note": "This publication is not a complete raw-data archive. Large candidate-level JSON outputs are omitted; their original byte counts and SHA-256 digests identify the source artifacts but do not make them available.",
+  "source_manifests": [
+    {
+      "project": "growth-continuous",
+      "path": "growth-continuous/MANIFEST.json",
+      "bytes": 2150,
+      "sha256": "d738f05fdfd5aae2c89c22dd136aed3836beb350c67d98fbab928c0131e90026"
+    },
+    {
+      "project": "growth",
+      "path": "growth/MANIFEST.json",
+      "bytes": 6000,
+      "sha256": "47dadecf2ef3938d6ca79e3060159af338b75ccd3bb07b59b46e21931ae74de9"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "path": "hybrid-angle-exchange/MANIFEST.json",
+      "bytes": 6051,
+      "sha256": "e77ad4b5dc6bd0bcc8e15cffd0012d55c22ccee981162d471c53384526001e94"
+    },
+    {
+      "project": "hybrid",
+      "path": "hybrid/MANIFEST.json",
+      "bytes": 6694,
+      "sha256": "545efb095d0386fa0485f3b145ee268eff1e6703387db43f70d8b555c4733225"
+    }
+  ],
+  "included_files": [
+    {
+      "project": "growth-continuous",
+      "source_path": "MANIFEST.json",
+      "published_path": "growth-continuous/MANIFEST.json",
+      "source_bytes": 2150,
+      "source_sha256": "d738f05fdfd5aae2c89c22dd136aed3836beb350c67d98fbab928c0131e90026",
+      "published_bytes": 2150,
+      "published_sha256": "d738f05fdfd5aae2c89c22dd136aed3836beb350c67d98fbab928c0131e90026"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "README.md",
+      "published_path": "growth-continuous/README.md",
+      "source_bytes": 1317,
+      "source_sha256": "696360b5e3d84a487e96388dae17744d898b5efa7307868ebe437b71ea57c3a4",
+      "published_bytes": 1317,
+      "published_sha256": "696360b5e3d84a487e96388dae17744d898b5efa7307868ebe437b71ea57c3a4"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "pilot/config.json",
+      "published_path": "growth-continuous/pilot/config.json",
+      "source_bytes": 4143,
+      "source_sha256": "f4cd9dae1764c37570563e12f67c8b4dabf5711f85df76e294db55f7993fa5b9",
+      "published_bytes": 4143,
+      "published_sha256": "f4cd9dae1764c37570563e12f67c8b4dabf5711f85df76e294db55f7993fa5b9"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "pilot/runs.csv",
+      "published_path": "growth-continuous/pilot/runs.csv",
+      "source_bytes": 3548,
+      "source_sha256": "c27bb880b0237e3fed72f15943c2c91cf30160e79c721212c388ffdc686bd7bd",
+      "published_bytes": 3548,
+      "published_sha256": "c27bb880b0237e3fed72f15943c2c91cf30160e79c721212c388ffdc686bd7bd"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "pilot/summary.csv",
+      "published_path": "growth-continuous/pilot/summary.csv",
+      "source_bytes": 756,
+      "source_sha256": "cd15a6bbc2a82a0bdf03b7ea825ad96e8384602402e2a20a2c99b31a5f0ca694",
+      "published_bytes": 756,
+      "published_sha256": "cd15a6bbc2a82a0bdf03b7ea825ad96e8384602402e2a20a2c99b31a5f0ca694"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "portable_test_report.txt",
+      "published_path": "growth-continuous/portable_test_report.txt",
+      "source_bytes": 98,
+      "source_sha256": "a07ed64fc8c14cc797db6a964862e4b35f0da8642dcbd52dbba590b0b6b073fd",
+      "published_bytes": 98,
+      "published_sha256": "a07ed64fc8c14cc797db6a964862e4b35f0da8642dcbd52dbba590b0b6b073fd"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "requirements.txt",
+      "published_path": "growth-continuous/requirements.txt",
+      "source_bytes": 35,
+      "source_sha256": "7544eabdb703fc5a93e318b07aeccb51b424b2a58115e13e497cf057ceaaba12",
+      "published_bytes": 35,
+      "published_sha256": "7544eabdb703fc5a93e318b07aeccb51b424b2a58115e13e497cf057ceaaba12"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "run_continuous.py",
+      "published_path": "growth-continuous/run_continuous.py",
+      "source_bytes": 15415,
+      "source_sha256": "97b8df8df2cb7e658fe3724f23ef8ed390d43975d6872561b9bda173cad3210c",
+      "published_bytes": 15415,
+      "published_sha256": "97b8df8df2cb7e658fe3724f23ef8ed390d43975d6872561b9bda173cad3210c"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "test_continuous.py",
+      "published_path": "growth-continuous/test_continuous.py",
+      "source_bytes": 3895,
+      "source_sha256": "a03c4e6355fde0566e984f484e9acc36f84136dda46f1d7b1f656aba06a069ad",
+      "published_bytes": 3895,
+      "published_sha256": "a03c4e6355fde0566e984f484e9acc36f84136dda46f1d7b1f656aba06a069ad"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "test_report.txt",
+      "published_path": "growth-continuous/test_report.txt",
+      "source_bytes": 98,
+      "source_sha256": "6ebbd06786c85c70e82ae7754a87ac8cdab1ea453cbd65aa3b1c8be5859be24e",
+      "published_bytes": 98,
+      "published_sha256": "6ebbd06786c85c70e82ae7754a87ac8cdab1ea453cbd65aa3b1c8be5859be24e"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "verified_kernel/run_experiment.py",
+      "published_path": "growth-continuous/verified_kernel/run_experiment.py",
+      "source_bytes": 22827,
+      "source_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6",
+      "published_bytes": 22827,
+      "published_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "小试结论.md",
+      "published_path": "growth-continuous/小试结论.md",
+      "source_bytes": 7091,
+      "source_sha256": "283a76d906e5bc840918c1c236abea5771d0b298a7fc8b46b6fec12743a398f9",
+      "published_bytes": 7091,
+      "published_sha256": "283a76d906e5bc840918c1c236abea5771d0b298a7fc8b46b6fec12743a398f9"
+    },
+    {
+      "project": "growth",
+      "source_path": "MANIFEST.json",
+      "published_path": "growth/MANIFEST.json",
+      "source_bytes": 6000,
+      "source_sha256": "47dadecf2ef3938d6ca79e3060159af338b75ccd3bb07b59b46e21931ae74de9",
+      "published_bytes": 6000,
+      "published_sha256": "47dadecf2ef3938d6ca79e3060159af338b75ccd3bb07b59b46e21931ae74de9"
+    },
+    {
+      "project": "growth",
+      "source_path": "README.md",
+      "published_path": "growth/README.md",
+      "source_bytes": 2729,
+      "source_sha256": "5a70243cf19833d81d1c3cdd759ae84140a3d2991f4ec2b1d9f5e668ae61e751",
+      "published_bytes": 2729,
+      "published_sha256": "5a70243cf19833d81d1c3cdd759ae84140a3d2991f4ec2b1d9f5e668ae61e751"
+    },
+    {
+      "project": "growth",
+      "source_path": "analyze_growth.py",
+      "published_path": "growth/analyze_growth.py",
+      "source_bytes": 6962,
+      "source_sha256": "a9507727ff0b1aacc012739db0b4efe6811334dc51bbcb0b26504ef2720ebd30",
+      "published_bytes": 6962,
+      "published_sha256": "a9507727ff0b1aacc012739db0b4efe6811334dc51bbcb0b26504ef2720ebd30"
+    },
+    {
+      "project": "growth",
+      "source_path": "baseline_reference_cases.json",
+      "published_path": "growth/baseline_reference_cases.json",
+      "source_bytes": 2026,
+      "source_sha256": "43aa703c8805cf95f43406eb7366b47569332e3f9b71e653c3c8f3f46a2b42f0",
+      "published_bytes": 2026,
+      "published_sha256": "43aa703c8805cf95f43406eb7366b47569332e3f9b71e653c3c8f3f46a2b42f0"
+    },
+    {
+      "project": "growth",
+      "source_path": "experiment_plan.md",
+      "published_path": "growth/experiment_plan.md",
+      "source_bytes": 3546,
+      "source_sha256": "a82664a170c5b86f4608541252bb9574ae2d384e0d2305cdde058fc2c4b0ca71",
+      "published_bytes": 3546,
+      "published_sha256": "a82664a170c5b86f4608541252bb9574ae2d384e0d2305cdde058fc2c4b0ca71"
+    },
+    {
+      "project": "growth",
+      "source_path": "pilot/config.json",
+      "published_path": "growth/pilot/config.json",
+      "source_bytes": 5160,
+      "source_sha256": "c6f68c497de257002e48289e9bcd9fb0404ff3a580e10b831e973a60e7f6e2ef",
+      "published_bytes": 5160,
+      "published_sha256": "c6f68c497de257002e48289e9bcd9fb0404ff3a580e10b831e973a60e7f6e2ef"
+    },
+    {
+      "project": "growth",
+      "source_path": "pilot/runs.csv",
+      "published_path": "growth/pilot/runs.csv",
+      "source_bytes": 91179,
+      "source_sha256": "50fa1d1cf293e1c2d6c0cfde304603ba0b9a6d8e86061797dab9ea630b62c52e",
+      "published_bytes": 91179,
+      "published_sha256": "50fa1d1cf293e1c2d6c0cfde304603ba0b9a6d8e86061797dab9ea630b62c52e"
+    },
+    {
+      "project": "growth",
+      "source_path": "pilot/summary.csv",
+      "published_path": "growth/pilot/summary.csv",
+      "source_bytes": 13294,
+      "source_sha256": "f9e291181e5e9c908d852df0924d4df82a87955c5e5133322e0479d46b356919",
+      "published_bytes": 13294,
+      "published_sha256": "f9e291181e5e9c908d852df0924d4df82a87955c5e5133322e0479d46b356919"
+    },
+    {
+      "project": "growth",
+      "source_path": "pilot/summary.json",
+      "published_path": "growth/pilot/summary.json",
+      "source_bytes": 49103,
+      "source_sha256": "ac12b728c3c83839bb5c5c24894e28608cbcbb429d9a097883e8526baecd7a17",
+      "published_bytes": 49103,
+      "published_sha256": "ac12b728c3c83839bb5c5c24894e28608cbcbb429d9a097883e8526baecd7a17"
+    },
+    {
+      "project": "growth",
+      "source_path": "portable_test_report.txt",
+      "published_path": "growth/portable_test_report.txt",
+      "source_bytes": 98,
+      "source_sha256": "d97c995e05f24bfb1db25242101b0eefee5b2646bfcae0ad923e10e158d8bbea",
+      "published_bytes": 98,
+      "published_sha256": "d97c995e05f24bfb1db25242101b0eefee5b2646bfcae0ad923e10e158d8bbea"
+    },
+    {
+      "project": "growth",
+      "source_path": "requirements.txt",
+      "published_path": "growth/requirements.txt",
+      "source_bytes": 35,
+      "source_sha256": "7544eabdb703fc5a93e318b07aeccb51b424b2a58115e13e497cf057ceaaba12",
+      "published_bytes": 35,
+      "published_sha256": "7544eabdb703fc5a93e318b07aeccb51b424b2a58115e13e497cf057ceaaba12"
+    },
+    {
+      "project": "growth",
+      "source_path": "results/aggregate.csv",
+      "published_path": "growth/results/aggregate.csv",
+      "source_bytes": 751,
+      "source_sha256": "2b8b62f5e871ce10d44eae9e6b0d644081b0df0cdfb45f7f537ed284ccdebfe0",
+      "published_bytes": 751,
+      "published_sha256": "2b8b62f5e871ce10d44eae9e6b0d644081b0df0cdfb45f7f537ed284ccdebfe0"
+    },
+    {
+      "project": "growth",
+      "source_path": "results/analysis.json",
+      "published_path": "growth/results/analysis.json",
+      "source_bytes": 19516,
+      "source_sha256": "b7b542839eaf43fb9139037707501eac33e420ddbabef3bbaf3ad71674692171",
+      "published_bytes": 19516,
+      "published_sha256": "b7b542839eaf43fb9139037707501eac33e420ddbabef3bbaf3ad71674692171"
+    },
+    {
+      "project": "growth",
+      "source_path": "results/config.json",
+      "published_path": "growth/results/config.json",
+      "source_bytes": 9025,
+      "source_sha256": "e3b67ba7618fd6ea4f87c9e7a4cee7f16026e9577911fcd19adf3ebb34187ac8",
+      "published_bytes": 9025,
+      "published_sha256": "e3b67ba7618fd6ea4f87c9e7a4cee7f16026e9577911fcd19adf3ebb34187ac8"
+    },
+    {
+      "project": "growth",
+      "source_path": "results/runs.csv",
+      "published_path": "growth/results/runs.csv",
+      "source_bytes": 195704,
+      "source_sha256": "d08abe4ae44ba6e762b6293e39d9038b952106e5a0e70f22760e695c57958532",
+      "published_bytes": 195704,
+      "published_sha256": "d08abe4ae44ba6e762b6293e39d9038b952106e5a0e70f22760e695c57958532"
+    },
+    {
+      "project": "growth",
+      "source_path": "results/summary.csv",
+      "published_path": "growth/results/summary.csv",
+      "source_bytes": 29644,
+      "source_sha256": "d92d27a8b15190c0e64c05d17d495163f556054633808d30bf6568109ca1d46e",
+      "published_bytes": 29644,
+      "published_sha256": "d92d27a8b15190c0e64c05d17d495163f556054633808d30bf6568109ca1d46e"
+    },
+    {
+      "project": "growth",
+      "source_path": "results/summary.json",
+      "published_path": "growth/results/summary.json",
+      "source_bytes": 106324,
+      "source_sha256": "c8a675261dfb7b186609a323164fded1968d5901cfb84c2e21c818bf6d44c8e4",
+      "published_bytes": 106324,
+      "published_sha256": "c8a675261dfb7b186609a323164fded1968d5901cfb84c2e21c818bf6d44c8e4"
+    },
+    {
+      "project": "growth",
+      "source_path": "run_growth.py",
+      "published_path": "growth/run_growth.py",
+      "source_bytes": 18475,
+      "source_sha256": "cae3fcbf64ec22d648bdbd8c9b9b9134b4ed2d1e79e12aa23cedc36ede68cfbb",
+      "published_bytes": 18475,
+      "published_sha256": "cae3fcbf64ec22d648bdbd8c9b9b9134b4ed2d1e79e12aa23cedc36ede68cfbb"
+    },
+    {
+      "project": "growth",
+      "source_path": "test_growth.py",
+      "published_path": "growth/test_growth.py",
+      "source_bytes": 4726,
+      "source_sha256": "82000a8e27afcd249e9d8dc11504f3b60c5d29b66dfa50b7801632354081bf65",
+      "published_bytes": 4726,
+      "published_sha256": "82000a8e27afcd249e9d8dc11504f3b60c5d29b66dfa50b7801632354081bf65"
+    },
+    {
+      "project": "growth",
+      "source_path": "test_report.txt",
+      "published_path": "growth/test_report.txt",
+      "source_bytes": 98,
+      "source_sha256": "1bfadd9be674873dd5d2101a80a3d7aad6a8c91c3e2309b757c31fce779eeb47",
+      "published_bytes": 98,
+      "published_sha256": "1bfadd9be674873dd5d2101a80a3d7aad6a8c91c3e2309b757c31fce779eeb47"
+    },
+    {
+      "project": "growth",
+      "source_path": "validate_saved.py",
+      "published_path": "growth/validate_saved.py",
+      "source_bytes": 3377,
+      "source_sha256": "f2da41e4c1b864d185e86a9ca6831aade3555961ceddd1928ee42380ea8d079a",
+      "published_bytes": 3377,
+      "published_sha256": "f2da41e4c1b864d185e86a9ca6831aade3555961ceddd1928ee42380ea8d079a"
+    },
+    {
+      "project": "growth",
+      "source_path": "validation_summary.json",
+      "published_path": "growth/validation_summary.json",
+      "source_bytes": 816,
+      "source_sha256": "1865c47435dc10e106873997ad869fbee13ef39dc93055654c5ae327daf8d5b9",
+      "published_bytes": 816,
+      "published_sha256": "1865c47435dc10e106873997ad869fbee13ef39dc93055654c5ae327daf8d5b9"
+    },
+    {
+      "project": "growth",
+      "source_path": "verified_kernel/run_experiment.py",
+      "published_path": "growth/verified_kernel/run_experiment.py",
+      "source_bytes": 22827,
+      "source_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6",
+      "published_bytes": 22827,
+      "published_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    {
+      "project": "growth",
+      "source_path": "work_matched/aggregate.csv",
+      "published_path": "growth/work_matched/aggregate.csv",
+      "source_bytes": 739,
+      "source_sha256": "ea57bbd01cf34713a2dafd228a7bea43609e2b5d416314732a53981a508a3533",
+      "published_bytes": 739,
+      "published_sha256": "ea57bbd01cf34713a2dafd228a7bea43609e2b5d416314732a53981a508a3533"
+    },
+    {
+      "project": "growth",
+      "source_path": "work_matched/analysis.json",
+      "published_path": "growth/work_matched/analysis.json",
+      "source_bytes": 19396,
+      "source_sha256": "dbf67bfd8ad359bb538b3b5dd74a5948808965a5a7a5cbcb693d3b3823e32693",
+      "published_bytes": 19396,
+      "published_sha256": "dbf67bfd8ad359bb538b3b5dd74a5948808965a5a7a5cbcb693d3b3823e32693"
+    },
+    {
+      "project": "growth",
+      "source_path": "work_matched/config.json",
+      "published_path": "growth/work_matched/config.json",
+      "source_bytes": 9024,
+      "source_sha256": "de9c92c7e967b49926eb7a084cedebbf783ebc13c4506dd0aa5e358bd9811148",
+      "published_bytes": 9024,
+      "published_sha256": "de9c92c7e967b49926eb7a084cedebbf783ebc13c4506dd0aa5e358bd9811148"
+    },
+    {
+      "project": "growth",
+      "source_path": "work_matched/runs.csv",
+      "published_path": "growth/work_matched/runs.csv",
+      "source_bytes": 201760,
+      "source_sha256": "bfabf179c7796e3464159c3f38c35a71ff80f4141857179c3430163f550ce74b",
+      "published_bytes": 201760,
+      "published_sha256": "bfabf179c7796e3464159c3f38c35a71ff80f4141857179c3430163f550ce74b"
+    },
+    {
+      "project": "growth",
+      "source_path": "work_matched/summary.csv",
+      "published_path": "growth/work_matched/summary.csv",
+      "source_bytes": 29753,
+      "source_sha256": "7f9f5a0e57a4ce0b4447f2bf218d95db60c5df6280ad347c979fb71be095a454",
+      "published_bytes": 29753,
+      "published_sha256": "7f9f5a0e57a4ce0b4447f2bf218d95db60c5df6280ad347c979fb71be095a454"
+    },
+    {
+      "project": "growth",
+      "source_path": "work_matched/summary.json",
+      "published_path": "growth/work_matched/summary.json",
+      "source_bytes": 106433,
+      "source_sha256": "8705a893e7b633dacff71049aa4f802f0ad95fc362fb0640394d368d8867946a",
+      "published_bytes": 106433,
+      "published_sha256": "8705a893e7b633dacff71049aa4f802f0ad95fc362fb0640394d368d8867946a"
+    },
+    {
+      "project": "growth",
+      "source_path": "研究报告.md",
+      "published_path": "growth/研究报告.md",
+      "source_bytes": 12514,
+      "source_sha256": "0101d0d8d8becaac44b0f9b46501194e580d06dfddc6c157d49f100cba353b65",
+      "published_bytes": 12514,
+      "published_sha256": "0101d0d8d8becaac44b0f9b46501194e580d06dfddc6c157d49f100cba353b65"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "MANIFEST.json",
+      "published_path": "hybrid-angle-exchange/MANIFEST.json",
+      "source_bytes": 6051,
+      "source_sha256": "e77ad4b5dc6bd0bcc8e15cffd0012d55c22ccee981162d471c53384526001e94",
+      "published_bytes": 6051,
+      "published_sha256": "e77ad4b5dc6bd0bcc8e15cffd0012d55c22ccee981162d471c53384526001e94"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "PROTOCOL.md",
+      "published_path": "hybrid-angle-exchange/PROTOCOL.md",
+      "source_bytes": 4033,
+      "source_sha256": "2e48cf032e7f96d62ee0211d977777631c52bb89e276b31bba1de9cc50cc9718",
+      "published_bytes": 4033,
+      "published_sha256": "2e48cf032e7f96d62ee0211d977777631c52bb89e276b31bba1de9cc50cc9718"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "README.md",
+      "published_path": "hybrid-angle-exchange/README.md",
+      "source_bytes": 2343,
+      "source_sha256": "27f99dbb8a72076f9b395b6e67be68dcd1aecf4ecfebe407aa9626ce2d5e2834",
+      "published_bytes": 2343,
+      "published_sha256": "27f99dbb8a72076f9b395b6e67be68dcd1aecf4ecfebe407aa9626ce2d5e2834"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "analyze_angle_exchange.py",
+      "published_path": "hybrid-angle-exchange/analyze_angle_exchange.py",
+      "source_bytes": 6485,
+      "source_sha256": "6c6e4d9eaff9de74dfb1970430db8577abbfc01ee571d2f99284bbf1e44c3ef2",
+      "published_bytes": 6485,
+      "published_sha256": "6c6e4d9eaff9de74dfb1970430db8577abbfc01ee571d2f99284bbf1e44c3ef2"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "data/ATTRIBUTION.md",
+      "published_path": "hybrid-angle-exchange/data/ATTRIBUTION.md",
+      "source_bytes": 1545,
+      "source_sha256": "8a782053c7d7b789fe0b45e30d1ac0d918e8a8c1f9e67aaa5396726bdd66e11d",
+      "published_bytes": 1545,
+      "published_sha256": "8a782053c7d7b789fe0b45e30d1ac0d918e8a8c1f9e67aaa5396726bdd66e11d"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "data/MgF2_Franta.csv",
+      "published_path": "hybrid-angle-exchange/data/MgF2_Franta.csv",
+      "source_bytes": 25318,
+      "source_sha256": "664a301a08f7f84911e45fcd28ce3f877ec4b47041edb1d0171e74d75ebd4c7d",
+      "published_bytes": 25318,
+      "published_sha256": "664a301a08f7f84911e45fcd28ce3f877ec4b47041edb1d0171e74d75ebd4c7d"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "data/Si_Franta-300K.csv",
+      "published_path": "hybrid-angle-exchange/data/Si_Franta-300K.csv",
+      "source_bytes": 25487,
+      "source_sha256": "2da6eed89d655b56e9310716b6fe5765e18bc4e135715d72a52ed5806c9679fe",
+      "published_bytes": 25487,
+      "published_sha256": "2da6eed89d655b56e9310716b6fe5765e18bc4e135715d72a52ed5806c9679fe"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "data/ZnSe_Querry.csv",
+      "published_path": "hybrid-angle-exchange/data/ZnSe_Querry.csv",
+      "source_bytes": 2413,
+      "source_sha256": "850fd174d5914f94c0a2ef856e3bf91089b6bbc9e2187c7a693d3b049a32fb54",
+      "published_bytes": 2413,
+      "published_sha256": "850fd174d5914f94c0a2ef856e3bf91089b6bbc9e2187c7a693d3b049a32fb54"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "data/provenance.json",
+      "published_path": "hybrid-angle-exchange/data/provenance.json",
+      "source_bytes": 3311,
+      "source_sha256": "93528b362c597feeb659aa48328f17f9183b760494a99d58fffb9d116e859576",
+      "published_bytes": 3311,
+      "published_sha256": "93528b362c597feeb659aa48328f17f9183b760494a99d58fffb9d116e859576"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "initial_static_restart/README.md",
+      "published_path": "hybrid-angle-exchange/initial_static_restart/README.md",
+      "source_bytes": 879,
+      "source_sha256": "a5a3154c476c4e173664db173305d0df08c5fd47b2b37faa0a081ba598fdaa3f",
+      "published_bytes": 879,
+      "published_sha256": "a5a3154c476c4e173664db173305d0df08c5fd47b2b37faa0a081ba598fdaa3f"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "initial_static_restart/initial_run_angle_exchange.py",
+      "published_path": "hybrid-angle-exchange/initial_static_restart/initial_run_angle_exchange.py",
+      "source_bytes": 15225,
+      "source_sha256": "7c81fca09b388f973d0b641ff429214137fbd4ac782fd3e4594ebce3ee946d06",
+      "published_bytes": 15225,
+      "published_sha256": "7c81fca09b388f973d0b641ff429214137fbd4ac782fd3e4594ebce3ee946d06"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "initial_static_restart/results/physics_checks.json",
+      "published_path": "hybrid-angle-exchange/initial_static_restart/results/physics_checks.json",
+      "source_bytes": 149,
+      "source_sha256": "aad155d725a59de853cc1c2d5a349ac5415aaefa2cab65b306cc3d0851c2a91c",
+      "published_bytes": 149,
+      "published_sha256": "aad155d725a59de853cc1c2d5a349ac5415aaefa2cab65b306cc3d0851c2a91c"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "initial_static_restart/results/summary.csv",
+      "published_path": "hybrid-angle-exchange/initial_static_restart/results/summary.csv",
+      "source_bytes": 968,
+      "source_sha256": "7e4f4b8ea0a579fc30f93dac6672c85e5ea2cc29d04954ac7a7aab021fa16660",
+      "published_bytes": 968,
+      "published_sha256": "7e4f4b8ea0a579fc30f93dac6672c85e5ea2cc29d04954ac7a7aab021fa16660"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "initial_static_restart/results/summary.json",
+      "published_path": "hybrid-angle-exchange/initial_static_restart/results/summary.json",
+      "source_bytes": 2470,
+      "source_sha256": "6209b7f40c09b3a363d51ced3558eb9d4991dd371d2c2b724a82b1e345535e1e",
+      "published_bytes": 2470,
+      "published_sha256": "6209b7f40c09b3a363d51ced3558eb9d4991dd371d2c2b724a82b1e345535e1e"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "initial_static_restart/seed_sources.json",
+      "published_path": "hybrid-angle-exchange/initial_static_restart/seed_sources.json",
+      "source_bytes": 7657,
+      "source_sha256": "98088b66ef02f745fc7cc3264e9b4d3f94d1e9d0f5f9e1b1f9617beb82d840df",
+      "published_bytes": 7657,
+      "published_sha256": "98088b66ef02f745fc7cc3264e9b4d3f94d1e9d0f5f9e1b1f9617beb82d840df"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "optics_base.py",
+      "published_path": "hybrid-angle-exchange/optics_base.py",
+      "source_bytes": 17854,
+      "source_sha256": "69485f6ba692737dea486b1b1cf4993e27ad357a2f50ad9c56722bfb8e936156",
+      "published_bytes": 17854,
+      "published_sha256": "69485f6ba692737dea486b1b1cf4993e27ad357a2f50ad9c56722bfb8e936156"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "requirements.txt",
+      "published_path": "hybrid-angle-exchange/requirements.txt",
+      "source_bytes": 46,
+      "source_sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197",
+      "published_bytes": 46,
+      "published_sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/analysis_summary.json",
+      "published_path": "hybrid-angle-exchange/results/analysis_summary.json",
+      "source_bytes": 837,
+      "source_sha256": "35aefc00d37401d0019e11f2ed7396acd96045fd1b4d5dcdc786c3bb46b03a51",
+      "published_bytes": 837,
+      "published_sha256": "35aefc00d37401d0019e11f2ed7396acd96045fd1b4d5dcdc786c3bb46b03a51"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/constraint_transfer_diagnostics.json",
+      "published_path": "hybrid-angle-exchange/results/constraint_transfer_diagnostics.json",
+      "source_bytes": 659,
+      "source_sha256": "7573f9a415543dd22a5e624c20961762a437c46a4fd3e9995188693c5b89bbca",
+      "published_bytes": 659,
+      "published_sha256": "7573f9a415543dd22a5e624c20961762a437c46a4fd3e9995188693c5b89bbca"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/paired_comparisons.json",
+      "published_path": "hybrid-angle-exchange/results/paired_comparisons.json",
+      "source_bytes": 5259,
+      "source_sha256": "1ca0d29f765fcf8c53d43f82b45fb659c9ad1f0f4b119c3854d71440874bb331",
+      "published_bytes": 5259,
+      "published_sha256": "1ca0d29f765fcf8c53d43f82b45fb659c9ad1f0f4b119c3854d71440874bb331"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/physics_checks.json",
+      "published_path": "hybrid-angle-exchange/results/physics_checks.json",
+      "source_bytes": 149,
+      "source_sha256": "aad155d725a59de853cc1c2d5a349ac5415aaefa2cab65b306cc3d0851c2a91c",
+      "published_bytes": 149,
+      "published_sha256": "aad155d725a59de853cc1c2d5a349ac5415aaefa2cab65b306cc3d0851c2a91c"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/replay.json",
+      "published_path": "hybrid-angle-exchange/results/replay.json",
+      "source_bytes": 6313,
+      "source_sha256": "761cf3a7cb79951f7534624e8f7b97c5901ac0287dadc5022d0f1620582ba78a",
+      "published_bytes": 6313,
+      "published_sha256": "761cf3a7cb79951f7534624e8f7b97c5901ac0287dadc5022d0f1620582ba78a"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/runs.csv",
+      "published_path": "hybrid-angle-exchange/results/runs.csv",
+      "source_bytes": 4170,
+      "source_sha256": "4e904720e8f241ffc066a9c0cb780723560936ebea497950175e7a0bb8a4d974",
+      "published_bytes": 4170,
+      "published_sha256": "4e904720e8f241ffc066a9c0cb780723560936ebea497950175e7a0bb8a4d974"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/summary.csv",
+      "published_path": "hybrid-angle-exchange/results/summary.csv",
+      "source_bytes": 964,
+      "source_sha256": "9bc8b33f8624ff8880a83e370fb3c9fa295ed34b293556ec46942e75c2efaa02",
+      "published_bytes": 964,
+      "published_sha256": "9bc8b33f8624ff8880a83e370fb3c9fa295ed34b293556ec46942e75c2efaa02"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/summary.json",
+      "published_path": "hybrid-angle-exchange/results/summary.json",
+      "source_bytes": 2466,
+      "source_sha256": "d9d6f0a67aeb518c12c38217c4495beac56ab1af5a0d2cbdbbf289538bab9f0a",
+      "published_bytes": 2466,
+      "published_sha256": "d9d6f0a67aeb518c12c38217c4495beac56ab1af5a0d2cbdbbf289538bab9f0a"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "run_angle_exchange.py",
+      "published_path": "hybrid-angle-exchange/run_angle_exchange.py",
+      "source_bytes": 16202,
+      "source_sha256": "df2398a232551f28c985da2ef0d25b068fd29fd887a1e1249f03df35de0d2e32",
+      "published_bytes": 16202,
+      "published_sha256": "df2398a232551f28c985da2ef0d25b068fd29fd887a1e1249f03df35de0d2e32"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "seed_sources.json",
+      "published_path": "hybrid-angle-exchange/seed_sources.json",
+      "source_bytes": 7657,
+      "source_sha256": "98088b66ef02f745fc7cc3264e9b4d3f94d1e9d0f5f9e1b1f9617beb82d840df",
+      "published_bytes": 7657,
+      "published_sha256": "98088b66ef02f745fc7cc3264e9b4d3f94d1e9d0f5f9e1b1f9617beb82d840df"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "test_angle_exchange.py",
+      "published_path": "hybrid-angle-exchange/test_angle_exchange.py",
+      "source_bytes": 3051,
+      "source_sha256": "f7d674af15745c1d044bbbe6e262ca1b069fbec28f6d8203ab17ac93e6e1d763",
+      "published_bytes": 3051,
+      "published_sha256": "f7d674af15745c1d044bbbe6e262ca1b069fbec28f6d8203ab17ac93e6e1d763"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "write_report.py",
+      "published_path": "hybrid-angle-exchange/write_report.py",
+      "source_bytes": 9711,
+      "source_sha256": "c599f64abeaebeda1b49405db1081d6122690f1ac245978993128cf9f231107b",
+      "published_bytes": 9711,
+      "published_sha256": "c599f64abeaebeda1b49405db1081d6122690f1ac245978993128cf9f231107b"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "研究报告.md",
+      "published_path": "hybrid-angle-exchange/研究报告.md",
+      "source_bytes": 9189,
+      "source_sha256": "619f086d65431f8dd70567be893d30be2ee194f3db6e3a9fae23b499304ef121",
+      "published_bytes": 9189,
+      "published_sha256": "619f086d65431f8dd70567be893d30be2ee194f3db6e3a9fae23b499304ef121"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "MANIFEST.json",
+      "published_path": "hybrid/MANIFEST.json",
+      "source_bytes": 6694,
+      "source_sha256": "545efb095d0386fa0485f3b145ee268eff1e6703387db43f70d8b555c4733225",
+      "published_bytes": 6694,
+      "published_sha256": "545efb095d0386fa0485f3b145ee268eff1e6703387db43f70d8b555c4733225"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "PROTOCOL.md",
+      "published_path": "hybrid/PROTOCOL.md",
+      "source_bytes": 4476,
+      "source_sha256": "26bcb3ae19e9d83891a1a96a57aebd7dd985ba23244a0afcf9b34801d204aa8d",
+      "published_bytes": 4476,
+      "published_sha256": "26bcb3ae19e9d83891a1a96a57aebd7dd985ba23244a0afcf9b34801d204aa8d"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "README.md",
+      "published_path": "hybrid/README.md",
+      "source_bytes": 3118,
+      "source_sha256": "84a6ba4445ebca8d4c95ad220483b7336b1116e62f7406651ab102f0620543d2",
+      "published_bytes": 3118,
+      "published_sha256": "84a6ba4445ebca8d4c95ad220483b7336b1116e62f7406651ab102f0620543d2"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "analyze_hybrid.py",
+      "published_path": "hybrid/analyze_hybrid.py",
+      "source_bytes": 7458,
+      "source_sha256": "42d365543be15c7fdac31c978cfba19a04cb330bdb66a52799e2deeb17ac1047",
+      "published_bytes": 7458,
+      "published_sha256": "42d365543be15c7fdac31c978cfba19a04cb330bdb66a52799e2deeb17ac1047"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "data/ATTRIBUTION.md",
+      "published_path": "hybrid/data/ATTRIBUTION.md",
+      "source_bytes": 1545,
+      "source_sha256": "8a782053c7d7b789fe0b45e30d1ac0d918e8a8c1f9e67aaa5396726bdd66e11d",
+      "published_bytes": 1545,
+      "published_sha256": "8a782053c7d7b789fe0b45e30d1ac0d918e8a8c1f9e67aaa5396726bdd66e11d"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "data/MgF2_Franta.csv",
+      "published_path": "hybrid/data/MgF2_Franta.csv",
+      "source_bytes": 25318,
+      "source_sha256": "664a301a08f7f84911e45fcd28ce3f877ec4b47041edb1d0171e74d75ebd4c7d",
+      "published_bytes": 25318,
+      "published_sha256": "664a301a08f7f84911e45fcd28ce3f877ec4b47041edb1d0171e74d75ebd4c7d"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "data/Si_Franta-300K.csv",
+      "published_path": "hybrid/data/Si_Franta-300K.csv",
+      "source_bytes": 25487,
+      "source_sha256": "2da6eed89d655b56e9310716b6fe5765e18bc4e135715d72a52ed5806c9679fe",
+      "published_bytes": 25487,
+      "published_sha256": "2da6eed89d655b56e9310716b6fe5765e18bc4e135715d72a52ed5806c9679fe"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "data/ZnSe_Querry.csv",
+      "published_path": "hybrid/data/ZnSe_Querry.csv",
+      "source_bytes": 2413,
+      "source_sha256": "850fd174d5914f94c0a2ef856e3bf91089b6bbc9e2187c7a693d3b049a32fb54",
+      "published_bytes": 2413,
+      "published_sha256": "850fd174d5914f94c0a2ef856e3bf91089b6bbc9e2187c7a693d3b049a32fb54"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "data/provenance.json",
+      "published_path": "hybrid/data/provenance.json",
+      "source_bytes": 3311,
+      "source_sha256": "93528b362c597feeb659aa48328f17f9183b760494a99d58fffb9d116e859576",
+      "published_bytes": 3311,
+      "published_sha256": "93528b362c597feeb659aa48328f17f9183b760494a99d58fffb9d116e859576"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "diagnose_angle_peaks.py",
+      "published_path": "hybrid/diagnose_angle_peaks.py",
+      "source_bytes": 2010,
+      "source_sha256": "2ce7434c06db8b41645dee2260960d90c8970e8b71226d20c20a35e9838213ab",
+      "published_bytes": 2010,
+      "published_sha256": "2ce7434c06db8b41645dee2260960d90c8970e8b71226d20c20a35e9838213ab"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "extract_material_data.py",
+      "published_path": "hybrid/extract_material_data.py",
+      "source_bytes": 1459,
+      "source_sha256": "5725803cedf6ee5b0ea444793ad646f21020d534edb5c54e10264b70a64e7536",
+      "published_bytes": 1459,
+      "published_sha256": "5725803cedf6ee5b0ea444793ad646f21020d534edb5c54e10264b70a64e7536"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "pilot/physics_checks.json",
+      "published_path": "hybrid/pilot/physics_checks.json",
+      "source_bytes": 482,
+      "source_sha256": "43f732448d99661618fa192ce044501b092cb2724f698c41f17fd43476849d84",
+      "published_bytes": 482,
+      "published_sha256": "43f732448d99661618fa192ce044501b092cb2724f698c41f17fd43476849d84"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "pilot/summary.csv",
+      "published_path": "hybrid/pilot/summary.csv",
+      "source_bytes": 2835,
+      "source_sha256": "218127daccf26971f7dc928e745b556fe425db87487e1d6f3e95ffb1326a835b",
+      "published_bytes": 2835,
+      "published_sha256": "218127daccf26971f7dc928e745b556fe425db87487e1d6f3e95ffb1326a835b"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "pilot/summary.json",
+      "published_path": "hybrid/pilot/summary.json",
+      "source_bytes": 7487,
+      "source_sha256": "3d0759805929e8493f06bf5a04e42609527b038d4e8a83fb6e4dc4db24465d4b",
+      "published_bytes": 7487,
+      "published_sha256": "3d0759805929e8493f06bf5a04e42609527b038d4e8a83fb6e4dc4db24465d4b"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "requirements.txt",
+      "published_path": "hybrid/requirements.txt",
+      "source_bytes": 99,
+      "source_sha256": "912d3b20bf684a9666a4e5f626f43feac64dcb7595fa38c0f48e734d9d87fc75",
+      "published_bytes": 99,
+      "published_sha256": "912d3b20bf684a9666a4e5f626f43feac64dcb7595fa38c0f48e734d9d87fc75"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/analysis_summary.json",
+      "published_path": "hybrid/results/analysis_summary.json",
+      "source_bytes": 663,
+      "source_sha256": "2f6ffd65b59d18ff8fc2862aa72e80b25eec53daedc85512bec64a427f4701e0",
+      "published_bytes": 663,
+      "published_sha256": "2f6ffd65b59d18ff8fc2862aa72e80b25eec53daedc85512bec64a427f4701e0"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/angle_peak_diagnostic.json",
+      "published_path": "hybrid/results/angle_peak_diagnostic.json",
+      "source_bytes": 1563,
+      "source_sha256": "2110315331b7c5490c4b8da111065072b39fce30b64ed55579a3d3833826cb47",
+      "published_bytes": 1563,
+      "published_sha256": "2110315331b7c5490c4b8da111065072b39fce30b64ed55579a3d3833826cb47"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/archive_vs_aggregate.json",
+      "published_path": "hybrid/results/archive_vs_aggregate.json",
+      "source_bytes": 52576,
+      "source_sha256": "409a19f67823957cfe01f4279799b41caf7268461c0d7d770b3f1f20b1d85b9b",
+      "published_bytes": 52576,
+      "published_sha256": "409a19f67823957cfe01f4279799b41caf7268461c0d7d770b3f1f20b1d85b9b"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/data_reconstruction.json",
+      "published_path": "hybrid/results/data_reconstruction.json",
+      "source_bytes": 229,
+      "source_sha256": "c5c57f444b5ace0f203633a878b9509391d2be15ceeedf899a073888d0a3f024",
+      "published_bytes": 229,
+      "published_sha256": "c5c57f444b5ace0f203633a878b9509391d2be15ceeedf899a073888d0a3f024"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/deliverable_consistency.json",
+      "published_path": "hybrid/results/deliverable_consistency.json",
+      "source_bytes": 673,
+      "source_sha256": "4b8119e4f5e83949c04b10a5de81ce9a5c2303d28be6cbf4ec478b45bf49c7b7",
+      "published_bytes": 673,
+      "published_sha256": "4b8119e4f5e83949c04b10a5de81ce9a5c2303d28be6cbf4ec478b45bf49c7b7"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/legacy_kernel_crosscheck.json",
+      "published_path": "hybrid/results/legacy_kernel_crosscheck.json",
+      "source_bytes": 262,
+      "source_sha256": "d7f6cf91c2b0ab9e555e4fe149b14c4b5fa23e431d784ad17c12128855abba86",
+      "published_bytes": 262,
+      "published_sha256": "d7f6cf91c2b0ab9e555e4fe149b14c4b5fa23e431d784ad17c12128855abba86"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/padding_diagnostic.json",
+      "published_path": "hybrid/results/padding_diagnostic.json",
+      "source_bytes": 18225,
+      "source_sha256": "3f23ce903b21cb65983d4e04a934897274c56acaef14286f4898f5974bbaf421",
+      "published_bytes": 18225,
+      "published_sha256": "3f23ce903b21cb65983d4e04a934897274c56acaef14286f4898f5974bbaf421"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/paired_comparisons.json",
+      "published_path": "hybrid/results/paired_comparisons.json",
+      "source_bytes": 7454,
+      "source_sha256": "d571e64abcc81f19e08850ba45e4086910536da557e83b56c51caedb82f290f7",
+      "published_bytes": 7454,
+      "published_sha256": "d571e64abcc81f19e08850ba45e4086910536da557e83b56c51caedb82f290f7"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/physics_checks.json",
+      "published_path": "hybrid/results/physics_checks.json",
+      "source_bytes": 482,
+      "source_sha256": "43f732448d99661618fa192ce044501b092cb2724f698c41f17fd43476849d84",
+      "published_bytes": 482,
+      "published_sha256": "43f732448d99661618fa192ce044501b092cb2724f698c41f17fd43476849d84"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/replay.json",
+      "published_path": "hybrid/results/replay.json",
+      "source_bytes": 5326,
+      "source_sha256": "198e0f311fc3b3d0871d6e98bee6ef1b8eab725f045cec80477bd7bcdbbd8a78",
+      "published_bytes": 5326,
+      "published_sha256": "198e0f311fc3b3d0871d6e98bee6ef1b8eab725f045cec80477bd7bcdbbd8a78"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/runs.csv",
+      "published_path": "hybrid/results/runs.csv",
+      "source_bytes": 22717,
+      "source_sha256": "1cea17d3df43eb527a438e24232390f8bcdb746f485fcc6c9468c0da0a6898f6",
+      "published_bytes": 22717,
+      "published_sha256": "1cea17d3df43eb527a438e24232390f8bcdb746f485fcc6c9468c0da0a6898f6"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/summary.csv",
+      "published_path": "hybrid/results/summary.csv",
+      "source_bytes": 3377,
+      "source_sha256": "0c5658ad9bd76e31f25d5cd6548d5ead44a6ec585669ec6767ecbb0c09c721a7",
+      "published_bytes": 3377,
+      "published_sha256": "0c5658ad9bd76e31f25d5cd6548d5ead44a6ec585669ec6767ecbb0c09c721a7"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/summary.json",
+      "published_path": "hybrid/results/summary.json",
+      "source_bytes": 8989,
+      "source_sha256": "43f69e8c14475abae752220b5f651449a19be035418077c03657901846c35811",
+      "published_bytes": 8989,
+      "published_sha256": "43f69e8c14475abae752220b5f651449a19be035418077c03657901846c35811"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "run_hybrid.py",
+      "published_path": "hybrid/run_hybrid.py",
+      "source_bytes": 17854,
+      "source_sha256": "69485f6ba692737dea486b1b1cf4993e27ad357a2f50ad9c56722bfb8e936156",
+      "published_bytes": 17854,
+      "published_sha256": "69485f6ba692737dea486b1b1cf4993e27ad357a2f50ad9c56722bfb8e936156"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "test_hybrid.py",
+      "published_path": "hybrid/test_hybrid.py",
+      "source_bytes": 2998,
+      "source_sha256": "83b0f68aba0c200bfbf9b6ec532045ff98a0d3df462c7887aa1773614fbdb833",
+      "published_bytes": 2998,
+      "published_sha256": "83b0f68aba0c200bfbf9b6ec532045ff98a0d3df462c7887aa1773614fbdb833"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "verify_deliverable.py",
+      "published_path": "hybrid/verify_deliverable.py",
+      "source_bytes": 2541,
+      "source_sha256": "5665fdacee6c88253e9db95b7d58a2c991199554ec50ec2c1855095083f14c6d",
+      "published_bytes": 2541,
+      "published_sha256": "5665fdacee6c88253e9db95b7d58a2c991199554ec50ec2c1855095083f14c6d"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "write_report.py",
+      "published_path": "hybrid/write_report.py",
+      "source_bytes": 11462,
+      "source_sha256": "3dc7369efbaa2963be8ae141e86c1f511fba7cc287b09964ec6fbe911cb29187",
+      "published_bytes": 11462,
+      "published_sha256": "3dc7369efbaa2963be8ae141e86c1f511fba7cc287b09964ec6fbe911cb29187"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "研究报告.md",
+      "published_path": "hybrid/研究报告.md",
+      "source_bytes": 10773,
+      "source_sha256": "7f65d3082a3d07dea47ad0402bbb2cce656a5c91cd198419f6ac5a224802dc0a",
+      "published_bytes": 10773,
+      "published_sha256": "7f65d3082a3d07dea47ad0402bbb2cce656a5c91cd198419f6ac5a224802dc0a"
+    }
+  ],
+  "omitted_files": [
+    {
+      "project": "growth-continuous",
+      "source_path": "pilot/results.json",
+      "source_bytes": 30930636,
+      "source_sha256": "fc398b4211072c2be0c0a069c5ee75dbf7fa1b815aa8fd5409cabe767d4e124a",
+      "reason": "large detailed candidate-level JSON omitted from this GitHub snapshot; per-run CSV and compact summaries are included"
+    },
+    {
+      "project": "growth",
+      "source_path": "pilot/results.json",
+      "source_bytes": 2650542,
+      "source_sha256": "d4ec366d9a75480c01f2359ded2ec5c8ae4987d6045d50bcc41062acd1711f19",
+      "reason": "large detailed candidate-level JSON omitted from this GitHub snapshot; per-run CSV and compact summaries are included"
+    },
+    {
+      "project": "growth",
+      "source_path": "results/mechanism_diagnostics.json",
+      "source_bytes": 886382,
+      "source_sha256": "790f960756a4224b7e78b64801e0a962c1d982e0cd07fe9dbee640d1a6934a55",
+      "reason": "large detailed candidate-level JSON omitted from this GitHub snapshot; per-run CSV and compact summaries are included"
+    },
+    {
+      "project": "growth",
+      "source_path": "results/results.json",
+      "source_bytes": 5685818,
+      "source_sha256": "c1e4e672f84f587c6cb361439deb0b1cb0e0ce03999540f68ef2dc81d239f99d",
+      "reason": "large detailed candidate-level JSON omitted from this GitHub snapshot; per-run CSV and compact summaries are included"
+    },
+    {
+      "project": "growth",
+      "source_path": "work_matched/results.json",
+      "source_bytes": 5924151,
+      "source_sha256": "7d545a71071be24396e99fb88914bad99f0a378984fe0b9b0e495391dbed344a",
+      "reason": "large detailed candidate-level JSON omitted from this GitHub snapshot; per-run CSV and compact summaries are included"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "initial_static_restart/results/results.json",
+      "source_bytes": 4030005,
+      "source_sha256": "dc94613101866a6d4f8344a7d3f1d73c7880891791af664f558e1e62e615347b",
+      "reason": "large detailed candidate-level JSON omitted from this GitHub snapshot; per-run CSV and compact summaries are included"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/paired_results.png",
+      "source_bytes": 106705,
+      "source_sha256": "4f0128bd8b11c004236b1f8a2d7e66d9ece31ee48135cc69df3691572e812529",
+      "reason": "binary plot omitted; numerical tables are included"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "results/results.json",
+      "source_bytes": 4018375,
+      "source_sha256": "559b5a5c3fb2203d52d50086b065df3b0c7bf0d0bb49eeed5422a2289cebc623",
+      "reason": "large detailed candidate-level JSON omitted from this GitHub snapshot; per-run CSV and compact summaries are included"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "pilot/results.json",
+      "source_bytes": 1523527,
+      "source_sha256": "6cc6c90602ce04974a05022918f429f18c352992dde942925b03cf29176abaca",
+      "reason": "large detailed candidate-level JSON omitted from this GitHub snapshot; per-run CSV and compact summaries are included"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/median_convergence.png",
+      "source_bytes": 129297,
+      "source_sha256": "cee58f8dfb8f92f66c4f65b224b84711048b43095c55a4dc1b9956788169eb83",
+      "reason": "binary plot omitted; numerical tables are included"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/median_spectra.png",
+      "source_bytes": 592224,
+      "source_sha256": "0da4521fceefa323c0027319a98df2407211b6d4fbf3fcb8fa80000d346bbd40",
+      "reason": "binary plot omitted; numerical tables are included"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "results/results.json",
+      "source_bytes": 3098418,
+      "source_sha256": "3443a003f4a8351782c58a8db0f56084b54bc2ea8b973ba8b095ec55c6cd937a",
+      "reason": "large detailed candidate-level JSON omitted from this GitHub snapshot; per-run CSV and compact summaries are included"
+    },
+    {
+      "project": "growth-continuous",
+      "source_path": "pilot.log",
+      "source_bytes": 2318,
+      "source_sha256": "fd9da671d27b57f5f9be5d293c574b2e7d588658923965d18fe973bd79588933",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "growth",
+      "source_path": "analysis.log",
+      "source_bytes": 4997,
+      "source_sha256": "cc3865405336a50e79673a30cbaf83ddf45d533144e3a9e53f10fba9ed28c874",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "growth",
+      "source_path": "pilot.log",
+      "source_bytes": 222,
+      "source_sha256": "fa1e857e78b4ee85480ff743778f9804433581158f11b2d74f225947cdc66129",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "growth",
+      "source_path": "run.log",
+      "source_bytes": 446,
+      "source_sha256": "ee99097cc275d9ad2aedfe4c28ca5c771478dea98d024b30c86aca659fa8dbbc",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "growth",
+      "source_path": "validation.log",
+      "source_bytes": 816,
+      "source_sha256": "1865c47435dc10e106873997ad869fbee13ef39dc93055654c5ae327daf8d5b9",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "growth",
+      "source_path": "work_run.log",
+      "source_bytes": 446,
+      "source_sha256": "a0371d04173c77bd9b13546ec4efe385411d3938b316d8dfeb72b98f6c168609",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "analysis.log",
+      "source_bytes": 8276,
+      "source_sha256": "8cbaae2b47338b27da883e97ee8e46b4611fe68e9829483d81f8aaf7e4d67465",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "initial_static_restart/run.log",
+      "source_bytes": 4884,
+      "source_sha256": "c7e30d20a4f3084edebc8f52fa09a9a4db8a93ef4205e069f5e48920a5d855ec",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "run.log",
+      "source_bytes": 4873,
+      "source_sha256": "ec99da75d5a3975e509d8e4e0ce7830c57a24c1e03806b73b92608cf98f4aeb6",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "tests.log",
+      "source_bytes": 1179,
+      "source_sha256": "d0b8baf3f6cbd9edb60f0eeb127029f81293f8097c5b18157ca09c53b8089418",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid-angle-exchange",
+      "source_path": "verification.log",
+      "source_bytes": 2745,
+      "source_sha256": "c4d4954d8314539ade42b73839a7a4b1db92d74b93c1d61aab5d5c163399311a",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "analysis.log",
+      "source_bytes": 7828,
+      "source_sha256": "b32716302c16cad8db26577e10c9b175954ac9379df19ace2c0d88b2bbd16f43",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "angle_diagnostic.log",
+      "source_bytes": 1564,
+      "source_sha256": "10172e3e5759ed960ed3dab6042dd99a5383f06a6bf6a0d6c4e4f630162ebf19",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "main.log",
+      "source_bytes": 18072,
+      "source_sha256": "08f59b835f4bd6315039f25e53d3cb2bc647518f811baa521674033a2b25158e",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "pilot.log",
+      "source_bytes": 12274,
+      "source_sha256": "476f0e454181ade6e2f392d2c0c8cb284d7ed7a361a37c9a6b276bd10bfdb1d4",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "tests.log",
+      "source_bytes": 1128,
+      "source_sha256": "fccacb72fbfbd8ba704dc4d923e4433b91013b6ad535492d232de0147f47bc2a",
+      "reason": "transient log/cache or generated archive excluded"
+    },
+    {
+      "project": "hybrid",
+      "source_path": "verification.log",
+      "source_bytes": 674,
+      "source_sha256": "e26538d1ac783cba34eb36029c202f8865a59d1cb709702707a92fe15e5f1651",
+      "reason": "transient log/cache or generated archive excluded"
+    }
+  ],
+  "omitted_archives": [
+    {
+      "path": "growth-research-round3.zip",
+      "reason": "Redundant package bundle; constituent files are published individually where in scope."
+    },
+    {
+      "path": "growth-continuous-research-round3.zip",
+      "reason": "Redundant package bundle; constituent files are published individually where in scope."
+    },
+    {
+      "path": "hybrid/coating-round3-hybrid-20261020.zip",
+      "reason": "Redundant package bundle; constituent files are published individually where in scope."
+    },
+    {
+      "path": "hybrid-angle-exchange/coating-round3-angle-exchange-20261020.zip",
+      "reason": "Redundant package bundle; constituent files are published individually where in scope."
+    }
+  ],
+  "unpublished_scope": "Run logs, bytecode/cache, PNG plots, redundant ZIP bundles, and large detailed candidate-level JSON. Per-run CSVs, compact summaries, source, reports, tests, material data and small diagnostics are included."
+}

@@ -1,0 +1,28 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "folder": "pilot",
+      "runs": 168,
+      "checked_snapshots": 504,
+      "checked_stagnation_or_escape_events": 592
+    },
+    {
+      "folder": "results",
+      "runs": 360,
+      "checked_snapshots": 1080,
+      "checked_stagnation_or_escape_events": 1347
+    },
+    {
+      "folder": "work_matched",
+      "runs": 360,
+      "checked_snapshots": 1080,
+      "checked_stagnation_or_escape_events": 1488
+    }
+  ],
+  "pilot_sequences_unchanged_in_expansion": 168,
+  "diagnostic_matrix_calls": 2332,
+  "diagnostic_layer_updates": 726930,
+  "wall_seconds": 3.3641935310151894,
+  "scope": "saved archive is best only among actually paid prefixes; exact costs, local minima, atomic legal two-edit improvements, fixed pilot replay; no extra search feedback"
+}

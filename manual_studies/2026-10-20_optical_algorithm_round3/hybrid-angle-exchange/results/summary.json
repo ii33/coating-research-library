@@ -1,0 +1,74 @@
+[
+  {
+    "case": "synthetic10_multi",
+    "method": "original_angles",
+    "n": 5,
+    "median_refined_worst_R_percent": 9.984998573749646,
+    "best_refined_worst_R_percent": 6.248127397160172,
+    "worst_refined_worst_R_percent": 12.386324475366509,
+    "success_count": 0,
+    "median_actual_extra_points": 780354.0,
+    "median_actual_extra_calls": 955.0,
+    "median_wall_seconds": 0.42460909101646394
+  },
+  {
+    "case": "synthetic10_multi",
+    "method": "fixed_dense_angles",
+    "n": 5,
+    "median_refined_worst_R_percent": 10.002867917333205,
+    "best_refined_worst_R_percent": 6.248382457098344,
+    "worst_refined_worst_R_percent": 12.312814556088007,
+    "success_count": 0,
+    "median_actual_extra_points": 1991466.0,
+    "median_actual_extra_calls": 647.0,
+    "median_wall_seconds": 0.866209047002485
+  },
+  {
+    "case": "synthetic10_multi",
+    "method": "angle_exchange",
+    "n": 5,
+    "median_refined_worst_R_percent": 9.984998571728507,
+    "best_refined_worst_R_percent": 6.248127397160172,
+    "worst_refined_worst_R_percent": 12.048748765099948,
+    "success_count": 0,
+    "median_actual_extra_points": 1543050.0,
+    "median_actual_extra_calls": 1891.0,
+    "median_wall_seconds": 0.912329104001401
+  },
+  {
+    "case": "tabulated6_multi",
+    "method": "original_angles",
+    "n": 5,
+    "median_refined_worst_R_percent": 8.605668574885279,
+    "best_refined_worst_R_percent": 7.690615078936148,
+    "worst_refined_worst_R_percent": 18.78585613459713,
+    "success_count": 0,
+    "median_actual_extra_points": 103356.0,
+    "median_actual_extra_calls": 122.0,
+    "median_wall_seconds": 0.06188081100117415
+  },
+  {
+    "case": "tabulated6_multi",
+    "method": "fixed_dense_angles",
+    "n": 5,
+    "median_refined_worst_R_percent": 8.60566857753391,
+    "best_refined_worst_R_percent": 7.690615209394486,
+    "worst_refined_worst_R_percent": 18.785856134591576,
+    "success_count": 0,
+    "median_actual_extra_points": 375516.0,
+    "median_actual_extra_calls": 122.0,
+    "median_wall_seconds": 0.1853860999981407
+  },
+  {
+    "case": "tabulated6_multi",
+    "method": "angle_exchange",
+    "n": 5,
+    "median_refined_worst_R_percent": 8.605668574885279,
+    "best_refined_worst_R_percent": 7.690615078936148,
+    "worst_refined_worst_R_percent": 18.785856134597694,
+    "success_count": 0,
+    "median_actual_extra_points": 184680.0,
+    "median_actual_extra_calls": 214.0,
+    "median_wall_seconds": 0.11812240700237453
+  }
+]

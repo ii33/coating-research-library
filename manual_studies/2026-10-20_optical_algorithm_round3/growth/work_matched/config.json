@@ -1,0 +1,603 @@
+{
+  "model": "SYNTHETIC constant n; explicitly lossless k=0; no real-material claim",
+  "material_n": [
+    1.45,
+    1.849324200890693,
+    2.35
+  ],
+  "material_k": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "n0": 1.0,
+  "ns": 3.42,
+  "geometry": "coherent normal incidence, isotropic planar layers, semi-infinite substrate, no backside",
+  "thickness_catalog_um": [
+    0.2,
+    0.5407380704358751,
+    0.9
+  ],
+  "max_layers": 4,
+  "total_max_um": 3.6,
+  "adjacent_same_material": "excluded; finite catalog restriction, not all legal merged thicknesses",
+  "catalog_size": 2332,
+  "target_seeds": [
+    11,
+    29,
+    47,
+    83,
+    101,
+    131,
+    167,
+    197,
+    229,
+    263,
+    307,
+    347
+  ],
+  "search_seeds": [
+    11,
+    29,
+    47,
+    83
+  ],
+  "cases": [
+    {
+      "name": "simple_single_line_ar",
+      "kind": "ar",
+      "windows": [
+        [
+          4.0,
+          4.0
+        ]
+      ],
+      "tolerance": 0.0001
+    },
+    {
+      "name": "single_window_ar",
+      "kind": "ar",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ]
+      ],
+      "tolerance": 0.01
+    },
+    {
+      "name": "dual_window_ar",
+      "kind": "ar",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.01
+    },
+    {
+      "name": "planted_four_layer_11",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "target_seed": 11
+    },
+    {
+      "name": "planted_four_layer_29",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "target_seed": 29
+    },
+    {
+      "name": "planted_four_layer_47",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "target_seed": 47
+    },
+    {
+      "name": "planted_four_layer_83",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "target_seed": 83
+    },
+    {
+      "name": "planted_four_layer_101",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "target_seed": 101
+    },
+    {
+      "name": "planted_four_layer_131",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "target_seed": 131
+    },
+    {
+      "name": "planted_four_layer_167",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "target_seed": 167
+    },
+    {
+      "name": "planted_four_layer_197",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "target_seed": 197
+    },
+    {
+      "name": "planted_four_layer_229",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "target_seed": 229
+    },
+    {
+      "name": "planted_four_layer_263",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "target_seed": 263
+    },
+    {
+      "name": "planted_four_layer_307",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "target_seed": 307
+    },
+    {
+      "name": "planted_four_layer_347",
+      "kind": "planted",
+      "windows": [
+        [
+          3.0,
+          5.0
+        ],
+        [
+          8.0,
+          12.0
+        ]
+      ],
+      "tolerance": 0.002,
+      "planted_stack": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "target_seed": 347
+    }
+  ],
+  "methods": [
+    "greedy_front",
+    "frontier_w1",
+    "frontier_w4",
+    "random_full",
+    "one_edit_restart",
+    "stagnation_two_edit"
+  ],
+  "train_wavelengths_um": [
+    3.0,
+    3.05,
+    3.1,
+    3.15,
+    3.2,
+    3.25,
+    3.3,
+    3.35,
+    3.4,
+    3.45,
+    3.5,
+    3.55,
+    3.6,
+    3.65,
+    3.7,
+    3.75,
+    3.8,
+    3.85,
+    3.9,
+    3.95,
+    4.0,
+    4.05,
+    4.1,
+    4.15,
+    4.2,
+    4.25,
+    4.3,
+    4.35,
+    4.4,
+    4.45,
+    4.5,
+    4.55,
+    4.6,
+    4.65,
+    4.7,
+    4.75,
+    4.8,
+    4.85,
+    4.9,
+    4.95,
+    5.0,
+    8.0,
+    8.1,
+    8.2,
+    8.3,
+    8.4,
+    8.5,
+    8.6,
+    8.7,
+    8.8,
+    8.9,
+    9.0,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.6,
+    9.7,
+    9.8,
+    9.9,
+    10.0,
+    10.1,
+    10.2,
+    10.3,
+    10.4,
+    10.5,
+    10.6,
+    10.7,
+    10.8,
+    10.9,
+    11.0,
+    11.1,
+    11.2,
+    11.3,
+    11.4,
+    11.5,
+    11.6,
+    11.7,
+    11.8,
+    11.9,
+    12.0
+  ],
+  "budgets": [
+    81,
+    241,
+    721
+  ],
+  "score": "lexicographic (max(0,max(g)),mean(max(g,0)^2),max(g)); g=R/tau-1 or abs(R-R*)/tau-1; tie fewer layers, thickness, catalog tuple",
+  "mechanism": "same one-edit any-position insertion/deletion/reassignment descent; on strict one-edit stagnation only, compare graph-distance-two endpoints with no intermediate optical score gate; otherwise same uniform full-stack restart",
+  "accounting": "fresh unpadded TMM per unique evaluated stack per run; within-run exact cache; no search use of oracle, shared response table or audit; all rejected endpoints charged",
+  "work_budget": "sum(1+physical_layers) per spectral call; combines call overhead and active layers as explicit proxy, not hardware-independent flop count",
+  "graph_build_seconds": 0.11618021200411022,
+  "kernel_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "args": {
+    "targets": 12,
+    "seeds": 4,
+    "work_matched": true,
+    "max_budget": 721
+  }
+}

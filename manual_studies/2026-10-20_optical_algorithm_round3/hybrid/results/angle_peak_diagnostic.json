@@ -1,0 +1,42 @@
+[
+  {
+    "case": "synthetic10_multi",
+    "method": "de_local",
+    "seed": 47,
+    "polarization": "s",
+    "wavelength_um_fixed": 3.0,
+    "trained_angle_dense_max_R": 0.12002368342528694,
+    "five_degree_dense_max_R": 0.12347369652502674,
+    "local_refined_angle_deg": 36.29734153797794,
+    "local_refined_R": 0.12386324475366496,
+    "additional_R_over_trained_angle_max_percentage_points": 0.38395613283780244,
+    "bounded_angle_bracket_deg": [
+      30.0,
+      40.0
+    ],
+    "optimizer_success": true,
+    "diagnostic_optical_calls": 12,
+    "diagnostic_angle_polarization_points": 24,
+    "scope": "one wavelength fixed at the observed dense-grid peak; local angle refinement is evidence of a missed angle peak, not a global 2D or continuous-domain certificate"
+  },
+  {
+    "case": "tabulated6_multi",
+    "method": "random_local",
+    "seed": 11,
+    "polarization": "s",
+    "wavelength_um_fixed": 8.0,
+    "trained_angle_dense_max_R": 0.178244316829979,
+    "five_degree_dense_max_R": 0.18085187994894686,
+    "local_refined_angle_deg": 20.65607503499608,
+    "local_refined_R": 0.18086193221599275,
+    "additional_R_over_trained_angle_max_percentage_points": 0.26176153860137663,
+    "bounded_angle_bracket_deg": [
+      15.0,
+      25.0
+    ],
+    "optimizer_success": true,
+    "diagnostic_optical_calls": 15,
+    "diagnostic_angle_polarization_points": 30,
+    "scope": "one wavelength fixed at the observed dense-grid peak; local angle refinement is evidence of a missed angle peak, not a global 2D or continuous-domain certificate"
+  }
+]

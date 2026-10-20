@@ -1,0 +1,626 @@
+{
+  "budget": 3605,
+  "budget_kind": "one_plus_layer_work",
+  "aggregate": [
+    {
+      "method": "greedy_front",
+      "target_families": 12,
+      "order_repeats": 48,
+      "dense_successful_repeats": 0,
+      "families_any_success": 0,
+      "families_all_success": 0,
+      "median_of_family_median_V": 105.48229147801538,
+      "actual_search_calls": 792,
+      "active_layer_updates": 94464,
+      "total_search_wall_seconds": 0.06353586498880759,
+      "median_final_layers": 1.0,
+      "two_edit_escapes": 0
+    },
+    {
+      "method": "frontier_w1",
+      "target_families": 12,
+      "order_repeats": 48,
+      "dense_successful_repeats": 16,
+      "families_any_success": 4,
+      "families_all_success": 4,
+      "median_of_family_median_V": 21.869003959479297,
+      "actual_search_calls": 37248,
+      "active_layer_updates": 11127072,
+      "total_search_wall_seconds": 4.170155540021369,
+      "median_final_layers": 4.0,
+      "two_edit_escapes": 0
+    },
+    {
+      "method": "frontier_w4",
+      "target_families": 12,
+      "order_repeats": 48,
+      "dense_successful_repeats": 20,
+      "families_any_success": 5,
+      "families_all_success": 5,
+      "median_of_family_median_V": 16.35164602997811,
+      "actual_search_calls": 37276,
+      "active_layer_updates": 11124120,
+      "total_search_wall_seconds": 3.94454532515374,
+      "median_final_layers": 4.0,
+      "two_edit_escapes": 0
+    },
+    {
+      "method": "random_full",
+      "target_families": 12,
+      "order_repeats": 48,
+      "dense_successful_repeats": 19,
+      "families_any_success": 12,
+      "families_all_success": 1,
+      "median_of_family_median_V": 26.394899402714145,
+      "actual_search_calls": 34608,
+      "active_layer_updates": 11335680,
+      "total_search_wall_seconds": 3.6382916949514765,
+      "median_final_layers": 4.0,
+      "two_edit_escapes": 0
+    },
+    {
+      "method": "one_edit_restart",
+      "target_families": 12,
+      "order_repeats": 48,
+      "dense_successful_repeats": 18,
+      "families_any_success": 11,
+      "families_all_success": 1,
+      "median_of_family_median_V": 24.00218742110556,
+      "actual_search_calls": 36717,
+      "active_layer_updates": 11171352,
+      "total_search_wall_seconds": 3.9314852188399527,
+      "median_final_layers": 4.0,
+      "two_edit_escapes": 0
+    },
+    {
+      "method": "stagnation_two_edit",
+      "target_families": 12,
+      "order_repeats": 48,
+      "dense_successful_repeats": 34,
+      "families_any_success": 12,
+      "families_all_success": 5,
+      "median_of_family_median_V": 0.0,
+      "actual_search_calls": 37643,
+      "active_layer_updates": 11094764,
+      "total_search_wall_seconds": 3.8384433179162443,
+      "median_final_layers": 4.0,
+      "two_edit_escapes": 125
+    }
+  ],
+  "paired": [
+    {
+      "comparator": "greedy_front",
+      "unit": "one target family; each value is median of four candidate-order repeats",
+      "better_families": 12,
+      "tied_families": 0,
+      "worse_families": 0,
+      "details": [
+        {
+          "case": "planted_four_layer_101",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 108.11260922927853,
+          "new_passes": 4,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_11",
+          "relation": "better",
+          "new_median_dense_V": 11.169193584132355,
+          "baseline_median_dense_V": 87.27242844699337,
+          "new_passes": 2,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_131",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 111.02097104464012,
+          "new_passes": 3,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_167",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 86.65439791326959,
+          "new_passes": 4,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_197",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 66.98630995338894,
+          "new_passes": 3,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_229",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 102.85197372675222,
+          "new_passes": 4,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_263",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 180.62398716752386,
+          "new_passes": 4,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_29",
+          "relation": "better",
+          "new_median_dense_V": 9.669664664524927,
+          "baseline_median_dense_V": 21.456906107970088,
+          "new_passes": 2,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_307",
+          "relation": "better",
+          "new_median_dense_V": 36.24685179451761,
+          "baseline_median_dense_V": 113.61847888160362,
+          "new_passes": 1,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_347",
+          "relation": "better",
+          "new_median_dense_V": 21.012458735467785,
+          "baseline_median_dense_V": 112.83300569132669,
+          "new_passes": 1,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_47",
+          "relation": "better",
+          "new_median_dense_V": 35.170487145678955,
+          "baseline_median_dense_V": 87.40291577367665,
+          "new_passes": 2,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_83",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 126.11001953170819,
+          "new_passes": 4,
+          "baseline_passes": 0
+        }
+      ]
+    },
+    {
+      "comparator": "frontier_w1",
+      "unit": "one target family; each value is median of four candidate-order repeats",
+      "better_families": 6,
+      "tied_families": 2,
+      "worse_families": 4,
+      "details": [
+        {
+          "case": "planted_four_layer_101",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 64.24205812153397,
+          "new_passes": 4,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_11",
+          "relation": "worse",
+          "new_median_dense_V": 11.169193584132355,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 2,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_131",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 63.35543877461767,
+          "new_passes": 3,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_167",
+          "relation": "tied",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 4,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_197",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 39.378800479825145,
+          "new_passes": 3,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_229",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 56.28564559573346,
+          "new_passes": 4,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_263",
+          "relation": "tied",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 4,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_29",
+          "relation": "worse",
+          "new_median_dense_V": 9.669664664524927,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 2,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_307",
+          "relation": "worse",
+          "new_median_dense_V": 36.24685179451761,
+          "baseline_median_dense_V": 29.995804845470474,
+          "new_passes": 1,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_347",
+          "relation": "worse",
+          "new_median_dense_V": 21.012458735467785,
+          "baseline_median_dense_V": 13.74220307348812,
+          "new_passes": 1,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_47",
+          "relation": "better",
+          "new_median_dense_V": 35.170487145678955,
+          "baseline_median_dense_V": 70.34097429135791,
+          "new_passes": 2,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_83",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 2.707487214485744,
+          "new_passes": 4,
+          "baseline_passes": 0
+        }
+      ]
+    },
+    {
+      "comparator": "frontier_w4",
+      "unit": "one target family; each value is median of four candidate-order repeats",
+      "better_families": 6,
+      "tied_families": 2,
+      "worse_families": 4,
+      "details": [
+        {
+          "case": "planted_four_layer_101",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 64.24205812153397,
+          "new_passes": 4,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_11",
+          "relation": "worse",
+          "new_median_dense_V": 11.169193584132355,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 2,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_131",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 63.35543877461767,
+          "new_passes": 3,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_167",
+          "relation": "tied",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 4,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_197",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 39.378800479825145,
+          "new_passes": 3,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_229",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 56.28564559573346,
+          "new_passes": 4,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_263",
+          "relation": "tied",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 4,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_29",
+          "relation": "worse",
+          "new_median_dense_V": 9.669664664524927,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 2,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_307",
+          "relation": "worse",
+          "new_median_dense_V": 36.24685179451761,
+          "baseline_median_dense_V": 29.995804845470474,
+          "new_passes": 1,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_347",
+          "relation": "worse",
+          "new_median_dense_V": 21.012458735467785,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 1,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_47",
+          "relation": "better",
+          "new_median_dense_V": 35.170487145678955,
+          "baseline_median_dense_V": 70.34097429135791,
+          "new_passes": 2,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_83",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 2.707487214485744,
+          "new_passes": 4,
+          "baseline_passes": 0
+        }
+      ]
+    },
+    {
+      "comparator": "random_full",
+      "unit": "one target family; each value is median of four candidate-order repeats",
+      "better_families": 9,
+      "tied_families": 1,
+      "worse_families": 2,
+      "details": [
+        {
+          "case": "planted_four_layer_101",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 50.4569951855431,
+          "new_passes": 4,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_11",
+          "relation": "worse",
+          "new_median_dense_V": 11.169193584132355,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 2,
+          "baseline_passes": 3
+        },
+        {
+          "case": "planted_four_layer_131",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 37.799496106940154,
+          "new_passes": 3,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_167",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 26.7414490775081,
+          "new_passes": 4,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_197",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 36.868228450437954,
+          "new_passes": 3,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_229",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 28.14282279786673,
+          "new_passes": 4,
+          "baseline_passes": 2
+        },
+        {
+          "case": "planted_four_layer_263",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 26.048349727920193,
+          "new_passes": 4,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_29",
+          "relation": "tied",
+          "new_median_dense_V": 9.669664664524927,
+          "baseline_median_dense_V": 9.669664664524927,
+          "new_passes": 2,
+          "baseline_passes": 2
+        },
+        {
+          "case": "planted_four_layer_307",
+          "relation": "worse",
+          "new_median_dense_V": 36.24685179451761,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 1,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_347",
+          "relation": "better",
+          "new_median_dense_V": 21.012458735467785,
+          "baseline_median_dense_V": 21.655204260018785,
+          "new_passes": 1,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_47",
+          "relation": "better",
+          "new_median_dense_V": 35.170487145678955,
+          "baseline_median_dense_V": 68.27970382158236,
+          "new_passes": 2,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_83",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 2.707487214485744,
+          "new_passes": 4,
+          "baseline_passes": 1
+        }
+      ]
+    },
+    {
+      "comparator": "one_edit_restart",
+      "unit": "one target family; each value is median of four candidate-order repeats",
+      "better_families": 10,
+      "tied_families": 0,
+      "worse_families": 2,
+      "details": [
+        {
+          "case": "planted_four_layer_101",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 21.051218769543578,
+          "new_passes": 4,
+          "baseline_passes": 2
+        },
+        {
+          "case": "planted_four_layer_11",
+          "relation": "better",
+          "new_median_dense_V": 11.169193584132355,
+          "baseline_median_dense_V": 22.33838716826471,
+          "new_passes": 2,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_131",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 39.869582739325544,
+          "new_passes": 3,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_167",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 16.334120920917865,
+          "new_passes": 4,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_197",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 40.50677022349757,
+          "new_passes": 3,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_229",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 28.14282279786673,
+          "new_passes": 4,
+          "baseline_passes": 2
+        },
+        {
+          "case": "planted_four_layer_263",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 37.40400404146768,
+          "new_passes": 4,
+          "baseline_passes": 2
+        },
+        {
+          "case": "planted_four_layer_29",
+          "relation": "better",
+          "new_median_dense_V": 9.669664664524927,
+          "baseline_median_dense_V": 20.398117718509972,
+          "new_passes": 2,
+          "baseline_passes": 0
+        },
+        {
+          "case": "planted_four_layer_307",
+          "relation": "better",
+          "new_median_dense_V": 36.24685179451761,
+          "baseline_median_dense_V": 43.18424993674291,
+          "new_passes": 1,
+          "baseline_passes": 1
+        },
+        {
+          "case": "planted_four_layer_347",
+          "relation": "worse",
+          "new_median_dense_V": 21.012458735467785,
+          "baseline_median_dense_V": 6.87110153674406,
+          "new_passes": 1,
+          "baseline_passes": 2
+        },
+        {
+          "case": "planted_four_layer_47",
+          "relation": "worse",
+          "new_median_dense_V": 35.170487145678955,
+          "baseline_median_dense_V": 0.0,
+          "new_passes": 2,
+          "baseline_passes": 4
+        },
+        {
+          "case": "planted_four_layer_83",
+          "relation": "better",
+          "new_median_dense_V": 0.0,
+          "baseline_median_dense_V": 25.665987673946415,
+          "new_passes": 4,
+          "baseline_passes": 1
+        }
+      ]
+    }
+  ],
+  "search_cost": {
+    "matrix_calls": 230507,
+    "active_wavelength_layer_updates": 69928616,
+    "work_units": 1083295,
+    "wall_seconds": 24.38783209581743
+  },
+  "max_audit_energy_error": 1.5543122344752192e-15,
+  "max_audit_matrix_recursion_error": 1.1102230246251565e-15,
+  "false_sampled_passes": 0
+}

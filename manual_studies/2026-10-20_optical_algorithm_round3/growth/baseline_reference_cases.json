@@ -1,0 +1,171 @@
+[
+  {
+    "name": "simple_single_line_ar",
+    "kind": "ar",
+    "windows": [
+      [
+        4.0,
+        4.0
+      ]
+    ],
+    "tolerance": 0.0001
+  },
+  {
+    "name": "single_window_ar_3_5",
+    "kind": "ar",
+    "windows": [
+      [
+        3.0,
+        5.0
+      ]
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "name": "dual_window_ar_3_5_8_12",
+    "kind": "ar",
+    "windows": [
+      [
+        3.0,
+        5.0
+      ],
+      [
+        8.0,
+        12.0
+      ]
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "name": "planted_four_layer_11",
+    "kind": "planted",
+    "windows": [
+      [
+        3.0,
+        5.0
+      ],
+      [
+        8.0,
+        12.0
+      ]
+    ],
+    "tolerance": 0.002,
+    "planted_stack": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "name": "planted_four_layer_29",
+    "kind": "planted",
+    "windows": [
+      [
+        3.0,
+        5.0
+      ],
+      [
+        8.0,
+        12.0
+      ]
+    ],
+    "tolerance": 0.002,
+    "planted_stack": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "planted_four_layer_47",
+    "kind": "planted",
+    "windows": [
+      [
+        3.0,
+        5.0
+      ],
+      [
+        8.0,
+        12.0
+      ]
+    ],
+    "tolerance": 0.002,
+    "planted_stack": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "planted_four_layer_83",
+    "kind": "planted",
+    "windows": [
+      [
+        3.0,
+        5.0
+      ],
+      [
+        8.0,
+        12.0
+      ]
+    ],
+    "tolerance": 0.002,
+    "planted_stack": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  }
+]

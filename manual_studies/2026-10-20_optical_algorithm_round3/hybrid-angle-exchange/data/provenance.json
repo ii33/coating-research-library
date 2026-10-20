@@ -1,0 +1,61 @@
+[
+  {
+    "material": "MgF2",
+    "dataset": "Franta",
+    "source_file": "database/data/main/MgF2/nk/Franta.yml",
+    "snapshot_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+    "sha256_original_yaml": "c51389d0430c21d8959388605266bc160abe14a04242cfa7ba8d1812bde2e58e",
+    "original_range_um": [
+      0.0275043,
+      125.141
+    ],
+    "stored_range_um": [
+      2.79512,
+      12.2011
+    ],
+    "references": "D. Franta, D. Nečas, A. Giglia, P. Franta, I. Ohlídal.\nUniversal dispersion model for characterization of optical thin films over wide spectral range: Application to magnesium fluoride.\n<a href=\"https://doi.org/10.1016/j.apsusc.2016.09.149\"><i>Appl. Surf. Sci.</i> <b>421</b>, 424–429 (2017)</a>\n(Numerical data kindly provided by Daniel Franta)\n",
+    "comments": "Film MgF<sub>2</sub>; Deposited by e-beam evaporation on c-Si; 134.2 nm thick film with an polycrystalline structure; Heterogenous data processing combining ellipsometric and spectrophotometric measurements; Room temperature.\n",
+    "conditions": {
+      "film_thickness": 1.342e-07,
+      "substrate": "c-Si"
+    }
+  },
+  {
+    "material": "ZnSe",
+    "dataset": "Querry",
+    "source_file": "database/data/main/ZnSe/nk/Querry.yml",
+    "snapshot_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+    "sha256_original_yaml": "b9ad75ccdf8701400faa28ea5d55315907a8d256ad9f2ca79da4c2ff25c6b2f8",
+    "original_range_um": [
+      0.5,
+      21.7391
+    ],
+    "stored_range_um": [
+      2.7933,
+      12.5
+    ],
+    "references": "M. R. Querry. Optical constants of minerals and other materials from the millimeter to the ultraviolet, <a href=\"https://apps.dtic.mil/sti/citations/ADA192210\"><i>Contractor Report</i> CRDEC-CR-88009 (1987)</a>\n",
+    "comments": "",
+    "conditions": {}
+  },
+  {
+    "material": "Si",
+    "dataset": "Franta-300K",
+    "source_file": "database/data/main/Si/nk/Franta-300K.yml",
+    "snapshot_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+    "sha256_original_yaml": "45e271e0e8d20aa9617da5e98522cbbf29867ab7294d382760188b4d1fa5f969",
+    "original_range_um": [
+      0.0309963,
+      309.963
+    ],
+    "stored_range_um": [
+      2.79454,
+      12.2267
+    ],
+    "references": "D. Franta, A. Dubroka, C. Wang, A. Giglia, J. Vohánka, P. Franta, I. Ohlídal.\nTemperature-dependent dispersion model of float zone crystalline silicon,\n<a href=\"https://doi.org/j.apsusc.2017.02.021\"><i>Appl. Surf. Sci.</i> <b>421</b>, 405-419 (2017)</a>\n(Numerical data kindly provided by Daniel Franta)\n",
+    "comments": "Float zone c-Si; Heterogenous data processing combining ellipsometric and spectrophotometric measurements with refractive index determined in \nB. J. Frey, D. B. Leviton, T. J. Madison.\nTemperature-dependent refractive index of silicon and germanium,\n<a href=\\https://doi.org/10.1117/12.672850\"><i>Proc. SPIE</i> <b>6273</b>, 62732J (2006)</a>.\nNumerical procedures updated in\nD. Franta, P. Franta, J. Vohánka, M. Čermák, I. Ohlídal.\nDetermination of thicknesses and temperatures of crystalline silicon wafers from optical measurements in the far infrared region,\n<a href=\"https://doi.org/10.1063/1.5026195\"><i>J. Appl. Phys.</i> <b>123</b>, 185707 (2018)</a>.\nTemperature 300 K.\"\n",
+    "conditions": {
+      "temperature": 300
+    }
+  }
+]

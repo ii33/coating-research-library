@@ -1,0 +1,24 @@
+{
+  "all_consistency_checks_passed": true,
+  "checks": {
+    "30_unique_runs": true,
+    "all_point_budgets_respected": true,
+    "point_and_call_accounts_match": true,
+    "reference_archive_never_worsens": true,
+    "stored_reference_violation_recomputed_exactly": true,
+    "all30_replays_exact": true
+  },
+  "run_count": 30,
+  "success_count": 0,
+  "extra_point_work_total": 24932424,
+  "extra_optical_calls_total": 20358,
+  "continuation_seconds_sum": 13.230173691030359,
+  "final_independent_audit_grid_points_both_kernels": 44526000,
+  "final_local_refinement_points": 7983,
+  "max_independent_kernel_abs_error": 8.992806499463768e-15,
+  "exchange_runs_that_added_constraints": 1,
+  "constraints_total": 2,
+  "constraint_final_recheck_points": 2,
+  "reference_verification_points": 92340,
+  "max_reference_metric_abs_error": 0.0
+}

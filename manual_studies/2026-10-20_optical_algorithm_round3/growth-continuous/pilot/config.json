@@ -1,0 +1,214 @@
+{
+  "model": "SYNTHETIC constant n and explicit k=0; not real material",
+  "material_n": [
+    1.45,
+    1.849324200890693,
+    2.35
+  ],
+  "material_k": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "n0": 1.0,
+  "ns": 3.42,
+  "geometry": "coherent normal incidence, planar isotropic, semi-infinite substrate, no backside",
+  "max_layers": 6,
+  "positive_thickness_bounds_um": [
+    0.005,
+    2.0
+  ],
+  "total_max_um": 12.0,
+  "proposal_thickness_seeds_um": [
+    0.2,
+    0.5407380704358751,
+    0.9
+  ],
+  "windows_um": [
+    [
+      3.0,
+      5.0
+    ],
+    [
+      8.0,
+      12.0
+    ]
+  ],
+  "training_points_per_window": 41,
+  "training_wavelengths_um": [
+    3.0,
+    3.05,
+    3.1,
+    3.15,
+    3.2,
+    3.25,
+    3.3,
+    3.35,
+    3.4,
+    3.45,
+    3.5,
+    3.55,
+    3.6,
+    3.65,
+    3.7,
+    3.75,
+    3.8,
+    3.85,
+    3.9,
+    3.95,
+    4.0,
+    4.05,
+    4.1,
+    4.15,
+    4.2,
+    4.25,
+    4.3,
+    4.35,
+    4.4,
+    4.45,
+    4.5,
+    4.55,
+    4.6,
+    4.65,
+    4.7,
+    4.75,
+    4.8,
+    4.85,
+    4.9,
+    4.95,
+    5.0,
+    8.0,
+    8.1,
+    8.2,
+    8.3,
+    8.4,
+    8.5,
+    8.6,
+    8.7,
+    8.8,
+    8.9,
+    9.0,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.6,
+    9.7,
+    9.8,
+    9.9,
+    10.0,
+    10.1,
+    10.2,
+    10.3,
+    10.4,
+    10.5,
+    10.6,
+    10.7,
+    10.8,
+    10.9,
+    11.0,
+    11.1,
+    11.2,
+    11.3,
+    11.4,
+    11.5,
+    11.6,
+    11.7,
+    11.8,
+    11.9,
+    12.0
+  ],
+  "strict_target_R": 0.01,
+  "strict_feasibility": "not established in this continuous domain",
+  "feasible_calibration_target_R": 0.04,
+  "known_feasible_stack": [
+    [
+      0,
+      0.8687914311440501
+    ],
+    [
+      2,
+      0.16595496505818463
+    ],
+    [
+      0,
+      0.0053528155003879085
+    ],
+    [
+      2,
+      0.0051792662818528346
+    ],
+    [
+      0,
+      0.2742767404282964
+    ],
+    [
+      2,
+      0.5352681554140437
+    ]
+  ],
+  "known_feasible_audit": {
+    "points": 16386,
+    "worst_R": 0.03216774437688029,
+    "strict_one_percent_pass": false,
+    "feasible_four_percent_pass": true,
+    "V_one_percent": 2.216774437688029,
+    "windows": [
+      {
+        "window_um": [
+          3.0,
+          5.0
+        ],
+        "max_R": 0.030734732050864758,
+        "wavelength_um": 5.0
+      },
+      {
+        "window_um": [
+          8.0,
+          12.0
+        ],
+        "max_R": 0.03216774437688029,
+        "wavelength_um": 8.0
+      }
+    ],
+    "max_energy_error": 1.3322676295501878e-15,
+    "matrix_recursion_max_error": 1.5265566588595902e-16,
+    "matrix_calls": 1,
+    "independent_recursion_calls": 1,
+    "each_wavelength_layer_updates": 98316
+  },
+  "known_feasible_used_by_search": false,
+  "score": "minimize actual worst R, tie mean R and physical structure; targets are two separate reporting thresholds, no threshold-specific optimization",
+  "methods": [
+    "one_edit_local",
+    "stagnation_two_edit_local"
+  ],
+  "seeds": [
+    11,
+    29,
+    47,
+    83
+  ],
+  "work_budget": 60000,
+  "work_checkpoints": [
+    10000,
+    30000,
+    60000
+  ],
+  "work_proxy": "sum(1+actual canonical layers); no zero-thickness padding; actual calls, active layer updates and wall time separate",
+  "local_solver": {
+    "name": "SLSQP epigraph minimax",
+    "maxiter": 40,
+    "ftol": 1e-10,
+    "finite_difference_eps_um": 1e-06,
+    "max_actual_spectrum_calls": 96
+  },
+  "significant_working_state_improvement_R": 1e-07,
+  "mechanism": "finite any-position one-edit proposals, same continuous all-layer minimax repair; if no repaired endpoint improves by >1e-7 R, optional raw graph-distance-two endpoints with same repair, no middle score gate; otherwise same full six-layer random restart",
+  "canonicalization": "adjacent same material merged and checked against 2 um bound after EVERY edit; does not split layers to evade limit",
+  "accounting": "actual fresh TMM per exact new structure; one run exact optical cache; finite-difference and rejected points charged; no cross-method optical cache; final audits outside search",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "kernel_sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+}

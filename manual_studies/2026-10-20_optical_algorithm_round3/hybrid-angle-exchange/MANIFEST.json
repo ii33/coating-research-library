@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-20",
+  "purpose": "Independent small angle-constraint-exchange pilot; frozen parent comparison and product unchanged",
+  "files": [
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 4033,
+      "sha256": "2e48cf032e7f96d62ee0211d977777631c52bb89e276b31bba1de9cc50cc9718"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2343,
+      "sha256": "27f99dbb8a72076f9b395b6e67be68dcd1aecf4ecfebe407aa9626ce2d5e2834"
+    },
+    {
+      "path": "analysis.log",
+      "bytes": 8276,
+      "sha256": "8cbaae2b47338b27da883e97ee8e46b4611fe68e9829483d81f8aaf7e4d67465"
+    },
+    {
+      "path": "analyze_angle_exchange.py",
+      "bytes": 6485,
+      "sha256": "6c6e4d9eaff9de74dfb1970430db8577abbfc01ee571d2f99284bbf1e44c3ef2"
+    },
+    {
+      "path": "data/ATTRIBUTION.md",
+      "bytes": 1545,
+      "sha256": "8a782053c7d7b789fe0b45e30d1ac0d918e8a8c1f9e67aaa5396726bdd66e11d"
+    },
+    {
+      "path": "data/MgF2_Franta.csv",
+      "bytes": 25318,
+      "sha256": "664a301a08f7f84911e45fcd28ce3f877ec4b47041edb1d0171e74d75ebd4c7d"
+    },
+    {
+      "path": "data/Si_Franta-300K.csv",
+      "bytes": 25487,
+      "sha256": "2da6eed89d655b56e9310716b6fe5765e18bc4e135715d72a52ed5806c9679fe"
+    },
+    {
+      "path": "data/ZnSe_Querry.csv",
+      "bytes": 2413,
+      "sha256": "850fd174d5914f94c0a2ef856e3bf91089b6bbc9e2187c7a693d3b049a32fb54"
+    },
+    {
+      "path": "data/provenance.json",
+      "bytes": 3311,
+      "sha256": "93528b362c597feeb659aa48328f17f9183b760494a99d58fffb9d116e859576"
+    },
+    {
+      "path": "initial_static_restart/README.md",
+      "bytes": 879,
+      "sha256": "a5a3154c476c4e173664db173305d0df08c5fd47b2b37faa0a081ba598fdaa3f"
+    },
+    {
+      "path": "initial_static_restart/initial_run_angle_exchange.py",
+      "bytes": 15225,
+      "sha256": "7c81fca09b388f973d0b641ff429214137fbd4ac782fd3e4594ebce3ee946d06"
+    },
+    {
+      "path": "initial_static_restart/results/physics_checks.json",
+      "bytes": 149,
+      "sha256": "aad155d725a59de853cc1c2d5a349ac5415aaefa2cab65b306cc3d0851c2a91c"
+    },
+    {
+      "path": "initial_static_restart/results/results.json",
+      "bytes": 4030005,
+      "sha256": "dc94613101866a6d4f8344a7d3f1d73c7880891791af664f558e1e62e615347b"
+    },
+    {
+      "path": "initial_static_restart/results/summary.csv",
+      "bytes": 968,
+      "sha256": "7e4f4b8ea0a579fc30f93dac6672c85e5ea2cc29d04954ac7a7aab021fa16660"
+    },
+    {
+      "path": "initial_static_restart/results/summary.json",
+      "bytes": 2470,
+      "sha256": "6209b7f40c09b3a363d51ced3558eb9d4991dd371d2c2b724a82b1e345535e1e"
+    },
+    {
+      "path": "initial_static_restart/run.log",
+      "bytes": 4884,
+      "sha256": "c7e30d20a4f3084edebc8f52fa09a9a4db8a93ef4205e069f5e48920a5d855ec"
+    },
+    {
+      "path": "initial_static_restart/seed_sources.json",
+      "bytes": 7657,
+      "sha256": "98088b66ef02f745fc7cc3264e9b4d3f94d1e9d0f5f9e1b1f9617beb82d840df"
+    },
+    {
+      "path": "optics_base.py",
+      "bytes": 17854,
+      "sha256": "69485f6ba692737dea486b1b1cf4993e27ad357a2f50ad9c56722bfb8e936156"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 46,
+      "sha256": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197"
+    },
+    {
+      "path": "results/analysis_summary.json",
+      "bytes": 837,
+      "sha256": "35aefc00d37401d0019e11f2ed7396acd96045fd1b4d5dcdc786c3bb46b03a51"
+    },
+    {
+      "path": "results/constraint_transfer_diagnostics.json",
+      "bytes": 659,
+      "sha256": "7573f9a415543dd22a5e624c20961762a437c46a4fd3e9995188693c5b89bbca"
+    },
+    {
+      "path": "results/paired_comparisons.json",
+      "bytes": 5259,
+      "sha256": "1ca0d29f765fcf8c53d43f82b45fb659c9ad1f0f4b119c3854d71440874bb331"
+    },
+    {
+      "path": "results/paired_results.png",
+      "bytes": 106705,
+      "sha256": "4f0128bd8b11c004236b1f8a2d7e66d9ece31ee48135cc69df3691572e812529"
+    },
+    {
+      "path": "results/physics_checks.json",
+      "bytes": 149,
+      "sha256": "aad155d725a59de853cc1c2d5a349ac5415aaefa2cab65b306cc3d0851c2a91c"
+    },
+    {
+      "path": "results/replay.json",
+      "bytes": 6313,
+      "sha256": "761cf3a7cb79951f7534624e8f7b97c5901ac0287dadc5022d0f1620582ba78a"
+    },
+    {
+      "path": "results/results.json",
+      "bytes": 4018375,
+      "sha256": "559b5a5c3fb2203d52d50086b065df3b0c7bf0d0bb49eeed5422a2289cebc623"
+    },
+    {
+      "path": "results/runs.csv",
+      "bytes": 4170,
+      "sha256": "4e904720e8f241ffc066a9c0cb780723560936ebea497950175e7a0bb8a4d974"
+    },
+    {
+      "path": "results/summary.csv",
+      "bytes": 964,
+      "sha256": "9bc8b33f8624ff8880a83e370fb3c9fa295ed34b293556ec46942e75c2efaa02"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 2466,
+      "sha256": "d9d6f0a67aeb518c12c38217c4495beac56ab1af5a0d2cbdbbf289538bab9f0a"
+    },
+    {
+      "path": "run.log",
+      "bytes": 4873,
+      "sha256": "ec99da75d5a3975e509d8e4e0ce7830c57a24c1e03806b73b92608cf98f4aeb6"
+    },
+    {
+      "path": "run_angle_exchange.py",
+      "bytes": 16202,
+      "sha256": "df2398a232551f28c985da2ef0d25b068fd29fd887a1e1249f03df35de0d2e32"
+    },
+    {
+      "path": "seed_sources.json",
+      "bytes": 7657,
+      "sha256": "98088b66ef02f745fc7cc3264e9b4d3f94d1e9d0f5f9e1b1f9617beb82d840df"
+    },
+    {
+      "path": "test_angle_exchange.py",
+      "bytes": 3051,
+      "sha256": "f7d674af15745c1d044bbbe6e262ca1b069fbec28f6d8203ab17ac93e6e1d763"
+    },
+    {
+      "path": "tests.log",
+      "bytes": 1179,
+      "sha256": "d0b8baf3f6cbd9edb60f0eeb127029f81293f8097c5b18157ca09c53b8089418"
+    },
+    {
+      "path": "verification.log",
+      "bytes": 2745,
+      "sha256": "c4d4954d8314539ade42b73839a7a4b1db92d74b93c1d61aab5d5c163399311a"
+    },
+    {
+      "path": "write_report.py",
+      "bytes": 9711,
+      "sha256": "c599f64abeaebeda1b49405db1081d6122690f1ac245978993128cf9f231107b"
+    },
+    {
+      "path": "研究报告.md",
+      "bytes": 9189,
+      "sha256": "619f086d65431f8dd70567be893d30be2ee194f3db6e3a9fae23b499304ef121"
+    }
+  ]
+}

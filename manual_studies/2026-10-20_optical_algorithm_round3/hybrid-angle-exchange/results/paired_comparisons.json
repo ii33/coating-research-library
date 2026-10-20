@@ -1,0 +1,206 @@
+[
+  {
+    "case": "synthetic10_multi",
+    "baseline": "original_angles",
+    "seeds": [
+      11,
+      29,
+      47,
+      71,
+      101
+    ],
+    "paired_delta_percentage_points": [
+      0.0003621697991007533,
+      -2.0211401996483858e-09,
+      -0.44477362055758835,
+      0.0,
+      0.0
+    ],
+    "median_paired_delta_percentage_points": 0.0,
+    "rows": [
+      {
+        "seed": 11,
+        "exchange_points": 1994220,
+        "baseline_points": 1991790,
+        "exchange_minus_baseline_R_percentage_points": 0.0003621697991007533
+      },
+      {
+        "seed": 29,
+        "exchange_points": 1543050,
+        "baseline_points": 1101762,
+        "exchange_minus_baseline_R_percentage_points": -2.0211401996483858e-09
+      },
+      {
+        "seed": 47,
+        "exchange_points": 1195536,
+        "baseline_points": 182736,
+        "exchange_minus_baseline_R_percentage_points": -0.44477362055758835
+      },
+      {
+        "seed": 71,
+        "exchange_points": 1994220,
+        "baseline_points": 780354,
+        "exchange_minus_baseline_R_percentage_points": 0.0
+      },
+      {
+        "seed": 101,
+        "exchange_points": 579150,
+        "baseline_points": 436266,
+        "exchange_minus_baseline_R_percentage_points": 0.0
+      }
+    ]
+  },
+  {
+    "case": "synthetic10_multi",
+    "baseline": "fixed_dense_angles",
+    "seeds": [
+      11,
+      29,
+      47,
+      71,
+      101
+    ],
+    "paired_delta_percentage_points": [
+      0.00037399854173614244,
+      -0.01786934560469855,
+      -0.37126370127908703,
+      -1.2543292099431724e-06,
+      -0.000565079444320854
+    ],
+    "median_paired_delta_percentage_points": -0.000565079444320854,
+    "rows": [
+      {
+        "seed": 11,
+        "exchange_points": 1994220,
+        "baseline_points": 1991466,
+        "exchange_minus_baseline_R_percentage_points": 0.00037399854173614244
+      },
+      {
+        "seed": 29,
+        "exchange_points": 1543050,
+        "baseline_points": 1991466,
+        "exchange_minus_baseline_R_percentage_points": -0.01786934560469855
+      },
+      {
+        "seed": 47,
+        "exchange_points": 1195536,
+        "baseline_points": 1215810,
+        "exchange_minus_baseline_R_percentage_points": -0.37126370127908703
+      },
+      {
+        "seed": 71,
+        "exchange_points": 1994220,
+        "baseline_points": 1991466,
+        "exchange_minus_baseline_R_percentage_points": -1.2543292099431724e-06
+      },
+      {
+        "seed": 101,
+        "exchange_points": 579150,
+        "baseline_points": 1991466,
+        "exchange_minus_baseline_R_percentage_points": -0.000565079444320854
+      }
+    ]
+  },
+  {
+    "case": "tabulated6_multi",
+    "baseline": "original_angles",
+    "seeds": [
+      11,
+      29,
+      47,
+      71,
+      101
+    ],
+    "paired_delta_percentage_points": [
+      4.3298697960381105e-13,
+      0.0,
+      5.634381849972669e-13,
+      0.0,
+      7.12603420716107e-08
+    ],
+    "median_paired_delta_percentage_points": 4.3298697960381105e-13,
+    "rows": [
+      {
+        "seed": 11,
+        "exchange_points": 122310,
+        "baseline_points": 79056,
+        "exchange_minus_baseline_R_percentage_points": 4.3298697960381105e-13
+      },
+      {
+        "seed": 29,
+        "exchange_points": 184680,
+        "baseline_points": 131706,
+        "exchange_minus_baseline_R_percentage_points": 0.0
+      },
+      {
+        "seed": 47,
+        "exchange_points": 141750,
+        "baseline_points": 77436,
+        "exchange_minus_baseline_R_percentage_points": 5.634381849972669e-13
+      },
+      {
+        "seed": 71,
+        "exchange_points": 455220,
+        "baseline_points": 343926,
+        "exchange_minus_baseline_R_percentage_points": 0.0
+      },
+      {
+        "seed": 101,
+        "exchange_points": 243810,
+        "baseline_points": 103356,
+        "exchange_minus_baseline_R_percentage_points": 7.12603420716107e-08
+      }
+    ]
+  },
+  {
+    "case": "tabulated6_multi",
+    "baseline": "fixed_dense_angles",
+    "seeds": [
+      11,
+      29,
+      47,
+      71,
+      101
+    ],
+    "paired_delta_percentage_points": [
+      -6.494804694057166e-12,
+      -2.648632702051401e-09,
+      6.11455330812305e-12,
+      -1.304583385763891e-07,
+      7.136340129942909e-08
+    ],
+    "median_paired_delta_percentage_points": -6.494804694057166e-12,
+    "rows": [
+      {
+        "seed": 11,
+        "exchange_points": 122310,
+        "baseline_points": 366282,
+        "exchange_minus_baseline_R_percentage_points": -6.494804694057166e-12
+      },
+      {
+        "seed": 29,
+        "exchange_points": 184680,
+        "baseline_points": 689472,
+        "exchange_minus_baseline_R_percentage_points": -2.648632702051401e-09
+      },
+      {
+        "seed": 47,
+        "exchange_points": 141750,
+        "baseline_points": 203148,
+        "exchange_minus_baseline_R_percentage_points": 6.11455330812305e-12
+      },
+      {
+        "seed": 71,
+        "exchange_points": 455220,
+        "baseline_points": 433998,
+        "exchange_minus_baseline_R_percentage_points": -1.304583385763891e-07
+      },
+      {
+        "seed": 101,
+        "exchange_points": 243810,
+        "baseline_points": 375516,
+        "exchange_minus_baseline_R_percentage_points": 7.136340129942909e-08
+      }
+    ]
+  }
+]

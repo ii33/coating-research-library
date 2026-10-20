@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-20",
+  "purpose": "Independent optical-coating search research; no product repository modifications",
+  "files": [
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 4476,
+      "sha256": "26bcb3ae19e9d83891a1a96a57aebd7dd985ba23244a0afcf9b34801d204aa8d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3118,
+      "sha256": "84a6ba4445ebca8d4c95ad220483b7336b1116e62f7406651ab102f0620543d2"
+    },
+    {
+      "path": "analysis.log",
+      "bytes": 7828,
+      "sha256": "b32716302c16cad8db26577e10c9b175954ac9379df19ace2c0d88b2bbd16f43"
+    },
+    {
+      "path": "analyze_hybrid.py",
+      "bytes": 7458,
+      "sha256": "42d365543be15c7fdac31c978cfba19a04cb330bdb66a52799e2deeb17ac1047"
+    },
+    {
+      "path": "angle_diagnostic.log",
+      "bytes": 1564,
+      "sha256": "10172e3e5759ed960ed3dab6042dd99a5383f06a6bf6a0d6c4e4f630162ebf19"
+    },
+    {
+      "path": "data/ATTRIBUTION.md",
+      "bytes": 1545,
+      "sha256": "8a782053c7d7b789fe0b45e30d1ac0d918e8a8c1f9e67aaa5396726bdd66e11d"
+    },
+    {
+      "path": "data/MgF2_Franta.csv",
+      "bytes": 25318,
+      "sha256": "664a301a08f7f84911e45fcd28ce3f877ec4b47041edb1d0171e74d75ebd4c7d"
+    },
+    {
+      "path": "data/Si_Franta-300K.csv",
+      "bytes": 25487,
+      "sha256": "2da6eed89d655b56e9310716b6fe5765e18bc4e135715d72a52ed5806c9679fe"
+    },
+    {
+      "path": "data/ZnSe_Querry.csv",
+      "bytes": 2413,
+      "sha256": "850fd174d5914f94c0a2ef856e3bf91089b6bbc9e2187c7a693d3b049a32fb54"
+    },
+    {
+      "path": "data/provenance.json",
+      "bytes": 3311,
+      "sha256": "93528b362c597feeb659aa48328f17f9183b760494a99d58fffb9d116e859576"
+    },
+    {
+      "path": "diagnose_angle_peaks.py",
+      "bytes": 2010,
+      "sha256": "2ce7434c06db8b41645dee2260960d90c8970e8b71226d20c20a35e9838213ab"
+    },
+    {
+      "path": "extract_material_data.py",
+      "bytes": 1459,
+      "sha256": "5725803cedf6ee5b0ea444793ad646f21020d534edb5c54e10264b70a64e7536"
+    },
+    {
+      "path": "main.log",
+      "bytes": 18072,
+      "sha256": "08f59b835f4bd6315039f25e53d3cb2bc647518f811baa521674033a2b25158e"
+    },
+    {
+      "path": "pilot/physics_checks.json",
+      "bytes": 482,
+      "sha256": "43f732448d99661618fa192ce044501b092cb2724f698c41f17fd43476849d84"
+    },
+    {
+      "path": "pilot/results.json",
+      "bytes": 1523527,
+      "sha256": "6cc6c90602ce04974a05022918f429f18c352992dde942925b03cf29176abaca"
+    },
+    {
+      "path": "pilot/summary.csv",
+      "bytes": 2835,
+      "sha256": "218127daccf26971f7dc928e745b556fe425db87487e1d6f3e95ffb1326a835b"
+    },
+    {
+      "path": "pilot/summary.json",
+      "bytes": 7487,
+      "sha256": "3d0759805929e8493f06bf5a04e42609527b038d4e8a83fb6e4dc4db24465d4b"
+    },
+    {
+      "path": "pilot.log",
+      "bytes": 12274,
+      "sha256": "476f0e454181ade6e2f392d2c0c8cb284d7ed7a361a37c9a6b276bd10bfdb1d4"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 99,
+      "sha256": "912d3b20bf684a9666a4e5f626f43feac64dcb7595fa38c0f48e734d9d87fc75"
+    },
+    {
+      "path": "results/analysis_summary.json",
+      "bytes": 663,
+      "sha256": "2f6ffd65b59d18ff8fc2862aa72e80b25eec53daedc85512bec64a427f4701e0"
+    },
+    {
+      "path": "results/angle_peak_diagnostic.json",
+      "bytes": 1563,
+      "sha256": "2110315331b7c5490c4b8da111065072b39fce30b64ed55579a3d3833826cb47"
+    },
+    {
+      "path": "results/archive_vs_aggregate.json",
+      "bytes": 52576,
+      "sha256": "409a19f67823957cfe01f4279799b41caf7268461c0d7d770b3f1f20b1d85b9b"
+    },
+    {
+      "path": "results/data_reconstruction.json",
+      "bytes": 229,
+      "sha256": "c5c57f444b5ace0f203633a878b9509391d2be15ceeedf899a073888d0a3f024"
+    },
+    {
+      "path": "results/deliverable_consistency.json",
+      "bytes": 673,
+      "sha256": "4b8119e4f5e83949c04b10a5de81ce9a5c2303d28be6cbf4ec478b45bf49c7b7"
+    },
+    {
+      "path": "results/legacy_kernel_crosscheck.json",
+      "bytes": 262,
+      "sha256": "d7f6cf91c2b0ab9e555e4fe149b14c4b5fa23e431d784ad17c12128855abba86"
+    },
+    {
+      "path": "results/median_convergence.png",
+      "bytes": 129297,
+      "sha256": "cee58f8dfb8f92f66c4f65b224b84711048b43095c55a4dc1b9956788169eb83"
+    },
+    {
+      "path": "results/median_spectra.png",
+      "bytes": 592224,
+      "sha256": "0da4521fceefa323c0027319a98df2407211b6d4fbf3fcb8fa80000d346bbd40"
+    },
+    {
+      "path": "results/padding_diagnostic.json",
+      "bytes": 18225,
+      "sha256": "3f23ce903b21cb65983d4e04a934897274c56acaef14286f4898f5974bbaf421"
+    },
+    {
+      "path": "results/paired_comparisons.json",
+      "bytes": 7454,
+      "sha256": "d571e64abcc81f19e08850ba45e4086910536da557e83b56c51caedb82f290f7"
+    },
+    {
+      "path": "results/physics_checks.json",
+      "bytes": 482,
+      "sha256": "43f732448d99661618fa192ce044501b092cb2724f698c41f17fd43476849d84"
+    },
+    {
+      "path": "results/replay.json",
+      "bytes": 5326,
+      "sha256": "198e0f311fc3b3d0871d6e98bee6ef1b8eab725f045cec80477bd7bcdbbd8a78"
+    },
+    {
+      "path": "results/results.json",
+      "bytes": 3098418,
+      "sha256": "3443a003f4a8351782c58a8db0f56084b54bc2ea8b973ba8b095ec55c6cd937a"
+    },
+    {
+      "path": "results/runs.csv",
+      "bytes": 22717,
+      "sha256": "1cea17d3df43eb527a438e24232390f8bcdb746f485fcc6c9468c0da0a6898f6"
+    },
+    {
+      "path": "results/summary.csv",
+      "bytes": 3377,
+      "sha256": "0c5658ad9bd76e31f25d5cd6548d5ead44a6ec585669ec6767ecbb0c09c721a7"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 8989,
+      "sha256": "43f69e8c14475abae752220b5f651449a19be035418077c03657901846c35811"
+    },
+    {
+      "path": "run_hybrid.py",
+      "bytes": 17854,
+      "sha256": "69485f6ba692737dea486b1b1cf4993e27ad357a2f50ad9c56722bfb8e936156"
+    },
+    {
+      "path": "test_hybrid.py",
+      "bytes": 2998,
+      "sha256": "83b0f68aba0c200bfbf9b6ec532045ff98a0d3df462c7887aa1773614fbdb833"
+    },
+    {
+      "path": "tests.log",
+      "bytes": 1128,
+      "sha256": "fccacb72fbfbd8ba704dc4d923e4433b91013b6ad535492d232de0147f47bc2a"
+    },
+    {
+      "path": "verification.log",
+      "bytes": 674,
+      "sha256": "e26538d1ac783cba34eb36029c202f8865a59d1cb709702707a92fe15e5f1651"
+    },
+    {
+      "path": "verify_deliverable.py",
+      "bytes": 2541,
+      "sha256": "5665fdacee6c88253e9db95b7d58a2c991199554ec50ec2c1855095083f14c6d"
+    },
+    {
+      "path": "write_report.py",
+      "bytes": 11462,
+      "sha256": "3dc7369efbaa2963be8ae141e86c1f511fba7cc287b09964ec6fbe911cb29187"
+    },
+    {
+      "path": "研究报告.md",
+      "bytes": 10773,
+      "sha256": "7f65d3082a3d07dea47ad0402bbb2cce656a5c91cd198419f6ac5a224802dc0a"
+    }
+  ]
+}

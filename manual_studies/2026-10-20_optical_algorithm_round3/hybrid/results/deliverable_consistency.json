@@ -1,0 +1,21 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "120_unique_main_runs": true,
+    "all_actual_calls_6000": true,
+    "stage_counts_sum_to_actual_calls": true,
+    "point_counts_consistent": true,
+    "all_thickness_within_bounds": true,
+    "all_stored_selected_training_metrics_recomputed_exactly": true,
+    "summary_exactly_recomputed": true,
+    "24_replays_bitwise_equal": true,
+    "documented_midpoint_overlap_counts": true
+  },
+  "max_selected_training_loss_abs_difference": 0.0,
+  "max_selected_training_violation_abs_difference": 0.0,
+  "interior_audit_training_overlap_points_per_window": {
+    "1025": 5,
+    "4097": 1
+  },
+  "common_endpoints_per_window": 2
+}

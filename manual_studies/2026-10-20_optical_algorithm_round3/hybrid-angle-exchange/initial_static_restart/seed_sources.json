@@ -1,0 +1,296 @@
+{
+  "source_sha256": "3443a003f4a8351782c58a8db0f56084b54bc2ea8b973ba8b095ec55c6cd937a",
+  "source_description": "Frozen round3 hybrid main comparison; selected task families using every predetermined seed, not selected by success or improvement",
+  "sources": [
+    {
+      "case": {
+        "name": "synthetic10_multi",
+        "layers": 10,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": false,
+        "min_entering_flux": null
+      },
+      "source_method": "de_local",
+      "seed": 11,
+      "thickness_um": [
+        2.242674550544442,
+        0.16641895069542925,
+        0.326771740393997,
+        0.19416221834069033,
+        0.44142238681268464,
+        0.03428017644940259,
+        0.534654289962888,
+        0.09389356816184885,
+        0.2639662531502257,
+        1.2401679298810204
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.13811625249919215,
+      "source_five_degree_worst_R": 0.13811625249919215
+    },
+    {
+      "case": {
+        "name": "synthetic10_multi",
+        "layers": 10,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": false,
+        "min_entering_flux": null
+      },
+      "source_method": "de_local",
+      "seed": 29,
+      "thickness_um": [
+        2.2496046300634527,
+        0.1721471560801687,
+        0.21739324006594654,
+        0.4239390418670391,
+        0.030727228935286007,
+        0.031208615382206345,
+        0.10350596848026536,
+        0.02229035533225438,
+        0.006601808121216307,
+        0.5588983534576054
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.12865127135716,
+      "source_five_degree_worst_R": 0.12865127135716
+    },
+    {
+      "case": {
+        "name": "synthetic10_multi",
+        "layers": 10,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": false,
+        "min_entering_flux": null
+      },
+      "source_method": "de_local",
+      "seed": 47,
+      "thickness_um": [
+        0.9025628753126429,
+        0.12581723696986985,
+        0.4719655580602425,
+        0.16968041910378687,
+        0.015819763992414367,
+        0.03614914805887465,
+        0.22444017216693016,
+        1.0388598400183247,
+        0.11595824932524057,
+        1.415691189956426
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.12002368342528694,
+      "source_five_degree_worst_R": 0.12347369652502674
+    },
+    {
+      "case": {
+        "name": "synthetic10_multi",
+        "layers": 10,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": false,
+        "min_entering_flux": null
+      },
+      "source_method": "de_local",
+      "seed": 71,
+      "thickness_um": [
+        0.9496347931806878,
+        0.1755745647230448,
+        0.09232455091650789,
+        0.00788369380513202,
+        0.0874840921355679,
+        0.02669739099690293,
+        0.06360294234264256,
+        0.00581165035238331,
+        0.03495768162867677,
+        0.5352344536909184
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.06702314511435634,
+      "source_five_degree_worst_R": 0.06702314511435634
+    },
+    {
+      "case": {
+        "name": "synthetic10_multi",
+        "layers": 10,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": false,
+        "min_entering_flux": null
+      },
+      "source_method": "de_local",
+      "seed": 101,
+      "thickness_um": [
+        0.756224051333862,
+        0.0062642580577679996,
+        0.22955343966258562,
+        0.19397230965921952,
+        0.03720862989207485,
+        0.0054155513847658765,
+        0.1561337595283539,
+        0.015400186698721525,
+        0.05578977858226642,
+        0.5208985411576482
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.07064744542192654,
+      "source_five_degree_worst_R": 0.07064744542192654
+    },
+    {
+      "case": {
+        "name": "tabulated6_multi",
+        "layers": 6,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": true,
+        "min_entering_flux": 0.9
+      },
+      "source_method": "random_local",
+      "seed": 11,
+      "thickness_um": [
+        2.153202000491988,
+        0.13411618926016042,
+        0.21390628959005556,
+        0.8970299860216947,
+        0.018570430001099363,
+        2.472768828314267
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.178244316829979,
+      "source_five_degree_worst_R": 0.18085187994894686
+    },
+    {
+      "case": {
+        "name": "tabulated6_multi",
+        "layers": 6,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": true,
+        "min_entering_flux": 0.9
+      },
+      "source_method": "random_local",
+      "seed": 29,
+      "thickness_um": [
+        2.4879619784976597,
+        0.12198805345818839,
+        0.32313618150974427,
+        0.32662816679441925,
+        0.1500673568547333,
+        0.6227550603122749
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.10142823320744832,
+      "source_five_degree_worst_R": 0.10142823320744832
+    },
+    {
+      "case": {
+        "name": "tabulated6_multi",
+        "layers": 6,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": true,
+        "min_entering_flux": 0.9
+      },
+      "source_method": "random_local",
+      "seed": 47,
+      "thickness_um": [
+        0.9231450867511857,
+        2.22269433943747,
+        0.2621805399281088,
+        0.23045855340325985,
+        0.2753898368806066,
+        1.269878359040722
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.2275657615749651,
+      "source_five_degree_worst_R": 0.2275657615749651
+    },
+    {
+      "case": {
+        "name": "tabulated6_multi",
+        "layers": 6,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": true,
+        "min_entering_flux": 0.9
+      },
+      "source_method": "random_local",
+      "seed": 71,
+      "thickness_um": [
+        1.1935811139212555,
+        0.07516891850772167,
+        0.6802380079259641,
+        0.1505488384043057,
+        0.2826790315753809,
+        1.2501758547226915
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.09964461508831976,
+      "source_five_degree_worst_R": 0.09964461508831976
+    },
+    {
+      "case": {
+        "name": "tabulated6_multi",
+        "layers": 6,
+        "angles": [
+          0.0,
+          30.0,
+          45.0
+        ],
+        "real_nk": true,
+        "min_entering_flux": 0.9
+      },
+      "source_method": "random_local",
+      "seed": 101,
+      "thickness_um": [
+        1.2764599585025262,
+        0.07887674299944235,
+        0.639915465339732,
+        0.1619042710894054,
+        0.2866728444180033,
+        1.1903253034157923
+      ],
+      "source_objective_calls": 6000,
+      "source_optical_points": 4860000,
+      "source_trained_angle_worst_R": 0.10279795330317676,
+      "source_five_degree_worst_R": 0.10279795330317676
+    }
+  ]
+}

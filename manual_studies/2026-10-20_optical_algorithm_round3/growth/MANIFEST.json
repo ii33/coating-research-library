@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-20",
+  "scope": "synthetic finite-catalog research; no product code or private user inputs",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2729,
+      "sha256": "5a70243cf19833d81d1c3cdd759ae84140a3d2991f4ec2b1d9f5e668ae61e751"
+    },
+    {
+      "path": "analysis.log",
+      "bytes": 4997,
+      "sha256": "cc3865405336a50e79673a30cbaf83ddf45d533144e3a9e53f10fba9ed28c874"
+    },
+    {
+      "path": "analyze_growth.py",
+      "bytes": 6962,
+      "sha256": "a9507727ff0b1aacc012739db0b4efe6811334dc51bbcb0b26504ef2720ebd30"
+    },
+    {
+      "path": "baseline_reference_cases.json",
+      "bytes": 2026,
+      "sha256": "43aa703c8805cf95f43406eb7366b47569332e3f9b71e653c3c8f3f46a2b42f0"
+    },
+    {
+      "path": "experiment_plan.md",
+      "bytes": 3546,
+      "sha256": "a82664a170c5b86f4608541252bb9574ae2d384e0d2305cdde058fc2c4b0ca71"
+    },
+    {
+      "path": "pilot/config.json",
+      "bytes": 5160,
+      "sha256": "c6f68c497de257002e48289e9bcd9fb0404ff3a580e10b831e973a60e7f6e2ef"
+    },
+    {
+      "path": "pilot/results.json",
+      "bytes": 2650542,
+      "sha256": "d4ec366d9a75480c01f2359ded2ec5c8ae4987d6045d50bcc41062acd1711f19"
+    },
+    {
+      "path": "pilot/runs.csv",
+      "bytes": 91179,
+      "sha256": "50fa1d1cf293e1c2d6c0cfde304603ba0b9a6d8e86061797dab9ea630b62c52e"
+    },
+    {
+      "path": "pilot/summary.csv",
+      "bytes": 13294,
+      "sha256": "f9e291181e5e9c908d852df0924d4df82a87955c5e5133322e0479d46b356919"
+    },
+    {
+      "path": "pilot/summary.json",
+      "bytes": 49103,
+      "sha256": "ac12b728c3c83839bb5c5c24894e28608cbcbb429d9a097883e8526baecd7a17"
+    },
+    {
+      "path": "pilot.log",
+      "bytes": 222,
+      "sha256": "fa1e857e78b4ee85480ff743778f9804433581158f11b2d74f225947cdc66129"
+    },
+    {
+      "path": "portable_test_report.txt",
+      "bytes": 98,
+      "sha256": "d97c995e05f24bfb1db25242101b0eefee5b2646bfcae0ad923e10e158d8bbea"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 35,
+      "sha256": "7544eabdb703fc5a93e318b07aeccb51b424b2a58115e13e497cf057ceaaba12"
+    },
+    {
+      "path": "results/aggregate.csv",
+      "bytes": 751,
+      "sha256": "2b8b62f5e871ce10d44eae9e6b0d644081b0df0cdfb45f7f537ed284ccdebfe0"
+    },
+    {
+      "path": "results/analysis.json",
+      "bytes": 19516,
+      "sha256": "b7b542839eaf43fb9139037707501eac33e420ddbabef3bbaf3ad71674692171"
+    },
+    {
+      "path": "results/config.json",
+      "bytes": 9025,
+      "sha256": "e3b67ba7618fd6ea4f87c9e7a4cee7f16026e9577911fcd19adf3ebb34187ac8"
+    },
+    {
+      "path": "results/mechanism_diagnostics.json",
+      "bytes": 886382,
+      "sha256": "790f960756a4224b7e78b64801e0a962c1d982e0cd07fe9dbee640d1a6934a55"
+    },
+    {
+      "path": "results/results.json",
+      "bytes": 5685818,
+      "sha256": "c1e4e672f84f587c6cb361439deb0b1cb0e0ce03999540f68ef2dc81d239f99d"
+    },
+    {
+      "path": "results/runs.csv",
+      "bytes": 195704,
+      "sha256": "d08abe4ae44ba6e762b6293e39d9038b952106e5a0e70f22760e695c57958532"
+    },
+    {
+      "path": "results/summary.csv",
+      "bytes": 29644,
+      "sha256": "d92d27a8b15190c0e64c05d17d495163f556054633808d30bf6568109ca1d46e"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 106324,
+      "sha256": "c8a675261dfb7b186609a323164fded1968d5901cfb84c2e21c818bf6d44c8e4"
+    },
+    {
+      "path": "run.log",
+      "bytes": 446,
+      "sha256": "ee99097cc275d9ad2aedfe4c28ca5c771478dea98d024b30c86aca659fa8dbbc"
+    },
+    {
+      "path": "run_growth.py",
+      "bytes": 18475,
+      "sha256": "cae3fcbf64ec22d648bdbd8c9b9b9134b4ed2d1e79e12aa23cedc36ede68cfbb"
+    },
+    {
+      "path": "test_growth.py",
+      "bytes": 4726,
+      "sha256": "82000a8e27afcd249e9d8dc11504f3b60c5d29b66dfa50b7801632354081bf65"
+    },
+    {
+      "path": "test_report.txt",
+      "bytes": 98,
+      "sha256": "1bfadd9be674873dd5d2101a80a3d7aad6a8c91c3e2309b757c31fce779eeb47"
+    },
+    {
+      "path": "validate_saved.py",
+      "bytes": 3377,
+      "sha256": "f2da41e4c1b864d185e86a9ca6831aade3555961ceddd1928ee42380ea8d079a"
+    },
+    {
+      "path": "validation.log",
+      "bytes": 816,
+      "sha256": "1865c47435dc10e106873997ad869fbee13ef39dc93055654c5ae327daf8d5b9"
+    },
+    {
+      "path": "validation_summary.json",
+      "bytes": 816,
+      "sha256": "1865c47435dc10e106873997ad869fbee13ef39dc93055654c5ae327daf8d5b9"
+    },
+    {
+      "path": "verified_kernel/run_experiment.py",
+      "bytes": 22827,
+      "sha256": "fb53b898a1e3db511c7ba98bb92648fd15b38f894de79fbeed312049a0acfca6"
+    },
+    {
+      "path": "work_matched/aggregate.csv",
+      "bytes": 739,
+      "sha256": "ea57bbd01cf34713a2dafd228a7bea43609e2b5d416314732a53981a508a3533"
+    },
+    {
+      "path": "work_matched/analysis.json",
+      "bytes": 19396,
+      "sha256": "dbf67bfd8ad359bb538b3b5dd74a5948808965a5a7a5cbcb693d3b3823e32693"
+    },
+    {
+      "path": "work_matched/config.json",
+      "bytes": 9024,
+      "sha256": "de9c92c7e967b49926eb7a084cedebbf783ebc13c4506dd0aa5e358bd9811148"
+    },
+    {
+      "path": "work_matched/results.json",
+      "bytes": 5924151,
+      "sha256": "7d545a71071be24396e99fb88914bad99f0a378984fe0b9b0e495391dbed344a"
+    },
+    {
+      "path": "work_matched/runs.csv",
+      "bytes": 201760,
+      "sha256": "bfabf179c7796e3464159c3f38c35a71ff80f4141857179c3430163f550ce74b"
+    },
+    {
+      "path": "work_matched/summary.csv",
+      "bytes": 29753,
+      "sha256": "7f9f5a0e57a4ce0b4447f2bf218d95db60c5df6280ad347c979fb71be095a454"
+    },
+    {
+      "path": "work_matched/summary.json",
+      "bytes": 106433,
+      "sha256": "8705a893e7b633dacff71049aa4f802f0ad95fc362fb0640394d368d8867946a"
+    },
+    {
+      "path": "work_run.log",
+      "bytes": 446,
+      "sha256": "a0371d04173c77bd9b13546ec4efe385411d3938b316d8dfeb72b98f6c168609"
+    },
+    {
+      "path": "研究报告.md",
+      "bytes": 12514,
+      "sha256": "0101d0d8d8becaac44b0f9b46501194e580d06dfddc6c157d49f100cba353b65"
+    }
+  ]
+}
