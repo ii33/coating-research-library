@@ -1,0 +1,25 @@
+{
+  "input_prescription_copied_byte_for_byte": true,
+  "author11_audit_copied_byte_for_byte": true,
+  "independent_original_report_sha256": "cfcd128688ca240bdcb462d68c627d8883dbb20f182fc2c6c0e7845095706755",
+  "independent_original_summary_sha256": "f0c809ee15880b5467b7c32d28c4b435e0aaad2bd9ecceb0b22766dbb8eafaae",
+  "independent_report_changes": "Remove workstation label; retarget local links to portable source and compact integrity/work records. All scientific text and numerical values retained. Replace interpreter path with generic environment label and local runner with portable relative CLI; no scientific numerical changes.",
+  "independent_summary_changes": [
+    "remove host",
+    "remove python_executable",
+    "replace input_prescription with package-relative path",
+    "replace five source_path values with official database-relative paths"
+  ],
+  "all_other_summary_values_unchanged": true,
+  "original_local_delivery_v2_file_count": 288,
+  "local_delivery_v2_sha256": "d1f374e728b943d175ef703093f8b20aaac14d3919302733d111e358b5748467",
+  "excluded": [
+    "raw full 2D author arrays (regenerable, original local package preserved)",
+    "running checkpoints and heartbeat logs",
+    "machine paths and private workstation identifiers",
+    "product source and unpublished core",
+    "original PDF/XLSX files",
+    "credentials and SSH records"
+  ],
+  "omitted_evidence_does_not_invalidate_original_local_archive": true
+}

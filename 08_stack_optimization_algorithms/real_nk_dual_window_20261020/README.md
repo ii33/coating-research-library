@@ -38,7 +38,7 @@ A/A双面非相干整片最低T约1.621%/0.212%。这些是指定源模型和情
 本目录的normal_incidence子包保留本地定稿时的原始字节与状态字段；其中
 uploaded_or_pushed=false是原冻结事件，不是对当前Git提交可用性的描述。
 本次归档仅把这些已冻结研究记录纳入本研究库，不发布coating-sim软件仓库。
-0–15° s/p联合优化属于随后独立的新目标，结果另行记录；本次归档范围不包含该新增优化。
+0–15° s/p联合优化现作为独立新增目标归档于[角度研究](angular_0to15deg/README.md)：唯一推荐cleaned_final派生的11层处方，第二独立角度验收已通过；原正入射结果保持原样。
 
 目录及文件哈希见publication_manifest.json；新增归档不替代既有T08轮次或生产资格状态。
 
@@ -47,3 +47,9 @@ uploaded_or_pushed=false是原冻结事件，不是对当前Git提交可用性�
 用户指出“实际生产时吸收数据总是更低的”。原Querry高k情景不是生产材料必然性能，不据此否定实际双窗成品可行性。[生产背景、可追溯低损耗线索及显式敏感性](diagnostics_phase1/production_context/README.md)与原参考情景分开保存；未静默替换数据或伪称实测。膜系反射优化另行报告。
 
 [ZnS材料独立审查及低损耗证据](diagnostics_phase1/production_context/independent_material_review/REPORT.html)已纳入：原1mm参考算例独立一致；实际生产吸收更低的用户经验与源样品情景分列。未发布原PDF/XLSX或下载的原始工作簿数据。
+
+## 新增：0–15° s/p第二独立验收
+
+[11层推荐层表与报告](angular_0to15deg/README.md)：3–5/8–12 μm各窗、0–15°含边界、s/p分别R≤0.99%、T≥90.01%。最大R0.756956100%、最低T97.280190605%，未放宽原1e-6容差。
+层表总厚3871.098426 nm；历史12层含0.1nm NaCl仅供追溯，删除后的11层直接接受独立复核。
+[便携固定处方复算](angular_0to15deg/PORTABILITY.md)独立于产品源码；不代表完整自动生长搜索可独立重跑。

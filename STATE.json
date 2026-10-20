@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at_utc": "2026-10-19T23:43:24.795701+00:00",
+  "updated_at_utc": "2026-10-20T00:46:30.218746+00:00",
   "project_status": "third_sweep_local_complete_consolidated_publication",
   "setup_status": "complete_integrity_checked",
   "round": 3,
@@ -435,6 +435,15 @@
       "path": "08_stack_optimization_algorithms/real_nk_dual_window_20261020/README.md",
       "scope": "fixed-source normal-incidence dual-window independent verification plus54 applicability diagnostic cases",
       "status": "accepted_within_explicit_numerical_scope",
+      "device_or_manufacturing_status": "unverified",
+      "prior_topic_round_states_unchanged": true
+    },
+    {
+      "id": "BMARK-REAL-NK-DUAL-20261020-ANGULAR-v1",
+      "date": "2026-10-20",
+      "path": "08_stack_optimization_algorithms/real_nk_dual_window_20261020/angular_0to15deg/README.md",
+      "scope": "fixed-source 11-layer dual-window, air 0–15 degrees inclusive, s/p separately, second independent numerical acceptance",
+      "status": "strict_independent_numerical_acceptance_passed",
       "device_or_manufacturing_status": "unverified",
       "prior_topic_round_states_unchanged": true
     }

@@ -14,6 +14,40 @@
       "diagnostic_conditions_executed": 54,
       "continuous_certificate": false,
       "manufacturing_or_whole_plate_acceptance": false
+    },
+    {
+      "id": "BMARK-REAL-NK-DUAL-20261020-ANGULAR-v1",
+      "topic_id": "T08",
+      "record_type": "executed_offline_numerical_research",
+      "path": "08_stack_optimization_algorithms/real_nk_dual_window_20261020/angular_0to15deg/README.md",
+      "recommended_layer_count": 11,
+      "total_nm": 3871.098426,
+      "windows_nm": [
+        [
+          3000,
+          5000
+        ],
+        [
+          8000,
+          12000
+        ]
+      ],
+      "angles_deg_inclusive": [
+        0,
+        15
+      ],
+      "polarizations_separately": [
+        "s",
+        "p"
+      ],
+      "R_upper": 0.0099,
+      "T_lower": 0.9001,
+      "tolerance_not_used_to_relax": 1e-06,
+      "independent_acceptance_status": "strict_pass",
+      "maximum_R": 0.007569561000107246,
+      "minimum_T": 0.9728019060492489,
+      "continuous_certificate": false,
+      "manufacturing_or_whole_plate_acceptance": false
     }
   ],
   "note": "仅登记实际执行且有证据路径的数值研究；不等于实测或制造验收。"

@@ -1,0 +1,31 @@
+{
+  "original_independent_audit_sha256": "06f6bab73b3901a22dba840359295935d49e21f3df77a60274b3e827fe273b2d",
+  "published_script_sha256": "15880311e500faca0e2e71706c0466b875f07e728b5970b3e586eb7f315cc94d",
+  "scientific_functions_source_and_AST_unchanged": [
+    "nk",
+    "optics",
+    "scatter",
+    "boundary",
+    "mp_boundary",
+    "grids",
+    "sweep",
+    "extrema"
+  ],
+  "function_AST_sha256": {
+    "nk": "c90dc2a4ecc7995b7a719a82965aaa56f46d60771498d5dce07ff4cd3fcee5fa",
+    "optics": "499bb9b31e1b2d42a528cdae13b52f1175a1cf58302867b27360d7d6c9ff644a",
+    "scatter": "0ee4868ae0918e060474f3189b96e68b6038ea934b8a25f0782211574535d09d",
+    "boundary": "46cd02ac498ab133ffe2f21b40155996d8ae4b87f471f88acb9af930336ee753",
+    "mp_boundary": "e941eff2f83dcedcbbed35979ba9791e70a30189d6ab1f297e13e42745316611",
+    "grids": "6a91cde8c83ae0aad7d7aa8f97ee80b6cd9a61aa056633eda6a3f0dc9de3add3",
+    "sweep": "aca4cf581b4d3ee0e868fcd28ab3fac489eb6023a51d87b146130d85ddcc9d20",
+    "extrema": "fb2dca919823907c7249ebd65e094d8b2653c669c35becf76da665e6df815df1"
+  },
+  "changes": "Relative input/output, packaged CSV identity loader, omission of machine metadata and production/freeze dependencies, explicit output directory and check-only CLI. No change to optics, extrema, sampling or high-precision formulas.",
+  "full_portable_dense_recheck_executed_during_publication": false,
+  "original_full_independent_audit_executed": true,
+  "input_only_check_planned": false,
+  "input_only_check_passed": true,
+  "input_only_check_scientific_evaluations": 0,
+  "input_only_check_from_unrelated_cwd": true
+}

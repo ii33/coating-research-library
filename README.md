@@ -125,3 +125,5 @@ ITO并入本库专题11，不另建研究项目。[研究入口](11_transparent_
 ## 2026-10-20 真实n/k双窗减反与适用域诊断
 
 - [研究记录](08_stack_optimization_algorithms/real_nk_dual_window_20261020/README.md)：两条路线等价十层的正常入射双窗R/T通过独立物理核验；另保留54条件角度/偏振/有限ZnS双面诊断及失败区间。半无限基片通量不等于整片透射；完整搜索依赖未发布v3，生产核心未入库。
+
+- [2026-10-20 真实双窗0–15° s/p角度优化与第二独立验收](08_stack_optimization_algorithms/real_nk_dual_window_20261020/angular_0to15deg/README.md)：11层、3871.098426nm，在固定源模型下严格通过双窗R/T；保留历史12层、原A/B、54例诊断及材料边界，附独立便携固定处方复算。

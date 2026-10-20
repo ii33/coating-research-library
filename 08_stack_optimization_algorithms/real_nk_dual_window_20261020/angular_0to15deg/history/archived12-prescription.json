@@ -1,0 +1,91 @@
+{
+  "schema": "angular_dual_window_research_prescription_v1",
+  "origin": "B seven-layer-study final10layer seed, then10layer thickness plateau, finite ZnS/MgF2 pair and minimax",
+  "layer_order": "substrate_outward",
+  "layers": [
+    {
+      "layer": 1,
+      "material": "MgF2",
+      "thickness_nm": 67.165676
+    },
+    {
+      "layer": 2,
+      "material": "ZnS",
+      "thickness_nm": 364.671181
+    },
+    {
+      "layer": 3,
+      "material": "MgF2",
+      "thickness_nm": 178.154614
+    },
+    {
+      "layer": 4,
+      "material": "ZnS",
+      "thickness_nm": 372.47475
+    },
+    {
+      "layer": 5,
+      "material": "MgF2",
+      "thickness_nm": 338.037156
+    },
+    {
+      "layer": 6,
+      "material": "Ge",
+      "thickness_nm": 55.506161
+    },
+    {
+      "layer": 7,
+      "material": "MgF2",
+      "thickness_nm": 506.438065
+    },
+    {
+      "layer": 8,
+      "material": "ZnS",
+      "thickness_nm": 173.209004
+    },
+    {
+      "layer": 9,
+      "material": "MgF2",
+      "thickness_nm": 666.862731
+    },
+    {
+      "layer": 10,
+      "material": "Ge",
+      "thickness_nm": 20.644886
+    },
+    {
+      "layer": 11,
+      "material": "NaCl",
+      "thickness_nm": 0.1
+    },
+    {
+      "layer": 12,
+      "material": "MgF2",
+      "thickness_nm": 1127.934202
+    }
+  ],
+  "targets": {
+    "windows_nm": [
+      [
+        3000,
+        5000
+      ],
+      [
+        8000,
+        12000
+      ]
+    ],
+    "angle_range_deg": [
+      0,
+      15
+    ],
+    "polarizations": [
+      "s",
+      "p"
+    ],
+    "R_upper": 0.0099,
+    "T_lower": 0.9001,
+    "tolerance": 1e-06,
+    "T_definition": "flux entering semi-infinite ZnS"
+  }
+}

@@ -1,0 +1,1820 @@
+[
+  {
+    "elapsed_s": 5.575835999916308,
+    "physical_evaluations": 4891,
+    "N": 10,
+    "total_nm": 3268.5585119999996,
+    "violation": 0.002421180311512743,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.012321180311512744,
+        "Rmax_nm": 5000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.98092132571226,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01264677953639004,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 38,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.011293184892665828,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9723227369337246,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01638407817360954,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.011043542275453653,
+        "Rmax_nm": 5000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9815546521601809,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.012537778036753044,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 36,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.011105617938069003,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9720183042652762,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016876077796654787,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4891,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 15.037970799952745,
+    "physical_evaluations": 10443,
+    "N": 10,
+    "total_nm": 3280.6061606458334,
+    "violation": 0.0009914687523819195,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01089146875238192,
+        "Rmax_nm": 3258.414695912347,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9801797987039016,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.012598266077147091,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 38,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010874730731207368,
+        "Rmax_nm": 8333.3,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9727811740577459,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016346235034014667,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 15,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010872590908239372,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9810223244439865,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.01248747092692648,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 33,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01071791143162352,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9724438446874786,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01683824388089794,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 22,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4692,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 23.941317499964498,
+    "physical_evaluations": 16478,
+    "N": 10,
+    "total_nm": 3280.789999579299,
+    "violation": 0.0009849433150211778,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010884943315021179,
+        "Rmax_nm": 3987.419387435773,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9801533373823823,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.012624551117023652,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 41,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010874462335379165,
+        "Rmax_nm": 8333.3,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9727421334965429,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016383404168078042,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 17,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010874462335378454,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9810845487747216,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.012513055832629627,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 36,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010717422167680141,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9724077659600437,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01687481187227613,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 21,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 5055,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 39.85070869990159,
+    "physical_evaluations": 27901,
+    "N": 10,
+    "total_nm": 3280.709803478897,
+    "violation": 0.0009769459778045698,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01087694597780457,
+        "Rmax_nm": 3257.260125019461,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9801677372362146,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.012614834222217541,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 42,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876597171736151,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9727560370776529,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01636736575061093,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876597171737373,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.981066896837055,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.01250353713035579,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 34,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01072021172537618,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9724207236660725,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016859064608551355,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 20,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 5078,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 48.77080009994097,
+    "physical_evaluations": 33010,
+    "N": 10,
+    "total_nm": 3280.699489392785,
+    "violation": 0.0009767944281408748,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876794428140876,
+        "Rmax_nm": 3237.1110940417384,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9801677400399853,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.012614680329997574,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 43,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876633405474345,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9727560624227235,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.0163673041718021,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 16,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876633405504288,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9810678694349468,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.012503383070307517,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 33,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010720261052548575,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9724207406661036,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016858998281347848,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 22,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4969,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 56.713252699933946,
+    "physical_evaluations": 38538,
+    "N": 10,
+    "total_nm": 3280.69533173507,
+    "violation": 0.0009766570171864178,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876657017186419,
+        "Rmax_nm": 3987.989972613022,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9801681021857029,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.012614415811198265,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 41,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876635436304589,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9727564136916013,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016366950872094166,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 16,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876635436304368,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9810674035912402,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.012503126647483986,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 34,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01072028569940337,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9724210638835503,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01685865041704626,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 18,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4768,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 65.22395029990003,
+    "physical_evaluations": 44300,
+    "N": 10,
+    "total_nm": 3280.6704476739806,
+    "violation": 0.000976642461699699,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.0108766424616997,
+        "Rmax_nm": 3987.72196799509,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9801682034325044,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01261450540594855,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 43,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876637701783601,
+        "Rmax_nm": 8333.3,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9727555499580385,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016367812340178145,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 15,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876637701785905,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9810651475233971,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.012503245105214611,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 34,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010720330574800338,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.972420186001662,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016859483423537602,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 21,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 5022,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 73.77539079997223,
+    "physical_evaluations": 49882,
+    "N": 10,
+    "total_nm": 3280.682108735621,
+    "violation": 0.000976639253140392,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876639253140393,
+        "Rmax_nm": 3987.8479973500266,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.980168153871578,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.012614463655292174,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 43,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876638200408174,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9727559546670205,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016367407132571343,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 15,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876638200408325,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9810662071983072,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.012503189764270783,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 32,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010720310869767134,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9724205975101303,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016859091620102573,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4842,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 82.19673379999585,
+    "physical_evaluations": 55143,
+    "N": 10,
+    "total_nm": 3280.674596179392,
+    "violation": 0.0009766385374048552,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876638537404856,
+        "Rmax_nm": 3987.7897808808266,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9801682336828661,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.012614349667822156,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 40,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876638312656851,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9727560032852649,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016367358402078258,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 20,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876638312667254,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9810658332835125,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.012503084069666714,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 34,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010720321396164006,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9724206359362428,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016859042667593194,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 23,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 5121,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 90.41474419995211,
+    "physical_evaluations": 60160,
+    "N": 10,
+    "total_nm": 3280.678098046663,
+    "violation": 0.0009766383844675638,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876638384467565,
+        "Rmax_nm": 3987.816715610362,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.980168195799749,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.012614404077785357,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 40,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876638336381856,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9727559781969715,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01636738346664668,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 20,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010876638336414519,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9810660053106773,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.012503134616837497,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 33,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01072031651941436,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9724206156937953,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01685906778679025,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 20,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4897,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 106.51016700000037,
+    "physical_evaluations": 73114,
+    "N": 10,
+    "total_nm": 3287.091927337473,
+    "violation": 0.0009475018976058056,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010847501897605806,
+        "Rmax_nm": 3232.581312805118,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9808804651315584,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.011854117259119445,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 37,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010842731032852777,
+        "Rmax_nm": 8333.3,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9725505021191959,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016606766847951482,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010842731032866043,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9817593201759041,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.011753416031099362,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 36,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010696778597284419,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9722235485450842,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.017079672857631345,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 22,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4854,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 120.6375352999894,
+    "physical_evaluations": 82707,
+    "N": 10,
+    "total_nm": 3287.106220143902,
+    "violation": 0.0009432558584403401,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843255858440341,
+        "Rmax_nm": 3262.43047159396,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9808839130989073,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.011854781334471709,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 41,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843226856049559,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9725502467880598,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01660652635589066,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 18,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01084322685605323,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9817622186267231,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.011754075715277534,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 34,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010697061847988354,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9722234637380089,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.017079474414002704,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 21,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4859,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 128.82879780000076,
+    "physical_evaluations": 87677,
+    "N": 10,
+    "total_nm": 3287.103418695797,
+    "violation": 0.0009432305803467288,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01084323058034673,
+        "Rmax_nm": 3988.12036428276,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9808839718063125,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.011854727607463311,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 38,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843229452698265,
+        "Rmax_nm": 8333.3,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9725502387810068,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01660653176629523,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843229452697365,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9817621436115869,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.01175402318648533,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 37,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010697078367184596,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9722234448590589,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01707947677375654,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 20,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4850,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 136.9835485999938,
+    "physical_evaluations": 92452,
+    "N": 10,
+    "total_nm": 3287.0959172165612,
+    "violation": 0.0009432302625810626,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843230262581063,
+        "Rmax_nm": 3232.6270654401897,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9808840707084736,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.011854620583674924,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 39,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843229574003629,
+        "Rmax_nm": 8000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9725502606676303,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016606509758366084,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 17,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843229574004085,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9817617569792577,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.011753921889309793,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 34,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010697088814532029,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9722234575682808,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.017079453617187212,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4615,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 145.1462623999687,
+    "physical_evaluations": 97508,
+    "N": 10,
+    "total_nm": 3287.095797638036,
+    "violation": 0.0009432298351634075,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843229835163408,
+        "Rmax_nm": 3988.0600214930414,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9808840744316175,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.011854618112514537,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 41,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843229593663798,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9725502602185155,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016606510187820667,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843229593665134,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9817617480832245,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.011753919494281284,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 36,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01069708962118258,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9722234564926732,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01707945388614429,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 20,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4956,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 160.42250459990464,
+    "physical_evaluations": 108712,
+    "N": 10,
+    "total_nm": 3287.0925234160177,
+    "violation": 0.0009430988762977148,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843098876297716,
+        "Rmax_nm": 3988.0553009048654,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9808871070051837,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.011850698021281247,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 37,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843098595584525,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9725515115993442,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.016605389805071313,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843098595606544,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9817652779751802,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.011750058301193467,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 35,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010696774377507316,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9722249209989985,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.017078304623494245,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4684,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 168.6820167999249,
+    "physical_evaluations": 113457,
+    "N": 10,
+    "total_nm": 3287.096272880395,
+    "violation": 0.0009430986847256961,
+    "targets_met": false,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843098684725697,
+        "Rmax_nm": 3988.0851722283187,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9808870575962391,
+        "Tmin_nm": 3225.8,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.011850751452985864,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 37,
+        "guard_pass": false
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843098625603897,
+        "Rmax_nm": 8333.3,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9725515005286333,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.01660540084576312,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 17,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.010843098625611407,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9817654711098136,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.011750108874441167,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 34,
+        "guard_pass": false
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.01069676928534646,
+        "Rmax_nm": 12000.0,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9722249144859139,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.017078316228739676,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 21,
+        "guard_pass": false
+      }
+    ],
+    "audit_evaluations": 4605,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  },
+  {
+    "elapsed_s": 189.34416639991105,
+    "physical_evaluations": 128259,
+    "N": 12,
+    "total_nm": 3871.198424599378,
+    "violation": 0.0,
+    "targets_met": true,
+    "windows": [
+      {
+        "polarization": "s",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.007577942889265198,
+        "Rmax_nm": 3184.7,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.97854243048285,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.014097371432509997,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 41,
+        "guard_pass": true
+      },
+      {
+        "polarization": "s",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.007547579697430682,
+        "Rmax_nm": 10463.08796276957,
+        "Rmax_angle_deg": 15.0,
+        "Tmin": 0.9729168099571994,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.0195358672417435,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 18,
+        "guard_pass": true
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "wavelength_grid_points": 4271,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.007547322801056581,
+        "Rmax_nm": 3000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.979694029607215,
+        "Tmin_nm": 3422.94,
+        "Tmin_angle_deg": 0.0,
+        "Amax": 0.013989110484463385,
+        "Amax_nm": 3422.94,
+        "Amax_angle_deg": 0.0,
+        "local_brackets": 44,
+        "guard_pass": true
+      },
+      {
+        "polarization": "p",
+        "window_nm": [
+          8000.0,
+          12000.0
+        ],
+        "wavelength_grid_points": 4193,
+        "angular_grid_points": 121,
+        "dense_angular_step_deg": 0.25,
+        "offset_step_deg": 0.125,
+        "Rmax": 0.007547322801056972,
+        "Rmax_nm": 8000.0,
+        "Rmax_angle_deg": 0.0,
+        "Tmin": 0.9728038102130214,
+        "Tmin_nm": 12000.0,
+        "Tmin_angle_deg": 15.0,
+        "Amax": 0.02009473752084856,
+        "Amax_nm": 12000.0,
+        "Amax_angle_deg": 15.0,
+        "local_brackets": 19,
+        "guard_pass": true
+      }
+    ],
+    "audit_evaluations": 5124,
+    "continuous_certificate": false,
+    "new_angular_objective": true
+  }
+]

@@ -5,3 +5,5 @@
 ## 已执行独立数值研究增量
 
 - [BMARK-REAL-NK-DUAL-20261020-v1](../08_stack_optimization_algorithms/real_nk_dual_window_20261020/README.md)：原双窗正常入射R/T独立交叉核验及54条件适用域诊断；不是实测或制造验证。
+
+- [BMARK-REAL-NK-DUAL-20261020-ANGULAR-v1](../08_stack_optimization_algorithms/real_nk_dual_window_20261020/angular_0to15deg/README.md)：11层、0–15°含边界、s/p分别严格双窗R/T及第二独立验收；有限数值范围，不是制造验收。

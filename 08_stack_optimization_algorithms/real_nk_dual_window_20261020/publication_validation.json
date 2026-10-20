@@ -374,5 +374,40 @@
     ]
   },
   "diagnostic_original_source_hashes_preserved": true,
-  "validation_scope": "finite numerical physics and package integrity; no manufacturing or product release"
+  "validation_scope": "finite numerical physics and package integrity; no manufacturing or product release",
+  "angular_0to15deg": {
+    "strict_independent_acceptance_passed": true,
+    "recommended11_layers": true,
+    "recommended_total_nm": 3871.098426,
+    "recommended_prescription_sha256": "1b5275aa145216064f9395b703a078cfdcffaa17d28efd36f7d080fb402de368",
+    "all_scientific_review_values_unchanged": true,
+    "eight_scientific_functions_AST_identical": true,
+    "portable_input_only_check_passed": true,
+    "new_physical_evaluations": 0,
+    "full_new_dense_recalculation": false,
+    "historical_full_independent_audit_sampling": {
+      "calls": 11315,
+      "condition_points": 23316791,
+      "min_q_real": 0.9659258262890683,
+      "min_q_imag": 0.0,
+      "max_q_imag": 0.00594005701295773,
+      "min_cascade_denominator": 0.6418015208948012
+    },
+    "maximum_R": 0.007569561000107246,
+    "minimum_T": 0.9728019060492489,
+    "normal56_files_byte_preserved": true,
+    "diagnostic138_files_unchanged_from_prior_local_commit": true,
+    "production350_python_unchanged": true,
+    "named62_frozen_entries_unchanged": true,
+    "prior_state_values_preserved": true,
+    "prior_registry_entries_preserved": true,
+    "all_changes_within_authorized_scope": true,
+    "deleted_files": 0,
+    "privacy_findings": [],
+    "local_html_pages": 8,
+    "resolved_local_links": 52,
+    "missing_local_links": [],
+    "product_code_imports": false,
+    "original_PDF_XLSX_credentials_logs_excluded": true
+  }
 }
