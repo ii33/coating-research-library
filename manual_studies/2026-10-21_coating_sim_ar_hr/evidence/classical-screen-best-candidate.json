@@ -1,0 +1,443 @@
+{
+  "design": {
+    "schema_version": 1,
+    "id": "benchmark-hr_broad_visible",
+    "name": "hr_broad_visible",
+    "layer_order": "substrate_outward",
+    "front_layers": [
+      {
+        "id": "ref-hr-01",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 134.31381853117776,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-02",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 81.16379808173319,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-03",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 130.11380229581837,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-04",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 78.49428289099295,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-05",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 125.91296349825768,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-06",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 75.81825816222867,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-07",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 121.71133704125675,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-08",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 73.13477527977977,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-09",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 117.50876694206842,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-10",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 70.44268098026984,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-11",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 113.30516629164092,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-12",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 67.74055160921097,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-13",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 109.10039350324062,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-14",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 65.02659839742246,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-15",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 104.89432842957984,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-16",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 62.29853171361026,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-17",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 100.6867123165203,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-18",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 59.55336453971448,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-19",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 96.47749884427918,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-20",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 56.78709013686788,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-21",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 92.26633514555806,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-22",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 53.994164269822626,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-23",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 88.05292745292877,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-24",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 51.16662651426193,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-25",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 83.83691218938556,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-26",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 48.29247942545163,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-27",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 79.61789386600658,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-28",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 45.352505298423665,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-29",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 75.39525556191653,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-30",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 42.313349279364935,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-31",
+        "material_id": "builtin_research_MgF2_film",
+        "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+        "thickness": {
+          "value": 71.16831218199079,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      },
+      {
+        "id": "ref-hr-32",
+        "material_id": "builtin_zns_literature_20261004",
+        "optical_set_id": "ri_zns_amotchkina_nk",
+        "thickness": {
+          "value": 39.1103512516046,
+          "unit": "nm"
+        },
+        "note": "Independent classical-structure reference research, not injected into production optimizer"
+      }
+    ],
+    "back_layers": [],
+    "reference_wavelength_nm": 550.0,
+    "substrate": {
+      "material_id": "builtin_research_SiO2_film",
+      "optical_set_id": "ri_sio2_rodriguez_de_marcos",
+      "thickness": {
+        "value": 1.0,
+        "unit": "mm"
+      },
+      "sides": "single",
+      "mode": "semi_infinite"
+    },
+    "incident_medium": {
+      "kind": "constant",
+      "n": 1.0
+    },
+    "exit_medium": {
+      "kind": "constant",
+      "n": 1.0
+    },
+    "assume_lossless": false,
+    "use_k": true,
+    "note": "",
+    "first_surface": "front",
+    "expression": {
+      "text": "",
+      "symbols": {},
+      "in_sync": false
+    }
+  },
+  "family": "replayed_classical_screen_best",
+  "meta": {
+    "ends": [
+      400,
+      750
+    ],
+    "power": 1.0,
+    "direction": 1,
+    "orientation": "HL",
+    "pairs": 16,
+    "prior_training_min_R": 0.9220986657806773,
+    "prior_evidence": "phase1-updates.json"
+  },
+  "incident_to_substrate_labels": [
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L"
+  ],
+  "incident_to_substrate_thickness_nm": [
+    39.1103512516046,
+    71.16831218199079,
+    42.313349279364935,
+    75.39525556191653,
+    45.352505298423665,
+    79.61789386600658,
+    48.29247942545163,
+    83.83691218938556,
+    51.16662651426193,
+    88.05292745292877,
+    53.994164269822626,
+    92.26633514555806,
+    56.78709013686788,
+    96.47749884427918,
+    59.55336453971448,
+    100.6867123165203,
+    62.29853171361026,
+    104.89432842957984,
+    65.02659839742246,
+    109.10039350324062,
+    67.74055160921097,
+    113.30516629164092,
+    70.44268098026984,
+    117.50876694206842,
+    73.13477527977977,
+    121.71133704125675,
+    75.81825816222867,
+    125.91296349825768,
+    78.49428289099295,
+    130.11380229581837,
+    81.16379808173319,
+    134.31381853117776
+  ],
+  "layer_order": "substrate_outward",
+  "layer_count": 32,
+  "total_thickness_nm": 2615.051831922386
+}
