@@ -1,0 +1,255 @@
+{
+  "case_id": "hr_broad_visible",
+  "qualified": false,
+  "default_algorithm_qualified": false,
+  "no_infeasibility_claim": true,
+  "search_cumulative_wall_upper_bound_s": 892.4555613289995,
+  "search_budget_s": 900,
+  "prior_phase_search_charge_upper_bound_s": 90,
+  "continued_phase_search_s": 802.4555613289995,
+  "source_checkout_unchanged": true,
+  "forward_call_counter_not_unique_candidates": 590652,
+  "classical_screen_best": {
+    "description": "Replay/audit of existing prior-screen candidate, not additional optimization.",
+    "training_min_R": 0.9220986657806773,
+    "official_worst": {
+      "R": 0.9220986657806773,
+      "angle_deg": 0.0,
+      "polarization": "s",
+      "wavelength_nm": 400.0
+    },
+    "extra_dense_worst": {
+      "R": 0.9220986657806773,
+      "angle_deg": 0.0,
+      "polarization": "p",
+      "wavelength_nm": 400.0
+    },
+    "manufacturing": {
+      "layer_count": 32,
+      "minimum_layer_nm": 39.1103512516046,
+      "maximum_layer_nm": 134.31381853117776,
+      "total_thickness_nm": 2615.051831922386
+    },
+    "audit": {
+      "physical_evaluations": 951,
+      "wavelength_points": 3352,
+      "dense_points": 1204,
+      "offset_points": 1200,
+      "extra_points": 2148,
+      "unique_condition_points": 3352,
+      "bracket_count": 49,
+      "completed_extrema": 49,
+      "local_coordinate": "lambda=a+(b-a)*t; t in [0,1]",
+      "extrema_xatol": 1e-10,
+      "continuous_certificate": false,
+      "rms_measure": "fixed_dense_grid_only",
+      "objective_status": [
+        {
+          "objective_index": 0,
+          "metric": "R",
+          "wavelength_min_nm": 400.0,
+          "wavelength_max_nm": 700.0,
+          "discrete_line": false,
+          "worst_wavelength_nm": 400.0,
+          "worst_angle_deg": 0.0,
+          "worst_actual": 0.9220986657806773,
+          "max_normalized_error": 0.05790133421932264,
+          "targets_met": false
+        },
+        {
+          "objective_index": 1,
+          "metric": "R",
+          "wavelength_min_nm": 400.0,
+          "wavelength_max_nm": 700.0,
+          "discrete_line": false,
+          "worst_wavelength_nm": 400.0,
+          "worst_angle_deg": 0.0,
+          "worst_actual": 0.9220986657806773,
+          "max_normalized_error": 0.05790133421932264,
+          "targets_met": false
+        }
+      ],
+      "absorption_assumption": {
+        "assume_unknown_k_zero": false,
+        "policy": "strict",
+        "scope": "candidate_active_materials",
+        "affected_materials": [],
+        "used_affected_materials": [],
+        "conditional_on_assumption": false,
+        "known_k_preserved": true,
+        "source_records_unchanged": true,
+        "wavelength_extrapolation": "error",
+        "measured_absorption_validated": false,
+        "claim": "Finite sampled R/T model evidence using source k; not an experimental certificate."
+      }
+    }
+  },
+  "training_champion": {
+    "training_min_R": 0.9671293120199215,
+    "independent_audit": {
+      "label": "terminal",
+      "passed": false,
+      "official_worst": {
+        "R": 0.21243128088922184,
+        "wavelength_nm": 407.70218006481707,
+        "angle_deg": 0.0,
+        "polarization": "s"
+      },
+      "worst_by_condition": [
+        {
+          "angle_deg": 0.0,
+          "polarization": "s",
+          "min_R": 0.21243128088922184,
+          "wavelength_nm": 407.70218006481707
+        },
+        {
+          "angle_deg": 0.0,
+          "polarization": "p",
+          "min_R": 0.2124312808892219,
+          "wavelength_nm": 407.70218009146424
+        },
+        {
+          "angle_deg": 30.0,
+          "polarization": "s",
+          "min_R": 0.8035771530998914,
+          "wavelength_nm": 420.96955825570694
+        },
+        {
+          "angle_deg": 30.0,
+          "polarization": "p",
+          "min_R": 0.6662517613751999,
+          "wavelength_nm": 422.6134947446992
+        }
+      ],
+      "extra_dense_worst": {
+        "R": 0.21245022319178067,
+        "angle_deg": 0.0,
+        "polarization": "p",
+        "wavelength_nm": 407.7
+      },
+      "manufacturing": {
+        "layer_count": 32,
+        "minimum_layer_nm": 30.372520993354208,
+        "maximum_layer_nm": 159.83571223174687,
+        "total_thickness_nm": 2644.831344292308
+      },
+      "audit": {
+        "physical_evaluations": 1078,
+        "wavelength_points": 3479,
+        "dense_points": 1204,
+        "offset_points": 1200,
+        "extra_points": 2275,
+        "unique_condition_points": 3479,
+        "bracket_count": 58,
+        "completed_extrema": 58,
+        "local_coordinate": "lambda=a+(b-a)*t; t in [0,1]",
+        "extrema_xatol": 1e-10,
+        "continuous_certificate": false,
+        "rms_measure": "fixed_dense_grid_only",
+        "objective_status": [
+          {
+            "objective_index": 0,
+            "metric": "R",
+            "wavelength_min_nm": 400.0,
+            "wavelength_max_nm": 700.0,
+            "discrete_line": false,
+            "worst_wavelength_nm": 407.70218006481707,
+            "worst_angle_deg": 0.0,
+            "worst_actual": 0.21243128088922184,
+            "max_normalized_error": 0.7675687191107782,
+            "targets_met": false
+          },
+          {
+            "objective_index": 1,
+            "metric": "R",
+            "wavelength_min_nm": 400.0,
+            "wavelength_max_nm": 700.0,
+            "discrete_line": false,
+            "worst_wavelength_nm": 407.70218009146424,
+            "worst_angle_deg": 0.0,
+            "worst_actual": 0.2124312808892219,
+            "max_normalized_error": 0.7675687191107781,
+            "targets_met": false
+          }
+        ],
+        "absorption_assumption": {
+          "assume_unknown_k_zero": false,
+          "policy": "strict",
+          "scope": "candidate_active_materials",
+          "affected_materials": [],
+          "used_affected_materials": [],
+          "conditional_on_assumption": false,
+          "known_k_preserved": true,
+          "source_records_unchanged": true,
+          "wavelength_extrapolation": "error",
+          "measured_absorption_validated": false,
+          "claim": "Finite sampled R/T model evidence using source k; not an experimental certificate."
+        }
+      }
+    },
+    "candidate_file": "best_candidate.json"
+  },
+  "phase1_champion_audit": {
+    "official_worst": {
+      "R": 0.7129737167390044,
+      "angle_deg": 30.0,
+      "polarization": "p",
+      "wavelength_nm": 407.43252903398025
+    },
+    "audit": {
+      "physical_evaluations": 1032,
+      "wavelength_points": 3433,
+      "dense_points": 1204,
+      "offset_points": 1200,
+      "extra_points": 2229,
+      "unique_condition_points": 3433,
+      "bracket_count": 58,
+      "completed_extrema": 58,
+      "local_coordinate": "lambda=a+(b-a)*t; t in [0,1]",
+      "extrema_xatol": 1e-10,
+      "continuous_certificate": false,
+      "rms_measure": "fixed_dense_grid_only",
+      "objective_status": [
+        {
+          "objective_index": 0,
+          "metric": "R",
+          "wavelength_min_nm": 400.0,
+          "wavelength_max_nm": 700.0,
+          "discrete_line": false,
+          "worst_wavelength_nm": 421.812213862447,
+          "worst_angle_deg": 0.0,
+          "worst_actual": 0.7911435937427154,
+          "max_normalized_error": 0.18885640625728461,
+          "targets_met": false
+        },
+        {
+          "objective_index": 1,
+          "metric": "R",
+          "wavelength_min_nm": 400.0,
+          "wavelength_max_nm": 700.0,
+          "discrete_line": false,
+          "worst_wavelength_nm": 407.43252903398025,
+          "worst_angle_deg": 30.0,
+          "worst_actual": 0.7129737167390044,
+          "max_normalized_error": 0.26702628326099553,
+          "targets_met": false
+        }
+      ],
+      "absorption_assumption": {
+        "assume_unknown_k_zero": false,
+        "policy": "strict",
+        "scope": "candidate_active_materials",
+        "affected_materials": [],
+        "used_affected_materials": [],
+        "conditional_on_assumption": false,
+        "known_k_preserved": true,
+        "source_records_unchanged": true,
+        "wavelength_extrapolation": "error",
+        "measured_absorption_validated": false,
+        "claim": "Finite sampled R/T model evidence using source k; not an experimental certificate."
+      }
+    }
+  },
+  "candidate_selection_limitation": "Coarse 5nm training-only ranking can exploit sub-grid narrow notches; this run did not feed independent audit extrema back into training.",
+  "no_new_search_in_posthoc_replay": true
+}
