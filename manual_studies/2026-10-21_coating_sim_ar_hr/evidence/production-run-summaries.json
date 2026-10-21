@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "source_baseline": "0a631b7428486ab08fe0f27aa8938c50783f5280",
+  "compaction": "Retains both bounded production runs and per-angle/polarization minima; omits event-by-event feedback payloads and layer arrays.",
+  "scope": "Two sequential seed-0 runs with 120 s wall limits; both cancelled at the budget, both fail R>=0.98. Does not establish infeasibility or solve the hard case.",
+  "runs": [
+    {
+      "case": "hr_broad_visible_5nm",
+      "state": "cancelled",
+      "termination_reason": "cancelled",
+      "wall_budget_seconds": 120,
+      "elapsed_seconds": 120.24947138399875,
+      "training_worst": {
+        "actual": 0.9593254264922123,
+        "wavelength_nm": 555.0,
+        "angle_deg": 30.0,
+        "polarization": "p"
+      },
+      "independent_audit_worst": {
+        "actual": 0.9592794228867318,
+        "wavelength_nm": 554.2800529830047,
+        "angle_deg": 30.0,
+        "polarization": "p"
+      },
+      "independent_audit_by_angle_polarization": [
+        {
+          "actual": 0.967627812987317,
+          "wavelength_nm": 400.0,
+          "angle_deg": 0.0,
+          "polarization": "s"
+        },
+        {
+          "actual": 0.9676278129873166,
+          "wavelength_nm": 400.0,
+          "angle_deg": 0.0,
+          "polarization": "p"
+        },
+        {
+          "actual": 0.9676450065200943,
+          "wavelength_nm": 685.8802199571203,
+          "angle_deg": 30.0,
+          "polarization": "s"
+        },
+        {
+          "actual": 0.9592794228867318,
+          "wavelength_nm": 554.2800529830047,
+          "angle_deg": 30.0,
+          "polarization": "p"
+        }
+      ],
+      "reached_R_0_98": false,
+      "candidate_identity_sha256": "65a6030da883da5c82b5dbad54eaf7a190dcd5ccfed19210daf252b20ca03a5d",
+      "candidate_training_audit_identity_matches": true,
+      "feedback": {
+        "revision": 3,
+        "parent_evaluator_invocations": 141,
+        "physical_evaluations": 852,
+        "wavelength_points": 852,
+        "repair_stages": 1,
+        "local_stages": 2
+      },
+      "feedback_event_counts": {
+        "audit_incumbent": 3,
+        "validation_complete": 3,
+        "audit_feedback_added": 3,
+        "structural_local_refinement": 1,
+        "audit_feedback_repair": 1
+      },
+      "returned_candidate_postrun_audit": {
+        "label": "hr_broad_visible_5nm",
+        "passed": false,
+        "scope": "Read-only independent post-run audit; no added search and not a new production success",
+        "worst": {
+          "actual": 0.9592794228867318,
+          "wavelength_nm": 554.2800529830047,
+          "angle_deg": 30.0,
+          "polarization": "p",
+          "by_condition": [
+            {
+              "actual": 0.967627812987317,
+              "wavelength_nm": 400.0,
+              "angle_deg": 0.0,
+              "polarization": "s"
+            },
+            {
+              "actual": 0.9676278129873166,
+              "wavelength_nm": 400.0,
+              "angle_deg": 0.0,
+              "polarization": "p"
+            },
+            {
+              "actual": 0.9676450065200943,
+              "wavelength_nm": 685.8802199571203,
+              "angle_deg": 30.0,
+              "polarization": "s"
+            },
+            {
+              "actual": 0.9592794228867318,
+              "wavelength_nm": 554.2800529830047,
+              "angle_deg": 30.0,
+              "polarization": "p"
+            }
+          ]
+        }
+      },
+      "cleanup_complete": true
+    },
+    {
+      "case": "hr_broad_visible_1nm",
+      "state": "cancelled",
+      "termination_reason": "cancelled",
+      "wall_budget_seconds": 120,
+      "elapsed_seconds": 120.3508743190032,
+      "training_worst": {
+        "actual": 0.9579514096140581,
+        "wavelength_nm": 400.0,
+        "angle_deg": 0.0,
+        "polarization": "s"
+      },
+      "independent_audit_worst": {
+        "actual": 0.9579514096140581,
+        "wavelength_nm": 400.0,
+        "angle_deg": 0.0,
+        "polarization": "s"
+      },
+      "independent_audit_by_angle_polarization": [
+        {
+          "actual": 0.9579514096140581,
+          "wavelength_nm": 400.0,
+          "angle_deg": 0.0,
+          "polarization": "s"
+        },
+        {
+          "actual": 0.9579514096140584,
+          "wavelength_nm": 400.0,
+          "angle_deg": 0.0,
+          "polarization": "p"
+        },
+        {
+          "actual": 0.9687160705417196,
+          "wavelength_nm": 601.2191306131102,
+          "angle_deg": 30.0,
+          "polarization": "s"
+        },
+        {
+          "actual": 0.9584479063081052,
+          "wavelength_nm": 700.0,
+          "angle_deg": 30.0,
+          "polarization": "p"
+        }
+      ],
+      "reached_R_0_98": false,
+      "candidate_identity_sha256": "f477669f8d10725b5e144e7933cd99491bb84d618ed017007b30f9898847f42e",
+      "candidate_training_audit_identity_matches": true,
+      "feedback": {
+        "revision": 2,
+        "parent_evaluator_invocations": 147,
+        "physical_evaluations": 880,
+        "wavelength_points": 880,
+        "repair_stages": 1,
+        "local_stages": 2
+      },
+      "feedback_event_counts": {
+        "audit_incumbent": 2,
+        "validation_complete": 2,
+        "audit_feedback_added": 2,
+        "structural_local_refinement": 1,
+        "audit_feedback_repair": 1
+      },
+      "returned_candidate_postrun_audit": {
+        "label": "hr_broad_visible_1nm",
+        "passed": false,
+        "scope": "Read-only independent post-run audit; no added search and not a new production success",
+        "worst": {
+          "actual": 0.9579514096140581,
+          "wavelength_nm": 400.0,
+          "angle_deg": 0.0,
+          "polarization": "s",
+          "by_condition": [
+            {
+              "actual": 0.9579514096140581,
+              "wavelength_nm": 400.0,
+              "angle_deg": 0.0,
+              "polarization": "s"
+            },
+            {
+              "actual": 0.9579514096140584,
+              "wavelength_nm": 400.0,
+              "angle_deg": 0.0,
+              "polarization": "p"
+            },
+            {
+              "actual": 0.9687160705417196,
+              "wavelength_nm": 601.2191306131102,
+              "angle_deg": 30.0,
+              "polarization": "s"
+            },
+            {
+              "actual": 0.9584479063081052,
+              "wavelength_nm": 700.0,
+              "angle_deg": 30.0,
+              "polarization": "p"
+            }
+          ]
+        }
+      },
+      "cleanup_complete": true
+    }
+  ],
+  "legacy_narrow_notch_regression": {
+    "training_min_R": 0.9671293120199215,
+    "production_audit_min_R": 0.21243128088922184,
+    "wavelength_nm": 407.70218006481707,
+    "passed_R_0_98": false,
+    "claim": "Read-only regression of the earlier coarse-grid candidate; not a success."
+  }
+}
