@@ -1,0 +1,85 @@
+{
+  "study_date": "2026-10-21",
+  "software_snapshot_commit": "0a631b7428486ab08fe0f27aa8938c50783f5280",
+  "publication_scope": "research-only summary; no software repository release",
+  "original_benchmark": {
+    "id": "hr_broad_visible",
+    "wavelength_nm": [400, 700],
+    "angles_deg": [0, 30],
+    "polarizations": ["s", "p"],
+    "reflectance_bounds": [0.98, 1.0],
+    "max_layers": 32,
+    "single_layer_nm": [10, 500],
+    "max_total_thickness_nm": 5000,
+    "port_and_materials": "air incidence; semi-infinite SiO2-R film-data optical set used as substrate in these historical studies",
+    "benchmark_pass_found": false,
+    "continuous_domain_or_infeasibility_proved": false
+  },
+  "completed_historical_studies": {
+    "fixed_center_multistacks": {
+      "enumerated_discrete_arrangements": 31396,
+      "best_original_concatenation": {
+        "substack_centers_nm": [430, 535, 675],
+        "pairs": [4, 6, 6],
+        "minimum_R": 0.914141548343,
+        "worst_point": {"wavelength_nm": 533.843148075, "angle_deg": 30, "polarization": "p"}
+      },
+      "best_32_layer_low_dimensional_match": {
+        "substack_centers_nm": [447.329578, 546.194337, 618.895883, 734.474723],
+        "pairs": [4, 2, 6, 4],
+        "minimum_R": 0.956627312664,
+        "worst_point": {"wavelength_nm": 424.612606651, "angle_deg": 30, "polarization": "p"},
+        "pass": false
+      },
+      "search_limit": "finite center grids, bounded low-dimensional matching; no arbitrary 32-layer optimization or continuous-center exhaustive proof"
+    },
+    "independent_junction_buffers_B2": {
+      "layer_count": 70,
+      "inserted_buffer_layers": 6,
+      "total_thickness_nm": 5354.571729,
+      "relaxed_limits_vs_original_benchmark": true,
+      "minimum_R": 0.886584938853,
+      "worst_point": {"wavelength_nm": 686.500723, "angle_deg": 30, "polarization": "s"},
+      "source_k_RTA_at_worst": {"R": 0.886584938853, "T": 0.000656741516, "A": 0.112758319631},
+      "same_geometry_all_k_zero_grid_min_R_diagnostic_only": 0.988419807,
+      "all_k_zero_status": "attribution diagnostic only; not a material correction, candidate qualification, or benchmark pass"
+    },
+    "material_and_TMM_assumptions_audit": {
+      "tmm_crosscheck_A32_B70_max_abs_R_difference": 1.83e-14,
+      "tmm_crosscheck_A32_B70_max_abs_T_difference": 8.05e-16,
+      "finding": "no evidence of a layer order, unit, phase, or admittance implementation error in checked points",
+      "substrate_caveat": "historical 32/70-layer audits use a thin-film SiO2-R dataset as semi-infinite substrate; source says it is not bulk fused silica"
+    },
+    "tfcalc_43_physical_layer_public_reference": {
+      "layer_count": 43,
+      "H_count": 22,
+      "L_count": 21,
+      "total_thickness_nm": 3943.75,
+      "source_order": "first layer nearest substrate",
+      "reframed_in_solver_order": "reverse source list for air-to-glass incidence",
+      "source_case": {"wavelength_nm": [400, 800], "angle_deg": 50, "polarization": "p", "n": {"air": 1.0, "H": 2.35, "L": 1.45, "glass": 1.52}, "k": 0},
+      "uniform_wavelength_mean_R": 0.980293506,
+      "dense_grid_min_R": 0.971101248,
+      "minimum_wavelength_nm": 800.0,
+      "source_goal": "approximately 98% average p reflectance, not >=98% spectral minimum",
+      "relation_to_original_benchmark": "different specification and 43 physical layers; not a pass of hr_broad_visible"
+    },
+    "tfcalc_43_fixed_geometry_material_substitutions": {
+      "M2_n_only": {"mean_R": 0.982192683, "minimum_R": 0.795512865, "minimum_wavelength_nm": 400.692440, "k": 0},
+      "M4_film_nk": {"mean_R": 0.948790989, "minimum_R": 0.793071475, "minimum_wavelength_nm": 400.635161, "substrate": "glass n=1.52, not bulk SiO2"},
+      "M2_to_M4_mean_R_drop": 0.033401693,
+      "qualification": "fixed-geometry diagnostic only; not optimized, not a bulk-SiO2 design, not the original benchmark"
+    }
+  },
+  "historical_material_sources": {
+    "MgF2-R": {"doi": "10.1364/OME.7.000989", "description": "2017 deposited-film dataset, 250 C tungsten-boat thermal evaporation; 44 nm sample"},
+    "ZnS-A": {"doi": "10.1364/AO.59.000A40", "description": "2020 e-beam deposited film, 120 C, Ge substrate, about 1.008 um sample"},
+    "SiO2-R": {"doi": "10.1364/OME.6.003622", "description": "2016 reactive e-beam deposited film data; not bulk fused silica"}
+  },
+  "not_included": {
+    "low_k_and_bulk_sio2_run": "not yet finalized; not represented by this historical dataset",
+    "large_raw_spectra_search_dumps_archives": true,
+    "software_repository_changes": true
+  },
+  "methods_limit": "Dense/shifted grids plus bracketed extrema are strong numerical audits, not interval-arithmetic proofs or fabrication tolerance validation."
+}

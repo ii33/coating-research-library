@@ -1,0 +1,62 @@
+{
+  "scope": "fixed-geometry forward reproduction only; no optimization",
+  "source_table": "Hulinks TFCalc broadband high-reflection example",
+  "layer_count": 43,
+  "H_count": 22,
+  "L_count": 21,
+  "total_thickness_nm": 3943.75,
+  "angle_deg": 50.0,
+  "wavelength_range_nm": [
+    400.0,
+    800.0
+  ],
+  "indices": {
+    "air": 1.0,
+    "H": 2.35,
+    "L": 1.45,
+    "glass": 1.52
+  },
+  "results": {
+    "p_0p1nm_grid": {
+      "polarization": "p",
+      "uniform_wavelength_trapezoid_mean_R": 0.9802934935127133,
+      "uniform_wavelength_trapezoid_mean_T": 0.019706506487289315,
+      "uniform_wavelength_trapezoid_mean_A": 2.006944957444651e-17,
+      "grid_min_R": 0.9711012484453408,
+      "grid_min_wavelength_nm": 800.0,
+      "grid_step_nm": 0.10000000000002274,
+      "grid_points": 4001
+    },
+    "p_0p05nm_grid": {
+      "polarization": "p",
+      "uniform_wavelength_trapezoid_mean_R": 0.9802935057706641,
+      "uniform_wavelength_trapezoid_mean_T": 0.019706494229337485,
+      "uniform_wavelength_trapezoid_mean_A": 1.7597685461611477e-17,
+      "grid_min_R": 0.9711012484453408,
+      "grid_min_wavelength_nm": 800.0,
+      "grid_step_nm": 0.05000000000001137,
+      "grid_points": 8001
+    },
+    "s_0p1nm_grid": {
+      "polarization": "s",
+      "uniform_wavelength_trapezoid_mean_R": 0.9996923242451864,
+      "uniform_wavelength_trapezoid_mean_T": 0.0003076757548122429,
+      "uniform_wavelength_trapezoid_mean_A": -7.839451921912859e-19,
+      "grid_min_R": 0.9968606744250083,
+      "grid_min_wavelength_nm": 793.6,
+      "grid_step_nm": 0.10000000000002274,
+      "grid_points": 4001
+    },
+    "s_0p05nm_grid": {
+      "polarization": "s",
+      "uniform_wavelength_trapezoid_mean_R": 0.999692323922834,
+      "uniform_wavelength_trapezoid_mean_T": 0.0003076760771652887,
+      "uniform_wavelength_trapezoid_mean_A": 1.600704334917325e-19,
+      "grid_min_R": 0.9968606744250083,
+      "grid_min_wavelength_nm": 793.6,
+      "grid_step_nm": 0.05000000000001137,
+      "grid_points": 8001
+    }
+  },
+  "caveat": "The source describes approximately 98% AVERAGE p reflectance, not a 98% minimum. The 0.05 nm grid is not an interval-arithmetic proof."
+}

@@ -1,0 +1,113 @@
+[
+  {
+    "material_id": "builtin_research_SiO2_film",
+    "optical_set_id": "ri_sio2_rodriguez_de_marcos",
+    "notes": "对象：薄膜（film）。参考条件：镀膜方法：反应电子束蒸发；基片温度：300 °C（原始条件字段573 K）；基片：多类基片；这组表未逐点区分基片；膜厚：未提供（本轮可核验来源）；沉积速率：未提供（本轮可核验来源）；氧分压：未提供（本轮可核验来源）；反应气流量：未提供（本轮可核验来源）；本底压力：未提供（本轮可核验来源）；工作压力：未提供（本轮可核验来源）；离子辅助：未提供（本轮可核验来源）；退火：未提供（本轮可核验来源）；测量温度：未提供（本轮可核验来源）；晶向/偏振：未提供（本轮可核验来源）。自洽KK反演数据；薄膜，禁止用此组代表熔融石英块材。 原数值表保留全部节点；计算有效域单独受限，不把表的模型延伸视为新测量。 n/k同时可用；来源给出的零k保留，不将未知值改成零。 光谱长度单位µm；n、k无量纲；吸收正k（n+ik）。仅在所列有效域内插，禁止外推；来源样品参考，不是本机标定。",
+    "source": "L. V. Rodríguez-de Marcos, J. I. Larruquert, J. A. Méndez, J. A. Aznárez.\nSelf-consistent optical constants of SiO2 and Ta2O5 films.\nOpt. Mater. Express 6, 3622-3637 (2016)\n(Numerical data kindly provided by Juan Larruquert)\nhttps://doi.org/10.1364/OME.6.003622\nhttps://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/SiO2/nk/Rodriguez-de%20Marcos.yml\nhttps://refractiveindex.info/?shelf=main&book=SiO2&page=Rodriguez-de_Marcos\n原始数值SHA256: 3e5678fce64edcb36fef1e8d5ca822328b7fd389c87b489d606638ed96753d72\n许可: CC0-1.0 (refractiveindex.info database); original paper rights remain separate",
+    "domain": [
+      0.0299714,
+      1.51066,
+      "um"
+    ],
+    "first_nodes": {
+      "wavelengths": [
+        0.0299714,
+        0.0302711,
+        0.0305738,
+        0.0308795,
+        0.0311882,
+        0.0315001
+      ],
+      "n": [
+        0.902641,
+        0.90136,
+        0.90007,
+        0.898776,
+        0.89748,
+        0.896181
+      ],
+      "k": [
+        0.090808,
+        0.092924,
+        0.095088,
+        0.097307,
+        0.099571,
+        0.101885
+      ]
+    }
+  },
+  {
+    "material_id": "builtin_research_MgF2_film",
+    "optical_set_id": "ri_mgf2_rodriguez_de_marcos",
+    "notes": "对象：薄膜（film）。参考条件：镀膜方法：钨舟热蒸发；基片温度：250 °C（原始条件字段523 K）；基片：未提供（本轮可核验来源）；膜厚：44 nm；沉积速率：未提供（本轮可核验来源）；氧分压：未提供（本轮可核验来源）；反应气流量：未提供（本轮可核验来源）；本底压力：未提供（本轮可核验来源）；工作压力：未提供（本轮可核验来源）；离子辅助：未提供（本轮可核验来源）；退火：未提供（本轮可核验来源）；测量温度：未提供（本轮可核验来源）；晶向/偏振：未提供（本轮可核验来源）。来源薄膜数据；不得替代MgF₂单晶普通光/非常光常数。 原数值表保留全部节点；计算有效域单独受限，不把表的模型延伸视为新测量。 n/k同时可用；来源给出的零k保留，不将未知值改成零。 光谱长度单位µm；n、k无量纲；吸收正k（n+ik）。仅在所列有效域内插，禁止外推；来源样品参考，不是本机标定。",
+    "source": "L. V. Rodríguez-de Marcos, J. I. Larruquert, J. A. Méndez, J. A. Aznárez.\nSelf-consistent optical constants of MgF2, LaF3, and CeF3 films.\nOpt. Mater. Express 7, 989-1006 (2017)\n(Numerical data kindly provided by Juan Larruquert)\nhttps://doi.org/10.1364/OME.7.000989\nhttps://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/MgF2/nk/Rodriguez-de%20Marcos.yml\nhttps://refractiveindex.info/?shelf=main&book=MgF2&page=Rodriguez-de_Marcos\n原始数值SHA256: de4aa1fb47aeacc35010db68a8b291ebaefc573f131cf37dff62b582c2a294cd\n许可: CC0-1.0 (refractiveindex.info database); original paper rights remain separate",
+    "domain": [
+      0.0299919,
+      2.00146,
+      "um"
+    ],
+    "first_nodes": {
+      "wavelengths": [
+        0.0299919,
+        0.0301236,
+        0.0302558,
+        0.0303887,
+        0.0305221,
+        0.030656
+      ],
+      "n": [
+        0.925222,
+        0.924148,
+        0.922739,
+        0.921308,
+        0.920206,
+        0.919301
+      ],
+      "k": [
+        0.121265,
+        0.121903,
+        0.122539,
+        0.124188,
+        0.125917,
+        0.127636
+      ]
+    }
+  },
+  {
+    "material_id": "builtin_zns_literature_20261004",
+    "optical_set_id": "ri_zns_amotchkina_nk",
+    "notes": "对象：薄膜（film）。参考条件：镀膜方法：电子束蒸发；基片温度：120 °C；基片：Ge，厚3 mm；膜厚：1.008 µm（COMMENTS；结构化CONDITIONS约1.00µm）；沉积速率：未提供（本轮可核验来源）；氧分压：未提供（本轮可核验来源）；反应气流量：未提供（本轮可核验来源）；本底压力：未提供（本轮可核验来源）；工作压力：未提供（本轮可核验来源）；离子辅助：未提供（本轮可核验来源）；退火：未提供（本轮可核验来源）；测量温度：未提供（本轮可核验来源）；晶向/偏振：未提供（本轮可核验来源）。作者提供数值/拟合模型，论文表征窗0.4–12µm；本包保守限制至≤12µm。 n由同源公式计算；k只在同源k表内线性内插；有效域取n、k、本轮测量窗的交集。保留所有交集内原k节点。 n/k同时可用；来源给出的零k保留，不将未知值改成零。 光谱长度单位µm；n、k无量纲；吸收正k（n+ik）。仅在所列有效域内插，禁止外推；来源样品参考，不是本机标定。",
+    "source": "T. Amotchkina, M. Trubetskov, D. Hahner, V. Pervak.\nCharacterization of e-beam evaporated Ge, YbF3, ZnS, and LaF3 thin films for laser-oriented coatings.\nAppl. Opt. 59, A40-A47 (2020)\n(Data kindly provided by Tatiana Amotchkina\n[data]\n[description])\nhttps://doi.org/10.1364/AO.59.000A40\nhttps://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/ZnS/nk/Amotchkina.yml\nhttps://refractiveindex.info/?shelf=main&book=ZnS&page=Amotchkina\nhttps://refractiveindex.info/download/data/2020/Amotchkina/Summary_for_RefractiveIndexINFO.pdf\nhttps://opg.optica.org/ao/abstract.cfm?uri=ao-59-5-A40\n原始数值SHA256: 9533878df7b2b03b702089832074dc9e23c4e22ff0c1107c66a63b219bc43670\n许可: CC0-1.0 (refractiveindex.info database); original paper rights remain separate",
+    "domain": [
+      0.4,
+      1.0,
+      "um"
+    ],
+    "first_nodes": {
+      "wavelengths": [
+        0.4,
+        0.400078125,
+        0.40015625,
+        0.40023437500000003,
+        0.4003125,
+        0.400390625
+      ],
+      "n": [
+        2.5699339484983805,
+        2.5697075068135034,
+        2.569481407123238,
+        2.5692556485788915,
+        2.569030230334728,
+        2.568805151547954
+      ],
+      "k": [
+        0.00192,
+        0.0019190625000000004,
+        0.0019181250000000003,
+        0.0019171875,
+        0.0019162500000000002,
+        0.0019153125000000003
+      ]
+    }
+  }
+]

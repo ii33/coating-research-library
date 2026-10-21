@@ -1,0 +1,71 @@
+{
+  "publication_id": "2026-10-21_coating_sim_followup",
+  "repository": "ii33/coating-research-library",
+  "software_snapshot_commit": "0a631b7428486ab08fe0f27aa8938c50783f5280",
+  "scope": "research artifacts only; no software repository release",
+  "source_bundles": [
+    {
+      "id": "multistack",
+      "source_manifest_sha256": "e41035b29c5370b109b4ee51b3490a875f93790bdf56f7e6f0388bb6a819bd71"
+    },
+    {
+      "id": "substack_feasibility",
+      "source_manifest_sha256": "5e12eef930da224cd9df2cce641e231ea9a52e9125f1ec6e6c4b56d44e96ba71"
+    },
+    {
+      "id": "optics_assumptions_audit",
+      "source_manifest_sha256": "6e7005375015f2a1aa298b564de9857162390e9e2265a1ce70c80f2876dd6b4e"
+    },
+    {
+      "id": "tfcalc_43_layer_reference",
+      "source_manifest_sha256": "fe8adb395edc15b6c1f973959e0ed486762b7f30e2c6f0bc73fa60c0bd497328"
+    }
+  ],
+  "included_files": [
+    {
+      "path": "README.md",
+      "bytes": 5331,
+      "sha256": "9714e384b4d5d4f0820e9bf39ace80b81c7e6fbb31595cb5e0c1e7a3d7d28413"
+    },
+    {
+      "path": "audit_summary.json",
+      "bytes": 4745,
+      "sha256": "19c40c2c00a1ddd023ee7f1d1751b23acb46ef8b14bb20e0b8679d3a95cab7e8"
+    },
+    {
+      "path": "candidate_32l_multistack.csv",
+      "bytes": 2610,
+      "sha256": "1610cb479d69112bf7eba6cdaaa0fafd6cd7b15c357ca306d03e02c19d2eac6d"
+    },
+    {
+      "path": "candidate_70l_independent_HL_buffers.csv",
+      "bytes": 5618,
+      "sha256": "552f8a091fcf244b6696d79731b8b918ca3b4c2effe19b7a5bdedbf4ebf9bcac"
+    },
+    {
+      "path": "material_source_records.json",
+      "bytes": 7602,
+      "sha256": "a67f7bd38a2e871cb892a0c9b21c8dafa2eadfc7d275b50fef9ee7dd0b388a97"
+    },
+    {
+      "path": "nk_attenuation_anchor_samples.json",
+      "bytes": 2871,
+      "sha256": "16b8219a5cc327cf4d7222ae5d5b00510805ba148c15c1fb6c771b504ad0c635"
+    },
+    {
+      "path": "prescription_tfcalc43.csv",
+      "bytes": 740,
+      "sha256": "ed65710783056964e317c3eef0b3e048173192465eb0c3271dfda5c4ccf86acb"
+    },
+    {
+      "path": "recompute_tfcalc43_public_case.py",
+      "bytes": 4280,
+      "sha256": "f762d547ad23b0c2b4b15443ee13ca2946af430d53bb54b9ff79337f4126ff0d"
+    },
+    {
+      "path": "tfcalc43_lossless_reproduction.json",
+      "bytes": 2181,
+      "sha256": "cb2d6a624b4d070edf38aafb6d9f06899e3389f91e4979d1607feb7baca6833c"
+    }
+  ]
+}
