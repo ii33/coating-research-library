@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "scope": "Public research artifacts for optical-coating research; excludes software repository release, raw logs, archives, and local environment details.",
+  "source_commit": "438da3958b0c938bdc7686084ebcf674960f7241",
+  "production_source_baseline": "0a631b7428486ab08fe0f27aa8938c50783f5280",
+  "artifacts": [
+    {
+      "source_artifact": "ultrabroadband_ar_research.md",
+      "published_path": "reports/ultrabroadband_ar_research.md",
+      "published_sha256": "1808080187de26c195a1d52f9a6c03daa76f6379e7b4e7226f10abce1cf5fe4f",
+      "published_bytes": 23306,
+      "transformation": "verbatim"
+    },
+    {
+      "source_artifact": "coating-cloud-results-438da39/公开中文总结.md",
+      "published_path": "reports/cloud_48run_validation_zh.md",
+      "published_sha256": "71982768585fc2df5a0a54286afa38ce2f44a79afd7c9c87c7b1945fdedcb26b",
+      "published_bytes": 8605,
+      "transformation": "verbatim"
+    },
+    {
+      "source_artifact": "coating-cloud-results-438da39/public-audit-summary.json",
+      "published_path": "evidence/public-audit-summary.json",
+      "published_sha256": "ae025c5d1130bc70e2a1c5c70082161f8c1d8c3f8aadfc103bac8b34ef44a1fd",
+      "published_bytes": 87842,
+      "transformation": "compacted/retitled"
+    },
+    {
+      "source_artifact": "coating-cloud-results-438da39/verification-checks.json",
+      "published_path": "evidence/verification-checks.json",
+      "published_sha256": "f2dc46614e7ae1d2bde71253874bdc684041dd29912dc1cdd596162874cf7f0a",
+      "published_bytes": 484,
+      "transformation": "verbatim"
+    },
+    {
+      "source_artifact": "coating-cloud-workers-438da39/公开中文总结.md",
+      "published_path": "reports/cloud_worker_pairing_zh.md",
+      "published_sha256": "904ffb26e07bdb737149fbf78676955215e62359575636886e4445967f32a1c9",
+      "published_bytes": 4369,
+      "transformation": "verbatim"
+    },
+    {
+      "source_artifact": "coating-cloud-workers-438da39/public-worker-audit-summary.json",
+      "published_path": "evidence/public-worker-audit-summary.json",
+      "published_sha256": "307da6b84bd2d3efaa82d9ad6e1c5af7c7404f3dfb435e64a54fa920baa4f071",
+      "published_bytes": 14596,
+      "transformation": "compacted/retitled"
+    },
+    {
+      "source_artifact": "coating-hard-hr-438da39/结论.md",
+      "published_path": "reports/hard_hr_coarse_grid_failure_zh.md",
+      "published_sha256": "a11f1f11763c69f57f3c84fa6db1ede326a1c4a3f38ea89568feed822fc18a90",
+      "published_bytes": 7759,
+      "transformation": "verbatim"
+    },
+    {
+      "source_artifact": "coating-hard-hr-438da39/evidence-summary.json",
+      "published_path": "evidence/hard-hr-evidence-summary.json",
+      "published_sha256": "681d710decd44705a083bc2aed3bb65367795c57ebebca721cd845d28907dcb2",
+      "published_bytes": 8502,
+      "transformation": "verbatim"
+    },
+    {
+      "source_artifact": "coating-hard-hr-438da39/classical_screen_best_candidate.json",
+      "published_path": "evidence/classical-screen-best-candidate.json",
+      "published_sha256": "71417bb0d7bfd2365f3d6bb645f3896095b3e1fc67bac3807c3595eb93b0e8a2",
+      "published_bytes": 13766,
+      "transformation": "verbatim"
+    },
+    {
+      "source_artifact": "coating-hard-hr-438da39/reflection-spectrum.svg",
+      "published_path": "figures/reflection-spectrum.svg",
+      "published_sha256": "fb745dd3689cb812f71d8b6597ba2d3bc3fe201477cd8bde31ade8da23681baa",
+      "published_bytes": 182323,
+      "transformation": "compacted/retitled"
+    },
+    {
+      "source_artifact": "coating-hard-hr-0a631b7/结论.md",
+      "published_path": "reports/hard_hr_production_failures_zh.md",
+      "published_sha256": "9da05901d4f886c3a094c0ad5d2166e956c2f188628c143843402ddd3a94ec2a",
+      "published_bytes": 6004,
+      "transformation": "verbatim"
+    },
+    {
+      "source_artifact": "coating-hard-hr-0a631b7/production-run-summaries.json",
+      "published_path": "evidence/production-run-summaries.json",
+      "published_sha256": "0824bb3b9fabbeac8d39f2a299a51a17dfb91f2615864837f75f7aac1aca4cac",
+      "published_bytes": 6812,
+      "transformation": "compacted/retitled"
+    }
+  ]
+}
