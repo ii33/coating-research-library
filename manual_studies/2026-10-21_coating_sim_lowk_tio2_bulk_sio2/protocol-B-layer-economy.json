@@ -1,0 +1,18 @@
+{
+  "phase": "B_layer_economy",
+  "reason": "32-layer sourced-film target passed with margin. Test fewer layers via new multistack/chirped priors and full-thickness matching, not blind deletion or added layers.",
+  "layer_counts": [
+    30,
+    28,
+    26
+  ],
+  "families": [
+    "two_stack_440_625",
+    "linear_chirp_420_695"
+  ],
+  "training_step_nm": 1,
+  "search_cap_s": 150,
+  "per_candidate_cap_s": 12,
+  "maxiter_each_stage": 180,
+  "stopping": "Sweep 30/28/26 layers per parent direction; retain smallest successful tested count with margin, no global minimality claim."
+}

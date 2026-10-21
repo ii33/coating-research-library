@@ -1,0 +1,128 @@
+{
+  "date_utc": "2026-10-21",
+  "software_commit": "0a631b7428486ab08fe0f27aa8938c50783f5280",
+  "source_database_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+  "source_snapshot_sha256": "5cfe30256a5ab64123f936c6e3af10d84b342b9189f42bd93e9a57fe78aa948e",
+  "target": {
+    "band_nm": [
+      400,
+      700
+    ],
+    "angles_deg": [
+      0,
+      30
+    ],
+    "polarizations": [
+      "s",
+      "p"
+    ],
+    "min_R": 0.98,
+    "max_layers": 32,
+    "layer_nm": [
+      10,
+      500
+    ],
+    "max_total_nm": 5000
+  },
+  "primary_materials": [
+    "TiO2-Franta2015-film",
+    "MgF2-Franta2017-film",
+    "SiO2-Malitson1965-bulk-n-only-explicit-substrate-k0"
+  ],
+  "results": [
+    {
+      "layers": 32,
+      "candidate": "retained-best.json",
+      "prescription_csv": "layers-32-incident-to-substrate.csv",
+      "independent_audit": "audit-two_stacks_440_625.json",
+      "minimum": {
+        "wavelength_nm": 402.5050918255141,
+        "R": 0.9873549442083834,
+        "T": 0.011524933100635036,
+        "A": 0.0011201226909815301,
+        "angle_deg": 30.0,
+        "polarization": "p"
+      },
+      "total_nm": 2569.646686937828,
+      "layer_bounds_nm": [
+        10.0,
+        145.4979884951231
+      ],
+      "passed": true,
+      "production_audit": "review-production-32layer-frozen-audit.json"
+    },
+    {
+      "layers": 30,
+      "candidate": "candidate-B-economy30_two_stack.json",
+      "prescription_csv": "layers-30-incident-to-substrate.csv",
+      "independent_audit": "audit-B-economy30_two_stack.json",
+      "minimum": {
+        "wavelength_nm": 401.49923358986933,
+        "R": 0.9826727210906511,
+        "T": 0.0152644223337165,
+        "A": 0.0020628565756324307,
+        "angle_deg": 30.0,
+        "polarization": "p"
+      },
+      "total_nm": 2438.4495469226085,
+      "layer_bounds_nm": [
+        31.838965057114084,
+        152.82379391337443
+      ],
+      "passed": true,
+      "production_audit": "review-production-30layer-frozen-audit.json"
+    },
+    {
+      "layers": 28,
+      "candidate": "lowest-qualified.json",
+      "prescription_csv": "layers-28-incident-to-substrate.csv",
+      "independent_audit": "audit-B-economy28_linear_chirp.json",
+      "minimum": {
+        "wavelength_nm": 407.49921291277917,
+        "R": 0.9805918532201836,
+        "T": 0.018565217978651564,
+        "A": 0.0008429288011648287,
+        "angle_deg": 30.0,
+        "polarization": "p"
+      },
+      "total_nm": 2458.3961225312273,
+      "layer_bounds_nm": [
+        41.37868581768544,
+        163.3334311338444
+      ],
+      "passed": true,
+      "production_audit": "review-production-28layer-frozen-audit.json"
+    },
+    {
+      "layers": 26,
+      "candidate": "candidate-B-economy26_two_stack.json",
+      "prescription_csv": "layers-26-incident-to-substrate.csv",
+      "independent_audit": "audit-B-best-26layers.json",
+      "minimum": {
+        "wavelength_nm": 407.50110521411244,
+        "R": 0.9752290520534503,
+        "T": 0.023786861933792473,
+        "A": 0.0009840860127571863,
+        "angle_deg": 30.0,
+        "polarization": "p"
+      },
+      "total_nm": 2244.7341227879383,
+      "layer_bounds_nm": [
+        40.61994844879698,
+        169.8806471855802
+      ],
+      "passed": false
+    }
+  ],
+  "old_ZnS_evidence_preserved": true,
+  "software_git_clean": true,
+  "further_expansion_stopped": true,
+  "caveats": [
+    "Modeled film k not direct ultralow-loss measurements",
+    "Unknown bulk substrate k0 explicitly assumed; known film k retained",
+    "No manufacturing error or scatter/stress/roughness certification",
+    "Finite dense/extrema audit, not interval proof; only requested discrete angles",
+    "28 is smallest qualified tested architecture, not global minimum",
+    "Explicit research centers are not existing generic production generator capability"
+  ]
+}

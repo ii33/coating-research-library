@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "worst": {
+    "objective_index": 1,
+    "wavelength_nm": 402.50509193258745,
+    "angle_deg": 30.0,
+    "polarization": "p",
+    "metric": "R",
+    "actual": 0.9873549440935734,
+    "target_value": null,
+    "lower_bound": 0.98,
+    "upper_bound": null,
+    "normalized_violation": 0.0,
+    "weighted_normalized_violation": 0.0
+  },
+  "audit_metadata": {
+    "physical_evaluations": 775,
+    "wavelength_points": 24776,
+    "dense_points": 12004,
+    "offset_points": 12000,
+    "extra_points": 12772,
+    "unique_condition_points": 24776,
+    "bracket_count": 36,
+    "completed_extrema": 36,
+    "local_coordinate": "lambda=a+(b-a)*t; t in [0,1]",
+    "extrema_xatol": 1e-10,
+    "continuous_certificate": false,
+    "rms_measure": "fixed_dense_grid_only",
+    "objective_status": [
+      {
+        "objective_index": 0,
+        "metric": "R",
+        "wavelength_min_nm": 400.0,
+        "wavelength_max_nm": 700.0,
+        "discrete_line": false,
+        "worst_wavelength_nm": 400.0,
+        "worst_angle_deg": 0.0,
+        "worst_actual": 0.9874180480042238,
+        "max_normalized_error": 0.0,
+        "targets_met": true
+      },
+      {
+        "objective_index": 1,
+        "metric": "R",
+        "wavelength_min_nm": 400.0,
+        "wavelength_max_nm": 700.0,
+        "discrete_line": false,
+        "worst_wavelength_nm": 400.0,
+        "worst_angle_deg": 0.0,
+        "worst_actual": 0.9874180480042234,
+        "max_normalized_error": 0.0,
+        "targets_met": true
+      }
+    ],
+    "absorption_assumption": {
+      "assume_unknown_k_zero": true,
+      "policy": "unknown_k_zero",
+      "scope": "candidate_active_materials",
+      "affected_materials": [
+        {
+          "material_id": "builtin_research_fused_silica_method_demonstrator",
+          "optical_set_id": "ri_sio2_malitson",
+          "reason": "no_k_source",
+          "assumed_k": 0.0
+        }
+      ],
+      "used_affected_materials": [
+        {
+          "material_id": "builtin_research_fused_silica_method_demonstrator",
+          "optical_set_id": "ri_sio2_malitson",
+          "reason": "no_k_source",
+          "assumed_k": 0.0
+        }
+      ],
+      "conditional_on_assumption": true,
+      "known_k_preserved": true,
+      "source_records_unchanged": true,
+      "wavelength_extrapolation": "error",
+      "measured_absorption_validated": false,
+      "claim": "Finite sampled R/T model evidence conditional on explicit unknown-k=0; not measured absorption or a continuous certificate."
+    }
+  },
+  "absorption_assumption": {
+    "assume_unknown_k_zero": true,
+    "policy": "unknown_k_zero",
+    "scope": "candidate_active_materials",
+    "affected_materials": [
+      {
+        "material_id": "builtin_research_fused_silica_method_demonstrator",
+        "optical_set_id": "ri_sio2_malitson",
+        "reason": "no_k_source",
+        "assumed_k": 0.0
+      }
+    ],
+    "used_affected_materials": [
+      {
+        "material_id": "builtin_research_fused_silica_method_demonstrator",
+        "optical_set_id": "ri_sio2_malitson",
+        "reason": "no_k_source",
+        "assumed_k": 0.0
+      }
+    ],
+    "conditional_on_assumption": true,
+    "known_k_preserved": true,
+    "source_records_unchanged": true,
+    "wavelength_extrapolation": "error",
+    "measured_absorption_validated": false,
+    "claim": "Finite sampled R/T model evidence conditional on explicit unknown-k=0; not measured absorption or a continuous certificate."
+  },
+  "request_seed_is_generated_unoptimized_prior": true,
+  "old_answer_seed_removed_before_request_parse": true,
+  "snapshot_sha256": "5cfe30256a5ab64123f936c6e3af10d84b342b9189f42bd93e9a57fe78aa948e",
+  "elapsed_audit_s": 22.938151410999126,
+  "software_commit": "0a631b7428486ab08fe0f27aa8938c50783f5280",
+  "software_git_clean": true
+}

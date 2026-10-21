@@ -1,0 +1,119 @@
+{
+  "kind": "no-answer-seed-generic-prior-bridge",
+  "band_nm": [
+    400.0,
+    700.0
+  ],
+  "angles_deg": [
+    0.0,
+    30.0
+  ],
+  "polarizations": [
+    "s",
+    "p"
+  ],
+  "target_min_R": 0.98,
+  "max_layers": 32,
+  "pair_allocation": [
+    8,
+    8
+  ],
+  "reference_phase_angle_deg": 15.0,
+  "source_stopband_rule": "Delta=4/pi*asin((C-1)/(C+1)); C=min Re(YH)/Re(YL) over band endpoints/geometric center and all requested conditions. Y_s=q,Y_p=n^2/q,q=sqrt(n^2-n0^2 sin^2theta). Lossless QW approximation for PRIOR SCHEDULING ONLY; all scores retain full sourced complex nk.",
+  "minimum_admittance_contrast": 1.5791937382786243,
+  "fractional_stopband_width": 0.28838297184360234,
+  "witness": [
+    {
+      "wavelength_nm": 400.0,
+      "angle_deg": 0.0,
+      "polarization": "s",
+      "real_admittance_ratio": 1.8464889407656935
+    },
+    {
+      "wavelength_nm": 529.1502622129182,
+      "angle_deg": 0.0,
+      "polarization": "s",
+      "real_admittance_ratio": 1.7059084321499849
+    },
+    {
+      "wavelength_nm": 700.0,
+      "angle_deg": 0.0,
+      "polarization": "s",
+      "real_admittance_ratio": 1.6529972069528451
+    },
+    {
+      "wavelength_nm": 400.0,
+      "angle_deg": 0.0,
+      "polarization": "p",
+      "real_admittance_ratio": 1.846488940765694
+    },
+    {
+      "wavelength_nm": 529.1502622129182,
+      "angle_deg": 0.0,
+      "polarization": "p",
+      "real_admittance_ratio": 1.7059084321499849
+    },
+    {
+      "wavelength_nm": 700.0,
+      "angle_deg": 0.0,
+      "polarization": "p",
+      "real_admittance_ratio": 1.6529972069528451
+    },
+    {
+      "wavelength_nm": 400.0,
+      "angle_deg": 30.0,
+      "polarization": "s",
+      "real_admittance_ratio": 1.9410556405954473
+    },
+    {
+      "wavelength_nm": 529.1502622129182,
+      "angle_deg": 30.0,
+      "polarization": "s",
+      "real_admittance_ratio": 1.7879351496853237
+    },
+    {
+      "wavelength_nm": 700.0,
+      "angle_deg": 30.0,
+      "polarization": "s",
+      "real_admittance_ratio": 1.7302498736933427
+    },
+    {
+      "wavelength_nm": 400.0,
+      "angle_deg": 30.0,
+      "polarization": "p",
+      "real_admittance_ratio": 1.756529455751256
+    },
+    {
+      "wavelength_nm": 529.1502622129182,
+      "angle_deg": 30.0,
+      "polarization": "p",
+      "real_admittance_ratio": 1.6276449285045942
+    },
+    {
+      "wavelength_nm": 700.0,
+      "angle_deg": 30.0,
+      "polarization": "p",
+      "real_admittance_ratio": 1.5791937382786243
+    }
+  ],
+  "center_rule": "c1=lo*(1+f*Delta), c2=hi/(1+f*Delta)",
+  "dimensionless_fraction_schedule": [
+    0.3333333333333333,
+    0.25,
+    0.5
+  ],
+  "source_dependent_and_target_band_scaled": true,
+  "no_lookup_centers_or_answer_thicknesses": true,
+  "training_step_nm": 1,
+  "total_wall_cap_s": 60,
+  "per_candidate_optimizer_cap_s": 15,
+  "max_iterations_each_stage": 180,
+  "cancel_semantics": "SIGINT/SIGTERM aborts, complete candidates atomically checkpointed. Optimizer checks deadline per evaluation. Pass only after completed independent audit.",
+  "source_hashes": {
+    "TiO2-Franta.yml": "2380783119baf079dfb5ed0eb846ef1f08dd17d719194d1e91610c34760ec174",
+    "MgF2-Franta.yml": "c51389d0430c21d8959388605266bc160abe14a04242cfa7ba8d1812bde2e58e",
+    "SiO2-Malitson.yml": "c587670f397241ecb93a1af3279d6fe7ed67888e587e399074b0eab729c92b52"
+  },
+  "prerequisite_engine_sha256": "926938dabe53a917e923a11e75eb19f726c5b3acb7e6d7a26f932cc98e2819f5",
+  "scope": "Same32layercase only, no architecture/material expansion"
+}

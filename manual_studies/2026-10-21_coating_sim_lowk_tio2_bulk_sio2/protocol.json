@@ -1,0 +1,46 @@
+{
+  "protocol": "lowk-MgF2-TiO2-film-bulk-SiO2-v1",
+  "software_commit": "0a631b7428486ab08fe0f27aa8938c50783f5280",
+  "separate_from_frozen_original_benchmark": true,
+  "target": {
+    "wavelength_nm": [
+      400,
+      700
+    ],
+    "training_step_nm": 1,
+    "angles_deg": [
+      0,
+      30
+    ],
+    "polarizations": [
+      "s",
+      "p"
+    ],
+    "minimum_R": 0.98
+  },
+  "constraints": {
+    "max_layers": 32,
+    "min_layer_nm": 10,
+    "max_layer_nm": 500,
+    "max_total_nm": 5000
+  },
+  "materials": {
+    "H": "TiO2 Franta2015 99.6nm e-beam amorphous/fine-polycrystalline film author fitted n,k retained, not bulk rutile",
+    "L": "MgF2 Franta2017 author fitted n,k retained exactly, not direct ultralow-k measurement",
+    "substrate": "Bulk fused SiO2 Malitson n-only; explicit k=0 semi-infinite exit medium assumption"
+  },
+  "priors": [
+    "two_stacks_440_625",
+    "two_stacks_460_630",
+    "three_stacks_425_540_675",
+    "linear_chirp_415_700",
+    "exp_chirp_425_700",
+    "reverse_linear_chirp"
+  ],
+  "per_candidate_search_cap_s": 45,
+  "total_search_cap_s": 360,
+  "max_full_refinement_iterations": 180,
+  "independent_audit": "characteristic matrix, .1nm and .05nm shifted union, material knots, all bracketed extrema refined",
+  "no_software_publication": true,
+  "new_user_material_direction": "Switch high index from ZnS to TiO2; reoptimize all thicknesses, preserve old evidence"
+}

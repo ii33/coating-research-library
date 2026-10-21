@@ -1,0 +1,290 @@
+{
+  "package": "coating-lowk-tio2-bulk-sio2-and-generic-prior-bridge",
+  "created_utc": "2026-10-21",
+  "source_bundles": [
+    "final TiO2/bulk-SiO2 research bundle",
+    "final no-answer-seed generic bridge bundle"
+  ],
+  "software_checkout_commit": "0a631b7428486ab08fe0f27aa8938c50783f5280",
+  "source_database_commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+  "script_adaptations": {
+    "scripts/tio2_research.py": {
+      "adapted_from_sha256": "926938dabe53a917e923a11e75eb19f726c5b3acb7e6d7a26f932cc98e2819f5",
+      "changes": "Replace machine-specific checkout/output/source paths with COATING_SIM_ROOT, COATING_RESEARCH_OUT and package-relative source paths."
+    },
+    "generic-prior-bridge/validate_generic_bridge.py": {
+      "changes": "Use package-relative core path and environment checkout; replace nonportable archive assertion with pinned source-table hashes."
+    },
+    "generic-prior-bridge/audit_generic_production.py": {
+      "changes": "Use package-relative frozen request and COATING_SIM_ROOT."
+    }
+  },
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": "FINAL-RESULTS.json",
+      "bytes": 3843,
+      "sha256": "41c489854daa7b32363e585d3664717b209c141a7265190793229f3ffa54976b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2125,
+      "sha256": "537a8ed2a3ec9b254939f0451ebde637e0d9291357666ba9d79785fe9cbcd025"
+    },
+    {
+      "path": "RESEARCH-SUMMARY.md",
+      "bytes": 6169,
+      "sha256": "587ea15da1d1c0f5f4d12616609067ff1b7fe7b9e2dc193a73a3c96cc3c6d447"
+    },
+    {
+      "path": "SOFTWARE-HANDOFF.md",
+      "bytes": 8570,
+      "sha256": "778854e0a0452735596bb4a51c160c2d045e6589781e711a1877c8745b788b5f"
+    },
+    {
+      "path": "candidates/26layer-best-tested.json",
+      "bytes": 2245,
+      "sha256": "8875dc938cc268a0a9ec7845f103520cc0677554c4a9880d9b7f7bbdb3b41716"
+    },
+    {
+      "path": "candidates/26layer-independent-audit.json",
+      "bytes": 8877,
+      "sha256": "86b6267bd52eca761ec372f7faa25f1e91b3e72da81d23a5d5d6ef51c667fbe1"
+    },
+    {
+      "path": "candidates/28layer-independent-audit.json",
+      "bytes": 9733,
+      "sha256": "c111ae2b871bea23229be11ba990540335f5669472832ad2b63b4d8d300085db"
+    },
+    {
+      "path": "candidates/28layer-lowest-qualified-tested.json",
+      "bytes": 2473,
+      "sha256": "748e035bea9ddcc17cfef641bb1a0736b61c5a3d9da5bf035c17ea7d31be36d1"
+    },
+    {
+      "path": "candidates/30layer-independent-audit.json",
+      "bytes": 10149,
+      "sha256": "32684602248fe106f3d12305bbf4da67c2b375dcd0a7bde59be74e206ac240be"
+    },
+    {
+      "path": "candidates/30layer-two-stack.json",
+      "bytes": 2386,
+      "sha256": "352aceff1c991df47e6ec920098c921961548f8c57a4bb1512f1374bc0a79160"
+    },
+    {
+      "path": "candidates/32layer-independent-audit.json",
+      "bytes": 10708,
+      "sha256": "026c3dc32ba626fae2eba74c6ac150ebf5be720e9bc8ea2d525a6634e1603f31"
+    },
+    {
+      "path": "candidates/32layer-retained-best.json",
+      "bytes": 2440,
+      "sha256": "e528af36c2ed4748e83b147a7a4e6fc9a878a1295ddf7284cbcb32b4e0a51616"
+    },
+    {
+      "path": "cold-replay-timing.json",
+      "bytes": 595,
+      "sha256": "cd91c1950fd7ea05f7ab9db931043cf1cd6f7a7dc6f64e4ac19222e8c4d0268a"
+    },
+    {
+      "path": "generic-prior-bridge/README.md",
+      "bytes": 1860,
+      "sha256": "d9750020c061d3209a84b90188353fb694d6242e21e97d873cf3b90d510f2b11"
+    },
+    {
+      "path": "generic-prior-bridge/audit_generic_production.py",
+      "bytes": 3643,
+      "sha256": "abbbdb8ea0e4dc3aaa5b37911dde710032abbfb49b22176e1cfd3f397c8bb9cf"
+    },
+    {
+      "path": "generic-prior-bridge/generated-prior-production-design.json",
+      "bytes": 10503,
+      "sha256": "01cfa29558c119014dd03b95fc68ca6d3cffd3221e6bdc5e1a2d7ac27c4fda67"
+    },
+    {
+      "path": "generic-prior-bridge/generated-prior.json",
+      "bytes": 1950,
+      "sha256": "47da011c00a03bd09b508fb3de8ccfc89e10ab1e687525797facfca456609dc5"
+    },
+    {
+      "path": "generic-prior-bridge/independent-audit.json",
+      "bytes": 10499,
+      "sha256": "a6bbf60de69016fcf0aa884db12cf283024944132280ff8fe9e2e4f782e07627"
+    },
+    {
+      "path": "generic-prior-bridge/optimized-candidate-production-design.json",
+      "bytes": 10506,
+      "sha256": "08de2293ce729bd7aa15fb587aeefaaf8a12850ffd06ffb73489b878a3338ccb"
+    },
+    {
+      "path": "generic-prior-bridge/optimized-candidate.json",
+      "bytes": 3105,
+      "sha256": "de9723fee4bf20a0f80c31de16f7ad38bd4a1df376c71714be3ccab7c275cfac"
+    },
+    {
+      "path": "generic-prior-bridge/production-frozen-audit.json",
+      "bytes": 3801,
+      "sha256": "5158a0fede49f921c975426c8a135665a803c2645885d9c9a733eb488041de55"
+    },
+    {
+      "path": "generic-prior-bridge/production-frozen-request.json",
+      "bytes": 409108,
+      "sha256": "d16d0d6efa24fde2805a199365d26f7cda427e88330cd1749d6f0d0873c3595b"
+    },
+    {
+      "path": "generic-prior-bridge/protocol.json",
+      "bytes": 3512,
+      "sha256": "8cfceab5c8a201e4eefd097fc38847761d868bd1c33df1fc23d396a6d7abf4f9"
+    },
+    {
+      "path": "generic-prior-bridge/result.json",
+      "bytes": 1731,
+      "sha256": "e36c7226287983c18c11af161c41ea8920f168225f44d923af4b3dae64b2731a"
+    },
+    {
+      "path": "generic-prior-bridge/validate_generic_bridge.py",
+      "bytes": 5875,
+      "sha256": "71d170c4d325c6a779058f28517be0b86d1f7127bd93e2d97af76e088923179d"
+    },
+    {
+      "path": "prescriptions/layers-26-incident-to-substrate.csv",
+      "bytes": 1045,
+      "sha256": "eff0e3aeb009597bbab7091abdb0f7cbaadbaeb4948a77decb952adba3e23e20"
+    },
+    {
+      "path": "prescriptions/layers-28-incident-to-substrate.csv",
+      "bytes": 1121,
+      "sha256": "e7c1ddc6b87ea5d3fe9ba66ae444ed4849edd87cda6d39fde017a9947717b07a"
+    },
+    {
+      "path": "prescriptions/layers-30-incident-to-substrate.csv",
+      "bytes": 1202,
+      "sha256": "cacb92ec7dc9a6bcf1684ca57b9ebbb4c5d235d281005108c952b74584269a3d"
+    },
+    {
+      "path": "prescriptions/layers-32-incident-to-substrate.csv",
+      "bytes": 1258,
+      "sha256": "c0f2761ce2855e34f8a38ce10f1feaf90516b1cb2b4b679e4fe6f40de4ca7d93"
+    },
+    {
+      "path": "production/28layer-candidate-design.json",
+      "bytes": 7958,
+      "sha256": "514ac483b2776c66a49259c9bc79db7ec0a4b34d256574d2b65408fa44847222"
+    },
+    {
+      "path": "production/28layer-frozen-audit.json",
+      "bytes": 5396,
+      "sha256": "1ba48cecc4787ce942bd61c29320f8f65a4508fd60e7072c5abc83e2c5a86424"
+    },
+    {
+      "path": "production/28layer-frozen-request.json",
+      "bytes": 406328,
+      "sha256": "3643c35cab4917707d243d4aa822d8b12697b6438ea3f0834de6f5b7fbe2cdf6"
+    },
+    {
+      "path": "production/30layer-candidate-design.json",
+      "bytes": 8459,
+      "sha256": "d5b74be895a6306f6d8838bede232c7f49539170231381c78bdc1bccaef76065"
+    },
+    {
+      "path": "production/30layer-frozen-audit.json",
+      "bytes": 5393,
+      "sha256": "a4db6803e8bd75a06efaadc6f573c1d27b0095fbd9007afd100dfcad2d6b8394"
+    },
+    {
+      "path": "production/30layer-frozen-request.json",
+      "bytes": 406949,
+      "sha256": "06b6e7e3be44627427ba47dcda09bc8a37043b2794e8c51a0d321f27762498df"
+    },
+    {
+      "path": "production/32layer-candidate-design.json",
+      "bytes": 8937,
+      "sha256": "1bbaf33beb7e8e279ba3fcee8bb729dd9d7a8951c10a5d963f920f0073ec1b2d"
+    },
+    {
+      "path": "production/32layer-frozen-audit.json",
+      "bytes": 5393,
+      "sha256": "ee041104c1232f73262c4b26be95782338c436c27b4732361c788703ccee929c"
+    },
+    {
+      "path": "production/32layer-frozen-request.json",
+      "bytes": 407539,
+      "sha256": "2fbf6a0d209b514fd723bae8c4d012165be2d5a651dfa8495ef57c5013faac4c"
+    },
+    {
+      "path": "production/shared-optical-snapshot.json",
+      "bytes": 341437,
+      "sha256": "ea4310928df7fd3b8fc283a314f6e168f416fea8c3f1bc6bccc1112569e219da"
+    },
+    {
+      "path": "protocol-B-layer-economy.json",
+      "bytes": 583,
+      "sha256": "66cbca7ba2d70c1893f9a8a1ee43f5d27ef0314c6a93b5bd79d263e7c5b967a4"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 1419,
+      "sha256": "82be740e03b634d55a23323457eda8d901c90dcbc6765a71808a569253778b8c"
+    },
+    {
+      "path": "sampled-nk.json",
+      "bytes": 1527,
+      "sha256": "3de4cec9d984b9712b64d1c0cd51546174ce6a55b229046a34c36d1f18529fa8"
+    },
+    {
+      "path": "scripts/README.md",
+      "bytes": 415,
+      "sha256": "0b11186f8b20217a2714877dc9cc594619b8a1039551a542a09492d5e2d4605e"
+    },
+    {
+      "path": "scripts/reduce_layer_count.py",
+      "bytes": 2356,
+      "sha256": "a76cbffa15c34478a2f150d9cd566a0c5d4ba4ade8dc0a5ed8ddbc26c0c41b1b"
+    },
+    {
+      "path": "scripts/tio2_research.py",
+      "bytes": 14762,
+      "sha256": "10f4f43c1cbb67d0bd355d990e5cefdec80d7687bab8ce6943d31c6bdb12d910"
+    },
+    {
+      "path": "sources/LICENSE_CC0.txt",
+      "bytes": 6555,
+      "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+    },
+    {
+      "path": "sources/MgF2-Franta.yml",
+      "bytes": 173304,
+      "sha256": "c51389d0430c21d8959388605266bc160abe14a04242cfa7ba8d1812bde2e58e"
+    },
+    {
+      "path": "sources/SiO2-Malitson.yml",
+      "bytes": 973,
+      "sha256": "c587670f397241ecb93a1af3279d6fe7ed67888e587e399074b0eab729c92b52"
+    },
+    {
+      "path": "sources/TiO2-Franta.yml",
+      "bytes": 30058,
+      "sha256": "2380783119baf079dfb5ed0eb846ef1f08dd17d719194d1e91610c34760ec174"
+    },
+    {
+      "path": "sources/TiO2-Siefke.yml",
+      "bytes": 52162,
+      "sha256": "9b03947949e54cd98f58a989bd031a5fddb1a36a9d9f7fd64d5ff2bd68c2885c"
+    },
+    {
+      "path": "sources/TiO2-Zhukovsky.yml",
+      "bytes": 23916,
+      "sha256": "29c854b803593dfcdc7e6703281cecefecf69826fd9ec107e8a1673c271a4c43"
+    },
+    {
+      "path": "sources/TiO2-film-visible-comparison.csv",
+      "bytes": 1141,
+      "sha256": "e169b4379e762fba4f5cdb7f2d394c876f116f336c15b1496fbb6d87ce1660fc"
+    },
+    {
+      "path": "sources/lowk_tio2_source_provenance.json",
+      "bytes": 17009,
+      "sha256": "0d573dd03698ee0ec7e86ea0c8be06f5db3bf147df244f65849842cf657b1381"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "chosen_index": 0,
+  "completed_candidates": 1,
+  "elapsed_from_loaded_materials_s": 5.510325011986424,
+  "cancelled": false,
+  "generic_generator_validated_for_this_case_only": true,
+  "no_answer_seed_used": true,
+  "search_summary": [
+    {
+      "index": 0,
+      "generator_parameters": {
+        "centers_nm": [
+          438.4510629124803,
+          638.6117486865144
+        ],
+        "fraction": 0.3333333333333333,
+        "padding": 0.09612765728120078,
+        "normalized_centers_linear": [
+          0.12817020970826776,
+          0.7953724956217146
+        ],
+        "normalized_centers_log": [
+          0.16401191557374425,
+          0.8359880844262557
+        ],
+        "allocation": [
+          8,
+          8
+        ]
+      },
+      "initial_worst": {
+        "R": 0.06150490945727303,
+        "wavelength_nm": 543.0,
+        "angle_deg": 0.0,
+        "polarization": "p"
+      },
+      "training_worst": {
+        "R": 0.9874180480042236,
+        "wavelength_nm": 400.0,
+        "angle_deg": 0.0,
+        "polarization": "s"
+      },
+      "optimization_wall_s": 4.681174903002102,
+      "independent_audit": {
+        "worst": {
+          "wavelength_nm": 402.50509154531903,
+          "R": 0.987354944093574,
+          "T": 0.011524905184991798,
+          "A": 0.0011201507214341523,
+          "angle_deg": 30.0,
+          "polarization": "p"
+        },
+        "passed": true,
+        "max_abs_RTA_crosscheck": 7.22599063918139e-15
+      }
+    }
+  ],
+  "core_archive_unchanged": true,
+  "core_archive_sha256": "a617cb6443fde1d79ee78a403d40fdab954319e59a7c18171af3ef03d20e7ede",
+  "software_git_clean": true,
+  "scope": "Not universal feasibility; bounded same32layercase bridge."
+}

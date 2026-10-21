@@ -1,0 +1,373 @@
+{
+  "retrieved_utc": "2026-10-21T18:00:04.217498+00:00",
+  "purpose": "Source audit for 400–700 nm MgF2/TiO2 thin-film reflectors on bulk fused silica. No ZnS in the selected material system. Research calculation, not manufacturing calibration.",
+  "repository": {
+    "url": "https://github.com/polyanskiy/refractiveindex.info-database",
+    "commit": "c5c2f188e848453def5970e347399d653df2ffc2",
+    "commit_utc": "2026-09-04T10:08:29Z",
+    "license": "CC0-1.0",
+    "verified_via": "https://api.github.com/repos/polyanskiy/refractiveindex.info-database/commits/main"
+  },
+  "selected_tio2_baseline": "Franta 2015",
+  "secondary_tio2_process_sensitivity": "Siefke 2016",
+  "unit_contract": {
+    "wavelength": "um",
+    "n": "dimensionless",
+    "k": "dimensionless, nonnegative; simulation convention n+ik"
+  },
+  "materials": [
+    {
+      "material": "TiO2",
+      "dataset": "Franta 2015",
+      "local_file": "TiO2-Franta.yml",
+      "raw_url_pinned": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/TiO2/nk/Franta.yml",
+      "sha256": "2380783119baf079dfb5ed0eb846ef1f08dd17d719194d1e91610c34760ec174",
+      "bytes": 30058,
+      "pinned_GitHub_blob_verified": true,
+      "database_page": "https://refractiveindex.info/?shelf=main&book=TiO2&page=Franta",
+      "source_comments_verbatim": "Film TiO<sub>2</sub>; Deposited by e-beam evaporation on c-Si; 99.6 nm thick film with an amorphous (very fine polycrystalline) structure; Heterogenous data processing combining ellipsometric and spectrophotometric measurements; Room temperature.",
+      "range_um": {
+        "n": [
+          0.114114,
+          125.124
+        ],
+        "k": [
+          0.114114,
+          125.124
+        ]
+      },
+      "visible_reference_linear_interpolation": [
+        {
+          "wavelength_nm": 400,
+          "n": 2.5664215870834317,
+          "k": 0.0007150450490069513
+        },
+        {
+          "wavelength_nm": 450,
+          "n": 2.4505272244445298,
+          "k": 2.2070532579655304e-05
+        },
+        {
+          "wavelength_nm": 500,
+          "n": 2.387005181621414,
+          "k": 1.3806553054005205e-06
+        },
+        {
+          "wavelength_nm": 550,
+          "n": 2.3465404803711234,
+          "k": 1.4426702086300703e-07
+        },
+        {
+          "wavelength_nm": 600,
+          "n": 2.3185745500493438,
+          "k": 2.174419697772613e-08
+        },
+        {
+          "wavelength_nm": 650,
+          "n": 2.298189026343612,
+          "k": 4.016992939128776e-09
+        },
+        {
+          "wavelength_nm": 700,
+          "n": 2.28273485070858,
+          "k": 5.029827376340286e-10
+        }
+      ],
+      "use": "selected baseline high-index thin-film layer; e-beam deposited representative sample, not a universal TiO2 constant",
+      "primary_doi": "https://doi.org/10.1117/12.2190104",
+      "primary_title": "Dispersion model for optical thin films applicable in wide spectral range",
+      "primary_institution_record": "https://is.muni.cz/publication/1384149/cs/Dispersion-model-for-optical-thin-films-applicable-in-wide-spectral-range/Franta-Necas-Ohlidal-Giglia",
+      "sample": {
+        "form": "thin film",
+        "phase_source_wording": "amorphous (very fine polycrystalline) structure",
+        "deposition": "e-beam evaporation",
+        "substrate": "c-Si",
+        "film_thickness_nm": 99.6,
+        "characterization_temperature": "room temperature",
+        "deposition_temperature": "not stated in the RII source"
+      },
+      "source_representation": "author-supplied tabulated nk; universal dispersion-model reconstruction from combined ellipsometric and spectrophotometric data",
+      "k_status": "The source provides nonzero fitted/model k over 400–700 nm. Preserve actual k values. Tiny red-visible k values are model predictions, not a claim of independent absorption measurement at 1e-7 to 1e-10 sensitivity; not measured exact zero.",
+      "blob_sha": "1ca2fd545b862a37fd28a41136339384b71fa1c1"
+    },
+    {
+      "material": "TiO2",
+      "dataset": "Siefke 2016",
+      "local_file": "TiO2-Siefke.yml",
+      "raw_url_pinned": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/TiO2/nk/Siefke.yml",
+      "sha256": "9b03947949e54cd98f58a989bd031a5fddb1a36a9d9f7fd64d5ff2bd68c2885c",
+      "bytes": 52162,
+      "pinned_GitHub_blob_verified": true,
+      "database_page": "https://refractiveindex.info/?shelf=main&book=TiO2&page=Siefke",
+      "source_comments_verbatim": "<b>Film:</b> prepared by ALD, 350 nm TiO<sub>2</sub>. See <a href=\\https://doi.org/10.1088/0957-4484/26/2/024003\">Ratzsch et al. <i>Nanotechnology</i> <b>26</b>, 024003 (2015)</a>.<br>\n<b>Measurement:</b> ellipsometer Jobin Yvon UVISEL2 VUV: 1.5–8.7 eV; ellipsometer Jobin Yvon UVISEL: 0.6–6.5 eV; ellipsometer Woollam IRVASE: 300–6500 cm<sup>-1</sup>; spectrophotometer McPhersom VUVas 2000: 5.6–10.3 eV; spectrophotometer Perkin Elmer Lambda 1050: 0.5-6.7 eV; spectrophotometer Bruker Vertex 80v: 80-7500 cm<sup>-1</sup>.<br>\n<b>Fit model:</b> universal dispersion model. See <a href=\"https://doi.org/10.1364/AO.54.009108\">Franta et al. <i>Appl. Opt.</i> <b>54</b>, 9108–9119 (2015)</a>.\"",
+      "range_um": {
+        "n": [
+          0.120181141,
+          125.1227623
+        ],
+        "k": [
+          0.120181141,
+          125.1227623
+        ]
+      },
+      "visible_reference_linear_interpolation": [
+        {
+          "wavelength_nm": 400,
+          "n": 2.681087048948272,
+          "k": 0.0006493397543983874
+        },
+        {
+          "wavelength_nm": 450,
+          "n": 2.5513399560941976,
+          "k": 1.3960429569362229e-05
+        },
+        {
+          "wavelength_nm": 500,
+          "n": 2.4807094543826596,
+          "k": 6.528010396102789e-07
+        },
+        {
+          "wavelength_nm": 550,
+          "n": 2.4358441671451443,
+          "k": 5.394549593893801e-08
+        },
+        {
+          "wavelength_nm": 600,
+          "n": 2.4048987583461114,
+          "k": 6.776955532917765e-09
+        },
+        {
+          "wavelength_nm": 650,
+          "n": 2.3823589870439568,
+          "k": 1.1177576672284613e-09
+        },
+        {
+          "wavelength_nm": 700,
+          "n": 2.3652780406760523,
+          "k": 1.6986748986681458e-10
+        }
+      ],
+      "use": "secondary cross-sample/process sensitivity: ALD film, not interchangeable with the e-beam Franta baseline",
+      "primary_doi": "https://doi.org/10.1002/adom.201600250",
+      "primary_title": "Materials pushing the application limits of wire grid polarizers further into the deep ultraviolet spectral range",
+      "primary_fulltext": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adom.201600250",
+      "deposition_reference_doi": "https://doi.org/10.1088/0957-4484/26/2/024003",
+      "sample": {
+        "form": "thin film",
+        "phase": "not specified by the consulted RII record or primary-paper section; do not infer rutile or anatase",
+        "deposition": "plasma-enhanced atomic layer deposition, Oxford Instruments OpAL; titanium tetraisopropoxide (TTIP) and oxygen plasma precursors",
+        "film_thickness_nm": 350,
+        "deposition_temperature_c": 100,
+        "deposition_temperature_source": "primary full paper, Section 3; 350 denotes thickness in nm, not deposition temperature"
+      },
+      "source_representation": "author-supplied tabulated nk; universal dispersion model fitted to broad-band ellipsometric and spectrophotometric measurements",
+      "k_status": "Nonzero universal-dispersion-model k, smaller than Franta and Zhukovsky at the sampled visible wavelengths. Keep actual values; very small subgap k remains model-derived rather than independently resolved absorption.",
+      "blob_sha": "5d68aafd3514d2ea38e5b41443cf189968209f35"
+    },
+    {
+      "material": "TiO2",
+      "dataset": "Zhukovsky 2015",
+      "local_file": "TiO2-Zhukovsky.yml",
+      "raw_url_pinned": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/TiO2/nk/Zhukovsky.yml",
+      "sha256": "29c854b803593dfcdc7e6703281cecefecf69826fd9ec107e8a1673c271a4c43",
+      "bytes": 23916,
+      "pinned_GitHub_blob_verified": true,
+      "database_page": "https://refractiveindex.info/?shelf=main&book=TiO2&page=Zhukovsky",
+      "source_comments_verbatim": "20 nm thick films on Si substrate deposited by atomic layer deposition (ALD) at 120 °C deposition temperature.",
+      "range_um": {
+        "n": [
+          0.211002,
+          1.689842
+        ],
+        "k": [
+          0.211002,
+          1.689842
+        ]
+      },
+      "visible_reference_linear_interpolation": [
+        {
+          "wavelength_nm": 400,
+          "n": 2.693913386464263,
+          "k": 0.008906261859582543
+        },
+        {
+          "wavelength_nm": 450,
+          "n": 2.556290534471853,
+          "k": 0.00143416761543327
+        },
+        {
+          "wavelength_nm": 500,
+          "n": 2.482152749051833,
+          "k": 0.0003320442477876109
+        },
+        {
+          "wavelength_nm": 550,
+          "n": 2.4358180448798987,
+          "k": 0.00010059544879898849
+        },
+        {
+          "wavelength_nm": 600,
+          "n": 2.4042411270543615,
+          "k": 3.778697850821744e-05
+        },
+        {
+          "wavelength_nm": 650,
+          "n": 2.381484055660974,
+          "k": 1.6160025300442728e-05
+        },
+        {
+          "wavelength_nm": 700,
+          "n": 2.3644150183660546,
+          "k": 8e-06
+        }
+      ],
+      "use": "secondary more-absorbing thin-film comparator; not the chosen low-loss baseline",
+      "primary_doi": "https://doi.org/10.1103/PhysRevLett.115.177402",
+      "primary_title": "Experimental demonstration of effective medium approximation breakdown in deeply subwavelength all-dielectric multilayers",
+      "sample": {
+        "form": "thin film",
+        "phase": "not specified by the RII source; do not assign bulk rutile",
+        "deposition": "atomic layer deposition",
+        "substrate": "Si",
+        "film_thickness_nm": 20,
+        "deposition_temperature_c": 120
+      },
+      "source_representation": "author-supplied tabulated nk; RII visible summary says n only, but the pinned raw YAML explicitly contains tabulated nk with finite k",
+      "k_status": "Pinned raw YAML supplies finite visible k. Preserve it, even though the live database title currently labels this n only. k400 is about 0.00891, appreciably larger than the Franta/Siefke alternatives. No claim of exact zero is supported.",
+      "blob_sha": "fcda72c305935846d3c8959014e1108ecb651e9e"
+    },
+    {
+      "material": "MgF2",
+      "dataset": "Franta 2017",
+      "use": "thin-film low-index layer",
+      "local_file": "MgF2-Franta.yml",
+      "raw_url_pinned": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/MgF2/nk/Franta.yml",
+      "sha256": "c51389d0430c21d8959388605266bc160abe14a04242cfa7ba8d1812bde2e58e",
+      "bytes": 173304,
+      "database_page": "https://refractiveindex.info/?shelf=main&book=MgF2&page=Franta",
+      "primary_doi": "https://doi.org/10.1016/j.apsusc.2016.09.149",
+      "primary_title": "Universal dispersion model for characterization of optical thin films over wide spectral range: Application to magnesium fluoride",
+      "primary_institution_record": "https://www.muni.cz/en/research/publications/1409188",
+      "sample": {
+        "form": "polycrystalline thin film",
+        "deposition": "e-beam evaporation",
+        "substrate": "c-Si",
+        "film_thickness_nm": 134.2,
+        "temperature": "room temperature"
+      },
+      "source_representation": "tabulated nk supplied by Daniel Franta; universal dispersion-model reconstruction from combined ellipsometric and spectrophotometric data",
+      "range_um": {
+        "n": [
+          0.0275043,
+          125.141
+        ],
+        "k": [
+          0.0275043,
+          125.141
+        ]
+      },
+      "k_status": "Source supplies nonzero fitted/model k. Very small visible k values are predictions of the fitted wide-band dispersion model, not evidence of independently measured absorption at 1e-15 to 1e-19 sensitivity and not measured exact zero.",
+      "assumptions": [
+        "Use the source-supplied k without replacing it by zero.",
+        "Do not generalize this sample to arbitrary deposition conditions."
+      ],
+      "visible_reference_linear_interpolation": [
+        {
+          "wavelength_nm": 400,
+          "n": 1.3898927474860476,
+          "k": 1.5230958433427772e-15
+        },
+        {
+          "wavelength_nm": 450,
+          "n": 1.3871472856762126,
+          "k": 1.6183878465461915e-16
+        },
+        {
+          "wavelength_nm": 500,
+          "n": 1.3851889255702432,
+          "k": 2.54912187105776e-17
+        },
+        {
+          "wavelength_nm": 550,
+          "n": 1.38373003842966,
+          "k": 5.417405507424563e-18
+        },
+        {
+          "wavelength_nm": 600,
+          "n": 1.3826029896414627,
+          "k": 1.45403007394163e-18
+        },
+        {
+          "wavelength_nm": 650,
+          "n": 1.3817042674491384,
+          "k": 4.693732165951322e-19
+        },
+        {
+          "wavelength_nm": 700,
+          "n": 1.3809671553629548,
+          "k": 1.7578727199411498e-19
+        }
+      ]
+    },
+    {
+      "material": "SiO2",
+      "dataset": "Malitson 1965 / Tan 1998",
+      "use": "bulk fused-silica substrate, not silica thin-film layer",
+      "local_file": "SiO2-Malitson.yml",
+      "raw_url_pinned": "https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/c5c2f188e848453def5970e347399d653df2ffc2/database/data/main/SiO2/nk/Malitson.yml",
+      "sha256": "c587670f397241ecb93a1af3279d6fe7ed67888e587e399074b0eab729c92b52",
+      "bytes": 973,
+      "database_page": "https://refractiveindex.info/?shelf=main&book=SiO2&page=Malitson",
+      "primary_doi": "https://doi.org/10.1364/JOSA.55.001205",
+      "primary_title": "Interspecimen comparison of the refractive index of fused silica",
+      "ir_extension_doi": "https://doi.org/10.1016/S0022-3093(97)00438-9",
+      "sample": {
+        "form": "bulk fused silica",
+        "temperature_c": 20
+      },
+      "source_representation": "n-only Sellmeier formula; no k DATA block",
+      "range_um": {
+        "n_original_Malitson": [
+          0.21,
+          3.71
+        ],
+        "n_database_with_Tan_extension": [
+          0.21,
+          6.7
+        ],
+        "k": null
+      },
+      "k_status": "k is not reported by this dataset. Any k=0 used in simulation must be labeled an explicit transparent-substrate/lossless assumption, not measured zero.",
+      "assumptions": [
+        "Use only as bulk fused-silica substrate.",
+        "For 400–700 nm substrate calculations, k=0 is an explicit lossless modeling assumption; Malitson supplies n only."
+      ],
+      "source_n_formula": {
+        "rii_type": 1,
+        "coefficients": [
+          0,
+          0.6961663,
+          0.0684043,
+          0.4079426,
+          0.1162414,
+          0.8974794,
+          9.896161
+        ]
+      }
+    }
+  ],
+  "assumptions": [
+    "Use scalar effective thin-film nk as tabulated by the author; do not substitute ordinary/extraordinary bulk rutile constants.",
+    "No high-index TiO2 k zeroing, clipping or extrapolation within 400–700 nm.",
+    "Data were copied exactly from the bundled pinned snapshot and their computed Git blob SHA1 matched GitHub fetch_file responses at the pinned upstream commit.",
+    "Linear interpolation in wavelength independently for n and k. Display precision does not imply experimental precision.",
+    "MgF2-Franta keeps its finite fitted/model k. SiO2-Malitson is n only; lossless bulk substrate k=0 remains an explicit modeling assumption, not measured zero."
+  ],
+  "retrieval_notes": [
+    "Franta paper metadata and model description verified in the Masaryk University author/institution record; the SPIE DOI resolver was not accessible via web tool, so no additional full-paper details were inferred.",
+    "Siefke primary full paper was read via publisher, Section 3, verifying 100 C deposition using TTIP and oxygen plasma. No source support was found for a 350 C temperature.",
+    "Zhukovsky 20 nm sample is not the selected baseline because its finite k400 is more than ten times Franta/Siefke at the sampled wavelength.",
+    "Jolivet amorphous/anatase and Sarkar films were inspected as extra alternatives. Their pinned YAML k is exactly zero at 400–700 nm; without the source fit and detection-limit qualifications, they were not selected as measured-zero low-loss evidence.",
+    "Kischkat visible nk was not used: its tabulated nk starts at 1.53846 um and does not cover the requested visible band."
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "name": "B-economy28_linear_chirp",
+  "model": "selected",
+  "layer_count": 28,
+  "total_thickness_nm": 2458.3961225312273,
+  "min_layer_nm": 41.37868581768544,
+  "max_layer_nm": 163.3334311338444,
+  "independent_audit": {
+    "base_step_nm": 0.1,
+    "offset_nm": 0.05,
+    "mesh_union_step_nm": 0.05,
+    "source_knots_included": true,
+    "samples_per_condition": 6288,
+    "all_bracketed_minima_refined": true,
+    "not_interval_proof": true
+  },
+  "worst": {
+    "wavelength_nm": 407.49921291277917,
+    "R": 0.9805918532201836,
+    "T": 0.018565217978651564,
+    "A": 0.0008429288011648287,
+    "angle_deg": 30.0,
+    "polarization": "p"
+  },
+  "conditions": [
+    {
+      "angle_deg": 0.0,
+      "polarization": "s",
+      "worst": {
+        "wavelength_nm": 400.0,
+        "R": 0.9806940193203918,
+        "T": 0.017580793348680967,
+        "A": 0.0017251873309272366
+      },
+      "extrema": [
+        {
+          "wavelength_nm": 422.28867192453225,
+          "R": 0.9855600045024612,
+          "bracket_nm": [
+            422.25,
+            422.35
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 445.0740432799132,
+          "R": 0.9851382066492508,
+          "bracket_nm": [
+            445.041,
+            445.1
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 468.3695066187811,
+          "R": 0.9882623340527054,
+          "bracket_nm": [
+            468.3,
+            468.4
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 496.59465079557583,
+          "R": 0.9880151455842687,
+          "bracket_nm": [
+            496.55,
+            496.65
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 522.9061055645724,
+          "R": 0.9914116967688131,
+          "bracket_nm": [
+            522.8770000000001,
+            522.95
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 577.3257252437002,
+          "R": 0.9873104609351042,
+          "bracket_nm": [
+            577.3,
+            577.4
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 606.0797850761766,
+          "R": 0.9876722149146531,
+          "bracket_nm": [
+            606.05,
+            606.15
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 671.2741638733063,
+          "R": 0.9891800574970427,
+          "bracket_nm": [
+            671.2,
+            671.3
+          ],
+          "success": true
+        }
+      ],
+      "max_A": 0.0017251873309272366,
+      "minimum_A": 7.287997270781499e-09,
+      "mean_R": 0.9923240948852479,
+      "mean_T": 0.007619101649841892,
+      "mean_A": 5.680346491013338e-05
+    },
+    {
+      "angle_deg": 0.0,
+      "polarization": "p",
+      "worst": {
+        "wavelength_nm": 400.0,
+        "R": 0.9806940193203911,
+        "T": 0.01758079334868092,
+        "A": 0.0017251873309279513
+      },
+      "extrema": [
+        {
+          "wavelength_nm": 422.2886719245065,
+          "R": 0.9855600045024614,
+          "bracket_nm": [
+            422.25,
+            422.35
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 445.0740432799132,
+          "R": 0.985138206649251,
+          "bracket_nm": [
+            445.041,
+            445.1
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 468.3695066187811,
+          "R": 0.9882623340527054,
+          "bracket_nm": [
+            468.3,
+            468.4
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 496.59465079554633,
+          "R": 0.9880151455842683,
+          "bracket_nm": [
+            496.55,
+            496.65
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 522.9061055646077,
+          "R": 0.9914116967688138,
+          "bracket_nm": [
+            522.8770000000001,
+            522.95
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 577.3257252443735,
+          "R": 0.9873104609351049,
+          "bracket_nm": [
+            577.3,
+            577.4
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 606.0797850760084,
+          "R": 0.9876722149146528,
+          "bracket_nm": [
+            606.05,
+            606.15
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 671.2741638733063,
+          "R": 0.9891800574970425,
+          "bracket_nm": [
+            671.2,
+            671.3
+          ],
+          "success": true
+        }
+      ],
+      "max_A": 0.0017251873309279513,
+      "minimum_A": 7.287997270781499e-09,
+      "mean_R": 0.9923240948852481,
+      "mean_T": 0.007619101649841892,
+      "mean_A": 5.680346491013205e-05
+    },
+    {
+      "angle_deg": 30.0,
+      "polarization": "s",
+      "worst": {
+        "wavelength_nm": 561.4072826521649,
+        "R": 0.9894879345899156,
+        "T": 0.010506099593213782,
+        "A": 5.9658168706441805e-06
+      },
+      "extrema": [
+        {
+          "wavelength_nm": 406.61207498392633,
+          "R": 0.9936172541342774,
+          "bracket_nm": [
+            406.55,
+            406.65
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 425.6675933112502,
+          "R": 0.9934648379046083,
+          "bracket_nm": [
+            425.6,
+            425.7
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 447.2956684684534,
+          "R": 0.9939850485969303,
+          "bracket_nm": [
+            447.25,
+            447.35
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 473.3445213614654,
+          "R": 0.9952541336869298,
+          "bracket_nm": [
+            473.3,
+            473.4
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 495.3341085675507,
+          "R": 0.997560887793793,
+          "bracket_nm": [
+            495.3,
+            495.4
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 561.4072826521649,
+          "R": 0.9894879345899156,
+          "bracket_nm": [
+            561.35,
+            561.45
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 648.4728781729934,
+          "R": 0.9949680653618141,
+          "bracket_nm": [
+            648.4,
+            648.5
+          ],
+          "success": true
+        }
+      ],
+      "max_A": 0.0009346135397115588,
+      "minimum_A": 5.086337463624385e-09,
+      "mean_R": 0.9967430341468093,
+      "mean_T": 0.0032116440874142473,
+      "mean_A": 4.532176577633133e-05
+    },
+    {
+      "angle_deg": 30.0,
+      "polarization": "p",
+      "worst": {
+        "wavelength_nm": 407.49921291277917,
+        "R": 0.9805918532201836,
+        "T": 0.018565217978651564,
+        "A": 0.0008429288011648287
+      },
+      "extrema": [
+        {
+          "wavelength_nm": 407.49921291277917,
+          "R": 0.9805918532201836,
+          "bracket_nm": [
+            407.45,
+            407.55
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 427.4997406758551,
+          "R": 0.9806141066285059,
+          "bracket_nm": [
+            427.45,
+            427.55
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 450.4998421464334,
+          "R": 0.9806305829512945,
+          "bracket_nm": [
+            450.45,
+            450.55
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 478.4966558691459,
+          "R": 0.9806569279512617,
+          "bracket_nm": [
+            478.45,
+            478.55
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 503.5062682787141,
+          "R": 0.9806595375314556,
+          "bracket_nm": [
+            503.45,
+            503.55
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 546.4938621550913,
+          "R": 0.9806678622366747,
+          "bracket_nm": [
+            546.45,
+            546.55
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 582.9214427734884,
+          "R": 0.9806935881816508,
+          "bracket_nm": [
+            582.85,
+            582.95
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 635.5004806145998,
+          "R": 0.9806765287029326,
+          "bracket_nm": [
+            635.45,
+            635.55
+          ],
+          "success": true
+        },
+        {
+          "wavelength_nm": 641.8000131354265,
+          "R": 0.98308364196158,
+          "bracket_nm": [
+            641.8,
+            641.85
+          ],
+          "success": true
+        }
+      ],
+      "max_A": 0.0014452141638750388,
+      "minimum_A": 8.877484657110468e-09,
+      "mean_R": 0.9864496559075345,
+      "mean_T": 0.013481470574152343,
+      "mean_A": 6.887351831317763e-05
+    }
+  ],
+  "production_crosschecks": [
+    {
+      "angle_deg": 0.0,
+      "polarization": "s",
+      "points": 31,
+      "max_abs_RTA_difference": 5.0306980803327406e-15
+    },
+    {
+      "angle_deg": 0.0,
+      "polarization": "p",
+      "points": 31,
+      "max_abs_RTA_difference": 4.9960036108132044e-15
+    },
+    {
+      "angle_deg": 30.0,
+      "polarization": "s",
+      "points": 32,
+      "max_abs_RTA_difference": 7.549516567451064e-15
+    },
+    {
+      "angle_deg": 30.0,
+      "polarization": "p",
+      "points": 32,
+      "max_abs_RTA_difference": 5.918876500032866e-15
+    }
+  ],
+  "max_abs_RTA_crosscheck": 7.549516567451064e-15,
+  "passed": true
+}

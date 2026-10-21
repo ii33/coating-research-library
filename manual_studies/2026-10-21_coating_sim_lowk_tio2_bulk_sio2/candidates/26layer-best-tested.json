@@ -1,0 +1,122 @@
+{
+  "name": "economy26_two_stack",
+  "labels": [
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L",
+    "H",
+    "L"
+  ],
+  "d": [
+    50.054265596876554,
+    88.64454761227628,
+    40.61994844879698,
+    81.41865766333709,
+    47.1850298175433,
+    93.50736588222553,
+    49.32854433040725,
+    91.26315989625627,
+    44.326387401939606,
+    79.96751340645679,
+    50.31534154058323,
+    154.58109575357454,
+    55.94358217912443,
+    104.07473393112865,
+    70.39420868232024,
+    124.94542581276991,
+    58.3127669576919,
+    121.39197775895533,
+    74.29226592221612,
+    109.57531651635455,
+    68.22261137502188,
+    132.0795350778193,
+    60.83172105805812,
+    154.19626528708255,
+    69.38120769354217,
+    169.8806471855802
+  ],
+  "centers_nm": [
+    440,
+    440,
+    440,
+    440,
+    440,
+    440,
+    625,
+    625,
+    625,
+    625,
+    625,
+    625,
+    625
+  ],
+  "family": "overlapped_HR_substacks",
+  "initial_worst": {
+    "R": 0.7772794162975774,
+    "wavelength_nm": 508.0,
+    "angle_deg": 30.0,
+    "polarization": "p"
+  },
+  "train_worst": {
+    "R": 0.9753792174136371,
+    "wavelength_nm": 557.0,
+    "angle_deg": 30.0,
+    "polarization": "p"
+  },
+  "stages": [
+    {
+      "method": "L-BFGS-B",
+      "beta": 100.0,
+      "success": true,
+      "iterations": 178,
+      "train_R": 0.9629103606873349,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "method": "L-BFGS-B",
+      "beta": 400.0,
+      "success": false,
+      "iterations": 180,
+      "train_R": 0.9721353294339116,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "method": "L-BFGS-B",
+      "beta": 1500.0,
+      "success": false,
+      "iterations": 180,
+      "train_R": 0.9744750932418176,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "method": "SLSQP_epigraph",
+      "success": true,
+      "iterations": 77,
+      "train_R": 0.9753792174136371,
+      "message": "Optimization terminated successfully"
+    }
+  ],
+  "elapsed_s": 2.5634796310041565,
+  "evaluations": 706
+}
