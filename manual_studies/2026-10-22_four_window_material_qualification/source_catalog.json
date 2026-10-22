@@ -1,0 +1,246 @@
+{
+  "retrieved_at_utc": "2026-10-22T09:46:00Z",
+  "target": {
+    "HR_nm": [
+      [
+        580,
+        920
+      ],
+      [
+        1044,
+        1084
+      ]
+    ],
+    "AR_um": [
+      [
+        3,
+        5
+      ],
+      [
+        7,
+        12
+      ]
+    ],
+    "aoi_deg": [
+      39,
+      51
+    ],
+    "surface": "single surface",
+    "substrate": "ZnS; grade not specified"
+  },
+  "global_policy": [
+    "These are research/screening sources, not a measured nk certification for the user deposition process.",
+    "No silent extrapolation outside an independently stated n or k characterization interval. Explicit source-model continuation or exported-zero branches are allowed for algorithm research when labeled, but do not establish measured zero absorption.",
+    "Do not combine n from one process and k from another under one calibrated material identity.",
+    "Scalar effective-isotropic film treatment is an assumption; no full tensor validation at39–51 degrees was located.",
+    "The author spreadsheets contain numerical n,k across their entire export ranges. Blank derived k fields are our conservative qualification choice, not an assertion that the original author files lack numbers. The original numerical k, including exported zeros, is retained in a separate column."
+  ],
+  "sources": [
+    {
+      "id": "YbF3_film_Merck_2019",
+      "url": "https://www.emdgroup.com/Products/PM/us/101601_YbF3_tcm2080_127462-us.pdf",
+      "locator": "Page2, sparse n,k table",
+      "kind": "thin film supplier table",
+      "n_range_um": [
+        0.25,
+        12.5
+      ],
+      "k_range_um": [
+        0.25,
+        12.5
+      ],
+      "sample": "No exact thickness, batch, instrument, uncertainty or measured specimen stated with table. Evaporation guidance:150–200C, preferably160C withZnS,0.8–1.5nm/s.",
+      "cautions": [
+        "Sparse10 points only; not a fully resolved spectrum.",
+        "Supplier notes water absorption near3 and6um.",
+        "Do not interpret transparency endpoint as a certified low-k bound."
+      ]
+    },
+    {
+      "id": "ZnS_film_Merck_2020",
+      "url": "https://www.emdgroup.com/Products/PM/us/Zinc%20sulfide_Patinal_EMD.pdf",
+      "locator": "Page2 n table; Page3 process guidance",
+      "kind": "thin film supplier n only",
+      "n_range_um": [
+        0.45,
+        13
+      ],
+      "k_range_um": null,
+      "cautions": [
+        "No numerical k table.",
+        "Optical properties depend on deposition pressure,rate and substrate temperature."
+      ]
+    },
+    {
+      "id": "ZnS_film_Mouchart_1992",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-31-7-885",
+      "doi": "10.1364/AO.31.000885",
+      "locator": "TableII; TableI specimen3.5um onMo/ZnSe",
+      "kind": "vacuum evaporated film n,k with uncertainties",
+      "n_range_um": [
+        3,
+        11
+      ],
+      "k_range_um": [
+        3,
+        11
+      ],
+      "cautions": [
+        "Cannot cover11–12um or1064nm.",
+        "Film n and k belong together. Table also includes index inhomogeneity.",
+        "Exact deposition temperature/rate not verified from accessible primary table."
+      ]
+    },
+    {
+      "id": "Amotchkina_2020",
+      "url": "https://opg.optica.org/ao/abstract.cfm?uri=ao-59-5-A40",
+      "doi": "10.1364/AO.59.000A40",
+      "author_description": "https://refractiveindex.info/download/data/2020/Amotchkina/Summary_for_RefractiveIndexINFO.pdf",
+      "kind": "author supplied model and spreadsheets",
+      "sample": "Electron-beam evaporation,substrate120C. ZnS:1.008um on3mmGe. YbF3:1.95um on1mmZnSe.",
+      "ZnS": {
+        "raw_data": "https://refractiveindex.info/download/data/2020/Amotchkina/ZnS_nk.xlsx",
+        "n_range_um": [
+          0.4,
+          14
+        ],
+        "published_database_k_interval_um": [
+          0.4,
+          1
+        ],
+        "actual_nonzero_export_interval_um": [
+          0.4,
+          0.99
+        ],
+        "k_formula": "0.03970*exp(-0.080715/lambda_um-7.074209*lambda_um)",
+        "warning": "Author spreadsheet setsk=0 at1–14um although analytic expression is nonzero. Treat outside published k interval as unknown/model-assumed,not measured zero. Exponential absorption tail cannot establish LWIR phonon loss.",
+        "numeric_export_k_range_um": [
+          0.4,
+          14
+        ],
+        "exported_zero_status": "Explicit model/exported zero, not a measured absorption bound."
+      },
+      "YbF3": {
+        "raw_data": "https://refractiveindex.info/download/data/2020/Amotchkina/YbF3_nk.xlsx",
+        "n_range_um": [
+          0.4,
+          14
+        ],
+        "published_database_k_interval_um": [
+          9,
+          14
+        ],
+        "warning": "Author sheet zeros below~9um do not provide measured absorption limits. k~0.0328 at12um, substantially larger than supplier sparse table. Use separate source scenarios,not an average.",
+        "numeric_export_k_range_um": [
+          0.4,
+          13.974951
+        ],
+        "exported_zero_status": "Explicit model/exported zero, not a measured absorption bound."
+      },
+      "model_level_use": "The original exported n,k values define reproducible explicit source-model simulation branches; algorithm validation may use them with provenance and assumptions. Qualification-masked derivatives are separate conservative screening aids."
+    },
+    {
+      "id": "ZnS_bulk_Hellma",
+      "url": "https://www.hellma-materials.com/en/optical-materials/ceramics-for-optics/zinc-sulfide-and-cleartran-2/",
+      "pdf": "https://www.hellma-materials.com/wp-content/uploads/2024/11/ZincSulfide_Cleartran.pdf",
+      "kind": "bulk CVD ZnS and Cleartran manufacturer data",
+      "n_range_um": [
+        0.4358,
+        13
+      ],
+      "k_range_um": null,
+      "cautions": [
+        "Bulk substrate only,not deposited film.",
+        "Both grades listcubic structure buttransparency/scatter differ.",
+        "Five discrete Cleartran absorption coefficients are not a dense k spectrum."
+      ]
+    },
+    {
+      "id": "ZnS_bulk_Li_1984",
+      "url": "https://srd.nist.gov/JPCRD/jpcrd240.pdf",
+      "doi": "10.1063/1.555705",
+      "kind": "bulk reference dispersion analysis",
+      "n_range_um": [
+        0.5,
+        14
+      ],
+      "k_range_um": null,
+      "cautions": [
+        "NIST primary PDF exists; localdownload returned403, no new numeric coefficients extracted.",
+        "Use as n-only source,not missing-k permission."
+      ]
+    },
+    {
+      "id": "ZnS_bulk_Querry_1987",
+      "url": "https://hitran.org/data/Aerosols/Aerosols%20data%20from%20previous%20HITRAN/Aerosols-2016/papers/querry_minerals_1987.pdf",
+      "data_url": "https://refractiveindex.info/database/data/main/ZnS/nk/Querry.yml",
+      "kind": "CVD bulk,not Cleartran-certified,KK reflectance inversion",
+      "n_range_um": [
+        0.22,
+        166.6667
+      ],
+      "k_range_um": [
+        0.22,
+        166.6667
+      ],
+      "sample": "Reportsection4.6,p71:high-purity opticallyisotropic RaytheonCVDZnS fragment,about1in diameter×0.5inthick; Table6pp74–80.",
+      "cautions": [
+        "Low-loss k is poorly resolved: Table6 givesDK~K atmany targetpoints, e.g1.06um K=.015,DK=.015 and10umK=.002,DK=.002.",
+        "312point machine-readableCC0 transcription available; original table verified locally.",
+        "Useful bounded sensitivity/boundaryscreening source,not a low-absorptioncertification or thin-filmreplacement."
+      ]
+    }
+  ],
+  "additional_primary_leads": [
+    {
+      "doi": "10.3788/IRLA20210371",
+      "url": "https://www.spacejournal.cn/hwyjggc/en/article/doi/10.3788/IRLA20210371",
+      "note": "YbF3/YF3 e-beam films onmultispectralZnS, claimed n,k0.4–14um. FullPDF requestreturned420; accessible primary abstract verified but numerical model/table not extracted."
+    },
+    {
+      "doi": "10.3390/coatings12111693",
+      "url": "https://www.mdpi.com/2079-6412/12/11/1693",
+      "note": "YbF3 IAD processcomparisons; n,k190–12000nm graphsonly identified; waterfeatures~2.9and6.1um; numericalparameter/table availability not verified because fullpage429 andofficialPDF403."
+    },
+    {
+      "doi": "10.3788/OPE.20172508.2038",
+      "url": "https://ope.lightpublishing.cn/en/article/doi/10.3788/OPE.20172508.2038/",
+      "note": "ZnS e-beam/IAD andvacuum annealing; IRn,kfigures through14um;12–14um phonon absorption noted. Accessible primaryPDF but fonts corrupttextextraction; no reproduciable numericmodel/table extracted."
+    },
+    {
+      "doi": "10.1117/1.3006123",
+      "erratum_doi": "10.1117/1.3223355",
+      "note": "HarrisCleartran2008 bulkn,k8–14um,24/100/200C; originalprimary+erratum notfully retrieved, so numericvalues notaccepted into catalog."
+    }
+  ],
+  "files": [
+    {
+      "file": "ZnS_film_Merck_2020_n_only.csv",
+      "sha256": "f89ab0a67103e0e714ec2aa4f9ab79867485ebe866f93d2e2869bac84fd038d3"
+    },
+    {
+      "file": "ZnS_film_Amotchkina_2020_masked_nk.csv",
+      "sha256": "c7a552138eb68c17fd6e031c750bfe048aab5154a6443dc208f3a771d076611b"
+    },
+    {
+      "file": "ZnS_bulk_Querry_1987_nk_screening_only.csv",
+      "sha256": "f0872de79468785b693d5ff860b3a5ab0d8ae33100b3a0f2cec4bc60576cd286"
+    },
+    {
+      "file": "ZnS_bulk_Hellma_n_only.csv",
+      "sha256": "a57ba3efad2127985b6c3917c6204dfad0acd057fda9d1cd25e8660fcafc9e9e"
+    },
+    {
+      "file": "YbF3_film_Merck_2019_sparse_nk.csv",
+      "sha256": "755c9e63994602d9130956ab83272f34c7da993173c4361543576462f4e89e41"
+    },
+    {
+      "file": "YbF3_film_Amotchkina_2020_masked_nk.csv",
+      "sha256": "ed4ec21bd76bf00ab8cae9df4684d371f5530db8965bf9fa4fab6001898ccf2b"
+    },
+    {
+      "file": "ZnS_film_Mouchart_1992_nk.csv",
+      "sha256": "435d9b39a797e9b1734b3a5737c07c65d1936de7ea3bc2cde23c286f7fb5e350"
+    }
+  ]
+}
