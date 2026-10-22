@@ -1,0 +1,120 @@
+{
+  "baseline_commit": "1051fd612170c90a1d09939168f2444c3b0056b5",
+  "retest_commit": "68835133025ffc1e74df2fe00921e4961f691efb",
+  "same_frozen_requests": true,
+  "same_parent_limits": {
+    "max_seconds": 300,
+    "max_evaluations": 6000,
+    "max_layers": 64
+  },
+  "same_training_grid": {
+    "wavelength_step_nm": 1,
+    "angles_deg": [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  "same_physics_and_audit": true,
+  "classification": "bounded_source_model_research_not_feasibility_or_manufacturing_acceptance",
+  "branches": {
+    "author_export": {
+      "baseline": {
+        "state": "not_found",
+        "reason": "time_limit",
+        "layers": 28,
+        "total_thickness_nm": 3566.171917957323,
+        "logical_evaluations": 138,
+        "wall_seconds": 304.22661393799353,
+        "training_max_error": 0.1525706996487625,
+        "bounded25_worst_R": [
+          0.8445041383546213,
+          0.9182102810216142,
+          0.1825706996487625,
+          0.153765589778642
+        ],
+        "new_minimax_trial_count": 0
+      },
+      "retest": {
+        "state": "not_found",
+        "reason": "time_limit",
+        "layers": 46,
+        "total_thickness_nm": 5590.405461411026,
+        "logical_evaluations": 56,
+        "wall_seconds": 303.68882426500204,
+        "training_max_error": 0.07165342282025833,
+        "bounded25_worst_R": [
+          0.9183465771797417,
+          0.9563430041056902,
+          0.09491199427936567,
+          0.09785301137879
+        ],
+        "new_minimax_trial_count": 52,
+        "first_joint_trial_seconds": 13.687
+      },
+      "training_max_error_reduction_fraction": 0.5303592171680815,
+      "bounded25_per_window_improvement_percentage_points": [
+        7.384243882512031,
+        3.8132723084076003,
+        8.765870536939682,
+        5.591257839985199
+      ],
+      "all_original_windows_met": false,
+      "audit_claim": "No returned candidate has a complete production audit; 25-angle1nm replay is a finite failure diagnostic, not dense/offset/extremum acceptance."
+    },
+    "supplier_ybf3": {
+      "baseline": {
+        "state": "not_found",
+        "reason": "time_limit",
+        "layers": 28,
+        "total_thickness_nm": 3476.163645633544,
+        "logical_evaluations": 136,
+        "wall_seconds": 304.4566529540025,
+        "training_max_error": 0.17816368610514488,
+        "bounded25_worst_R": [
+          0.8118363138948551,
+          0.8940002530107963,
+          0.18052369351370368,
+          0.1582911647343042
+        ],
+        "new_minimax_trial_count": 0
+      },
+      "retest": {
+        "state": "not_found",
+        "reason": "time_limit",
+        "layers": 50,
+        "total_thickness_nm": 5875.141110609097,
+        "logical_evaluations": 54,
+        "wall_seconds": 303.4665442070036,
+        "training_max_error": 0.06300788387172562,
+        "bounded25_worst_R": [
+          0.9269921161282744,
+          0.9411726576651327,
+          0.06923913712483214,
+          0.07870283608051785
+        ],
+        "new_minimax_trial_count": 50,
+        "first_joint_trial_seconds": 13.007
+      },
+      "training_max_error_reduction_fraction": 0.646348337031257,
+      "bounded25_per_window_improvement_percentage_points": [
+        11.515580223341926,
+        4.717240465433637,
+        11.128455638887154,
+        7.9588328653786355
+      ],
+      "all_original_windows_met": false,
+      "audit_claim": "No returned candidate has a complete production audit; 25-angle1nm replay is a finite failure diagnostic, not dense/offset/extremum acceptance."
+    }
+  }
+}
