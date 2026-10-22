@@ -1,0 +1,249 @@
+{
+  "family": "cold_ir_cap_ascending",
+  "branch": "supplier_ybf3",
+  "physical_sha256": "b9c512d625b58cb4b3fed4623df58bea5cd3f479c5b55fe46d02a79cf00c71b2",
+  "classification": "independent_1nm_25_discrete_angles_failure_diagnostic_not_dense_or_continuous_certificate",
+  "layer_count": 51,
+  "polarizations": {
+    "unpolarized": [
+      {
+        "objective_index": 0,
+        "window_nm": [
+          580.0,
+          920.0
+        ],
+        "minimum_actual": 0.9248307391939947,
+        "maximum_actual": 0.9920977870222751,
+        "worst_actual": 0.9248307391939947,
+        "worst_wavelength_nm": 894.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.06516926080600527
+      },
+      {
+        "objective_index": 1,
+        "window_nm": [
+          1044.0,
+          1084.0
+        ],
+        "minimum_actual": 0.9230886619560428,
+        "maximum_actual": 0.9883661645681723,
+        "worst_actual": 0.9230886619560428,
+        "worst_wavelength_nm": 1084.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.06691133804395721
+      },
+      {
+        "objective_index": 2,
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "minimum_actual": 0.004297464288093995,
+        "maximum_actual": 0.09765306557229726,
+        "worst_actual": 0.09765306557229726,
+        "worst_wavelength_nm": 3000.0,
+        "worst_angle_deg": 39.0,
+        "gap_to_threshold": 0.06765306557229726
+      },
+      {
+        "objective_index": 3,
+        "window_nm": [
+          7000.0,
+          12000.0
+        ],
+        "minimum_actual": 0.01588077584935085,
+        "maximum_actual": 0.09859605968270335,
+        "worst_actual": 0.09859605968270335,
+        "worst_wavelength_nm": 7165.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.06859605968270335
+      }
+    ],
+    "s": [
+      {
+        "objective_index": 0,
+        "window_nm": [
+          580.0,
+          920.0
+        ],
+        "minimum_actual": 0.9493357451782142,
+        "maximum_actual": 0.9964894004616801,
+        "worst_actual": 0.9493357451782142,
+        "worst_wavelength_nm": 715.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.04066425482178582
+      },
+      {
+        "objective_index": 1,
+        "window_nm": [
+          1044.0,
+          1084.0
+        ],
+        "minimum_actual": 0.9644607793278663,
+        "maximum_actual": 0.9963059656695964,
+        "worst_actual": 0.9644607793278663,
+        "worst_wavelength_nm": 1082.0,
+        "worst_angle_deg": 49.0,
+        "gap_to_threshold": 0.025539220672133656
+      },
+      {
+        "objective_index": 2,
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "minimum_actual": 0.008109313634400343,
+        "maximum_actual": 0.17173036171636416,
+        "worst_actual": 0.17173036171636416,
+        "worst_wavelength_nm": 3226.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.14173036171636416
+      },
+      {
+        "objective_index": 3,
+        "window_nm": [
+          7000.0,
+          12000.0
+        ],
+        "minimum_actual": 0.0275030562038081,
+        "maximum_actual": 0.18242961945891997,
+        "worst_actual": 0.18242961945891997,
+        "worst_wavelength_nm": 7213.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.15242961945891997
+      }
+    ],
+    "p": [
+      {
+        "objective_index": 0,
+        "window_nm": [
+          580.0,
+          920.0
+        ],
+        "minimum_actual": 0.862412312291134,
+        "maximum_actual": 0.9895070057744124,
+        "worst_actual": 0.862412312291134,
+        "worst_wavelength_nm": 682.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.12758768770886597
+      },
+      {
+        "objective_index": 1,
+        "window_nm": [
+          1044.0,
+          1084.0
+        ],
+        "minimum_actual": 0.8654127568349707,
+        "maximum_actual": 0.9849904804079602,
+        "worst_actual": 0.8654127568349707,
+        "worst_wavelength_nm": 1084.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.12458724316502934
+      },
+      {
+        "objective_index": 2,
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "minimum_actual": 3.6609789043862426e-07,
+        "maximum_actual": 0.0445439723405829,
+        "worst_actual": 0.0445439723405829,
+        "worst_wavelength_nm": 3000.0,
+        "worst_angle_deg": 39.0,
+        "gap_to_threshold": 0.014543972340582908
+      },
+      {
+        "objective_index": 3,
+        "window_nm": [
+          7000.0,
+          12000.0
+        ],
+        "minimum_actual": 0.00014107975786763796,
+        "maximum_actual": 0.040312636100863185,
+        "worst_actual": 0.040312636100863185,
+        "worst_wavelength_nm": 10164.0,
+        "worst_angle_deg": 39.0,
+        "gap_to_threshold": 0.01031263610086319
+      }
+    ]
+  },
+  "completed": true,
+  "training_replay": {
+    "windows": [
+      {
+        "objective_index": 0,
+        "window_nm": [
+          580.0,
+          920.0
+        ],
+        "minimum_actual": 0.9248307391939947,
+        "maximum_actual": 0.9920977870222751,
+        "worst_actual": 0.9248307391939947,
+        "worst_wavelength_nm": 894.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.06516926080600527
+      },
+      {
+        "objective_index": 1,
+        "window_nm": [
+          1044.0,
+          1084.0
+        ],
+        "minimum_actual": 0.9230886619560428,
+        "maximum_actual": 0.9883661645681723,
+        "worst_actual": 0.9230886619560428,
+        "worst_wavelength_nm": 1084.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.06691133804395721
+      },
+      {
+        "objective_index": 2,
+        "window_nm": [
+          3000.0,
+          5000.0
+        ],
+        "minimum_actual": 0.004297464288093995,
+        "maximum_actual": 0.09765306557229726,
+        "worst_actual": 0.09765306557229726,
+        "worst_wavelength_nm": 3000.0,
+        "worst_angle_deg": 39.0,
+        "gap_to_threshold": 0.06765306557229726
+      },
+      {
+        "objective_index": 3,
+        "window_nm": [
+          7000.0,
+          12000.0
+        ],
+        "minimum_actual": 0.01588077584935085,
+        "maximum_actual": 0.09859605968270335,
+        "worst_actual": 0.09859605968270335,
+        "worst_wavelength_nm": 7165.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.06859605968270335
+      }
+    ],
+    "max_violation": 0.06859605968270335,
+    "original_max_violation": 0.06859605968270335,
+    "max_violation_abs_difference": 0.0,
+    "worst_actual_abs_differences": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "array_identity": {
+    "comparison_points": 95992,
+    "max_absolute_difference": 0,
+    "exactly_reproduced": true
+  },
+  "training_in_25angle_identity": {
+    "matching_points": 95992,
+    "maximum_absolute_difference": 0,
+    "exactly_reproduced": true
+  },
+  "seconds": 14.45060851600283,
+  "targets_met": false
+}

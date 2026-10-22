@@ -1,0 +1,672 @@
+{
+  "family": "cold_ir_end_connection_descending",
+  "branch": "supplier_ybf3",
+  "classification": "bounded_cold_generated_source_model_research",
+  "stages": [
+    {
+      "name": "architecture_beta64",
+      "beta": 64,
+      "grouped": true,
+      "reason": "stage_time_slice",
+      "completed_solver_return": false,
+      "iterations": null,
+      "physical_candidates": 14,
+      "seconds": 50.07469954300177,
+      "best_max_violation": 0.2421692944035363
+    },
+    {
+      "name": "architecture_beta256",
+      "beta": 256,
+      "grouped": true,
+      "reason": "stage_time_slice",
+      "completed_solver_return": false,
+      "iterations": null,
+      "physical_candidates": 14,
+      "seconds": 50.08882180599903,
+      "best_max_violation": 0.21781128154952728
+    },
+    {
+      "name": "all_layers_beta512",
+      "beta": 512,
+      "grouped": false,
+      "reason": "stage_time_slice",
+      "completed_solver_return": false,
+      "iterations": null,
+      "physical_candidates": 14,
+      "seconds": 50.008315751001646,
+      "best_max_violation": 0.2169078062446991
+    },
+    {
+      "name": "all_layers_beta2048",
+      "beta": 2048,
+      "grouped": false,
+      "reason": "stage_time_slice",
+      "completed_solver_return": false,
+      "iterations": null,
+      "physical_candidates": 13,
+      "seconds": 49.87893038200127,
+      "best_max_violation": 0.2107911375994096
+    }
+  ],
+  "search_seconds": 200.05180680500052,
+  "complete_training_candidates": 55,
+  "completed_kernel_calls": 3006,
+  "completed_wavelength_angle_points": 5508206,
+  "incomplete_cancelled_trials": 4,
+  "best": {
+    "design": {
+      "schema_version": 1,
+      "id": "four-window-model-supplier_ybf3",
+      "name": "User four-window source-model supplier_ybf3",
+      "layer_order": "substrate_outward",
+      "front_layers": [
+        {
+          "id": "cold_ir_end_connection_descending-substrate",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 845.1780814602198,
+            "unit": "nm"
+          },
+          "note": "Research IR phase matching seed, not a demonstrated AR prescription"
+        },
+        {
+          "id": "auto-multi-hr-0-3-0",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 119.66109480336922,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-1",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 58.86603837035805,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-2",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 119.77130854311235,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-3",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 58.79226119823739,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-4",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 119.86135072609125,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-5",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 58.74293169465285,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-6",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 119.93282273571054,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-7",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 58.71677255477511,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-8",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 120.01355896108589,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-9",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 58.71961742953381,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-10",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 147.54550811982722,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-11",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 70.76369007414714,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-12",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 147.7946554913462,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-13",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 70.93148769602251,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-14",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 147.96927396751997,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-15",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 71.11517400097294,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-16",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 147.90059726059968,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-17",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 71.21399227998116,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-18",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 147.59477886017464,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-19",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 71.18269542704817,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-20",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 121.43545664155538,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-21",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 102.0533335039805,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-22",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 121.29378764213952,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-23",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 101.94906305507473,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-24",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 121.49813171373223,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-25",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 102.02075201067497,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-26",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 121.79840595248618,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-27",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 101.93909154191392,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-28",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 121.81906003776604,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-29",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 101.74489885621182,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-30",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 188.01228721496486,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-31",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 86.12017765876445,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-32",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 188.05775112929268,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-33",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 86.0924104428751,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-34",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 187.94426550839154,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-35",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 86.22892773101826,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-36",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 187.84654476664352,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-37",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 86.32710882148461,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-38",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 187.59666793872697,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-39",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 86.48532723589513,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "cold_ir_end_connection_descending-connection",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 182.1301447630071,
+            "unit": "nm"
+          },
+          "note": "Research IR phase matching seed, not a demonstrated AR prescription"
+        },
+        {
+          "id": "auto-multi-hr-0-3-40",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 202.56917862680743,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-41",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 98.14150353398162,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-42",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 202.65159768526004,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-43",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 98.02505376264449,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-44",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 202.80214560773422,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-45",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 97.92978653815122,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-46",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 202.9699011216063,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-47",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 97.8874578036851,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-48",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 202.8990365255359,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "auto-multi-hr-0-3-49",
+          "material_id": "model_zns_film_amotchkina2020_original_export",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 97.9044378071246,
+            "unit": "nm"
+          },
+          "note": "Project separated-window source-derived HR proposal"
+        },
+        {
+          "id": "cold_ir_end_connection_descending-air",
+          "material_id": "model_ybf3_film_merck2019_sparse",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 502.98861258141073,
+            "unit": "nm"
+          },
+          "note": "Research IR phase matching seed, not a demonstrated AR prescription"
+        }
+      ],
+      "back_layers": [],
+      "reference_wavelength_nm": 550.0,
+      "substrate": {
+        "material_id": "model_zns_bulk_querry1987_screening",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 1.0,
+          "unit": "mm"
+        },
+        "sides": "single",
+        "mode": "auto"
+      },
+      "incident_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "exit_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "assume_lossless": false,
+      "use_k": true,
+      "note": "",
+      "first_surface": "front",
+      "expression": {
+        "text": "",
+        "symbols": {},
+        "in_sync": true
+      }
+    },
+    "physical_sha256": "a65c9407af37d6b0def22e75ddc2af85b864748d38767b12bafd0837b103c8a8",
+    "max_violation": 0.2107911375994096,
+    "window_balanced_mse": 0.009847125636932613,
+    "windows": [
+      {
+        "objective_index": 0,
+        "minimum_actual": 0.7960848253559758,
+        "maximum_actual": 0.9956221980558468,
+        "worst_actual": 0.7960848253559758,
+        "worst_wavelength_nm": 599.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.1939151746440242
+      },
+      {
+        "objective_index": 1,
+        "minimum_actual": 0.8388797440248623,
+        "maximum_actual": 0.9781297619877245,
+        "worst_actual": 0.8388797440248623,
+        "worst_wavelength_nm": 1070.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.15112025597513767
+      },
+      {
+        "objective_index": 2,
+        "minimum_actual": 0.0067056221231745015,
+        "maximum_actual": 0.2407911375994096,
+        "worst_actual": 0.2407911375994096,
+        "worst_wavelength_nm": 3872.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.2107911375994096
+      },
+      {
+        "objective_index": 3,
+        "minimum_actual": 0.013028348188675622,
+        "maximum_actual": 0.24000496002900745,
+        "worst_actual": 0.24000496002900745,
+        "worst_wavelength_nm": 7593.0,
+        "worst_angle_deg": 51.0,
+        "gap_to_threshold": 0.21000496002900745
+      }
+    ],
+    "evaluation": 55,
+    "elapsed_seconds": 197.23517093500413
+  },
+  "targets_met": false,
+  "accepted": false,
+  "peak_rss_kib": 217328,
+  "training_targets_met": false
+}

@@ -1,0 +1,98 @@
+{
+  "frozen_before_search": true,
+  "branch": "supplier_ybf3",
+  "branch_reason": "Prior supplier worst violation 0.0630079 is smaller than author 0.0716534; complete independently sourced Merck YbF3 n/k retained as the more absorptive stress branch. Results are conditional on this branch only.",
+  "source_commit": "68835133025ffc1e74df2fe00921e4961f691efb",
+  "request_bytes_sha256": "573a8c616456fe28fd31979981f2270da6718819717d3de345bc6989111b26b6",
+  "original_constraints": "Single front coating on semi-infinite bulk Querry ZnS, unpolarized HR>=99% on580-920 and1044-1084nm, AR strictly<3% on3000-5000 and7000-12000nm,39-51deg;5nm minimum;64layer cap;no user thickness caps.",
+  "training": "Every trial evaluates all 95992 wavelength-angle samples:1nm inclusive wavelengths,13angles39..51deg. Full coherent joint optics, source complex n+ik, no extrapolation.",
+  "families": [
+    {
+      "name": "cold_hr_ascending",
+      "kind": "none",
+      "order": "ascending",
+      "layer_count": 50,
+      "physical_sha256": "6364254439f7f73571cee8dcfb8d2b19b8773356a571031f97953d2c66d082b2"
+    },
+    {
+      "name": "cold_ir_cap_ascending",
+      "kind": "cap",
+      "order": "ascending",
+      "layer_count": 51,
+      "physical_sha256": "b279d166031e2bb152f132c2a03909f800f79bdf329d9133920780abc0cc36ad"
+    },
+    {
+      "name": "cold_ir_triad_ascending",
+      "kind": "triad",
+      "order": "ascending",
+      "layer_count": 53,
+      "physical_sha256": "7fabe23abc83602082ae61ace85135d6c3883cb490b202bde5e6818569d9ae72"
+    },
+    {
+      "name": "cold_ir_end_connection_ascending",
+      "kind": "end_connection",
+      "order": "ascending",
+      "layer_count": 53,
+      "physical_sha256": "c5f07259a89680f63dc64865fe2af231d95a505ded2bb13169fb1edd0d2475d8"
+    },
+    {
+      "name": "cold_ir_triad_descending",
+      "kind": "triad",
+      "order": "descending",
+      "layer_count": 53,
+      "physical_sha256": "b7d62aec9b83368a6bf0c213b29290116d97ab7665215bfc09142f5098e7ecdd"
+    },
+    {
+      "name": "cold_ir_end_connection_descending",
+      "kind": "end_connection",
+      "order": "descending",
+      "layer_count": 53,
+      "physical_sha256": "7b603e575b70538f525627ef8dcc71d29b427fdb256a58ea5105c6d87509c471"
+    }
+  ],
+  "budget": {
+    "per_family_search_seconds": 200,
+    "aggregate_search_seconds": 1200,
+    "per_stage_seconds": 50,
+    "unspent_stage_or_family_time": "not transferred",
+    "optical_call_cancel_boundary": "checked between all52 objective-angle kernel calls; a late cancelled incomplete trial is not archived",
+    "search": "sequential serial CPU with math threads1; initialization plus all stages charged to family. Setup and independent replay/report separately timed."
+  },
+  "stages": [
+    {
+      "name": "architecture_beta64",
+      "coordinates": "10 HR center/material shared multiplicative phase scales plus independent IR thicknesses",
+      "beta": 64,
+      "max_iterations": 40,
+      "max_line_search": 8
+    },
+    {
+      "name": "architecture_beta256",
+      "coordinates": "same shared architecture",
+      "beta": 256,
+      "max_iterations": 40,
+      "max_line_search": 8
+    },
+    {
+      "name": "all_layers_beta512",
+      "coordinates": "all physical layer thicknesses",
+      "beta": 512,
+      "max_iterations": 40,
+      "max_line_search": 8
+    },
+    {
+      "name": "all_layers_beta2048",
+      "coordinates": "all physical layer thicknesses",
+      "beta": 2048,
+      "max_iterations": 40,
+      "max_line_search": 8
+    }
+  ],
+  "guide": "L-BFGS-B with exact analytic production optical thickness Jacobians and chain rule. Loss=(1/beta)log(sum_i sum_j exp(beta*v_ij)/(4*N_i)), v=lower-R forHR or R-upper forAR. Equal window mass is only a search guide, never acceptance. Archive lexicographic original maximum positive violation then per-window-averaged squared positive violation.",
+  "research_bounds": "Shared HR scales[0.65,1.45] relative to cold seed; each IR physical layer[5nm,2.5*cold_thickness]. All-layer stages recenter d0 +/- 0.5 quarter-wave using550nm forHR or6000nm forIR, intersect5nm minimum. These are declared finite search boxes, not user/manufacturing limits.",
+  "replay": "Independent normal prepared evaluator,1nm25angles0.5deg,unpolarized and s/p diagnostics for every final family; reproduce training values on best and compare prior failed candidate. If a training pass, complete production0.1nm+shift/extrema audit and25angleindependent check before any acceptance claim. Failed seeds get no large production audit.",
+  "stopping": "All six200second family slices completed or solver stages returned early; no broad time extension. A bounded negative is not infeasibility. No software repository edit or publication.",
+  "warm_start_policy": "No warm starts in this frozen experiment. Any later continuation must be separately labelled and budgeted.",
+  "time_utc": "2026-10-22T11:02:27Z",
+  "script_sha256": "966878f9172a161843e80cd01b2564efdb422a3d51adb7b766a1c053122c55a4"
+}
