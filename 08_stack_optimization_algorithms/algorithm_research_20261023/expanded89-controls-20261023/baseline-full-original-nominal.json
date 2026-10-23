@@ -1,0 +1,58 @@
+{
+  "nominal_pass": true,
+  "condition_count": 184600,
+  "forward_chunks": 225,
+  "windows": [
+    {
+      "objective_index": 0,
+      "passed": true,
+      "min_R": 0.990471796024005,
+      "max_R": 0.9998375955562799,
+      "max_signed_violation": -0.0004717960240050445,
+      "worst_location": {
+        "wavelength_nm": 618.0,
+        "angle_deg": 51.0,
+        "R": 0.990471796024005
+      }
+    },
+    {
+      "objective_index": 1,
+      "passed": true,
+      "min_R": 0.9904718138822008,
+      "max_R": 0.9951554482264028,
+      "max_signed_violation": -0.0004718138822008555,
+      "worst_location": {
+        "wavelength_nm": 1084.0,
+        "angle_deg": 51.0,
+        "R": 0.9904718138822008
+      }
+    },
+    {
+      "objective_index": 2,
+      "passed": true,
+      "min_R": 0.013024731758449287,
+      "max_R": 0.029528254608182234,
+      "max_signed_violation": -0.00047174539181776484,
+      "worst_location": {
+        "wavelength_nm": 3000.0,
+        "angle_deg": 39.0,
+        "R": 0.029528254608182234
+      }
+    },
+    {
+      "objective_index": 3,
+      "passed": true,
+      "min_R": 0.005925995211105301,
+      "max_R": 0.029528199209434895,
+      "max_signed_violation": -0.00047180079056510435,
+      "worst_location": {
+        "wavelength_nm": 7000.0,
+        "angle_deg": 39.0,
+        "R": 0.029528199209434895
+      }
+    }
+  ],
+  "max_signed_violation": -0.00047174539181776484,
+  "seconds_observed": 6.853878779002116,
+  "continuous_certificate": false
+}

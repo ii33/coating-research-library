@@ -1,0 +1,5 @@
+label,training_seed,error_amplitude,state,reason,evaluations,iterations,forward,jacobian,training_baseline,raw_training_best,qualified_training_best,raw_full_nominal_pass,qualified_full_nominal_pass,full_nominal_candidate_count,full_nominal_rejections,seconds_observed
+seed-2026102341-relative-0.005,2026102341,0.005,partial,iteration_limit,21,20,13860,13860,0.0040641672536294235,0.0009216836857729449,0.0010706379975689018,False,True,18,8,390.78868226800114
+seed-2026102341-relative-0.01,2026102341,0.01,partial,constrained_nominal_rejected,21,20,13860,13860,0.008946266699785911,0.0030807899452862664,0.00757129783567239,False,True,11,8,302.7236019330012
+seed-2026102342-relative-0.005,2026102342,0.005,partial,iteration_limit,21,20,13860,13860,0.0032020847258006427,0.0009847700714468097,0.0010575421233922633,False,True,21,3,410.9023269080062
+seed-2026102342-relative-0.01,2026102342,0.01,partial,constrained_nominal_rejected,21,20,13860,13860,0.0071293757466028215,0.003723288220534915,0.005560547445157549,False,True,11,6,318.35213414998725

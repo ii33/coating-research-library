@@ -1,0 +1,5408 @@
+[
+  {
+    "label": "seed-2026102341-relative-0.005",
+    "progress": [
+      {
+        "stage": "freezing",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 0,
+        "best_robustness_value": null,
+        "message": "",
+        "seconds_observed": 0.033001853997120634
+      },
+      {
+        "stage": "baseline",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 0,
+        "best_robustness_value": null,
+        "message": "",
+        "seconds_observed": 0.055493606996606104
+      },
+      {
+        "stage": "baseline_complete",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 1,
+        "best_robustness_value": 0.0040641672536294235,
+        "message": "",
+        "seconds_observed": 11.600277927005664
+      },
+      {
+        "stage": "search",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 1,
+        "best_robustness_value": 0.0040641672536294235,
+        "message": "",
+        "seconds_observed": 11.807573726007831
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 2,
+        "best_robustness_value": 0.0038623772935160103,
+        "message": "",
+        "seconds_observed": 30.19291664499906
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 1,
+        "evaluations": 2,
+        "best_robustness_value": 0.0038623772935160103,
+        "message": "",
+        "seconds_observed": 30.233785784002976
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 1,
+        "evaluations": 3,
+        "best_robustness_value": 0.0028649608954011,
+        "message": "",
+        "seconds_observed": 48.07029233399953
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 2,
+        "evaluations": 3,
+        "best_robustness_value": 0.0028649608954011,
+        "message": "",
+        "seconds_observed": 48.11603377600841
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 3,
+        "evaluations": 4,
+        "best_robustness_value": 0.0028649608954011,
+        "message": "",
+        "seconds_observed": 58.65991112300253
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 4,
+        "evaluations": 5,
+        "best_robustness_value": 0.0028649608954011,
+        "message": "",
+        "seconds_observed": 70.31831651400717
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 5,
+        "evaluations": 6,
+        "best_robustness_value": 0.0028649608954011,
+        "message": "",
+        "seconds_observed": 80.69237838900881
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 5,
+        "evaluations": 7,
+        "best_robustness_value": 0.0013932277154912187,
+        "message": "",
+        "seconds_observed": 98.33827418000146
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 6,
+        "evaluations": 7,
+        "best_robustness_value": 0.0013932277154912187,
+        "message": "",
+        "seconds_observed": 98.37877419299912
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 6,
+        "evaluations": 8,
+        "best_robustness_value": 0.0013247669454488076,
+        "message": "",
+        "seconds_observed": 117.33348227100214
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 7,
+        "evaluations": 8,
+        "best_robustness_value": 0.0013247669454488076,
+        "message": "",
+        "seconds_observed": 117.37669683700369
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 7,
+        "evaluations": 9,
+        "best_robustness_value": 0.0013119801963943356,
+        "message": "",
+        "seconds_observed": 134.7514583220036
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 8,
+        "evaluations": 9,
+        "best_robustness_value": 0.0013119801963943356,
+        "message": "",
+        "seconds_observed": 134.80063629199867
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 8,
+        "evaluations": 10,
+        "best_robustness_value": 0.0012559095575218615,
+        "message": "",
+        "seconds_observed": 156.27291540399892
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 9,
+        "evaluations": 10,
+        "best_robustness_value": 0.0012559095575218615,
+        "message": "",
+        "seconds_observed": 156.31366026400065
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 9,
+        "evaluations": 11,
+        "best_robustness_value": 0.001166774607275281,
+        "message": "",
+        "seconds_observed": 176.16022510900802
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 10,
+        "evaluations": 11,
+        "best_robustness_value": 0.001166774607275281,
+        "message": "",
+        "seconds_observed": 176.20250995300012
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 10,
+        "evaluations": 12,
+        "best_robustness_value": 0.0010782111616923773,
+        "message": "",
+        "seconds_observed": 194.30765676300507
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 11,
+        "evaluations": 12,
+        "best_robustness_value": 0.0010782111616923773,
+        "message": "",
+        "seconds_observed": 194.35530994500732
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 11,
+        "evaluations": 13,
+        "best_robustness_value": 0.0010706379975689018,
+        "message": "",
+        "seconds_observed": 212.85363477500505
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 12,
+        "evaluations": 13,
+        "best_robustness_value": 0.0010706379975689018,
+        "message": "",
+        "seconds_observed": 212.9166742689995
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 12,
+        "evaluations": 14,
+        "best_robustness_value": 0.0010563582934435267,
+        "message": "",
+        "seconds_observed": 229.74570427200524
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 13,
+        "evaluations": 14,
+        "best_robustness_value": 0.0010563582934435267,
+        "message": "",
+        "seconds_observed": 229.80388893099735
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 13,
+        "evaluations": 15,
+        "best_robustness_value": 0.0010469174012968097,
+        "message": "",
+        "seconds_observed": 248.3730376159947
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 14,
+        "evaluations": 15,
+        "best_robustness_value": 0.0010469174012968097,
+        "message": "",
+        "seconds_observed": 248.43141023500357
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 14,
+        "evaluations": 16,
+        "best_robustness_value": 0.001028975989505243,
+        "message": "",
+        "seconds_observed": 265.19139525000355
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 15,
+        "evaluations": 16,
+        "best_robustness_value": 0.001028975989505243,
+        "message": "",
+        "seconds_observed": 265.23068499099463
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 15,
+        "evaluations": 17,
+        "best_robustness_value": 0.0010250980975545776,
+        "message": "",
+        "seconds_observed": 283.29336439899635
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 16,
+        "evaluations": 17,
+        "best_robustness_value": 0.0010250980975545776,
+        "message": "",
+        "seconds_observed": 283.36347250599647
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 16,
+        "evaluations": 18,
+        "best_robustness_value": 0.0010155564735330191,
+        "message": "",
+        "seconds_observed": 299.7521742789977
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 17,
+        "evaluations": 18,
+        "best_robustness_value": 0.0010155564735330191,
+        "message": "",
+        "seconds_observed": 299.79874202200153
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 17,
+        "evaluations": 19,
+        "best_robustness_value": 0.001002960087085114,
+        "message": "",
+        "seconds_observed": 315.87502954300726
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 18,
+        "evaluations": 19,
+        "best_robustness_value": 0.001002960087085114,
+        "message": "",
+        "seconds_observed": 315.9243274409964
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 18,
+        "evaluations": 20,
+        "best_robustness_value": 0.0009675012663263871,
+        "message": "",
+        "seconds_observed": 331.3491355139995
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 19,
+        "evaluations": 20,
+        "best_robustness_value": 0.0009675012663263871,
+        "message": "",
+        "seconds_observed": 331.3968654509954
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 19,
+        "evaluations": 21,
+        "best_robustness_value": 0.0009216836857729449,
+        "message": "",
+        "seconds_observed": 347.98691584100015
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 20,
+        "evaluations": 21,
+        "best_robustness_value": 0.0009216836857729449,
+        "message": "",
+        "seconds_observed": 348.02818528100033
+      },
+      {
+        "stage": "finished",
+        "state": "partial",
+        "iterations": 20,
+        "evaluations": 21,
+        "best_robustness_value": 0.0009216836857729449,
+        "message": "Constrained solver iteration limit; a fully evaluated nominal-feasible incumbent is retained.",
+        "seconds_observed": 348.07766339200316
+      }
+    ],
+    "full_nominal_qualification_gates": [
+      {
+        "evaluations": 1,
+        "iterations": 0,
+        "training_worst": 0.0040641672536294235,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.990471796024005,
+              "max_R": 0.9998375955562799,
+              "max_signed_violation": -0.0004717960240050445,
+              "worst_location": {
+                "wavelength_nm": 618.0,
+                "angle_deg": 51.0,
+                "R": 0.990471796024005
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904718138822008,
+              "max_R": 0.9951554482264028,
+              "max_signed_violation": -0.0004718138822008555,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904718138822008
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013024731758449287,
+              "max_R": 0.029528254608182234,
+              "max_signed_violation": -0.00047174539181776484,
+              "worst_location": {
+                "wavelength_nm": 3000.0,
+                "angle_deg": 39.0,
+                "R": 0.029528254608182234
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005925995211105301,
+              "max_R": 0.029528199209434895,
+              "max_signed_violation": -0.00047180079056510435,
+              "worst_location": {
+                "wavelength_nm": 7000.0,
+                "angle_deg": 39.0,
+                "R": 0.029528199209434895
+              }
+            }
+          ],
+          "max_signed_violation": -0.00047174539181776484,
+          "seconds_observed": 6.853076797997346,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "20903578dedb500286b44df5f22d78d3e3450fc4e2dd712f7dab2027bfbf5cc6"
+      },
+      {
+        "evaluations": 2,
+        "iterations": 0,
+        "training_worst": 0.0038623772935160103,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9904431001704486,
+              "max_R": 0.999837464767226,
+              "max_signed_violation": -0.00044310017044857375,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9904431001704486
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.990469344619529,
+              "max_R": 0.9951532336272031,
+              "max_signed_violation": -0.00046934461952896633,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.990469344619529
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013040824373741858,
+              "max_R": 0.02957804390296856,
+              "max_signed_violation": -0.00042195609703143955,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02957804390296856
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005930717594505892,
+              "max_R": 0.02954403532161482,
+              "max_signed_violation": -0.00045596467838517757,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02954403532161482
+              }
+            }
+          ],
+          "max_signed_violation": -0.00042195609703143955,
+          "seconds_observed": 6.487429451997741,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "ea182cdbb85cae7635f6cead316a32486b1838215cdd1c5e1373880bc82653fd"
+      },
+      {
+        "evaluations": 3,
+        "iterations": 1,
+        "training_worst": 0.0028649608954011,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.990288892885972,
+              "max_R": 0.9998367758578683,
+              "max_signed_violation": -0.000288892885972003,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.990288892885972
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.990455080562567,
+              "max_R": 0.9951415805725603,
+              "max_signed_violation": -0.0004550805625670451,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.990455080562567
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013121891419045524,
+              "max_R": 0.029828188113053336,
+              "max_signed_violation": -0.00017181188694666283,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029828188113053336
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005954307746494279,
+              "max_R": 0.02962314978207643,
+              "max_signed_violation": -0.00037685021792356957,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02962314978207643
+              }
+            }
+          ],
+          "max_signed_violation": -0.00017181188694666283,
+          "seconds_observed": 6.6884257170022465,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "0e3e9a3556144d18514c076f84353933c70958b2879cfbc3f1cf859f05196e8f"
+      },
+      {
+        "evaluations": 7,
+        "iterations": 5,
+        "training_worst": 0.0013932277154912187,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902201799755561,
+              "max_R": 0.9998386055953692,
+              "max_signed_violation": -0.0002201799755561229,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9902201799755561
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904247295434963,
+              "max_R": 0.9951481106390783,
+              "max_signed_violation": -0.0004247295434962606,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9904247295434963
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013130241329671314,
+              "max_R": 0.029918029100496096,
+              "max_signed_violation": -8.197089950390257e-05,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029918029100496096
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005982380465735717,
+              "max_R": 0.02974053836714701,
+              "max_signed_violation": -0.0002594616328529878,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02974053836714701
+              }
+            }
+          ],
+          "max_signed_violation": -8.197089950390257e-05,
+          "seconds_observed": 6.215195381999365,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "ca55a2d612a5a0e269d724a6424f4652d93cf54e2bb6a62c5c3d839cc4f3c16f"
+      },
+      {
+        "evaluations": 8,
+        "iterations": 6,
+        "training_worst": 0.0013247669454488076,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902600230321768,
+              "max_R": 0.9998389774997514,
+              "max_signed_violation": -0.00026002303217675937,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9902600230321768
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904201270405446,
+              "max_R": 0.9951509858092704,
+              "max_signed_violation": -0.0004201270405446156,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9904201270405446
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.01311598364857941,
+              "max_R": 0.029888952585254723,
+              "max_signed_violation": -0.00011104741474527585,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029888952585254723
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005983293391222005,
+              "max_R": 0.029746650255078035,
+              "max_signed_violation": -0.0002533497449219643,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029746650255078035
+              }
+            }
+          ],
+          "max_signed_violation": -0.00011104741474527585,
+          "seconds_observed": 6.711710962001234,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "a19dbf0d5ce3cfda423cc94ffbd1a0ba53d701c02c5b31441f9d99b36eebbab0"
+      },
+      {
+        "evaluations": 9,
+        "iterations": 7,
+        "training_worst": 0.0013119801963943356,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902659874311927,
+              "max_R": 0.9998388920053791,
+              "max_signed_violation": -0.0002659874311926602,
+              "worst_location": {
+                "wavelength_nm": 920.0,
+                "angle_deg": 51.0,
+                "R": 0.9902659874311927
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904198020931181,
+              "max_R": 0.9951505414178945,
+              "max_signed_violation": -0.00041980209311809347,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9904198020931181
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.01311331432281664,
+              "max_R": 0.02988835453364952,
+              "max_signed_violation": -0.00011164546635047956,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02988835453364952
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005983522944327642,
+              "max_R": 0.02974758374220121,
+              "max_signed_violation": -0.0002524162577987876,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02974758374220121
+              }
+            }
+          ],
+          "max_signed_violation": -0.00011164546635047956,
+          "seconds_observed": 6.186173723996035,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "4da4cb3b7530bd0bc79f1cd09d76ed0191170950ed00a91a136921ece6485c7a"
+      },
+      {
+        "evaluations": 10,
+        "iterations": 8,
+        "training_worst": 0.0012559095575218615,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902807656879393,
+              "max_R": 0.9998383886845068,
+              "max_signed_violation": -0.00028076568793933276,
+              "worst_location": {
+                "wavelength_nm": 920.0,
+                "angle_deg": 51.0,
+                "R": 0.9902807656879393
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904190585334223,
+              "max_R": 0.995147728295506,
+              "max_signed_violation": -0.0004190585334222785,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9904190585334223
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013102435781955035,
+              "max_R": 0.029891046108423594,
+              "max_signed_violation": -0.00010895389157640489,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029891046108423594
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005984710305397245,
+              "max_R": 0.02975164567526569,
+              "max_signed_violation": -0.00024835432473430813,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02975164567526569
+              }
+            }
+          ],
+          "max_signed_violation": -0.00010895389157640489,
+          "seconds_observed": 6.748221410001861,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "3992dc1db43634c1982ae9d862da90141b76b439d978ab49df1d3e1928bd416d"
+      },
+      {
+        "evaluations": 11,
+        "iterations": 9,
+        "training_worst": 0.001166774607275281,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902039475402571,
+              "max_R": 0.9998378674001213,
+              "max_signed_violation": -0.00020394754025709894,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9902039475402571
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904099981564125,
+              "max_R": 0.9951471709611479,
+              "max_signed_violation": -0.0004099981564125166,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9904099981564125
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013053233622592517,
+              "max_R": 0.029828819314073093,
+              "max_signed_violation": -0.0001711806859269055,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029828819314073093
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005984723295945138,
+              "max_R": 0.029756226125346508,
+              "max_signed_violation": -0.0002437738746534912,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029756226125346508
+              }
+            }
+          ],
+          "max_signed_violation": -0.0001711806859269055,
+          "seconds_observed": 6.673842675998458,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "635ee5d3ab1e66ae84aad217546ed23a04510f8a66b6f987667e32492c68e249"
+      },
+      {
+        "evaluations": 12,
+        "iterations": 10,
+        "training_worst": 0.0010782111616923773,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9900109764306704,
+              "max_R": 0.9998356693492312,
+              "max_signed_violation": -1.0976430670384119e-05,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9900109764306704
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903376793491241,
+              "max_R": 0.9951393099291956,
+              "max_signed_violation": -0.00033767934912409814,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903376793491241
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.012960435853473862,
+              "max_R": 0.029963077536731914,
+              "max_signed_violation": -3.692246326808535e-05,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.029963077536731914
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005983688322364656,
+              "max_R": 0.029757189486854074,
+              "max_signed_violation": -0.0002428105131459246,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029757189486854074
+              }
+            }
+          ],
+          "max_signed_violation": -1.0976430670384119e-05,
+          "seconds_observed": 6.387124211003538,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "05ecc24e263d867f08158af966203f36640d55d9d01bc7a260395d4289ca83d6"
+      },
+      {
+        "evaluations": 13,
+        "iterations": 11,
+        "training_worst": 0.0010706379975689018,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9900115929231899,
+              "max_R": 0.9998355969388091,
+              "max_signed_violation": -1.1592923189862603e-05,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9900115929231899
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903367372557899,
+              "max_R": 0.9951401196685614,
+              "max_signed_violation": -0.00033673725578986513,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903367372557899
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.012956663779253294,
+              "max_R": 0.029980419744397968,
+              "max_signed_violation": -1.9580255602030805e-05,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.029980419744397968
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005983373793186636,
+              "max_R": 0.029757403583324505,
+              "max_signed_violation": -0.0002425964166754939,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029757403583324505
+              }
+            }
+          ],
+          "max_signed_violation": -1.1592923189862603e-05,
+          "seconds_observed": 6.320336467993911,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "5ffcb1ecb9b82bafff29ee1f6d5e49e5393231bdd3813a09d7f9fe0c4819961f"
+      },
+      {
+        "evaluations": 14,
+        "iterations": 12,
+        "training_worst": 0.0010563582934435267,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9900068582681587,
+              "max_R": 0.9998353012459973,
+              "max_signed_violation": -6.85826815871593e-06,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9900068582681587
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903324145954655,
+              "max_R": 0.9951406712519955,
+              "max_signed_violation": -0.00033241459546551333,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903324145954655
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012948733585928797,
+              "max_R": 0.03001874344230224,
+              "max_signed_violation": 1.8743442302241592e-05,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.03001874344230224
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005982682382855991,
+              "max_R": 0.029757432945896486,
+              "max_signed_violation": -0.00024256705410351243,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029757432945896486
+              }
+            }
+          ],
+          "max_signed_violation": 1.8743442302241592e-05,
+          "seconds_observed": 6.495945996008231,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "43224948631db6efe965219d695bf832e9635b59b7ac2b8d509d32460408e697"
+      },
+      {
+        "evaluations": 15,
+        "iterations": 13,
+        "training_worst": 0.0010469174012968097,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.989999413327901,
+              "max_R": 0.9998352565732809,
+              "max_signed_violation": 5.866720990121976e-07,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.989999413327901
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903303036916924,
+              "max_R": 0.9951411943176338,
+              "max_signed_violation": -0.0003303036916924018,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903303036916924
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012944970769382622,
+              "max_R": 0.030043743441356945,
+              "max_signed_violation": 4.374344135694638e-05,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.030043743441356945
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005982154912523009,
+              "max_R": 0.029755948572708135,
+              "max_signed_violation": -0.0002440514272918637,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029755948572708135
+              }
+            }
+          ],
+          "max_signed_violation": 4.374344135694638e-05,
+          "seconds_observed": 6.014905036994605,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "4c656f6c3949a492426e374e654b9b182991ba08f016d368a63ba176d422c9a5"
+      },
+      {
+        "evaluations": 16,
+        "iterations": 14,
+        "training_worst": 0.001028975989505243,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9899869022868828,
+              "max_R": 0.999835204553389,
+              "max_signed_violation": 1.3097713117193877e-05,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9899869022868828
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903268557852586,
+              "max_R": 0.9951421802458695,
+              "max_signed_violation": -0.00032685578525859516,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903268557852586
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012938567919700302,
+              "max_R": 0.030089744472149925,
+              "max_signed_violation": 8.974447214992604e-05,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.030089744472149925
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005981245481302399,
+              "max_R": 0.029753256380590176,
+              "max_signed_violation": -0.0002467436194098227,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029753256380590176
+              }
+            }
+          ],
+          "max_signed_violation": 8.974447214992604e-05,
+          "seconds_observed": 6.451876803999767,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "164a286f64271dd2efef1ab47b2269c4b732d0ab0a4e6e8e42fe2245e25ff51b"
+      },
+      {
+        "evaluations": 17,
+        "iterations": 15,
+        "training_worst": 0.0010250980975545776,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.989985644360418,
+              "max_R": 0.9998352345504723,
+              "max_signed_violation": 1.4355639581964397e-05,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.989985644360418
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903266951081136,
+              "max_R": 0.9951421405395224,
+              "max_signed_violation": -0.0003266951081135616,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903266951081136
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012938661724786936,
+              "max_R": 0.03009751322137144,
+              "max_signed_violation": 9.751322137144247e-05,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.03009751322137144
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005981206054074354,
+              "max_R": 0.029752687382003335,
+              "max_signed_violation": -0.0002473126179966638,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029752687382003335
+              }
+            }
+          ],
+          "max_signed_violation": 9.751322137144247e-05,
+          "seconds_observed": 7.590794126008404,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "bfe3e30e4047f760969ab860055a0c325b2c79376a9cf0a92eb0cbfe3f0df2ca"
+      },
+      {
+        "evaluations": 18,
+        "iterations": 16,
+        "training_worst": 0.0010155564735330191,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9899946836910373,
+              "max_R": 0.9998354651619575,
+              "max_signed_violation": 5.3163089627217275e-06,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9899946836910373
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903307953165827,
+              "max_R": 0.9951429865956003,
+              "max_signed_violation": -0.00033079531658275485,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903307953165827
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012942583297975542,
+              "max_R": 0.030112653370085174,
+              "max_signed_violation": 0.00011265337008517506,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.030112653370085174
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005981000929359728,
+              "max_R": 0.02975129787222642,
+              "max_signed_violation": -0.00024870212777357986,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02975129787222642
+              }
+            }
+          ],
+          "max_signed_violation": 0.00011265337008517506,
+          "seconds_observed": 6.094895349000581,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "7c8ef259ff2ce7d0e99298dc37110d5952132fbc130e5ee30ea81b5fe9c9e707"
+      },
+      {
+        "evaluations": 19,
+        "iterations": 17,
+        "training_worst": 0.001002960087085114,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9900005538968264,
+              "max_R": 0.9998356774183437,
+              "max_signed_violation": -5.538968264051647e-07,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9900005538968264
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903330259312744,
+              "max_R": 0.9951422998626855,
+              "max_signed_violation": -0.00033302593127437774,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903330259312744
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012947287035017026,
+              "max_R": 0.03012925508839218,
+              "max_signed_violation": 0.00012925508839218072,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.03012925508839218
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.00598128383179564,
+              "max_R": 0.029750537125204188,
+              "max_signed_violation": -0.0002494628747958111,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029750537125204188
+              }
+            }
+          ],
+          "max_signed_violation": 0.00012925508839218072,
+          "seconds_observed": 6.273477657989133,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "dbc6d228bb7089be3af2037285e97a9a199cb00c30cfb9d5db9342cde293a644"
+      },
+      {
+        "evaluations": 20,
+        "iterations": 18,
+        "training_worst": 0.0009675012663263871,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9900039307872535,
+              "max_R": 0.999836010531245,
+              "max_signed_violation": -3.930787253469958e-06,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9900039307872535
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903319522575829,
+              "max_R": 0.9951372232147686,
+              "max_signed_violation": -0.00033195225758286817,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903319522575829
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012957158219045223,
+              "max_R": 0.030177387973978512,
+              "max_signed_violation": 0.0001773879739785135,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.030177387973978512
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005982945317775254,
+              "max_R": 0.029750310557088242,
+              "max_signed_violation": -0.00024968944291175674,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029750310557088242
+              }
+            }
+          ],
+          "max_signed_violation": 0.0001773879739785135,
+          "seconds_observed": 5.836970732008922,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "91653d6c874f93b59ca13fe457a18a8d455ebfc1124368e8566c42516893b01f"
+      },
+      {
+        "evaluations": 21,
+        "iterations": 19,
+        "training_worst": 0.0009216836857729449,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9900237326333381,
+              "max_R": 0.9998369311836499,
+              "max_signed_violation": -2.3732633338102715e-05,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9900237326333381
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903374907011885,
+              "max_R": 0.9951303323319639,
+              "max_signed_violation": -0.000337490701188492,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903374907011885
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012984284324797202,
+              "max_R": 0.03023992354425184,
+              "max_signed_violation": 0.00023992354425184104,
+              "worst_location": {
+                "wavelength_nm": 3022.0,
+                "angle_deg": 51.0,
+                "R": 0.03023992354425184
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005988965119181644,
+              "max_R": 0.029762820511780835,
+              "max_signed_violation": -0.00023717948821916357,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029762820511780835
+              }
+            }
+          ],
+          "max_signed_violation": 0.00023992354425184104,
+          "seconds_observed": 6.829106557008345,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "690bfb72a6203b1494cbbaec4c5625fd2ab7a9e766ca334a670e4a252c0de62b"
+      }
+    ]
+  },
+  {
+    "label": "seed-2026102341-relative-0.01",
+    "progress": [
+      {
+        "stage": "freezing",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 0,
+        "best_robustness_value": null,
+        "message": "",
+        "seconds_observed": 0.03898709900386166
+      },
+      {
+        "stage": "baseline",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 0,
+        "best_robustness_value": null,
+        "message": "",
+        "seconds_observed": 0.06827135999628808
+      },
+      {
+        "stage": "baseline_complete",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 1,
+        "best_robustness_value": 0.008946266699785911,
+        "message": "",
+        "seconds_observed": 14.594760191001114
+      },
+      {
+        "stage": "search",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 1,
+        "best_robustness_value": 0.008946266699785911,
+        "message": "",
+        "seconds_observed": 14.601932552992366
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 2,
+        "best_robustness_value": 0.008714940397766227,
+        "message": "",
+        "seconds_observed": 32.47159146500053
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 1,
+        "evaluations": 2,
+        "best_robustness_value": 0.008714940397766227,
+        "message": "",
+        "seconds_observed": 32.51958659599768
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 1,
+        "evaluations": 3,
+        "best_robustness_value": 0.00757129783567239,
+        "message": "",
+        "seconds_observed": 49.673429767994094
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 2,
+        "evaluations": 3,
+        "best_robustness_value": 0.00757129783567239,
+        "message": "",
+        "seconds_observed": 49.71693703699566
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 3,
+        "evaluations": 4,
+        "best_robustness_value": 0.00757129783567239,
+        "message": "",
+        "seconds_observed": 58.05926556099439
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 4,
+        "evaluations": 5,
+        "best_robustness_value": 0.00757129783567239,
+        "message": "",
+        "seconds_observed": 66.55836152999836
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 5,
+        "evaluations": 6,
+        "best_robustness_value": 0.00757129783567239,
+        "message": "",
+        "seconds_observed": 75.25837073200091
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 6,
+        "evaluations": 7,
+        "best_robustness_value": 0.00757129783567239,
+        "message": "",
+        "seconds_observed": 84.36104051799339
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 7,
+        "evaluations": 8,
+        "best_robustness_value": 0.00757129783567239,
+        "message": "",
+        "seconds_observed": 93.72243934699509
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 7,
+        "evaluations": 9,
+        "best_robustness_value": 0.004422264869674786,
+        "message": "",
+        "seconds_observed": 109.51144232400111
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 8,
+        "evaluations": 9,
+        "best_robustness_value": 0.004422264869674786,
+        "message": "",
+        "seconds_observed": 109.56143465900095
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 9,
+        "evaluations": 10,
+        "best_robustness_value": 0.004422264869674786,
+        "message": "",
+        "seconds_observed": 118.5054454869969
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 10,
+        "evaluations": 11,
+        "best_robustness_value": 0.004422264869674786,
+        "message": "",
+        "seconds_observed": 127.32472185700317
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 11,
+        "evaluations": 12,
+        "best_robustness_value": 0.004422264869674786,
+        "message": "",
+        "seconds_observed": 136.28653741900052
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 11,
+        "evaluations": 13,
+        "best_robustness_value": 0.003293624112821414,
+        "message": "",
+        "seconds_observed": 151.8291192500037
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 12,
+        "evaluations": 13,
+        "best_robustness_value": 0.003293624112821414,
+        "message": "",
+        "seconds_observed": 151.87529310600075
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 12,
+        "evaluations": 14,
+        "best_robustness_value": 0.003212679406904173,
+        "message": "",
+        "seconds_observed": 167.6719115369924
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 13,
+        "evaluations": 14,
+        "best_robustness_value": 0.003212679406904173,
+        "message": "",
+        "seconds_observed": 167.71495507800137
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 13,
+        "evaluations": 15,
+        "best_robustness_value": 0.003188502691223505,
+        "message": "",
+        "seconds_observed": 183.3934848189965
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 14,
+        "evaluations": 15,
+        "best_robustness_value": 0.003188502691223505,
+        "message": "",
+        "seconds_observed": 183.44083564399625
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 14,
+        "evaluations": 16,
+        "best_robustness_value": 0.0031792563674752916,
+        "message": "",
+        "seconds_observed": 199.63284514499537
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 15,
+        "evaluations": 16,
+        "best_robustness_value": 0.0031792563674752916,
+        "message": "",
+        "seconds_observed": 199.67682508399594
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 15,
+        "evaluations": 17,
+        "best_robustness_value": 0.0031669139655350342,
+        "message": "",
+        "seconds_observed": 215.95285430199874
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 16,
+        "evaluations": 17,
+        "best_robustness_value": 0.0031669139655350342,
+        "message": "",
+        "seconds_observed": 216.00473350800166
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 16,
+        "evaluations": 18,
+        "best_robustness_value": 0.0031211996782858353,
+        "message": "",
+        "seconds_observed": 231.2374540019955
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 17,
+        "evaluations": 18,
+        "best_robustness_value": 0.0031211996782858353,
+        "message": "",
+        "seconds_observed": 231.28782670899818
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 18,
+        "evaluations": 19,
+        "best_robustness_value": 0.0031211996782858353,
+        "message": "",
+        "seconds_observed": 239.76528274999873
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 18,
+        "evaluations": 20,
+        "best_robustness_value": 0.0030807899452862664,
+        "message": "",
+        "seconds_observed": 254.8375509710022
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 19,
+        "evaluations": 20,
+        "best_robustness_value": 0.0030807899452862664,
+        "message": "",
+        "seconds_observed": 254.88101917799213
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 20,
+        "evaluations": 21,
+        "best_robustness_value": 0.0030807899452862664,
+        "message": "",
+        "seconds_observed": 263.40634907099593
+      },
+      {
+        "stage": "finished",
+        "state": "partial",
+        "iterations": 20,
+        "evaluations": 21,
+        "best_robustness_value": 0.0030807899452862664,
+        "message": "Solver's final trial fails exact original nominal bounds; only a previously evaluated nominal-feasible incumbent is retained.",
+        "seconds_observed": 263.4576781259966
+      }
+    ],
+    "full_nominal_qualification_gates": [
+      {
+        "evaluations": 1,
+        "iterations": 0,
+        "training_worst": 0.008946266699785911,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.990471796024005,
+              "max_R": 0.9998375955562799,
+              "max_signed_violation": -0.0004717960240050445,
+              "worst_location": {
+                "wavelength_nm": 618.0,
+                "angle_deg": 51.0,
+                "R": 0.990471796024005
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904718138822008,
+              "max_R": 0.9951554482264028,
+              "max_signed_violation": -0.0004718138822008555,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904718138822008
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013024731758449287,
+              "max_R": 0.029528254608182234,
+              "max_signed_violation": -0.00047174539181776484,
+              "worst_location": {
+                "wavelength_nm": 3000.0,
+                "angle_deg": 39.0,
+                "R": 0.029528254608182234
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005925995211105301,
+              "max_R": 0.029528199209434895,
+              "max_signed_violation": -0.00047180079056510435,
+              "worst_location": {
+                "wavelength_nm": 7000.0,
+                "angle_deg": 39.0,
+                "R": 0.029528199209434895
+              }
+            }
+          ],
+          "max_signed_violation": -0.00047174539181776484,
+          "seconds_observed": 6.853076797997346,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "20903578dedb500286b44df5f22d78d3e3450fc4e2dd712f7dab2027bfbf5cc6"
+      },
+      {
+        "evaluations": 2,
+        "iterations": 0,
+        "training_worst": 0.008714940397766227,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9904409028256469,
+              "max_R": 0.9998374573767137,
+              "max_signed_violation": -0.00044090282564690497,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9904409028256469
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904697396411057,
+              "max_R": 0.9951531079449722,
+              "max_signed_violation": -0.0004697396411057486,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9904697396411057
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013041733762901807,
+              "max_R": 0.0295814012088766,
+              "max_signed_violation": -0.0004185987911233986,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.0295814012088766
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005931009097259384,
+              "max_R": 0.029545216938604162,
+              "max_signed_violation": -0.0004547830613958366,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029545216938604162
+              }
+            }
+          ],
+          "max_signed_violation": -0.0004185987911233986,
+          "seconds_observed": 5.820229965989711,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "5ef009d455dbd1899dc14bc88f3ed88ffab962eaeb5c3b538264da5198ee9777"
+      },
+      {
+        "evaluations": 3,
+        "iterations": 1,
+        "training_worst": 0.00757129783567239,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902754984170388,
+              "max_R": 0.9998367260643494,
+              "max_signed_violation": -0.00027549841703877753,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9902754984170388
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904571127341095,
+              "max_R": 0.9951407294118291,
+              "max_signed_violation": -0.0004571127341095327,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9904571127341095
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013127447079057886,
+              "max_R": 0.029848528968250035,
+              "max_signed_violation": -0.000151471031749964,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029848528968250035
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005956064328524067,
+              "max_R": 0.029630240012538563,
+              "max_signed_violation": -0.0003697599874614363,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029630240012538563
+              }
+            }
+          ],
+          "max_signed_violation": -0.000151471031749964,
+          "seconds_observed": 6.109200639999472,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "294e9ab212c2bc65121d0c8c1774121a6a73066244e81f9b399aa9d492e09f42"
+      },
+      {
+        "evaluations": 9,
+        "iterations": 7,
+        "training_worst": 0.004422264869674786,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9892260758612144,
+              "max_R": 0.9998483524103641,
+              "max_signed_violation": 0.000773924138785631,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9892260758612144
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903242983477742,
+              "max_R": 0.9951695475593092,
+              "max_signed_violation": -0.0003242983477742545,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9903242983477742
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013204863048993043,
+              "max_R": 0.02997463507961469,
+              "max_signed_violation": -2.5364920385309575e-05,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02997463507961469
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006012163807001964,
+              "max_R": 0.029838496858653172,
+              "max_signed_violation": -0.00016150314134682695,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029838496858653172
+              }
+            }
+          ],
+          "max_signed_violation": 0.000773924138785631,
+          "seconds_observed": 5.90784031500516,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "1519e26df95feefd6d80621cebb1068499be1b7407563279090364007b382e2a"
+      },
+      {
+        "evaluations": 13,
+        "iterations": 11,
+        "training_worst": 0.003293624112821414,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9888215090470512,
+              "max_R": 0.9998567912717397,
+              "max_signed_violation": 0.001178490952948752,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9888215090470512
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903139860091825,
+              "max_R": 0.9951887800509113,
+              "max_signed_violation": -0.00031398600918253194,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9903139860091825
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.013128811432427327,
+              "max_R": 0.030045176932562728,
+              "max_signed_violation": 4.5176932562729366e-05,
+              "worst_location": {
+                "wavelength_nm": 4651.0,
+                "angle_deg": 51.0,
+                "R": 0.030045176932562728
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006050520993300215,
+              "max_R": 0.02992680417705785,
+              "max_signed_violation": -7.319582294215005e-05,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02992680417705785
+              }
+            }
+          ],
+          "max_signed_violation": 0.001178490952948752,
+          "seconds_observed": 5.932771766005317,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "aaabcd5ee1eafe3076353293aa0311c06243c1e06a350c834391496882b734e4"
+      },
+      {
+        "evaluations": 14,
+        "iterations": 12,
+        "training_worst": 0.003212679406904173,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9888554061708048,
+              "max_R": 0.9998567072262201,
+              "max_signed_violation": 0.001144593829195184,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9888554061708048
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902972985716955,
+              "max_R": 0.9951862810576528,
+              "max_signed_violation": -0.00029729857169547014,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9902972985716955
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.01314918603495814,
+              "max_R": 0.030056369868959678,
+              "max_signed_violation": 5.6369868959679076e-05,
+              "worst_location": {
+                "wavelength_nm": 4652.0,
+                "angle_deg": 51.0,
+                "R": 0.030056369868959678
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006055100968020701,
+              "max_R": 0.029940578177848585,
+              "max_signed_violation": -5.9421822151413395e-05,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029940578177848585
+              }
+            }
+          ],
+          "max_signed_violation": 0.001144593829195184,
+          "seconds_observed": 6.105458293997799,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "e5839fe7581cac1d4c7373fd81f84b46075ad861ae574556968be6f64f2e0599"
+      },
+      {
+        "evaluations": 15,
+        "iterations": 13,
+        "training_worst": 0.003188502691223505,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9888273296224079,
+              "max_R": 0.9998569461767977,
+              "max_signed_violation": 0.0011726703775920555,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9888273296224079
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902916899204325,
+              "max_R": 0.9951884642891342,
+              "max_signed_violation": -0.00029168992043249187,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9902916899204325
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.013136260949811539,
+              "max_R": 0.030046072964406135,
+              "max_signed_violation": 4.607296440613598e-05,
+              "worst_location": {
+                "wavelength_nm": 4652.0,
+                "angle_deg": 51.0,
+                "R": 0.030046072964406135
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006052074359978193,
+              "max_R": 0.02992958418875518,
+              "max_signed_violation": -7.04158112448186e-05,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02992958418875518
+              }
+            }
+          ],
+          "max_signed_violation": 0.0011726703775920555,
+          "seconds_observed": 6.101378038991243,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "cb9e3eb58beeafcaafa0a248666e2b87c1de03706fed7bef48d835c9227cca39"
+      },
+      {
+        "evaluations": 16,
+        "iterations": 14,
+        "training_worst": 0.0031792563674752916,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9888642743721842,
+              "max_R": 0.9998566722554022,
+              "max_signed_violation": 0.0011357256278158312,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9888642743721842
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902939197727556,
+              "max_R": 0.9951878654581386,
+              "max_signed_violation": -0.0002939197727556131,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9902939197727556
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.013133965784558351,
+              "max_R": 0.030039368553914536,
+              "max_signed_violation": 3.9368553914537197e-05,
+              "worst_location": {
+                "wavelength_nm": 4652.0,
+                "angle_deg": 51.0,
+                "R": 0.030039368553914536
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006051184676511919,
+              "max_R": 0.029926781239600055,
+              "max_signed_violation": -7.32187603999443e-05,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029926781239600055
+              }
+            }
+          ],
+          "max_signed_violation": 0.0011357256278158312,
+          "seconds_observed": 6.291066482997849,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "3cb2b2960bf6909514199c8c469e433f46a4926c427364ed901e2d6f34212236"
+      },
+      {
+        "evaluations": 17,
+        "iterations": 15,
+        "training_worst": 0.0031669139655350342,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9888637532293155,
+              "max_R": 0.9998565818946032,
+              "max_signed_violation": 0.0011362467706844681,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9888637532293155
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902922762528585,
+              "max_R": 0.9951870369344537,
+              "max_signed_violation": -0.00029227625285854764,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9902922762528585
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.01313030622321246,
+              "max_R": 0.030033987100683918,
+              "max_signed_violation": 3.398710068391875e-05,
+              "worst_location": {
+                "wavelength_nm": 4652.0,
+                "angle_deg": 51.0,
+                "R": 0.030033987100683918
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006050926678604819,
+              "max_R": 0.029923602775425093,
+              "max_signed_violation": -7.639722457490616e-05,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029923602775425093
+              }
+            }
+          ],
+          "max_signed_violation": 0.0011362467706844681,
+          "seconds_observed": 6.116368830000283,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "a43261c14e058762e32700164e24660a1514906a4e7fdb3be6e576dc57c36ecc"
+      },
+      {
+        "evaluations": 18,
+        "iterations": 16,
+        "training_worst": 0.0031211996782858353,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9889037853662268,
+              "max_R": 0.9998562008391374,
+              "max_signed_violation": 0.0010962146337731848,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9889037853662268
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902837054708683,
+              "max_R": 0.9951822356480946,
+              "max_signed_violation": -0.00028370547086831177,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.9902837054708683
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.013122252271159774,
+              "max_R": 0.030019674014207087,
+              "max_signed_violation": 1.967401420708767e-05,
+              "worst_location": {
+                "wavelength_nm": 4653.0,
+                "angle_deg": 51.0,
+                "R": 0.030019674014207087
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006053135350992835,
+              "max_R": 0.02991985007327478,
+              "max_signed_violation": -8.014992672521898e-05,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02991985007327478
+              }
+            }
+          ],
+          "max_signed_violation": 0.0010962146337731848,
+          "seconds_observed": 5.932568442003685,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "69fc57b4734cfb6e64a56583c8131fa8a34eef9cc0aa13d06cbf9de0cc33156a"
+      },
+      {
+        "evaluations": 20,
+        "iterations": 18,
+        "training_worst": 0.0030807899452862664,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9888889186399704,
+              "max_R": 0.9998557808348656,
+              "max_signed_violation": 0.0011110813600295755,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9888889186399704
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.990275884472643,
+              "max_R": 0.9951759328806118,
+              "max_signed_violation": -0.00027588447264303984,
+              "worst_location": {
+                "wavelength_nm": 1058.0,
+                "angle_deg": 51.0,
+                "R": 0.990275884472643
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.013131095336570926,
+              "max_R": 0.030024375312675808,
+              "max_signed_violation": 2.4375312675808947e-05,
+              "worst_location": {
+                "wavelength_nm": 4653.0,
+                "angle_deg": 51.0,
+                "R": 0.030024375312675808
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006058127809942977,
+              "max_R": 0.02992509851245812,
+              "max_signed_violation": -7.490148754188061e-05,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02992509851245812
+              }
+            }
+          ],
+          "max_signed_violation": 0.0011110813600295755,
+          "seconds_observed": 6.034308260001126,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "ef4af26fef7f94bf5dd3f7cbcecf8be395e55e189b43b76c91e526dddbcf4919"
+      }
+    ]
+  },
+  {
+    "label": "seed-2026102342-relative-0.005",
+    "progress": [
+      {
+        "stage": "freezing",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 0,
+        "best_robustness_value": null,
+        "message": "",
+        "seconds_observed": 0.033357737003825605
+      },
+      {
+        "stage": "baseline",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 0,
+        "best_robustness_value": null,
+        "message": "",
+        "seconds_observed": 0.05775971000548452
+      },
+      {
+        "stage": "baseline_complete",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 1,
+        "best_robustness_value": 0.0032020847258006427,
+        "message": "",
+        "seconds_observed": 12.708282029998372
+      },
+      {
+        "stage": "search",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 1,
+        "best_robustness_value": 0.0032020847258006427,
+        "message": "",
+        "seconds_observed": 12.975998113994137
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 2,
+        "best_robustness_value": 0.0030048184578632745,
+        "message": "",
+        "seconds_observed": 31.36765184000251
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 1,
+        "evaluations": 2,
+        "best_robustness_value": 0.0030048184578632745,
+        "message": "",
+        "seconds_observed": 31.41175706399372
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 1,
+        "evaluations": 3,
+        "best_robustness_value": 0.0020756845567508203,
+        "message": "",
+        "seconds_observed": 49.92892667399428
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 2,
+        "evaluations": 3,
+        "best_robustness_value": 0.0020756845567508203,
+        "message": "",
+        "seconds_observed": 49.977480066998396
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 2,
+        "evaluations": 4,
+        "best_robustness_value": 0.0019984214946432433,
+        "message": "",
+        "seconds_observed": 68.50026367900136
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 3,
+        "evaluations": 4,
+        "best_robustness_value": 0.0019984214946432433,
+        "message": "",
+        "seconds_observed": 68.54688572199666
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 3,
+        "evaluations": 5,
+        "best_robustness_value": 0.0016418049046326155,
+        "message": "",
+        "seconds_observed": 86.55887906400312
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 4,
+        "evaluations": 5,
+        "best_robustness_value": 0.0016418049046326155,
+        "message": "",
+        "seconds_observed": 86.600375694994
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 4,
+        "evaluations": 6,
+        "best_robustness_value": 0.0014823907932801639,
+        "message": "",
+        "seconds_observed": 104.01020605799567
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 5,
+        "evaluations": 6,
+        "best_robustness_value": 0.0014823907932801639,
+        "message": "",
+        "seconds_observed": 104.05862390900438
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 5,
+        "evaluations": 7,
+        "best_robustness_value": 0.001471605358139963,
+        "message": "",
+        "seconds_observed": 122.58485840499634
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 6,
+        "evaluations": 7,
+        "best_robustness_value": 0.001471605358139963,
+        "message": "",
+        "seconds_observed": 122.63277595800173
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 6,
+        "evaluations": 8,
+        "best_robustness_value": 0.0014376369244017972,
+        "message": "",
+        "seconds_observed": 140.8216822060058
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 7,
+        "evaluations": 8,
+        "best_robustness_value": 0.0014376369244017972,
+        "message": "",
+        "seconds_observed": 140.86506820100476
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 7,
+        "evaluations": 9,
+        "best_robustness_value": 0.001432475419789192,
+        "message": "",
+        "seconds_observed": 157.7736870009976
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 8,
+        "evaluations": 9,
+        "best_robustness_value": 0.001432475419789192,
+        "message": "",
+        "seconds_observed": 157.8192080459994
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 8,
+        "evaluations": 10,
+        "best_robustness_value": 0.0014104336758223868,
+        "message": "",
+        "seconds_observed": 175.13137319100497
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 9,
+        "evaluations": 10,
+        "best_robustness_value": 0.0014104336758223868,
+        "message": "",
+        "seconds_observed": 175.18129540600057
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 9,
+        "evaluations": 11,
+        "best_robustness_value": 0.0013524256009049412,
+        "message": "",
+        "seconds_observed": 192.20735786999285
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 10,
+        "evaluations": 11,
+        "best_robustness_value": 0.0013524256009049412,
+        "message": "",
+        "seconds_observed": 192.24689372700232
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 10,
+        "evaluations": 12,
+        "best_robustness_value": 0.0012862019433597105,
+        "message": "",
+        "seconds_observed": 210.0864385110035
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 11,
+        "evaluations": 12,
+        "best_robustness_value": 0.0012862019433597105,
+        "message": "",
+        "seconds_observed": 210.13255508200382
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 11,
+        "evaluations": 13,
+        "best_robustness_value": 0.001237949702203034,
+        "message": "",
+        "seconds_observed": 227.41066727100406
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 12,
+        "evaluations": 13,
+        "best_robustness_value": 0.001237949702203034,
+        "message": "",
+        "seconds_observed": 227.45450596099545
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 12,
+        "evaluations": 14,
+        "best_robustness_value": 0.0011651761193853805,
+        "message": "",
+        "seconds_observed": 245.57710534500075
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 13,
+        "evaluations": 14,
+        "best_robustness_value": 0.0011651761193853805,
+        "message": "",
+        "seconds_observed": 245.62310311800684
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 13,
+        "evaluations": 15,
+        "best_robustness_value": 0.0011494740118510594,
+        "message": "",
+        "seconds_observed": 263.77036333299475
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 14,
+        "evaluations": 15,
+        "best_robustness_value": 0.0011494740118510594,
+        "message": "",
+        "seconds_observed": 263.81157019600505
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 14,
+        "evaluations": 16,
+        "best_robustness_value": 0.001136658768980392,
+        "message": "",
+        "seconds_observed": 281.19039257999975
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 15,
+        "evaluations": 16,
+        "best_robustness_value": 0.001136658768980392,
+        "message": "",
+        "seconds_observed": 281.2323746000038
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 15,
+        "evaluations": 17,
+        "best_robustness_value": 0.0011143160959219411,
+        "message": "",
+        "seconds_observed": 298.5751101269998
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 16,
+        "evaluations": 17,
+        "best_robustness_value": 0.0011143160959219411,
+        "message": "",
+        "seconds_observed": 298.6483712869958
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 16,
+        "evaluations": 18,
+        "best_robustness_value": 0.0010575421233922633,
+        "message": "",
+        "seconds_observed": 318.37215425599425
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 17,
+        "evaluations": 18,
+        "best_robustness_value": 0.0010575421233922633,
+        "message": "",
+        "seconds_observed": 318.4197287470015
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 17,
+        "evaluations": 19,
+        "best_robustness_value": 0.000993118856111419,
+        "message": "",
+        "seconds_observed": 335.38791306799976
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 18,
+        "evaluations": 19,
+        "best_robustness_value": 0.000993118856111419,
+        "message": "",
+        "seconds_observed": 335.4325694470026
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 18,
+        "evaluations": 20,
+        "best_robustness_value": 0.0009910589820061322,
+        "message": "",
+        "seconds_observed": 352.04990956699476
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 19,
+        "evaluations": 20,
+        "best_robustness_value": 0.0009910589820061322,
+        "message": "",
+        "seconds_observed": 352.0984079500049
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 19,
+        "evaluations": 21,
+        "best_robustness_value": 0.0009847700714468097,
+        "message": "",
+        "seconds_observed": 368.74830611499783
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 20,
+        "evaluations": 21,
+        "best_robustness_value": 0.0009847700714468097,
+        "message": "",
+        "seconds_observed": 368.7936546370038
+      },
+      {
+        "stage": "finished",
+        "state": "partial",
+        "iterations": 20,
+        "evaluations": 21,
+        "best_robustness_value": 0.0009847700714468097,
+        "message": "Constrained solver iteration limit; a fully evaluated nominal-feasible incumbent is retained.",
+        "seconds_observed": 368.8527661590051
+      }
+    ],
+    "full_nominal_qualification_gates": [
+      {
+        "evaluations": 1,
+        "iterations": 0,
+        "training_worst": 0.0032020847258006427,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.990471796024005,
+              "max_R": 0.9998375955562799,
+              "max_signed_violation": -0.0004717960240050445,
+              "worst_location": {
+                "wavelength_nm": 618.0,
+                "angle_deg": 51.0,
+                "R": 0.990471796024005
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904718138822008,
+              "max_R": 0.9951554482264028,
+              "max_signed_violation": -0.0004718138822008555,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904718138822008
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013024731758449287,
+              "max_R": 0.029528254608182234,
+              "max_signed_violation": -0.00047174539181776484,
+              "worst_location": {
+                "wavelength_nm": 3000.0,
+                "angle_deg": 39.0,
+                "R": 0.029528254608182234
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005925995211105301,
+              "max_R": 0.029528199209434895,
+              "max_signed_violation": -0.00047180079056510435,
+              "worst_location": {
+                "wavelength_nm": 7000.0,
+                "angle_deg": 39.0,
+                "R": 0.029528199209434895
+              }
+            }
+          ],
+          "max_signed_violation": -0.00047174539181776484,
+          "seconds_observed": 6.853878779002116,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "20903578dedb500286b44df5f22d78d3e3450fc4e2dd712f7dab2027bfbf5cc6"
+      },
+      {
+        "evaluations": 2,
+        "iterations": 0,
+        "training_worst": 0.0030048184578632745,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9904433883193342,
+              "max_R": 0.9998374649255453,
+              "max_signed_violation": -0.00044338831933421474,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9904433883193342
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904692562704973,
+              "max_R": 0.9951532419997808,
+              "max_signed_violation": -0.0004692562704973202,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9904692562704973
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013040722421318155,
+              "max_R": 0.02957756639168651,
+              "max_signed_violation": -0.0004224336083134897,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02957756639168651
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.00593067031925504,
+              "max_R": 0.029543845024507385,
+              "max_signed_violation": -0.00045615497549261405,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029543845024507385
+              }
+            }
+          ],
+          "max_signed_violation": -0.0004224336083134897,
+          "seconds_observed": 6.849476698000217,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "90f280f33be00728528297849ccc22625e17428efa34868a3430406d1ba6e3f7"
+      },
+      {
+        "evaluations": 3,
+        "iterations": 1,
+        "training_worst": 0.0020756845567508203,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.99030053601066,
+              "max_R": 0.9998368183101587,
+              "max_signed_violation": -0.0003005360106600463,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.99030053601066
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904556758617473,
+              "max_R": 0.9951422073836984,
+              "max_signed_violation": -0.0004556758617473289,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9904556758617473
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.01311734559629591,
+              "max_R": 0.029813382456727523,
+              "max_signed_violation": -0.00018661754327247565,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029813382456727523
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005952969552198252,
+              "max_R": 0.029618451337582827,
+              "max_signed_violation": -0.0003815486624171721,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029618451337582827
+              }
+            }
+          ],
+          "max_signed_violation": -0.00018661754327247565,
+          "seconds_observed": 6.7459526599996025,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "1f94e7848d4d1f8754324a315a86c60fa231e47edb28a2f7d9aadfaeb50dd1d7"
+      },
+      {
+        "evaluations": 4,
+        "iterations": 2,
+        "training_worst": 0.0019984214946432433,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9903433327443181,
+              "max_R": 0.9998369052674834,
+              "max_signed_violation": -0.00034333274431808114,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9903433327443181
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904609595047428,
+              "max_R": 0.9951410373852052,
+              "max_signed_violation": -0.00046095950474278613,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9904609595047428
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013122216167490056,
+              "max_R": 0.02983069231102281,
+              "max_signed_violation": -0.0001693076889771883,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02983069231102281
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005956014684965937,
+              "max_R": 0.029627867077846464,
+              "max_signed_violation": -0.0003721329221535348,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029627867077846464
+              }
+            }
+          ],
+          "max_signed_violation": -0.0001693076889771883,
+          "seconds_observed": 6.834745799002121,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "64cdd121b829f6f4074c899e716afa3d856826346b9a00d4267a16db47fc3686"
+      },
+      {
+        "evaluations": 5,
+        "iterations": 3,
+        "training_worst": 0.0016418049046326155,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9903799856502774,
+              "max_R": 0.9998373453273588,
+              "max_signed_violation": -0.0003799856502774146,
+              "worst_location": {
+                "wavelength_nm": 920.0,
+                "angle_deg": 51.0,
+                "R": 0.9903799856502774
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904726524014127,
+              "max_R": 0.9951354035890158,
+              "max_signed_violation": -0.0004726524014126987,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904726524014127
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013144540316098215,
+              "max_R": 0.02991113032037502,
+              "max_signed_violation": -8.886967962497966e-05,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02991113032037502
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005970603014080015,
+              "max_R": 0.029672883337997828,
+              "max_signed_violation": -0.00032711666200217066,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029672883337997828
+              }
+            }
+          ],
+          "max_signed_violation": -8.886967962497966e-05,
+          "seconds_observed": 6.728573261003476,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "f458b7e791f9f26860dd699c44f55dd34c747465b767fd42f9c30393a06eda0e"
+      },
+      {
+        "evaluations": 6,
+        "iterations": 4,
+        "training_worst": 0.0014823907932801639,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9903515378224568,
+              "max_R": 0.9998375792934102,
+              "max_signed_violation": -0.0003515378224567822,
+              "worst_location": {
+                "wavelength_nm": 920.0,
+                "angle_deg": 51.0,
+                "R": 0.9903515378224568
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904643127738275,
+              "max_R": 0.9951332401559096,
+              "max_signed_violation": -0.00046431277382752434,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904643127738275
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013152771284411342,
+              "max_R": 0.02994207870277627,
+              "max_signed_violation": -5.792129722372724e-05,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02994207870277627
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.00597690653679387,
+              "max_R": 0.029692527562577155,
+              "max_signed_violation": -0.0003074724374228441,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029692527562577155
+              }
+            }
+          ],
+          "max_signed_violation": -5.792129722372724e-05,
+          "seconds_observed": 6.198693650003406,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "7308aeeb128ae66228bd3d004b653f6b85c58d0025b97f92bdfdce616ec4ab41"
+      },
+      {
+        "evaluations": 7,
+        "iterations": 5,
+        "training_worst": 0.001471605358139963,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9903286268632459,
+              "max_R": 0.999837908901184,
+              "max_signed_violation": -0.0003286268632458622,
+              "worst_location": {
+                "wavelength_nm": 920.0,
+                "angle_deg": 51.0,
+                "R": 0.9903286268632459
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904547846006584,
+              "max_R": 0.9951334217744513,
+              "max_signed_violation": -0.00045478460065839776,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904547846006584
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.01314793374743998,
+              "max_R": 0.029932273841993602,
+              "max_signed_violation": -6.772615800639675e-05,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029932273841993602
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005979117126854321,
+              "max_R": 0.029699021061415268,
+              "max_signed_violation": -0.0003009789385847311,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029699021061415268
+              }
+            }
+          ],
+          "max_signed_violation": -6.772615800639675e-05,
+          "seconds_observed": 6.995803130004788,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "a4aaddcde06624b8335ad5076abb700f63529f196b5472108c55cc31e58ed5b7"
+      },
+      {
+        "evaluations": 8,
+        "iterations": 6,
+        "training_worst": 0.0014376369244017972,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902252678300019,
+              "max_R": 0.9998390473617658,
+              "max_signed_violation": -0.000225267830001874,
+              "worst_location": {
+                "wavelength_nm": 658.0,
+                "angle_deg": 51.0,
+                "R": 0.9902252678300019
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.990421418118665,
+              "max_R": 0.995134097563475,
+              "max_signed_violation": -0.000421418118665029,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.990421418118665
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013130650717245063,
+              "max_R": 0.029896911859209993,
+              "max_signed_violation": -0.00010308814079000583,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029896911859209993
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005986851922981385,
+              "max_R": 0.029721583418940954,
+              "max_signed_violation": -0.0002784165810590447,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029721583418940954
+              }
+            }
+          ],
+          "max_signed_violation": -0.00010308814079000583,
+          "seconds_observed": 6.3036971089895815,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "634b7db360f547c5bb6cbc32a91a60d5481d5bc0ce392df3572347f52e31261a"
+      },
+      {
+        "evaluations": 9,
+        "iterations": 7,
+        "training_worst": 0.001432475419789192,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902252225994816,
+              "max_R": 0.9998390638157948,
+              "max_signed_violation": -0.0002252225994816559,
+              "worst_location": {
+                "wavelength_nm": 658.0,
+                "angle_deg": 51.0,
+                "R": 0.9902252225994816
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904219832821992,
+              "max_R": 0.9951339670219426,
+              "max_signed_violation": -0.0004219832821992231,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904219832821992
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.01312925269490675,
+              "max_R": 0.029892950740394726,
+              "max_signed_violation": -0.00010704925960527273,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029892950740394726
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005986923507800972,
+              "max_R": 0.029721270238741992,
+              "max_signed_violation": -0.0002787297612580064,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029721270238741992
+              }
+            }
+          ],
+          "max_signed_violation": -0.00010704925960527273,
+          "seconds_observed": 6.169966475994443,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "89cd838b4c785dbd650ba8af9c06cfae28f9b7014b4909bdd9a5804800882bff"
+      },
+      {
+        "evaluations": 10,
+        "iterations": 8,
+        "training_worst": 0.0014104336758223868,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902181020452103,
+              "max_R": 0.9998391866340545,
+              "max_signed_violation": -0.00021810204521033327,
+              "worst_location": {
+                "wavelength_nm": 658.0,
+                "angle_deg": 51.0,
+                "R": 0.9902181020452103
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904235835726889,
+              "max_R": 0.9951333427644363,
+              "max_signed_violation": -0.00042358357268890146,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904235835726889
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013121646717744379,
+              "max_R": 0.02987187046041529,
+              "max_signed_violation": -0.0001281295395847079,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02987187046041529
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.0059875580392979265,
+              "max_R": 0.02972051427333987,
+              "max_signed_violation": -0.00027948572666012736,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02972051427333987
+              }
+            }
+          ],
+          "max_signed_violation": -0.0001281295395847079,
+          "seconds_observed": 5.98151045999839,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "3875d10095f891907ced80fcdbb0d7780393d498278fd0f7f1e274671723ce12"
+      },
+      {
+        "evaluations": 11,
+        "iterations": 9,
+        "training_worst": 0.0013524256009049412,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902300285031005,
+              "max_R": 0.9998392838262924,
+              "max_signed_violation": -0.00023002850310049894,
+              "worst_location": {
+                "wavelength_nm": 658.0,
+                "angle_deg": 51.0,
+                "R": 0.9902300285031005
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904235419193319,
+              "max_R": 0.9951317808847103,
+              "max_signed_violation": -0.00042354191933191565,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9904235419193319
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013101205022120265,
+              "max_R": 0.029816693639523342,
+              "max_signed_violation": -0.0001833063604766566,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029816693639523342
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005987902813055012,
+              "max_R": 0.02971475444223988,
+              "max_signed_violation": -0.0002852455577601193,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02971475444223988
+              }
+            }
+          ],
+          "max_signed_violation": -0.0001833063604766566,
+          "seconds_observed": 6.132511207993957,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "56938208444a5b9208cd82a06d6ea9bdb1f6be6323b268a11cb12a496757d1c9"
+      },
+      {
+        "evaluations": 12,
+        "iterations": 10,
+        "training_worst": 0.0012862019433597105,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902906601449951,
+              "max_R": 0.9998384301355809,
+              "max_signed_violation": -0.00029066014499512516,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9902906601449951
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903775594231932,
+              "max_R": 0.995128290606571,
+              "max_signed_violation": -0.0003775594231931745,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903775594231932
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013075556171221678,
+              "max_R": 0.029745449970221497,
+              "max_signed_violation": -0.0002545500297785018,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029745449970221497
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005982571242589201,
+              "max_R": 0.029687304994779527,
+              "max_signed_violation": -0.0003126950052204716,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029687304994779527
+              }
+            }
+          ],
+          "max_signed_violation": -0.0002545500297785018,
+          "seconds_observed": 6.619444145995658,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "207d8dbdf1f517ee48cd8922a4460566ea56d253bfc3d5ef5140f2dffcab05b2"
+      },
+      {
+        "evaluations": 13,
+        "iterations": 11,
+        "training_worst": 0.001237949702203034,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902516797874203,
+              "max_R": 0.9998382428063355,
+              "max_signed_violation": -0.0002516797874203558,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.9902516797874203
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903460450708139,
+              "max_R": 0.9951256354800779,
+              "max_signed_violation": -0.0003460450708139273,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903460450708139
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013054100502686537,
+              "max_R": 0.029708221442459996,
+              "max_signed_violation": -0.00029177855754000323,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029708221442459996
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.0059854758137942565,
+              "max_R": 0.02969047937200306,
+              "max_signed_violation": -0.0003095206279969398,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02969047937200306
+              }
+            }
+          ],
+          "max_signed_violation": -0.0002516797874203558,
+          "seconds_observed": 6.326543407005374,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "007649c6831b0daf45e174d23a3e93d6a60a6aace5bd1cb05fb49ff225cbcf6c"
+      },
+      {
+        "evaluations": 14,
+        "iterations": 12,
+        "training_worst": 0.0011651761193853805,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.990213393596699,
+              "max_R": 0.9998378080406124,
+              "max_signed_violation": -0.00021339359669902969,
+              "worst_location": {
+                "wavelength_nm": 782.0,
+                "angle_deg": 51.0,
+                "R": 0.990213393596699
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903079704618407,
+              "max_R": 0.9951241276484756,
+              "max_signed_violation": -0.0003079704618407231,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9903079704618407
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013016954371976688,
+              "max_R": 0.029691736301389295,
+              "max_signed_violation": -0.0003082636986107036,
+              "worst_location": {
+                "wavelength_nm": 4651.0,
+                "angle_deg": 51.0,
+                "R": 0.029691736301389295
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005985812075439729,
+              "max_R": 0.029685511687952575,
+              "max_signed_violation": -0.0003144883120474243,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029685511687952575
+              }
+            }
+          ],
+          "max_signed_violation": -0.00021339359669902969,
+          "seconds_observed": 6.375199558999157,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "2d5d6078cbfdb8c5f6d4348f48338c362e703a7daff103c04b2da209cae4fa0e"
+      },
+      {
+        "evaluations": 15,
+        "iterations": 13,
+        "training_worst": 0.0011494740118510594,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9901479037235512,
+              "max_R": 0.9998379843510194,
+              "max_signed_violation": -0.00014790372355122372,
+              "worst_location": {
+                "wavelength_nm": 584.0,
+                "angle_deg": 51.0,
+                "R": 0.9901479037235512
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902987928798026,
+              "max_R": 0.9951243998725041,
+              "max_signed_violation": -0.0002987928798026118,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9902987928798026
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.012997724893672694,
+              "max_R": 0.029700160949696575,
+              "max_signed_violation": -0.0002998390503034243,
+              "worst_location": {
+                "wavelength_nm": 4649.0,
+                "angle_deg": 51.0,
+                "R": 0.029700160949696575
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.0059919371671524535,
+              "max_R": 0.029706348856029054,
+              "max_signed_violation": -0.0002936511439709452,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029706348856029054
+              }
+            }
+          ],
+          "max_signed_violation": -0.00014790372355122372,
+          "seconds_observed": 6.350752978993114,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "4ee49c64126076db21666cb5c1fee166b58b10e22c0420033671db91954b6cb0"
+      },
+      {
+        "evaluations": 16,
+        "iterations": 14,
+        "training_worst": 0.001136658768980392,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9900932950739743,
+              "max_R": 0.9998379456816266,
+              "max_signed_violation": -9.32950739742644e-05,
+              "worst_location": {
+                "wavelength_nm": 584.0,
+                "angle_deg": 51.0,
+                "R": 0.9900932950739743
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902933314626301,
+              "max_R": 0.9951245592218887,
+              "max_signed_violation": -0.0002933314626301087,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9902933314626301
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.012987588610575005,
+              "max_R": 0.0297035749817754,
+              "max_signed_violation": -0.0002964250182245984,
+              "worst_location": {
+                "wavelength_nm": 4648.0,
+                "angle_deg": 51.0,
+                "R": 0.0297035749817754
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.00599419900170244,
+              "max_R": 0.029715161712798324,
+              "max_signed_violation": -0.0002848382872016747,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029715161712798324
+              }
+            }
+          ],
+          "max_signed_violation": -9.32950739742644e-05,
+          "seconds_observed": 5.943435904002399,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "fc8ad6d6647186454da90b30633c3a79ebcb0a5bfa47bf5451bb4d145c276b67"
+      },
+      {
+        "evaluations": 17,
+        "iterations": 15,
+        "training_worst": 0.0011143160959219411,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9900982295173391,
+              "max_R": 0.9998376018601989,
+              "max_signed_violation": -9.822951733906571e-05,
+              "worst_location": {
+                "wavelength_nm": 584.0,
+                "angle_deg": 51.0,
+                "R": 0.9900982295173391
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902872008889331,
+              "max_R": 0.9951246377634859,
+              "max_signed_violation": -0.00028720088893308127,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9902872008889331
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.012978938663646107,
+              "max_R": 0.02970352778606621,
+              "max_signed_violation": -0.00029647221393378984,
+              "worst_location": {
+                "wavelength_nm": 4648.0,
+                "angle_deg": 51.0,
+                "R": 0.02970352778606621
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005993624064569022,
+              "max_R": 0.02971709537894257,
+              "max_signed_violation": -0.0002829046210574282,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02971709537894257
+              }
+            }
+          ],
+          "max_signed_violation": -9.822951733906571e-05,
+          "seconds_observed": 6.281796955008758,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "4a6939b71955b4460c01fe1042b683aa41a93404d3fc27366875d059aa42b26b"
+      },
+      {
+        "evaluations": 18,
+        "iterations": 16,
+        "training_worst": 0.0010575421233922633,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9901795903212882,
+              "max_R": 0.9998365665694848,
+              "max_signed_violation": -0.0001795903212882255,
+              "worst_location": {
+                "wavelength_nm": 658.0,
+                "angle_deg": 51.0,
+                "R": 0.9901795903212882
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902763922102557,
+              "max_R": 0.9951248201560383,
+              "max_signed_violation": -0.0002763922102556604,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9902763922102557
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.012962741465413801,
+              "max_R": 0.02979953360167127,
+              "max_signed_violation": -0.00020046639832872748,
+              "worst_location": {
+                "wavelength_nm": 3021.0,
+                "angle_deg": 51.0,
+                "R": 0.02979953360167127
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005988566260028908,
+              "max_R": 0.029713964019502354,
+              "max_signed_violation": -0.00028603598049764534,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029713964019502354
+              }
+            }
+          ],
+          "max_signed_violation": -0.0001795903212882255,
+          "seconds_observed": 7.27869504300179,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "7b9bd963c521da3ddffb7d2f8440cd2b11144454f3d4efbe31bcc6f753611fee"
+      },
+      {
+        "evaluations": 19,
+        "iterations": 17,
+        "training_worst": 0.000993118856111419,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9901535876769767,
+              "max_R": 0.9998355254128346,
+              "max_signed_violation": -0.0001535876769767075,
+              "worst_location": {
+                "wavelength_nm": 658.0,
+                "angle_deg": 51.0,
+                "R": 0.9901535876769767
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902234712859883,
+              "max_R": 0.9951234076836413,
+              "max_signed_violation": -0.00022347128598831922,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9902234712859883
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012905412908321204,
+              "max_R": 0.030065444942875472,
+              "max_signed_violation": 6.544494287547345e-05,
+              "worst_location": {
+                "wavelength_nm": 3020.0,
+                "angle_deg": 51.0,
+                "R": 0.030065444942875472
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005986558775745084,
+              "max_R": 0.02972033650058931,
+              "max_signed_violation": -0.0002796634994106893,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02972033650058931
+              }
+            }
+          ],
+          "max_signed_violation": 6.544494287547345e-05,
+          "seconds_observed": 6.684223802003544,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "99822eef32b3fa00d93f4cd60eed5ecd94948fa3140507a8b60b63dbc0deef0a"
+      },
+      {
+        "evaluations": 20,
+        "iterations": 18,
+        "training_worst": 0.0009910589820061322,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9901510721294089,
+              "max_R": 0.9998355510052785,
+              "max_signed_violation": -0.00015107212940890236,
+              "worst_location": {
+                "wavelength_nm": 658.0,
+                "angle_deg": 51.0,
+                "R": 0.9901510721294089
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902244393472981,
+              "max_R": 0.9951236171308819,
+              "max_signed_violation": -0.0002244393472980999,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9902244393472981
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012904290410858308,
+              "max_R": 0.030063352754631158,
+              "max_signed_violation": 6.33527546311588e-05,
+              "worst_location": {
+                "wavelength_nm": 3020.0,
+                "angle_deg": 51.0,
+                "R": 0.030063352754631158
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005985889455184608,
+              "max_R": 0.0297179992802213,
+              "max_signed_violation": -0.00028200071977869945,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.0297179992802213
+              }
+            }
+          ],
+          "max_signed_violation": 6.33527546311588e-05,
+          "seconds_observed": 6.585674631001893,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "3ef44d0791384b7c7f94810d96e9ab4dca9803f2f7ebf641174be84c009328b1"
+      },
+      {
+        "evaluations": 21,
+        "iterations": 19,
+        "training_worst": 0.0009847700714468097,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9901444346669248,
+              "max_R": 0.9998355943214307,
+              "max_signed_violation": -0.00014443466692481977,
+              "worst_location": {
+                "wavelength_nm": 658.0,
+                "angle_deg": 51.0,
+                "R": 0.9901444346669248
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9902268549308872,
+              "max_R": 0.9951238814778132,
+              "max_signed_violation": -0.00022685493088725472,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9902268549308872
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": false,
+              "min_R": 0.012901873275223616,
+              "max_R": 0.030056427385588513,
+              "max_signed_violation": 5.642738558851376e-05,
+              "worst_location": {
+                "wavelength_nm": 3020.0,
+                "angle_deg": 51.0,
+                "R": 0.030056427385588513
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.00598478956820189,
+              "max_R": 0.029713879514778913,
+              "max_signed_violation": -0.00028612048522108635,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029713879514778913
+              }
+            }
+          ],
+          "max_signed_violation": 5.642738558851376e-05,
+          "seconds_observed": 6.439346840998041,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "2155c6cdec2ed90ba24488d81469a6d5912b6013d4edf1e66c1749f7629e8a1d"
+      }
+    ]
+  },
+  {
+    "label": "seed-2026102342-relative-0.01",
+    "progress": [
+      {
+        "stage": "freezing",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 0,
+        "best_robustness_value": null,
+        "message": "",
+        "seconds_observed": 0.03023400399251841
+      },
+      {
+        "stage": "baseline",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 0,
+        "best_robustness_value": null,
+        "message": "",
+        "seconds_observed": 0.05257950798841193
+      },
+      {
+        "stage": "baseline_complete",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 1,
+        "best_robustness_value": 0.0071293757466028215,
+        "message": "",
+        "seconds_observed": 11.330569131998345
+      },
+      {
+        "stage": "search",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 1,
+        "best_robustness_value": 0.0071293757466028215,
+        "message": "",
+        "seconds_observed": 11.338234006994753
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 0,
+        "evaluations": 2,
+        "best_robustness_value": 0.0069070873992032045,
+        "message": "",
+        "seconds_observed": 28.775200911986758
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 1,
+        "evaluations": 2,
+        "best_robustness_value": 0.0069070873992032045,
+        "message": "",
+        "seconds_observed": 28.81407891798881
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 1,
+        "evaluations": 3,
+        "best_robustness_value": 0.006180925970537585,
+        "message": "",
+        "seconds_observed": 49.175822641991545
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 2,
+        "evaluations": 3,
+        "best_robustness_value": 0.006180925970537585,
+        "message": "",
+        "seconds_observed": 49.22198384598596
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 2,
+        "evaluations": 4,
+        "best_robustness_value": 0.006069018816381888,
+        "message": "",
+        "seconds_observed": 66.94257835600001
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 3,
+        "evaluations": 4,
+        "best_robustness_value": 0.006069018816381888,
+        "message": "",
+        "seconds_observed": 66.98463488499692
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 3,
+        "evaluations": 5,
+        "best_robustness_value": 0.005560547445157549,
+        "message": "",
+        "seconds_observed": 83.51314507098868
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 4,
+        "evaluations": 5,
+        "best_robustness_value": 0.005560547445157549,
+        "message": "",
+        "seconds_observed": 83.56633098199381
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 5,
+        "evaluations": 6,
+        "best_robustness_value": 0.005560547445157549,
+        "message": "",
+        "seconds_observed": 92.2879699490004
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 6,
+        "evaluations": 7,
+        "best_robustness_value": 0.005560547445157549,
+        "message": "",
+        "seconds_observed": 101.17076815498876
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 6,
+        "evaluations": 8,
+        "best_robustness_value": 0.004775213396582975,
+        "message": "",
+        "seconds_observed": 118.30519648498739
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 7,
+        "evaluations": 8,
+        "best_robustness_value": 0.004775213396582975,
+        "message": "",
+        "seconds_observed": 118.3500785590004
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 7,
+        "evaluations": 9,
+        "best_robustness_value": 0.004672730015543025,
+        "message": "",
+        "seconds_observed": 135.4074654099968
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 8,
+        "evaluations": 9,
+        "best_robustness_value": 0.004672730015543025,
+        "message": "",
+        "seconds_observed": 135.452665823992
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 8,
+        "evaluations": 10,
+        "best_robustness_value": 0.0040965084773144644,
+        "message": "",
+        "seconds_observed": 153.89794115899713
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 9,
+        "evaluations": 10,
+        "best_robustness_value": 0.0040965084773144644,
+        "message": "",
+        "seconds_observed": 153.9440979459905
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 9,
+        "evaluations": 11,
+        "best_robustness_value": 0.003970235630003094,
+        "message": "",
+        "seconds_observed": 171.04025212398847
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 10,
+        "evaluations": 11,
+        "best_robustness_value": 0.003970235630003094,
+        "message": "",
+        "seconds_observed": 171.09079311999085
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 11,
+        "evaluations": 12,
+        "best_robustness_value": 0.003970235630003094,
+        "message": "",
+        "seconds_observed": 180.8638663169986
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 11,
+        "evaluations": 13,
+        "best_robustness_value": 0.0038801575700958615,
+        "message": "",
+        "seconds_observed": 199.4386126229947
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 12,
+        "evaluations": 13,
+        "best_robustness_value": 0.0038801575700958615,
+        "message": "",
+        "seconds_observed": 199.48214472499967
+      },
+      {
+        "stage": "improved",
+        "state": "running",
+        "iterations": 12,
+        "evaluations": 14,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "",
+        "seconds_observed": 215.81041878499673
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 13,
+        "evaluations": 14,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "",
+        "seconds_observed": 215.85444233899761
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 14,
+        "evaluations": 15,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "",
+        "seconds_observed": 225.17844526999397
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 15,
+        "evaluations": 16,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "",
+        "seconds_observed": 233.9707617219974
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 16,
+        "evaluations": 17,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "",
+        "seconds_observed": 242.54545531798794
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 17,
+        "evaluations": 18,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "",
+        "seconds_observed": 251.32095863799623
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 18,
+        "evaluations": 19,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "",
+        "seconds_observed": 260.77357943599054
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 19,
+        "evaluations": 20,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "",
+        "seconds_observed": 269.4247617939982
+      },
+      {
+        "stage": "iteration",
+        "state": "running",
+        "iterations": 20,
+        "evaluations": 21,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "",
+        "seconds_observed": 278.07149480799853
+      },
+      {
+        "stage": "finished",
+        "state": "partial",
+        "iterations": 20,
+        "evaluations": 21,
+        "best_robustness_value": 0.003723288220534915,
+        "message": "Solver's final trial fails exact original nominal bounds; only a previously evaluated nominal-feasible incumbent is retained.",
+        "seconds_observed": 278.1202892759902
+      }
+    ],
+    "full_nominal_qualification_gates": [
+      {
+        "evaluations": 1,
+        "iterations": 0,
+        "training_worst": 0.0071293757466028215,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.990471796024005,
+              "max_R": 0.9998375955562799,
+              "max_signed_violation": -0.0004717960240050445,
+              "worst_location": {
+                "wavelength_nm": 618.0,
+                "angle_deg": 51.0,
+                "R": 0.990471796024005
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904718138822008,
+              "max_R": 0.9951554482264028,
+              "max_signed_violation": -0.0004718138822008555,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904718138822008
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013024731758449287,
+              "max_R": 0.029528254608182234,
+              "max_signed_violation": -0.00047174539181776484,
+              "worst_location": {
+                "wavelength_nm": 3000.0,
+                "angle_deg": 39.0,
+                "R": 0.029528254608182234
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005925995211105301,
+              "max_R": 0.029528199209434895,
+              "max_signed_violation": -0.00047180079056510435,
+              "worst_location": {
+                "wavelength_nm": 7000.0,
+                "angle_deg": 39.0,
+                "R": 0.029528199209434895
+              }
+            }
+          ],
+          "max_signed_violation": -0.00047174539181776484,
+          "seconds_observed": 6.853878779002116,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "20903578dedb500286b44df5f22d78d3e3450fc4e2dd712f7dab2027bfbf5cc6"
+      },
+      {
+        "evaluations": 2,
+        "iterations": 0,
+        "training_worst": 0.0069070873992032045,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9904414165576406,
+              "max_R": 0.9998374574164136,
+              "max_signed_violation": -0.00044141655764062815,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9904414165576406
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904696204026284,
+              "max_R": 0.9951531247823885,
+              "max_signed_violation": -0.0004696204026284345,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9904696204026284
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.0130415246972684,
+              "max_R": 0.02958050474231784,
+              "max_signed_violation": -0.00041949525768215923,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02958050474231784
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005930915538440871,
+              "max_R": 0.02954486646416391,
+              "max_signed_violation": -0.00045513353583608723,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02954486646416391
+              }
+            }
+          ],
+          "max_signed_violation": -0.00041949525768215923,
+          "seconds_observed": 6.198282650002511,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "3749fa8f0a7be4550885fb1059236cfe0f1c83da280669ecfd45e9533cf3f1da"
+      },
+      {
+        "evaluations": 3,
+        "iterations": 1,
+        "training_worst": 0.006180925970537585,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9903467471798764,
+              "max_R": 0.9998372364215697,
+              "max_signed_violation": -0.00034674717987637216,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9903467471798764
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904627082496145,
+              "max_R": 0.9951452467622257,
+              "max_signed_violation": -0.0004627082496144741,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9904627082496145
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013098973594206413,
+              "max_R": 0.029751946016162413,
+              "max_signed_violation": -0.00024805398383758587,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029751946016162413
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.0059475595412318664,
+              "max_R": 0.029599643888996226,
+              "max_signed_violation": -0.00040035611100377316,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029599643888996226
+              }
+            }
+          ],
+          "max_signed_violation": -0.00024805398383758587,
+          "seconds_observed": 7.674846512003569,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "398575b7bf9d9975ec73af03085b65777326b5c648e2b61dcb4896f295e8b7f5"
+      },
+      {
+        "evaluations": 4,
+        "iterations": 2,
+        "training_worst": 0.006069018816381888,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9903888195039096,
+              "max_R": 0.9998376574205948,
+              "max_signed_violation": -0.00038881950390956543,
+              "worst_location": {
+                "wavelength_nm": 633.0,
+                "angle_deg": 51.0,
+                "R": 0.9903888195039096
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904679794552582,
+              "max_R": 0.9951439437325522,
+              "max_signed_violation": -0.00046797945525822726,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9904679794552582
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013109551168889377,
+              "max_R": 0.029775021432867203,
+              "max_signed_violation": -0.00022497856713279626,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029775021432867203
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005951660809045576,
+              "max_R": 0.029610281646511437,
+              "max_signed_violation": -0.00038971835348856204,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029610281646511437
+              }
+            }
+          ],
+          "max_signed_violation": -0.00022497856713279626,
+          "seconds_observed": 6.546281474002171,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "1ef54ea8bcdb088499d7aa06846e72936fb8daf575b080def30f35d26891de3f"
+      },
+      {
+        "evaluations": 5,
+        "iterations": 3,
+        "training_worst": 0.005560547445157549,
+        "full_nominal": {
+          "nominal_pass": true,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": true,
+              "min_R": 0.9902052928445406,
+              "max_R": 0.9998398830496179,
+              "max_signed_violation": -0.00020529284454062768,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9902052928445406
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904531323457474,
+              "max_R": 0.9951379377227318,
+              "max_signed_violation": -0.0004531323457473979,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904531323457474
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.01316122032337131,
+              "max_R": 0.029880185346948546,
+              "max_signed_violation": -0.00011981465305145253,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029880185346948546
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005970920057838981,
+              "max_R": 0.029658461777708284,
+              "max_signed_violation": -0.00034153822229171515,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029658461777708284
+              }
+            }
+          ],
+          "max_signed_violation": -0.00011981465305145253,
+          "seconds_observed": 5.966948860004777,
+          "continuous_certificate": false
+        },
+        "accepted_external": true,
+        "design_sha256": "6278e51b5a76cbe0f7ed7985db0e53234adb45ad368f0db50c9ce8985ed961ee"
+      },
+      {
+        "evaluations": 8,
+        "iterations": 6,
+        "training_worst": 0.004775213396582975,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9897809333751877,
+              "max_R": 0.9998435206727265,
+              "max_signed_violation": 0.000219066624812303,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9897809333751877
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904137254010763,
+              "max_R": 0.995131197101864,
+              "max_signed_violation": -0.0004137254010763147,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904137254010763
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013222182778871713,
+              "max_R": 0.029999999990497028,
+              "max_signed_violation": -9.502971326513787e-12,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029999999990497028
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.005999329519959368,
+              "max_R": 0.029729434292553585,
+              "max_signed_violation": -0.00027056570744641434,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029729434292553585
+              }
+            }
+          ],
+          "max_signed_violation": 0.000219066624812303,
+          "seconds_observed": 6.682299102001707,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "3478e27ec87f00c8d87fe4b741734507bbf731fa1430c1a0f8058a831957ec6c"
+      },
+      {
+        "evaluations": 9,
+        "iterations": 7,
+        "training_worst": 0.004672730015543025,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9897834335627314,
+              "max_R": 0.9998441738389203,
+              "max_signed_violation": 0.00021656643726863933,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9897834335627314
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904255935283697,
+              "max_R": 0.9951302330466762,
+              "max_signed_violation": -0.00042559352836968323,
+              "worst_location": {
+                "wavelength_nm": 1084.0,
+                "angle_deg": 51.0,
+                "R": 0.9904255935283697
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013217895356150864,
+              "max_R": 0.029993003044455256,
+              "max_signed_violation": -6.996955544742722e-06,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029993003044455256
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006003111962353498,
+              "max_R": 0.0297312013742162,
+              "max_signed_violation": -0.0002687986257838004,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.0297312013742162
+              }
+            }
+          ],
+          "max_signed_violation": 0.00021656643726863933,
+          "seconds_observed": 6.664932970001246,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "a7fb9a1a2150699fb211693b6ce705a126cbe3aa1550c69945131643447f1689"
+      },
+      {
+        "evaluations": 10,
+        "iterations": 8,
+        "training_worst": 0.0040965084773144644,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9899584428864523,
+              "max_R": 0.9998477050825587,
+              "max_signed_violation": 4.1557113547696645e-05,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9899584428864523
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904005994776808,
+              "max_R": 0.9951242751165491,
+              "max_signed_violation": -0.0004005994776807853,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9904005994776808
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013200505583149032,
+              "max_R": 0.029966645863420467,
+              "max_signed_violation": -3.3354136579531735e-05,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029966645863420467
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.0060253389512146165,
+              "max_R": 0.029745264333780552,
+              "max_signed_violation": -0.00025473566621944665,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029745264333780552
+              }
+            }
+          ],
+          "max_signed_violation": 4.1557113547696645e-05,
+          "seconds_observed": 6.532338049000828,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "8e8533bb5159a6edaef4fa656201a7fd54a999d3d6fcb8b28cb1929c5c57f2a1"
+      },
+      {
+        "evaluations": 11,
+        "iterations": 9,
+        "training_worst": 0.003970235630003094,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9898992709817772,
+              "max_R": 0.9998482258098704,
+              "max_signed_violation": 0.00010072901822277824,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9898992709817772
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9904000092971552,
+              "max_R": 0.9951227217596988,
+              "max_signed_violation": -0.0004000092971552238,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 45.0,
+                "R": 0.9904000092971552
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013211742653600205,
+              "max_R": 0.02998531069109838,
+              "max_signed_violation": -1.4689308901617848e-05,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02998531069109838
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006030329728791228,
+              "max_R": 0.029755979928261733,
+              "max_signed_violation": -0.00024402007173826568,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029755979928261733
+              }
+            }
+          ],
+          "max_signed_violation": 0.00010072901822277824,
+          "seconds_observed": 6.702182634995552,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "5812670f75c48bcbfe5ba63edbe1e366c432ea72f9779df9f99a8ca1485783b1"
+      },
+      {
+        "evaluations": 13,
+        "iterations": 11,
+        "training_worst": 0.0038801575700958615,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9899244654703945,
+              "max_R": 0.9998486173607088,
+              "max_signed_violation": 7.553452960551432e-05,
+              "worst_location": {
+                "wavelength_nm": 724.0,
+                "angle_deg": 51.0,
+                "R": 0.9899244654703945
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903951911429467,
+              "max_R": 0.9951199862365163,
+              "max_signed_violation": -0.00039519114294672697,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9903951911429467
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013241614839446539,
+              "max_R": 0.029999997886838,
+              "max_signed_violation": -2.1131619995506945e-09,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.029999997886838
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006038688509250002,
+              "max_R": 0.02976972481676996,
+              "max_signed_violation": -0.00023027518323003732,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.02976972481676996
+              }
+            }
+          ],
+          "max_signed_violation": 7.553452960551432e-05,
+          "seconds_observed": 7.304543077989365,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "6a676c8e9b898264d47bdedb665e34e435c1e82b0438e4092cf74d8221ac70d1"
+      },
+      {
+        "evaluations": 14,
+        "iterations": 12,
+        "training_worst": 0.003723288220534915,
+        "full_nominal": {
+          "nominal_pass": false,
+          "condition_count": 184600,
+          "forward_chunks": 225,
+          "windows": [
+            {
+              "objective_index": 0,
+              "passed": false,
+              "min_R": 0.9897380769151596,
+              "max_R": 0.9998492166112224,
+              "max_signed_violation": 0.0002619230848404097,
+              "worst_location": {
+                "wavelength_nm": 658.0,
+                "angle_deg": 51.0,
+                "R": 0.9897380769151596
+              }
+            },
+            {
+              "objective_index": 1,
+              "passed": true,
+              "min_R": 0.9903872810178453,
+              "max_R": 0.9951175208804588,
+              "max_signed_violation": -0.0003872810178453534,
+              "worst_location": {
+                "wavelength_nm": 1044.0,
+                "angle_deg": 39.0,
+                "R": 0.9903872810178453
+              }
+            },
+            {
+              "objective_index": 2,
+              "passed": true,
+              "min_R": 0.013280866986976265,
+              "max_R": 0.02999999065818546,
+              "max_signed_violation": -9.341814537211501e-09,
+              "worst_location": {
+                "wavelength_nm": 5000.0,
+                "angle_deg": 51.0,
+                "R": 0.02999999065818546
+              }
+            },
+            {
+              "objective_index": 3,
+              "passed": true,
+              "min_R": 0.006051444489751883,
+              "max_R": 0.029792932265020753,
+              "max_signed_violation": -0.00020706773497924588,
+              "worst_location": {
+                "wavelength_nm": 12000.0,
+                "angle_deg": 51.0,
+                "R": 0.029792932265020753
+              }
+            }
+          ],
+          "max_signed_violation": 0.0002619230848404097,
+          "seconds_observed": 6.535844067009748,
+          "continuous_certificate": false
+        },
+        "accepted_external": false,
+        "design_sha256": "30eb396583c93d4d6f4ce3ca1c5f238be7b3a812257d831c8448065eef2478c6"
+      }
+    ]
+  }
+]

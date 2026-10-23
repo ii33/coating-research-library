@@ -1,0 +1,30 @@
+{
+  "arithmetic_completion": {
+    "completed": true,
+    "all_original_holdout_retained": true,
+    "no_parameter_or_candidate_selection_changes": true,
+    "checked_unique_jobs": 192,
+    "original_holdout_joint_counts_reproduced": true,
+    "max_pointwise_target_pass_flips": 0,
+    "total_joint_pass_changes": 0,
+    "speedup_claim": false
+  },
+  "four_worker_numerical_parity": {
+    "exact_complete_optical_summary_equal": true,
+    "distinct_concurrent_workers": 4,
+    "checked_jobs": 4,
+    "all_conditions_per_job": 184600,
+    "full_response_bytes_hashes_equal": true,
+    "speedup_claim": false
+  },
+  "retained_legacy_replay": {
+    "checked_unique_samples": 192,
+    "all_original_sample_joint_flags_reproduced": true,
+    "all_original_window_flags_reproduced": true,
+    "all_original_window_extrema_and_violations_reproduced_exactly": true,
+    "max_absolute_summary_difference": 0.0,
+    "original_files_preserved": true,
+    "no_candidate_or_parameter_selection": true
+  },
+  "public_evidence_scope": "Summaries only. Per-sample raw evidence and source/module manifests are not copied in this publication. No speedup or production-yield claim."
+}

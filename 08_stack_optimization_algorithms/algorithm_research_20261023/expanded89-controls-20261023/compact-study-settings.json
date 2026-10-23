@@ -1,0 +1,110 @@
+{
+  "kind": "compact_public_study_settings_not_an_executable_request",
+  "complete_requests_included": false,
+  "embedded_material_datasets_included": false,
+  "scenario_coefficient_arrays_included": false,
+  "baseline_public_source": "https://github.com/ii33/coating-research-library/blob/48d7ee56cae07a217977a59f80a4b575ad02eeca/08_stack_optimization_algorithms/algorithm_research_20261023/fixed89-benchmark-block1024/baseline89.json",
+  "scientific_model": "same frozen ideal-zero-k model as the existing research baseline; no new material dataset upload",
+  "runs": [
+    {
+      "label": "seed-2026102341-relative-0.005",
+      "training_seed": 2026102341,
+      "bounded_relative_error_amplitude": 0.005,
+      "training_scene_count": 32,
+      "variable_count": 89,
+      "all_error_affected_layer_count": 89,
+      "design_bounds_relative_to_initial": [
+        0.99,
+        1.01
+      ],
+      "max_cloud_evaluations": 25,
+      "max_iterations": 20,
+      "actual_cloud_evaluations": 21,
+      "actual_iterations": 20,
+      "objective": "finite_scenario_worst",
+      "policy": "nominal_preserving",
+      "training_grid_condition_count": 600,
+      "full_nominal_condition_count": 184600,
+      "strict_IR_upper": 0.03,
+      "strict_upper_objective_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "label": "seed-2026102341-relative-0.01",
+      "training_seed": 2026102341,
+      "bounded_relative_error_amplitude": 0.01,
+      "training_scene_count": 32,
+      "variable_count": 89,
+      "all_error_affected_layer_count": 89,
+      "design_bounds_relative_to_initial": [
+        0.99,
+        1.01
+      ],
+      "max_cloud_evaluations": 25,
+      "max_iterations": 20,
+      "actual_cloud_evaluations": 21,
+      "actual_iterations": 20,
+      "objective": "finite_scenario_worst",
+      "policy": "nominal_preserving",
+      "training_grid_condition_count": 600,
+      "full_nominal_condition_count": 184600,
+      "strict_IR_upper": 0.03,
+      "strict_upper_objective_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "label": "seed-2026102342-relative-0.005",
+      "training_seed": 2026102342,
+      "bounded_relative_error_amplitude": 0.005,
+      "training_scene_count": 32,
+      "variable_count": 89,
+      "all_error_affected_layer_count": 89,
+      "design_bounds_relative_to_initial": [
+        0.99,
+        1.01
+      ],
+      "max_cloud_evaluations": 25,
+      "max_iterations": 20,
+      "actual_cloud_evaluations": 21,
+      "actual_iterations": 20,
+      "objective": "finite_scenario_worst",
+      "policy": "nominal_preserving",
+      "training_grid_condition_count": 600,
+      "full_nominal_condition_count": 184600,
+      "strict_IR_upper": 0.03,
+      "strict_upper_objective_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "label": "seed-2026102342-relative-0.01",
+      "training_seed": 2026102342,
+      "bounded_relative_error_amplitude": 0.01,
+      "training_scene_count": 32,
+      "variable_count": 89,
+      "all_error_affected_layer_count": 89,
+      "design_bounds_relative_to_initial": [
+        0.99,
+        1.01
+      ],
+      "max_cloud_evaluations": 25,
+      "max_iterations": 20,
+      "actual_cloud_evaluations": 21,
+      "actual_iterations": 20,
+      "objective": "finite_scenario_worst",
+      "policy": "nominal_preserving",
+      "training_grid_condition_count": 600,
+      "full_nominal_condition_count": 184600,
+      "strict_IR_upper": 0.03,
+      "strict_upper_objective_indices": [
+        2,
+        3
+      ]
+    }
+  ]
+}

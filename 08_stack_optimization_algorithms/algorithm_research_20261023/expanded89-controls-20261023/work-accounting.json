@@ -1,0 +1,21 @@
+{
+  "training_cloud_evaluations": 84,
+  "recorded_training_forward_response_calls": 55440,
+  "recorded_training_jacobian_response_calls": 55440,
+  "training_condition_evaluations_with_33_scene_including_nominal_per_cloud": 1663200,
+  "full_nominal_qualification_records_including_baselines": 61,
+  "unique_full_nominal_design_hashes": 58,
+  "full_nominal_rejections": 25,
+  "original_nominal_conditions_per_audit": 184600,
+  "forward_chunks_per_full_audit": 225,
+  "unique_holdout_scenarios": 192,
+  "unique_holdout_condition_evaluations": 35443200,
+  "paired_arithmetic_replay_unique_jobs": 192,
+  "paired_arithmetic_condition_evaluations": 70886400,
+  "known_extra_four_worker_vs_serial_parity_condition_evaluations": 1476800,
+  "known_extra_initial_serial_vs_single_thread_parity_condition_evaluations": 369200,
+  "counts_not_a_complete_cpu_or_wall_cost": "Additional formal result replay, source-change restart, repeated nominal audits, and cancelled incomplete chunks are not fully instrumented here. Training response counters do not count elementary TMM subkernels separately. No total CPU/peak RAM or fair speedup is inferred.",
+  "times_diagnostic_only": true,
+  "production_yield_established": false,
+  "convergence_established": false
+}

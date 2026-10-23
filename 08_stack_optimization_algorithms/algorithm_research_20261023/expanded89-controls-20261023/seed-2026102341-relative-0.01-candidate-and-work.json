@@ -1,0 +1,948 @@
+{
+  "label": "seed-2026102341-relative-0.01",
+  "training_seed": 2026102341,
+  "error_amplitude": 0.01,
+  "state": "partial",
+  "reason": "constrained_nominal_rejected",
+  "evaluations": 21,
+  "iterations": 20,
+  "forward": 13860,
+  "jacobian": 13860,
+  "training_baseline": 0.008946266699785911,
+  "raw_training_best": 0.0030807899452862664,
+  "qualified_training_best": 0.00757129783567239,
+  "raw_full_nominal_pass": false,
+  "qualified_full_nominal_pass": true,
+  "full_nominal_candidate_count": 11,
+  "full_nominal_rejections": 8,
+  "qualified_design": {
+    "schema_version": 1,
+    "id": "four-window-model-supplier_ybf3",
+    "name": "User four-window source-model supplier_ybf3",
+    "layer_order": "substrate_outward",
+    "front_layers": [
+      {
+        "id": "pruned90_cycle1-needle-1",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 25.258289334273687,
+          "unit": "nm"
+        },
+        "note": "Temporary exact-zero classical needle sensitivity probe."
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-89",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 195.49513262771143,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-88",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 55.64195836742465,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-87",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 192.94199458350974,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-86",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 70.459434490663,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-85",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 151.53736511212765,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-84",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 151.11899999040133,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-83",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 222.7548659628803,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-82",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 127.94983436070665,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-81",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 150.4417230347458,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-80",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 121.32404519095121,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-79",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 163.67727761839487,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-78",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 119.10875792742334,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-77",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 145.74201364845246,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-76",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 184.9183336444029,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-75",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 106.27889331295188,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-74",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 185.15554664604392,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-73",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 101.47555339466328,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-72",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 178.61443159885687,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-71",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 124.58002846071417,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-70",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 152.12554656579064,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-69",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 130.9653237235413,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-68",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 118.92525541541299,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-67",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 112.5015996900131,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-66",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 45.691938869794186,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-65",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 120.68780483343343,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-64",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 148.2648055902392,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-63",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 101.50470054776235,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-62",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 202.23748550115877,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-61",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 85.42263650041778,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-60",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 189.71181321604095,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-59",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 74.23213655088273,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-58",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 183.5420490246688,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-57",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 73.9403846530528,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-56",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 139.57418925908968,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-55",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 97.91179582563939,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-54",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 104.53224824838564,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-53",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 128.87004652053238,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-52",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 103.44715598008247,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-51",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 105.88002038596738,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-50",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 108.67139255530518,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-49",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 70.32408900328342,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-48",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 145.91077449152766,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-47",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 62.208255135098774,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-46",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 193.99245224657324,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-45",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 52.482967297731435,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-44",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 172.70243030697253,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-43",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 51.07333696419077,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-42",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 150.98410424434056,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-41",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 70.34845317551118,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-40",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 124.5429581883131,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-39",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 97.12545061629088,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-38",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 76.95026004408204,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-37",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 135.8290479835606,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-36",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 49.43829448702681,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-35",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 144.91711930779837,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-34",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 13.571850237337292,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-33",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 86.09017603372244,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-32",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 59.749383222912314,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-31",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 88.32742775542033,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-30",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 124.89040403546873,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-29",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 74.7425649462302,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-28",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 55.86685674374238,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-27",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 89.4064920555645,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-26",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 90.42536999720626,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-25",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 84.05392336814973,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-24",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 94.97495113123945,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-23",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 77.57445232606489,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-22",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 118.6536528870568,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-21",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 85.79103130512925,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-20",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 22.8352044533223,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-19",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 272.8023559045002,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-18",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 5.515093793435232,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-17",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 93.0609993422597,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-16",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 67.86371479954369,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-15",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 88.72958326327273,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-14",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 101.76327617696042,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-13",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 73.11430350280291,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-12",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 67.45915681558262,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-11",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 97.77536086314774,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-10",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 94.68890504446033,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-9",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 29.52294076668589,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-8",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 173.42682069627912,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-7",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 24.705584283325713,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-6",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 431.0034695008354,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-5",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 62.58977193774102,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-4",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 24.35914853254715,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-3",
+        "material_id": "model_zns_film_amotchkina2020_original_export",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 46.64050587353995,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      },
+      {
+        "id": "augmented104-mapped-pruned-90-2",
+        "material_id": "model_ybf3_film_merck2019_sparse",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 1022.1074111978708,
+          "unit": "nm"
+        },
+        "note": "Independent ideal-zero-k broad structure research; not qualified"
+      }
+    ],
+    "back_layers": [],
+    "reference_wavelength_nm": 550.0,
+    "substrate": {
+      "material_id": "model_zns_bulk_querry1987_screening",
+      "optical_set_id": "nk",
+      "thickness": {
+        "value": 1.0,
+        "unit": "mm"
+      },
+      "sides": "single",
+      "mode": "auto"
+    },
+    "incident_medium": {
+      "kind": "constant",
+      "n": 1.0
+    },
+    "exit_medium": {
+      "kind": "constant",
+      "n": 1.0
+    },
+    "assume_lossless": false,
+    "use_k": true,
+    "note": "",
+    "first_surface": "front",
+    "expression": {
+      "text": "",
+      "symbols": {},
+      "in_sync": false
+    }
+  },
+  "qualified_design_sha256": "294e9ab212c2bc65121d0c8c1774121a6a73066244e81f9b399aa9d492e09f42",
+  "seconds_observed": 302.7236019330012,
+  "limitations": "Short fixed exploration budget and ±1% design-search domain; no convergence, global or physical-infeasibility proof."
+}

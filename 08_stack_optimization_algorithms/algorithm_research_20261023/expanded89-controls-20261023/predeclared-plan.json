@@ -1,0 +1,37 @@
+{
+  "purpose": "Bounded exploratory controls for larger training clouds and all-layer freedom, not a convergence/global/physical-feasibility conclusion.",
+  "code_source": "canonical current coating-sim core, numerical fixes frozen before the first experiment",
+  "initial_design": "Original unchanged 89-layer baseline; every run restarts independently from it, not a holdout-selected prior candidate.",
+  "training_seeds": [
+    2026102341,
+    2026102342
+  ],
+  "bounded_relative_error_amplitudes": [
+    0.005,
+    0.01
+  ],
+  "training_sample_count": 32,
+  "training_error_model": "independent",
+  "training_distribution": "bounded_uniform",
+  "scenario_weight": 1.0,
+  "robustness_objective": "finite_scenario_worst",
+  "optimization_policy": "nominal_preserving",
+  "variable_layers": "all original 89 layers",
+  "error_affected_layers": "all original 89 layers",
+  "design_variable_bounds": "Each original nominal thickness times [0.99,1.01]; this is the search domain, not the manufacturing error amplitude and not proof that a wider search domain could not help.",
+  "max_evaluations_per_run": 25,
+  "max_iterations_per_run": 20,
+  "training_optical_grid": "Unchanged explicit 600-condition sparse grid from prior baseline, with original physical bounds and explicit strict R<0.03; no additional margin.",
+  "full_nominal_grid": "All four original windows, 1nm wavelength points, 25 angles from 39 to51 degrees at0.5-degree spacing, 184600 conditions; strict original bounds.",
+  "external_candidate_acceptance": "Every proposed improved sparse-nominal checkpoint is independently scanned on the complete original nominal grid before it may replace the external qualified incumbent. If it fails, preserve the prior full-grid-feasible candidate; save the raw sparse result and rejection explicitly. This is not an integrated full-grid constrained search.",
+  "holdout_selection_policy": "No holdout is generated or evaluated until all four solvers and qualified candidates are fixed. Evaluate and report all four seeds/amplitude results; do not choose the best seed using holdout.",
+  "holdout_independent_seed": 2026102351,
+  "holdout_common_mode_seed": 2026102352,
+  "holdout_sample_count_per_model": 16,
+  "holdout_grid": "Complete original 184600-condition grid; same explicit coefficients paired between original and every qualified candidate at each error amplitude.",
+  "holdout_parallelism": "Pure numeric in-process ThreadPoolExecutor, at most4 workers, independent frozen data/prepared caches per audit, BLAS/OpenMP library threads1; no scheduler, network, sockets, remote environment or HPC purchase.",
+  "holdout_parallel_validation": "After candidate freezing, one identical explicit scenario is independently checked serial and threaded, requiring exact optical summary equality before bulk parallel audits; no speedup claim.",
+  "resource_policy": "Do not raise or bypass the existing256MiB formal request result-retention limit. Estimated formal sparse request is100.51MiB at32 scenes/all89 variables. Full original-grid nominal audits are separate chunked summary-only acceptance passes, not a covert reduction in requested samples.",
+  "additional_expansion": "No64-scene or extra-stage retuning in this batch. Any later expansion or quality-budget study is separately predeclared and requires fresh holdout if informed by these holdout outcomes.",
+  "interpretation": "25 evaluations/20 iterations are exploration controls, not adequate evidence of convergence. Hypothetical bounded errors are not measured process sigma or production yield; failed controls do not prove physical infeasibility or a TFCalc/HPC speed limit."
+}
