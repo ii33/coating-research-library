@@ -127,3 +127,8 @@ ITO并入本库专题11，不另建研究项目。[研究入口](11_transparent_
 - [研究记录](08_stack_optimization_algorithms/real_nk_dual_window_20261020/README.md)：两条路线等价十层的正常入射双窗R/T通过独立物理核验；另保留54条件角度/偏振/有限ZnS双面诊断及失败区间。半无限基片通量不等于整片透射；完整搜索依赖未发布v3，生产核心未入库。
 
 - [2026-10-20 真实双窗0–15° s/p角度优化与第二独立验收](08_stack_optimization_algorithms/real_nk_dual_window_20261020/angular_0to15deg/README.md)：11层、3871.098426nm，在固定源模型下严格通过双窗R/T；保留历史12层、原A/B、54例诊断及材料边界，附独立便携固定处方复算。
+
+## 2026-10-23 优化、自动合成与敏感性研究
+
+- [分类研究索引](08_stack_optimization_algorithms/algorithm_research_20261023/README.md)：常规优化、统一混合自动合成、真实多进程与敏感性实效；保留89层留出通过下降、额外细网格名义失败及冷自动合成未达标，附公开科学配置和结果。制造误差模型与nominal-preserving稳健路线明确列为研究/开发，不冒充已交付能力或生产良率。
+
