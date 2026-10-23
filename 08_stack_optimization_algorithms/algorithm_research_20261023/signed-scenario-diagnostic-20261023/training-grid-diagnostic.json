@@ -1,0 +1,332 @@
+{
+  "contract": {
+    "purpose": "Diagnose perturbation objective undersampling and threshold/objective mismatch only; no optimization, candidate selection, or new confirmation",
+    "formal_source_sha": "fa9878336a597dc6df1db5b584bda3be4423cbca",
+    "design_sha256": {
+      "baseline": "20903578dedb500286b44df5f22d78d3e3450fc4e2dd712f7dab2027bfbf5cc6",
+      "control_usable": "5ffcb1ecb9b82bafff29ee1f6d5e49e5393231bdd3813a09d7f9fe0c4819961f",
+      "exchange_usable": "f0ae421704a5739c79be0211d15d222f6a82a642d0a967b936ac27962febaaf7"
+    },
+    "training_seed": 2026102341,
+    "scenario_count": 32,
+    "relative_amplitude": 0.005,
+    "grid_counts": {
+      "sparse": 600,
+      "full": 184600
+    },
+    "full_forward_count": 96,
+    "sparse_forward_count": 96,
+    "variables_passed_to_forward_kernel": 0,
+    "execution": {
+      "sequential": true,
+      "blas_threads": 1,
+      "chunk_wavelengths": 1024
+    },
+    "fixed_historical_candidates": true,
+    "historical_validation_is_not_final_confirmation": true
+  },
+  "completed_full_forwards": 96,
+  "completed_sparse_forwards": 96,
+  "summary": [
+    {
+      "design": "baseline",
+      "n": 32,
+      "sparse_V": {
+        "minimum": 0.00010291797003622594,
+        "median": 0.0005990973494461021,
+        "P75": 0.0008562034887248391,
+        "P95": 0.003124104278638653,
+        "worst": 0.0040641672536294235,
+        "mean": 0.0008616954799810589
+      },
+      "full_V": {
+        "minimum": 0.00016827492926840826,
+        "median": 0.0009680912361755278,
+        "P75": 0.0014852551841421646,
+        "P95": 0.003124104278638653,
+        "worst": 0.0040641672536294235,
+        "mean": 0.0012355785391220061
+      },
+      "gap": {
+        "minimum": 0.0,
+        "median": 0.00027247963884510784,
+        "P75": 0.0005721295135592917,
+        "P95": 0.0014135704976592435,
+        "worst": 0.0016977633940486632,
+        "mean": 0.0003738830591409472
+      },
+      "sparse_pass_count": 0,
+      "full_pass_count": 0,
+      "sparse_pass_full_fail_count": 0,
+      "positive_gap_over_1e_12_count": 24,
+      "full_dominant_sparse_membership": {
+        "wavelength_only_missing": 24,
+        "present": 8
+      },
+      "full_dominant_bands": {
+        "0": 25,
+        "2": 6,
+        "1": 1
+      }
+    },
+    {
+      "design": "control_usable",
+      "n": 32,
+      "sparse_V": {
+        "minimum": -1.023833575275468e-05,
+        "median": 0.0006756177723440532,
+        "P75": 0.0009605584879844664,
+        "P95": 0.0010706369873032975,
+        "worst": 0.0010706379975689018,
+        "mean": 0.0006586006703254151
+      },
+      "full_V": {
+        "minimum": 0.0003208518630126722,
+        "median": 0.0009398860335336212,
+        "P75": 0.0012992111791243766,
+        "P95": 0.002087084157805485,
+        "worst": 0.0026974848179042166,
+        "mean": 0.0010873474334775804
+      },
+      "gap": {
+        "minimum": 0.0,
+        "median": 0.00027995835880079145,
+        "P75": 0.0006236670599950589,
+        "P95": 0.001371535874429025,
+        "worst": 0.0016268490023303092,
+        "mean": 0.0004287467631521654
+      },
+      "sparse_pass_count": 1,
+      "full_pass_count": 0,
+      "sparse_pass_full_fail_count": 1,
+      "positive_gap_over_1e_12_count": 26,
+      "full_dominant_sparse_membership": {
+        "wavelength_only_missing": 26,
+        "present": 6
+      },
+      "full_dominant_bands": {
+        "0": 23,
+        "2": 9
+      }
+    },
+    {
+      "design": "exchange_usable",
+      "n": 32,
+      "sparse_V": {
+        "minimum": -7.502795590545383e-05,
+        "median": 0.0006555948172846746,
+        "P75": 0.0007036178347503141,
+        "P95": 0.0007036182026863267,
+        "worst": 0.0007036184437906323,
+        "mean": 0.0005114345616175758
+      },
+      "full_V": {
+        "minimum": 0.000353373283220923,
+        "median": 0.0007930053348154456,
+        "P75": 0.0011325486660795359,
+        "P95": 0.001917876884767533,
+        "worst": 0.0024791554429675067,
+        "mean": 0.0009619969968489863
+      },
+      "gap": {
+        "minimum": 0.0,
+        "median": 0.00039260516868180363,
+        "P75": 0.0005965960147192306,
+        "P95": 0.0012636153954678816,
+        "worst": 0.0017755372683228021,
+        "mean": 0.00045056243523141054
+      },
+      "sparse_pass_count": 1,
+      "full_pass_count": 0,
+      "sparse_pass_full_fail_count": 1,
+      "positive_gap_over_1e_12_count": 28,
+      "full_dominant_sparse_membership": {
+        "wavelength_only_missing": 28,
+        "present": 4
+      },
+      "full_dominant_bands": {
+        "0": 21,
+        "2": 9,
+        "1": 2
+      }
+    }
+  ],
+  "window_gap_summary": [
+    {
+      "design": "baseline",
+      "band": 0,
+      "minimum": 0.0,
+      "median": 0.00045203220885142725,
+      "P75": 0.0006438291556961628,
+      "P95": 0.0014384751511369752,
+      "worst": 0.0019395926391125862,
+      "mean": 0.0005192905844046795
+    },
+    {
+      "design": "baseline",
+      "band": 1,
+      "minimum": 0.0,
+      "median": 0.0,
+      "P75": 0.0,
+      "P95": 1.0599262899563255e-05,
+      "worst": 2.4373064450022852e-05,
+      "mean": 1.6616547238758328e-06
+    },
+    {
+      "design": "baseline",
+      "band": 2,
+      "minimum": 0.0,
+      "median": 1.5626086177389364e-05,
+      "P75": 0.00014312865198932122,
+      "P95": 0.0003735939091123916,
+      "worst": 0.0004271724866013668,
+      "mean": 9.335607256834679e-05
+    },
+    {
+      "design": "baseline",
+      "band": 3,
+      "minimum": 0.0,
+      "median": 0.0,
+      "P75": 5.029291167574657e-05,
+      "P95": 0.00033081046996055996,
+      "worst": 0.00037997141526058265,
+      "mean": 6.261672636529911e-05
+    },
+    {
+      "design": "control_usable",
+      "band": 0,
+      "minimum": 0.0,
+      "median": 0.0004811498404359571,
+      "P75": 0.0006818214430376057,
+      "P95": 0.001371535874429025,
+      "worst": 0.0018789865136243922,
+      "mean": 0.0005330138182266762
+    },
+    {
+      "design": "control_usable",
+      "band": 1,
+      "minimum": 0.0,
+      "median": 0.0,
+      "P75": 1.6104320245180492e-05,
+      "P95": 4.7450201262372295e-05,
+      "worst": 6.273596630157474e-05,
+      "mean": 1.0590919448539432e-05
+    },
+    {
+      "design": "control_usable",
+      "band": 2,
+      "minimum": 0.0,
+      "median": 6.928944575731837e-05,
+      "P75": 0.0003132425678814242,
+      "P95": 0.0007171545566957334,
+      "worst": 0.0008202475037725858,
+      "mean": 0.0001899612340854227
+    },
+    {
+      "design": "control_usable",
+      "band": 3,
+      "minimum": 0.0,
+      "median": 0.0,
+      "P75": 8.327096690472977e-05,
+      "P95": 0.000342859923490371,
+      "worst": 0.0006143856330623997,
+      "mean": 7.07495566878777e-05
+    },
+    {
+      "design": "exchange_usable",
+      "band": 0,
+      "minimum": 0.0,
+      "median": 0.00043861061561240033,
+      "P75": 0.0006669440688193695,
+      "P95": 0.0012636153954678816,
+      "worst": 0.0017755372683228021,
+      "mean": 0.0005098377384781111
+    },
+    {
+      "design": "exchange_usable",
+      "band": 1,
+      "minimum": 0.0,
+      "median": 0.0,
+      "P75": 7.516485638514592e-06,
+      "P95": 4.674150737987714e-05,
+      "worst": 5.5311026905924265e-05,
+      "mean": 8.543939054278527e-06
+    },
+    {
+      "design": "exchange_usable",
+      "band": 2,
+      "minimum": 0.0,
+      "median": 7.661390147040842e-05,
+      "P75": 0.00020925456578617992,
+      "P95": 0.0008104976560368543,
+      "worst": 0.0008676240890472253,
+      "mean": 0.00017423748234776063
+    },
+    {
+      "design": "exchange_usable",
+      "band": 3,
+      "minimum": 0.0,
+      "median": 0.0,
+      "P75": 8.715082193647139e-05,
+      "P95": 0.00030929016514564373,
+      "worst": 0.0005161826949155873,
+      "mean": 7.50574504548748e-05
+    }
+  ],
+  "paired_exchange_control": {
+    "definition": "delta = exchange minus control; negative is better V; exact identity delta_full = delta_sparse + delta_gap",
+    "n": 32,
+    "delta_sparse": {
+      "minimum": -0.00044922087170717884,
+      "median": -0.00013788301043786248,
+      "P75": -4.5683284569542765e-05,
+      "P95": 0.0001413781893920971,
+      "worst": 0.0003827659345077006,
+      "mean": -0.0001471661087078394
+    },
+    "delta_full": {
+      "minimum": -0.0004575283564942634,
+      "median": -0.00014141949268013133,
+      "P75": -4.579573589371961e-05,
+      "P95": 8.206596722892603e-05,
+      "worst": 0.0003827659345077006,
+      "mean": -0.00012535043662859427
+    },
+    "delta_gap": {
+      "minimum": -0.00034007714030692693,
+      "median": -3.337483369652422e-07,
+      "P75": 0.0001057000932224491,
+      "P95": 0.00030752935091304945,
+      "worst": 0.0004293080754786474,
+      "mean": 2.1815672079245128e-05
+    },
+    "sparse_exchange_better_count": 25,
+    "full_exchange_better_count": 27,
+    "ranking_flip_count": 4,
+    "delta_gap_vs_delta_full": {
+      "pearson": 0.2714846853914554,
+      "spearman": 0.24825817584105328,
+      "interpretation": "descriptive association only; 32 fixed training scenes; no causal inference or independent inferential test"
+    },
+    "delta_gap_vs_delta_sparse": {
+      "pearson": -0.6580973353771864,
+      "spearman": -0.6828016594033104,
+      "interpretation": "descriptive association only; 32 fixed training scenes; no causal inference or independent inferential test"
+    }
+  },
+  "sparse_score_reproduction": {
+    "control": {
+      "archived_training_worst": 0.0010706379975689018,
+      "new_sparse_worst": 0.0010706379975689018,
+      "absolute_difference": 0.0
+    },
+    "exchange": {
+      "archived_training_worst": 0.0007036184437906323,
+      "new_sparse_worst": 0.0007036184437906323,
+      "absolute_difference": 0.0
+    }
+  },
+  "max_shared_R_abs_difference": 0.0,
+  "seconds_observed": 682.3928641279927,
+  "warning": "Pure fixed training diagnostic. Historical validation cannot serve as new final confirmation. No optimizer, Jacobian, candidate selection, target modification, or manufactured-yield claim."
+}
