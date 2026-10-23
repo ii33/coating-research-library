@@ -1,0 +1,37 @@
+{
+  "kind": "compact_public_study_settings_not_an_executable_request",
+  "formal_source_sha": "fa9878336a597dc6df1db5b584bda3be4423cbca",
+  "full_request_included": false,
+  "embedded_material_data_included": false,
+  "scenario_coefficients_included": false,
+  "training_seed": 2026102341,
+  "training_scene_count": 32,
+  "bounded_independent_relative_error_amplitude": 0.005,
+  "variable_count": 89,
+  "design_bounds_relative_to_initial": [
+    0.99,
+    1.01
+  ],
+  "robust_training_condition_count": 600,
+  "nominal_initial_working_set_count": 760,
+  "outer_count": 5,
+  "complete_cloud_budget_per_outer": 20,
+  "total_complete_cloud_budget_per_group": 100,
+  "groups": [
+    "fixed_nominal_760_control",
+    "nominal_constraint_exchange"
+  ],
+  "strict_ir_upper": 0.03,
+  "strict_upper_objective_indices": [
+    2,
+    3
+  ],
+  "full_nominal_condition_count": 184600,
+  "dense_diagnostic_condition_count": 529396,
+  "holdout_independent_seed": 202610231,
+  "holdout_common_mode_seed": 202610232,
+  "holdout_samples_per_model": 64,
+  "fixed_design_count": 3,
+  "total_perturbed_design_samples": 384,
+  "manufacturing_yield_claim": false
+}

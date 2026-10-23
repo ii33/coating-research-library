@@ -1,0 +1,140 @@
+{
+  "training_checks": {
+    "checks_passed": true,
+    "first_20_clouds_exactly_identical": true,
+    "nominal_replay_summaries": [
+      [
+        {
+          "objective_index": 0,
+          "nominal_pass": true,
+          "min_value": 0.9900790641155027,
+          "max_value": 0.9998359272609676,
+          "violation_count": 0,
+          "max_signed_violation": -7.906411550273607e-05,
+          "worst_location": {
+            "grid_id": 8386,
+            "wavelength_nm": 782.0,
+            "angle_deg": 51.0,
+            "actual": 0.9900790641155027
+          }
+        },
+        {
+          "objective_index": 1,
+          "nominal_pass": true,
+          "min_value": 0.990270188419262,
+          "max_value": 0.9951018798904058,
+          "violation_count": 0,
+          "max_signed_violation": -0.000270188419261963,
+          "worst_location": {
+            "grid_id": 9017,
+            "wavelength_nm": 1044.0,
+            "angle_deg": 45.0,
+            "actual": 0.990270188419262
+          }
+        },
+        {
+          "objective_index": 2,
+          "nominal_pass": true,
+          "min_value": 0.013088792001402297,
+          "max_value": 0.029999529380025258,
+          "violation_count": 0,
+          "max_signed_violation": -4.70619974740627e-07,
+          "worst_location": {
+            "grid_id": 58621,
+            "wavelength_nm": 4047.0,
+            "angle_deg": 51.0,
+            "actual": 0.029999529380025258
+          }
+        },
+        {
+          "objective_index": 3,
+          "nominal_pass": true,
+          "min_value": 0.006026685859814909,
+          "max_value": 0.029758372511259262,
+          "violation_count": 0,
+          "max_signed_violation": -0.00024162748874073658,
+          "worst_location": {
+            "grid_id": 184599,
+            "wavelength_nm": 12000.0,
+            "angle_deg": 51.0,
+            "actual": 0.029758372511259262
+          }
+        }
+      ],
+      [
+        {
+          "objective_index": 0,
+          "nominal_pass": true,
+          "min_value": 0.9900115929231899,
+          "max_value": 0.9998355969388091,
+          "violation_count": 0,
+          "max_signed_violation": -1.1592923189862603e-05,
+          "worst_location": {
+            "grid_id": 8386,
+            "wavelength_nm": 782.0,
+            "angle_deg": 51.0,
+            "actual": 0.9900115929231899
+          }
+        },
+        {
+          "objective_index": 1,
+          "nominal_pass": true,
+          "min_value": 0.9903367372557899,
+          "max_value": 0.9951401196685614,
+          "violation_count": 0,
+          "max_signed_violation": -0.00033673725578986513,
+          "worst_location": {
+            "grid_id": 9017,
+            "wavelength_nm": 1044.0,
+            "angle_deg": 45.0,
+            "actual": 0.9903367372557899
+          }
+        },
+        {
+          "objective_index": 2,
+          "nominal_pass": true,
+          "min_value": 0.012956663779253294,
+          "max_value": 0.029980419744397968,
+          "violation_count": 0,
+          "max_signed_violation": -1.9580255602030805e-05,
+          "worst_location": {
+            "grid_id": 57596,
+            "wavelength_nm": 3022.0,
+            "angle_deg": 51.0,
+            "actual": 0.029980419744397968
+          }
+        },
+        {
+          "objective_index": 3,
+          "nominal_pass": true,
+          "min_value": 0.005983373793186636,
+          "max_value": 0.029757403583324505,
+          "violation_count": 0,
+          "max_signed_violation": -0.0002425964166754939,
+          "worst_location": {
+            "grid_id": 184599,
+            "wavelength_nm": 12000.0,
+            "angle_deg": 51.0,
+            "actual": 0.029757403583324505
+          }
+        }
+      ]
+    ],
+    "independent_forward_replays": 2,
+    "extra_training_clouds": 0,
+    "extra_nominal_forward_chunks": 450
+  },
+  "fixed_validation_checks": {
+    "all_frozen_hashes_unchanged": true,
+    "exact_expected_sample_files": 384,
+    "paired_scenario_identities_verified": true,
+    "all_384_perturbed_design_digests_reconstructed": true,
+    "exact_original_min_max_bound_operator_checks": true,
+    "independent_clopper_pearson_beta_formula_check": true,
+    "independent_paired_binomial_sum_check": true,
+    "independent_p95_from_all_64_check": true,
+    "no_new_forward_calls": true,
+    "no_new_optimization_or_selection": true
+  },
+  "scope": "Scientific result and statistical verification summaries only; no source hashes, sealed file inventories, executable requests or coefficient snapshots are included."
+}

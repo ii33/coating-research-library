@@ -1,0 +1,785 @@
+{
+  "nominal_diagnostics": {
+    "baseline": {
+      "design": "baseline",
+      "design_sha256": "20903578dedb500286b44df5f22d78d3e3450fc4e2dd712f7dab2027bfbf5cc6",
+      "original_1nm25": {
+        "nominal_pass": true,
+        "condition_count": 184600,
+        "forward_chunks": 225,
+        "windows": [
+          {
+            "objective_index": 0,
+            "nominal_pass": true,
+            "min_value": 0.990471796024005,
+            "max_value": 0.9998375955562799,
+            "violation_count": 0,
+            "max_signed_violation": -0.0004717960240050445,
+            "worst_location": {
+              "grid_id": 8222,
+              "wavelength_nm": 618.0,
+              "angle_deg": 51.0,
+              "actual": 0.990471796024005
+            }
+          },
+          {
+            "objective_index": 1,
+            "nominal_pass": true,
+            "min_value": 0.9904718138822008,
+            "max_value": 0.9951554482264028,
+            "violation_count": 0,
+            "max_signed_violation": -0.0004718138822008555,
+            "worst_location": {
+              "grid_id": 9549,
+              "wavelength_nm": 1084.0,
+              "angle_deg": 51.0,
+              "actual": 0.9904718138822008
+            }
+          },
+          {
+            "objective_index": 2,
+            "nominal_pass": true,
+            "min_value": 0.013024731758449287,
+            "max_value": 0.029528254608182234,
+            "violation_count": 0,
+            "max_signed_violation": -0.00047174539181776484,
+            "worst_location": {
+              "grid_id": 9550,
+              "wavelength_nm": 3000.0,
+              "angle_deg": 39.0,
+              "actual": 0.029528254608182234
+            }
+          },
+          {
+            "objective_index": 3,
+            "nominal_pass": true,
+            "min_value": 0.005925995211105301,
+            "max_value": 0.029528199209434895,
+            "violation_count": 0,
+            "max_signed_violation": -0.00047180079056510435,
+            "worst_location": {
+              "grid_id": 59575,
+              "wavelength_nm": 7000.0,
+              "angle_deg": 39.0,
+              "actual": 0.029528199209434895
+            }
+          }
+        ],
+        "violation_count": 0,
+        "max_signed_violation": -0.00047174539181776484,
+        "seconds_observed": 6.654840568007785,
+        "continuous_certificate": false
+      },
+      "dense49": {
+        "nominal_pass": true,
+        "condition_count": 529396,
+        "forward_chunks": 588,
+        "windows": [
+          {
+            "objective_index": 0,
+            "nominal_pass": true,
+            "min_value": 0.9904035289957915,
+            "max_value": 0.9998377196387287,
+            "violation_count": 0,
+            "max_signed_violation": -0.00040352899579154666,
+            "worst_location": {
+              "grid_id": 164686,
+              "wavelength_nm": 723.8,
+              "angle_deg": 51.0,
+              "actual": 0.9904035289957915
+            }
+          },
+          {
+            "objective_index": 1,
+            "nominal_pass": true,
+            "min_value": 0.9904718023796392,
+            "max_value": 0.995155473008535,
+            "violation_count": 0,
+            "max_signed_violation": -0.0004718023796391746,
+            "worst_location": {
+              "grid_id": 186044,
+              "wavelength_nm": 1058.7,
+              "angle_deg": 51.0,
+              "actual": 0.9904718023796392
+            }
+          },
+          {
+            "objective_index": 2,
+            "nominal_pass": true,
+            "min_value": 0.013024731758449287,
+            "max_value": 0.029528254608182234,
+            "violation_count": 0,
+            "max_signed_violation": -0.00047174539181776484,
+            "worst_location": {
+              "grid_id": 186298,
+              "wavelength_nm": 3000.0,
+              "angle_deg": 39.0,
+              "actual": 0.029528254608182234
+            }
+          },
+          {
+            "objective_index": 3,
+            "nominal_pass": true,
+            "min_value": 0.005925995211105301,
+            "max_value": 0.029528199209434895,
+            "violation_count": 0,
+            "max_signed_violation": -0.00047180079056510435,
+            "worst_location": {
+              "grid_id": 284347,
+              "wavelength_nm": 7000.0,
+              "angle_deg": 39.0,
+              "actual": 0.029528199209434895
+            }
+          }
+        ],
+        "violation_count": 0,
+        "max_signed_violation": -0.00040352899579154666,
+        "seconds_observed": 18.34862630200223,
+        "continuous_certificate": false
+      },
+      "dense_is_diagnostic_not_search": true
+    },
+    "control_usable": {
+      "design": "control_usable",
+      "design_sha256": "5ffcb1ecb9b82bafff29ee1f6d5e49e5393231bdd3813a09d7f9fe0c4819961f",
+      "original_1nm25": {
+        "nominal_pass": true,
+        "condition_count": 184600,
+        "forward_chunks": 225,
+        "windows": [
+          {
+            "objective_index": 0,
+            "nominal_pass": true,
+            "min_value": 0.9900115929231899,
+            "max_value": 0.9998355969388091,
+            "violation_count": 0,
+            "max_signed_violation": -1.1592923189862603e-05,
+            "worst_location": {
+              "grid_id": 8386,
+              "wavelength_nm": 782.0,
+              "angle_deg": 51.0,
+              "actual": 0.9900115929231899
+            }
+          },
+          {
+            "objective_index": 1,
+            "nominal_pass": true,
+            "min_value": 0.9903367372557899,
+            "max_value": 0.9951401196685614,
+            "violation_count": 0,
+            "max_signed_violation": -0.00033673725578986513,
+            "worst_location": {
+              "grid_id": 9017,
+              "wavelength_nm": 1044.0,
+              "angle_deg": 45.0,
+              "actual": 0.9903367372557899
+            }
+          },
+          {
+            "objective_index": 2,
+            "nominal_pass": true,
+            "min_value": 0.012956663779253294,
+            "max_value": 0.029980419744397968,
+            "violation_count": 0,
+            "max_signed_violation": -1.9580255602030805e-05,
+            "worst_location": {
+              "grid_id": 57596,
+              "wavelength_nm": 3022.0,
+              "angle_deg": 51.0,
+              "actual": 0.029980419744397968
+            }
+          },
+          {
+            "objective_index": 3,
+            "nominal_pass": true,
+            "min_value": 0.005983373793186636,
+            "max_value": 0.029757403583324505,
+            "violation_count": 0,
+            "max_signed_violation": -0.0002425964166754939,
+            "worst_location": {
+              "grid_id": 184599,
+              "wavelength_nm": 12000.0,
+              "angle_deg": 51.0,
+              "actual": 0.029757403583324505
+            }
+          }
+        ],
+        "violation_count": 0,
+        "max_signed_violation": -1.1592923189862603e-05,
+        "seconds_observed": 6.519579981992138,
+        "continuous_certificate": false
+      },
+      "dense49": {
+        "nominal_pass": true,
+        "condition_count": 529396,
+        "forward_chunks": 588,
+        "windows": [
+          {
+            "objective_index": 0,
+            "nominal_pass": true,
+            "min_value": 0.9900024437927343,
+            "max_value": 0.9998355969388091,
+            "violation_count": 0,
+            "max_signed_violation": -2.4437927342857435e-06,
+            "worst_location": {
+              "grid_id": 165270,
+              "wavelength_nm": 782.2,
+              "angle_deg": 51.0,
+              "actual": 0.9900024437927343
+            }
+          },
+          {
+            "objective_index": 1,
+            "nominal_pass": true,
+            "min_value": 0.9903337903899009,
+            "max_value": 0.9951426758394808,
+            "violation_count": 0,
+            "max_signed_violation": -0.00033379038990088983,
+            "worst_location": {
+              "grid_id": 175872,
+              "wavelength_nm": 1044.0,
+              "angle_deg": 44.75,
+              "actual": 0.9903337903899009
+            }
+          },
+          {
+            "objective_index": 2,
+            "nominal_pass": true,
+            "min_value": 0.012956663779253294,
+            "max_value": 0.029980419744397968,
+            "violation_count": 0,
+            "max_signed_violation": -1.9580255602030805e-05,
+            "worst_location": {
+              "grid_id": 282368,
+              "wavelength_nm": 3022.0,
+              "angle_deg": 51.0,
+              "actual": 0.029980419744397968
+            }
+          },
+          {
+            "objective_index": 3,
+            "nominal_pass": true,
+            "min_value": 0.005983373793186636,
+            "max_value": 0.029757403583324505,
+            "violation_count": 0,
+            "max_signed_violation": -0.0002425964166754939,
+            "worst_location": {
+              "grid_id": 529395,
+              "wavelength_nm": 12000.0,
+              "angle_deg": 51.0,
+              "actual": 0.029757403583324505
+            }
+          }
+        ],
+        "violation_count": 0,
+        "max_signed_violation": -2.4437927342857435e-06,
+        "seconds_observed": 18.770442848996026,
+        "continuous_certificate": false
+      },
+      "dense_is_diagnostic_not_search": true
+    },
+    "exchange_usable": {
+      "design": "exchange_usable",
+      "design_sha256": "f0ae421704a5739c79be0211d15d222f6a82a642d0a967b936ac27962febaaf7",
+      "original_1nm25": {
+        "nominal_pass": true,
+        "condition_count": 184600,
+        "forward_chunks": 225,
+        "windows": [
+          {
+            "objective_index": 0,
+            "nominal_pass": true,
+            "min_value": 0.9900790641155027,
+            "max_value": 0.9998359272609676,
+            "violation_count": 0,
+            "max_signed_violation": -7.906411550273607e-05,
+            "worst_location": {
+              "grid_id": 8386,
+              "wavelength_nm": 782.0,
+              "angle_deg": 51.0,
+              "actual": 0.9900790641155027
+            }
+          },
+          {
+            "objective_index": 1,
+            "nominal_pass": true,
+            "min_value": 0.990270188419262,
+            "max_value": 0.9951018798904058,
+            "violation_count": 0,
+            "max_signed_violation": -0.000270188419261963,
+            "worst_location": {
+              "grid_id": 9017,
+              "wavelength_nm": 1044.0,
+              "angle_deg": 45.0,
+              "actual": 0.990270188419262
+            }
+          },
+          {
+            "objective_index": 2,
+            "nominal_pass": true,
+            "min_value": 0.013088792001402297,
+            "max_value": 0.029999529380025258,
+            "violation_count": 0,
+            "max_signed_violation": -4.70619974740627e-07,
+            "worst_location": {
+              "grid_id": 58621,
+              "wavelength_nm": 4047.0,
+              "angle_deg": 51.0,
+              "actual": 0.029999529380025258
+            }
+          },
+          {
+            "objective_index": 3,
+            "nominal_pass": true,
+            "min_value": 0.006026685859814909,
+            "max_value": 0.029758372511259262,
+            "violation_count": 0,
+            "max_signed_violation": -0.00024162748874073658,
+            "worst_location": {
+              "grid_id": 184599,
+              "wavelength_nm": 12000.0,
+              "angle_deg": 51.0,
+              "actual": 0.029758372511259262
+            }
+          }
+        ],
+        "violation_count": 0,
+        "max_signed_violation": -4.70619974740627e-07,
+        "seconds_observed": 6.21053927099274,
+        "continuous_certificate": false
+      },
+      "dense49": {
+        "nominal_pass": true,
+        "condition_count": 529396,
+        "forward_chunks": 588,
+        "windows": [
+          {
+            "objective_index": 0,
+            "nominal_pass": true,
+            "min_value": 0.9900787862703434,
+            "max_value": 0.9998359464130231,
+            "violation_count": 0,
+            "max_signed_violation": -7.878627034341168e-05,
+            "worst_location": {
+              "grid_id": 165269,
+              "wavelength_nm": 782.1,
+              "angle_deg": 51.0,
+              "actual": 0.9900787862703434
+            }
+          },
+          {
+            "objective_index": 1,
+            "nominal_pass": true,
+            "min_value": 0.990270188419262,
+            "max_value": 0.9951040355660257,
+            "violation_count": 0,
+            "max_signed_violation": -0.000270188419261963,
+            "worst_location": {
+              "grid_id": 176273,
+              "wavelength_nm": 1044.0,
+              "angle_deg": 45.0,
+              "actual": 0.990270188419262
+            }
+          },
+          {
+            "objective_index": 2,
+            "nominal_pass": true,
+            "min_value": 0.013088792001402297,
+            "max_value": 0.029999529380025258,
+            "violation_count": 0,
+            "max_signed_violation": -4.70619974740627e-07,
+            "worst_location": {
+              "grid_id": 283393,
+              "wavelength_nm": 4047.0,
+              "angle_deg": 51.0,
+              "actual": 0.029999529380025258
+            }
+          },
+          {
+            "objective_index": 3,
+            "nominal_pass": true,
+            "min_value": 0.006026685859814909,
+            "max_value": 0.029758372511259262,
+            "violation_count": 0,
+            "max_signed_violation": -0.00024162748874073658,
+            "worst_location": {
+              "grid_id": 529395,
+              "wavelength_nm": 12000.0,
+              "angle_deg": 51.0,
+              "actual": 0.029758372511259262
+            }
+          }
+        ],
+        "violation_count": 0,
+        "max_signed_violation": -4.70619974740627e-07,
+        "seconds_observed": 17.262486713996623,
+        "continuous_certificate": false
+      },
+      "dense_is_diagnostic_not_search": true
+    }
+  },
+  "holdout_models": {
+    "independent": {
+      "designs": {
+        "baseline": {
+          "sample_count": 64,
+          "full_nominal_pass_count": 0,
+          "pass_fraction": 0.0,
+          "pass_fraction_exact_95_ci": [
+            0.0,
+            0.05600908938663657
+          ],
+          "worst_violation": 0.003999332675421546,
+          "p95_worst_violation": 0.003399978891514274,
+          "windows": [
+            {
+              "objective_index": 0,
+              "sample_pass_count": 2,
+              "minimum_R_over_all_samples": 0.9871367938129088,
+              "maximum_R_over_all_samples": 0.9998651194002923,
+              "worst_violation": 0.0028632061870912384,
+              "p95_worst_violation": 0.0020792613877082585
+            },
+            {
+              "objective_index": 1,
+              "sample_pass_count": 47,
+              "minimum_R_over_all_samples": 0.9891515138939149,
+              "maximum_R_over_all_samples": 0.9954504861600849,
+              "worst_violation": 0.0008484861060851223,
+              "p95_worst_violation": 0.0005316321094898546
+            },
+            {
+              "objective_index": 2,
+              "sample_pass_count": 4,
+              "minimum_R_over_all_samples": 0.012248982521055036,
+              "maximum_R_over_all_samples": 0.033999332675421545,
+              "worst_violation": 0.003999332675421546,
+              "p95_worst_violation": 0.003399978891514274
+            },
+            {
+              "objective_index": 3,
+              "sample_pass_count": 44,
+              "minimum_R_over_all_samples": 0.0057375554563516475,
+              "maximum_R_over_all_samples": 0.031035035126635198,
+              "worst_violation": 0.001035035126635199,
+              "p95_worst_violation": 0.0008963687409031761
+            }
+          ]
+        },
+        "control_usable": {
+          "sample_count": 64,
+          "full_nominal_pass_count": 0,
+          "pass_fraction": 0.0,
+          "pass_fraction_exact_95_ci": [
+            0.0,
+            0.05600908938663657
+          ],
+          "worst_violation": 0.00363435048306604,
+          "p95_worst_violation": 0.0022408986449954653,
+          "windows": [
+            {
+              "objective_index": 0,
+              "sample_pass_count": 2,
+              "minimum_R_over_all_samples": 0.986365649516934,
+              "maximum_R_over_all_samples": 0.9998639699665508,
+              "worst_violation": 0.00363435048306604,
+              "p95_worst_violation": 0.002092579957316037
+            },
+            {
+              "objective_index": 1,
+              "sample_pass_count": 45,
+              "minimum_R_over_all_samples": 0.9891606536882421,
+              "maximum_R_over_all_samples": 0.9954386989322694,
+              "worst_violation": 0.0008393463117578603,
+              "p95_worst_violation": 0.0005274037287155529
+            },
+            {
+              "objective_index": 2,
+              "sample_pass_count": 0,
+              "minimum_R_over_all_samples": 0.012182072319686425,
+              "maximum_R_over_all_samples": 0.032265608930110434,
+              "worst_violation": 0.0022656089301104354,
+              "p95_worst_violation": 0.0013823409923574377
+            },
+            {
+              "objective_index": 3,
+              "sample_pass_count": 52,
+              "minimum_R_over_all_samples": 0.005793299550837744,
+              "maximum_R_over_all_samples": 0.0303096159946125,
+              "worst_violation": 0.00030961599461250267,
+              "p95_worst_violation": 0.00013618652277586565
+            }
+          ]
+        },
+        "exchange_usable": {
+          "sample_count": 64,
+          "full_nominal_pass_count": 0,
+          "pass_fraction": 0.0,
+          "pass_fraction_exact_95_ci": [
+            0.0,
+            0.05600908938663657
+          ],
+          "worst_violation": 0.003343346350556553,
+          "p95_worst_violation": 0.0020611279167160263,
+          "windows": [
+            {
+              "objective_index": 0,
+              "sample_pass_count": 1,
+              "minimum_R_over_all_samples": 0.9866566536494434,
+              "maximum_R_over_all_samples": 0.9998642922350953,
+              "worst_violation": 0.003343346350556553,
+              "p95_worst_violation": 0.0019788265916726167
+            },
+            {
+              "objective_index": 1,
+              "sample_pass_count": 41,
+              "minimum_R_over_all_samples": 0.9889790454137283,
+              "maximum_R_over_all_samples": 0.9954042723602897,
+              "worst_violation": 0.0010209545862717162,
+              "p95_worst_violation": 0.0006958769594900882
+            },
+            {
+              "objective_index": 2,
+              "sample_pass_count": 1,
+              "minimum_R_over_all_samples": 0.012312294439624559,
+              "maximum_R_over_all_samples": 0.032276311639699296,
+              "worst_violation": 0.0022763116396992966,
+              "p95_worst_violation": 0.0014027844327302397
+            },
+            {
+              "objective_index": 3,
+              "sample_pass_count": 51,
+              "minimum_R_over_all_samples": 0.0058354336755622425,
+              "maximum_R_over_all_samples": 0.030309893672253944,
+              "worst_violation": 0.00030989367225394554,
+              "p95_worst_violation": 0.00013587817738778247
+            }
+          ]
+        }
+      },
+      "paired_tables": [
+        {
+          "a": "baseline",
+          "b": "control_usable",
+          "sample_count": 64,
+          "both_pass": 0,
+          "only_a_pass": 0,
+          "only_b_pass": 0,
+          "both_fail": 64,
+          "pass_count_change_b_minus_a": 0,
+          "exact_mcnemar_two_sided_p": 1.0,
+          "test_is_exploratory_unadjusted": true
+        },
+        {
+          "a": "baseline",
+          "b": "exchange_usable",
+          "sample_count": 64,
+          "both_pass": 0,
+          "only_a_pass": 0,
+          "only_b_pass": 0,
+          "both_fail": 64,
+          "pass_count_change_b_minus_a": 0,
+          "exact_mcnemar_two_sided_p": 1.0,
+          "test_is_exploratory_unadjusted": true
+        },
+        {
+          "a": "control_usable",
+          "b": "exchange_usable",
+          "sample_count": 64,
+          "both_pass": 0,
+          "only_a_pass": 0,
+          "only_b_pass": 0,
+          "both_fail": 64,
+          "pass_count_change_b_minus_a": 0,
+          "exact_mcnemar_two_sided_p": 1.0,
+          "test_is_exploratory_unadjusted": true
+        }
+      ]
+    },
+    "common_mode": {
+      "designs": {
+        "baseline": {
+          "sample_count": 64,
+          "full_nominal_pass_count": 4,
+          "pass_fraction": 0.0625,
+          "pass_fraction_exact_95_ci": [
+            0.01729002738105528,
+            0.15236347342269677
+          ],
+          "worst_violation": 0.014630319872627293,
+          "p95_worst_violation": 0.01356440073395895,
+          "windows": [
+            {
+              "objective_index": 0,
+              "sample_pass_count": 15,
+              "minimum_R_over_all_samples": 0.9790146577430932,
+              "maximum_R_over_all_samples": 0.999839978969487,
+              "worst_violation": 0.010985342256906838,
+              "p95_worst_violation": 0.009585214577121255
+            },
+            {
+              "objective_index": 1,
+              "sample_pass_count": 15,
+              "minimum_R_over_all_samples": 0.9810765181309857,
+              "maximum_R_over_all_samples": 0.9951616417403126,
+              "worst_violation": 0.00892348186901426,
+              "p95_worst_violation": 0.00817653980288616
+            },
+            {
+              "objective_index": 2,
+              "sample_pass_count": 12,
+              "minimum_R_over_all_samples": 0.01259447348695885,
+              "maximum_R_over_all_samples": 0.04463031987262729,
+              "worst_violation": 0.014630319872627293,
+              "p95_worst_violation": 0.01356440073395895
+            },
+            {
+              "objective_index": 3,
+              "sample_pass_count": 15,
+              "minimum_R_over_all_samples": 0.005911368592431555,
+              "maximum_R_over_all_samples": 0.03638768327746157,
+              "worst_violation": 0.006387683277461573,
+              "p95_worst_violation": 0.00595227094763987
+            }
+          ]
+        },
+        "control_usable": {
+          "sample_count": 64,
+          "full_nominal_pass_count": 5,
+          "pass_fraction": 0.078125,
+          "pass_fraction_exact_95_ci": [
+            0.02585384016796814,
+            0.1729783290042076
+          ],
+          "worst_violation": 0.01187060071213919,
+          "p95_worst_violation": 0.010981540475526014,
+          "windows": [
+            {
+              "objective_index": 0,
+              "sample_pass_count": 10,
+              "minimum_R_over_all_samples": 0.9781293992878608,
+              "maximum_R_over_all_samples": 0.9998377713454911,
+              "worst_violation": 0.01187060071213919,
+              "p95_worst_violation": 0.01037445807503849
+            },
+            {
+              "objective_index": 1,
+              "sample_pass_count": 16,
+              "minimum_R_over_all_samples": 0.9813816041336036,
+              "maximum_R_over_all_samples": 0.9951478901097732,
+              "worst_violation": 0.008618395866396344,
+              "p95_worst_violation": 0.007830102571509725
+            },
+            {
+              "objective_index": 2,
+              "sample_pass_count": 8,
+              "minimum_R_over_all_samples": 0.0125162618067488,
+              "maximum_R_over_all_samples": 0.041043309727395574,
+              "worst_violation": 0.011043309727395575,
+              "p95_worst_violation": 0.010024498081184607
+            },
+            {
+              "objective_index": 3,
+              "sample_pass_count": 9,
+              "minimum_R_over_all_samples": 0.005968619734284898,
+              "maximum_R_over_all_samples": 0.035363411931693456,
+              "worst_violation": 0.005363411931693457,
+              "p95_worst_violation": 0.004935879477777835
+            }
+          ]
+        },
+        "exchange_usable": {
+          "sample_count": 64,
+          "full_nominal_pass_count": 0,
+          "pass_fraction": 0.0,
+          "pass_fraction_exact_95_ci": [
+            0.0,
+            0.05600908938663657
+          ],
+          "worst_violation": 0.011432255831531513,
+          "p95_worst_violation": 0.010610413588893317,
+          "windows": [
+            {
+              "objective_index": 0,
+              "sample_pass_count": 25,
+              "minimum_R_over_all_samples": 0.9785677441684685,
+              "maximum_R_over_all_samples": 0.9998381477262737,
+              "worst_violation": 0.011432255831531513,
+              "p95_worst_violation": 0.009985292973367655
+            },
+            {
+              "objective_index": 1,
+              "sample_pass_count": 14,
+              "minimum_R_over_all_samples": 0.9810332280441054,
+              "maximum_R_over_all_samples": 0.9951090519047793,
+              "worst_violation": 0.00896677195589457,
+              "p95_worst_violation": 0.008189211157524353
+            },
+            {
+              "objective_index": 2,
+              "sample_pass_count": 3,
+              "minimum_R_over_all_samples": 0.012620226100079558,
+              "maximum_R_over_all_samples": 0.04076082600771968,
+              "worst_violation": 0.01076082600771968,
+              "p95_worst_violation": 0.009735952606710344
+            },
+            {
+              "objective_index": 3,
+              "sample_pass_count": 9,
+              "minimum_R_over_all_samples": 0.006011724476853423,
+              "maximum_R_over_all_samples": 0.03536690886261834,
+              "worst_violation": 0.0053669088626183414,
+              "p95_worst_violation": 0.004938903331671153
+            }
+          ]
+        }
+      },
+      "paired_tables": [
+        {
+          "a": "baseline",
+          "b": "control_usable",
+          "sample_count": 64,
+          "both_pass": 4,
+          "only_a_pass": 0,
+          "only_b_pass": 1,
+          "both_fail": 59,
+          "pass_count_change_b_minus_a": 1,
+          "exact_mcnemar_two_sided_p": 1.0,
+          "test_is_exploratory_unadjusted": true
+        },
+        {
+          "a": "baseline",
+          "b": "exchange_usable",
+          "sample_count": 64,
+          "both_pass": 0,
+          "only_a_pass": 4,
+          "only_b_pass": 0,
+          "both_fail": 60,
+          "pass_count_change_b_minus_a": -4,
+          "exact_mcnemar_two_sided_p": 0.125,
+          "test_is_exploratory_unadjusted": true
+        },
+        {
+          "a": "control_usable",
+          "b": "exchange_usable",
+          "sample_count": 64,
+          "both_pass": 0,
+          "only_a_pass": 5,
+          "only_b_pass": 0,
+          "both_fail": 59,
+          "pass_count_change_b_minus_a": -5,
+          "exact_mcnemar_two_sided_p": 0.0625,
+          "test_is_exploratory_unadjusted": true
+        }
+      ]
+    }
+  },
+  "design_sample_forwards": 384,
+  "original_condition_count_per_sample": 184600,
+  "original_nominal_wavelength_step_nm": 1.0,
+  "seconds_observed": 2526.0039869470056,
+  "no_candidate_selection": true,
+  "no_optimization": true,
+  "no_real_manufacturing_yield_claim": true,
+  "interpretation": "Finite iid samples under two assumed bounded-uniform relative-error models, not measured process yield. Exact sampled nominal checker; no continuous-domain certificate. Empirical P95 uses only 64 observations and is tail-uncertain."
+}

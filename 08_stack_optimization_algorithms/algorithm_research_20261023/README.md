@@ -56,3 +56,8 @@
 
 [四组已完成研究及质量曲线](expanded89-controls-20261023/README.md)保留两seed×±0.5%/±1%的全部结果：21cloud/20iter的raw最佳全部未过完整名义，外部保留合格候选；新完整184600条件留出在各档仍独立0/16、系统1/16，paired gain/loss全0。192样本双表达式逐点/联合判定零翻转，四线程仅数值等价非速度。公开四组紧凑设置、最终候选、科学汇总与必要验证，不包含完整请求/嵌入材料/场景系数或源码库存/执行脚本；不将进行中的constraint exchange、更大预算或GPU评估写为已成功。
 
+
+## 本日追加：名义约束反馈公平100cloud及384新样本
+
+[constraint exchange与固定760控制](nominal-exchange-controls-20261023/README.md)已完成同5×20=100cloud对照及独立固定验证：exchange可用候选训练worst比控制低34.28%，两raw终态仍full名义失败并被拒；原/控制/exchange原1nm与dense49均过。新独立64样本全部0/64，共模4/5/0，control→exchange有5损失0收益，exact配对p=.0625仅探索。严重度改善不等于yield改善。只公开报告、候选、紧凑设置与汇总验证，不含完整请求/材料/场景系数，也不宣称生产入口或GPU已集成。
+

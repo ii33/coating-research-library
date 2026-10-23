@@ -1,0 +1,116 @@
+{
+  "exchange": [
+    {
+      "outer": 1,
+      "cloud_start": 0,
+      "cloud_end": 20,
+      "new_clouds": 20,
+      "stop": "per_outer_cloud_limit",
+      "solver_success": false,
+      "working_set_before": 760,
+      "working_set_after": 782,
+      "usable_training_worst": 0.0010706379975689018
+    },
+    {
+      "outer": 2,
+      "cloud_start": 20,
+      "cloud_end": 40,
+      "new_clouds": 20,
+      "stop": "solver_stopped",
+      "solver_success": false,
+      "working_set_before": 782,
+      "working_set_after": 782,
+      "usable_training_worst": 0.0008831631532705275
+    },
+    {
+      "outer": 3,
+      "cloud_start": 40,
+      "cloud_end": 60,
+      "new_clouds": 20,
+      "stop": "solver_stopped",
+      "solver_success": false,
+      "working_set_before": 782,
+      "working_set_after": 842,
+      "usable_training_worst": 0.0007520966109750837
+    },
+    {
+      "outer": 4,
+      "cloud_start": 60,
+      "cloud_end": 80,
+      "new_clouds": 20,
+      "stop": "solver_stopped",
+      "solver_success": false,
+      "working_set_before": 842,
+      "working_set_after": 842,
+      "usable_training_worst": 0.0007139473177708092
+    },
+    {
+      "outer": 5,
+      "cloud_start": 80,
+      "cloud_end": 100,
+      "new_clouds": 20,
+      "stop": "solver_stopped",
+      "solver_success": false,
+      "working_set_before": 842,
+      "working_set_after": 846,
+      "usable_training_worst": 0.0007036184437906323
+    }
+  ],
+  "control": [
+    {
+      "outer": 1,
+      "cloud_start": 0,
+      "cloud_end": 20,
+      "new_clouds": 20,
+      "stop": "per_outer_cloud_limit",
+      "solver_success": false,
+      "working_set_before": 760,
+      "working_set_after": 760,
+      "usable_training_worst": 0.0010706379975689018
+    },
+    {
+      "outer": 2,
+      "cloud_start": 20,
+      "cloud_end": 40,
+      "new_clouds": 20,
+      "stop": "solver_stopped",
+      "solver_success": false,
+      "working_set_before": 760,
+      "working_set_after": 760,
+      "usable_training_worst": 0.0010706379975689018
+    },
+    {
+      "outer": 3,
+      "cloud_start": 40,
+      "cloud_end": 60,
+      "new_clouds": 20,
+      "stop": "solver_stopped",
+      "solver_success": false,
+      "working_set_before": 760,
+      "working_set_after": 760,
+      "usable_training_worst": 0.0010706379975689018
+    },
+    {
+      "outer": 4,
+      "cloud_start": 60,
+      "cloud_end": 80,
+      "new_clouds": 20,
+      "stop": "solver_stopped",
+      "solver_success": false,
+      "working_set_before": 760,
+      "working_set_after": 760,
+      "usable_training_worst": 0.0010706379975689018
+    },
+    {
+      "outer": 5,
+      "cloud_start": 80,
+      "cloud_end": 100,
+      "new_clouds": 20,
+      "stop": "solver_stopped",
+      "solver_success": false,
+      "working_set_before": 760,
+      "working_set_after": 760,
+      "usable_training_worst": 0.0010706379975689018
+    }
+  ]
+}
