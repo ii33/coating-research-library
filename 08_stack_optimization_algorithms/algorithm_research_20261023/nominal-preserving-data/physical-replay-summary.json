@@ -1,0 +1,138 @@
+{
+  "all_passed": true,
+  "evidence_scope": "development implementation final result replay; not production host acceptance or manufacturing qualification",
+  "results": [
+    {
+      "case_label": "AR-local-absolute_nm-1-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.09531529901141766
+    },
+    {
+      "case_label": "AR-local-absolute_nm-1-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.12401096599933226
+    },
+    {
+      "case_label": "AR-local-relative-0.005-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.10326186299789697
+    },
+    {
+      "case_label": "AR-local-relative-0.005-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.10725905701110605
+    },
+    {
+      "case_label": "AR-local-relative-0.01-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.10471622100158129
+    },
+    {
+      "case_label": "AR-local-relative-0.01-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.10983780599781312
+    },
+    {
+      "case_label": "AR-local-relative-0.02-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.10447267499694135
+    },
+    {
+      "case_label": "AR-local-relative-0.02-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.10088626899232622
+    },
+    {
+      "case_label": "HR-8layer-absolute_nm-1-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.16853376598737668
+    },
+    {
+      "case_label": "HR-8layer-absolute_nm-1-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.15058527400833555
+    },
+    {
+      "case_label": "HR-8layer-relative-0.005-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.16339372300717514
+    },
+    {
+      "case_label": "HR-8layer-relative-0.005-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.18250164900382515
+    },
+    {
+      "case_label": "HR-8layer-relative-0.01-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.19672617700416595
+    },
+    {
+      "case_label": "HR-8layer-relative-0.01-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.1623549400101183
+    },
+    {
+      "case_label": "HR-8layer-relative-0.02-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.200398070999654
+    },
+    {
+      "case_label": "HR-8layer-relative-0.02-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.16919885500101373
+    },
+    {
+      "case_label": "large-new-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 6.97389173299598
+    },
+    {
+      "case_label": "new-mode-cli-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.14912142799585126
+    },
+    {
+      "case_label": "zero-bound-0.002-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.13162474799901247
+    },
+    {
+      "case_label": "zero-bound-0.002-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.12029972700111102
+    },
+    {
+      "case_label": "zero-bound-0.02-finite_scenario_expected-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.14100948099803645
+    },
+    {
+      "case_label": "zero-bound-0.02-finite_scenario_worst-result.json",
+      "physical_replay_passed": true,
+      "nominal_preserving": true,
+      "seconds_observed": 0.10664099900168367
+    }
+  ]
+}

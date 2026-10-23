@@ -1,0 +1,21 @@
+{
+  "base_commit": "17e0c4d8ecd38faf88f1793a4a935d683fa037fb",
+  "training_grid": "old sparse:5nm visible/100-250nm IR,5 angles",
+  "full_nominal": "original 1nm x25 half-degree angles, all4windows",
+  "independent_dense": "visible .1nm,49 quarter-degree angles; original1nm IR",
+  "scales": [
+    [
+      "relative",
+      0.005
+    ]
+  ],
+  "training_samples": 12,
+  "training_seed": 2026102321,
+  "holdout_samples_per_model": 16,
+  "holdout_independent_seed": 2026102322,
+  "holdout_common_seed": 2026102323,
+  "max_evaluations": 25,
+  "max_iterations": 20,
+  "variable_selection": "same six predeclared variables as prior baseline, selected without new holdout; all89 layers perturbed",
+  "caveat": "Sparse nominal feasibility is not original-grid feasibility. Every retained output separately audited full nominal. No holdout-driven tuning. Not a measured process or true yield."
+}

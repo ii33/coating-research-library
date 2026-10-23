@@ -1,0 +1,1834 @@
+[
+  {
+    "experiment": "zero-bound-0.002-finite_scenario_expected",
+    "state": "completed",
+    "termination_reason": "constrained_tolerance",
+    "request": {
+      "schema_version": 1,
+      "kind": "coat_sim.film_sensitivity_request",
+      "design_snapshot": {
+        "schema_version": 1,
+        "id": "bare-substrate-test",
+        "name": "未命名膜系",
+        "layer_order": "substrate_outward",
+        "front_layers": [
+          {
+            "id": "L0",
+            "material_id": "low",
+            "optical_set_id": "nk",
+            "thickness": {
+              "value": 112.26827987756234,
+              "unit": "nm"
+            },
+            "note": ""
+          }
+        ],
+        "back_layers": [],
+        "reference_wavelength_nm": 550.0,
+        "substrate": {
+          "material_id": "glass",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 1.0,
+            "unit": "mm"
+          },
+          "sides": "single",
+          "mode": "auto"
+        },
+        "incident_medium": {
+          "kind": "constant",
+          "n": 1.0
+        },
+        "exit_medium": {
+          "kind": "constant",
+          "n": 1.0
+        },
+        "assume_lossless": false,
+        "use_k": true,
+        "note": "",
+        "first_surface": "front",
+        "expression": {
+          "text": "",
+          "symbols": {},
+          "in_sync": true
+        }
+      },
+      "design_revision": 0,
+      "objectives": [
+        {
+          "wavelength_min_nm": 520.0,
+          "wavelength_max_nm": 580.0,
+          "wavelength_samples": 61,
+          "angles_deg": [
+            0.0
+          ],
+          "polarization": "unpolarized",
+          "metric": "R",
+          "mode": "range",
+          "target_value": null,
+          "lower_bound": null,
+          "upper_bound": 0.00035,
+          "weight": 1.0,
+          "normalization_scale": 1.0
+        }
+      ],
+      "errors": [
+        {
+          "layer_id": "L0",
+          "magnitude": 0.0,
+          "unit": "absolute_nm",
+          "relative_fraction": 0.002
+        }
+      ],
+      "error_model": "independent",
+      "robustness_objective": "finite_scenario_expected",
+      "variables": [
+        {
+          "side": "front",
+          "layer_id": "L0",
+          "lower_nm": 0.0,
+          "upper_nm": 225.0
+        }
+      ],
+      "scenarios": [
+        {
+          "scenario_id": "process-000000",
+          "coefficients": [
+            0.5665865028515849
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000001",
+          "coefficients": [
+            0.10594190514330348
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000002",
+          "coefficients": [
+            0.028220029011686965
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000003",
+          "coefficients": [
+            -0.3488136484973534
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000004",
+          "coefficients": [
+            -0.14354701050193186
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000005",
+          "coefficients": [
+            0.4768930918526799
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000006",
+          "coefficients": [
+            0.5850117300512254
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000007",
+          "coefficients": [
+            -0.834135721059241
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000008",
+          "coefficients": [
+            0.5099325281204019
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000009",
+          "coefficients": [
+            -0.0863850396413377
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000010",
+          "coefficients": [
+            -0.09407602740597021
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000011",
+          "coefficients": [
+            -0.9377643277028511
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000012",
+          "coefficients": [
+            -0.9808177675640526
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000013",
+          "coefficients": [
+            0.5770065453029141
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000014",
+          "coefficients": [
+            0.39527681797596514
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000015",
+          "coefficients": [
+            0.5268742473395218
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000016",
+          "coefficients": [
+            -0.7718498221251173
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000017",
+          "coefficients": [
+            0.25947968350753725
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000018",
+          "coefficients": [
+            -0.12079893744428838
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000019",
+          "coefficients": [
+            0.4254974641859517
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000020",
+          "coefficients": [
+            0.517488017415763
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000021",
+          "coefficients": [
+            0.5975334914156814
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000022",
+          "coefficients": [
+            0.16240019407158202
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000023",
+          "coefficients": [
+            -0.6171750561812532
+          ],
+          "weight": 1.0
+        }
+      ],
+      "operation": "optimize",
+      "acceptable_normalized_error": 0.0,
+      "max_iterations": 30,
+      "max_evaluations": 40,
+      "initial_step_fraction": 0.25,
+      "min_step_fraction": 1e-06,
+      "frozen_material_snapshot": {
+        "schema_version": 1,
+        "kind": "coat_sim.frozen_film_design",
+        "design": {
+          "schema_version": 1,
+          "id": "bare-substrate-test",
+          "name": "未命名膜系",
+          "layer_order": "substrate_outward",
+          "front_layers": [
+            {
+              "id": "L0",
+              "material_id": "low",
+              "optical_set_id": "nk",
+              "thickness": {
+                "value": 112.26827987756234,
+                "unit": "nm"
+              },
+              "note": ""
+            }
+          ],
+          "back_layers": [],
+          "reference_wavelength_nm": 550.0,
+          "substrate": {
+            "material_id": "glass",
+            "optical_set_id": "nk",
+            "thickness": {
+              "value": 1.0,
+              "unit": "mm"
+            },
+            "sides": "single",
+            "mode": "auto"
+          },
+          "incident_medium": {
+            "kind": "constant",
+            "n": 1.0
+          },
+          "exit_medium": {
+            "kind": "constant",
+            "n": 1.0
+          },
+          "assume_lossless": false,
+          "use_k": true,
+          "note": "",
+          "first_surface": "front",
+          "expression": {
+            "text": "",
+            "symbols": {},
+            "in_sync": true
+          }
+        },
+        "settings": {
+          "wavelength_min_nm": 520.0,
+          "wavelength_max_nm": 580.0,
+          "samples": 61,
+          "step_nm": 1.0,
+          "angle_deg": 0.0,
+          "polarization": "unpolarized",
+          "light_source": {
+            "kind": "flat"
+          },
+          "first_surface": "front",
+          "extrapolation_policy": "endpoint_hold"
+        },
+        "materials": [
+          {
+            "id": "glass",
+            "name": "glass",
+            "optical_sets": [
+              {
+                "id": "nk",
+                "name": "glass",
+                "kind": "tabulated",
+                "notes": "analytical fixture",
+                "source": "synthetic validation oracle; not real material evidence",
+                "wavelength_unit": "nm",
+                "wavelength_min": 450.0,
+                "wavelength_max": 700.0,
+                "wavelengths": [
+                  450.0,
+                  550.0,
+                  700.0
+                ],
+                "n": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "k": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "design_ready": true,
+            "notes": ""
+          },
+          {
+            "id": "low",
+            "name": "low",
+            "optical_sets": [
+              {
+                "id": "nk",
+                "name": "low",
+                "kind": "tabulated",
+                "notes": "analytical fixture",
+                "source": "synthetic validation oracle; not real material evidence",
+                "wavelength_unit": "nm",
+                "wavelength_min": 450.0,
+                "wavelength_max": 700.0,
+                "wavelengths": [
+                  450.0,
+                  550.0,
+                  700.0
+                ],
+                "n": [
+                  1.224744871391589,
+                  1.224744871391589,
+                  1.224744871391589
+                ],
+                "k": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "design_ready": true,
+            "notes": ""
+          }
+        ],
+        "sha256": "a1407387626e0278722e527e03c18eb454acb4cb214fc99f7ad3e43b27e33fdb"
+      },
+      "optimization_policy": "nominal_preserving"
+    },
+    "best_design": {
+      "schema_version": 1,
+      "id": "bare-substrate-test",
+      "name": "未命名膜系",
+      "layer_order": "substrate_outward",
+      "front_layers": [
+        {
+          "id": "L0",
+          "material_id": "low",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 111.82705232145562,
+            "unit": "nm"
+          },
+          "note": ""
+        }
+      ],
+      "back_layers": [],
+      "reference_wavelength_nm": 550.0,
+      "substrate": {
+        "material_id": "glass",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 1.0,
+          "unit": "mm"
+        },
+        "sides": "single",
+        "mode": "auto"
+      },
+      "incident_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "exit_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "assume_lossless": false,
+      "use_k": true,
+      "note": "",
+      "first_surface": "front",
+      "expression": {
+        "text": "",
+        "symbols": {},
+        "in_sync": false
+      }
+    },
+    "best_thickness_nm": {
+      "L0": 111.82705232145562
+    },
+    "evaluations": 3,
+    "initial_training_robustness": 3.7075428955054415e-07,
+    "best_training_robustness": 0.0,
+    "initial_nominal_pass": true,
+    "best_nominal_pass": true
+  },
+  {
+    "experiment": "zero-bound-0.002-finite_scenario_worst",
+    "state": "completed",
+    "termination_reason": "constrained_tolerance",
+    "request": {
+      "schema_version": 1,
+      "kind": "coat_sim.film_sensitivity_request",
+      "design_snapshot": {
+        "schema_version": 1,
+        "id": "bare-substrate-test",
+        "name": "未命名膜系",
+        "layer_order": "substrate_outward",
+        "front_layers": [
+          {
+            "id": "L0",
+            "material_id": "low",
+            "optical_set_id": "nk",
+            "thickness": {
+              "value": 112.26827987756234,
+              "unit": "nm"
+            },
+            "note": ""
+          }
+        ],
+        "back_layers": [],
+        "reference_wavelength_nm": 550.0,
+        "substrate": {
+          "material_id": "glass",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 1.0,
+            "unit": "mm"
+          },
+          "sides": "single",
+          "mode": "auto"
+        },
+        "incident_medium": {
+          "kind": "constant",
+          "n": 1.0
+        },
+        "exit_medium": {
+          "kind": "constant",
+          "n": 1.0
+        },
+        "assume_lossless": false,
+        "use_k": true,
+        "note": "",
+        "first_surface": "front",
+        "expression": {
+          "text": "",
+          "symbols": {},
+          "in_sync": true
+        }
+      },
+      "design_revision": 0,
+      "objectives": [
+        {
+          "wavelength_min_nm": 520.0,
+          "wavelength_max_nm": 580.0,
+          "wavelength_samples": 61,
+          "angles_deg": [
+            0.0
+          ],
+          "polarization": "unpolarized",
+          "metric": "R",
+          "mode": "range",
+          "target_value": null,
+          "lower_bound": null,
+          "upper_bound": 0.00035,
+          "weight": 1.0,
+          "normalization_scale": 1.0
+        }
+      ],
+      "errors": [
+        {
+          "layer_id": "L0",
+          "magnitude": 0.0,
+          "unit": "absolute_nm",
+          "relative_fraction": 0.002
+        }
+      ],
+      "error_model": "independent",
+      "robustness_objective": "finite_scenario_worst",
+      "variables": [
+        {
+          "side": "front",
+          "layer_id": "L0",
+          "lower_nm": 0.0,
+          "upper_nm": 225.0
+        }
+      ],
+      "scenarios": [
+        {
+          "scenario_id": "process-000000",
+          "coefficients": [
+            0.5665865028515849
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000001",
+          "coefficients": [
+            0.10594190514330348
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000002",
+          "coefficients": [
+            0.028220029011686965
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000003",
+          "coefficients": [
+            -0.3488136484973534
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000004",
+          "coefficients": [
+            -0.14354701050193186
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000005",
+          "coefficients": [
+            0.4768930918526799
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000006",
+          "coefficients": [
+            0.5850117300512254
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000007",
+          "coefficients": [
+            -0.834135721059241
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000008",
+          "coefficients": [
+            0.5099325281204019
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000009",
+          "coefficients": [
+            -0.0863850396413377
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000010",
+          "coefficients": [
+            -0.09407602740597021
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000011",
+          "coefficients": [
+            -0.9377643277028511
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000012",
+          "coefficients": [
+            -0.9808177675640526
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000013",
+          "coefficients": [
+            0.5770065453029141
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000014",
+          "coefficients": [
+            0.39527681797596514
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000015",
+          "coefficients": [
+            0.5268742473395218
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000016",
+          "coefficients": [
+            -0.7718498221251173
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000017",
+          "coefficients": [
+            0.25947968350753725
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000018",
+          "coefficients": [
+            -0.12079893744428838
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000019",
+          "coefficients": [
+            0.4254974641859517
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000020",
+          "coefficients": [
+            0.517488017415763
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000021",
+          "coefficients": [
+            0.5975334914156814
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000022",
+          "coefficients": [
+            0.16240019407158202
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000023",
+          "coefficients": [
+            -0.6171750561812532
+          ],
+          "weight": 1.0
+        }
+      ],
+      "operation": "optimize",
+      "acceptable_normalized_error": 0.0,
+      "max_iterations": 30,
+      "max_evaluations": 40,
+      "initial_step_fraction": 0.25,
+      "min_step_fraction": 1e-06,
+      "frozen_material_snapshot": {
+        "schema_version": 1,
+        "kind": "coat_sim.frozen_film_design",
+        "design": {
+          "schema_version": 1,
+          "id": "bare-substrate-test",
+          "name": "未命名膜系",
+          "layer_order": "substrate_outward",
+          "front_layers": [
+            {
+              "id": "L0",
+              "material_id": "low",
+              "optical_set_id": "nk",
+              "thickness": {
+                "value": 112.26827987756234,
+                "unit": "nm"
+              },
+              "note": ""
+            }
+          ],
+          "back_layers": [],
+          "reference_wavelength_nm": 550.0,
+          "substrate": {
+            "material_id": "glass",
+            "optical_set_id": "nk",
+            "thickness": {
+              "value": 1.0,
+              "unit": "mm"
+            },
+            "sides": "single",
+            "mode": "auto"
+          },
+          "incident_medium": {
+            "kind": "constant",
+            "n": 1.0
+          },
+          "exit_medium": {
+            "kind": "constant",
+            "n": 1.0
+          },
+          "assume_lossless": false,
+          "use_k": true,
+          "note": "",
+          "first_surface": "front",
+          "expression": {
+            "text": "",
+            "symbols": {},
+            "in_sync": true
+          }
+        },
+        "settings": {
+          "wavelength_min_nm": 520.0,
+          "wavelength_max_nm": 580.0,
+          "samples": 61,
+          "step_nm": 1.0,
+          "angle_deg": 0.0,
+          "polarization": "unpolarized",
+          "light_source": {
+            "kind": "flat"
+          },
+          "first_surface": "front",
+          "extrapolation_policy": "endpoint_hold"
+        },
+        "materials": [
+          {
+            "id": "glass",
+            "name": "glass",
+            "optical_sets": [
+              {
+                "id": "nk",
+                "name": "glass",
+                "kind": "tabulated",
+                "notes": "analytical fixture",
+                "source": "synthetic validation oracle; not real material evidence",
+                "wavelength_unit": "nm",
+                "wavelength_min": 450.0,
+                "wavelength_max": 700.0,
+                "wavelengths": [
+                  450.0,
+                  550.0,
+                  700.0
+                ],
+                "n": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "k": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "design_ready": true,
+            "notes": ""
+          },
+          {
+            "id": "low",
+            "name": "low",
+            "optical_sets": [
+              {
+                "id": "nk",
+                "name": "low",
+                "kind": "tabulated",
+                "notes": "analytical fixture",
+                "source": "synthetic validation oracle; not real material evidence",
+                "wavelength_unit": "nm",
+                "wavelength_min": 450.0,
+                "wavelength_max": 700.0,
+                "wavelengths": [
+                  450.0,
+                  550.0,
+                  700.0
+                ],
+                "n": [
+                  1.224744871391589,
+                  1.224744871391589,
+                  1.224744871391589
+                ],
+                "k": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "design_ready": true,
+            "notes": ""
+          }
+        ],
+        "sha256": "a1407387626e0278722e527e03c18eb454acb4cb214fc99f7ad3e43b27e33fdb"
+      },
+      "optimization_policy": "nominal_preserving"
+    },
+    "best_design": {
+      "schema_version": 1,
+      "id": "bare-substrate-test",
+      "name": "未命名膜系",
+      "layer_order": "substrate_outward",
+      "front_layers": [
+        {
+          "id": "L0",
+          "material_id": "low",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 112.21347904370653,
+            "unit": "nm"
+          },
+          "note": ""
+        }
+      ],
+      "back_layers": [],
+      "reference_wavelength_nm": 550.0,
+      "substrate": {
+        "material_id": "glass",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 1.0,
+          "unit": "mm"
+        },
+        "sides": "single",
+        "mode": "auto"
+      },
+      "incident_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "exit_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "assume_lossless": false,
+      "use_k": true,
+      "note": "",
+      "first_surface": "front",
+      "expression": {
+        "text": "",
+        "symbols": {},
+        "in_sync": false
+      }
+    },
+    "best_thickness_nm": {
+      "L0": 112.21347904370653
+    },
+    "evaluations": 3,
+    "initial_training_robustness": 6.1989489557693895e-06,
+    "best_training_robustness": 5.049256911020261e-13,
+    "initial_nominal_pass": true,
+    "best_nominal_pass": true
+  },
+  {
+    "experiment": "zero-bound-0.02-finite_scenario_expected",
+    "state": "completed",
+    "termination_reason": "constrained_tolerance",
+    "request": {
+      "schema_version": 1,
+      "kind": "coat_sim.film_sensitivity_request",
+      "design_snapshot": {
+        "schema_version": 1,
+        "id": "bare-substrate-test",
+        "name": "未命名膜系",
+        "layer_order": "substrate_outward",
+        "front_layers": [
+          {
+            "id": "L0",
+            "material_id": "low",
+            "optical_set_id": "nk",
+            "thickness": {
+              "value": 112.26827987756234,
+              "unit": "nm"
+            },
+            "note": ""
+          }
+        ],
+        "back_layers": [],
+        "reference_wavelength_nm": 550.0,
+        "substrate": {
+          "material_id": "glass",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 1.0,
+            "unit": "mm"
+          },
+          "sides": "single",
+          "mode": "auto"
+        },
+        "incident_medium": {
+          "kind": "constant",
+          "n": 1.0
+        },
+        "exit_medium": {
+          "kind": "constant",
+          "n": 1.0
+        },
+        "assume_lossless": false,
+        "use_k": true,
+        "note": "",
+        "first_surface": "front",
+        "expression": {
+          "text": "",
+          "symbols": {},
+          "in_sync": true
+        }
+      },
+      "design_revision": 0,
+      "objectives": [
+        {
+          "wavelength_min_nm": 520.0,
+          "wavelength_max_nm": 580.0,
+          "wavelength_samples": 61,
+          "angles_deg": [
+            0.0
+          ],
+          "polarization": "unpolarized",
+          "metric": "R",
+          "mode": "range",
+          "target_value": null,
+          "lower_bound": null,
+          "upper_bound": 0.00035,
+          "weight": 1.0,
+          "normalization_scale": 1.0
+        }
+      ],
+      "errors": [
+        {
+          "layer_id": "L0",
+          "magnitude": 0.0,
+          "unit": "absolute_nm",
+          "relative_fraction": 0.02
+        }
+      ],
+      "error_model": "independent",
+      "robustness_objective": "finite_scenario_expected",
+      "variables": [
+        {
+          "side": "front",
+          "layer_id": "L0",
+          "lower_nm": 0.0,
+          "upper_nm": 225.0
+        }
+      ],
+      "scenarios": [
+        {
+          "scenario_id": "process-000000",
+          "coefficients": [
+            0.5665865028515849
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000001",
+          "coefficients": [
+            0.10594190514330348
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000002",
+          "coefficients": [
+            0.028220029011686965
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000003",
+          "coefficients": [
+            -0.3488136484973534
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000004",
+          "coefficients": [
+            -0.14354701050193186
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000005",
+          "coefficients": [
+            0.4768930918526799
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000006",
+          "coefficients": [
+            0.5850117300512254
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000007",
+          "coefficients": [
+            -0.834135721059241
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000008",
+          "coefficients": [
+            0.5099325281204019
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000009",
+          "coefficients": [
+            -0.0863850396413377
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000010",
+          "coefficients": [
+            -0.09407602740597021
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000011",
+          "coefficients": [
+            -0.9377643277028511
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000012",
+          "coefficients": [
+            -0.9808177675640526
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000013",
+          "coefficients": [
+            0.5770065453029141
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000014",
+          "coefficients": [
+            0.39527681797596514
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000015",
+          "coefficients": [
+            0.5268742473395218
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000016",
+          "coefficients": [
+            -0.7718498221251173
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000017",
+          "coefficients": [
+            0.25947968350753725
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000018",
+          "coefficients": [
+            -0.12079893744428838
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000019",
+          "coefficients": [
+            0.4254974641859517
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000020",
+          "coefficients": [
+            0.517488017415763
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000021",
+          "coefficients": [
+            0.5975334914156814
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000022",
+          "coefficients": [
+            0.16240019407158202
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000023",
+          "coefficients": [
+            -0.6171750561812532
+          ],
+          "weight": 1.0
+        }
+      ],
+      "operation": "optimize",
+      "acceptable_normalized_error": 0.0,
+      "max_iterations": 30,
+      "max_evaluations": 40,
+      "initial_step_fraction": 0.25,
+      "min_step_fraction": 1e-06,
+      "frozen_material_snapshot": {
+        "schema_version": 1,
+        "kind": "coat_sim.frozen_film_design",
+        "design": {
+          "schema_version": 1,
+          "id": "bare-substrate-test",
+          "name": "未命名膜系",
+          "layer_order": "substrate_outward",
+          "front_layers": [
+            {
+              "id": "L0",
+              "material_id": "low",
+              "optical_set_id": "nk",
+              "thickness": {
+                "value": 112.26827987756234,
+                "unit": "nm"
+              },
+              "note": ""
+            }
+          ],
+          "back_layers": [],
+          "reference_wavelength_nm": 550.0,
+          "substrate": {
+            "material_id": "glass",
+            "optical_set_id": "nk",
+            "thickness": {
+              "value": 1.0,
+              "unit": "mm"
+            },
+            "sides": "single",
+            "mode": "auto"
+          },
+          "incident_medium": {
+            "kind": "constant",
+            "n": 1.0
+          },
+          "exit_medium": {
+            "kind": "constant",
+            "n": 1.0
+          },
+          "assume_lossless": false,
+          "use_k": true,
+          "note": "",
+          "first_surface": "front",
+          "expression": {
+            "text": "",
+            "symbols": {},
+            "in_sync": true
+          }
+        },
+        "settings": {
+          "wavelength_min_nm": 520.0,
+          "wavelength_max_nm": 580.0,
+          "samples": 61,
+          "step_nm": 1.0,
+          "angle_deg": 0.0,
+          "polarization": "unpolarized",
+          "light_source": {
+            "kind": "flat"
+          },
+          "first_surface": "front",
+          "extrapolation_policy": "endpoint_hold"
+        },
+        "materials": [
+          {
+            "id": "glass",
+            "name": "glass",
+            "optical_sets": [
+              {
+                "id": "nk",
+                "name": "glass",
+                "kind": "tabulated",
+                "notes": "analytical fixture",
+                "source": "synthetic validation oracle; not real material evidence",
+                "wavelength_unit": "nm",
+                "wavelength_min": 450.0,
+                "wavelength_max": 700.0,
+                "wavelengths": [
+                  450.0,
+                  550.0,
+                  700.0
+                ],
+                "n": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "k": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "design_ready": true,
+            "notes": ""
+          },
+          {
+            "id": "low",
+            "name": "low",
+            "optical_sets": [
+              {
+                "id": "nk",
+                "name": "low",
+                "kind": "tabulated",
+                "notes": "analytical fixture",
+                "source": "synthetic validation oracle; not real material evidence",
+                "wavelength_unit": "nm",
+                "wavelength_min": 450.0,
+                "wavelength_max": 700.0,
+                "wavelengths": [
+                  450.0,
+                  550.0,
+                  700.0
+                ],
+                "n": [
+                  1.224744871391589,
+                  1.224744871391589,
+                  1.224744871391589
+                ],
+                "k": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "design_ready": true,
+            "notes": ""
+          }
+        ],
+        "sha256": "a1407387626e0278722e527e03c18eb454acb4cb214fc99f7ad3e43b27e33fdb"
+      },
+      "optimization_policy": "nominal_preserving"
+    },
+    "best_design": {
+      "schema_version": 1,
+      "id": "bare-substrate-test",
+      "name": "未命名膜系",
+      "layer_order": "substrate_outward",
+      "front_layers": [
+        {
+          "id": "L0",
+          "material_id": "low",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 112.0359854617879,
+            "unit": "nm"
+          },
+          "note": ""
+        }
+      ],
+      "back_layers": [],
+      "reference_wavelength_nm": 550.0,
+      "substrate": {
+        "material_id": "glass",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 1.0,
+          "unit": "mm"
+        },
+        "sides": "single",
+        "mode": "auto"
+      },
+      "incident_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "exit_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "assume_lossless": false,
+      "use_k": true,
+      "note": "",
+      "first_surface": "front",
+      "expression": {
+        "text": "",
+        "symbols": {},
+        "in_sync": false
+      }
+    },
+    "best_thickness_nm": {
+      "L0": 112.0359854617879
+    },
+    "evaluations": 4,
+    "initial_training_robustness": 1.9992062693185524e-05,
+    "best_training_robustness": 1.8769675399004207e-05,
+    "initial_nominal_pass": true,
+    "best_nominal_pass": true
+  },
+  {
+    "experiment": "zero-bound-0.02-finite_scenario_worst",
+    "state": "completed",
+    "termination_reason": "constrained_tolerance",
+    "request": {
+      "schema_version": 1,
+      "kind": "coat_sim.film_sensitivity_request",
+      "design_snapshot": {
+        "schema_version": 1,
+        "id": "bare-substrate-test",
+        "name": "未命名膜系",
+        "layer_order": "substrate_outward",
+        "front_layers": [
+          {
+            "id": "L0",
+            "material_id": "low",
+            "optical_set_id": "nk",
+            "thickness": {
+              "value": 112.26827987756234,
+              "unit": "nm"
+            },
+            "note": ""
+          }
+        ],
+        "back_layers": [],
+        "reference_wavelength_nm": 550.0,
+        "substrate": {
+          "material_id": "glass",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 1.0,
+            "unit": "mm"
+          },
+          "sides": "single",
+          "mode": "auto"
+        },
+        "incident_medium": {
+          "kind": "constant",
+          "n": 1.0
+        },
+        "exit_medium": {
+          "kind": "constant",
+          "n": 1.0
+        },
+        "assume_lossless": false,
+        "use_k": true,
+        "note": "",
+        "first_surface": "front",
+        "expression": {
+          "text": "",
+          "symbols": {},
+          "in_sync": true
+        }
+      },
+      "design_revision": 0,
+      "objectives": [
+        {
+          "wavelength_min_nm": 520.0,
+          "wavelength_max_nm": 580.0,
+          "wavelength_samples": 61,
+          "angles_deg": [
+            0.0
+          ],
+          "polarization": "unpolarized",
+          "metric": "R",
+          "mode": "range",
+          "target_value": null,
+          "lower_bound": null,
+          "upper_bound": 0.00035,
+          "weight": 1.0,
+          "normalization_scale": 1.0
+        }
+      ],
+      "errors": [
+        {
+          "layer_id": "L0",
+          "magnitude": 0.0,
+          "unit": "absolute_nm",
+          "relative_fraction": 0.02
+        }
+      ],
+      "error_model": "independent",
+      "robustness_objective": "finite_scenario_worst",
+      "variables": [
+        {
+          "side": "front",
+          "layer_id": "L0",
+          "lower_nm": 0.0,
+          "upper_nm": 225.0
+        }
+      ],
+      "scenarios": [
+        {
+          "scenario_id": "process-000000",
+          "coefficients": [
+            0.5665865028515849
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000001",
+          "coefficients": [
+            0.10594190514330348
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000002",
+          "coefficients": [
+            0.028220029011686965
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000003",
+          "coefficients": [
+            -0.3488136484973534
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000004",
+          "coefficients": [
+            -0.14354701050193186
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000005",
+          "coefficients": [
+            0.4768930918526799
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000006",
+          "coefficients": [
+            0.5850117300512254
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000007",
+          "coefficients": [
+            -0.834135721059241
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000008",
+          "coefficients": [
+            0.5099325281204019
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000009",
+          "coefficients": [
+            -0.0863850396413377
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000010",
+          "coefficients": [
+            -0.09407602740597021
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000011",
+          "coefficients": [
+            -0.9377643277028511
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000012",
+          "coefficients": [
+            -0.9808177675640526
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000013",
+          "coefficients": [
+            0.5770065453029141
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000014",
+          "coefficients": [
+            0.39527681797596514
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000015",
+          "coefficients": [
+            0.5268742473395218
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000016",
+          "coefficients": [
+            -0.7718498221251173
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000017",
+          "coefficients": [
+            0.25947968350753725
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000018",
+          "coefficients": [
+            -0.12079893744428838
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000019",
+          "coefficients": [
+            0.4254974641859517
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000020",
+          "coefficients": [
+            0.517488017415763
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000021",
+          "coefficients": [
+            0.5975334914156814
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000022",
+          "coefficients": [
+            0.16240019407158202
+          ],
+          "weight": 1.0
+        },
+        {
+          "scenario_id": "process-000023",
+          "coefficients": [
+            -0.6171750561812532
+          ],
+          "weight": 1.0
+        }
+      ],
+      "operation": "optimize",
+      "acceptable_normalized_error": 0.0,
+      "max_iterations": 30,
+      "max_evaluations": 40,
+      "initial_step_fraction": 0.25,
+      "min_step_fraction": 1e-06,
+      "frozen_material_snapshot": {
+        "schema_version": 1,
+        "kind": "coat_sim.frozen_film_design",
+        "design": {
+          "schema_version": 1,
+          "id": "bare-substrate-test",
+          "name": "未命名膜系",
+          "layer_order": "substrate_outward",
+          "front_layers": [
+            {
+              "id": "L0",
+              "material_id": "low",
+              "optical_set_id": "nk",
+              "thickness": {
+                "value": 112.26827987756234,
+                "unit": "nm"
+              },
+              "note": ""
+            }
+          ],
+          "back_layers": [],
+          "reference_wavelength_nm": 550.0,
+          "substrate": {
+            "material_id": "glass",
+            "optical_set_id": "nk",
+            "thickness": {
+              "value": 1.0,
+              "unit": "mm"
+            },
+            "sides": "single",
+            "mode": "auto"
+          },
+          "incident_medium": {
+            "kind": "constant",
+            "n": 1.0
+          },
+          "exit_medium": {
+            "kind": "constant",
+            "n": 1.0
+          },
+          "assume_lossless": false,
+          "use_k": true,
+          "note": "",
+          "first_surface": "front",
+          "expression": {
+            "text": "",
+            "symbols": {},
+            "in_sync": true
+          }
+        },
+        "settings": {
+          "wavelength_min_nm": 520.0,
+          "wavelength_max_nm": 580.0,
+          "samples": 61,
+          "step_nm": 1.0,
+          "angle_deg": 0.0,
+          "polarization": "unpolarized",
+          "light_source": {
+            "kind": "flat"
+          },
+          "first_surface": "front",
+          "extrapolation_policy": "endpoint_hold"
+        },
+        "materials": [
+          {
+            "id": "glass",
+            "name": "glass",
+            "optical_sets": [
+              {
+                "id": "nk",
+                "name": "glass",
+                "kind": "tabulated",
+                "notes": "analytical fixture",
+                "source": "synthetic validation oracle; not real material evidence",
+                "wavelength_unit": "nm",
+                "wavelength_min": 450.0,
+                "wavelength_max": 700.0,
+                "wavelengths": [
+                  450.0,
+                  550.0,
+                  700.0
+                ],
+                "n": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "k": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "design_ready": true,
+            "notes": ""
+          },
+          {
+            "id": "low",
+            "name": "low",
+            "optical_sets": [
+              {
+                "id": "nk",
+                "name": "low",
+                "kind": "tabulated",
+                "notes": "analytical fixture",
+                "source": "synthetic validation oracle; not real material evidence",
+                "wavelength_unit": "nm",
+                "wavelength_min": 450.0,
+                "wavelength_max": 700.0,
+                "wavelengths": [
+                  450.0,
+                  550.0,
+                  700.0
+                ],
+                "n": [
+                  1.224744871391589,
+                  1.224744871391589,
+                  1.224744871391589
+                ],
+                "k": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "design_ready": true,
+            "notes": ""
+          }
+        ],
+        "sha256": "a1407387626e0278722e527e03c18eb454acb4cb214fc99f7ad3e43b27e33fdb"
+      },
+      "optimization_policy": "nominal_preserving"
+    },
+    "best_design": {
+      "schema_version": 1,
+      "id": "bare-substrate-test",
+      "name": "未命名膜系",
+      "layer_order": "substrate_outward",
+      "front_layers": [
+        {
+          "id": "L0",
+          "material_id": "low",
+          "optical_set_id": "nk",
+          "thickness": {
+            "value": 112.267910235031,
+            "unit": "nm"
+          },
+          "note": ""
+        }
+      ],
+      "back_layers": [],
+      "reference_wavelength_nm": 550.0,
+      "substrate": {
+        "material_id": "glass",
+        "optical_set_id": "nk",
+        "thickness": {
+          "value": 1.0,
+          "unit": "mm"
+        },
+        "sides": "single",
+        "mode": "auto"
+      },
+      "incident_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "exit_medium": {
+        "kind": "constant",
+        "n": 1.0
+      },
+      "assume_lossless": false,
+      "use_k": true,
+      "note": "",
+      "first_surface": "front",
+      "expression": {
+        "text": "",
+        "symbols": {},
+        "in_sync": false
+      }
+    },
+    "best_thickness_nm": {
+      "L0": 112.267910235031
+    },
+    "evaluations": 2,
+    "initial_training_robustness": 0.00015623519177473787,
+    "best_training_robustness": 0.00015618469453336162,
+    "initial_nominal_pass": true,
+    "best_nominal_pass": true
+  }
+]

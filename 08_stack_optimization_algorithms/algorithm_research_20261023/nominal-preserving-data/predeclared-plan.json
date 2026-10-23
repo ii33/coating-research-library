@@ -1,0 +1,39 @@
+{
+  "base_commit": "17e0c4d8ecd38faf88f1793a4a935d683fa037fb",
+  "cases": [
+    "AR-local",
+    "HR-8layer"
+  ],
+  "scales": [
+    [
+      "relative",
+      0.005
+    ],
+    [
+      "relative",
+      0.01
+    ],
+    [
+      "relative",
+      0.02
+    ],
+    [
+      "absolute_nm",
+      1.0
+    ]
+  ],
+  "objectives": [
+    "finite_scenario_worst",
+    "finite_scenario_expected"
+  ],
+  "training_samples": 24,
+  "holdout_samples_per_model": 64,
+  "training_seed": 2026102311,
+  "independent_holdout_seed": 2026102312,
+  "common_mode_holdout_seed": 2026102313,
+  "max_evaluations": 40,
+  "max_iterations": 30,
+  "error_distribution": "bounded_uniform",
+  "nominal_policy": "exact original bounds and complete original small-case grid; no added margin",
+  "limitation": "Finite hypothetical errors, ideal materials and sampled optical conditions. This is not a process calibration, true yield or timing speedup claim. No holdout-driven tuning."
+}

@@ -1,0 +1,1178 @@
+[
+  {
+    "case": "AR-local",
+    "unit": "relative",
+    "scale": 0.005,
+    "objective": "finite_scenario_worst",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 4,
+    "iterations": 4,
+    "forward": 100,
+    "jacobian": 100,
+    "seconds_observed": 0.41217862600751687,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.9398137111120938e-05,
+      "scenario_n": 24,
+      "pass_count": 12,
+      "worst_violation": 2.9398137111120938e-05,
+      "p95_violation": 2.84968672822782e-05
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 5.14807580521894e-07,
+      "scenario_n": 24,
+      "pass_count": 22,
+      "worst_violation": 5.14807580521894e-07,
+      "p95_violation": 4.3758623346609e-07
+    },
+    "best_thickness_nm": {
+      "L0": 112.01748541048794
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 5.194646256083049e-05,
+      "scenario_n": 64,
+      "pass_count": 44,
+      "worst_violation": 5.194646256083049e-05,
+      "p95_violation": 3.339029991642287e-05
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.216008887525266e-05,
+      "scenario_n": 64,
+      "pass_count": 56,
+      "worst_violation": 2.216008887525266e-05,
+      "p95_violation": 4.345326211537266e-06
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 5.523619399886429e-05,
+      "scenario_n": 64,
+      "pass_count": 36,
+      "worst_violation": 5.523619399886429e-05,
+      "p95_violation": 4.9021992075245546e-05
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.5320034817484353e-05,
+      "scenario_n": 64,
+      "pass_count": 49,
+      "worst_violation": 2.5320034817484353e-05,
+      "p95_violation": 1.935143095741409e-05
+    }
+  },
+  {
+    "case": "AR-local",
+    "unit": "relative",
+    "scale": 0.005,
+    "objective": "finite_scenario_expected",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 11,
+    "iterations": 7,
+    "forward": 275,
+    "jacobian": 275,
+    "seconds_observed": 0.2647017419949407,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.047727020990532e-06,
+      "scenario_n": 24,
+      "pass_count": 12,
+      "worst_violation": 2.9398137111120938e-05,
+      "p95_violation": 2.84968672822782e-05
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 1.901736821167244e-08,
+      "scenario_n": 24,
+      "pass_count": 22,
+      "worst_violation": 5.662702615725828e-07,
+      "p95_violation": 3.884124836456082e-07
+    },
+    "best_thickness_nm": {
+      "L0": 112.01697301868694
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.042891371753177e-06,
+      "scenario_n": 64,
+      "pass_count": 44,
+      "worst_violation": 5.194646256083049e-05,
+      "p95_violation": 3.339029991642287e-05
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 5.40814780799612e-07,
+      "scenario_n": 64,
+      "pass_count": 56,
+      "worst_violation": 2.2100394680411883e-05,
+      "p95_violation": 4.287144695740426e-06
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 3.010960745627351e-06,
+      "scenario_n": 64,
+      "pass_count": 36,
+      "worst_violation": 5.523619399886429e-05,
+      "p95_violation": 4.9021992075245546e-05
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 9.044573487150908e-07,
+      "scenario_n": 64,
+      "pass_count": 49,
+      "worst_violation": 2.5260075817800265e-05,
+      "p95_violation": 1.9291973057170218e-05
+    }
+  },
+  {
+    "case": "AR-local",
+    "unit": "relative",
+    "scale": 0.01,
+    "objective": "finite_scenario_worst",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 4,
+    "iterations": 4,
+    "forward": 100,
+    "jacobian": 100,
+    "seconds_observed": 0.10143300199706573,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 6.967195901898417e-05,
+      "scenario_n": 24,
+      "pass_count": 7,
+      "worst_violation": 6.967195901898417e-05,
+      "p95_violation": 6.777824578705892e-05
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 4.919577633021228e-05,
+      "scenario_n": 24,
+      "pass_count": 8,
+      "worst_violation": 4.919577633021228e-05,
+      "p95_violation": 4.8943253841663715e-05
+    },
+    "best_thickness_nm": {
+      "L0": 112.10083612578048
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00011768343299456245,
+      "scenario_n": 64,
+      "pass_count": 32,
+      "worst_violation": 0.00011768343299456245,
+      "p95_violation": 7.80842917840096e-05
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 9.59954512813391e-05,
+      "scenario_n": 64,
+      "pass_count": 30,
+      "worst_violation": 9.59954512813391e-05,
+      "p95_violation": 5.739136158158238e-05
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00012478632832060784,
+      "scenario_n": 64,
+      "pass_count": 28,
+      "worst_violation": 0.00012478632832060784,
+      "p95_violation": 0.0001113909829179823
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00010292400809374915,
+      "scenario_n": 64,
+      "pass_count": 30,
+      "worst_violation": 0.00010292400809374915,
+      "p95_violation": 8.985853052200978e-05
+    }
+  },
+  {
+    "case": "AR-local",
+    "unit": "relative",
+    "scale": 0.01,
+    "objective": "finite_scenario_expected",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 6,
+    "iterations": 6,
+    "forward": 150,
+    "jacobian": 150,
+    "seconds_observed": 0.14877526799682528,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 5.9010284793308184e-06,
+      "scenario_n": 24,
+      "pass_count": 7,
+      "worst_violation": 6.967195901898417e-05,
+      "p95_violation": 6.777824578705892e-05
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 3.8887079836598865e-06,
+      "scenario_n": 24,
+      "pass_count": 9,
+      "worst_violation": 5.971522701522374e-05,
+      "p95_violation": 5.260264266446711e-05
+    },
+    "best_thickness_nm": {
+      "L0": 112.00277246218118
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 5.9221829454514e-06,
+      "scenario_n": 64,
+      "pass_count": 32,
+      "worst_violation": 0.00011768343299456245,
+      "p95_violation": 7.80842917840096e-05
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 4.476216088914176e-06,
+      "scenario_n": 64,
+      "pass_count": 28,
+      "worst_violation": 8.353004528962481e-05,
+      "p95_violation": 6.041325471433712e-05
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 8.566251386528216e-06,
+      "scenario_n": 64,
+      "pass_count": 28,
+      "worst_violation": 0.00012478632832060784,
+      "p95_violation": 0.0001113909829179823
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 5.4681582515742365e-06,
+      "scenario_n": 64,
+      "pass_count": 28,
+      "worst_violation": 9.035663705296858e-05,
+      "p95_violation": 7.748408793815083e-05
+    }
+  },
+  {
+    "case": "AR-local",
+    "unit": "relative",
+    "scale": 0.02,
+    "objective": "finite_scenario_worst",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 2,
+    "iterations": 2,
+    "forward": 50,
+    "jacobian": 50,
+    "seconds_observed": 0.05244917800882831,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00015623519177473787,
+      "scenario_n": 24,
+      "pass_count": 6,
+      "worst_violation": 0.00015623519177473787,
+      "p95_violation": 0.00015558668922676785
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0001561846945333576,
+      "scenario_n": 24,
+      "pass_count": 6,
+      "worst_violation": 0.0001561846945333576,
+      "p95_violation": 0.0001556164247544318
+    },
+    "best_thickness_nm": {
+      "L0": 112.26791023503097
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00026386283084757603,
+      "scenario_n": 64,
+      "pass_count": 18,
+      "worst_violation": 0.00026386283084757603,
+      "p95_violation": 0.00017476561293517726
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00026380693467934494,
+      "scenario_n": 64,
+      "pass_count": 18,
+      "worst_violation": 0.00026380693467934494,
+      "p95_violation": 0.00017471415123379293
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00028014988785824416,
+      "scenario_n": 64,
+      "pass_count": 13,
+      "worst_violation": 0.00028014988785824416,
+      "p95_violation": 0.00024951383072971487
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00028009321367202623,
+      "scenario_n": 64,
+      "pass_count": 13,
+      "worst_violation": 0.00028009321367202623,
+      "p95_violation": 0.0002494586283630257
+    }
+  },
+  {
+    "case": "AR-local",
+    "unit": "relative",
+    "scale": 0.02,
+    "objective": "finite_scenario_expected",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 6,
+    "iterations": 5,
+    "forward": 150,
+    "jacobian": 150,
+    "seconds_observed": 0.1452113669947721,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 1.9992062693185524e-05,
+      "scenario_n": 24,
+      "pass_count": 6,
+      "worst_violation": 0.00015623519177473787,
+      "p95_violation": 0.00015558668922676785
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 1.8769675397847e-05,
+      "scenario_n": 24,
+      "pass_count": 6,
+      "worst_violation": 0.0001840761553613157,
+      "p95_violation": 0.0001679310150231024
+    },
+    "best_thickness_nm": {
+      "L0": 112.03595511496432
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.055835076694024e-05,
+      "scenario_n": 64,
+      "pass_count": 18,
+      "worst_violation": 0.00026386283084757603,
+      "p95_violation": 0.00017476561293517726
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.0311689975538017e-05,
+      "scenario_n": 64,
+      "pass_count": 15,
+      "worst_violation": 0.0002292251663416304,
+      "p95_violation": 0.0001856683811376994
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.633495660702221e-05,
+      "scenario_n": 64,
+      "pass_count": 13,
+      "worst_violation": 0.00028014988785824416,
+      "p95_violation": 0.00024951383072971487
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.300310415708461e-05,
+      "scenario_n": 64,
+      "pass_count": 13,
+      "worst_violation": 0.00024502372778777566,
+      "p95_violation": 0.0002153117783894533
+    }
+  },
+  {
+    "case": "AR-local",
+    "unit": "absolute_nm",
+    "scale": 1.0,
+    "objective": "finite_scenario_worst",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 4,
+    "iterations": 4,
+    "forward": 100,
+    "jacobian": 100,
+    "seconds_observed": 0.10995029500918463,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 6.0698475546037153e-05,
+      "scenario_n": 24,
+      "pass_count": 8,
+      "worst_violation": 6.0698475546037153e-05,
+      "p95_violation": 5.902943411569934e-05
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 3.842886185021719e-05,
+      "scenario_n": 24,
+      "pass_count": 9,
+      "worst_violation": 3.842886185021719e-05,
+      "p95_violation": 3.820660203521722e-05
+    },
+    "best_thickness_nm": {
+      "L0": 112.0828547438117
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00010289665759599626,
+      "scenario_n": 64,
+      "pass_count": 34,
+      "worst_violation": 0.00010289665759599626,
+      "p95_violation": 6.810829473640282e-05
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 7.950849023431679e-05,
+      "scenario_n": 64,
+      "pass_count": 35,
+      "worst_violation": 7.950849023431679e-05,
+      "p95_violation": 4.5638105269797564e-05
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.00010912162663214965,
+      "scenario_n": 64,
+      "pass_count": 29,
+      "worst_violation": 0.00010912162663214965,
+      "p95_violation": 9.737804259266482e-05
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 8.557309983004904e-05,
+      "scenario_n": 64,
+      "pass_count": 32,
+      "worst_violation": 8.557309983004904e-05,
+      "p95_violation": 7.413306062541153e-05
+    }
+  },
+  {
+    "case": "AR-local",
+    "unit": "absolute_nm",
+    "scale": 1.0,
+    "objective": "finite_scenario_expected",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 8,
+    "iterations": 7,
+    "forward": 200,
+    "jacobian": 200,
+    "seconds_observed": 0.2244257709971862,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 4.897668790130404e-06,
+      "scenario_n": 24,
+      "pass_count": 8,
+      "worst_violation": 6.0698475546037153e-05,
+      "p95_violation": 5.902943411569934e-05
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 2.8137128032620125e-06,
+      "scenario_n": 24,
+      "pass_count": 9,
+      "worst_violation": 4.693720106867049e-05,
+      "p95_violation": 4.0682045867835234e-05
+    },
+    "best_thickness_nm": {
+      "L0": 112.00316158600586
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 4.907399638008278e-06,
+      "scenario_n": 64,
+      "pass_count": 34,
+      "worst_violation": 0.00010289665759599626,
+      "p95_violation": 6.810829473640282e-05
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 3.3452859831552066e-06,
+      "scenario_n": 64,
+      "pass_count": 33,
+      "worst_violation": 6.964486143281435e-05,
+      "p95_violation": 4.755070972941401e-05
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 7.166959763590701e-06,
+      "scenario_n": 64,
+      "pass_count": 29,
+      "worst_violation": 0.00010912162663214965,
+      "p95_violation": 9.737804259266482e-05
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 4.211651078484584e-06,
+      "scenario_n": 64,
+      "pass_count": 32,
+      "worst_violation": 7.564048746079279e-05,
+      "p95_violation": 6.43310270350667e-05
+    }
+  },
+  {
+    "case": "HR-8layer",
+    "unit": "relative",
+    "scale": 0.005,
+    "objective": "finite_scenario_worst",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 1,
+    "iterations": 1,
+    "forward": 50,
+    "jacobian": 50,
+    "seconds_observed": 0.1078541010065237,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_thickness_nm": {
+      "L0": 112.26827987756234,
+      "L1": 62.49999999999999,
+      "L2": 112.26827987756234,
+      "L3": 62.49999999999999,
+      "L4": 112.26827987756234,
+      "L5": 62.49999999999999,
+      "L6": 112.26827987756234,
+      "L7": 62.49999999999999
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    }
+  },
+  {
+    "case": "HR-8layer",
+    "unit": "relative",
+    "scale": 0.005,
+    "objective": "finite_scenario_expected",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 1,
+    "iterations": 1,
+    "forward": 50,
+    "jacobian": 50,
+    "seconds_observed": 0.08551043100305833,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_thickness_nm": {
+      "L0": 112.26827987756234,
+      "L1": 62.49999999999999,
+      "L2": 112.26827987756234,
+      "L3": 62.49999999999999,
+      "L4": 112.26827987756234,
+      "L5": 62.49999999999999,
+      "L6": 112.26827987756234,
+      "L7": 62.49999999999999
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    }
+  },
+  {
+    "case": "HR-8layer",
+    "unit": "relative",
+    "scale": 0.01,
+    "objective": "finite_scenario_worst",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 1,
+    "iterations": 1,
+    "forward": 50,
+    "jacobian": 50,
+    "seconds_observed": 0.08863064899924211,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_thickness_nm": {
+      "L0": 112.26827987756234,
+      "L1": 62.49999999999999,
+      "L2": 112.26827987756234,
+      "L3": 62.49999999999999,
+      "L4": 112.26827987756234,
+      "L5": 62.49999999999999,
+      "L6": 112.26827987756234,
+      "L7": 62.49999999999999
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    }
+  },
+  {
+    "case": "HR-8layer",
+    "unit": "relative",
+    "scale": 0.01,
+    "objective": "finite_scenario_expected",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 1,
+    "iterations": 1,
+    "forward": 50,
+    "jacobian": 50,
+    "seconds_observed": 0.08992079399467912,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_thickness_nm": {
+      "L0": 112.26827987756234,
+      "L1": 62.49999999999999,
+      "L2": 112.26827987756234,
+      "L3": 62.49999999999999,
+      "L4": 112.26827987756234,
+      "L5": 62.49999999999999,
+      "L6": 112.26827987756234,
+      "L7": 62.49999999999999
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    }
+  },
+  {
+    "case": "HR-8layer",
+    "unit": "relative",
+    "scale": 0.02,
+    "objective": "finite_scenario_worst",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 1,
+    "iterations": 1,
+    "forward": 50,
+    "jacobian": 50,
+    "seconds_observed": 0.09881811900413595,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_thickness_nm": {
+      "L0": 112.26827987756234,
+      "L1": 62.49999999999999,
+      "L2": 112.26827987756234,
+      "L3": 62.49999999999999,
+      "L4": 112.26827987756234,
+      "L5": 62.49999999999999,
+      "L6": 112.26827987756234,
+      "L7": 62.49999999999999
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    }
+  },
+  {
+    "case": "HR-8layer",
+    "unit": "relative",
+    "scale": 0.02,
+    "objective": "finite_scenario_expected",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 1,
+    "iterations": 1,
+    "forward": 50,
+    "jacobian": 50,
+    "seconds_observed": 0.08617341800709255,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_thickness_nm": {
+      "L0": 112.26827987756234,
+      "L1": 62.49999999999999,
+      "L2": 112.26827987756234,
+      "L3": 62.49999999999999,
+      "L4": 112.26827987756234,
+      "L5": 62.49999999999999,
+      "L6": 112.26827987756234,
+      "L7": 62.49999999999999
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    }
+  },
+  {
+    "case": "HR-8layer",
+    "unit": "absolute_nm",
+    "scale": 1.0,
+    "objective": "finite_scenario_worst",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 1,
+    "iterations": 1,
+    "forward": 50,
+    "jacobian": 50,
+    "seconds_observed": 0.08814087700739037,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_thickness_nm": {
+      "L0": 112.26827987756234,
+      "L1": 62.49999999999999,
+      "L2": 112.26827987756234,
+      "L3": 62.49999999999999,
+      "L4": 112.26827987756234,
+      "L5": 62.49999999999999,
+      "L6": 112.26827987756234,
+      "L7": 62.49999999999999
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    }
+  },
+  {
+    "case": "HR-8layer",
+    "unit": "absolute_nm",
+    "scale": 1.0,
+    "objective": "finite_scenario_expected",
+    "state": "completed",
+    "reason": "constrained_tolerance",
+    "evaluations": 1,
+    "iterations": 1,
+    "forward": 50,
+    "jacobian": 50,
+    "seconds_observed": 0.12702127000375185,
+    "initial": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 24,
+      "pass_count": 24,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_thickness_nm": {
+      "L0": 112.26827987756234,
+      "L1": 62.49999999999999,
+      "L2": 112.26827987756234,
+      "L3": 62.49999999999999,
+      "L4": 112.26827987756234,
+      "L5": 62.49999999999999,
+      "L6": 112.26827987756234,
+      "L7": 62.49999999999999
+    },
+    "baseline_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_independent": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "baseline_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    },
+    "best_holdout_common": {
+      "nominal_pass": true,
+      "nominal_max_violation": 0.0,
+      "robustness": 0.0,
+      "scenario_n": 64,
+      "pass_count": 64,
+      "worst_violation": 0.0,
+      "p95_violation": 0.0
+    }
+  }
+]

@@ -39,3 +39,10 @@
 - [四窗工程结构基准](../../manual_studies/2026-10-22_engineering_four_window_benchmarks/engineering_four_window_benchmarks.md)及[结构对照](../../manual_studies/2026-10-22_four_window_ir_structure_comparison/README.md)只作先验/对照，不把其他材料、波段或专利层数移植为本项目保证。
 
 此批仅增加研究文档、原始来源链接、可复现科学配置和结果数据。不包含软件源码、执行脚本、机器路径、私人记录或源码文件hash清单；配置内必要的冻结材料完整性字段予以保留。
+
+## 本日追加：名义保护策略的开发实效验证
+
+[新策略效果报告](nominal-preserving-effects-20261023.md)及[公开科学数据](nominal-preserving-data/README.md)：显式原名义硬约束、非线性场景云与解析Jacobian/SLSQP已在独立开发实现中完成测试，尚未正式发布或完成目标主机验收，不表示用户已可用。小AR±0.5%的64样本独立通过44→56、系统36→49，但1–2%无稳定增益；89层±0.5%训练worst下降约60.56%，原1nm与加密名义均通过，两类留出仍各0/16，独立worst/P95略差。名义保持不等于yield提升。
+
+本追加仅新增证据与导航，前轮±0.2%原始数据和失败结论保留；误差档、种子与策略不同，不能把两轮直接当匹配A/B比较。CVaR与真实工艺误差校准仍属研究建议。
+

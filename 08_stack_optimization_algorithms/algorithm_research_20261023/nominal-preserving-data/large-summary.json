@@ -1,0 +1,550 @@
+{
+  "state": "partial",
+  "termination_reason": "iteration_limit",
+  "evaluations": 21,
+  "iterations": 20,
+  "seconds_observed": 59.21098622000136,
+  "training_baseline": 0.002627014264789118,
+  "training_best": 0.0010360560455575651,
+  "sparse_nominal_pass": true,
+  "initial_full_original": {
+    "nominal_pass": true,
+    "condition_count": 184600,
+    "windows": [
+      {
+        "index": 0,
+        "pass_": true,
+        "min_R": 0.990471796024005,
+        "max_R": 0.9998375955562799,
+        "signed_violation": -0.0004717960240050445,
+        "worst_location": {
+          "wavelength_nm": 618.0,
+          "angle_deg": 51.0,
+          "R": 0.990471796024005
+        }
+      },
+      {
+        "index": 1,
+        "pass_": true,
+        "min_R": 0.9904718138822008,
+        "max_R": 0.9951554482264028,
+        "signed_violation": -0.0004718138822008555,
+        "worst_location": {
+          "wavelength_nm": 1084.0,
+          "angle_deg": 51.0,
+          "R": 0.9904718138822008
+        }
+      },
+      {
+        "index": 2,
+        "pass_": true,
+        "min_R": 0.013024731758449287,
+        "max_R": 0.029528254608182234,
+        "signed_violation": -0.00047174539181776484,
+        "worst_location": {
+          "wavelength_nm": 3000.0,
+          "angle_deg": 39.0,
+          "R": 0.029528254608182234
+        }
+      },
+      {
+        "index": 3,
+        "pass_": true,
+        "min_R": 0.005925995211105301,
+        "max_R": 0.029528199209434895,
+        "signed_violation": -0.00047180079056510435,
+        "worst_location": {
+          "wavelength_nm": 7000.0,
+          "angle_deg": 39.0,
+          "R": 0.029528199209434895
+        }
+      }
+    ],
+    "max_signed_violation": -0.00047174539181776484,
+    "seconds_observed": 6.281096015009098,
+    "continuous_certificate": false,
+    "strict_upper_indices": [
+      2,
+      3
+    ]
+  },
+  "best_full_original": {
+    "nominal_pass": true,
+    "condition_count": 184600,
+    "windows": [
+      {
+        "index": 0,
+        "pass_": true,
+        "min_R": 0.9902242922367386,
+        "max_R": 0.9998382269341303,
+        "signed_violation": -0.000224292236738588,
+        "worst_location": {
+          "wavelength_nm": 633.0,
+          "angle_deg": 51.0,
+          "R": 0.9902242922367386
+        }
+      },
+      {
+        "index": 1,
+        "pass_": true,
+        "min_R": 0.9903894243437149,
+        "max_R": 0.9951277754694423,
+        "signed_violation": -0.00038942434371491697,
+        "worst_location": {
+          "wavelength_nm": 1044.0,
+          "angle_deg": 39.0,
+          "R": 0.9903894243437149
+        }
+      },
+      {
+        "index": 2,
+        "pass_": true,
+        "min_R": 0.013276798366334847,
+        "max_R": 0.029987930607806787,
+        "signed_violation": -1.2069392193211903e-05,
+        "worst_location": {
+          "wavelength_nm": 5000.0,
+          "angle_deg": 51.0,
+          "R": 0.029987930607806787
+        }
+      },
+      {
+        "index": 3,
+        "pass_": true,
+        "min_R": 0.005985022844527229,
+        "max_R": 0.02963819242372644,
+        "signed_violation": -0.00036180757627355883,
+        "worst_location": {
+          "wavelength_nm": 8631.0,
+          "angle_deg": 51.0,
+          "R": 0.02963819242372644
+        }
+      }
+    ],
+    "max_signed_violation": -1.2069392193211903e-05,
+    "seconds_observed": 6.761523905996,
+    "continuous_certificate": false,
+    "strict_upper_indices": [
+      2,
+      3
+    ]
+  },
+  "initial_independent_dense": {
+    "nominal_pass": true,
+    "condition_count": 529396,
+    "windows": [
+      {
+        "index": 0,
+        "pass_": true,
+        "min_R": 0.9904035289957915,
+        "max_R": 0.9998377196387287,
+        "signed_violation": -0.00040352899579154666,
+        "worst_location": {
+          "wavelength_nm": 723.8,
+          "angle_deg": 51.0,
+          "R": 0.9904035289957915
+        }
+      },
+      {
+        "index": 1,
+        "pass_": true,
+        "min_R": 0.9904718023796392,
+        "max_R": 0.995155473008535,
+        "signed_violation": -0.0004718023796391746,
+        "worst_location": {
+          "wavelength_nm": 1058.7,
+          "angle_deg": 51.0,
+          "R": 0.9904718023796392
+        }
+      },
+      {
+        "index": 2,
+        "pass_": true,
+        "min_R": 0.013024731758449287,
+        "max_R": 0.029528254608182234,
+        "signed_violation": -0.00047174539181776484,
+        "worst_location": {
+          "wavelength_nm": 3000.0,
+          "angle_deg": 39.0,
+          "R": 0.029528254608182234
+        }
+      },
+      {
+        "index": 3,
+        "pass_": true,
+        "min_R": 0.005925995211105301,
+        "max_R": 0.029528199209434895,
+        "signed_violation": -0.00047180079056510435,
+        "worst_location": {
+          "wavelength_nm": 7000.0,
+          "angle_deg": 39.0,
+          "R": 0.029528199209434895
+        }
+      }
+    ],
+    "max_signed_violation": -0.00040352899579154666,
+    "seconds_observed": 18.79387000000861,
+    "continuous_certificate": false,
+    "strict_upper_indices": [
+      2,
+      3
+    ]
+  },
+  "best_independent_dense": {
+    "nominal_pass": true,
+    "condition_count": 529396,
+    "windows": [
+      {
+        "index": 0,
+        "pass_": true,
+        "min_R": 0.9901720809991204,
+        "max_R": 0.9998383485004538,
+        "signed_violation": -0.0001720809991203609,
+        "worst_location": {
+          "wavelength_nm": 633.4,
+          "angle_deg": 51.0,
+          "R": 0.9901720809991204
+        }
+      },
+      {
+        "index": 1,
+        "pass_": true,
+        "min_R": 0.9903894243437149,
+        "max_R": 0.9951283604126284,
+        "signed_violation": -0.00038942434371491697,
+        "worst_location": {
+          "wavelength_nm": 1044.0,
+          "angle_deg": 39.0,
+          "R": 0.9903894243437149
+        }
+      },
+      {
+        "index": 2,
+        "pass_": true,
+        "min_R": 0.013276798366334847,
+        "max_R": 0.029987930607806787,
+        "signed_violation": -1.2069392193211903e-05,
+        "worst_location": {
+          "wavelength_nm": 5000.0,
+          "angle_deg": 51.0,
+          "R": 0.029987930607806787
+        }
+      },
+      {
+        "index": 3,
+        "pass_": true,
+        "min_R": 0.005985022844527229,
+        "max_R": 0.02963819242372644,
+        "signed_violation": -0.00036180757627355883,
+        "worst_location": {
+          "wavelength_nm": 8631.0,
+          "angle_deg": 51.0,
+          "R": 0.02963819242372644
+        }
+      }
+    ],
+    "max_signed_violation": -1.2069392193211903e-05,
+    "seconds_observed": 19.532455805994687,
+    "continuous_certificate": false,
+    "strict_upper_indices": [
+      2,
+      3
+    ]
+  },
+  "holdout": {
+    "independent": {
+      "initial": {
+        "n": 16,
+        "pass_count": 0,
+        "samples": [
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0010997386899811445
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.002326466932725202
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0008508608463202449
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0015520942219722847
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0015979548786786424
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0016553347245489292
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.003657121986208045
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0019476987105304655
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0019812750842999605
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0008579171376445031
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0006944754648518896
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0009525018992879858
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0015999932633509045
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.001340962548023461
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0005926831155902423
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0004766609061766548
+          }
+        ],
+        "worst_violation": 0.003657121986208045,
+        "p95_violation": 0.0026591306960959127
+      },
+      "best": {
+        "n": 16,
+        "pass_count": 0,
+        "samples": [
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0012190168070527196
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.002629437564460879
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0006902968886899341
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0008555304365420735
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0018518745453057761
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.001721514771392818
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0037417959574077564
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.002294404326346089
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0005581909009524377
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.00040054033535674716
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.00040725342962644184
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0010630406538842951
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.000876480568200666
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.001263684873952009
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0008805403787644148
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0003919382927604076
+          }
+        ],
+        "worst_violation": 0.0037417959574077564,
+        "p95_violation": 0.0029075271626975985
+      }
+    },
+    "common_mode": {
+      "initial": {
+        "n": 16,
+        "pass_count": 0,
+        "samples": [
+          {
+            "pass_": false,
+            "max_signed_violation": 0.008619087173243778
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.011285037270077014
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0004668541045498298
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0020114255862063654
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.014608877047654414
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.002652611189782217
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.006425496964640419
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0003077707078662506
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.004402686373019993
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.001988124679514827
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0024350189112222406
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.013814555996902587
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.005104760897950401
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.012017853053081486
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.009374455482350011
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0006884124186754548
+          }
+        ],
+        "worst_violation": 0.014608877047654414,
+        "p95_violation": 0.014013136259590544
+      },
+      "best": {
+        "n": 16,
+        "pass_count": 0,
+        "samples": [
+          {
+            "pass_": false,
+            "max_signed_violation": 0.008786550495082146
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.011483759873037847
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0005368839257149371
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0006560480816854009
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.012773119904535099
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.002749953807730021
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.004747294358367543
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.00037565376466219824
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.004520769482487252
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0006452829695077211
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0008550211509902317
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.011992762456632798
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.003455304893858119
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.01022860372342059
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.007635713968090818
+          },
+          {
+            "pass_": false,
+            "max_signed_violation": 0.0007613749842669826
+          }
+        ],
+        "worst_violation": 0.012773119904535099,
+        "p95_violation": 0.012187851818608373
+      }
+    }
+  },
+  "candidate_passes_nominal_audits": true,
+  "manufacturing_improvement_established": false
+}

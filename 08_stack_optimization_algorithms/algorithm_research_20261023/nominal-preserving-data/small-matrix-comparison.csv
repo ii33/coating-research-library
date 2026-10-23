@@ -1,0 +1,17 @@
+case,unit,scale,objective,state,reason,evaluations,iterations,forward,jacobian,initial_robustness,best_robustness,nominal_pass,initial_independent_pass,best_independent_pass,initial_common_pass,best_common_pass
+AR-local,relative,0.005,finite_scenario_worst,completed,constrained_tolerance,4,4,100,100,2.9398137111120938e-05,5.14807580521894e-07,True,44,56,36,49
+AR-local,relative,0.005,finite_scenario_expected,completed,constrained_tolerance,11,7,275,275,2.047727020990532e-06,1.901736821167244e-08,True,44,56,36,49
+AR-local,relative,0.01,finite_scenario_worst,completed,constrained_tolerance,4,4,100,100,6.967195901898417e-05,4.919577633021228e-05,True,32,30,28,30
+AR-local,relative,0.01,finite_scenario_expected,completed,constrained_tolerance,6,6,150,150,5.9010284793308184e-06,3.8887079836598865e-06,True,32,28,28,28
+AR-local,relative,0.02,finite_scenario_worst,completed,constrained_tolerance,2,2,50,50,0.00015623519177473787,0.0001561846945333576,True,18,18,13,13
+AR-local,relative,0.02,finite_scenario_expected,completed,constrained_tolerance,6,5,150,150,1.9992062693185524e-05,1.8769675397847e-05,True,18,15,13,13
+AR-local,absolute_nm,1.0,finite_scenario_worst,completed,constrained_tolerance,4,4,100,100,6.0698475546037153e-05,3.842886185021719e-05,True,34,35,29,32
+AR-local,absolute_nm,1.0,finite_scenario_expected,completed,constrained_tolerance,8,7,200,200,4.897668790130404e-06,2.8137128032620125e-06,True,34,33,29,32
+HR-8layer,relative,0.005,finite_scenario_worst,completed,constrained_tolerance,1,1,50,50,0.0,0.0,True,64,64,64,64
+HR-8layer,relative,0.005,finite_scenario_expected,completed,constrained_tolerance,1,1,50,50,0.0,0.0,True,64,64,64,64
+HR-8layer,relative,0.01,finite_scenario_worst,completed,constrained_tolerance,1,1,50,50,0.0,0.0,True,64,64,64,64
+HR-8layer,relative,0.01,finite_scenario_expected,completed,constrained_tolerance,1,1,50,50,0.0,0.0,True,64,64,64,64
+HR-8layer,relative,0.02,finite_scenario_worst,completed,constrained_tolerance,1,1,50,50,0.0,0.0,True,64,64,64,64
+HR-8layer,relative,0.02,finite_scenario_expected,completed,constrained_tolerance,1,1,50,50,0.0,0.0,True,64,64,64,64
+HR-8layer,absolute_nm,1.0,finite_scenario_worst,completed,constrained_tolerance,1,1,50,50,0.0,0.0,True,64,64,64,64
+HR-8layer,absolute_nm,1.0,finite_scenario_expected,completed,constrained_tolerance,1,1,50,50,0.0,0.0,True,64,64,64,64
