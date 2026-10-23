@@ -1,0 +1,1366 @@
+{
+  "kind": "coat_sim.film_sensitivity_benchmark_scientific_manifest",
+  "schema_version": 2,
+  "software_base_sha": "fa9878336a597dc6df1db5b584bda3be4423cbca",
+  "next_v2_software_sha": null,
+  "frozen": true,
+  "optimizer_executed": false,
+  "ideal_zero_k_model": true,
+  "manufacturing_or_yield_claim": false,
+  "sources": [
+    {
+      "file": "large-config.original.json",
+      "url": "https://raw.githubusercontent.com/ii33/coating-research-library/60549d4debbf9f3398edef4b284989a1b52e8b8c/08_stack_optimization_algorithms/algorithm_research_20261023/data/large-config.json",
+      "sha256": "1c542b547cb2be975d203b33ad37d1f6c990a27465dac21594ad266c85333ba2"
+    },
+    {
+      "file": "large-candidate.original.json",
+      "url": "https://raw.githubusercontent.com/ii33/coating-research-library/7d189254db612fda6dea1d5d24787f74df67dbcf/08_stack_optimization_algorithms/algorithm_research_20261023/nominal-preserving-data/large-candidate-and-work.json",
+      "sha256": "73d29c990c55c2121189d479673a17ede406364509a8e644f17a8eaef4424502"
+    },
+    {
+      "file": "large-summary.original.json",
+      "url": "https://raw.githubusercontent.com/ii33/coating-research-library/7d189254db612fda6dea1d5d24787f74df67dbcf/08_stack_optimization_algorithms/algorithm_research_20261023/nominal-preserving-data/large-summary.json",
+      "sha256": "5953edb67165eeaf6370dc9fd4c74d56f039858bd941c0dd276a08bb60343ed0"
+    }
+  ],
+  "target_operator_normalization": {
+    "source_ir_upper": [
+      0.029999999999999995,
+      0.029999999999999995
+    ],
+    "benchmark_ir_upper": [
+      0.03,
+      0.03
+    ],
+    "strict_upper_bound_objective_indices": [
+      2,
+      3
+    ],
+    "source_file_modified": false,
+    "reason": "Express original physical R < 0.03 once; do not apply nextafter twice.",
+    "hr_lower_bound": 0.99,
+    "added_margin": false
+  },
+  "original_grid": {
+    "wavelength_step_nm": 1.0,
+    "angles_deg": [
+      39.0,
+      39.5,
+      40.0,
+      40.5,
+      41.0,
+      41.5,
+      42.0,
+      42.5,
+      43.0,
+      43.5,
+      44.0,
+      44.5,
+      45.0,
+      45.5,
+      46.0,
+      46.5,
+      47.0,
+      47.5,
+      48.0,
+      48.5,
+      49.0,
+      49.5,
+      50.0,
+      50.5,
+      51.0
+    ],
+    "windows_nm": [
+      [
+        580.0,
+        920.0
+      ],
+      [
+        1044.0,
+        1084.0
+      ],
+      [
+        3000.0,
+        5000.0
+      ],
+      [
+        7000.0,
+        12000.0
+      ]
+    ],
+    "wavelength_counts": [
+      341,
+      41,
+      2001,
+      5001
+    ],
+    "condition_count": 184600,
+    "historical_training_grid_not_used": true
+  },
+  "assumptions": {
+    "error_model": "independent",
+    "distribution": "bounded_uniform",
+    "error_amplitude_semantics": "bounded_amplitude",
+    "relative_fraction": 0.005,
+    "error_layer_count": 89,
+    "sample_count": 32,
+    "seed": 20261023,
+    "coefficients_frozen": true,
+    "calibrated_process_distribution": false
+  },
+  "execution_protocol": {
+    "fixed_candidates": 2,
+    "sessions": [
+      [
+        "serial",
+        "process"
+      ],
+      [
+        "process",
+        "serial"
+      ]
+    ],
+    "cold_and_warm_each_session": true,
+    "physical_workload_reduced": false,
+    "memory_pool_explicit_bytes": 6442450944,
+    "memory_available_max_fraction": 0.5,
+    "disk_total_quota_bytes": 17179869184,
+    "disk_minimum_free_bytes": 34359738368,
+    "disk_runtime_reserve_bytes": 17179869184,
+    "first_serial_only_full_reference": true,
+    "original_points_and_jacobian_compared": true,
+    "strict_booleans_must_match": true,
+    "comparison_rtol": 2e-14,
+    "comparison_atol": 2e-15
+  },
+  "artifacts": [
+    {
+      "file": "baseline89.json",
+      "bytes": 29464,
+      "sha256": "cd44fe1b1e51ca3449b80564026f51c582de64025313a0f64913adb70707d3ae"
+    },
+    {
+      "file": "candidate89.json",
+      "bytes": 29464,
+      "sha256": "1b96a5224a08b51d4b10674c1b1624f749569de095038d5fe381ccc8540aa26a"
+    },
+    {
+      "file": "scenarios32-seed20261023.json",
+      "bytes": 79589,
+      "sha256": "b5bbcd15bc3b9058d7b9fa1d0f3f87d770c5da0bac1dcb9d60e33cfd7e83d211"
+    },
+    {
+      "file": "frozen-A.json",
+      "bytes": 371993,
+      "sha256": "2713ee1c209a043106ee8b7c78c0ddabcee1642cbb38173c849b71fc18b0de60"
+    },
+    {
+      "file": "frozen-B.json",
+      "bytes": 375298,
+      "sha256": "7d534d2c5b4a1d3beccaaee6afc965e90f36b6fdbd7deb6a050245bd33bdd172"
+    }
+  ],
+  "identities": {
+    "A": [
+      {
+        "request_sha256": "4026e8b8e4f6cf45cf03a035d2d6c3fa8a320cf0c51f1f804e37b00a86b665a3",
+        "candidate_sha256": "235f7f9090a1e0f2dab768bf1498fec321607e78955975c1e4a5918419e6aa91",
+        "material_sha256": "63d1befb078394e8fe9ef6000a55c7c14a73d55d3383438f30ed9ee084cd655f",
+        "grid_sha256": "0bc4d0bc33d0652c297595384392071b0777a138024309102a09ca3d20be8831",
+        "evaluation_variable_ids": [
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-2",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-79"
+        ],
+        "optimization_variable_ids": [
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-2",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-79"
+        ],
+        "nominal_variable_ids": [
+          "pruned90_cycle1-needle-1",
+          "augmented104-mapped-pruned-90-89",
+          "augmented104-mapped-pruned-90-88",
+          "augmented104-mapped-pruned-90-87",
+          "augmented104-mapped-pruned-90-86",
+          "augmented104-mapped-pruned-90-85",
+          "augmented104-mapped-pruned-90-84",
+          "augmented104-mapped-pruned-90-83",
+          "augmented104-mapped-pruned-90-82",
+          "augmented104-mapped-pruned-90-81",
+          "augmented104-mapped-pruned-90-80",
+          "augmented104-mapped-pruned-90-79",
+          "augmented104-mapped-pruned-90-78",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-76",
+          "augmented104-mapped-pruned-90-75",
+          "augmented104-mapped-pruned-90-74",
+          "augmented104-mapped-pruned-90-73",
+          "augmented104-mapped-pruned-90-72",
+          "augmented104-mapped-pruned-90-71",
+          "augmented104-mapped-pruned-90-70",
+          "augmented104-mapped-pruned-90-69",
+          "augmented104-mapped-pruned-90-68",
+          "augmented104-mapped-pruned-90-67",
+          "augmented104-mapped-pruned-90-66",
+          "augmented104-mapped-pruned-90-65",
+          "augmented104-mapped-pruned-90-64",
+          "augmented104-mapped-pruned-90-63",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-61",
+          "augmented104-mapped-pruned-90-60",
+          "augmented104-mapped-pruned-90-59",
+          "augmented104-mapped-pruned-90-58",
+          "augmented104-mapped-pruned-90-57",
+          "augmented104-mapped-pruned-90-56",
+          "augmented104-mapped-pruned-90-55",
+          "augmented104-mapped-pruned-90-54",
+          "augmented104-mapped-pruned-90-53",
+          "augmented104-mapped-pruned-90-52",
+          "augmented104-mapped-pruned-90-51",
+          "augmented104-mapped-pruned-90-50",
+          "augmented104-mapped-pruned-90-49",
+          "augmented104-mapped-pruned-90-48",
+          "augmented104-mapped-pruned-90-47",
+          "augmented104-mapped-pruned-90-46",
+          "augmented104-mapped-pruned-90-45",
+          "augmented104-mapped-pruned-90-44",
+          "augmented104-mapped-pruned-90-43",
+          "augmented104-mapped-pruned-90-42",
+          "augmented104-mapped-pruned-90-41",
+          "augmented104-mapped-pruned-90-40",
+          "augmented104-mapped-pruned-90-39",
+          "augmented104-mapped-pruned-90-38",
+          "augmented104-mapped-pruned-90-37",
+          "augmented104-mapped-pruned-90-36",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-34",
+          "augmented104-mapped-pruned-90-33",
+          "augmented104-mapped-pruned-90-32",
+          "augmented104-mapped-pruned-90-31",
+          "augmented104-mapped-pruned-90-30",
+          "augmented104-mapped-pruned-90-29",
+          "augmented104-mapped-pruned-90-28",
+          "augmented104-mapped-pruned-90-27",
+          "augmented104-mapped-pruned-90-26",
+          "augmented104-mapped-pruned-90-25",
+          "augmented104-mapped-pruned-90-24",
+          "augmented104-mapped-pruned-90-23",
+          "augmented104-mapped-pruned-90-22",
+          "augmented104-mapped-pruned-90-21",
+          "augmented104-mapped-pruned-90-20",
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-18",
+          "augmented104-mapped-pruned-90-17",
+          "augmented104-mapped-pruned-90-16",
+          "augmented104-mapped-pruned-90-15",
+          "augmented104-mapped-pruned-90-14",
+          "augmented104-mapped-pruned-90-13",
+          "augmented104-mapped-pruned-90-12",
+          "augmented104-mapped-pruned-90-11",
+          "augmented104-mapped-pruned-90-10",
+          "augmented104-mapped-pruned-90-9",
+          "augmented104-mapped-pruned-90-8",
+          "augmented104-mapped-pruned-90-7",
+          "augmented104-mapped-pruned-90-6",
+          "augmented104-mapped-pruned-90-5",
+          "augmented104-mapped-pruned-90-4",
+          "augmented104-mapped-pruned-90-3",
+          "augmented104-mapped-pruned-90-2"
+        ],
+        "condition_count": 184600,
+        "expected_block_count": 7425
+      },
+      {
+        "request_sha256": "4026e8b8e4f6cf45cf03a035d2d6c3fa8a320cf0c51f1f804e37b00a86b665a3",
+        "candidate_sha256": "b1dae0532c4410c6c01a1f1677f92d625226d942d3c922ee460b4a20ec00efde",
+        "material_sha256": "63d1befb078394e8fe9ef6000a55c7c14a73d55d3383438f30ed9ee084cd655f",
+        "grid_sha256": "0bc4d0bc33d0652c297595384392071b0777a138024309102a09ca3d20be8831",
+        "evaluation_variable_ids": [
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-2",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-79"
+        ],
+        "optimization_variable_ids": [
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-2",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-79"
+        ],
+        "nominal_variable_ids": [
+          "pruned90_cycle1-needle-1",
+          "augmented104-mapped-pruned-90-89",
+          "augmented104-mapped-pruned-90-88",
+          "augmented104-mapped-pruned-90-87",
+          "augmented104-mapped-pruned-90-86",
+          "augmented104-mapped-pruned-90-85",
+          "augmented104-mapped-pruned-90-84",
+          "augmented104-mapped-pruned-90-83",
+          "augmented104-mapped-pruned-90-82",
+          "augmented104-mapped-pruned-90-81",
+          "augmented104-mapped-pruned-90-80",
+          "augmented104-mapped-pruned-90-79",
+          "augmented104-mapped-pruned-90-78",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-76",
+          "augmented104-mapped-pruned-90-75",
+          "augmented104-mapped-pruned-90-74",
+          "augmented104-mapped-pruned-90-73",
+          "augmented104-mapped-pruned-90-72",
+          "augmented104-mapped-pruned-90-71",
+          "augmented104-mapped-pruned-90-70",
+          "augmented104-mapped-pruned-90-69",
+          "augmented104-mapped-pruned-90-68",
+          "augmented104-mapped-pruned-90-67",
+          "augmented104-mapped-pruned-90-66",
+          "augmented104-mapped-pruned-90-65",
+          "augmented104-mapped-pruned-90-64",
+          "augmented104-mapped-pruned-90-63",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-61",
+          "augmented104-mapped-pruned-90-60",
+          "augmented104-mapped-pruned-90-59",
+          "augmented104-mapped-pruned-90-58",
+          "augmented104-mapped-pruned-90-57",
+          "augmented104-mapped-pruned-90-56",
+          "augmented104-mapped-pruned-90-55",
+          "augmented104-mapped-pruned-90-54",
+          "augmented104-mapped-pruned-90-53",
+          "augmented104-mapped-pruned-90-52",
+          "augmented104-mapped-pruned-90-51",
+          "augmented104-mapped-pruned-90-50",
+          "augmented104-mapped-pruned-90-49",
+          "augmented104-mapped-pruned-90-48",
+          "augmented104-mapped-pruned-90-47",
+          "augmented104-mapped-pruned-90-46",
+          "augmented104-mapped-pruned-90-45",
+          "augmented104-mapped-pruned-90-44",
+          "augmented104-mapped-pruned-90-43",
+          "augmented104-mapped-pruned-90-42",
+          "augmented104-mapped-pruned-90-41",
+          "augmented104-mapped-pruned-90-40",
+          "augmented104-mapped-pruned-90-39",
+          "augmented104-mapped-pruned-90-38",
+          "augmented104-mapped-pruned-90-37",
+          "augmented104-mapped-pruned-90-36",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-34",
+          "augmented104-mapped-pruned-90-33",
+          "augmented104-mapped-pruned-90-32",
+          "augmented104-mapped-pruned-90-31",
+          "augmented104-mapped-pruned-90-30",
+          "augmented104-mapped-pruned-90-29",
+          "augmented104-mapped-pruned-90-28",
+          "augmented104-mapped-pruned-90-27",
+          "augmented104-mapped-pruned-90-26",
+          "augmented104-mapped-pruned-90-25",
+          "augmented104-mapped-pruned-90-24",
+          "augmented104-mapped-pruned-90-23",
+          "augmented104-mapped-pruned-90-22",
+          "augmented104-mapped-pruned-90-21",
+          "augmented104-mapped-pruned-90-20",
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-18",
+          "augmented104-mapped-pruned-90-17",
+          "augmented104-mapped-pruned-90-16",
+          "augmented104-mapped-pruned-90-15",
+          "augmented104-mapped-pruned-90-14",
+          "augmented104-mapped-pruned-90-13",
+          "augmented104-mapped-pruned-90-12",
+          "augmented104-mapped-pruned-90-11",
+          "augmented104-mapped-pruned-90-10",
+          "augmented104-mapped-pruned-90-9",
+          "augmented104-mapped-pruned-90-8",
+          "augmented104-mapped-pruned-90-7",
+          "augmented104-mapped-pruned-90-6",
+          "augmented104-mapped-pruned-90-5",
+          "augmented104-mapped-pruned-90-4",
+          "augmented104-mapped-pruned-90-3",
+          "augmented104-mapped-pruned-90-2"
+        ],
+        "condition_count": 184600,
+        "expected_block_count": 7425
+      }
+    ],
+    "B": [
+      {
+        "request_sha256": "4026e8b8e4f6cf45cf03a035d2d6c3fa8a320cf0c51f1f804e37b00a86b665a3",
+        "candidate_sha256": "235f7f9090a1e0f2dab768bf1498fec321607e78955975c1e4a5918419e6aa91",
+        "material_sha256": "63d1befb078394e8fe9ef6000a55c7c14a73d55d3383438f30ed9ee084cd655f",
+        "grid_sha256": "0bc4d0bc33d0652c297595384392071b0777a138024309102a09ca3d20be8831",
+        "evaluation_variable_ids": [
+          "pruned90_cycle1-needle-1",
+          "augmented104-mapped-pruned-90-89",
+          "augmented104-mapped-pruned-90-88",
+          "augmented104-mapped-pruned-90-87",
+          "augmented104-mapped-pruned-90-86",
+          "augmented104-mapped-pruned-90-85",
+          "augmented104-mapped-pruned-90-84",
+          "augmented104-mapped-pruned-90-83",
+          "augmented104-mapped-pruned-90-82",
+          "augmented104-mapped-pruned-90-81",
+          "augmented104-mapped-pruned-90-80",
+          "augmented104-mapped-pruned-90-79",
+          "augmented104-mapped-pruned-90-78",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-76",
+          "augmented104-mapped-pruned-90-75",
+          "augmented104-mapped-pruned-90-74",
+          "augmented104-mapped-pruned-90-73",
+          "augmented104-mapped-pruned-90-72",
+          "augmented104-mapped-pruned-90-71",
+          "augmented104-mapped-pruned-90-70",
+          "augmented104-mapped-pruned-90-69",
+          "augmented104-mapped-pruned-90-68",
+          "augmented104-mapped-pruned-90-67",
+          "augmented104-mapped-pruned-90-66",
+          "augmented104-mapped-pruned-90-65",
+          "augmented104-mapped-pruned-90-64",
+          "augmented104-mapped-pruned-90-63",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-61",
+          "augmented104-mapped-pruned-90-60",
+          "augmented104-mapped-pruned-90-59",
+          "augmented104-mapped-pruned-90-58",
+          "augmented104-mapped-pruned-90-57",
+          "augmented104-mapped-pruned-90-56",
+          "augmented104-mapped-pruned-90-55",
+          "augmented104-mapped-pruned-90-54",
+          "augmented104-mapped-pruned-90-53",
+          "augmented104-mapped-pruned-90-52",
+          "augmented104-mapped-pruned-90-51",
+          "augmented104-mapped-pruned-90-50",
+          "augmented104-mapped-pruned-90-49",
+          "augmented104-mapped-pruned-90-48",
+          "augmented104-mapped-pruned-90-47",
+          "augmented104-mapped-pruned-90-46",
+          "augmented104-mapped-pruned-90-45",
+          "augmented104-mapped-pruned-90-44",
+          "augmented104-mapped-pruned-90-43",
+          "augmented104-mapped-pruned-90-42",
+          "augmented104-mapped-pruned-90-41",
+          "augmented104-mapped-pruned-90-40",
+          "augmented104-mapped-pruned-90-39",
+          "augmented104-mapped-pruned-90-38",
+          "augmented104-mapped-pruned-90-37",
+          "augmented104-mapped-pruned-90-36",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-34",
+          "augmented104-mapped-pruned-90-33",
+          "augmented104-mapped-pruned-90-32",
+          "augmented104-mapped-pruned-90-31",
+          "augmented104-mapped-pruned-90-30",
+          "augmented104-mapped-pruned-90-29",
+          "augmented104-mapped-pruned-90-28",
+          "augmented104-mapped-pruned-90-27",
+          "augmented104-mapped-pruned-90-26",
+          "augmented104-mapped-pruned-90-25",
+          "augmented104-mapped-pruned-90-24",
+          "augmented104-mapped-pruned-90-23",
+          "augmented104-mapped-pruned-90-22",
+          "augmented104-mapped-pruned-90-21",
+          "augmented104-mapped-pruned-90-20",
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-18",
+          "augmented104-mapped-pruned-90-17",
+          "augmented104-mapped-pruned-90-16",
+          "augmented104-mapped-pruned-90-15",
+          "augmented104-mapped-pruned-90-14",
+          "augmented104-mapped-pruned-90-13",
+          "augmented104-mapped-pruned-90-12",
+          "augmented104-mapped-pruned-90-11",
+          "augmented104-mapped-pruned-90-10",
+          "augmented104-mapped-pruned-90-9",
+          "augmented104-mapped-pruned-90-8",
+          "augmented104-mapped-pruned-90-7",
+          "augmented104-mapped-pruned-90-6",
+          "augmented104-mapped-pruned-90-5",
+          "augmented104-mapped-pruned-90-4",
+          "augmented104-mapped-pruned-90-3",
+          "augmented104-mapped-pruned-90-2"
+        ],
+        "optimization_variable_ids": [
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-2",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-79"
+        ],
+        "nominal_variable_ids": [
+          "pruned90_cycle1-needle-1",
+          "augmented104-mapped-pruned-90-89",
+          "augmented104-mapped-pruned-90-88",
+          "augmented104-mapped-pruned-90-87",
+          "augmented104-mapped-pruned-90-86",
+          "augmented104-mapped-pruned-90-85",
+          "augmented104-mapped-pruned-90-84",
+          "augmented104-mapped-pruned-90-83",
+          "augmented104-mapped-pruned-90-82",
+          "augmented104-mapped-pruned-90-81",
+          "augmented104-mapped-pruned-90-80",
+          "augmented104-mapped-pruned-90-79",
+          "augmented104-mapped-pruned-90-78",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-76",
+          "augmented104-mapped-pruned-90-75",
+          "augmented104-mapped-pruned-90-74",
+          "augmented104-mapped-pruned-90-73",
+          "augmented104-mapped-pruned-90-72",
+          "augmented104-mapped-pruned-90-71",
+          "augmented104-mapped-pruned-90-70",
+          "augmented104-mapped-pruned-90-69",
+          "augmented104-mapped-pruned-90-68",
+          "augmented104-mapped-pruned-90-67",
+          "augmented104-mapped-pruned-90-66",
+          "augmented104-mapped-pruned-90-65",
+          "augmented104-mapped-pruned-90-64",
+          "augmented104-mapped-pruned-90-63",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-61",
+          "augmented104-mapped-pruned-90-60",
+          "augmented104-mapped-pruned-90-59",
+          "augmented104-mapped-pruned-90-58",
+          "augmented104-mapped-pruned-90-57",
+          "augmented104-mapped-pruned-90-56",
+          "augmented104-mapped-pruned-90-55",
+          "augmented104-mapped-pruned-90-54",
+          "augmented104-mapped-pruned-90-53",
+          "augmented104-mapped-pruned-90-52",
+          "augmented104-mapped-pruned-90-51",
+          "augmented104-mapped-pruned-90-50",
+          "augmented104-mapped-pruned-90-49",
+          "augmented104-mapped-pruned-90-48",
+          "augmented104-mapped-pruned-90-47",
+          "augmented104-mapped-pruned-90-46",
+          "augmented104-mapped-pruned-90-45",
+          "augmented104-mapped-pruned-90-44",
+          "augmented104-mapped-pruned-90-43",
+          "augmented104-mapped-pruned-90-42",
+          "augmented104-mapped-pruned-90-41",
+          "augmented104-mapped-pruned-90-40",
+          "augmented104-mapped-pruned-90-39",
+          "augmented104-mapped-pruned-90-38",
+          "augmented104-mapped-pruned-90-37",
+          "augmented104-mapped-pruned-90-36",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-34",
+          "augmented104-mapped-pruned-90-33",
+          "augmented104-mapped-pruned-90-32",
+          "augmented104-mapped-pruned-90-31",
+          "augmented104-mapped-pruned-90-30",
+          "augmented104-mapped-pruned-90-29",
+          "augmented104-mapped-pruned-90-28",
+          "augmented104-mapped-pruned-90-27",
+          "augmented104-mapped-pruned-90-26",
+          "augmented104-mapped-pruned-90-25",
+          "augmented104-mapped-pruned-90-24",
+          "augmented104-mapped-pruned-90-23",
+          "augmented104-mapped-pruned-90-22",
+          "augmented104-mapped-pruned-90-21",
+          "augmented104-mapped-pruned-90-20",
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-18",
+          "augmented104-mapped-pruned-90-17",
+          "augmented104-mapped-pruned-90-16",
+          "augmented104-mapped-pruned-90-15",
+          "augmented104-mapped-pruned-90-14",
+          "augmented104-mapped-pruned-90-13",
+          "augmented104-mapped-pruned-90-12",
+          "augmented104-mapped-pruned-90-11",
+          "augmented104-mapped-pruned-90-10",
+          "augmented104-mapped-pruned-90-9",
+          "augmented104-mapped-pruned-90-8",
+          "augmented104-mapped-pruned-90-7",
+          "augmented104-mapped-pruned-90-6",
+          "augmented104-mapped-pruned-90-5",
+          "augmented104-mapped-pruned-90-4",
+          "augmented104-mapped-pruned-90-3",
+          "augmented104-mapped-pruned-90-2"
+        ],
+        "condition_count": 184600,
+        "expected_block_count": 7425
+      },
+      {
+        "request_sha256": "4026e8b8e4f6cf45cf03a035d2d6c3fa8a320cf0c51f1f804e37b00a86b665a3",
+        "candidate_sha256": "b1dae0532c4410c6c01a1f1677f92d625226d942d3c922ee460b4a20ec00efde",
+        "material_sha256": "63d1befb078394e8fe9ef6000a55c7c14a73d55d3383438f30ed9ee084cd655f",
+        "grid_sha256": "0bc4d0bc33d0652c297595384392071b0777a138024309102a09ca3d20be8831",
+        "evaluation_variable_ids": [
+          "pruned90_cycle1-needle-1",
+          "augmented104-mapped-pruned-90-89",
+          "augmented104-mapped-pruned-90-88",
+          "augmented104-mapped-pruned-90-87",
+          "augmented104-mapped-pruned-90-86",
+          "augmented104-mapped-pruned-90-85",
+          "augmented104-mapped-pruned-90-84",
+          "augmented104-mapped-pruned-90-83",
+          "augmented104-mapped-pruned-90-82",
+          "augmented104-mapped-pruned-90-81",
+          "augmented104-mapped-pruned-90-80",
+          "augmented104-mapped-pruned-90-79",
+          "augmented104-mapped-pruned-90-78",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-76",
+          "augmented104-mapped-pruned-90-75",
+          "augmented104-mapped-pruned-90-74",
+          "augmented104-mapped-pruned-90-73",
+          "augmented104-mapped-pruned-90-72",
+          "augmented104-mapped-pruned-90-71",
+          "augmented104-mapped-pruned-90-70",
+          "augmented104-mapped-pruned-90-69",
+          "augmented104-mapped-pruned-90-68",
+          "augmented104-mapped-pruned-90-67",
+          "augmented104-mapped-pruned-90-66",
+          "augmented104-mapped-pruned-90-65",
+          "augmented104-mapped-pruned-90-64",
+          "augmented104-mapped-pruned-90-63",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-61",
+          "augmented104-mapped-pruned-90-60",
+          "augmented104-mapped-pruned-90-59",
+          "augmented104-mapped-pruned-90-58",
+          "augmented104-mapped-pruned-90-57",
+          "augmented104-mapped-pruned-90-56",
+          "augmented104-mapped-pruned-90-55",
+          "augmented104-mapped-pruned-90-54",
+          "augmented104-mapped-pruned-90-53",
+          "augmented104-mapped-pruned-90-52",
+          "augmented104-mapped-pruned-90-51",
+          "augmented104-mapped-pruned-90-50",
+          "augmented104-mapped-pruned-90-49",
+          "augmented104-mapped-pruned-90-48",
+          "augmented104-mapped-pruned-90-47",
+          "augmented104-mapped-pruned-90-46",
+          "augmented104-mapped-pruned-90-45",
+          "augmented104-mapped-pruned-90-44",
+          "augmented104-mapped-pruned-90-43",
+          "augmented104-mapped-pruned-90-42",
+          "augmented104-mapped-pruned-90-41",
+          "augmented104-mapped-pruned-90-40",
+          "augmented104-mapped-pruned-90-39",
+          "augmented104-mapped-pruned-90-38",
+          "augmented104-mapped-pruned-90-37",
+          "augmented104-mapped-pruned-90-36",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-34",
+          "augmented104-mapped-pruned-90-33",
+          "augmented104-mapped-pruned-90-32",
+          "augmented104-mapped-pruned-90-31",
+          "augmented104-mapped-pruned-90-30",
+          "augmented104-mapped-pruned-90-29",
+          "augmented104-mapped-pruned-90-28",
+          "augmented104-mapped-pruned-90-27",
+          "augmented104-mapped-pruned-90-26",
+          "augmented104-mapped-pruned-90-25",
+          "augmented104-mapped-pruned-90-24",
+          "augmented104-mapped-pruned-90-23",
+          "augmented104-mapped-pruned-90-22",
+          "augmented104-mapped-pruned-90-21",
+          "augmented104-mapped-pruned-90-20",
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-18",
+          "augmented104-mapped-pruned-90-17",
+          "augmented104-mapped-pruned-90-16",
+          "augmented104-mapped-pruned-90-15",
+          "augmented104-mapped-pruned-90-14",
+          "augmented104-mapped-pruned-90-13",
+          "augmented104-mapped-pruned-90-12",
+          "augmented104-mapped-pruned-90-11",
+          "augmented104-mapped-pruned-90-10",
+          "augmented104-mapped-pruned-90-9",
+          "augmented104-mapped-pruned-90-8",
+          "augmented104-mapped-pruned-90-7",
+          "augmented104-mapped-pruned-90-6",
+          "augmented104-mapped-pruned-90-5",
+          "augmented104-mapped-pruned-90-4",
+          "augmented104-mapped-pruned-90-3",
+          "augmented104-mapped-pruned-90-2"
+        ],
+        "optimization_variable_ids": [
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-2",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-79"
+        ],
+        "nominal_variable_ids": [
+          "pruned90_cycle1-needle-1",
+          "augmented104-mapped-pruned-90-89",
+          "augmented104-mapped-pruned-90-88",
+          "augmented104-mapped-pruned-90-87",
+          "augmented104-mapped-pruned-90-86",
+          "augmented104-mapped-pruned-90-85",
+          "augmented104-mapped-pruned-90-84",
+          "augmented104-mapped-pruned-90-83",
+          "augmented104-mapped-pruned-90-82",
+          "augmented104-mapped-pruned-90-81",
+          "augmented104-mapped-pruned-90-80",
+          "augmented104-mapped-pruned-90-79",
+          "augmented104-mapped-pruned-90-78",
+          "augmented104-mapped-pruned-90-77",
+          "augmented104-mapped-pruned-90-76",
+          "augmented104-mapped-pruned-90-75",
+          "augmented104-mapped-pruned-90-74",
+          "augmented104-mapped-pruned-90-73",
+          "augmented104-mapped-pruned-90-72",
+          "augmented104-mapped-pruned-90-71",
+          "augmented104-mapped-pruned-90-70",
+          "augmented104-mapped-pruned-90-69",
+          "augmented104-mapped-pruned-90-68",
+          "augmented104-mapped-pruned-90-67",
+          "augmented104-mapped-pruned-90-66",
+          "augmented104-mapped-pruned-90-65",
+          "augmented104-mapped-pruned-90-64",
+          "augmented104-mapped-pruned-90-63",
+          "augmented104-mapped-pruned-90-62",
+          "augmented104-mapped-pruned-90-61",
+          "augmented104-mapped-pruned-90-60",
+          "augmented104-mapped-pruned-90-59",
+          "augmented104-mapped-pruned-90-58",
+          "augmented104-mapped-pruned-90-57",
+          "augmented104-mapped-pruned-90-56",
+          "augmented104-mapped-pruned-90-55",
+          "augmented104-mapped-pruned-90-54",
+          "augmented104-mapped-pruned-90-53",
+          "augmented104-mapped-pruned-90-52",
+          "augmented104-mapped-pruned-90-51",
+          "augmented104-mapped-pruned-90-50",
+          "augmented104-mapped-pruned-90-49",
+          "augmented104-mapped-pruned-90-48",
+          "augmented104-mapped-pruned-90-47",
+          "augmented104-mapped-pruned-90-46",
+          "augmented104-mapped-pruned-90-45",
+          "augmented104-mapped-pruned-90-44",
+          "augmented104-mapped-pruned-90-43",
+          "augmented104-mapped-pruned-90-42",
+          "augmented104-mapped-pruned-90-41",
+          "augmented104-mapped-pruned-90-40",
+          "augmented104-mapped-pruned-90-39",
+          "augmented104-mapped-pruned-90-38",
+          "augmented104-mapped-pruned-90-37",
+          "augmented104-mapped-pruned-90-36",
+          "augmented104-mapped-pruned-90-35",
+          "augmented104-mapped-pruned-90-34",
+          "augmented104-mapped-pruned-90-33",
+          "augmented104-mapped-pruned-90-32",
+          "augmented104-mapped-pruned-90-31",
+          "augmented104-mapped-pruned-90-30",
+          "augmented104-mapped-pruned-90-29",
+          "augmented104-mapped-pruned-90-28",
+          "augmented104-mapped-pruned-90-27",
+          "augmented104-mapped-pruned-90-26",
+          "augmented104-mapped-pruned-90-25",
+          "augmented104-mapped-pruned-90-24",
+          "augmented104-mapped-pruned-90-23",
+          "augmented104-mapped-pruned-90-22",
+          "augmented104-mapped-pruned-90-21",
+          "augmented104-mapped-pruned-90-20",
+          "augmented104-mapped-pruned-90-19",
+          "augmented104-mapped-pruned-90-18",
+          "augmented104-mapped-pruned-90-17",
+          "augmented104-mapped-pruned-90-16",
+          "augmented104-mapped-pruned-90-15",
+          "augmented104-mapped-pruned-90-14",
+          "augmented104-mapped-pruned-90-13",
+          "augmented104-mapped-pruned-90-12",
+          "augmented104-mapped-pruned-90-11",
+          "augmented104-mapped-pruned-90-10",
+          "augmented104-mapped-pruned-90-9",
+          "augmented104-mapped-pruned-90-8",
+          "augmented104-mapped-pruned-90-7",
+          "augmented104-mapped-pruned-90-6",
+          "augmented104-mapped-pruned-90-5",
+          "augmented104-mapped-pruned-90-4",
+          "augmented104-mapped-pruned-90-3",
+          "augmented104-mapped-pruned-90-2"
+        ],
+        "condition_count": 184600,
+        "expected_block_count": 7425
+      }
+    ]
+  },
+  "estimated_resources": {
+    "A": {
+      "condition_count": 184600,
+      "block_count": 7425,
+      "raw_array_bytes": 512449600,
+      "estimated_artifact_bytes": 712737748,
+      "estimated_block_working_bytes": 48758784,
+      "estimated_slsqp_working_bytes": 1364563200,
+      "hypothetical_evaluation_column_slsqp_bytes": 1364563200
+    },
+    "B": {
+      "condition_count": 184600,
+      "block_count": 7425,
+      "raw_array_bytes": 4434830400,
+      "estimated_artifact_bytes": 4635118548,
+      "estimated_block_working_bytes": 48758784,
+      "estimated_slsqp_working_bytes": 1364563200,
+      "hypothetical_evaluation_column_slsqp_bytes": 17544384000
+    }
+  },
+  "original_candidate_audits": {
+    "state": "partial",
+    "termination_reason": "iteration_limit",
+    "evaluations": 21,
+    "iterations": 20,
+    "seconds_observed": 59.21098622000136,
+    "training_baseline": 0.002627014264789118,
+    "training_best": 0.0010360560455575651,
+    "sparse_nominal_pass": true,
+    "initial_full_original": {
+      "nominal_pass": true,
+      "condition_count": 184600,
+      "windows": [
+        {
+          "index": 0,
+          "pass_": true,
+          "min_R": 0.990471796024005,
+          "max_R": 0.9998375955562799,
+          "signed_violation": -0.0004717960240050445,
+          "worst_location": {
+            "wavelength_nm": 618.0,
+            "angle_deg": 51.0,
+            "R": 0.990471796024005
+          }
+        },
+        {
+          "index": 1,
+          "pass_": true,
+          "min_R": 0.9904718138822008,
+          "max_R": 0.9951554482264028,
+          "signed_violation": -0.0004718138822008555,
+          "worst_location": {
+            "wavelength_nm": 1084.0,
+            "angle_deg": 51.0,
+            "R": 0.9904718138822008
+          }
+        },
+        {
+          "index": 2,
+          "pass_": true,
+          "min_R": 0.013024731758449287,
+          "max_R": 0.029528254608182234,
+          "signed_violation": -0.00047174539181776484,
+          "worst_location": {
+            "wavelength_nm": 3000.0,
+            "angle_deg": 39.0,
+            "R": 0.029528254608182234
+          }
+        },
+        {
+          "index": 3,
+          "pass_": true,
+          "min_R": 0.005925995211105301,
+          "max_R": 0.029528199209434895,
+          "signed_violation": -0.00047180079056510435,
+          "worst_location": {
+            "wavelength_nm": 7000.0,
+            "angle_deg": 39.0,
+            "R": 0.029528199209434895
+          }
+        }
+      ],
+      "max_signed_violation": -0.00047174539181776484,
+      "seconds_observed": 6.281096015009098,
+      "continuous_certificate": false,
+      "strict_upper_indices": [
+        2,
+        3
+      ]
+    },
+    "best_full_original": {
+      "nominal_pass": true,
+      "condition_count": 184600,
+      "windows": [
+        {
+          "index": 0,
+          "pass_": true,
+          "min_R": 0.9902242922367386,
+          "max_R": 0.9998382269341303,
+          "signed_violation": -0.000224292236738588,
+          "worst_location": {
+            "wavelength_nm": 633.0,
+            "angle_deg": 51.0,
+            "R": 0.9902242922367386
+          }
+        },
+        {
+          "index": 1,
+          "pass_": true,
+          "min_R": 0.9903894243437149,
+          "max_R": 0.9951277754694423,
+          "signed_violation": -0.00038942434371491697,
+          "worst_location": {
+            "wavelength_nm": 1044.0,
+            "angle_deg": 39.0,
+            "R": 0.9903894243437149
+          }
+        },
+        {
+          "index": 2,
+          "pass_": true,
+          "min_R": 0.013276798366334847,
+          "max_R": 0.029987930607806787,
+          "signed_violation": -1.2069392193211903e-05,
+          "worst_location": {
+            "wavelength_nm": 5000.0,
+            "angle_deg": 51.0,
+            "R": 0.029987930607806787
+          }
+        },
+        {
+          "index": 3,
+          "pass_": true,
+          "min_R": 0.005985022844527229,
+          "max_R": 0.02963819242372644,
+          "signed_violation": -0.00036180757627355883,
+          "worst_location": {
+            "wavelength_nm": 8631.0,
+            "angle_deg": 51.0,
+            "R": 0.02963819242372644
+          }
+        }
+      ],
+      "max_signed_violation": -1.2069392193211903e-05,
+      "seconds_observed": 6.761523905996,
+      "continuous_certificate": false,
+      "strict_upper_indices": [
+        2,
+        3
+      ]
+    },
+    "initial_independent_dense": {
+      "nominal_pass": true,
+      "condition_count": 529396,
+      "windows": [
+        {
+          "index": 0,
+          "pass_": true,
+          "min_R": 0.9904035289957915,
+          "max_R": 0.9998377196387287,
+          "signed_violation": -0.00040352899579154666,
+          "worst_location": {
+            "wavelength_nm": 723.8,
+            "angle_deg": 51.0,
+            "R": 0.9904035289957915
+          }
+        },
+        {
+          "index": 1,
+          "pass_": true,
+          "min_R": 0.9904718023796392,
+          "max_R": 0.995155473008535,
+          "signed_violation": -0.0004718023796391746,
+          "worst_location": {
+            "wavelength_nm": 1058.7,
+            "angle_deg": 51.0,
+            "R": 0.9904718023796392
+          }
+        },
+        {
+          "index": 2,
+          "pass_": true,
+          "min_R": 0.013024731758449287,
+          "max_R": 0.029528254608182234,
+          "signed_violation": -0.00047174539181776484,
+          "worst_location": {
+            "wavelength_nm": 3000.0,
+            "angle_deg": 39.0,
+            "R": 0.029528254608182234
+          }
+        },
+        {
+          "index": 3,
+          "pass_": true,
+          "min_R": 0.005925995211105301,
+          "max_R": 0.029528199209434895,
+          "signed_violation": -0.00047180079056510435,
+          "worst_location": {
+            "wavelength_nm": 7000.0,
+            "angle_deg": 39.0,
+            "R": 0.029528199209434895
+          }
+        }
+      ],
+      "max_signed_violation": -0.00040352899579154666,
+      "seconds_observed": 18.79387000000861,
+      "continuous_certificate": false,
+      "strict_upper_indices": [
+        2,
+        3
+      ]
+    },
+    "best_independent_dense": {
+      "nominal_pass": true,
+      "condition_count": 529396,
+      "windows": [
+        {
+          "index": 0,
+          "pass_": true,
+          "min_R": 0.9901720809991204,
+          "max_R": 0.9998383485004538,
+          "signed_violation": -0.0001720809991203609,
+          "worst_location": {
+            "wavelength_nm": 633.4,
+            "angle_deg": 51.0,
+            "R": 0.9901720809991204
+          }
+        },
+        {
+          "index": 1,
+          "pass_": true,
+          "min_R": 0.9903894243437149,
+          "max_R": 0.9951283604126284,
+          "signed_violation": -0.00038942434371491697,
+          "worst_location": {
+            "wavelength_nm": 1044.0,
+            "angle_deg": 39.0,
+            "R": 0.9903894243437149
+          }
+        },
+        {
+          "index": 2,
+          "pass_": true,
+          "min_R": 0.013276798366334847,
+          "max_R": 0.029987930607806787,
+          "signed_violation": -1.2069392193211903e-05,
+          "worst_location": {
+            "wavelength_nm": 5000.0,
+            "angle_deg": 51.0,
+            "R": 0.029987930607806787
+          }
+        },
+        {
+          "index": 3,
+          "pass_": true,
+          "min_R": 0.005985022844527229,
+          "max_R": 0.02963819242372644,
+          "signed_violation": -0.00036180757627355883,
+          "worst_location": {
+            "wavelength_nm": 8631.0,
+            "angle_deg": 51.0,
+            "R": 0.02963819242372644
+          }
+        }
+      ],
+      "max_signed_violation": -1.2069392193211903e-05,
+      "seconds_observed": 19.532455805994687,
+      "continuous_certificate": false,
+      "strict_upper_indices": [
+        2,
+        3
+      ]
+    },
+    "holdout": {
+      "independent": {
+        "initial": {
+          "n": 16,
+          "pass_count": 0,
+          "samples": [
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0010997386899811445
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.002326466932725202
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0008508608463202449
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0015520942219722847
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0015979548786786424
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0016553347245489292
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.003657121986208045
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0019476987105304655
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0019812750842999605
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0008579171376445031
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0006944754648518896
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0009525018992879858
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0015999932633509045
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.001340962548023461
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0005926831155902423
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0004766609061766548
+            }
+          ],
+          "worst_violation": 0.003657121986208045,
+          "p95_violation": 0.0026591306960959127
+        },
+        "best": {
+          "n": 16,
+          "pass_count": 0,
+          "samples": [
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0012190168070527196
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.002629437564460879
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0006902968886899341
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0008555304365420735
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0018518745453057761
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.001721514771392818
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0037417959574077564
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.002294404326346089
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0005581909009524377
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.00040054033535674716
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.00040725342962644184
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0010630406538842951
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.000876480568200666
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.001263684873952009
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0008805403787644148
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0003919382927604076
+            }
+          ],
+          "worst_violation": 0.0037417959574077564,
+          "p95_violation": 0.0029075271626975985
+        }
+      },
+      "common_mode": {
+        "initial": {
+          "n": 16,
+          "pass_count": 0,
+          "samples": [
+            {
+              "pass_": false,
+              "max_signed_violation": 0.008619087173243778
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.011285037270077014
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0004668541045498298
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0020114255862063654
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.014608877047654414
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.002652611189782217
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.006425496964640419
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0003077707078662506
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.004402686373019993
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.001988124679514827
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0024350189112222406
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.013814555996902587
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.005104760897950401
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.012017853053081486
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.009374455482350011
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0006884124186754548
+            }
+          ],
+          "worst_violation": 0.014608877047654414,
+          "p95_violation": 0.014013136259590544
+        },
+        "best": {
+          "n": 16,
+          "pass_count": 0,
+          "samples": [
+            {
+              "pass_": false,
+              "max_signed_violation": 0.008786550495082146
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.011483759873037847
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0005368839257149371
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0006560480816854009
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.012773119904535099
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.002749953807730021
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.004747294358367543
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.00037565376466219824
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.004520769482487252
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0006452829695077211
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0008550211509902317
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.011992762456632798
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.003455304893858119
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.01022860372342059
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.007635713968090818
+            },
+            {
+              "pass_": false,
+              "max_signed_violation": 0.0007613749842669826
+            }
+          ],
+          "worst_violation": 0.012773119904535099,
+          "p95_violation": 0.012187851818608373
+        }
+      }
+    },
+    "candidate_passes_nominal_audits": true,
+    "manufacturing_improvement_established": false
+  }
+}
