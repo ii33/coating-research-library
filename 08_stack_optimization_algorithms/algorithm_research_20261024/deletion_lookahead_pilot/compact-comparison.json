@@ -1,0 +1,1082 @@
+{
+  "conclusion": "Negative for this fixed schedule and parent: no winning-branch reversal; baseline has lower original max violation and SSE at both matched-call and conservative lower-work prefixes. It is thicker, so this is not blanket Pareto dominance.",
+  "production_commit": "7e43ebf845d82e50e7bf38bbcc227671fbc68b04",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "requested_threads": 1
+  },
+  "actual_arm_summaries": [
+    {
+      "name": "arm-a-raw-choice",
+      "call_cap": 64,
+      "wall_cap_seconds": 90.0,
+      "admitted_calls": 50,
+      "completed_calls": 50,
+      "forward_calls": 5,
+      "jacobian_calls": 45,
+      "forward_point_layers": 2911568,
+      "jacobian_point_layers": 26296380,
+      "work_scope": "admitted full-grid proxy; incomplete physical calls explicitly marked; F and FJ not assumed equal cost",
+      "elapsed_seconds": 90.39484523500141,
+      "stop_reason": "wall_limit",
+      "strict_champion": {
+        "physical_hash": "57ecf340bd81d4af480ef9bdd526cf74d5e4fa2a81708ac9cb60e23f5911c8ab",
+        "layer_count": 57,
+        "total_thickness_nm": 8227.23475034996,
+        "max_error": 0.023018758595551025,
+        "weighted_sse": 2.042800546549899e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.9586754682345597,
+            "sampled_max": 0.9986943185523767,
+            "angle_mean_min": 0.9791721828356463,
+            "angle_mean_max": 0.9867238652184823,
+            "max_error": 0.011324531765440238,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9857802699944653,
+            "sampled_max": 0.9948200008946186,
+            "angle_mean_min": 0.9894474418535223,
+            "angle_mean_max": 0.9943230181506436,
+            "max_error": 0.004219730005534661,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9655445189606509,
+            "sampled_max": 0.9941612071979558,
+            "angle_mean_min": 0.9794712900421774,
+            "angle_mean_max": 0.9878895831118305,
+            "max_error": 0.014455481039349127,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.956981241404449,
+            "sampled_max": 0.9948414246307947,
+            "angle_mean_min": 0.9777443467074081,
+            "angle_mean_max": 0.9871073152262768,
+            "max_error": 0.023018758595551025,
+            "nominal_pass": false
+          }
+        ]
+      },
+      "best_explored_sse": {
+        "physical_hash": "57ecf340bd81d4af480ef9bdd526cf74d5e4fa2a81708ac9cb60e23f5911c8ab",
+        "layer_count": 57,
+        "total_thickness_nm": 8227.23475034996,
+        "max_error": 0.023018758595551025,
+        "weighted_sse": 2.042800546549899e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.9586754682345597,
+            "sampled_max": 0.9986943185523767,
+            "angle_mean_min": 0.9791721828356463,
+            "angle_mean_max": 0.9867238652184823,
+            "max_error": 0.011324531765440238,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9857802699944653,
+            "sampled_max": 0.9948200008946186,
+            "angle_mean_min": 0.9894474418535223,
+            "angle_mean_max": 0.9943230181506436,
+            "max_error": 0.004219730005534661,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9655445189606509,
+            "sampled_max": 0.9941612071979558,
+            "angle_mean_min": 0.9794712900421774,
+            "angle_mean_max": 0.9878895831118305,
+            "max_error": 0.014455481039349127,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.956981241404449,
+            "sampled_max": 0.9948414246307947,
+            "angle_mean_min": 0.9777443467074081,
+            "angle_mean_max": 0.9871073152262768,
+            "max_error": 0.023018758595551025,
+            "nominal_pass": false
+          }
+        ]
+      },
+      "lookahead": false,
+      "chosen_child": 3,
+      "raw_order": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "final_exploration_endpoint": {
+        "physical_hash": "d312a5275e23640ed0ad22420082c62887635b4c820fdd6b01d0f728df9bf1c3",
+        "layer_count": 57,
+        "total_thickness_nm": 8226.393489468368,
+        "max_error": 0.023517482704811465,
+        "weighted_sse": 2.045314079871719e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.9579060480021107,
+            "sampled_max": 0.99861318325783,
+            "angle_mean_min": 0.9796047030057882,
+            "angle_mean_max": 0.986731062755978,
+            "max_error": 0.012093951997889318,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9853577356672865,
+            "sampled_max": 0.9948619193702511,
+            "angle_mean_min": 0.9894560164931256,
+            "angle_mean_max": 0.9943465725468322,
+            "max_error": 0.0046422643327135305,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9646474866747616,
+            "sampled_max": 0.9943421739954339,
+            "angle_mean_min": 0.9794072137601901,
+            "angle_mean_max": 0.9878163396524938,
+            "max_error": 0.015352513325238348,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9564825172951885,
+            "sampled_max": 0.9946576991188734,
+            "angle_mean_min": 0.977764751819199,
+            "angle_mean_max": 0.987162904529108,
+            "max_error": 0.023517482704811465,
+            "nominal_pass": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "arm-b-refit-choice",
+      "call_cap": 64,
+      "wall_cap_seconds": 90.0,
+      "admitted_calls": 43,
+      "completed_calls": 43,
+      "forward_calls": 5,
+      "jacobian_calls": 38,
+      "forward_point_layers": 2911568,
+      "jacobian_point_layers": 22041800,
+      "work_scope": "admitted full-grid proxy; incomplete physical calls explicitly marked; F and FJ not assumed equal cost",
+      "elapsed_seconds": 91.16660128500007,
+      "stop_reason": "wall_limit",
+      "strict_champion": {
+        "physical_hash": "216be9e0cb4999df629f686c94a1be0b7e15c5b82a4f3babbde0e3ed785fd6f3",
+        "layer_count": 57,
+        "total_thickness_nm": 8163.9060394701355,
+        "max_error": 0.0350150401458349,
+        "weighted_sse": 6.42334503222905e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.94025745810252,
+            "sampled_max": 0.9978925620431308,
+            "angle_mean_min": 0.9808562462150123,
+            "angle_mean_max": 0.9861904093879672,
+            "max_error": 0.029742541897479935,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9830739248392302,
+            "sampled_max": 0.9977412654449254,
+            "angle_mean_min": 0.9898693639073906,
+            "angle_mean_max": 0.9966255588994447,
+            "max_error": 0.006926075160769818,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9449849598541651,
+            "sampled_max": 0.9972931217053944,
+            "angle_mean_min": 0.9785084563293353,
+            "angle_mean_max": 0.9875479294817672,
+            "max_error": 0.0350150401458349,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9460051444955762,
+            "sampled_max": 0.9942277728468898,
+            "angle_mean_min": 0.9753569428555904,
+            "angle_mean_max": 0.9858472089724999,
+            "max_error": 0.03399485550442383,
+            "nominal_pass": false
+          }
+        ]
+      },
+      "best_explored_sse": {
+        "physical_hash": "216be9e0cb4999df629f686c94a1be0b7e15c5b82a4f3babbde0e3ed785fd6f3",
+        "layer_count": 57,
+        "total_thickness_nm": 8163.9060394701355,
+        "max_error": 0.0350150401458349,
+        "weighted_sse": 6.42334503222905e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.94025745810252,
+            "sampled_max": 0.9978925620431308,
+            "angle_mean_min": 0.9808562462150123,
+            "angle_mean_max": 0.9861904093879672,
+            "max_error": 0.029742541897479935,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9830739248392302,
+            "sampled_max": 0.9977412654449254,
+            "angle_mean_min": 0.9898693639073906,
+            "angle_mean_max": 0.9966255588994447,
+            "max_error": 0.006926075160769818,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9449849598541651,
+            "sampled_max": 0.9972931217053944,
+            "angle_mean_min": 0.9785084563293353,
+            "angle_mean_max": 0.9875479294817672,
+            "max_error": 0.0350150401458349,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9460051444955762,
+            "sampled_max": 0.9942277728468898,
+            "angle_mean_min": 0.9753569428555904,
+            "angle_mean_max": 0.9858472089724999,
+            "max_error": 0.03399485550442383,
+            "nominal_pass": false
+          }
+        ]
+      },
+      "lookahead": true,
+      "chosen_child": 3,
+      "raw_order": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "final_exploration_endpoint": {
+        "physical_hash": "216be9e0cb4999df629f686c94a1be0b7e15c5b82a4f3babbde0e3ed785fd6f3",
+        "layer_count": 57,
+        "total_thickness_nm": 8163.9060394701355,
+        "max_error": 0.0350150401458349,
+        "weighted_sse": 6.42334503222905e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.94025745810252,
+            "sampled_max": 0.9978925620431308,
+            "angle_mean_min": 0.9808562462150123,
+            "angle_mean_max": 0.9861904093879672,
+            "max_error": 0.029742541897479935,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9830739248392302,
+            "sampled_max": 0.9977412654449254,
+            "angle_mean_min": 0.9898693639073906,
+            "angle_mean_max": 0.9966255588994447,
+            "max_error": 0.006926075160769818,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9449849598541651,
+            "sampled_max": 0.9972931217053944,
+            "angle_mean_min": 0.9785084563293353,
+            "angle_mean_max": 0.9875479294817672,
+            "max_error": 0.0350150401458349,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9460051444955762,
+            "sampled_max": 0.9942277728468898,
+            "angle_mean_min": 0.9753569428555904,
+            "angle_mean_max": 0.9858472089724999,
+            "max_error": 0.03399485550442383,
+            "nominal_pass": false
+          }
+        ]
+      }
+    }
+  ],
+  "matched_completed_call_count": 43,
+  "matched_completed_call_prefixes": [
+    {
+      "completed_calls": 43,
+      "forward_calls": 5,
+      "jacobian_calls": 38,
+      "elapsed_at_last_completed_call_seconds": 76.048127561,
+      "forward_point_layers": 2911568,
+      "jacobian_point_layers": 22205832,
+      "total_point_layers": 25117400,
+      "strict_champion_call": 37,
+      "strict_champion": {
+        "physical_hash": "38b3ef21ab5651891450558a271d8afe7c0ff9ebc9ee0c9e1fd1ba0ae9a2d342",
+        "layer_count": 57,
+        "total_thickness_nm": 8227.499662362441,
+        "max_error": 0.023301730540166377,
+        "weighted_sse": 2.7253841995587747e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.9507206667666945,
+            "sampled_max": 0.9979551441893606,
+            "angle_mean_min": 0.9794902354909064,
+            "angle_mean_max": 0.9866550851862829,
+            "max_error": 0.01927933323330544,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9827138735121106,
+            "sampled_max": 0.9943851182845027,
+            "angle_mean_min": 0.9887028137410452,
+            "angle_mean_max": 0.993817053390623,
+            "max_error": 0.007286126487889399,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9638270659794907,
+            "sampled_max": 0.9948072363433131,
+            "angle_mean_min": 0.9790630939601312,
+            "angle_mean_max": 0.9875614122099481,
+            "max_error": 0.016172934020509233,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9566982694598336,
+            "sampled_max": 0.9950543225527673,
+            "angle_mean_min": 0.9775463474010084,
+            "angle_mean_max": 0.9870283540676085,
+            "max_error": 0.023301730540166377,
+            "nominal_pass": false
+          }
+        ]
+      },
+      "best_sse_call": 43,
+      "best_explored_sse": {
+        "physical_hash": "4e150cb715e096f918d9c420221c2f65ee2642579f18eb1db863f8dc121d9bb3",
+        "layer_count": 57,
+        "total_thickness_nm": 8226.885932903455,
+        "max_error": 0.02373666692833365,
+        "weighted_sse": 2.2076229004845214e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.9595443848550926,
+            "sampled_max": 0.9980791150519306,
+            "angle_mean_min": 0.9795850761008806,
+            "angle_mean_max": 0.9866050271538352,
+            "max_error": 0.010455615144907338,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9850733253279644,
+            "sampled_max": 0.9943535363521032,
+            "angle_mean_min": 0.9896281333237148,
+            "angle_mean_max": 0.9938579813614036,
+            "max_error": 0.004926674672035558,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9612911159597266,
+            "sampled_max": 0.994618505698404,
+            "angle_mean_min": 0.979448949484465,
+            "angle_mean_max": 0.9877564243851402,
+            "max_error": 0.018708884040273377,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9562633330716663,
+            "sampled_max": 0.9947692393836169,
+            "angle_mean_min": 0.9778753838120013,
+            "angle_mean_max": 0.9873741995285579,
+            "max_error": 0.02373666692833365,
+            "nominal_pass": false
+          }
+        ]
+      }
+    },
+    {
+      "completed_calls": 43,
+      "forward_calls": 5,
+      "jacobian_calls": 38,
+      "elapsed_at_last_completed_call_seconds": 89.98434000499947,
+      "forward_point_layers": 2911568,
+      "jacobian_point_layers": 22041800,
+      "total_point_layers": 24953368,
+      "strict_champion_call": 43,
+      "strict_champion": {
+        "physical_hash": "216be9e0cb4999df629f686c94a1be0b7e15c5b82a4f3babbde0e3ed785fd6f3",
+        "layer_count": 57,
+        "total_thickness_nm": 8163.9060394701355,
+        "max_error": 0.0350150401458349,
+        "weighted_sse": 6.42334503222905e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.94025745810252,
+            "sampled_max": 0.9978925620431308,
+            "angle_mean_min": 0.9808562462150123,
+            "angle_mean_max": 0.9861904093879672,
+            "max_error": 0.029742541897479935,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9830739248392302,
+            "sampled_max": 0.9977412654449254,
+            "angle_mean_min": 0.9898693639073906,
+            "angle_mean_max": 0.9966255588994447,
+            "max_error": 0.006926075160769818,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9449849598541651,
+            "sampled_max": 0.9972931217053944,
+            "angle_mean_min": 0.9785084563293353,
+            "angle_mean_max": 0.9875479294817672,
+            "max_error": 0.0350150401458349,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9460051444955762,
+            "sampled_max": 0.9942277728468898,
+            "angle_mean_min": 0.9753569428555904,
+            "angle_mean_max": 0.9858472089724999,
+            "max_error": 0.03399485550442383,
+            "nominal_pass": false
+          }
+        ]
+      },
+      "best_sse_call": 43,
+      "best_explored_sse": {
+        "physical_hash": "216be9e0cb4999df629f686c94a1be0b7e15c5b82a4f3babbde0e3ed785fd6f3",
+        "layer_count": 57,
+        "total_thickness_nm": 8163.9060394701355,
+        "max_error": 0.0350150401458349,
+        "weighted_sse": 6.42334503222905e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.94025745810252,
+            "sampled_max": 0.9978925620431308,
+            "angle_mean_min": 0.9808562462150123,
+            "angle_mean_max": 0.9861904093879672,
+            "max_error": 0.029742541897479935,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9830739248392302,
+            "sampled_max": 0.9977412654449254,
+            "angle_mean_min": 0.9898693639073906,
+            "angle_mean_max": 0.9966255588994447,
+            "max_error": 0.006926075160769818,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9449849598541651,
+            "sampled_max": 0.9972931217053944,
+            "angle_mean_min": 0.9785084563293353,
+            "angle_mean_max": 0.9875479294817672,
+            "max_error": 0.0350150401458349,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9460051444955762,
+            "sampled_max": 0.9942277728468898,
+            "angle_mean_min": 0.9753569428555904,
+            "angle_mean_max": 0.9858472089724999,
+            "max_error": 0.03399485550442383,
+            "nominal_pass": false
+          }
+        ]
+      }
+    }
+  ],
+  "conservative_work_comparison": {
+    "rationale": "A largest completed prefix with no greater total point-layer proxy than B43; F and FJ work separately retained, not wall-time or FLOP equivalence.",
+    "A": {
+      "completed_calls": 42,
+      "forward_calls": 5,
+      "jacobian_calls": 37,
+      "elapsed_at_last_completed_call_seconds": 74.21397438900021,
+      "forward_point_layers": 2911568,
+      "jacobian_point_layers": 21621468,
+      "total_point_layers": 24533036,
+      "strict_champion_call": 37,
+      "strict_champion": {
+        "physical_hash": "38b3ef21ab5651891450558a271d8afe7c0ff9ebc9ee0c9e1fd1ba0ae9a2d342",
+        "layer_count": 57,
+        "total_thickness_nm": 8227.499662362441,
+        "max_error": 0.023301730540166377,
+        "weighted_sse": 2.7253841995587747e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.9507206667666945,
+            "sampled_max": 0.9979551441893606,
+            "angle_mean_min": 0.9794902354909064,
+            "angle_mean_max": 0.9866550851862829,
+            "max_error": 0.01927933323330544,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9827138735121106,
+            "sampled_max": 0.9943851182845027,
+            "angle_mean_min": 0.9887028137410452,
+            "angle_mean_max": 0.993817053390623,
+            "max_error": 0.007286126487889399,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9638270659794907,
+            "sampled_max": 0.9948072363433131,
+            "angle_mean_min": 0.9790630939601312,
+            "angle_mean_max": 0.9875614122099481,
+            "max_error": 0.016172934020509233,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9566982694598336,
+            "sampled_max": 0.9950543225527673,
+            "angle_mean_min": 0.9775463474010084,
+            "angle_mean_max": 0.9870283540676085,
+            "max_error": 0.023301730540166377,
+            "nominal_pass": false
+          }
+        ]
+      },
+      "best_sse_call": 42,
+      "best_explored_sse": {
+        "physical_hash": "54a44aa54177e55448f1b001ff010f27be65e51d11605e187231759de3cd0265",
+        "layer_count": 57,
+        "total_thickness_nm": 8230.051784944157,
+        "max_error": 0.023524371283046408,
+        "weighted_sse": 2.261795567499552e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.9594762732465154,
+            "sampled_max": 0.9980240635800633,
+            "angle_mean_min": 0.9795488039279369,
+            "angle_mean_max": 0.9865903923000252,
+            "max_error": 0.010523726753484564,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9848698678832171,
+            "sampled_max": 0.994196115151186,
+            "angle_mean_min": 0.9895022122095767,
+            "angle_mean_max": 0.9936859945596465,
+            "max_error": 0.005130132116782926,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9609459003183031,
+            "sampled_max": 0.9945816609790523,
+            "angle_mean_min": 0.9794408478046042,
+            "angle_mean_max": 0.9877276619182682,
+            "max_error": 0.019054099681696912,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9564756287169536,
+            "sampled_max": 0.9948840052506807,
+            "angle_mean_min": 0.9777931618199677,
+            "angle_mean_max": 0.9872463341666947,
+            "max_error": 0.023524371283046408,
+            "nominal_pass": false
+          }
+        ]
+      }
+    },
+    "B": {
+      "completed_calls": 43,
+      "forward_calls": 5,
+      "jacobian_calls": 38,
+      "elapsed_at_last_completed_call_seconds": 89.98434000499947,
+      "forward_point_layers": 2911568,
+      "jacobian_point_layers": 22041800,
+      "total_point_layers": 24953368,
+      "strict_champion_call": 43,
+      "strict_champion": {
+        "physical_hash": "216be9e0cb4999df629f686c94a1be0b7e15c5b82a4f3babbde0e3ed785fd6f3",
+        "layer_count": 57,
+        "total_thickness_nm": 8163.9060394701355,
+        "max_error": 0.0350150401458349,
+        "weighted_sse": 6.42334503222905e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.94025745810252,
+            "sampled_max": 0.9978925620431308,
+            "angle_mean_min": 0.9808562462150123,
+            "angle_mean_max": 0.9861904093879672,
+            "max_error": 0.029742541897479935,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9830739248392302,
+            "sampled_max": 0.9977412654449254,
+            "angle_mean_min": 0.9898693639073906,
+            "angle_mean_max": 0.9966255588994447,
+            "max_error": 0.006926075160769818,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9449849598541651,
+            "sampled_max": 0.9972931217053944,
+            "angle_mean_min": 0.9785084563293353,
+            "angle_mean_max": 0.9875479294817672,
+            "max_error": 0.0350150401458349,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9460051444955762,
+            "sampled_max": 0.9942277728468898,
+            "angle_mean_min": 0.9753569428555904,
+            "angle_mean_max": 0.9858472089724999,
+            "max_error": 0.03399485550442383,
+            "nominal_pass": false
+          }
+        ]
+      },
+      "best_sse_call": 43,
+      "best_explored_sse": {
+        "physical_hash": "216be9e0cb4999df629f686c94a1be0b7e15c5b82a4f3babbde0e3ed785fd6f3",
+        "layer_count": 57,
+        "total_thickness_nm": 8163.9060394701355,
+        "max_error": 0.0350150401458349,
+        "weighted_sse": 6.42334503222905e-06,
+        "nominal_pass": false,
+        "bands": [
+          {
+            "index": 0,
+            "metric": "R",
+            "wavelength_nm": [
+              580.0,
+              920.0
+            ],
+            "sampled_min": 0.94025745810252,
+            "sampled_max": 0.9978925620431308,
+            "angle_mean_min": 0.9808562462150123,
+            "angle_mean_max": 0.9861904093879672,
+            "max_error": 0.029742541897479935,
+            "nominal_pass": false
+          },
+          {
+            "index": 1,
+            "metric": "R",
+            "wavelength_nm": [
+              1039.0,
+              1089.0
+            ],
+            "sampled_min": 0.9830739248392302,
+            "sampled_max": 0.9977412654449254,
+            "angle_mean_min": 0.9898693639073906,
+            "angle_mean_max": 0.9966255588994447,
+            "max_error": 0.006926075160769818,
+            "nominal_pass": false
+          },
+          {
+            "index": 2,
+            "metric": "T",
+            "wavelength_nm": [
+              3650.0,
+              5000.0
+            ],
+            "sampled_min": 0.9449849598541651,
+            "sampled_max": 0.9972931217053944,
+            "angle_mean_min": 0.9785084563293353,
+            "angle_mean_max": 0.9875479294817672,
+            "max_error": 0.0350150401458349,
+            "nominal_pass": false
+          },
+          {
+            "index": 3,
+            "metric": "T",
+            "wavelength_nm": [
+              7650.0,
+              10550.0
+            ],
+            "sampled_min": 0.9460051444955762,
+            "sampled_max": 0.9942277728468898,
+            "angle_mean_min": 0.9753569428555904,
+            "angle_mean_max": 0.9858472089724999,
+            "max_error": 0.03399485550442383,
+            "nominal_pass": false
+          }
+        ]
+      }
+    }
+  },
+  "raw_sse_order": [
+    3,
+    2,
+    1,
+    0
+  ],
+  "after_8_call_refit_sse_order": [
+    3,
+    1,
+    2,
+    0
+  ],
+  "final_layer_cleanup": {
+    "arm-a-raw-choice-champion": {
+      "raw_layer_count": 57,
+      "physical_layer_count": 57,
+      "removed_exact_zero_ids": [],
+      "merged_ids": {},
+      "algebraic_only_no_optical_dispatch": true
+    },
+    "arm-a-raw-choice-best-explored": {
+      "raw_layer_count": 57,
+      "physical_layer_count": 57,
+      "removed_exact_zero_ids": [],
+      "merged_ids": {},
+      "algebraic_only_no_optical_dispatch": true
+    },
+    "arm-b-refit-choice-champion": {
+      "raw_layer_count": 57,
+      "physical_layer_count": 57,
+      "removed_exact_zero_ids": [],
+      "merged_ids": {},
+      "algebraic_only_no_optical_dispatch": true
+    },
+    "arm-b-refit-choice-best-explored": {
+      "raw_layer_count": 57,
+      "physical_layer_count": 57,
+      "removed_exact_zero_ids": [],
+      "merged_ids": {},
+      "algebraic_only_no_optical_dispatch": true
+    }
+  },
+  "limitations": [
+    "One fresh deterministic explicitly derived k=0 parent; not an engineering material dataset or recovered historical design.",
+    "Both mean and pointwise enabled only; no held-out or independent mode ablations in this pilot.",
+    "Coarse <=5 nm by 1 degree screening grid only; no independent dense/extremum audit.",
+    "Shared 24-call warm-up remained descending, so not evidence of a stationary local minimum or escape.",
+    "Both arms ended at the fixed cooperative 90 s admission deadline before 64 calls; bookkeeping can return after deadline.",
+    "Single serial order A then B, no timing repeat; point-layer work is a proxy, not an exact operation or memory measure.",
+    "B restarts the chosen local refiner after initial competition; optimizer-state continuity is not isolated from branch-budget dilution.",
+    "No changed optical targets, hidden margins, manufacturing limits, scorer optimization, or default-production lookahead change."
+  ]
+}
