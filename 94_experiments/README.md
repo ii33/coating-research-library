@@ -5,3 +5,6 @@
 ## 已执行的数值筛选
 
 - 2026-10-24：[多光谱删层前瞻负结果](../08_stack_optimization_algorithms/algorithm_research_20261024/deletion_lookahead_pilot/README.md)。固定四分支预算未优于立即选择对照；没有密网格达标证据。
+
+- 2026-10-24：[多光谱平台资格检查：预算内未出现平台](../08_stack_optimization_algorithms/algorithm_research_20261024/plateau_qualification_pilot/README.md)。256 次 FJ 后仍未满足预设平台判据，因此三个比较臂均未运行；未达标，无独立密网格验收或生产策略推广。
+

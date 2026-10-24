@@ -14,7 +14,22 @@
       "independent_audit": false,
       "replicates": 1,
       "conclusion": "Fixed four-child/eight-call schedule lost at matched call/work prefixes; neither arm met original goals. Not adopted in production."
+    },
+    {
+      "id": "multispectral-plateau-qualification-20261024",
+      "kind": "numerical_screening_experiment",
+      "status": "completed_inconclusive",
+      "date": "2026-10-24",
+      "report": "08_stack_optimization_algorithms/algorithm_research_20261024/plateau_qualification_pilot/pilot-report.md",
+      "summary": "08_stack_optimization_algorithms/algorithm_research_20261024/plateau_qualification_pilot/compact-result.json",
+      "evidence": "08_stack_optimization_algorithms/algorithm_research_20261024/plateau_qualification_pilot/evidence.tar.gz",
+      "source_commit": "7e43ebf845d82e50e7bf38bbcc227671fbc68b04",
+      "published_source_commit": "62e37123f45fa280eeaeee18fdab0e3726b067d6",
+      "independent_audit": false,
+      "replicates": 1,
+      "conclusion": "No operational plateau in 256 completed FJ calls; zero comparison arms launched. Original goals still fail on the screening grid. No independent audit or production promotion."
     }
   ],
   "note": "只登记实际产生且有证据路径的记录；数值筛选、物理实验及达标验收须明确区分。"
 }
+
