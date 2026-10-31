@@ -174,3 +174,7 @@ a_i=\max_j |z_{ij}-\widehat z_{ij}|/s_j.
 ## 2026-10-31：受限首版验证
 
 [验证记录](validation-v1.md) · [指标数据](validation-metrics.json) · [案例索引](validation-case-index.csv)。结果仅适用于报告所述受限域，不代表通用预测器已获验证。
+
+## 2026-10-31：通用扩展首轮研究
+
+[材料函数与完整约束集合的首轮研究](general_extension_first_study/README.md)：研究失败记录，未替换已发布的 dev.20261031.06 模型。
