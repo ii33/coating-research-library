@@ -170,3 +170,7 @@ a_i=\max_j |z_{ij}-\widehat z_{ij}|/s_j.
 5. S. Mukhtar et al., *Inverse Design of Multilayer thin film Using Surrogate Modeling and Multi-Objective Optimization*, FiO/LS 2025, JD1A.60. [DOI](https://doi.org/10.1364/FIO.2025.JD1A.60)。说明代理模型与多目标逆设计的研究方向；摘要本身没有证明一个跨材料通用层厚预测器已经可用。
 
 这些来源为物理／经验基线与研究背景，不为本文提出的模型组织、200ms目标或尚未完成的泛化性能背书。未得到可靠外部依据的部分均按本项目设计假设处理。
+
+## 2026-10-31：受限首版验证
+
+[验证记录](validation-v1.md) · [指标数据](validation-metrics.json) · [案例索引](validation-case-index.csv)。结果仅适用于报告所述受限域，不代表通用预测器已获验证。
