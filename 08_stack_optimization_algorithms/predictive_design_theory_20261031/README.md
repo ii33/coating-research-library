@@ -178,3 +178,7 @@ a_i=\max_j |z_{ij}-\widehat z_{ij}|/s_j.
 ## 2026-10-31：通用扩展首轮研究
 
 [材料函数与完整约束集合的首轮研究](general_extension_first_study/README.md)：研究失败记录，未替换已发布的 dev.20261031.06 模型。
+
+## 2026-10-31：通用扩展参考质量研究
+
+[参考见证质量与训练组交叉验证](general_extension_reference_quality/README.md)：同一合成任务的见证改进与研究局限，尚非生产模型验证。
