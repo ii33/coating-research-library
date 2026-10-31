@@ -132,3 +132,7 @@ ITO并入本库专题11，不另建研究项目。[研究入口](11_transparent_
 
 - [分类研究索引](08_stack_optimization_algorithms/algorithm_research_20261023/README.md)：常规优化、统一混合自动合成、真实多进程与敏感性实效；保留89层留出通过下降、额外细网格名义失败及冷自动合成未达标，附公开科学配置和结果。制造误差模型与nominal-preserving稳健路线明确列为研究/开发，不冒充已交付能力或生产良率。
 
+
+## 2026-10-31 快速层数与厚度预估理论
+
+[研究文档](08_stack_optimization_algorithms/predictive_design_theory_20261031/README.md)：梳理预测职责、理论模型与校准路线；在线模型和独立验证尚未完成。
