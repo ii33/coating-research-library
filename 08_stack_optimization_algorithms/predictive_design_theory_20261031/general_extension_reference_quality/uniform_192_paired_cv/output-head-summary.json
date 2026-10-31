@@ -1,0 +1,34 @@
+{
+  "plan": {
+    "stage": "training_group_CV_only",
+    "variants": [
+      "independent_N_and_logD_heads",
+      "joint_N_and_logD_per_layer"
+    ],
+    "reason": "Separate regression splits may reduce multi-output compromise; per-layer thickness separates count from scale. Both are hypotheses, not physical bounds.",
+    "grouping": "same 8 group-modulo folds",
+    "params": {
+      "n_estimators": 200,
+      "min_samples_leaf": 2,
+      "max_features": 0.5,
+      "random_state": 17001,
+      "n_jobs": 1
+    },
+    "source_sha256": "b37341de38f5dec2c6b63678b3342599fe26a1528c13d7737d3eb68175db9913",
+    "script_sha256": "aedbb32b684ba95a533c9572ec72806445ab6cc53201a8b65e11f282374ec9e9",
+    "exclusions": "No calibration/test/actual-task labels or augmented rows; no claim that predicted pair is a feasible design"
+  },
+  "recomputed_overall": {
+    "independent_N_and_logD_heads": {
+      "rows": 158,
+      "N_MAE": 3.7025316455696204,
+      "D_MAPE_positive": 0.2617608785120804
+    },
+    "joint_N_and_logD_per_layer": {
+      "rows": 158,
+      "N_MAE": 4.341772151898734,
+      "D_MAPE_positive": 0.3663571304249897
+    }
+  },
+  "reference": "revised-reference labels and records in paired-cv-records.csv; positive D/lambda; training group CV only"
+}

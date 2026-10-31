@@ -1,0 +1,19 @@
+{
+  "stage": "paired_training_group_CV_not_calibration_or_blind_test",
+  "selection": "all 158 witnessed base tasks from 32 training material groups; 34 unknown excluded and reported",
+  "variants": "base only; do not mix unreduced augmented variants",
+  "feature_sha256": "df297daeb9251cf315a15d123acc6c24e2fc979c18cbc773bf8227d480b9b232",
+  "manifest_sha256": "404b05b1c3535109873e6bd94c2c75802ee6eb8e5037d75298cb9878a5d37348",
+  "folds": "8 folds, original material group modulo8; no descendant crossing",
+  "model": {
+    "n_estimators": 200,
+    "min_samples_leaf": 2,
+    "max_features": 0.5,
+    "random_state": 17001,
+    "n_jobs": 1
+  },
+  "labels": "N and D/lambda_ref from same audited selected witness, fixed balanced score; no minimum claim",
+  "target_transform": "[N, log(D/lambda_ref+0.01)], training-fold group-weighted standardization",
+  "acceptance": "Existing engineering target N_MAE<=3 and positive D_MAPE<=.25; no gate relaxation; center metrics alone cannot establish interval coverage",
+  "scope": "Compare label noise/solver-resource convention, not independently measured physical truth; all original published metrics preserved"
+}

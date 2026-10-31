@@ -1,0 +1,52 @@
+{
+  "purpose": "Independent read-only evidence/data-contract check of completed uniform reference-reduction and paired base training CV",
+  "captured_utc": "2026-10-31T18:20:16.638550+00:00",
+  "methods": "Read stored protocols, cohort plan and inputs, reduction results and selected audit records; independently recompute file hashes, physical design hashes, resource pairs, balanced selections, fold assignments and reported CV metrics. No optimization, model fit, or physical audit was repeated.",
+  "scope_and_findings": {
+    "protocol": "Three scripts differ only in stated group selection, output destination, descriptive strings, and script name hash; same algorithm and repair budget. Each protocol recorded script and repair-source hashes match current files; import snapshot is retrospective, not proof of earlier or complete execution environment.",
+    "coverage": "192 unique train cases: groups 1000-1031, six families each. All current input file hashes match corresponding result parent_sha256, and case identity matches cohort plan. 158 have selected witnesses; 34 are unknown, not infeasible.",
+    "stored_evidence": "All 192 result summaries match same complete balanced-selected archive witness or unknown, original selected witness retained; all 467 stored witness physical hashes, resource counts/thicknesses and stored audit identities/target/constraint status match their design. All 158 selected points match the independently generated original-request reaudit records by hash, N and D; no physical solver was rerun by this review.",
+    "training_holdout": "Only training plan case identities used. Objective counts 1/2/3 = 64/96/32; material ids low/high/middle/glass; none of four actual holdout (wavelength range, metric) pairs occurs exactly. Exact-pair test alone does not prove all possible neighboring-task leakage excluded.",
+    "timeout_boundary": "16 cases stopped at declared 60 s. Original witness and completed solve-round outputs survive; a StopRequested inside solve discards local in-progress-round archive, potentially including already-audited candidates; no claim that every discovered candidate survives.",
+    "cv": "Paired CV uses 158 base rows only, same fixed NPZ features and 32 groups; each modulo-8 fold has four groups. All old and revised label pairs, case identities, result-source hashes, original-request audit matches and recorded overall/family metric recomputations pass. 112 paired labels changed. Original N MAE 4.582278481012659 and D MAPE 0.29211963154669834; revised 3.8797468354430378 and 0.2641672587095027. Both remain worse than gates N<=3 and D<=0.25. Training CV, not blind external assessment or true-minimum error."
+  },
+  "counts": {
+    "cases": 192,
+    "groups": 32,
+    "families_per_group": 6,
+    "audit_pass": 158,
+    "unknown": 34,
+    "stopped_at_60s": 16,
+    "stored_archive_witnesses": 467,
+    "cv_rows": 158,
+    "cv_changed_label_pairs": 112,
+    "errors_found_in_checked_contracts": 0
+  },
+  "file_sha256": {
+    "uniform_reduction_v1/protocol.json": "4b768893ba72a8c525b73294a295e1f291da4e42f1e38c36fbc9c6c86f4807db",
+    "uniform_reduction_extension_v1/protocol.json": "7840371ee930e9ec7fa8c35fbb864145819d9a4192b4e5f199791b47c8eafbe5",
+    "uniform_reduction_remaining_v1/protocol.json": "8c475c10fa37edc159db1ad5a0057d42e4fb3d690d9ec31890daabdbe0cb977b",
+    "uniform_reduction_v1/summary.json": "ced28a2f7d7b2edaf41e6106c9d459ccd76d9a4b732f3e562f45d06a08ce1425",
+    "uniform_reduction_extension_v1/summary.json": "28a95a96b1f01be724860aefc2ff7d57f1ae43b40f8a9622c4739c8aa730672f",
+    "uniform_reduction_remaining_v1/summary.json": "7161318adff9649ea6a67ec0a4020154e17733b07f6599b62077734d22646969",
+    "uniform_reduction_v1/original-request-reaudit.json": "4d08af070282bc442df9ac748a48f2a0b9bfb1eb58158eaffba9ef6171068426",
+    "uniform_reduction_extension_v1/original-request-reaudit.json": "49c964935b9425fc6d2fc3525119a1bce7b05684b00c8523939311b73d186acf",
+    "uniform_reduction_remaining_v1/original-request-reaudit.json": "6b7588e711181e9f00bab770e8129a9aa977cbd7997573d663bab542ea574d3d",
+    "uniform_reference_cv_v1/original-cv.json": "c935a59b3e63b5d0d523f60f4fc9fda4450e865f8783302936b3c9810fea57b8",
+    "uniform_reference_cv_v1/revised-cv.json": "b37341de38f5dec2c6b63678b3342599fe26a1528c13d7737d3eb68175db9913",
+    "uniform_reference_cv_v1/protocol.json": "93ef8737396687f79479a5733ce0cf8057cea5dc4efdbd8b236ee29323d4e733",
+    "uniform_reference_cv_v1/execution-provenance.json": "b6ffe9237db184cce8b530283ec542cbe6269e8586b99173b58427d88245f5b4",
+    "compare_uniform_reference_cv.py": "f748249ac51a73ee0ab7612aa2990a0510579ce2889078a6c7dacba938591549",
+    "augmented-arrays.npz": "df297daeb9251cf315a15d123acc6c24e2fc979c18cbc773bf8227d480b9b232",
+    "augmented-array-manifest.json": "404b05b1c3535109873e6bd94c2c75802ee6eb8e5037d75298cb9878a5d37348",
+    "actual-holdout-scenarios.json": "975a7074a042d7b1e6c05e788da53f3045e47d691ce2eaa0cf30add6c1f25cc0",
+    "cohort/plan.json": "34933ca5c3b79a376b0331140c23f846ed78745e7c23a43c20c6e762310c0d4e",
+    "independent-uniform-reduction-import-provenance-20261031.json": "9c39dd9313581d173c8a1f87d3f5e39f3d0e93212d0356e98264cd592a5efaa8"
+  },
+  "limitations": [
+    "Physical objectives were not independently recalculated in this check; conclusions rely on stored numerical audit records.",
+    "Independent import/provenance snapshot was captured after the runs began, not pre-frozen, and may omit dynamic imports.",
+    "Timeout may lose candidates in current solve call; original cohort files remain intact and existing completed evidence remains auditable.",
+    "The 192-output encoding equivalence JSON reports matched count but does not include per-case comparisons."
+  ]
+}
