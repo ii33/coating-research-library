@@ -1,0 +1,14 @@
+{
+  "archive": "batch-01.tar.gz",
+  "archive_sha256": "39eb1998e595c2b0aa3eee4b76c977647238b0884fa02c7f9353d1ffa813713e",
+  "archive_bytes": 701932,
+  "manifest_sha256": "1613c2f11a39551689fdaa01717b7e1d05e112abbda9a0dd19abe19706af0655",
+  "execution_files": 245,
+  "source_checkpoint": "55b165c673d5096e39ed68036b083c434109059c",
+  "comparison_protocol_checkpoint": "42254d29e32942aed9126353371acaa9c5aeda29",
+  "completed_cases": 24,
+  "audited_references": 22,
+  "unknown_cases": 2,
+  "extract_relative_to": "research_stage_parent",
+  "note": "Full execution inventory, not an incremental or pickle archive. Only regular files at exact manifest paths may be materialized. Original source bytes and all48 inputs retained."
+}
