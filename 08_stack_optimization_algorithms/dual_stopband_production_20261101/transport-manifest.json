@@ -1,0 +1,66 @@
+{
+  "schema": "dual-stopband-public-transport-manifest-v1",
+  "scope": "publishable report and independent package transports; local unpacked evidence excluded",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5356,
+      "sha256": "9f29b0a2eecce551b3ad355020f6f22c22927fb087d0654b24ccd0a79ed4314c"
+    },
+    {
+      "path": "evidence-manifest.json",
+      "bytes": 34362,
+      "sha256": "0b3638c2dd73a84fb2edbaa80ab1d80c5a1c4ce97c6418fe683c3b6efa5fe5a6"
+    },
+    {
+      "path": "packages/01-baseline.tar.gz",
+      "bytes": 279838,
+      "sha256": "7bb7e142eab59a721cc4cdcc696b661fd58f96f33fa971d05857c46ceb12ca22"
+    },
+    {
+      "path": "packages/02-stopband-hints.tar.gz",
+      "bytes": 297656,
+      "sha256": "4c8252a6694c79d3192d52835e7aa638bb4e9682becd937e524b8035bcf2351b"
+    },
+    {
+      "path": "packages/03-expanded-budget.tar.gz",
+      "bytes": 649269,
+      "sha256": "faf04501c87978b46221cfe946f5bcd2052d7621575c3fae33d303278ca339f4"
+    },
+    {
+      "path": "packages/04-narrow-duty.tar.gz",
+      "bytes": 417015,
+      "sha256": "94cf3d9b0d4627b418e651ec7ecf191766d4d2abee8d938d3e141517706d224c"
+    },
+    {
+      "path": "packages/05-low-loss-reference.tar.gz",
+      "bytes": 439289,
+      "sha256": "c1f6ffc40ecb8c445d7cd802fb19020661a05eb57752f42a8d5da4999db416ec"
+    },
+    {
+      "path": "packages/06-production.tar.gz",
+      "bytes": 271172,
+      "sha256": "58972efbbd31a7fa368f32a2d3ba6363753e60688bb7abaaed879f4e90bf9618"
+    },
+    {
+      "path": "packages/07-tests.tar.gz",
+      "bytes": 552,
+      "sha256": "1287267ffc598b92978b83963d781f856ce23fd0bc33d58cc91dca8fcda8d084"
+    },
+    {
+      "path": "packages/08-tools.tar.gz",
+      "bytes": 2932,
+      "sha256": "5246c17d481393152b0f5154f3189e6bd4c5bb63d9b00b83f3cc8877f609eed8"
+    },
+    {
+      "path": "parts-index.json",
+      "bytes": 1933,
+      "sha256": "276cef17253736434e94698c15d3f88742b7f58bde029c00f7b4311da16dba34"
+    },
+    {
+      "path": "provenance-notes.json",
+      "bytes": 1410,
+      "sha256": "4fff0573f6c02377dc9b383684f861125f01f9bf286834aa3c482e03c6214e4f"
+    }
+  ]
+}

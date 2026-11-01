@@ -1,0 +1,15 @@
+{
+  "diagnostic_scope": "Simulated/reference optical models, not user-confirmed material data or manufacturing acceptance.",
+  "legacy_summary_note": "Original summaries may report available=false due tuple handling; this draft relies on corrected summaries and verification-final. Original private summaries are preserved, not overwritten.",
+  "policy": "Raw local files are retained unchanged; public derivations remove execution host path and process/CPU identifiers as listed per item. Derived full results are not resumable checkpoint files.",
+  "private_original_summary_sha256": {
+    "baseline": "a0103540e03817ee43bb920c0e006d7af6d32ed73cfd31980d539aab9c9d543f",
+    "expanded_budget": "350a510f740425e1bcd63cf3d84db443c67a862dbaf5666472baed755f2b05fd",
+    "low_loss_reference": "1b8e5c680c93ecc4c6a85a578b45b77f6bb49ddf5642a7ce2758a61565e95feb",
+    "narrow_duty": "8f3066491b2562679dcaf006b35c9cdc75633df074f635013376df7c544988d6",
+    "production_final": "f8fc22a1340203100365b5508e4d6cd68b9d586aeaf33a9bab3b57f501efd26a",
+    "stopband_hints": "9cc60681ee5b4608782d2786b981541ca241014b572c15e8f08a588f3312b2f9"
+  },
+  "source_binding_note": "Original result and source files are identified by SHA-256 without exposing local host paths.",
+  "test_binding_note": "Test stdout does not itself embed the release commit; do not treat the log as a cryptographic commit binding or a full test suite."
+}

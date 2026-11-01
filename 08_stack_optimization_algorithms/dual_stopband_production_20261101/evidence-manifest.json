@@ -1,0 +1,839 @@
+{
+  "schema": "dual-stopband-public-derived-evidence-v1",
+  "records": [
+    {
+      "path": "01-baseline/corrected-window-summary.json",
+      "bytes": 11670,
+      "sha256": "29723d3cc96b0004be1cf7c287b4c344334f4efe82a314f67ebd4d13918c5c4a",
+      "source_id": "01-baseline/corrected-window-summary.json",
+      "original_sha256": "29723d3cc96b0004be1cf7c287b4c344334f4efe82a314f67ebd4d13918c5c4a",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "01-baseline/preflight/input.json",
+      "bytes": 1820,
+      "sha256": "3d0e21383af794cfea6a1c380dad1187628698e30c67a2b4b1b3043a8288d35e",
+      "source_id": "01-baseline/preflight-v2/input.json",
+      "original_sha256": "3d0e21383af794cfea6a1c380dad1187628698e30c67a2b4b1b3043a8288d35e",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "01-baseline/preflight/job-spec.json",
+      "bytes": 120547,
+      "sha256": "8ccf8cb1d68b84154d726148f7f0d2c3ed3ca817f802d4564575e6bf3d53f35a",
+      "source_id": "01-baseline/preflight-v2/job-spec.json",
+      "original_sha256": "8ccf8cb1d68b84154d726148f7f0d2c3ed3ca817f802d4564575e6bf3d53f35a",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "01-baseline/preflight/request.json",
+      "bytes": 93093,
+      "sha256": "c1769379725d19763ef7761d296016a29ad42718d156dd8917666aa66df5037f",
+      "source_id": "01-baseline/preflight-v2/request.json",
+      "original_sha256": "c1769379725d19763ef7761d296016a29ad42718d156dd8917666aa66df5037f",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "01-baseline/preflight/sources.json",
+      "bytes": 40409,
+      "sha256": "21bf8396bed9858135145a82fad47e7e35c8bd6a24649f666d6e8c9b434d1bbd",
+      "source_id": "01-baseline/preflight-v2/sources.json",
+      "original_sha256": "9e26400f7f045abf0d227dbb6fc0e349d65d80c3d077548d7929aa805eded145",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "01-baseline/proposal_hints_experiment.py",
+      "bytes": 2340,
+      "sha256": "4fb8c8283631ec3a1ad4525245a7510ebcbaa14e49d6fc8b3ab1c2978322cc82",
+      "source_id": "01-baseline/proposal_hints_experiment.py",
+      "original_sha256": "4fb8c8283631ec3a1ad4525245a7510ebcbaa14e49d6fc8b3ab1c2978322cc82",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "01-baseline/reference-input.json",
+      "bytes": 1629,
+      "sha256": "3b068937050cb635d08842191d5ff8a742f8a425180b3cc603b008c70c97b629",
+      "source_id": "01-baseline/reference-input.json",
+      "original_sha256": "3b068937050cb635d08842191d5ff8a742f8a425180b3cc603b008c70c97b629",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "01-baseline/reference_run.py",
+      "bytes": 15167,
+      "sha256": "c8feefd701e7fb58cad4f138a9d4e6882d1708ee9b2d023f267ce3dabff3c7f3",
+      "source_id": "01-baseline/reference_run.py",
+      "original_sha256": "c8feefd701e7fb58cad4f138a9d4e6882d1708ee9b2d023f267ce3dabff3c7f3",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "01-baseline/result-sanitized.json",
+      "bytes": 1800080,
+      "sha256": "8ccafea7d259eb4495d7ea985e0a70ebb73f0842bb7285d3a4ba4513dfc7e343",
+      "source_id": "01-baseline/result.json",
+      "original_sha256": "af34cb0fc82e324807bd8fb9dbf722fbcdd198552dd09e91da8cbe47abedf4c2",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "active_worker_pids": 1,
+          "execution_project_root": 1,
+          "launcher_pids": 1,
+          "worker_cpu_by_pid": 1,
+          "worker_pid_scope": 1,
+          "worker_pids": 75
+        }
+      }
+    },
+    {
+      "path": "01-baseline/run-input.json",
+      "bytes": 1820,
+      "sha256": "3d0e21383af794cfea6a1c380dad1187628698e30c67a2b4b1b3043a8288d35e",
+      "source_id": "01-baseline/run-input.json",
+      "original_sha256": "3d0e21383af794cfea6a1c380dad1187628698e30c67a2b4b1b3043a8288d35e",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "01-baseline/source-binding-sanitized.json",
+      "bytes": 40455,
+      "sha256": "4d2cdb058fbf18ac0651af2bd64af0ae48f1e880ab6e29cc5dbdaeb910793229",
+      "source_id": "01-baseline/source-binding.json",
+      "original_sha256": "52214113899130fe134a8759d8136673a2e8637a51a453f3530e83a944c243d8",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "02-stopband-hints/corrected-window-summary.json",
+      "bytes": 14958,
+      "sha256": "d39cdfe4cd0c4f33d395fb338c79455596540f043d28cb8c334e317779a8ea6c",
+      "source_id": "02-stopband-hints/corrected-window-summary.json",
+      "original_sha256": "d39cdfe4cd0c4f33d395fb338c79455596540f043d28cb8c334e317779a8ea6c",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "02-stopband-hints/preflight/input.json",
+      "bytes": 1820,
+      "sha256": "3d0e21383af794cfea6a1c380dad1187628698e30c67a2b4b1b3043a8288d35e",
+      "source_id": "02-stopband-hints/preflight-v2/input.json",
+      "original_sha256": "3d0e21383af794cfea6a1c380dad1187628698e30c67a2b4b1b3043a8288d35e",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "02-stopband-hints/preflight/job-spec.json",
+      "bytes": 120547,
+      "sha256": "8ccf8cb1d68b84154d726148f7f0d2c3ed3ca817f802d4564575e6bf3d53f35a",
+      "source_id": "02-stopband-hints/preflight-v2/job-spec.json",
+      "original_sha256": "8ccf8cb1d68b84154d726148f7f0d2c3ed3ca817f802d4564575e6bf3d53f35a",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "02-stopband-hints/preflight/request.json",
+      "bytes": 93093,
+      "sha256": "c1769379725d19763ef7761d296016a29ad42718d156dd8917666aa66df5037f",
+      "source_id": "02-stopband-hints/preflight-v2/request.json",
+      "original_sha256": "c1769379725d19763ef7761d296016a29ad42718d156dd8917666aa66df5037f",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "02-stopband-hints/preflight/sources.json",
+      "bytes": 40409,
+      "sha256": "21bf8396bed9858135145a82fad47e7e35c8bd6a24649f666d6e8c9b434d1bbd",
+      "source_id": "02-stopband-hints/preflight-v2/sources.json",
+      "original_sha256": "9e26400f7f045abf0d227dbb6fc0e349d65d80c3d077548d7929aa805eded145",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "02-stopband-hints/proposal_hints_experiment.py",
+      "bytes": 2340,
+      "sha256": "4fb8c8283631ec3a1ad4525245a7510ebcbaa14e49d6fc8b3ab1c2978322cc82",
+      "source_id": "02-stopband-hints/proposal_hints_experiment.py",
+      "original_sha256": "4fb8c8283631ec3a1ad4525245a7510ebcbaa14e49d6fc8b3ab1c2978322cc82",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "02-stopband-hints/reference-input.json",
+      "bytes": 1629,
+      "sha256": "3b068937050cb635d08842191d5ff8a742f8a425180b3cc603b008c70c97b629",
+      "source_id": "02-stopband-hints/reference-input.json",
+      "original_sha256": "3b068937050cb635d08842191d5ff8a742f8a425180b3cc603b008c70c97b629",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "02-stopband-hints/reference_run.py",
+      "bytes": 15167,
+      "sha256": "c8feefd701e7fb58cad4f138a9d4e6882d1708ee9b2d023f267ce3dabff3c7f3",
+      "source_id": "02-stopband-hints/reference_run.py",
+      "original_sha256": "c8feefd701e7fb58cad4f138a9d4e6882d1708ee9b2d023f267ce3dabff3c7f3",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "02-stopband-hints/result-sanitized.json",
+      "bytes": 2174273,
+      "sha256": "0a70c159aba8558cb8f266e22096b789896134e2d9446be338ef87754fe5f54a",
+      "source_id": "02-stopband-hints/result.json",
+      "original_sha256": "132d453e8a5262c054f6ee5261e903cb1a480af034f392c94bdea4a6a592e9cf",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "active_worker_pids": 1,
+          "execution_project_root": 1,
+          "launcher_pids": 1,
+          "worker_cpu_by_pid": 1,
+          "worker_pid_scope": 1,
+          "worker_pids": 269
+        }
+      }
+    },
+    {
+      "path": "02-stopband-hints/run-input.json",
+      "bytes": 1820,
+      "sha256": "3d0e21383af794cfea6a1c380dad1187628698e30c67a2b4b1b3043a8288d35e",
+      "source_id": "02-stopband-hints/run-input.json",
+      "original_sha256": "3d0e21383af794cfea6a1c380dad1187628698e30c67a2b4b1b3043a8288d35e",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "02-stopband-hints/source-binding-sanitized.json",
+      "bytes": 40523,
+      "sha256": "cc5317e2c9a206e1c3f82d39e95332638ea4950f364d0cab3a3d148e21164dab",
+      "source_id": "02-stopband-hints/source-binding.json",
+      "original_sha256": "9f80f2fcb5205d9d0946ca9f288d368800384d1ce44cf1f721385014412a5b40",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "03-expanded-budget/corrected-window-summary.json",
+      "bytes": 15491,
+      "sha256": "0b163852c62beb56cea128379b3037af079ed182610d114f60ee794d5d349a7d",
+      "source_id": "03-expanded-budget/corrected-window-summary.json",
+      "original_sha256": "0b163852c62beb56cea128379b3037af079ed182610d114f60ee794d5d349a7d",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "03-expanded-budget/preflight/input.json",
+      "bytes": 1884,
+      "sha256": "03289bc92ef5fdd5f112cd7fb0f04a6c9ed906b8fdc99ed0193297629d3b6695",
+      "source_id": "03-expanded-budget/preflight/input.json",
+      "original_sha256": "03289bc92ef5fdd5f112cd7fb0f04a6c9ed906b8fdc99ed0193297629d3b6695",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "03-expanded-budget/preflight/job-spec.json",
+      "bytes": 120548,
+      "sha256": "f8ceff4a6b5a953c933b06e9c145683d5442340d165f73e2405ffa0e9b8570a0",
+      "source_id": "03-expanded-budget/preflight/job-spec.json",
+      "original_sha256": "f8ceff4a6b5a953c933b06e9c145683d5442340d165f73e2405ffa0e9b8570a0",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "03-expanded-budget/preflight/request.json",
+      "bytes": 93094,
+      "sha256": "b0336c7a401edbc786bdf3a47e1669dd84d587a8fc5a48a5ce28f18da3145543",
+      "source_id": "03-expanded-budget/preflight/request.json",
+      "original_sha256": "b0336c7a401edbc786bdf3a47e1669dd84d587a8fc5a48a5ce28f18da3145543",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "03-expanded-budget/preflight/sources.json",
+      "bytes": 40409,
+      "sha256": "67655e8168621d03a7e404e4610eec733c5eff09190199f66c38d923fbc0e8ba",
+      "source_id": "03-expanded-budget/preflight/sources.json",
+      "original_sha256": "5316cc2e45908cf906648f962b381f7cdc0cdc4463b7784819b5f820c9a50ecd",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "03-expanded-budget/proposal_hints_experiment.py",
+      "bytes": 2340,
+      "sha256": "4fb8c8283631ec3a1ad4525245a7510ebcbaa14e49d6fc8b3ab1c2978322cc82",
+      "source_id": "03-expanded-budget/proposal_hints_experiment.py",
+      "original_sha256": "4fb8c8283631ec3a1ad4525245a7510ebcbaa14e49d6fc8b3ab1c2978322cc82",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "03-expanded-budget/reference-input.json",
+      "bytes": 1884,
+      "sha256": "03289bc92ef5fdd5f112cd7fb0f04a6c9ed906b8fdc99ed0193297629d3b6695",
+      "source_id": "03-expanded-budget/reference-input.json",
+      "original_sha256": "03289bc92ef5fdd5f112cd7fb0f04a6c9ed906b8fdc99ed0193297629d3b6695",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "03-expanded-budget/reference_run.py",
+      "bytes": 15168,
+      "sha256": "75916ae7d1b602eb8f0d840affe28df3b335925c54829aa5316cc5ced59252e8",
+      "source_id": "03-expanded-budget/reference_run.py",
+      "original_sha256": "75916ae7d1b602eb8f0d840affe28df3b335925c54829aa5316cc5ced59252e8",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "03-expanded-budget/result-sanitized.json",
+      "bytes": 4358987,
+      "sha256": "27d2dbdd3f33574986af37b7e2ad5a042ba879565276a1184e41a6e2bd05fb65",
+      "source_id": "03-expanded-budget/result.json",
+      "original_sha256": "7888d2ede7dc7addf6df8026a5707f76caa529dffb6592449018cb3958643167",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "active_worker_pids": 1,
+          "execution_project_root": 1,
+          "launcher_pids": 1,
+          "worker_cpu_by_pid": 1,
+          "worker_pid_scope": 1,
+          "worker_pids": 269
+        }
+      }
+    },
+    {
+      "path": "03-expanded-budget/run-input.json",
+      "bytes": 1884,
+      "sha256": "03289bc92ef5fdd5f112cd7fb0f04a6c9ed906b8fdc99ed0193297629d3b6695",
+      "source_id": "03-expanded-budget/run-input.json",
+      "original_sha256": "03289bc92ef5fdd5f112cd7fb0f04a6c9ed906b8fdc99ed0193297629d3b6695",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "03-expanded-budget/source-binding-sanitized.json",
+      "bytes": 40523,
+      "sha256": "2177c30125bb1f07ec1b02e82aef9c263688a34a1c052db6e2c55af0facaf65d",
+      "source_id": "03-expanded-budget/source-binding.json",
+      "original_sha256": "8fc789d27fc0a2e053419ec6cf5b198154ce1db508812c8661323e1cbc594192",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "04-narrow-duty/corrected-window-summary.json",
+      "bytes": 20901,
+      "sha256": "0a9be96495e954310d307f1b17b4330f10aa16ac0a24fe98f4777cda13f22bf8",
+      "source_id": "04-narrow-duty/corrected-window-summary.json",
+      "original_sha256": "0a9be96495e954310d307f1b17b4330f10aa16ac0a24fe98f4777cda13f22bf8",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "04-narrow-duty/preflight/input.json",
+      "bytes": 1927,
+      "sha256": "b8c2c39426085e929422ef4d53e7d654ae0f77f38859436eda17243932f38bde",
+      "source_id": "04-narrow-duty/preflight-cpu1/input.json",
+      "original_sha256": "b8c2c39426085e929422ef4d53e7d654ae0f77f38859436eda17243932f38bde",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "04-narrow-duty/preflight/job-spec.json",
+      "bytes": 120548,
+      "sha256": "14ea58a1ae95328eb2bbb819f1b8f34661ee1ca57edd027c4a73d7e5c504ae70",
+      "source_id": "04-narrow-duty/preflight-cpu1/job-spec.json",
+      "original_sha256": "14ea58a1ae95328eb2bbb819f1b8f34661ee1ca57edd027c4a73d7e5c504ae70",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "04-narrow-duty/preflight/request.json",
+      "bytes": 93094,
+      "sha256": "b0336c7a401edbc786bdf3a47e1669dd84d587a8fc5a48a5ce28f18da3145543",
+      "source_id": "04-narrow-duty/preflight-cpu1/request.json",
+      "original_sha256": "b0336c7a401edbc786bdf3a47e1669dd84d587a8fc5a48a5ce28f18da3145543",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "04-narrow-duty/preflight/sources.json",
+      "bytes": 40409,
+      "sha256": "4490a6ce9cd5629aec9d42c8f2d90682b96074efa3435c75c7bf2d4e1168a6b6",
+      "source_id": "04-narrow-duty/preflight-cpu1/sources.json",
+      "original_sha256": "e4cbd8e98cf5c905782052a5e046ca2d425cecfdd06edf8bc2d82ebb8de2ca5a",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "04-narrow-duty/proposal_hints_experiment.py",
+      "bytes": 6686,
+      "sha256": "bf044fc1a95deb1634099e45489bd9a4e5a4143d95334bc2df949899c841c14a",
+      "source_id": "04-narrow-duty/proposal_hints_experiment.py",
+      "original_sha256": "bf044fc1a95deb1634099e45489bd9a4e5a4143d95334bc2df949899c841c14a",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "04-narrow-duty/reference-input.json",
+      "bytes": 1927,
+      "sha256": "b8c2c39426085e929422ef4d53e7d654ae0f77f38859436eda17243932f38bde",
+      "source_id": "04-narrow-duty/reference-input.json",
+      "original_sha256": "b8c2c39426085e929422ef4d53e7d654ae0f77f38859436eda17243932f38bde",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "04-narrow-duty/reference_run.py",
+      "bytes": 15193,
+      "sha256": "b7d93bb15e1b3a94ce6ef1e84ca8604afc45c2d68ad17998bc5cca365ba4ce04",
+      "source_id": "04-narrow-duty/reference_run.py",
+      "original_sha256": "b7d93bb15e1b3a94ce6ef1e84ca8604afc45c2d68ad17998bc5cca365ba4ce04",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "04-narrow-duty/result-sanitized.json",
+      "bytes": 3250088,
+      "sha256": "6d527422a62bbacdf0a4278c13176f5b90fea05e25f805e1566721524a452195",
+      "source_id": "04-narrow-duty/result.json",
+      "original_sha256": "beeba1bb0b6617891f79b879261bc047e8ea3e17ca2f664c166156b4c2a750da",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "active_worker_pids": 1,
+          "execution_project_root": 1,
+          "launcher_pids": 1,
+          "worker_cpu_by_pid": 1,
+          "worker_pid_scope": 1,
+          "worker_pids": 623
+        }
+      }
+    },
+    {
+      "path": "04-narrow-duty/run-input.json",
+      "bytes": 1927,
+      "sha256": "b8c2c39426085e929422ef4d53e7d654ae0f77f38859436eda17243932f38bde",
+      "source_id": "04-narrow-duty/run-input.json",
+      "original_sha256": "b8c2c39426085e929422ef4d53e7d654ae0f77f38859436eda17243932f38bde",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "04-narrow-duty/source-binding-sanitized.json",
+      "bytes": 40523,
+      "sha256": "efec646ec84b289ef57eaec006a4cefedb5de3b5346886eaac90ecaece53ba3c",
+      "source_id": "04-narrow-duty/source-binding.json",
+      "original_sha256": "31df523946a3374ab41ce72aa8cf4cd3cb592f30039876d912f854c94bfeb14c",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "05-low-loss-reference/corrected-window-summary.json",
+      "bytes": 28225,
+      "sha256": "b783ec7a1c1b34f22ca0ae04b312c3d5f81ced09784d4b9f13499c959313074f",
+      "source_id": "05-low-loss-reference/corrected-window-summary.json",
+      "original_sha256": "b783ec7a1c1b34f22ca0ae04b312c3d5f81ced09784d4b9f13499c959313074f",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "05-low-loss-reference/preflight/input.json",
+      "bytes": 1986,
+      "sha256": "38986dcf9c6723404fd140231ba1a2dc3df87b656c7dcc18962a5a1489c45581",
+      "source_id": "05-low-loss-reference/preflight/input.json",
+      "original_sha256": "38986dcf9c6723404fd140231ba1a2dc3df87b656c7dcc18962a5a1489c45581",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "05-low-loss-reference/preflight/job-spec.json",
+      "bytes": 83425,
+      "sha256": "ae6f25c21cd6f2f4f1861dbe59c2b635cd528f5ee35ee84718417883b7723735",
+      "source_id": "05-low-loss-reference/preflight/job-spec.json",
+      "original_sha256": "ae6f25c21cd6f2f4f1861dbe59c2b635cd528f5ee35ee84718417883b7723735",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "05-low-loss-reference/preflight/request.json",
+      "bytes": 65435,
+      "sha256": "3bdae4a346b0c734cd5fefc634bd350ab4a9a2337c2b09d5ec328a8bb5b93b7f",
+      "source_id": "05-low-loss-reference/preflight/request.json",
+      "original_sha256": "3bdae4a346b0c734cd5fefc634bd350ab4a9a2337c2b09d5ec328a8bb5b93b7f",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "05-low-loss-reference/preflight/sources.json",
+      "bytes": 30437,
+      "sha256": "f96b721bccc03dcfc7f91a7da6ef3b669493df333ec97b554df8f857d663c030",
+      "source_id": "05-low-loss-reference/preflight/sources.json",
+      "original_sha256": "c5bebb40b72a1e01da058923f57779e790e3346974314707b0a5a7a23b9c7e61",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "05-low-loss-reference/proposal_hints_experiment.py",
+      "bytes": 6686,
+      "sha256": "bf044fc1a95deb1634099e45489bd9a4e5a4143d95334bc2df949899c841c14a",
+      "source_id": "05-low-loss-reference/proposal_hints_experiment.py",
+      "original_sha256": "bf044fc1a95deb1634099e45489bd9a4e5a4143d95334bc2df949899c841c14a",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "05-low-loss-reference/reference-input.json",
+      "bytes": 1986,
+      "sha256": "38986dcf9c6723404fd140231ba1a2dc3df87b656c7dcc18962a5a1489c45581",
+      "source_id": "05-low-loss-reference/reference-input.json",
+      "original_sha256": "38986dcf9c6723404fd140231ba1a2dc3df87b656c7dcc18962a5a1489c45581",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "05-low-loss-reference/reference_run.py",
+      "bytes": 15193,
+      "sha256": "611b04f6d3cdf202ae3341bf67e8a6bdfe67988cf10d670d55aa389ad5737681",
+      "source_id": "05-low-loss-reference/reference_run.py",
+      "original_sha256": "611b04f6d3cdf202ae3341bf67e8a6bdfe67988cf10d670d55aa389ad5737681",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "05-low-loss-reference/result-sanitized.json",
+      "bytes": 5901546,
+      "sha256": "322a07aaa786f79fe0002551d06d8b84d2743dc726fbfd00f287164372904e60",
+      "source_id": "05-low-loss-reference/result.json",
+      "original_sha256": "ec6bd1789338ebc9ca9275e5fee34824d5d6bc1d145561d4754d706c2a986a4f",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "active_worker_pids": 1,
+          "execution_project_root": 1,
+          "launcher_pids": 1,
+          "worker_cpu_by_pid": 1,
+          "worker_pid_scope": 1,
+          "worker_pids": 623
+        }
+      }
+    },
+    {
+      "path": "05-low-loss-reference/run-input.json",
+      "bytes": 1986,
+      "sha256": "38986dcf9c6723404fd140231ba1a2dc3df87b656c7dcc18962a5a1489c45581",
+      "source_id": "05-low-loss-reference/run-input.json",
+      "original_sha256": "38986dcf9c6723404fd140231ba1a2dc3df87b656c7dcc18962a5a1489c45581",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "05-low-loss-reference/source-binding-sanitized.json",
+      "bytes": 30551,
+      "sha256": "b548cec92fd0f906378286b4bab40537f1590290881944b0f181b308ee87d557",
+      "source_id": "05-low-loss-reference/source-binding.json",
+      "original_sha256": "0ae3cd2f4c39e0cb41ec7066b5b68dc7a3d6edd4cb85d6076205a745f87dad48",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "06-production/candidate-design.json",
+      "bytes": 32874,
+      "sha256": "6e07bd9fd4594aeb51ff015856d085efe427096ee0ef4d98c3bb9edac21bf2fa",
+      "source_id": "production result.candidate_design extraction",
+      "original_sha256": null,
+      "transformation": {
+        "method": "derived summary as documented"
+      }
+    },
+    {
+      "path": "06-production/preflight/input.json",
+      "bytes": 2152,
+      "sha256": "d61d18c9bb8b38ee3f64fccce5e9cf347bcf946d1b94d7d9f905737d6816dbe7",
+      "source_id": "production/preflight/input.json",
+      "original_sha256": "d61d18c9bb8b38ee3f64fccce5e9cf347bcf946d1b94d7d9f905737d6816dbe7",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "06-production/preflight/job-spec.json",
+      "bytes": 83424,
+      "sha256": "30bf4395d979495a660cd292bccb5dff07ac958840feb23b3e0918fdd4234522",
+      "source_id": "production/preflight/job-spec.json",
+      "original_sha256": "30bf4395d979495a660cd292bccb5dff07ac958840feb23b3e0918fdd4234522",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "06-production/preflight/request.json",
+      "bytes": 65434,
+      "sha256": "5abdb3a5be20308f8327b17750733e9b6af70b1ed815a4d14c8ea4c82a3d7b77",
+      "source_id": "production/preflight/request.json",
+      "original_sha256": "5abdb3a5be20308f8327b17750733e9b6af70b1ed815a4d14c8ea4c82a3d7b77",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "06-production/preflight/sources.json",
+      "bytes": 30437,
+      "sha256": "3acc0e6e5e80c07a4b6a6f6765a6600d16fc95255824515af8d8de31777cd4af",
+      "source_id": "production/preflight/sources.json",
+      "original_sha256": "7eea6da3017fecdb9cea463823319ee185410168b1e58285c22ed57650e21163",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "06-production/reference-input.json",
+      "bytes": 2152,
+      "sha256": "d61d18c9bb8b38ee3f64fccce5e9cf347bcf946d1b94d7d9f905737d6816dbe7",
+      "source_id": "production/reference-input.json",
+      "original_sha256": "d61d18c9bb8b38ee3f64fccce5e9cf347bcf946d1b94d7d9f905737d6816dbe7",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "06-production/reference_run.py",
+      "bytes": 15192,
+      "sha256": "29e9937a583c9b1bd582090adb409ef1d0c8b6caa453405e9cc5356c84f5a471",
+      "source_id": "production/reference_run.py",
+      "original_sha256": "29e9937a583c9b1bd582090adb409ef1d0c8b6caa453405e9cc5356c84f5a471",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "06-production/release-core-mapping.json",
+      "bytes": 1197,
+      "sha256": "974f8addfec452f7ea620f335e0b31cdca635c060f7650b19da446ec4461ca42",
+      "source_id": "immutable GitHub release core readback and production v2 hash record",
+      "original_sha256": null,
+      "transformation": {
+        "method": "derived summary as documented"
+      }
+    },
+    {
+      "path": "06-production/result-sanitized.json",
+      "bytes": 3646825,
+      "sha256": "b61abd693260dc02c32f1dc99faf700662be85417c00b95d8d2d5f763b7993ff",
+      "source_id": "production/result-final/result.json",
+      "original_sha256": "b2e1c90a90332b93a3568a4033bf3c70dee4035025139f45e4dfc46bb439dd18",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "active_worker_pids": 1,
+          "execution_project_root": 1,
+          "launcher_pids": 1,
+          "worker_cpu_by_pid": 1,
+          "worker_pid_scope": 1,
+          "worker_pids": 623
+        }
+      }
+    },
+    {
+      "path": "06-production/run-input.json",
+      "bytes": 2152,
+      "sha256": "d61d18c9bb8b38ee3f64fccce5e9cf347bcf946d1b94d7d9f905737d6816dbe7",
+      "source_id": "production/result-final/run-input.json",
+      "original_sha256": "d61d18c9bb8b38ee3f64fccce5e9cf347bcf946d1b94d7d9f905737d6816dbe7",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "06-production/source-binding-sanitized.json",
+      "bytes": 30483,
+      "sha256": "cd8efc066d88f0340a6dc12a46b3b275a00cf8b226c87ad3b1675b74bd797093",
+      "source_id": "production/result-final/source-binding.json",
+      "original_sha256": "4d050c46965375ee86dd5c024cdf736bc96a8f82652b10c9e23c47f2056eca8a",
+      "transformation": {
+        "method": "parse JSON, remove listed host-only keys recursively, serialize UTF-8 sorted compact JSON with trailing newline; other values retained",
+        "removed_key_counts": {
+          "cpu_affinity": 1
+        }
+      }
+    },
+    {
+      "path": "06-production/verification-final.json",
+      "bytes": 6522,
+      "sha256": "fa918069d20549b951afdd6d20a74616b25f038703713c18d469b432f64547ea",
+      "source_id": "production/verification-final/verification.json",
+      "original_sha256": "fa918069d20549b951afdd6d20a74616b25f038703713c18d469b432f64547ea",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "06-production/working-tree-core-sha256-v2.json",
+      "bytes": 589,
+      "sha256": "02c5b9aa1f8a4c433779b9b444e9b893ef6f2bd42de928fe44d4a4c3ec75589f",
+      "source_id": "production/working-tree-core-sha256-v2.json",
+      "original_sha256": "02c5b9aa1f8a4c433779b9b444e9b893ef6f2bd42de928fe44d4a4c3ec75589f",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "07-tests/continuation.log",
+      "bytes": 99,
+      "sha256": "29b3359165f93dc81857075b288f875c35e9779ce5c5a2cb3a005593a5f6d3a9",
+      "source_id": "test-log/continuation.log",
+      "original_sha256": "29b3359165f93dc81857075b288f875c35e9779ce5c5a2cb3a005593a5f6d3a9",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "07-tests/static-report-summary.json",
+      "bytes": 284,
+      "sha256": "93f41b1fcf0fe03b0b59b0422f9d4eb8f50873bcfbdbad12983dd526270b8f9e",
+      "source_id": "static-analysis report JSON summary",
+      "original_sha256": null,
+      "transformation": {
+        "method": "derived summary as documented"
+      }
+    },
+    {
+      "path": "07-tests/static-summary.log",
+      "bytes": 117,
+      "sha256": "197e02caa4700b4a34dd061dad97534561639c7e32d96b6ecfc985dc4e17652f",
+      "source_id": "test-log/static-summary.log",
+      "original_sha256": "197e02caa4700b4a34dd061dad97534561639c7e32d96b6ecfc985dc4e17652f",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "07-tests/surfaces.log",
+      "bytes": 180,
+      "sha256": "420b988b7a07584e896748338807a631a04bee2b4c32f62e08ac9bd5394bf843",
+      "source_id": "test-log/surfaces.log",
+      "original_sha256": "420b988b7a07584e896748338807a631a04bee2b4c32f62e08ac9bd5394bf843",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "07-tests/targeted.log",
+      "bytes": 180,
+      "sha256": "81ff13daeaf3b507b60f6a696bf5aeb2724cea4e9968bd34e3259c6169aa84ba",
+      "source_id": "test-log/targeted.log",
+      "original_sha256": "81ff13daeaf3b507b60f6a696bf5aeb2724cea4e9968bd34e3259c6169aa84ba",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "08-tools/postprocess.py",
+      "bytes": 8299,
+      "sha256": "e5f9a96592311c78db18497a95f519651e2176c956562842d4d17dbf054633cc",
+      "source_id": "research/postprocess.py",
+      "original_sha256": "e5f9a96592311c78db18497a95f519651e2176c956562842d4d17dbf054633cc",
+      "transformation": {
+        "method": "byte-identical copy"
+      }
+    },
+    {
+      "path": "provenance-notes.json",
+      "bytes": 1410,
+      "sha256": "4fff0573f6c02377dc9b383684f861125f01f9bf286834aa3c482e03c6214e4f",
+      "source_id": "local evidence preparation policy",
+      "original_sha256": null,
+      "transformation": {
+        "method": "derived summary as documented"
+      }
+    }
+  ]
+}
