@@ -1,0 +1,25 @@
+{
+  "schema": "posthoc-material-transfer-augmentation-comparison-v1",
+  "date": "2026-11-01",
+  "source_model_commit": "9d3698228ae40d8db39315cb25ec693e660bc62e",
+  "source_model_manifest_sha256": "64fec48053218216d17105b6580fd5503d599086d1aeb07565fe79f11cb531f5",
+  "expansion_plan_sha256": "65ef9b4bac2a781ede17aed406d1d060465849889c843dc7a996c7026096a178",
+  "expansion_source_manifest_sha256": "bfd6c6c5870c05ba418c8ee87d68dc54ea70082129d1ac43b844c66e30eb53b3",
+  "train_sources": [
+    "pilot_v4a (12 original synthetic cases)",
+    "material_expansion_v1 (all48 newly declared synthetic cases; unknown labels excluded, never relabeled)"
+  ],
+  "test_source": "material_pilot_v1a all36 previously inspected published-model/table tasks;32 known labels and4 unknown; no test labels used to fit",
+  "baseline_model": "Frozen predictor_pilot_v1/outputs/fold_models/strict_source_component-0.json trained only on original12 synthetic cases; verify its training IDs before reuse",
+  "algorithm": "Reuse exact frozen208-feature extraction, joint128-tree forest parameters and JSON export; no hyperparameter, feature, task or budget changes after results",
+  "additional_control": "Same-family training-label sample closest in L1 distance to coordinate-wise median of joint log1p(N),log1p(D/lambda_ref); same pair, not strict medoid; test labels not used",
+  "metrics": [
+    "Same held36 task predictions for old and augmented forest and training-only representative baselines",
+    "N MAE ceil and float, positive D MAPE, either-resource underestimation, by-family, known-label fraction and feature envelope",
+    "Unknown cases remain unscored; no calibration or confidence interval"
+  ],
+  "stopping_rule": "Run every declared expansion case to terminal recorded state, preserve all results including unknown; one fixed fit and comparison, do not resample curves or tune to the held set",
+  "scope": "Posthoc same-target material-transfer diagnostic, not blind test or independent field validation; old literature results and their input domain were inspected before this design",
+  "production_allowed": false,
+  "independent_calibration": false
+}
