@@ -1,0 +1,168 @@
+{
+  "schema": "dual-stopband-public-reference-case-v1",
+  "purpose": "Long-term acceptance fixture derived from public optical catalog references; not a copy of a user project, job, request or checkpoint.",
+  "catalog_commit": "cd368b8fe825bd8dcee7d11e11d60a9dfbba4d12",
+  "public_sources": [
+    {
+      "path": "data/optical_catalog.json",
+      "sha256": "c70ac5f83fc217e72a97e0f42a5f421c9bcc22dd2ab236ac65e22d975e97396a"
+    },
+    {
+      "path": "coat_sim/core/resources/optical_substrate_supplement.json",
+      "sha256": "d26bcab7e3e98366038c2af6a3d0bda68862ad69cd0484445020477972e8ffef"
+    }
+  ],
+  "material_references": [
+    {
+      "material_id": "builtin_ideal_air",
+      "optical_set_id": "ideal_air_n1_k0",
+      "public_repository_path": "data/optical_catalog.json",
+      "canonical_optical_fields_sha256": "eb2d1afeaa6e39da56374ba0deef533adb21c6390778a0251db4d003777a8bc4",
+      "canonical_public_record_sha256": "07f7159dda8aaeaac7af5c08cb48073e280e54aab0247b6e99bdbca3f866b381"
+    },
+    {
+      "material_id": "builtin_research_SiO2_film",
+      "optical_set_id": "ri_sio2_rodriguez_de_marcos",
+      "public_repository_path": "data/optical_catalog.json",
+      "canonical_optical_fields_sha256": "d75a396e88366395756f64015268e981a0db602f00278904be6fb99d3c3d7c07",
+      "canonical_public_record_sha256": "bbcbf165a357acdfb6dc8dac74b8893db9289b2e21fe209b114f8c024d8cf64a"
+    },
+    {
+      "material_id": "builtin_research_TiO2_film",
+      "optical_set_id": "rii_tio2_franta",
+      "public_repository_path": "data/optical_catalog.json",
+      "canonical_optical_fields_sha256": "1b0b0114b3ca406d2d45824436769d0a02e2957e582af968d036a352d6cc5e52",
+      "canonical_public_record_sha256": "fab63fe64ad26cb8cd8fb74ee7048c579ea8663a646943275f6c5496013bfe85"
+    },
+    {
+      "material_id": "film_substrate_cdgm_hk9l",
+      "optical_set_id": "cdgm_hk9l_sellmeier_nm",
+      "public_repository_path": "coat_sim/core/resources/optical_substrate_supplement.json",
+      "canonical_optical_fields_sha256": "6c22385aa27e302419e32fe80543cc1b42cdd70a8f239bac7f74c689d3fd8e30",
+      "canonical_public_record_sha256": "ee17a949c58ce717a5d98f927cfd84e03ae6b66bc4ab02d039da66df6df7c4fa"
+    }
+  ],
+  "one_time_comparison": "Selected public optical records were compared to the diagnostic input and matched exactly for kind, units, domain and n/k arrays or parameters; no private identifiers or private arrays included.",
+  "hash_scheme": "UTF-8 JSON ensure_ascii=False, sort_keys=True, separators comma/colon, no NaN, one trailing newline; optical projection contains only present keys kind,wavelength_unit,wavelength_min,wavelength_max,wavelengths,n,k,parameters.",
+  "environment": {
+    "initial_front_layers": [],
+    "initial_back_layers": [],
+    "layer_order": "substrate_outward",
+    "first_surface": "front",
+    "substrate": {
+      "material_id": "film_substrate_cdgm_hk9l",
+      "optical_set_id": "cdgm_hk9l_sellmeier_nm",
+      "thickness_mm": 3.0,
+      "sides": "double",
+      "mode": "auto"
+    },
+    "incident_and_exit_medium": {
+      "material_id": "builtin_ideal_air",
+      "optical_set_id": "ideal_air_n1_k0"
+    },
+    "assume_unknown_k_zero": true,
+    "assumption_scope": "H-K9L substrate has no k; assume only unknown k zero; preserve known film k and do not extrapolate.",
+    "reference_wavelength_nm": 550.0,
+    "engine_flags": {
+      "assume_lossless": true,
+      "use_k": true
+    },
+    "candidate_films_ordered": [
+      {
+        "material_id": "builtin_research_SiO2_film",
+        "optical_set_id": "ri_sio2_rodriguez_de_marcos"
+      },
+      {
+        "material_id": "builtin_research_TiO2_film",
+        "optical_set_id": "rii_tio2_franta"
+      }
+    ],
+    "initial_state_note": "Seedless public fixture reflects the adapted diagnostic request, not a copy or reconstruction of the private exported project layers; substrate is double-sided while back coating remains empty."
+  },
+  "measurement": {
+    "angle_deg": 0.0,
+    "polarization": "unpolarized",
+    "sample_spacing_nm": 1.0,
+    "objectives": [
+      {
+        "wavelength_min_nm": 400.0,
+        "wavelength_max_nm": 500.0,
+        "samples": 101,
+        "metric": "T",
+        "pointwise_lower_inclusive": 0.8,
+        "pointwise_upper_inclusive": 1.0,
+        "pointwise_enabled": true,
+        "mean_enabled": false,
+        "weight": 1.0,
+        "normalization_scale": 1.0
+      },
+      {
+        "wavelength_min_nm": 510.0,
+        "wavelength_max_nm": 550.0,
+        "samples": 41,
+        "metric": "T",
+        "pointwise_lower_inclusive": 0.0,
+        "pointwise_upper_inclusive": 0.006500000000000001,
+        "pointwise_enabled": true,
+        "mean_enabled": false,
+        "weight": 1.0,
+        "normalization_scale": 1.0
+      },
+      {
+        "wavelength_min_nm": 560.0,
+        "wavelength_max_nm": 700.0,
+        "samples": 141,
+        "metric": "T",
+        "pointwise_lower_inclusive": 0.8,
+        "pointwise_upper_inclusive": 1.0,
+        "pointwise_enabled": true,
+        "mean_enabled": false,
+        "weight": 1.0,
+        "normalization_scale": 1.0
+      },
+      {
+        "wavelength_min_nm": 1040.0,
+        "wavelength_max_nm": 1080.0,
+        "samples": 41,
+        "metric": "T",
+        "pointwise_lower_inclusive": 0.0,
+        "pointwise_upper_inclusive": 0.006500000000000001,
+        "pointwise_enabled": true,
+        "mean_enabled": false,
+        "weight": 1.0,
+        "normalization_scale": 1.0
+      }
+    ],
+    "threshold_note": "Nominal cap is 0.0065; saved binary float serializes as 0.006500000000000001. Comparisons are inclusive."
+  },
+  "reference_search_settings": {
+    "cpu_workers": 1,
+    "original_ui_cpu_workers": 0,
+    "search_until_target": true,
+    "search_strategy": "hybrid",
+    "max_layers": null,
+    "max_layer_thickness_nm": null,
+    "max_total_thickness_nm": null,
+    "minimum_nonzero_thickness_nm": null,
+    "max_cycles": null,
+    "max_evaluations": null,
+    "max_seconds": null,
+    "validation_samples_multiplier": 2,
+    "acceptable_normalized_error": 0.001,
+    "seed": 0,
+    "archive_capacity": 32,
+    "notes": "External cooperative turn cancel at 600 seconds; no hard real-time guarantee. Archive capacity is not a physical layer cap; unrelated UI structure_options 32/2000 are not active synthesis constraints.",
+    "selected_surfaces": [
+      "front"
+    ],
+    "back_surface_optimized": false
+  },
+  "acceptance_contract": [
+    "Preserve original pointwise inclusive T objectives, geometry and explicit absorption assumptions.",
+    "Continuation must not replace a more favorable independently audited incumbent with a worse terminal candidate; validate with a controlled public/synthetic fixture, not a private checkpoint.",
+    "For pointwise-only restoration, reject clearly dominated candidates only using fresh dense evidence beyond incumbent and guard; potentially better or near-tie candidates receive complete audit.",
+    "At duplicate conditions canonical dense values own dense points; extra-only duplicate observations retain worst violation.",
+    "No claim of target attainment, material infeasibility, continuous certification, trajectory equivalence or production performance follows from this declarative case alone.",
+    "When search_until_target is true and an outer structural frontier remains, a completed local session with unmet goals must not terminate the outer search prematurely; known open policy defect remains unresolved in .09."
+  ]
+}

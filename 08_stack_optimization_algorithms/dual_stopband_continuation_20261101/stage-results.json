@@ -1,0 +1,120 @@
+{
+  "schema": "dual-stopband-continuation-aggregate-v1",
+  "scope": "Whitelisted numerical aggregates only; no private project/job IDs, original attachment, checkpoint, full request, material arrays or candidate layers.",
+  "reference_case": "public-reference-case.json",
+  "fresh": {
+    "state": "cancelled",
+    "termination_reason": "cancelled",
+    "elapsed_seconds": 600.5,
+    "search_resumed_seconds": null,
+    "evaluations": 1680,
+    "layer_count": 55,
+    "total_thickness_nm": 5886.4042859402,
+    "training_max_error": 0.10274835272940719,
+    "result_validation_max_error": null,
+    "separate_audit_max_error": 0.1031123498006914,
+    "separate_audit_condition_count": 2110,
+    "audit_continuous_certificate": false
+  },
+  "old_07_resume": {
+    "state": "completed",
+    "termination_reason": "local_session_converged_targets_unmet",
+    "elapsed_seconds": 199.69,
+    "search_resumed_seconds": 4.39,
+    "evaluations": 992,
+    "layer_count": 15,
+    "total_thickness_nm": 1862.115185150013,
+    "training_max_error": 0.1905869811568628,
+    "result_validation_max_error": 0.19104690199123142,
+    "separate_audit_max_error": 0.19104690199123142,
+    "separate_audit_condition_count": 1506,
+    "audit_continuous_certificate": false
+  },
+  "fixed_08_resume": {
+    "state": "completed",
+    "termination_reason": "local_session_terminal_converged_best_retained_targets_unmet",
+    "elapsed_seconds": 424.19,
+    "search_resumed_seconds": 233.89,
+    "evaluations": 1024,
+    "layer_count": 55,
+    "total_thickness_nm": 5886.4042859402,
+    "training_max_error": 0.10274835272940719,
+    "result_validation_max_error": 0.1031123498006914,
+    "separate_audit_max_error": 0.1031123498006914,
+    "separate_audit_condition_count": 2110,
+    "audit_continuous_certificate": false
+  },
+  "fresh_and_fixed_physical_hash_equal": true,
+  "same_controlled_checkpoint_and_physics": true,
+  "structure_proposal_count": 31,
+  "narrow_proposal_layer_counts": [
+    82,
+    92,
+    122,
+    136
+  ],
+  "new_09_screened_restore": {
+    "status": "released_source_bound_run_verified",
+    "release_commit": "861d89f2adcbe8d6b4c5eee0da2ec08a7ec66a3c",
+    "note": "Three precompute core file snapshots matched immutable release commit; no claim of target attainment or trajectory equivalence."
+  },
+  "limitations": [
+    "All three candidates remain unmet; cancelled fresh run has no complete in-job validation, separate research audit uses same optical model.",
+    "Times are rounded progress-stamp measurements and are not equal-work or UI AUTO performance comparisons.",
+    "No continuous-spectrum certificate, global minimum or infeasibility claim."
+  ],
+  "screen_09_preliminary": {
+    "status": "completed_pre_release_binding_incomplete",
+    "targets_met": false,
+    "elapsed_seconds": 221.3,
+    "search_resumed_seconds": 33.0,
+    "validation_starts": 33,
+    "full_validation_completions": 2,
+    "fresh_dense_rejections": 31,
+    "audit_physical_evaluations": 1089,
+    "audit_wavelength_points": 23580,
+    "training_max_error": 0.10274835272940719,
+    "separate_audit_max_error": 0.1031123498006914,
+    "same_incumbent_as_fresh": true,
+    "same_separate_audit_bytes_as_fresh": true,
+    "binding_limitation": "Run binding recorded the auto source only; audit module runtime bytes were not recorded, and a later annotation-only static fix occurred. Not final release-source proof."
+  },
+  "bounded_fixed_topology_refinement": {
+    "status": "separate_research_diagnostic_not_production_change",
+    "steps": 2,
+    "calls": 155,
+    "layer_count": 55,
+    "total_thickness_nm": 5874.675189414735,
+    "training_max_error": 0.10021665928408763,
+    "separate_audit_max_error": 0.1014776474936796,
+    "all_original_window_targets_met": false,
+    "note": "No target relaxation or material substitution; no feasibility conclusion."
+  },
+  "screen_09_release_bound": {
+    "status": "source_snapshots_match_released_commit",
+    "state": "completed",
+    "termination_reason": "local_session_terminal_converged_best_retained_targets_unmet",
+    "elapsed_seconds": 220.28,
+    "search_resumed_seconds": 31.95,
+    "evaluations": 1024,
+    "validation_starts": 33,
+    "full_validation_completions": 2,
+    "fresh_dense_rejections": 31,
+    "audit_physical_evaluations": 1089,
+    "audit_wavelength_points": 23580,
+    "layer_count": 55,
+    "total_thickness_nm": 5886.4042859402,
+    "training_max_error": 0.10274835272940719,
+    "validation_max_error": 0.1031123498006914,
+    "separate_audit_max_error": 0.1031123498006914,
+    "same_incumbent_as_fresh": true,
+    "same_request_as_old_and_fixed": true,
+    "same_separate_audit_bytes_as_fresh": true,
+    "source_snapshots_match_current": true,
+    "nominal_targets_pass": false
+  },
+  "known_open_policy_defect": {
+    "status": "unfixed_in_09",
+    "description": "search_until_target can terminate after a single local session with targets unmet instead of automatically advancing unexplored outer structural frontier; separate future fix required."
+  }
+}

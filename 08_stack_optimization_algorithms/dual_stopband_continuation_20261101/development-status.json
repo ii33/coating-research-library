@@ -1,0 +1,28 @@
+{
+  "status": "released_source_snapshot_verified",
+  "base_commit": "cd368b8fe825bd8dcee7d11e11d60a9dfbba4d12",
+  "label": "dev.20261101.09",
+  "source_sha256_at_draft": {
+    "coat_sim/core/film_auto_synthesis.py": "bb41db24205b843b89c2c5d9ffae24a6e345202454cc070bea8c4fcca7e67128",
+    "coat_sim/core/film_synthesis_audit.py": "1ee0805855727b91264b18c1f51d7a2fca6b910e2389b6204b4df847794243f5",
+    "tests/test_film_synthesis_restoration_screen.py": "c928b8582c3f01438689e45b8fa14579c297c4ce2adb12160f50147e1fa7d66b"
+  },
+  "note": "The three core file bindings are not a claim that every environmental dependency or physical model was independently replicated.",
+  "precompute_release_run_source_sha256": {
+    "coat_sim/core/film_auto_synthesis.py": "bb41db24205b843b89c2c5d9ffae24a6e345202454cc070bea8c4fcca7e67128",
+    "coat_sim/core/film_synthesis_audit.py": "1ee0805855727b91264b18c1f51d7a2fca6b910e2389b6204b4df847794243f5",
+    "coat_sim/core/film_synthesis_refinement.py": "03f1944b92bec56b73f5460edb3c7673bbe43e14e90af3ad97df2c9ec2c50cda"
+  },
+  "release_bound_run_checks": {
+    "three_core_snapshots_match_current": true,
+    "request_matches_controlled_old_and_fixed": true,
+    "same_candidate_as_fresh": true,
+    "same_separate_audit_bytes_as_fresh": true,
+    "nominal_targets_met": false
+  },
+  "release_commit": "861d89f2adcbe8d6b4c5eee0da2ec08a7ec66a3c",
+  "release_parent": "cd368b8fe825bd8dcee7d11e11d60a9dfbba4d12",
+  "release_tree": "cfa431c6e8246ec8f1bb22f548d218199f7951b3",
+  "release_version": "dev.20261101.09",
+  "release_binding": "Three core file bytes independently read from immutable release commit matched precompute snapshots; restoration screen test source also matched the inspected local source."
+}
