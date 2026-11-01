@@ -1,0 +1,14 @@
+{
+  "source_commit": "ec78544431a6fa75949df55d5eae24272601eff2",
+  "source_manifest_sha256": "ae61d3373571ab45ef2ece291c4f25ba67d7b870948b74a80e096c532cedf82f",
+  "comparison_protocol_commit": "42254d29e32942aed9126353371acaa9c5aeda29",
+  "data_commit": "e54675e62280770f1c5a5572a76062c1724b0466",
+  "verified_small_package_commit": "b1a1a64e9e31c4220e67c2b853f8ec795576e78e",
+  "data_manifest_sha256": "ca20cb099aad3a185e0e08b0cb118c7a9fe59db5613706628b888a705d86db65",
+  "data_recovery_note": "412 execution files recovered from two remote-read small tar archives and matched original manifest. Original large tar only remote Git object identity checked, not direct byte readback.",
+  "outputs": 6,
+  "output_archive_sha256": "b70d057468efb5dda47d4e053958d6dafb41f86240942adfedd409028b6330b0",
+  "output_manifest_sha256": "ffac020cb07913cc041184668b0b05dd23ca3923313ed1bfce7f4d3aff5ddf15",
+  "review": "Independent read-only recomputation of72 tree predictions,36 training-only representative predictions, all overall/family metrics, 55 training identities and numerical source disjointness; no independent retraining or new physics audit in model review",
+  "production_ready": false
+}

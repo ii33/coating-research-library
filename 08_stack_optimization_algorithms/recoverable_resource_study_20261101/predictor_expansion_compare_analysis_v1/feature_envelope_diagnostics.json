@@ -1,0 +1,2749 @@
+{
+  "note": "Post-hoc feature-range diagnostics, not a validated applicability gate or calibration result",
+  "feature_counts": [
+    [
+      "substrate_objective_0_n_mean",
+      36
+    ],
+    [
+      "substrate_objective_0_n_min",
+      36
+    ],
+    [
+      "substrate_objective_0_n_max",
+      36
+    ],
+    [
+      "film_1_objective_0_n_delta",
+      30
+    ],
+    [
+      "film_1_objective_0_n_std",
+      30
+    ],
+    [
+      "film_1_objective_1_n_delta",
+      24
+    ],
+    [
+      "film_1_objective_1_n_std",
+      24
+    ],
+    [
+      "substrate_objective_1_n_delta",
+      24
+    ],
+    [
+      "substrate_objective_1_n_std",
+      24
+    ],
+    [
+      "film_0_objective_0_log_k_mean",
+      18
+    ],
+    [
+      "film_0_objective_0_n_delta",
+      12
+    ],
+    [
+      "film_0_objective_0_n_std",
+      12
+    ],
+    [
+      "substrate_objective_0_n_delta",
+      11
+    ],
+    [
+      "substrate_objective_0_n_std",
+      11
+    ],
+    [
+      "film_0_objective_1_n_delta",
+      8
+    ],
+    [
+      "film_0_objective_1_n_std",
+      8
+    ],
+    [
+      "film_1_objective_2_n_delta",
+      6
+    ],
+    [
+      "film_1_objective_2_n_std",
+      6
+    ],
+    [
+      "substrate_objective_2_n_delta",
+      6
+    ],
+    [
+      "substrate_objective_2_n_std",
+      6
+    ],
+    [
+      "film_1_objective_0_log_k_mean",
+      6
+    ],
+    [
+      "film_1_objective_0_log_k_max",
+      6
+    ],
+    [
+      "film_1_objective_1_log_k_mean",
+      4
+    ],
+    [
+      "film_1_objective_1_log_k_max",
+      4
+    ],
+    [
+      "substrate_objective_1_n_mean",
+      4
+    ],
+    [
+      "substrate_objective_1_n_max",
+      4
+    ],
+    [
+      "film_0_objective_2_n_delta",
+      2
+    ],
+    [
+      "film_0_objective_2_n_std",
+      2
+    ],
+    [
+      "film_1_objective_2_log_k_mean",
+      1
+    ],
+    [
+      "film_1_objective_2_log_k_max",
+      1
+    ],
+    [
+      "substrate_objective_1_n_min",
+      1
+    ],
+    [
+      "substrate_objective_2_n_mean",
+      1
+    ],
+    [
+      "substrate_objective_2_n_max",
+      1
+    ]
+  ],
+  "cases": [
+    {
+      "case_id": "material-mgf2_tio2-ar",
+      "outside_training_features": [
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.1570599342904302,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.049813485544101734,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.459533047692443,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4552924662622837,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4655656654352176,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.0102731991729339,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.0032817234728749964,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        }
+      ]
+    },
+    {
+      "case_id": "material-mgf2_tio2-bandpass",
+      "outside_training_features": [
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.09593448508253788,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.030859591451329643,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.034244119377889515,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.011038763888479877,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "film_1_objective_2_n_delta",
+          "value": -0.01632756900059551,
+          "training_min": -0.005521407789650823,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_2_n_std",
+          "value": 0.005265354775111304,
+          "training_min": 0.0,
+          "training_max": 0.0017811734033559923
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4656622161800286,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4635021746006414,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.002511512890895906,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0008099422358347556,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        },
+        {
+          "feature": "substrate_objective_2_n_delta",
+          "value": -0.0016212180271706345,
+          "training_min": -0.0013258073116277913,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_2_n_std",
+          "value": 0.0005228709631329143,
+          "training_min": 0.0,
+          "training_max": 0.000427697574859847
+        }
+      ]
+    },
+    {
+      "case_id": "material-mgf2_tio2-dual_ar",
+      "outside_training_features": [
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.11641927694882126,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.037382522896339275,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.03044835357624809,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.009804556863803096,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-mgf2_tio2-hr",
+      "outside_training_features": [
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.08283428000694792,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.026571592605688258,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4591304377536374,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4565349736401405,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4623264867003778,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        }
+      ]
+    },
+    {
+      "case_id": "material-mgf2_tio2-mean_mix",
+      "outside_training_features": [
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.11641927694882126,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.037382522896339275,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.03044835357624809,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.009804556863803096,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-mgf2_tio2-mixed",
+      "outside_training_features": [
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.11641927694882126,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.037382522896339275,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.03044835357624809,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.009804556863803096,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_hfo2-ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.0572157253043655,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.04920910808441281,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.015757335728559547,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.459533047692443,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4552924662622837,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4655656654352176,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.0102731991729339,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.0032817234728749964,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_hfo2-bandpass",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2189086436817684,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.01204951577026181,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.00388668551188277,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "film_1_objective_2_n_delta",
+          "value": -0.0070442459528545776,
+          "training_min": -0.005521407789650823,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_2_n_std",
+          "value": 0.0022719714133643746,
+          "training_min": 0.0,
+          "training_max": 0.0017811734033559923
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4656622161800286,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4635021746006414,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.002511512890895906,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0008099422358347556,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        },
+        {
+          "feature": "substrate_objective_2_n_delta",
+          "value": -0.0016212180271706345,
+          "training_min": -0.0013258073116277913,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_2_n_std",
+          "value": 0.0005228709631329143,
+          "training_min": 0.0,
+          "training_max": 0.000427697574859847
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_hfo2-dual_ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2034987856275206,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.012738901098901412,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.004104036676459975,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_hfo2-hr",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.0477356141658276,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4591304377536374,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4565349736401405,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4623264867003778,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_hfo2-mean_mix",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2034987856275206,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.012738901098901412,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.004104036676459975,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_hfo2-mixed",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2034987856275206,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.012738901098901412,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.004104036676459975,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_ta2o5-ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.0572157253043655,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.07756384802864291,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.024939884184941256,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_0_log_k_mean",
+          "value": 2.530982434584561,
+          "training_min": 0.0,
+          "training_max": 1.506365581670316
+        },
+        {
+          "feature": "film_1_objective_0_log_k_max",
+          "value": 3.219224393211281,
+          "training_min": 0.0,
+          "training_max": 1.577219036399707
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.459533047692443,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4552924662622837,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4655656654352176,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.0102731991729339,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.0032817234728749964,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_ta2o5-bandpass",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2189086436817684,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_log_k_mean",
+          "value": 3.236470028669908,
+          "training_min": 0.0,
+          "training_max": 1.506365581670316
+        },
+        {
+          "feature": "film_1_objective_0_log_k_max",
+          "value": 3.481297278590786,
+          "training_min": 0.0,
+          "training_max": 1.577219036399707
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.01861724687592492,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.006008982888423093,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "film_1_objective_1_log_k_mean",
+          "value": 2.307457171322282,
+          "training_min": 0.0,
+          "training_max": 1.4720595239035537
+        },
+        {
+          "feature": "film_1_objective_1_log_k_max",
+          "value": 2.4791833393777263,
+          "training_min": 0.0,
+          "training_max": 1.5753946265914875
+        },
+        {
+          "feature": "film_1_objective_2_n_delta",
+          "value": -0.00964228975542536,
+          "training_min": -0.005521407789650823,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_2_n_std",
+          "value": 0.0031158148759390185,
+          "training_min": 0.0,
+          "training_max": 0.0017811734033559923
+        },
+        {
+          "feature": "film_1_objective_2_log_k_mean",
+          "value": 1.7291868570910376,
+          "training_min": 0.0,
+          "training_max": 1.446020634290062
+        },
+        {
+          "feature": "film_1_objective_2_log_k_max",
+          "value": 1.8652425847820522,
+          "training_min": 0.0,
+          "training_max": 1.4558486046965167
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4656622161800286,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4635021746006414,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.002511512890895906,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0008099422358347556,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        },
+        {
+          "feature": "substrate_objective_2_n_delta",
+          "value": -0.0016212180271706345,
+          "training_min": -0.0013258073116277913,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_2_n_std",
+          "value": 0.0005228709631329143,
+          "training_min": 0.0,
+          "training_max": 0.000427697574859847
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_ta2o5-dual_ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2034987856275206,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.04686896473937363,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.01509727561219513,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_0_log_k_mean",
+          "value": 3.164181426725119,
+          "training_min": 0.0,
+          "training_max": 1.506365581670316
+        },
+        {
+          "feature": "film_1_objective_0_log_k_max",
+          "value": 3.481297278590786,
+          "training_min": 0.0,
+          "training_max": 1.577219036399707
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.017442060577582907,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.005621562096982048,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "film_1_objective_1_log_k_mean",
+          "value": 1.8262186563443468,
+          "training_min": 0.0,
+          "training_max": 1.4720595239035537
+        },
+        {
+          "feature": "film_1_objective_1_log_k_max",
+          "value": 2.041135442397808,
+          "training_min": 0.0,
+          "training_max": 1.5753946265914875
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_ta2o5-hr",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.0477356141658276,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.04360430564002371,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.014059687205505074,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_0_log_k_mean",
+          "value": 2.4102845343358004,
+          "training_min": 0.0,
+          "training_max": 1.506365581670316
+        },
+        {
+          "feature": "film_1_objective_0_log_k_max",
+          "value": 2.814646208462616,
+          "training_min": 0.0,
+          "training_max": 1.577219036399707
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4591304377536374,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4565349736401405,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4623264867003778,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_ta2o5-mean_mix",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2034987856275206,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.04686896473937363,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.01509727561219513,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_0_log_k_mean",
+          "value": 3.164181426725119,
+          "training_min": 0.0,
+          "training_max": 1.506365581670316
+        },
+        {
+          "feature": "film_1_objective_0_log_k_max",
+          "value": 3.481297278590786,
+          "training_min": 0.0,
+          "training_max": 1.577219036399707
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.017442060577582907,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.005621562096982048,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "film_1_objective_1_log_k_mean",
+          "value": 1.8262186563443468,
+          "training_min": 0.0,
+          "training_max": 1.4720595239035537
+        },
+        {
+          "feature": "film_1_objective_1_log_k_max",
+          "value": 2.041135442397808,
+          "training_min": 0.0,
+          "training_max": 1.5753946265914875
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_ta2o5-mixed",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2034987856275206,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.04686896473937363,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.01509727561219513,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_0_log_k_mean",
+          "value": 3.164181426725119,
+          "training_min": 0.0,
+          "training_max": 1.506365581670316
+        },
+        {
+          "feature": "film_1_objective_0_log_k_max",
+          "value": 3.481297278590786,
+          "training_min": 0.0,
+          "training_max": 1.577219036399707
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.017442060577582907,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.005621562096982048,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "film_1_objective_1_log_k_mean",
+          "value": 1.8262186563443468,
+          "training_min": 0.0,
+          "training_max": 1.4720595239035537
+        },
+        {
+          "feature": "film_1_objective_1_log_k_max",
+          "value": 2.041135442397808,
+          "training_min": 0.0,
+          "training_max": 1.5753946265914875
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_tio2-ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.0572157253043655,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.1570599342904302,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.049813485544101734,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.459533047692443,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4552924662622837,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4655656654352176,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.0102731991729339,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.0032817234728749964,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_tio2-bandpass",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2189086436817684,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.09593448508253788,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.030859591451329643,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.034244119377889515,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.011038763888479877,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "film_1_objective_2_n_delta",
+          "value": -0.01632756900059551,
+          "training_min": -0.005521407789650823,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_2_n_std",
+          "value": 0.005265354775111304,
+          "training_min": 0.0,
+          "training_max": 0.0017811734033559923
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4656622161800286,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4635021746006414,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.002511512890895906,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0008099422358347556,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        },
+        {
+          "feature": "substrate_objective_2_n_delta",
+          "value": -0.0016212180271706345,
+          "training_min": -0.0013258073116277913,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_2_n_std",
+          "value": 0.0005228709631329143,
+          "training_min": 0.0,
+          "training_max": 0.000427697574859847
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_tio2-dual_ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2034987856275206,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.11641927694882126,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.037382522896339275,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.03044835357624809,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.009804556863803096,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_tio2-hr",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.0477356141658276,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.08283428000694792,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.026571592605688258,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4591304377536374,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4565349736401405,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4623264867003778,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_tio2-mean_mix",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2034987856275206,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.11641927694882126,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.037382522896339275,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.03044835357624809,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.009804556863803096,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-sio2_tio2-mixed",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_log_k_mean",
+          "value": 1.2034987856275206,
+          "training_min": 0.0,
+          "training_max": 0.8281699971321916
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.11641927694882126,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.037382522896339275,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.03044835357624809,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.009804556863803096,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns-ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.053273390312208235,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.016965475326132618,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.13686729169779843,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.04336294377040061,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.459533047692443,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4552924662622837,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4655656654352176,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.0102731991729339,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.0032817234728749964,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns-bandpass",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.03500370998996627,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.011281977301572708,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_0_objective_1_n_delta",
+          "value": -0.010967066278352089,
+          "training_min": -0.004690290553077903,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_1_n_std",
+          "value": 0.003535706846623878,
+          "training_min": 0.0,
+          "training_max": 0.001511741151576607
+        },
+        {
+          "feature": "film_0_objective_2_n_delta",
+          "value": -0.003865419344347032,
+          "training_min": -0.0025757439772005064,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_2_n_std",
+          "value": 0.0012464355026824056,
+          "training_min": 0.0,
+          "training_max": 0.0008309197293203259
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.08469251668788225,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.027226586592958818,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.029813474969377918,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.009610145802792423,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "film_1_objective_2_n_delta",
+          "value": -0.014476395196655112,
+          "training_min": -0.005521407789650823,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_2_n_std",
+          "value": 0.004668857963634633,
+          "training_min": 0.0,
+          "training_max": 0.0017811734033559923
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4656622161800286,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4635021746006414,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.002511512890895906,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0008099422358347556,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        },
+        {
+          "feature": "substrate_objective_2_n_delta",
+          "value": -0.0016212180271706345,
+          "training_min": -0.0013258073116277913,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_2_n_std",
+          "value": 0.0005228709631329143,
+          "training_min": 0.0,
+          "training_max": 0.000427697574859847
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns-dual_ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.04247674409374702,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.013677673426947808,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_0_objective_1_n_delta",
+          "value": -0.007658072891247203,
+          "training_min": -0.004690290553077903,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_1_n_std",
+          "value": 0.0024654062754665535,
+          "training_min": 0.0,
+          "training_max": 0.001511741151576607
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.1024822773657621,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.03287547125753952,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.026899590103151017,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.008663366846163317,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns-hr",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.027401085221945953,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.008798620422607737,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.07203961062443565,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.02310356900117647,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.4591304377536374,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4565349736401405,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4623264867003778,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns-mean_mix",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.04247674409374702,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.013677673426947808,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_0_objective_1_n_delta",
+          "value": -0.007658072891247203,
+          "training_min": -0.004690290553077903,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_1_n_std",
+          "value": 0.0024654062754665535,
+          "training_min": 0.0,
+          "training_max": 0.001511741151576607
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.1024822773657621,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.03287547125753952,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.026899590103151017,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.008663366846163317,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns-mixed",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.04247674409374702,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.013677673426947808,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_0_objective_1_n_delta",
+          "value": -0.007658072891247203,
+          "training_min": -0.004690290553077903,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_1_n_std",
+          "value": 0.0024654062754665535,
+          "training_min": 0.0,
+          "training_max": 0.001511741151576607
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.1024822773657621,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.03287547125753952,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.026899590103151017,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.008663366846163317,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 1.464989333290893,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 1.4623264867003778,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 1.4680936900401067,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.0028637254050274397,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.0009224172218298879,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns_substrate-ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.053273390312208235,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.016965475326132618,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.13686729169779843,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.04336294377040061,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 2.3845358442838736,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 2.3317836840383053,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 2.470648542072329,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.1388648580340237,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.04419432348443161,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns_substrate-bandpass",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.03500370998996627,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.011281977301572708,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_0_objective_1_n_delta",
+          "value": -0.010967066278352089,
+          "training_min": -0.004690290553077903,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_1_n_std",
+          "value": 0.003535706846623878,
+          "training_min": 0.0,
+          "training_max": 0.001511741151576607
+        },
+        {
+          "feature": "film_0_objective_2_n_delta",
+          "value": -0.003865419344347032,
+          "training_min": -0.0025757439772005064,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_2_n_std",
+          "value": 0.0012464355026824056,
+          "training_min": 0.0,
+          "training_max": 0.0008309197293203259
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.08469251668788225,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.027226586592958818,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.029813474969377918,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.009610145802792423,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "film_1_objective_2_n_delta",
+          "value": -0.014476395196655112,
+          "training_min": -0.005521407789650823,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_2_n_std",
+          "value": 0.004668857963634633,
+          "training_min": 0.0,
+          "training_max": 0.0017811734033559923
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 2.473000871179215,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 2.437558479447891,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 2.515087378749926,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.0775288993020351,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.02497420814282923,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        },
+        {
+          "feature": "substrate_objective_1_n_mean",
+          "value": 2.3695394238987055,
+          "training_min": 0.0,
+          "training_max": 2.3246549845144115
+        },
+        {
+          "feature": "substrate_objective_1_n_min",
+          "value": 2.3548979895249316,
+          "training_min": 0.0,
+          "training_max": 2.3237767062008348
+        },
+        {
+          "feature": "substrate_objective_1_n_max",
+          "value": 2.3862102411609776,
+          "training_min": 0.0,
+          "training_max": 2.3256302077227544
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.03131225163604601,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.01009553825142361,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        },
+        {
+          "feature": "substrate_objective_2_n_mean",
+          "value": 2.3236128014631823,
+          "training_min": 0.0,
+          "training_max": 2.3217540348092167
+        },
+        {
+          "feature": "substrate_objective_2_n_max",
+          "value": 2.3317836840383053,
+          "training_min": 0.0,
+          "training_max": 2.3223013317367998
+        },
+        {
+          "feature": "substrate_objective_2_n_delta",
+          "value": -0.015510027745050614,
+          "training_min": -0.0013258073116277913,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_2_n_std",
+          "value": 0.005002404708937367,
+          "training_min": 0.0,
+          "training_max": 0.000427697574859847
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns_substrate-dual_ar",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.04247674409374702,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.013677673426947808,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_0_objective_1_n_delta",
+          "value": -0.007658072891247203,
+          "training_min": -0.004690290553077903,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_1_n_std",
+          "value": 0.0024654062754665535,
+          "training_min": 0.0,
+          "training_max": 0.001511741151576607
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.1024822773657621,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.03287547125753952,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.026899590103151017,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.008663366846163317,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 2.4622635124214196,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 2.419896739347884,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 2.515087378749926,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.09519063940204209,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.03062632238680769,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        },
+        {
+          "feature": "substrate_objective_1_n_mean",
+          "value": 2.329346282726064,
+          "training_min": 0.0,
+          "training_max": 2.3246549845144115
+        },
+        {
+          "feature": "substrate_objective_1_n_max",
+          "value": 2.345043059328207,
+          "training_min": 0.0,
+          "training_max": 2.3256302077227544
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.028769403034952123,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.009266840881189994,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns_substrate-hr",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.027401085221945953,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.008798620422607737,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.07203961062443565,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.02310356900117647,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 2.377119310173578,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 2.345043059328207,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 2.419896739347884,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.07485368001967707,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.02403779638198326,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns_substrate-mean_mix",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.04247674409374702,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.013677673426947808,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_0_objective_1_n_delta",
+          "value": -0.007658072891247203,
+          "training_min": -0.004690290553077903,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_1_n_std",
+          "value": 0.0024654062754665535,
+          "training_min": 0.0,
+          "training_max": 0.001511741151576607
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.1024822773657621,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.03287547125753952,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.026899590103151017,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.008663366846163317,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 2.4622635124214196,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 2.419896739347884,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 2.515087378749926,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.09519063940204209,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.03062632238680769,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        },
+        {
+          "feature": "substrate_objective_1_n_mean",
+          "value": 2.329346282726064,
+          "training_min": 0.0,
+          "training_max": 2.3246549845144115
+        },
+        {
+          "feature": "substrate_objective_1_n_max",
+          "value": 2.345043059328207,
+          "training_min": 0.0,
+          "training_max": 2.3256302077227544
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.028769403034952123,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.009266840881189994,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    },
+    {
+      "case_id": "material-ybf3_zns_substrate-mixed",
+      "outside_training_features": [
+        {
+          "feature": "film_0_objective_0_n_delta",
+          "value": -0.04247674409374702,
+          "training_min": -0.02193833364468678,
+          "training_max": -0.0007574161263399493
+        },
+        {
+          "feature": "film_0_objective_0_n_std",
+          "value": 0.013677673426947808,
+          "training_min": 0.00024256516600448564,
+          "training_max": 0.007021560049881328
+        },
+        {
+          "feature": "film_0_objective_1_n_delta",
+          "value": -0.007658072891247203,
+          "training_min": -0.004690290553077903,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_0_objective_1_n_std",
+          "value": 0.0024654062754665535,
+          "training_min": 0.0,
+          "training_max": 0.001511741151576607
+        },
+        {
+          "feature": "film_1_objective_0_n_delta",
+          "value": -0.1024822773657621,
+          "training_min": -0.04028099113808681,
+          "training_max": -0.0010218256132574766
+        },
+        {
+          "feature": "film_1_objective_0_n_std",
+          "value": 0.03287547125753952,
+          "training_min": 0.00032724322982810437,
+          "training_max": 0.012901800227305773
+        },
+        {
+          "feature": "film_1_objective_1_n_delta",
+          "value": -0.026899590103151017,
+          "training_min": -0.010054185130478732,
+          "training_max": 0.0
+        },
+        {
+          "feature": "film_1_objective_1_n_std",
+          "value": 0.008663366846163317,
+          "training_min": 0.0,
+          "training_max": 0.003240593569909999
+        },
+        {
+          "feature": "substrate_objective_0_n_mean",
+          "value": 2.4622635124214196,
+          "training_min": 1.6098989453233894,
+          "training_max": 2.329998940703397
+        },
+        {
+          "feature": "substrate_objective_0_n_min",
+          "value": 2.419896739347884,
+          "training_min": 1.606234396811971,
+          "training_max": 2.3283525655863606
+        },
+        {
+          "feature": "substrate_objective_0_n_max",
+          "value": 2.515087378749926,
+          "training_min": 1.6152827630548054,
+          "training_max": 2.3318490412313304
+        },
+        {
+          "feature": "substrate_objective_0_n_delta",
+          "value": -0.09519063940204209,
+          "training_min": -0.009672321734791378,
+          "training_max": -0.0006729385313113401
+        },
+        {
+          "feature": "substrate_objective_0_n_std",
+          "value": 0.03062632238680769,
+          "training_min": 0.00021551092045940623,
+          "training_max": 0.0030979963310414456
+        },
+        {
+          "feature": "substrate_objective_1_n_mean",
+          "value": 2.329346282726064,
+          "training_min": 0.0,
+          "training_max": 2.3246549845144115
+        },
+        {
+          "feature": "substrate_objective_1_n_max",
+          "value": 2.345043059328207,
+          "training_min": 0.0,
+          "training_max": 2.3256302077227544
+        },
+        {
+          "feature": "substrate_objective_1_n_delta",
+          "value": -0.028769403034952123,
+          "training_min": -0.002414223449214159,
+          "training_max": 0.0
+        },
+        {
+          "feature": "substrate_objective_1_n_std",
+          "value": 0.009266840881189994,
+          "training_min": 0.0,
+          "training_max": 0.000778135361973048
+        }
+      ]
+    }
+  ]
+}
