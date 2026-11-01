@@ -1,0 +1,311 @@
+{
+  "schema": "phase-diverse-rejection-research-results-v1",
+  "release_commit": "4b591fe63b2b665bbcc9dd292b3fd7ba0b001651",
+  "runs": {
+    "v2": {
+      "state": "cancelled",
+      "reason": "cancelled",
+      "layer_count": 75,
+      "total_nm": 4580.680614896636,
+      "training_max_error": 0.0015493781756563685,
+      "validation_complete": true,
+      "validation_max_error": 0.004079581982202152,
+      "separate_audit_max_error": 0.004079581982202152,
+      "complete_original_score_checked": true,
+      "nominal_pass": false,
+      "continuous_certificate": false,
+      "objective_status": [
+        {
+          "worst_actual": 0.7959204180177979,
+          "worst_wavelength_nm": 435.4947798899241,
+          "max_normalized_error": 0.004079581982202152,
+          "targets_met": false
+        },
+        {
+          "worst_actual": 0.00812194199606828,
+          "worst_wavelength_nm": 518.6318338247412,
+          "max_normalized_error": 0.00162194199606828,
+          "targets_met": false
+        },
+        {
+          "worst_actual": 0.7982806264980589,
+          "worst_wavelength_nm": 564.415309416728,
+          "max_normalized_error": 0.0017193735019411793,
+          "targets_met": false
+        },
+        {
+          "worst_actual": 0.00804852237225876,
+          "worst_wavelength_nm": 1080.0,
+          "max_normalized_error": 0.0015485223722587586,
+          "targets_met": false
+        }
+      ],
+      "evaluations": 5943
+    },
+    "v3": {
+      "state": "cancelled",
+      "reason": "cancelled",
+      "layer_count": 60,
+      "total_nm": 4958.182438137367,
+      "training_max_error": 0.00452701288349,
+      "validation_complete": true,
+      "validation_max_error": 0.0068351173187986,
+      "separate_audit_max_error": 0.0068351173187986,
+      "complete_original_score_checked": true,
+      "nominal_pass": false,
+      "continuous_certificate": false,
+      "objective_status": [
+        {
+          "worst_actual": 0.7931648826812014,
+          "worst_wavelength_nm": 490.5039907922717,
+          "max_normalized_error": 0.0068351173187986,
+          "targets_met": false
+        },
+        {
+          "worst_actual": 0.011027012882948276,
+          "worst_wavelength_nm": 550.0,
+          "max_normalized_error": 0.004527012882948276,
+          "targets_met": false
+        },
+        {
+          "worst_actual": 0.7946889552088432,
+          "worst_wavelength_nm": 576.4991355756252,
+          "max_normalized_error": 0.005311044791156849,
+          "targets_met": false
+        },
+        {
+          "worst_actual": 0.011027350032420644,
+          "worst_wavelength_nm": 1047.791970042915,
+          "max_normalized_error": 0.004527350032420644,
+          "targets_met": false
+        }
+      ],
+      "evaluations": 6600
+    },
+    "v4": {
+      "state": "cancelled",
+      "reason": "cancelled",
+      "layer_count": 52,
+      "total_nm": 4962.418822403068,
+      "training_max_error": 0.006707460233788423,
+      "validation_complete": true,
+      "validation_max_error": 0.006749791164476271,
+      "separate_audit_max_error": 0.006749791164476271,
+      "complete_original_score_checked": true,
+      "nominal_pass": false,
+      "continuous_certificate": false,
+      "objective_status": [
+        {
+          "worst_actual": 0.7932502088355238,
+          "worst_wavelength_nm": 445.65430331294255,
+          "max_normalized_error": 0.006749791164476271,
+          "targets_met": false
+        },
+        {
+          "worst_actual": 0.013207460233788423,
+          "worst_wavelength_nm": 550.0,
+          "max_normalized_error": 0.006707460233788423,
+          "targets_met": false
+        },
+        {
+          "worst_actual": 0.7933074945097877,
+          "worst_wavelength_nm": 581.6247905006013,
+          "max_normalized_error": 0.006692505490212386,
+          "targets_met": false
+        },
+        {
+          "worst_actual": 0.01320750043524302,
+          "worst_wavelength_nm": 1047.8764822165288,
+          "max_normalized_error": 0.006707500435243019,
+          "targets_met": false
+        }
+      ],
+      "evaluations": 6292
+    },
+    "v5": {
+      "state": "completed",
+      "reason": "validated_targets_met",
+      "layer_count": 67,
+      "total_nm": 4508.2895057132955,
+      "training_max_error": 0.0,
+      "validation_complete": true,
+      "validation_max_error": 0.0,
+      "separate_audit_max_error": 0.0,
+      "complete_original_score_checked": true,
+      "nominal_pass": true,
+      "continuous_certificate": false,
+      "objective_status": [
+        {
+          "worst_actual": 0.8000399999999979,
+          "worst_wavelength_nm": 400.0,
+          "max_normalized_error": 0.0,
+          "targets_met": true
+        },
+        {
+          "worst_actual": 0.006498700000000458,
+          "worst_wavelength_nm": 510.0,
+          "max_normalized_error": 0.0,
+          "targets_met": true
+        },
+        {
+          "worst_actual": 0.8000399999999946,
+          "worst_wavelength_nm": 560.0,
+          "max_normalized_error": 0.0,
+          "targets_met": true
+        },
+        {
+          "worst_actual": 0.006498699999999536,
+          "worst_wavelength_nm": 1040.0,
+          "max_normalized_error": 0.0,
+          "targets_met": true
+        }
+      ],
+      "evaluations": 3705
+    }
+  },
+  "v5_minimum_layer_nm": 3.9444774974517274,
+  "v5_separate_audit_condition_count": 2204,
+  "v5_fine_grid_condition_count": 3204,
+  "v5_fine_grid_nominal_pass": true,
+  "v5_fine_grid_windows": [
+    {
+      "objective_index": 0,
+      "wavelength_min_nm": 400.0,
+      "wavelength_max_nm": 500.0,
+      "count": 1001,
+      "min_T": 0.8000316134322564,
+      "min_nm": 427.4,
+      "max_T": 0.8736141226288778,
+      "max_nm": 478.0,
+      "margin_to_lower": 3.1613432256327734e-05,
+      "margin_to_upper": 0.12638587737112217
+    },
+    {
+      "objective_index": 1,
+      "wavelength_min_nm": 510.0,
+      "wavelength_max_nm": 550.0,
+      "count": 401,
+      "min_T": 0.0003444156123797329,
+      "min_nm": 532.8,
+      "max_T": 0.006498700000000458,
+      "max_nm": 510.0,
+      "margin_to_lower": 0.0003444156123797329,
+      "margin_to_upper": 1.2999999995429862e-06
+    },
+    {
+      "objective_index": 2,
+      "wavelength_min_nm": 560.0,
+      "wavelength_max_nm": 700.0,
+      "count": 1401,
+      "min_T": 0.8000389755233039,
+      "min_nm": 615.1,
+      "max_T": 0.915033569806135,
+      "max_nm": 661.3,
+      "margin_to_lower": 3.8975523303896864e-05,
+      "margin_to_upper": 0.08496643019386496
+    },
+    {
+      "objective_index": 3,
+      "wavelength_min_nm": 1040.0,
+      "wavelength_max_nm": 1080.0,
+      "count": 401,
+      "min_T": 0.004375176681201949,
+      "min_nm": 1059.0,
+      "max_T": 0.006498699999999863,
+      "max_nm": 1080.0,
+      "margin_to_lower": 0.004375176681201949,
+      "margin_to_upper": 1.3000000001379963e-06
+    }
+  ],
+  "v5_independent_matrix": {
+    "scope": "Independent normal-incidence characteristic-matrix implementation; input n/k linear interpolation and H-K9L Sellmeier from same frozen snapshot, complex index n+i k, substrate 3 mm incoherent with substrate unknown k assumed zero, uncoated backside; no project R/T solver used. Finite samples, not continuous certificate.",
+    "checks": {
+      "bare_slab_max_abs_T_error": 2.220446049250313e-16,
+      "single_absorbing_airy_max_abs_R_error": 1.3877787807814457e-17,
+      "single_absorbing_airy_max_abs_T_error": 5.551115123125783e-16,
+      "single_absorbing_max_R_plus_T": 0.926229338057975,
+      "single_lossless_max_abs_RplusT_minus_1": 2.220446049250313e-16
+    },
+    "windows": [
+      {
+        "band_nm": [
+          400.0,
+          500.0
+        ],
+        "audit_grid_n": 201,
+        "max_abs_difference_against_stored_audit_T": 2.398081733190338e-14,
+        "fine_grid_step_nm": 0.1,
+        "fine_grid_n": 1001,
+        "fine_grid_min_T": 0.8000316134322604,
+        "fine_grid_min_nm": 427.4,
+        "fine_grid_max_T": 0.8736141226288741,
+        "fine_grid_max_nm": 478.0,
+        "fine_grid_nominal_min_margin": 3.1613432260324537e-05,
+        "fine_grid_nominal_max_margin": 0.12638587737112594
+      },
+      {
+        "band_nm": [
+          510.0,
+          550.0
+        ],
+        "audit_grid_n": 81,
+        "max_abs_difference_against_stored_audit_T": 1.700029006457271e-16,
+        "fine_grid_step_nm": 0.1,
+        "fine_grid_n": 401,
+        "fine_grid_min_T": 0.0003444156123797318,
+        "fine_grid_min_nm": 532.8,
+        "fine_grid_max_T": 0.006498700000000458,
+        "fine_grid_max_nm": 510.0,
+        "fine_grid_nominal_min_margin": 0.0003444156123797318,
+        "fine_grid_nominal_max_margin": 1.2999999995429862e-06
+      },
+      {
+        "band_nm": [
+          560.0,
+          700.0
+        ],
+        "audit_grid_n": 281,
+        "max_abs_difference_against_stored_audit_T": 2.6645352591003757e-14,
+        "fine_grid_step_nm": 0.1,
+        "fine_grid_n": 1401,
+        "fine_grid_min_T": 0.8000389755233037,
+        "fine_grid_min_nm": 615.1,
+        "fine_grid_max_T": 0.9150335698061309,
+        "fine_grid_max_nm": 661.3,
+        "fine_grid_nominal_min_margin": 3.897552330367482e-05,
+        "fine_grid_nominal_max_margin": 0.08496643019386907
+      },
+      {
+        "band_nm": [
+          1040.0,
+          1080.0
+        ],
+        "audit_grid_n": 81,
+        "max_abs_difference_against_stored_audit_T": 1.2750217548429532e-16,
+        "fine_grid_step_nm": 0.1,
+        "fine_grid_n": 401,
+        "fine_grid_min_T": 0.004375176681201951,
+        "fine_grid_min_nm": 1059.0,
+        "fine_grid_max_T": 0.006498699999999818,
+        "fine_grid_max_nm": 1080.0,
+        "fine_grid_nominal_min_margin": 0.004375176681201951,
+        "fine_grid_nominal_max_margin": 1.3000000001822318e-06
+      }
+    ]
+  },
+  "v5_runtime_precompute_source_sha256": {
+    "film_auto_synthesis.py": "e9c282be4ee61f129aac56f9ebd4b25e4f7d7a5a2b7ad6c8b6377716d6fc54c5",
+    "film_synthesis_audit.py": "1ee0805855727b91264b18c1f51d7a2fca6b910e2389b6204b4df847794243f5",
+    "film_synthesis_refinement.py": "03f1944b92bec56b73f5460edb3c7673bbe43e14e90af3ad97df2c9ec2c50cda",
+    "film_synthesis_stop_policy.py": "d6bcb8abef3e4152444f140640ed4887c882c38e502d0111ee62c5738e64486b",
+    "film_synthesis_physics.py": "3c0fe745e92460810acf5abce4d6fb992e6a456da739aeec15aaee4fa653b96b",
+    "film_synthesis_rejection_priors.py": "4f4e0f9938bd8dca108a0e56d32a9dcbf2929eeb13e196147e18631c9d2ada22",
+    "film_synthesis_local_restarts.py": "d0b0788b31474ac567084eea04f561d3ec62135c2aec3d6f9f7924137b21200c"
+  },
+  "v5_source_binding_scope": "Seven recorded runtime core files matched public .12 commit byte-for-byte; not a claim every dependency is captured.",
+  "limitations": [
+    "One direct-core research run with no seed/checkpoint; not GUI AUTO or installer end-to-end acceptance.",
+    "Finite numerical sampling is not continuous-band or manufacturing proof; blocking margins are extremely small.",
+    "Development experiment tags are not software versions; concurrent runs are not a timing benchmark."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "phase-diverse-rejection-research-protocol-v1",
+  "status": "completed research report; public release source and bounded observations",
+  "public_reference_case": "../dual_stopband_continuation_20261101/public-reference-case.json",
+  "reference_case_sha256": "7bf04c02191eef3a31f5b4d0d2f4bf72dfa78b7e4f43948f4c9cdf4bfeb69709",
+  "acceptance_cli": "python tools/run_film_synthesis_acceptance.py --repo-root . --scenario public-four-window --out artifacts/public-four-window",
+  "cancel": "Cooperative: create artifacts/public-four-window/CANCEL; absent an explicit stopping signal the search may run indefinitely.",
+  "development_runs": "Fresh no-seed/no-checkpoint, identical request, cpu_workers=1 and BLAS threads limited to 1 per task, v2–v4 externally cancelled; v5 completed nominally before cutoff; overlapping runs, no timing or equal-work comparison. Experiment tags v2-v5 are not software releases. Intermediate source snapshots do not establish full final-release reproducibility.",
+  "limitations": "Known film k preserved, substrate unknown k explicitly zero; finite numerical audits are not continuous-band certificates, independent material measurements, global feasibility proofs, or manufacturing guarantees.",
+  "software_release": "4b591fe63b2b665bbcc9dd292b3fd7ba0b001651",
+  "acceptance_cli_source_sha256": "60b642d0cb0b7b3cbb93849df8b2ddf0206e0c9022969112b5b2b86578529006"
+}
