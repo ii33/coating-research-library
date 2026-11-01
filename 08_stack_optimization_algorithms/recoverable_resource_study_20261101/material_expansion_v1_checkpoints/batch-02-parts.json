@@ -1,0 +1,24 @@
+{
+  "schema": "independent-tar-parts-for-inventory-v1",
+  "original_commit": "e54675e62280770f1c5a5572a76062c1724b0466",
+  "original_archive": "batch-02.tar.gz",
+  "original_archive_sha256": "fc276be8e111d51e3e5d4fb4209980c09105ab2221156219639caa148a73f572",
+  "execution_manifest": "batch-02.json",
+  "execution_manifest_sha256": "ca20cb099aad3a185e0e08b0cb118c7a9fe59db5613706628b888a705d86db65",
+  "total_members": 412,
+  "parts": [
+    {
+      "path": "batch-02-part01.tar.gz",
+      "bytes": 528659,
+      "sha256": "0c98121a03719a5fcb66f247e998b1908a9248a878704da3f6767a2237acda41",
+      "member_count": 206
+    },
+    {
+      "path": "batch-02-part02.tar.gz",
+      "bytes": 536555,
+      "sha256": "e7ca60796a00e394d31b22e166cb5d4eaf0108a4fffe69737fa0ada7459fb02b",
+      "member_count": 206
+    }
+  ],
+  "note": "Transport-only independent tar parts; union matches execution manifest exactly. Preserve original archive; validate every member before materializing."
+}
