@@ -1,0 +1,74 @@
+{
+  "schema": "fast-resource-predictor-protocol-v1",
+  "date": "2026-11-01",
+  "core_commit": "131d3fc989c3dc9ac8d94fee3c39541a61b851df",
+  "parameters": {
+    "n_estimators": 128,
+    "max_depth": 6,
+    "min_samples_leaf": 2,
+    "max_features": 1.0,
+    "bootstrap": false,
+    "random_state": 20261101,
+    "n_jobs": 1
+  },
+  "sklearn_version": "1.8.0",
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14",
+  "model": "Joint two-output ExtraTrees; common leaves for log1p(N) and log1p(D/lambda_ref); fixed parameters, no tuning based on folds",
+  "features": "Bounded9 source samples/window, <=3 objectives,2..3 film candidates,<=9 explicit angles per objective; typed constraints and optical summaries, sorted source-value material order, no family/name/id/result/seed features",
+  "target": "Paired resource labels of documented finite-reference flows; not minimum resources and not observed success probability",
+  "unknown": "Keep all48 task identities; train/evaluate numeric error only44 audited labels; unknown4 never relabeled",
+  "splits": [
+    "leave-one dataset:group out (8 groups; shared optical-source leakage disclosed)",
+    "leave-one strict optical-source connected component out including substrate (3 groups of36,6,6; domain-transfer diagnostic, not independent random sample)"
+  ],
+  "baseline": "Training-fold same-family medoid in joint log-resource space; return its paired N/Dnormalized; family metadata baseline only, not predictor features",
+  "metrics": [
+    "integer ceil N MAE",
+    "float N MAE",
+    "positive D MAPE",
+    "either-resource underestimation fraction",
+    "label availability",
+    "feature-envelope membership fraction",
+    "per-family and per-dataset errors"
+  ],
+  "interval_policy": "No separately reserved independent calibration sample; interval=None, no nominal confidence or coverage claim",
+  "latency": "Warm model + in-memory frozen request, full feature extraction and JSON tree inference 240 sequential calls after48 warmups; no GUI/import/file load included",
+  "validation_status": "diagnostic_only_not_production",
+  "blind_test": false,
+  "gates": {
+    "production_allowed": false,
+    "reason": "No independently calibrated intervals or fresh external validation; existing task outcomes were inspected before this diagnostic protocol"
+  },
+  "prior_engineering_targets": {
+    "layers_mae_max": 3.0,
+    "positive_thickness_mape_max": 0.25,
+    "joint_interval_coverage_min": 0.9,
+    "latency_p95_ms_max": 200.0,
+    "note": "Research aspirations, not user-specified numeric guarantees; unavailable metrics do not count as passing"
+  },
+  "sources": [
+    "https://scikit-learn.org/1.8/modules/generated/sklearn.ensemble.ExtraTreesRegressor.html",
+    "https://arxiv.org/abs/2107.07511"
+  ],
+  "exclusions": [
+    "No optical synthesis/local optimization/audit in online inference",
+    "No claiming pair CV source-independent",
+    "No counting pilot_v3 and v4a twice",
+    "No deployment or software replacement"
+  ],
+  "frozen_reference_request_domain": {
+    "max_cycles": 4,
+    "max_evaluations": 300,
+    "max_seconds": null,
+    "validation_samples_multiplier": 32,
+    "search_strategy": "legacy",
+    "seed_designs": [],
+    "search_checkpoint": null,
+    "warm_start_seed_index": null,
+    "objective_samples": 17,
+    "substrate_mode": "auto",
+    "substrate_thickness_mm": 1.0,
+    "exit_medium": "air"
+  }
+}
