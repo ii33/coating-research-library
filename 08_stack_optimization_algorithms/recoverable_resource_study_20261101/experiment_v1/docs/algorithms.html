@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>可恢复膜系资源研究 v1</title><style>body{max-width:920px;margin:32px auto;padding:0 20px;font:16px/1.65 sans-serif;color:#183045}h1,h2{color:#164e63}code{background:#eef4f8;padding:2px 5px}svg{width:100%;height:auto}table{border-collapse:collapse}td,th{border:1px solid #ccd;padding:8px}</style>
+<h1>可恢复膜系资源研究：恢复基线</h1><p>2026-11-01 · 新独立实验；未交付广义生产预测器。</p>
+<h2>用途、输入、输出</h2><p>输入为完整的膜料 n/k 表、基片、原始 R/T 目标、角度、偏振、严格不等式及平均/逐点语义和逐层设计。输出为固定软件核心的新数值审计，以及不可变的输入/设计/审计文件。层序为基片向外，波长与膜厚使用 nm、角度使用度；源表自身单位保持并交由核心转换。</p>
+<svg viewBox="0 0 900 145" role="img" aria-label="完整输入经过固定核心数值审计保存见证并复读远端"><defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#167c80"/></marker></defs><g fill="#e4f3f4" stroke="#167c80"><rect x="5" y="25" width="175" height="70" rx="8"/><rect x="240" y="25" width="175" height="70" rx="8"/><rect x="475" y="25" width="175" height="70" rx="8"/><rect x="710" y="25" width="185" height="70" rx="8"/></g><g text-anchor="middle" font-size="17" fill="#183045"><text x="92" y="56">完整输入与逐层设计</text><text x="92" y="80">n/k、目标、单位</text><text x="327" y="56">固定核心重新审计</text><text x="327" y="80">保留原目标语义</text><text x="562" y="56">保存不可变见证</text><text x="562" y="80">全量数据 + SHA-256</text><text x="802" y="56">远端提交与复读</text><text x="802" y="80">恢复后再次重放</text></g><g stroke="#167c80" stroke-width="3" marker-end="url(#a)"><path d="M185 60H231"/><path d="M420 60H466"/><path d="M655 60H701"/></g></svg><p>图：只有远端提交并复读之后，才把一批本地计算记为已有持久检查点。图中的审计是离线工作，不属于普通快速预估调用。</p>
+<h2>数值约定与默认参数</h2><p>调用发布核心的原始冻结设计 TMM 与审计器，不另写光学公式替代它。重放选择加密倍数 32：原窗口有 s=17 个点，加密网格为 (s−1)×32+1=513 点。两个窗口的加密点合计 1026，另检查 1024 个偏移点。均值采用核心固定加密网格的定义；这不是连续积分或连续波段认证。已知吸收 k 保持，未修改目标或允许误差。</p>
+<h2>保存伪代码（本项目约定）</h2><pre>bytes = canonical_json(payload, allow_nan=False)
+if destination exists:
+    require existing_bytes == bytes
+else:
+    write temporary in same directory; fsync temporary
+    publish immutable file atomically, refusing competing content
+    fsync directory
+manifest = relative_path + byte_count + SHA256
+commit authorized research files; read them back; compare bytes
+</pre><p>文件系统必须支持原子硬链接/重命名与 fsync。单文件持久化不等于整个目录原子事务；清单与远端复读用于检测缺漏。输入/候选不可变，清单可重新生成。符号链接逃逸与路径上跳被拒绝，但不把恶意并发改写目录作为已解决的系统安全模型。</p>
+<h2>实现与范围</h2><p><code>core_bridge.py</code> 重建请求并调用核心；<code>replay_published_case.py</code> 重放完整公开案例；<code>artifact_store.py</code> 保存与校验。当前结果仅确认该合成双窗口案例的 48/24 层见证，不能外推成四窗口工程任务或最少资源。旧训练数组与 64 组结果仍缺失，未重构或猜测。</p>
+<h2>来源</h2><ul><li><a href="https://github.com/ii33/coating-sim/blob/131d3fc989c3dc9ac8d94fee3c39541a61b851df/coat_sim/core/film_synthesis_audit.py">固定发布核心审计实现</a></li><li><a href="https://github.com/ii33/coating-research-library/blob/4c8dbe225704866ae21abe56bc21f73bf82b491f/08_stack_optimization_algorithms/predictive_design_theory_20261031/general_extension_reference_quality/reference-quality-case.json">公开完整合成案例</a></li></ul><p>检查点组织和工程门槛均为本项目约定，未找到外部依据，不以外部来源暗示已验证泛化或全局最优。</p></html>
