@@ -1,0 +1,44 @@
+{
+  "schema": "material-pilot-verification-summary-v1",
+  "date": "2026-11-01",
+  "source_commit": "b1ded8dc019cbb777a3102da20feb293a43fc56f",
+  "complete_data_commit": "43c9ecc118ac84c937a641ed550e6a91328b4b39",
+  "core_commit": "131d3fc989c3dc9ac8d94fee3c39541a61b851df",
+  "source_manifest_sha256": "4cdbdb2b86580df4f87c35250e57fcffefb3014f4636194802b45e995dfa46ab",
+  "complete_checkpoint_manifest_sha256": "dcaf98d944e2d4e387039ed041b3c52c43ec023711487ef6e1d355896d9a8f4d",
+  "restored_execution_files": 339,
+  "case_count": 36,
+  "retained_witness_files": 215,
+  "selected_designs": 32,
+  "unknown_cases": 4,
+  "focused_tests_passed": 22,
+  "all_selected_audits_conditional": true,
+  "independent_replay": "Publisher independently restored source and batch outputs, checked full inventory and resume contracts, and freshly audited every selected design using the same pinned core; not an independent physical model.",
+  "fresh_selected_audit_batches": [
+    {
+      "commit": "32319a712c108964ca51d35401ad572ba4d4a62b",
+      "count": 9
+    },
+    {
+      "commit": "46344d133d3eb6e290b788d6bd23d7d8cc44f126",
+      "count": 11
+    },
+    {
+      "commit": "43c9ecc118ac84c937a641ed550e6a91328b4b39",
+      "count": 12
+    }
+  ],
+  "comparison_fields": [
+    "physical_design_hash",
+    "layer_count",
+    "total_thickness_nm",
+    "pass_flags",
+    "complete_objective_status",
+    "absorption_assumption"
+  ],
+  "limitations": [
+    "All selected designs conditional on explicit missing-k zero assumptions",
+    "Finite numerical audit, not continuous certificate",
+    "Finite search reference, not minimum resource or predictor validation"
+  ]
+}
