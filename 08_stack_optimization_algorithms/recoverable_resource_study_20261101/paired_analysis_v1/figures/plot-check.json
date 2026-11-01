@@ -1,0 +1,67 @@
+{
+  "core_commit": "131d3fc989c3dc9ac8d94fee3c39541a61b851df",
+  "rows": 24584,
+  "window_checks": [
+    {
+      "case_id": "train-41000-bandpass",
+      "objective_index": 0,
+      "metric": "R",
+      "sampled_points": 4097,
+      "new_min": 0.7299696171243508,
+      "required_lower": 0.7216181619838717,
+      "strict": true,
+      "new_min_minus_bound": 0.00835145514047908
+    },
+    {
+      "case_id": "train-41000-bandpass",
+      "objective_index": 1,
+      "metric": "T",
+      "sampled_points": 4097,
+      "new_min": 0.9366157951561009,
+      "required_lower": 0.9365003403420188,
+      "strict": true,
+      "new_min_minus_bound": 0.00011545481408214986
+    },
+    {
+      "case_id": "train-41000-bandpass",
+      "objective_index": 2,
+      "metric": "R",
+      "sampled_points": 4097,
+      "new_min": 0.937043137946626,
+      "required_lower": 0.9352320637725159,
+      "strict": true,
+      "new_min_minus_bound": 0.0018110741741100833
+    },
+    {
+      "case_id": "train-41001-bandpass",
+      "objective_index": 0,
+      "metric": "R",
+      "sampled_points": 4098,
+      "new_min": 0.9380596186794747,
+      "required_lower": 0.9374121932894504,
+      "strict": false,
+      "new_min_minus_bound": 0.0006474253900243809
+    },
+    {
+      "case_id": "train-41001-bandpass",
+      "objective_index": 1,
+      "metric": "T",
+      "sampled_points": 4097,
+      "new_min": 0.9324702679323229,
+      "required_lower": 0.9303642096375193,
+      "strict": false,
+      "new_min_minus_bound": 0.002106058294803592
+    },
+    {
+      "case_id": "train-41001-bandpass",
+      "objective_index": 2,
+      "metric": "R",
+      "sampled_points": 4098,
+      "new_min": 0.7328727991641301,
+      "required_lower": 0.7246111513852062,
+      "strict": false,
+      "new_min_minus_bound": 0.008261647778923908
+    }
+  ],
+  "caveat": "Plot sampling4097 plus stored audit extrema; not a substitute for original audits. Prior candidate selected posthoc by old fit-grid error."
+}
