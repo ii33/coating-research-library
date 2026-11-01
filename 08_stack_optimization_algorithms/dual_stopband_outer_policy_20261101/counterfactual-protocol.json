@@ -1,0 +1,10 @@
+{
+  "schema": "dual-stopband-counterfactual-k0-v1",
+  "classification": "synthetic counterfactual, not the known-k acceptance model",
+  "reference_case": "../dual_stopband_continuation_20261101/public-reference-case.json",
+  "reference_case_sha256": "7bf04c02191eef3a31f5b4d0d2f4bf72dfa78b7e4f43948f4c9cdf4bfeb69709",
+  "transform": "Construct distinct synthetic optical sets from the two referenced public film models, retaining their n values and wavelength grids but replacing film k by 0. Do not alter public catalog or the original reference case.",
+  "substrate": "Unchanged 3 mm double-sided H-K9L; unknown substrate k assumed 0.",
+  "objective_geometry": "Original four inclusive T windows, normal unpolarized incidence, same 1 nm base grid and front-only optimization; back coating empty.",
+  "warning": "Counterfactual results must not be reported as passes for the original known-k case; not a manufacturing or continuous-band certificate."
+}
