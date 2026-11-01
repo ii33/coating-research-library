@@ -1,0 +1,11 @@
+{
+  "schema": "complete-source-input-archive-v1",
+  "archive": "source-inputs-01.tar.gz",
+  "bytes": 372849,
+  "sha256": "446db450299e689e9e2ffc5bbf64d25843a03929d9f2b54ed63c0e348eb48156",
+  "case_count": 48,
+  "extract_relative_to": "material_expansion_v1",
+  "source_manifest_sha256": "bfd6c6c5870c05ba418c8ee87d68dc54ea70082129d1ac43b844c66e30eb53b3",
+  "plan_sha256": "65ef9b4bac2a781ede17aed406d1d060465849889c843dc7a996c7026096a178",
+  "instruction": "Verify archive SHA, only regular files at exact source_manifest case paths, then materialize bytes beneath execution root; verify source_manifest before running. Other source files are published normally."
+}
