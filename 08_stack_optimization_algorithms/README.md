@@ -91,3 +91,7 @@ python models/check_package.py
 ## 2026-11-02 · 评分证据验证的拒绝优先
 
 [拒绝优先、完整性校验与有序查找](acceptance_evidence_theory_20261102/README.md)：原接受条件、语义等价前提、固定均值网格和并发边界；不改变物理阈值或省略成功所需证据。
+
+## 2026-11-02 · 光学常数来源与缺失域审计
+
+[作者显式零值、缺失域和材料形态](optical_constants_provenance_audit_20261102/README.md)：记录原表与精简页差异、内透过率换算条件及来源适用边界，不把模型零值当作实测无损。

@@ -1,0 +1,10 @@
+# 公开来源链接与核查边界
+
+- Amotchkina et al., *Applied Optics* 59, A40–A47 (2020), [DOI 10.1364/AO.59.000A40](https://doi.org/10.1364/AO.59.000A40)，[PubMed 摘要](https://pubmed.ncbi.nlm.nih.gov/32225351/)：论文摘要所述薄膜表征范围 0.4–12 µm；n 为色散模型，k 为非参数或特定参数模型。原文中表征范围不能自动扩大到作者工作簿更远的节点。
+- [作者补充模型说明](https://refractiveindex.info/download/data/2020/Amotchkina/Summary_for_RefractiveIndexINFO.pdf)：ZnS/YbF₃ 为薄膜，ZnSe 为基片；描述模型与电子束蒸发条件。该处 120 °C 为沉积时基片温度，不等于已确认的光学测量温度。
+- 作者提供的数表链接：[ZnS](https://refractiveindex.info/download/data/2020/Amotchkina/ZnS_nk.xlsx)、[YbF₃](https://refractiveindex.info/download/data/2020/Amotchkina/YbF3_nk.xlsx)、[ZnSe](https://refractiveindex.info/download/data/2020/Amotchkina/ZnSe_nk.xlsx)。本次核读的工作簿 SHA-256 依次为 `f485e63ef49bec9a4ca44c10a942f2403433e4b67db63812243e7512a60a06cd`、`458bfeca0704aea9c224d3cc622b2618e05550fe8f0db18b1959912d5dc10e3b`、`bf0f9233d6e04b787003c9cb6364e04480f1cba28e637187e9f287e0107bb013`。链接可能更新，摘要标识本次核查对象；本研究库不再分发工作簿或 PDF。
+- 相应的 RefractiveIndex.INFO 选用页：[ZnS](https://refractiveindex.info/?shelf=main&book=ZnS&page=Amotchkina)、[YbF₃](https://refractiveindex.info/?shelf=main&book=YbF3&page=Amotchkina)、[ZnSe](https://refractiveindex.info/?shelf=main&book=ZnSe&page=Amotchkina)。页面 k 显示范围与作者数表节点范围须分别记录，不应只根据页面缺段推断原作者没有给出数值。
+- SCHOTT [N-BK7 资料表](https://media.schott.com/api/public/content/41e799d0bf874807a0bb8e702fbb75b5?v=54856406)与 [TIE-35 光学玻璃透过率说明](https://media.schott.com/api/public/content/110b56518128431b9f3134627d7f4c4e?v=613962ef)：区分内透过率、表面反射、厚度依赖与稀疏点；说明 OH 吸收和熔炼批次影响。换算假设和不确定度见正文，BK7 与 N-BK7 不应无证据地互相替代。
+- Querry, *Optical Constants of Minerals and Other Materials from the Millimeter to the Ultraviolet* (1987)，[原始报告](https://lweb.cfa.harvard.edu/HITRAN/HITRAN2012/Aerosols/papers/querry_minerals_1987.pdf)，尤其 4.6–4.7 节；[ZnS 数据表](https://raw.githubusercontent.com/polyanskiy/refractiveindex.info-database/master/database/data/main/ZnS/nk/Querry.yml)。报道 CVD 块材与来源方法，数字格式限制微弱吸收精度。报告的材料与其他论文薄膜不可默认互换。
+
+本页链接指向公开来源；不复制发布原 PDF、电子表格或第三方完整数据。仅凭资料页可读性，不假定所有关联文件均可自由再分发。
