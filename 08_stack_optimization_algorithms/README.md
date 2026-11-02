@@ -103,3 +103,7 @@ python models/check_package.py
 ## 2026-11-02 · 目标条件化结构搜索的泛化研究
 
 [通用结构操作、组间留出与消融设计](structure_generalization_20261102/README.md)：区分已有机制和拟议改进；尚未实现或验证新的泛化能力。
+
+## 2026-11-02 · 参数化预置结构族研究
+
+[结构族、适用域与验收等级](parameterized_preset_families_20261102/README.md)：提炼可随指标变化的构造规则；尚未新增软件预置或完成泛化光学验证。
