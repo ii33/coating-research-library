@@ -95,3 +95,7 @@ python models/check_package.py
 ## 2026-11-02 · 光学常数来源与缺失域审计
 
 [作者显式零值、缺失域和材料形态](optical_constants_provenance_audit_20261102/README.md)：记录原表与精简页差异、内透过率换算条件及来源适用边界，不把模型零值当作实测无损。
+
+## 2026-11-02 · 吸收目标与失败证据
+
+[吸收端口边界、厚度导数与诊断标签](absorption_evidence_diagnostics_20261102/README.md)：明确有限系统统计边界，区分观察事实、独立核验与不可行性推断。
