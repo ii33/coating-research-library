@@ -99,3 +99,7 @@ python models/check_package.py
 ## 2026-11-02 · 吸收目标与失败证据
 
 [吸收端口边界、厚度导数与诊断标签](absorption_evidence_diagnostics_20261102/README.md)：明确有限系统统计边界，区分观察事实、独立核验与不可行性推断。
+
+## 2026-11-02 · 目标条件化结构搜索的泛化研究
+
+[通用结构操作、组间留出与消融设计](structure_generalization_20261102/README.md)：区分已有机制和拟议改进；尚未实现或验证新的泛化能力。
